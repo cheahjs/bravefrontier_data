@@ -137,13 +137,13 @@
     "HP低い時強化": {
         "desc": "HPが低いほど強化", 
         "effect": {
-            "base atk% buff": -100, 
-            "base def% buff": -100, 
-            "base rec% buff": -100, 
+            "atk% base buff": -100, 
+            "atk% extra buff based on hp": 200, 
             "buff proportional to hp": "lost", 
-            "extra atk% buff based on hp": 200, 
-            "extra def% buff based on hp": 200, 
-            "extra rec% buff based on hp": 200
+            "def% base buff": -100, 
+            "def% extra buff based on hp": 200, 
+            "rec% base buff": -100, 
+            "rec% extra buff based on hp": 200
         }, 
         "id": 34832, 
         "max_stack": 1, 
@@ -154,13 +154,13 @@
     "HP高い時強化": {
         "desc": "HPが高いほど強化", 
         "effect": {
-            "base atk% buff": -100, 
-            "base def% buff": -100, 
-            "base rec% buff": -100, 
+            "atk% base buff": -100, 
+            "atk% extra buff based on hp": 200, 
             "buff proportional to hp": "remaining", 
-            "extra atk% buff based on hp": 200, 
-            "extra def% buff based on hp": 200, 
-            "extra rec% buff based on hp": 200
+            "def% base buff": -100, 
+            "def% extra buff based on hp": 200, 
+            "rec% base buff": -100, 
+            "rec% extra buff based on hp": 200
         }, 
         "id": 34833, 
         "max_stack": 1, 
@@ -347,7 +347,7 @@
         "desc": "ＨＰが満タン時、クリティカル率をアップ", 
         "effect": {
             "crit% buff": 50, 
-            "hp below % buff requirement": 100
+            "hp above % buff requirement": 100
         }, 
         "id": 34815, 
         "max_stack": 1, 
@@ -856,9 +856,8 @@
     "千子村正": {
         "desc": "戦闘開始から２ターンの間、攻撃力を５０％アップ", 
         "effect": {
-            "first x turns": 0, 
-            "first x turns atk%": 50, 
-            "first x turns def%": 0
+            "first x turns": 2, 
+            "first x turns atk%": 50
         }, 
         "id": 31000, 
         "max_stack": 1, 
@@ -981,6 +980,7 @@
         "effect": {
             "heal high": 120, 
             "heal low": 100, 
+            "rec added%": 110.00000000000001, 
             "target_area": "single", 
             "target_type": "self"
         }, 
@@ -1157,9 +1157,8 @@
     "天叢雲剣": {
         "desc": "戦闘開始から２ターンの間、攻撃力を７５％アップ", 
         "effect": {
-            "first x turns": 0, 
-            "first x turns atk%": 75, 
-            "first x turns def%": 0
+            "first x turns": 2, 
+            "first x turns atk%": 75
         }, 
         "id": 31001, 
         "max_stack": 1, 
@@ -1181,9 +1180,8 @@
     "天羽々斬剣": {
         "desc": "戦闘開始から２ターンの間、攻撃力を７５％アップ＆クリティカル率アップ", 
         "effect": {
-            "first x turns": 0, 
-            "first x turns atk%": 75, 
-            "first x turns def%": 0
+            "first x turns": 2, 
+            "first x turns atk%": 75
         }, 
         "id": 31002, 
         "max_stack": 1, 
@@ -1411,6 +1409,7 @@
         "effect": {
             "heal high": 1500, 
             "heal low": 1500, 
+            "rec added%": 110.00000000000001, 
             "target_area": "aoe", 
             "target_type": "self"
         }, 
@@ -1501,6 +1500,7 @@
         "effect": {
             "heal high": 1000, 
             "heal low": 1000, 
+            "rec added%": 110.00000000000001, 
             "target_area": "single", 
             "target_type": "self"
         }, 
@@ -1532,6 +1532,7 @@
         "effect": {
             "heal high": 1500, 
             "heal low": 1500, 
+            "rec added%": 110.00000000000001, 
             "target_area": "single", 
             "target_type": "self"
         }, 
@@ -1575,7 +1576,7 @@
             "target_area": "single", 
             "target_type": "self", 
             "unknown proc id": "12", 
-            "unknown proc params": "100"
+            "unknown proc param": "100"
         }, 
         "id": 52400, 
         "max equipped": 50, 
@@ -1598,9 +1599,9 @@
     "恨刃ウィトルギア": {
         "desc": "ＨＰが少ないほど攻撃力が大幅にアップ", 
         "effect": {
-            "base atk% buff": 0, 
-            "buff proportional to hp": "lost", 
-            "extra atk% buff based on hp": 200
+            "atk% base buff": 0, 
+            "atk% extra buff based on hp": 200, 
+            "buff proportional to hp": "lost"
         }, 
         "id": 41300, 
         "max_stack": 1, 
@@ -1711,7 +1712,7 @@
             "target_area": "single", 
             "target_type": "enemy", 
             "unknown proc id": "903", 
-            "unknown proc params": "1,90,0"
+            "unknown proc param": "1,90,0"
         }, 
         "id": 70600, 
         "max equipped": 5, 
@@ -1726,7 +1727,7 @@
             "target_area": "aoe", 
             "target_type": "self", 
             "unknown proc id": "902", 
-            "unknown proc params": "10,0,0,0,300,1"
+            "unknown proc param": "10,0,0,0,300,1"
         }, 
         "id": 70400, 
         "max equipped": 4, 
@@ -1896,7 +1897,7 @@
     "正宗": {
         "desc": "戦闘開始から２ターンの間、攻撃力・防御力を７５％アップ", 
         "effect": {
-            "first x turns": 0, 
+            "first x turns": 2, 
             "first x turns atk%": 75, 
             "first x turns def%": 75
         }, 
@@ -1946,7 +1947,7 @@
         "desc": "ＨＰが満タン時、クリティカル率をアップ", 
         "effect": {
             "crit% buff": 50, 
-            "hp below % buff requirement": 100
+            "hp above % buff requirement": 100
         }, 
         "id": 31500, 
         "max_stack": 1, 
@@ -2340,7 +2341,7 @@
             "target_area": "aoe", 
             "target_type": "enemy", 
             "unknown proc id": "906", 
-            "unknown proc params": ""
+            "unknown proc param": ""
         }, 
         "id": 70100, 
         "max equipped": 3, 
@@ -2397,8 +2398,7 @@
     "王盾ダルバンシェル": {
         "desc": "戦闘開始から３ターンの間、防御力を５０％アップ", 
         "effect": {
-            "first x turns": 0, 
-            "first x turns atk%": 0, 
+            "first x turns": 3, 
             "first x turns def%": 50
         }, 
         "id": 31100, 
@@ -2412,6 +2412,7 @@
         "effect": {
             "heal high": 800, 
             "heal low": 800, 
+            "rec added%": 110.00000000000001, 
             "target_area": "single", 
             "target_type": "self"
         }, 
@@ -2456,7 +2457,7 @@
         "effect": {
             "atk% buff": 30, 
             "def% buff": 30, 
-            "hp below % buff requirement": 100, 
+            "hp above % buff requirement": 100, 
             "rec% buff": 30
         }, 
         "id": 35500, 
@@ -2470,7 +2471,7 @@
         "effect": {
             "atk% buff": 100, 
             "def% buff": 100, 
-            "hp below % buff requirement": 100, 
+            "hp above % buff requirement": 100, 
             "rec% buff": 100
         }, 
         "id": 36200, 
@@ -2723,6 +2724,7 @@
         "effect": {
             "heal high": 500, 
             "heal low": 500, 
+            "rec added%": 110.00000000000001, 
             "target_area": "aoe", 
             "target_type": "self"
         }, 
@@ -2777,7 +2779,7 @@
     "神切": {
         "desc": "戦闘開始から２ターンの間、攻撃・防御を１００％アップ", 
         "effect": {
-            "first x turns": 0, 
+            "first x turns": 2, 
             "first x turns atk%": 100, 
             "first x turns def%": 100
         }, 
@@ -3010,7 +3012,7 @@
             "target_area": "aoe", 
             "target_type": "self", 
             "unknown proc id": "901", 
-            "unknown proc params": "100,120,0,0"
+            "unknown proc param": "100,120,0,0"
         }, 
         "id": 70300, 
         "max equipped": 3, 
@@ -3030,9 +3032,9 @@
     "禍盾『エレクゼノア』": {
         "desc": "戦闘開始から３ターンの間、防御力と回復力を７５％アップ", 
         "effect": {
-            "first x turns": 75, 
-            "first x turns atk%": 0, 
-            "first x turns def%": 75
+            "first x turns": 3, 
+            "first x turns def%": 75, 
+            "first x turns rec%": 75
         }, 
         "id": 31102, 
         "max_stack": 1, 
@@ -3197,7 +3199,7 @@
         "effect": {
             "atk% buff": 50, 
             "def% buff": 50, 
-            "hp below % buff requirement": 100, 
+            "hp above % buff requirement": 100, 
             "rec% buff": 50
         }, 
         "id": 35501, 
@@ -3511,6 +3513,7 @@
         "effect": {
             "heal high": 1000, 
             "heal low": 1000, 
+            "rec added%": 110.00000000000001, 
             "target_area": "aoe", 
             "target_type": "self"
         }, 
@@ -3594,8 +3597,7 @@
     "英知の盾『エクセイル』": {
         "desc": "戦闘開始から３ターンの間、防御力を７５％アップ", 
         "effect": {
-            "first x turns": 0, 
-            "first x turns atk%": 0, 
+            "first x turns": 3, 
             "first x turns def%": 75
         }, 
         "id": 31101, 
@@ -3695,7 +3697,7 @@
             "target_area": "single", 
             "target_type": "self", 
             "unknown proc id": "12", 
-            "unknown proc params": "1"
+            "unknown proc param": "1"
         }, 
         "id": 22400, 
         "max equipped": 1, 
@@ -3710,7 +3712,7 @@
             "target_area": "single", 
             "target_type": "self", 
             "unknown proc id": "12", 
-            "unknown proc params": "1"
+            "unknown proc param": "1"
         }, 
         "id": 22410, 
         "max equipped": 2, 
@@ -3733,7 +3735,7 @@
             "target_area": "single", 
             "target_type": "enemy", 
             "unknown proc id": "903", 
-            "unknown proc params": "1,480,0"
+            "unknown proc param": "1,480,0"
         }, 
         "id": 70000, 
         "max equipped": 10, 
@@ -4019,6 +4021,7 @@
         "effect": {
             "heal high": 2000, 
             "heal low": 2000, 
+            "rec added%": 110.00000000000001, 
             "target_area": "single", 
             "target_type": "self"
         }, 
@@ -4043,7 +4046,7 @@
             "target_area": "single", 
             "target_type": "self", 
             "unknown proc id": "905", 
-            "unknown proc params": "1"
+            "unknown proc param": "1"
         }, 
         "id": 70200, 
         "max equipped": 1, 
@@ -4348,7 +4351,7 @@
             "target_area": "aoe", 
             "target_type": "self", 
             "unknown proc id": "907", 
-            "unknown proc params": "10,300,1"
+            "unknown proc param": "10,300,1"
         }, 
         "id": 70500, 
         "max equipped": 4, 
