@@ -11,7 +11,6 @@ Holds extracted data for the game Brave Frontier (Global and JP)
 * items.json - Item data extracted using a modified version of the script at https://github.com/bsuh/bfdb/
 * missions.json - List of missions, their energy costs and number of battles.
 * files_list.txt - MD5 hashes of all data files from JP/Global.
-* decoded_dat/ - Decrypted JSON files
 
 #FAQ
 
