@@ -220,16 +220,22 @@
                         "item drop": [], 
                         "karma drop count": 10, 
                         "karma max drop": 1625, 
-                        "passive": {
-                            "curse%": 30
-                        }, 
+                        "passive": [
+                            {
+                                "curse%": 30
+                            }
+                        ], 
                         "skills": [
                             {
                                 "desc": "0", 
                                 "levels": {
-                                    "atk% buff": 20, 
-                                    "buff turns": 3, 
-                                    "element buffed": "all"
+                                    "effects": [
+                                        {
+                                            "atk% buff": 20, 
+                                            "buff turns": 3, 
+                                            "element buffed": "all"
+                                        }
+                                    ]
                                 }, 
                                 "name": "Demon Boost"
                             }
@@ -264,17 +270,23 @@
                         "item drop": [], 
                         "karma drop count": 5, 
                         "karma max drop": 2375, 
-                        "passive": {
-                            "paralysis%": 10, 
-                            "weaken%": 15
-                        }, 
+                        "passive": [
+                            {
+                                "paralysis%": 10, 
+                                "weaken%": 15
+                            }
+                        ], 
                         "skills": [
                             {
                                 "desc": "0", 
                                 "levels": {
-                                    "bb atk%": 250, 
-                                    "hits": 5, 
-                                    "random attack": true
+                                    "effects": [
+                                        {
+                                            "bb atk%": 250, 
+                                            "hits": 5, 
+                                            "random attack": true
+                                        }
+                                    ]
                                 }, 
                                 "name": "X Radia"
                             }
@@ -313,16 +325,22 @@
                         "item drop": [], 
                         "karma drop count": 15, 
                         "karma max drop": 2250, 
-                        "passive": {
-                            "injury%": 20
-                        }, 
+                        "passive": [
+                            {
+                                "injury%": 20
+                            }
+                        ], 
                         "skills": [
                             {
                                 "desc": "0", 
                                 "hit dmg% distribution": [25, 25, 25, 25], 
                                 "hits": 4, 
                                 "levels": {
-                                    "bb atk%": 30
+                                    "effects": [
+                                        {
+                                            "bb atk%": 30
+                                        }
+                                    ]
                                 }, 
                                 "name": "Grudge Blast"
                             }
@@ -361,23 +379,31 @@
                         "item drop": [], 
                         "karma drop count": 20, 
                         "karma max drop": 3000, 
-                        "passive": {
-                            "dmg reduction chance%": 25, 
-                            "dmg reduction%": 25, 
-                            "unknown passive id": "37", 
-                            "unknown passive params": "1,3,-50,0,0,0,0,25"
-                        }, 
+                        "passive": [
+                            {
+                                "dmg reduction chance%": 25, 
+                                "dmg reduction%": 25
+                            }, 
+                            {
+                                "unknown passive id": "37", 
+                                "unknown passive params": "1,3,-50,0,0,0,0,25"
+                            }
+                        ], 
                         "skills": [
                             {
                                 "desc": "0", 
                                 "hit dmg% distribution": [15, 10, 15, 10, 15, 10, 15, 10], 
                                 "hits": 8, 
                                 "levels": {
-                                    "bb atk%": 10, 
-                                    "bb elements": [
-                                        "light", 
-                                        "fire", 
-                                        "thunder"
+                                    "effects": [
+                                        {
+                                            "bb atk%": 10, 
+                                            "bb elements": [
+                                                "light", 
+                                                "fire", 
+                                                "thunder"
+                                            ]
+                                        }
                                     ]
                                 }, 
                                 "name": "Flash Effect"
@@ -387,11 +413,15 @@
                                 "hit dmg% distribution": [15, 10, 15, 10, 15, 10, 15, 10], 
                                 "hits": 8, 
                                 "levels": {
-                                    "bb atk%": 30, 
-                                    "bb elements": [
-                                        "light", 
-                                        "fire", 
-                                        "thunder"
+                                    "effects": [
+                                        {
+                                            "bb atk%": 30, 
+                                            "bb elements": [
+                                                "light", 
+                                                "fire", 
+                                                "thunder"
+                                            ]
+                                        }
                                     ]
                                 }, 
                                 "name": "Flash Effect"
@@ -399,15 +429,21 @@
                             {
                                 "desc": "0", 
                                 "levels": {
-                                    "atk% buff": 20, 
-                                    "buff turns": 999, 
-                                    "element buffed": "all", 
-                                    "elements added": [
-                                        "light", 
-                                        "fire", 
-                                        "thunder"
-                                    ], 
-                                    "elements added turns": 999
+                                    "effects": [
+                                        {
+                                            "elements added": [
+                                                "light", 
+                                                "fire", 
+                                                "thunder"
+                                            ], 
+                                            "elements added turns": 999
+                                        }, 
+                                        {
+                                            "atk% buff": 20, 
+                                            "buff turns": 999, 
+                                            "element buffed": "all"
+                                        }
+                                    ]
                                 }, 
                                 "name": "Cosmo Edge"
                             }
@@ -446,22 +482,32 @@
                         "item drop": [], 
                         "karma drop count": 20, 
                         "karma max drop": 2125, 
-                        "passive": {
-                            "ignore def%": 20, 
-                            "injury%": 20
-                        }, 
+                        "passive": [
+                            {
+                                "injury%": 20
+                            }, 
+                            {
+                                "ignore def%": 20
+                            }
+                        ], 
                         "skills": [
                             {
                                 "desc": "0", 
                                 "hit dmg% distribution": [15, 15, 30, 10, 10, 10, 10], 
                                 "hits": 7, 
                                 "levels": {
-                                    "bb atk%": 10, 
-                                    "bb elements": [
-                                        "thunder", 
-                                        "light"
-                                    ], 
-                                    "injury%": 20
+                                    "effects": [
+                                        {
+                                            "bb atk%": 10, 
+                                            "bb elements": [
+                                                "thunder", 
+                                                "light"
+                                            ]
+                                        }, 
+                                        {
+                                            "injury%": 20
+                                        }
+                                    ]
                                 }, 
                                 "name": "3rd Shinto Form: Ikazuchi"
                             }, 
@@ -470,12 +516,18 @@
                                 "hit dmg% distribution": [15, 15, 30, 10, 10, 10, 10], 
                                 "hits": 7, 
                                 "levels": {
-                                    "bb atk%": 30, 
-                                    "bb elements": [
-                                        "thunder", 
-                                        "light"
-                                    ], 
-                                    "injury%": 20
+                                    "effects": [
+                                        {
+                                            "bb atk%": 30, 
+                                            "bb elements": [
+                                                "thunder", 
+                                                "light"
+                                            ]
+                                        }, 
+                                        {
+                                            "injury%": 20
+                                        }
+                                    ]
                                 }, 
                                 "name": "3rd Shinto Form: Ikazuchi"
                             }
@@ -510,23 +562,33 @@
                         "item drop": [], 
                         "karma drop count": 20, 
                         "karma max drop": 2375, 
-                        "passive": {
-                            "unknown passive id": "37", 
-                            "unknown passive params": "1,2,-60,0,0,0,0,10", 
-                            "weaken%": 20
-                        }, 
+                        "passive": [
+                            {
+                                "weaken%": 20
+                            }, 
+                            {
+                                "unknown passive id": "37", 
+                                "unknown passive params": "1,2,-60,0,0,0,0,10"
+                            }
+                        ], 
                         "skills": [
                             {
                                 "desc": "0", 
                                 "hit dmg% distribution": [20, 10, 10, 10, 10, 10, 10, 20], 
                                 "hits": 8, 
                                 "levels": {
-                                    "bb atk%": 10, 
-                                    "bb elements": [
-                                        "fire", 
-                                        "light"
-                                    ], 
-                                    "weaken%": 20
+                                    "effects": [
+                                        {
+                                            "bb atk%": 10, 
+                                            "bb elements": [
+                                                "fire", 
+                                                "light"
+                                            ]
+                                        }, 
+                                        {
+                                            "weaken%": 20
+                                        }
+                                    ]
                                 }, 
                                 "name": "Caliente Ring"
                             }, 
@@ -535,12 +597,18 @@
                                 "hit dmg% distribution": [20, 10, 10, 10, 10, 10, 10, 20], 
                                 "hits": 8, 
                                 "levels": {
-                                    "bb atk%": 30, 
-                                    "bb elements": [
-                                        "fire", 
-                                        "light"
-                                    ], 
-                                    "weaken%": 20
+                                    "effects": [
+                                        {
+                                            "bb atk%": 30, 
+                                            "bb elements": [
+                                                "fire", 
+                                                "light"
+                                            ]
+                                        }, 
+                                        {
+                                            "weaken%": 20
+                                        }
+                                    ]
                                 }, 
                                 "name": "Caliente Ring"
                             }
@@ -579,33 +647,47 @@
                         "item drop": [], 
                         "karma drop count": 5, 
                         "karma max drop": 3000, 
-                        "passive": {
-                            "ignore def%": 20, 
-                            "injury%": 10, 
-                            "sick%": 10, 
-                            "weaken%": 10
-                        }, 
+                        "passive": [
+                            {
+                                "injury%": 10, 
+                                "sick%": 10, 
+                                "weaken%": 10
+                            }, 
+                            {
+                                "ignore def%": 20
+                            }
+                        ], 
                         "skills": [
                             {
                                 "desc": "0", 
                                 "levels": {
-                                    "elements added": [
-                                        "light"
-                                    ], 
-                                    "elements added turns": 3, 
-                                    "negate status ails turns": 3
+                                    "effects": [
+                                        {
+                                            "negate status ails turns": 3
+                                        }, 
+                                        {
+                                            "elements added": [
+                                                "light"
+                                            ], 
+                                            "elements added turns": 3
+                                        }
+                                    ]
                                 }, 
                                 "name": "Shining Aura"
                             }, 
                             {
                                 "desc": "0", 
                                 "levels": {
-                                    "elements added": [
-                                        "fire", 
-                                        "water", 
-                                        "earth"
-                                    ], 
-                                    "elements added turns": 3
+                                    "effects": [
+                                        {
+                                            "elements added": [
+                                                "fire", 
+                                                "water", 
+                                                "earth"
+                                            ], 
+                                            "elements added turns": 3
+                                        }
+                                    ]
                                 }, 
                                 "name": "Astral Mana"
                             }, 
@@ -614,7 +696,11 @@
                                 "hit dmg% distribution": [10, 8, 10, 8, 10, 8, 10, 8, 10, 8, 10], 
                                 "hits": 11, 
                                 "levels": {
-                                    "bb atk%": 15
+                                    "effects": [
+                                        {
+                                            "bb atk%": 15
+                                        }
+                                    ]
                                 }, 
                                 "name": "Carnage Sphere"
                             }, 
@@ -623,9 +709,15 @@
                                 "hit dmg% distribution": [6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6], 
                                 "hits": 15, 
                                 "levels": {
-                                    "bb atk%": 90, 
-                                    "unknown proc id": "28", 
-                                    "unknown proc param": "1111"
+                                    "effects": [
+                                        {
+                                            "bb atk%": 90
+                                        }, 
+                                        {
+                                            "unknown proc id": "28", 
+                                            "unknown proc param": "1111"
+                                        }
+                                    ]
                                 }, 
                                 "name": "This is your final judgment, foolish human."
                             }, 
@@ -634,7 +726,11 @@
                                 "hit dmg% distribution": [10, 10, 10, 10, 10, 10, 10, 10, 20], 
                                 "hits": 9, 
                                 "levels": {
-                                    "bb atk%": -20
+                                    "effects": [
+                                        {
+                                            "bb atk%": -20
+                                        }
+                                    ]
                                 }, 
                                 "name": "Normal All"
                             }
@@ -683,7 +779,11 @@
                                 "hit dmg% distribution": [30, 20, 20, 10, 10, 10], 
                                 "hits": 6, 
                                 "levels": {
-                                    "bb atk%": 10
+                                    "effects": [
+                                        {
+                                            "bb atk%": 10
+                                        }
+                                    ]
                                 }, 
                                 "name": "Frozen Axe"
                             }, 
@@ -692,17 +792,25 @@
                                 "hit dmg% distribution": [30, 20, 20, 10, 10, 10], 
                                 "hits": 6, 
                                 "levels": {
-                                    "bb atk%": 30
+                                    "effects": [
+                                        {
+                                            "bb atk%": 30
+                                        }
+                                    ]
                                 }, 
                                 "name": "Frozen Axe"
                             }, 
                             {
                                 "desc": "0", 
                                 "levels": {
-                                    "atk% buff": 30, 
-                                    "buff turns": 3, 
-                                    "def% buff": -50, 
-                                    "element buffed": "all"
+                                    "effects": [
+                                        {
+                                            "atk% buff": 30, 
+                                            "buff turns": 3, 
+                                            "def% buff": -50, 
+                                            "element buffed": "all"
+                                        }
+                                    ]
                                 }, 
                                 "name": "Flood Offensive"
                             }, 
@@ -711,7 +819,11 @@
                                 "hit dmg% distribution": [25, 10, 10, 15, 10, 10, 10, 10], 
                                 "hits": 8, 
                                 "levels": {
-                                    "bb atk%": 60
+                                    "effects": [
+                                        {
+                                            "bb atk%": 60
+                                        }
+                                    ]
                                 }, 
                                 "name": "Cursed Blue Slash"
                             }, 
@@ -720,22 +832,34 @@
                                 "hit dmg% distribution": [25, 10, 10, 15, 10, 10, 10, 10], 
                                 "hits": 8, 
                                 "levels": {
-                                    "bb atk%": 150
+                                    "effects": [
+                                        {
+                                            "bb atk%": 150
+                                        }
+                                    ]
                                 }, 
                                 "name": "Blue Execution "
                             }, 
                             {
                                 "desc": "0", 
                                 "levels": {
-                                    "remove all status ailments": true
+                                    "effects": [
+                                        {
+                                            "remove all status ailments": true
+                                        }
+                                    ]
                                 }, 
                                 "name": "Antidote"
                             }, 
                             {
                                 "desc": "0", 
                                 "levels": {
-                                    "dmg% reduction": 50, 
-                                    "dmg% reduction turns": 1
+                                    "effects": [
+                                        {
+                                            "dmg% reduction": 50, 
+                                            "dmg% reduction turns": 1
+                                        }
+                                    ]
                                 }, 
                                 "name": "Knight's Protection"
                             }
@@ -770,18 +894,29 @@
                         "item drop": [], 
                         "karma drop count": 5, 
                         "karma max drop": 3000, 
-                        "passive": {
-                            "atk% buff": 20, 
-                            "def% buff": 20, 
-                            "hp above % buff requirement": 75
-                        }, 
+                        "passive": [
+                            {
+                                "atk% buff": 10, 
+                                "def% buff": 10, 
+                                "hp above % buff requirement": 50
+                            }, 
+                            {
+                                "atk% buff": 20, 
+                                "def% buff": 20, 
+                                "hp above % buff requirement": 75
+                            }
+                        ], 
                         "skills": [
                             {
                                 "desc": "0", 
                                 "hit dmg% distribution": [20, 10, 15, 15, 20, 20], 
                                 "hits": 6, 
                                 "levels": {
-                                    "bb atk%": 5
+                                    "effects": [
+                                        {
+                                            "bb atk%": 5
+                                        }
+                                    ]
                                 }, 
                                 "name": "Fatal Flame"
                             }, 
@@ -790,19 +925,27 @@
                                 "hit dmg% distribution": [20, 10, 15, 10, 10, 15, 10, 10], 
                                 "hits": 8, 
                                 "levels": {
-                                    "bb atk%": 30
+                                    "effects": [
+                                        {
+                                            "bb atk%": 30
+                                        }
+                                    ]
                                 }, 
                                 "name": "Ignite Heaven"
                             }, 
                             {
                                 "desc": "0", 
                                 "levels": {
-                                    "elements added": [
-                                        "fire", 
-                                        "water", 
-                                        "earth"
-                                    ], 
-                                    "elements added turns": 5
+                                    "effects": [
+                                        {
+                                            "elements added": [
+                                                "fire", 
+                                                "water", 
+                                                "earth"
+                                            ], 
+                                            "elements added turns": 5
+                                        }
+                                    ]
                                 }, 
                                 "name": "Seraphim Edge"
                             }

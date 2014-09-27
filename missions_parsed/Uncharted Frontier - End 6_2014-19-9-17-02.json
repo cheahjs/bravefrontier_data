@@ -220,16 +220,22 @@
                         "item drop": [], 
                         "karma drop count": 10, 
                         "karma max drop": 1625, 
-                        "passive": {
-                            "curse%": 30
-                        }, 
+                        "passive": [
+                            {
+                                "curse%": 30
+                            }
+                        ], 
                         "skills": [
                             {
                                 "desc": "0", 
                                 "levels": {
-                                    "atk% buff": 20, 
-                                    "buff turns": 3, 
-                                    "element buffed": "all"
+                                    "effects": [
+                                        {
+                                            "atk% buff": 20, 
+                                            "buff turns": 3, 
+                                            "element buffed": "all"
+                                        }
+                                    ]
                                 }, 
                                 "name": "Demon Boost"
                             }
@@ -264,17 +270,23 @@
                         "item drop": [], 
                         "karma drop count": 5, 
                         "karma max drop": 2375, 
-                        "passive": {
-                            "paralysis%": 10, 
-                            "weaken%": 15
-                        }, 
+                        "passive": [
+                            {
+                                "paralysis%": 10, 
+                                "weaken%": 15
+                            }
+                        ], 
                         "skills": [
                             {
                                 "desc": "0", 
                                 "levels": {
-                                    "bb atk%": 250, 
-                                    "hits": 5, 
-                                    "random attack": true
+                                    "effects": [
+                                        {
+                                            "bb atk%": 250, 
+                                            "hits": 5, 
+                                            "random attack": true
+                                        }
+                                    ]
                                 }, 
                                 "name": "X Radia"
                             }
@@ -313,16 +325,22 @@
                         "item drop": [], 
                         "karma drop count": 15, 
                         "karma max drop": 2250, 
-                        "passive": {
-                            "injury%": 20
-                        }, 
+                        "passive": [
+                            {
+                                "injury%": 20
+                            }
+                        ], 
                         "skills": [
                             {
                                 "desc": "0", 
                                 "hit dmg% distribution": [25, 25, 25, 25], 
                                 "hits": 4, 
                                 "levels": {
-                                    "bb atk%": 30
+                                    "effects": [
+                                        {
+                                            "bb atk%": 30
+                                        }
+                                    ]
                                 }, 
                                 "name": "Grudge Blast"
                             }
@@ -361,23 +379,31 @@
                         "item drop": [], 
                         "karma drop count": 20, 
                         "karma max drop": 3000, 
-                        "passive": {
-                            "dmg reduction chance%": 25, 
-                            "dmg reduction%": 25, 
-                            "unknown passive id": "37", 
-                            "unknown passive params": "1,3,-50,0,0,0,0,25"
-                        }, 
+                        "passive": [
+                            {
+                                "dmg reduction chance%": 25, 
+                                "dmg reduction%": 25
+                            }, 
+                            {
+                                "unknown passive id": "37", 
+                                "unknown passive params": "1,3,-50,0,0,0,0,25"
+                            }
+                        ], 
                         "skills": [
                             {
                                 "desc": "0", 
                                 "hit dmg% distribution": [15, 10, 15, 10, 15, 10, 15, 10], 
                                 "hits": 8, 
                                 "levels": {
-                                    "bb atk%": 10, 
-                                    "bb elements": [
-                                        "light", 
-                                        "fire", 
-                                        "thunder"
+                                    "effects": [
+                                        {
+                                            "bb atk%": 10, 
+                                            "bb elements": [
+                                                "light", 
+                                                "fire", 
+                                                "thunder"
+                                            ]
+                                        }
                                     ]
                                 }, 
                                 "name": "Flash Effect"
@@ -387,11 +413,15 @@
                                 "hit dmg% distribution": [15, 10, 15, 10, 15, 10, 15, 10], 
                                 "hits": 8, 
                                 "levels": {
-                                    "bb atk%": 30, 
-                                    "bb elements": [
-                                        "light", 
-                                        "fire", 
-                                        "thunder"
+                                    "effects": [
+                                        {
+                                            "bb atk%": 30, 
+                                            "bb elements": [
+                                                "light", 
+                                                "fire", 
+                                                "thunder"
+                                            ]
+                                        }
                                     ]
                                 }, 
                                 "name": "Flash Effect"
@@ -399,15 +429,21 @@
                             {
                                 "desc": "0", 
                                 "levels": {
-                                    "atk% buff": 20, 
-                                    "buff turns": 999, 
-                                    "element buffed": "all", 
-                                    "elements added": [
-                                        "light", 
-                                        "fire", 
-                                        "thunder"
-                                    ], 
-                                    "elements added turns": 999
+                                    "effects": [
+                                        {
+                                            "elements added": [
+                                                "light", 
+                                                "fire", 
+                                                "thunder"
+                                            ], 
+                                            "elements added turns": 999
+                                        }, 
+                                        {
+                                            "atk% buff": 20, 
+                                            "buff turns": 999, 
+                                            "element buffed": "all"
+                                        }
+                                    ]
                                 }, 
                                 "name": "Cosmo Edge"
                             }
@@ -446,22 +482,32 @@
                         "item drop": [], 
                         "karma drop count": 20, 
                         "karma max drop": 2125, 
-                        "passive": {
-                            "ignore def%": 20, 
-                            "injury%": 20
-                        }, 
+                        "passive": [
+                            {
+                                "injury%": 20
+                            }, 
+                            {
+                                "ignore def%": 20
+                            }
+                        ], 
                         "skills": [
                             {
                                 "desc": "0", 
                                 "hit dmg% distribution": [15, 15, 30, 10, 10, 10, 10], 
                                 "hits": 7, 
                                 "levels": {
-                                    "bb atk%": 10, 
-                                    "bb elements": [
-                                        "thunder", 
-                                        "light"
-                                    ], 
-                                    "injury%": 20
+                                    "effects": [
+                                        {
+                                            "bb atk%": 10, 
+                                            "bb elements": [
+                                                "thunder", 
+                                                "light"
+                                            ]
+                                        }, 
+                                        {
+                                            "injury%": 20
+                                        }
+                                    ]
                                 }, 
                                 "name": "3rd Shinto Form: Ikazuchi"
                             }, 
@@ -470,12 +516,18 @@
                                 "hit dmg% distribution": [15, 15, 30, 10, 10, 10, 10], 
                                 "hits": 7, 
                                 "levels": {
-                                    "bb atk%": 30, 
-                                    "bb elements": [
-                                        "thunder", 
-                                        "light"
-                                    ], 
-                                    "injury%": 20
+                                    "effects": [
+                                        {
+                                            "bb atk%": 30, 
+                                            "bb elements": [
+                                                "thunder", 
+                                                "light"
+                                            ]
+                                        }, 
+                                        {
+                                            "injury%": 20
+                                        }
+                                    ]
                                 }, 
                                 "name": "3rd Shinto Form: Ikazuchi"
                             }
@@ -510,23 +562,33 @@
                         "item drop": [], 
                         "karma drop count": 20, 
                         "karma max drop": 2375, 
-                        "passive": {
-                            "unknown passive id": "37", 
-                            "unknown passive params": "1,2,-60,0,0,0,0,10", 
-                            "weaken%": 20
-                        }, 
+                        "passive": [
+                            {
+                                "weaken%": 20
+                            }, 
+                            {
+                                "unknown passive id": "37", 
+                                "unknown passive params": "1,2,-60,0,0,0,0,10"
+                            }
+                        ], 
                         "skills": [
                             {
                                 "desc": "0", 
                                 "hit dmg% distribution": [20, 10, 10, 10, 10, 10, 10, 20], 
                                 "hits": 8, 
                                 "levels": {
-                                    "bb atk%": 10, 
-                                    "bb elements": [
-                                        "fire", 
-                                        "light"
-                                    ], 
-                                    "weaken%": 20
+                                    "effects": [
+                                        {
+                                            "bb atk%": 10, 
+                                            "bb elements": [
+                                                "fire", 
+                                                "light"
+                                            ]
+                                        }, 
+                                        {
+                                            "weaken%": 20
+                                        }
+                                    ]
                                 }, 
                                 "name": "Caliente Ring"
                             }, 
@@ -535,12 +597,18 @@
                                 "hit dmg% distribution": [20, 10, 10, 10, 10, 10, 10, 20], 
                                 "hits": 8, 
                                 "levels": {
-                                    "bb atk%": 30, 
-                                    "bb elements": [
-                                        "fire", 
-                                        "light"
-                                    ], 
-                                    "weaken%": 20
+                                    "effects": [
+                                        {
+                                            "bb atk%": 30, 
+                                            "bb elements": [
+                                                "fire", 
+                                                "light"
+                                            ]
+                                        }, 
+                                        {
+                                            "weaken%": 20
+                                        }
+                                    ]
                                 }, 
                                 "name": "Caliente Ring"
                             }
@@ -579,18 +647,26 @@
                         "item drop": [], 
                         "karma drop count": 5, 
                         "karma max drop": 2500, 
-                        "passive": {
-                            "thunder resist%": 20
-                        }, 
+                        "passive": [
+                            {
+                                "thunder resist%": 20
+                            }
+                        ], 
                         "skills": [
                             {
                                 "desc": "0", 
                                 "hit dmg% distribution": [20, 10, 10, 20, 10, 10, 10, 10], 
                                 "hits": 8, 
                                 "levels": {
-                                    "bb atk%": 25, 
-                                    "bb flat atk": 100, 
-                                    "paralysis%": 20
+                                    "effects": [
+                                        {
+                                            "bb atk%": 25, 
+                                            "bb flat atk": 100
+                                        }, 
+                                        {
+                                            "paralysis%": 20
+                                        }
+                                    ]
                                 }, 
                                 "name": "Blizzard Seize "
                             }
@@ -629,29 +705,41 @@
                         "item drop": [], 
                         "karma drop count": 5, 
                         "karma max drop": 2125, 
-                        "passive": {
-                            "paralysis%": 10, 
-                            "weaken%": 15
-                        }, 
+                        "passive": [
+                            {
+                                "paralysis%": 10, 
+                                "weaken%": 15
+                            }
+                        ], 
                         "skills": [
                             {
                                 "desc": "0", 
                                 "levels": {
-                                    "buff turns": 3, 
-                                    "crit% buff": 15, 
-                                    "element buffed": "all", 
-                                    "heal high": 15000, 
-                                    "heal low": 10000, 
-                                    "rec added% (heal)": 110.0
+                                    "effects": [
+                                        {
+                                            "heal high": 15000, 
+                                            "heal low": 10000, 
+                                            "rec added% (heal)": 110.0
+                                        }, 
+                                        {
+                                            "buff turns": 3, 
+                                            "crit% buff": 15, 
+                                            "element buffed": "all"
+                                        }
+                                    ]
                                 }, 
                                 "name": "Cure Cloud"
                             }, 
                             {
                                 "desc": "0", 
                                 "levels": {
-                                    "atk% buff": 50, 
-                                    "buff turns": 3, 
-                                    "element buffed": "all"
+                                    "effects": [
+                                        {
+                                            "atk% buff": 50, 
+                                            "buff turns": 3, 
+                                            "element buffed": "all"
+                                        }
+                                    ]
                                 }, 
                                 "name": "Levin Wisdom"
                             }
@@ -686,16 +774,22 @@
                         "item drop": [], 
                         "karma drop count": 5, 
                         "karma max drop": 3000, 
-                        "passive": {
-                            "paralysis%": 10
-                        }, 
+                        "passive": [
+                            {
+                                "paralysis%": 10
+                            }
+                        ], 
                         "skills": [
                             {
                                 "desc": "0", 
                                 "hit dmg% distribution": [9, 11, 11, 11, 11, 11, 11, 11, 11, 11], 
                                 "hits": 10, 
                                 "levels": {
-                                    "bb atk%": 30
+                                    "effects": [
+                                        {
+                                            "bb atk%": 30
+                                        }
+                                    ]
                                 }, 
                                 "name": "Ethereal Blaster"
                             }, 
@@ -704,7 +798,11 @@
                                 "hit dmg% distribution": [14, 10, 9, 10, 9, 10, 9, 10, 9, 10], 
                                 "hits": 10, 
                                 "levels": {
-                                    "bb atk%": 30
+                                    "effects": [
+                                        {
+                                            "bb atk%": 30
+                                        }
+                                    ]
                                 }, 
                                 "name": "Ethereal Blaster EX"
                             }
@@ -743,17 +841,23 @@
                         "item drop": [], 
                         "karma drop count": 5, 
                         "karma max drop": 4500, 
-                        "passive": {
-                            "unknown passive id": "37", 
-                            "unknown passive params": "1,1,0,0,0,0,0,100"
-                        }, 
+                        "passive": [
+                            {
+                                "unknown passive id": "37", 
+                                "unknown passive params": "1,1,0,0,0,0,0,100"
+                            }
+                        ], 
                         "skills": [
                             {
                                 "desc": "0", 
                                 "levels": {
-                                    "bb atk%": 450, 
-                                    "hits": 22, 
-                                    "random attack": true
+                                    "effects": [
+                                        {
+                                            "bb atk%": 450, 
+                                            "hits": 22, 
+                                            "random attack": true
+                                        }
+                                    ]
                                 }, 
                                 "name": "Death Bringer"
                             }, 
@@ -762,10 +866,16 @@
                                 "hit dmg% distribution": [13, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3], 
                                 "hits": 30, 
                                 "levels": {
-                                    "bb atk%": 45, 
-                                    "bb flat atk": 100, 
-                                    "buff turns": 3, 
-                                    "spark dmg% buff": 150
+                                    "effects": [
+                                        {
+                                            "bb atk%": 45, 
+                                            "bb flat atk": 100
+                                        }, 
+                                        {
+                                            "buff turns": 3, 
+                                            "spark dmg% buff": 150
+                                        }
+                                    ]
                                 }, 
                                 "name": "Spark Cannon"
                             }, 
@@ -773,25 +883,39 @@
                                 "desc": "0", 
                                 "hit dmg% distribution": [10, 10, 5, 5, 10, 10, 5, 5, 5, 5, 10, 10, 5, 5, 5, 5, 10, 10, 5, 5, 5, 5, 10, 10, 5, 5, 10, 10], 
                                 "hits": 28, 
-                                "levels": {}, 
+                                "levels": {
+                                    "effects": [
+                                        {}
+                                    ]
+                                }, 
                                 "name": "On the battlefield, the slightest distraction can be fatal."
                             }, 
                             {
                                 "desc": "0", 
                                 "levels": {
-                                    "bb atk%": 1500, 
-                                    "buff turns": 1, 
-                                    "element buffed": "all", 
-                                    "hits": 60, 
-                                    "random attack": true
+                                    "effects": [
+                                        {
+                                            "bb atk%": 1500, 
+                                            "hits": 60, 
+                                            "random attack": true
+                                        }, 
+                                        {
+                                            "buff turns": 1, 
+                                            "element buffed": "all"
+                                        }
+                                    ]
                                 }, 
                                 "name": "I'm gonna give it all I've got! Prepare yourself!"
                             }, 
                             {
                                 "desc": "0", 
                                 "levels": {
-                                    "buff turns": 1, 
-                                    "element buffed": "all"
+                                    "effects": [
+                                        {
+                                            "buff turns": 1, 
+                                            "element buffed": "all"
+                                        }
+                                    ]
                                 }, 
                                 "name": "I've failed in defeating you..."
                             }
@@ -826,17 +950,23 @@
                         "item drop": [], 
                         "karma drop count": 5, 
                         "karma max drop": 3500, 
-                        "passive": {
-                            "poison%": 30
-                        }, 
+                        "passive": [
+                            {
+                                "poison%": 30
+                            }
+                        ], 
                         "skills": [
                             {
                                 "desc": "0", 
                                 "hit dmg% distribution": [15, 15, 15, 15, 10, 10, 10, 10], 
                                 "hits": 8, 
                                 "levels": {
-                                    "bb atk%": 30, 
-                                    "bb flat atk": 50
+                                    "effects": [
+                                        {
+                                            "bb atk%": 30, 
+                                            "bb flat atk": 50
+                                        }
+                                    ]
                                 }, 
                                 "name": "Riptide"
                             }, 
@@ -845,10 +975,16 @@
                                 "hit dmg% distribution": [10, 10, 10, 10, 10, 10, 10, 10, 10, 10], 
                                 "hits": 10, 
                                 "levels": {
-                                    "bb atk%": 45, 
-                                    "bb flat atk": 100, 
-                                    "bc drop rate% buff": 30, 
-                                    "zel drop rate% buff": 3
+                                    "effects": [
+                                        {
+                                            "bb atk%": 45, 
+                                            "bb flat atk": 100
+                                        }, 
+                                        {
+                                            "bc drop rate% buff": 30, 
+                                            "drop rate buff turns": 3
+                                        }
+                                    ]
                                 }, 
                                 "name": "Flood Noir"
                             }
