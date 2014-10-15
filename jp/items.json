@@ -445,6 +445,19 @@
         "sell_price": 10000, 
         "type": "sphere"
     }, 
+    "イフリキア真球": {
+        "desc": "ＢＣ獲得時、ＢＢゲージ上昇量が大幅に増加する", 
+        "effect": [
+            {
+                "bb gauge fill rate%": 60
+            }
+        ], 
+        "id": 42100, 
+        "max_stack": 1, 
+        "rarity": 3, 
+        "sell_price": 15000, 
+        "type": "sphere"
+    }, 
     "クリティカルダメージUP": {
         "desc": "クリティカルダメージ10倍", 
         "effect": [
@@ -1020,6 +1033,22 @@
         "sell_price": 1500, 
         "type": "sphere"
     }, 
+    "召喚師の小さな鍵": {
+        "desc": "BB発動に必要なBBゲージをかなり軽減し、毎ターンBBゲージが少し増加", 
+        "effect": [
+            {
+                "reduced bb bc cost%": 20
+            }, 
+            {
+                "bc fill per turn": 2
+            }
+        ], 
+        "id": 42600, 
+        "max_stack": 1, 
+        "rarity": 3, 
+        "sell_price": 15000, 
+        "type": "sphere"
+    }, 
     "召喚師の帽子": {
         "desc": "ＢＢの発動に必要なＢＢゲージをすこし軽減する", 
         "effect": [
@@ -1372,6 +1401,20 @@
         "sell_price": 8000, 
         "type": "sphere"
     }, 
+    "天装アポロニア・グラン": {
+        "desc": "ダメージを受けた時、確率でダメージを４０％軽減する", 
+        "effect": [
+            {
+                "dmg reduction chance%": 30, 
+                "dmg reduction%": 40
+            }
+        ], 
+        "id": 42200, 
+        "max_stack": 1, 
+        "rarity": 3, 
+        "sell_price": 15000, 
+        "type": "sphere"
+    }, 
     "太陽と月の盾マリス": {
         "desc": "防御力を２０％アップ", 
         "effect": [
@@ -1641,6 +1684,21 @@
         "rarity": 3, 
         "sell_price": 30, 
         "type": "material"
+    }, 
+    "布都御魂剣": {
+        "desc": "戦闘開始から４ターンの間、攻撃・防御を１００％アップ", 
+        "effect": [
+            {
+                "first x turns": 4, 
+                "first x turns atk%": 100, 
+                "first x turns def%": 100
+            }
+        ], 
+        "id": 42800, 
+        "max_stack": 1, 
+        "rarity": 3, 
+        "sell_price": 15000, 
+        "type": "sphere"
     }, 
     "希望の光": {
         "desc": "味方全体のＨＰを回復する", 
@@ -2150,6 +2208,20 @@
         "max_stack": 1, 
         "rarity": 3, 
         "sell_price": 10000, 
+        "type": "sphere"
+    }, 
+    "晶盾グリンセル": {
+        "desc": "HPが満タン時、防御力を超絶アップ", 
+        "effect": [
+            {
+                "def% buff": 200, 
+                "hp above % buff requirement": 100
+            }
+        ], 
+        "id": 43000, 
+        "max_stack": 1, 
+        "rarity": 3, 
+        "sell_price": 15000, 
         "type": "sphere"
     }, 
     "暴爆の骨": {
@@ -2742,6 +2814,29 @@
         "max_stack": 1, 
         "rarity": 3, 
         "sell_price": 3000, 
+        "type": "sphere"
+    }, 
+    "煉輝晶リグネス・ノヴァ": {
+        "desc": "すべての状態異常を無効化し、さらにターン毎にＨＰが回復", 
+        "effect": [
+            {
+                "curse resist%": 100, 
+                "injury resist%": 100, 
+                "paralysis resist%": 100, 
+                "poison resist%": 100, 
+                "sick resist%": 100, 
+                "weaken resist%": 100
+            }, 
+            {
+                "rec% added (turn heal)": 10.0, 
+                "turn heal high": 800, 
+                "turn heal low": 500
+            }
+        ], 
+        "id": 42000, 
+        "max_stack": 1, 
+        "rarity": 3, 
+        "sell_price": 15000, 
         "type": "sphere"
     }, 
     "煉鎧ルナ・ラビュア": {
@@ -3349,6 +3444,26 @@
         "sell_price": 20, 
         "type": "material"
     }, 
+    "神器イース=カノッサ": {
+        "desc": "ＨＰが多いほど攻撃力がアップし、ＨＰが少ないほど防御力がアップする", 
+        "effect": [
+            {
+                "atk% base buff": 0, 
+                "atk% extra buff based on hp": 150, 
+                "buff proportional to hp": "remaining"
+            }, 
+            {
+                "buff proportional to hp": "lost", 
+                "def% base buff": 0, 
+                "def% extra buff based on hp": 200
+            }
+        ], 
+        "id": 43100, 
+        "max_stack": 1, 
+        "rarity": 3, 
+        "sell_price": 15000, 
+        "type": "sphere"
+    }, 
     "神器カタラ=マリヌス": {
         "desc": "ＢＢゲージが満タン時、攻撃力・防御力・回復力を大幅アップ", 
         "effect": [
@@ -3448,6 +3563,19 @@
         "max_stack": 1, 
         "rarity": 3, 
         "sell_price": 20000, 
+        "type": "sphere"
+    }, 
+    "神星の花": {
+        "desc": "スパーク時、ダメージを１２０％増加する", 
+        "effect": [
+            {
+                "damage% for spark": 120
+            }
+        ], 
+        "id": 42900, 
+        "max_stack": 1, 
+        "rarity": 3, 
+        "sell_price": 15000, 
         "type": "sphere"
     }, 
     "神杖アポカリプス": {
@@ -3677,6 +3805,22 @@
         "sell_price": 30000, 
         "type": "sphere"
     }, 
+    "秘宝『ケレス・グレイン』": {
+        "desc": "攻撃力・防御力・回復力・最大ＨＰを３５％アップ", 
+        "effect": [
+            {
+                "atk% buff": 35, 
+                "def% buff": 35, 
+                "hp% buff": 35, 
+                "rec% buff": 35
+            }
+        ], 
+        "id": 42300, 
+        "max_stack": 1, 
+        "rarity": 3, 
+        "sell_price": 15000, 
+        "type": "sphere"
+    }, 
     "秘宝『コルデリカ』": {
         "desc": "攻撃力・防御力を１０％アップ", 
         "effect": [
@@ -3811,8 +3955,23 @@
         "sell_price": 5000, 
         "type": "sphere"
     }, 
+    "竜核剣リベリウス": {
+        "desc": "攻撃時、ＢＢゲージが大幅に増加する", 
+        "effect": [
+            {
+                "bc fill when attacking high": 7, 
+                "bc fill when attacking low": 7, 
+                "bc fill when attacking%": 100
+            }
+        ], 
+        "id": 42500, 
+        "max_stack": 1, 
+        "rarity": 3, 
+        "sell_price": 15000, 
+        "type": "sphere"
+    }, 
     "竜覇剣ザビュー・ゼスタ": {
-        "desc": "HPが満タン時、攻撃力・防御力・回復力をかなりアップ", 
+        "desc": "ＨＰが満タン時、攻撃力・防御力・回復力をかなりアップ", 
         "effect": [
             {
                 "atk% buff": 50, 
@@ -3849,7 +4008,7 @@
         "type": "material"
     }, 
     "精霊の首飾り": {
-        "desc": "ＨＰが半分以下に減少時、ＢＣ・ＨＣのドロップ確率を大幅アップ", 
+        "desc": "ＨＰが半分以下に減少時、ＢＣ・ＨＣのドロップ率を大幅アップ", 
         "effect": [
             {
                 "unknown passive id": "12", 
@@ -4707,6 +4866,20 @@
         "sell_price": 40, 
         "type": "material"
     }, 
+    "賢宝テラジェネレーター": {
+        "desc": "攻撃時、ＢＣ・ＨＣのドロップ率を大幅にアップ", 
+        "effect": [
+            {
+                "bc drop rate% buff": 20, 
+                "hc drop rate% buff": 20
+            }
+        ], 
+        "id": 42400, 
+        "max_stack": 1, 
+        "rarity": 3, 
+        "sell_price": 15000, 
+        "type": "sphere"
+    }, 
     "賢宝バトルブースター": {
         "desc": "攻撃時、ＢＣ・ＨＣのドロップ率をアップ", 
         "effect": [
@@ -5112,6 +5285,21 @@
         "sell_price": 3000, 
         "type": "sphere"
     }, 
+    "闘冠デルグランセ": {
+        "desc": "ダメージを受けた時、ＢＢゲージが増加する", 
+        "effect": [
+            {
+                "bc fill when attacked high": 4, 
+                "bc fill when attacked low": 3, 
+                "bc fill when attacked%": 100
+            }
+        ], 
+        "id": 42700, 
+        "max_stack": 1, 
+        "rarity": 3, 
+        "sell_price": 15000, 
+        "type": "sphere"
+    }, 
     "闘神の笛": {
         "desc": "３ターンの間、ＢＣのドロップ率アップ", 
         "effect": {
@@ -5483,6 +5671,38 @@
         "sell_price": 10000, 
         "type": "sphere"
     }, 
+    "魔晶核サレルノ": {
+        "desc": "ターン毎、攻撃時、被ダメージ時、敵撃破時、戦闘勝利時にBBゲージが増加", 
+        "effect": [
+            {
+                "bc fill per turn": 2
+            }, 
+            {
+                "bc fill when attacking high": 4, 
+                "bc fill when attacking low": 3, 
+                "bc fill when attacking%": 100
+            }, 
+            {
+                "bc fill when attacked high": 3, 
+                "bc fill when attacked low": 2, 
+                "bc fill when attacked%": 100
+            }, 
+            {
+                "bc fill on enemy defeat high": 5, 
+                "bc fill on enemy defeat low": 3, 
+                "bc fill on enemy defeat%": 100
+            }, 
+            {
+                "battle end bc fill high": 7, 
+                "battle end bc fill low": 5
+            }
+        ], 
+        "id": 43200, 
+        "max_stack": 1, 
+        "rarity": 3, 
+        "sell_price": 15000, 
+        "type": "sphere"
+    }, 
     "魔晶石の欠片": {
         "desc": "１ターンごとにＢＢゲージが増加する", 
         "effect": [
@@ -5728,7 +5948,7 @@
         "type": "material"
     }, 
     "黒竜のイヤリング": {
-        "desc": "攻撃時、BBゲージが増加する", 
+        "desc": "攻撃時、ＢＢゲージが増加する", 
         "effect": [
             {
                 "bc fill when attacking high": 2, 
