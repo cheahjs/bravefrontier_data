@@ -6,6 +6,55 @@
                     {
                         "_name": "Salamander", 
                         "act counts": "1~2", 
+                        "ai": {
+                            "actions": [
+                                {
+                                    "action": {
+                                        "parameters": "-1", 
+                                        "type": "turn_end"
+                                    }, 
+                                    "conditions/set parameters": [
+                                        {
+                                            "parameters": "0", 
+                                            "type": "skill_use"
+                                        }
+                                    ], 
+                                    "percent": 80.0, 
+                                    "target conditions": "non", 
+                                    "target type": 2
+                                }, 
+                                {
+                                    "action": {
+                                        "parameters": "-1", 
+                                        "type": "skill"
+                                    }, 
+                                    "conditions/set parameters": [
+                                        {
+                                            "parameters": "random", 
+                                            "type": "set skill"
+                                        }, 
+                                        {
+                                            "parameters": "0", 
+                                            "type": "skill_unuse"
+                                        }
+                                    ], 
+                                    "percent": 40.0, 
+                                    "target conditions": "random", 
+                                    "target type": 2
+                                }, 
+                                {
+                                    "action": {
+                                        "parameters": "-1", 
+                                        "type": "attack"
+                                    }, 
+                                    "conditions/set parameters": [], 
+                                    "percent": 100.0, 
+                                    "target conditions": "random", 
+                                    "target type": 2
+                                }
+                            ], 
+                            "name": "弱全体攻撃用"
+                        }, 
                         "ai id": 31, 
                         "condition resists": {
                             "curse%": 0, 
@@ -83,6 +132,55 @@
                     {
                         "_name": "Salamander", 
                         "act counts": "1~2", 
+                        "ai": {
+                            "actions": [
+                                {
+                                    "action": {
+                                        "parameters": "-1", 
+                                        "type": "turn_end"
+                                    }, 
+                                    "conditions/set parameters": [
+                                        {
+                                            "parameters": "0", 
+                                            "type": "skill_use"
+                                        }
+                                    ], 
+                                    "percent": 80.0, 
+                                    "target conditions": "non", 
+                                    "target type": 2
+                                }, 
+                                {
+                                    "action": {
+                                        "parameters": "-1", 
+                                        "type": "skill"
+                                    }, 
+                                    "conditions/set parameters": [
+                                        {
+                                            "parameters": "random", 
+                                            "type": "set skill"
+                                        }, 
+                                        {
+                                            "parameters": "0", 
+                                            "type": "skill_unuse"
+                                        }
+                                    ], 
+                                    "percent": 40.0, 
+                                    "target conditions": "random", 
+                                    "target type": 2
+                                }, 
+                                {
+                                    "action": {
+                                        "parameters": "-1", 
+                                        "type": "attack"
+                                    }, 
+                                    "conditions/set parameters": [], 
+                                    "percent": 100.0, 
+                                    "target conditions": "random", 
+                                    "target type": 2
+                                }
+                            ], 
+                            "name": "弱全体攻撃用"
+                        }, 
                         "ai id": 31, 
                         "condition resists": {
                             "curse%": 0, 
@@ -160,6 +258,41 @@
                     {
                         "_name": "Hobgoblin", 
                         "act counts": "2~2", 
+                        "ai": {
+                            "actions": [
+                                {
+                                    "action": {
+                                        "parameters": "-1", 
+                                        "type": "attack"
+                                    }, 
+                                    "conditions/set parameters": [], 
+                                    "percent": 30.0, 
+                                    "target conditions": "weakness", 
+                                    "target type": 2
+                                }, 
+                                {
+                                    "action": {
+                                        "parameters": "-1", 
+                                        "type": "attack"
+                                    }, 
+                                    "conditions/set parameters": [], 
+                                    "percent": 30.0, 
+                                    "target conditions": "hp_max", 
+                                    "target type": 2
+                                }, 
+                                {
+                                    "action": {
+                                        "parameters": "-1", 
+                                        "type": "attack"
+                                    }, 
+                                    "conditions/set parameters": [], 
+                                    "percent": 100.0, 
+                                    "target conditions": "random", 
+                                    "target type": 2
+                                }
+                            ], 
+                            "name": "上級ザコ"
+                        }, 
                         "ai id": 20, 
                         "condition resists": {
                             "curse%": 0, 
@@ -232,6 +365,46 @@
                     {
                         "_name": "Head Thief Leon", 
                         "act counts": "2~2", 
+                        "ai": {
+                            "actions": [
+                                {
+                                    "action": {
+                                        "parameters": "-1", 
+                                        "type": "skill"
+                                    }, 
+                                    "conditions/set parameters": [
+                                        {
+                                            "parameters": "random", 
+                                            "type": "set skill"
+                                        }
+                                    ], 
+                                    "percent": 40.0, 
+                                    "target conditions": "random", 
+                                    "target type": 2
+                                }, 
+                                {
+                                    "action": {
+                                        "parameters": "-1", 
+                                        "type": "attack"
+                                    }, 
+                                    "conditions/set parameters": [], 
+                                    "percent": 30.0, 
+                                    "target conditions": "hp_max", 
+                                    "target type": 2
+                                }, 
+                                {
+                                    "action": {
+                                        "parameters": "-1", 
+                                        "type": "attack"
+                                    }, 
+                                    "conditions/set parameters": [], 
+                                    "percent": 100.0, 
+                                    "target conditions": "random", 
+                                    "target type": 2
+                                }
+                            ], 
+                            "name": "弱全体攻撃用_制限なし"
+                        }, 
                         "ai id": 32, 
                         "condition resists": {
                             "curse%": 0, 
@@ -318,6 +491,41 @@
                     {
                         "_name": "Orc", 
                         "act counts": "1~2", 
+                        "ai": {
+                            "actions": [
+                                {
+                                    "action": {
+                                        "parameters": "-1", 
+                                        "type": "attack"
+                                    }, 
+                                    "conditions/set parameters": [], 
+                                    "percent": 30.0, 
+                                    "target conditions": "weakness", 
+                                    "target type": 2
+                                }, 
+                                {
+                                    "action": {
+                                        "parameters": "-1", 
+                                        "type": "attack"
+                                    }, 
+                                    "conditions/set parameters": [], 
+                                    "percent": 30.0, 
+                                    "target conditions": "hp_max", 
+                                    "target type": 2
+                                }, 
+                                {
+                                    "action": {
+                                        "parameters": "-1", 
+                                        "type": "attack"
+                                    }, 
+                                    "conditions/set parameters": [], 
+                                    "percent": 100.0, 
+                                    "target conditions": "random", 
+                                    "target type": 2
+                                }
+                            ], 
+                            "name": "上級ザコ"
+                        }, 
                         "ai id": 20, 
                         "condition resists": {
                             "curse%": 0, 
@@ -386,6 +594,41 @@
                     {
                         "_name": "Hermit Talos", 
                         "act counts": "1~2", 
+                        "ai": {
+                            "actions": [
+                                {
+                                    "action": {
+                                        "parameters": "-1", 
+                                        "type": "attack"
+                                    }, 
+                                    "conditions/set parameters": [], 
+                                    "percent": 30.0, 
+                                    "target conditions": "weakness", 
+                                    "target type": 2
+                                }, 
+                                {
+                                    "action": {
+                                        "parameters": "-1", 
+                                        "type": "attack"
+                                    }, 
+                                    "conditions/set parameters": [], 
+                                    "percent": 30.0, 
+                                    "target conditions": "hp_max", 
+                                    "target type": 2
+                                }, 
+                                {
+                                    "action": {
+                                        "parameters": "-1", 
+                                        "type": "attack"
+                                    }, 
+                                    "conditions/set parameters": [], 
+                                    "percent": 100.0, 
+                                    "target conditions": "random", 
+                                    "target type": 2
+                                }
+                            ], 
+                            "name": "上級ザコ"
+                        }, 
                         "ai id": 20, 
                         "condition resists": {
                             "curse%": 0, 
@@ -453,6 +696,46 @@
                     {
                         "_name": "Head Thief Leon", 
                         "act counts": "2~2", 
+                        "ai": {
+                            "actions": [
+                                {
+                                    "action": {
+                                        "parameters": "-1", 
+                                        "type": "skill"
+                                    }, 
+                                    "conditions/set parameters": [
+                                        {
+                                            "parameters": "random", 
+                                            "type": "set skill"
+                                        }
+                                    ], 
+                                    "percent": 40.0, 
+                                    "target conditions": "random", 
+                                    "target type": 2
+                                }, 
+                                {
+                                    "action": {
+                                        "parameters": "-1", 
+                                        "type": "attack"
+                                    }, 
+                                    "conditions/set parameters": [], 
+                                    "percent": 30.0, 
+                                    "target conditions": "hp_max", 
+                                    "target type": 2
+                                }, 
+                                {
+                                    "action": {
+                                        "parameters": "-1", 
+                                        "type": "attack"
+                                    }, 
+                                    "conditions/set parameters": [], 
+                                    "percent": 100.0, 
+                                    "target conditions": "random", 
+                                    "target type": 2
+                                }
+                            ], 
+                            "name": "弱全体攻撃用_制限なし"
+                        }, 
                         "ai id": 32, 
                         "condition resists": {
                             "curse%": 0, 
@@ -539,6 +822,41 @@
                     {
                         "_name": "Orc", 
                         "act counts": "1~2", 
+                        "ai": {
+                            "actions": [
+                                {
+                                    "action": {
+                                        "parameters": "-1", 
+                                        "type": "attack"
+                                    }, 
+                                    "conditions/set parameters": [], 
+                                    "percent": 30.0, 
+                                    "target conditions": "weakness", 
+                                    "target type": 2
+                                }, 
+                                {
+                                    "action": {
+                                        "parameters": "-1", 
+                                        "type": "attack"
+                                    }, 
+                                    "conditions/set parameters": [], 
+                                    "percent": 30.0, 
+                                    "target conditions": "hp_max", 
+                                    "target type": 2
+                                }, 
+                                {
+                                    "action": {
+                                        "parameters": "-1", 
+                                        "type": "attack"
+                                    }, 
+                                    "conditions/set parameters": [], 
+                                    "percent": 100.0, 
+                                    "target conditions": "random", 
+                                    "target type": 2
+                                }
+                            ], 
+                            "name": "上級ザコ"
+                        }, 
                         "ai id": 20, 
                         "condition resists": {
                             "curse%": 0, 
@@ -607,6 +925,41 @@
                     {
                         "_name": "Hobgoblin", 
                         "act counts": "2~2", 
+                        "ai": {
+                            "actions": [
+                                {
+                                    "action": {
+                                        "parameters": "-1", 
+                                        "type": "attack"
+                                    }, 
+                                    "conditions/set parameters": [], 
+                                    "percent": 30.0, 
+                                    "target conditions": "weakness", 
+                                    "target type": 2
+                                }, 
+                                {
+                                    "action": {
+                                        "parameters": "-1", 
+                                        "type": "attack"
+                                    }, 
+                                    "conditions/set parameters": [], 
+                                    "percent": 30.0, 
+                                    "target conditions": "hp_max", 
+                                    "target type": 2
+                                }, 
+                                {
+                                    "action": {
+                                        "parameters": "-1", 
+                                        "type": "attack"
+                                    }, 
+                                    "conditions/set parameters": [], 
+                                    "percent": 100.0, 
+                                    "target conditions": "random", 
+                                    "target type": 2
+                                }
+                            ], 
+                            "name": "上級ザコ"
+                        }, 
                         "ai id": 20, 
                         "condition resists": {
                             "curse%": 0, 
@@ -675,6 +1028,21 @@
                     {
                         "_name": "Redcap", 
                         "act counts": "1~1", 
+                        "ai": {
+                            "actions": [
+                                {
+                                    "action": {
+                                        "parameters": "-1", 
+                                        "type": "attack"
+                                    }, 
+                                    "conditions/set parameters": [], 
+                                    "percent": 100.0, 
+                                    "target conditions": "random", 
+                                    "target type": 2
+                                }
+                            ], 
+                            "name": "攻撃ランダム"
+                        }, 
                         "ai id": 1, 
                         "condition resists": {
                             "curse%": 0, 
@@ -738,6 +1106,21 @@
                     {
                         "_name": "Redcap", 
                         "act counts": "1~1", 
+                        "ai": {
+                            "actions": [
+                                {
+                                    "action": {
+                                        "parameters": "-1", 
+                                        "type": "attack"
+                                    }, 
+                                    "conditions/set parameters": [], 
+                                    "percent": 100.0, 
+                                    "target conditions": "random", 
+                                    "target type": 2
+                                }
+                            ], 
+                            "name": "攻撃ランダム"
+                        }, 
                         "ai id": 1, 
                         "condition resists": {
                             "curse%": 0, 
@@ -805,6 +1188,55 @@
                     {
                         "_name": "Warlock Liza", 
                         "act counts": "2~2", 
+                        "ai": {
+                            "actions": [
+                                {
+                                    "action": {
+                                        "parameters": "-1", 
+                                        "type": "turn_end"
+                                    }, 
+                                    "conditions/set parameters": [
+                                        {
+                                            "parameters": "0", 
+                                            "type": "skill_use"
+                                        }
+                                    ], 
+                                    "percent": 80.0, 
+                                    "target conditions": "non", 
+                                    "target type": 2
+                                }, 
+                                {
+                                    "action": {
+                                        "parameters": "-1", 
+                                        "type": "skill"
+                                    }, 
+                                    "conditions/set parameters": [
+                                        {
+                                            "parameters": "random", 
+                                            "type": "set skill"
+                                        }, 
+                                        {
+                                            "parameters": "0", 
+                                            "type": "skill_unuse"
+                                        }
+                                    ], 
+                                    "percent": 40.0, 
+                                    "target conditions": "random", 
+                                    "target type": 2
+                                }, 
+                                {
+                                    "action": {
+                                        "parameters": "-1", 
+                                        "type": "attack"
+                                    }, 
+                                    "conditions/set parameters": [], 
+                                    "percent": 100.0, 
+                                    "target conditions": "random", 
+                                    "target type": 2
+                                }
+                            ], 
+                            "name": "弱全体攻撃用"
+                        }, 
                         "ai id": 31, 
                         "condition resists": {
                             "curse%": 0, 
@@ -882,6 +1314,55 @@
                     {
                         "_name": "Ifrit", 
                         "act counts": "1~2", 
+                        "ai": {
+                            "actions": [
+                                {
+                                    "action": {
+                                        "parameters": "-1", 
+                                        "type": "turn_end"
+                                    }, 
+                                    "conditions/set parameters": [
+                                        {
+                                            "parameters": "0", 
+                                            "type": "skill_use"
+                                        }
+                                    ], 
+                                    "percent": 80.0, 
+                                    "target conditions": "non", 
+                                    "target type": 2
+                                }, 
+                                {
+                                    "action": {
+                                        "parameters": "-1", 
+                                        "type": "skill"
+                                    }, 
+                                    "conditions/set parameters": [
+                                        {
+                                            "parameters": "random", 
+                                            "type": "set skill"
+                                        }, 
+                                        {
+                                            "parameters": "0", 
+                                            "type": "skill_unuse"
+                                        }
+                                    ], 
+                                    "percent": 40.0, 
+                                    "target conditions": "random", 
+                                    "target type": 2
+                                }, 
+                                {
+                                    "action": {
+                                        "parameters": "-1", 
+                                        "type": "attack"
+                                    }, 
+                                    "conditions/set parameters": [], 
+                                    "percent": 100.0, 
+                                    "target conditions": "random", 
+                                    "target type": 2
+                                }
+                            ], 
+                            "name": "弱全体攻撃用"
+                        }, 
                         "ai id": 31, 
                         "condition resists": {
                             "curse%": 50, 
@@ -959,6 +1440,41 @@
                     {
                         "_name": "Cerberus", 
                         "act counts": "1~2", 
+                        "ai": {
+                            "actions": [
+                                {
+                                    "action": {
+                                        "parameters": "-1", 
+                                        "type": "attack"
+                                    }, 
+                                    "conditions/set parameters": [], 
+                                    "percent": 30.0, 
+                                    "target conditions": "weakness", 
+                                    "target type": 2
+                                }, 
+                                {
+                                    "action": {
+                                        "parameters": "-1", 
+                                        "type": "attack"
+                                    }, 
+                                    "conditions/set parameters": [], 
+                                    "percent": 30.0, 
+                                    "target conditions": "hp_max", 
+                                    "target type": 2
+                                }, 
+                                {
+                                    "action": {
+                                        "parameters": "-1", 
+                                        "type": "attack"
+                                    }, 
+                                    "conditions/set parameters": [], 
+                                    "percent": 100.0, 
+                                    "target conditions": "random", 
+                                    "target type": 2
+                                }
+                            ], 
+                            "name": "上級ザコ"
+                        }, 
                         "ai id": 20, 
                         "condition resists": {
                             "curse%": 0, 
@@ -1032,6 +1548,41 @@
                     {
                         "_name": "Hobgoblin", 
                         "act counts": "2~2", 
+                        "ai": {
+                            "actions": [
+                                {
+                                    "action": {
+                                        "parameters": "-1", 
+                                        "type": "attack"
+                                    }, 
+                                    "conditions/set parameters": [], 
+                                    "percent": 30.0, 
+                                    "target conditions": "weakness", 
+                                    "target type": 2
+                                }, 
+                                {
+                                    "action": {
+                                        "parameters": "-1", 
+                                        "type": "attack"
+                                    }, 
+                                    "conditions/set parameters": [], 
+                                    "percent": 30.0, 
+                                    "target conditions": "hp_max", 
+                                    "target type": 2
+                                }, 
+                                {
+                                    "action": {
+                                        "parameters": "-1", 
+                                        "type": "attack"
+                                    }, 
+                                    "conditions/set parameters": [], 
+                                    "percent": 100.0, 
+                                    "target conditions": "random", 
+                                    "target type": 2
+                                }
+                            ], 
+                            "name": "上級ザコ"
+                        }, 
                         "ai id": 20, 
                         "condition resists": {
                             "curse%": 0, 
@@ -1100,6 +1651,41 @@
                     {
                         "_name": "Hobgoblin", 
                         "act counts": "2~2", 
+                        "ai": {
+                            "actions": [
+                                {
+                                    "action": {
+                                        "parameters": "-1", 
+                                        "type": "attack"
+                                    }, 
+                                    "conditions/set parameters": [], 
+                                    "percent": 30.0, 
+                                    "target conditions": "weakness", 
+                                    "target type": 2
+                                }, 
+                                {
+                                    "action": {
+                                        "parameters": "-1", 
+                                        "type": "attack"
+                                    }, 
+                                    "conditions/set parameters": [], 
+                                    "percent": 30.0, 
+                                    "target conditions": "hp_max", 
+                                    "target type": 2
+                                }, 
+                                {
+                                    "action": {
+                                        "parameters": "-1", 
+                                        "type": "attack"
+                                    }, 
+                                    "conditions/set parameters": [], 
+                                    "percent": 100.0, 
+                                    "target conditions": "random", 
+                                    "target type": 2
+                                }
+                            ], 
+                            "name": "上級ザコ"
+                        }, 
                         "ai id": 20, 
                         "condition resists": {
                             "curse%": 0, 
@@ -1168,6 +1754,41 @@
                     {
                         "_name": "Hobgoblin", 
                         "act counts": "2~2", 
+                        "ai": {
+                            "actions": [
+                                {
+                                    "action": {
+                                        "parameters": "-1", 
+                                        "type": "attack"
+                                    }, 
+                                    "conditions/set parameters": [], 
+                                    "percent": 30.0, 
+                                    "target conditions": "weakness", 
+                                    "target type": 2
+                                }, 
+                                {
+                                    "action": {
+                                        "parameters": "-1", 
+                                        "type": "attack"
+                                    }, 
+                                    "conditions/set parameters": [], 
+                                    "percent": 30.0, 
+                                    "target conditions": "hp_max", 
+                                    "target type": 2
+                                }, 
+                                {
+                                    "action": {
+                                        "parameters": "-1", 
+                                        "type": "attack"
+                                    }, 
+                                    "conditions/set parameters": [], 
+                                    "percent": 100.0, 
+                                    "target conditions": "random", 
+                                    "target type": 2
+                                }
+                            ], 
+                            "name": "上級ザコ"
+                        }, 
                         "ai id": 20, 
                         "condition resists": {
                             "curse%": 0, 
@@ -1240,6 +1861,46 @@
                     {
                         "_name": "Head Thief Leon", 
                         "act counts": "2~2", 
+                        "ai": {
+                            "actions": [
+                                {
+                                    "action": {
+                                        "parameters": "-1", 
+                                        "type": "skill"
+                                    }, 
+                                    "conditions/set parameters": [
+                                        {
+                                            "parameters": "random", 
+                                            "type": "set skill"
+                                        }
+                                    ], 
+                                    "percent": 40.0, 
+                                    "target conditions": "random", 
+                                    "target type": 2
+                                }, 
+                                {
+                                    "action": {
+                                        "parameters": "-1", 
+                                        "type": "attack"
+                                    }, 
+                                    "conditions/set parameters": [], 
+                                    "percent": 30.0, 
+                                    "target conditions": "hp_max", 
+                                    "target type": 2
+                                }, 
+                                {
+                                    "action": {
+                                        "parameters": "-1", 
+                                        "type": "attack"
+                                    }, 
+                                    "conditions/set parameters": [], 
+                                    "percent": 100.0, 
+                                    "target conditions": "random", 
+                                    "target type": 2
+                                }
+                            ], 
+                            "name": "弱全体攻撃用_制限なし"
+                        }, 
                         "ai id": 32, 
                         "condition resists": {
                             "curse%": 0, 
@@ -1326,6 +1987,41 @@
                     {
                         "_name": "Orc", 
                         "act counts": "1~2", 
+                        "ai": {
+                            "actions": [
+                                {
+                                    "action": {
+                                        "parameters": "-1", 
+                                        "type": "attack"
+                                    }, 
+                                    "conditions/set parameters": [], 
+                                    "percent": 30.0, 
+                                    "target conditions": "weakness", 
+                                    "target type": 2
+                                }, 
+                                {
+                                    "action": {
+                                        "parameters": "-1", 
+                                        "type": "attack"
+                                    }, 
+                                    "conditions/set parameters": [], 
+                                    "percent": 30.0, 
+                                    "target conditions": "hp_max", 
+                                    "target type": 2
+                                }, 
+                                {
+                                    "action": {
+                                        "parameters": "-1", 
+                                        "type": "attack"
+                                    }, 
+                                    "conditions/set parameters": [], 
+                                    "percent": 100.0, 
+                                    "target conditions": "random", 
+                                    "target type": 2
+                                }
+                            ], 
+                            "name": "上級ザコ"
+                        }, 
                         "ai id": 20, 
                         "condition resists": {
                             "curse%": 0, 
@@ -1394,6 +2090,41 @@
                     {
                         "_name": "Hobgoblin", 
                         "act counts": "2~2", 
+                        "ai": {
+                            "actions": [
+                                {
+                                    "action": {
+                                        "parameters": "-1", 
+                                        "type": "attack"
+                                    }, 
+                                    "conditions/set parameters": [], 
+                                    "percent": 30.0, 
+                                    "target conditions": "weakness", 
+                                    "target type": 2
+                                }, 
+                                {
+                                    "action": {
+                                        "parameters": "-1", 
+                                        "type": "attack"
+                                    }, 
+                                    "conditions/set parameters": [], 
+                                    "percent": 30.0, 
+                                    "target conditions": "hp_max", 
+                                    "target type": 2
+                                }, 
+                                {
+                                    "action": {
+                                        "parameters": "-1", 
+                                        "type": "attack"
+                                    }, 
+                                    "conditions/set parameters": [], 
+                                    "percent": 100.0, 
+                                    "target conditions": "random", 
+                                    "target type": 2
+                                }
+                            ], 
+                            "name": "上級ザコ"
+                        }, 
                         "ai id": 20, 
                         "condition resists": {
                             "curse%": 0, 
@@ -1462,6 +2193,21 @@
                     {
                         "_name": "Redcap", 
                         "act counts": "1~1", 
+                        "ai": {
+                            "actions": [
+                                {
+                                    "action": {
+                                        "parameters": "-1", 
+                                        "type": "attack"
+                                    }, 
+                                    "conditions/set parameters": [], 
+                                    "percent": 100.0, 
+                                    "target conditions": "random", 
+                                    "target type": 2
+                                }
+                            ], 
+                            "name": "攻撃ランダム"
+                        }, 
                         "ai id": 1, 
                         "condition resists": {
                             "curse%": 0, 
@@ -1525,6 +2271,21 @@
                     {
                         "_name": "Redcap", 
                         "act counts": "1~1", 
+                        "ai": {
+                            "actions": [
+                                {
+                                    "action": {
+                                        "parameters": "-1", 
+                                        "type": "attack"
+                                    }, 
+                                    "conditions/set parameters": [], 
+                                    "percent": 100.0, 
+                                    "target conditions": "random", 
+                                    "target type": 2
+                                }
+                            ], 
+                            "name": "攻撃ランダム"
+                        }, 
                         "ai id": 1, 
                         "condition resists": {
                             "curse%": 0, 
@@ -1592,6 +2353,21 @@
                     {
                         "_name": "Redcap", 
                         "act counts": "1~1", 
+                        "ai": {
+                            "actions": [
+                                {
+                                    "action": {
+                                        "parameters": "-1", 
+                                        "type": "attack"
+                                    }, 
+                                    "conditions/set parameters": [], 
+                                    "percent": 100.0, 
+                                    "target conditions": "random", 
+                                    "target type": 2
+                                }
+                            ], 
+                            "name": "攻撃ランダム"
+                        }, 
                         "ai id": 1, 
                         "condition resists": {
                             "curse%": 0, 
@@ -1655,6 +2431,21 @@
                     {
                         "_name": "Redcap", 
                         "act counts": "1~1", 
+                        "ai": {
+                            "actions": [
+                                {
+                                    "action": {
+                                        "parameters": "-1", 
+                                        "type": "attack"
+                                    }, 
+                                    "conditions/set parameters": [], 
+                                    "percent": 100.0, 
+                                    "target conditions": "random", 
+                                    "target type": 2
+                                }
+                            ], 
+                            "name": "攻撃ランダム"
+                        }, 
                         "ai id": 1, 
                         "condition resists": {
                             "curse%": 0, 
@@ -1718,6 +2509,41 @@
                     {
                         "_name": "Cerberus", 
                         "act counts": "1~2", 
+                        "ai": {
+                            "actions": [
+                                {
+                                    "action": {
+                                        "parameters": "-1", 
+                                        "type": "attack"
+                                    }, 
+                                    "conditions/set parameters": [], 
+                                    "percent": 30.0, 
+                                    "target conditions": "weakness", 
+                                    "target type": 2
+                                }, 
+                                {
+                                    "action": {
+                                        "parameters": "-1", 
+                                        "type": "attack"
+                                    }, 
+                                    "conditions/set parameters": [], 
+                                    "percent": 30.0, 
+                                    "target conditions": "hp_max", 
+                                    "target type": 2
+                                }, 
+                                {
+                                    "action": {
+                                        "parameters": "-1", 
+                                        "type": "attack"
+                                    }, 
+                                    "conditions/set parameters": [], 
+                                    "percent": 100.0, 
+                                    "target conditions": "random", 
+                                    "target type": 2
+                                }
+                            ], 
+                            "name": "上級ザコ"
+                        }, 
                         "ai id": 20, 
                         "condition resists": {
                             "curse%": 0, 
@@ -1791,6 +2617,41 @@
                     {
                         "_name": "Hobgoblin", 
                         "act counts": "2~2", 
+                        "ai": {
+                            "actions": [
+                                {
+                                    "action": {
+                                        "parameters": "-1", 
+                                        "type": "attack"
+                                    }, 
+                                    "conditions/set parameters": [], 
+                                    "percent": 30.0, 
+                                    "target conditions": "weakness", 
+                                    "target type": 2
+                                }, 
+                                {
+                                    "action": {
+                                        "parameters": "-1", 
+                                        "type": "attack"
+                                    }, 
+                                    "conditions/set parameters": [], 
+                                    "percent": 30.0, 
+                                    "target conditions": "hp_max", 
+                                    "target type": 2
+                                }, 
+                                {
+                                    "action": {
+                                        "parameters": "-1", 
+                                        "type": "attack"
+                                    }, 
+                                    "conditions/set parameters": [], 
+                                    "percent": 100.0, 
+                                    "target conditions": "random", 
+                                    "target type": 2
+                                }
+                            ], 
+                            "name": "上級ザコ"
+                        }, 
                         "ai id": 20, 
                         "condition resists": {
                             "curse%": 0, 
@@ -1859,6 +2720,21 @@
                     {
                         "_name": "Redcap", 
                         "act counts": "1~1", 
+                        "ai": {
+                            "actions": [
+                                {
+                                    "action": {
+                                        "parameters": "-1", 
+                                        "type": "attack"
+                                    }, 
+                                    "conditions/set parameters": [], 
+                                    "percent": 100.0, 
+                                    "target conditions": "random", 
+                                    "target type": 2
+                                }
+                            ], 
+                            "name": "攻撃ランダム"
+                        }, 
                         "ai id": 1, 
                         "condition resists": {
                             "curse%": 0, 
@@ -1922,6 +2798,21 @@
                     {
                         "_name": "Redcap", 
                         "act counts": "1~1", 
+                        "ai": {
+                            "actions": [
+                                {
+                                    "action": {
+                                        "parameters": "-1", 
+                                        "type": "attack"
+                                    }, 
+                                    "conditions/set parameters": [], 
+                                    "percent": 100.0, 
+                                    "target conditions": "random", 
+                                    "target type": 2
+                                }
+                            ], 
+                            "name": "攻撃ランダム"
+                        }, 
                         "ai id": 1, 
                         "condition resists": {
                             "curse%": 0, 
@@ -1985,6 +2876,21 @@
                     {
                         "_name": "Redcap", 
                         "act counts": "1~1", 
+                        "ai": {
+                            "actions": [
+                                {
+                                    "action": {
+                                        "parameters": "-1", 
+                                        "type": "attack"
+                                    }, 
+                                    "conditions/set parameters": [], 
+                                    "percent": 100.0, 
+                                    "target conditions": "random", 
+                                    "target type": 2
+                                }
+                            ], 
+                            "name": "攻撃ランダム"
+                        }, 
                         "ai id": 1, 
                         "condition resists": {
                             "curse%": 0, 
@@ -2052,6 +2958,36 @@
                     {
                         "_name": "Magma Knight Agni", 
                         "act counts": "4~4", 
+                        "ai": {
+                            "actions": [
+                                {
+                                    "action": {
+                                        "parameters": "-1", 
+                                        "type": "skill"
+                                    }, 
+                                    "conditions/set parameters": [
+                                        {
+                                            "parameters": "random", 
+                                            "type": "set skill"
+                                        }
+                                    ], 
+                                    "percent": 30.0, 
+                                    "target conditions": "random", 
+                                    "target type": 2
+                                }, 
+                                {
+                                    "action": {
+                                        "parameters": "-1", 
+                                        "type": "attack"
+                                    }, 
+                                    "conditions/set parameters": [], 
+                                    "percent": 100.0, 
+                                    "target conditions": "random", 
+                                    "target type": 2
+                                }
+                            ], 
+                            "name": "低確率スキル用3_確定行動"
+                        }, 
                         "ai id": 52, 
                         "condition resists": {
                             "curse%": 100, 
@@ -2121,6 +3057,41 @@
                     {
                         "_name": "Winged Mimic", 
                         "act counts": "3~3", 
+                        "ai": {
+                            "actions": [
+                                {
+                                    "action": {
+                                        "parameters": "-1", 
+                                        "type": "attack"
+                                    }, 
+                                    "conditions/set parameters": [], 
+                                    "percent": 30.0, 
+                                    "target conditions": "weakness", 
+                                    "target type": 2
+                                }, 
+                                {
+                                    "action": {
+                                        "parameters": "-1", 
+                                        "type": "attack"
+                                    }, 
+                                    "conditions/set parameters": [], 
+                                    "percent": 30.0, 
+                                    "target conditions": "hp_max", 
+                                    "target type": 2
+                                }, 
+                                {
+                                    "action": {
+                                        "parameters": "-1", 
+                                        "type": "attack"
+                                    }, 
+                                    "conditions/set parameters": [], 
+                                    "percent": 100.0, 
+                                    "target conditions": "random", 
+                                    "target type": 2
+                                }
+                            ], 
+                            "name": "上級ザコ"
+                        }, 
                         "ai id": 20, 
                         "condition resists": {
                             "curse%": 100, 
@@ -2162,6 +3133,41 @@
                     {
                         "_name": "Dragon Mimic", 
                         "act counts": "3~3", 
+                        "ai": {
+                            "actions": [
+                                {
+                                    "action": {
+                                        "parameters": "-1", 
+                                        "type": "attack"
+                                    }, 
+                                    "conditions/set parameters": [], 
+                                    "percent": 30.0, 
+                                    "target conditions": "weakness", 
+                                    "target type": 2
+                                }, 
+                                {
+                                    "action": {
+                                        "parameters": "-1", 
+                                        "type": "attack"
+                                    }, 
+                                    "conditions/set parameters": [], 
+                                    "percent": 30.0, 
+                                    "target conditions": "hp_max", 
+                                    "target type": 2
+                                }, 
+                                {
+                                    "action": {
+                                        "parameters": "-1", 
+                                        "type": "attack"
+                                    }, 
+                                    "conditions/set parameters": [], 
+                                    "percent": 100.0, 
+                                    "target conditions": "random", 
+                                    "target type": 2
+                                }
+                            ], 
+                            "name": "上級ザコ"
+                        }, 
                         "ai id": 20, 
                         "condition resists": {
                             "curse%": 100, 
@@ -2209,6 +3215,41 @@
                 {
                     "_name": "Winged Mimic", 
                     "act counts": "3~3", 
+                    "ai": {
+                        "actions": [
+                            {
+                                "action": {
+                                    "parameters": "-1", 
+                                    "type": "attack"
+                                }, 
+                                "conditions/set parameters": [], 
+                                "percent": 30.0, 
+                                "target conditions": "weakness", 
+                                "target type": 2
+                            }, 
+                            {
+                                "action": {
+                                    "parameters": "-1", 
+                                    "type": "attack"
+                                }, 
+                                "conditions/set parameters": [], 
+                                "percent": 30.0, 
+                                "target conditions": "hp_max", 
+                                "target type": 2
+                            }, 
+                            {
+                                "action": {
+                                    "parameters": "-1", 
+                                    "type": "attack"
+                                }, 
+                                "conditions/set parameters": [], 
+                                "percent": 100.0, 
+                                "target conditions": "random", 
+                                "target type": 2
+                            }
+                        ], 
+                        "name": "上級ザコ"
+                    }, 
                     "ai id": 20, 
                     "condition resists": {
                         "curse%": 100, 
@@ -2252,6 +3293,41 @@
                 {
                     "_name": "Dragon Mimic", 
                     "act counts": "3~3", 
+                    "ai": {
+                        "actions": [
+                            {
+                                "action": {
+                                    "parameters": "-1", 
+                                    "type": "attack"
+                                }, 
+                                "conditions/set parameters": [], 
+                                "percent": 30.0, 
+                                "target conditions": "weakness", 
+                                "target type": 2
+                            }, 
+                            {
+                                "action": {
+                                    "parameters": "-1", 
+                                    "type": "attack"
+                                }, 
+                                "conditions/set parameters": [], 
+                                "percent": 30.0, 
+                                "target conditions": "hp_max", 
+                                "target type": 2
+                            }, 
+                            {
+                                "action": {
+                                    "parameters": "-1", 
+                                    "type": "attack"
+                                }, 
+                                "conditions/set parameters": [], 
+                                "percent": 100.0, 
+                                "target conditions": "random", 
+                                "target type": 2
+                            }
+                        ], 
+                        "name": "上級ザコ"
+                    }, 
                     "ai id": 20, 
                     "condition resists": {
                         "curse%": 100, 
