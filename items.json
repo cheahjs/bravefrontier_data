@@ -55,14 +55,13 @@
         "type": "material"
     }, 
     "Aegis Cloak": {
-        "desc": "Boosts DEF by 330% for the first 2 turns. BB gauge fills faster when obtaining BC.", 
+        "desc": "Boosts DEF by 100% for the first 2 turns. BB guage fills faster when obtaining BC.", 
         "effect": [
             {
                 "bb gauge fill rate%": 25
             }, 
             {
-                "first x turns": 2, 
-                "first x turns def%": 330
+                "def% buff": 330
             }
         ], 
         "id": 818882, 
@@ -1764,9 +1763,9 @@
         "desc": "Adds chance of BB gauge filling when attacking", 
         "effect": [
             {
-                "bc fill when attacking high": 0, 
-                "bc fill when attacking low": 0, 
-                "bc fill when attacking%": 0
+                "bc fill when attacking high": 2, 
+                "bc fill when attacking low": 1, 
+                "bc fill when attacking%": 50
             }
         ], 
         "id": 34806, 
@@ -1819,7 +1818,7 @@
         "type": "sphere"
     }, 
     "Dragon Sword": {
-        "desc": "Greatly Increases Atk and Critical Hit Rate when Near Death", 
+        "desc": "Greatly boosts Atk, Def & Rec when HP is full", 
         "effect": [
             {
                 "atk% buff": 150, 
@@ -2851,14 +2850,13 @@
         "type": "sphere"
     }, 
     "Guardian Cloak": {
-        "desc": "Boosts DEF by 360% when unit HP drops below 25%. Slight increase of BC drop when attacking.", 
+        "desc": "Boosts DEF by 200% when unit HP drops below 25%. Slight increase of BC drop when attacking.", 
         "effect": [
             {
                 "bc drop rate% buff": 5
             }, 
             {
-                "def% buff": 360, 
-                "hp below % buff requirement": 35
+                "def% buff": 360
             }
         ], 
         "id": 818881, 
@@ -4284,6 +4282,26 @@
         "sell_price": 50, 
         "type": "material"
     }, 
+    "Providence Ring": {
+        "desc": "Boost ATK by 25%, DEF, REC & HP by 20%. High chance of reflecting partial enemy damage.", 
+        "effect": [
+            {
+                "atk% buff": 25, 
+                "def% buff": 20, 
+                "hp% buff": 20, 
+                "rec% buff": 20
+            }, 
+            {
+                "dmg% reflect high": 25, 
+                "dmg% reflect low": 20
+            }
+        ], 
+        "id": 818884, 
+        "max_stack": 1, 
+        "rarity": 3, 
+        "sell_price": 25000, 
+        "type": "sphere"
+    }, 
     "Pure Elixir": {
         "desc": "Heals all abnormalities of one ally", 
         "effect": {
@@ -4715,22 +4733,6 @@
         "rarity": 3, 
         "sell_price": 50, 
         "type": "material"
-    }, 
-    "Shadow Cloak": {
-        "desc": "Unit is stealthed for the first two turns of battle. BB gauge fills much faster when obtaining BC", 
-        "effect": [
-            {
-                "bb gauge fill rate%": 50
-            }, 
-            {
-                "stealth turns": 2
-            }
-        ], 
-        "id": 818880, 
-        "max_stack": 1, 
-        "rarity": 3, 
-        "sell_price": 20000, 
-        "type": "sphere"
     }, 
     "Shiny Anklet": {
         "desc": "Increases amount of hits, and greatly boosts Atk", 
