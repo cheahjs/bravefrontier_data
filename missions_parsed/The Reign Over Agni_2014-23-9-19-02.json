@@ -6,6 +6,41 @@
                     {
                         "_name": "Thief Henchman", 
                         "act counts": "2~3", 
+                        "ai": {
+                            "actions": [
+                                {
+                                    "action": {
+                                        "parameters": "-1", 
+                                        "type": "attack"
+                                    }, 
+                                    "conditions/set parameters": [], 
+                                    "percent": 30.0, 
+                                    "target conditions": "weakness", 
+                                    "target type": 2
+                                }, 
+                                {
+                                    "action": {
+                                        "parameters": "-1", 
+                                        "type": "attack"
+                                    }, 
+                                    "conditions/set parameters": [], 
+                                    "percent": 30.0, 
+                                    "target conditions": "hp_max", 
+                                    "target type": 2
+                                }, 
+                                {
+                                    "action": {
+                                        "parameters": "-1", 
+                                        "type": "attack"
+                                    }, 
+                                    "conditions/set parameters": [], 
+                                    "percent": 100.0, 
+                                    "target conditions": "random", 
+                                    "target type": 2
+                                }
+                            ], 
+                            "name": "上級ザコ"
+                        }, 
                         "ai id": 20, 
                         "condition resists": {
                             "curse%": 25, 
@@ -53,6 +88,41 @@
                     {
                         "_name": "Thief Henchman", 
                         "act counts": "2~3", 
+                        "ai": {
+                            "actions": [
+                                {
+                                    "action": {
+                                        "parameters": "-1", 
+                                        "type": "attack"
+                                    }, 
+                                    "conditions/set parameters": [], 
+                                    "percent": 30.0, 
+                                    "target conditions": "weakness", 
+                                    "target type": 2
+                                }, 
+                                {
+                                    "action": {
+                                        "parameters": "-1", 
+                                        "type": "attack"
+                                    }, 
+                                    "conditions/set parameters": [], 
+                                    "percent": 30.0, 
+                                    "target conditions": "hp_max", 
+                                    "target type": 2
+                                }, 
+                                {
+                                    "action": {
+                                        "parameters": "-1", 
+                                        "type": "attack"
+                                    }, 
+                                    "conditions/set parameters": [], 
+                                    "percent": 100.0, 
+                                    "target conditions": "random", 
+                                    "target type": 2
+                                }
+                            ], 
+                            "name": "上級ザコ"
+                        }, 
                         "ai id": 20, 
                         "condition resists": {
                             "curse%": 25, 
@@ -100,6 +170,54 @@
                     {
                         "_name": "Rogue Priestess", 
                         "act counts": "1~1", 
+                        "ai": {
+                            "actions": [
+                                {
+                                    "action": {
+                                        "parameters": "-1", 
+                                        "type": "skill"
+                                    }, 
+                                    "conditions/set parameters": [
+                                        {
+                                            "parameters": "3", 
+                                            "type": "actbetween"
+                                        }, 
+                                        {
+                                            "parameters": "0", 
+                                            "type": "skill_unuse"
+                                        }, 
+                                        {
+                                            "parameters": "random", 
+                                            "type": "set skill"
+                                        }
+                                    ], 
+                                    "percent": 100.0, 
+                                    "target conditions": "random", 
+                                    "target type": 2
+                                }, 
+                                {
+                                    "action": {
+                                        "parameters": "-1", 
+                                        "type": "attack"
+                                    }, 
+                                    "conditions/set parameters": [], 
+                                    "percent": 50.0, 
+                                    "target conditions": "hp_max", 
+                                    "target type": 2
+                                }, 
+                                {
+                                    "action": {
+                                        "parameters": "-1", 
+                                        "type": "attack"
+                                    }, 
+                                    "conditions/set parameters": [], 
+                                    "percent": 100.0, 
+                                    "target conditions": "random", 
+                                    "target type": 2
+                                }
+                            ], 
+                            "name": "AI_Healer"
+                        }, 
                         "ai id": 8110022, 
                         "condition resists": {
                             "curse%": 55, 
@@ -171,6 +289,77 @@
                     {
                         "_name": "Thief Assassin", 
                         "act counts": "2~2", 
+                        "ai": {
+                            "actions": [
+                                {
+                                    "action": {
+                                        "parameters": "-1", 
+                                        "type": "skill"
+                                    }, 
+                                    "conditions/set parameters": [
+                                        {
+                                            "parameters": "3", 
+                                            "type": "act"
+                                        }, 
+                                        {
+                                            "parameters": "1", 
+                                            "type": "limited_act"
+                                        }, 
+                                        {
+                                            "parameters": "random", 
+                                            "type": "set skill"
+                                        }
+                                    ], 
+                                    "percent": 100.0, 
+                                    "target conditions": "random", 
+                                    "target type": 1
+                                }, 
+                                {
+                                    "action": {
+                                        "parameters": "-1", 
+                                        "type": "skill"
+                                    }, 
+                                    "conditions/set parameters": [
+                                        {
+                                            "parameters": "10", 
+                                            "type": "act"
+                                        }, 
+                                        {
+                                            "parameters": "1", 
+                                            "type": "limited_act"
+                                        }, 
+                                        {
+                                            "parameters": "random", 
+                                            "type": "set skill"
+                                        }
+                                    ], 
+                                    "percent": 100.0, 
+                                    "target conditions": "random", 
+                                    "target type": 1
+                                }, 
+                                {
+                                    "action": {
+                                        "parameters": "-1", 
+                                        "type": "attack"
+                                    }, 
+                                    "conditions/set parameters": [], 
+                                    "percent": 50.0, 
+                                    "target conditions": "hp_max", 
+                                    "target type": 2
+                                }, 
+                                {
+                                    "action": {
+                                        "parameters": "-1", 
+                                        "type": "attack"
+                                    }, 
+                                    "conditions/set parameters": [], 
+                                    "percent": 100.0, 
+                                    "target conditions": "random", 
+                                    "target type": 2
+                                }
+                            ], 
+                            "name": "AI_Assassin_Stealth"
+                        }, 
                         "ai id": 8110021, 
                         "condition resists": {
                             "curse%": 25, 
@@ -246,6 +435,77 @@
                     {
                         "_name": "Enslaved Minotaur", 
                         "act counts": "1~1", 
+                        "ai": {
+                            "actions": [
+                                {
+                                    "action": {
+                                        "parameters": "-1", 
+                                        "type": "skill"
+                                    }, 
+                                    "conditions/set parameters": [
+                                        {
+                                            "parameters": "1", 
+                                            "type": "act"
+                                        }, 
+                                        {
+                                            "parameters": "1", 
+                                            "type": "limited_act"
+                                        }, 
+                                        {
+                                            "parameters": "random", 
+                                            "type": "set skill"
+                                        }
+                                    ], 
+                                    "percent": 100.0, 
+                                    "target conditions": "random", 
+                                    "target type": 1
+                                }, 
+                                {
+                                    "action": {
+                                        "parameters": "-1", 
+                                        "type": "skill"
+                                    }, 
+                                    "conditions/set parameters": [
+                                        {
+                                            "parameters": "6", 
+                                            "type": "act"
+                                        }, 
+                                        {
+                                            "parameters": "1", 
+                                            "type": "limited_act"
+                                        }, 
+                                        {
+                                            "parameters": "random", 
+                                            "type": "set skill"
+                                        }
+                                    ], 
+                                    "percent": 100.0, 
+                                    "target conditions": "random", 
+                                    "target type": 1
+                                }, 
+                                {
+                                    "action": {
+                                        "parameters": "-1", 
+                                        "type": "attack"
+                                    }, 
+                                    "conditions/set parameters": [], 
+                                    "percent": 50.0, 
+                                    "target conditions": "hp_max", 
+                                    "target type": 2
+                                }, 
+                                {
+                                    "action": {
+                                        "parameters": "-1", 
+                                        "type": "attack"
+                                    }, 
+                                    "conditions/set parameters": [], 
+                                    "percent": 100.0, 
+                                    "target conditions": "random", 
+                                    "target type": 2
+                                }
+                            ], 
+                            "name": "AI_Mino_Taunt"
+                        }, 
                         "ai id": 8110020, 
                         "condition resists": {
                             "curse%": 100, 
@@ -305,6 +565,41 @@
                     {
                         "_name": "Thief Henchman", 
                         "act counts": "2~3", 
+                        "ai": {
+                            "actions": [
+                                {
+                                    "action": {
+                                        "parameters": "-1", 
+                                        "type": "attack"
+                                    }, 
+                                    "conditions/set parameters": [], 
+                                    "percent": 30.0, 
+                                    "target conditions": "weakness", 
+                                    "target type": 2
+                                }, 
+                                {
+                                    "action": {
+                                        "parameters": "-1", 
+                                        "type": "attack"
+                                    }, 
+                                    "conditions/set parameters": [], 
+                                    "percent": 30.0, 
+                                    "target conditions": "hp_max", 
+                                    "target type": 2
+                                }, 
+                                {
+                                    "action": {
+                                        "parameters": "-1", 
+                                        "type": "attack"
+                                    }, 
+                                    "conditions/set parameters": [], 
+                                    "percent": 100.0, 
+                                    "target conditions": "random", 
+                                    "target type": 2
+                                }
+                            ], 
+                            "name": "上級ザコ"
+                        }, 
                         "ai id": 20, 
                         "condition resists": {
                             "curse%": 25, 
@@ -352,6 +647,44 @@
                     {
                         "_name": "Enslaved Jewel God", 
                         "act counts": "1~1", 
+                        "ai": {
+                            "actions": [
+                                {
+                                    "action": {
+                                        "parameters": "-1", 
+                                        "type": "skill"
+                                    }, 
+                                    "conditions/set parameters": [
+                                        {
+                                            "parameters": "5", 
+                                            "type": "actbetween"
+                                        }, 
+                                        {
+                                            "parameters": "0", 
+                                            "type": "skill_unuse"
+                                        }, 
+                                        {
+                                            "parameters": "random", 
+                                            "type": "set skill"
+                                        }
+                                    ], 
+                                    "percent": 100.0, 
+                                    "target conditions": "random", 
+                                    "target type": 1
+                                }, 
+                                {
+                                    "action": {
+                                        "parameters": "-1", 
+                                        "type": "attack"
+                                    }, 
+                                    "conditions/set parameters": [], 
+                                    "percent": 100.0, 
+                                    "target conditions": "random", 
+                                    "target type": 2
+                                }
+                            ], 
+                            "name": "AI_JewGod_LD"
+                        }, 
                         "ai id": 8110023, 
                         "condition resists": {
                             "curse%": 100, 
@@ -416,6 +749,41 @@
                     {
                         "_name": "Thief Henchman", 
                         "act counts": "2~3", 
+                        "ai": {
+                            "actions": [
+                                {
+                                    "action": {
+                                        "parameters": "-1", 
+                                        "type": "attack"
+                                    }, 
+                                    "conditions/set parameters": [], 
+                                    "percent": 30.0, 
+                                    "target conditions": "weakness", 
+                                    "target type": 2
+                                }, 
+                                {
+                                    "action": {
+                                        "parameters": "-1", 
+                                        "type": "attack"
+                                    }, 
+                                    "conditions/set parameters": [], 
+                                    "percent": 30.0, 
+                                    "target conditions": "hp_max", 
+                                    "target type": 2
+                                }, 
+                                {
+                                    "action": {
+                                        "parameters": "-1", 
+                                        "type": "attack"
+                                    }, 
+                                    "conditions/set parameters": [], 
+                                    "percent": 100.0, 
+                                    "target conditions": "random", 
+                                    "target type": 2
+                                }
+                            ], 
+                            "name": "上級ザコ"
+                        }, 
                         "ai id": 20, 
                         "condition resists": {
                             "curse%": 25, 
@@ -467,6 +835,77 @@
                     {
                         "_name": "Enslaved Minotaur", 
                         "act counts": "1~1", 
+                        "ai": {
+                            "actions": [
+                                {
+                                    "action": {
+                                        "parameters": "-1", 
+                                        "type": "skill"
+                                    }, 
+                                    "conditions/set parameters": [
+                                        {
+                                            "parameters": "1", 
+                                            "type": "act"
+                                        }, 
+                                        {
+                                            "parameters": "1", 
+                                            "type": "limited_act"
+                                        }, 
+                                        {
+                                            "parameters": "random", 
+                                            "type": "set skill"
+                                        }
+                                    ], 
+                                    "percent": 100.0, 
+                                    "target conditions": "random", 
+                                    "target type": 1
+                                }, 
+                                {
+                                    "action": {
+                                        "parameters": "-1", 
+                                        "type": "skill"
+                                    }, 
+                                    "conditions/set parameters": [
+                                        {
+                                            "parameters": "6", 
+                                            "type": "act"
+                                        }, 
+                                        {
+                                            "parameters": "1", 
+                                            "type": "limited_act"
+                                        }, 
+                                        {
+                                            "parameters": "random", 
+                                            "type": "set skill"
+                                        }
+                                    ], 
+                                    "percent": 100.0, 
+                                    "target conditions": "random", 
+                                    "target type": 1
+                                }, 
+                                {
+                                    "action": {
+                                        "parameters": "-1", 
+                                        "type": "attack"
+                                    }, 
+                                    "conditions/set parameters": [], 
+                                    "percent": 50.0, 
+                                    "target conditions": "hp_max", 
+                                    "target type": 2
+                                }, 
+                                {
+                                    "action": {
+                                        "parameters": "-1", 
+                                        "type": "attack"
+                                    }, 
+                                    "conditions/set parameters": [], 
+                                    "percent": 100.0, 
+                                    "target conditions": "random", 
+                                    "target type": 2
+                                }
+                            ], 
+                            "name": "AI_Mino_Taunt"
+                        }, 
                         "ai id": 8110020, 
                         "condition resists": {
                             "curse%": 100, 
@@ -537,6 +976,77 @@
                     {
                         "_name": "Thief Assassin", 
                         "act counts": "2~2", 
+                        "ai": {
+                            "actions": [
+                                {
+                                    "action": {
+                                        "parameters": "-1", 
+                                        "type": "skill"
+                                    }, 
+                                    "conditions/set parameters": [
+                                        {
+                                            "parameters": "3", 
+                                            "type": "act"
+                                        }, 
+                                        {
+                                            "parameters": "1", 
+                                            "type": "limited_act"
+                                        }, 
+                                        {
+                                            "parameters": "random", 
+                                            "type": "set skill"
+                                        }
+                                    ], 
+                                    "percent": 100.0, 
+                                    "target conditions": "random", 
+                                    "target type": 1
+                                }, 
+                                {
+                                    "action": {
+                                        "parameters": "-1", 
+                                        "type": "skill"
+                                    }, 
+                                    "conditions/set parameters": [
+                                        {
+                                            "parameters": "10", 
+                                            "type": "act"
+                                        }, 
+                                        {
+                                            "parameters": "1", 
+                                            "type": "limited_act"
+                                        }, 
+                                        {
+                                            "parameters": "random", 
+                                            "type": "set skill"
+                                        }
+                                    ], 
+                                    "percent": 100.0, 
+                                    "target conditions": "random", 
+                                    "target type": 1
+                                }, 
+                                {
+                                    "action": {
+                                        "parameters": "-1", 
+                                        "type": "attack"
+                                    }, 
+                                    "conditions/set parameters": [], 
+                                    "percent": 50.0, 
+                                    "target conditions": "hp_max", 
+                                    "target type": 2
+                                }, 
+                                {
+                                    "action": {
+                                        "parameters": "-1", 
+                                        "type": "attack"
+                                    }, 
+                                    "conditions/set parameters": [], 
+                                    "percent": 100.0, 
+                                    "target conditions": "random", 
+                                    "target type": 2
+                                }
+                            ], 
+                            "name": "AI_Assassin_Stealth"
+                        }, 
                         "ai id": 8110021, 
                         "condition resists": {
                             "curse%": 25, 
@@ -612,6 +1122,77 @@
                     {
                         "_name": "Thief Assassin", 
                         "act counts": "2~2", 
+                        "ai": {
+                            "actions": [
+                                {
+                                    "action": {
+                                        "parameters": "-1", 
+                                        "type": "skill"
+                                    }, 
+                                    "conditions/set parameters": [
+                                        {
+                                            "parameters": "3", 
+                                            "type": "act"
+                                        }, 
+                                        {
+                                            "parameters": "1", 
+                                            "type": "limited_act"
+                                        }, 
+                                        {
+                                            "parameters": "random", 
+                                            "type": "set skill"
+                                        }
+                                    ], 
+                                    "percent": 100.0, 
+                                    "target conditions": "random", 
+                                    "target type": 1
+                                }, 
+                                {
+                                    "action": {
+                                        "parameters": "-1", 
+                                        "type": "skill"
+                                    }, 
+                                    "conditions/set parameters": [
+                                        {
+                                            "parameters": "10", 
+                                            "type": "act"
+                                        }, 
+                                        {
+                                            "parameters": "1", 
+                                            "type": "limited_act"
+                                        }, 
+                                        {
+                                            "parameters": "random", 
+                                            "type": "set skill"
+                                        }
+                                    ], 
+                                    "percent": 100.0, 
+                                    "target conditions": "random", 
+                                    "target type": 1
+                                }, 
+                                {
+                                    "action": {
+                                        "parameters": "-1", 
+                                        "type": "attack"
+                                    }, 
+                                    "conditions/set parameters": [], 
+                                    "percent": 50.0, 
+                                    "target conditions": "hp_max", 
+                                    "target type": 2
+                                }, 
+                                {
+                                    "action": {
+                                        "parameters": "-1", 
+                                        "type": "attack"
+                                    }, 
+                                    "conditions/set parameters": [], 
+                                    "percent": 100.0, 
+                                    "target conditions": "random", 
+                                    "target type": 2
+                                }
+                            ], 
+                            "name": "AI_Assassin_Stealth"
+                        }, 
                         "ai id": 8110021, 
                         "condition resists": {
                             "curse%": 25, 
@@ -687,6 +1268,77 @@
                     {
                         "_name": "Thief Assassin", 
                         "act counts": "2~2", 
+                        "ai": {
+                            "actions": [
+                                {
+                                    "action": {
+                                        "parameters": "-1", 
+                                        "type": "skill"
+                                    }, 
+                                    "conditions/set parameters": [
+                                        {
+                                            "parameters": "3", 
+                                            "type": "act"
+                                        }, 
+                                        {
+                                            "parameters": "1", 
+                                            "type": "limited_act"
+                                        }, 
+                                        {
+                                            "parameters": "random", 
+                                            "type": "set skill"
+                                        }
+                                    ], 
+                                    "percent": 100.0, 
+                                    "target conditions": "random", 
+                                    "target type": 1
+                                }, 
+                                {
+                                    "action": {
+                                        "parameters": "-1", 
+                                        "type": "skill"
+                                    }, 
+                                    "conditions/set parameters": [
+                                        {
+                                            "parameters": "10", 
+                                            "type": "act"
+                                        }, 
+                                        {
+                                            "parameters": "1", 
+                                            "type": "limited_act"
+                                        }, 
+                                        {
+                                            "parameters": "random", 
+                                            "type": "set skill"
+                                        }
+                                    ], 
+                                    "percent": 100.0, 
+                                    "target conditions": "random", 
+                                    "target type": 1
+                                }, 
+                                {
+                                    "action": {
+                                        "parameters": "-1", 
+                                        "type": "attack"
+                                    }, 
+                                    "conditions/set parameters": [], 
+                                    "percent": 50.0, 
+                                    "target conditions": "hp_max", 
+                                    "target type": 2
+                                }, 
+                                {
+                                    "action": {
+                                        "parameters": "-1", 
+                                        "type": "attack"
+                                    }, 
+                                    "conditions/set parameters": [], 
+                                    "percent": 100.0, 
+                                    "target conditions": "random", 
+                                    "target type": 2
+                                }
+                            ], 
+                            "name": "AI_Assassin_Stealth"
+                        }, 
                         "ai id": 8110021, 
                         "condition resists": {
                             "curse%": 25, 
@@ -762,6 +1414,77 @@
                     {
                         "_name": "Thief Assassin", 
                         "act counts": "2~2", 
+                        "ai": {
+                            "actions": [
+                                {
+                                    "action": {
+                                        "parameters": "-1", 
+                                        "type": "skill"
+                                    }, 
+                                    "conditions/set parameters": [
+                                        {
+                                            "parameters": "3", 
+                                            "type": "act"
+                                        }, 
+                                        {
+                                            "parameters": "1", 
+                                            "type": "limited_act"
+                                        }, 
+                                        {
+                                            "parameters": "random", 
+                                            "type": "set skill"
+                                        }
+                                    ], 
+                                    "percent": 100.0, 
+                                    "target conditions": "random", 
+                                    "target type": 1
+                                }, 
+                                {
+                                    "action": {
+                                        "parameters": "-1", 
+                                        "type": "skill"
+                                    }, 
+                                    "conditions/set parameters": [
+                                        {
+                                            "parameters": "10", 
+                                            "type": "act"
+                                        }, 
+                                        {
+                                            "parameters": "1", 
+                                            "type": "limited_act"
+                                        }, 
+                                        {
+                                            "parameters": "random", 
+                                            "type": "set skill"
+                                        }
+                                    ], 
+                                    "percent": 100.0, 
+                                    "target conditions": "random", 
+                                    "target type": 1
+                                }, 
+                                {
+                                    "action": {
+                                        "parameters": "-1", 
+                                        "type": "attack"
+                                    }, 
+                                    "conditions/set parameters": [], 
+                                    "percent": 50.0, 
+                                    "target conditions": "hp_max", 
+                                    "target type": 2
+                                }, 
+                                {
+                                    "action": {
+                                        "parameters": "-1", 
+                                        "type": "attack"
+                                    }, 
+                                    "conditions/set parameters": [], 
+                                    "percent": 100.0, 
+                                    "target conditions": "random", 
+                                    "target type": 2
+                                }
+                            ], 
+                            "name": "AI_Assassin_Stealth"
+                        }, 
                         "ai id": 8110021, 
                         "condition resists": {
                             "curse%": 25, 
@@ -841,6 +1564,41 @@
                     {
                         "_name": "Thief Henchman", 
                         "act counts": "2~3", 
+                        "ai": {
+                            "actions": [
+                                {
+                                    "action": {
+                                        "parameters": "-1", 
+                                        "type": "attack"
+                                    }, 
+                                    "conditions/set parameters": [], 
+                                    "percent": 30.0, 
+                                    "target conditions": "weakness", 
+                                    "target type": 2
+                                }, 
+                                {
+                                    "action": {
+                                        "parameters": "-1", 
+                                        "type": "attack"
+                                    }, 
+                                    "conditions/set parameters": [], 
+                                    "percent": 30.0, 
+                                    "target conditions": "hp_max", 
+                                    "target type": 2
+                                }, 
+                                {
+                                    "action": {
+                                        "parameters": "-1", 
+                                        "type": "attack"
+                                    }, 
+                                    "conditions/set parameters": [], 
+                                    "percent": 100.0, 
+                                    "target conditions": "random", 
+                                    "target type": 2
+                                }
+                            ], 
+                            "name": "上級ザコ"
+                        }, 
                         "ai id": 20, 
                         "condition resists": {
                             "curse%": 25, 
@@ -888,6 +1646,41 @@
                     {
                         "_name": "Unicorn", 
                         "act counts": "2~2", 
+                        "ai": {
+                            "actions": [
+                                {
+                                    "action": {
+                                        "parameters": "-1", 
+                                        "type": "attack"
+                                    }, 
+                                    "conditions/set parameters": [], 
+                                    "percent": 30.0, 
+                                    "target conditions": "weakness", 
+                                    "target type": 2
+                                }, 
+                                {
+                                    "action": {
+                                        "parameters": "-1", 
+                                        "type": "attack"
+                                    }, 
+                                    "conditions/set parameters": [], 
+                                    "percent": 30.0, 
+                                    "target conditions": "hp_max", 
+                                    "target type": 2
+                                }, 
+                                {
+                                    "action": {
+                                        "parameters": "-1", 
+                                        "type": "attack"
+                                    }, 
+                                    "conditions/set parameters": [], 
+                                    "percent": 100.0, 
+                                    "target conditions": "random", 
+                                    "target type": 2
+                                }
+                            ], 
+                            "name": "上級ザコ"
+                        }, 
                         "ai id": 20, 
                         "condition resists": {
                             "curse%": 0, 
@@ -950,6 +1743,41 @@
                     {
                         "_name": "Unicorn", 
                         "act counts": "2~2", 
+                        "ai": {
+                            "actions": [
+                                {
+                                    "action": {
+                                        "parameters": "-1", 
+                                        "type": "attack"
+                                    }, 
+                                    "conditions/set parameters": [], 
+                                    "percent": 30.0, 
+                                    "target conditions": "weakness", 
+                                    "target type": 2
+                                }, 
+                                {
+                                    "action": {
+                                        "parameters": "-1", 
+                                        "type": "attack"
+                                    }, 
+                                    "conditions/set parameters": [], 
+                                    "percent": 30.0, 
+                                    "target conditions": "hp_max", 
+                                    "target type": 2
+                                }, 
+                                {
+                                    "action": {
+                                        "parameters": "-1", 
+                                        "type": "attack"
+                                    }, 
+                                    "conditions/set parameters": [], 
+                                    "percent": 100.0, 
+                                    "target conditions": "random", 
+                                    "target type": 2
+                                }
+                            ], 
+                            "name": "上級ザコ"
+                        }, 
                         "ai id": 20, 
                         "condition resists": {
                             "curse%": 0, 
@@ -1012,6 +1840,41 @@
                     {
                         "_name": "Thief Henchman", 
                         "act counts": "2~3", 
+                        "ai": {
+                            "actions": [
+                                {
+                                    "action": {
+                                        "parameters": "-1", 
+                                        "type": "attack"
+                                    }, 
+                                    "conditions/set parameters": [], 
+                                    "percent": 30.0, 
+                                    "target conditions": "weakness", 
+                                    "target type": 2
+                                }, 
+                                {
+                                    "action": {
+                                        "parameters": "-1", 
+                                        "type": "attack"
+                                    }, 
+                                    "conditions/set parameters": [], 
+                                    "percent": 30.0, 
+                                    "target conditions": "hp_max", 
+                                    "target type": 2
+                                }, 
+                                {
+                                    "action": {
+                                        "parameters": "-1", 
+                                        "type": "attack"
+                                    }, 
+                                    "conditions/set parameters": [], 
+                                    "percent": 100.0, 
+                                    "target conditions": "random", 
+                                    "target type": 2
+                                }
+                            ], 
+                            "name": "上級ザコ"
+                        }, 
                         "ai id": 20, 
                         "condition resists": {
                             "curse%": 25, 
@@ -1063,6 +1926,77 @@
                     {
                         "_name": "Enslaved Minotaur", 
                         "act counts": "1~1", 
+                        "ai": {
+                            "actions": [
+                                {
+                                    "action": {
+                                        "parameters": "-1", 
+                                        "type": "skill"
+                                    }, 
+                                    "conditions/set parameters": [
+                                        {
+                                            "parameters": "1", 
+                                            "type": "act"
+                                        }, 
+                                        {
+                                            "parameters": "1", 
+                                            "type": "limited_act"
+                                        }, 
+                                        {
+                                            "parameters": "random", 
+                                            "type": "set skill"
+                                        }
+                                    ], 
+                                    "percent": 100.0, 
+                                    "target conditions": "random", 
+                                    "target type": 1
+                                }, 
+                                {
+                                    "action": {
+                                        "parameters": "-1", 
+                                        "type": "skill"
+                                    }, 
+                                    "conditions/set parameters": [
+                                        {
+                                            "parameters": "6", 
+                                            "type": "act"
+                                        }, 
+                                        {
+                                            "parameters": "1", 
+                                            "type": "limited_act"
+                                        }, 
+                                        {
+                                            "parameters": "random", 
+                                            "type": "set skill"
+                                        }
+                                    ], 
+                                    "percent": 100.0, 
+                                    "target conditions": "random", 
+                                    "target type": 1
+                                }, 
+                                {
+                                    "action": {
+                                        "parameters": "-1", 
+                                        "type": "attack"
+                                    }, 
+                                    "conditions/set parameters": [], 
+                                    "percent": 50.0, 
+                                    "target conditions": "hp_max", 
+                                    "target type": 2
+                                }, 
+                                {
+                                    "action": {
+                                        "parameters": "-1", 
+                                        "type": "attack"
+                                    }, 
+                                    "conditions/set parameters": [], 
+                                    "percent": 100.0, 
+                                    "target conditions": "random", 
+                                    "target type": 2
+                                }
+                            ], 
+                            "name": "AI_Mino_Taunt"
+                        }, 
                         "ai id": 8110020, 
                         "condition resists": {
                             "curse%": 100, 
@@ -1133,6 +2067,54 @@
                     {
                         "_name": "Rogue Priestess", 
                         "act counts": "1~1", 
+                        "ai": {
+                            "actions": [
+                                {
+                                    "action": {
+                                        "parameters": "-1", 
+                                        "type": "skill"
+                                    }, 
+                                    "conditions/set parameters": [
+                                        {
+                                            "parameters": "3", 
+                                            "type": "actbetween"
+                                        }, 
+                                        {
+                                            "parameters": "0", 
+                                            "type": "skill_unuse"
+                                        }, 
+                                        {
+                                            "parameters": "random", 
+                                            "type": "set skill"
+                                        }
+                                    ], 
+                                    "percent": 100.0, 
+                                    "target conditions": "random", 
+                                    "target type": 2
+                                }, 
+                                {
+                                    "action": {
+                                        "parameters": "-1", 
+                                        "type": "attack"
+                                    }, 
+                                    "conditions/set parameters": [], 
+                                    "percent": 50.0, 
+                                    "target conditions": "hp_max", 
+                                    "target type": 2
+                                }, 
+                                {
+                                    "action": {
+                                        "parameters": "-1", 
+                                        "type": "attack"
+                                    }, 
+                                    "conditions/set parameters": [], 
+                                    "percent": 100.0, 
+                                    "target conditions": "random", 
+                                    "target type": 2
+                                }
+                            ], 
+                            "name": "AI_Healer"
+                        }, 
                         "ai id": 8110022, 
                         "condition resists": {
                             "curse%": 55, 
@@ -1204,6 +2186,150 @@
                     {
                         "_name": "Great Thief Leon", 
                         "act counts": "2~3", 
+                        "ai": {
+                            "actions": [
+                                {
+                                    "action": {
+                                        "parameters": "-1", 
+                                        "type": "skill"
+                                    }, 
+                                    "conditions/set parameters": [
+                                        {
+                                            "parameters": "75", 
+                                            "type": "hp_pr_under"
+                                        }, 
+                                        {
+                                            "parameters": "1", 
+                                            "type": "limited_act"
+                                        }, 
+                                        {
+                                            "parameters": "random", 
+                                            "type": "set skill"
+                                        }
+                                    ], 
+                                    "percent": 100.0, 
+                                    "target conditions": "hp_max", 
+                                    "target type": 2
+                                }, 
+                                {
+                                    "action": {
+                                        "parameters": "-1", 
+                                        "type": "skill"
+                                    }, 
+                                    "conditions/set parameters": [
+                                        {
+                                            "parameters": "50", 
+                                            "type": "hp_pr_under"
+                                        }, 
+                                        {
+                                            "parameters": "1", 
+                                            "type": "limited_act"
+                                        }, 
+                                        {
+                                            "parameters": "Oh.. You, ARE, GOOD. HAH!", 
+                                            "type": "set skill"
+                                        }
+                                    ], 
+                                    "percent": 100.0, 
+                                    "target conditions": "hp_max", 
+                                    "target type": 2
+                                }, 
+                                {
+                                    "action": {
+                                        "parameters": "-1", 
+                                        "type": "skill"
+                                    }, 
+                                    "conditions/set parameters": [
+                                        {
+                                            "parameters": "20", 
+                                            "type": "hp_pr_under"
+                                        }, 
+                                        {
+                                            "parameters": "1", 
+                                            "type": "limited_act"
+                                        }, 
+                                        {
+                                            "parameters": "This is it, my final warning..", 
+                                            "type": "set skill"
+                                        }
+                                    ], 
+                                    "percent": 100.0, 
+                                    "target conditions": "hp_max", 
+                                    "target type": 2
+                                }, 
+                                {
+                                    "action": {
+                                        "parameters": "-1", 
+                                        "type": "skill"
+                                    }, 
+                                    "conditions/set parameters": [
+                                        {
+                                            "parameters": "10", 
+                                            "type": "hp_pr_under"
+                                        }, 
+                                        {
+                                            "parameters": "1", 
+                                            "type": "limited_act"
+                                        }, 
+                                        {
+                                            "parameters": "Shadow Dimension", 
+                                            "type": "set skill"
+                                        }
+                                    ], 
+                                    "percent": 100.0, 
+                                    "target conditions": "random", 
+                                    "target type": 1
+                                }, 
+                                {
+                                    "action": {
+                                        "parameters": "-1", 
+                                        "type": "skill"
+                                    }, 
+                                    "conditions/set parameters": [
+                                        {
+                                            "parameters": "75", 
+                                            "type": "hp_pr_under"
+                                        }, 
+                                        {
+                                            "parameters": "4", 
+                                            "type": "actbetween"
+                                        }, 
+                                        {
+                                            "parameters": "0", 
+                                            "type": "skill_unuse"
+                                        }, 
+                                        {
+                                            "parameters": "Poison Gale", 
+                                            "type": "set skill"
+                                        }
+                                    ], 
+                                    "percent": 70.0, 
+                                    "target conditions": "hp_max", 
+                                    "target type": 2
+                                }, 
+                                {
+                                    "action": {
+                                        "parameters": "-1", 
+                                        "type": "attack"
+                                    }, 
+                                    "conditions/set parameters": [], 
+                                    "percent": 100.0, 
+                                    "target conditions": "hp_max", 
+                                    "target type": 2
+                                }, 
+                                {
+                                    "action": {
+                                        "parameters": "-1", 
+                                        "type": "attack"
+                                    }, 
+                                    "conditions/set parameters": [], 
+                                    "percent": 55.0, 
+                                    "target conditions": "random", 
+                                    "target type": 2
+                                }
+                            ], 
+                            "name": "AI_Final_Leon"
+                        }, 
                         "ai id": 8110025, 
                         "condition resists": {
                             "curse%": 90, 
@@ -1313,6 +2439,41 @@
                     {
                         "_name": "Thief Henchman", 
                         "act counts": "2~3", 
+                        "ai": {
+                            "actions": [
+                                {
+                                    "action": {
+                                        "parameters": "-1", 
+                                        "type": "attack"
+                                    }, 
+                                    "conditions/set parameters": [], 
+                                    "percent": 30.0, 
+                                    "target conditions": "weakness", 
+                                    "target type": 2
+                                }, 
+                                {
+                                    "action": {
+                                        "parameters": "-1", 
+                                        "type": "attack"
+                                    }, 
+                                    "conditions/set parameters": [], 
+                                    "percent": 30.0, 
+                                    "target conditions": "hp_max", 
+                                    "target type": 2
+                                }, 
+                                {
+                                    "action": {
+                                        "parameters": "-1", 
+                                        "type": "attack"
+                                    }, 
+                                    "conditions/set parameters": [], 
+                                    "percent": 100.0, 
+                                    "target conditions": "random", 
+                                    "target type": 2
+                                }
+                            ], 
+                            "name": "上級ザコ"
+                        }, 
                         "ai id": 20, 
                         "condition resists": {
                             "curse%": 25, 
