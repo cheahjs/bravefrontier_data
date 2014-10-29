@@ -159,6 +159,16 @@
         "thumbnail": "item_thum_206.png", 
         "type": "material"
     }, 
+    "10112": {
+        "desc": "“災厄の鳥”と呼ばれるクウの羽", 
+        "id": 10112, 
+        "max_stack": 99, 
+        "name": "クウの羽", 
+        "rarity": 3, 
+        "sell_price": 50, 
+        "thumbnail": "item_thum_203.png", 
+        "type": "material"
+    }, 
     "10200": {
         "desc": "エルガイアやグランガイアの広範囲で自生する解毒効果のある実", 
         "id": 10200, 
@@ -529,6 +539,16 @@
         "thumbnail": "item_thum_506.png", 
         "type": "material"
     }, 
+    "10417": {
+        "desc": "機械の身体を持つと言われる異界の獣の爪", 
+        "id": 10417, 
+        "max_stack": 99, 
+        "name": "機獣の爪", 
+        "rarity": 3, 
+        "sell_price": 50, 
+        "thumbnail": "item_thum_504.png", 
+        "type": "material"
+    }, 
     "10500": {
         "desc": "各地で入手可能な緑色をした巨獣の牙の化石", 
         "id": 10500, 
@@ -627,6 +647,16 @@
         "rarity": 3, 
         "sell_price": 50, 
         "thumbnail": "item_thum_606.png", 
+        "type": "material"
+    }, 
+    "10513": {
+        "desc": "常に僅かな雷を帯びている獣の牙", 
+        "id": 10513, 
+        "max_stack": 99, 
+        "name": "招雷の牙", 
+        "rarity": 3, 
+        "sell_price": 50, 
+        "thumbnail": "item_thum_603.png", 
         "type": "material"
     }, 
     "10600": {
@@ -1309,6 +1339,16 @@
         "thumbnail": "item_thum_1004.png", 
         "type": "material"
     }, 
+    "10908": {
+        "desc": "獣に寄生し、能力を飛躍的に上げる虫", 
+        "id": 10908, 
+        "max_stack": 99, 
+        "name": "獣奔虫", 
+        "rarity": 3, 
+        "sell_price": 50, 
+        "thumbnail": "item_thum_1000.png", 
+        "type": "material"
+    }, 
     "11000": {
         "desc": "エレメントが持つ攻撃的な力を封じる特性を秘めた特殊な石", 
         "id": 11000, 
@@ -1878,6 +1918,40 @@
         }, 
         "sell_price": 20, 
         "thumbnail": "item_thum_20230.png", 
+        "type": "consumable"
+    }, 
+    "20240": {
+        "desc": "味方単体の、敵から受けたステータスダウン効果を治療する", 
+        "effect": {
+            "effect": [
+                {
+                    "unknown proc id": "38", 
+                    "unknown proc param": "7:ATKデバフ,8:DEFデバフ,9:回復力デバフ,0,0,0,0,0"
+                }
+            ], 
+            "target_area": "single", 
+            "target_type": "party"
+        }, 
+        "id": 20240, 
+        "max equipped": 10, 
+        "max_stack": 99, 
+        "name": "快気薬", 
+        "rarity": 3, 
+        "recipe": {
+            "karma": "0", 
+            "materials": [
+                {
+                    "count": 3, 
+                    "id": 20210
+                }, 
+                {
+                    "count": 2, 
+                    "id": 10301
+                }
+            ]
+        }, 
+        "sell_price": 20, 
+        "thumbnail": "item_thum_20240.png", 
         "type": "consumable"
     }, 
     "20400": {
@@ -2490,6 +2564,246 @@
         }, 
         "sell_price": 50, 
         "thumbnail": "item_thum_20950.png", 
+        "type": "consumable"
+    }, 
+    "20960": {
+        "desc": "３ターンの間、炎属性の味方ユニット全員の攻撃力と防御力を５０％アップ", 
+        "effect": {
+            "effect": [
+                {
+                    "atk% buff": 50, 
+                    "buff turns": 3, 
+                    "def% buff": 50, 
+                    "element buffed": "fire"
+                }
+            ], 
+            "target_area": "aoe", 
+            "target_type": "party"
+        }, 
+        "id": 20960, 
+        "max equipped": 3, 
+        "max_stack": 99, 
+        "name": "炎帝石", 
+        "rarity": 3, 
+        "recipe": {
+            "karma": "0", 
+            "materials": [
+                {
+                    "count": 2, 
+                    "id": 20800
+                }, 
+                {
+                    "count": 2, 
+                    "id": 20900
+                }, 
+                {
+                    "count": 3, 
+                    "id": 10600
+                }
+            ]
+        }, 
+        "sell_price": 100, 
+        "thumbnail": "item_thum_20960.png", 
+        "type": "consumable"
+    }, 
+    "20961": {
+        "desc": "３ターンの間、水属性の味方ユニット全員の攻撃力と防御力を５０％アップ", 
+        "effect": {
+            "effect": [
+                {
+                    "atk% buff": 50, 
+                    "buff turns": 3, 
+                    "def% buff": 50, 
+                    "element buffed": "water"
+                }
+            ], 
+            "target_area": "aoe", 
+            "target_type": "party"
+        }, 
+        "id": 20961, 
+        "max equipped": 3, 
+        "max_stack": 99, 
+        "name": "水帝石", 
+        "rarity": 3, 
+        "recipe": {
+            "karma": "0", 
+            "materials": [
+                {
+                    "count": 2, 
+                    "id": 20810
+                }, 
+                {
+                    "count": 2, 
+                    "id": 20910
+                }, 
+                {
+                    "count": 3, 
+                    "id": 10601
+                }
+            ]
+        }, 
+        "sell_price": 100, 
+        "thumbnail": "item_thum_20961.png", 
+        "type": "consumable"
+    }, 
+    "20962": {
+        "desc": "３ターンの間、樹属性の味方ユニット全員の攻撃力と防御力を５０％アップ", 
+        "effect": {
+            "effect": [
+                {
+                    "atk% buff": 50, 
+                    "buff turns": 3, 
+                    "def% buff": 50, 
+                    "element buffed": "earth"
+                }
+            ], 
+            "target_area": "aoe", 
+            "target_type": "party"
+        }, 
+        "id": 20962, 
+        "max equipped": 3, 
+        "max_stack": 99, 
+        "name": "樹帝石", 
+        "rarity": 3, 
+        "recipe": {
+            "karma": "0", 
+            "materials": [
+                {
+                    "count": 2, 
+                    "id": 20820
+                }, 
+                {
+                    "count": 2, 
+                    "id": 20920
+                }, 
+                {
+                    "count": 3, 
+                    "id": 10602
+                }
+            ]
+        }, 
+        "sell_price": 100, 
+        "thumbnail": "item_thum_20962.png", 
+        "type": "consumable"
+    }, 
+    "20963": {
+        "desc": "３ターンの間、雷属性の味方ユニット全員の攻撃力と防御力を５０％アップ", 
+        "effect": {
+            "effect": [
+                {
+                    "atk% buff": 50, 
+                    "buff turns": 3, 
+                    "def% buff": 50, 
+                    "element buffed": "thunder"
+                }
+            ], 
+            "target_area": "aoe", 
+            "target_type": "party"
+        }, 
+        "id": 20963, 
+        "max equipped": 3, 
+        "max_stack": 99, 
+        "name": "雷帝石", 
+        "rarity": 3, 
+        "recipe": {
+            "karma": "0", 
+            "materials": [
+                {
+                    "count": 2, 
+                    "id": 20830
+                }, 
+                {
+                    "count": 2, 
+                    "id": 20930
+                }, 
+                {
+                    "count": 3, 
+                    "id": 10603
+                }
+            ]
+        }, 
+        "sell_price": 100, 
+        "thumbnail": "item_thum_20963.png", 
+        "type": "consumable"
+    }, 
+    "20964": {
+        "desc": "３ターンの間、光属性の味方ユニット全員の攻撃力と防御力を５０％アップ", 
+        "effect": {
+            "effect": [
+                {
+                    "atk% buff": 50, 
+                    "buff turns": 3, 
+                    "def% buff": 50, 
+                    "element buffed": "light"
+                }
+            ], 
+            "target_area": "aoe", 
+            "target_type": "party"
+        }, 
+        "id": 20964, 
+        "max equipped": 3, 
+        "max_stack": 99, 
+        "name": "光帝石", 
+        "rarity": 3, 
+        "recipe": {
+            "karma": "0", 
+            "materials": [
+                {
+                    "count": 2, 
+                    "id": 20840
+                }, 
+                {
+                    "count": 2, 
+                    "id": 20940
+                }, 
+                {
+                    "count": 3, 
+                    "id": 10604
+                }
+            ]
+        }, 
+        "sell_price": 100, 
+        "thumbnail": "item_thum_20964.png", 
+        "type": "consumable"
+    }, 
+    "20965": {
+        "desc": "３ターンの間、闇属性の味方ユニット全員の攻撃力と防御力を５０％アップ", 
+        "effect": {
+            "effect": [
+                {
+                    "atk% buff": 50, 
+                    "buff turns": 3, 
+                    "def% buff": 50, 
+                    "element buffed": "dark"
+                }
+            ], 
+            "target_area": "aoe", 
+            "target_type": "party"
+        }, 
+        "id": 20965, 
+        "max equipped": 3, 
+        "max_stack": 99, 
+        "name": "闇帝石", 
+        "rarity": 3, 
+        "recipe": {
+            "karma": "0", 
+            "materials": [
+                {
+                    "count": 2, 
+                    "id": 20850
+                }, 
+                {
+                    "count": 2, 
+                    "id": 20950
+                }, 
+                {
+                    "count": 3, 
+                    "id": 10605
+                }
+            ]
+        }, 
+        "sell_price": 100, 
+        "thumbnail": "item_thum_20965.png", 
         "type": "consumable"
     }, 
     "21000": {
@@ -4457,6 +4771,40 @@
         "thumbnail": "sphere_thum_4_5.png", 
         "type": "sphere"
     }, 
+    "31602": {
+        "desc": "攻撃時、確率で敵を毒状態にする", 
+        "effect": [
+            {
+                "poison%": 20
+            }
+        ], 
+        "id": 31602, 
+        "max_stack": 1, 
+        "name": "毒華閃ポズ=ソフラ", 
+        "rarity": 3, 
+        "recipe": {
+            "karma": "40000", 
+            "materials": [
+                {
+                    "count": 1, 
+                    "id": 31601
+                }, 
+                {
+                    "count": 10, 
+                    "id": 10112
+                }, 
+                {
+                    "count": 20, 
+                    "id": 10405
+                }
+            ]
+        }, 
+        "sell_price": 6000, 
+        "sphere type": 4, 
+        "sphere type text": "Status Ailment", 
+        "thumbnail": "sphere_thum_4_7.png", 
+        "type": "sphere"
+    }, 
     "31700": {
         "desc": "攻撃時、確率で敵を弱体状態にする", 
         "effect": [
@@ -4519,6 +4867,40 @@
         "sphere type": 4, 
         "sphere type text": "Status Ailment", 
         "thumbnail": "sphere_thum_4_5.png", 
+        "type": "sphere"
+    }, 
+    "31702": {
+        "desc": "攻撃時、確率で敵を弱体状態にする", 
+        "effect": [
+            {
+                "weaken%": 20
+            }
+        ], 
+        "id": 31702, 
+        "max_stack": 1, 
+        "name": "魔轟砲ミュステム", 
+        "rarity": 3, 
+        "recipe": {
+            "karma": "40000", 
+            "materials": [
+                {
+                    "count": 1, 
+                    "id": 31701
+                }, 
+                {
+                    "count": 10, 
+                    "id": 10112
+                }, 
+                {
+                    "count": 20, 
+                    "id": 10707
+                }
+            ]
+        }, 
+        "sell_price": 6000, 
+        "sphere type": 4, 
+        "sphere type text": "Status Ailment", 
+        "thumbnail": "sphere_thum_4_7.png", 
         "type": "sphere"
     }, 
     "31800": {
@@ -4585,6 +4967,40 @@
         "thumbnail": "sphere_thum_4_5.png", 
         "type": "sphere"
     }, 
+    "31802": {
+        "desc": "攻撃時、確率で敵を病気状態にする", 
+        "effect": [
+            {
+                "sick%": 20
+            }
+        ], 
+        "id": 31802, 
+        "max_stack": 1, 
+        "name": "碧殻矛ネイトアガロン", 
+        "rarity": 3, 
+        "recipe": {
+            "karma": "40000", 
+            "materials": [
+                {
+                    "count": 1, 
+                    "id": 31801
+                }, 
+                {
+                    "count": 10, 
+                    "id": 10112
+                }, 
+                {
+                    "count": 20, 
+                    "id": 10405
+                }
+            ]
+        }, 
+        "sell_price": 6000, 
+        "sphere type": 4, 
+        "sphere type text": "Status Ailment", 
+        "thumbnail": "sphere_thum_4_7.png", 
+        "type": "sphere"
+    }, 
     "31900": {
         "desc": "攻撃時、確率で敵を怪我状態にする", 
         "effect": [
@@ -4647,6 +5063,40 @@
         "sphere type": 4, 
         "sphere type text": "Status Ailment", 
         "thumbnail": "sphere_thum_4_5.png", 
+        "type": "sphere"
+    }, 
+    "31902": {
+        "desc": "攻撃時、確率で敵を怪我状態にする", 
+        "effect": [
+            {
+                "injury%": 20
+            }
+        ], 
+        "id": 31902, 
+        "max_stack": 1, 
+        "name": "冥槍『荒覇吐』", 
+        "rarity": 3, 
+        "recipe": {
+            "karma": "40000", 
+            "materials": [
+                {
+                    "count": 1, 
+                    "id": 31901
+                }, 
+                {
+                    "count": 10, 
+                    "id": 10112
+                }, 
+                {
+                    "count": 20, 
+                    "id": 10707
+                }
+            ]
+        }, 
+        "sell_price": 6000, 
+        "sphere type": 4, 
+        "sphere type text": "Status Ailment", 
+        "thumbnail": "sphere_thum_4_7.png", 
         "type": "sphere"
     }, 
     "32000": {
@@ -4713,6 +5163,40 @@
         "thumbnail": "sphere_thum_4_5.png", 
         "type": "sphere"
     }, 
+    "32002": {
+        "desc": "攻撃時、確率で敵を呪い状態にする", 
+        "effect": [
+            {
+                "curse%": 20
+            }
+        ], 
+        "id": 32002, 
+        "max_stack": 1, 
+        "name": "呪機剣-ガヌ-", 
+        "rarity": 3, 
+        "recipe": {
+            "karma": "40000", 
+            "materials": [
+                {
+                    "count": 1, 
+                    "id": 32001
+                }, 
+                {
+                    "count": 10, 
+                    "id": 10112
+                }, 
+                {
+                    "count": 20, 
+                    "id": 10405
+                }
+            ]
+        }, 
+        "sell_price": 6000, 
+        "sphere type": 4, 
+        "sphere type text": "Status Ailment", 
+        "thumbnail": "sphere_thum_4_7.png", 
+        "type": "sphere"
+    }, 
     "32100": {
         "desc": "攻撃時、確率で敵を麻痺状態にする", 
         "effect": [
@@ -4775,6 +5259,40 @@
         "sphere type": 4, 
         "sphere type text": "Status Ailment", 
         "thumbnail": "sphere_thum_4_5.png", 
+        "type": "sphere"
+    }, 
+    "32102": {
+        "desc": "攻撃時、確率で敵を麻痺状態にする", 
+        "effect": [
+            {
+                "paralysis%": 20
+            }
+        ], 
+        "id": 32102, 
+        "max_stack": 1, 
+        "name": "雷帝弓トール・テンペスト", 
+        "rarity": 3, 
+        "recipe": {
+            "karma": "40000", 
+            "materials": [
+                {
+                    "count": 1, 
+                    "id": 32101
+                }, 
+                {
+                    "count": 10, 
+                    "id": 10112
+                }, 
+                {
+                    "count": 20, 
+                    "id": 10707
+                }
+            ]
+        }, 
+        "sell_price": 6000, 
+        "sphere type": 4, 
+        "sphere type text": "Status Ailment", 
+        "thumbnail": "sphere_thum_4_7.png", 
         "type": "sphere"
     }, 
     "32200": {
@@ -8001,7 +8519,7 @@
         "type": "sphere"
     }, 
     "38000": {
-        "desc": "１ターン毎にＢＢゲージが少し増加する", 
+        "desc": "１ターンごとにＢＢゲージが少し増加する", 
         "effect": [
             {
                 "bc fill per turn": 1
@@ -8036,6 +8554,44 @@
         "sphere type": 6, 
         "sphere type text": "BB Gauge", 
         "thumbnail": "sphere_thum_5_2.png", 
+        "type": "sphere"
+    }, 
+    "38001": {
+        "desc": "１ターンごとにＢＢゲージが増加する", 
+        "effect": [
+            {
+                "bc fill per turn": 2
+            }
+        ], 
+        "id": 38001, 
+        "max_stack": 1, 
+        "name": "魔石の結晶", 
+        "rarity": 3, 
+        "recipe": {
+            "karma": "50000", 
+            "materials": [
+                {
+                    "count": 1, 
+                    "id": 38000
+                }, 
+                {
+                    "count": 20, 
+                    "id": 10513
+                }, 
+                {
+                    "count": 3, 
+                    "id": 10908
+                }, 
+                {
+                    "count": 30, 
+                    "id": 10308
+                }
+            ]
+        }, 
+        "sell_price": 6000, 
+        "sphere type": 6, 
+        "sphere type text": "BB Gauge", 
+        "thumbnail": "sphere_thum_5_5.png", 
         "type": "sphere"
     }, 
     "38100": {
@@ -10347,6 +10903,44 @@
         "sphere type": 6, 
         "sphere type text": "BB Gauge", 
         "thumbnail": "sphere_thum_5_4.png", 
+        "type": "sphere"
+    }, 
+    "43300": {
+        "desc": "攻撃時、低確率で相手の防御力を無視したダメージを与える", 
+        "effect": [
+            {
+                "ignore def%": 15
+            }
+        ], 
+        "id": 43300, 
+        "max_stack": 1, 
+        "name": "獄槍ファーヴィ・オピス", 
+        "rarity": 3, 
+        "recipe": {
+            "karma": "50000", 
+            "materials": [
+                {
+                    "count": 1, 
+                    "id": 34807
+                }, 
+                {
+                    "count": 20, 
+                    "id": 10417
+                }, 
+                {
+                    "count": 3, 
+                    "id": 10908
+                }, 
+                {
+                    "count": 30, 
+                    "id": 10506
+                }
+            ]
+        }, 
+        "sell_price": 8000, 
+        "sphere type": 12, 
+        "sphere type text": "Defense Penetrating", 
+        "thumbnail": "sphere_thum_1_5.png", 
         "type": "sphere"
     }, 
     "50000": {
