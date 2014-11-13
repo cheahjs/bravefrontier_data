@@ -1369,6 +1369,16 @@
         "thumbnail": "item_thum_1101.png", 
         "type": "material"
     }, 
+    "110010": {
+        "desc": "カルの疑似ユニットを進化させる結晶体", 
+        "id": 110010, 
+        "max_stack": 1, 
+        "name": "蒼魂晶", 
+        "rarity": 3, 
+        "sell_price": 10000, 
+        "thumbnail": "item_thum_110010.png", 
+        "type": null
+    }, 
     "11002": {
         "desc": "破邪の力を秘めた特殊な貴石。王侯貴族の装飾品に使われることが多い", 
         "id": 11002, 
@@ -1926,7 +1936,7 @@
             "effect": [
                 {
                     "unknown proc id": "38", 
-                    "unknown proc param": "7:ATKデバフ,8:DEFデバフ,9:回復力デバフ,0,0,0,0,0"
+                    "unknown proc param": "7,8,9,0,0,0,0,0"
                 }
             ], 
             "target_area": "single", 
@@ -8393,6 +8403,27 @@
         "thumbnail": "sphere_thum_1_1.png", 
         "type": "sphere"
     }, 
+    "37660": {
+        "desc": "防御力を５０％アップし、クリティカル無効、弱点属性ダメージ無効", 
+        "effect": [
+            {
+                "def% buff": 50
+            }, 
+            {
+                "unknown passive id": "53", 
+                "unknown passive params": "0,0,100,100,100,100,0,0,0,0"
+            }
+        ], 
+        "id": 37660, 
+        "max_stack": 1, 
+        "name": "緑輝剣鎧ラフドラニア", 
+        "rarity": 3, 
+        "sell_price": 10000, 
+        "sphere type": 1, 
+        "sphere type text": "Status Boost", 
+        "thumbnail": "sphere_thum_1_1.png", 
+        "type": "sphere"
+    }, 
     "37700": {
         "desc": "全ての状態異常にかかりにくくなる", 
         "effect": [
@@ -10941,6 +10972,51 @@
         "sphere type": 12, 
         "sphere type text": "Defense Penetrating", 
         "thumbnail": "sphere_thum_1_5.png", 
+        "type": "sphere"
+    }, 
+    "43400": {
+        "desc": "１ターンごとにＢＢゲージが大幅に増加する", 
+        "effect": [
+            {
+                "bc fill per turn": 5
+            }
+        ], 
+        "id": 43400, 
+        "max_stack": 1, 
+        "name": "女帝の涙", 
+        "rarity": 3, 
+        "sell_price": 10000, 
+        "sphere type": 6, 
+        "sphere type text": "BB Gauge", 
+        "thumbnail": "sphere_thum_5_5.png", 
+        "type": "sphere"
+    }, 
+    "43500": {
+        "desc": "ＨＰ満タン時クリティカル率アップ、攻撃時低確率でランダム状態異常付与", 
+        "effect": [
+            {
+                "crit% buff": 30, 
+                "hp above % buff requirement": 100
+            }, 
+            {
+                "curse%": 5, 
+                "poison%": 5, 
+                "sick%": 7
+            }, 
+            {
+                "injury%": 7, 
+                "paralysis%": 5, 
+                "weaken%": 7
+            }
+        ], 
+        "id": 43500, 
+        "max_stack": 1, 
+        "name": "魔神鎌デスモノク", 
+        "rarity": 3, 
+        "sell_price": 10000, 
+        "sphere type": 4, 
+        "sphere type text": "Status Ailment", 
+        "thumbnail": "sphere_thum_4_4.png", 
         "type": "sphere"
     }, 
     "50000": {
