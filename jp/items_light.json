@@ -3513,8 +3513,9 @@
         "desc": "ＨＰが半分以下に減少時、ＢＣ・ＨＣのドロップ確率を大幅アップ", 
         "effect": [
             {
-                "unknown passive id": "12", 
-                "unknown passive params": "40,40,0,0,0,50,2"
+                "bc drop rate% buff": 40, 
+                "hc drop rate% buff": 40, 
+                "hp below % buff requirement": 50
             }
         ], 
         "id": 31400, 
@@ -3531,8 +3532,9 @@
         "desc": "瀕死時、ＢＣ・ＨＣのドロップ確率を超絶アップ", 
         "effect": [
             {
-                "unknown passive id": "12", 
-                "unknown passive params": "100,100,0,0,0,20,2"
+                "bc drop rate% buff": 100, 
+                "hc drop rate% buff": 100, 
+                "hp below % buff requirement": 20
             }
         ], 
         "id": 31401, 
@@ -5028,7 +5030,6 @@
         "desc": "攻撃時50％でHIT数+1(DMG5倍)", 
         "effect": [
             {
-                "atk% buff GUESSED": 50, 
                 "dmg% buff on extra hits": 500, 
                 "hit increase/hit": 1
             }
@@ -5045,7 +5046,6 @@
         "desc": "攻撃時50％でHIT数+2(DMG5倍)", 
         "effect": [
             {
-                "atk% buff GUESSED": 50, 
                 "dmg% buff on extra hits": 500, 
                 "hit increase/hit": 2
             }
@@ -5062,8 +5062,10 @@
         "desc": "ATKの数値分全能力に上乗せ", 
         "effect": [
             {
-                "unknown passive id": "40", 
-                "unknown passive params": "1,100,100,100"
+                "atk% buff": 100, 
+                "converted attribute": "attack", 
+                "def% buff": 100, 
+                "rec% buff": 100
             }
         ], 
         "id": 34825, 
@@ -5078,8 +5080,10 @@
         "desc": "ATKの数値分全能力に上乗せ", 
         "effect": [
             {
-                "unknown passive id": "40", 
-                "unknown passive params": "2,100,100,100"
+                "atk% buff": 100, 
+                "converted attribute": "defense", 
+                "def% buff": 100, 
+                "rec% buff": 100
             }
         ], 
         "id": 34826, 
@@ -5094,8 +5098,10 @@
         "desc": "ATKの数値分全能力に上乗せ", 
         "effect": [
             {
-                "unknown passive id": "40", 
-                "unknown passive params": "3,100,100,100"
+                "atk% buff": 100, 
+                "converted attribute": "recovery", 
+                "def% buff": 100, 
+                "rec% buff": 100
             }
         ], 
         "id": 34827, 
@@ -5110,8 +5116,10 @@
         "desc": "HPの10％分全能力に上乗せ", 
         "effect": [
             {
-                "unknown passive id": "40", 
-                "unknown passive params": "4,10,10,10"
+                "atk% buff": 10, 
+                "converted attribute": "hp", 
+                "def% buff": 10, 
+                "rec% buff": 10
             }
         ], 
         "id": 34828, 
@@ -6086,7 +6094,6 @@
                 "turn heal low": 2000
             }, 
             {
-                "atk% buff GUESSED": 100, 
                 "hit increase/hit": 1
             }
         ], 
@@ -6156,8 +6163,10 @@
                 "def% buff": 50
             }, 
             {
-                "unknown passive id": "53", 
-                "unknown passive params": "0,0,100,100,100,100,0,0,0,0"
+                "crit base drop rate resist%": 100, 
+                "crit buffed drop rate resist%": 100, 
+                "strong base element damage resist%": 100, 
+                "strong buffed element damage resist%": 100
             }
         ], 
         "id": 37660, 
@@ -7030,7 +7039,6 @@
         "desc": "通常攻撃のHIT数が増加し、威力が大幅アップ", 
         "effect": [
             {
-                "atk% buff GUESSED": 100, 
                 "hit increase/hit": 1
             }
         ], 
@@ -7213,8 +7221,9 @@
         "desc": "ＨＰが半分以下に減少時、ＢＣ・ＨＣのドロップ率を大幅アップ", 
         "effect": [
             {
-                "unknown passive id": "12", 
-                "unknown passive params": "40,40,0,0,0,50,2"
+                "bc drop rate% buff": 40, 
+                "hc drop rate% buff": 40, 
+                "hp below % buff requirement": 50
             }
         ], 
         "id": 41500, 
@@ -7739,8 +7748,7 @@
         "desc": "ガード時のダメージ軽減率をすこしアップ", 
         "effect": [
             {
-                "unknown passive id": "58", 
-                "unknown passive params": "10"
+                "guard increase mitigation%": 10
             }
         ], 
         "id": 44100, 
@@ -7821,12 +7829,10 @@
         "desc": "ガード時のダメージ軽減率をすこしアップし、ＢＢゲージをかなり増加する", 
         "effect": [
             {
-                "unknown passive id": "58", 
-                "unknown passive params": "10"
+                "guard increase mitigation%": 10
             }, 
             {
-                "unknown passive id": "61", 
-                "unknown passive params": "0,400,0"
+                "bc filled on guard": 4
             }
         ], 
         "id": 44500, 
