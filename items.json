@@ -10164,6 +10164,88 @@
         "thumbnail": "item_thum_800007.png", 
         "type": "material"
     }, 
+    "800200": {
+        "desc": "A pretty snow flake, cool to the touch. Unique event crafting material.", 
+        "id": 800200, 
+        "max_stack": 99, 
+        "name": "Snow Flake", 
+        "rarity": 3, 
+        "sell_price": 5, 
+        "thumbnail": "item_thum_800200.png", 
+        "type": "material"
+    }, 
+    "800201": {
+        "desc": "Crystal shards that are synthesized with mystical snow flakes. Unique event crafting material.", 
+        "id": 800201, 
+        "max_stack": 99, 
+        "name": "Snow Crystal", 
+        "rarity": 3, 
+        "sell_price": 15, 
+        "thumbnail": "item_thum_800201.png", 
+        "type": "material"
+    }, 
+    "800202": {
+        "desc": "Gemstone filled with frozen essences of magic. Unique event crafting material.", 
+        "id": 800202, 
+        "max_stack": 99, 
+        "name": "Snow Gemstone", 
+        "rarity": 3, 
+        "sell_price": 30, 
+        "thumbnail": "item_thum_800202.png", 
+        "type": "material"
+    }, 
+    "800203": {
+        "desc": "A frosted drop of winter essence, condensed with magical properties. Unique event crafting material.", 
+        "id": 800203, 
+        "max_stack": 99, 
+        "name": "Miracle Frost", 
+        "rarity": 3, 
+        "sell_price": 25, 
+        "thumbnail": "item_thum_800203.png", 
+        "type": "material"
+    }, 
+    "800204": {
+        "desc": "A frozen heart of a creature. Unique event crafting material.", 
+        "id": 800204, 
+        "max_stack": 99, 
+        "name": "Frozen Heart", 
+        "rarity": 3, 
+        "sell_price": 5000, 
+        "thumbnail": "item_thum_800204.png", 
+        "type": "material"
+    }, 
+    "800205": {
+        "desc": "A frozen soul of a beast, chilled with dark arts and magic. Unique event crafting material.", 
+        "id": 800205, 
+        "max_stack": 99, 
+        "name": "Frozen Soul", 
+        "rarity": 3, 
+        "sell_price": 10000, 
+        "thumbnail": "item_thum_800205.png", 
+        "type": "material"
+    }, 
+    "800206": {
+        "desc": "Sufficiently replenishes one ally's HP.", 
+        "effect": {
+            "effect": [
+                {
+                    "heal high": 1800, 
+                    "heal low": 1800, 
+                    "rec added% (from healer)": 10.0
+                }
+            ], 
+            "target_area": "single", 
+            "target_type": "party"
+        }, 
+        "id": 800206, 
+        "max equipped": 5, 
+        "max_stack": 99, 
+        "name": "Candy Cane", 
+        "rarity": 3, 
+        "sell_price": 200, 
+        "thumbnail": "item_thum_800206.png", 
+        "type": "consumable"
+    }, 
     "818881": {
         "desc": "Boosts DEF by 360% when unit HP drops below 25%. Slight increase of BC drop when attacking.", 
         "effect": [
@@ -10394,6 +10476,102 @@
         "sphere type": 6, 
         "sphere type text": "BB Gauge", 
         "thumbnail": "sphere_thum_818892.png", 
+        "type": "sphere"
+    }, 
+    "818900": {
+        "desc": "Boosts HP and ATK by 15%, DEF and REC by 20% & adds chance of slight HP recovery when damaged.", 
+        "effect": [
+            {
+                "atk% buff": 15, 
+                "def% buff": 20, 
+                "hp% buff": 15, 
+                "rec% buff": 20
+            }, 
+            {
+                "dmg% to hp% when attacked chance%": 20, 
+                "dmg% to hp% when attacked high": 15, 
+                "dmg% to hp% when attacked low": 10
+            }
+        ], 
+        "id": 818900, 
+        "max_stack": 1, 
+        "name": "Sacred Snowglobe", 
+        "rarity": 3, 
+        "recipe": {
+            "karma": "25000", 
+            "materials": [
+                {
+                    "count": 65, 
+                    "id": 800200
+                }, 
+                {
+                    "count": 35, 
+                    "id": 800201
+                }, 
+                {
+                    "count": 20, 
+                    "id": 800203
+                }, 
+                {
+                    "count": 15, 
+                    "id": 10308
+                }
+            ]
+        }, 
+        "sell_price": 5000, 
+        "sphere type": 1, 
+        "sphere type text": "Status Boost", 
+        "thumbnail": "sphere_thum_818900.png", 
+        "type": "sphere"
+    }, 
+    "818901": {
+        "desc": "Boosts HP and ATK a 20%, DEF and REC by 30% & adds chance of BB gauge boost when damaged.", 
+        "effect": [
+            {
+                "atk% buff": 20, 
+                "def% buff": 30, 
+                "hp% buff": 20, 
+                "rec% buff": 30
+            }, 
+            {
+                "bc fill when attacked high": 1, 
+                "bc fill when attacked low": 0, 
+                "bc fill when attacked%": 30
+            }
+        ], 
+        "id": 818901, 
+        "max_stack": 1, 
+        "name": "Frozen Myth", 
+        "rarity": 3, 
+        "recipe": {
+            "karma": "55000", 
+            "materials": [
+                {
+                    "count": 1, 
+                    "id": 818900
+                }, 
+                {
+                    "count": 70, 
+                    "id": 800200
+                }, 
+                {
+                    "count": 50, 
+                    "id": 800201
+                }, 
+                {
+                    "count": 50, 
+                    "id": 800202
+                }, 
+                {
+                    "count": 30, 
+                    "id": 800203
+                }
+            ]
+        }, 
+        "sell_price": 15000, 
+        "sphere type": 1, 
+        "sphere type text": "Status Boost", 
+        "thumbnail": "sphere_thum_818901.png", 
         "type": "sphere"
     }, 
     "819901": {
