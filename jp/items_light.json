@@ -1359,6 +1359,16 @@
         "thumbnail": "item_thum_802.png", 
         "type": "material"
     }, 
+    "10730": {
+        "desc": "蒼惶龍エストレイトの浄化作用のある鱗。", 
+        "id": 10730, 
+        "max_stack": 99, 
+        "name": "蒼龍の光鱗", 
+        "rarity": 3, 
+        "sell_price": 50, 
+        "thumbnail": "item_thum_801.png", 
+        "type": "material"
+    }, 
     "10800": {
         "desc": "緑色をした巨獣の骨", 
         "id": 10800, 
@@ -2029,6 +2039,46 @@
         "thumbnail": "item_thum_1103.png", 
         "type": "material"
     }, 
+    "11034": {
+        "desc": "蒼惶龍エストレイトの強大な力が宿る蒼玉。", 
+        "id": 11034, 
+        "max_stack": 99, 
+        "name": "如幻蒼玉", 
+        "rarity": 3, 
+        "sell_price": 50, 
+        "thumbnail": "item_thum_1101.png", 
+        "type": "material"
+    }, 
+    "11035": {
+        "desc": "暗禍狂神アルケムの身体の一部である赤晶石。", 
+        "id": 11035, 
+        "max_stack": 99, 
+        "name": "狂神の赤晶石", 
+        "rarity": 3, 
+        "sell_price": 50, 
+        "thumbnail": "item_thum_1100.png", 
+        "type": "material"
+    }, 
+    "11036": {
+        "desc": "暗禍狂神アルケムの身体の中心に存在する核。", 
+        "id": 11036, 
+        "max_stack": 99, 
+        "name": "暗禍の神核", 
+        "rarity": 3, 
+        "sell_price": 50, 
+        "thumbnail": "item_thum_1105.png", 
+        "type": "material"
+    }, 
+    "11037": {
+        "desc": "内部に莫大な力を宿した６色に輝く石", 
+        "id": 11037, 
+        "max_stack": 99, 
+        "name": "六輝石", 
+        "rarity": 3, 
+        "sell_price": 50, 
+        "thumbnail": "item_thum_1104.png", 
+        "type": "material"
+    }, 
     "20000": {
         "desc": "味方単体のＨＰを少し回復する", 
         "effect": {
@@ -2144,6 +2194,30 @@
         "thumbnail": "item_thum_20101.png", 
         "type": "consumable"
     }, 
+    "20102": {
+        "desc": "３ターンの間、味方全体のＨＰを徐々に回復", 
+        "effect": {
+            "effect": [
+                {
+                    "gradual heal high": 1000, 
+                    "gradual heal low": 800, 
+                    "gradual heal turns (8)": 3, 
+                    "proc id": "3", 
+                    "rec added% (from target)": 10.0
+                }
+            ], 
+            "target_area": "aoe", 
+            "target_type": "party"
+        }, 
+        "id": 20102, 
+        "max equipped": 3, 
+        "max_stack": 99, 
+        "name": "継復光", 
+        "rarity": 3, 
+        "sell_price": 100, 
+        "thumbnail": "item_thum_20102.png", 
+        "type": "consumable"
+    }, 
     "20200": {
         "desc": "味方単体の毒を治療する", 
         "effect": {
@@ -2249,6 +2323,33 @@
         "rarity": 3, 
         "sell_price": 20, 
         "thumbnail": "item_thum_20240.png", 
+        "type": "consumable"
+    }, 
+    "20250": {
+        "desc": "３ターンの間、味方全体の状態異常を無効化する", 
+        "effect": {
+            "effect": [
+                {
+                    "proc id": "17", 
+                    "resist curse% (34)": 100.0, 
+                    "resist injury% (33)": 100.0, 
+                    "resist paralysis% (35)": 100.0, 
+                    "resist poison% (30)": 100.0, 
+                    "resist sick% (32)": 100.0, 
+                    "resist status ails turns": 3, 
+                    "resist weaken% (31)": 100.0
+                }
+            ], 
+            "target_area": "aoe", 
+            "target_type": "party"
+        }, 
+        "id": 20250, 
+        "max equipped": 3, 
+        "max_stack": 99, 
+        "name": "抗疫薬", 
+        "rarity": 3, 
+        "sell_price": 100, 
+        "thumbnail": "item_thum_20250.png", 
         "type": "consumable"
     }, 
     "20400": {
@@ -8727,6 +8828,28 @@
         "thumbnail": "sphere_thum_4_3.png", 
         "type": "sphere"
     }, 
+    "44501": {
+        "desc": "ガード時のダメージ軽減率をアップし、ＢＢゲージを超絶に増加する", 
+        "effect": [
+            {
+                "guard increase mitigation%": 20, 
+                "passive id": "58"
+            }, 
+            {
+                "bc filled on guard": 6, 
+                "passive id": "61"
+            }
+        ], 
+        "id": 44501, 
+        "max_stack": 1, 
+        "name": "シ・オプス幻影機構", 
+        "rarity": 3, 
+        "sell_price": 10000, 
+        "sphere type": 6, 
+        "sphere type text": "BB Gauge", 
+        "thumbnail": "sphere_thum_4_4.png", 
+        "type": "sphere"
+    }, 
     "44600": {
         "desc": "弱点属性へのダメージをすこしアップする", 
         "effect": [
@@ -9620,6 +9743,107 @@
         "sphere type": 2, 
         "sphere type text": "Critical", 
         "thumbnail": "sphere_thum_5_6.png", 
+        "type": "sphere"
+    }, 
+    "47600": {
+        "desc": "スパーク時のダメージを５０％増加し、弱点属性へのダメージを増加する", 
+        "effect": [
+            {
+                "dark units do extra elemental weakness dmg": true, 
+                "earth units do extra elemental weakness dmg": true, 
+                "elemental weakness multiplier%": 50.0, 
+                "fire units do extra elemental weakness dmg": true, 
+                "light units do extra elemental weakness dmg": true, 
+                "passive id": "50", 
+                "thunder units do extra elemental weakness dmg": true, 
+                "water units do extra elemental weakness dmg": true
+            }, 
+            {
+                "damage% for spark": 50, 
+                "passive id": "31"
+            }
+        ], 
+        "id": 47600, 
+        "max_stack": 1, 
+        "name": "終世の黙示録", 
+        "rarity": 3, 
+        "sell_price": 10000, 
+        "sphere type": 1, 
+        "sphere type text": "Status Boost", 
+        "thumbnail": "sphere_thum_1_7.png", 
+        "type": "sphere"
+    }, 
+    "47700": {
+        "desc": "ターン毎にＢＢゲージが増加し、ＨＰがかなり回復＆被ダメージ時ＢＢゲージが少し増加し、確率でＨＰが回復する", 
+        "effect": [
+            {
+                "bc fill per turn": 3, 
+                "passive id": "9"
+            }, 
+            {
+                "bc fill when attacked high": 2, 
+                "bc fill when attacked low": 1, 
+                "bc fill when attacked%": 100, 
+                "passive id": "25"
+            }, 
+            {
+                "passive id": "33", 
+                "rec% added (turn heal)": 10.0, 
+                "turn heal high": 2000, 
+                "turn heal low": 1500
+            }, 
+            {
+                "dmg% to hp% when attacked chance%": 40, 
+                "dmg% to hp% when attacked high": 30, 
+                "dmg% to hp% when attacked low": 30, 
+                "passive id": "24"
+            }
+        ], 
+        "id": 47700, 
+        "max_stack": 1, 
+        "name": "魔鳳冠ヴァーミリオン", 
+        "rarity": 3, 
+        "sell_price": 10000, 
+        "sphere type": 6, 
+        "sphere type text": "BB Gauge", 
+        "thumbnail": "sphere_thum_5_7.png", 
+        "type": "sphere"
+    }, 
+    "47800": {
+        "desc": "１ターンごとにＢＢゲージが超絶に増加", 
+        "effect": [
+            {
+                "bc fill per turn": 10, 
+                "passive id": "9"
+            }
+        ], 
+        "id": 47800, 
+        "max_stack": 1, 
+        "name": "神器レド＝クローガ", 
+        "rarity": 3, 
+        "sell_price": 30000, 
+        "sphere type": 6, 
+        "sphere type text": "BB Gauge", 
+        "thumbnail": "sphere_thum_5_8.png", 
+        "type": "sphere"
+    }, 
+    "47900": {
+        "desc": "攻撃時、ＢＣ・ＨＣのドロップ率をアップ", 
+        "effect": [
+            {
+                "bc drop rate% buff - 19": 15, 
+                "hc drop rate% buff - 19": 15, 
+                "passive id": "19"
+            }
+        ], 
+        "id": 47900, 
+        "max_stack": 1, 
+        "name": "魔封珠『セルグラード』", 
+        "rarity": 3, 
+        "sell_price": 6000, 
+        "sphere type": 3, 
+        "sphere type text": "Drop", 
+        "thumbnail": "sphere_thum_1_6.png", 
         "type": "sphere"
     }, 
     "50000": {
