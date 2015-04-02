@@ -11313,6 +11313,108 @@
         "thumbnail": "item_thum_800308.png", 
         "type": "material"
     }, 
+    "800400": {
+        "desc": "A pure white flower. Unique event crafting material.", 
+        "id": 800400, 
+        "max_stack": 99, 
+        "name": "Lilium\u00a0", 
+        "rarity": 3, 
+        "sell_price": 500, 
+        "thumbnail": "item_thum_800400.png", 
+        "type": "material"
+    }, 
+    "800401": {
+        "desc": "A deacon's bell. Unique event crafting material.", 
+        "id": 800401, 
+        "max_stack": 99, 
+        "name": "Ascension Bell", 
+        "rarity": 3, 
+        "sell_price": 1000, 
+        "thumbnail": "item_thum_800401.png", 
+        "type": "material"
+    }, 
+    "800402": {
+        "desc": "Believed to bring the bearer good luck!  Unique event crafting material.", 
+        "id": 800402, 
+        "max_stack": 99, 
+        "name": "Rabbit's Foot", 
+        "rarity": 3, 
+        "sell_price": 1500, 
+        "thumbnail": "item_thum_800402.png", 
+        "type": "material"
+    }, 
+    "800403": {
+        "desc": "Increases the drop rate of materials for 3 turns.", 
+        "effect": {
+            "effect": [
+                {
+                    "drop rate buff turns": 3, 
+                    "item drop rate% buff (11)": 15, 
+                    "proc id": "6"
+                }
+            ], 
+            "target_area": "aoe", 
+            "target_type": "party"
+        }, 
+        "id": 800403, 
+        "max equipped": 3, 
+        "max_stack": 99, 
+        "name": "Rainbow Cupcake", 
+        "rarity": 3, 
+        "recipe": {
+            "karma": "0", 
+            "materials": [
+                {
+                    "count": 10, 
+                    "id": 800011
+                }, 
+                {
+                    "count": 10, 
+                    "id": 800401
+                }
+            ]
+        }, 
+        "sell_price": 200, 
+        "thumbnail": "item_thum_800403.png", 
+        "type": "consumable"
+    }, 
+    "800404": {
+        "desc": "Casts non-elemental shield on all allies for 2 turns.", 
+        "effect": {
+            "effect": [
+                {
+                    "proc id": "10002", 
+                    "shield def": 775, 
+                    "shield element": "all", 
+                    "shield hp": 1200, 
+                    "shield turns (10002)": 2
+                }
+            ], 
+            "target_area": "aoe", 
+            "target_type": "party"
+        }, 
+        "id": 800404, 
+        "max equipped": 3, 
+        "max_stack": 99, 
+        "name": "Adorned Egg", 
+        "rarity": 3, 
+        "recipe": {
+            "karma": "0", 
+            "materials": [
+                {
+                    "count": 10, 
+                    "id": 800011
+                }, 
+                {
+                    "count": 10, 
+                    "id": 800402
+                }
+            ]
+        }, 
+        "sell_price": 500, 
+        "thumbnail": "item_thum_800404.png", 
+        "type": "consumable"
+    }, 
     "818881": {
         "desc": "Boosts Def by 360% when Unit's HP drops below 35% & slight boost to BC drop rate when attacking", 
         "effect": [
@@ -11756,6 +11858,37 @@
         "sphere type": 1, 
         "sphere type text": "Status Boost", 
         "thumbnail": "sphere_thum_818891.png", 
+        "type": "sphere"
+    }, 
+    "818912": {
+        "desc": "BB gauge refills slightly faster, slightly reduces the consumption of BB gauge & chance of<br>inflicting Poison, Weakness, Injury, Paralysis", 
+        "effect": [
+            {
+                "bb gauge fill rate%": 10, 
+                "passive id": "32"
+            }, 
+            {
+                "passive id": "49", 
+                "reduced bb bc use chance%": 100, 
+                "reduced bb bc use% high": 10, 
+                "reduced bb bc use% low": 10
+            }, 
+            {
+                "injury%": 10, 
+                "paralysis%": 10, 
+                "passive id": "20", 
+                "poison%": 10, 
+                "weaken%": 10
+            }
+        ], 
+        "id": 818912, 
+        "max_stack": 1, 
+        "name": "Paskuan Weapon Enhancer", 
+        "rarity": 3, 
+        "sell_price": 20000, 
+        "sphere type": 6, 
+        "sphere type text": "BB Gauge", 
+        "thumbnail": "sphere_thum_818894.png", 
         "type": "sphere"
     }, 
     "818920": {
@@ -12357,6 +12490,51 @@
         "sphere type": 2, 
         "sphere type text": "Critical", 
         "thumbnail": "sphere_thum_4_4.png", 
+        "type": "sphere"
+    }, 
+    "858930": {
+        "desc": "Greatly boosts Zel, Karma & Item drop rate", 
+        "effect": [
+            {
+                "item drop rate% buff - 19": 5, 
+                "karma drop rate% buff - 19": 15, 
+                "passive id": "19", 
+                "zel drop rate% buff - 19": 15
+            }
+        ], 
+        "id": 858930, 
+        "max_stack": 1, 
+        "name": "Crystalline Egg", 
+        "rarity": 3, 
+        "recipe": {
+            "karma": "40000", 
+            "materials": [
+                {
+                    "count": 1, 
+                    "id": 800400
+                }, 
+                {
+                    "count": 30, 
+                    "id": 800014
+                }, 
+                {
+                    "count": 50, 
+                    "id": 800402
+                }, 
+                {
+                    "count": 40, 
+                    "id": 800401
+                }, 
+                {
+                    "count": 15, 
+                    "id": 10308
+                }
+            ]
+        }, 
+        "sell_price": 3000, 
+        "sphere type": 3, 
+        "sphere type text": "Drop", 
+        "thumbnail": "sphere_thum_858930.png", 
         "type": "sphere"
     }
 }
