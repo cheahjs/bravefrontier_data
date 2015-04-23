@@ -7882,15 +7882,15 @@
         "type": "sphere"
     }, 
     "40600": {
-        "desc": "ＨＰ、攻撃、防御、回復、クリティカル率を２５％アップ", 
+        "desc": "攻撃力・防御力・回復力・最大ＨＰを３０％アップ＆クリティカル率アップ", 
         "effect": [
             {
-                "atk% buff": 25, 
-                "crit% buff": 25, 
-                "def% buff": 25, 
-                "hp% buff": 25, 
+                "atk% buff": 30, 
+                "crit% buff": 20, 
+                "def% buff": 30, 
+                "hp% buff": 30, 
                 "passive id": "1", 
-                "rec% buff": 25
+                "rec% buff": 30
             }
         ], 
         "id": 40600, 
@@ -9622,6 +9622,31 @@
         "thumbnail": "sphere_thum_1_1.png", 
         "type": "sphere"
     }, 
+    "47202": {
+        "desc": "攻撃力・防御力を３０％アップ＆攻撃ＢＢの威力が増加する", 
+        "effect": [
+            {
+                "atk% buff": 30, 
+                "def% buff": 30, 
+                "passive id": "1"
+            }, 
+            {
+                "bb atk% buff": 150, 
+                "passive id": "64", 
+                "sbb atk% buff": 150, 
+                "ubb atk% buff": 150
+            }
+        ], 
+        "id": 47202, 
+        "max_stack": 1, 
+        "name": "ゴーレム・コア", 
+        "rarity": 3, 
+        "sell_price": 10000, 
+        "sphere type": 1, 
+        "sphere type text": "Status Boost", 
+        "thumbnail": "sphere_thum_1_1.png", 
+        "type": "sphere"
+    }, 
     "47300": {
         "desc": "最大HP、回復力１０％アップ＆クリティカル時のダメージが少しアップ", 
         "effect": [
@@ -9851,6 +9876,64 @@
         "sphere type": 3, 
         "sphere type text": "Drop", 
         "thumbnail": "sphere_thum_1_6.png", 
+        "type": "sphere"
+    }, 
+    "48000": {
+        "desc": "攻撃力、防御力を３０％アップ＆ＢＢゲージの消費量を軽減する", 
+        "effect": [
+            {
+                "atk% buff": 30, 
+                "def% buff": 30, 
+                "passive id": "1"
+            }, 
+            {
+                "passive id": "49", 
+                "reduced bb bc use chance%": 100, 
+                "reduced bb bc use% high": 20, 
+                "reduced bb bc use% low": 10
+            }
+        ], 
+        "id": 48000, 
+        "max_stack": 1, 
+        "name": "神貫雷弓『エシュオン』", 
+        "rarity": 3, 
+        "sell_price": 10000, 
+        "sphere type": 1, 
+        "sphere type text": "Status Boost", 
+        "thumbnail": "sphere_thum_2_4.png", 
+        "type": "sphere"
+    }, 
+    "48100": {
+        "desc": "スパーク時のダメージを５０％増加＆ＢＢの発動に必要なＢＢゲージを軽減＆弱点属性ダメージ無効＆ターン毎にＨＰが回復", 
+        "effect": [
+            {
+                "damage% for spark": 50, 
+                "passive id": "31"
+            }, 
+            {
+                "passive id": "48", 
+                "reduced bb bc cost%": 15
+            }, 
+            {
+                "passive id": "53", 
+                "strong base element damage resist%": 100, 
+                "strong buffed element damage resist%": 100
+            }, 
+            {
+                "passive id": "33", 
+                "rec% added (turn heal)": 10.0, 
+                "turn heal high": 1500, 
+                "turn heal low": 1000
+            }
+        ], 
+        "id": 48100, 
+        "max_stack": 1, 
+        "name": "四戦士の絆", 
+        "rarity": 3, 
+        "sell_price": 10000, 
+        "sphere type": 11, 
+        "sphere type text": "Spark", 
+        "thumbnail": "sphere_thum_3_5.png", 
         "type": "sphere"
     }, 
     "50000": {
