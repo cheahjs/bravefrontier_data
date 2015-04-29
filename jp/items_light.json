@@ -639,6 +639,16 @@
         "thumbnail": "item_thum_505.png", 
         "type": "material"
     }, 
+    "10421": {
+        "desc": "透明化能力を持つ生物が落としたであろう爪", 
+        "id": 10421, 
+        "max_stack": 99, 
+        "name": "透光爪", 
+        "rarity": 3, 
+        "sell_price": 50, 
+        "thumbnail": "item_thum_504.png", 
+        "type": "material"
+    }, 
     "10500": {
         "desc": "各地で入手可能な緑色をした巨獣の牙の化石", 
         "id": 10500, 
@@ -5262,7 +5272,7 @@
         "type": "sphere"
     }, 
     "34806": {
-        "desc": "攻撃時、確率でBBゲージが増加する", 
+        "desc": "通常攻撃時、確率でBBゲージが増加する", 
         "effect": [
             {
                 "bc fill when attacking high": 2, 
@@ -6459,7 +6469,7 @@
         "type": "sphere"
     }, 
     "36800": {
-        "desc": "攻撃時、確率でかなりBBゲージが増加する", 
+        "desc": "通常攻撃時、確率でかなりBBゲージが増加する", 
         "effect": [
             {
                 "bc fill when attacking high": 5, 
@@ -7980,7 +7990,7 @@
         "type": "sphere"
     }, 
     "41100": {
-        "desc": "攻撃時、確率で大幅にBBゲージが増加する", 
+        "desc": "通常攻撃時、確率で大幅にBBゲージが増加する", 
         "effect": [
             {
                 "bc fill when attacking high": 7, 
@@ -8195,7 +8205,7 @@
         "type": "sphere"
     }, 
     "41700": {
-        "desc": "攻撃時、ＢＢゲージが増加する", 
+        "desc": "通常攻撃時、ＢＢゲージが増加する", 
         "effect": [
             {
                 "bc fill when attacking high": 2, 
@@ -8361,7 +8371,7 @@
         "type": "sphere"
     }, 
     "42500": {
-        "desc": "攻撃時、ＢＢゲージが大幅に増加する", 
+        "desc": "通常攻撃時、ＢＢゲージが大幅に増加する", 
         "effect": [
             {
                 "bc fill when attacking high": 7, 
@@ -8506,7 +8516,7 @@
         "type": "sphere"
     }, 
     "43200": {
-        "desc": "ターン毎、攻撃時、被ダメージ時、敵撃破時、戦闘勝利時にBBゲージが増加", 
+        "desc": "ターン毎、通常攻撃時、被ダメージ時、敵撃破時、戦闘勝利時にBBゲージが増加", 
         "effect": [
             {
                 "bc fill per turn": 2, 
@@ -8932,6 +8942,41 @@
         "thumbnail": "sphere_thum_1_8.png", 
         "type": "sphere"
     }, 
+    "44702": {
+        "desc": "すべての状態異常を無効化＆弱点属性ダメージ無効、さらに攻撃力・防御力・回復力・最大ＨＰを１５％アップする", 
+        "effect": [
+            {
+                "curse resist%": 100, 
+                "injury resist%": 100, 
+                "paralysis resist%": 100, 
+                "passive id": "4", 
+                "poison resist%": 100, 
+                "sick resist%": 100, 
+                "weaken resist%": 100
+            }, 
+            {
+                "passive id": "53", 
+                "strong base element damage resist%": 100, 
+                "strong buffed element damage resist%": 100
+            }, 
+            {
+                "atk% buff": 15, 
+                "def% buff": 15, 
+                "hp% buff": 15, 
+                "passive id": "1", 
+                "rec% buff": 15
+            }
+        ], 
+        "id": 44702, 
+        "max_stack": 1, 
+        "name": "魔導器・アウルガロ", 
+        "rarity": 3, 
+        "sell_price": 10000, 
+        "sphere type": 5, 
+        "sphere type text": "Status Ailments Resistant", 
+        "thumbnail": "sphere_thum_1_8.png", 
+        "type": "sphere"
+    }, 
     "44800": {
         "desc": "ＢＣ獲得時、ＢＢゲージ上昇量が増加さらにターン毎にＢＢゲージが増加", 
         "effect": [
@@ -9223,7 +9268,7 @@
         "type": "sphere"
     }, 
     "45800": {
-        "desc": "ターン毎、攻撃時、被ダメージ時にＢＢゲージが大幅に増加", 
+        "desc": "ターン毎、通常攻撃時、被ダメージ時にＢＢゲージが大幅に増加", 
         "effect": [
             {
                 "bc fill per turn": 3, 
@@ -9478,7 +9523,7 @@
         "type": "sphere"
     }, 
     "46900": {
-        "desc": "攻撃時、ＢＢゲージが超絶に増加する", 
+        "desc": "通常攻撃時、ＢＢゲージが超絶に増加する", 
         "effect": [
             {
                 "bc fill when attacking high": 10, 
@@ -9878,6 +9923,30 @@
         "thumbnail": "sphere_thum_1_6.png", 
         "type": "sphere"
     }, 
+    "47901": {
+        "desc": "１ターンごとにＢＢゲージが増加＆毎ターンＨＰが回復", 
+        "effect": [
+            {
+                "bc fill per turn": 3, 
+                "passive id": "9"
+            }, 
+            {
+                "passive id": "33", 
+                "rec% added (turn heal)": 10.0, 
+                "turn heal high": 1000, 
+                "turn heal low": 500
+            }
+        ], 
+        "id": 47901, 
+        "max_stack": 1, 
+        "name": "魔封珠『レーム』", 
+        "rarity": 3, 
+        "sell_price": 6000, 
+        "sphere type": 6, 
+        "sphere type text": "BB Gauge", 
+        "thumbnail": "sphere_thum_1_6.png", 
+        "type": "sphere"
+    }, 
     "48000": {
         "desc": "攻撃力、防御力を３０％アップ＆ＢＢゲージの消費量を軽減する", 
         "effect": [
@@ -9934,6 +10003,66 @@
         "sphere type": 11, 
         "sphere type text": "Spark", 
         "thumbnail": "sphere_thum_3_5.png", 
+        "type": "sphere"
+    }, 
+    "48200": {
+        "desc": "すべての状態異常を無効化し、スパーク時、確率でBBゲージ上昇", 
+        "effect": [
+            {
+                "curse resist%": 100, 
+                "injury resist%": 100, 
+                "paralysis resist%": 100, 
+                "passive id": "4", 
+                "poison resist%": 100, 
+                "sick resist%": 100, 
+                "weaken resist%": 100
+            }, 
+            {
+                "bc fill on spark high": 1, 
+                "bc fill on spark low": 1, 
+                "bc fill on spark%": 50, 
+                "passive id": "47"
+            }
+        ], 
+        "id": 48200, 
+        "max_stack": 1, 
+        "name": "ピアニーの薫香華", 
+        "rarity": 3, 
+        "sell_price": 10000, 
+        "sphere type": 5, 
+        "sphere type text": "Status Ailments Resistant", 
+        "thumbnail": "sphere_thum_5_1.png", 
+        "type": "sphere"
+    }, 
+    "48201": {
+        "desc": "攻撃力・防御力・回復力・最大ＨＰを３０％アップし、ターン毎、被ダメージ時、BBゲージが上昇", 
+        "effect": [
+            {
+                "atk% buff": 30, 
+                "def% buff": 30, 
+                "hp% buff": 30, 
+                "passive id": "1", 
+                "rec% buff": 30
+            }, 
+            {
+                "bc fill per turn": 5, 
+                "passive id": "9"
+            }, 
+            {
+                "bc fill when attacked high": 3, 
+                "bc fill when attacked low": 2, 
+                "bc fill when attacked%": 100, 
+                "passive id": "25"
+            }
+        ], 
+        "id": 48201, 
+        "max_stack": 1, 
+        "name": "幻導機・ニヴレイシア", 
+        "rarity": 3, 
+        "sell_price": 10000, 
+        "sphere type": 1, 
+        "sphere type text": "Status Boost", 
+        "thumbnail": "sphere_thum_5_8.png", 
         "type": "sphere"
     }, 
     "50000": {
