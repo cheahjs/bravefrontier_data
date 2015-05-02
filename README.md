@@ -1,7 +1,7 @@
 bravefrontier_data
 ==================
 
-Holds extracted data for the game Brave Frontier (Global and JP)
+Holds extracted data for the game Brave Frontier (Global/JP/EU/KR)
 
 #List of extracted data
 
@@ -16,8 +16,9 @@ Holds extracted data for the game Brave Frontier (Global and JP)
 #Automatic Updates
 
 * Global currently has full data updates: dictionary, AI, units, items, missions
-* JP has the following updates: AI, units, items (light)
-* EU/KR will follow JP's updates, soon-ish.
+* JP has the following updates: AI, units, items, items (light).
+  * items_light.json will be updated regardless of server status. items.json can only be updated when the server is up.
+* EU/KR has the following updates: AI, units, items (light)
 
 #FAQ
 
