@@ -1848,7 +1848,7 @@
         "type": "material"
     }, 
     "110000": {
-        "desc": "セリアの疑似ユニットを進化させる結晶体", 
+        "desc": "セリアの擬似ユニットを進化させる結晶体", 
         "id": 110000, 
         "max_stack": 1, 
         "name": "紅魂晶", 
@@ -1870,7 +1870,7 @@
         "type": "material"
     }, 
     "110010": {
-        "desc": "カルの疑似ユニットを進化させる結晶体", 
+        "desc": "カルの擬似ユニットを進化させる結晶体", 
         "id": 110010, 
         "max_stack": 1, 
         "name": "蒼魂晶", 
@@ -1892,7 +1892,7 @@
         "type": "material"
     }, 
     "110020": {
-        "desc": "ルジーナの疑似ユニットを進化させる結晶体", 
+        "desc": "ルジーナの擬似ユニットを進化させる結晶体", 
         "id": 110020, 
         "max_stack": 1, 
         "name": "翠魂晶", 
@@ -1914,7 +1914,7 @@
         "type": "material"
     }, 
     "110030": {
-        "desc": "パリスの疑似ユニットを進化させる結晶体", 
+        "desc": "パリスの擬似ユニットを進化させる結晶体", 
         "id": 110030, 
         "max_stack": 1, 
         "name": "黄魂晶", 
@@ -1947,7 +1947,7 @@
         "type": "material"
     }, 
     "110050": {
-        "desc": "グラデンスの疑似ユニットを進化させる結晶体", 
+        "desc": "グラデンスの擬似ユニットを進化させる結晶体", 
         "id": 110050, 
         "max_stack": 1, 
         "name": "紫魂晶", 
@@ -9633,8 +9633,8 @@
         "raid": true, 
         "rarity": 3, 
         "sell_price": 10000, 
-        "sphere type": 1, 
-        "sphere type text": "Status Boost", 
+        "sphere type": 5, 
+        "sphere type text": "Status Ailments Resistant", 
         "thumbnail": "sphere_thum_5_7.png", 
         "type": "sphere"
     }, 
@@ -12264,8 +12264,8 @@
         "raid": true, 
         "rarity": 3, 
         "sell_price": 30000, 
-        "sphere type": 6, 
-        "sphere type text": "BB Gauge", 
+        "sphere type": 5, 
+        "sphere type text": "Status Ailments Resistant", 
         "thumbnail": "sphere_thum_5_6.png", 
         "type": "sphere"
     }, 
@@ -12793,8 +12793,8 @@
         "raid": true, 
         "rarity": 3, 
         "sell_price": 15000, 
-        "sphere type": 7, 
-        "sphere type text": "HP Recovery", 
+        "sphere type": 5, 
+        "sphere type text": "Status Ailments Resistant", 
         "thumbnail": "sphere_thum_5_6.png", 
         "type": "sphere"
     }, 
@@ -13218,8 +13218,8 @@
         "raid": true, 
         "rarity": 3, 
         "sell_price": 20000, 
-        "sphere type": 6, 
-        "sphere type text": "BB Gauge", 
+        "sphere type": 5, 
+        "sphere type text": "Status Ailments Resistant", 
         "thumbnail": "sphere_thum_5_6.png", 
         "type": "sphere"
     }, 
@@ -13555,8 +13555,8 @@
             ]
         }, 
         "sell_price": 8000, 
-        "sphere type": 6, 
-        "sphere type text": "BB Gauge", 
+        "sphere type": 10, 
+        "sphere type text": "Damage Reducing", 
         "thumbnail": "sphere_thum_4_3.png", 
         "type": "sphere"
     }, 
@@ -13603,8 +13603,8 @@
             ]
         }, 
         "sell_price": 10000, 
-        "sphere type": 6, 
-        "sphere type text": "BB Gauge", 
+        "sphere type": 10, 
+        "sphere type text": "Damage Reducing", 
         "thumbnail": "sphere_thum_4_4.png", 
         "type": "sphere"
     }, 
@@ -14619,6 +14619,35 @@
         "thumbnail": "sphere_thum_1_1.png", 
         "type": "sphere"
     }, 
+    "47204": {
+        "desc": "防御力・最大ＨＰを３０％アップし、ＨＣのドロップ率をかなりアップ＆ＨＰが半分以上の時、防御力を１００％アップ", 
+        "effect": [
+            {
+                "def% buff": 30, 
+                "hp% buff": 30, 
+                "passive id": "1"
+            }, 
+            {
+                "hc drop rate% buff": 15, 
+                "passive id": "19"
+            }, 
+            {
+                "def% buff": 100, 
+                "hp above % buff requirement": 50, 
+                "passive id": "11"
+            }
+        ], 
+        "id": 47204, 
+        "max_stack": 1, 
+        "name": "割れた護神輝彰・左片", 
+        "raid": true, 
+        "rarity": 3, 
+        "sell_price": 10000, 
+        "sphere type": 1, 
+        "sphere type text": "Status Boost", 
+        "thumbnail": "sphere_thum_1_1.png", 
+        "type": "sphere"
+    }, 
     "47300": {
         "desc": "最大HP、回復力１０％アップ＆クリティカル時のダメージが少しアップ", 
         "effect": [
@@ -15165,6 +15194,156 @@
         "sphere type": 6, 
         "sphere type text": "BB Gauge", 
         "thumbnail": "sphere_thum_4_8.png", 
+        "type": "sphere"
+    }, 
+    "48400": {
+        "desc": "戦闘開始から４ターンの間、攻撃力・防御力を１５０％アップ＆クリティカル率が超絶アップし、さらにクリティカル時のダメージがアップ", 
+        "effect": [
+            {
+                "first x turns": 4, 
+                "first x turns atk% (1)": 150, 
+                "first x turns def% (3)": 150, 
+                "passive id": "21"
+            }, 
+            {
+                "crit% buff": 30, 
+                "passive id": "1"
+            }, 
+            {
+                "crit multiplier%": 100.0, 
+                "passive id": "34"
+            }
+        ], 
+        "id": 48400, 
+        "max_stack": 1, 
+        "name": "天沼矛", 
+        "raid": true, 
+        "rarity": 3, 
+        "sell_price": 30000, 
+        "sphere type": 1, 
+        "sphere type text": "Status Boost", 
+        "thumbnail": "sphere_thum_5_7.png", 
+        "type": "sphere"
+    }, 
+    "48410": {
+        "desc": "最大ＨＰ・回復力を３０％アップ＆毎ターンＨＰがかなり回復＆被ダメージ時、確率でＨＰがかなり回復する", 
+        "effect": [
+            {
+                "hp% buff": 30, 
+                "passive id": "1", 
+                "rec% buff": 30
+            }, 
+            {
+                "passive id": "33", 
+                "rec% added (turn heal)": 10.0, 
+                "turn heal high": 2500, 
+                "turn heal low": 2000
+            }, 
+            {
+                "dmg% to hp% when attacked chance%": 40, 
+                "dmg% to hp% when attacked high": 40, 
+                "dmg% to hp% when attacked low": 30, 
+                "passive id": "24"
+            }
+        ], 
+        "id": 48410, 
+        "max_stack": 1, 
+        "name": "煌幻珠『焔獄龍』", 
+        "raid": true, 
+        "rarity": 3, 
+        "sell_price": 30000, 
+        "sphere type": 7, 
+        "sphere type text": "HP Recovery", 
+        "thumbnail": "sphere_thum_5_8.png", 
+        "type": "sphere"
+    }, 
+    "48420": {
+        "desc": "すべての状態異常、クリティカルダメージ、弱点属性ダメージを無効化＆毎ターンBBゲージが増加し、さらにHPがかなり回復する", 
+        "effect": [
+            {
+                "curse resist%": 100, 
+                "injury resist%": 100, 
+                "paralysis resist%": 100, 
+                "passive id": "4", 
+                "poison resist%": 100, 
+                "sick resist%": 100, 
+                "weaken resist%": 100
+            }, 
+            {
+                "crit chance base resist%": 100, 
+                "crit chance buffed resist%": 100, 
+                "passive id": "53", 
+                "strong base element damage resist%": 100, 
+                "strong buffed element damage resist%": 100
+            }, 
+            {
+                "bc fill per turn": 4, 
+                "passive id": "9"
+            }, 
+            {
+                "passive id": "33", 
+                "rec% added (turn heal)": 10.0, 
+                "turn heal high": 2000, 
+                "turn heal low": 1500
+            }
+        ], 
+        "id": 48420, 
+        "max_stack": 1, 
+        "name": "廻向の幻華鏡", 
+        "raid": true, 
+        "rarity": 3, 
+        "sell_price": 30000, 
+        "sphere type": 5, 
+        "sphere type text": "Status Ailments Resistant", 
+        "thumbnail": "sphere_thum_3_1.png", 
+        "type": "sphere"
+    }, 
+    "48430": {
+        "desc": "攻撃力・防御力・回復力・最大ＨＰを４０％アップ＆ＢＢゲージが溜まっているほど攻撃力がアップし、さらにＨＰが多いほど攻撃力がアップ", 
+        "effect": [
+            {
+                "atk% buff": 40, 
+                "def% buff": 40, 
+                "hp% buff": 40, 
+                "passive id": "1", 
+                "rec% buff": 40
+            }, 
+            {
+                "atk% base buff": 0, 
+                "atk% extra buff based on hp": 80, 
+                "buff proportional to hp": "remaining", 
+                "passive id": "46"
+            }, 
+            {
+                "atk% buff": 20, 
+                "bb gauge above % buff requirement": 20, 
+                "passive id": "30"
+            }, 
+            {
+                "atk% buff": 20, 
+                "bb gauge above % buff requirement": 40, 
+                "passive id": "30"
+            }, 
+            {
+                "atk% buff": 20, 
+                "bb gauge above % buff requirement": 60, 
+                "passive id": "30"
+            }, 
+            {
+                "atk% buff": 20, 
+                "bb gauge above % buff requirement": 80, 
+                "passive id": "30"
+            }
+        ], 
+        "id": 48430, 
+        "max_stack": 1, 
+        "name": "綺神冠『レフ・ネヴァナ』", 
+        "raid": true, 
+        "rarity": 3, 
+        "sell_price": 30000, 
+        "sphere type": 1, 
+        "sphere type text": "Status Boost", 
+        "thumbnail": "sphere_thum_2_1.png", 
         "type": "sphere"
     }, 
     "50000": {
