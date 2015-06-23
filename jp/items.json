@@ -12140,6 +12140,40 @@
         "thumbnail": "sphere_thum_5_5.png", 
         "type": "sphere"
     }, 
+    "40602": {
+        "desc": "攻撃力・防御力・回復力・最大ＨＰを３０％アップ＆被ダメージ時、確率でＨＰが回復＆毎ターンＨＰが少し回復", 
+        "effect": [
+            {
+                "atk% buff": 30, 
+                "def% buff": 30, 
+                "hp% buff": 30, 
+                "passive id": "1", 
+                "rec% buff": 30
+            }, 
+            {
+                "dmg% to hp% when attacked chance%": 40, 
+                "dmg% to hp% when attacked high": 30, 
+                "dmg% to hp% when attacked low": 30, 
+                "passive id": "24"
+            }, 
+            {
+                "passive id": "33", 
+                "rec% added (turn heal)": 10.0, 
+                "turn heal high": 1200, 
+                "turn heal low": 700
+            }
+        ], 
+        "id": 40602, 
+        "max_stack": 1, 
+        "name": "慈宝『レグ=ラグリス』", 
+        "raid": true, 
+        "rarity": 3, 
+        "sell_price": 20000, 
+        "sphere type": 1, 
+        "sphere type text": "Status Boost", 
+        "thumbnail": "sphere_thum_2_5.png", 
+        "type": "sphere"
+    }, 
     "40700": {
         "desc": "戦闘開始から２ターンの間、攻撃・防御を１００％アップ", 
         "effect": [
@@ -15343,6 +15377,50 @@
         "sell_price": 30000, 
         "sphere type": 1, 
         "sphere type text": "Status Boost", 
+        "thumbnail": "sphere_thum_2_1.png", 
+        "type": "sphere"
+    }, 
+    "48500": {
+        "desc": "被ダメージ時、確率でダメージを２５％軽減＆防御力を３０％アップ＆弱点属性ダメージをすこしアップ＆ターン毎にＢＢゲージ上昇し、ＨＰ回復", 
+        "effect": [
+            {
+                "def% buff": 30, 
+                "passive id": "1"
+            }, 
+            {
+                "dmg reduction chance%": 25, 
+                "dmg reduction%": 25, 
+                "passive id": "14"
+            }, 
+            {
+                "dark units do extra elemental weakness dmg": true, 
+                "earth units do extra elemental weakness dmg": true, 
+                "elemental weakness multiplier%": 30.0, 
+                "fire units do extra elemental weakness dmg": true, 
+                "light units do extra elemental weakness dmg": true, 
+                "passive id": "50", 
+                "thunder units do extra elemental weakness dmg": true, 
+                "water units do extra elemental weakness dmg": true
+            }, 
+            {
+                "bc fill per turn": 3, 
+                "passive id": "9"
+            }, 
+            {
+                "passive id": "33", 
+                "rec% added (turn heal)": 10.0, 
+                "turn heal high": 1500, 
+                "turn heal low": 1000
+            }
+        ], 
+        "id": 48500, 
+        "max_stack": 1, 
+        "name": "五光の軌跡", 
+        "raid": true, 
+        "rarity": 3, 
+        "sell_price": 10000, 
+        "sphere type": 10, 
+        "sphere type text": "Damage Reducing", 
         "thumbnail": "sphere_thum_2_1.png", 
         "type": "sphere"
     }, 
