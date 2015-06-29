@@ -1836,6 +1836,17 @@
         "thumbnail": "item_thum_1000.png", 
         "type": "material"
     }, 
+    "10909": {
+        "desc": "青紫の瘴雨が降り注ぐと言われる夜に出現する魔虫", 
+        "id": 10909, 
+        "max_stack": 99, 
+        "name": "瘴魔雷虫", 
+        "raid": true, 
+        "rarity": 3, 
+        "sell_price": 50, 
+        "thumbnail": "item_thum_1005.png", 
+        "type": "material"
+    }, 
     "11000": {
         "desc": "エレメントが持つ攻撃的な力を封じる特性を秘めた特殊な石", 
         "id": 11000, 
@@ -6007,7 +6018,7 @@
         "desc": "攻撃時50％でHIT数+1(DMG5倍)", 
         "effect": [
             {
-                "dmg% buff on extra hits": 500, 
+                "extra hits dmg%": 500, 
                 "hit increase/hit": 1, 
                 "passive id": "37"
             }
@@ -6025,7 +6036,7 @@
         "desc": "攻撃時50％でHIT数+2(DMG5倍)", 
         "effect": [
             {
-                "dmg% buff on extra hits": 500, 
+                "extra hits dmg%": 500, 
                 "hit increase/hit": 2, 
                 "passive id": "37"
             }
@@ -9610,6 +9621,32 @@
         "thumbnail": "sphere_thum_1_8.png", 
         "type": "sphere"
     }, 
+    "44703": {
+        "desc": "スパーク時のダメージを１００％増加し、さらに攻撃力・防御力・回復力・最大ＨＰを１５％アップする", 
+        "effect": [
+            {
+                "damage% for spark": 100, 
+                "passive id": "31"
+            }, 
+            {
+                "atk% buff": 15, 
+                "def% buff": 15, 
+                "hp% buff": 15, 
+                "passive id": "1", 
+                "rec% buff": 15
+            }
+        ], 
+        "id": 44703, 
+        "max_stack": 1, 
+        "name": "魔導器・カテダイク", 
+        "raid": true, 
+        "rarity": 3, 
+        "sell_price": 10000, 
+        "sphere type": 11, 
+        "sphere type text": "Spark", 
+        "thumbnail": "sphere_thum_1_8.png", 
+        "type": "sphere"
+    }, 
     "44800": {
         "desc": "ＢＣ獲得時、ＢＢゲージ上昇量が増加さらにターン毎にＢＢゲージが増加", 
         "effect": [
@@ -10700,6 +10737,28 @@
         "thumbnail": "sphere_thum_5_4.png", 
         "type": "sphere"
     }, 
+    "47903": {
+        "desc": "敵からのクリティカルダメージを無効化する", 
+        "effect": [
+            {
+                "crit chance base resist%": 100, 
+                "crit chance buffed resist%": 100, 
+                "crit dmg base damage resist%": 100, 
+                "crit dmg buffed damage resist%": 100, 
+                "passive id": "53"
+            }
+        ], 
+        "id": 47903, 
+        "max_stack": 1, 
+        "name": "魔封珠『ウルジ』", 
+        "raid": true, 
+        "rarity": 3, 
+        "sell_price": 6000, 
+        "sphere type": 10, 
+        "sphere type text": "Damage Reducing", 
+        "thumbnail": "sphere_thum_2_6.png", 
+        "type": "sphere"
+    }, 
     "48000": {
         "desc": "攻撃力、防御力を３０％アップ＆ＢＢゲージの消費量を軽減する", 
         "effect": [
@@ -10820,6 +10879,95 @@
         "sphere type": 1, 
         "sphere type text": "Status Boost", 
         "thumbnail": "sphere_thum_5_8.png", 
+        "type": "sphere"
+    }, 
+    "48205": {
+        "desc": "戦闘開始から２ターンの間、攻撃力・防御力を１００％アップ＆受けるダメージを半減", 
+        "effect": [
+            {
+                "first x turns": 2, 
+                "first x turns atk% (1)": 100, 
+                "first x turns def% (3)": 100, 
+                "passive id": "21"
+            }, 
+            {
+                "unknown passive id": "63", 
+                "unknown passive params": "1,2,3,4,5,6,50,2"
+            }
+        ], 
+        "id": 48205, 
+        "max_stack": 1, 
+        "name": "キラヴェールの瞬断雷", 
+        "raid": true, 
+        "rarity": 3, 
+        "sell_price": 10000, 
+        "sphere type": 1, 
+        "sphere type text": "Status Boost", 
+        "thumbnail": "sphere_thum_5_3.png", 
+        "type": "sphere"
+    }, 
+    "48206": {
+        "desc": "クリティカル時のダメージアップ＆弱点属性へのダメージをアップ＆攻撃力を３０％アップ", 
+        "effect": [
+            {
+                "crit multiplier%": 100.0, 
+                "passive id": "34"
+            }, 
+            {
+                "dark units do extra elemental weakness dmg": true, 
+                "earth units do extra elemental weakness dmg": true, 
+                "elemental weakness multiplier%": 50.0, 
+                "fire units do extra elemental weakness dmg": true, 
+                "light units do extra elemental weakness dmg": true, 
+                "passive id": "50", 
+                "thunder units do extra elemental weakness dmg": true, 
+                "water units do extra elemental weakness dmg": true
+            }, 
+            {
+                "atk% buff": 30, 
+                "passive id": "1"
+            }
+        ], 
+        "id": 48206, 
+        "max_stack": 1, 
+        "name": "幻導機・ジアクディール", 
+        "raid": true, 
+        "rarity": 3, 
+        "sell_price": 10000, 
+        "sphere type": 2, 
+        "sphere type text": "Critical", 
+        "thumbnail": "sphere_thum_5_2.png", 
+        "type": "sphere"
+    }, 
+    "48207": {
+        "desc": "ターン毎、通常攻撃時、被ダメージ時にＢＢゲージが超絶増加", 
+        "effect": [
+            {
+                "bc fill per turn": 5, 
+                "passive id": "9"
+            }, 
+            {
+                "bc fill when attacking high": 8, 
+                "bc fill when attacking low": 7, 
+                "bc fill when attacking%": 100, 
+                "passive id": "35"
+            }, 
+            {
+                "bc fill when attacked high": 7, 
+                "bc fill when attacked low": 5, 
+                "bc fill when attacked%": 100, 
+                "passive id": "25"
+            }
+        ], 
+        "id": 48207, 
+        "max_stack": 1, 
+        "name": "神器ジェナ=グレパス", 
+        "raid": true, 
+        "rarity": 3, 
+        "sell_price": 30000, 
+        "sphere type": 6, 
+        "sphere type text": "BB Gauge", 
+        "thumbnail": "sphere_thum_5_5.png", 
         "type": "sphere"
     }, 
     "48300": {
