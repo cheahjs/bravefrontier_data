@@ -174,7 +174,7 @@
                 "passive id": "2"
             }, 
             {
-                "bc fill per turn": 1, 
+                "bc fill per turn": 2, 
                 "passive id": "9"
             }
         ], 
@@ -290,6 +290,20 @@
         ], 
         "name": "Loving Flash"
     }, 
+    "1111": {
+        "desc": "25% boost to Def for all Units & large boost in effectiveness of Heart Crystals", 
+        "effects": [
+            {
+                "hc effectiveness%": 50, 
+                "passive id": "10"
+            }, 
+            {
+                "def% buff": 25, 
+                "passive id": "1"
+            }
+        ], 
+        "name": "Loving Protection"
+    }, 
     "112": {
         "desc": "50% boost to Atk power and 10% increase in HP of Water types", 
         "effects": [
@@ -315,7 +329,7 @@
                 "passive id": "2"
             }, 
             {
-                "bc fill per turn": 1, 
+                "bc fill per turn": 2, 
                 "passive id": "9"
             }
         ], 
@@ -396,7 +410,7 @@
         "desc": "BB gauge fills hugely after each turn", 
         "effects": [
             {
-                "bc fill per turn": 3, 
+                "bc fill per turn": 4, 
                 "passive id": "9"
             }
         ], 
@@ -482,7 +496,7 @@
                 "passive id": "2"
             }, 
             {
-                "bc fill per turn": 1, 
+                "bc fill per turn": 2, 
                 "passive id": "9"
             }
         ], 
@@ -656,7 +670,7 @@
                 "passive id": "2"
             }, 
             {
-                "bc fill per turn": 1, 
+                "bc fill per turn": 2, 
                 "passive id": "9"
             }
         ], 
@@ -781,7 +795,7 @@
                 "passive id": "2"
             }, 
             {
-                "bc fill per turn": 1, 
+                "bc fill per turn": 2, 
                 "passive id": "9"
             }
         ], 
@@ -798,7 +812,7 @@
                 "passive id": "2"
             }, 
             {
-                "bb gauge fill rate%": 20, 
+                "bb gauge fill rate%": 30, 
                 "passive id": "32"
             }
         ], 
@@ -919,7 +933,7 @@
                 "passive id": "2"
             }, 
             {
-                "bc fill per turn": 1, 
+                "bc fill per turn": 2, 
                 "passive id": "9"
             }
         ], 
@@ -936,7 +950,7 @@
                 "passive id": "2"
             }, 
             {
-                "bb gauge fill rate%": 20, 
+                "bb gauge fill rate%": 30, 
                 "passive id": "32"
             }
         ], 
@@ -1094,6 +1108,21 @@
             }
         ], 
         "name": "Ares' Excelsior"
+    }, 
+    "1804": {
+        "desc": "Large boost in the BB gauge fill rate & probable slight reduction in damage taken", 
+        "effects": [
+            {
+                "bb gauge fill rate%": 40, 
+                "passive id": "32"
+            }, 
+            {
+                "dmg reduction chance%": 10, 
+                "dmg reduction%": 20, 
+                "passive id": "14"
+            }
+        ], 
+        "name": "Ares' Sanctuary"
     }, 
     "1900": {
         "desc": "10% boost to Atk Power of all types", 
@@ -1517,7 +1546,7 @@
                 "unique elements required": 5
             }, 
             {
-                "bc fill per turn": 2, 
+                "bc fill per turn": 3, 
                 "passive id": "9"
             }
         ], 
@@ -1634,11 +1663,43 @@
         ], 
         "name": "Divine Five Brights Cure"
     }, 
+    "2212": {
+        "desc": "50% boost to Atk of all Units when 5 elements or more are present & reduction in BB gauge required for BB ", 
+        "effects": [
+            {
+                "atk% buff": 50, 
+                "passive id": "41", 
+                "unique elements required": 5
+            }, 
+            {
+                "passive id": "48", 
+                "reduced bb bc cost%": 15
+            }
+        ], 
+        "name": "Five Lights' Hellion"
+    }, 
+    "2213": {
+        "desc": "50% boost to Atk of all Units when 5 elements or more are present & reduces the amount of BB gauge used during BB", 
+        "effects": [
+            {
+                "atk% buff": 50, 
+                "passive id": "41", 
+                "unique elements required": 5
+            }, 
+            {
+                "passive id": "49", 
+                "reduced bb bc use chance%": 100, 
+                "reduced bb bc use% high": 20, 
+                "reduced bb bc use% low": 15
+            }
+        ], 
+        "name": "Five Lights' Supremacy"
+    }, 
     "2300": {
         "desc": "Boost in critical hit damage", 
         "effects": [
             {
-                "crit multiplier%": 200.0, 
+                "crit multiplier%": 50.0, 
                 "passive id": "34"
             }
         ], 
@@ -1648,7 +1709,7 @@
         "desc": "Large boost in critical hit damage", 
         "effects": [
             {
-                "crit multiplier%": 300.0, 
+                "crit multiplier%": 150.0, 
                 "passive id": "34"
             }
         ], 
@@ -1775,7 +1836,7 @@
             {
                 "bc fill when attacking high": 5, 
                 "bc fill when attacking low": 5, 
-                "bc fill when attacking%": 33, 
+                "bc fill when attacking%": 50, 
                 "passive id": "35"
             }
         ], 
@@ -1787,7 +1848,7 @@
             {
                 "bc fill when attacking high": 7, 
                 "bc fill when attacking low": 7, 
-                "bc fill when attacking%": 33, 
+                "bc fill when attacking%": 50, 
                 "passive id": "35"
             }
         ], 
@@ -2013,6 +2074,30 @@
             }
         ], 
         "name": "Serious Epidemic"
+    }, 
+    "3005": {
+        "desc": "Chance of inflicting a random status ailment when attacking & chance of slightly absorbing HP", 
+        "effects": [
+            {
+                "injury%": 10, 
+                "passive id": "20", 
+                "poison%": 7, 
+                "sick%": 10, 
+                "weaken%": 10
+            }, 
+            {
+                "curse%": 7, 
+                "paralysis%": 7, 
+                "passive id": "20"
+            }, 
+            {
+                "hp drain chance%": 50, 
+                "hp drain% high": 8, 
+                "hp drain% low": 3, 
+                "passive id": "17"
+            }
+        ], 
+        "name": "Epidemic God Usurpation"
     }, 
     "301": {
         "desc": "50% boost to Recovery of Fire Types", 
@@ -2735,7 +2820,7 @@
         "effects": [
             {
                 "passive id": "48", 
-                "reduced bb bc cost%": 10
+                "reduced bb bc cost%": 15
             }
         ], 
         "name": "Monarch's Magic"
@@ -2745,7 +2830,7 @@
         "effects": [
             {
                 "passive id": "48", 
-                "reduced bb bc cost%": 15
+                "reduced bb bc cost%": 20
             }
         ], 
         "name": "High Ruler's Magic"
@@ -2755,10 +2840,38 @@
         "effects": [
             {
                 "passive id": "48", 
-                "reduced bb bc cost%": 20
+                "reduced bb bc cost%": 25
             }
         ], 
         "name": "Supreme Ruler's Magic"
+    }, 
+    "4910": {
+        "desc": "Reduction in BB gauge required for BB & 25% Atk boost for all Units", 
+        "effects": [
+            {
+                "passive id": "48", 
+                "reduced bb bc cost%": 15
+            }, 
+            {
+                "atk% buff": 25, 
+                "passive id": "1"
+            }
+        ], 
+        "name": "Emperor's Magic"
+    }, 
+    "4911": {
+        "desc": "Reduction in BB gauge required for BB & BB gauge fills after each turn", 
+        "effects": [
+            {
+                "passive id": "48", 
+                "reduced bb bc cost%": 15
+            }, 
+            {
+                "bc fill per turn": 2, 
+                "passive id": "9"
+            }
+        ], 
+        "name": "War God's Magic"
     }, 
     "5": {
         "desc": "Leader Skill 1 Description", 
@@ -2955,7 +3068,7 @@
                 "passive id": "5"
             }, 
             {
-                "elemental weakness multiplier%": 25.0, 
+                "elemental weakness multiplier%": 50.0, 
                 "passive id": "50", 
                 "water units do extra elemental weakness dmg": true
             }
@@ -2970,7 +3083,7 @@
                 "water resist%": 15
             }, 
             {
-                "elemental weakness multiplier%": 25.0, 
+                "elemental weakness multiplier%": 50.0, 
                 "passive id": "50", 
                 "thunder units do extra elemental weakness dmg": true
             }
@@ -2985,7 +3098,7 @@
                 "passive id": "5"
             }, 
             {
-                "elemental weakness multiplier%": 25.0, 
+                "elemental weakness multiplier%": 50.0, 
                 "fire units do extra elemental weakness dmg": true, 
                 "passive id": "50"
             }
@@ -2996,12 +3109,12 @@
         "desc": "15% reduction in damage from Thunder types & boost to damage dealt to Thunder types from Earth types", 
         "effects": [
             {
-                "passive id": "5", 
-                "thunder resist%": 15
+                "earth resist%": 15, 
+                "passive id": "5"
             }, 
             {
                 "earth units do extra elemental weakness dmg": true, 
-                "elemental weakness multiplier%": 25.0, 
+                "elemental weakness multiplier%": 50.0, 
                 "passive id": "50"
             }
         ], 
@@ -3011,12 +3124,12 @@
         "desc": "15% reduction in damage from Light types & boost to damage dealt to Light types from Dark types", 
         "effects": [
             {
-                "light resist%": 15, 
+                "earth resist%": 15, 
                 "passive id": "5"
             }, 
             {
                 "dark units do extra elemental weakness dmg": true, 
-                "elemental weakness multiplier%": 25.0, 
+                "elemental weakness multiplier%": 50.0, 
                 "passive id": "50"
             }
         ], 
@@ -3026,16 +3139,58 @@
         "desc": "15% reduction in damage from Dark types & boost to damage dealt to Dark types from Light types", 
         "effects": [
             {
-                "dark resist%": 15, 
+                "earth resist%": 15, 
                 "passive id": "5"
             }, 
             {
-                "elemental weakness multiplier%": 25.0, 
+                "elemental weakness multiplier%": 50.0, 
                 "light units do extra elemental weakness dmg": true, 
                 "passive id": "50"
             }
         ], 
         "name": "Dark's Conviction"
+    }, 
+    "518": {
+        "desc": "25% boost to Atk for all Units & 15% reduction in damage from Fire Types", 
+        "effects": [
+            {
+                "atk% buff": 25, 
+                "passive id": "1"
+            }, 
+            {
+                "fire resist%": 15, 
+                "passive id": "5"
+            }
+        ], 
+        "name": "Authority of the Fire God"
+    }, 
+    "519": {
+        "desc": "25% boost to Atk for all Units & 15% reduction in damage from Water Types", 
+        "effects": [
+            {
+                "atk% buff": 25, 
+                "passive id": "1"
+            }, 
+            {
+                "passive id": "5", 
+                "water resist%": 15
+            }
+        ], 
+        "name": "Authority of the Water God"
+    }, 
+    "520": {
+        "desc": "25% boost to Atk for all Units & 15% reduction in damage from Earth Types", 
+        "effects": [
+            {
+                "atk% buff": 25, 
+                "passive id": "1"
+            }, 
+            {
+                "earth resist%": 15, 
+                "passive id": "5"
+            }
+        ], 
+        "name": "Authority of the Earth God"
     }, 
     "5200": {
         "desc": "25% boost to Atk when BB gauge is full", 
@@ -3058,6 +3213,48 @@
             }
         ], 
         "name": "Magic Flood"
+    }, 
+    "521": {
+        "desc": "25% boost to Atk for all Units & 15% reduction in damage from Thunder Types", 
+        "effects": [
+            {
+                "atk% buff": 25, 
+                "passive id": "1"
+            }, 
+            {
+                "passive id": "5", 
+                "thunder resist%": 15
+            }
+        ], 
+        "name": "Authority of the Thunder God"
+    }, 
+    "522": {
+        "desc": "25% boost to Atk for all Units & 15% reduction in damage from Light Types", 
+        "effects": [
+            {
+                "atk% buff": 25, 
+                "passive id": "1"
+            }, 
+            {
+                "light resist%": 15, 
+                "passive id": "5"
+            }
+        ], 
+        "name": "Authority of the Light God"
+    }, 
+    "523": {
+        "desc": "25% boost to Atk for all Units & 15% reduction in damage from Dark Types", 
+        "effects": [
+            {
+                "atk% buff": 25, 
+                "passive id": "1"
+            }, 
+            {
+                "dark resist%": 15, 
+                "passive id": "5"
+            }
+        ], 
+        "name": "Authority of the Dark God"
     }, 
     "5300": {
         "desc": "Large boost in critical hit damage & large boost in damage dealt to weak elements", 
@@ -3157,6 +3354,22 @@
         ], 
         "name": "Divine Oracle"
     }, 
+    "5503": {
+        "desc": "30% boost to HP of all Units & probable slight HP recovery when attacked", 
+        "effects": [
+            {
+                "hp% buff": 30, 
+                "passive id": "1"
+            }, 
+            {
+                "dmg% to hp% when attacked chance%": 30, 
+                "dmg% to hp% when attacked high": 20, 
+                "dmg% to hp% when attacked low": 15, 
+                "passive id": "24"
+            }
+        ], 
+        "name": "Phantom Demon's Oracle"
+    }, 
     "5600": {
         "desc": "25% boost to Atk of all Light and Dark Units", 
         "effects": [
@@ -3242,6 +3455,22 @@
             }
         ], 
         "name": "Ares' Echo"
+    }, 
+    "5703": {
+        "desc": "Boost in the BB gauge when attacked & boosts the BB gauge fill rate", 
+        "effects": [
+            {
+                "bc fill when attacked high": 4, 
+                "bc fill when attacked low": 2, 
+                "bc fill when attacked%": 100, 
+                "passive id": "25"
+            }, 
+            {
+                "bb gauge fill rate%": 30, 
+                "passive id": "32"
+            }
+        ], 
+        "name": "Ares' Aurora"
     }, 
     "5800": {
         "desc": "Probable boost in the BB gauge produced during Spark", 
@@ -3935,10 +4164,10 @@
         "name": "Empty Light"
     }, 
     "750134": {
-        "desc": "300% crit damage increase", 
+        "desc": "150% crit damage increase", 
         "effects": [
             {
-                "crit multiplier%": 300.0, 
+                "crit multiplier%": 150.0, 
                 "passive id": "34"
             }
         ], 
