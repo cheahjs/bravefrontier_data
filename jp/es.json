@@ -7978,6 +7978,20 @@
         "desc": "ＢＢおよびＳＢＢに３ターン状態異常を無効化する効果を追加し、さらに「氷輝天鎧レーゼ」を装備時、戦闘中に全能力を２０％アップ", 
         "effects": [
             {
+                "atk% buff": 20, 
+                "conditions": [
+                    {
+                        "item required": [
+                            "47206"
+                        ]
+                    }
+                ], 
+                "def% buff": 20, 
+                "hp% buff": 20, 
+                "passive id": "1", 
+                "rec% buff": 20
+            }, 
+            {
                 "conditions": [], 
                 "passive id": "66", 
                 "trigger on bb": true, 
@@ -8053,6 +8067,82 @@
         "name": "器を壊す力", 
         "target": "self"
     }, 
+    "7500": {
+        "desc": "被ダメージ時、ＢＢゲージがすこし増加", 
+        "effects": [
+            {
+                "bc fill when attacked high": 3, 
+                "bc fill when attacked low": 2, 
+                "bc fill when attacked%": 100, 
+                "conditions": [], 
+                "passive id": "25"
+            }
+        ], 
+        "name": "現実的な夢想家", 
+        "target": "self"
+    }, 
+    "7600": {
+        "desc": "攻撃ＢＢ使用時の威力がアップ", 
+        "effects": [
+            {
+                "bb atk% buff": 150, 
+                "conditions": [], 
+                "passive id": "64", 
+                "sbb atk% buff": 150, 
+                "ubb atk% buff": 150
+            }
+        ], 
+        "name": "未来に残したもの", 
+        "target": "self"
+    }, 
+    "7700": {
+        "desc": "ターン経過で大幅にＢＢゲージが増加", 
+        "effects": [
+            {
+                "bc fill per turn": 4, 
+                "conditions": [], 
+                "passive id": "9"
+            }
+        ], 
+        "name": "揺らがぬ忠誠", 
+        "target": "self"
+    }, 
+    "7800": {
+        "desc": "ＢＢゲージが満タン時、攻撃力をアップ", 
+        "effects": [
+            {
+                "atk% buff": 50, 
+                "bb gauge above % buff requirement": 100, 
+                "conditions": [], 
+                "passive id": "30"
+            }
+        ], 
+        "name": "築き上げた関係", 
+        "target": "self"
+    }, 
+    "7900": {
+        "desc": "ＢＢおよびＳＢＢに３ターンＢＢゲージが徐々に増加する効果を追加", 
+        "effects": [
+            {
+                "conditions": [], 
+                "passive id": "66", 
+                "trigger on bb": true, 
+                "trigger on sbb": true, 
+                "triggered effect": [
+                    {
+                        "effect delay time(ms)/frame": "66.7/4", 
+                        "increase bb gauge gradual": 5, 
+                        "increase bb gauge gradual turns (37)": 3, 
+                        "proc id": "19", 
+                        "target area": "aoe", 
+                        "target type": "party"
+                    }
+                ]
+            }
+        ], 
+        "name": "群雄割拠への道標", 
+        "target": "self"
+    }, 
     "8": {
         "desc": "リーダースキル1説明", 
         "effects": [
@@ -8076,6 +8166,20 @@
             }
         ], 
         "name": "英明なる魔導師の力", 
+        "target": "self"
+    }, 
+    "8000": {
+        "desc": "攻撃時、ＨＰを吸収する", 
+        "effects": [
+            {
+                "conditions": [], 
+                "hp drain chance%": 100, 
+                "hp drain% high": 8, 
+                "hp drain% low": 5, 
+                "passive id": "17"
+            }
+        ], 
+        "name": "混沌を喚ぶ存在", 
         "target": "self"
     }, 
     "9": {
