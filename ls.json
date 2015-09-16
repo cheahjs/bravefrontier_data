@@ -576,6 +576,22 @@
         ], 
         "name": "Pulsating War Spirit"
     }, 
+    "1214": {
+        "desc": "\u30bf\u30fc\u30f3\u7d4c\u904e\u3067\u8d85\u7d76\u306b\uff22\uff22\u30b2\u30fc\u30b8\u304c\u5897\u52a0\uff06\u708e\u5c5e\u6027\u3068\u6a39\u5c5e\u6027\u30e6\u30cb\u30c3\u30c8\u304c\u5f31\u70b9\u5c5e\u6027\u306b\u4e0e\u3048\u308b\u30c0\u30e1\u30fc\u30b8\u3092\u5927\u5e45\u306b\u30a2\u30c3\u30d7", 
+        "effects": [
+            {
+                "bc fill per turn": 6, 
+                "passive id": "9"
+            }, 
+            {
+                "earth units do extra elemental weakness dmg": true, 
+                "elemental weakness multiplier%": 125.0, 
+                "fire units do extra elemental weakness dmg": true, 
+                "passive id": "50"
+            }
+        ], 
+        "name": "\u795e\u6483\u306e\u714c\u8987\u52d5"
+    }, 
     "122": {
         "desc": "50% boost to Atk power and 10% increase in HP of Earth types", 
         "effects": [
@@ -5153,6 +5169,28 @@
         ], 
         "name": "\u7d71\u795e\u7363\u306e\u5929\u5f8b"
     }, 
+    "5506": {
+        "desc": "\u3059\u3079\u3066\u306e\u30e6\u30cb\u30c3\u30c8\u306e\uff28\uff30\u304c\uff14\uff10\uff05\u30a2\u30c3\u30d7\u3057\u3001\uff11\u30bf\u30fc\u30f3\u3054\u3068\u306b\uff28\uff30\u304c\u56de\u5fa9\u3059\u308b\uff06\u653b\u6483\u6642\u3001\u78ba\u7387\u3067\uff28\uff30\u3092\u5438\u53ce\u3059\u308b", 
+        "effects": [
+            {
+                "hp% buff": 40, 
+                "passive id": "1"
+            }, 
+            {
+                "passive id": "33", 
+                "rec% added (turn heal)": 10.0, 
+                "turn heal high": 1000, 
+                "turn heal low": 500
+            }, 
+            {
+                "hp drain chance%": 50, 
+                "hp drain% high": 10, 
+                "hp drain% low": 5, 
+                "passive id": "17"
+            }
+        ], 
+        "name": "\u84bc\u6d9b\u795e\u306e\u5929\u9298"
+    }, 
     "5510": {
         "desc": "30% boost to max HP for all Units", 
         "effects": [
@@ -8471,5 +8509,52 @@
             }
         ], 
         "name": "\u7d71\u5929\u795e\u306e\u8056\u8b77\u58c1"
+    }, 
+    "9500": {
+        "desc": "\uff22\uff22\u30b2\u30fc\u30b8\u304c\u534a\u5206\u4ee5\u4e0a\u306e\u6642\u3001\u653b\u6483\u529b\u30fb\u9632\u5fa1\u529b\u30fb\u56de\u5fa9\u529b\u304c\u30a2\u30c3\u30d7", 
+        "effects": [
+            {
+                "atk% buff": 40, 
+                "bb gauge above % buff requirement": 50, 
+                "def% buff": 40, 
+                "passive id": "30", 
+                "rec% buff": 40
+            }
+        ], 
+        "name": "\u5927\u5730\u306e\u96c4\u5fd7"
+    }, 
+    "9501": {
+        "desc": "\uff22\uff22\u30b2\u30fc\u30b8\u304c\u534a\u5206\u4ee5\u4e0a\u306e\u6642\u3001\u653b\u6483\u529b\u30fb\u9632\u5fa1\u529b\u30fb\u56de\u5fa9\u529b\u304c\u304b\u306a\u308a\u30a2\u30c3\u30d7\uff06\uff22\uff22\u30b2\u30fc\u30b8\u4e0a\u6607\u91cf\u304c\u3059\u3053\u3057\u30a2\u30c3\u30d7", 
+        "effects": [
+            {
+                "atk% buff": 60, 
+                "bb gauge above % buff requirement": 50, 
+                "def% buff": 60, 
+                "passive id": "30", 
+                "rec% buff": 60
+            }, 
+            {
+                "bb gauge fill rate%": 20, 
+                "passive id": "32"
+            }
+        ], 
+        "name": "\u5927\u5730\u795e\u306e\u7d71\u5fd7"
+    }, 
+    "9502": {
+        "desc": "\uff22\uff22\u30b2\u30fc\u30b8\u304c\u534a\u5206\u4ee5\u4e0a\u306e\u6642\u3001\u653b\u6483\u529b\u30fb\u9632\u5fa1\u529b\u30fb\u56de\u5fa9\u529b\u304c\u5927\u5e45\u306b\u30a2\u30c3\u30d7\uff06\uff22\uff22\u30b2\u30fc\u30b8\u4e0a\u6607\u91cf\u304c\u5927\u5e45\u306b\u30a2\u30c3\u30d7", 
+        "effects": [
+            {
+                "atk% buff": 80, 
+                "bb gauge above % buff requirement": 50, 
+                "def% buff": 80, 
+                "passive id": "30", 
+                "rec% buff": 80
+            }, 
+            {
+                "bb gauge fill rate%": 50, 
+                "passive id": "32"
+            }
+        ], 
+        "name": "\u5927\u5730\u9b41\u795e\u306e\u8987\u5c0e"
     }
 }
