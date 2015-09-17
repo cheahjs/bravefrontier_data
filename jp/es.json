@@ -8333,6 +8333,87 @@
         "name": "先遣隊が残せし者", 
         "target": "self"
     }, 
+    "8200": {
+        "desc": "被ダメージ時、確率でＢＢゲージがすこし増加＆状態異常の敵へのダメージが大幅に上昇", 
+        "effects": [
+            {
+                "bc fill when attacked high": 3, 
+                "bc fill when attacked low": 2, 
+                "bc fill when attacked%": 50, 
+                "conditions": [], 
+                "passive id": "25"
+            }, 
+            {
+                "atk% buff when enemy has ailment": 100, 
+                "atk% buff when enemy has curse": true, 
+                "atk% buff when enemy has injury": true, 
+                "atk% buff when enemy has paralysis": true, 
+                "atk% buff when enemy has poison": true, 
+                "atk% buff when enemy has sick": true, 
+                "atk% buff when enemy has weaken": true, 
+                "conditions": [], 
+                "passive id": "74"
+            }
+        ], 
+        "name": "友へと託す決意", 
+        "target": "self"
+    }, 
+    "8300": {
+        "desc": "被ダメージが一定値を超える度に、２ターン攻撃ＢＢの攻撃力をアップする", 
+        "effects": [
+            {
+                "buff": {
+                    "bb atk% buff": 200, 
+                    "buff turns (72)": "2", 
+                    "sbb atk% buff": 200, 
+                    "ubb atk% buff": 200
+                }, 
+                "conditions": [], 
+                "damage threshold buff activation": 10000, 
+                "passive id": "78"
+            }
+        ], 
+        "name": "善意無き血統", 
+        "target": "self"
+    }, 
+    "8400": {
+        "desc": "被ダメージが一定値を超える度に、２ターンダメージを軽減する", 
+        "effects": [
+            {
+                "buff": {
+                    "buff turns (36)": "1", 
+                    "unknown buff id": "36", 
+                    "unknown buff params": "25"
+                }, 
+                "conditions": [], 
+                "damage threshold buff activation": 10000, 
+                "passive id": "78"
+            }
+        ], 
+        "name": "穏やかな獅子", 
+        "target": "self"
+    }, 
+    "8500": {
+        "desc": "被ダメージ時、確率でＨＰがすこし回復＆攻撃時、ＨＰを吸収する", 
+        "effects": [
+            {
+                "conditions": [], 
+                "dmg% to hp% when attacked chance%": 25, 
+                "dmg% to hp% when attacked high": 20, 
+                "dmg% to hp% when attacked low": 20, 
+                "passive id": "24"
+            }, 
+            {
+                "conditions": [], 
+                "hp drain chance%": 100, 
+                "hp drain% high": 8, 
+                "hp drain% low": 5, 
+                "passive id": "17"
+            }
+        ], 
+        "name": "呪われし炎鎧", 
+        "target": "self"
+    }, 
     "9": {
         "desc": "リーダースキル1説明", 
         "effects": [

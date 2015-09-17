@@ -3150,6 +3150,30 @@
         ], 
         "name": "五光霊神の天命"
     }, 
+    "2222": {
+        "desc": "パーティのユニットが５属性以上でＨＰが３０％アップ＆攻撃力が１００％アップ＆攻撃時、高確率でランダムに状態異常を付与", 
+        "effects": [
+            {
+                "atk% buff": 100, 
+                "hp% buff": 30, 
+                "passive id": "41", 
+                "unique elements required": 5
+            }, 
+            {
+                "injury%": 15, 
+                "passive id": "20", 
+                "poison%": 10, 
+                "sick%": 15, 
+                "weaken%": 15
+            }, 
+            {
+                "curse%": 10, 
+                "paralysis%": 10, 
+                "passive id": "20"
+            }
+        ], 
+        "name": "五光蝕神の悪疫"
+    }, 
     "2300": {
         "desc": "クリティカル時、与えるダメージが少しアップ", 
         "effects": [
@@ -3831,6 +3855,32 @@
             }
         ], 
         "name": "悪疫統神の覇気"
+    }, 
+    "3009": {
+        "desc": "攻撃時、高確率でランダムに状態異常を付与＆クリティカル時、与えるダメージがかなりアップ＆攻撃力が８０％アップ", 
+        "effects": [
+            {
+                "injury%": 15, 
+                "passive id": "20", 
+                "poison%": 10, 
+                "sick%": 15, 
+                "weaken%": 15
+            }, 
+            {
+                "curse%": 10, 
+                "paralysis%": 10, 
+                "passive id": "20"
+            }, 
+            {
+                "crit multiplier%": 150.0, 
+                "passive id": "34"
+            }, 
+            {
+                "atk% buff": 80, 
+                "passive id": "1"
+            }
+        ], 
+        "name": "悪疫覚神の閃撃"
     }, 
     "301": {
         "desc": "炎属性ユニットの回復力が５０％アップ", 
@@ -5642,6 +5692,27 @@
         ], 
         "name": "千輝秤神の天掟"
     }, 
+    "551": {
+        "desc": "雷属性ユニットから受けるダメージを１５％軽減＆樹属性ユニットが雷属性ユニットに与えるダメージを大幅にアップ＆攻撃ＢＢ使用時の威力がかなりアップ", 
+        "effects": [
+            {
+                "passive id": "5", 
+                "thunder resist%": 15
+            }, 
+            {
+                "earth units do extra elemental weakness dmg": true, 
+                "elemental weakness multiplier%": 150.0, 
+                "passive id": "50"
+            }, 
+            {
+                "bb atk% buff": 100, 
+                "passive id": "64", 
+                "sbb atk% buff": 100, 
+                "ubb atk% buff": 100
+            }
+        ], 
+        "name": "翡煌神の断罪"
+    }, 
     "5510": {
         "desc": "すべてのユニットのＨＰが３０％アップ", 
         "effects": [
@@ -5671,6 +5742,26 @@
             }
         ], 
         "name": "通信士の恵愛"
+    }, 
+    "552": {
+        "desc": "水属性ユニットから受けるダメージを１５％軽減＆雷属性ユニットが水属性ユニットに与えるダメージを大幅にアップ＆敵からのクリティカルを無効化", 
+        "effects": [
+            {
+                "passive id": "5", 
+                "water resist%": 15
+            }, 
+            {
+                "elemental weakness multiplier%": 150.0, 
+                "passive id": "50", 
+                "thunder units do extra elemental weakness dmg": true
+            }, 
+            {
+                "crit chance base resist%": 100, 
+                "crit chance buffed resist%": 100, 
+                "passive id": "53"
+            }
+        ], 
+        "name": "琥魄神の断罪"
     }, 
     "5600": {
         "desc": "光属性と闇属性ユニットの攻撃力が２５％アップ", 
@@ -6965,7 +7056,7 @@
                 "passive id": "24"
             }
         ], 
-        "name": "精霊の主"
+        "name": "神の隣に座せし者"
     }, 
     "7915": {
         "desc": "すべてのユニットの攻撃力・防御力・回復力が２０％アップ＆被ダメージ時、確率でＨＰが回復", 
@@ -6983,7 +7074,7 @@
                 "passive id": "24"
             }
         ], 
-        "name": "揺るぎなき信念を貫く者"
+        "name": "超次元の覇者"
     }, 
     "7916": {
         "desc": "すべてのユニットのＨＰが２０％アップ＆炎属性・水属性・樹属性・雷属性のユニットから受けるダメージを１０％軽減", 
@@ -7001,7 +7092,7 @@
                 "passive id": "62"
             }
         ], 
-        "name": "神の隣に座せし者"
+        "name": "精霊の主"
     }, 
     "7917": {
         "desc": "すべてのユニットのＨＰが２５％アップ＆炎属性・水属性・樹属性・雷属性のユニットから受けるダメージを１０％軽減", 
@@ -7019,7 +7110,7 @@
                 "passive id": "62"
             }
         ], 
-        "name": "超次元の覇者"
+        "name": "揺るぎなき信念を貫く者"
     }, 
     "8": {
         "desc": "リーダースキル１説明", 
