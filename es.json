@@ -1640,6 +1640,49 @@
         "name": "Soul of the Leviathan", 
         "target": "self"
     }, 
+    "830147": {
+        "desc": "40% boost to HP, Atk & adds slight BB boost when damaged effect to BB/SBB for 3 turns when Bow of Andaria is equipped", 
+        "effects": [
+            {
+                "atk% buff": 40, 
+                "conditions": [
+                    {
+                        "item required": [
+                            "818919"
+                        ]
+                    }
+                ], 
+                "hp% buff": 40, 
+                "passive id": "1"
+            }, 
+            {
+                "conditions": [
+                    {
+                        "item required": [
+                            "818919"
+                        ]
+                    }
+                ], 
+                "passive id": "66", 
+                "trigger on bb": true, 
+                "trigger on sbb": true, 
+                "triggered effect": [
+                    {
+                        "bc fill when attacked high": 3, 
+                        "bc fill when attacked low": 2, 
+                        "bc fill when attacked turns (38)": 3, 
+                        "bc fill when attacked%": 100, 
+                        "effect delay time(ms)/frame": "0.0/0", 
+                        "proc id": "20", 
+                        "target area": "aoe", 
+                        "target type": "party"
+                    }
+                ]
+            }
+        ], 
+        "name": "Soul of the Watcher", 
+        "target": "self"
+    }, 
     "830527": {
         "desc": "Adds chance of taking only 1 damage when attacked", 
         "effects": [
@@ -1650,6 +1693,50 @@
             }
         ], 
         "name": "Chrono Barrier", 
+        "target": "self"
+    }, 
+    "840147": {
+        "desc": "20% boost to all parameters & adds critical hit rate boost to BB/SBB for 3 turns when Spear of Zedus is equipped", 
+        "effects": [
+            {
+                "atk% buff": 20, 
+                "conditions": [
+                    {
+                        "item required": [
+                            "818920"
+                        ]
+                    }
+                ], 
+                "def% buff": 20, 
+                "hp% buff": 20, 
+                "passive id": "1", 
+                "rec% buff": 20
+            }, 
+            {
+                "conditions": [
+                    {
+                        "item required": [
+                            "818920"
+                        ]
+                    }
+                ], 
+                "passive id": "66", 
+                "trigger on bb": true, 
+                "trigger on sbb": true, 
+                "triggered effect": [
+                    {
+                        "buff turns": 3, 
+                        "crit% buff (7)": 60, 
+                        "effect delay time(ms)/frame": "0.0/0", 
+                        "element buffed": "all", 
+                        "proc id": "5", 
+                        "target area": "aoe", 
+                        "target type": "party"
+                    }
+                ]
+            }
+        ], 
+        "name": "Soul of the Supreme", 
         "target": "self"
     }, 
     "840257": {
