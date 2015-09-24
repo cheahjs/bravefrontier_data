@@ -46,6 +46,19 @@
         ], 
         "name": "探求王の命"
     }, 
+    "10000": {
+        "desc": "全能力を１５％アップ", 
+        "effects": [
+            {
+                "atk% buff": 15, 
+                "def% buff": 15, 
+                "hp% buff": 15, 
+                "passive id": "1", 
+                "rec% buff": 15
+            }
+        ], 
+        "name": "幻剣将の力"
+    }, 
     "1001": {
         "desc": "シーカータイプの最大ＨＰが５０％アップ", 
         "effects": [
@@ -148,6 +161,42 @@
             }
         ], 
         "name": "炎創神の力"
+    }, 
+    "10101": {
+        "desc": "全能力を２０％アップし、敵からの弱点属性攻撃を無効化", 
+        "effects": [
+            {
+                "atk% buff": 20, 
+                "def% buff": 20, 
+                "hp% buff": 20, 
+                "passive id": "1", 
+                "rec% buff": 20
+            }, 
+            {
+                "passive id": "53", 
+                "strong base element damage resist%": 100, 
+                "strong buffed element damage resist%": 100
+            }
+        ], 
+        "name": "幻剣将の威光"
+    }, 
+    "10102": {
+        "desc": "全能力を３５％アップし、敵からの弱点属性攻撃を無効化", 
+        "effects": [
+            {
+                "atk% buff": 35, 
+                "def% buff": 35, 
+                "hp% buff": 35, 
+                "passive id": "1", 
+                "rec% buff": 35
+            }, 
+            {
+                "passive id": "53", 
+                "strong base element damage resist%": 100, 
+                "strong buffed element damage resist%": 100
+            }
+        ], 
+        "name": "夢幻剣将の覇気"
     }, 
     "102": {
         "desc": "炎属性ユニットの攻撃力５０％アップ、ＨＰ１０％アップ", 
@@ -2092,6 +2141,95 @@
             }
         ], 
         "name": "悪疫統神の轟咆"
+    }, 
+    "1916": {
+        "desc": "すべてのユニットの攻撃力が４０％アップ＆炎属性と水属性ユニットが弱点属性に与えるダメージをかなりアップ", 
+        "effects": [
+            {
+                "atk% buff": 40, 
+                "passive id": "1"
+            }, 
+            {
+                "elemental weakness multiplier%": 75.0, 
+                "fire units do extra elemental weakness dmg": true, 
+                "passive id": "50", 
+                "water units do extra elemental weakness dmg": true
+            }
+        ], 
+        "name": "零滅神の力"
+    }, 
+    "1917": {
+        "desc": "すべてのユニットの攻撃力が８０％アップ＆与ダメージか被ダメージが一定値を超える度に次ターン攻撃ＢＢの威力をアップ＆炎水属性ユニットが弱点属性に与えるダメージを大幅にアップ", 
+        "effects": [
+            {
+                "atk% buff": 80, 
+                "passive id": "1"
+            }, 
+            {
+                "buff": {
+                    "bb atk% buff": 100, 
+                    "buff turns (72)": "2", 
+                    "sbb atk% buff": 100, 
+                    "ubb atk% buff": 100
+                }, 
+                "damage dealt threshold buff activation": 10000, 
+                "passive id": "80"
+            }, 
+            {
+                "buff": {
+                    "bb atk% buff": 100, 
+                    "buff turns (72)": "2", 
+                    "sbb atk% buff": 100, 
+                    "ubb atk% buff": 100
+                }, 
+                "damage threshold buff activation": 10000, 
+                "passive id": "78"
+            }, 
+            {
+                "elemental weakness multiplier%": 125.0, 
+                "fire units do extra elemental weakness dmg": true, 
+                "passive id": "50", 
+                "water units do extra elemental weakness dmg": true
+            }
+        ], 
+        "name": "零滅神の慟哭"
+    }, 
+    "1918": {
+        "desc": "すべてのユニットの攻撃力が４０％アップ＆通常攻撃時、ＢＢゲージがかなり増加", 
+        "effects": [
+            {
+                "atk% buff": 40, 
+                "passive id": "1"
+            }, 
+            {
+                "bc fill when attacking high": 5, 
+                "bc fill when attacking low": 5, 
+                "bc fill when attacking%": 100, 
+                "passive id": "35"
+            }
+        ], 
+        "name": "絶武神の力"
+    }, 
+    "1919": {
+        "desc": "すべてのユニットの攻撃力が８０％アップ＆通常攻撃時、ＢＢゲージが大幅に増加＆通常攻撃のＨＩＴ数が増加", 
+        "effects": [
+            {
+                "atk% buff": 80, 
+                "passive id": "1"
+            }, 
+            {
+                "bc fill when attacking high": 7, 
+                "bc fill when attacking low": 7, 
+                "bc fill when attacking%": 100, 
+                "passive id": "35"
+            }, 
+            {
+                "extra hits dmg%": -50, 
+                "hit increase/hit": 1, 
+                "passive id": "37"
+            }
+        ], 
+        "name": "絶武剛神の闘拳"
     }, 
     "2": {
         "desc": "リーダースキル１説明", 
@@ -4763,6 +4901,46 @@
         ], 
         "name": "征覇帝の皇界"
     }, 
+    "4318": {
+        "desc": "すべてのユニットのＨＰと防御力３０％アップ＆ＢＣの出現率がアップ", 
+        "effects": [
+            {
+                "def% buff": 30, 
+                "hp% buff": 30, 
+                "passive id": "1"
+            }, 
+            {
+                "bc drop rate% buff": 15, 
+                "passive id": "19"
+            }
+        ], 
+        "name": "光彩神の聖法"
+    }, 
+    "4319": {
+        "desc": "すべてのユニットのＨＰと防御力４０％アップ＆ＢＣの出現率がアップ＆ＢＢゲージ上昇量がアップ＆被ダメージ時、ＢＢゲージが増加", 
+        "effects": [
+            {
+                "def% buff": 40, 
+                "hp% buff": 40, 
+                "passive id": "1"
+            }, 
+            {
+                "bc drop rate% buff": 15, 
+                "passive id": "19"
+            }, 
+            {
+                "bb gauge fill rate%": 30, 
+                "passive id": "32"
+            }, 
+            {
+                "bc fill when attacked high": 4, 
+                "bc fill when attacked low": 2, 
+                "bc fill when attacked%": 100, 
+                "passive id": "25"
+            }
+        ], 
+        "name": "光彩神の聖覇術"
+    }, 
     "4400": {
         "desc": "ターン経過でＢＢゲージが増加＆状態異常にかかりにくくなる", 
         "effects": [
@@ -5742,6 +5920,82 @@
             }
         ], 
         "name": "通信士の恵愛"
+    }, 
+    "5512": {
+        "desc": "すべてのユニットのＨＰが３０％アップ＆クリティカル時とスパーク時、与えるダメージがかなりアップ", 
+        "effects": [
+            {
+                "hp% buff": 30, 
+                "passive id": "1"
+            }, 
+            {
+                "crit multiplier%": 100.0, 
+                "passive id": "34"
+            }, 
+            {
+                "damage% for spark": 50, 
+                "passive id": "31"
+            }
+        ], 
+        "name": "煉焔皇の天承"
+    }, 
+    "5513": {
+        "desc": "すべてのユニットのＨＰが３０％アップ＆クリティカル時とスパーク時、与えるダメージがかなりアップ＆攻撃ＢＢ使用時の威力がかなりアップ", 
+        "effects": [
+            {
+                "hp% buff": 30, 
+                "passive id": "1"
+            }, 
+            {
+                "crit multiplier%": 150.0, 
+                "passive id": "34"
+            }, 
+            {
+                "damage% for spark": 70, 
+                "passive id": "31"
+            }, 
+            {
+                "bb atk% buff": 100, 
+                "passive id": "64", 
+                "sbb atk% buff": 100, 
+                "ubb atk% buff": 100
+            }
+        ], 
+        "name": "神煉焔皇の天刃"
+    }, 
+    "5514": {
+        "desc": "すべてのユニットのＨＰが３０％アップ＆スパーク時、与えるダメージが大幅にアップ", 
+        "effects": [
+            {
+                "hp% buff": 30, 
+                "passive id": "1"
+            }, 
+            {
+                "damage% for spark": 75, 
+                "passive id": "31"
+            }
+        ], 
+        "name": "影蝕神の天閃"
+    }, 
+    "5515": {
+        "desc": "すべてのユニットのＨＰが３０％アップ＆スパーク時、与えるダメージが超絶アップし、ＢＢゲージがすこし増加", 
+        "effects": [
+            {
+                "hp% buff": 30, 
+                "passive id": "1"
+            }, 
+            {
+                "damage% for spark": 100, 
+                "passive id": "31"
+            }, 
+            {
+                "bc fill on spark high": 2, 
+                "bc fill on spark low": 1, 
+                "bc fill on spark%": 100, 
+                "passive id": "47"
+            }
+        ], 
+        "name": "影魔闔神の天耀"
     }, 
     "552": {
         "desc": "水属性ユニットから受けるダメージを１５％軽減＆雷属性ユニットが水属性ユニットに与えるダメージを大幅にアップ＆敵からのクリティカルを無効化", 
