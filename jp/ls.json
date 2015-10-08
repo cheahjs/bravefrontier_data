@@ -3792,7 +3792,7 @@
         "name": "虚壊神の凄震"
     }, 
     "2900": {
-        "desc": "被ダメージ時ＢＢゲージ増加＆超低確率で被ダメージを１にする", 
+        "desc": "被ダメージ時、ＢＢゲージ増加＆超低確率で被ダメージを１にする", 
         "effects": [
             {
                 "bc fill when attacked high": 1, 
@@ -3808,7 +3808,7 @@
         "name": "聖姫の守護"
     }, 
     "2901": {
-        "desc": "被ダメージ時ＢＢゲージ増加＆低確率で被ダメージを１にする", 
+        "desc": "被ダメージ時、ＢＢゲージ増加＆低確率で被ダメージを１にする", 
         "effects": [
             {
                 "bc fill when attacked high": 2, 
@@ -3824,7 +3824,7 @@
         "name": "聖姫神の守護"
     }, 
     "2902": {
-        "desc": "被ダメージ時ＢＢゲージが大幅増加＆確率で被ダメージを１にする", 
+        "desc": "被ダメージ時、ＢＢゲージが大幅増加＆確率で被ダメージを１にする", 
         "effects": [
             {
                 "bc fill when attacked high": 5, 
@@ -6262,6 +6262,58 @@
             }
         ], 
         "name": "オールチャーミング"
+    }, 
+    "5802": {
+        "desc": "スパーク時、ＢＢゲージが増加しＨＰが回復＆スパークが一定回数を超える度に、次ターン攻撃ＢＢの威力をアップする", 
+        "effects": [
+            {
+                "bc fill on spark high": 3, 
+                "bc fill on spark low": 2, 
+                "bc fill on spark%": 100, 
+                "passive id": "47"
+            }, 
+            {
+                "unknown passive id": "101", 
+                "unknown passive params": "100,400,100"
+            }, 
+            {
+                "buff": {
+                    "bb atk% buff": 100, 
+                    "buff turns (72)": "2", 
+                    "sbb atk% buff": 100, 
+                    "ubb atk% buff": 100
+                }, 
+                "passive id": "86", 
+                "spark count buff activation": 20
+            }
+        ], 
+        "name": "ホワイト・ノーツ"
+    }, 
+    "5803": {
+        "desc": "スパーク時、与えるダメージがかなりアップし、ＢＢゲージが増加＆スパークが一定回数を超える度に、次ターン攻撃ＢＢの威力をアップする", 
+        "effects": [
+            {
+                "bc fill on spark high": 3, 
+                "bc fill on spark low": 2, 
+                "bc fill on spark%": 100, 
+                "passive id": "47"
+            }, 
+            {
+                "damage% for spark": 50, 
+                "passive id": "31"
+            }, 
+            {
+                "buff": {
+                    "bb atk% buff": 100, 
+                    "buff turns (72)": "2", 
+                    "sbb atk% buff": 100, 
+                    "ubb atk% buff": 100
+                }, 
+                "passive id": "86", 
+                "spark count buff activation": 20
+            }
+        ], 
+        "name": "ブラック・ノーツ"
     }, 
     "5900": {
         "desc": "パーティのユニットが６属性以上で攻撃力・防御力・回復力・最大ＨＰが２０％アップ", 
