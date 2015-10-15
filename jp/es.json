@@ -7268,7 +7268,8 @@
                             "47000", 
                             "47100", 
                             "47800", 
-                            "48207"
+                            "48207", 
+                            "49100"
                         ]
                     }
                 ], 
@@ -8675,6 +8676,78 @@
             }
         ], 
         "name": "迷闇の中の光明", 
+        "target": "self"
+    }, 
+    "9400": {
+        "desc": "与ダメージが一定値を超える度に、ＢＢゲージがかなり増加", 
+        "effects": [
+            {
+                "conditions": [], 
+                "damage dealt threshold activation": 10000, 
+                "increase bb gauge": 5, 
+                "passive id": "81"
+            }
+        ], 
+        "name": "背を守る氷壁", 
+        "target": "self"
+    }, 
+    "9500": {
+        "desc": "確率でダメージを２０％軽減し、さらに「ゴーレム・コア」を装備時、戦闘中に全能力を２０％アップ＆ＢＢの発動に必要なＢＢゲージを軽減", 
+        "effects": [
+            {
+                "conditions": [], 
+                "dmg reduction chance%": 20, 
+                "dmg reduction%": 20, 
+                "passive id": "14"
+            }, 
+            {
+                "conditions": [
+                    {
+                        "item required": [
+                            "47202"
+                        ]
+                    }
+                ], 
+                "passive id": "48", 
+                "reduced bb bc cost%": 20
+            }, 
+            {
+                "atk% buff": 20, 
+                "conditions": [
+                    {
+                        "item required": [
+                            "47202"
+                        ]
+                    }
+                ], 
+                "def% buff": 20, 
+                "hp% buff": 20, 
+                "passive id": "1", 
+                "rec% buff": 20
+            }
+        ], 
+        "name": "もう１つの魂", 
+        "target": "self"
+    }, 
+    "9600": {
+        "desc": "被ダメージ時、ＢＢゲージがすこし増加＆確率でＨＰがすこし回復", 
+        "effects": [
+            {
+                "conditions": [], 
+                "dmg% to hp% when attacked chance%": 25, 
+                "dmg% to hp% when attacked high": 20, 
+                "dmg% to hp% when attacked low": 20, 
+                "passive id": "24"
+            }, 
+            {
+                "bc fill when attacked high": 3, 
+                "bc fill when attacked low": 2, 
+                "bc fill when attacked%": 100, 
+                "conditions": [], 
+                "passive id": "25"
+            }
+        ], 
+        "name": "信仰の先に", 
         "target": "self"
     }
 }
