@@ -8333,6 +8333,36 @@
         "name": "\u5148\u9063\u968a\u304c\u6b8b\u305b\u3057\u8005", 
         "target": "self"
     }, 
+    "810107": {
+        "desc": "Absorbs HP when attacking & adds Def ignore effect to BB/SBB for 2 turns ", 
+        "effects": [
+            {
+                "conditions": [], 
+                "hp drain chance%": 100, 
+                "hp drain% high": 10, 
+                "hp drain% low": 5, 
+                "passive id": "17"
+            }, 
+            {
+                "conditions": [], 
+                "passive id": "66", 
+                "trigger on bb": true, 
+                "trigger on sbb": true, 
+                "triggered effect": [
+                    {
+                        "defense% ignore": 100, 
+                        "defense% ignore turns (39)": 3, 
+                        "effect delay time(ms)/frame": "0.0/0", 
+                        "proc id": "22", 
+                        "target area": "aoe", 
+                        "target type": "party"
+                    }
+                ]
+            }
+        ], 
+        "name": "Red Guardian of the Woods", 
+        "target": "self"
+    }, 
     "810147": {
         "desc": "40% boost to Atk, Def & renders self able to withstand 1 KO attack when Blades of Ultor is equipped", 
         "effects": [
@@ -8643,6 +8673,49 @@
             }
         ], 
         "name": "\u8d16\u7f6a\u306e\u708e", 
+        "target": "self"
+    }, 
+    "860107": {
+        "desc": "Hugely boosts damage against status afflicted foes & adds status ailment removal effect to BB/SBB", 
+        "effects": [
+            {
+                "atk% buff when enemy has ailment": 100, 
+                "atk% buff when enemy has curse": true, 
+                "atk% buff when enemy has injury": true, 
+                "atk% buff when enemy has paralysis": true, 
+                "atk% buff when enemy has poison": true, 
+                "atk% buff when enemy has sick": true, 
+                "atk% buff when enemy has weaken": true, 
+                "conditions": [], 
+                "passive id": "74"
+            }, 
+            {
+                "conditions": [], 
+                "passive id": "66", 
+                "trigger on bb": true, 
+                "trigger on sbb": true, 
+                "triggered effect": [
+                    {
+                        "ailments cured": [
+                            "poison", 
+                            "weaken", 
+                            "sick", 
+                            "injury", 
+                            "curse", 
+                            "paralysis", 
+                            "atk down", 
+                            "def down", 
+                            "rec down"
+                        ], 
+                        "effect delay time(ms)/frame": "0.0/0", 
+                        "proc id": "38", 
+                        "target area": "aoe", 
+                        "target type": "party"
+                    }
+                ]
+            }
+        ], 
+        "name": "Pumpkin Extraordinaire", 
         "target": "self"
     }, 
     "860147": {
