@@ -2233,14 +2233,14 @@
         "type": "material"
     }, 
     "11018": {
-        "desc": "崩雷獣の背中から腹にかけて伸びる発電器官の欠片", 
+        "desc": "魔神アム=ユノスが持つ錫杖に付いている歯車の１つ", 
         "id": 11018, 
         "max_stack": 99, 
-        "name": "雷棘破片", 
+        "name": "刻環の歯車", 
         "raid": true, 
         "rarity": 3, 
         "sell_price": 50, 
-        "thumbnail": "item_thum_1103.png", 
+        "thumbnail": "item_thum_1101.png", 
         "type": "material"
     }, 
     "11019": {
@@ -2479,6 +2479,17 @@
         "id": 11040, 
         "max_stack": 99, 
         "name": "暴斧の欠刃", 
+        "raid": true, 
+        "rarity": 3, 
+        "sell_price": 50, 
+        "thumbnail": "item_thum_1104.png", 
+        "type": "material"
+    }, 
+    "11041": {
+        "desc": "魔神アム=ユノスの周囲より採取される特殊な結晶", 
+        "id": 11041, 
+        "max_stack": 99, 
+        "name": "転現粒晶", 
         "raid": true, 
         "rarity": 3, 
         "sell_price": 50, 
@@ -8282,7 +8293,7 @@
         "type": "sphere"
     }, 
     "39100": {
-        "desc": "超低確率で被ダメージを1に軽減する", 
+        "desc": "超低確率で被ダメージを１に軽減する", 
         "effect": [
             {
                 "passive id": "43", 
@@ -10314,7 +10325,7 @@
         "type": "sphere"
     }, 
     "45600": {
-        "desc": "低確率で被ダメージを1に軽減する", 
+        "desc": "低確率で被ダメージを１に軽減する", 
         "effect": [
             {
                 "passive id": "43", 
@@ -11001,6 +11012,40 @@
         "thumbnail": "sphere_thum_1_1.png", 
         "type": "sphere"
     }, 
+    "47208": {
+        "desc": "攻撃力・回復力を３０％アップ＆ＢＢゲージが満タン時、攻撃力が大幅アップ＆HPが半分以下の時、攻撃力アップ＆スパーク時、ダメージがアップ", 
+        "effect": [
+            {
+                "atk% buff": 30, 
+                "passive id": "1", 
+                "rec% buff": 30
+            }, 
+            {
+                "atk% buff": 100, 
+                "bb gauge above % buff requirement": 100, 
+                "passive id": "30"
+            }, 
+            {
+                "atk% buff": 50, 
+                "hp below % buff requirement": 50, 
+                "passive id": "11"
+            }, 
+            {
+                "damage% for spark": 50, 
+                "passive id": "31"
+            }
+        ], 
+        "id": 47208, 
+        "max_stack": 1, 
+        "name": "緋炎宝フォルディア", 
+        "raid": false, 
+        "rarity": 3, 
+        "sell_price": 10000, 
+        "sphere type": 1, 
+        "sphere type text": "Status Boost", 
+        "thumbnail": "sphere_thum_1_1.png", 
+        "type": "sphere"
+    }, 
     "47300": {
         "desc": "最大HP、回復力１０％アップ＆クリティカル時のダメージが少しアップ", 
         "effect": [
@@ -11080,7 +11125,7 @@
         "type": "sphere"
     }, 
     "47500": {
-        "desc": "毎ターンＨＰをすこし回復し、確率でダメージを軽減または1にする", 
+        "desc": "毎ターンＨＰをすこし回復し、確率でダメージを軽減または１にする", 
         "effect": [
             {
                 "passive id": "33", 
@@ -12267,7 +12312,7 @@
         "type": "sphere"
     }, 
     "49200": {
-        "desc": "攻撃力・最大ＨＰを３０％アップ＆スパーク時、ダメージを５０％増加＆クリティカル時のダメージがアップ＆ＢＢの発動に必要なＢＢゲージを軽減", 
+        "desc": "攻撃力・最大ＨＰを３０％アップ＆スパーク時ダメージを５０％増加＆クリティカル時のダメージがアップ＆ＢＢの発動に必要なＢＢゲージを軽減", 
         "effect": [
             {
                 "atk% buff": 30, 
@@ -12426,6 +12471,40 @@
         "sphere type": 1, 
         "sphere type text": "Status Boost", 
         "thumbnail": "sphere_thum_2_1.png", 
+        "type": "sphere"
+    }, 
+    "49700": {
+        "desc": "すべての状態異常を無効化＆毎ターンＢＢゲージがかなり増加＆被ダメージ時、ＢＢゲージが増加", 
+        "effect": [
+            {
+                "curse resist%": 100, 
+                "injury resist%": 100, 
+                "paralysis resist%": 100, 
+                "passive id": "4", 
+                "poison resist%": 100, 
+                "sick resist%": 100, 
+                "weaken resist%": 100
+            }, 
+            {
+                "bc fill per turn": 4, 
+                "passive id": "9"
+            }, 
+            {
+                "bc fill when attacked high": 2, 
+                "bc fill when attacked low": 2, 
+                "bc fill when attacked%": 100, 
+                "passive id": "25"
+            }
+        ], 
+        "id": 49700, 
+        "max_stack": 1, 
+        "name": "刻識の神魔眼", 
+        "raid": true, 
+        "rarity": 3, 
+        "sell_price": 10000, 
+        "sphere type": 5, 
+        "sphere type text": "Status Ailments Resistant", 
+        "thumbnail": "sphere_thum_3_1.png", 
         "type": "sphere"
     }, 
     "50000": {
