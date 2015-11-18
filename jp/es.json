@@ -6706,6 +6706,118 @@
         "name": "見習い女神の加護", 
         "target": "self"
     }, 
+    "10400": {
+        "desc": "ＢＢおよびＳＢＢに状態異常回復効果を追加", 
+        "effects": [
+            {
+                "conditions": [], 
+                "passive id": "66", 
+                "trigger on bb": true, 
+                "trigger on sbb": true, 
+                "triggered effect": [
+                    {
+                        "ailments cured": [
+                            "poison", 
+                            "weaken", 
+                            "sick", 
+                            "injury", 
+                            "curse", 
+                            "paralysis", 
+                            "atk down", 
+                            "def down", 
+                            "rec down"
+                        ], 
+                        "effect delay time(ms)/frame": "0.0/0", 
+                        "proc id": "38", 
+                        "target area": "aoe", 
+                        "target type": "party"
+                    }
+                ]
+            }
+        ], 
+        "name": "浄化する優炎", 
+        "target": "self"
+    }, 
+    "10500": {
+        "desc": "被ダメージ時、ＢＢゲージが増加", 
+        "effects": [
+            {
+                "bc fill when attacked high": 5, 
+                "bc fill when attacked low": 3, 
+                "bc fill when attacked%": 100, 
+                "conditions": [], 
+                "passive id": "25"
+            }
+        ], 
+        "name": "栄光の日々の証明", 
+        "target": "self"
+    }, 
+    "10600": {
+        "desc": "ＢＢおよびＳＢＢに味方のＢＢゲージが少し上昇する効果を追加し、さらに「氷輝天鎧レーゼ」を装備時、戦闘中に全能力を２０％アップ", 
+        "effects": [
+            {
+                "atk% buff": 20, 
+                "conditions": [
+                    {
+                        "item required": [
+                            "47206"
+                        ]
+                    }
+                ], 
+                "def% buff": 20, 
+                "hp% buff": 20, 
+                "passive id": "1", 
+                "rec% buff": 20
+            }, 
+            {
+                "conditions": [], 
+                "passive id": "66", 
+                "trigger on bb": true, 
+                "trigger on sbb": true, 
+                "triggered effect": [
+                    {
+                        "effect delay time(ms)/frame": "0.0/0", 
+                        "increase bb gauge": 4, 
+                        "proc id": "31", 
+                        "target area": "aoe", 
+                        "target type": "party"
+                    }
+                ]
+            }
+        ], 
+        "name": "永遠なる忠誠", 
+        "target": "self"
+    }, 
+    "10700": {
+        "desc": "ＢＢおよびＳＢＢに２ターン防御無視攻撃付与効果を追加し、さらに攻撃時、ＨＰを吸収する", 
+        "effects": [
+            {
+                "conditions": [], 
+                "hp drain chance%": 100, 
+                "hp drain% high": 10, 
+                "hp drain% low": 5, 
+                "passive id": "17"
+            }, 
+            {
+                "conditions": [], 
+                "passive id": "66", 
+                "trigger on bb": true, 
+                "trigger on sbb": true, 
+                "triggered effect": [
+                    {
+                        "defense% ignore": 100, 
+                        "defense% ignore turns (39)": 2, 
+                        "effect delay time(ms)/frame": "0.0/0", 
+                        "proc id": "22", 
+                        "target area": "aoe", 
+                        "target type": "party"
+                    }
+                ]
+            }
+        ], 
+        "name": "冥界に眠りし力", 
+        "target": "self"
+    }, 
     "11": {
         "desc": "リーダースキル1説明", 
         "effects": [
