@@ -236,6 +236,48 @@
         ], 
         "name": "霊導神冠の覇気"
     }, 
+    "10105": {
+        "desc": "全能力を２０％アップ＆ＢＣ、ＨＣ、ゼル、カルマ、アイテムのドロップ率をアップ", 
+        "effects": [
+            {
+                "atk% buff": 20, 
+                "def% buff": 20, 
+                "hp% buff": 20, 
+                "passive id": "1", 
+                "rec% buff": 20
+            }, 
+            {
+                "bc drop rate% buff": 10, 
+                "hc drop rate% buff": 10, 
+                "item drop rate% buff": 2, 
+                "karma drop rate% buff": 5, 
+                "passive id": "19", 
+                "zel drop rate% buff": 10
+            }
+        ], 
+        "name": "幻英煌の威光"
+    }, 
+    "10106": {
+        "desc": "全能力を３０％アップ＆ＢＣ、ＨＣ、ゼル、カルマ、アイテムのドロップ率を大幅にアップ", 
+        "effects": [
+            {
+                "atk% buff": 30, 
+                "def% buff": 30, 
+                "hp% buff": 30, 
+                "passive id": "1", 
+                "rec% buff": 30
+            }, 
+            {
+                "bc drop rate% buff": 18, 
+                "hc drop rate% buff": 18, 
+                "item drop rate% buff": 3, 
+                "karma drop rate% buff": 10, 
+                "passive id": "19", 
+                "zel drop rate% buff": 15
+            }
+        ], 
+        "name": "幻英極煌の覇気"
+    }, 
     "102": {
         "desc": "炎属性ユニットの攻撃力５０％アップ、ＨＰ１０％アップ", 
         "effects": [
@@ -2477,6 +2519,50 @@
             }
         ], 
         "name": "絶武剛神の闘拳"
+    }, 
+    "1920": {
+        "desc": "すべてのユニットの攻撃力が４０％アップ＆クリティカル時、与えるダメージがアップしＢＢゲージが増加", 
+        "effects": [
+            {
+                "atk% buff": 40, 
+                "passive id": "1"
+            }, 
+            {
+                "crit multiplier%": 100.0, 
+                "passive id": "34"
+            }, 
+            {
+                "bc fill on crit max": 6, 
+                "bc fill on crit min": 4, 
+                "bc fill on crit%": 100.0, 
+                "passive id": "65"
+            }
+        ], 
+        "name": "氷影閃神の力"
+    }, 
+    "1921": {
+        "desc": "すべてのユニットの攻撃力が８０％アップ＆クリティカル時、与えるダメージがかなりアップしＢＢゲージが大幅に増加＆クリティカルが発生する度に次ターン攻撃力がアップ", 
+        "effects": [
+            {
+                "atk% buff": 80, 
+                "passive id": "1"
+            }, 
+            {
+                "crit multiplier%": 150.0, 
+                "passive id": "34"
+            }, 
+            {
+                "bc fill on crit max": 8, 
+                "bc fill on crit min": 6, 
+                "bc fill on crit%": 100.0, 
+                "passive id": "65"
+            }, 
+            {
+                "unknown passive id": "89", 
+                "unknown passive params": "1,50,-1,100,2"
+            }
+        ], 
+        "name": "氷影閃神の開闢"
     }, 
     "2": {
         "desc": "リーダースキル１説明", 
@@ -5375,6 +5461,65 @@
         ], 
         "name": "光彩神の聖覇術"
     }, 
+    "4320": {
+        "desc": "すべてのユニットのＨＰと防御力３０％アップ＆ターン経過でＢＢゲージが増加", 
+        "effects": [
+            {
+                "def% buff": 30, 
+                "hp% buff": 30, 
+                "passive id": "1"
+            }, 
+            {
+                "bc fill per turn": 3, 
+                "passive id": "9"
+            }
+        ], 
+        "name": "暁達神の聖域"
+    }, 
+    "4321": {
+        "desc": "すべてのユニットのＨＰと防御力４０％アップ＆ターン経過で超絶にＢＢゲージが増加＆ＯＤゲージ上昇量アップ", 
+        "effects": [
+            {
+                "def% buff": 40, 
+                "hp% buff": 40, 
+                "passive id": "1"
+            }, 
+            {
+                "bc fill per turn": 5, 
+                "passive id": "9"
+            }, 
+            {
+                "od fill rate%": 20, 
+                "passive id": "70"
+            }
+        ], 
+        "name": "暁達皇神の奇跡"
+    }, 
+    "4323": {
+        "desc": "すべてのユニットのＨＰと防御力４０％アップ＆被ダメージ時、ＢＢゲージがかなり増加＆被ダメージが一定値を超える度に、２ターンダメージを軽減する", 
+        "effects": [
+            {
+                "def% buff": 40, 
+                "hp% buff": 40, 
+                "passive id": "1"
+            }, 
+            {
+                "bc fill when attacked high": 6, 
+                "bc fill when attacked low": 3, 
+                "bc fill when attacked%": 100, 
+                "passive id": "25"
+            }, 
+            {
+                "buff": {
+                    "buff turns (36)": "1", 
+                    "dmg reduction% buff": 20
+                }, 
+                "damage threshold buff activation": 5000, 
+                "passive id": "78"
+            }
+        ], 
+        "name": "狂呪皇の魔神域"
+    }, 
     "4400": {
         "desc": "ターン経過でＢＢゲージが増加＆状態異常にかかりにくくなる", 
         "effects": [
@@ -6430,6 +6575,41 @@
             }
         ], 
         "name": "影魔闔神の天耀"
+    }, 
+    "5516": {
+        "desc": "すべてのユニットのＨＰが３０％アップ＆ＢＢゲージ上昇量がかなりアップ", 
+        "effects": [
+            {
+                "hp% buff": 30, 
+                "passive id": "1"
+            }, 
+            {
+                "bb gauge fill rate%": 40, 
+                "passive id": "32"
+            }
+        ], 
+        "name": "緋鋭神の天光"
+    }, 
+    "5517": {
+        "desc": "すべてのユニットのＨＰが４０％アップ＆ＢＢゲージ上昇量が大幅にアップ＆確率で１回だけ戦闘不能を耐える", 
+        "effects": [
+            {
+                "hp% buff": 40, 
+                "passive id": "1"
+            }, 
+            {
+                "bb gauge fill rate%": 50, 
+                "passive id": "32"
+            }, 
+            {
+                "angel idol chance% condition": 0, 
+                "angel idol recover chance% high": 20, 
+                "angel idol recover chance% low": 20, 
+                "angel idol recover counts": 1, 
+                "passive id": "69"
+            }
+        ], 
+        "name": "緋鋭神の天魔光"
     }, 
     "552": {
         "desc": "水属性ユニットから受けるダメージを１５％軽減＆雷属性ユニットが水属性ユニットに与えるダメージを大幅にアップ＆敵からのクリティカルを無効化", 
@@ -7507,6 +7687,44 @@
             }
         ], 
         "name": "聖天刃の霊力"
+    }, 
+    "7412": {
+        "desc": "すべてのユニットのＨＰと攻撃力が３０％アップ＆クリティカル時、与えるダメージがアップ＆ＢＢの発動に必要なＢＢゲージをすこし軽減", 
+        "effects": [
+            {
+                "atk% buff": 30, 
+                "hp% buff": 30, 
+                "passive id": "1"
+            }, 
+            {
+                "crit multiplier%": 100.0, 
+                "passive id": "34"
+            }, 
+            {
+                "passive id": "48", 
+                "reduced bb bc cost%": 15
+            }
+        ], 
+        "name": "閃鋭刃の霊力"
+    }, 
+    "7413": {
+        "desc": "すべてのユニットのＨＰと攻撃力が４０％アップ＆クリティカル時、与えるダメージがかなりアップ＆ＢＢの発動に必要なＢＢゲージを軽減", 
+        "effects": [
+            {
+                "atk% buff": 40, 
+                "hp% buff": 40, 
+                "passive id": "1"
+            }, 
+            {
+                "crit multiplier%": 150.0, 
+                "passive id": "34"
+            }, 
+            {
+                "passive id": "48", 
+                "reduced bb bc cost%": 20
+            }
+        ], 
+        "name": "閃鋭魔刃の霊力"
     }, 
     "7500": {
         "desc": "攻撃時、確率でＨＰをすこし吸収する", 

@@ -6818,6 +6818,58 @@
         "name": "冥界に眠りし力", 
         "target": "self"
     }, 
+    "10800": {
+        "desc": "全ての状態異常を無効化＆ＢＢの発動に必要なＢＢゲージを軽減＆被ダメージ時、確率でＢＢゲージが増加", 
+        "effects": [
+            {
+                "conditions": [], 
+                "curse resist%": 100, 
+                "injury resist%": 100, 
+                "paralysis resist%": 100, 
+                "passive id": "4", 
+                "poison resist%": 100, 
+                "sick resist%": 100, 
+                "weaken resist%": 100
+            }, 
+            {
+                "conditions": [], 
+                "passive id": "48", 
+                "reduced bb bc cost%": 20
+            }, 
+            {
+                "bc fill when attacked high": 5, 
+                "bc fill when attacked low": 3, 
+                "bc fill when attacked%": 50, 
+                "conditions": [], 
+                "passive id": "25"
+            }
+        ], 
+        "name": "新世界への情熱", 
+        "target": "self"
+    }, 
+    "10900": {
+        "desc": "ＢＢおよびＳＢＢに３ターンスパーク時のダメージアップ効果を追加", 
+        "effects": [
+            {
+                "conditions": [], 
+                "passive id": "66", 
+                "trigger on bb": true, 
+                "trigger on sbb": true, 
+                "triggered effect": [
+                    {
+                        "buff turns": 3, 
+                        "effect delay time(ms)/frame": "0.0/0", 
+                        "proc id": "23", 
+                        "spark dmg% buff (40)": 90, 
+                        "target area": "aoe", 
+                        "target type": "party"
+                    }
+                ]
+            }
+        ], 
+        "name": "後悔と懺悔", 
+        "target": "self"
+    }, 
     "11": {
         "desc": "リーダースキル1説明", 
         "effects": [
@@ -6844,6 +6896,121 @@
             }
         ], 
         "name": "覇たる神の抗拒", 
+        "target": "self"
+    }, 
+    "11000": {
+        "desc": "ＢＢおよびＳＢＢに３ターンＨＰを徐々に回復する効果を追加", 
+        "effects": [
+            {
+                "conditions": [], 
+                "passive id": "66", 
+                "trigger on bb": true, 
+                "trigger on sbb": true, 
+                "triggered effect": [
+                    {
+                        "effect delay time(ms)/frame": "0.0/0", 
+                        "gradual heal high": 3000, 
+                        "gradual heal low": 2500, 
+                        "gradual heal turns (8)": 3, 
+                        "proc id": "3", 
+                        "rec added% (from target)": 15.0, 
+                        "target area": "aoe", 
+                        "target type": "party"
+                    }
+                ]
+            }
+        ], 
+        "name": "大軍師への道", 
+        "target": "self"
+    }, 
+    "11100": {
+        "desc": "ＢＢゲージが満タン時、攻撃力をアップ＆ＨＰが多いほど攻撃力がアップ", 
+        "effects": [
+            {
+                "atk% buff": 50, 
+                "bb gauge above % buff requirement": 100, 
+                "conditions": [], 
+                "passive id": "30"
+            }, 
+            {
+                "atk% base buff": 0, 
+                "atk% extra buff based on hp": 50, 
+                "buff proportional to hp": "remaining", 
+                "conditions": [], 
+                "passive id": "46"
+            }
+        ], 
+        "name": "空賊への憧れ", 
+        "target": "self"
+    }, 
+    "11200": {
+        "desc": "ＢＢおよびＳＢＢに３ターンクリティカル率上昇効果を追加＆「神命の導光石」を装備時、戦闘中に全能力を２０％アップし、スパーク時、ＢＢゲージが超絶増加", 
+        "effects": [
+            {
+                "atk% buff": 20, 
+                "conditions": [
+                    {
+                        "item required": [
+                            "47205"
+                        ]
+                    }
+                ], 
+                "def% buff": 20, 
+                "hp% buff": 20, 
+                "passive id": "1", 
+                "rec% buff": 20
+            }, 
+            {
+                "bc fill on spark high": 10, 
+                "bc fill on spark low": 10, 
+                "bc fill on spark%": 100, 
+                "conditions": [
+                    {
+                        "item required": [
+                            "47205"
+                        ]
+                    }
+                ], 
+                "passive id": "47"
+            }, 
+            {
+                "conditions": [], 
+                "passive id": "66", 
+                "trigger on bb": true, 
+                "trigger on sbb": true, 
+                "triggered effect": [
+                    {
+                        "buff turns": 3, 
+                        "crit% buff (7)": 60, 
+                        "effect delay time(ms)/frame": "0.0/0", 
+                        "element buffed": "all", 
+                        "proc id": "5", 
+                        "target area": "aoe", 
+                        "target type": "party"
+                    }
+                ]
+            }
+        ], 
+        "name": "英雄になる覚悟", 
+        "target": "self"
+    }, 
+    "11300": {
+        "desc": "敵からの防御貫通攻撃を無効化＆被ダメージ時、ＢＢゲージがすこし増加", 
+        "effects": [
+            {
+                "conditions": [], 
+                "ignore def resist chance%": 100, 
+                "passive id": "92"
+            }, 
+            {
+                "bc fill when attacked high": 3, 
+                "bc fill when attacked low": 2, 
+                "bc fill when attacked%": 100, 
+                "conditions": [], 
+                "passive id": "25"
+            }
+        ], 
+        "name": "継がれしは剣魂", 
         "target": "self"
     }, 
     "12": {
