@@ -508,6 +508,200 @@
         ], 
         "name": "炎烈狂神の力"
     }, 
+    "10800": {
+        "desc": "残りＨＰが多いほど、攻撃力を大幅にアップ", 
+        "effects": [
+            {
+                "atk% base buff": 20, 
+                "atk% extra buff based on hp": 80, 
+                "buff proportional to hp": "remaining", 
+                "passive id": "46"
+            }
+        ], 
+        "name": "日の封印"
+    }, 
+    "10801": {
+        "desc": "残りＨＰが多いほど、攻撃力を大幅にアップ＆確率でＨＰを少し吸収", 
+        "effects": [
+            {
+                "atk% base buff": 20, 
+                "atk% extra buff based on hp": 80, 
+                "buff proportional to hp": "remaining", 
+                "passive id": "46"
+            }, 
+            {
+                "hp drain chance%": 50, 
+                "hp drain% high": 8, 
+                "hp drain% low": 3, 
+                "passive id": "17"
+            }
+        ], 
+        "name": "精霊フレイの祝福"
+    }, 
+    "10810": {
+        "desc": "全てのユニットの攻撃力・最大ＨＰを３０％アップ", 
+        "effects": [
+            {
+                "atk% buff": 30, 
+                "hp% buff": 30, 
+                "passive id": "1"
+            }
+        ], 
+        "name": "揺るがぬ刃"
+    }, 
+    "10811": {
+        "desc": "全てのユニットの攻撃力・最大ＨＰを３０％アップ＆被ダメージが一定数を超える度に２ターン、攻撃力をアップ", 
+        "effects": [
+            {
+                "atk% buff": 30, 
+                "hp% buff": 30, 
+                "passive id": "1"
+            }, 
+            {
+                "buff": {
+                    "atk% buff (1)": 80, 
+                    "buff turns (1)": "2"
+                }, 
+                "damage threshold buff activation": 3000, 
+                "passive id": "78"
+            }
+        ], 
+        "name": "鋼のプライド"
+    }, 
+    "10820": {
+        "desc": "全てのユニットの最大ＨＰを３０％アップ＆ターン毎にＢＢゲージを増加", 
+        "effects": [
+            {
+                "hp% buff": 30, 
+                "passive id": "1"
+            }, 
+            {
+                "bc fill per turn": 3, 
+                "passive id": "9"
+            }
+        ], 
+        "name": "爪鳴行進曲"
+    }, 
+    "10821": {
+        "desc": "全てのユニットの最大ＨＰを３０％アップ＆ターン毎にＢＢゲージを増加＆被ダメージ時、ＢＢゲージを増加", 
+        "effects": [
+            {
+                "hp% buff": 30, 
+                "passive id": "1"
+            }, 
+            {
+                "bc fill per turn": 3, 
+                "passive id": "9"
+            }, 
+            {
+                "bc fill when attacked high": 3, 
+                "bc fill when attacked low": 2, 
+                "bc fill when attacked%": 100, 
+                "passive id": "25"
+            }
+        ], 
+        "name": "猫に自由を"
+    }, 
+    "10830": {
+        "desc": "クリティカル率を少しアップ＆クリティカルダメージをアップ", 
+        "effects": [
+            {
+                "crit% buff": 15, 
+                "passive id": "1"
+            }, 
+            {
+                "crit multiplier%": 75.0, 
+                "passive id": "34"
+            }
+        ], 
+        "name": "カラクリの計略"
+    }, 
+    "10831": {
+        "desc": "クリティカル率を少しアップ＆クリティカル時、ＢＢゲージをかなり増加・ダメージをアップ", 
+        "effects": [
+            {
+                "crit% buff": 15, 
+                "passive id": "1"
+            }, 
+            {
+                "crit multiplier%": 75.0, 
+                "passive id": "34"
+            }, 
+            {
+                "bc fill on crit max": 6, 
+                "bc fill on crit min": 4, 
+                "bc fill on crit%": 100.0, 
+                "passive id": "65"
+            }
+        ], 
+        "name": "身体活性光"
+    }, 
+    "10840": {
+        "desc": "全状態異常を無効", 
+        "effects": [
+            {
+                "curse resist%": 100, 
+                "injury resist%": 100, 
+                "paralysis resist%": 100, 
+                "passive id": "4", 
+                "poison resist%": 100, 
+                "sick resist%": 100, 
+                "weaken resist%": 100
+            }
+        ], 
+        "name": "騎士たる者の資質"
+    }, 
+    "10841": {
+        "desc": "全てのユニットの攻撃力・回復力・最大ＨＰを２５％アップ＆全状態異常を無効", 
+        "effects": [
+            {
+                "atk% buff": 25, 
+                "hp% buff": 25, 
+                "passive id": "1", 
+                "rec% buff": 25
+            }, 
+            {
+                "curse resist%": 100, 
+                "injury resist%": 100, 
+                "paralysis resist%": 100, 
+                "passive id": "4", 
+                "poison resist%": 100, 
+                "sick resist%": 100, 
+                "weaken resist%": 100
+            }
+        ], 
+        "name": "白き騎士のイデア"
+    }, 
+    "10850": {
+        "desc": "全てのユニットの攻撃力を７０％アップ", 
+        "effects": [
+            {
+                "atk% buff": 70, 
+                "passive id": "1"
+            }
+        ], 
+        "name": "死神に愛された妹"
+    }, 
+    "10851": {
+        "desc": "全てのユニットの攻撃力を７０％アップ＆低確率で呪い状態にする＆被ダメージ時、確率でＨＰを回復", 
+        "effects": [
+            {
+                "atk% buff": 70, 
+                "passive id": "1"
+            }, 
+            {
+                "dmg% to hp% when attacked chance%": 30, 
+                "dmg% to hp% when attacked high": 25, 
+                "dmg% to hp% when attacked low": 25, 
+                "passive id": "24"
+            }, 
+            {
+                "curse%": 10, 
+                "passive id": "20"
+            }
+        ], 
+        "name": "妹ポテンシャル"
+    }, 
     "11": {
         "desc": "リーダースキル１説明", 
         "effects": [
@@ -8562,7 +8756,9 @@
         "desc": "炎・樹属性ユニットからの被ダメージを１５％軽減", 
         "effects": [
             {
-                "dmg% mitigation for elemental attacks": 0.0, 
+                "dmg% mitigation for elemental attacks": 15.0, 
+                "mitigate earth attacks": true, 
+                "mitigate fire attacks": true, 
                 "passive id": "62"
             }
         ], 
