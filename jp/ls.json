@@ -834,6 +834,33 @@
         ], 
         "name": "慈愛の聖光"
     }, 
+    "1113": {
+        "desc": "すべてのユニットの防御力と最大ＨＰを４０％アップ＆ＨＣ獲得時の回復量を大幅にアップ＆スパーク時、ＨＰを回復＆ターン毎にＨＰを回復", 
+        "effects": [
+            {
+                "hc effectiveness%": 80, 
+                "passive id": "10"
+            }, 
+            {
+                "def% buff": 40, 
+                "hp% buff": 40, 
+                "passive id": "1"
+            }, 
+            {
+                "heal on spark high": 400, 
+                "heal on spark low": 200, 
+                "heal on spark%": 100, 
+                "passive id": "101"
+            }, 
+            {
+                "passive id": "33", 
+                "rec% added (turn heal)": 10.0, 
+                "turn heal high": 1000, 
+                "turn heal low": 500
+            }
+        ], 
+        "name": "慈愛の浄化炎"
+    }, 
     "112": {
         "desc": "水属性ユニットの攻撃力を５０％アップ・最大ＨＰを１０％アップ", 
         "effects": [
@@ -929,6 +956,23 @@
             }
         ], 
         "name": "水穿閃神の力"
+    }, 
+    "118": {
+        "desc": "水属性ユニットの攻撃力を１００％アップ＆ターン毎にＢＢゲージをかなり増加", 
+        "effects": [
+            {
+                "atk% buff": 100, 
+                "elements buffed": [
+                    "water"
+                ], 
+                "passive id": "2"
+            }, 
+            {
+                "bc fill per turn": 4, 
+                "passive id": "9"
+            }
+        ], 
+        "name": "水翠叡神の力"
     }, 
     "12": {
         "desc": "リーダースキル１説明", 
@@ -4357,7 +4401,7 @@
         "name": "閃神の号令"
     }, 
     "2603": {
-        "desc": "全てユニットの攻撃力・最大ＨＰを４０％アップ＆通常攻撃時、ＢＢゲージを大幅に増加＆スパーク時、ＢＢゲージを少し増加＆ターン毎にＢＢゲージをかなり増加", 
+        "desc": "全てのユニットの攻撃力・最大ＨＰを４０％アップ＆通常攻撃時、ＢＢゲージを大幅に増加＆スパーク時、ＢＢゲージを少し増加＆ターン毎にＢＢゲージをかなり増加", 
         "effects": [
             {
                 "bc fill when attacking high": 7, 
@@ -6912,6 +6956,44 @@
             }
         ], 
         "name": "旋烈神の断罪"
+    }, 
+    "554": {
+        "desc": "闇属性ユニットからの被ダメージを１５％軽減＆光属性の弱点属性ダメージを大幅にアップ＆スパークダメージを１００％アップ", 
+        "effects": [
+            {
+                "dark resist%": 15, 
+                "passive id": "5"
+            }, 
+            {
+                "elemental weakness multiplier%": 150.0, 
+                "light units do extra elemental weakness dmg": true, 
+                "passive id": "50"
+            }, 
+            {
+                "damage% for spark": 100, 
+                "passive id": "31"
+            }
+        ], 
+        "name": "統閃神の断罪"
+    }, 
+    "555": {
+        "desc": "光属性ユニットからの被ダメージを１５％軽減＆闇属性の弱点属性ダメージを大幅にアップ＆ＯＤゲージの増加量をかなりアップ", 
+        "effects": [
+            {
+                "light resist%": 15, 
+                "passive id": "5"
+            }, 
+            {
+                "dark units do extra elemental weakness dmg": true, 
+                "elemental weakness multiplier%": 150.0, 
+                "passive id": "50"
+            }, 
+            {
+                "od fill rate%": 20, 
+                "passive id": "70"
+            }
+        ], 
+        "name": "聡影神の断罪"
     }, 
     "5600": {
         "desc": "光・闇属性ユニットの攻撃力を２５％アップ", 
