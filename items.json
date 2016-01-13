@@ -1309,10 +1309,10 @@
         "type": "material"
     }, 
     "10631": {
-        "desc": "\u9b54\u795e\u30a2\u30e0\uff1d\u30e6\u30ce\u30b9\u304c\u6301\u3064\u932b\u6756\u306b\u5d4c\u3081\u3089\u308c\u305f\u6c34\u6676", 
+        "desc": "A crystal embedded in the demon Amu Yunos's staff.", 
         "id": 10631, 
         "max_stack": 99, 
-        "name": "MST_ITEMS_MATERIAL_10631_NAME", 
+        "name": "All-Seeing Eye", 
         "raid": false, 
         "rarity": 3, 
         "sell_price": 50, 
@@ -1320,10 +1320,10 @@
         "type": "material"
     }, 
     "10632": {
-        "desc": "\u30d9\u30a4\u30aa\u30eb\u30b0\u306e\u5404\u6240\u3067\u8f1d\u3044\u3066\u3044\u308b\u900f\u904e\u6027\u306e\u90e8\u4f4d", 
+        "desc": "A transparent piece of Beiorg's body which shines.", 
         "id": 10632, 
         "max_stack": 99, 
-        "name": "MST_ITEMS_MATERIAL_10632_NAME", 
+        "name": "Beiorg's Bulb", 
         "raid": true, 
         "rarity": 3, 
         "sell_price": 50, 
@@ -1672,10 +1672,10 @@
         "type": "material"
     }, 
     "10732": {
-        "desc": "\u30b6\u30fc\u30e0\u30d6\u30eb\u30b0\u5730\u57df\u306b\u751f\u606f\u3059\u308b\u5927\u86c7\u306e\u76ae", 
+        "desc": "The hide of a great serpent that lives in the Zamburg region.", 
         "id": 10732, 
         "max_stack": 99, 
-        "name": "MST_ITEMS_MATERIAL_10732_NAME", 
+        "name": "Serpent Hide", 
         "raid": false, 
         "rarity": 3, 
         "sell_price": 50, 
@@ -2519,10 +2519,10 @@
         "type": "material"
     }, 
     "11039": {
-        "desc": "\u30d9\u30a4\u30aa\u30eb\u30b0\u306e\u88c5\u7532\u306e\u4e00\u90e8", 
+        "desc": "A part of Beiorg's armor.", 
         "id": 11039, 
         "max_stack": 99, 
-        "name": "MST_ITEMS_MATERIAL_11039_NAME", 
+        "name": "Beiorg's Scrap", 
         "raid": true, 
         "rarity": 3, 
         "sell_price": 50, 
@@ -14788,7 +14788,7 @@
         "type": "sphere"
     }, 
     "46210": {
-        "desc": "\u653b\u6483\u529b\u30fb\u9632\u5fa1\u529b\u30fb\u56de\u5fa9\u529b\u30fb\u6700\u5927\uff28\uff30\u3092\uff14\uff10\uff05\u30a2\u30c3\u30d7\uff06\u30bf\u30fc\u30f3\u6bce\u306b\uff28\uff30\u304c\u304b\u306a\u308a\u56de\u5fa9\u3057\u3001\u88ab\u30c0\u30e1\u30fc\u30b8\u6642\u78ba\u7387\u3067\uff28\uff30\u304c\u56de\u5fa9\u3059\u308b", 
+        "desc": "40% boost to all parameters, greatly restores HP each turn & probable HP recovery when attacked", 
         "effect": [
             {
                 "atk% buff": 40, 
@@ -14812,9 +14812,34 @@
         ], 
         "id": 46210, 
         "max_stack": 1, 
-        "name": "MST_SPHERES_46210_NAME", 
+        "name": "Beiorg's Armor", 
         "raid": true, 
         "rarity": 3, 
+        "recipe": {
+            "karma": "100000", 
+            "materials": [
+                {
+                    "count": 1, 
+                    "id": 46200
+                }, 
+                {
+                    "count": 1, 
+                    "id": 44400
+                }, 
+                {
+                    "count": 15, 
+                    "id": 11039
+                }, 
+                {
+                    "count": 2, 
+                    "id": 10632
+                }, 
+                {
+                    "count": 3, 
+                    "id": 11034
+                }
+            ]
+        }, 
         "sell_price": 25000, 
         "sphere type": 1, 
         "sphere type text": "Status Boost", 
@@ -15825,7 +15850,7 @@
         "type": "sphere"
     }, 
     "47905": {
-        "desc": "\u30ac\u30fc\u30c9\u6642\u306e\u30c0\u30e1\u30fc\u30b8\u8efd\u6e1b\u7387\u3092\u5c11\u3057\u30a2\u30c3\u30d7\uff06\u88ab\u30c0\u30e1\u30fc\u30b8\u6642\u3001\u78ba\u7387\u3067\u30c0\u30e1\u30fc\u30b8\u3092\uff12\uff15\uff05\u8efd\u6e1b", 
+        "desc": "Slightly boosts damage reduction rate when guarding & probable 25% damage reduction when attacked", 
         "effect": [
             {
                 "guard increase mitigation%": 10, 
@@ -15839,9 +15864,34 @@
         ], 
         "id": 47905, 
         "max_stack": 1, 
-        "name": "MST_SPHERES_47905_NAME", 
+        "name": "Zamburg Gem", 
         "raid": false, 
         "rarity": 3, 
+        "recipe": {
+            "karma": "60000", 
+            "materials": [
+                {
+                    "count": 1, 
+                    "id": 44100
+                }, 
+                {
+                    "count": 1, 
+                    "id": 31301
+                }, 
+                {
+                    "count": 10, 
+                    "id": 10611
+                }, 
+                {
+                    "count": 10, 
+                    "id": 10110
+                }, 
+                {
+                    "count": 5, 
+                    "id": 10732
+                }
+            ]
+        }, 
         "sell_price": 6000, 
         "sphere type": 10, 
         "sphere type text": "Damage Reducing", 
@@ -16206,6 +16256,27 @@
         "name": "MST_SPHERES_48301_NAME", 
         "raid": false, 
         "rarity": 3, 
+        "recipe": {
+            "karma": "75000", 
+            "materials": [
+                {
+                    "count": 1, 
+                    "id": 47903
+                }, 
+                {
+                    "count": 1, 
+                    "id": 47904
+                }, 
+                {
+                    "count": 1, 
+                    "id": 47905
+                }, 
+                {
+                    "count": 1, 
+                    "id": 10631
+                }
+            ]
+        }, 
         "sell_price": 30000, 
         "sphere type": 10, 
         "sphere type text": "Damage Reducing", 
@@ -19245,6 +19316,64 @@
         "sell_price": 10000, 
         "sphere type": 1, 
         "sphere type text": "Status Boost", 
+        "thumbnail": "sphere_thum_828002.png", 
+        "type": "sphere"
+    }, 
+    "828013": {
+        "desc": "100% boost to Atk, raises normal attack hits & boost to BB gauge during Spark", 
+        "effect": [
+            {
+                "hit increase/hit": 1, 
+                "passive id": "37"
+            }, 
+            {
+                "atk% buff": 100, 
+                "passive id": "1"
+            }, 
+            {
+                "bc fill on spark high": 1, 
+                "bc fill on spark low": 1, 
+                "bc fill on spark%": 100, 
+                "passive id": "47"
+            }
+        ], 
+        "id": 828013, 
+        "max_stack": 1, 
+        "name": "Reign Omega", 
+        "raid": false, 
+        "rarity": 3, 
+        "sell_price": 10000, 
+        "sphere type": 13, 
+        "sphere type text": "Atk Boosting", 
+        "thumbnail": "sphere_thum_828001.png", 
+        "type": "sphere"
+    }, 
+    "828014": {
+        "desc": "50% boost to Atk, raises normal attack hits & probable boost to BB gauge during Spark", 
+        "effect": [
+            {
+                "hit increase/hit": 1, 
+                "passive id": "37"
+            }, 
+            {
+                "atk% buff": 50, 
+                "passive id": "1"
+            }, 
+            {
+                "bc fill on spark high": 1, 
+                "bc fill on spark low": 1, 
+                "bc fill on spark%": 50, 
+                "passive id": "47"
+            }
+        ], 
+        "id": 828014, 
+        "max_stack": 1, 
+        "name": "Reign Alpha", 
+        "raid": false, 
+        "rarity": 3, 
+        "sell_price": 10000, 
+        "sphere type": 13, 
+        "sphere type text": "Atk Boosting", 
         "thumbnail": "sphere_thum_828002.png", 
         "type": "sphere"
     }, 
