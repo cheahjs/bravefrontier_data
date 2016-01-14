@@ -7773,7 +7773,7 @@
         "target": "self"
     }, 
     "12300": {
-        "desc": "ＢＢ及びＳＢＢに「味方全体に３ターン、攻撃力に応じて防御力をかなりアップ」を追加", 
+        "desc": "ＢＢ及びＳＢＢに「味方全体に３ターン、攻撃力に応じて防御力をアップ」を追加", 
         "effects": [
             {
                 "conditions": [], 
@@ -7874,6 +7874,60 @@
         "name": "残された記録の価値", 
         "target": "self"
     }, 
+    "12800": {
+        "desc": "ＨＰが満タン時、攻撃力をかなりアップ＆ＢＢ及びＳＢＢに「味方全体に３ターン、最大ＨＰに応じて防御力をアップ」を追加", 
+        "effects": [
+            {
+                "atk% buff": 80, 
+                "conditions": [], 
+                "hp above % buff requirement": 100, 
+                "passive id": "11"
+            }, 
+            {
+                "conditions": [], 
+                "passive id": "66", 
+                "trigger on bb": true, 
+                "trigger on sbb": true, 
+                "triggered effect": [
+                    {
+                        "% converted turns": 3, 
+                        "converted attribute": "hp", 
+                        "def% buff (47)": 15, 
+                        "effect delay time(ms)/frame": "0.0/0", 
+                        "proc id": "24", 
+                        "target area": "aoe", 
+                        "target type": "party"
+                    }
+                ]
+            }
+        ], 
+        "name": "母なる海嘯", 
+        "target": "self"
+    }, 
+    "12900": {
+        "desc": "「ドロップ系」タイプのスフィアを装備時、攻撃力・防御力・回復力・最大ＨＰを２０％アップ＆通常攻撃ＨＩＴ数を増加", 
+        "effects": [
+            {
+                "atk% buff": 20, 
+                "conditions": [
+                    {
+                        "unknown": "5,3"
+                    }
+                ], 
+                "def% buff": 20, 
+                "hp% buff": 20, 
+                "passive id": "1", 
+                "rec% buff": 20
+            }, 
+            {
+                "conditions": [], 
+                "hit increase/hit": 1, 
+                "passive id": "37"
+            }
+        ], 
+        "name": "瞳に映る真宝", 
+        "target": "self"
+    }, 
     "13": {
         "desc": "リーダースキル1説明", 
         "effects": [
@@ -7919,6 +7973,39 @@
             }
         ], 
         "name": "光輝なる意志", 
+        "target": "self"
+    }, 
+    "13000": {
+        "desc": "クリティカル時、２ターン攻撃力をアップ", 
+        "effects": [
+            {
+                "buff": {
+                    "atk% buff (1)": 80, 
+                    "buff turns (1)": "2"
+                }, 
+                "conditions": [], 
+                "on crit activation chance%": 100, 
+                "passive id": "89"
+            }
+        ], 
+        "name": "私が絶対に正しいの♪", 
+        "target": "self"
+    }, 
+    "13100": {
+        "desc": "ＯＤゲージの増加量を超絶アップ＆被ダメージ時、確率で全状態異常をランダムに発生", 
+        "effects": [
+            {
+                "conditions": [], 
+                "od fill rate%": 50, 
+                "passive id": "70"
+            }, 
+            {
+                "conditions": [], 
+                "unknown passive id": "71", 
+                "unknown passive params": "8,10,10,10,8,8"
+            }
+        ], 
+        "name": "無窮で無垢なる欲望", 
         "target": "self"
     }, 
     "14": {

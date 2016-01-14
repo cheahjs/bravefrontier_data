@@ -2595,6 +2595,28 @@
         "thumbnail": "item_thum_1104.png", 
         "type": "material"
     }, 
+    "11043": {
+        "desc": "メロードの体内に流れる血液の凝塊", 
+        "id": 11043, 
+        "max_stack": 99, 
+        "name": "神魔混血漿", 
+        "raid": true, 
+        "rarity": 3, 
+        "sell_price": 50, 
+        "thumbnail": "item_thum_1101.png", 
+        "type": "material"
+    }, 
+    "11044": {
+        "desc": "メロードの体内で精製されている結晶", 
+        "id": 11044, 
+        "max_stack": 99, 
+        "name": "神魔結晶塊", 
+        "raid": true, 
+        "rarity": 3, 
+        "sell_price": 50, 
+        "thumbnail": "item_thum_1105.png", 
+        "type": "material"
+    }, 
     "120000": {
         "desc": "クエストクリア時の獲得経験値が１．５倍になる", 
         "id": 120000, 
@@ -18588,7 +18610,7 @@
         "type": "sphere"
     }, 
     "60200": {
-        "desc": "スパークダメージを７５％アップ＆スパーク時、ＨＰを少し回復・ＢＢゲージを少し増加・確率でスパーククリティカルが発生する", 
+        "desc": "スパークダメージを７５％アップ＆スパーク時、ＨＰを少し回復・ＢＢゲージを少し増加・確率でスパーククリティカルが発生", 
         "effect": [
             {
                 "damage% for spark": 75, 
@@ -18645,6 +18667,68 @@
         "sphere type": 11, 
         "sphere type text": "Spark", 
         "thumbnail": "sphere_thum_1_8.png", 
+        "type": "sphere"
+    }, 
+    "60300": {
+        "desc": "確率で被ダメージの２０％を相手に反射する＆被ダメージ時、確率で全状態異常をランダムに発生・ＢＢゲージを増加・確率でＨＰをかなり回復", 
+        "effect": [
+            {
+                "dmg% reflect chance%": 40, 
+                "dmg% reflect high": 20, 
+                "dmg% reflect low": 20, 
+                "passive id": "26"
+            }, 
+            {
+                "unknown passive id": "71", 
+                "unknown passive params": "12,15,15,15,12,12"
+            }, 
+            {
+                "bc fill when attacked high": 2, 
+                "bc fill when attacked low": 2, 
+                "bc fill when attacked%": 100, 
+                "passive id": "25"
+            }, 
+            {
+                "dmg% to hp% when attacked chance%": 30, 
+                "dmg% to hp% when attacked high": 30, 
+                "dmg% to hp% when attacked low": 30, 
+                "passive id": "24"
+            }
+        ], 
+        "id": 60300, 
+        "max_stack": 1, 
+        "name": "神魔崩魂メロード", 
+        "raid": true, 
+        "rarity": 3, 
+        "recipe": {
+            "karma": "100000", 
+            "materials": [
+                {
+                    "count": 1, 
+                    "id": 39002
+                }, 
+                {
+                    "count": 3, 
+                    "id": 41800
+                }, 
+                {
+                    "count": 15, 
+                    "id": 11043
+                }, 
+                {
+                    "count": 2, 
+                    "id": 11044
+                }, 
+                {
+                    "count": 3, 
+                    "id": 10627
+                }
+            ]
+        }, 
+        "sell_price": 10000, 
+        "sphere type": 9, 
+        "sphere type text": "Damage Reflecting", 
+        "thumbnail": "sphere_thum_5_6.png", 
         "type": "sphere"
     }, 
     "70000": {
