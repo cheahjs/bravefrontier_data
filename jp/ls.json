@@ -349,6 +349,46 @@
         ], 
         "name": "魂滅業神の結界"
     }, 
+    "10110": {
+        "desc": "全てのユニットの全能力を２０％アップ＆ターン毎にＢＢゲージをかなり増加", 
+        "effects": [
+            {
+                "atk% buff": 20, 
+                "def% buff": 20, 
+                "hp% buff": 20, 
+                "passive id": "1", 
+                "rec% buff": 20
+            }, 
+            {
+                "bc fill per turn": 4, 
+                "passive id": "9"
+            }
+        ], 
+        "name": "煉弓神の錬力"
+    }, 
+    "10111": {
+        "desc": "全てのユニットの全能力を３５％アップ＆ターン毎にＢＢゲージをかなり増加＆スパーク時、ＢＢゲージを増加", 
+        "effects": [
+            {
+                "atk% buff": 35, 
+                "def% buff": 35, 
+                "hp% buff": 35, 
+                "passive id": "1", 
+                "rec% buff": 35
+            }, 
+            {
+                "bc fill per turn": 4, 
+                "passive id": "9"
+            }, 
+            {
+                "bc fill on spark high": 3, 
+                "bc fill on spark low": 2, 
+                "bc fill on spark%": 100, 
+                "passive id": "47"
+            }
+        ], 
+        "name": "流煉弓神の撃力"
+    }, 
     "102": {
         "desc": "炎属性ユニットの攻撃力を５０％アップ・最大ＨＰを１０％アップ", 
         "effects": [
@@ -2975,6 +3015,40 @@
             }
         ], 
         "name": "畏限闇妃の冥葬力"
+    }, 
+    "1925": {
+        "desc": "全てのユニットの攻撃力を４０％アップ＆ＢＢ発動に必要なＢＢゲージ量を軽減", 
+        "effects": [
+            {
+                "atk% buff": 40, 
+                "passive id": "1"
+            }, 
+            {
+                "passive id": "48", 
+                "reduced bb bc cost%": 15
+            }
+        ], 
+        "name": "煉血神の闇刃"
+    }, 
+    "1926": {
+        "desc": "全てのユニットの攻撃力を８０％アップ＆ＢＢ発動に必要なＢＢゲージ量をかなり軽減＆被ダメージ時、ＢＢゲージをかなり増加", 
+        "effects": [
+            {
+                "atk% buff": 80, 
+                "passive id": "1"
+            }, 
+            {
+                "passive id": "48", 
+                "reduced bb bc cost%": 25
+            }, 
+            {
+                "bc fill when attacked high": 6, 
+                "bc fill when attacked low": 3, 
+                "bc fill when attacked%": 100, 
+                "passive id": "25"
+            }
+        ], 
+        "name": "煉血純神の葬刃"
     }, 
     "2": {
         "desc": "リーダースキル１説明", 
@@ -7210,6 +7284,88 @@
         ], 
         "name": "琥魄神の断罪"
     }, 
+    "5520": {
+        "desc": "全てのユニットの最大ＨＰを３０％アップ＆確率でスパークダメージ耐性を２ターン低下", 
+        "effects": [
+            {
+                "hp% buff": 30, 
+                "passive id": "1"
+            }, 
+            {
+                "passive id": "75", 
+                "spark debuff chance%": 10, 
+                "spark debuff turns": 1, 
+                "spark debuff%": 20
+            }
+        ], 
+        "name": "煉斧神の剛閃"
+    }, 
+    "5521": {
+        "desc": "全てのユニットの最大ＨＰを４０％アップ＆残りＨＰが多いほど、攻撃力を大幅にアップ＆確率でスパークダメージ耐性を２ターン低下", 
+        "effects": [
+            {
+                "hp% buff": 40, 
+                "passive id": "1"
+            }, 
+            {
+                "passive id": "75", 
+                "spark debuff chance%": 10, 
+                "spark debuff turns": 1, 
+                "spark debuff%": 20
+            }, 
+            {
+                "atk% base buff": 0, 
+                "atk% extra buff based on hp": 120, 
+                "buff proportional to hp": "remaining", 
+                "passive id": "46"
+            }
+        ], 
+        "name": "煉斧砕神の壊閃"
+    }, 
+    "5522": {
+        "desc": "全てのユニットの最大ＨＰを３０％アップ＆状態異常の敵へのダメージをアップ", 
+        "effects": [
+            {
+                "hp% buff": 30, 
+                "passive id": "1"
+            }, 
+            {
+                "atk% buff when enemy has ailment": 50, 
+                "atk% buff when enemy has curse": true, 
+                "atk% buff when enemy has injury": true, 
+                "atk% buff when enemy has paralysis": true, 
+                "atk% buff when enemy has poison": true, 
+                "atk% buff when enemy has sick": true, 
+                "atk% buff when enemy has weaken": true, 
+                "passive id": "74"
+            }
+        ], 
+        "name": "煉蠍神の天刻"
+    }, 
+    "5523": {
+        "desc": "全てのユニットの最大ＨＰを４０％アップ＆ＯＤゲージの増加量をかなりアップ＆状態異常の敵へのダメージを大幅にアップ", 
+        "effects": [
+            {
+                "hp% buff": 40, 
+                "passive id": "1"
+            }, 
+            {
+                "atk% buff when enemy has ailment": 100, 
+                "atk% buff when enemy has curse": true, 
+                "atk% buff when enemy has injury": true, 
+                "atk% buff when enemy has paralysis": true, 
+                "atk% buff when enemy has poison": true, 
+                "atk% buff when enemy has sick": true, 
+                "atk% buff when enemy has weaken": true, 
+                "passive id": "74"
+            }, 
+            {
+                "od fill rate%": 20, 
+                "passive id": "70"
+            }
+        ], 
+        "name": "煉黄蠍神の天導"
+    }, 
     "553": {
         "desc": "樹属性ユニットからの被ダメージを１５％軽減＆炎属性の弱点属性ダメージを大幅にアップ＆全状態異常を無効", 
         "effects": [
@@ -8466,6 +8622,83 @@
             }
         ], 
         "name": "瘴蛇神の妄檄力"
+    }, 
+    "7418": {
+        "desc": "全てのユニットの攻撃力・最大ＨＰを３０％アップ＆被ダメージ時、ＢＢゲージを増加", 
+        "effects": [
+            {
+                "atk% buff": 30, 
+                "hp% buff": 30, 
+                "passive id": "1"
+            }, 
+            {
+                "bc fill when attacked high": 3, 
+                "bc fill when attacked low": 2, 
+                "bc fill when attacked%": 100, 
+                "passive id": "25"
+            }
+        ], 
+        "name": "焔蛛神の紡力"
+    }, 
+    "7419": {
+        "desc": "全てのユニットの攻撃力・最大ＨＰを３０％アップ＆被ダメージ時、ＢＢゲージをかなり増加＆通常攻撃ＨＩＴ数を増加", 
+        "effects": [
+            {
+                "atk% buff": 30, 
+                "hp% buff": 30, 
+                "passive id": "1"
+            }, 
+            {
+                "bc fill when attacked high": 5, 
+                "bc fill when attacked low": 3, 
+                "bc fill when attacked%": 100, 
+                "passive id": "25"
+            }, 
+            {
+                "extra hits dmg%": -50, 
+                "hit increase/hit": 1, 
+                "passive id": "37"
+            }
+        ], 
+        "name": "焔煉蛛神の絢力"
+    }, 
+    "7420": {
+        "desc": "全てのユニットの攻撃力・最大ＨＰを３０％アップ＆攻撃ＢＢの威力をかなりアップ", 
+        "effects": [
+            {
+                "atk% buff": 30, 
+                "hp% buff": 30, 
+                "passive id": "1"
+            }, 
+            {
+                "bb atk% buff": 100, 
+                "passive id": "64", 
+                "sbb atk% buff": 100, 
+                "ubb atk% buff": 100
+            }
+        ], 
+        "name": "煉光神の王力"
+    }, 
+    "7421": {
+        "desc": "全てのユニットの攻撃力・最大ＨＰを４０％アップ＆攻撃ＢＢの威力を大幅にアップ＆スパーク時、ダメージを７５％アップ", 
+        "effects": [
+            {
+                "atk% buff": 40, 
+                "hp% buff": 40, 
+                "passive id": "1"
+            }, 
+            {
+                "bb atk% buff": 150, 
+                "passive id": "64", 
+                "sbb atk% buff": 150, 
+                "ubb atk% buff": 150
+            }, 
+            {
+                "damage% for spark": 75, 
+                "passive id": "31"
+            }
+        ], 
+        "name": "煉星光神の皇力"
     }, 
     "7500": {
         "desc": "確率でＨＰを少し吸収", 

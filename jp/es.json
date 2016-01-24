@@ -8008,6 +8008,118 @@
         "name": "無窮で無垢なる欲望", 
         "target": "self"
     }, 
+    "13200": {
+        "desc": "通常攻撃ＨＩＴ数を増加＆確率でスパークダメージ耐性を２ターン低下", 
+        "effects": [
+            {
+                "conditions": [], 
+                "hit increase/hit": 1, 
+                "passive id": "37"
+            }, 
+            {
+                "conditions": [], 
+                "passive id": "75", 
+                "spark debuff chance%": 10, 
+                "spark debuff turns": 1, 
+                "spark debuff%": 20
+            }
+        ], 
+        "name": "冷徹な仮面の裏側", 
+        "target": "self"
+    }, 
+    "13300": {
+        "desc": "ＢＢゲージが満タン時、攻撃力を大幅にアップ", 
+        "effects": [
+            {
+                "atk% buff": 100, 
+                "bb gauge above % buff requirement": 100, 
+                "conditions": [], 
+                "passive id": "30"
+            }
+        ], 
+        "name": "無邪気な仮面の裏側", 
+        "target": "self"
+    }, 
+    "13400": {
+        "desc": "残りＨＰが多いほど攻撃力をアップ＆残りＨＰが少ないほど防御力を大幅にアップ", 
+        "effects": [
+            {
+                "atk% base buff": 0, 
+                "atk% extra buff based on hp": 50, 
+                "buff proportional to hp": "remaining", 
+                "conditions": [], 
+                "passive id": "46"
+            }, 
+            {
+                "buff proportional to hp": "lost", 
+                "conditions": [], 
+                "def% base buff": 0, 
+                "def% extra buff based on hp": 100, 
+                "passive id": "46"
+            }
+        ], 
+        "name": "裏心無き豪傑", 
+        "target": "self"
+    }, 
+    "13500": {
+        "desc": "スパークダメージを５０％アップ＆状態異常の敵へのダメージを大幅にアップ", 
+        "effects": [
+            {
+                "conditions": [], 
+                "damage% for spark": 50, 
+                "passive id": "31"
+            }, 
+            {
+                "atk% buff when enemy has ailment": 100, 
+                "atk% buff when enemy has curse": true, 
+                "atk% buff when enemy has injury": true, 
+                "atk% buff when enemy has paralysis": true, 
+                "atk% buff when enemy has poison": true, 
+                "atk% buff when enemy has sick": true, 
+                "atk% buff when enemy has weaken": true, 
+                "conditions": [], 
+                "passive id": "74"
+            }
+        ], 
+        "name": "理想と絶望と衝動", 
+        "target": "self"
+    }, 
+    "13600": {
+        "desc": "スパーク時、ＢＢゲージを増加＆被ダメージが一定数を超える度に２ターン、被ダメージを軽減", 
+        "effects": [
+            {
+                "bc fill on spark high": 3, 
+                "bc fill on spark low": 2, 
+                "bc fill on spark%": 100, 
+                "conditions": [], 
+                "passive id": "47"
+            }, 
+            {
+                "buff": {
+                    "buff turns (36)": "1", 
+                    "dmg reduction% buff": 25
+                }, 
+                "conditions": [], 
+                "damage threshold buff activation": 10000, 
+                "passive id": "78"
+            }
+        ], 
+        "name": "皇位継承者たる所以", 
+        "target": "self"
+    }, 
+    "13700": {
+        "desc": "ＢＢゲージが満タン時、攻撃力を大幅にアップ", 
+        "effects": [
+            {
+                "atk% buff": 100, 
+                "bb gauge above % buff requirement": 100, 
+                "conditions": [], 
+                "passive id": "30"
+            }
+        ], 
+        "name": "悪意無く彷徨う血刃", 
+        "target": "self"
+    }, 
     "14": {
         "desc": "リーダースキル1説明", 
         "effects": [
