@@ -890,6 +890,47 @@
         ], 
         "name": "慈愛の心"
     }, 
+    "11000": {
+        "desc": "残りＨＰが多いほど、攻撃力をアップ", 
+        "effects": [
+            {
+                "atk% base buff": 10, 
+                "atk% extra buff based on hp": 40, 
+                "buff proportional to hp": "remaining", 
+                "passive id": "46"
+            }
+        ], 
+        "name": "炎纏王の力"
+    }, 
+    "11001": {
+        "desc": "残りＨＰが多いほど、攻撃力を大幅にアップ", 
+        "effects": [
+            {
+                "atk% base buff": 20, 
+                "atk% extra buff based on hp": 80, 
+                "buff proportional to hp": "remaining", 
+                "passive id": "46"
+            }
+        ], 
+        "name": "炎纏神の力"
+    }, 
+    "11002": {
+        "desc": "残りＨＰが多いほど、攻撃力を大幅にアップ＆攻撃ＢＢの威力を超絶アップ", 
+        "effects": [
+            {
+                "atk% base buff": 20, 
+                "atk% extra buff based on hp": 80, 
+                "buff proportional to hp": "remaining", 
+                "passive id": "46"
+            }, 
+            {
+                "bb atk% buff": 200, 
+                "passive id": "64", 
+                "sbb atk% buff": 200
+            }
+        ], 
+        "name": "紫炎鎧神の力"
+    }, 
     "1101": {
         "desc": "ＨＣ獲得時の回復量をかなりアップ", 
         "effects": [
@@ -953,6 +994,36 @@
             }
         ], 
         "name": "慈愛の煌き"
+    }, 
+    "11100": {
+        "desc": "確率で通常攻撃を全体攻撃化する", 
+        "effects": [
+            {
+                "unknown passive id": "96", 
+                "unknown passive params": "-50,10"
+            }
+        ], 
+        "name": "蒼霜の波昂"
+    }, 
+    "11101": {
+        "desc": "確率で通常攻撃を全体攻撃化する", 
+        "effects": [
+            {
+                "unknown passive id": "96", 
+                "unknown passive params": "-50,15"
+            }
+        ], 
+        "name": "源霜神の波昂"
+    }, 
+    "11102": {
+        "desc": "確率で通常攻撃を全体攻撃化する", 
+        "effects": [
+            {
+                "unknown passive id": "96", 
+                "unknown passive params": "-50,30"
+            }
+        ], 
+        "name": "厳霜神の波星"
     }, 
     "1111": {
         "desc": "全てのユニットの防御力を２５％アップ＆ＨＣ獲得時の回復量をかなりアップ", 
@@ -1027,6 +1098,58 @@
             }
         ], 
         "name": "水鏡神の力"
+    }, 
+    "11200": {
+        "desc": "パーティのユニットが６属性以上で回復力・最大ＨＰを１５％アップ", 
+        "effects": [
+            {
+                "hp% buff": 15, 
+                "passive id": "41", 
+                "rec% buff": 15, 
+                "unique elements required": 6
+            }
+        ], 
+        "name": "六極の励光"
+    }, 
+    "11201": {
+        "desc": "パーティのユニットが６属性以上で回復力・最大ＨＰを３０％アップ＆被ダメージ時、確率でＨＰを回復", 
+        "effects": [
+            {
+                "hp% buff": 30, 
+                "passive id": "41", 
+                "rec% buff": 30, 
+                "unique elements required": 6
+            }, 
+            {
+                "dmg% to hp% when attacked chance%": 30, 
+                "dmg% to hp% when attacked high": 25, 
+                "dmg% to hp% when attacked low": 25, 
+                "passive id": "24"
+            }
+        ], 
+        "name": "六極神の癒光"
+    }, 
+    "11202": {
+        "desc": "パーティのユニットが６属性以上で回復力・最大ＨＰを５０％アップ＆被ダメージを１０％軽減＆被ダメージ時、確率でＨＰを回復", 
+        "effects": [
+            {
+                "hp% buff": 50, 
+                "passive id": "41", 
+                "rec% buff": 50, 
+                "unique elements required": 6
+            }, 
+            {
+                "dmg% to hp% when attacked chance%": 30, 
+                "dmg% to hp% when attacked high": 25, 
+                "dmg% to hp% when attacked low": 25, 
+                "passive id": "24"
+            }, 
+            {
+                "dmg% mitigation": 10, 
+                "passive id": "8"
+            }
+        ], 
+        "name": "六極神の癒煌"
     }, 
     "113": {
         "desc": "水属性ユニットの攻撃力を５０％アップ＆ターン毎にＢＢゲージを増加", 
@@ -3049,6 +3172,40 @@
             }
         ], 
         "name": "煉血純神の葬刃"
+    }, 
+    "1927": {
+        "desc": "全てのユニットの攻撃力を２０％アップ＆スパークダメージを５０％アップ", 
+        "effects": [
+            {
+                "atk% buff": 20, 
+                "passive id": "1"
+            }, 
+            {
+                "damage% for spark": 50, 
+                "passive id": "31"
+            }
+        ], 
+        "name": "崩獣神の重災"
+    }, 
+    "1928": {
+        "desc": "全てのユニットの攻撃力を３０％アップ＆スパークダメージを７５％アップ＆スパーク時、ＢＢゲージを少し上昇", 
+        "effects": [
+            {
+                "atk% buff": 30, 
+                "passive id": "1"
+            }, 
+            {
+                "damage% for spark": 75, 
+                "passive id": "31"
+            }, 
+            {
+                "bc fill on spark high": 2, 
+                "bc fill on spark low": 1, 
+                "bc fill on spark%": 100, 
+                "passive id": "47"
+            }
+        ], 
+        "name": "崩獣裂神の重滅"
     }, 
     "2": {
         "desc": "リーダースキル１説明", 
@@ -5094,6 +5251,50 @@
             }
         ], 
         "name": "炎創神の治癒"
+    }, 
+    "3010": {
+        "desc": "確率で全状態異常をランダムに発生＆被ダメージ時、確率で全状態異常をランダムに発生", 
+        "effects": [
+            {
+                "injury%": 7, 
+                "passive id": "20", 
+                "poison%": 5, 
+                "sick%": 7, 
+                "weaken%": 7
+            }, 
+            {
+                "curse%": 5, 
+                "paralysis%": 5, 
+                "passive id": "20"
+            }, 
+            {
+                "unknown passive id": "71", 
+                "unknown passive params": "5,7,7,7,5,5"
+            }
+        ], 
+        "name": "悪疫神の冥戒"
+    }, 
+    "3011": {
+        "desc": "確率で全状態異常をランダムに発生＆被ダメージ時、確率で全状態異常をランダムに発生", 
+        "effects": [
+            {
+                "injury%": 10, 
+                "passive id": "20", 
+                "poison%": 7, 
+                "sick%": 10, 
+                "weaken%": 10
+            }, 
+            {
+                "curse%": 7, 
+                "paralysis%": 7, 
+                "passive id": "20"
+            }, 
+            {
+                "unknown passive id": "71", 
+                "unknown passive params": "7,10,10,10,7,7"
+            }
+        ], 
+        "name": "悪疫神の冥罰"
     }, 
     "302": {
         "desc": "水属性ユニットの回復力を２５％アップ", 
@@ -9379,6 +9580,41 @@
             }
         ], 
         "name": "統神の究護"
+    }, 
+    "8105": {
+        "desc": "全てのユニットの防御力を２０％アップ＆確率で被ダメージを２０％軽減", 
+        "effects": [
+            {
+                "def% buff": 20, 
+                "passive id": "1"
+            }, 
+            {
+                "dmg reduction chance%": 10, 
+                "dmg reduction%": 20, 
+                "passive id": "14"
+            }
+        ], 
+        "name": "傀鋼神の硬砦"
+    }, 
+    "8106": {
+        "desc": "全てのユニットの防御力を３０％アップ＆スパークダメージを無効＆確率で被ダメージを２０％軽減", 
+        "effects": [
+            {
+                "def% buff": 30, 
+                "passive id": "1"
+            }, 
+            {
+                "base spark dmg% resist": 100, 
+                "buff spark dmg% resist": 100, 
+                "passive id": "77"
+            }, 
+            {
+                "dmg reduction chance%": 10, 
+                "dmg reduction%": 20, 
+                "passive id": "14"
+            }
+        ], 
+        "name": "傀鋼神の耀塞"
     }, 
     "8200": {
         "desc": "被ダメージ時、ＢＢゲージをかなり増加・確率でＨＰを回復", 
