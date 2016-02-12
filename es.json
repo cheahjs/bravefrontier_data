@@ -6041,6 +6041,52 @@
         "name": "Primal Bloodlust", 
         "target": "self"
     }, 
+    "810327": {
+        "desc": "MST_EXTRAPASSIVESKILL_810327_DESCRIPTION", 
+        "effects": [
+            {
+                "atk% buff": 30, 
+                "conditions": [
+                    {
+                        "unit required": "840320"
+                    }, 
+                    {
+                        "item required": [
+                            "838001"
+                        ]
+                    }
+                ], 
+                "def% buff": 30, 
+                "hp% buff": 30, 
+                "passive id": "1", 
+                "rec% buff": 30
+            }, 
+            {
+                "conditions": [], 
+                "hit increase/hit": 1, 
+                "passive id": "37"
+            }, 
+            {
+                "conditions": [], 
+                "passive id": "66", 
+                "trigger on bb": true, 
+                "trigger on sbb": true, 
+                "triggered effect": [
+                    {
+                        "buff turns": 3, 
+                        "crit% buff (7)": 60, 
+                        "effect delay time(ms)/frame": "0.0/0", 
+                        "element buffed": "all", 
+                        "proc id": "5", 
+                        "target area": "aoe", 
+                        "target type": "party"
+                    }
+                ]
+            }
+        ], 
+        "name": "Shapeshifter", 
+        "target": "self"
+    }, 
     "810527": {
         "desc": "Great boost in damage dealt to weaker elements", 
         "effects": [
@@ -6416,6 +6462,57 @@
             }
         ], 
         "name": "Lord Commander's Umbrage", 
+        "target": "self"
+    }, 
+    "840327": {
+        "desc": "MST_EXTRAPASSIVESKILL_840327_DESCRIPTION", 
+        "effects": [
+            {
+                "atk% buff": 30, 
+                "conditions": [
+                    {
+                        "unit required": "810320"
+                    }, 
+                    {
+                        "item required": [
+                            "838002"
+                        ]
+                    }
+                ], 
+                "def% buff": 30, 
+                "hp% buff": 30, 
+                "passive id": "1", 
+                "rec% buff": 30
+            }, 
+            {
+                "conditions": [], 
+                "passive id": "66", 
+                "trigger on bb": true, 
+                "trigger on sbb": true, 
+                "triggered effect": [
+                    {
+                        "effect delay time(ms)/frame": "0.0/0", 
+                        "elements added": [
+                            "thunder", 
+                            "dark"
+                        ], 
+                        "elements added turns": 3, 
+                        "proc id": "30", 
+                        "target area": "aoe", 
+                        "target type": "party"
+                    }
+                ]
+            }, 
+            {
+                "angel idol chance% condition": 0, 
+                "angel idol recover chance% high": 40, 
+                "angel idol recover chance% low": 40, 
+                "angel idol recover counts": 2, 
+                "conditions": [], 
+                "passive id": "69"
+            }
+        ], 
+        "name": "Unholy Awakening", 
         "target": "self"
     }, 
     "8500": {
