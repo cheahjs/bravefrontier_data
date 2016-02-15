@@ -52,7 +52,7 @@
         "target": "self"
     }, 
     "100": {
-        "desc": "「覇炎剣ダンデルガ」を装備時、攻撃力・防御力・回復力・最大ＨＰを２０％アップ＆弱点属性ダメージをアップ", 
+        "desc": "「覇炎剣ダンデルガ」を装備時、攻撃力・防御力・回復力・最大ＨＰを２０％アップ・弱点属性ダメージをアップ", 
         "effects": [
             {
                 "atk% buff": 20, 
@@ -7307,6 +7307,52 @@
         "name": "パッシブ11", 
         "target": "self"
     }, 
+    "110": {
+        "desc": "「覇炎剣ダンデルガ」を装備時、攻撃力・防御力・回復力・最大ＨＰを３０％アップ・弱点属性ダメージを大幅にアップ・残りＨＰが多いほど、攻撃力をアップ", 
+        "effects": [
+            {
+                "atk% buff": 30, 
+                "conditions": [
+                    {
+                        "item required": [
+                            "37600"
+                        ]
+                    }
+                ], 
+                "def% buff": 30, 
+                "hp% buff": 30, 
+                "passive id": "1", 
+                "rec% buff": 30
+            }, 
+            {
+                "conditions": [
+                    {
+                        "item required": [
+                            "37600"
+                        ]
+                    }
+                ], 
+                "elemental weakness multiplier%": 100.0, 
+                "fire units do extra elemental weakness dmg": true, 
+                "passive id": "50"
+            }, 
+            {
+                "atk% base buff": 0, 
+                "atk% extra buff based on hp": 50, 
+                "buff proportional to hp": "remaining", 
+                "conditions": [
+                    {
+                        "item required": [
+                            "37600"
+                        ]
+                    }
+                ], 
+                "passive id": "46"
+            }
+        ], 
+        "name": "騎士の炎を胸に", 
+        "target": "self"
+    }, 
     "1100": {
         "desc": "確率で被ダメージの１５％を相手に反射する", 
         "effects": [
@@ -8120,6 +8166,63 @@
         "name": "悪意無く彷徨う血刃", 
         "target": "self"
     }, 
+    "13800": {
+        "desc": "弱点属性ダメージを無効＆ＢＢ及びＳＢＢに「味方全体に３ターン、全状態異常を無効」を追加", 
+        "effects": [
+            {
+                "conditions": [], 
+                "passive id": "53", 
+                "strong base element damage resist%": 100, 
+                "strong buffed element damage resist%": 100
+            }, 
+            {
+                "conditions": [], 
+                "passive id": "66", 
+                "trigger on bb": true, 
+                "trigger on sbb": true, 
+                "triggered effect": [
+                    {
+                        "effect delay time(ms)/frame": "0.0/0", 
+                        "proc id": "17", 
+                        "resist curse% (34)": 100.0, 
+                        "resist injury% (33)": 100.0, 
+                        "resist paralysis% (35)": 100.0, 
+                        "resist poison% (30)": 100.0, 
+                        "resist sick% (32)": 100.0, 
+                        "resist status ails turns": 3, 
+                        "resist weaken% (31)": 100.0, 
+                        "target area": "aoe", 
+                        "target type": "party"
+                    }
+                ]
+            }
+        ], 
+        "name": "愛妻家の誉", 
+        "target": "self"
+    }, 
+    "13900": {
+        "desc": "被ダメージ時、確率で麻痺状態にする＆状態異常の敵へのダメージを大幅にアップ", 
+        "effects": [
+            {
+                "conditions": [], 
+                "unknown passive id": "71", 
+                "unknown passive params": "0,0,0,0,0,15"
+            }, 
+            {
+                "atk% buff when enemy has ailment": 100, 
+                "atk% buff when enemy has curse": true, 
+                "atk% buff when enemy has injury": true, 
+                "atk% buff when enemy has paralysis": true, 
+                "atk% buff when enemy has poison": true, 
+                "atk% buff when enemy has sick": true, 
+                "atk% buff when enemy has weaken": true, 
+                "conditions": [], 
+                "passive id": "74"
+            }
+        ], 
+        "name": "世界の終わりを憂う神竜", 
+        "target": "self"
+    }, 
     "14": {
         "desc": "リーダースキル1説明", 
         "effects": [
@@ -8177,6 +8280,25 @@
             }
         ], 
         "name": "血禍奔流", 
+        "target": "self"
+    }, 
+    "14000": {
+        "desc": "残りＨＰが多いほど、攻撃力をアップ＆ＢＢ発動に必要なＢＢゲージ量を軽減", 
+        "effects": [
+            {
+                "atk% base buff": 0, 
+                "atk% extra buff based on hp": 50, 
+                "buff proportional to hp": "remaining", 
+                "conditions": [], 
+                "passive id": "46"
+            }, 
+            {
+                "conditions": [], 
+                "passive id": "48", 
+                "reduced bb bc cost%": 20
+            }
+        ], 
+        "name": "断罪者たる矜持", 
         "target": "self"
     }, 
     "15": {
@@ -8364,7 +8486,7 @@
         "target": "self"
     }, 
     "200": {
-        "desc": "「宝剣レクシーダ」を装備時、攻撃力・防御力・回復力・最大ＨＰを２０％アップ＆ＨＰが２０％以下の時、一度だけ戦闘不能を耐える", 
+        "desc": "「宝剣レクシーダ」を装備時、攻撃力・防御力・回復力・最大ＨＰを２０％アップ・ＨＰが２０％以下の時、一度だけ戦闘不能を耐える", 
         "effects": [
             {
                 "atk% buff": 20, 
@@ -8415,6 +8537,43 @@
             }
         ], 
         "name": "守りたいもの", 
+        "target": "self"
+    }, 
+    "210": {
+        "desc": "「宝剣レクシーダ」を装備時、攻撃力・防御力・回復力・最大ＨＰを３０％アップ・ＨＰが２０％以下の時、一度だけ戦闘不能を耐える", 
+        "effects": [
+            {
+                "atk% buff": 30, 
+                "conditions": [
+                    {
+                        "item required": [
+                            "37630"
+                        ]
+                    }
+                ], 
+                "def% buff": 30, 
+                "hp% buff": 30, 
+                "passive id": "1", 
+                "rec% buff": 30
+            }, 
+            {
+                "buff": {
+                    "angel idol buff (12)": true, 
+                    "angel idol recover hp%": 100, 
+                    "buff turns (12)": "-1"
+                }, 
+                "conditions": [
+                    {
+                        "item required": [
+                            "37630"
+                        ]
+                    }
+                ], 
+                "hp below % buff activation": 20, 
+                "passive id": "55"
+            }
+        ], 
+        "name": "輝くは自由の翼", 
         "target": "self"
     }, 
     "2100": {
@@ -8596,7 +8755,7 @@
         "target": "self"
     }, 
     "300": {
-        "desc": "「魔槍ドレヴァス」を装備時、攻撃力・防御力・回復力・最大ＨＰを２０％アップ＆確率で被ダメージを２０％軽減", 
+        "desc": "「魔槍ドレヴァス」を装備時、攻撃力・防御力・回復力・最大ＨＰを２０％アップ・確率で被ダメージを２０％軽減", 
         "effects": [
             {
                 "atk% buff": 20, 
@@ -8672,6 +8831,54 @@
             }
         ], 
         "name": "鎧の意志", 
+        "target": "self"
+    }, 
+    "310": {
+        "desc": "「魔槍ドレヴァス」を装備時、攻撃力・防御力・回復力・最大ＨＰを３０％アップ・確率で被ダメージを２０％軽減・被ダメージが一定数を超える度に２ターン、被ダメージを軽減", 
+        "effects": [
+            {
+                "atk% buff": 30, 
+                "conditions": [
+                    {
+                        "item required": [
+                            "37610"
+                        ]
+                    }
+                ], 
+                "def% buff": 30, 
+                "hp% buff": 30, 
+                "passive id": "1", 
+                "rec% buff": 30
+            }, 
+            {
+                "conditions": [
+                    {
+                        "item required": [
+                            "37610"
+                        ]
+                    }
+                ], 
+                "dmg reduction chance%": 20, 
+                "dmg reduction%": 20, 
+                "passive id": "14"
+            }, 
+            {
+                "buff": {
+                    "buff turns (36)": "1", 
+                    "dmg reduction% buff": 25
+                }, 
+                "conditions": [
+                    {
+                        "item required": [
+                            "37610"
+                        ]
+                    }
+                ], 
+                "damage threshold buff activation": 10000, 
+                "passive id": "78"
+            }
+        ], 
+        "name": "永遠の友は心の中に", 
         "target": "self"
     }, 
     "3100": {
@@ -8898,7 +9105,7 @@
         "target": "self"
     }, 
     "400": {
-        "desc": "「雷剣バトゥータ」を装備時、攻撃力・防御力・回復力・最大ＨＰを２０％アップ＆クリティカルダメージをアップ", 
+        "desc": "「雷剣バトゥータ」を装備時、攻撃力・防御力・回復力・最大ＨＰを２０％アップ・クリティカルダメージをアップ", 
         "effects": [
             {
                 "atk% buff": 20, 
@@ -8941,6 +9148,49 @@
             }
         ], 
         "name": "散り際の本懐", 
+        "target": "self"
+    }, 
+    "410": {
+        "desc": "「雷剣バトゥータ」を装備時、攻撃力・防御力・回復力・最大ＨＰを３０％アップ・クリティカルダメージをアップ・スパークダメージを５０％アップ", 
+        "effects": [
+            {
+                "atk% buff": 30, 
+                "conditions": [
+                    {
+                        "item required": [
+                            "37620"
+                        ]
+                    }
+                ], 
+                "def% buff": 30, 
+                "hp% buff": 30, 
+                "passive id": "1", 
+                "rec% buff": 30
+            }, 
+            {
+                "conditions": [
+                    {
+                        "item required": [
+                            "37620"
+                        ]
+                    }
+                ], 
+                "crit multiplier%": 50.0, 
+                "passive id": "34"
+            }, 
+            {
+                "conditions": [
+                    {
+                        "item required": [
+                            "37620"
+                        ]
+                    }
+                ], 
+                "damage% for spark": 50, 
+                "passive id": "31"
+            }
+        ], 
+        "name": "大将軍の資質", 
         "target": "self"
     }, 
     "4100": {
@@ -9148,7 +9398,7 @@
         "target": "self"
     }, 
     "500": {
-        "desc": "「聖光剣ユリアス」を装備時、攻撃力・防御力・回復力・最大ＨＰを２０％アップ＆ＢＢ発動時のＢＢゲージの消費量をかなり軽減", 
+        "desc": "「聖光剣ユリアス」を装備時、攻撃力・防御力・回復力・最大ＨＰを２０％アップ・ＢＢ発動時のＢＢゲージ消費量をかなり軽減", 
         "effects": [
             {
                 "atk% buff": 20, 
@@ -9210,6 +9460,40 @@
             }
         ], 
         "name": "豪将たる所以", 
+        "target": "self"
+    }, 
+    "510": {
+        "desc": "「聖光剣ユリアス」を装備時、攻撃力・防御力・回復力・最大ＨＰを３０％アップ・ＢＢ発動時のＢＢゲージ消費量をかなり軽減", 
+        "effects": [
+            {
+                "atk% buff": 30, 
+                "conditions": [
+                    {
+                        "item required": [
+                            "37650"
+                        ]
+                    }
+                ], 
+                "def% buff": 30, 
+                "hp% buff": 30, 
+                "passive id": "1", 
+                "rec% buff": 30
+            }, 
+            {
+                "conditions": [
+                    {
+                        "item required": [
+                            "37650"
+                        ]
+                    }
+                ], 
+                "passive id": "49", 
+                "reduced bb bc use chance%": 100, 
+                "reduced bb bc use% high": 25, 
+                "reduced bb bc use% low": 20
+            }
+        ], 
+        "name": "受け継がれし理想", 
         "target": "self"
     }, 
     "5100": {
@@ -9402,7 +9686,7 @@
         "target": "self"
     }, 
     "600": {
-        "desc": "「黒騎槍レオムルグ」を装備時、攻撃力・防御力・回復力・最大ＨＰを２０％アップ＆確率で防御貫通効果を付与", 
+        "desc": "「黒騎槍レオムルグ」を装備時、攻撃力・防御力・回復力・最大ＨＰを２０％アップ・確率で防御貫通効果を付与", 
         "effects": [
             {
                 "atk% buff": 20, 
@@ -9445,6 +9729,52 @@
             }
         ], 
         "name": "原始の水晶", 
+        "target": "self"
+    }, 
+    "610": {
+        "desc": "「黒騎槍レオムルグ」を装備時、攻撃力・防御力・回復力・最大ＨＰを３０％アップ・確率で防御貫通効果を付与・クリティカルを無効", 
+        "effects": [
+            {
+                "atk% buff": 30, 
+                "conditions": [
+                    {
+                        "item required": [
+                            "37640"
+                        ]
+                    }
+                ], 
+                "def% buff": 30, 
+                "hp% buff": 30, 
+                "passive id": "1", 
+                "rec% buff": 30
+            }, 
+            {
+                "conditions": [
+                    {
+                        "item required": [
+                            "37640"
+                        ]
+                    }
+                ], 
+                "ignore def%": 80, 
+                "passive id": "29"
+            }, 
+            {
+                "conditions": [
+                    {
+                        "item required": [
+                            "37640"
+                        ]
+                    }
+                ], 
+                "crit chance base resist%": 100, 
+                "crit chance buffed resist%": 100, 
+                "crit dmg base damage resist%": 100, 
+                "crit dmg buffed damage resist%": 100, 
+                "passive id": "53"
+            }
+        ], 
+        "name": "優しさの中に眠る狂気", 
         "target": "self"
     }, 
     "6100": {

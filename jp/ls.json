@@ -2473,6 +2473,35 @@
         ], 
         "name": "パラメータ変換"
     }, 
+    "160": {
+        "desc": "炎属性ユニットの攻撃力を５０％アップ・最大ＨＰを３０％アップ＆全てのユニットの攻撃力を１００％アップ・最大ＨＰを３０％アップ＆攻撃ＢＢの威力をかなりアップ＆ターン毎にＢＢゲージを大幅に増加", 
+        "effects": [
+            {
+                "atk% buff": 100, 
+                "hp% buff": 30, 
+                "passive id": "1"
+            }, 
+            {
+                "atk% buff": 50, 
+                "elements buffed": [
+                    "fire"
+                ], 
+                "hp% buff": 30, 
+                "passive id": "2"
+            }, 
+            {
+                "bb atk% buff": 120, 
+                "passive id": "64", 
+                "sbb atk% buff": 120, 
+                "ubb atk% buff": 120
+            }, 
+            {
+                "bc fill per turn": 6, 
+                "passive id": "9"
+            }
+        ], 
+        "name": "幻炎の創心"
+    }, 
     "1600": {
         "desc": "スパーク時、ゼル出現率をかなりアップ", 
         "effects": [
@@ -2502,6 +2531,151 @@
             }
         ], 
         "name": "富の閃光"
+    }, 
+    "161": {
+        "desc": "水属性ユニットの攻撃力を５０％アップ・最大ＨＰを３０％アップ＆全てのユニットの攻撃力を１００％アップ・最大ＨＰを３０％アップ＆ターン毎にＢＢゲージを大幅に増加・ＨＰをかなり回復", 
+        "effects": [
+            {
+                "atk% buff": 100, 
+                "hp% buff": 30, 
+                "passive id": "1"
+            }, 
+            {
+                "atk% buff": 50, 
+                "elements buffed": [
+                    "water"
+                ], 
+                "hp% buff": 30, 
+                "passive id": "2"
+            }, 
+            {
+                "passive id": "33", 
+                "rec% added (turn heal)": 10.0, 
+                "turn heal high": 1400, 
+                "turn heal low": 1200
+            }, 
+            {
+                "bc fill per turn": 6, 
+                "passive id": "9"
+            }
+        ], 
+        "name": "幻水の創心"
+    }, 
+    "162": {
+        "desc": "樹属性ユニットの攻撃力を５０％アップ・最大ＨＰを３０％アップ＆全てのユニットの攻撃力を１００％アップ・最大ＨＰを３０％アップ＆クリティカルを無効＆被ダメージが一定数を超える度にＢＢゲージを大幅に増加", 
+        "effects": [
+            {
+                "atk% buff": 100, 
+                "hp% buff": 30, 
+                "passive id": "1"
+            }, 
+            {
+                "atk% buff": 50, 
+                "elements buffed": [
+                    "earth"
+                ], 
+                "hp% buff": 30, 
+                "passive id": "2"
+            }, 
+            {
+                "crit chance base resist%": 100, 
+                "crit chance buffed resist%": 100, 
+                "crit dmg base damage resist%": 100, 
+                "crit dmg buffed damage resist%": 100, 
+                "passive id": "53"
+            }, 
+            {
+                "damage threshold activation": 5000, 
+                "increase bb gauge": 8, 
+                "passive id": "79"
+            }
+        ], 
+        "name": "幻樹の創心"
+    }, 
+    "163": {
+        "desc": "雷属性ユニットの攻撃力を５０％アップ・最大ＨＰを３０％アップ＆全てのユニットの攻撃力を１００％アップ・最大ＨＰを３０％アップ＆スパークダメージを１２０％アップ＆スパーク時、ＢＢゲージを増加", 
+        "effects": [
+            {
+                "atk% buff": 100, 
+                "hp% buff": 30, 
+                "passive id": "1"
+            }, 
+            {
+                "atk% buff": 50, 
+                "elements buffed": [
+                    "thunder"
+                ], 
+                "hp% buff": 30, 
+                "passive id": "2"
+            }, 
+            {
+                "damage% for spark": 120, 
+                "passive id": "31"
+            }, 
+            {
+                "bc fill on spark high": 3, 
+                "bc fill on spark low": 2, 
+                "bc fill on spark%": 100, 
+                "passive id": "47"
+            }
+        ], 
+        "name": "幻雷の創心"
+    }, 
+    "164": {
+        "desc": "光属性ユニットの攻撃力を５０％アップ・最大ＨＰを３０％アップ＆全てのユニットの攻撃力を１００％アップ・最大ＨＰを３０％アップ＆ＢＢ発動に必要なＢＢゲージ量をかなり軽減＆ＢＣ獲得時の増加量をかなりアップ", 
+        "effects": [
+            {
+                "atk% buff": 100, 
+                "hp% buff": 30, 
+                "passive id": "1"
+            }, 
+            {
+                "atk% buff": 50, 
+                "elements buffed": [
+                    "light"
+                ], 
+                "hp% buff": 30, 
+                "passive id": "2"
+            }, 
+            {
+                "passive id": "48", 
+                "reduced bb bc cost%": 25
+            }, 
+            {
+                "bb gauge fill rate%": 50, 
+                "passive id": "32"
+            }
+        ], 
+        "name": "幻光の創心"
+    }, 
+    "165": {
+        "desc": "闇属性ユニットの攻撃力を５０％アップ・最大ＨＰを３０％アップ＆全てのユニットの攻撃力を１００％アップ・最大ＨＰを３０％アップ＆弱点属性ダメージを無効＆与ダメージが一定数を超える度にＢＢゲージを大幅に増加", 
+        "effects": [
+            {
+                "atk% buff": 100, 
+                "hp% buff": 30, 
+                "passive id": "1"
+            }, 
+            {
+                "atk% buff": 50, 
+                "elements buffed": [
+                    "dark"
+                ], 
+                "hp% buff": 30, 
+                "passive id": "2"
+            }, 
+            {
+                "passive id": "53", 
+                "strong base element damage resist%": 100, 
+                "strong buffed element damage resist%": 100
+            }, 
+            {
+                "damage dealt threshold activation": 50000, 
+                "increase bb gauge": 8, 
+                "passive id": "81"
+            }
+        ], 
+        "name": "幻闇の創心"
     }, 
     "17": {
         "desc": "リーダースキル１説明", 
@@ -3206,6 +3380,28 @@
             }
         ], 
         "name": "崩獣裂神の重滅"
+    }, 
+    "1929": {
+        "desc": "全てのユニットの攻撃力を８０％アップ＆残りＨＰが少ないほど、攻撃力を超絶アップ＆攻撃ＢＢの威力をかなりアップ", 
+        "effects": [
+            {
+                "atk% buff": 80, 
+                "passive id": "1"
+            }, 
+            {
+                "atk% base buff": 80, 
+                "atk% extra buff based on hp": 120, 
+                "buff proportional to hp": "lost", 
+                "passive id": "46"
+            }, 
+            {
+                "bb atk% buff": 100, 
+                "passive id": "64", 
+                "sbb atk% buff": 100, 
+                "ubb atk% buff": 100
+            }
+        ], 
+        "name": "魔統悪神の審判"
     }, 
     "2": {
         "desc": "リーダースキル１説明", 
@@ -4000,6 +4196,34 @@
             }
         ], 
         "name": "永遠の聖護炎樹"
+    }, 
+    "2135": {
+        "desc": "全てのユニットの最大ＨＰを４０％アップ＆全状態異常を無効＆確率で被ダメージを２０％軽減＆防御貫通効果を無効", 
+        "effects": [
+            {
+                "curse resist%": 100, 
+                "injury resist%": 100, 
+                "paralysis resist%": 100, 
+                "passive id": "4", 
+                "poison resist%": 100, 
+                "sick resist%": 100, 
+                "weaken resist%": 100
+            }, 
+            {
+                "dmg reduction chance%": 10, 
+                "dmg reduction%": 20, 
+                "passive id": "14"
+            }, 
+            {
+                "ignore def resist chance%": 100, 
+                "passive id": "92"
+            }, 
+            {
+                "hp% buff": 40, 
+                "passive id": "1"
+            }
+        ], 
+        "name": "永遠の天護盾"
     }, 
     "2200": {
         "desc": "パーティのユニットが５属性以上で攻撃力を２５％アップ", 
@@ -8926,6 +9150,31 @@
             }
         ], 
         "name": "煉星光神の皇力"
+    }, 
+    "7422": {
+        "desc": "全てのユニットの最大ＨＰ・攻撃力を４０％アップ＆ＢＣ獲得時の増加量をかなりアップ＆スパーク時、ＢＢゲージを増加＆ターン毎にＢＢゲージをかなり増加", 
+        "effects": [
+            {
+                "atk% buff": 40, 
+                "hp% buff": 40, 
+                "passive id": "1"
+            }, 
+            {
+                "bb gauge fill rate%": 50, 
+                "passive id": "32"
+            }, 
+            {
+                "bc fill on spark high": 3, 
+                "bc fill on spark low": 2, 
+                "bc fill on spark%": 100, 
+                "passive id": "47"
+            }, 
+            {
+                "bc fill per turn": 4, 
+                "passive id": "9"
+            }
+        ], 
+        "name": "崩輝竜神の覇光"
     }, 
     "7500": {
         "desc": "確率でＨＰを少し吸収", 
