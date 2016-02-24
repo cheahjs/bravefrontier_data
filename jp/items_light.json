@@ -274,6 +274,17 @@
         "thumbnail": "item_thum_204.png", 
         "type": "material"
     }, 
+    "10118": {
+        "desc": "封魔導神カロンの全身を覆う翼の羽根", 
+        "id": 10118, 
+        "max_stack": 99, 
+        "name": "深緋の導翼", 
+        "raid": true, 
+        "rarity": 3, 
+        "sell_price": 50, 
+        "thumbnail": "item_thum_200.png", 
+        "type": "material"
+    }, 
     "10200": {
         "desc": "エルガイアやグランガイアの広範囲で自生する解毒効果のある実", 
         "id": 10200, 
@@ -2166,6 +2177,17 @@
         "thumbnail": "item_thum_110040.png", 
         "type": "evomat"
     }, 
+    "110041": {
+        "desc": "ティリスの擬似ユニットを進化させる稀少な結晶体", 
+        "id": 110041, 
+        "max_stack": 1, 
+        "name": "虹輝英晶", 
+        "raid": false, 
+        "rarity": 3, 
+        "sell_price": 10000, 
+        "thumbnail": "item_thum_110140.png", 
+        "type": "evomat"
+    }, 
     "11005": {
         "desc": "グランガイアで稀に発見される霊石", 
         "id": 11005, 
@@ -2644,6 +2666,17 @@
         "id": 11044, 
         "max_stack": 99, 
         "name": "神魔結晶塊", 
+        "raid": true, 
+        "rarity": 3, 
+        "sell_price": 50, 
+        "thumbnail": "item_thum_1105.png", 
+        "type": "material"
+    }, 
+    "11045": {
+        "desc": "封魔導神カロンの剣に嵌めこまれた水晶", 
+        "id": 11045, 
+        "max_stack": 99, 
+        "name": "導刻の封紋", 
         "raid": true, 
         "rarity": 3, 
         "sell_price": 50, 
@@ -10738,6 +10771,39 @@
         "thumbnail": "sphere_thum_5_4.png", 
         "type": "sphere"
     }, 
+    "46220": {
+        "desc": "攻撃力・防御力・回復力・最大ＨＰを４０％アップ＆攻撃ＢＢの威力をかなりアップ＆与ダメージが一定数を超える度にＢＢゲージを増加", 
+        "effect": [
+            {
+                "atk% buff": 40, 
+                "def% buff": 40, 
+                "hp% buff": 40, 
+                "passive id": "1", 
+                "rec% buff": 40
+            }, 
+            {
+                "damage dealt threshold activation": 10000, 
+                "increase bb gauge": 5, 
+                "passive id": "81"
+            }, 
+            {
+                "bb atk% buff": 130, 
+                "passive id": "64", 
+                "sbb atk% buff": 130, 
+                "ubb atk% buff": 130
+            }
+        ], 
+        "id": 46220, 
+        "max_stack": 1, 
+        "name": "封刻の魔聖鎧", 
+        "raid": true, 
+        "rarity": 3, 
+        "sell_price": 25000, 
+        "sphere type": 1, 
+        "sphere type text": "Status Boost", 
+        "thumbnail": "sphere_thum_5_5.png", 
+        "type": "sphere"
+    }, 
     "46300": {
         "desc": "ＢＣ獲得時の増加量を超絶アップ", 
         "effect": [
@@ -13295,6 +13361,35 @@
         "sell_price": 10000, 
         "sphere type": 7, 
         "sphere type text": "HP Recovery", 
+        "thumbnail": "sphere_thum_1_7.png", 
+        "type": "sphere"
+    }, 
+    "49960": {
+        "desc": "与ダメージが一定数を超える度に次ターン、確率で攻撃力を１ターン低下する効果を付与＆攻撃力・最大ＨＰを２０％アップ", 
+        "effect": [
+            {
+                "hp% buff": 20, 
+                "passive id": "1", 
+                "rec% buff": 20
+            }, 
+            {
+                "buff": {
+                    "buff turns (74)": "2", 
+                    "unknown buff id": "74", 
+                    "unknown buff params": "-25&40&1"
+                }, 
+                "damage dealt threshold buff activation": 50000, 
+                "passive id": "80"
+            }
+        ], 
+        "id": 49960, 
+        "max_stack": 1, 
+        "name": "サムライのガントレット", 
+        "raid": false, 
+        "rarity": 3, 
+        "sell_price": 10000, 
+        "sphere type": 4, 
+        "sphere type text": "Status Ailment", 
         "thumbnail": "sphere_thum_1_7.png", 
         "type": "sphere"
     }, 
