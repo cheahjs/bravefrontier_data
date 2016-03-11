@@ -7259,6 +7259,71 @@
         "name": "Soul of the Divine", 
         "target": "self"
     }, 
+    "850317": {
+        "desc": "Adds removal and negation of status ailments effects for 3 turns to BB/SBB when Ritus Staff is equipped", 
+        "effects": [
+            {
+                "conditions": [
+                    {
+                        "item required": [
+                            "818935"
+                        ]
+                    }
+                ], 
+                "passive id": "66", 
+                "trigger on bb": true, 
+                "trigger on sbb": true, 
+                "triggered effect": [
+                    {
+                        "ailments cured": [
+                            "poison", 
+                            "weaken", 
+                            "sick", 
+                            "injury", 
+                            "curse", 
+                            "paralysis", 
+                            "atk down", 
+                            "def down", 
+                            "rec down"
+                        ], 
+                        "effect delay time(ms)/frame": "0.0/0", 
+                        "proc id": "38", 
+                        "target area": "aoe", 
+                        "target type": "party"
+                    }
+                ]
+            }, 
+            {
+                "conditions": [
+                    {
+                        "item required": [
+                            "818935"
+                        ]
+                    }
+                ], 
+                "passive id": "66", 
+                "trigger on bb": true, 
+                "trigger on sbb": true, 
+                "triggered effect": [
+                    {
+                        "effect delay time(ms)/frame": "0.0/0", 
+                        "proc id": "17", 
+                        "resist curse% (34)": 100.0, 
+                        "resist injury% (33)": 100.0, 
+                        "resist paralysis% (35)": 100.0, 
+                        "resist poison% (30)": 100.0, 
+                        "resist sick% (32)": 100.0, 
+                        "resist status ails turns": 3, 
+                        "resist weaken% (31)": 100.0, 
+                        "target area": "aoe", 
+                        "target type": "party"
+                    }
+                ]
+            }
+        ], 
+        "name": "Arcane Erudition", 
+        "target": "self"
+    }, 
     "850347": {
         "desc": "Reduces all Elemental damage received & boosts allies\u2019 BB gauge effect to BB/SBB", 
         "effects": [
@@ -7428,6 +7493,24 @@
             }
         ], 
         "name": "Manipulator of the Void", 
+        "target": "self"
+    }, 
+    "860317": {
+        "desc": "Probable damage reduction to 1 when Nyami's Bells is equipped", 
+        "effects": [
+            {
+                "conditions": [
+                    {
+                        "item required": [
+                            "818936"
+                        ]
+                    }
+                ], 
+                "passive id": "43", 
+                "take 1 dmg%": 20
+            }
+        ], 
+        "name": "Kitty of the Shadows", 
         "target": "self"
     }, 
     "8700": {
