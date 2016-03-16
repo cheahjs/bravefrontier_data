@@ -8567,6 +8567,43 @@
         "name": "破滅を招く機密", 
         "target": "self"
     }, 
+    "14900": {
+        "desc": "「緋炎宝フォルディア」を装備時、攻撃力・防御力・回復力・最大ＨＰを２０％アップ＆ＢＢ及びＳＢＢに「味方全体に２ターン、防御貫通効果を付与」を追加", 
+        "effects": [
+            {
+                "atk% buff": 20, 
+                "conditions": [
+                    {
+                        "item required": [
+                            "47208"
+                        ]
+                    }
+                ], 
+                "def% buff": 20, 
+                "hp% buff": 20, 
+                "passive id": "1", 
+                "rec% buff": 20
+            }, 
+            {
+                "conditions": [], 
+                "passive id": "66", 
+                "trigger on bb": true, 
+                "trigger on sbb": true, 
+                "triggered effect": [
+                    {
+                        "defense% ignore": 100, 
+                        "defense% ignore turns (39)": 2, 
+                        "effect delay time(ms)/frame": "0.0/0", 
+                        "proc id": "22", 
+                        "target area": "aoe", 
+                        "target type": "party"
+                    }
+                ]
+            }
+        ], 
+        "name": "私だけの英雄", 
+        "target": "self"
+    }, 
     "15": {
         "desc": "リーダースキル1説明", 
         "effects": [
@@ -8601,6 +8638,53 @@
             }
         ], 
         "name": "蒼剣の絆", 
+        "target": "self"
+    }, 
+    "15000": {
+        "desc": "「スパーク系」タイプのスフィアを装備時、攻撃力・防御力・回復力・最大ＨＰを２０％アップ＆ＨＰが満タン時、スパークダメージを８０％アップ", 
+        "effects": [
+            {
+                "atk% buff": 20, 
+                "conditions": [
+                    {
+                        "unknown": "5,11"
+                    }
+                ], 
+                "def% buff": 20, 
+                "hp% buff": 20, 
+                "passive id": "1", 
+                "rec% buff": 20
+            }, 
+            {
+                "conditions": [], 
+                "unknown passive id": "104", 
+                "unknown passive params": "80,0,0,0,0,0,100,1"
+            }
+        ], 
+        "name": "戦場に咲く神花", 
+        "target": "self"
+    }, 
+    "15100": {
+        "desc": "ＢＢ及びＳＢＢに「味方全体に３ターン、クリティカルダメージをアップ」を追加", 
+        "effects": [
+            {
+                "conditions": [], 
+                "passive id": "66", 
+                "trigger on bb": true, 
+                "trigger on sbb": true, 
+                "triggered effect": [
+                    {
+                        "buff turns (84)": 3, 
+                        "crit multiplier%": 50.0, 
+                        "effect delay time(ms)/frame": "0.0/0", 
+                        "proc id": "54", 
+                        "target area": "aoe", 
+                        "target type": "party"
+                    }
+                ]
+            }
+        ], 
+        "name": "対価無き任務", 
         "target": "self"
     }, 
     "16": {
@@ -10729,7 +10813,7 @@
         "target": "self"
     }, 
     "9000": {
-        "desc": "全状態異常を無効＆ＨＰ２０％以下の時、一度だけ戦闘不能を耐える", 
+        "desc": "全状態異常を無効＆ＨＰが２０％以下の時、一度だけ戦闘不能を耐える", 
         "effects": [
             {
                 "conditions": [], 
