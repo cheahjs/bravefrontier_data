@@ -604,6 +604,17 @@
         "thumbnail": "item_thum_504.png", 
         "type": "material"
     }, 
+    "10421": {
+        "desc": "A claw belonging to a creature with the ability to turn transparent.", 
+        "id": 10421, 
+        "max_stack": 99, 
+        "name": "Light Claw", 
+        "raid": false, 
+        "rarity": 3, 
+        "sell_price": 50, 
+        "thumbnail": "item_thum_504.png", 
+        "type": "material"
+    }, 
     "10500": {
         "desc": "The easily obtainable green fossil of a great beast's fang.", 
         "id": 10500, 
@@ -767,6 +778,17 @@
         "rarity": 3, 
         "sell_price": 50, 
         "thumbnail": "item_thum_603.png", 
+        "type": "material"
+    }, 
+    "10517": {
+        "desc": "The ferocious fang of a dark wolf that can cut through demon flesh.", 
+        "id": 10517, 
+        "max_stack": 99, 
+        "name": "Wolf Fang", 
+        "raid": false, 
+        "rarity": 3, 
+        "sell_price": 50, 
+        "thumbnail": "item_thum_604.png", 
         "type": "material"
     }, 
     "10600": {
@@ -1053,6 +1075,17 @@
         "rarity": 3, 
         "sell_price": 50, 
         "thumbnail": "item_thum_703.png", 
+        "type": "material"
+    }, 
+    "10630": {
+        "desc": "The crystallized eye of a demon.", 
+        "id": 10630, 
+        "max_stack": 99, 
+        "name": "Black Eye", 
+        "raid": false, 
+        "rarity": 3, 
+        "sell_price": 50, 
+        "thumbnail": "item_thum_704.png", 
         "type": "material"
     }, 
     "10700": {
@@ -6501,6 +6534,71 @@
         "thumbnail": "sphere_thum_5_7.png", 
         "type": "sphere"
     }, 
+    "39000": {
+        "desc": "Adds slight chance of inflicting a random status ailment when attacking", 
+        "effect": [
+            {
+                "curse%": 5, 
+                "passive id": "20", 
+                "poison%": 5, 
+                "sick%": 7
+            }, 
+            {
+                "injury%": 7, 
+                "paralysis%": 5, 
+                "passive id": "20", 
+                "weaken%": 7
+            }
+        ], 
+        "id": 39000, 
+        "max_stack": 1, 
+        "name": "Evil Halberd", 
+        "raid": true, 
+        "rarity": 3, 
+        "sell_price": 3000, 
+        "sphere type": 4, 
+        "sphere type text": "Status Ailment", 
+        "thumbnail": "sphere_thum_4_5.png", 
+        "type": "sphere"
+    }, 
+    "39200": {
+        "desc": "Boosts effectiveness of HC", 
+        "effect": [
+            {
+                "hc effectiveness%": 25, 
+                "passive id": "10"
+            }
+        ], 
+        "id": 39200, 
+        "max_stack": 1, 
+        "name": "White Bangle", 
+        "raid": true, 
+        "rarity": 3, 
+        "sell_price": 1000, 
+        "sphere type": 7, 
+        "sphere type text": "HP Recovery", 
+        "thumbnail": "sphere_thum_5_2.png", 
+        "type": "sphere"
+    }, 
+    "39300": {
+        "desc": "BB gauge refills slightly faster", 
+        "effect": [
+            {
+                "bb gauge fill rate%": 15, 
+                "passive id": "32"
+            }
+        ], 
+        "id": 39300, 
+        "max_stack": 1, 
+        "name": "Miroku Pearl", 
+        "raid": true, 
+        "rarity": 3, 
+        "sell_price": 3000, 
+        "sphere type": 6, 
+        "sphere type text": "BB Gauge", 
+        "thumbnail": "sphere_thum_5_2.png", 
+        "type": "sphere"
+    }, 
     "39500": {
         "desc": "Slightly reduces the amount of BB gauge needed for its use", 
         "effect": [
@@ -7336,6 +7434,40 @@
         "thumbnail": "sphere_thum_1_5.png", 
         "type": "sphere"
     }, 
+    "43600": {
+        "desc": "Nullifies all status ailments and replenishes HP & BB gauge every turn", 
+        "effect": [
+            {
+                "curse resist%": 100, 
+                "injury resist%": 100, 
+                "paralysis resist%": 100, 
+                "passive id": "4", 
+                "poison resist%": 100, 
+                "sick resist%": 100, 
+                "weaken resist%": 100
+            }, 
+            {
+                "passive id": "33", 
+                "rec% added (turn heal)": 10.0, 
+                "turn heal high": 1500, 
+                "turn heal low": 1000
+            }, 
+            {
+                "bc fill per turn": 4, 
+                "passive id": "9"
+            }
+        ], 
+        "id": 43600, 
+        "max_stack": 1, 
+        "name": "Star of Hope", 
+        "raid": false, 
+        "rarity": 3, 
+        "sell_price": 20000, 
+        "sphere type": 5, 
+        "sphere type text": "Status Ailments Resistant", 
+        "thumbnail": "sphere_thum_5_6.png", 
+        "type": "sphere"
+    }, 
     "44000": {
         "desc": "Boosts Atk and Def by 20%", 
         "effect": [
@@ -7419,6 +7551,212 @@
         "sphere type": 6, 
         "sphere type text": "BB Gauge", 
         "thumbnail": "sphere_thum_1_8.png", 
+        "type": "sphere"
+    }, 
+    "44701": {
+        "desc": "Recovers HP each turn, adds chance of HP recovery when damaged & 15% boost to Atk, Def, Rec and max HP", 
+        "effect": [
+            {
+                "passive id": "33", 
+                "rec% added (turn heal)": 10.0, 
+                "turn heal high": 2000, 
+                "turn heal low": 1500
+            }, 
+            {
+                "dmg% to hp% when attacked chance%": 40, 
+                "dmg% to hp% when attacked high": 20, 
+                "dmg% to hp% when attacked low": 20, 
+                "passive id": "24"
+            }, 
+            {
+                "atk% buff": 15, 
+                "def% buff": 15, 
+                "hp% buff": 15, 
+                "passive id": "1", 
+                "rec% buff": 15
+            }
+        ], 
+        "id": 44701, 
+        "max_stack": 1, 
+        "name": "Fallacy Orb", 
+        "raid": false, 
+        "rarity": 3, 
+        "sell_price": 10000, 
+        "sphere type": 7, 
+        "sphere type text": "HP Recovery", 
+        "thumbnail": "sphere_thum_1_8.png", 
+        "type": "sphere"
+    }, 
+    "44702": {
+        "desc": "Negates all status ailments (including stronger element damage) & 15% boost to Atk, Def, Rec and max HP", 
+        "effect": [
+            {
+                "curse resist%": 100, 
+                "injury resist%": 100, 
+                "paralysis resist%": 100, 
+                "passive id": "4", 
+                "poison resist%": 100, 
+                "sick resist%": 100, 
+                "weaken resist%": 100
+            }, 
+            {
+                "passive id": "53", 
+                "strong base element damage resist%": 100, 
+                "strong buffed element damage resist%": 100
+            }, 
+            {
+                "atk% buff": 15, 
+                "def% buff": 15, 
+                "hp% buff": 15, 
+                "passive id": "1", 
+                "rec% buff": 15
+            }
+        ], 
+        "id": 44702, 
+        "max_stack": 1, 
+        "name": "Impiety Orb", 
+        "raid": false, 
+        "rarity": 3, 
+        "sell_price": 10000, 
+        "sphere type": 5, 
+        "sphere type text": "Status Ailments Resistant", 
+        "thumbnail": "sphere_thum_1_8.png", 
+        "type": "sphere"
+    }, 
+    "44900": {
+        "desc": "Boosts Atk, Def, Rec with full BB gauge & largely boosts Spark damage", 
+        "effect": [
+            {
+                "atk% buff": 75, 
+                "bb gauge above % buff requirement": 100, 
+                "def% buff": 75, 
+                "passive id": "30", 
+                "rec% buff": 75
+            }, 
+            {
+                "damage% for spark": 50, 
+                "passive id": "31"
+            }
+        ], 
+        "id": 44900, 
+        "max_stack": 1, 
+        "name": "Godly Flower", 
+        "raid": false, 
+        "rarity": 3, 
+        "sell_price": 20000, 
+        "sphere type": 1, 
+        "sphere type text": "Status Boost", 
+        "thumbnail": "sphere_thum_1_6.png", 
+        "type": "sphere"
+    }, 
+    "45100": {
+        "desc": "50% boost to max HP, boosts efficacy and drop rate of HC & recovers HP every turn", 
+        "effect": [
+            {
+                "hp% buff": 50, 
+                "passive id": "1"
+            }, 
+            {
+                "hc effectiveness%": 35, 
+                "passive id": "10"
+            }, 
+            {
+                "hc drop rate% buff": 10, 
+                "passive id": "19"
+            }, 
+            {
+                "passive id": "33", 
+                "rec% added (turn heal)": 10.0, 
+                "turn heal high": 1500, 
+                "turn heal low": 1000
+            }
+        ], 
+        "id": 45100, 
+        "max_stack": 1, 
+        "name": "Eternal Armor", 
+        "raid": false, 
+        "rarity": 3, 
+        "sell_price": 20000, 
+        "sphere type": 1, 
+        "sphere type text": "Status Boost", 
+        "thumbnail": "sphere_thum_3_8.png", 
+        "type": "sphere"
+    }, 
+    "45700": {
+        "desc": "Massively boosts BC gauge each turn", 
+        "effect": [
+            {
+                "bc fill per turn": 6, 
+                "passive id": "9"
+            }
+        ], 
+        "id": 45700, 
+        "max_stack": 1, 
+        "name": "Potent Stone", 
+        "raid": false, 
+        "rarity": 3, 
+        "sell_price": 20000, 
+        "sphere type": 6, 
+        "sphere type text": "BB Gauge", 
+        "thumbnail": "sphere_thum_5_6.png", 
+        "type": "sphere"
+    }, 
+    "45800": {
+        "desc": "Great boost to BB gauge when taking and inflicting damage each turn", 
+        "effect": [
+            {
+                "bc fill per turn": 3, 
+                "passive id": "9"
+            }, 
+            {
+                "bc fill when attacking high": 6, 
+                "bc fill when attacking low": 5, 
+                "bc fill when attacking%": 100, 
+                "passive id": "35"
+            }, 
+            {
+                "bc fill when attacked high": 5, 
+                "bc fill when attacked low": 3, 
+                "bc fill when attacked%": 100, 
+                "passive id": "25"
+            }
+        ], 
+        "id": 45800, 
+        "max_stack": 1, 
+        "name": "Demon Heart", 
+        "raid": false, 
+        "rarity": 3, 
+        "sell_price": 20000, 
+        "sphere type": 6, 
+        "sphere type text": "BB Gauge", 
+        "thumbnail": "sphere_thum_5_4.png", 
+        "type": "sphere"
+    }, 
+    "45900": {
+        "desc": "Boosts Spark damage, BB gauge, BC and HC drop rate while Sparking", 
+        "effect": [
+            {
+                "bc drop% for spark": 50, 
+                "damage% for spark": 150, 
+                "hc drop% for spark": 35, 
+                "passive id": "31"
+            }, 
+            {
+                "bc fill on spark high": 2, 
+                "bc fill on spark low": 2, 
+                "bc fill on spark%": 100, 
+                "passive id": "47"
+            }
+        ], 
+        "id": 45900, 
+        "max_stack": 1, 
+        "name": "Sacred Axe", 
+        "raid": false, 
+        "rarity": 3, 
+        "sell_price": 30000, 
+        "sphere type": 11, 
+        "sphere type text": "Spark", 
+        "thumbnail": "sphere_thum_5_8.png", 
         "type": "sphere"
     }, 
     "46000": {
@@ -7714,6 +8052,61 @@
         "thumbnail": "sphere_thum_1_1.png", 
         "type": "sphere"
     }, 
+    "47202": {
+        "desc": "30% boost to Atk and Def & boosts BB Atk", 
+        "effect": [
+            {
+                "atk% buff": 30, 
+                "def% buff": 30, 
+                "passive id": "1"
+            }, 
+            {
+                "bb atk% buff": 150, 
+                "passive id": "64", 
+                "sbb atk% buff": 150, 
+                "ubb atk% buff": 150
+            }
+        ], 
+        "id": 47202, 
+        "max_stack": 1, 
+        "name": "Golem Core", 
+        "raid": false, 
+        "rarity": 3, 
+        "sell_price": 10000, 
+        "sphere type": 1, 
+        "sphere type text": "Status Boost", 
+        "thumbnail": "sphere_thum_1_1.png", 
+        "type": "sphere"
+    }, 
+    "47203": {
+        "desc": "30% boost to Atk, max HP, greatly boosts BC drop rate & 50% Atk boost when BB gauge's over half-full", 
+        "effect": [
+            {
+                "atk% buff": 30, 
+                "hp% buff": 30, 
+                "passive id": "1"
+            }, 
+            {
+                "bc drop rate% buff": 15, 
+                "passive id": "19"
+            }, 
+            {
+                "atk% buff": 50, 
+                "bb gauge above % buff requirement": 50, 
+                "passive id": "30"
+            }
+        ], 
+        "id": 47203, 
+        "max_stack": 1, 
+        "name": "Guardian Shard", 
+        "raid": false, 
+        "rarity": 3, 
+        "sell_price": 10000, 
+        "sphere type": 1, 
+        "sphere type text": "Status Boost", 
+        "thumbnail": "sphere_thum_1_1.png", 
+        "type": "sphere"
+    }, 
     "47300": {
         "desc": "10% boost to max HP and Rec & slightly boosts critical damage", 
         "effect": [
@@ -7790,6 +8183,262 @@
         "sphere type": 1, 
         "sphere type text": "Status Boost", 
         "thumbnail": "sphere_thum_5_1.png", 
+        "type": "sphere"
+    }, 
+    "47900": {
+        "desc": "Greatly boosts BC and HC drop rate when attacking", 
+        "effect": [
+            {
+                "bc drop rate% buff": 15, 
+                "hc drop rate% buff": 15, 
+                "passive id": "19"
+            }
+        ], 
+        "id": 47900, 
+        "max_stack": 1, 
+        "name": "Celgrad Gem", 
+        "raid": false, 
+        "rarity": 3, 
+        "sell_price": 6000, 
+        "sphere type": 3, 
+        "sphere type text": "Drop", 
+        "thumbnail": "sphere_thum_1_6.png", 
+        "type": "sphere"
+    }, 
+    "47901": {
+        "desc": "Boosts BB gauge and recovers HP each turn", 
+        "effect": [
+            {
+                "bc fill per turn": 3, 
+                "passive id": "9"
+            }, 
+            {
+                "passive id": "33", 
+                "rec% added (turn heal)": 10.0, 
+                "turn heal high": 1000, 
+                "turn heal low": 500
+            }
+        ], 
+        "id": 47901, 
+        "max_stack": 1, 
+        "name": "Lem Gem", 
+        "raid": false, 
+        "rarity": 3, 
+        "sell_price": 6000, 
+        "sphere type": 6, 
+        "sphere type text": "BB Gauge", 
+        "thumbnail": "sphere_thum_1_6.png", 
+        "type": "sphere"
+    }, 
+    "47902": {
+        "desc": "Slightly boosts BC efficacy & boost HC effectiveness", 
+        "effect": [
+            {
+                "bb gauge fill rate%": 30, 
+                "passive id": "32"
+            }, 
+            {
+                "hc effectiveness%": 30, 
+                "passive id": "10"
+            }
+        ], 
+        "id": 47902, 
+        "max_stack": 1, 
+        "name": "Beiorg Gem", 
+        "raid": false, 
+        "rarity": 3, 
+        "sell_price": 6000, 
+        "sphere type": 6, 
+        "sphere type text": "BB Gauge", 
+        "thumbnail": "sphere_thum_5_4.png", 
+        "type": "sphere"
+    }, 
+    "48300": {
+        "desc": "Hugely boosts attack's BC, HC drop rate, boosts BC, HC efficacy & recovers BB gauge, HP each turn", 
+        "effect": [
+            {
+                "bc drop rate% buff": 15, 
+                "hc drop rate% buff": 15, 
+                "passive id": "19"
+            }, 
+            {
+                "bc fill per turn": 3, 
+                "passive id": "9"
+            }, 
+            {
+                "passive id": "33", 
+                "rec% added (turn heal)": 10.0, 
+                "turn heal high": 1000, 
+                "turn heal low": 500
+            }, 
+            {
+                "bb gauge fill rate%": 30, 
+                "passive id": "32"
+            }, 
+            {
+                "hc effectiveness%": 30, 
+                "passive id": "10"
+            }
+        ], 
+        "id": 48300, 
+        "max_stack": 1, 
+        "name": "Demon Striker", 
+        "raid": false, 
+        "rarity": 3, 
+        "sell_price": 30000, 
+        "sphere type": 6, 
+        "sphere type text": "BB Gauge", 
+        "thumbnail": "sphere_thum_4_8.png", 
+        "type": "sphere"
+    }, 
+    "48400": {
+        "desc": "150% boost to Atk, Def for first 4 turns, enormously boosts critical hit rate & boosts critical dmg", 
+        "effect": [
+            {
+                "first x turns": 4, 
+                "first x turns atk% (1)": 150, 
+                "first x turns def% (3)": 150, 
+                "passive id": "21"
+            }, 
+            {
+                "crit% buff": 30, 
+                "passive id": "1"
+            }, 
+            {
+                "crit multiplier%": 100.0, 
+                "passive id": "34"
+            }
+        ], 
+        "id": 48400, 
+        "max_stack": 1, 
+        "name": "Amenonuhoko", 
+        "raid": false, 
+        "rarity": 3, 
+        "sell_price": 30000, 
+        "sphere type": 1, 
+        "sphere type text": "Status Boost", 
+        "thumbnail": "sphere_thum_5_7.png", 
+        "type": "sphere"
+    }, 
+    "48410": {
+        "desc": "30% boost to max HP, Rec, greatly recovers HP each turn & probable great HP recovery when attacked", 
+        "effect": [
+            {
+                "hp% buff": 30, 
+                "passive id": "1", 
+                "rec% buff": 30
+            }, 
+            {
+                "passive id": "33", 
+                "rec% added (turn heal)": 10.0, 
+                "turn heal high": 2500, 
+                "turn heal low": 2000
+            }, 
+            {
+                "dmg% to hp% when attacked chance%": 40, 
+                "dmg% to hp% when attacked high": 40, 
+                "dmg% to hp% when attacked low": 30, 
+                "passive id": "24"
+            }
+        ], 
+        "id": 48410, 
+        "max_stack": 1, 
+        "name": "Dragon Eye", 
+        "raid": false, 
+        "rarity": 3, 
+        "sell_price": 30000, 
+        "sphere type": 7, 
+        "sphere type text": "HP Recovery", 
+        "thumbnail": "sphere_thum_5_8.png", 
+        "type": "sphere"
+    }, 
+    "48420": {
+        "desc": "Nullifies all ailments, critical & elemental based dmg, boosts BB gauge each turn & greatly heals HP", 
+        "effect": [
+            {
+                "curse resist%": 100, 
+                "injury resist%": 100, 
+                "paralysis resist%": 100, 
+                "passive id": "4", 
+                "poison resist%": 100, 
+                "sick resist%": 100, 
+                "weaken resist%": 100
+            }, 
+            {
+                "crit chance base resist%": 100, 
+                "crit chance buffed resist%": 100, 
+                "passive id": "53", 
+                "strong base element damage resist%": 100, 
+                "strong buffed element damage resist%": 100
+            }, 
+            {
+                "bc fill per turn": 4, 
+                "passive id": "9"
+            }, 
+            {
+                "passive id": "33", 
+                "rec% added (turn heal)": 10.0, 
+                "turn heal high": 2000, 
+                "turn heal low": 1500
+            }
+        ], 
+        "id": 48420, 
+        "max_stack": 1, 
+        "name": "Flower Mirror", 
+        "raid": false, 
+        "rarity": 3, 
+        "sell_price": 30000, 
+        "sphere type": 5, 
+        "sphere type text": "Status Ailments Resistant", 
+        "thumbnail": "sphere_thum_3_1.png", 
+        "type": "sphere"
+    }, 
+    "48430": {
+        "desc": "40% boost to Atk, Def, Rec, max HP, boosts Atk relative to BB gauge & again relative to remaining HP", 
+        "effect": [
+            {
+                "atk% buff": 40, 
+                "def% buff": 40, 
+                "hp% buff": 40, 
+                "passive id": "1", 
+                "rec% buff": 40
+            }, 
+            {
+                "atk% base buff": 0, 
+                "atk% extra buff based on hp": 80, 
+                "buff proportional to hp": "remaining", 
+                "passive id": "46"
+            }, 
+            {
+                "atk% buff": 20, 
+                "bb gauge above % buff requirement": 20, 
+                "passive id": "30"
+            }, 
+            {
+                "atk% buff": 20, 
+                "bb gauge above % buff requirement": 40, 
+                "passive id": "30"
+            }, 
+            {
+                "atk% buff": 20, 
+                "bb gauge above % buff requirement": 60, 
+                "passive id": "30"
+            }, 
+            {
+                "atk% buff": 20, 
+                "bb gauge above % buff requirement": 80, 
+                "passive id": "30"
+            }
+        ], 
+        "id": 48430, 
+        "max_stack": 1, 
+        "name": "Nevana Crown", 
+        "raid": false, 
+        "rarity": 3, 
+        "sell_price": 30000, 
+        "sphere type": 1, 
+        "sphere type text": "Status Boost", 
+        "thumbnail": "sphere_thum_2_1.png", 
         "type": "sphere"
     }, 
     "50000": {
@@ -8256,6 +8905,65 @@
         "sphere type": 7, 
         "sphere type text": "HP Recovery", 
         "thumbnail": "sphere_thum_70_3.png", 
+        "type": "sphere"
+    }, 
+    "700009": {
+        "desc": "Boost to Atk (50%) & Boost to critical damage (50%) & boosts damage to weaker elements (40%) & Boost to Spark damage (30%)", 
+        "effect": [
+            {
+                "atk% buff": 50, 
+                "passive id": "1"
+            }, 
+            {
+                "crit multiplier%": 50.0, 
+                "passive id": "34"
+            }, 
+            {
+                "dark units do extra elemental weakness dmg": true, 
+                "earth units do extra elemental weakness dmg": true, 
+                "elemental weakness multiplier%": 40.0, 
+                "fire units do extra elemental weakness dmg": true, 
+                "light units do extra elemental weakness dmg": true, 
+                "passive id": "50", 
+                "thunder units do extra elemental weakness dmg": true, 
+                "water units do extra elemental weakness dmg": true
+            }, 
+            {
+                "damage% for spark": 30, 
+                "passive id": "31"
+            }
+        ], 
+        "id": 700009, 
+        "max_stack": 1, 
+        "name": "Excalibur", 
+        "raid": false, 
+        "rarity": 3, 
+        "sell_price": 20000, 
+        "sphere type": 2, 
+        "sphere type text": "Critical", 
+        "thumbnail": "sphere_thum_70_4.png", 
+        "type": "sphere"
+    }, 
+    "700010": {
+        "desc": "Boosts Atk, Def, Rec, and max HP by 20%", 
+        "effect": [
+            {
+                "atk% buff": 20, 
+                "def% buff": 20, 
+                "hp% buff": 20, 
+                "passive id": "1", 
+                "rec% buff": 20
+            }
+        ], 
+        "id": 700010, 
+        "max_stack": 1, 
+        "name": "False Elgaia Emblem", 
+        "raid": false, 
+        "rarity": 3, 
+        "sell_price": 30000, 
+        "sphere type": 1, 
+        "sphere type text": "Status Boost", 
+        "thumbnail": "sphere_thum_4_5.png", 
         "type": "sphere"
     }, 
     "70100": {
