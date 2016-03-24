@@ -7001,6 +7001,94 @@
         ], 
         "name": "泡沫創妃の秘境"
     }, 
+    "4330": {
+        "desc": "全てのユニットの防御力・最大ＨＰを３０％アップ＆被ダメージ時、ＢＢゲージを増加", 
+        "effects": [
+            {
+                "def% buff": 30, 
+                "hp% buff": 30, 
+                "passive id": "1"
+            }, 
+            {
+                "bc fill when attacked high": 4, 
+                "bc fill when attacked low": 2, 
+                "bc fill when attacked%": 100, 
+                "passive id": "25"
+            }
+        ], 
+        "name": "翡棘神の聖域"
+    }, 
+    "4331": {
+        "desc": "全てのユニットの防御力・最大ＨＰを４０％アップ＆被ダメージ時、ＢＢゲージをかなり増加＆ＨＰを少し吸収", 
+        "effects": [
+            {
+                "def% buff": 40, 
+                "hp% buff": 40, 
+                "passive id": "1"
+            }, 
+            {
+                "bc fill when attacked high": 6, 
+                "bc fill when attacked low": 3, 
+                "bc fill when attacked%": 100, 
+                "passive id": "25"
+            }, 
+            {
+                "hp drain chance%": 100, 
+                "hp drain% high": 8, 
+                "hp drain% low": 3, 
+                "passive id": "17"
+            }
+        ], 
+        "name": "翡麗棘神の聖域"
+    }, 
+    "4332": {
+        "desc": "全てのユニットの防御力・最大ＨＰを３０％アップ＆ＢＣ獲得数が一定数を超える度に２ターン、スパークダメージをアップ", 
+        "effects": [
+            {
+                "def% buff": 30, 
+                "hp% buff": 30, 
+                "passive id": "1"
+            }, 
+            {
+                "bc receive count buff activation": 30, 
+                "buff": {
+                    "buff turns (40)": "2", 
+                    "spark dmg% buff": 50
+                }, 
+                "passive id": "82"
+            }
+        ], 
+        "name": "天叡神の聖域"
+    }, 
+    "4333": {
+        "desc": "全てのユニットの防御力・最大ＨＰを４０％アップ＆ＢＣ獲得数が一定数を超える度に２ターン、スパークダメージを超絶アップ＆ＨＣ獲得数が一定数を超える度に２ターン、攻撃ＢＢの威力をかなりアップ", 
+        "effects": [
+            {
+                "def% buff": 40, 
+                "hp% buff": 40, 
+                "passive id": "1"
+            }, 
+            {
+                "bc receive count buff activation": 30, 
+                "buff": {
+                    "buff turns (40)": "2", 
+                    "spark dmg% buff": 100
+                }, 
+                "passive id": "82"
+            }, 
+            {
+                "buff": {
+                    "bb atk% buff": 200, 
+                    "buff turns (72)": "2", 
+                    "sbb atk% buff": 200, 
+                    "ubb atk% buff": 200
+                }, 
+                "hc receive count buff activation": 30, 
+                "passive id": "84"
+            }
+        ], 
+        "name": "叡賢神の封絶域"
+    }, 
     "4400": {
         "desc": "ターン毎にＢＢゲージを少し増加＆全ての状態異常にかなりかかりにくくなる", 
         "effects": [
@@ -8308,6 +8396,50 @@
             }
         ], 
         "name": "煉黄蠍神の天導"
+    }, 
+    "5524": {
+        "desc": "全てのユニットの最大ＨＰを３０％アップ＆ターン毎にＨＰを少し回復・ＢＢゲージを増加", 
+        "effects": [
+            {
+                "hp% buff": 30, 
+                "passive id": "1"
+            }, 
+            {
+                "passive id": "33", 
+                "rec% added (turn heal)": 10.0, 
+                "turn heal high": 600, 
+                "turn heal low": 400
+            }, 
+            {
+                "bc fill per turn": 4, 
+                "passive id": "9"
+            }
+        ], 
+        "name": "冥法神の天啓"
+    }, 
+    "5525": {
+        "desc": "全てのユニットの最大ＨＰを５０％アップ＆ターン毎にＨＰを回復・ＢＢゲージをかなり増加＆ＯＤゲージの増加量をかなりアップ", 
+        "effects": [
+            {
+                "hp% buff": 50, 
+                "passive id": "1"
+            }, 
+            {
+                "passive id": "33", 
+                "rec% added (turn heal)": 10.0, 
+                "turn heal high": 800, 
+                "turn heal low": 600
+            }, 
+            {
+                "bc fill per turn": 6, 
+                "passive id": "9"
+            }, 
+            {
+                "od fill rate%": 20, 
+                "passive id": "70"
+            }
+        ], 
+        "name": "冥穹神の天導告"
     }, 
     "553": {
         "desc": "樹属性ユニットからの被ダメージを１５％軽減＆炎属性の弱点属性ダメージを大幅にアップ＆全状態異常を無効", 
@@ -9847,6 +9979,136 @@
             }
         ], 
         "name": "終冥崩神の殲禍"
+    }, 
+    "7429": {
+        "desc": "全てのユニットの攻撃力・最大ＨＰを３０％アップ＆被ダメージ時、ＢＢゲージを増加＆低確率で被ダメージを超絶軽減", 
+        "effects": [
+            {
+                "atk% buff": 30, 
+                "hp% buff": 30, 
+                "passive id": "1"
+            }, 
+            {
+                "bc fill when attacked high": 4, 
+                "bc fill when attacked low": 2, 
+                "bc fill when attacked%": 100, 
+                "passive id": "25"
+            }, 
+            {
+                "passive id": "43", 
+                "take 1 dmg%": 10
+            }
+        ], 
+        "name": "豪燼神の覇力"
+    }, 
+    "7430": {
+        "desc": "全てのユニットの攻撃力・最大ＨＰを４０％アップ＆被ダメージ時、ＢＢゲージをかなり増加＆被ダメージが一定数を超える度に２ターン、攻撃力を大幅にアップ＆低確率で被ダメージを超絶軽減", 
+        "effects": [
+            {
+                "atk% buff": 40, 
+                "hp% buff": 40, 
+                "passive id": "1"
+            }, 
+            {
+                "bc fill when attacked high": 6, 
+                "bc fill when attacked low": 3, 
+                "bc fill when attacked%": 100, 
+                "passive id": "25"
+            }, 
+            {
+                "passive id": "43", 
+                "take 1 dmg%": 15
+            }, 
+            {
+                "buff": {
+                    "atk% buff (1)": 150, 
+                    "buff turns (1)": "1"
+                }, 
+                "damage threshold buff activation": 5000, 
+                "passive id": "78"
+            }
+        ], 
+        "name": "豪燼潰神の覇激"
+    }, 
+    "7431": {
+        "desc": "全てのユニットの攻撃力・最大ＨＰを３０％アップ＆スパークダメージを１００％アップ", 
+        "effects": [
+            {
+                "atk% buff": 30, 
+                "hp% buff": 30, 
+                "passive id": "1"
+            }, 
+            {
+                "damage% for spark": 100, 
+                "passive id": "31"
+            }
+        ], 
+        "name": "蒼輝神の閃撃"
+    }, 
+    "7432": {
+        "desc": "全てのユニットの攻撃力・最大ＨＰを５０％アップ＆スパークダメージを１２０％アップ＆ＢＢ発動に必要なＢＢゲージ量をかなり軽減", 
+        "effects": [
+            {
+                "atk% buff": 50, 
+                "hp% buff": 50, 
+                "passive id": "1"
+            }, 
+            {
+                "damage% for spark": 120, 
+                "passive id": "31"
+            }, 
+            {
+                "passive id": "48", 
+                "reduced bb bc cost%": 25
+            }
+        ], 
+        "name": "蒼煌源神の閃断撃"
+    }, 
+    "7433": {
+        "desc": "全てのユニットの攻撃力・最大ＨＰを３０％アップ＆クリティカルダメージをかなりアップ＆クリティカル時、ＢＢゲージをかなり増加", 
+        "effects": [
+            {
+                "atk% buff": 30, 
+                "hp% buff": 30, 
+                "passive id": "1"
+            }, 
+            {
+                "crit multiplier%": 100.0, 
+                "passive id": "34"
+            }, 
+            {
+                "bc fill on crit max": 6, 
+                "bc fill on crit min": 4, 
+                "bc fill on crit%": 100.0, 
+                "passive id": "65"
+            }
+        ], 
+        "name": "雷誓神の瞬刃"
+    }, 
+    "7434": {
+        "desc": "全てのユニットの攻撃力・最大ＨＰを５０％アップ＆クリティカルダメージを大幅にアップ＆クリティカル時、ＢＢゲージを大幅に増加＆ＯＤゲージの増加量をかなりアップ", 
+        "effects": [
+            {
+                "atk% buff": 50, 
+                "hp% buff": 50, 
+                "passive id": "1"
+            }, 
+            {
+                "crit multiplier%": 150.0, 
+                "passive id": "34"
+            }, 
+            {
+                "bc fill on crit max": 8, 
+                "bc fill on crit min": 6, 
+                "bc fill on crit%": 100.0, 
+                "passive id": "65"
+            }, 
+            {
+                "od fill rate%": 20, 
+                "passive id": "70"
+            }
+        ], 
+        "name": "雷醒闘神の瞬霞刃"
     }, 
     "7500": {
         "desc": "確率でＨＰを少し吸収", 
