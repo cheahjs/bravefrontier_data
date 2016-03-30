@@ -3425,33 +3425,6 @@
         "name": "Proof of Sanctity", 
         "target": "self"
     }, 
-    "1010206": {
-        "desc": "\u5168\u72b6\u614b\u7570\u5e38\u3092\u7121\u52b9\uff06\u5f31\u70b9\u5c5e\u6027\u30c0\u30e1\u30fc\u30b8\u30fb\u30af\u30ea\u30c6\u30a3\u30ab\u30eb\u3092\u7121\u52b9", 
-        "effects": [
-            {
-                "conditions": [], 
-                "curse resist%": 100, 
-                "injury resist%": 100, 
-                "paralysis resist%": 100, 
-                "passive id": "4", 
-                "poison resist%": 100, 
-                "sick resist%": 100, 
-                "weaken resist%": 100
-            }, 
-            {
-                "conditions": [], 
-                "crit chance base resist%": 100, 
-                "crit chance buffed resist%": 100, 
-                "crit dmg base damage resist%": 100, 
-                "crit dmg buffed damage resist%": 100, 
-                "passive id": "53", 
-                "strong base element damage resist%": 100, 
-                "strong buffed element damage resist%": 100
-            }
-        ], 
-        "name": "\u8056\u738b\u306e\u732e\u8eab", 
-        "target": "self"
-    }, 
     "1012000": {
         "desc": "Boosts OD gauge fill rate", 
         "effects": [
@@ -4383,6 +4356,52 @@
         "name": "MST_EXTRAPASSIVESKILL_11_NAME", 
         "target": "self"
     }, 
+    "110": {
+        "desc": "\u300c\u8987\u708e\u5263\u30c0\u30f3\u30c7\u30eb\u30ac\u300d\u3092\u88c5\u5099\u6642\u3001\u653b\u6483\u529b\u30fb\u9632\u5fa1\u529b\u30fb\u56de\u5fa9\u529b\u30fb\u6700\u5927\uff28\uff30\u3092\uff13\uff10\uff05\u30a2\u30c3\u30d7\u30fb\u5f31\u70b9\u5c5e\u6027\u30c0\u30e1\u30fc\u30b8\u3092\u5927\u5e45\u306b\u30a2\u30c3\u30d7\u30fb\u6b8b\u308a\uff28\uff30\u304c\u591a\u3044\u307b\u3069\u3001\u653b\u6483\u529b\u3092\u30a2\u30c3\u30d7", 
+        "effects": [
+            {
+                "atk% buff": 30, 
+                "conditions": [
+                    {
+                        "item required": [
+                            "37600"
+                        ]
+                    }
+                ], 
+                "def% buff": 30, 
+                "hp% buff": 30, 
+                "passive id": "1", 
+                "rec% buff": 30
+            }, 
+            {
+                "conditions": [
+                    {
+                        "item required": [
+                            "37600"
+                        ]
+                    }
+                ], 
+                "elemental weakness multiplier%": 100.0, 
+                "fire units do extra elemental weakness dmg": true, 
+                "passive id": "50"
+            }, 
+            {
+                "atk% base buff": 0, 
+                "atk% extra buff based on hp": 50, 
+                "buff proportional to hp": "remaining", 
+                "conditions": [
+                    {
+                        "item required": [
+                            "37600"
+                        ]
+                    }
+                ], 
+                "passive id": "46"
+            }
+        ], 
+        "name": "\u9a0e\u58eb\u306e\u708e\u3092\u80f8\u306b", 
+        "target": "self"
+    }, 
     "1100": {
         "desc": "Adds chance of repelling 15% of damage taken when attacked", 
         "effects": [
@@ -4755,6 +4774,80 @@
         "name": "Blessing of Life", 
         "target": "self"
     }, 
+    "12000": {
+        "desc": "\u300c\u7f85\u7344\u7114\u71fc\u30e1\u30c9\u30d6\u30ec\u30a2\u300d\u3092\u88c5\u5099\u6642\u3001\u653b\u6483\u529b\u30fb\u9632\u5fa1\u529b\u30fb\u56de\u5fa9\u529b\u30fb\u6700\u5927\uff28\uff30\u3092\uff12\uff10\uff05\u30a2\u30c3\u30d7\uff06\uff22\uff22\u53ca\u3073\uff33\uff22\uff22\u306b\u300c\uff13\u30bf\u30fc\u30f3\u3001\u72b6\u614b\u7570\u5e38\u306e\u6575\u3078\u306e\u30c0\u30e1\u30fc\u30b8\u3092\u5927\u5e45\u306b\u30a2\u30c3\u30d7\u300d\u3092\u8ffd\u52a0", 
+        "effects": [
+            {
+                "atk% buff": 20, 
+                "conditions": [
+                    {
+                        "item required": [
+                            "49940"
+                        ]
+                    }
+                ], 
+                "def% buff": 20, 
+                "hp% buff": 20, 
+                "passive id": "1", 
+                "rec% buff": 20
+            }, 
+            {
+                "conditions": [], 
+                "passive id": "66", 
+                "trigger on bb": true, 
+                "trigger on sbb": true, 
+                "triggered effect": [
+                    {
+                        "atk% buff turns (110)": 3, 
+                        "atk% buff when enemy has ailment": 160, 
+                        "effect delay time(ms)/frame": "0.0/0", 
+                        "proc id": "65", 
+                        "target area": "aoe", 
+                        "target type": "party"
+                    }
+                ]
+            }
+        ], 
+        "name": "\u767e\u932c\u4e07\u4e08", 
+        "target": "self"
+    }, 
+    "12100": {
+        "desc": "\u300c\u8056\u9b54\u65ac\u5203\u30a4\u30b7\u30e5\u30ea\u30aa\u30f3\u300d\u3092\u88c5\u5099\u6642\u3001\u653b\u6483\u529b\u30fb\u9632\u5fa1\u529b\u30fb\u56de\u5fa9\u529b\u30fb\u6700\u5927\uff28\uff30\u3092\uff12\uff10\uff05\u30a2\u30c3\u30d7\uff06\uff22\uff22\u53ca\u3073\uff33\uff22\uff22\u306b\u300c\uff13\u30bf\u30fc\u30f3\u3001\u30bf\u30fc\u30f3\u6bce\u306b\uff22\uff22\u30b2\u30fc\u30b8\u3092\u8d85\u7d76\u5897\u52a0\u300d\u3092\u8ffd\u52a0", 
+        "effects": [
+            {
+                "atk% buff": 20, 
+                "conditions": [
+                    {
+                        "item required": [
+                            "45000"
+                        ]
+                    }
+                ], 
+                "def% buff": 20, 
+                "hp% buff": 20, 
+                "passive id": "1", 
+                "rec% buff": 20
+            }, 
+            {
+                "conditions": [], 
+                "passive id": "66", 
+                "trigger on bb": true, 
+                "trigger on sbb": true, 
+                "triggered effect": [
+                    {
+                        "effect delay time(ms)/frame": "0.0/0", 
+                        "increase bb gauge gradual": 8, 
+                        "increase bb gauge gradual turns (37)": 3, 
+                        "proc id": "19", 
+                        "target area": "aoe", 
+                        "target type": "party"
+                    }
+                ]
+            }
+        ], 
+        "name": "\u8001\u7df4\u306a\u308b\u9060\u616e", 
+        "target": "self"
+    }, 
     "12200": {
         "desc": "\u30b9\u30d1\u30fc\u30af\u6642\u3001\uff22\uff22\u30b2\u30fc\u30b8\u3092\u8d85\u7d76\u5897\u52a0\uff06\u30b9\u30d1\u30fc\u30af\u30c0\u30e1\u30fc\u30b8\u3092\uff15\uff10\uff05\u30a2\u30c3\u30d7", 
         "effects": [
@@ -4876,6 +4969,61 @@
         "name": "\u6b8b\u3055\u308c\u305f\u8a18\u9332\u306e\u4fa1\u5024", 
         "target": "self"
     }, 
+    "12800": {
+        "desc": "\uff28\uff30\u304c\u6e80\u30bf\u30f3\u6642\u3001\u653b\u6483\u529b\u3092\u304b\u306a\u308a\u30a2\u30c3\u30d7\uff06\uff22\uff22\u53ca\u3073\uff33\uff22\uff22\u306b\u300c\u5473\u65b9\u5168\u4f53\u306b\uff13\u30bf\u30fc\u30f3\u3001\u6700\u5927\uff28\uff30\u306b\u5fdc\u3058\u3066\u9632\u5fa1\u529b\u3092\u30a2\u30c3\u30d7\u300d\u3092\u8ffd\u52a0", 
+        "effects": [
+            {
+                "atk% buff": 80, 
+                "conditions": [], 
+                "hp above % buff requirement": 100, 
+                "passive id": "11"
+            }, 
+            {
+                "conditions": [], 
+                "passive id": "66", 
+                "trigger on bb": true, 
+                "trigger on sbb": true, 
+                "triggered effect": [
+                    {
+                        "% converted turns": 3, 
+                        "converted attribute": "hp", 
+                        "def% buff (47)": 15, 
+                        "effect delay time(ms)/frame": "0.0/0", 
+                        "proc id": "24", 
+                        "target area": "aoe", 
+                        "target type": "party"
+                    }
+                ]
+            }
+        ], 
+        "name": "\u6bcd\u306a\u308b\u6d77\u562f", 
+        "target": "self"
+    }, 
+    "12900": {
+        "desc": "\u300c\u30c9\u30ed\u30c3\u30d7\u7cfb\u300d\u30bf\u30a4\u30d7\u306e\u30b9\u30d5\u30a3\u30a2\u3092\u88c5\u5099\u6642\u3001\u653b\u6483\u529b\u30fb\u9632\u5fa1\u529b\u30fb\u56de\u5fa9\u529b\u30fb\u6700\u5927\uff28\uff30\u3092\uff12\uff10\uff05\u30a2\u30c3\u30d7\uff06\u901a\u5e38\u653b\u6483\uff28\uff29\uff34\u6570\u3092\u5897\u52a0", 
+        "effects": [
+            {
+                "atk% buff": 20, 
+                "conditions": [
+                    {
+                        "sphere category required": "Drop", 
+                        "sphere category required (raw)": "3"
+                    }
+                ], 
+                "def% buff": 20, 
+                "hp% buff": 20, 
+                "passive id": "1", 
+                "rec% buff": 20
+            }, 
+            {
+                "conditions": [], 
+                "hit increase/hit": 1, 
+                "passive id": "37"
+            }
+        ], 
+        "name": "\u77b3\u306b\u6620\u308b\u771f\u5b9d", 
+        "target": "self"
+    }, 
     "13": {
         "desc": "MST_EXTRAPASSIVESKILL_13_DESCRIPTION", 
         "effects": [
@@ -4921,6 +5069,39 @@
             }
         ], 
         "name": "Radiant Volition", 
+        "target": "self"
+    }, 
+    "13000": {
+        "desc": "\u30af\u30ea\u30c6\u30a3\u30ab\u30eb\u6642\u3001\uff12\u30bf\u30fc\u30f3\u653b\u6483\u529b\u3092\u30a2\u30c3\u30d7", 
+        "effects": [
+            {
+                "buff": {
+                    "atk% buff (1)": 80, 
+                    "buff turns (1)": "2"
+                }, 
+                "conditions": [], 
+                "on crit activation chance%": 100, 
+                "passive id": "89"
+            }
+        ], 
+        "name": "\u79c1\u304c\u7d76\u5bfe\u306b\u6b63\u3057\u3044\u306e\u266a", 
+        "target": "self"
+    }, 
+    "13100": {
+        "desc": "\uff2f\uff24\u30b2\u30fc\u30b8\u306e\u5897\u52a0\u91cf\u3092\u8d85\u7d76\u30a2\u30c3\u30d7\uff06\u88ab\u30c0\u30e1\u30fc\u30b8\u6642\u3001\u78ba\u7387\u3067\u5168\u72b6\u614b\u7570\u5e38\u3092\u30e9\u30f3\u30c0\u30e0\u306b\u767a\u751f", 
+        "effects": [
+            {
+                "conditions": [], 
+                "od fill rate%": 50, 
+                "passive id": "70"
+            }, 
+            {
+                "conditions": [], 
+                "unknown passive id": "71", 
+                "unknown passive params": "8,10,10,10,8,8"
+            }
+        ], 
+        "name": "\u7121\u7aae\u3067\u7121\u57a2\u306a\u308b\u6b32\u671b", 
         "target": "self"
     }, 
     "13200": {
@@ -5035,6 +5216,63 @@
         "name": "\u60aa\u610f\u7121\u304f\u5f77\u5fa8\u3046\u8840\u5203", 
         "target": "self"
     }, 
+    "13800": {
+        "desc": "\u5f31\u70b9\u5c5e\u6027\u30c0\u30e1\u30fc\u30b8\u3092\u7121\u52b9\uff06\uff22\uff22\u53ca\u3073\uff33\uff22\uff22\u306b\u300c\u5473\u65b9\u5168\u4f53\u306b\uff13\u30bf\u30fc\u30f3\u3001\u5168\u72b6\u614b\u7570\u5e38\u3092\u7121\u52b9\u300d\u3092\u8ffd\u52a0", 
+        "effects": [
+            {
+                "conditions": [], 
+                "passive id": "53", 
+                "strong base element damage resist%": 100, 
+                "strong buffed element damage resist%": 100
+            }, 
+            {
+                "conditions": [], 
+                "passive id": "66", 
+                "trigger on bb": true, 
+                "trigger on sbb": true, 
+                "triggered effect": [
+                    {
+                        "effect delay time(ms)/frame": "0.0/0", 
+                        "proc id": "17", 
+                        "resist curse% (34)": 100.0, 
+                        "resist injury% (33)": 100.0, 
+                        "resist paralysis% (35)": 100.0, 
+                        "resist poison% (30)": 100.0, 
+                        "resist sick% (32)": 100.0, 
+                        "resist status ails turns": 3, 
+                        "resist weaken% (31)": 100.0, 
+                        "target area": "aoe", 
+                        "target type": "party"
+                    }
+                ]
+            }
+        ], 
+        "name": "\u611b\u59bb\u5bb6\u306e\u8a89", 
+        "target": "self"
+    }, 
+    "13900": {
+        "desc": "\u88ab\u30c0\u30e1\u30fc\u30b8\u6642\u3001\u78ba\u7387\u3067\u9ebb\u75fa\u72b6\u614b\u306b\u3059\u308b\uff06\u72b6\u614b\u7570\u5e38\u306e\u6575\u3078\u306e\u30c0\u30e1\u30fc\u30b8\u3092\u5927\u5e45\u306b\u30a2\u30c3\u30d7", 
+        "effects": [
+            {
+                "conditions": [], 
+                "unknown passive id": "71", 
+                "unknown passive params": "0,0,0,0,0,15"
+            }, 
+            {
+                "atk% buff when enemy has ailment": 100, 
+                "atk% buff when enemy has curse": true, 
+                "atk% buff when enemy has injury": true, 
+                "atk% buff when enemy has paralysis": true, 
+                "atk% buff when enemy has poison": true, 
+                "atk% buff when enemy has sick": true, 
+                "atk% buff when enemy has weaken": true, 
+                "conditions": [], 
+                "passive id": "74"
+            }
+        ], 
+        "name": "\u4e16\u754c\u306e\u7d42\u308f\u308a\u3092\u6182\u3046\u795e\u7adc", 
+        "target": "self"
+    }, 
     "14": {
         "desc": "MST_EXTRAPASSIVESKILL_14_DESCRIPTION", 
         "effects": [
@@ -5092,6 +5330,25 @@
             }
         ], 
         "name": "Red Calamity Torrent", 
+        "target": "self"
+    }, 
+    "14000": {
+        "desc": "\u6b8b\u308a\uff28\uff30\u304c\u591a\u3044\u307b\u3069\u3001\u653b\u6483\u529b\u3092\u30a2\u30c3\u30d7\uff06\uff22\uff22\u767a\u52d5\u306b\u5fc5\u8981\u306a\uff22\uff22\u30b2\u30fc\u30b8\u91cf\u3092\u8efd\u6e1b", 
+        "effects": [
+            {
+                "atk% base buff": 0, 
+                "atk% extra buff based on hp": 50, 
+                "buff proportional to hp": "remaining", 
+                "conditions": [], 
+                "passive id": "46"
+            }, 
+            {
+                "conditions": [], 
+                "passive id": "48", 
+                "reduced bb bc cost%": 20
+            }
+        ], 
+        "name": "\u65ad\u7f6a\u8005\u305f\u308b\u77dc\u6301", 
         "target": "self"
     }, 
     "15": {
@@ -5330,6 +5587,43 @@
             }
         ], 
         "name": "Protective Volition", 
+        "target": "self"
+    }, 
+    "210": {
+        "desc": "\u300c\u5b9d\u5263\u30ec\u30af\u30b7\u30fc\u30c0\u300d\u3092\u88c5\u5099\u6642\u3001\u653b\u6483\u529b\u30fb\u9632\u5fa1\u529b\u30fb\u56de\u5fa9\u529b\u30fb\u6700\u5927\uff28\uff30\u3092\uff13\uff10\uff05\u30a2\u30c3\u30d7\u30fb\uff28\uff30\u304c\uff12\uff10\uff05\u4ee5\u4e0b\u306e\u6642\u3001\u4e00\u5ea6\u3060\u3051\u6226\u95d8\u4e0d\u80fd\u3092\u8010\u3048\u308b", 
+        "effects": [
+            {
+                "atk% buff": 30, 
+                "conditions": [
+                    {
+                        "item required": [
+                            "37630"
+                        ]
+                    }
+                ], 
+                "def% buff": 30, 
+                "hp% buff": 30, 
+                "passive id": "1", 
+                "rec% buff": 30
+            }, 
+            {
+                "buff": {
+                    "angel idol buff (12)": true, 
+                    "angel idol recover hp%": 100, 
+                    "buff turns (12)": "-1"
+                }, 
+                "conditions": [
+                    {
+                        "item required": [
+                            "37630"
+                        ]
+                    }
+                ], 
+                "hp below % buff activation": 20, 
+                "passive id": "55"
+            }
+        ], 
+        "name": "\u8f1d\u304f\u306f\u81ea\u7531\u306e\u7ffc", 
         "target": "self"
     }, 
     "2100": {
@@ -5589,6 +5883,54 @@
         "name": "Armored Volition", 
         "target": "self"
     }, 
+    "310": {
+        "desc": "\u300c\u9b54\u69cd\u30c9\u30ec\u30f4\u30a1\u30b9\u300d\u3092\u88c5\u5099\u6642\u3001\u653b\u6483\u529b\u30fb\u9632\u5fa1\u529b\u30fb\u56de\u5fa9\u529b\u30fb\u6700\u5927\uff28\uff30\u3092\uff13\uff10\uff05\u30a2\u30c3\u30d7\u30fb\u78ba\u7387\u3067\u88ab\u30c0\u30e1\u30fc\u30b8\u3092\uff12\uff10\uff05\u8efd\u6e1b\u30fb\u88ab\u30c0\u30e1\u30fc\u30b8\u304c\u4e00\u5b9a\u6570\u3092\u8d85\u3048\u308b\u5ea6\u306b\uff12\u30bf\u30fc\u30f3\u3001\u88ab\u30c0\u30e1\u30fc\u30b8\u3092\u8efd\u6e1b", 
+        "effects": [
+            {
+                "atk% buff": 30, 
+                "conditions": [
+                    {
+                        "item required": [
+                            "37610"
+                        ]
+                    }
+                ], 
+                "def% buff": 30, 
+                "hp% buff": 30, 
+                "passive id": "1", 
+                "rec% buff": 30
+            }, 
+            {
+                "conditions": [
+                    {
+                        "item required": [
+                            "37610"
+                        ]
+                    }
+                ], 
+                "dmg reduction chance%": 20, 
+                "dmg reduction%": 20, 
+                "passive id": "14"
+            }, 
+            {
+                "buff": {
+                    "buff turns (36)": "1", 
+                    "dmg reduction% buff": 25
+                }, 
+                "conditions": [
+                    {
+                        "item required": [
+                            "37610"
+                        ]
+                    }
+                ], 
+                "damage threshold buff activation": 10000, 
+                "passive id": "78"
+            }
+        ], 
+        "name": "\u6c38\u9060\u306e\u53cb\u306f\u5fc3\u306e\u4e2d\u306b", 
+        "target": "self"
+    }, 
     "3100": {
         "desc": "Greatly boosts Spark damage, and 20% boost to all parameters when Eshuon is equipped", 
         "effects": [
@@ -5813,7 +6155,7 @@
         "target": "self"
     }, 
     "400": {
-        "desc": "20% boost to all parameters in battle & boost to critical hit damage when Batootha is equipped. ", 
+        "desc": "\u300c\u96f7\u5263\u30d0\u30c8\u30a5\u30fc\u30bf\u300d\u3092\u88c5\u5099\u6642\u3001\u653b\u6483\u529b\u30fb\u9632\u5fa1\u529b\u30fb\u56de\u5fa9\u529b\u30fb\u6700\u5927\uff28\uff30\u3092\uff12\uff10\uff05\u30a2\u30c3\u30d7\u30fb\u30af\u30ea\u30c6\u30a3\u30ab\u30eb\u30c0\u30e1\u30fc\u30b8\u3092\u30a2\u30c3\u30d7", 
         "effects": [
             {
                 "atk% buff": 20, 
@@ -5841,7 +6183,7 @@
                 "passive id": "34"
             }
         ], 
-        "name": "Foolish Resolution", 
+        "name": "\u899a\u609f\u3042\u308b\u5927\u611a\u884c", 
         "target": "self"
     }, 
     "4000": {
@@ -5856,6 +6198,49 @@
             }
         ], 
         "name": "Honorable Death Wish", 
+        "target": "self"
+    }, 
+    "410": {
+        "desc": "\u300c\u96f7\u5263\u30d0\u30c8\u30a5\u30fc\u30bf\u300d\u3092\u88c5\u5099\u6642\u3001\u653b\u6483\u529b\u30fb\u9632\u5fa1\u529b\u30fb\u56de\u5fa9\u529b\u30fb\u6700\u5927\uff28\uff30\u3092\uff13\uff10\uff05\u30a2\u30c3\u30d7\u30fb\u30af\u30ea\u30c6\u30a3\u30ab\u30eb\u30c0\u30e1\u30fc\u30b8\u3092\u30a2\u30c3\u30d7\u30fb\u30b9\u30d1\u30fc\u30af\u30c0\u30e1\u30fc\u30b8\u3092\uff15\uff10\uff05\u30a2\u30c3\u30d7", 
+        "effects": [
+            {
+                "atk% buff": 30, 
+                "conditions": [
+                    {
+                        "item required": [
+                            "37620"
+                        ]
+                    }
+                ], 
+                "def% buff": 30, 
+                "hp% buff": 30, 
+                "passive id": "1", 
+                "rec% buff": 30
+            }, 
+            {
+                "conditions": [
+                    {
+                        "item required": [
+                            "37620"
+                        ]
+                    }
+                ], 
+                "crit multiplier%": 50.0, 
+                "passive id": "34"
+            }, 
+            {
+                "conditions": [
+                    {
+                        "item required": [
+                            "37620"
+                        ]
+                    }
+                ], 
+                "damage% for spark": 50, 
+                "passive id": "31"
+            }
+        ], 
+        "name": "\u5927\u5c06\u8ecd\u306e\u8cc7\u8cea", 
         "target": "self"
     }, 
     "4100": {
@@ -6063,7 +6448,7 @@
         "target": "self"
     }, 
     "500": {
-        "desc": "20% boost to all parameters in battle & reduces BB gauge amount consumed during BB when Urias is equipped. ", 
+        "desc": "\u300c\u8056\u5149\u5263\u30e6\u30ea\u30a2\u30b9\u300d\u3092\u88c5\u5099\u6642\u3001\u653b\u6483\u529b\u30fb\u9632\u5fa1\u529b\u30fb\u56de\u5fa9\u529b\u30fb\u6700\u5927\uff28\uff30\u3092\uff12\uff10\uff05\u30a2\u30c3\u30d7\u30fb\uff22\uff22\u767a\u52d5\u6642\u306e\uff22\uff22\u30b2\u30fc\u30b8\u6d88\u8cbb\u91cf\u3092\u304b\u306a\u308a\u8efd\u6e1b", 
         "effects": [
             {
                 "atk% buff": 20, 
@@ -6093,7 +6478,7 @@
                 "reduced bb bc use% low": 20
             }
         ], 
-        "name": "Prayer of the Holy Blade", 
+        "name": "\u5263\u8056\u306e\u7948\u308a", 
         "target": "self"
     }, 
     "5000": {
@@ -6125,6 +6510,40 @@
             }
         ], 
         "name": "Commander's Rationale", 
+        "target": "self"
+    }, 
+    "510": {
+        "desc": "\u300c\u8056\u5149\u5263\u30e6\u30ea\u30a2\u30b9\u300d\u3092\u88c5\u5099\u6642\u3001\u653b\u6483\u529b\u30fb\u9632\u5fa1\u529b\u30fb\u56de\u5fa9\u529b\u30fb\u6700\u5927\uff28\uff30\u3092\uff13\uff10\uff05\u30a2\u30c3\u30d7\u30fb\uff22\uff22\u767a\u52d5\u6642\u306e\uff22\uff22\u30b2\u30fc\u30b8\u6d88\u8cbb\u91cf\u3092\u304b\u306a\u308a\u8efd\u6e1b", 
+        "effects": [
+            {
+                "atk% buff": 30, 
+                "conditions": [
+                    {
+                        "item required": [
+                            "37650"
+                        ]
+                    }
+                ], 
+                "def% buff": 30, 
+                "hp% buff": 30, 
+                "passive id": "1", 
+                "rec% buff": 30
+            }, 
+            {
+                "conditions": [
+                    {
+                        "item required": [
+                            "37650"
+                        ]
+                    }
+                ], 
+                "passive id": "49", 
+                "reduced bb bc use chance%": 100, 
+                "reduced bb bc use% high": 25, 
+                "reduced bb bc use% low": 20
+            }
+        ], 
+        "name": "\u53d7\u3051\u7d99\u304c\u308c\u3057\u7406\u60f3", 
         "target": "self"
     }, 
     "5100": {
@@ -6317,7 +6736,7 @@
         "target": "self"
     }, 
     "600": {
-        "desc": "20% boost to all parameters in battle & adds chance of ignoring an opponent's Def when attacking when Leomurg is equipped.", 
+        "desc": "\u300c\u9ed2\u9a0e\u69cd\u30ec\u30aa\u30e0\u30eb\u30b0\u300d\u3092\u88c5\u5099\u6642\u3001\u653b\u6483\u529b\u30fb\u9632\u5fa1\u529b\u30fb\u56de\u5fa9\u529b\u30fb\u6700\u5927\uff28\uff30\u3092\uff12\uff10\uff05\u30a2\u30c3\u30d7\u30fb\u78ba\u7387\u3067\u9632\u5fa1\u8cab\u901a\u52b9\u679c\u3092\u4ed8\u4e0e", 
         "effects": [
             {
                 "atk% buff": 20, 
@@ -6345,7 +6764,7 @@
                 "passive id": "29"
             }
         ], 
-        "name": "True Knight's Pride", 
+        "name": "\u771f\u306a\u308b\u9a0e\u58eb\u306e\u8a87\u308a", 
         "target": "self"
     }, 
     "6000": {
@@ -6360,6 +6779,52 @@
             }
         ], 
         "name": "Primeval Crystal", 
+        "target": "self"
+    }, 
+    "610": {
+        "desc": "\u300c\u9ed2\u9a0e\u69cd\u30ec\u30aa\u30e0\u30eb\u30b0\u300d\u3092\u88c5\u5099\u6642\u3001\u653b\u6483\u529b\u30fb\u9632\u5fa1\u529b\u30fb\u56de\u5fa9\u529b\u30fb\u6700\u5927\uff28\uff30\u3092\uff13\uff10\uff05\u30a2\u30c3\u30d7\u30fb\u78ba\u7387\u3067\u9632\u5fa1\u8cab\u901a\u52b9\u679c\u3092\u4ed8\u4e0e\u30fb\u30af\u30ea\u30c6\u30a3\u30ab\u30eb\u3092\u7121\u52b9", 
+        "effects": [
+            {
+                "atk% buff": 30, 
+                "conditions": [
+                    {
+                        "item required": [
+                            "37640"
+                        ]
+                    }
+                ], 
+                "def% buff": 30, 
+                "hp% buff": 30, 
+                "passive id": "1", 
+                "rec% buff": 30
+            }, 
+            {
+                "conditions": [
+                    {
+                        "item required": [
+                            "37640"
+                        ]
+                    }
+                ], 
+                "ignore def%": 80, 
+                "passive id": "29"
+            }, 
+            {
+                "conditions": [
+                    {
+                        "item required": [
+                            "37640"
+                        ]
+                    }
+                ], 
+                "crit chance base resist%": 100, 
+                "crit chance buffed resist%": 100, 
+                "crit dmg base damage resist%": 100, 
+                "crit dmg buffed damage resist%": 100, 
+                "passive id": "53"
+            }
+        ], 
+        "name": "\u512a\u3057\u3055\u306e\u4e2d\u306b\u7720\u308b\u72c2\u6c17", 
         "target": "self"
     }, 
     "6100": {
@@ -7497,6 +7962,38 @@
         "name": "Sweet Disposition", 
         "target": "self"
     }, 
+    "850166": {
+        "desc": "Adds Light barrier effect to BB/SBB for 3 turns & boosts Rec relative to how low HP is", 
+        "effects": [
+            {
+                "buff proportional to hp": "lost", 
+                "conditions": [], 
+                "passive id": "46", 
+                "rec% base buff": 0, 
+                "rec% extra buff based on hp": 150
+            }, 
+            {
+                "conditions": [], 
+                "passive id": "66", 
+                "trigger on bb": true, 
+                "trigger on sbb": true, 
+                "triggered effect": [
+                    {
+                        "effect delay time(ms)/frame": "0.0/0", 
+                        "elemental barrier absorb dmg%": 100, 
+                        "elemental barrier def": 0, 
+                        "elemental barrier element": "light", 
+                        "elemental barrier hp": 1500, 
+                        "proc id": "62", 
+                        "target area": "aoe", 
+                        "target type": "party"
+                    }
+                ]
+            }
+        ], 
+        "name": "Perennial Dawn ", 
+        "target": "self"
+    }, 
     "850317": {
         "desc": "Adds removal and negation of status ailments effects for 3 turns to BB/SBB when Ritus Staff is equipped", 
         "effects": [
@@ -7737,15 +8234,6 @@
         "desc": "Probable damage reduction to 1 &hugely boosts Spark damage when Sparks have exceeded certain amount for next turn when Nyami's Bells is equipped", 
         "effects": [
             {
-                "conditions": [], 
-                "passive id": "43", 
-                "take 1 dmg%": 20
-            }, 
-            {
-                "buff": {
-                    "buff turns (40)": "2", 
-                    "spark dmg% buff": 100
-                }, 
                 "conditions": [
                     {
                         "item required": [
@@ -7753,8 +8241,8 @@
                         ]
                     }
                 ], 
-                "passive id": "86", 
-                "spark count buff activation": 16
+                "passive id": "43", 
+                "take 1 dmg%": 20
             }
         ], 
         "name": "Kitty of the Shadows", 
