@@ -1572,6 +1572,17 @@
         "thumbnail": "item_thum_1000.png", 
         "type": "material"
     }, 
+    "10909": {
+        "desc": "A nocturnal demon bug said to appear during downpours of miasma", 
+        "id": 10909, 
+        "max_stack": 99, 
+        "name": "Miasma Bug", 
+        "raid": false, 
+        "rarity": 3, 
+        "sell_price": 50, 
+        "thumbnail": "item_thum_1005.png", 
+        "type": "material"
+    }, 
     "11000": {
         "desc": "A stone that has special elemental attack powers.", 
         "id": 11000, 
@@ -7623,6 +7634,32 @@
         "thumbnail": "sphere_thum_1_8.png", 
         "type": "sphere"
     }, 
+    "44703": {
+        "desc": "100% boost to Spark damage & 15% boost to Atk, Def, Rec, max HP", 
+        "effect": [
+            {
+                "damage% for spark": 100, 
+                "passive id": "31"
+            }, 
+            {
+                "atk% buff": 15, 
+                "def% buff": 15, 
+                "hp% buff": 15, 
+                "passive id": "1", 
+                "rec% buff": 15
+            }
+        ], 
+        "id": 44703, 
+        "max_stack": 1, 
+        "name": "Infidelity Orb", 
+        "raid": false, 
+        "rarity": 3, 
+        "sell_price": 10000, 
+        "sphere type": 11, 
+        "sphere type text": "Spark", 
+        "thumbnail": "sphere_thum_1_8.png", 
+        "type": "sphere"
+    }, 
     "44900": {
         "desc": "Boosts Atk, Def, Rec with full BB gauge & largely boosts Spark damage", 
         "effect": [
@@ -8052,6 +8089,71 @@
         "thumbnail": "sphere_thum_1_1.png", 
         "type": "sphere"
     }, 
+    "47200": {
+        "desc": "30% boost to Atk and Def & nullifies all status ailments and element based extra damage", 
+        "effect": [
+            {
+                "atk% buff": 30, 
+                "def% buff": 30, 
+                "passive id": "1"
+            }, 
+            {
+                "curse resist%": 100, 
+                "injury resist%": 100, 
+                "paralysis resist%": 100, 
+                "passive id": "4", 
+                "poison resist%": 100, 
+                "sick resist%": 100, 
+                "weaken resist%": 100
+            }, 
+            {
+                "passive id": "53", 
+                "strong base element damage resist%": 100, 
+                "strong buffed element damage resist%": 100
+            }
+        ], 
+        "id": 47200, 
+        "max_stack": 1, 
+        "name": "White Armor", 
+        "raid": false, 
+        "rarity": 3, 
+        "sell_price": 10000, 
+        "sphere type": 1, 
+        "sphere type text": "Status Boost", 
+        "thumbnail": "sphere_thum_1_1.png", 
+        "type": "sphere"
+    }, 
+    "47201": {
+        "desc": "30% boost Atk & max HP, boosts critical hit rate, probable Def ignore, criticals boost BB gauge greatly", 
+        "effect": [
+            {
+                "atk% buff": 30, 
+                "crit% buff": 20, 
+                "hp% buff": 30, 
+                "passive id": "1"
+            }, 
+            {
+                "ignore def%": 30, 
+                "passive id": "29"
+            }, 
+            {
+                "bc fill on crit max": 6, 
+                "bc fill on crit min": 4, 
+                "bc fill on crit%": 100.0, 
+                "passive id": "65"
+            }
+        ], 
+        "id": 47201, 
+        "max_stack": 1, 
+        "name": "DUEL Fragment", 
+        "raid": false, 
+        "rarity": 3, 
+        "sell_price": 10000, 
+        "sphere type": 1, 
+        "sphere type text": "Status Boost", 
+        "thumbnail": "sphere_thum_1_1.png", 
+        "type": "sphere"
+    }, 
     "47202": {
         "desc": "30% boost to Atk and Def & boosts BB Atk", 
         "effect": [
@@ -8099,6 +8201,64 @@
         "id": 47203, 
         "max_stack": 1, 
         "name": "Guardian Shard", 
+        "raid": false, 
+        "rarity": 3, 
+        "sell_price": 10000, 
+        "sphere type": 1, 
+        "sphere type text": "Status Boost", 
+        "thumbnail": "sphere_thum_1_1.png", 
+        "type": "sphere"
+    }, 
+    "47204": {
+        "desc": "30% boost to Def, max HP, greatly boosts HC drop rate & 100% Def boost when HP is over half-full", 
+        "effect": [
+            {
+                "def% buff": 30, 
+                "hp% buff": 30, 
+                "passive id": "1"
+            }, 
+            {
+                "hc drop rate% buff": 15, 
+                "passive id": "19"
+            }, 
+            {
+                "def% buff": 100, 
+                "hp above % buff requirement": 50, 
+                "passive id": "11"
+            }
+        ], 
+        "id": 47204, 
+        "max_stack": 1, 
+        "name": "Guardian Sliver", 
+        "raid": false, 
+        "rarity": 3, 
+        "sell_price": 10000, 
+        "sphere type": 1, 
+        "sphere type text": "Status Boost", 
+        "thumbnail": "sphere_thum_1_1.png", 
+        "type": "sphere"
+    }, 
+    "47205": {
+        "desc": "30% boost to Def, max HP & adds resistance against 1 KO attack when damage received has exceeded 5,000 points.", 
+        "effect": [
+            {
+                "def% buff": 30, 
+                "hp% buff": 30, 
+                "passive id": "1"
+            }, 
+            {
+                "buff": {
+                    "angel idol buff (12)": true, 
+                    "angel idol recover hp%": 100, 
+                    "buff turns (12)": "-1"
+                }, 
+                "damage threshold buff activation": 50000, 
+                "passive id": "78"
+            }
+        ], 
+        "id": 47205, 
+        "max_stack": 1, 
+        "name": "Guiding Light", 
         "raid": false, 
         "rarity": 3, 
         "sell_price": 10000, 

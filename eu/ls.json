@@ -569,6 +569,22 @@
         ], 
         "name": "Pulsating War Spirit"
     }, 
+    "1214": {
+        "desc": "BB gauge fills enormously after each turn & hugely boosts Fire, Earth elemental damage", 
+        "effects": [
+            {
+                "bc fill per turn": 6, 
+                "passive id": "9"
+            }, 
+            {
+                "earth units do extra elemental weakness dmg": true, 
+                "elemental weakness multiplier%": 125.0, 
+                "fire units do extra elemental weakness dmg": true, 
+                "passive id": "50"
+            }
+        ], 
+        "name": "Pulsating Charge"
+    }, 
     "122": {
         "desc": "50% boost to Atk power and 10% increase in HP of Earth types", 
         "effects": [
@@ -724,6 +740,16 @@
             }
         ], 
         "name": "Blinding Light"
+    }, 
+    "1304": {
+        "desc": "Enormously boosts Spark damage", 
+        "effects": [
+            {
+                "damage% for spark": 100, 
+                "passive id": "31"
+            }
+        ], 
+        "name": "Blinding Fulgor"
     }, 
     "131": {
         "desc": "50% boost to Atk Power of Thunder Types", 
@@ -986,6 +1012,26 @@
             }
         ], 
         "name": "Divine Deity's Epidemic"
+    }, 
+    "1325": {
+        "desc": "Enormously boosts Spark damage & boosts BB Atk when Sparks have exceeded certain amount for next turn", 
+        "effects": [
+            {
+                "damage% for spark": 100, 
+                "passive id": "31"
+            }, 
+            {
+                "buff": {
+                    "bb atk% buff": 100, 
+                    "buff turns (72)": "2", 
+                    "sbb atk% buff": 100, 
+                    "ubb atk% buff": 100
+                }, 
+                "passive id": "86", 
+                "spark count buff activation": 25
+            }
+        ], 
+        "name": "Deity's Violet Light"
     }, 
     "133": {
         "desc": "50% boost to Atk power of Thunder types and fills BB gauge after each turn", 
@@ -1651,6 +1697,16 @@
             }
         ], 
         "name": "Ares' Sanctuary"
+    }, 
+    "1805": {
+        "desc": "Slightly boosts BB gauge fill rate", 
+        "effects": [
+            {
+                "bb gauge fill rate%": 10, 
+                "passive id": "32"
+            }
+        ], 
+        "name": "Warrior's Light"
     }, 
     "18830": {
         "desc": "25% boost to Atk Power of Fire Types", 
@@ -5023,6 +5079,72 @@
         ], 
         "name": "Original Oracle"
     }, 
+    "5506": {
+        "desc": "40% boost to max HP for all Units, recovers HP each turn & probable HP absorption when attacking", 
+        "effects": [
+            {
+                "hp% buff": 40, 
+                "passive id": "1"
+            }, 
+            {
+                "passive id": "33", 
+                "rec% added (turn heal)": 10.0, 
+                "turn heal high": 1000, 
+                "turn heal low": 500
+            }, 
+            {
+                "hp drain chance%": 50, 
+                "hp drain% high": 10, 
+                "hp drain% low": 5, 
+                "passive id": "17"
+            }
+        ], 
+        "name": "Wave Oracle"
+    }, 
+    "5507": {
+        "desc": "30% boost to HP & boosts Atk when HP high, boosts Def when HP low", 
+        "effects": [
+            {
+                "hp% buff": 30, 
+                "passive id": "1"
+            }, 
+            {
+                "atk% base buff": 0, 
+                "atk% extra buff based on hp": 50, 
+                "buff proportional to hp": "remaining", 
+                "passive id": "46"
+            }, 
+            {
+                "buff proportional to hp": "lost", 
+                "def% base buff": 0, 
+                "def% extra buff based on hp": 50, 
+                "passive id": "46"
+            }
+        ], 
+        "name": "Radiant Deity's Law"
+    }, 
+    "5508": {
+        "desc": "30% boost to HP & boosts Atk when HP high, boosts Def when HP low", 
+        "effects": [
+            {
+                "hp% buff": 30, 
+                "passive id": "1"
+            }, 
+            {
+                "atk% base buff": 0, 
+                "atk% extra buff based on hp": 100, 
+                "buff proportional to hp": "remaining", 
+                "passive id": "46"
+            }, 
+            {
+                "buff proportional to hp": "lost", 
+                "def% base buff": 0, 
+                "def% extra buff based on hp": 100, 
+                "passive id": "46"
+            }
+        ], 
+        "name": "Radiant Deity's Commandment"
+    }, 
     "5600": {
         "desc": "25% boost to Atk of all Light and Dark Units", 
         "effects": [
@@ -7700,6 +7822,29 @@
         ], 
         "name": "Pure Rebirth"
     }, 
+    "9100": {
+        "desc": "20% boost to all parameters, slightly boosts critical hit damage & greatly boosts BB gauge on critical hits", 
+        "effects": [
+            {
+                "atk% buff": 20, 
+                "def% buff": 20, 
+                "hp% buff": 20, 
+                "passive id": "1", 
+                "rec% buff": 20
+            }, 
+            {
+                "crit multiplier%": 50.0, 
+                "passive id": "34"
+            }, 
+            {
+                "bc fill on crit max": 6, 
+                "bc fill on crit min": 4, 
+                "bc fill on crit%": 100.0, 
+                "passive id": "65"
+            }
+        ], 
+        "name": "Aurora's Majesty"
+    }, 
     "9110": {
         "desc": "30% boost to Def of all allies", 
         "effects": [
@@ -7894,5 +8039,211 @@
             }
         ], 
         "name": "Heavenly God's Sanctuary"
+    }, 
+    "9310": {
+        "desc": "Boosts Def relative to how high remaining HP is", 
+        "effects": [
+            {
+                "buff proportional to hp": "remaining", 
+                "def% base buff": 0, 
+                "def% extra buff based on hp": 50, 
+                "passive id": "46"
+            }
+        ], 
+        "name": "Crimson Shield's Formation"
+    }, 
+    "9311": {
+        "desc": "Boosts Def relative to how high remaining HP is", 
+        "effects": [
+            {
+                "buff proportional to hp": "remaining", 
+                "def% base buff": 0, 
+                "def% extra buff based on hp": 75, 
+                "passive id": "46"
+            }
+        ], 
+        "name": "Crimson Steel's Protection"
+    }, 
+    "9320": {
+        "desc": "Boosts Atk relative to how low remaining HP is", 
+        "effects": [
+            {
+                "atk% base buff": 0, 
+                "atk% extra buff based on hp": 50, 
+                "buff proportional to hp": "lost", 
+                "passive id": "46"
+            }
+        ], 
+        "name": "Swordsman's Will"
+    }, 
+    "9321": {
+        "desc": "Boosts Atk relative to how low remaining HP is", 
+        "effects": [
+            {
+                "atk% base buff": 0, 
+                "atk% extra buff based on hp": 75, 
+                "buff proportional to hp": "lost", 
+                "passive id": "46"
+            }
+        ], 
+        "name": "Swordmaster's Will"
+    }, 
+    "9330": {
+        "desc": "Slightly reduces BB gauge required for BB", 
+        "effects": [
+            {
+                "passive id": "48", 
+                "reduced bb bc cost%": 7
+            }
+        ], 
+        "name": "Forest Beast's Power"
+    }, 
+    "9331": {
+        "desc": "Slightly reduces BB gauge required for BB", 
+        "effects": [
+            {
+                "passive id": "48", 
+                "reduced bb bc cost%": 10
+            }
+        ], 
+        "name": "Forest Lord's Power"
+    }, 
+    "9340": {
+        "desc": "Probable slight BB gauge boost when attacked", 
+        "effects": [
+            {
+                "bc fill when attacked high": 2, 
+                "bc fill when attacked low": 2, 
+                "bc fill when attacked%": 30, 
+                "passive id": "25"
+            }
+        ], 
+        "name": "Light Gun's Resonance"
+    }, 
+    "9341": {
+        "desc": "Probable BB gauge boost when attacked", 
+        "effects": [
+            {
+                "bc fill when attacked high": 3, 
+                "bc fill when attacked low": 3, 
+                "bc fill when attacked%": 40, 
+                "passive id": "25"
+            }
+        ], 
+        "name": "Sparkling Gun's Roar"
+    }, 
+    "9350": {
+        "desc": "Probable slight HP recovery when attacked", 
+        "effects": [
+            {
+                "dmg% to hp% when attacked chance%": 25, 
+                "dmg% to hp% when attacked high": 15, 
+                "dmg% to hp% when attacked low": 15, 
+                "passive id": "24"
+            }
+        ], 
+        "name": "Midnight Dream"
+    }, 
+    "9351": {
+        "desc": "Probable HP recovery when attacked", 
+        "effects": [
+            {
+                "dmg% to hp% when attacked chance%": 35, 
+                "dmg% to hp% when attacked high": 20, 
+                "dmg% to hp% when attacked low": 20, 
+                "passive id": "24"
+            }
+        ], 
+        "name": "Everlasting Dark Dream"
+    }, 
+    "9500": {
+        "desc": "Boosts Atk, Def, Rec when BB gauge is more than half-full", 
+        "effects": [
+            {
+                "atk% buff": 40, 
+                "bb gauge above % buff requirement": 50, 
+                "def% buff": 40, 
+                "passive id": "30", 
+                "rec% buff": 40
+            }
+        ], 
+        "name": "Terra Ambition"
+    }, 
+    "9501": {
+        "desc": "Greatly boosts Atk, Def, Rec when BB gauge is more than half-full & slightly boosts BB gauge fill rate", 
+        "effects": [
+            {
+                "atk% buff": 60, 
+                "bb gauge above % buff requirement": 50, 
+                "def% buff": 60, 
+                "passive id": "30", 
+                "rec% buff": 60
+            }, 
+            {
+                "bb gauge fill rate%": 20, 
+                "passive id": "32"
+            }
+        ], 
+        "name": "Terra Volition"
+    }, 
+    "9502": {
+        "desc": "Hugely boosts Atk, Def, Rec when BB gauge is more than half-full and BB gauge fill rate", 
+        "effects": [
+            {
+                "atk% buff": 80, 
+                "bb gauge above % buff requirement": 50, 
+                "def% buff": 80, 
+                "passive id": "30", 
+                "rec% buff": 80
+            }, 
+            {
+                "bb gauge fill rate%": 50, 
+                "passive id": "32"
+            }
+        ], 
+        "name": "Terra Supremacy"
+    }, 
+    "9600": {
+        "desc": "Raises normal hit amount", 
+        "effects": [
+            {
+                "extra hits dmg%": -50, 
+                "hit increase/hit": 1, 
+                "passive id": "37"
+            }
+        ], 
+        "name": "Shadow King's Honor"
+    }, 
+    "9601": {
+        "desc": "Raises normal hit amount & slightly boosts BC, HC drop rate", 
+        "effects": [
+            {
+                "extra hits dmg%": -50, 
+                "hit increase/hit": 1, 
+                "passive id": "37"
+            }, 
+            {
+                "bc drop rate% buff": 8, 
+                "hc drop rate% buff": 8, 
+                "passive id": "19"
+            }
+        ], 
+        "name": "Shadow King's Soul"
+    }, 
+    "9602": {
+        "desc": "Raises normal hit amount & greatly boosts BC, HC drop rate", 
+        "effects": [
+            {
+                "extra hits dmg%": -50, 
+                "hit increase/hit": 1, 
+                "passive id": "37"
+            }, 
+            {
+                "bc drop rate% buff": 15, 
+                "hc drop rate% buff": 15, 
+                "passive id": "19"
+            }
+        ], 
+        "name": "Shadow God's Anima"
     }
 }
