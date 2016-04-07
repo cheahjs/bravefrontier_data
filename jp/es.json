@@ -10026,6 +10026,52 @@
         "name": "紅槍の絆", 
         "target": "self"
     }, 
+    "16000": {
+        "desc": "ＢＢ及びＳＢＢに「味方全体に３ターン、クリティカルダメージを少しアップ」を追加", 
+        "effects": [
+            {
+                "conditions": [], 
+                "passive id": "66", 
+                "passive target": "self", 
+                "trigger on bb": true, 
+                "trigger on sbb": true, 
+                "triggered effect": [
+                    {
+                        "buff turns (84)": 3, 
+                        "crit multiplier%": 30.0, 
+                        "effect delay time(ms)/frame": "0.0/0", 
+                        "proc id": "54", 
+                        "target area": "aoe", 
+                        "target type": "party"
+                    }
+                ]
+            }
+        ], 
+        "name": "魔剣の願い", 
+        "target": "self"
+    }, 
+    "16100": {
+        "desc": "防御貫通効果を無効＆クリティカルを無効", 
+        "effects": [
+            {
+                "conditions": [], 
+                "ignore def resist chance%": 100, 
+                "passive id": "92", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "crit chance base resist%": 100, 
+                "crit chance buffed resist%": 100, 
+                "crit dmg base damage resist%": 100, 
+                "crit dmg buffed damage resist%": 100, 
+                "passive id": "53", 
+                "passive target": "self"
+            }
+        ], 
+        "name": "蒼炎騎士の誇り", 
+        "target": "self"
+    }, 
     "17": {
         "desc": "リーダースキル1説明", 
         "effects": [

@@ -8462,6 +8462,48 @@
         ], 
         "name": "冥穹神の天導告"
     }, 
+    "5526": {
+        "desc": "全てのユニットの最大ＨＰを３０％アップ＆残りＨＰが少ないほど、防御力・回復力を少しアップ", 
+        "effects": [
+            {
+                "hp% buff": 30, 
+                "passive id": "1"
+            }, 
+            {
+                "buff proportional to hp": "lost", 
+                "def% base buff": 0, 
+                "def% extra buff based on hp": 30, 
+                "passive id": "46", 
+                "rec% base buff": 0, 
+                "rec% extra buff based on hp": 30
+            }
+        ], 
+        "name": "聖騎士の証"
+    }, 
+    "5527": {
+        "desc": "全てのユニットの最大ＨＰを３０％アップ＆残りＨＰが多いほど、攻撃力をアップ＆残りＨＰが少ないほど、防御力・回復力をアップ", 
+        "effects": [
+            {
+                "hp% buff": 30, 
+                "passive id": "1"
+            }, 
+            {
+                "buff proportional to hp": "lost", 
+                "def% base buff": 0, 
+                "def% extra buff based on hp": 50, 
+                "passive id": "46", 
+                "rec% base buff": 0, 
+                "rec% extra buff based on hp": 50
+            }, 
+            {
+                "atk% base buff": 0, 
+                "atk% extra buff based on hp": 50, 
+                "buff proportional to hp": "remaining", 
+                "passive id": "46"
+            }
+        ], 
+        "name": "誰ガ為の願い"
+    }, 
     "553": {
         "desc": "樹属性ユニットからの被ダメージを１５％軽減＆炎属性の弱点属性ダメージを大幅にアップ＆全状態異常を無効", 
         "effects": [
@@ -10929,6 +10971,29 @@
             }
         ], 
         "name": "淘汰の果てに"
+    }, 
+    "8402": {
+        "desc": "全てのユニットの攻撃力を８０％アップ＆クリティカル率をアップ＆被ダメージ時・クリティカル時、ＢＢゲージをかなり増加", 
+        "effects": [
+            {
+                "atk% buff": 80, 
+                "crit% buff": 20, 
+                "passive id": "1"
+            }, 
+            {
+                "bc fill when attacked high": 6, 
+                "bc fill when attacked low": 3, 
+                "bc fill when attacked%": 100, 
+                "passive id": "25"
+            }, 
+            {
+                "bc fill on crit max": 7, 
+                "bc fill on crit min": 5, 
+                "bc fill on crit%": 100.0, 
+                "passive id": "65"
+            }
+        ], 
+        "name": "キルオーダー"
     }, 
     "8500": {
         "desc": "残りＨＰが多いほど、攻撃力をアップ", 
