@@ -8834,6 +8834,37 @@
         "name": "Soul of the Immortal", 
         "target": "self"
     }, 
+    "860166": {
+        "desc": "Adds huge damage boost against status afflicted foes for 3 turns effect to BB/SBB & greatly boosts Atk when HP is full", 
+        "effects": [
+            {
+                "atk% buff": 100, 
+                "conditions": [], 
+                "hp above % buff requirement": 100, 
+                "passive id": "11", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "passive id": "66", 
+                "passive target": "self", 
+                "trigger on bb": true, 
+                "trigger on sbb": true, 
+                "triggered effect": [
+                    {
+                        "atk% buff turns (110)": 3, 
+                        "atk% buff when enemy has ailment": 160, 
+                        "effect delay time(ms)/frame": "0.0/0", 
+                        "proc id": "65", 
+                        "target area": "aoe", 
+                        "target type": "party"
+                    }
+                ]
+            }
+        ], 
+        "name": "Boundless Void", 
+        "target": "self"
+    }, 
     "860257": {
         "desc": "20% boost to all parameters & Increases number of hits dealt by normal attack when Obsidian Core Amplifier is equipped", 
         "effects": [
