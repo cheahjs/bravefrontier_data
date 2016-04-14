@@ -7315,6 +7315,34 @@
         "name": "繁栄の大華", 
         "target": "self"
     }, 
+    "1012770": {
+        "desc": "ＨＰが５０％以下の時、２ターン、被ダメージを少し軽減・ターン毎にＨＰを大回復", 
+        "effects": [
+            {
+                "buff": {
+                    "buff turns (8)": "2", 
+                    "gradual heal high": 3000, 
+                    "gradual heal low": 2000
+                }, 
+                "conditions": [], 
+                "hp below % buff activation": 50, 
+                "passive id": "55", 
+                "passive target": "self"
+            }, 
+            {
+                "buff": {
+                    "buff turns (36)": "1", 
+                    "dmg reduction% buff": 20
+                }, 
+                "conditions": [], 
+                "hp below % buff activation": 50, 
+                "passive id": "55", 
+                "passive target": "self"
+            }
+        ], 
+        "name": "永劫の螺旋", 
+        "target": "self"
+    }, 
     "1012800": {
         "desc": "攻撃力を５０％アップ＆スパークダメージを５０％アップ＆クリティカルダメージをアップ", 
         "effects": [
@@ -10070,6 +10098,69 @@
             }
         ], 
         "name": "蒼炎騎士の誇り", 
+        "target": "self"
+    }, 
+    "16200": {
+        "desc": "スパーク時、ＢＢゲージを増加＆被ダメージが一定数を超える度に２ターン、被ダメージを軽減＆被ダメージ時、確率でＨＰを回復", 
+        "effects": [
+            {
+                "bc fill on spark high": 3, 
+                "bc fill on spark low": 2, 
+                "bc fill on spark%": 100, 
+                "conditions": [], 
+                "passive id": "47", 
+                "passive target": "self"
+            }, 
+            {
+                "buff": {
+                    "buff turns (36)": "1", 
+                    "dmg reduction% buff": 25
+                }, 
+                "conditions": [], 
+                "damage threshold buff activation": 10000, 
+                "passive id": "78", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "dmg% to hp% when attacked chance%": 25, 
+                "dmg% to hp% when attacked high": 20, 
+                "dmg% to hp% when attacked low": 20, 
+                "passive id": "24", 
+                "passive target": "self"
+            }
+        ], 
+        "name": "皇志を継ぐ者", 
+        "target": "self"
+    }, 
+    "16300": {
+        "desc": "ＢＢ及びＳＢＢに「味方全体に２ターン、防御貫通効果を付与」を追加＆スパークダメージを５０％アップ", 
+        "effects": [
+            {
+                "conditions": [], 
+                "passive id": "66", 
+                "passive target": "self", 
+                "trigger on bb": true, 
+                "trigger on sbb": true, 
+                "triggered effect": [
+                    {
+                        "defense% ignore": 100, 
+                        "defense% ignore turns (39)": 2, 
+                        "effect delay time(ms)/frame": "0.0/0", 
+                        "proc id": "22", 
+                        "target area": "aoe", 
+                        "target type": "party"
+                    }
+                ]
+            }, 
+            {
+                "conditions": [], 
+                "damage% for spark": 50, 
+                "passive id": "31", 
+                "passive target": "self"
+            }
+        ], 
+        "name": "果てなき武士道", 
         "target": "self"
     }, 
     "17": {
