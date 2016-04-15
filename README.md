@@ -1,7 +1,7 @@
 bravefrontier_data
 ==================
 
-Holds extracted data for the game Brave Frontier (Global and JP)
+Holds extracted data for the game Brave Frontier (Global/JP/EU/KR)
 
 #List of extracted data
 
@@ -9,8 +9,16 @@ Holds extracted data for the game Brave Frontier (Global and JP)
 * dictionary_raw.txt - Raw dictionary file from Global.
 * info.json - Unit data extracted using the script from https://github.com/bsuh/bfdb/
 * items.json - Item data extracted using a modified version of the script at https://github.com/bsuh/bfdb/
+* items_light.json - Item data without recipe information.
 * missions.json - List of missions, their energy costs and number of battles.
 * files_list.txt - MD5 hashes of all data files from JP/Global.
+
+#Automatic Updates
+
+* Global currently has full data updates: dictionary, AI, units, items, missions
+* JP has the following updates: AI, units, items, items (light).
+  * items_light.json will be updated regardless of server status. items.json can only be updated when the server is up.
+* EU/KR has the following updates: AI, units, items (light)
 
 #FAQ
 
