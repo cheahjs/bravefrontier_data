@@ -16929,7 +16929,7 @@
         "type": "sphere"
     }, 
     "48214": {
-        "desc": "Restores HP, BB gauge at each turn's start, considerably restores HP, BB gauge after damage taken has exceeded certain amount for 3 turns & 30% boost to Rec, max HP", 
+        "desc": "HP and BB recovery effects trigger at turn's start, considerably restores HP, BB gauge after damage taken has exceeded certain amount for 3 turns & 30% boost to Rec, max HP", 
         "effect": [
             {
                 "unknown passive id": "72", 
@@ -17878,7 +17878,7 @@
         "type": "sphere"
     }, 
     "49800": {
-        "desc": "Very slight probable dmg reduc to 1, restores BB and greatly restores HP each turn & dmg taken slightly boosts BB gauge and may restore HP", 
+        "desc": "Very slight probable dmg reduction to 1, restores BB and greatly restores HP each turn & dmg taken slightly boosts BB gauge and may restore HP", 
         "effect": [
             {
                 "passive id": "43", 
@@ -17912,6 +17912,31 @@
         "name": "Nature Shield", 
         "raid": true, 
         "rarity": 3, 
+        "recipe": {
+            "karma": "100000", 
+            "materials": [
+                {
+                    "count": 1, 
+                    "id": 39100
+                }, 
+                {
+                    "count": 1, 
+                    "id": 47700
+                }, 
+                {
+                    "count": 15, 
+                    "id": 10007
+                }, 
+                {
+                    "count": 2, 
+                    "id": 10734
+                }, 
+                {
+                    "count": 3, 
+                    "id": 10628
+                }
+            ]
+        }, 
         "sell_price": 10000, 
         "sphere type": 10, 
         "sphere type text": "Damage Reducing", 
@@ -18883,6 +18908,31 @@
         "name": "Twilight Stone", 
         "raid": true, 
         "rarity": 3, 
+        "recipe": {
+            "karma": "100000", 
+            "materials": [
+                {
+                    "count": 3, 
+                    "id": 34805
+                }, 
+                {
+                    "count": 15, 
+                    "id": 10735
+                }, 
+                {
+                    "count": 2, 
+                    "id": 11042
+                }, 
+                {
+                    "count": 3, 
+                    "id": 10115
+                }, 
+                {
+                    "count": 3, 
+                    "id": 11030
+                }
+            ]
+        }, 
         "sell_price": 10000, 
         "sphere type": 11, 
         "sphere type text": "Spark", 
@@ -18925,6 +18975,31 @@
         "name": "Melord's Core", 
         "raid": true, 
         "rarity": 3, 
+        "recipe": {
+            "karma": "100000", 
+            "materials": [
+                {
+                    "count": 1, 
+                    "id": 39002
+                }, 
+                {
+                    "count": 3, 
+                    "id": 41800
+                }, 
+                {
+                    "count": 15, 
+                    "id": 11043
+                }, 
+                {
+                    "count": 2, 
+                    "id": 11044
+                }, 
+                {
+                    "count": 3, 
+                    "id": 10627
+                }
+            ]
+        }, 
         "sell_price": 10000, 
         "sphere type": 9, 
         "sphere type text": "Damage Reflecting", 
@@ -21127,6 +21202,19 @@
         "name": "Ritus Staff", 
         "raid": false, 
         "rarity": 3, 
+        "recipe": {
+            "karma": "100000", 
+            "materials": [
+                {
+                    "count": 1, 
+                    "id": 880215
+                }, 
+                {
+                    "count": 1, 
+                    "id": 880201
+                }
+            ]
+        }, 
         "sell_price": 10000, 
         "sphere type": 1, 
         "sphere type text": "Status Boost", 
@@ -21159,6 +21247,19 @@
         "name": "Nyami's Bells", 
         "raid": false, 
         "rarity": 3, 
+        "recipe": {
+            "karma": "100000", 
+            "materials": [
+                {
+                    "count": 1, 
+                    "id": 880216
+                }, 
+                {
+                    "count": 1, 
+                    "id": 880202
+                }
+            ]
+        }, 
         "sell_price": 10000, 
         "sphere type": 1, 
         "sphere type text": "Status Boost", 
@@ -21219,6 +21320,44 @@
         "sphere type": 13, 
         "sphere type text": "Atk Boosting", 
         "thumbnail": "sphere_thum_818937.png", 
+        "type": "sphere"
+    }, 
+    "818938": {
+        "desc": "20% boost to all parameters, 5% damage reduction, boosts BB Atk & largely boosts Atk, Def when BB gauge is full", 
+        "effect": [
+            {
+                "atk% buff": 20, 
+                "def% buff": 20, 
+                "hp% buff": 20, 
+                "passive id": "1", 
+                "rec% buff": 20
+            }, 
+            {
+                "dmg% mitigation": 5, 
+                "passive id": "8"
+            }, 
+            {
+                "bb atk% buff": 100, 
+                "passive id": "64", 
+                "sbb atk% buff": 100, 
+                "ubb atk% buff": 100
+            }, 
+            {
+                "atk% buff": 50, 
+                "bb gauge above % buff requirement": 100, 
+                "def% buff": 50, 
+                "passive id": "30"
+            }
+        ], 
+        "id": 818938, 
+        "max_stack": 1, 
+        "name": "Bond of Rih\u2019alnase", 
+        "raid": true, 
+        "rarity": 3, 
+        "sell_price": 10000, 
+        "sphere type": 12, 
+        "sphere type text": "Defense Penetrating", 
+        "thumbnail": "sphere_thum_5_4.png", 
         "type": "sphere"
     }, 
     "819901": {
@@ -22356,6 +22495,28 @@
         "rarity": 3, 
         "sell_price": 12500, 
         "thumbnail": "item_thum_880214.png", 
+        "type": "material"
+    }, 
+    "880215": {
+        "desc": "A unique ore used to improve Allanon\u2019s staff.", 
+        "id": 880215, 
+        "max_stack": 99, 
+        "name": "Love of the Loremaster", 
+        "raid": true, 
+        "rarity": 3, 
+        "sell_price": 12500, 
+        "thumbnail": "item_thum_880215.png", 
+        "type": "material"
+    }, 
+    "880216": {
+        "desc": "A unique ore used to improve Nyami\u2019s bells.", 
+        "id": 880216, 
+        "max_stack": 99, 
+        "name": "Desire of the Shadow Cat", 
+        "raid": true, 
+        "rarity": 3, 
+        "sell_price": 12500, 
+        "thumbnail": "item_thum_880216.png", 
         "type": "material"
     }, 
     "880217": {
