@@ -3897,31 +3897,6 @@
         "name": "\u795e\u5149\u306e\u9b42\u9332", 
         "target": "self"
     }, 
-    "1012760": {
-        "desc": "\uff22\uff23\u7372\u5f97\u6642\u306e\u5897\u52a0\u91cf\u3092\u5c11\u3057\u30a2\u30c3\u30d7\uff06\uff28\uff23\u7372\u5f97\u6642\u306e\u56de\u5fa9\u91cf\u3092\u5c11\u3057\u30a2\u30c3\u30d7\uff06\uff2f\uff24\u30b2\u30fc\u30b8\u306e\u5897\u52a0\u91cf\u3092\u304b\u306a\u308a\u30a2\u30c3\u30d7", 
-        "effects": [
-            {
-                "bb gauge fill rate%": 10, 
-                "conditions": [], 
-                "passive id": "32", 
-                "passive target": "self"
-            }, 
-            {
-                "conditions": [], 
-                "hc effectiveness%": 20, 
-                "passive id": "10", 
-                "passive target": "self"
-            }, 
-            {
-                "conditions": [], 
-                "od fill rate%": 20, 
-                "passive id": "70", 
-                "passive target": "self"
-            }
-        ], 
-        "name": "\u7e41\u6804\u306e\u5927\u83ef", 
-        "target": "self"
-    }, 
     "1012800": {
         "desc": "\u653b\u6483\u529b\u3092\uff15\uff10\uff05\u30a2\u30c3\u30d7\uff06\u30b9\u30d1\u30fc\u30af\u30c0\u30e1\u30fc\u30b8\u3092\uff15\uff10\uff05\u30a2\u30c3\u30d7\uff06\u30af\u30ea\u30c6\u30a3\u30ab\u30eb\u30c0\u30e1\u30fc\u30b8\u3092\u30a2\u30c3\u30d7", 
         "effects": [
@@ -5845,6 +5820,219 @@
             }
         ], 
         "name": "\u65ad\u7f6a\u8005\u305f\u308b\u77dc\u6301", 
+        "target": "self"
+    }, 
+    "14300": {
+        "desc": "\u5168\u72b6\u614b\u7570\u5e38\u3092\u7121\u52b9\uff06\u5f31\u70b9\u5c5e\u6027\u30c0\u30e1\u30fc\u30b8\u3092\u7121\u52b9", 
+        "effects": [
+            {
+                "conditions": [], 
+                "curse resist%": 100, 
+                "injury resist%": 100, 
+                "paralysis resist%": 100, 
+                "passive id": "4", 
+                "passive target": "self", 
+                "poison resist%": 100, 
+                "sick resist%": 100, 
+                "weaken resist%": 100
+            }, 
+            {
+                "conditions": [], 
+                "passive id": "53", 
+                "passive target": "self", 
+                "strong base element damage resist%": 100, 
+                "strong buffed element damage resist%": 100
+            }
+        ], 
+        "name": "\u53e1\u667a\u306e\u706f\u706b", 
+        "target": "self"
+    }, 
+    "14301": {
+        "desc": "\u5168\u72b6\u614b\u7570\u5e38\u3092\u7121\u52b9\uff06\u5f31\u70b9\u5c5e\u6027\u30c0\u30e1\u30fc\u30b8\u3092\u7121\u52b9\uff06\uff22\uff22\u53ca\u3073\uff33\uff22\uff22\u306b\u300c\u708e\u5c5e\u6027\u306e\u30d0\u30ea\u30a2\u3092\u4ed8\u4e0e\u300d\u3092\u8ffd\u52a0", 
+        "effects": [
+            {
+                "conditions": [], 
+                "curse resist%": 100, 
+                "injury resist%": 100, 
+                "paralysis resist%": 100, 
+                "passive id": "4", 
+                "passive target": "self", 
+                "poison resist%": 100, 
+                "sick resist%": 100, 
+                "weaken resist%": 100
+            }, 
+            {
+                "conditions": [], 
+                "passive id": "53", 
+                "passive target": "self", 
+                "strong base element damage resist%": 100, 
+                "strong buffed element damage resist%": 100
+            }, 
+            {
+                "conditions": [], 
+                "passive id": "66", 
+                "passive target": "self", 
+                "trigger on bb": true, 
+                "trigger on sbb": true, 
+                "triggered effect": [
+                    {
+                        "effect delay time(ms)/frame": "0.0/0", 
+                        "elemental barrier absorb dmg%": 100, 
+                        "elemental barrier def": 0, 
+                        "elemental barrier element": "fire", 
+                        "elemental barrier hp": 2000, 
+                        "proc id": "62", 
+                        "target area": "aoe", 
+                        "target type": "party"
+                    }
+                ]
+            }
+        ], 
+        "name": "\u958b\u304b\u308c\u305f\u4e16\u754c\u3078", 
+        "target": "self"
+    }, 
+    "14400": {
+        "desc": "\u72b6\u614b\u7570\u5e38\u306e\u6575\u3078\u306e\u30c0\u30e1\u30fc\u30b8\u3092\u5927\u5e45\u306b\u30a2\u30c3\u30d7\uff06\uff22\uff22\u53ca\u3073\uff33\uff22\uff22\u306b\u300c\u5473\u65b9\u5168\u4f53\u306b\uff13\u30bf\u30fc\u30f3\u3001\u5168\u72b6\u614b\u7570\u5e38\u3092\u7121\u52b9\u300d\u3092\u8ffd\u52a0", 
+        "effects": [
+            {
+                "atk% buff when enemy has ailment": 100, 
+                "atk% buff when enemy has curse": true, 
+                "atk% buff when enemy has injury": true, 
+                "atk% buff when enemy has paralysis": true, 
+                "atk% buff when enemy has poison": true, 
+                "atk% buff when enemy has sick": true, 
+                "atk% buff when enemy has weaken": true, 
+                "conditions": [], 
+                "passive id": "74", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "passive id": "66", 
+                "passive target": "self", 
+                "trigger on bb": true, 
+                "trigger on sbb": true, 
+                "triggered effect": [
+                    {
+                        "effect delay time(ms)/frame": "0.0/0", 
+                        "proc id": "17", 
+                        "resist curse% (34)": 100.0, 
+                        "resist injury% (33)": 100.0, 
+                        "resist paralysis% (35)": 100.0, 
+                        "resist poison% (30)": 100.0, 
+                        "resist sick% (32)": 100.0, 
+                        "resist status ails turns": 3, 
+                        "resist weaken% (31)": 100.0, 
+                        "target area": "aoe", 
+                        "target type": "party"
+                    }
+                ]
+            }
+        ], 
+        "name": "\u5b64\u9ad8\u306e\u5fe0\u8aa0\u5fc3", 
+        "target": "self"
+    }, 
+    "14500": {
+        "desc": "\u901a\u5e38\u653b\u6483\uff28\uff29\uff34\u6570\u3092\u5897\u52a0\uff06\u30b9\u30d1\u30fc\u30af\u6642\u3001\uff22\uff22\u30b2\u30fc\u30b8\u3092\u5c11\u3057\u5897\u52a0", 
+        "effects": [
+            {
+                "conditions": [], 
+                "hit increase/hit": 1, 
+                "passive id": "37", 
+                "passive target": "self"
+            }, 
+            {
+                "bc fill on spark high": 1, 
+                "bc fill on spark low": 1, 
+                "bc fill on spark%": 100, 
+                "conditions": [], 
+                "passive id": "47", 
+                "passive target": "self"
+            }
+        ], 
+        "name": "\u79d8\u773c\u306b\u6620\u308b\u8a18\u61b6", 
+        "target": "self"
+    }, 
+    "14600": {
+        "desc": "\u30b9\u30d1\u30fc\u30af\u30c0\u30e1\u30fc\u30b8\u3092\uff15\uff10\uff05\u30a2\u30c3\u30d7\uff06\u30b9\u30d1\u30fc\u30af\u304c\u4e00\u5b9a\u6570\u3092\u8d85\u3048\u308b\u5ea6\u306b\u6b21\u30bf\u30fc\u30f3\u3001\u653b\u6483\uff22\uff22\u306e\u5a01\u529b\u3092\u304b\u306a\u308a\u30a2\u30c3\u30d7", 
+        "effects": [
+            {
+                "conditions": [], 
+                "damage% for spark": 50, 
+                "passive id": "31", 
+                "passive target": "self"
+            }, 
+            {
+                "buff": {
+                    "bb atk% buff": 100, 
+                    "buff turns (72)": "2", 
+                    "sbb atk% buff": 100, 
+                    "ubb atk% buff": 100
+                }, 
+                "conditions": [], 
+                "passive id": "86", 
+                "passive target": "self", 
+                "spark count buff activation": 2
+            }
+        ], 
+        "name": "\u907a\u3055\u308c\u3057\u306f\u6280\u8853\u306e\u6b8b\u9ab8", 
+        "target": "self"
+    }, 
+    "14700": {
+        "desc": "\u5168\u72b6\u614b\u7570\u5e38\u3092\u7121\u52b9\uff06\uff22\uff22\u767a\u52d5\u306b\u5fc5\u8981\u306a\uff22\uff22\u30b2\u30fc\u30b8\u91cf\u3092\u8efd\u6e1b\uff06\u88ab\u30c0\u30e1\u30fc\u30b8\u6642\u3001\u78ba\u7387\u3067\uff22\uff22\u30b2\u30fc\u30b8\u3092\u304b\u306a\u308a\u5897\u52a0", 
+        "effects": [
+            {
+                "conditions": [], 
+                "curse resist%": 100, 
+                "injury resist%": 100, 
+                "paralysis resist%": 100, 
+                "passive id": "4", 
+                "passive target": "self", 
+                "poison resist%": 100, 
+                "sick resist%": 100, 
+                "weaken resist%": 100
+            }, 
+            {
+                "conditions": [], 
+                "passive id": "48", 
+                "passive target": "self", 
+                "reduced bb bc cost%": 20
+            }, 
+            {
+                "bc fill when attacked high": 5, 
+                "bc fill when attacked low": 3, 
+                "bc fill when attacked%": 50, 
+                "conditions": [], 
+                "passive id": "25", 
+                "passive target": "self"
+            }
+        ], 
+        "name": "\u656c\u8654\u306a\u308b\u5fe0\u8aa0\u5fc3", 
+        "target": "self"
+    }, 
+    "14800": {
+        "desc": "\uff22\uff22\u53ca\u3073\uff33\uff22\uff22\u306b\u300c\u5473\u65b9\u5168\u4f53\u306b\uff13\u30bf\u30fc\u30f3\u3001\uff22\uff23\u30fb\uff28\uff23\u51fa\u73fe\u7387\u3092\u304b\u306a\u308a\u30a2\u30c3\u30d7\u300d\u3092\u8ffd\u52a0", 
+        "effects": [
+            {
+                "conditions": [], 
+                "passive id": "66", 
+                "passive target": "self", 
+                "trigger on bb": true, 
+                "trigger on sbb": true, 
+                "triggered effect": [
+                    {
+                        "bc drop rate% buff (10)": 35, 
+                        "drop rate buff turns": 3, 
+                        "effect delay time(ms)/frame": "0.0/0", 
+                        "hc drop rate% buff (9)": 35, 
+                        "proc id": "6", 
+                        "target area": "aoe", 
+                        "target type": "party"
+                    }
+                ]
+            }
+        ], 
+        "name": "\u7834\u6ec5\u3092\u62db\u304f\u6a5f\u5bc6", 
         "target": "self"
     }, 
     "15": {
