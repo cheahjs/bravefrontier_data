@@ -389,6 +389,56 @@
         ], 
         "name": "流煉弓神の撃力"
     }, 
+    "10112": {
+        "desc": "全てのユニットの全能力を３５％アップ＆ＢＣ獲得時の増加量をアップ＆被ダメージ時、ＢＢゲージをかなり増加", 
+        "effects": [
+            {
+                "atk% buff": 35, 
+                "def% buff": 35, 
+                "hp% buff": 35, 
+                "passive id": "1", 
+                "rec% buff": 35
+            }, 
+            {
+                "bc fill when attacked high": 6, 
+                "bc fill when attacked low": 3, 
+                "bc fill when attacked%": 100, 
+                "passive id": "25"
+            }, 
+            {
+                "bb gauge fill rate%": 40, 
+                "passive id": "32"
+            }
+        ], 
+        "name": "泰天神の護晄"
+    }, 
+    "10113": {
+        "desc": "全てのユニットの全能力を４０％アップ＆ＢＣ獲得時の増加量をかなりアップ＆ターン毎にＢＢゲージを大幅に増加＆被ダメージ時、ＢＢゲージを大幅に増加", 
+        "effects": [
+            {
+                "atk% buff": 40, 
+                "def% buff": 40, 
+                "hp% buff": 40, 
+                "passive id": "1", 
+                "rec% buff": 40
+            }, 
+            {
+                "bc fill when attacked high": 7, 
+                "bc fill when attacked low": 4, 
+                "bc fill when attacked%": 100, 
+                "passive id": "25"
+            }, 
+            {
+                "bb gauge fill rate%": 50, 
+                "passive id": "32"
+            }, 
+            {
+                "bc fill per turn": 7, 
+                "passive id": "9"
+            }
+        ], 
+        "name": "泰雄天神の全護晄"
+    }, 
     "102": {
         "desc": "炎属性ユニットの攻撃力を５０％アップ・最大ＨＰを１０％アップ", 
         "effects": [
@@ -3743,6 +3793,43 @@
             }
         ], 
         "name": "神侠魔刀の冥刹"
+    }, 
+    "1942": {
+        "desc": "全てのユニットの攻撃力を６０％アップ＆残りＨＰが少ないほど、攻撃力を大幅にアップ", 
+        "effects": [
+            {
+                "atk% buff": 60, 
+                "passive id": "1"
+            }, 
+            {
+                "atk% base buff": 20, 
+                "atk% extra buff based on hp": 80, 
+                "buff proportional to hp": "lost", 
+                "passive id": "46"
+            }
+        ], 
+        "name": "闘迅神の昂力"
+    }, 
+    "1943": {
+        "desc": "全てのユニットの攻撃力を１００％アップ＆残りＨＰが少ないほど、攻撃力を超絶アップ＆与ダメージが一定数を超える度にＢＢゲージを増加", 
+        "effects": [
+            {
+                "atk% buff": 100, 
+                "passive id": "1"
+            }, 
+            {
+                "atk% base buff": 80, 
+                "atk% extra buff based on hp": 120, 
+                "buff proportional to hp": "lost", 
+                "passive id": "46"
+            }, 
+            {
+                "damage dealt threshold activation": 10000, 
+                "increase bb gauge": 5, 
+                "passive id": "81"
+            }
+        ], 
+        "name": "闘讐神の凌覇昂"
     }, 
     "2": {
         "desc": "リーダースキル１説明", 
@@ -7151,6 +7238,92 @@
         ], 
         "name": "叡賢神の封絶域"
     }, 
+    "4334": {
+        "desc": "全てのユニットの防御力・最大ＨＰを３０％アップ＆被ダメージ時、確率でＨＰを少し回復＆ＢＣ出現率をアップ", 
+        "effects": [
+            {
+                "def% buff": 30, 
+                "hp% buff": 30, 
+                "passive id": "1"
+            }, 
+            {
+                "dmg% to hp% when attacked chance%": 30, 
+                "dmg% to hp% when attacked high": 15, 
+                "dmg% to hp% when attacked low": 10, 
+                "passive id": "24"
+            }, 
+            {
+                "bc drop rate% buff": 10, 
+                "passive id": "19"
+            }
+        ], 
+        "name": "詠粛神の聖域"
+    }, 
+    "4335": {
+        "desc": "全てのユニットの防御力・最大ＨＰを４０％アップ＆被ダメージ時、確率でＨＰを少し回復＆ＢＣ出現率を大幅にアップ＆確率で１回まで戦闘不能を耐える", 
+        "effects": [
+            {
+                "def% buff": 40, 
+                "hp% buff": 40, 
+                "passive id": "1"
+            }, 
+            {
+                "dmg% to hp% when attacked chance%": 30, 
+                "dmg% to hp% when attacked high": 20, 
+                "dmg% to hp% when attacked low": 15, 
+                "passive id": "24"
+            }, 
+            {
+                "bc drop rate% buff": 20, 
+                "passive id": "19"
+            }, 
+            {
+                "angel idol chance% condition": 0, 
+                "angel idol recover chance% high": 20, 
+                "angel idol recover chance% low": 20, 
+                "angel idol recover counts": 1, 
+                "passive id": "69"
+            }
+        ], 
+        "name": "詠律神の詩聖界"
+    }, 
+    "4336": {
+        "desc": "全てのユニットの防御力・最大ＨＰを３０％アップ＆通常攻撃ＨＩＴ数を増加", 
+        "effects": [
+            {
+                "def% buff": 30, 
+                "hp% buff": 30, 
+                "passive id": "1"
+            }, 
+            {
+                "extra hits dmg%": -50, 
+                "hit increase/hit": 1, 
+                "passive id": "37"
+            }
+        ], 
+        "name": "屍魂神の霊域"
+    }, 
+    "4337": {
+        "desc": "全てのユニットの防御力・最大ＨＰを４０％アップ＆通常攻撃ＨＩＴ数を増加＆確率で通常攻撃を全体攻撃化する", 
+        "effects": [
+            {
+                "def% buff": 40, 
+                "hp% buff": 40, 
+                "passive id": "1"
+            }, 
+            {
+                "extra hits dmg%": -50, 
+                "hit increase/hit": 1, 
+                "passive id": "37"
+            }, 
+            {
+                "aoe atk inc%": -50, 
+                "chance to aoe": 25, 
+                "passive id": "96"
+            }
+        ], 
+        "name": "屍淵神の霊魂域"
+    }, 
     "4400": {
         "desc": "ターン毎にＢＢゲージを少し増加＆全ての状態異常にかなりかかりにくくなる", 
         "effects": [
@@ -10239,6 +10412,42 @@
         ], 
         "name": "煉聖皇神の覇統力"
     }, 
+    "7436": {
+        "desc": "全てのユニットの攻撃力・最大ＨＰを３０％アップ＆確率で被ダメージを１５％軽減", 
+        "effects": [
+            {
+                "atk% buff": 30, 
+                "hp% buff": 30, 
+                "passive id": "1"
+            }, 
+            {
+                "dmg reduction chance%": 20, 
+                "dmg reduction%": 15, 
+                "passive id": "14"
+            }
+        ], 
+        "name": "聖純神の護力"
+    }, 
+    "7437": {
+        "desc": "全てのユニットの攻撃力・最大ＨＰを５０％アップ＆確率で被ダメージを２０％軽減＆防御貫通効果を無効", 
+        "effects": [
+            {
+                "atk% buff": 50, 
+                "hp% buff": 50, 
+                "passive id": "1"
+            }, 
+            {
+                "dmg reduction chance%": 20, 
+                "dmg reduction%": 20, 
+                "passive id": "14"
+            }, 
+            {
+                "ignore def resist chance%": 100, 
+                "passive id": "92"
+            }
+        ], 
+        "name": "聖竜融神の耀護力"
+    }, 
     "7500": {
         "desc": "確率でＨＰを少し吸収", 
         "effects": [
@@ -11602,6 +11811,62 @@
             }
         ], 
         "name": "暁絶神の覇厳"
+    }, 
+    "9103": {
+        "desc": "全てのユニットの回復力・最大ＨＰを３０％アップ＆確率で全状態異常をランダムに発生", 
+        "effects": [
+            {
+                "hp% buff": 30, 
+                "passive id": "1", 
+                "rec% buff": 30
+            }, 
+            {
+                "injury%": 10, 
+                "passive id": "20", 
+                "poison%": 7, 
+                "sick%": 10, 
+                "weaken%": 10
+            }, 
+            {
+                "curse%": 7, 
+                "paralysis%": 7, 
+                "passive id": "20"
+            }
+        ], 
+        "name": "呪災神の蝕疫"
+    }, 
+    "9104": {
+        "desc": "全てのユニットの回復力・最大ＨＰを４０％アップ＆確率で全状態異常をランダムに発生＆状態異常の敵へのダメージを大幅にアップ", 
+        "effects": [
+            {
+                "hp% buff": 40, 
+                "passive id": "1", 
+                "rec% buff": 40
+            }, 
+            {
+                "injury%": 15, 
+                "passive id": "20", 
+                "poison%": 10, 
+                "sick%": 15, 
+                "weaken%": 15
+            }, 
+            {
+                "curse%": 10, 
+                "paralysis%": 10, 
+                "passive id": "20"
+            }, 
+            {
+                "atk% buff when enemy has ailment": 100, 
+                "atk% buff when enemy has curse": true, 
+                "atk% buff when enemy has injury": true, 
+                "atk% buff when enemy has paralysis": true, 
+                "atk% buff when enemy has poison": true, 
+                "atk% buff when enemy has sick": true, 
+                "atk% buff when enemy has weaken": true, 
+                "passive id": "74"
+            }
+        ], 
+        "name": "咒災神の侵蝕疫"
     }, 
     "9110": {
         "desc": "全てのユニットの防御力を３０％アップ", 

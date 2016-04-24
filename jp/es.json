@@ -10192,6 +10192,128 @@
         "name": "果てなき武士道", 
         "target": "self"
     }, 
+    "16400": {
+        "desc": "ＢＢ及びＳＢＢに「味方全体に３ターン、状態異常の敵へのダメージを大幅にアップ」を追加", 
+        "effects": [
+            {
+                "conditions": [], 
+                "passive id": "66", 
+                "passive target": "self", 
+                "trigger on bb": true, 
+                "trigger on sbb": true, 
+                "triggered effect": [
+                    {
+                        "atk% buff turns (110)": 3, 
+                        "atk% buff when enemy has ailment": 160, 
+                        "effect delay time(ms)/frame": "0.0/0", 
+                        "proc id": "65", 
+                        "target area": "aoe", 
+                        "target type": "party"
+                    }
+                ]
+            }
+        ], 
+        "name": "炎慕の決意", 
+        "target": "self"
+    }, 
+    "16500": {
+        "desc": "ＢＢ及びＳＢＢに「味方のＢＢゲージを増加」を追加＆残りＨＰが少ないほど、防御力をアップ", 
+        "effects": [
+            {
+                "conditions": [], 
+                "passive id": "66", 
+                "passive target": "self", 
+                "trigger on bb": true, 
+                "trigger on sbb": true, 
+                "triggered effect": [
+                    {
+                        "effect delay time(ms)/frame": "0.0/0", 
+                        "increase bb gauge": 5, 
+                        "proc id": "31", 
+                        "target area": "aoe", 
+                        "target type": "party"
+                    }
+                ]
+            }, 
+            {
+                "buff proportional to hp": "lost", 
+                "conditions": [], 
+                "def% base buff": 0, 
+                "def% extra buff based on hp": 50, 
+                "passive id": "46", 
+                "passive target": "self"
+            }
+        ], 
+        "name": "絶唱の音律結界", 
+        "target": "self"
+    }, 
+    "16600": {
+        "desc": "ＢＢゲージが半分以上の時、攻撃力・防御力・回復力を少しアップ", 
+        "effects": [
+            {
+                "atk% buff": 30, 
+                "bb gauge above % buff requirement": 50, 
+                "conditions": [], 
+                "def% buff": 30, 
+                "passive id": "30", 
+                "passive target": "self", 
+                "rec% buff": 30
+            }
+        ], 
+        "name": "悠久の慈愛", 
+        "target": "self"
+    }, 
+    "16700": {
+        "desc": "ＢＢゲージが半分以上の時、攻撃力・防御力・回復力をアップ", 
+        "effects": [
+            {
+                "atk% buff": 50, 
+                "bb gauge above % buff requirement": 50, 
+                "conditions": [], 
+                "def% buff": 50, 
+                "passive id": "30", 
+                "passive target": "self", 
+                "rec% buff": 50
+            }
+        ], 
+        "name": "愁色たる雄姿", 
+        "target": "self"
+    }, 
+    "16800": {
+        "desc": "被ダメージが一定数を超える度に２ターン、ＯＤゲージの増加量を超絶アップ", 
+        "effects": [
+            {
+                "buff": {
+                    "buff turns (132)": "1", 
+                    "unknown buff id": "132", 
+                    "unknown buff params": "300&1&0"
+                }, 
+                "conditions": [], 
+                "damage threshold buff activation": 5000, 
+                "passive id": "78", 
+                "passive target": "self"
+            }
+        ], 
+        "name": "激情を秘めた雷光", 
+        "target": "self"
+    }, 
+    "16900": {
+        "desc": "ＨＰが５０％以下の時、２ターン、被ダメージを軽減", 
+        "effects": [
+            {
+                "buff": {
+                    "buff turns (36)": "1", 
+                    "dmg reduction% buff": 25
+                }, 
+                "conditions": [], 
+                "hp below % buff activation": 50, 
+                "passive id": "55", 
+                "passive target": "self"
+            }
+        ], 
+        "name": "無垢なる天賦", 
+        "target": "self"
+    }, 
     "17": {
         "desc": "リーダースキル1説明", 
         "effects": [
@@ -10227,6 +10349,72 @@
             }
         ], 
         "name": "不撓不屈", 
+        "target": "self"
+    }, 
+    "17000": {
+        "desc": "ＨＰが５０％以下の時、２ターン、被ダメージを軽減＆ＢＢ及びＳＢＢに「味方全体に３ターン、ＢＣ・ＨＣ出現率をかなりアップ」を追加", 
+        "effects": [
+            {
+                "buff": {
+                    "buff turns (36)": "1", 
+                    "dmg reduction% buff": 25
+                }, 
+                "conditions": [], 
+                "hp below % buff activation": 50, 
+                "passive id": "55", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "passive id": "66", 
+                "passive target": "self", 
+                "trigger on bb": true, 
+                "trigger on sbb": true, 
+                "triggered effect": [
+                    {
+                        "bc drop rate% buff (10)": 35, 
+                        "drop rate buff turns": 3, 
+                        "effect delay time(ms)/frame": "0.0/0", 
+                        "hc drop rate% buff (9)": 35, 
+                        "proc id": "6", 
+                        "target area": "aoe", 
+                        "target type": "party"
+                    }
+                ]
+            }
+        ], 
+        "name": "神竜のリュミエール", 
+        "target": "self"
+    }, 
+    "17100": {
+        "desc": "確率で防御貫通効果を付与＆クリティカルを無効＆確率で２回まで戦闘不能を耐える", 
+        "effects": [
+            {
+                "conditions": [], 
+                "ignore def%": 50, 
+                "passive id": "29", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "crit chance base resist%": 100, 
+                "crit chance buffed resist%": 100, 
+                "crit dmg base damage resist%": 100, 
+                "crit dmg buffed damage resist%": 100, 
+                "passive id": "53", 
+                "passive target": "self"
+            }, 
+            {
+                "angel idol chance% condition": 0, 
+                "angel idol recover chance% high": 40, 
+                "angel idol recover chance% low": 40, 
+                "angel idol recover counts": 2, 
+                "conditions": [], 
+                "passive id": "69", 
+                "passive target": "self"
+            }
+        ], 
+        "name": "深淵に送る言の葉", 
         "target": "self"
     }, 
     "18": {
