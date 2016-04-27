@@ -2254,6 +2254,17 @@
         "thumbnail": "item_thum_1100.png", 
         "type": "material"
     }, 
+    "110070": {
+        "desc": "アークの擬似ユニットを進化させる稀少な結晶体", 
+        "id": 110070, 
+        "max_stack": 1, 
+        "name": "幻翼双晶", 
+        "raid": false, 
+        "rarity": 0, 
+        "sell_price": 10000, 
+        "thumbnail": "item_thum_110190.png", 
+        "type": "evomat"
+    }, 
     "11008": {
         "desc": "何人もの人が身を投げた火山の溶岩が固まったものとされる霊石", 
         "id": 11008, 
@@ -14455,6 +14466,167 @@
         "sphere type": 1, 
         "sphere type text": "Status Boost", 
         "thumbnail": "sphere_thum_5_5.png", 
+        "type": "sphere"
+    }, 
+    "62000": {
+        "desc": "攻撃力・防御力・回復力・最大ＨＰを３０％アップ＆スパーク時・被ダメージ時、確率でＢＢゲージをかなり増加＆スパークダメージを５０％アップ", 
+        "effect": [
+            {
+                "atk% buff": 30, 
+                "def% buff": 30, 
+                "hp% buff": 30, 
+                "passive id": "1", 
+                "rec% buff": 30
+            }, 
+            {
+                "bc fill on spark high": 4, 
+                "bc fill on spark low": 3, 
+                "bc fill on spark%": 50, 
+                "passive id": "47"
+            }, 
+            {
+                "bc fill when attacked high": 4, 
+                "bc fill when attacked low": 3, 
+                "bc fill when attacked%": 50, 
+                "passive id": "25"
+            }, 
+            {
+                "damage% for spark": 50, 
+                "passive id": "31"
+            }
+        ], 
+        "id": 62000, 
+        "max_stack": 1, 
+        "name": "聖鳳神の花冠", 
+        "raid": false, 
+        "rarity": 6, 
+        "sell_price": 25000, 
+        "sphere type": 1, 
+        "sphere type text": "Status Boost", 
+        "thumbnail": "sphere_thum_2_1.png", 
+        "type": "sphere"
+    }, 
+    "62010": {
+        "desc": "クリティカル・弱点属性ダメージを無効＆低確率で被ダメージを超絶軽減＆ＨＰが満タン時、防御力を超絶アップ＆被ダメージ時、ＢＢゲージを少し増加・確率でＨＰを回復", 
+        "effect": [
+            {
+                "crit chance base resist%": 100, 
+                "crit chance buffed resist%": 100, 
+                "crit dmg base damage resist%": 100, 
+                "crit dmg buffed damage resist%": 100, 
+                "passive id": "53"
+            }, 
+            {
+                "passive id": "53", 
+                "strong base element damage resist%": 100, 
+                "strong buffed element damage resist%": 100
+            }, 
+            {
+                "def% buff": 200, 
+                "hp above % buff requirement": 100, 
+                "passive id": "11"
+            }, 
+            {
+                "passive id": "43", 
+                "take 1 dmg%": 10
+            }, 
+            {
+                "bc fill when attacked high": 2, 
+                "bc fill when attacked low": 1, 
+                "bc fill when attacked%": 100, 
+                "passive id": "25"
+            }, 
+            {
+                "dmg% to hp% when attacked chance%": 30, 
+                "dmg% to hp% when attacked high": 30, 
+                "dmg% to hp% when attacked low": 20, 
+                "passive id": "24"
+            }
+        ], 
+        "id": 62010, 
+        "max_stack": 1, 
+        "name": "絶界壁シュトゥルモア", 
+        "raid": false, 
+        "rarity": 6, 
+        "sell_price": 25000, 
+        "sphere type": 10, 
+        "sphere type text": "Damage Reducing", 
+        "thumbnail": "sphere_thum_3_5.png", 
+        "type": "sphere"
+    }, 
+    "62020": {
+        "desc": "クリティカル率をかなりアップ＆クリティカルダメージをかなりアップ＆ＢＢゲージが満タン時、攻撃力を大幅にアップ＆弱点属性ダメージをアップ＆スパークダメージを５０％アップ", 
+        "effect": [
+            {
+                "crit% buff": 30, 
+                "passive id": "1"
+            }, 
+            {
+                "crit multiplier%": 100.0, 
+                "passive id": "34"
+            }, 
+            {
+                "dark units do extra elemental weakness dmg": true, 
+                "earth units do extra elemental weakness dmg": true, 
+                "elemental weakness multiplier%": 50.0, 
+                "fire units do extra elemental weakness dmg": true, 
+                "light units do extra elemental weakness dmg": true, 
+                "passive id": "50", 
+                "thunder units do extra elemental weakness dmg": true, 
+                "water units do extra elemental weakness dmg": true
+            }, 
+            {
+                "damage% for spark": 50, 
+                "passive id": "31"
+            }, 
+            {
+                "atk% buff": 100, 
+                "bb gauge above % buff requirement": 100, 
+                "passive id": "30"
+            }
+        ], 
+        "id": 62020, 
+        "max_stack": 1, 
+        "name": "覇冥絶斧アグラヴェイン", 
+        "raid": false, 
+        "rarity": 6, 
+        "sell_price": 25000, 
+        "sphere type": 2, 
+        "sphere type text": "Critical", 
+        "thumbnail": "sphere_thum_4_6.png", 
+        "type": "sphere"
+    }, 
+    "62030": {
+        "desc": "通常攻撃時、ＢＢゲージを超絶増加＆ＢＢ発動に必要なＢＢゲージ量を少し軽減＆通常攻撃ＨＩＴ数を増加＆ＢＣ出現率をかなりアップ", 
+        "effect": [
+            {
+                "bc fill when attacking high": 10, 
+                "bc fill when attacking low": 10, 
+                "bc fill when attacking%": 100, 
+                "passive id": "35"
+            }, 
+            {
+                "hit increase/hit": 1, 
+                "passive id": "37"
+            }, 
+            {
+                "passive id": "48", 
+                "reduced bb bc cost%": 10
+            }, 
+            {
+                "bc drop rate% buff": 15, 
+                "passive id": "19"
+            }
+        ], 
+        "id": 62030, 
+        "max_stack": 1, 
+        "name": "輝龍のアミュレット", 
+        "raid": false, 
+        "rarity": 6, 
+        "sell_price": 25000, 
+        "sphere type": 6, 
+        "sphere type text": "BB Gauge", 
+        "thumbnail": "sphere_thum_5_4.png", 
         "type": "sphere"
     }, 
     "70000": {
