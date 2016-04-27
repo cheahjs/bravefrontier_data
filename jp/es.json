@@ -1576,6 +1576,30 @@
         "name": "EXS2_80", 
         "target": "self"
     }, 
+    "1002650": {
+        "desc": "攻撃力・防御力・回復力・最大ＨＰを２０％アップ＆攻撃ＢＢの威力をアップ", 
+        "effects": [
+            {
+                "atk% buff": 20, 
+                "conditions": [], 
+                "def% buff": 20, 
+                "hp% buff": 20, 
+                "passive id": "1", 
+                "passive target": "self", 
+                "rec% buff": 20
+            }, 
+            {
+                "bb atk% buff": 50, 
+                "conditions": [], 
+                "passive id": "64", 
+                "passive target": "self", 
+                "sbb atk% buff": 50, 
+                "ubb atk% buff": 50
+            }
+        ], 
+        "name": "覚醒の天啓", 
+        "target": "self"
+    }, 
     "1002700": {
         "desc": "攻撃力・防御力・回復力・最大ＨＰを３０％アップ＆ＢＣ・ＨＣ出現率を少しアップ", 
         "effects": [
@@ -10415,6 +10439,96 @@
             }
         ], 
         "name": "深淵に送る言の葉", 
+        "target": "self"
+    }, 
+    "17200": {
+        "desc": "「神託の双聖環」を装備時、攻撃力・防御力・回復力・最大ＨＰを３０％アップ＆全状態異常を無効＆被ダメージ時、ＢＢゲージを増加・確率でＨＰを回復", 
+        "effects": [
+            {
+                "atk% buff": 30, 
+                "conditions": [
+                    {
+                        "item required": [
+                            "47209"
+                        ]
+                    }
+                ], 
+                "def% buff": 30, 
+                "hp% buff": 30, 
+                "passive id": "1", 
+                "passive target": "self", 
+                "rec% buff": 30
+            }, 
+            {
+                "conditions": [], 
+                "dmg% to hp% when attacked chance%": 25, 
+                "dmg% to hp% when attacked high": 25, 
+                "dmg% to hp% when attacked low": 20, 
+                "passive id": "24", 
+                "passive target": "self"
+            }, 
+            {
+                "bc fill when attacked high": 3, 
+                "bc fill when attacked low": 2, 
+                "bc fill when attacked%": 100, 
+                "conditions": [], 
+                "passive id": "25", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "curse resist%": 100, 
+                "injury resist%": 100, 
+                "paralysis resist%": 100, 
+                "passive id": "4", 
+                "passive target": "self", 
+                "poison resist%": 100, 
+                "sick resist%": 100, 
+                "weaken resist%": 100
+            }
+        ], 
+        "name": "２人の未来", 
+        "target": "self"
+    }, 
+    "17300": {
+        "desc": "被ダメージ時、ＢＢゲージを増加、確率でＨＰを回復＆弱点属性ダメージを無効＆ＨＰが２０％以下の時、２回まで戦闘不能を耐える", 
+        "effects": [
+            {
+                "conditions": [], 
+                "dmg% to hp% when attacked chance%": 25, 
+                "dmg% to hp% when attacked high": 20, 
+                "dmg% to hp% when attacked low": 20, 
+                "passive id": "24", 
+                "passive target": "self"
+            }, 
+            {
+                "bc fill when attacked high": 5, 
+                "bc fill when attacked low": 3, 
+                "bc fill when attacked%": 100, 
+                "conditions": [], 
+                "passive id": "25", 
+                "passive target": "self"
+            }, 
+            {
+                "buff": {
+                    "angel idol buff (12)": true, 
+                    "angel idol recover hp%": 100, 
+                    "buff turns (12)": "-1"
+                }, 
+                "conditions": [], 
+                "hp below % buff activation": 20, 
+                "passive id": "55", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "passive id": "53", 
+                "passive target": "self", 
+                "strong base element damage resist%": 100, 
+                "strong buffed element damage resist%": 100
+            }
+        ], 
+        "name": "生きる覚悟", 
         "target": "self"
     }, 
     "18": {
