@@ -5292,7 +5292,7 @@
         "name": "Charm"
     }, 
     "5801": {
-        "desc": "Boost in the BB gauge produced during Spark", 
+        "desc": "Spark damage boosts BB gauge", 
         "effects": [
             {
                 "bc fill on spark high": 3, 
@@ -5302,6 +5302,60 @@
             }
         ], 
         "name": "All Charm"
+    }, 
+    "5802": {
+        "desc": "Spark damage boosts BB gauge and restores HP & boosts BB Atk when Sparks have exceeded certain amount for next turn", 
+        "effects": [
+            {
+                "bc fill on spark high": 3, 
+                "bc fill on spark low": 2, 
+                "bc fill on spark%": 100, 
+                "passive id": "47"
+            }, 
+            {
+                "heal on spark high": 400, 
+                "heal on spark low": 100, 
+                "heal on spark%": 100, 
+                "passive id": "101"
+            }, 
+            {
+                "buff": {
+                    "bb atk% buff": 100, 
+                    "buff turns (72)": "2", 
+                    "sbb atk% buff": 100, 
+                    "ubb atk% buff": 100
+                }, 
+                "passive id": "86", 
+                "spark count buff activation": 20
+            }
+        ], 
+        "name": "White Notes"
+    }, 
+    "5803": {
+        "desc": "Greatly boosts Spark damage, boosts BB gauge & boosts BB Atk when Sparks have exceeded certain amount for next turn", 
+        "effects": [
+            {
+                "bc fill on spark high": 3, 
+                "bc fill on spark low": 2, 
+                "bc fill on spark%": 100, 
+                "passive id": "47"
+            }, 
+            {
+                "damage% for spark": 50, 
+                "passive id": "31"
+            }, 
+            {
+                "buff": {
+                    "bb atk% buff": 100, 
+                    "buff turns (72)": "2", 
+                    "sbb atk% buff": 100, 
+                    "ubb atk% buff": 100
+                }, 
+                "passive id": "86", 
+                "spark count buff activation": 20
+            }
+        ], 
+        "name": "Black Notes"
     }, 
     "5900": {
         "desc": "20% boost to Atk, Def, Rec and max HP of all Units when 6 elements or more are present", 
