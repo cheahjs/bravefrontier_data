@@ -9276,6 +9276,52 @@
         "name": "Shapeshifter", 
         "target": "self"
     }, 
+    "810337": {
+        "desc": "Adds resistance against 1 KO attack when HP is below 20%", 
+        "effects": [
+            {
+                "buff": {
+                    "angel idol buff (12)": true, 
+                    "angel idol recover hp%": 100, 
+                    "buff turns (12)": "-1"
+                }, 
+                "conditions": [], 
+                "hp below % buff activation": 20, 
+                "passive id": "55", 
+                "passive target": "self"
+            }
+        ], 
+        "name": "Indomitable Will", 
+        "target": "self"
+    }, 
+    "810338": {
+        "desc": "Adds resistance against 1 KO attack when HP is below 20% & greatly boosts Atk, Rec relative to remaining HP", 
+        "effects": [
+            {
+                "buff": {
+                    "angel idol buff (12)": true, 
+                    "angel idol recover hp%": 100, 
+                    "buff turns (12)": "-1"
+                }, 
+                "conditions": [], 
+                "hp below % buff activation": 20, 
+                "passive id": "55", 
+                "passive target": "self"
+            }, 
+            {
+                "atk% base buff": 0, 
+                "atk% extra buff based on hp": 100, 
+                "buff proportional to hp": "lost", 
+                "conditions": [], 
+                "def% base buff": 0, 
+                "def% extra buff based on hp": 100, 
+                "passive id": "46", 
+                "passive target": "self"
+            }
+        ], 
+        "name": "Infernal Furor", 
+        "target": "self"
+    }, 
     "810527": {
         "desc": "Great boost in damage dealt to weaker elements", 
         "effects": [
@@ -9526,6 +9572,28 @@
             }
         ], 
         "name": "Matriarch's Indignation", 
+        "target": "self"
+    }, 
+    "830327": {
+        "desc": "25% boost to Atk each turn (4 turns max, capping at 100%) and 50% boost to Def when BB gauge is full", 
+        "effects": [
+            {
+                "atk% max buff": 100, 
+                "conditions": [], 
+                "increase from min to max": 1, 
+                "passive id": "105", 
+                "passive target": "self", 
+                "turn count": 4
+            }, 
+            {
+                "bb gauge above % buff requirement": 100, 
+                "conditions": [], 
+                "def% buff": 50, 
+                "passive id": "30", 
+                "passive target": "self"
+            }
+        ], 
+        "name": "Unhinged Disposition", 
         "target": "self"
     }, 
     "830527": {
