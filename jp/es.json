@@ -8099,6 +8099,66 @@
         "name": "全壊の鬨声", 
         "target": "self"
     }, 
+    "1015300": {
+        "desc": "被ダメージが一定数を超える度に１ターン、被ダメージを軽減＆残りＨＰが少ないほど、防御力・回復力をアップ＆防御貫通効果を無効", 
+        "effects": [
+            {
+                "buff": {
+                    "buff turns (36)": "1", 
+                    "dmg reduction% buff": 25
+                }, 
+                "conditions": [], 
+                "damage threshold buff activation": 10000, 
+                "passive id": "78", 
+                "passive target": "self"
+            }, 
+            {
+                "buff proportional to hp": "lost", 
+                "conditions": [], 
+                "def% base buff": 0, 
+                "def% extra buff based on hp": 50, 
+                "passive id": "46", 
+                "passive target": "self", 
+                "rec% base buff": 0, 
+                "rec% extra buff based on hp": 50
+            }, 
+            {
+                "conditions": [], 
+                "ignore def resist chance%": 100, 
+                "passive id": "92", 
+                "passive target": "self"
+            }
+        ], 
+        "name": "叛神の護盾", 
+        "target": "self"
+    }, 
+    "1015400": {
+        "desc": "スパークダメージを５０％アップ＆スパーク時、確率でスパーククリティカルが発生＆攻撃ＢＢの威力をアップ", 
+        "effects": [
+            {
+                "conditions": [], 
+                "damage% for spark": 50, 
+                "passive id": "31", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "passive target": "self", 
+                "unknown passive id": "100", 
+                "unknown passive params": "25,50"
+            }, 
+            {
+                "bb atk% buff": 50, 
+                "conditions": [], 
+                "passive id": "64", 
+                "passive target": "self", 
+                "sbb atk% buff": 50, 
+                "ubb atk% buff": 50
+            }
+        ], 
+        "name": "重幸の英唄", 
+        "target": "self"
+    }, 
     "10200": {
         "desc": "ＢＣ獲得時の増加量を少しアップ＆ＨＣ獲得時の回復量を少しアップ", 
         "effects": [
@@ -10761,6 +10821,94 @@
             }
         ], 
         "name": "示される義魂", 
+        "target": "self"
+    }, 
+    "18200": {
+        "desc": "スパーク時、ＨＰを超絶回復・ダメージを３０％アップ", 
+        "effects": [
+            {
+                "conditions": [], 
+                "damage% for spark": 30, 
+                "passive id": "31", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "heal on spark high": 3000, 
+                "heal on spark low": 2000, 
+                "heal on spark%": 100, 
+                "passive id": "101", 
+                "passive target": "self"
+            }
+        ], 
+        "name": "激情たる覚醒", 
+        "target": "self"
+    }, 
+    "18300": {
+        "desc": "スパーク時、ＨＰを超絶回復・ダメージを５０％アップ", 
+        "effects": [
+            {
+                "conditions": [], 
+                "damage% for spark": 50, 
+                "passive id": "31", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "heal on spark high": 5000, 
+                "heal on spark low": 4000, 
+                "heal on spark%": 100, 
+                "passive id": "101", 
+                "passive target": "self"
+            }
+        ], 
+        "name": "崇高なる血統", 
+        "target": "self"
+    }, 
+    "18400": {
+        "desc": "残りＨＰが多いほど、攻撃力をアップ＆被ダメージ時、確率でＨＰを回復", 
+        "effects": [
+            {
+                "atk% base buff": 0, 
+                "atk% extra buff based on hp": 50, 
+                "buff proportional to hp": "remaining", 
+                "conditions": [], 
+                "passive id": "46", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "dmg% to hp% when attacked chance%": 20, 
+                "dmg% to hp% when attacked high": 25, 
+                "dmg% to hp% when attacked low": 20, 
+                "passive id": "24", 
+                "passive target": "self"
+            }
+        ], 
+        "name": "魂を薙ぐ鋭爪", 
+        "target": "self"
+    }, 
+    "18500": {
+        "desc": "残りＨＰが多いほど、攻撃力をかなりアップ＆被ダメージ時、確率でＨＰを回復", 
+        "effects": [
+            {
+                "atk% base buff": 0, 
+                "atk% extra buff based on hp": 80, 
+                "buff proportional to hp": "remaining", 
+                "conditions": [], 
+                "passive id": "46", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "dmg% to hp% when attacked chance%": 25, 
+                "dmg% to hp% when attacked high": 25, 
+                "dmg% to hp% when attacked low": 20, 
+                "passive id": "24", 
+                "passive target": "self"
+            }
+        ], 
+        "name": "神狼の禁域", 
         "target": "self"
     }, 
     "1900": {
