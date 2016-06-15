@@ -286,10 +286,10 @@
         "type": "material"
     }, 
     "10118": {
-        "desc": "\u5c01\u9b54\u5c0e\u795e\u30ab\u30ed\u30f3\u306e\u5168\u8eab\u3092\u8986\u3046\u7ffc\u306e\u7fbd\u6839", 
+        "desc": "A feather from one of Heresy Demon Kalon's wings.", 
         "id": 10118, 
         "max_stack": 99, 
-        "name": "\u6df1\u7dcb\u306e\u5c0e\u7ffc", 
+        "name": "Scarlet Wing", 
         "raid": true, 
         "rarity": 0, 
         "sell_price": 50, 
@@ -2750,10 +2750,10 @@
         "type": "material"
     }, 
     "11045": {
-        "desc": "\u5c01\u9b54\u5c0e\u795e\u30ab\u30ed\u30f3\u306e\u5263\u306b\u5d4c\u3081\u3053\u307e\u308c\u305f\u6c34\u6676", 
+        "desc": "A crystal embedded in the sword of Heresy Demon Kalon.", 
         "id": 11045, 
         "max_stack": 99, 
-        "name": "\u5c0e\u523b\u306e\u5c01\u7d0b", 
+        "name": "Crest Seal", 
         "raid": true, 
         "rarity": 0, 
         "sell_price": 50, 
@@ -15156,6 +15156,64 @@
         "thumbnail": "sphere_thum_5_4.png", 
         "type": "sphere"
     }, 
+    "46220": {
+        "desc": "40% boost to Atk, Def, Rec, max HP, considerably boosts BB Atk & boosts BB gauge when damage dealt has exceeded certain amount", 
+        "effect": [
+            {
+                "atk% buff": 40, 
+                "def% buff": 40, 
+                "hp% buff": 40, 
+                "passive id": "1", 
+                "rec% buff": 40
+            }, 
+            {
+                "damage dealt threshold activation": 10000, 
+                "increase bb gauge": 5, 
+                "passive id": "81"
+            }, 
+            {
+                "bb atk% buff": 130, 
+                "passive id": "64", 
+                "sbb atk% buff": 130, 
+                "ubb atk% buff": 130
+            }
+        ], 
+        "id": 46220, 
+        "max_stack": 1, 
+        "name": "Armor of Seals", 
+        "raid": true, 
+        "rarity": 6, 
+        "recipe": {
+            "karma": "100000", 
+            "materials": [
+                {
+                    "count": 1, 
+                    "id": 46200
+                }, 
+                {
+                    "count": 1, 
+                    "id": 38701
+                }, 
+                {
+                    "count": 15, 
+                    "id": 10118
+                }, 
+                {
+                    "count": 2, 
+                    "id": 11045
+                }, 
+                {
+                    "count": 3, 
+                    "id": 10624
+                }
+            ]
+        }, 
+        "sell_price": 25000, 
+        "sphere type": 1, 
+        "sphere type text": "Status Boost", 
+        "thumbnail": "sphere_thum_5_5.png", 
+        "type": "sphere"
+    }, 
     "46300": {
         "desc": "BB gauge fills incredibly fast when obtaining BC", 
         "effect": [
@@ -18526,6 +18584,52 @@
         "rarity": 0, 
         "sell_price": 100, 
         "thumbnail": "item_thum_21100.png", 
+        "type": "consumable"
+    }, 
+    "52500": {
+        "desc": "\uff11\u30bf\u30fc\u30f3\u306e\u9593\u3001\u5473\u65b9\u5168\u4f53\u306e\u88ab\u30c0\u30e1\u30fc\u30b8\u3092\uff11/\uff14\u306b\u3059\u308b", 
+        "effect": {
+            "effect": [
+                {
+                    "dmg% reduction": 75, 
+                    "dmg% reduction turns (36)": 1, 
+                    "proc id": "18"
+                }
+            ], 
+            "target_area": "aoe", 
+            "target_type": "party"
+        }, 
+        "id": 52500, 
+        "max equipped": 50, 
+        "max_stack": 99, 
+        "name": "\u7d50\u754c\u85ac", 
+        "raid": false, 
+        "rarity": 0, 
+        "sell_price": 100, 
+        "thumbnail": "item_thum_20600.png", 
+        "type": "consumable"
+    }, 
+    "52600": {
+        "desc": "\uff13\u30bf\u30fc\u30f3\u306e\u9593\u3001\uff2f\uff24\u30b2\u30fc\u30b8\u4e0a\u6607\u91cf\u3092\u8d85\u7d76\u30a2\u30c3\u30d7", 
+        "effect": {
+            "effect": [
+                {
+                    "od fill rate buff turns (132)": 3, 
+                    "od fill rate% buff": 200, 
+                    "proc id": "84"
+                }
+            ], 
+            "target_area": "aoe", 
+            "target_type": "party"
+        }, 
+        "id": 52600, 
+        "max equipped": 50, 
+        "max_stack": 99, 
+        "name": "\u82f1\u96c4\u795e\u7b1b", 
+        "raid": false, 
+        "rarity": 0, 
+        "sell_price": 100, 
+        "thumbnail": "item_thum_22300.png", 
         "type": "consumable"
     }, 
     "60000": {
