@@ -8100,7 +8100,7 @@
         "target": "self"
     }, 
     "1015300": {
-        "desc": "被ダメージが一定数を超える度に１ターン、被ダメージを軽減＆残りＨＰが少ないほど、防御力・回復力をアップ＆防御貫通効果を無効", 
+        "desc": "被ダメージが一定数を超える度に２ターン、被ダメージを軽減＆残りＨＰが少ないほど、防御力・回復力をアップ＆防御貫通効果を無効", 
         "effects": [
             {
                 "buff": {
@@ -10909,6 +10909,75 @@
             }
         ], 
         "name": "神狼の禁域", 
+        "target": "self"
+    }, 
+    "18600": {
+        "desc": "ＨＰを少し吸収＆与ダメージ時、ＢＢゲージを増加＆被ダメージ時、確率でＨＰを回復", 
+        "effects": [
+            {
+                "conditions": [], 
+                "hp drain chance%": 100, 
+                "hp drain% high": 10, 
+                "hp drain% low": 5, 
+                "passive id": "17", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "damage dealt threshold activation": 1, 
+                "increase bb gauge": 5, 
+                "passive id": "81", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "dmg% to hp% when attacked chance%": 25, 
+                "dmg% to hp% when attacked high": 25, 
+                "dmg% to hp% when attacked low": 20, 
+                "passive id": "24", 
+                "passive target": "self"
+            }
+        ], 
+        "name": "解き放たれた魂", 
+        "target": "self"
+    }, 
+    "18700": {
+        "desc": "ＢＢ及びＳＢＢに「味方全体に２ターン、防御貫通効果を付与」を追加＆ＨＰを少し吸収＆ＨＰが半分以上の時、スパークダメージを８０％アップ", 
+        "effects": [
+            {
+                "conditions": [], 
+                "hp drain chance%": 100, 
+                "hp drain% high": 10, 
+                "hp drain% low": 5, 
+                "passive id": "17", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "passive id": "66", 
+                "passive target": "self", 
+                "trigger on bb": true, 
+                "trigger on sbb": true, 
+                "triggered effect": [
+                    {
+                        "defense% ignore": 100, 
+                        "defense% ignore turns (39)": 2, 
+                        "effect delay time(ms)/frame": "0.0/0", 
+                        "proc id": "22", 
+                        "target area": "aoe", 
+                        "target type": "party"
+                    }
+                ]
+            }, 
+            {
+                "conditions": [], 
+                "damage% for spark": 80, 
+                "hp above % buff requirement": 50, 
+                "passive id": "104", 
+                "passive target": "self"
+            }
+        ], 
+        "name": "姉妹を繋ぐ絆", 
         "target": "self"
     }, 
     "1900": {
