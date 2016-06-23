@@ -7382,6 +7382,64 @@
         "name": "永劫の螺旋", 
         "target": "self"
     }, 
+    "1012780": {
+        "desc": "ＨＰが半分以上の時、攻撃力・防御力・回復力を少しアップ・スパークダメージを５０％アップ・攻撃ＢＢの威力をアップ", 
+        "effects": [
+            {
+                "atk% buff": 20, 
+                "conditions": [], 
+                "def% buff": 20, 
+                "hp above % buff requirement": 50, 
+                "passive id": "11", 
+                "passive target": "self", 
+                "rec% buff": 20
+            }, 
+            {
+                "conditions": [], 
+                "damage% for spark": 50, 
+                "hp above % buff requirement": 50, 
+                "passive id": "104", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "passive target": "self", 
+                "unknown passive id": "103", 
+                "unknown passive params": "50,0,0,50,1"
+            }
+        ], 
+        "name": "神勇の魂録", 
+        "target": "self"
+    }, 
+    "1012790": {
+        "desc": "防御力を２０％アップ＆被ダメージ時、確率でＨＰを少し回復・確率でＢＢゲージを増加", 
+        "effects": [
+            {
+                "conditions": [], 
+                "def% buff": 20, 
+                "passive id": "1", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "dmg% to hp% when attacked chance%": 25, 
+                "dmg% to hp% when attacked high": 20, 
+                "dmg% to hp% when attacked low": 15, 
+                "passive id": "24", 
+                "passive target": "self"
+            }, 
+            {
+                "bc fill when attacked high": 3, 
+                "bc fill when attacked low": 2, 
+                "bc fill when attacked%": 50, 
+                "conditions": [], 
+                "passive id": "25", 
+                "passive target": "self"
+            }
+        ], 
+        "name": "神麗の魂録", 
+        "target": "self"
+    }, 
     "1012800": {
         "desc": "攻撃力を５０％アップ＆スパークダメージを５０％アップ＆クリティカルダメージをアップ", 
         "effects": [
@@ -10980,6 +11038,61 @@
         "name": "姉妹を繋ぐ絆", 
         "target": "self"
     }, 
+    "18800": {
+        "desc": "全状態異常を無効", 
+        "effects": [
+            {
+                "conditions": [], 
+                "curse resist%": 100, 
+                "injury resist%": 100, 
+                "paralysis resist%": 100, 
+                "passive id": "4", 
+                "passive target": "self", 
+                "poison resist%": 100, 
+                "sick resist%": 100, 
+                "weaken resist%": 100
+            }
+        ], 
+        "name": "勝利への代償", 
+        "target": "self"
+    }, 
+    "18900": {
+        "desc": "全状態異常を無効＆ＢＢ及びＳＢＢに「味方全体に水属性のバリアを付与」を追加", 
+        "effects": [
+            {
+                "conditions": [], 
+                "curse resist%": 100, 
+                "injury resist%": 100, 
+                "paralysis resist%": 100, 
+                "passive id": "4", 
+                "passive target": "self", 
+                "poison resist%": 100, 
+                "sick resist%": 100, 
+                "weaken resist%": 100
+            }, 
+            {
+                "conditions": [], 
+                "passive id": "66", 
+                "passive target": "self", 
+                "trigger on bb": true, 
+                "trigger on sbb": true, 
+                "triggered effect": [
+                    {
+                        "effect delay time(ms)/frame": "0.0/0", 
+                        "elemental barrier absorb dmg%": 100, 
+                        "elemental barrier def": 0, 
+                        "elemental barrier element": "water", 
+                        "elemental barrier hp": 2000, 
+                        "proc id": "62", 
+                        "target area": "aoe", 
+                        "target type": "party"
+                    }
+                ]
+            }
+        ], 
+        "name": "鋭才の辣腕", 
+        "target": "self"
+    }, 
     "1900": {
         "desc": "被ダメージ時、ＢＢゲージを増加", 
         "effects": [
@@ -10993,6 +11106,36 @@
             }
         ], 
         "name": "一筋の忠義", 
+        "target": "self"
+    }, 
+    "19000": {
+        "desc": "ＢＢゲージが半分以上の時、攻撃力・防御力をアップ", 
+        "effects": [
+            {
+                "atk% buff": 50, 
+                "bb gauge above % buff requirement": 50, 
+                "conditions": [], 
+                "def% buff": 50, 
+                "passive id": "30", 
+                "passive target": "self"
+            }
+        ], 
+        "name": "永遠の願い", 
+        "target": "self"
+    }, 
+    "19100": {
+        "desc": "ＢＢゲージが半分以上の時、攻撃力・防御力をアップ", 
+        "effects": [
+            {
+                "atk% buff": 70, 
+                "bb gauge above % buff requirement": 50, 
+                "conditions": [], 
+                "def% buff": 70, 
+                "passive id": "30", 
+                "passive target": "self"
+            }
+        ], 
+        "name": "理想を支える器量", 
         "target": "self"
     }, 
     "2": {
