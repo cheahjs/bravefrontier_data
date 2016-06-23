@@ -11431,7 +11431,7 @@
         "type": "sphere"
     }, 
     "47211": {
-        "desc": "最大ＨＰを４０％アップ＆ＢＣ獲得数が一定ごとに３ターン、攻撃力を大幅にアップ＆ＨＣ獲得数が一定ごとに３ターン、防御力を大幅にアップ＆ＢＣ・ＨＣ・ゼル・カルマ・アイテム出現率を大幅にアップ", 
+        "desc": "最大ＨＰを４０％アップ＆獲得ＢＣ一定毎に３ターン、攻撃力を大幅にアップ＆獲得ＨＣ一定毎に３ターン、防御力を大幅にアップ＆ＢＣ・ＨＣ・ゼル・カルマ・アイテム出現率を大幅にアップ", 
         "effect": [
             {
                 "hp% buff": 40, 
@@ -12582,6 +12582,70 @@
         "thumbnail": "sphere_thum_5_2.png", 
         "type": "sphere"
     }, 
+    "48218": {
+        "desc": "クリティカルダメージをアップ＆与ダメージが一定数を超える度に１ターン、被ダメージを軽減＆攻撃力・最大ＨＰを３０％アップ", 
+        "effect": [
+            {
+                "crit multiplier%": 50.0, 
+                "passive id": "34"
+            }, 
+            {
+                "buff": {
+                    "buff turns (36)": "1", 
+                    "dmg reduction% buff": 25
+                }, 
+                "damage dealt threshold buff activation": 100000, 
+                "passive id": "80"
+            }, 
+            {
+                "atk% buff": 30, 
+                "hp% buff": 30, 
+                "passive id": "1"
+            }
+        ], 
+        "id": 48218, 
+        "max_stack": 1, 
+        "name": "幻導機・ガルグヌス", 
+        "raid": false, 
+        "rarity": 6, 
+        "sell_price": 10000, 
+        "sphere type": 2, 
+        "sphere type text": "Critical", 
+        "thumbnail": "sphere_thum_5_2.png", 
+        "type": "sphere"
+    }, 
+    "48219": {
+        "desc": "ＨＰを少し吸収＆被ダメージ時、確率でＨＰを回復＆防御力・最大ＨＰを３０％アップ", 
+        "effect": [
+            {
+                "hp drain chance%": 100, 
+                "hp drain% high": 10, 
+                "hp drain% low": 5, 
+                "passive id": "17"
+            }, 
+            {
+                "dmg% to hp% when attacked chance%": 40, 
+                "dmg% to hp% when attacked high": 20, 
+                "dmg% to hp% when attacked low": 20, 
+                "passive id": "24"
+            }, 
+            {
+                "def% buff": 30, 
+                "hp% buff": 30, 
+                "passive id": "1"
+            }
+        ], 
+        "id": 48219, 
+        "max_stack": 1, 
+        "name": "幻導機・ネヌビース", 
+        "raid": false, 
+        "rarity": 6, 
+        "sell_price": 10000, 
+        "sphere type": 7, 
+        "sphere type text": "HP Recovery", 
+        "thumbnail": "sphere_thum_5_2.png", 
+        "type": "sphere"
+    }, 
     "48300": {
         "desc": "ターン毎にＢＢゲージを増加・ＨＰを回復＆ＢＣ・ＨＣ出現率をかなりアップ＆ＢＣ・ＨＣ獲得時の増加量・回復量をアップ", 
         "effect": [
@@ -13624,6 +13688,30 @@
         "sphere type": 12, 
         "sphere type text": "Defense Penetrating", 
         "thumbnail": "sphere_thum_1_2.png", 
+        "type": "sphere"
+    }, 
+    "49980": {
+        "desc": "敵撃破時、ＨＰを少し回復＆敵に狙われにくくなる", 
+        "effect": [
+            {
+                "hp% recover on enemy defeat high": 15, 
+                "hp% recover on enemy defeat low": 10, 
+                "passive id": "15"
+            }, 
+            {
+                "passive id": "27", 
+                "target% chance": -50
+            }
+        ], 
+        "id": 49980, 
+        "max_stack": 1, 
+        "name": "偽己の闇衣", 
+        "raid": false, 
+        "rarity": 4, 
+        "sell_price": 10000, 
+        "sphere type": 13, 
+        "sphere type text": "Atk Boosting", 
+        "thumbnail": "sphere_thum_4_6.png", 
         "type": "sphere"
     }, 
     "50000": {
