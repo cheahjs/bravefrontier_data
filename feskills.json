@@ -5111,5 +5111,269 @@
                 }
             }
         ]
+    }, 
+    "860238": {
+        "category": {
+            "1": {
+                "name": "\u30b9\u30c6\u30a2\u30c3\u30d7\u7cfb"
+            }, 
+            "11": {
+                "name": "\u7279\u6b8a"
+            }, 
+            "2": {
+                "name": "\u30b9\u30d1\u30fc\u30af\u7cfb"
+            }, 
+            "4": {
+                "name": "\u653b\u6483\u5f37\u5316\u52a0\u7cfb"
+            }
+        }, 
+        "skills": [
+            {
+                "category": "1", 
+                "dependency": "", 
+                "dependency comment": "", 
+                "id": "710000", 
+                "skill": {
+                    "bp": 20, 
+                    "desc": "20% boost to all parameters", 
+                    "effects": [
+                        {
+                            "passive": {
+                                "atk% buff": 20, 
+                                "def% buff": 20, 
+                                "hp% buff": 20, 
+                                "passive id": "1", 
+                                "rec% buff": 20
+                            }
+                        }
+                    ], 
+                    "id": "710000", 
+                    "level": 2, 
+                    "name": "20% boost to all parameters", 
+                    "series": "700000"
+                }
+            }, 
+            {
+                "category": "1", 
+                "dependency": "", 
+                "dependency comment": "", 
+                "id": "250000", 
+                "skill": {
+                    "bp": 10, 
+                    "desc": "Hugely boosts Def relative to how low remaining HP is", 
+                    "effects": [
+                        {
+                            "passive": {
+                                "buff proportional to hp": "lost", 
+                                "def% base buff": 0, 
+                                "def% extra buff based on hp": 100, 
+                                "passive id": "46"
+                            }
+                        }
+                    ], 
+                    "id": "250000", 
+                    "level": 4, 
+                    "name": "Hugely boosts Def relative to how low remaining HP is", 
+                    "series": "100000"
+                }
+            }, 
+            {
+                "category": "2", 
+                "dependency": "", 
+                "dependency comment": "", 
+                "id": "1040001", 
+                "skill": {
+                    "bp": 30, 
+                    "desc": "100% boost to Spark damage", 
+                    "effects": [
+                        {
+                            "passive": {
+                                "damage% for spark": 100, 
+                                "passive id": "31"
+                            }
+                        }
+                    ], 
+                    "id": "1040001", 
+                    "level": 6, 
+                    "name": "100% boost to Spark damage", 
+                    "series": "1000000"
+                }
+            }, 
+            {
+                "category": "2", 
+                "dependency": "", 
+                "dependency comment": "", 
+                "id": "1310000", 
+                "skill": {
+                    "bp": 20, 
+                    "desc": "Spark damage boosts BC, HC drop rate", 
+                    "effects": [
+                        {
+                            "passive": {
+                                "bc drop% for spark": 15, 
+                                "hc drop% for spark": 15, 
+                                "passive id": "31"
+                            }
+                        }
+                    ], 
+                    "id": "1310000", 
+                    "level": 2, 
+                    "name": "Spark damage boosts BC, HC drop rate", 
+                    "series": "1300000"
+                }
+            }, 
+            {
+                "category": "4", 
+                "dependency": "", 
+                "dependency comment": "", 
+                "id": "3100000", 
+                "skill": {
+                    "bp": 50, 
+                    "desc": "Raises normal hit amount", 
+                    "effects": [
+                        {
+                            "passive": {
+                                "hit increase/hit": 1, 
+                                "passive id": "37"
+                            }
+                        }
+                    ], 
+                    "id": "3100000", 
+                    "level": 5, 
+                    "name": "Raises normal hit amount", 
+                    "series": "3100000"
+                }
+            }, 
+            {
+                "category": "11", 
+                "dependency": "", 
+                "dependency comment": "", 
+                "id": "56000000", 
+                "skill": {
+                    "bp": 30, 
+                    "desc": "Adds BC drop rate boost for 3 turns effect to BB/SBB", 
+                    "effects": [
+                        {
+                            "passive": {
+                                "passive id": "66", 
+                                "trigger on bb": true, 
+                                "trigger on sbb": true, 
+                                "triggered effect": [
+                                    {
+                                        "bc drop rate% buff (10)": 30, 
+                                        "drop rate buff turns": 3, 
+                                        "effect delay time(ms)/frame": "66.7/4", 
+                                        "proc id": "6", 
+                                        "target area": "aoe", 
+                                        "target type": "party"
+                                    }
+                                ]
+                            }
+                        }
+                    ], 
+                    "id": "56000000", 
+                    "level": 4, 
+                    "name": "Adds BC drop rate boost effect to BB/SBB", 
+                    "series": "56000000"
+                }
+            }, 
+            {
+                "category": "11", 
+                "dependency": "", 
+                "dependency comment": "", 
+                "id": "51001000", 
+                "skill": {
+                    "bp": 50, 
+                    "desc": "Adds slight BB gauge boost during Spark for 3 turns effect to BB/SBB", 
+                    "effects": [
+                        {
+                            "passive": {
+                                "passive id": "66", 
+                                "trigger on bb": true, 
+                                "trigger on sbb": true, 
+                                "triggered effect": [
+                                    {
+                                        "bc fill on spark buff turns (111)": 3, 
+                                        "bc fill on spark high": 2, 
+                                        "bc fill on spark low": 1, 
+                                        "bc fill on spark%": 100, 
+                                        "effect delay time(ms)/frame": "0.0/0", 
+                                        "proc id": "67", 
+                                        "target area": "aoe", 
+                                        "target type": "party"
+                                    }
+                                ]
+                            }
+                        }
+                    ], 
+                    "id": "51001000", 
+                    "level": 4, 
+                    "name": "Adds slight BB gauge boost during Spark effect to BB/SBB", 
+                    "series": "51000000"
+                }
+            }, 
+            {
+                "category": "11", 
+                "dependency": "", 
+                "dependency comment": "", 
+                "id": "31001000", 
+                "skill": {
+                    "bp": 60, 
+                    "desc": "Enhances BB/SBB/UBB's Spark damage boost effect", 
+                    "effects": [
+                        {
+                            "add to bb": {
+                                "buff turns": 0, 
+                                "proc id": "23", 
+                                "spark dmg% buff (40)": 30
+                            }
+                        }, 
+                        {
+                            "add to sbb": {
+                                "buff turns": 0, 
+                                "proc id": "23", 
+                                "spark dmg% buff (40)": 30
+                            }
+                        }, 
+                        {
+                            "add to ubb": {
+                                "buff turns": 0, 
+                                "proc id": "23", 
+                                "spark dmg% buff (40)": 30
+                            }
+                        }
+                    ], 
+                    "id": "31001000", 
+                    "level": 5, 
+                    "name": "Enhances BB/SBB/UBB's Spark damage boost effect", 
+                    "series": "31000000"
+                }
+            }, 
+            {
+                "category": "11", 
+                "dependency": "", 
+                "dependency comment": "", 
+                "id": "1000000040", 
+                "skill": {
+                    "bp": 50, 
+                    "desc": "Enhances the \"Spark damage restore HP\" effect of SBB", 
+                    "effects": [
+                        {
+                            "add to sbb": {
+                                "proc id": "87", 
+                                "spark recover hp buff turns (135)": 0, 
+                                "spark recover hp chance%": 0, 
+                                "spark recover hp high": 100, 
+                                "spark recover hp low": 100
+                            }
+                        }
+                    ], 
+                    "id": "1000000040", 
+                    "level": 5, 
+                    "name": "Enhances the \"Spark damage restore HP\" effect of SBB", 
+                    "series": "1000000012"
+                }
+            }
+        ]
     }
 }
