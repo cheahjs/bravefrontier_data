@@ -1533,6 +1533,250 @@
             }
         ]
     }, 
+    "20817": {
+        "category": {
+            "1": {
+                "name": "ステアップ系"
+            }, 
+            "11": {
+                "name": "特殊"
+            }, 
+            "2": {
+                "name": "スパーク系"
+            }, 
+            "4": {
+                "name": "攻撃強化加系"
+            }, 
+            "5": {
+                "name": "ＢＢゲージ系"
+            }
+        }, 
+        "skills": [
+            {
+                "category": "1", 
+                "dependency": "", 
+                "dependency comment": "", 
+                "id": "120000", 
+                "skill": {
+                    "bp": 10, 
+                    "desc": "攻撃力を３０％アップ", 
+                    "effects": [
+                        {
+                            "passive": {
+                                "atk% buff": 30, 
+                                "passive id": "1"
+                            }
+                        }
+                    ], 
+                    "id": "120000", 
+                    "level": 1, 
+                    "name": "攻撃力＋３０％", 
+                    "series": "100000"
+                }
+            }, 
+            {
+                "category": "2", 
+                "dependency": "", 
+                "dependency comment": "", 
+                "id": "1020001", 
+                "skill": {
+                    "bp": 20, 
+                    "desc": "スパークダメージを５０％アップ", 
+                    "effects": [
+                        {
+                            "passive": {
+                                "damage% for spark": 50, 
+                                "passive id": "31"
+                            }
+                        }
+                    ], 
+                    "id": "1020001", 
+                    "level": 3, 
+                    "name": "スパークダメージ５０％アップ", 
+                    "series": "1000000"
+                }
+            }, 
+            {
+                "category": "4", 
+                "dependency": "", 
+                "dependency comment": "", 
+                "id": "3100001", 
+                "skill": {
+                    "bp": 20, 
+                    "desc": "通常攻撃ＨＩＴ数を増加", 
+                    "effects": [
+                        {
+                            "passive": {
+                                "hit increase/hit": 1, 
+                                "passive id": "37"
+                            }
+                        }
+                    ], 
+                    "id": "3100001", 
+                    "level": 2, 
+                    "name": "通常攻撃のＨＩＴ数が増加", 
+                    "series": "3100000"
+                }
+            }, 
+            {
+                "category": "5", 
+                "dependency": "", 
+                "dependency comment": "", 
+                "id": "4400000", 
+                "skill": {
+                    "bp": 10, 
+                    "desc": "ＢＢ発動時のＢＢゲージ消費量を軽減", 
+                    "effects": [
+                        {
+                            "passive": {
+                                "passive id": "49", 
+                                "reduced bb bc use chance%": 100, 
+                                "reduced bb bc use% high": 20, 
+                                "reduced bb bc use% low": 15
+                            }
+                        }
+                    ], 
+                    "id": "4400000", 
+                    "level": 2, 
+                    "name": "ＢＢ発動時のＢＢゲージ消費量を軽減", 
+                    "series": "4400000"
+                }
+            }, 
+            {
+                "category": "11", 
+                "dependency": "", 
+                "dependency comment": "", 
+                "id": "51000002", 
+                "skill": {
+                    "bp": 50, 
+                    "desc": "ＢＢ及びＳＢＢに「味方全体に３ターン、スパークダメージを大幅にアップ」を追加", 
+                    "effects": [
+                        {
+                            "passive": {
+                                "passive id": "66", 
+                                "trigger on bb": true, 
+                                "trigger on sbb": true, 
+                                "triggered effect": [
+                                    {
+                                        "buff turns": 3, 
+                                        "effect delay time(ms)/frame": "0.0/0", 
+                                        "proc id": "23", 
+                                        "spark dmg% buff (40)": 80, 
+                                        "target area": "aoe", 
+                                        "target type": "party"
+                                    }
+                                ]
+                            }
+                        }
+                    ], 
+                    "id": "51000002", 
+                    "level": 5, 
+                    "name": "ＢＢ・ＳＢＢに「スパークダメージアップ」追加", 
+                    "series": "51000000"
+                }
+            }, 
+            {
+                "category": "11", 
+                "dependency": "", 
+                "dependency comment": "", 
+                "id": "51001002", 
+                "skill": {
+                    "bp": 60, 
+                    "desc": "ＢＢ及びＳＢＢに「味方全体に３ターン、スパーク時、ＢＢゲージを少し増加」を追加", 
+                    "effects": [
+                        {
+                            "passive": {
+                                "passive id": "66", 
+                                "trigger on bb": true, 
+                                "trigger on sbb": true, 
+                                "triggered effect": [
+                                    {
+                                        "bc fill on spark buff turns (111)": 3, 
+                                        "bc fill on spark high": 1, 
+                                        "bc fill on spark low": 1, 
+                                        "bc fill on spark%": 100, 
+                                        "effect delay time(ms)/frame": "0.0/0", 
+                                        "proc id": "67", 
+                                        "target area": "aoe", 
+                                        "target type": "party"
+                                    }
+                                ]
+                            }
+                        }
+                    ], 
+                    "id": "51001002", 
+                    "level": 4, 
+                    "name": "ＢＢ・ＳＢＢに「スパーク時、ＢＢゲージを少し増加」追加", 
+                    "series": "51001000"
+                }
+            }, 
+            {
+                "category": "11", 
+                "dependency": "", 
+                "dependency comment": "", 
+                "id": "53008000", 
+                "skill": {
+                    "bp": 60, 
+                    "desc": "ＢＢ及びＳＢＢに「味方全体に３ターン、通常攻撃ＨＩＴ数を増加」を追加", 
+                    "effects": [
+                        {
+                            "passive": {
+                                "passive id": "66", 
+                                "trigger on bb": true, 
+                                "trigger on sbb": true, 
+                                "triggered effect": [
+                                    {
+                                        "effect delay time(ms)/frame": "0.0/0", 
+                                        "hit increase buff turns (50)": 3, 
+                                        "hit increase/hit": 1, 
+                                        "proc id": "26", 
+                                        "target area": "aoe", 
+                                        "target type": "party"
+                                    }
+                                ]
+                            }
+                        }
+                    ], 
+                    "id": "53008000", 
+                    "level": 4, 
+                    "name": "ＢＢ・ＳＢＢに「通常攻撃ＨＩＴ数を増加」追加", 
+                    "series": "53008000"
+                }
+            }, 
+            {
+                "category": "11", 
+                "dependency": "", 
+                "dependency comment": "", 
+                "id": "54002000", 
+                "skill": {
+                    "bp": 40, 
+                    "desc": "ＢＢ及びＳＢＢに「味方のＢＢゲージを大幅に増加」を追加", 
+                    "effects": [
+                        {
+                            "passive": {
+                                "passive id": "66", 
+                                "trigger on bb": true, 
+                                "trigger on sbb": true, 
+                                "triggered effect": [
+                                    {
+                                        "effect delay time(ms)/frame": "0.0/0", 
+                                        "increase bb gauge": 8, 
+                                        "proc id": "31", 
+                                        "target area": "aoe", 
+                                        "target type": "party"
+                                    }
+                                ]
+                            }
+                        }
+                    ], 
+                    "id": "54002000", 
+                    "level": 5, 
+                    "name": "ＢＢ・ＳＢＢに「味方のＢＢゲージを大幅に増加」追加", 
+                    "series": "54002000"
+                }
+            }
+        ]
+    }, 
     "20827": {
         "category": {
             "1": {
