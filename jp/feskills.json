@@ -7010,9 +7010,6 @@
             "2": {
                 "name": "スパーク系"
             }, 
-            "4": {
-                "name": "攻撃強化加系"
-            }, 
             "5": {
                 "name": "ＢＢゲージ系"
             }
@@ -7126,30 +7123,6 @@
                     "level": 5, 
                     "name": "スパークダメージ７０％→１００％", 
                     "series": "1000000"
-                }
-            }, 
-            {
-                "category": "4", 
-                "dependency": "", 
-                "dependency comment": "", 
-                "id": "3000001", 
-                "skill": {
-                    "bp": 20, 
-                    "desc": "攻撃ＢＢの威力をアップ", 
-                    "effects": [
-                        {
-                            "passive": {
-                                "bb atk% buff": 50, 
-                                "passive id": "64", 
-                                "sbb atk% buff": 50, 
-                                "ubb atk% buff": 50
-                            }
-                        }
-                    ], 
-                    "id": "3000001", 
-                    "level": 3, 
-                    "name": "攻撃ＢＢの威力をアップ", 
-                    "series": "3000000"
                 }
             }, 
             {
@@ -7273,6 +7246,58 @@
                     "level": 6, 
                     "name": "ＢＢ・ＳＢＢに「最大ＨＰに応じて攻撃力をかなりアップ」追加", 
                     "series": "50006000"
+                }
+            }, 
+            {
+                "category": "11", 
+                "dependency": "", 
+                "dependency comment": "", 
+                "id": "50009000", 
+                "skill": {
+                    "bp": 20, 
+                    "desc": "ＢＢ及びＳＢＢに「味方全体に３ターン、光・闇属性ユニットの攻撃力をアップ」を追加", 
+                    "effects": [
+                        {
+                            "passive": {
+                                "passive id": "66", 
+                                "trigger on bb": true, 
+                                "trigger on sbb": true, 
+                                "triggered effect": [
+                                    {
+                                        "buff turns": 3, 
+                                        "def% buff (14)": 50, 
+                                        "effect delay time(ms)/frame": "0.0/0", 
+                                        "element buffed": "light", 
+                                        "proc id": "5", 
+                                        "target area": "aoe", 
+                                        "target type": "party"
+                                    }
+                                ]
+                            }
+                        }, 
+                        {
+                            "passive": {
+                                "passive id": "66", 
+                                "trigger on bb": true, 
+                                "trigger on sbb": true, 
+                                "triggered effect": [
+                                    {
+                                        "buff turns": 3, 
+                                        "def% buff (14)": 50, 
+                                        "effect delay time(ms)/frame": "0.0/0", 
+                                        "element buffed": "dark", 
+                                        "proc id": "5", 
+                                        "target area": "aoe", 
+                                        "target type": "party"
+                                    }
+                                ]
+                            }
+                        }
+                    ], 
+                    "id": "50009000", 
+                    "level": 5, 
+                    "name": "ＢＢ・ＳＢＢに「光・闇属性ユニットの攻撃力をアップ」追加", 
+                    "series": "50009000"
                 }
             }, 
             {
