@@ -10032,6 +10032,54 @@
         "name": "Soul of the Watcher", 
         "target": "self"
     }, 
+    "830177": {
+        "desc": "Negates critical, elemental damage and Def ignoring damage", 
+        "effects": [
+            {
+                "conditions": [], 
+                "crit chance base resist%": 100, 
+                "crit chance buffed resist%": 100, 
+                "crit dmg base damage resist%": 100, 
+                "crit dmg buffed damage resist%": 100, 
+                "passive id": "53", 
+                "passive target": "self", 
+                "strong base element damage resist%": 100, 
+                "strong buffed element damage resist%": 100
+            }, 
+            {
+                "conditions": [], 
+                "ignore def resist chance%": 100, 
+                "passive id": "92", 
+                "passive target": "self"
+            }
+        ], 
+        "name": "Seasoned Survivor", 
+        "target": "self"
+    }, 
+    "830178": {
+        "desc": "Negates critical, elemental damage and Def ignoring damage", 
+        "effects": [
+            {
+                "conditions": [], 
+                "crit chance base resist%": 100, 
+                "crit chance buffed resist%": 100, 
+                "crit dmg base damage resist%": 100, 
+                "crit dmg buffed damage resist%": 100, 
+                "passive id": "53", 
+                "passive target": "self", 
+                "strong base element damage resist%": 100, 
+                "strong buffed element damage resist%": 100
+            }, 
+            {
+                "conditions": [], 
+                "ignore def resist chance%": 100, 
+                "passive id": "92", 
+                "passive target": "self"
+            }
+        ], 
+        "name": "Heroic Resilience", 
+        "target": "self"
+    }, 
     "830317": {
         "desc": "Boosts damage dealt against status afflicted foes & raises normal hit amount when Vorpal Chainblades is equipped", 
         "effects": [
@@ -10191,6 +10239,49 @@
             }
         ], 
         "name": "Soul of the Supreme", 
+        "target": "self"
+    }, 
+    "840177": {
+        "desc": "Raises normal hit amount, adds Thunder element to BB/SBB for 3 turns & enormously boosts OD gauge fill rate for 2 turns when damage taken has exceeded a certain amount", 
+        "effects": [
+            {
+                "conditions": [], 
+                "hit increase/hit": 1, 
+                "passive id": "37", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "passive id": "66", 
+                "passive target": "self", 
+                "trigger on bb": true, 
+                "trigger on sbb": true, 
+                "triggered effect": [
+                    {
+                        "effect delay time(ms)/frame": "0.0/0", 
+                        "elements added": [
+                            "thunder"
+                        ], 
+                        "elements added turns": 3, 
+                        "proc id": "30", 
+                        "target area": "aoe", 
+                        "target type": "party"
+                    }
+                ]
+            }, 
+            {
+                "buff": {
+                    "buff turns (132)": "1", 
+                    "unknown buff id": "132", 
+                    "unknown buff params": "300&1&0"
+                }, 
+                "conditions": [], 
+                "damage threshold buff activation": 5000, 
+                "passive id": "78", 
+                "passive target": "self"
+            }
+        ], 
+        "name": "Super-Speed", 
         "target": "self"
     }, 
     "840257": {
@@ -10488,6 +10579,59 @@
             }
         ], 
         "name": "Amaranthine Bastion", 
+        "target": "self"
+    }, 
+    "850177": {
+        "desc": "Adds Light element to BB/SBB for 3 turns, adds great HP recovery for 3 turns effect to BB/SBB & greatly reflects damage when attacked", 
+        "effects": [
+            {
+                "conditions": [], 
+                "passive id": "66", 
+                "passive target": "self", 
+                "trigger on bb": true, 
+                "trigger on sbb": true, 
+                "triggered effect": [
+                    {
+                        "effect delay time(ms)/frame": "0.0/0", 
+                        "elements added": [
+                            "light"
+                        ], 
+                        "elements added turns": 3, 
+                        "proc id": "30", 
+                        "target area": "aoe", 
+                        "target type": "party"
+                    }
+                ]
+            }, 
+            {
+                "conditions": [], 
+                "passive id": "66", 
+                "passive target": "self", 
+                "trigger on bb": true, 
+                "trigger on sbb": true, 
+                "triggered effect": [
+                    {
+                        "effect delay time(ms)/frame": "0.0/0", 
+                        "gradual heal high": 3000, 
+                        "gradual heal low": 2500, 
+                        "gradual heal turns (8)": 3, 
+                        "proc id": "3", 
+                        "rec added% (from target)": 15.0, 
+                        "target area": "aoe", 
+                        "target type": "party"
+                    }
+                ]
+            }, 
+            {
+                "conditions": [], 
+                "dmg% reflect chance%": 0, 
+                "dmg% reflect high": 50, 
+                "dmg% reflect low": 50, 
+                "passive id": "26", 
+                "passive target": "self"
+            }
+        ], 
+        "name": "Psychic Resonance", 
         "target": "self"
     }, 
     "850197": {
