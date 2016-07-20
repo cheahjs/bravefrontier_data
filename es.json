@@ -9684,6 +9684,53 @@
         "name": "Soul of the Ancient", 
         "target": "self"
     }, 
+    "810187": {
+        "desc": "15% reduction in damage from Dark Types, adds Fire, Light elements to BB/SBB for 3 turns & considerably boosts BB Atk for next turn when Spark damage has exceeded certain amount", 
+        "effects": [
+            {
+                "buff": {
+                    "bb atk% buff": 90, 
+                    "buff turns (72)": "2", 
+                    "sbb atk% buff": 90, 
+                    "ubb atk% buff": 90
+                }, 
+                "conditions": [], 
+                "passive id": "86", 
+                "passive target": "self", 
+                "spark count buff activation": 6
+            }, 
+            {
+                "conditions": [], 
+                "dmg% mitigation for elemental attacks": 15.0, 
+                "mitigate dark attacks": true, 
+                "passive id": "62", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "passive id": "66", 
+                "passive target": "self", 
+                "trigger on bb": true, 
+                "trigger on sbb": true, 
+                "trigger on ubb": true, 
+                "triggered effect": [
+                    {
+                        "effect delay time(ms)/frame": "0.0/0", 
+                        "elements added": [
+                            "fire", 
+                            "light"
+                        ], 
+                        "elements added turns": 3, 
+                        "proc id": "30", 
+                        "target area": "aoe", 
+                        "target type": "party"
+                    }
+                ]
+            }
+        ], 
+        "name": "Scion of the Flame", 
+        "target": "self"
+    }, 
     "810317": {
         "desc": "Negates critical, elemental damage & boosts BB Atk when Vulcan Axe is equipped", 
         "effects": [
