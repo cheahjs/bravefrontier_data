@@ -4132,6 +4132,55 @@
         ], 
         "name": "煉誓舞神の冥想力"
     }, 
+    "1945": {
+        "desc": "全てのユニットの攻撃力を８０％アップ・最大ＨＰを３０％アップ＆通常攻撃時、ＢＢゲージを超絶増加＆通常攻撃ＨＩＴ数を増加", 
+        "effects": [
+            {
+                "atk% buff": 80, 
+                "hp% buff": 30, 
+                "passive id": "1"
+            }, 
+            {
+                "extra hits dmg%": -50, 
+                "hit increase/hit": 1, 
+                "passive id": "37"
+            }, 
+            {
+                "bc fill when attacking high": 8, 
+                "bc fill when attacking low": 8, 
+                "bc fill when attacking%": 100, 
+                "passive id": "35"
+            }
+        ], 
+        "name": "覇権神の偉功"
+    }, 
+    "1946": {
+        "desc": "全てのユニットの攻撃力を１００％アップ・最大ＨＰを４０％アップ＆通常攻撃時、ＢＢゲージを超絶増加＆通常攻撃ＨＩＴ数を増加＆与ダメージが一定数を超える度にＢＢゲージを大幅に増加", 
+        "effects": [
+            {
+                "atk% buff": 100, 
+                "hp% buff": 40, 
+                "passive id": "1"
+            }, 
+            {
+                "extra hits dmg%": -50, 
+                "hit increase/hit": 1, 
+                "passive id": "37"
+            }, 
+            {
+                "bc fill when attacking high": 10, 
+                "bc fill when attacking low": 10, 
+                "bc fill when attacking%": 100, 
+                "passive id": "35"
+            }, 
+            {
+                "damage dealt threshold activation": 50000, 
+                "increase bb gauge": 8, 
+                "passive id": "81"
+            }
+        ], 
+        "name": "覇皇神の偉勲"
+    }, 
     "2": {
         "desc": "リーダースキル１説明", 
         "effects": [
@@ -7692,6 +7741,96 @@
         ], 
         "name": "賢湊英神の蒼天域"
     }, 
+    "4340": {
+        "desc": "全てのユニットの防御力・最大ＨＰを３０％アップ＆クリティカルを無効", 
+        "effects": [
+            {
+                "def% buff": 30, 
+                "hp% buff": 30, 
+                "passive id": "1"
+            }, 
+            {
+                "crit chance base resist%": 100, 
+                "crit chance buffed resist%": 100, 
+                "crit dmg base damage resist%": 100, 
+                "crit dmg buffed damage resist%": 100, 
+                "passive id": "53"
+            }
+        ], 
+        "name": "流神気の叢圏"
+    }, 
+    "4341": {
+        "desc": "全てのユニットの防御力・最大ＨＰを５０％アップ＆クリティカルを無効＆被ダメージが一定数を超える度に２ターン、被ダメージを少し軽減", 
+        "effects": [
+            {
+                "def% buff": 50, 
+                "hp% buff": 50, 
+                "passive id": "1"
+            }, 
+            {
+                "crit chance base resist%": 100, 
+                "crit chance buffed resist%": 100, 
+                "crit dmg base damage resist%": 100, 
+                "crit dmg buffed damage resist%": 100, 
+                "passive id": "53"
+            }, 
+            {
+                "buff": {
+                    "buff turns (36)": "1", 
+                    "dmg reduction% buff": 20
+                }, 
+                "damage threshold buff activation": 5000, 
+                "passive id": "78"
+            }
+        ], 
+        "name": "流覇神気の天圏"
+    }, 
+    "4342": {
+        "desc": "全てのユニットの防御力・最大ＨＰを３０％アップ＆確率で防御貫通効果を付与＆攻撃ＢＢの威力をかなりアップ", 
+        "effects": [
+            {
+                "def% buff": 30, 
+                "hp% buff": 30, 
+                "passive id": "1"
+            }, 
+            {
+                "ignore def%": 15, 
+                "passive id": "29"
+            }, 
+            {
+                "bb atk% buff": 100, 
+                "passive id": "64", 
+                "sbb atk% buff": 100, 
+                "ubb atk% buff": 100
+            }
+        ], 
+        "name": "星告神の希光"
+    }, 
+    "4343": {
+        "desc": "全てのユニットの防御力・最大ＨＰを４０％アップ＆確率で防御貫通効果を付与＆攻撃ＢＢの威力を大幅にアップ＆低確率で被ダメージを超絶軽減", 
+        "effects": [
+            {
+                "def% buff": 40, 
+                "hp% buff": 40, 
+                "passive id": "1"
+            }, 
+            {
+                "ignore def%": 20, 
+                "passive id": "29"
+            }, 
+            {
+                "bb atk% buff": 180, 
+                "passive id": "64", 
+                "sbb atk% buff": 180, 
+                "ubb atk% buff": 180
+            }, 
+            {
+                "passive id": "43", 
+                "take 1 dmg%": 15
+            }
+        ], 
+        "name": "七星衛神の希虹"
+    }, 
     "4400": {
         "desc": "ターン毎にＢＢゲージを少し増加＆全ての状態異常にかなりかかりにくくなる", 
         "effects": [
@@ -9110,6 +9249,33 @@
         ], 
         "name": "神焔烈皇の豪鳳刃"
     }, 
+    "5529": {
+        "desc": "全てのユニットの最大ＨＰを３０％アップ＆ＨＰが半分以上の時、攻撃力・防御力・回復力を少しアップ＆スパーク時、ＢＢゲージを少し増加・ダメージを１００％アップ", 
+        "effects": [
+            {
+                "hp% buff": 30, 
+                "passive id": "1"
+            }, 
+            {
+                "bc fill on spark high": 2, 
+                "bc fill on spark low": 1, 
+                "bc fill on spark%": 100, 
+                "passive id": "47"
+            }, 
+            {
+                "damage% for spark": 100, 
+                "passive id": "31"
+            }, 
+            {
+                "atk% buff": 30, 
+                "def% buff": 30, 
+                "hp above % buff requirement": 50, 
+                "passive id": "11", 
+                "rec% buff": 30
+            }
+        ], 
+        "name": "業闘神の激燼"
+    }, 
     "553": {
         "desc": "樹属性ユニットからの被ダメージを１５％軽減＆炎属性の弱点属性ダメージを大幅にアップ＆全状態異常を無効", 
         "effects": [
@@ -9133,6 +9299,33 @@
             }
         ], 
         "name": "旋烈神の断罪"
+    }, 
+    "5530": {
+        "desc": "全てのユニットの最大ＨＰを５０％アップ＆ＨＰが半分以上の時、攻撃力・防御力・回復力をアップ＆スパーク時、ＢＢゲージを増加・ダメージを１２０％アップ", 
+        "effects": [
+            {
+                "hp% buff": 50, 
+                "passive id": "1"
+            }, 
+            {
+                "bc fill on spark high": 3, 
+                "bc fill on spark low": 2, 
+                "bc fill on spark%": 100, 
+                "passive id": "47"
+            }, 
+            {
+                "damage% for spark": 120, 
+                "passive id": "31"
+            }, 
+            {
+                "atk% buff": 50, 
+                "def% buff": 50, 
+                "hp above % buff requirement": 50, 
+                "passive id": "11", 
+                "rec% buff": 50
+            }
+        ], 
+        "name": "業覇闘神の天燼"
     }, 
     "554": {
         "desc": "闇属性ユニットからの被ダメージを１５％軽減＆光属性の弱点属性ダメージを大幅にアップ＆スパークダメージを１００％アップ", 
@@ -13327,6 +13520,28 @@
             }
         ], 
         "name": "煉界神の叡智"
+    }, 
+    "9712": {
+        "desc": "全てのユニットの最大ＨＰを５０％アップ＆ＢＣ・ＨＣ・ゼル・カルマ・アイテム出現率を超絶アップ＆ＢＣ獲得時の増加量をかなりアップ", 
+        "effects": [
+            {
+                "hp% buff": 50, 
+                "passive id": "1"
+            }, 
+            {
+                "bb gauge fill rate%": 50, 
+                "passive id": "32"
+            }, 
+            {
+                "bc drop rate% buff": 20, 
+                "hc drop rate% buff": 20, 
+                "item drop rate% buff": 4, 
+                "karma drop rate% buff": 15, 
+                "passive id": "19", 
+                "zel drop rate% buff": 20
+            }
+        ], 
+        "name": "烈徨界神の叡明"
     }, 
     "9720": {
         "desc": "全てのユニットの防御力・最大ＨＰを１５％アップ＆ターン毎にＨＰを少し回復・ＢＢゲージを増加", 
