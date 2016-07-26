@@ -7979,6 +7979,51 @@
         ], 
         "name": "Honour of the Brave"
     }, 
+    "730195": {
+        "desc": "Boosts HP (35%) & Boosts ATK and DEF for 2 turns (120%) & 10% chance to reduce DMG taken to 1", 
+        "effects": [
+            {
+                "hp% buff": 35, 
+                "passive id": "1"
+            }, 
+            {
+                "first x turns": 2, 
+                "first x turns atk% (1)": 120, 
+                "first x turns def% (3)": 120, 
+                "passive id": "21"
+            }, 
+            {
+                "passive id": "43", 
+                "take 1 dmg%": 10
+            }
+        ], 
+        "name": "Gaia Chi Adept"
+    }, 
+    "730196": {
+        "desc": "Boosts HP (40%) & Boosts ATK and DEF for 2 turns (140%) & 15% chance to reduce DMG taken to 1 & Negates critical damage", 
+        "effects": [
+            {
+                "hp% buff": 40, 
+                "passive id": "1"
+            }, 
+            {
+                "first x turns": 2, 
+                "first x turns atk% (1)": 140, 
+                "first x turns def% (3)": 140, 
+                "passive id": "21"
+            }, 
+            {
+                "passive id": "43", 
+                "take 1 dmg%": 15
+            }, 
+            {
+                "base crit% resist": 100, 
+                "buff crit% resist": 100, 
+                "passive id": "45"
+            }
+        ], 
+        "name": "Martial Arts Master"
+    }, 
     "7400": {
         "desc": "15% boost to Atk and max HP for all Units", 
         "effects": [
@@ -8265,7 +8310,7 @@
         "name": "Unshakeable Divine Balance"
     }, 
     "740195": {
-        "desc": "Boosts all stats (25%) & Raises normal hit amount (100% & -50% DMG) & Reduce BB cost by 20%", 
+        "desc": "Boosts all stats (25%) & Raises normal hit amount (+1 & 50% DMG) & Reduce BB cost by 20%", 
         "effects": [
             {
                 "atk% buff": 25, 
@@ -8287,7 +8332,7 @@
         "name": "Electrostatic Surge"
     }, 
     "740196": {
-        "desc": "Boosts all stats (30%) & Raises normal hit amount (100% & -50% DMG) & Reduce BB Cost by 25%.", 
+        "desc": "Boosts all stats (30%) & Raises normal hit amount (+1 & 50% DMG) & Reduce BB Cost by 25%.", 
         "effects": [
             {
                 "atk% buff": 30, 
@@ -9409,6 +9454,55 @@
             }
         ], 
         "name": "Antique Art of the Shadows"
+    }, 
+    "760195": {
+        "desc": "Boosts ATK (80%) & Boosts BB ATK boost (100%) & Boosts BB gauge (5 BC) when damage dealt has exceeded certain amount (10 000)", 
+        "effects": [
+            {
+                "atk% buff": 80, 
+                "passive id": "1"
+            }, 
+            {
+                "bb atk% buff": 100, 
+                "passive id": "64", 
+                "sbb atk% buff": 100, 
+                "ubb atk% buff": 100
+            }, 
+            {
+                "damage dealt threshold activation": 10000, 
+                "increase bb gauge": 5, 
+                "passive id": "81"
+            }
+        ], 
+        "name": "Yasakani Heir"
+    }, 
+    "760196": {
+        "desc": "Boosts ATK (80%) and HP (40%) & Boosts BB ATK boost (100%) & Boosts BB gauge (6 BC) when damage dealt has exceeded certain amount (10 000) & Boosts ATK relative to HP lost (80-150%)", 
+        "effects": [
+            {
+                "atk% buff": 80, 
+                "hp% buff": 40, 
+                "passive id": "1"
+            }, 
+            {
+                "bb atk% buff": 100, 
+                "passive id": "64", 
+                "sbb atk% buff": 100, 
+                "ubb atk% buff": 100
+            }, 
+            {
+                "damage dealt threshold activation": 10000, 
+                "increase bb gauge": 6, 
+                "passive id": "81"
+            }, 
+            {
+                "atk% base buff": 80, 
+                "atk% extra buff based on hp": 70, 
+                "buff proportional to hp": "lost", 
+                "passive id": "46"
+            }
+        ], 
+        "name": "Curse of Orochi"
     }, 
     "780086": {
         "desc": "30% boost to Atk Power of Female Units. Additional 30% when 5 elements or more are present", 
