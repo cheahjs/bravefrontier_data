@@ -8306,6 +8306,26 @@
         "name": "聖人の洗礼", 
         "target": "self"
     }, 
+    "1015800": {
+        "desc": "ターン毎にＢＢゲージを増加＆与ダメージ時、ＢＢゲージを増加", 
+        "effects": [
+            {
+                "bc fill per turn": 3, 
+                "conditions": [], 
+                "passive id": "9", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "damage dealt threshold activation": 1, 
+                "increase bb gauge": 4, 
+                "passive id": "81", 
+                "passive target": "self"
+            }
+        ], 
+        "name": "神堕の魂録", 
+        "target": "self"
+    }, 
     "10200": {
         "desc": "ＢＣ獲得時の増加量を少しアップ＆ＨＣ獲得時の回復量を少しアップ", 
         "effects": [
@@ -11624,6 +11644,76 @@
         "name": "大いなる野望", 
         "target": "self"
     }, 
+    "20700": {
+        "desc": "状態異常の敵へのダメージをかなりアップ＆被ダメージ時、確率でＨＰを回復", 
+        "effects": [
+            {
+                "atk% buff when enemy has ailment": 80, 
+                "atk% buff when enemy has curse": true, 
+                "atk% buff when enemy has injury": true, 
+                "atk% buff when enemy has paralysis": true, 
+                "atk% buff when enemy has poison": true, 
+                "atk% buff when enemy has sick": true, 
+                "atk% buff when enemy has weaken": true, 
+                "conditions": [], 
+                "passive id": "74", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "dmg% to hp% when attacked chance%": 20, 
+                "dmg% to hp% when attacked high": 25, 
+                "dmg% to hp% when attacked low": 20, 
+                "passive id": "24", 
+                "passive target": "self"
+            }
+        ], 
+        "name": "狂気と知識", 
+        "target": "self"
+    }, 
+    "20800": {
+        "desc": "状態異常の敵へのダメージを大幅にアップ＆被ダメージ時、確率でＨＰを回復", 
+        "effects": [
+            {
+                "atk% buff when enemy has ailment": 100, 
+                "atk% buff when enemy has curse": true, 
+                "atk% buff when enemy has injury": true, 
+                "atk% buff when enemy has paralysis": true, 
+                "atk% buff when enemy has poison": true, 
+                "atk% buff when enemy has sick": true, 
+                "atk% buff when enemy has weaken": true, 
+                "conditions": [], 
+                "passive id": "74", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "dmg% to hp% when attacked chance%": 25, 
+                "dmg% to hp% when attacked high": 25, 
+                "dmg% to hp% when attacked low": 20, 
+                "passive id": "24", 
+                "passive target": "self"
+            }
+        ], 
+        "name": "真理論の革命者", 
+        "target": "self"
+    }, 
+    "20900": {
+        "desc": "全てのユニットの攻撃力・防御力・回復力・最大ＨＰを１０％アップ", 
+        "effects": [
+            {
+                "atk% buff": 10, 
+                "conditions": [], 
+                "def% buff": 10, 
+                "hp% buff": 10, 
+                "passive id": "1", 
+                "passive target": "party", 
+                "rec% buff": 10
+            }
+        ], 
+        "name": "不滅の定理", 
+        "target": "self"
+    }, 
     "210": {
         "desc": "「宝剣レクシーダ」を装備時、攻撃力・防御力・回復力・最大ＨＰを３０％アップ・ＨＰが２０％以下の時、一度だけ戦闘不能を耐える", 
         "effects": [
@@ -11684,6 +11774,64 @@
             }
         ], 
         "name": "継がれし焔翼", 
+        "target": "self"
+    }, 
+    "21000": {
+        "desc": "全てのユニットの攻撃力・防御力・回復力・最大ＨＰを１０％アップ＆確率で２回まで戦闘不能を耐える", 
+        "effects": [
+            {
+                "atk% buff": 10, 
+                "conditions": [], 
+                "def% buff": 10, 
+                "hp% buff": 10, 
+                "passive id": "1", 
+                "passive target": "party", 
+                "rec% buff": 10
+            }, 
+            {
+                "angel idol chance% condition": 0, 
+                "angel idol recover chance% high": 40, 
+                "angel idol recover chance% low": 40, 
+                "angel idol recover counts": 2, 
+                "conditions": [], 
+                "passive id": "69", 
+                "passive target": "self"
+            }
+        ], 
+        "name": "絶対秩序の造成", 
+        "target": "self"
+    }, 
+    "21100": {
+        "desc": "通常攻撃ＨＩＴ数を増加", 
+        "effects": [
+            {
+                "conditions": [], 
+                "hit increase/hit": 1, 
+                "passive id": "37", 
+                "passive target": "self"
+            }
+        ], 
+        "name": "無我の刃輪", 
+        "target": "self"
+    }, 
+    "21200": {
+        "desc": "ＢＢゲージが半分以上の時、攻撃力をアップ＆通常攻撃ＨＩＴ数を増加", 
+        "effects": [
+            {
+                "conditions": [], 
+                "hit increase/hit": 1, 
+                "passive id": "37", 
+                "passive target": "self"
+            }, 
+            {
+                "atk% buff": 50, 
+                "bb gauge above % buff requirement": 50, 
+                "conditions": [], 
+                "passive id": "30", 
+                "passive target": "self"
+            }
+        ], 
+        "name": "目覚めし戦輪", 
         "target": "self"
     }, 
     "2200": {

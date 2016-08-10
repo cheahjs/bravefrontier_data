@@ -17509,6 +17509,39 @@
         "thumbnail": "sphere_thum_5_2.png", 
         "type": "sphere"
     }, 
+    "48220": {
+        "desc": "防御貫通効果を無効＆スパークダメージを半減＆低確率で被ダメージを超絶軽減＆防御力・最大ＨＰを３０％アップ", 
+        "effect": [
+            {
+                "ignore def resist chance%": 100, 
+                "passive id": "92"
+            }, 
+            {
+                "base spark dmg% resist": 50, 
+                "buff spark dmg% resist": 50, 
+                "passive id": "77"
+            }, 
+            {
+                "passive id": "43", 
+                "take 1 dmg%": 10
+            }, 
+            {
+                "def% buff": 30, 
+                "hp% buff": 30, 
+                "passive id": "1"
+            }
+        ], 
+        "id": 48220, 
+        "max_stack": 1, 
+        "name": "幻導機・グランアス", 
+        "raid": false, 
+        "rarity": 6, 
+        "sell_price": 10000, 
+        "sphere type": 10, 
+        "sphere type text": "Damage Reducing", 
+        "thumbnail": "sphere_thum_5_2.png", 
+        "type": "sphere"
+    }, 
     "48300": {
         "desc": "ターン毎にＢＢゲージを増加・ＨＰを回復＆ＢＣ・ＨＣ出現率をかなりアップ＆ＢＣ・ＨＣ獲得時の増加量・回復量をアップ", 
         "effect": [
@@ -20529,6 +20562,258 @@
         "sphere type": 6, 
         "sphere type text": "BB Gauge", 
         "thumbnail": "sphere_thum_5_4.png", 
+        "type": "sphere"
+    }, 
+    "62130": {
+        "desc": "スパークダメージを１５０％アップ＆確率でスパーククリティカルが発生＆攻撃ＢＢの威力をかなりアップ＆確率でＨＰをかなり吸収", 
+        "effect": [
+            {
+                "damage% for spark": 150, 
+                "passive id": "31"
+            }, 
+            {
+                "unknown passive id": "100", 
+                "unknown passive params": "40,50"
+            }, 
+            {
+                "bb atk% buff": 130, 
+                "passive id": "64", 
+                "sbb atk% buff": 130, 
+                "ubb atk% buff": 130
+            }, 
+            {
+                "hp drain chance%": 20, 
+                "hp drain% high": 60, 
+                "hp drain% low": 30, 
+                "passive id": "17"
+            }
+        ], 
+        "id": 62130, 
+        "max_stack": 1, 
+        "name": "神喰の紅翔弓", 
+        "raid": false, 
+        "rarity": 6, 
+        "recipe": {
+            "karma": "150000", 
+            "materials": [
+                {
+                    "count": 1, 
+                    "id": 46000
+                }, 
+                {
+                    "count": 1, 
+                    "id": 35600
+                }, 
+                {
+                    "count": 3, 
+                    "id": 11042
+                }, 
+                {
+                    "count": 3, 
+                    "id": 11045
+                }
+            ]
+        }, 
+        "sell_price": 25000, 
+        "sphere type": 11, 
+        "sphere type text": "Spark", 
+        "thumbnail": "sphere_thum_2_1.png", 
+        "type": "sphere"
+    }, 
+    "62140": {
+        "desc": "弱点属性ダメージをアップ＆戦闘開始から２ターン、攻撃力・防御力を２００％アップ＆敵撃破時、ＨＰを少し回復・ＢＢゲージをかなり増加＆確率で防御貫通効果を付与", 
+        "effect": [
+            {
+                "first x turns": 2, 
+                "first x turns atk% (1)": 200, 
+                "first x turns def% (3)": 200, 
+                "passive id": "21"
+            }, 
+            {
+                "dark units do extra elemental weakness dmg": true, 
+                "earth units do extra elemental weakness dmg": true, 
+                "elemental weakness multiplier%": 50.0, 
+                "fire units do extra elemental weakness dmg": true, 
+                "light units do extra elemental weakness dmg": true, 
+                "passive id": "50", 
+                "thunder units do extra elemental weakness dmg": true, 
+                "water units do extra elemental weakness dmg": true
+            }, 
+            {
+                "bc fill on enemy defeat high": 5, 
+                "bc fill on enemy defeat low": 5, 
+                "bc fill on enemy defeat%": 100, 
+                "passive id": "13"
+            }, 
+            {
+                "hp% recover on enemy defeat high": 15, 
+                "hp% recover on enemy defeat low": 15, 
+                "passive id": "15"
+            }, 
+            {
+                "ignore def%": 25, 
+                "passive id": "29"
+            }
+        ], 
+        "id": 62140, 
+        "max_stack": 1, 
+        "name": "崩神炉ゼベルゲイン", 
+        "raid": false, 
+        "rarity": 6, 
+        "recipe": {
+            "karma": "150000", 
+            "materials": [
+                {
+                    "count": 1, 
+                    "id": 46500
+                }, 
+                {
+                    "count": 1, 
+                    "id": 44600
+                }, 
+                {
+                    "count": 1, 
+                    "id": 41600
+                }, 
+                {
+                    "count": 1, 
+                    "id": 33501
+                }, 
+                {
+                    "count": 1, 
+                    "id": 34900
+                }
+            ]
+        }, 
+        "sell_price": 25000, 
+        "sphere type": 13, 
+        "sphere type text": "Atk Boosting", 
+        "thumbnail": "sphere_thum_1_4.png", 
+        "type": "sphere"
+    }, 
+    "62150": {
+        "desc": "確率で被ダメージを４０％軽減＆防御力を５０％アップ＆全状態異常・クリティカルを無効＆ターン毎にＨＰをかなり回復", 
+        "effect": [
+            {
+                "dmg reduction chance%": 30, 
+                "dmg reduction%": 40, 
+                "passive id": "14"
+            }, 
+            {
+                "curse resist%": 100, 
+                "injury resist%": 100, 
+                "paralysis resist%": 100, 
+                "passive id": "4", 
+                "poison resist%": 100, 
+                "sick resist%": 100, 
+                "weaken resist%": 100
+            }, 
+            {
+                "passive id": "33", 
+                "rec% added (turn heal)": 10.0, 
+                "turn heal high": 1500, 
+                "turn heal low": 1000
+            }, 
+            {
+                "crit chance base resist%": 100, 
+                "crit chance buffed resist%": 100, 
+                "crit dmg base damage resist%": 100, 
+                "crit dmg buffed damage resist%": 100, 
+                "passive id": "53"
+            }, 
+            {
+                "def% buff": 50, 
+                "passive id": "1"
+            }
+        ], 
+        "id": 62150, 
+        "max_stack": 1, 
+        "name": "天輝楯ユエリカ", 
+        "raid": false, 
+        "rarity": 6, 
+        "recipe": {
+            "karma": "150000", 
+            "materials": [
+                {
+                    "count": 1, 
+                    "id": 42200
+                }, 
+                {
+                    "count": 1, 
+                    "id": 42000
+                }, 
+                {
+                    "count": 1, 
+                    "id": 47903
+                }, 
+                {
+                    "count": 1, 
+                    "id": 30105
+                }, 
+                {
+                    "count": 1, 
+                    "id": 30103
+                }
+            ]
+        }, 
+        "sell_price": 25000, 
+        "sphere type": 10, 
+        "sphere type text": "Damage Reducing", 
+        "thumbnail": "sphere_thum_3_4.png", 
+        "type": "sphere"
+    }, 
+    "62160": {
+        "desc": "ＨＰが満タン時、攻撃力・防御力・回復力を大幅にアップ・クリティカル率を超絶アップ＆残りＨＰが少ないほど、攻撃力・防御力・回復力を超絶アップ", 
+        "effect": [
+            {
+                "atk% base buff": 0, 
+                "atk% extra buff based on hp": 200, 
+                "buff proportional to hp": "lost", 
+                "def% base buff": 0, 
+                "def% extra buff based on hp": 200, 
+                "passive id": "46", 
+                "rec% base buff": 0, 
+                "rec% extra buff based on hp": 200
+            }, 
+            {
+                "atk% buff": 100, 
+                "crit% buff": 50, 
+                "def% buff": 100, 
+                "hp above % buff requirement": 100, 
+                "passive id": "11", 
+                "rec% buff": 100
+            }
+        ], 
+        "id": 62160, 
+        "max_stack": 1, 
+        "name": "髑髏王の黒杖ムルルク", 
+        "raid": false, 
+        "rarity": 6, 
+        "recipe": {
+            "karma": "150000", 
+            "materials": [
+                {
+                    "count": 1, 
+                    "id": 41300
+                }, 
+                {
+                    "count": 1, 
+                    "id": 36200
+                }, 
+                {
+                    "count": 1, 
+                    "id": 31300
+                }, 
+                {
+                    "count": 1, 
+                    "id": 31500
+                }
+            ]
+        }, 
+        "sell_price": 25000, 
+        "sphere type": 1, 
+        "sphere type text": "Status Boost", 
+        "thumbnail": "sphere_thum_1_5.png", 
         "type": "sphere"
     }, 
     "70000": {
