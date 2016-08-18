@@ -5308,6 +5308,37 @@
         "name": "混沌の蝕力Lv3", 
         "target": "self"
     }, 
+    "1009603": {
+        "desc": "確率で全状態異常をランダムに発生＆攻撃ＢＢの威力をアップ", 
+        "effects": [
+            {
+                "conditions": [], 
+                "curse%": 7, 
+                "passive id": "20", 
+                "passive target": "self", 
+                "poison%": 7, 
+                "sick%": 10
+            }, 
+            {
+                "conditions": [], 
+                "injury%": 10, 
+                "paralysis%": 7, 
+                "passive id": "20", 
+                "passive target": "self", 
+                "weaken%": 10
+            }, 
+            {
+                "bb atk% buff": 50, 
+                "conditions": [], 
+                "passive id": "64", 
+                "passive target": "self", 
+                "sbb atk% buff": 50, 
+                "ubb atk% buff": 50
+            }
+        ], 
+        "name": "混沌の英詩", 
+        "target": "self"
+    }, 
     "1009700": {
         "desc": "被ダメージ時、確率で全状態異常をランダムに発生", 
         "effects": [
@@ -11832,6 +11863,65 @@
             }
         ], 
         "name": "目覚めし戦輪", 
+        "target": "self"
+    }, 
+    "21300": {
+        "desc": "「大盗神の宝石精」を装備時、または、「ドロップ系」タイプのスフィアを装備時、攻撃力・防御力・回復力・最大ＨＰを３０％アップ＆通常攻撃ＨＩＴ数をかなり増加＆ターン毎にＢＢゲージを大幅に増加", 
+        "effects": [
+            {
+                "atk% buff": 30, 
+                "conditions": [
+                    {
+                        "item required": [
+                            "47211"
+                        ]
+                    }, 
+                    {
+                        "unknown": "6,3"
+                    }
+                ], 
+                "def% buff": 30, 
+                "hp% buff": 30, 
+                "passive id": "1", 
+                "passive target": "self", 
+                "rec% buff": 30
+            }, 
+            {
+                "conditions": [], 
+                "hit increase/hit": 2, 
+                "passive id": "37", 
+                "passive target": "self"
+            }, 
+            {
+                "bc fill per turn": 6, 
+                "conditions": [], 
+                "passive id": "9", 
+                "passive target": "self"
+            }
+        ], 
+        "name": "隠された絆", 
+        "target": "self"
+    }, 
+    "21400": {
+        "desc": "被ダメージ時、確率でＨＰを回復＆与ダメージが一定数を超える度にＢＢゲージをかなり増加", 
+        "effects": [
+            {
+                "conditions": [], 
+                "dmg% to hp% when attacked chance%": 25, 
+                "dmg% to hp% when attacked high": 25, 
+                "dmg% to hp% when attacked low": 20, 
+                "passive id": "24", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "damage dealt threshold activation": 10000, 
+                "increase bb gauge": 6, 
+                "passive id": "81", 
+                "passive target": "self"
+            }
+        ], 
+        "name": "勝利を刻む破壊者", 
         "target": "self"
     }, 
     "2200": {
