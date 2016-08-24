@@ -2805,10 +2805,10 @@
         "type": null
     }, 
     "120011": {
-        "desc": "\u30de\u30c3\u30d7\u4e0a\u3067\u4f7f\u7528\u3059\u308b\u3068\u30ec\u30a4\u30c9\u30d0\u30c8\u30eb\u30af\u30ea\u30a2\u6642\u306e\u7d20\u6750\u30c9\u30ed\u30c3\u30d7\u7387\u304c\uff12\u500d\u306b\u306a\u308b", 
+        "desc": "Multiplies Item drop rate by 2 after Raid Quest is cleared when activated from map ", 
         "id": 120011, 
         "max_stack": 99, 
-        "name": "\u5e78\u904b\u8f1d\u8a3c", 
+        "name": "Fortune Coffer", 
         "raid": true, 
         "rarity": 0, 
         "sell_price": 1000, 
@@ -15281,7 +15281,7 @@
         "type": "sphere"
     }, 
     "46400": {
-        "desc": "30% boost to max HP & Def, slightly boosts BB gauge when attacked, boosts BB gauge when guarding", 
+        "desc": "30% boost to max HP and Def, slightly boosts BB gauge when attacked & boosts BB gauge when guarding and when guarding against attacks", 
         "effect": [
             {
                 "def% buff": 30, 
@@ -20026,6 +20026,254 @@
         "sphere type": 1, 
         "sphere type text": "Status Boost", 
         "thumbnail": "sphere_thum_1_6.png", 
+        "type": "sphere"
+    }, 
+    "62090": {
+        "desc": "Hugely boosts damage reduction while guarding, low probability of enormous damage reduction, 30% boost to Def, max HP, damage taken may slightly boost BB gauge, enormous BB gauge boost when guarding & boosts BB gauge when guarding against attacks", 
+        "effect": [
+            {
+                "guard increase mitigation%": 20, 
+                "passive id": "58"
+            }, 
+            {
+                "passive id": "43", 
+                "take 1 dmg%": 12
+            }, 
+            {
+                "def% buff": 30, 
+                "hp% buff": 30, 
+                "passive id": "1"
+            }, 
+            {
+                "bc filled on guard": 10, 
+                "passive id": "61"
+            }, 
+            {
+                "bc filled when attacked while guarded": 2, 
+                "passive id": "59"
+            }, 
+            {
+                "bc fill when attacked high": 1, 
+                "bc fill when attacked low": 1, 
+                "bc fill when attacked%": 100, 
+                "passive id": "25"
+            }
+        ], 
+        "id": 62090, 
+        "max_stack": 1, 
+        "name": "Soul Armor", 
+        "raid": false, 
+        "rarity": 6, 
+        "recipe": {
+            "karma": "150000", 
+            "materials": [
+                {
+                    "count": 1, 
+                    "id": 46400
+                }, 
+                {
+                    "count": 1, 
+                    "id": 44501
+                }, 
+                {
+                    "count": 1, 
+                    "id": 45600
+                }
+            ]
+        }, 
+        "sell_price": 25000, 
+        "sphere type": 10, 
+        "sphere type text": "Damage Reducing", 
+        "thumbnail": "sphere_thum_4_7.png", 
+        "type": "sphere"
+    }, 
+    "62100": {
+        "desc": "Enormously boosts BC, HC, Zel, Karma, Items drop rates, slightly boosts BC and considerably boosts HC efficacy, Spark damage boosts BC, HC drop rate & 100% boost Spark damage", 
+        "effect": [
+            {
+                "bc drop rate% buff": 20, 
+                "hc drop rate% buff": 20, 
+                "item drop rate% buff": 5, 
+                "karma drop rate% buff": 15, 
+                "passive id": "19", 
+                "zel drop rate% buff": 20
+            }, 
+            {
+                "bb gauge fill rate%": 15, 
+                "passive id": "32"
+            }, 
+            {
+                "hc effectiveness%": 50, 
+                "passive id": "10"
+            }, 
+            {
+                "bc drop% for spark": 50, 
+                "damage% for spark": 100, 
+                "hc drop% for spark": 35, 
+                "passive id": "31"
+            }
+        ], 
+        "id": 62100, 
+        "max_stack": 1, 
+        "name": "Regent Diadem", 
+        "raid": false, 
+        "rarity": 6, 
+        "recipe": {
+            "karma": "150000", 
+            "materials": [
+                {
+                    "count": 1, 
+                    "id": 46100
+                }, 
+                {
+                    "count": 1, 
+                    "id": 45500
+                }, 
+                {
+                    "count": 1, 
+                    "id": 40300
+                }
+            ]
+        }, 
+        "sell_price": 25000, 
+        "sphere type": 3, 
+        "sphere type text": "Drop", 
+        "thumbnail": "sphere_thum_5_8.png", 
+        "type": "sphere"
+    }, 
+    "62110": {
+        "desc": "Probable 20% counter of damage taken, 60% boost to max HP, 75% boost to Def for first 3 turns, probable random status ailment counter, damage taken may restore HP & negates all status ailments", 
+        "effect": [
+            {
+                "dmg% reflect chance%": 40, 
+                "dmg% reflect high": 20, 
+                "dmg% reflect low": 20, 
+                "passive id": "26"
+            }, 
+            {
+                "dmg% to hp% when attacked chance%": 40, 
+                "dmg% to hp% when attacked high": 20, 
+                "dmg% to hp% when attacked low": 20, 
+                "passive id": "24"
+            }, 
+            {
+                "hp% buff": 60, 
+                "passive id": "1"
+            }, 
+            {
+                "first x turns": 3, 
+                "first x turns def% (3)": 75, 
+                "passive id": "21"
+            }, 
+            {
+                "counter inflict curse%": 7, 
+                "counter inflict injury%": 10, 
+                "counter inflict paralysis%": 7, 
+                "counter inflict poison%": 7, 
+                "counter inflict sick%": 10, 
+                "counter inflict weaken%": 10, 
+                "passive id": "71"
+            }, 
+            {
+                "curse resist%": 100, 
+                "injury resist%": 100, 
+                "paralysis resist%": 100, 
+                "passive id": "4", 
+                "poison resist%": 100, 
+                "sick resist%": 100, 
+                "weaken resist%": 100
+            }
+        ], 
+        "id": 62110, 
+        "max_stack": 1, 
+        "name": "Barrier Mirror", 
+        "raid": false, 
+        "rarity": 6, 
+        "recipe": {
+            "karma": "150000", 
+            "materials": [
+                {
+                    "count": 1, 
+                    "id": 46700
+                }, 
+                {
+                    "count": 1, 
+                    "id": 37200
+                }, 
+                {
+                    "count": 1, 
+                    "id": 30307
+                }, 
+                {
+                    "count": 1, 
+                    "id": 31101
+                }, 
+                {
+                    "count": 1, 
+                    "id": 39000
+                }
+            ]
+        }, 
+        "sell_price": 25000, 
+        "sphere type": 9, 
+        "sphere type text": "Damage Reflecting", 
+        "thumbnail": "sphere_thum_5_5.png", 
+        "type": "sphere"
+    }, 
+    "62120": {
+        "desc": "Hugely boosts BC efficacy, damage taken considerably boosts BB gauge, probable 30% damage reduction & negates elemental damage", 
+        "effect": [
+            {
+                "bb gauge fill rate%": 60, 
+                "passive id": "32"
+            }, 
+            {
+                "bc fill when attacked high": 4, 
+                "bc fill when attacked low": 3, 
+                "bc fill when attacked%": 100, 
+                "passive id": "25"
+            }, 
+            {
+                "dmg reduction chance%": 30, 
+                "dmg reduction%": 30, 
+                "passive id": "14"
+            }, 
+            {
+                "passive id": "53", 
+                "strong base element damage resist%": 100, 
+                "strong buffed element damage resist%": 100
+            }
+        ], 
+        "id": 62120, 
+        "max_stack": 1, 
+        "name": "Blessed Charm", 
+        "raid": false, 
+        "rarity": 6, 
+        "recipe": {
+            "karma": "150000", 
+            "materials": [
+                {
+                    "count": 1, 
+                    "id": 42100
+                }, 
+                {
+                    "count": 1, 
+                    "id": 42700
+                }, 
+                {
+                    "count": 1, 
+                    "id": 36100
+                }, 
+                {
+                    "count": 1, 
+                    "id": 47904
+                }
+            ]
+        }, 
+        "sell_price": 25000, 
+        "sphere type": 6, 
+        "sphere type text": "BB Gauge", 
+        "thumbnail": "sphere_thum_5_4.png", 
         "type": "sphere"
     }, 
     "70000": {
