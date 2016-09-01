@@ -8062,16 +8062,19 @@
         "name": "Crusader's Benediction"
     }, 
     "730176": {
-        "desc": "Reduction in BB gauge required to activate BB (25%) & Reduces damage taken (20%) and boosts BB gauge (10BC) when damage dealt has exceeded certain amount (10 000) for 2 turns", 
+        "desc": "Reduction in BB gauge required to activate BB (25%) & Reduces damage taken (20%) and gradually recovers BB gauge (10 BC) when damage dealt has exceeded certain amount (10 000) for 2 turns", 
         "effects": [
             {
                 "passive id": "48", 
                 "reduced bb bc cost%": 25
             }, 
             {
-                "damage dealt threshold activation": 10000, 
-                "increase bb gauge": 10, 
-                "passive id": "81"
+                "buff": {
+                    "buff turns (37)": "2", 
+                    "increase bb gauge gradual buff": 10
+                }, 
+                "damage dealt threshold buff activation": 10000, 
+                "passive id": "80"
             }, 
             {
                 "buff": {
@@ -9587,7 +9590,7 @@
         "name": "Antique Art of the Shadows"
     }, 
     "760195": {
-        "desc": "Boosts ATK (80%) & Boosts BB ATK boost (100%) & Boosts BB gauge (5 BC) when damage dealt has exceeded certain amount (10 000)", 
+        "desc": "Boosts ATK (80%) & Boosts BB ATK boost (100%) & Gradually recovers BB gauge (5 BC) for 2 turns when damage dealt has exceeded certain amount (10 000)", 
         "effects": [
             {
                 "atk% buff": 80, 
@@ -9600,15 +9603,18 @@
                 "ubb atk% buff": 100
             }, 
             {
-                "damage dealt threshold activation": 10000, 
-                "increase bb gauge": 5, 
-                "passive id": "81"
+                "buff": {
+                    "buff turns (37)": "2", 
+                    "increase bb gauge gradual buff": 5
+                }, 
+                "damage dealt threshold buff activation": 10000, 
+                "passive id": "80"
             }
         ], 
         "name": "Yasakani Heir"
     }, 
     "760196": {
-        "desc": "Boosts ATK (80%) and HP (40%) & Boosts BB ATK boost (100%) & Boosts BB gauge (6 BC) when damage dealt has exceeded certain amount (10 000) & Boosts ATK relative to HP lost (80-150%)", 
+        "desc": "Boosts ATK (80%) and HP (40%) & Boosts BB ATK boost (100%) & Gradually recovers BB gauge (6 BC) for 2 turns when damage dealt has exceeded certain amount (10 000) & Boosts ATK relative to HP lost (80-150%)", 
         "effects": [
             {
                 "atk% buff": 80, 
@@ -9622,9 +9628,12 @@
                 "ubb atk% buff": 100
             }, 
             {
-                "damage dealt threshold activation": 10000, 
-                "increase bb gauge": 6, 
-                "passive id": "81"
+                "buff": {
+                    "buff turns (37)": "2", 
+                    "increase bb gauge gradual buff": 6
+                }, 
+                "damage dealt threshold buff activation": 10000, 
+                "passive id": "80"
             }, 
             {
                 "atk% base buff": 80, 
