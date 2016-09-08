@@ -598,6 +598,52 @@
         ], 
         "name": "神遵奉の澄天意"
     }, 
+    "10120": {
+        "desc": "全てのユニットの全能力を３５％アップ＆被ダメージ時、ＢＢゲージをかなり増加", 
+        "effects": [
+            {
+                "atk% buff": 35, 
+                "def% buff": 35, 
+                "hp% buff": 35, 
+                "passive id": "1", 
+                "rec% buff": 35
+            }, 
+            {
+                "bc fill when attacked high": 6, 
+                "bc fill when attacked low": 3, 
+                "bc fill when attacked%": 100, 
+                "passive id": "25"
+            }
+        ], 
+        "name": "洸潔神の励界"
+    }, 
+    "10121": {
+        "desc": "全てのユニットの全能力を４０％アップ＆被ダメージ時、ＢＢゲージを大幅に増加＆被ダメージが一定数を超える度に１ターン、被ダメージを少し軽減", 
+        "effects": [
+            {
+                "atk% buff": 40, 
+                "def% buff": 40, 
+                "hp% buff": 40, 
+                "passive id": "1", 
+                "rec% buff": 40
+            }, 
+            {
+                "bc fill when attacked high": 7, 
+                "bc fill when attacked low": 4, 
+                "bc fill when attacked%": 100, 
+                "passive id": "25"
+            }, 
+            {
+                "buff": {
+                    "buff turns (36)": "1", 
+                    "dmg reduction% buff": 20
+                }, 
+                "damage threshold buff activation": 5000, 
+                "passive id": "78"
+            }
+        ], 
+        "name": "洸竜神の天寿界"
+    }, 
     "102": {
         "desc": "炎属性ユニットの攻撃力を５０％アップ・最大ＨＰを１０％アップ", 
         "effects": [
@@ -5996,6 +6042,69 @@
         ], 
         "name": "刹那の閃轟撃"
     }, 
+    "2511": {
+        "desc": "戦闘開始から２ターン、攻撃力・防御力を１２０％アップ・被ダメージを２０％軽減＆確率で防御貫通効果を付与", 
+        "effects": [
+            {
+                "first x turns": 2, 
+                "first x turns atk% (1)": 120, 
+                "first x turns def% (3)": 120, 
+                "passive id": "21"
+            }, 
+            {
+                "dmg% mitigation for elemental attacks": 20, 
+                "dmg% mitigation for elemental attacks buff for first x turns": 2, 
+                "mitigate dark attacks": true, 
+                "mitigate earth attacks": true, 
+                "mitigate fire attacks": true, 
+                "mitigate light attacks": true, 
+                "mitigate thunder attacks": true, 
+                "mitigate water attacks": true, 
+                "passive id": "63"
+            }, 
+            {
+                "ignore def%": 15, 
+                "passive id": "29"
+            }
+        ], 
+        "name": "獣劫神の猛魂"
+    }, 
+    "2512": {
+        "desc": "戦闘開始から２ターン、攻撃力・防御力を１５０％アップ・被ダメージを２５％軽減＆確率で防御貫通効果を付与＆ダメージを与える度に２ターン、確率で攻撃力を１ターン低下する効果を付与", 
+        "effects": [
+            {
+                "first x turns": 2, 
+                "first x turns atk% (1)": 150, 
+                "first x turns def% (3)": 150, 
+                "passive id": "21"
+            }, 
+            {
+                "dmg% mitigation for elemental attacks": 25, 
+                "dmg% mitigation for elemental attacks buff for first x turns": 2, 
+                "mitigate dark attacks": true, 
+                "mitigate earth attacks": true, 
+                "mitigate fire attacks": true, 
+                "mitigate light attacks": true, 
+                "mitigate thunder attacks": true, 
+                "mitigate water attacks": true, 
+                "passive id": "63"
+            }, 
+            {
+                "ignore def%": 20, 
+                "passive id": "29"
+            }, 
+            {
+                "buff": {
+                    "buff turns (74)": "2", 
+                    "unknown buff id": "74", 
+                    "unknown buff params": "-20&30&1"
+                }, 
+                "damage dealt threshold buff activation": 1, 
+                "passive id": "80"
+            }
+        ], 
+        "name": "羅劫獣神の烈魂"
+    }, 
     "2600": {
         "desc": "通常攻撃時、確率でＢＢゲージをかなり増加", 
         "effects": [
@@ -7796,8 +7905,6 @@
             }, 
             {
                 "angel idol chance% condition": 0, 
-                "angel idol recover chance% high": 20, 
-                "angel idol recover chance% low": 20, 
                 "angel idol recover counts": 1, 
                 "passive id": "69"
             }
@@ -9244,8 +9351,6 @@
             }, 
             {
                 "angel idol chance% condition": 0, 
-                "angel idol recover chance% high": 20, 
-                "angel idol recover chance% low": 20, 
                 "angel idol recover counts": 1, 
                 "passive id": "69"
             }
@@ -11792,6 +11897,57 @@
             }
         ], 
         "name": "魔勢覇神の兇斥"
+    }, 
+    "7457": {
+        "desc": "光属性ユニットの攻撃力を８０％アップ＆全てのユニットの攻撃力・最大ＨＰを４０％アップ＆スパークダメージを８０％アップ", 
+        "effects": [
+            {
+                "atk% buff": 40, 
+                "hp% buff": 40, 
+                "passive id": "1"
+            }, 
+            {
+                "atk% buff": 80, 
+                "elements buffed": [
+                    "light"
+                ], 
+                "passive id": "2"
+            }, 
+            {
+                "damage% for spark": 80, 
+                "passive id": "31"
+            }
+        ], 
+        "name": "皇傑神の聖威光"
+    }, 
+    "7458": {
+        "desc": "光属性ユニットの攻撃力を１００％アップ＆全てのユニットの攻撃力・最大ＨＰを５０％アップ＆スパークダメージを１００％アップ＆クリティカルを無効", 
+        "effects": [
+            {
+                "atk% buff": 50, 
+                "hp% buff": 50, 
+                "passive id": "1"
+            }, 
+            {
+                "atk% buff": 100, 
+                "elements buffed": [
+                    "light"
+                ], 
+                "passive id": "2"
+            }, 
+            {
+                "damage% for spark": 100, 
+                "passive id": "31"
+            }, 
+            {
+                "crit chance base resist%": 100, 
+                "crit chance buffed resist%": 100, 
+                "crit dmg base damage resist%": 100, 
+                "crit dmg buffed damage resist%": 100, 
+                "passive id": "53"
+            }
+        ], 
+        "name": "真皇神の聖覇光"
     }, 
     "7500": {
         "desc": "確率でＨＰを少し吸収", 
