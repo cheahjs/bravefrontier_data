@@ -12273,6 +12273,65 @@
         "name": "召喚への目覚め", 
         "target": "self"
     }, 
+    "22700": {
+        "desc": "「メイリスの刻珠」を装備時、攻撃力・防御力・回復力・最大ＨＰを３０％アップ＆残りＨＰが少ないほど、攻撃力・防御力・回復力を超絶アップ", 
+        "effects": [
+            {
+                "atk% base buff": 0, 
+                "atk% extra buff based on hp": 150, 
+                "buff proportional to hp": "lost", 
+                "conditions": [], 
+                "def% base buff": 0, 
+                "def% extra buff based on hp": 150, 
+                "passive id": "46", 
+                "passive target": "self", 
+                "rec% base buff": 0, 
+                "rec% extra buff based on hp": 150
+            }, 
+            {
+                "atk% buff": 30, 
+                "conditions": [
+                    {
+                        "item required": [
+                            "49200"
+                        ]
+                    }
+                ], 
+                "def% buff": 30, 
+                "hp% buff": 30, 
+                "passive id": "1", 
+                "passive target": "self", 
+                "rec% buff": 30
+            }
+        ], 
+        "name": "双剣に宿る絆", 
+        "target": "self"
+    }, 
+    "22800": {
+        "desc": "スパークダメージを５０％アップ＆状態異常の敵へのダメージを大幅にアップ", 
+        "effects": [
+            {
+                "conditions": [], 
+                "damage% for spark": 50, 
+                "passive id": "31", 
+                "passive target": "self"
+            }, 
+            {
+                "atk% buff when enemy has ailment": 100, 
+                "atk% buff when enemy has curse": true, 
+                "atk% buff when enemy has injury": true, 
+                "atk% buff when enemy has paralysis": true, 
+                "atk% buff when enemy has poison": true, 
+                "atk% buff when enemy has sick": true, 
+                "atk% buff when enemy has weaken": true, 
+                "conditions": [], 
+                "passive id": "74", 
+                "passive target": "self"
+            }
+        ], 
+        "name": "混沌を望む狂華", 
+        "target": "self"
+    }, 
     "2300": {
         "desc": "ＢＣ・ＨＣ出現率をかなりアップ", 
         "effects": [
