@@ -3584,6 +3584,30 @@
         ], 
         "name": "Five Lights' Destiny"
     }, 
+    "2222": {
+        "desc": "30% boost to max HP and 100% boost to Atk when 5 elements or more are present & high probable infliction of random status ailment", 
+        "effects": [
+            {
+                "atk% buff": 100, 
+                "hp% buff": 30, 
+                "passive id": "41", 
+                "unique elements required": 5
+            }, 
+            {
+                "injury%": 15, 
+                "passive id": "20", 
+                "poison%": 10, 
+                "sick%": 15, 
+                "weaken%": 15
+            }, 
+            {
+                "curse%": 10, 
+                "paralysis%": 10, 
+                "passive id": "20"
+            }
+        ], 
+        "name": "Five Lights' Epidemic"
+    }, 
     "2223": {
         "desc": "30% boost to max HP and 100% boost to Atk when 5 elements or more are present & boosts Spark damage", 
         "effects": [
@@ -4414,6 +4438,32 @@
             }
         ], 
         "name": "Epidemic God's Ambition"
+    }, 
+    "3009": {
+        "desc": "High probable infliction of random status ailment, greatly boosts critical damage & 80% boost to Atk", 
+        "effects": [
+            {
+                "injury%": 15, 
+                "passive id": "20", 
+                "poison%": 10, 
+                "sick%": 15, 
+                "weaken%": 15
+            }, 
+            {
+                "curse%": 10, 
+                "paralysis%": 10, 
+                "passive id": "20"
+            }, 
+            {
+                "crit multiplier%": 150.0, 
+                "passive id": "34"
+            }, 
+            {
+                "atk% buff": 80, 
+                "passive id": "1"
+            }
+        ], 
+        "name": "Full Epidemic Flash"
     }, 
     "301": {
         "desc": "50% boost to Recovery of Fire Types", 
@@ -5471,6 +5521,32 @@
         ], 
         "name": "Goddess' Miracle"
     }, 
+    "4402": {
+        "desc": "30% boost to max HP, considerably boosts BB gauge each turn, negates all status ailments & negates Atk, Def, Rec reductions", 
+        "effects": [
+            {
+                "hp% buff": 30, 
+                "passive id": "1"
+            }, 
+            {
+                "bc fill per turn": 5, 
+                "passive id": "9"
+            }, 
+            {
+                "atk down resist%": 100, 
+                "curse resist%": 100, 
+                "def down resist%": 100, 
+                "injury resist%": 100, 
+                "paralysis resist%": 100, 
+                "passive id": "73", 
+                "poison resist%": 100, 
+                "rec down resist%": 100, 
+                "sick resist%": 100, 
+                "weaken resist%": 100
+            }
+        ], 
+        "name": "Goddess's Revelation"
+    }, 
     "4500": {
         "desc": "25% boost to Atk power of male Units", 
         "effects": [
@@ -6365,6 +6441,27 @@
         ], 
         "name": "Radiant Deity's Commandment"
     }, 
+    "551": {
+        "desc": "15% damage reduction from Thunder types, hugely boosts damage against Thunder types & greatly boosts BB Atk", 
+        "effects": [
+            {
+                "passive id": "5", 
+                "thunder resist%": 15
+            }, 
+            {
+                "earth units do extra elemental weakness dmg": true, 
+                "elemental weakness multiplier%": 150.0, 
+                "passive id": "50"
+            }, 
+            {
+                "bb atk% buff": 100, 
+                "passive id": "64", 
+                "sbb atk% buff": 100, 
+                "ubb atk% buff": 100
+            }
+        ], 
+        "name": "Shining Conviction"
+    }, 
     "5510": {
         "desc": "30% boost to max HP for all Units", 
         "effects": [
@@ -6517,6 +6614,26 @@
             }
         ], 
         "name": "Blue Winged God's Purge"
+    }, 
+    "552": {
+        "desc": "15% damage reduction from Water types, hugely boosts damage against Water types & negates critical damage", 
+        "effects": [
+            {
+                "passive id": "5", 
+                "water resist%": 15
+            }, 
+            {
+                "elemental weakness multiplier%": 150.0, 
+                "passive id": "50", 
+                "thunder units do extra elemental weakness dmg": true
+            }, 
+            {
+                "crit chance base resist%": 100, 
+                "crit chance buffed resist%": 100, 
+                "passive id": "53"
+            }
+        ], 
+        "name": "Spiritual Conviction"
     }, 
     "5600": {
         "desc": "25% boost to Atk of all Light and Dark Units", 
@@ -9753,6 +9870,56 @@
         ], 
         "name": "Black Noah Genocide"
     }, 
+    "760215": {
+        "desc": "Reduces amount of BB gauge needed to activate BB (20%) & Reduction in damage from Light and Dark types (10%) & Probable resistance against 1 KO (15%)", 
+        "effects": [
+            {
+                "passive id": "48", 
+                "reduced bb bc cost%": 20
+            }, 
+            {
+                "light resist%": 10, 
+                "passive id": "5"
+            }, 
+            {
+                "dark resist%": 10, 
+                "passive id": "5"
+            }, 
+            {
+                "angel idol chance% condition": 0, 
+                "angel idol recover chance% high": 15, 
+                "angel idol recover chance% low": 15, 
+                "angel idol recover counts": 1, 
+                "passive id": "69"
+            }
+        ], 
+        "name": "Guide's Advices "
+    }, 
+    "760216": {
+        "desc": "Reduces amount of BB gauge needed to activate BB (25%) & Reduction in damage from Light and Dark types (15%) & Probable resistance against 1 KO (20%)", 
+        "effects": [
+            {
+                "passive id": "48", 
+                "reduced bb bc cost%": 25
+            }, 
+            {
+                "light resist%": 15, 
+                "passive id": "5"
+            }, 
+            {
+                "dark resist%": 15, 
+                "passive id": "5"
+            }, 
+            {
+                "angel idol chance% condition": 0, 
+                "angel idol recover chance% high": 20, 
+                "angel idol recover chance% low": 20, 
+                "angel idol recover counts": 1, 
+                "passive id": "69"
+            }
+        ], 
+        "name": "Guide's Wisdom"
+    }, 
     "780086": {
         "desc": "30% boost to Atk Power of Female Units. Additional 30% when 5 elements or more are present", 
         "effects": [
@@ -10240,7 +10407,7 @@
         "name": "Shining Darkness Safeguard"
     }, 
     "8708": {
-        "desc": "15% damage reduction from Light, Dark types, 30% boost to max HP & enormously boosts BB gauge when damage taken has exceeded certain amount", 
+        "desc": "15% damage reduction from Light, Dark types, 30% boost to max HP & gradually fill BB gauge for 2 turns when damage taken has exceeded certain amount", 
         "effects": [
             {
                 "dmg% mitigation for elemental attacks": 15.0, 
@@ -10253,9 +10420,12 @@
                 "passive id": "1"
             }, 
             {
-                "damage threshold activation": 5000, 
-                "increase bb gauge": 10, 
-                "passive id": "79"
+                "buff": {
+                    "buff turns (37)": "2", 
+                    "increase bb gauge gradual buff": 10
+                }, 
+                "damage threshold buff activation": 5000, 
+                "passive id": "78"
             }
         ], 
         "name": "Shining Darkness Scales"
