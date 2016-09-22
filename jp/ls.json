@@ -618,7 +618,7 @@
         "name": "洸潔神の励界"
     }, 
     "10121": {
-        "desc": "全てのユニットの全能力を４０％アップ＆被ダメージ時、ＢＢゲージを大幅に増加＆被ダメージが一定数を超える度に１ターン、被ダメージを少し軽減", 
+        "desc": "全てのユニットの全能力を４０％アップ＆被ダメージ時、ＢＢゲージを大幅に増加＆被ダメージが一定数を超える度に２ターン、被ダメージを少し軽減", 
         "effects": [
             {
                 "atk% buff": 40, 
@@ -4422,6 +4422,51 @@
             }
         ], 
         "name": "殲究神の皇覇力"
+    }, 
+    "1948": {
+        "desc": "全てのユニットの攻撃力を６０％アップ・最大ＨＰを３０％アップ＆クリティカルダメージをかなりアップ＆ＢＣ・ＨＣ出現率を大幅にアップ", 
+        "effects": [
+            {
+                "atk% buff": 60, 
+                "hp% buff": 30, 
+                "passive id": "1"
+            }, 
+            {
+                "crit multiplier%": 100.0, 
+                "passive id": "34"
+            }, 
+            {
+                "bc drop rate% buff": 20, 
+                "hc drop rate% buff": 20, 
+                "passive id": "19"
+            }
+        ], 
+        "name": "誅翠神の旋技"
+    }, 
+    "1949": {
+        "desc": "全てのユニットの攻撃力を８０％アップ・最大ＨＰを４０％アップ＆クリティカルダメージを大幅にアップ＆ＢＣ・ＨＣ出現率を超絶アップ＆与ダメージが一定数を超える度にＢＢゲージをかなり増加", 
+        "effects": [
+            {
+                "atk% buff": 80, 
+                "hp% buff": 40, 
+                "passive id": "1"
+            }, 
+            {
+                "crit multiplier%": 150.0, 
+                "passive id": "34"
+            }, 
+            {
+                "bc drop rate% buff": 25, 
+                "hc drop rate% buff": 25, 
+                "passive id": "19"
+            }, 
+            {
+                "damage dealt threshold activation": 30000, 
+                "increase bb gauge": 7, 
+                "passive id": "81"
+            }
+        ], 
+        "name": "誅翠殺神の殲技"
     }, 
     "2": {
         "desc": "リーダースキル１説明", 
@@ -12032,6 +12077,106 @@
             }
         ], 
         "name": "真皇神の聖覇光"
+    }, 
+    "7459": {
+        "desc": "全てのユニットの攻撃力・最大ＨＰを４０％アップ＆炎・水属性の弱点属性ダメージを大幅にアップ＆炎・樹属性ユニットからの被ダメージを１５％軽減", 
+        "effects": [
+            {
+                "atk% buff": 40, 
+                "hp% buff": 40, 
+                "passive id": "1"
+            }, 
+            {
+                "dmg% mitigation for elemental attacks": 15.0, 
+                "mitigate earth attacks": true, 
+                "mitigate fire attacks": true, 
+                "passive id": "62"
+            }, 
+            {
+                "elemental weakness multiplier%": 100.0, 
+                "fire units do extra elemental weakness dmg": true, 
+                "passive id": "50", 
+                "water units do extra elemental weakness dmg": true
+            }
+        ], 
+        "name": "奉竜神の絢翼"
+    }, 
+    "7460": {
+        "desc": "全てのユニットの攻撃力・最大ＨＰを５０％アップ＆炎・水属性の弱点属性ダメージを大幅にアップ＆炎・樹属性ユニットからの被ダメージを１５％軽減＆被ダメージが一定数を超える度に２ターン、被ダメージを少し軽減", 
+        "effects": [
+            {
+                "atk% buff": 50, 
+                "hp% buff": 50, 
+                "passive id": "1"
+            }, 
+            {
+                "dmg% mitigation for elemental attacks": 15.0, 
+                "mitigate earth attacks": true, 
+                "mitigate fire attacks": true, 
+                "passive id": "62"
+            }, 
+            {
+                "elemental weakness multiplier%": 150.0, 
+                "fire units do extra elemental weakness dmg": true, 
+                "passive id": "50", 
+                "water units do extra elemental weakness dmg": true
+            }, 
+            {
+                "buff": {
+                    "buff turns (36)": "1", 
+                    "dmg reduction% buff": 20
+                }, 
+                "damage threshold buff activation": 5000, 
+                "passive id": "78"
+            }
+        ], 
+        "name": "鵬竜覇神の暁翼"
+    }, 
+    "7461": {
+        "desc": "全てのユニットの攻撃力・最大ＨＰを４０％アップ＆確率でスパークダメージ耐性を２ターン少し低下＆スパークダメージを８０％アップ", 
+        "effects": [
+            {
+                "atk% buff": 40, 
+                "hp% buff": 40, 
+                "passive id": "1"
+            }, 
+            {
+                "damage% for spark": 80, 
+                "passive id": "31"
+            }, 
+            {
+                "passive id": "75", 
+                "spark debuff chance%": 10, 
+                "spark debuff turns": 1, 
+                "spark debuff%": 15
+            }
+        ], 
+        "name": "怨獅神の魂牙"
+    }, 
+    "7462": {
+        "desc": "全てのユニットの攻撃力・最大ＨＰを５０％アップ＆確率でスパークダメージ耐性を２ターン少し低下＆スパークダメージを１００％アップ＆ターン毎にＢＢゲージを大幅に増加", 
+        "effects": [
+            {
+                "atk% buff": 50, 
+                "hp% buff": 50, 
+                "passive id": "1"
+            }, 
+            {
+                "damage% for spark": 100, 
+                "passive id": "31"
+            }, 
+            {
+                "passive id": "75", 
+                "spark debuff chance%": 10, 
+                "spark debuff turns": 1, 
+                "spark debuff%": 20
+            }, 
+            {
+                "bc fill per turn": 6, 
+                "passive id": "9"
+            }
+        ], 
+        "name": "金獅冠神の煌牙"
     }, 
     "7500": {
         "desc": "確率でＨＰを少し吸収", 
