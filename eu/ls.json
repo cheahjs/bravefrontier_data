@@ -332,6 +332,46 @@
         ], 
         "name": "Scientific God's Protection"
     }, 
+    "10110": {
+        "desc": "20% boost to all parameters & considerably boosts BB gauge each turn", 
+        "effects": [
+            {
+                "atk% buff": 20, 
+                "def% buff": 20, 
+                "hp% buff": 20, 
+                "passive id": "1", 
+                "rec% buff": 20
+            }, 
+            {
+                "bc fill per turn": 4, 
+                "passive id": "9"
+            }
+        ], 
+        "name": "Bow God's Discipline"
+    }, 
+    "10111": {
+        "desc": "35% boost to all parameters, considerably boosts BB gauge each turn & Spark damage boosts BB gauge", 
+        "effects": [
+            {
+                "atk% buff": 35, 
+                "def% buff": 35, 
+                "hp% buff": 35, 
+                "passive id": "1", 
+                "rec% buff": 35
+            }, 
+            {
+                "bc fill per turn": 4, 
+                "passive id": "9"
+            }, 
+            {
+                "bc fill on spark high": 3, 
+                "bc fill on spark low": 2, 
+                "bc fill on spark%": 100, 
+                "passive id": "47"
+            }
+        ], 
+        "name": "Bow God's Volley"
+    }, 
     "102": {
         "desc": "50% boost to Atk power and 10% increase in HP of Fire types", 
         "effects": [
@@ -756,6 +796,29 @@
             }
         ], 
         "name": "Water of Lore"
+    }, 
+    "117": {
+        "desc": "120% boost to Atk of Water types, enormously boosts Spark damage & probable boost to enemies' Spark vulnerability for 2 turns (after effect is triggered)", 
+        "effects": [
+            {
+                "atk% buff": 120, 
+                "elements buffed": [
+                    "water"
+                ], 
+                "passive id": "2"
+            }, 
+            {
+                "damage% for spark": 100, 
+                "passive id": "31"
+            }, 
+            {
+                "passive id": "75", 
+                "spark debuff chance%": 10, 
+                "spark debuff turns": 1, 
+                "spark debuff%": 20
+            }
+        ], 
+        "name": "Ice Drill's Power"
     }, 
     "12": {
         "desc": "リーダースキル1説明", 
@@ -1445,6 +1508,28 @@
             }
         ], 
         "name": "Heavenly Thunder's Power"
+    }, 
+    "138": {
+        "desc": "120% boost to Atk of Thunder types, boosts BC, HC drop rate & hugely boosts BB gauge fill rate", 
+        "effects": [
+            {
+                "atk% buff": 120, 
+                "elements buffed": [
+                    "thunder"
+                ], 
+                "passive id": "2"
+            }, 
+            {
+                "bc drop rate% buff": 15, 
+                "hc drop rate% buff": 15, 
+                "passive id": "19"
+            }, 
+            {
+                "bb gauge fill rate%": 50, 
+                "passive id": "32"
+            }
+        ], 
+        "name": "Golden Thunder's Power"
     }, 
     "14": {
         "desc": "リーダースキル1説明", 
@@ -2574,6 +2659,40 @@
             }
         ], 
         "name": "Dark Lady's Annihilation"
+    }, 
+    "1925": {
+        "desc": "40% boost to Atk & reduces BB gauge required for BB", 
+        "effects": [
+            {
+                "atk% buff": 40, 
+                "passive id": "1"
+            }, 
+            {
+                "passive id": "48", 
+                "reduced bb bc cost%": 15
+            }
+        ], 
+        "name": "Bloody Shadow Blade"
+    }, 
+    "1926": {
+        "desc": "80% boost to Atk, considerably reduces BB gauge required for BB & damage taken considerably boosts BB gauge", 
+        "effects": [
+            {
+                "atk% buff": 80, 
+                "passive id": "1"
+            }, 
+            {
+                "passive id": "48", 
+                "reduced bb bc cost%": 25
+            }, 
+            {
+                "bc fill when attacked high": 6, 
+                "bc fill when attacked low": 3, 
+                "bc fill when attacked%": 100, 
+                "passive id": "25"
+            }
+        ], 
+        "name": "Bloody Burial Blade"
     }, 
     "2": {
         "desc": "Leader Skill 1 Description", 
@@ -5207,6 +5326,22 @@
         ], 
         "name": "Immersing Holiness"
     }, 
+    "4303": {
+        "desc": "40% boost to max HP, Def & probable damage reduction", 
+        "effects": [
+            {
+                "def% buff": 40, 
+                "hp% buff": 40, 
+                "passive id": "1"
+            }, 
+            {
+                "dmg reduction chance%": 15, 
+                "dmg reduction%": 25, 
+                "passive id": "14"
+            }
+        ], 
+        "name": "Stone God's Sanctuary"
+    }, 
     "4310": {
         "desc": "30% boost to max HP and Def for all Units", 
         "effects": [
@@ -6634,6 +6769,88 @@
             }
         ], 
         "name": "Spiritual Conviction"
+    }, 
+    "5520": {
+        "desc": "30% boost to max HP & probable Spark vulnerability for 2 turns", 
+        "effects": [
+            {
+                "hp% buff": 30, 
+                "passive id": "1"
+            }, 
+            {
+                "passive id": "75", 
+                "spark debuff chance%": 10, 
+                "spark debuff turns": 1, 
+                "spark debuff%": 20
+            }
+        ], 
+        "name": "King's Flashing Axe"
+    }, 
+    "5521": {
+        "desc": "40% boost to max HP, hugely boosts Atk relative to remaining HP & probable Spark vulnerability for 2 turns", 
+        "effects": [
+            {
+                "hp% buff": 40, 
+                "passive id": "1"
+            }, 
+            {
+                "passive id": "75", 
+                "spark debuff chance%": 10, 
+                "spark debuff turns": 1, 
+                "spark debuff%": 20
+            }, 
+            {
+                "atk% base buff": 0, 
+                "atk% extra buff based on hp": 120, 
+                "buff proportional to hp": "remaining", 
+                "passive id": "46"
+            }
+        ], 
+        "name": "Obliterating Wrath Axe"
+    }, 
+    "5522": {
+        "desc": "30% boost to max HP & boosts damage against status afflicted foes", 
+        "effects": [
+            {
+                "hp% buff": 30, 
+                "passive id": "1"
+            }, 
+            {
+                "atk% buff when enemy has ailment": 50, 
+                "atk% buff when enemy has curse": true, 
+                "atk% buff when enemy has injury": true, 
+                "atk% buff when enemy has paralysis": true, 
+                "atk% buff when enemy has poison": true, 
+                "atk% buff when enemy has sick": true, 
+                "atk% buff when enemy has weaken": true, 
+                "passive id": "74"
+            }
+        ], 
+        "name": "Scorpio's Sigil"
+    }, 
+    "5523": {
+        "desc": "40% boost to max HP, considerably boosts OD gauge fill rate & hugely boosts damage against status afflicted foes", 
+        "effects": [
+            {
+                "hp% buff": 40, 
+                "passive id": "1"
+            }, 
+            {
+                "atk% buff when enemy has ailment": 100, 
+                "atk% buff when enemy has curse": true, 
+                "atk% buff when enemy has injury": true, 
+                "atk% buff when enemy has paralysis": true, 
+                "atk% buff when enemy has poison": true, 
+                "atk% buff when enemy has sick": true, 
+                "atk% buff when enemy has weaken": true, 
+                "passive id": "74"
+            }, 
+            {
+                "od fill rate%": 20, 
+                "passive id": "70"
+            }
+        ], 
+        "name": "Scorpio's Guidance"
     }, 
     "5600": {
         "desc": "25% boost to Atk of all Light and Dark Units", 
@@ -8099,6 +8316,35 @@
         ], 
         "name": "Mantis Noblesse"
     }, 
+    "730146": {
+        "desc": "Boosts ATK and HP (30%) & Boosts Spark damage (50%) for 2 turns when sparks have exceeded certain amount (20) & Boosts Spark damage (50%) & Spark damage boosts BB gauge (2-3 BC)", 
+        "effects": [
+            {
+                "bc fill on spark high": 3, 
+                "bc fill on spark low": 2, 
+                "bc fill on spark%": 100, 
+                "passive id": "47"
+            }, 
+            {
+                "damage% for spark": 50, 
+                "passive id": "31"
+            }, 
+            {
+                "atk% buff": 30, 
+                "hp% buff": 30, 
+                "passive id": "1"
+            }, 
+            {
+                "buff": {
+                    "buff turns (40)": "2", 
+                    "spark dmg% buff": 50
+                }, 
+                "passive id": "86", 
+                "spark count buff activation": 20
+            }
+        ], 
+        "name": "Mantis Elegance"
+    }, 
     "730153": {
         "desc": "Boosts in BB gauge fill rate (20%)", 
         "effects": [
@@ -8645,6 +8891,33 @@
         ], 
         "name": "Destruction God's Chakra"
     }, 
+    "740216": {
+        "desc": "Boosts HP (40%) & Negates critical damage & Reduce damage taken (10%) & Boosts ATK and DEF when BB gauge is full (80%)", 
+        "effects": [
+            {
+                "hp% buff": 40, 
+                "passive id": "1"
+            }, 
+            {
+                "dmg% mitigation": 10, 
+                "passive id": "8"
+            }, 
+            {
+                "crit chance base resist%": 100, 
+                "crit chance buffed resist%": 100, 
+                "crit dmg base damage resist%": 100, 
+                "crit dmg buffed damage resist%": 100, 
+                "passive id": "53"
+            }, 
+            {
+                "atk% buff": 80, 
+                "bb gauge above % buff requirement": 100, 
+                "def% buff": 80, 
+                "passive id": "30"
+            }
+        ], 
+        "name": "Multiple Heritages"
+    }, 
     "7403": {
         "desc": "30% boost to max HP and Atk of all allies, boosts critical damage & critical damage greatly boosts BB gauge", 
         "effects": [
@@ -8939,6 +9212,83 @@
             }
         ], 
         "name": "Vile Serpent's Delusion"
+    }, 
+    "7418": {
+        "desc": "30% boost to Atk, max HP & damage taken boosts BB gauge", 
+        "effects": [
+            {
+                "atk% buff": 30, 
+                "hp% buff": 30, 
+                "passive id": "1"
+            }, 
+            {
+                "bc fill when attacked high": 3, 
+                "bc fill when attacked low": 2, 
+                "bc fill when attacked%": 100, 
+                "passive id": "25"
+            }
+        ], 
+        "name": "Flame Spider's Threads"
+    }, 
+    "7419": {
+        "desc": "30% boost to Atk, max HP, damage taken considerably boosts BB gauge & raises normal hit amount", 
+        "effects": [
+            {
+                "atk% buff": 30, 
+                "hp% buff": 30, 
+                "passive id": "1"
+            }, 
+            {
+                "bc fill when attacked high": 5, 
+                "bc fill when attacked low": 3, 
+                "bc fill when attacked%": 100, 
+                "passive id": "25"
+            }, 
+            {
+                "extra hits dmg%": -50, 
+                "hit increase/hit": 1, 
+                "passive id": "37"
+            }
+        ], 
+        "name": "Flame Spider's Silk"
+    }, 
+    "7420": {
+        "desc": "30% boost to Atk, max HP & considerably boosts BB Atk", 
+        "effects": [
+            {
+                "atk% buff": 30, 
+                "hp% buff": 30, 
+                "passive id": "1"
+            }, 
+            {
+                "bb atk% buff": 100, 
+                "passive id": "64", 
+                "sbb atk% buff": 100, 
+                "ubb atk% buff": 100
+            }
+        ], 
+        "name": "Light God's Authority"
+    }, 
+    "7421": {
+        "desc": "40% boost to Atk, max HP, hugely boosts BB Atk & 75% boost to Spark damage", 
+        "effects": [
+            {
+                "atk% buff": 40, 
+                "hp% buff": 40, 
+                "passive id": "1"
+            }, 
+            {
+                "bb atk% buff": 150, 
+                "passive id": "64", 
+                "sbb atk% buff": 150, 
+                "ubb atk% buff": 150
+            }, 
+            {
+                "damage% for spark": 75, 
+                "passive id": "31"
+            }
+        ], 
+        "name": "Light God's Majesty"
     }, 
     "7500": {
         "desc": "Adds chance of slightly absorbing HP when attacking", 
