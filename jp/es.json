@@ -12473,6 +12473,114 @@
         "name": "獅王たる証", 
         "target": "self"
     }, 
+    "23500": {
+        "desc": "残りＨＰが多いほど、攻撃力をアップ", 
+        "effects": [
+            {
+                "atk% base buff": 0, 
+                "atk% extra buff based on hp": 50, 
+                "buff proportional to hp": "remaining", 
+                "conditions": [], 
+                "passive id": "46", 
+                "passive target": "self"
+            }
+        ], 
+        "name": "ラビットプライド", 
+        "target": "self"
+    }, 
+    "23600": {
+        "desc": "ＢＣ獲得時の増加量を少しアップ＆ＢＣ・ＨＣ出現率をかなりアップ", 
+        "effects": [
+            {
+                "bb gauge fill rate%": 15, 
+                "conditions": [], 
+                "passive id": "32", 
+                "passive target": "self"
+            }, 
+            {
+                "bc drop rate% buff": 15, 
+                "conditions": [], 
+                "hc drop rate% buff": 15, 
+                "passive id": "19", 
+                "passive target": "self"
+            }
+        ], 
+        "name": "甘いお菓子は好き？", 
+        "target": "self"
+    }, 
+    "23700": {
+        "desc": "クリティカル時、ＢＢゲージをかなり増加", 
+        "effects": [
+            {
+                "bc fill on crit max": 4, 
+                "bc fill on crit min": 4, 
+                "bc fill on crit%": 100.0, 
+                "conditions": [], 
+                "passive id": "65", 
+                "passive target": "self"
+            }
+        ], 
+        "name": "傭兵の直感", 
+        "target": "self"
+    }, 
+    "23800": {
+        "desc": "低確率で被ダメージを超絶軽減", 
+        "effects": [
+            {
+                "conditions": [], 
+                "passive id": "43", 
+                "passive target": "self", 
+                "take 1 dmg%": 15
+            }
+        ], 
+        "name": "クロノバリア", 
+        "target": "self"
+    }, 
+    "23900": {
+        "desc": "「攻撃強化系」タイプのスフィアを装備時、攻撃力・防御力・回復力・最大ＨＰを３０％アップ＆通常攻撃ＨＩＴ数を増加＆ＢＢ及びＳＢＢに「味方全体に３ターン、クリティカル率を超絶アップ」を追加", 
+        "effects": [
+            {
+                "atk% buff": 30, 
+                "conditions": [
+                    {
+                        "sphere category required": "Atk Boosting", 
+                        "sphere category required (raw)": "13"
+                    }
+                ], 
+                "def% buff": 30, 
+                "hp% buff": 30, 
+                "passive id": "1", 
+                "passive target": "self", 
+                "rec% buff": 30
+            }, 
+            {
+                "conditions": [], 
+                "hit increase/hit": 1, 
+                "passive id": "37", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "passive id": "66", 
+                "passive target": "self", 
+                "trigger on bb": true, 
+                "trigger on sbb": true, 
+                "triggered effect": [
+                    {
+                        "buff turns": 3, 
+                        "crit% buff (7)": 60, 
+                        "effect delay time(ms)/frame": "0.0/0", 
+                        "element buffed": "all", 
+                        "proc id": "5", 
+                        "target area": "aoe", 
+                        "target type": "party"
+                    }
+                ]
+            }
+        ], 
+        "name": "シェイプシフター", 
+        "target": "self"
+    }, 
     "2400": {
         "desc": "確率で被ダメージの１５％を相手に反射する", 
         "effects": [
@@ -12486,6 +12594,56 @@
             }
         ], 
         "name": "永遠なる獄焔", 
+        "target": "self"
+    }, 
+    "24000": {
+        "desc": "「攻撃強化系」タイプのスフィアを装備時、攻撃力・防御力・回復力・最大ＨＰを３０％アップ＆ＢＢ及びＳＢＢに「味方全体に３ターン、攻撃に雷・闇属性を付与」を追加＆確率で１回まで戦闘不能を耐える", 
+        "effects": [
+            {
+                "atk% buff": 30, 
+                "conditions": [
+                    {
+                        "sphere category required": "Atk Boosting", 
+                        "sphere category required (raw)": "13"
+                    }
+                ], 
+                "def% buff": 30, 
+                "hp% buff": 30, 
+                "passive id": "1", 
+                "passive target": "self", 
+                "rec% buff": 30
+            }, 
+            {
+                "conditions": [], 
+                "passive id": "66", 
+                "passive target": "self", 
+                "trigger on bb": true, 
+                "trigger on sbb": true, 
+                "triggered effect": [
+                    {
+                        "effect delay time(ms)/frame": "0.0/0", 
+                        "elements added": [
+                            "thunder", 
+                            "dark"
+                        ], 
+                        "elements added turns": 3, 
+                        "proc id": "30", 
+                        "target area": "aoe", 
+                        "target type": "party"
+                    }
+                ]
+            }, 
+            {
+                "angel idol chance% condition": 0, 
+                "angel idol recover chance% high": 20, 
+                "angel idol recover chance% low": 20, 
+                "angel idol recover counts": 1, 
+                "conditions": [], 
+                "passive id": "69", 
+                "passive target": "self"
+            }
+        ], 
+        "name": "凶魔の覚醒", 
         "target": "self"
     }, 
     "2500": {
