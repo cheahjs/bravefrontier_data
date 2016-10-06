@@ -11963,6 +11963,342 @@
             }
         ]
     }, 
+    "850418": {
+        "category": {
+            "1": {
+                "name": "\u30b9\u30c6\u30a2\u30c3\u30d7\u7cfb"
+            }, 
+            "11": {
+                "name": "\u7279\u6b8a"
+            }, 
+            "2": {
+                "name": "\u30b9\u30d1\u30fc\u30af\u7cfb"
+            }, 
+            "5": {
+                "name": "\uff22\uff22\u30b2\u30fc\u30b8\u7cfb"
+            }
+        }, 
+        "skills": [
+            {
+                "category": "1", 
+                "dependency": "", 
+                "dependency comment": "", 
+                "id": "1000000057", 
+                "skill": {
+                    "bp": 20, 
+                    "desc": "", 
+                    "effects": [
+                        {
+                            "passive": {
+                                "hp% buff": 30, 
+                                "passive id": "1"
+                            }
+                        }
+                    ], 
+                    "id": "1000000057", 
+                    "level": 1, 
+                    "name": "30% boost to max HP", 
+                    "series": "1000000057"
+                }
+            }, 
+            {
+                "category": "1", 
+                "dependency": "1@1000000057", 
+                "dependency comment": "", 
+                "id": "1000000058", 
+                "skill": {
+                    "bp": 10, 
+                    "desc": "", 
+                    "effects": [
+                        {
+                            "passive": {
+                                "hp% buff": 20, 
+                                "passive id": "1"
+                            }
+                        }
+                    ], 
+                    "id": "1000000058", 
+                    "level": 1, 
+                    "name": "50% boost to max HP", 
+                    "series": "1000000058"
+                }
+            }, 
+            {
+                "category": "2", 
+                "dependency": "", 
+                "dependency comment": "", 
+                "id": "1000000059", 
+                "skill": {
+                    "bp": 30, 
+                    "desc": "", 
+                    "effects": [
+                        {
+                            "passive": {
+                                "buff": {
+                                    "buff turns (40)": "2", 
+                                    "spark dmg% buff": 70
+                                }, 
+                                "damage dealt threshold buff activation": 25000, 
+                                "passive id": "80"
+                            }
+                        }
+                    ], 
+                    "id": "1000000059", 
+                    "level": 3, 
+                    "name": "70% boost to Spark damage when damage dealt has exceeded certain amount", 
+                    "series": "1000000059"
+                }
+            }, 
+            {
+                "category": "5", 
+                "dependency": "", 
+                "dependency comment": "", 
+                "id": "4300000", 
+                "skill": {
+                    "bp": 20, 
+                    "desc": "Considerably reduces BB gauge required for BB", 
+                    "effects": [
+                        {
+                            "passive": {
+                                "passive id": "48", 
+                                "reduced bb bc cost%": 25
+                            }
+                        }
+                    ], 
+                    "id": "4300000", 
+                    "level": 2, 
+                    "name": "Considerably reduces BB gauge required for BB", 
+                    "series": "4300000"
+                }
+            }, 
+            {
+                "category": "11", 
+                "dependency": "", 
+                "dependency comment": "", 
+                "id": "1000000060", 
+                "skill": {
+                    "bp": 30, 
+                    "desc": "", 
+                    "effects": [
+                        {
+                            "passive": {
+                                "passive id": "66", 
+                                "trigger on bb": true, 
+                                "trigger on sbb": true, 
+                                "triggered effect": [
+                                    {
+                                        "effect delay time(ms)/frame": "0.0/0", 
+                                        "heal high": 4000, 
+                                        "heal low": 3500, 
+                                        "proc id": "2", 
+                                        "rec added% (from healer)": 40.0, 
+                                        "target area": "aoe", 
+                                        "target type": "party"
+                                    }
+                                ]
+                            }
+                        }
+                    ], 
+                    "id": "1000000060", 
+                    "level": 5, 
+                    "name": "Add Effect to BB/SBB (Greatly restores HP)", 
+                    "series": "1000000060"
+                }
+            }, 
+            {
+                "category": "11", 
+                "dependency": "", 
+                "dependency comment": "", 
+                "id": "1000000061", 
+                "skill": {
+                    "bp": 30, 
+                    "desc": "", 
+                    "effects": [
+                        {
+                            "passive": {
+                                "passive id": "66", 
+                                "trigger on bb": true, 
+                                "trigger on sbb": true, 
+                                "triggered effect": [
+                                    {
+                                        "effect delay time(ms)/frame": "0.0/0", 
+                                        "gradual heal high": 3500, 
+                                        "gradual heal low": 3000, 
+                                        "gradual heal turns (8)": 3, 
+                                        "proc id": "3", 
+                                        "rec added% (from target)": 10.0, 
+                                        "target area": "aoe", 
+                                        "target type": "party"
+                                    }
+                                ]
+                            }
+                        }
+                    ], 
+                    "id": "1000000061", 
+                    "level": 5, 
+                    "name": "Add Effect to BB/SBB (Greatly restores HP for 3 turns)", 
+                    "series": "1000000061"
+                }
+            }, 
+            {
+                "category": "11", 
+                "dependency": "", 
+                "dependency comment": "", 
+                "id": "1000000062", 
+                "skill": {
+                    "bp": 30, 
+                    "desc": "", 
+                    "effects": [
+                        {
+                            "passive": {
+                                "passive id": "66", 
+                                "trigger on bb": true, 
+                                "trigger on sbb": true, 
+                                "triggered effect": [
+                                    {
+                                        "effect delay time(ms)/frame": "0.0/0", 
+                                        "increase bb gauge": 8, 
+                                        "proc id": "31", 
+                                        "target area": "aoe", 
+                                        "target type": "party"
+                                    }
+                                ]
+                            }
+                        }
+                    ], 
+                    "id": "1000000062", 
+                    "level": 5, 
+                    "name": "Add Effect to BB/SBB (Hugely boosts BB gauge)", 
+                    "series": "1000000062"
+                }
+            }, 
+            {
+                "category": "11", 
+                "dependency": "", 
+                "dependency comment": "", 
+                "id": "1000000063", 
+                "skill": {
+                    "bp": 30, 
+                    "desc": "", 
+                    "effects": [
+                        {
+                            "passive": {
+                                "passive id": "66", 
+                                "trigger on bb": true, 
+                                "trigger on sbb": true, 
+                                "triggered effect": [
+                                    {
+                                        "effect delay time(ms)/frame": "0.0/0", 
+                                        "increase bb gauge gradual": 7, 
+                                        "increase bb gauge gradual turns (37)": 3, 
+                                        "proc id": "19", 
+                                        "target area": "aoe", 
+                                        "target type": "party"
+                                    }
+                                ]
+                            }
+                        }
+                    ], 
+                    "id": "1000000063", 
+                    "level": 5, 
+                    "name": "Add Effect to BB/SBB (Hugely boosts BB gauge for 3 turns)", 
+                    "series": "1000000063"
+                }
+            }, 
+            {
+                "category": "11", 
+                "dependency": "", 
+                "dependency comment": "", 
+                "id": "1000000064", 
+                "skill": {
+                    "bp": 30, 
+                    "desc": "", 
+                    "effects": [
+                        {
+                            "passive": {
+                                "passive id": "66", 
+                                "trigger on bb": true, 
+                                "trigger on sbb": true, 
+                                "triggered effect": [
+                                    {
+                                        "effect delay time(ms)/frame": "0.0/0", 
+                                        "elements added": [
+                                            "light", 
+                                            "dark"
+                                        ], 
+                                        "elements added turns": 3, 
+                                        "proc id": "30", 
+                                        "target area": "aoe", 
+                                        "target type": "party"
+                                    }
+                                ]
+                            }
+                        }
+                    ], 
+                    "id": "1000000064", 
+                    "level": 4, 
+                    "name": "Add Effect to BB/SBB (Adds Light and Dark element to attack for 3 turns)", 
+                    "series": "1000000064"
+                }
+            }, 
+            {
+                "category": "11", 
+                "dependency": "", 
+                "dependency comment": "", 
+                "id": "1000000065", 
+                "skill": {
+                    "bp": 30, 
+                    "desc": "", 
+                    "effects": [
+                        {
+                            "add to bb": {
+                                "unknown proc id": "93", 
+                                "unknown proc param": "0,0,0,0,0,0,1,0,0,0"
+                            }
+                        }, 
+                        {
+                            "add to bb": {
+                                "atk down resist% (120)": 0, 
+                                "def down resist% (121)": 0, 
+                                "proc id": "73", 
+                                "rec down resist% (122)": 0, 
+                                "stat down immunity buff turns": 1
+                            }
+                        }
+                    ], 
+                    "id": "1000000065", 
+                    "level": 4, 
+                    "name": "Allows BB Null Crit, Elemental Weakness, Stats Debuff buff to last 1 more turn", 
+                    "series": "1000000065"
+                }
+            }, 
+            {
+                "category": "11", 
+                "dependency": "", 
+                "dependency comment": "", 
+                "id": "1000000066", 
+                "skill": {
+                    "bp": 20, 
+                    "desc": "", 
+                    "effects": [
+                        {
+                            "add to sbb": {
+                                "bc fill when attacked high": 1, 
+                                "bc fill when attacked low": 1, 
+                                "bc fill when attacked turns (38)": 0, 
+                                "bc fill when attacked%": 0, 
+                                "proc id": "20"
+                            }
+                        }
+                    ], 
+                    "id": "1000000066", 
+                    "level": 3, 
+                    "name": "Enhances SBB BB gauge boost when damage taken", 
+                    "series": "1000000065"
+                }
+            }
+        ]
+    }, 
     "860167": {
         "category": {
             "1": {
