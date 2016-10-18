@@ -12775,6 +12775,76 @@
         "name": "原始の大海", 
         "target": "self"
     }, 
+    "25000": {
+        "desc": "ＢＢゲージが半分以上の時、攻撃力・防御力をアップ＆被ダメージ時、ＢＢゲージを増加・確率でＨＰを回復", 
+        "effects": [
+            {
+                "conditions": [], 
+                "dmg% to hp% when attacked chance%": 25, 
+                "dmg% to hp% when attacked high": 20, 
+                "dmg% to hp% when attacked low": 20, 
+                "passive id": "24", 
+                "passive target": "self"
+            }, 
+            {
+                "bc fill when attacked high": 3, 
+                "bc fill when attacked low": 2, 
+                "bc fill when attacked%": 100, 
+                "conditions": [], 
+                "passive id": "25", 
+                "passive target": "self"
+            }, 
+            {
+                "atk% buff": 50, 
+                "bb gauge above % buff requirement": 50, 
+                "conditions": [], 
+                "def% buff": 50, 
+                "passive id": "30", 
+                "passive target": "self"
+            }
+        ], 
+        "name": "双璧の真炎", 
+        "target": "self"
+    }, 
+    "25100": {
+        "desc": "ＢＢ及びＳＢＢに「味方全体に水属性のバリアを付与」を追加＆ＢＢ発動に必要なＢＢゲージ量を軽減＆確率で被ダメージを２０％軽減", 
+        "effects": [
+            {
+                "conditions": [], 
+                "dmg reduction chance%": 20, 
+                "dmg reduction%": 20, 
+                "passive id": "14", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "passive id": "48", 
+                "passive target": "self", 
+                "reduced bb bc cost%": 20
+            }, 
+            {
+                "conditions": [], 
+                "passive id": "66", 
+                "passive target": "self", 
+                "trigger on bb": true, 
+                "trigger on sbb": true, 
+                "triggered effect": [
+                    {
+                        "effect delay time(ms)/frame": "0.0/0", 
+                        "elemental barrier absorb dmg%": 100, 
+                        "elemental barrier def": 0, 
+                        "elemental barrier element": "water", 
+                        "elemental barrier hp": 3000, 
+                        "proc id": "62", 
+                        "target area": "aoe", 
+                        "target type": "party"
+                    }
+                ]
+            }
+        ], 
+        "name": "極光の叡智", 
+        "target": "self"
+    }, 
     "2600": {
         "desc": "ＢＢゲージが満タン時、攻撃力をかなりアップ", 
         "effects": [
