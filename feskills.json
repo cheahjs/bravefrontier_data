@@ -3818,6 +3818,318 @@
             }
         ]
     }, 
+    "20887": {
+        "category": {
+            "1": {
+                "name": "\u30b9\u30c6\u30a2\u30c3\u30d7\u7cfb"
+            }, 
+            "10": {
+                "name": "\u30c0\u30e1\u30fc\u30b8\u8efd\u6e1b\u7cfb"
+            }, 
+            "11": {
+                "name": "\u7279\u6b8a"
+            }
+        }, 
+        "skills": [
+            {
+                "category": "1", 
+                "dependency": "", 
+                "dependency comment": "", 
+                "id": "710000", 
+                "skill": {
+                    "bp": 20, 
+                    "desc": "20% boost to all parameters", 
+                    "effects": [
+                        {
+                            "passive": {
+                                "atk% buff": 20, 
+                                "def% buff": 20, 
+                                "hp% buff": 20, 
+                                "passive id": "1", 
+                                "rec% buff": 20
+                            }
+                        }
+                    ], 
+                    "id": "710000", 
+                    "level": 2, 
+                    "name": "20% boost to all parameters", 
+                    "series": "700000"
+                }
+            }, 
+            {
+                "category": "1", 
+                "dependency": "", 
+                "dependency comment": "", 
+                "id": "251001", 
+                "skill": {
+                    "bp": 10, 
+                    "desc": "Boosts Def relative to how low remaining HP is", 
+                    "effects": [
+                        {
+                            "passive": {
+                                "buff proportional to hp": "lost", 
+                                "def% base buff": 0, 
+                                "def% extra buff based on hp": 50, 
+                                "passive id": "46"
+                            }
+                        }
+                    ], 
+                    "id": "251001", 
+                    "level": 3, 
+                    "name": "Boosts Def relative to how low remaining HP is", 
+                    "series": "100000"
+                }
+            }, 
+            {
+                "category": "10", 
+                "dependency": "", 
+                "dependency comment": "", 
+                "id": "9300001", 
+                "skill": {
+                    "bp": 20, 
+                    "desc": "Negates elemental damage", 
+                    "effects": [
+                        {
+                            "passive": {
+                                "passive id": "53", 
+                                "strong base element damage resist%": 100, 
+                                "strong buffed element damage resist%": 100
+                            }
+                        }
+                    ], 
+                    "id": "9300001", 
+                    "level": 4, 
+                    "name": "Negates elemental damage", 
+                    "series": "9300000"
+                }
+            }, 
+            {
+                "category": "11", 
+                "dependency": "", 
+                "dependency comment": "", 
+                "id": "20002000", 
+                "skill": {
+                    "bp": 30, 
+                    "desc": "Enhances LS's all parameters boost from 40% to 50%", 
+                    "effects": [
+                        {
+                            "add to passive": {
+                                "atk% buff": 10, 
+                                "def% buff": 10, 
+                                "hp% buff": 10, 
+                                "passive id": "1", 
+                                "rec% buff": 10
+                            }
+                        }
+                    ], 
+                    "id": "20002000", 
+                    "level": 1, 
+                    "name": "Enhances LS's 40% boost to all parameters effect", 
+                    "series": "20200000"
+                }
+            }, 
+            {
+                "category": "11", 
+                "dependency": "", 
+                "dependency comment": "", 
+                "id": "32001000", 
+                "skill": {
+                    "bp": 50, 
+                    "desc": "Enhances SBB's critical damage boost effect", 
+                    "effects": [
+                        {
+                            "add to sbb": {
+                                "buff turns (84)": 0, 
+                                "crit multiplier%": 25.0, 
+                                "proc id": "54"
+                            }
+                        }
+                    ], 
+                    "id": "32001000", 
+                    "level": 4, 
+                    "name": "Enhances SBB's critical damage boost effect", 
+                    "series": "32001000"
+                }
+            }, 
+            {
+                "category": "11", 
+                "dependency": "", 
+                "dependency comment": "", 
+                "id": "55000002", 
+                "skill": {
+                    "bp": 30, 
+                    "desc": "Adds great HP restoration effect to BB/SBB", 
+                    "effects": [
+                        {
+                            "passive": {
+                                "passive id": "66", 
+                                "trigger on bb": true, 
+                                "trigger on sbb": true, 
+                                "triggered effect": [
+                                    {
+                                        "effect delay time(ms)/frame": "66.7/4", 
+                                        "heal high": 3000, 
+                                        "heal low": 2000, 
+                                        "proc id": "2", 
+                                        "rec added% (from healer)": 11.0, 
+                                        "target area": "aoe", 
+                                        "target type": "party"
+                                    }
+                                ]
+                            }
+                        }
+                    ], 
+                    "id": "55000002", 
+                    "level": 5, 
+                    "name": "Adds great HP restoration effect to BB/SBB", 
+                    "series": "55000000"
+                }
+            }, 
+            {
+                "category": "11", 
+                "dependency": "", 
+                "dependency comment": "", 
+                "id": "57000005", 
+                "skill": {
+                    "bp": 20, 
+                    "desc": "Adds status ailment removal effect to BB/SBB", 
+                    "effects": [
+                        {
+                            "passive": {
+                                "passive id": "66", 
+                                "trigger on bb": true, 
+                                "trigger on sbb": true, 
+                                "triggered effect": [
+                                    {
+                                        "ailments cured": [
+                                            "poison", 
+                                            "weaken", 
+                                            "sick", 
+                                            "injury", 
+                                            "curse", 
+                                            "paralysis", 
+                                            "atk down", 
+                                            "def down", 
+                                            "rec down"
+                                        ], 
+                                        "effect delay time(ms)/frame": "0.0/0", 
+                                        "proc id": "38", 
+                                        "target area": "aoe", 
+                                        "target type": "party"
+                                    }
+                                ]
+                            }
+                        }
+                    ], 
+                    "id": "57000005", 
+                    "level": 6, 
+                    "name": "Adds status ailment removal effect to BB/SBB", 
+                    "series": "57000000"
+                }
+            }, 
+            {
+                "category": "11", 
+                "dependency": "", 
+                "dependency comment": "", 
+                "id": "60005100", 
+                "skill": {
+                    "bp": 30, 
+                    "desc": "Adds considerable OD gauge fill rate boost for 3 turns effect to BB", 
+                    "effects": [
+                        {
+                            "passive": {
+                                "passive id": "66", 
+                                "trigger on bb": true, 
+                                "triggered effect": [
+                                    {
+                                        "effect delay time(ms)/frame": "0.0/0", 
+                                        "od fill rate buff turns (132)": 3, 
+                                        "od fill rate% buff": 20, 
+                                        "proc id": "84", 
+                                        "target area": "aoe", 
+                                        "target type": "party"
+                                    }
+                                ]
+                            }
+                        }
+                    ], 
+                    "id": "60005100", 
+                    "level": 6, 
+                    "name": "Adds considerable OD gauge fill rate boost effect to BB", 
+                    "series": "60005000"
+                }
+            }, 
+            {
+                "category": "11", 
+                "dependency": "", 
+                "dependency comment": "", 
+                "id": "59001001", 
+                "skill": {
+                    "bp": 40, 
+                    "desc": "Adds critical damage negation for 1 turn effect to BB/SBB", 
+                    "effects": [
+                        {
+                            "passive": {
+                                "passive id": "66", 
+                                "trigger on bb": true, 
+                                "trigger on sbb": true, 
+                                "triggered effect": [
+                                    {
+                                        "effect delay time(ms)/frame": "0.0/0", 
+                                        "target area": "aoe", 
+                                        "target type": "party", 
+                                        "unknown proc id": "93", 
+                                        "unknown proc param": "100,100,0,0,0,0,1,0"
+                                    }
+                                ]
+                            }
+                        }
+                    ], 
+                    "id": "59001001", 
+                    "level": 5, 
+                    "name": "Adds critical damage negation to BB/SBB", 
+                    "series": "59001000"
+                }
+            }, 
+            {
+                "category": "11", 
+                "dependency": "", 
+                "dependency comment": "", 
+                "id": "57004100", 
+                "skill": {
+                    "bp": 10, 
+                    "desc": "Adds status ailment negation for 3 turns effect to SBB", 
+                    "effects": [
+                        {
+                            "passive": {
+                                "passive id": "66", 
+                                "trigger on sbb": true, 
+                                "triggered effect": [
+                                    {
+                                        "effect delay time(ms)/frame": "0.0/0", 
+                                        "proc id": "17", 
+                                        "resist curse% (34)": 100.0, 
+                                        "resist injury% (33)": 100.0, 
+                                        "resist paralysis% (35)": 100.0, 
+                                        "resist poison% (30)": 100.0, 
+                                        "resist sick% (32)": 100.0, 
+                                        "resist status ails turns": 3, 
+                                        "resist weaken% (31)": 100.0, 
+                                        "target area": "aoe", 
+                                        "target type": "party"
+                                    }
+                                ]
+                            }
+                        }
+                    ], 
+                    "id": "57004100", 
+                    "level": 4, 
+                    "name": "Adds status ailment negation effect to SBB", 
+                    "series": "57004000"
+                }
+            }
+        ]
+    }, 
     "30017": {
         "category": {
             "1": {
@@ -6855,6 +7167,261 @@
             }
         ]
     }, 
+    "40827": {
+        "category": {
+            "1": {
+                "name": "\u30b9\u30c6\u30a2\u30c3\u30d7\u7cfb"
+            }, 
+            "11": {
+                "name": "\u7279\u6b8a"
+            }, 
+            "4": {
+                "name": "\u653b\u6483\u5f37\u5316\u7cfb"
+            }, 
+            "8": {
+                "name": "\u7570\u5e38\u8010\u6027\u7cfb"
+            }
+        }, 
+        "skills": [
+            {
+                "category": "1", 
+                "dependency": "", 
+                "dependency comment": "", 
+                "id": "140001", 
+                "skill": {
+                    "bp": 20, 
+                    "desc": "50% boost to Atk", 
+                    "effects": [
+                        {
+                            "passive": {
+                                "atk% buff": 50, 
+                                "passive id": "1"
+                            }
+                        }
+                    ], 
+                    "id": "140001", 
+                    "level": 1, 
+                    "name": "50% boost to Atk", 
+                    "series": "100000"
+                }
+            }, 
+            {
+                "category": "1", 
+                "dependency": "", 
+                "dependency comment": "", 
+                "id": "170001", 
+                "skill": {
+                    "bp": 10, 
+                    "desc": "Boosts Atk when BB gauge is over 50%", 
+                    "effects": [
+                        {
+                            "passive": {
+                                "atk% buff": 50, 
+                                "bb gauge above % buff requirement": 50, 
+                                "passive id": "30"
+                            }
+                        }
+                    ], 
+                    "id": "170001", 
+                    "level": 4, 
+                    "name": "Boosts Atk when BB gauge is over 50%", 
+                    "series": "170000"
+                }
+            }, 
+            {
+                "category": "1", 
+                "dependency": "", 
+                "dependency comment": "", 
+                "id": "610000", 
+                "skill": {
+                    "bp": 10, 
+                    "desc": "20% boost to Def, max HP", 
+                    "effects": [
+                        {
+                            "passive": {
+                                "def% buff": 20, 
+                                "hp% buff": 20, 
+                                "passive id": "1"
+                            }
+                        }
+                    ], 
+                    "id": "610000", 
+                    "level": 1, 
+                    "name": "20% boost to Def, max HP", 
+                    "series": "600000"
+                }
+            }, 
+            {
+                "category": "4", 
+                "dependency": "", 
+                "dependency comment": "", 
+                "id": "3000001", 
+                "skill": {
+                    "bp": 20, 
+                    "desc": "Boosts BB Atk", 
+                    "effects": [
+                        {
+                            "passive": {
+                                "bb atk% buff": 50, 
+                                "passive id": "64", 
+                                "sbb atk% buff": 50, 
+                                "ubb atk% buff": 50
+                            }
+                        }
+                    ], 
+                    "id": "3000001", 
+                    "level": 3, 
+                    "name": "Boosts BB Atk", 
+                    "series": "3000000"
+                }
+            }, 
+            {
+                "category": "4", 
+                "dependency": "", 
+                "dependency comment": "", 
+                "id": "3210001", 
+                "skill": {
+                    "bp": 20, 
+                    "desc": "Low probability of Def ignoring effect", 
+                    "effects": [
+                        {
+                            "passive": {
+                                "ignore def%": 20, 
+                                "passive id": "29"
+                            }
+                        }
+                    ], 
+                    "id": "3210001", 
+                    "level": 4, 
+                    "name": "Probable Def ignoring effect", 
+                    "series": "3200000"
+                }
+            }, 
+            {
+                "category": "4", 
+                "dependency": "", 
+                "dependency comment": "", 
+                "id": "3500000", 
+                "skill": {
+                    "bp": 30, 
+                    "desc": "Normal attack may hit all foes", 
+                    "effects": [
+                        {
+                            "passive": {
+                                "aoe atk inc%": -50, 
+                                "chance to aoe": 20, 
+                                "passive id": "96"
+                            }
+                        }
+                    ], 
+                    "id": "3500000", 
+                    "level": 3, 
+                    "name": "Normal attacks may hit all foes", 
+                    "series": "3500000"
+                }
+            }, 
+            {
+                "category": "4", 
+                "dependency": "1@3500000", 
+                "dependency comment": "Unlock \"Normal attacks may hit all foes\"", 
+                "id": "3500100", 
+                "skill": {
+                    "bp": 20, 
+                    "desc": "Enhances success rate of normal attacks hitting all foes effect", 
+                    "effects": [
+                        {
+                            "passive": {
+                                "aoe atk inc%": -50, 
+                                "chance to aoe": 30, 
+                                "passive id": "96"
+                            }
+                        }
+                    ], 
+                    "id": "3500100", 
+                    "level": 4, 
+                    "name": "Enhances success rate of normal attacks hitting all foes effect", 
+                    "series": "3500000"
+                }
+            }, 
+            {
+                "category": "8", 
+                "dependency": "", 
+                "dependency comment": "", 
+                "id": "7020001", 
+                "skill": {
+                    "bp": 20, 
+                    "desc": "Negates all status ailments", 
+                    "effects": [
+                        {
+                            "passive": {
+                                "curse resist%": 100, 
+                                "injury resist%": 100, 
+                                "paralysis resist%": 100, 
+                                "passive id": "4", 
+                                "poison resist%": 100, 
+                                "sick resist%": 100, 
+                                "weaken resist%": 100
+                            }
+                        }
+                    ], 
+                    "id": "7020001", 
+                    "level": 5, 
+                    "name": "Negates all status ailments", 
+                    "series": "7020000"
+                }
+            }, 
+            {
+                "category": "11", 
+                "dependency": "", 
+                "dependency comment": "", 
+                "id": "30003000", 
+                "skill": {
+                    "bp": 30, 
+                    "desc": "Enhances BB's boost to Atk, Def, Rec effect", 
+                    "effects": [
+                        {
+                            "add to bb": {
+                                "atk% buff (1)": 10, 
+                                "buff turns": 0, 
+                                "def% buff (3)": 10, 
+                                "element buffed": "all", 
+                                "proc id": "5", 
+                                "rec% buff (5)": 10
+                            }
+                        }
+                    ], 
+                    "id": "30003000", 
+                    "level": 3, 
+                    "name": "Enhances BB's boost to Atk, Def, Rec effect", 
+                    "series": "30003000"
+                }
+            }, 
+            {
+                "category": "11", 
+                "dependency": "", 
+                "dependency comment": "", 
+                "id": "30004000", 
+                "skill": {
+                    "bp": 50, 
+                    "desc": "Enhances SBB's huge boost to Atk relative to Def effect", 
+                    "effects": [
+                        {
+                            "add to sbb": {
+                                "% converted turns": 0, 
+                                "atk% buff (46)": 20, 
+                                "converted attribute": null, 
+                                "proc id": "24"
+                            }
+                        }
+                    ], 
+                    "id": "30004000", 
+                    "level": 5, 
+                    "name": "Enhances SBB's huge boost to Atk relative to Def effect", 
+                    "series": "30004000"
+                }
+            }
+        ]
+    }, 
     "50017": {
         "category": {
             "11": {
@@ -9200,6 +9767,292 @@
                     "level": 4, 
                     "name": "Enhances BB/SBB's BB Atk boost effect", 
                     "series": "33002000"
+                }
+            }
+        ]
+    }, 
+    "51047": {
+        "category": {
+            "1": {
+                "name": "\u30b9\u30c6\u30a2\u30c3\u30d7\u7cfb"
+            }, 
+            "10": {
+                "name": "\u30c0\u30e1\u30fc\u30b8\u8efd\u6e1b\u7cfb"
+            }, 
+            "11": {
+                "name": "\u7279\u6b8a"
+            }, 
+            "2": {
+                "name": "\u30b9\u30d1\u30fc\u30af\u7cfb"
+            }
+        }, 
+        "skills": [
+            {
+                "category": "1", 
+                "dependency": "", 
+                "dependency comment": "", 
+                "id": "710000", 
+                "skill": {
+                    "bp": 20, 
+                    "desc": "20% boost to all parameters", 
+                    "effects": [
+                        {
+                            "passive": {
+                                "atk% buff": 20, 
+                                "def% buff": 20, 
+                                "hp% buff": 20, 
+                                "passive id": "1", 
+                                "rec% buff": 20
+                            }
+                        }
+                    ], 
+                    "id": "710000", 
+                    "level": 2, 
+                    "name": "20% boost to all parameters", 
+                    "series": "700000"
+                }
+            }, 
+            {
+                "category": "1", 
+                "dependency": "1@710000", 
+                "dependency comment": "Unlock \"20% boost to all parameters\"", 
+                "id": "740100", 
+                "skill": {
+                    "bp": 40, 
+                    "desc": "Raises all parameters boost from 20% to 50%", 
+                    "effects": [
+                        {
+                            "passive": {
+                                "atk% buff": 50, 
+                                "def% buff": 50, 
+                                "hp% buff": 50, 
+                                "passive id": "1", 
+                                "rec% buff": 50
+                            }
+                        }
+                    ], 
+                    "id": "740100", 
+                    "level": 4, 
+                    "name": "50% boost to all parameters", 
+                    "series": "700000"
+                }
+            }, 
+            {
+                "category": "1", 
+                "dependency": "", 
+                "dependency comment": "", 
+                "id": "170002", 
+                "skill": {
+                    "bp": 20, 
+                    "desc": "Boosts Atk when BB gauge is over 50%", 
+                    "effects": [
+                        {
+                            "passive": {
+                                "atk% buff": 50, 
+                                "bb gauge above % buff requirement": 50, 
+                                "passive id": "30"
+                            }
+                        }
+                    ], 
+                    "id": "170002", 
+                    "level": 4, 
+                    "name": "Boosts Atk when BB gauge is over 50%", 
+                    "series": "170000"
+                }
+            }, 
+            {
+                "category": "1", 
+                "dependency": "", 
+                "dependency comment": "", 
+                "id": "270000", 
+                "skill": {
+                    "bp": 20, 
+                    "desc": "Boosts Def when BB gauge is over 50%", 
+                    "effects": [
+                        {
+                            "passive": {
+                                "bb gauge above % buff requirement": 50, 
+                                "def% buff": 50, 
+                                "passive id": "30"
+                            }
+                        }
+                    ], 
+                    "id": "270000", 
+                    "level": 4, 
+                    "name": "Boosts Def when BB gauge is over 50%", 
+                    "series": "270000"
+                }
+            }, 
+            {
+                "category": "2", 
+                "dependency": "", 
+                "dependency comment": "", 
+                "id": "1020001", 
+                "skill": {
+                    "bp": 20, 
+                    "desc": "50% boost to Spark damage", 
+                    "effects": [
+                        {
+                            "passive": {
+                                "damage% for spark": 50, 
+                                "passive id": "31"
+                            }
+                        }
+                    ], 
+                    "id": "1020001", 
+                    "level": 3, 
+                    "name": "50% boost to Spark damage", 
+                    "series": "1000000"
+                }
+            }, 
+            {
+                "category": "2", 
+                "dependency": "1@1020001", 
+                "dependency comment": "Unlock \"50% boost to Spark damage\"", 
+                "id": "1000301", 
+                "skill": {
+                    "bp": 20, 
+                    "desc": "Raises Spark damage boost from 50% to 70%", 
+                    "effects": [
+                        {
+                            "passive": {
+                                "damage% for spark": 70, 
+                                "passive id": "31"
+                            }
+                        }
+                    ], 
+                    "id": "1000301", 
+                    "level": 4, 
+                    "name": "Boosts 50% Spark damage to 70% Spark damage", 
+                    "series": "1000000"
+                }
+            }, 
+            {
+                "category": "10", 
+                "dependency": "", 
+                "dependency comment": "", 
+                "id": "9300002", 
+                "skill": {
+                    "bp": 10, 
+                    "desc": "Negates elemental damage", 
+                    "effects": [
+                        {
+                            "passive": {
+                                "passive id": "53", 
+                                "strong base element damage resist%": 100, 
+                                "strong buffed element damage resist%": 100
+                            }
+                        }
+                    ], 
+                    "id": "9300002", 
+                    "level": 4, 
+                    "name": "Negates elemental damage", 
+                    "series": "9300000"
+                }
+            }, 
+            {
+                "category": "11", 
+                "dependency": "", 
+                "dependency comment": "", 
+                "id": "50010000", 
+                "skill": {
+                    "bp": 30, 
+                    "desc": "Enhances BB/SBB's considerable Atk, Def boost for Light types effect", 
+                    "effects": [
+                        {
+                            "passive": {
+                                "passive id": "66", 
+                                "trigger on bb": true, 
+                                "trigger on sbb": true, 
+                                "triggered effect": [
+                                    {
+                                        "atk% buff (13)": 120, 
+                                        "buff turns": 3, 
+                                        "def% buff (14)": 120, 
+                                        "effect delay time(ms)/frame": "16.7/1", 
+                                        "element buffed": "light", 
+                                        "proc id": "5", 
+                                        "target area": "aoe", 
+                                        "target type": "party"
+                                    }
+                                ]
+                            }
+                        }
+                    ], 
+                    "id": "50010000", 
+                    "level": 5, 
+                    "name": "Enhances BB/SBB's Atk, Def boost for Light types effect", 
+                    "series": "50010000"
+                }
+            }, 
+            {
+                "category": "11", 
+                "dependency": "", 
+                "dependency comment": "", 
+                "id": "41000002", 
+                "skill": {
+                    "bp": 40, 
+                    "desc": "Enhances BB/SBB/UBB's Spark damage boost effect", 
+                    "effects": [
+                        {
+                            "add to bb": {
+                                "buff turns": 0, 
+                                "proc id": "23", 
+                                "spark dmg% buff (40)": 30
+                            }
+                        }, 
+                        {
+                            "add to sbb": {
+                                "buff turns": 0, 
+                                "proc id": "23", 
+                                "spark dmg% buff (40)": 30
+                            }
+                        }, 
+                        {
+                            "add to ubb": {
+                                "buff turns": 0, 
+                                "proc id": "23", 
+                                "spark dmg% buff (40)": 30
+                            }
+                        }
+                    ], 
+                    "id": "41000002", 
+                    "level": 5, 
+                    "name": "Enhances BB/SBB/UBB's Spark damage boost effect", 
+                    "series": "41000000"
+                }
+            }, 
+            {
+                "category": "11", 
+                "dependency": "", 
+                "dependency comment": "", 
+                "id": "54000200", 
+                "skill": {
+                    "bp": 30, 
+                    "desc": "Adds huge boost to BB gauge for 3 turns effect to BB/SBB", 
+                    "effects": [
+                        {
+                            "passive": {
+                                "passive id": "66", 
+                                "trigger on bb": true, 
+                                "trigger on sbb": true, 
+                                "triggered effect": [
+                                    {
+                                        "effect delay time(ms)/frame": "0.0/0", 
+                                        "increase bb gauge gradual": 7, 
+                                        "increase bb gauge gradual turns (37)": 3, 
+                                        "proc id": "19", 
+                                        "target area": "aoe", 
+                                        "target type": "party"
+                                    }
+                                ]
+                            }
+                        }
+                    ], 
+                    "id": "54000200", 
+                    "level": 5, 
+                    "name": "Adds huge boost to BB gauge each turn effect to BB/SBB", 
+                    "series": "54000000"
                 }
             }
         ]
@@ -14111,7 +14964,7 @@
                 "id": "1000010012", 
                 "skill": {
                     "bp": 50, 
-                    "desc": "50% damage reduction from Dark Types", 
+                    "desc": "80% damage reduction from Dark Types", 
                     "effects": [
                         {
                             "passive": {
@@ -14123,7 +14976,7 @@
                     ], 
                     "id": "1000010012", 
                     "level": 10, 
-                    "name": "50% damage reduction from Dark Types", 
+                    "name": "80% damage reduction from Dark Types", 
                     "series": "1000010012"
                 }
             }, 
