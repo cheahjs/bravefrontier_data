@@ -8376,6 +8376,36 @@
         "name": "神鎖の魂録", 
         "target": "self"
     }, 
+    "1015820": {
+        "desc": "ＨＰを２０％アップ＆全状態異常を無効＆確率で防御貫通効果を付与", 
+        "effects": [
+            {
+                "conditions": [], 
+                "hp% buff": 20, 
+                "passive id": "1", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "curse resist%": 100, 
+                "injury resist%": 100, 
+                "paralysis resist%": 100, 
+                "passive id": "4", 
+                "passive target": "self", 
+                "poison resist%": 100, 
+                "sick resist%": 100, 
+                "weaken resist%": 100
+            }, 
+            {
+                "conditions": [], 
+                "ignore def%": 20, 
+                "passive id": "29", 
+                "passive target": "self"
+            }
+        ], 
+        "name": "煌迅の魂録", 
+        "target": "self"
+    }, 
     "10200": {
         "desc": "ＢＣ獲得時の増加量を少しアップ＆ＨＣ獲得時の回復量を少しアップ", 
         "effects": [
@@ -12845,6 +12875,194 @@
         "name": "極光の叡智", 
         "target": "self"
     }, 
+    "25200": {
+        "desc": "残りＨＰが多いほど、防御力を少しアップ＆ＢＣ獲得時の増加量を少しアップ＆被ダメージ時、確率でＨＰを少し回復", 
+        "effects": [
+            {
+                "bb gauge fill rate%": 20, 
+                "conditions": [], 
+                "passive id": "32", 
+                "passive target": "self"
+            }, 
+            {
+                "buff proportional to hp": "remaining", 
+                "conditions": [], 
+                "def% base buff": 0, 
+                "def% extra buff based on hp": 30, 
+                "passive id": "46", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "dmg% to hp% when attacked chance%": 20, 
+                "dmg% to hp% when attacked high": 15, 
+                "dmg% to hp% when attacked low": 15, 
+                "passive id": "24", 
+                "passive target": "self"
+            }
+        ], 
+        "name": "燃えたつ心", 
+        "target": "self"
+    }, 
+    "25300": {
+        "desc": "「攻撃強化系」タイプのスフィアを装備時、攻撃力・防御力・回復力・最大ＨＰを２０％アップ＆ＢＣ獲得時の増加量を少しアップ", 
+        "effects": [
+            {
+                "bb gauge fill rate%": 20, 
+                "conditions": [], 
+                "passive id": "32", 
+                "passive target": "self"
+            }, 
+            {
+                "atk% buff": 20, 
+                "conditions": [
+                    {
+                        "sphere category required": "Atk Boosting", 
+                        "sphere category required (raw)": "13"
+                    }
+                ], 
+                "def% buff": 20, 
+                "hp% buff": 20, 
+                "passive id": "1", 
+                "passive target": "self", 
+                "rec% buff": 20
+            }
+        ], 
+        "name": "静かなる闘志", 
+        "target": "self"
+    }, 
+    "25400": {
+        "desc": "被ダメージ時、ＢＢゲージを少し増加・確率でＨＰを少し回復", 
+        "effects": [
+            {
+                "conditions": [], 
+                "dmg% to hp% when attacked chance%": 25, 
+                "dmg% to hp% when attacked high": 20, 
+                "dmg% to hp% when attacked low": 15, 
+                "passive id": "24", 
+                "passive target": "self"
+            }, 
+            {
+                "bc fill when attacked high": 2, 
+                "bc fill when attacked low": 1, 
+                "bc fill when attacked%": 100, 
+                "conditions": [], 
+                "passive id": "25", 
+                "passive target": "self"
+            }
+        ], 
+        "name": "秘められた想い", 
+        "target": "self"
+    }, 
+    "25500": {
+        "desc": "ＢＢゲージが半分以上の時、攻撃力・防御力を少しアップ＆ターン毎にＢＢゲージを増加", 
+        "effects": [
+            {
+                "atk% buff": 30, 
+                "bb gauge above % buff requirement": 50, 
+                "conditions": [], 
+                "def% buff": 30, 
+                "passive id": "30", 
+                "passive target": "self"
+            }, 
+            {
+                "bc fill per turn": 3, 
+                "conditions": [], 
+                "passive id": "9", 
+                "passive target": "self"
+            }
+        ], 
+        "name": "屈せぬ焔魂", 
+        "target": "self"
+    }, 
+    "25600": {
+        "desc": "ＢＢゲージが半分以上の時、攻撃力・防御力をアップ＆ターン毎にＢＢゲージをかなり増加", 
+        "effects": [
+            {
+                "atk% buff": 50, 
+                "bb gauge above % buff requirement": 50, 
+                "conditions": [], 
+                "def% buff": 50, 
+                "passive id": "30", 
+                "passive target": "self"
+            }, 
+            {
+                "bc fill per turn": 4, 
+                "conditions": [], 
+                "passive id": "9", 
+                "passive target": "self"
+            }
+        ], 
+        "name": "天恵たる融和", 
+        "target": "self"
+    }, 
+    "25700": {
+        "desc": "確率でスパークダメージ耐性を２ターン少し低下＆ＨＰが満タン時、スパークダメージをアップ", 
+        "effects": [
+            {
+                "conditions": [], 
+                "damage% for spark": 50, 
+                "hp above % buff requirement": 100, 
+                "passive id": "104", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "passive id": "75", 
+                "passive target": "self", 
+                "spark debuff chance%": 10, 
+                "spark debuff turns": 1, 
+                "spark debuff%": 20
+            }
+        ], 
+        "name": "雷光の影護", 
+        "target": "self"
+    }, 
+    "25800": {
+        "desc": "確率でスパークダメージ耐性を２ターン低下＆ＨＰが満タン時、スパークダメージを大幅にアップ", 
+        "effects": [
+            {
+                "conditions": [], 
+                "damage% for spark": 80, 
+                "hp above % buff requirement": 100, 
+                "passive id": "104", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "passive id": "75", 
+                "passive target": "self", 
+                "spark debuff chance%": 10, 
+                "spark debuff turns": 1, 
+                "spark debuff%": 25
+            }
+        ], 
+        "name": "勇躍する雷影", 
+        "target": "self"
+    }, 
+    "25900": {
+        "desc": "防御貫通効果を無効＆被ダメージが一定数を超える度に２ターン、被ダメージを少し軽減", 
+        "effects": [
+            {
+                "conditions": [], 
+                "ignore def resist chance%": 100, 
+                "passive id": "92", 
+                "passive target": "self"
+            }, 
+            {
+                "buff": {
+                    "buff turns (36)": "1", 
+                    "dmg reduction% buff": 20
+                }, 
+                "conditions": [], 
+                "damage threshold buff activation": 5000, 
+                "passive id": "78", 
+                "passive target": "self"
+            }
+        ], 
+        "name": "冷徹なる権謀", 
+        "target": "self"
+    }, 
     "2600": {
         "desc": "ＢＢゲージが満タン時、攻撃力をかなりアップ", 
         "effects": [
@@ -12857,6 +13075,29 @@
             }
         ], 
         "name": "肉体を超越せし精神", 
+        "target": "self"
+    }, 
+    "26000": {
+        "desc": "防御貫通効果を無効＆被ダメージが一定数を超える度に２ターン、被ダメージを軽減", 
+        "effects": [
+            {
+                "conditions": [], 
+                "ignore def resist chance%": 100, 
+                "passive id": "92", 
+                "passive target": "self"
+            }, 
+            {
+                "buff": {
+                    "buff turns (36)": "1", 
+                    "dmg reduction% buff": 25
+                }, 
+                "conditions": [], 
+                "damage threshold buff activation": 5000, 
+                "passive id": "78", 
+                "passive target": "self"
+            }
+        ], 
+        "name": "理想への決意", 
         "target": "self"
     }, 
     "2601": {
