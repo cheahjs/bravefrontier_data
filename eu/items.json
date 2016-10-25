@@ -16861,6 +16861,146 @@
         "thumbnail": "item_thum_700027.png", 
         "type": "material"
     }, 
+    "700028": {
+        "desc": "A flask coming from a mysterious place...", 
+        "id": 700028, 
+        "max_stack": 99, 
+        "name": "Destruction Essence", 
+        "raid": false, 
+        "rarity": 6, 
+        "sell_price": 1, 
+        "thumbnail": "item_thum_70600.png", 
+        "type": "material"
+    }, 
+    "700029": {
+        "desc": "Boosts all stats (20%) & Boosts Spark damage (30%)", 
+        "effect": [
+            {
+                "atk% buff": 20, 
+                "def% buff": 20, 
+                "hp% buff": 20, 
+                "passive id": "1", 
+                "rec% buff": 20
+            }, 
+            {
+                "damage% for spark": 30, 
+                "passive id": "31"
+            }
+        ], 
+        "id": 700029, 
+        "max_stack": 1, 
+        "name": "Terrestrial Destroyer", 
+        "raid": false, 
+        "rarity": 4, 
+        "recipe": {
+            "karma": "9999999", 
+            "materials": [
+                {
+                    "count": 1, 
+                    "id": 700028
+                }
+            ]
+        }, 
+        "sell_price": 50000, 
+        "sphere type": 1, 
+        "sphere type text": "Status Boost", 
+        "thumbnail": "sphere_thum_4_7.png", 
+        "type": "sphere"
+    }, 
+    "700030": {
+        "desc": "Boosts all stats (35%) & Boosts Spark damage (50%) & Negates status ailments", 
+        "effect": [
+            {
+                "atk% buff": 35, 
+                "def% buff": 35, 
+                "hp% buff": 35, 
+                "passive id": "1", 
+                "rec% buff": 35
+            }, 
+            {
+                "damage% for spark": 50, 
+                "passive id": "31"
+            }, 
+            {
+                "curse resist%": 100, 
+                "injury resist%": 100, 
+                "paralysis resist%": 100, 
+                "passive id": "4", 
+                "poison resist%": 100, 
+                "sick resist%": 100, 
+                "weaken resist%": 100
+            }
+        ], 
+        "id": 700030, 
+        "max_stack": 1, 
+        "name": "Astral Destoyer", 
+        "raid": false, 
+        "rarity": 5, 
+        "recipe": {
+            "karma": "99999999", 
+            "materials": [
+                {
+                    "count": 1, 
+                    "id": 700029
+                }
+            ]
+        }, 
+        "sell_price": 100000, 
+        "sphere type": 1, 
+        "sphere type text": "Status Boost", 
+        "thumbnail": "sphere_thum_4_5.png", 
+        "type": "sphere"
+    }, 
+    "700031": {
+        "desc": "Boosts all stats (70%) & Boosts Spark damage (150%) & Negates status ailments & Boosts BB gauge on Spark (1-2BC)", 
+        "effect": [
+            {
+                "atk% buff": 70, 
+                "def% buff": 70, 
+                "hp% buff": 70, 
+                "passive id": "1", 
+                "rec% buff": 70
+            }, 
+            {
+                "damage% for spark": 150, 
+                "passive id": "31"
+            }, 
+            {
+                "curse resist%": 100, 
+                "injury resist%": 100, 
+                "paralysis resist%": 100, 
+                "passive id": "4", 
+                "poison resist%": 100, 
+                "sick resist%": 100, 
+                "weaken resist%": 100
+            }, 
+            {
+                "bc fill on spark high": 2, 
+                "bc fill on spark low": 1, 
+                "bc fill on spark%": 100, 
+                "passive id": "47"
+            }
+        ], 
+        "id": 700031, 
+        "max_stack": 1, 
+        "name": "Galactic Destroyer", 
+        "raid": false, 
+        "rarity": 6, 
+        "recipe": {
+            "karma": "999999999", 
+            "materials": [
+                {
+                    "count": 1, 
+                    "id": 700030
+                }
+            ]
+        }, 
+        "sell_price": 200000, 
+        "sphere type": 1, 
+        "sphere type text": "Status Boost", 
+        "thumbnail": "sphere_thum_4_4.png", 
+        "type": "sphere"
+    }, 
     "70100": {
         "desc": "Guarantees escape from battle.", 
         "effect": {
@@ -17266,6 +17406,148 @@
         "sphere type": 1, 
         "sphere type text": "Status Boost", 
         "thumbnail": "sphere_thum_5_5.png", 
+        "type": "sphere"
+    }, 
+    "701010": {
+        "desc": "Boosts ATK (50%) & Boosts ATK (50%) when BB gauge full & Boosts damages to ailed ennemies (50%) & Chance to inflict weakness (15%)", 
+        "effect": [
+            {
+                "atk% buff": 50, 
+                "passive id": "1"
+            }, 
+            {
+                "atk% buff": 50, 
+                "bb gauge above % buff requirement": 100, 
+                "passive id": "30"
+            }, 
+            {
+                "atk% buff when enemy has ailment": 50, 
+                "atk% buff when enemy has curse": true, 
+                "atk% buff when enemy has injury": true, 
+                "atk% buff when enemy has paralysis": true, 
+                "atk% buff when enemy has poison": true, 
+                "atk% buff when enemy has sick": true, 
+                "atk% buff when enemy has weaken": true, 
+                "passive id": "74"
+            }, 
+            {
+                "passive id": "20", 
+                "weaken%": 15
+            }
+        ], 
+        "id": 701010, 
+        "max_stack": 1, 
+        "name": "Admiral's Hook", 
+        "raid": true, 
+        "rarity": 5, 
+        "recipe": {
+            "karma": "300000", 
+            "materials": [
+                {
+                    "count": 1, 
+                    "id": 701009
+                }, 
+                {
+                    "count": 1, 
+                    "id": 30006
+                }, 
+                {
+                    "count": 8, 
+                    "id": 10207
+                }, 
+                {
+                    "count": 8, 
+                    "id": 10312
+                }
+            ]
+        }, 
+        "sell_price": 50000, 
+        "sphere type": 13, 
+        "sphere type text": "Atk Boosting", 
+        "thumbnail": "sphere_thum_5_2.png", 
+        "type": "sphere"
+    }, 
+    "701011": {
+        "desc": "Boosts HP (30%) & Boosts ATK (80%) when HP is full & Boosts BB ATK (150%) & Negates elemental based damage", 
+        "effect": [
+            {
+                "hp% buff": 30, 
+                "passive id": "1"
+            }, 
+            {
+                "atk% buff": 80, 
+                "hp above % buff requirement": 100, 
+                "passive id": "11"
+            }, 
+            {
+                "passive id": "53", 
+                "strong base element damage resist%": 100, 
+                "strong buffed element damage resist%": 100
+            }
+        ], 
+        "id": 701011, 
+        "max_stack": 1, 
+        "name": "Tracker's Crossbow", 
+        "raid": true, 
+        "rarity": 5, 
+        "recipe": {
+            "karma": "300000", 
+            "materials": [
+                {
+                    "count": 1, 
+                    "id": 701009
+                }, 
+                {
+                    "count": 1, 
+                    "id": 30305
+                }, 
+                {
+                    "count": 8, 
+                    "id": 10713
+                }, 
+                {
+                    "count": 8, 
+                    "id": 10516
+                }
+            ]
+        }, 
+        "sell_price": 50000, 
+        "sphere type": 1, 
+        "sphere type text": "Status Boost", 
+        "thumbnail": "sphere_thum_2_1.png", 
+        "type": "sphere"
+    }, 
+    "701012": {
+        "desc": "Boosts DEF (40%) & Fills BB gauge when attacked (3-5BC) & Chance (10%) to reduce damage to 1 & Raises normal hit amount (+1)", 
+        "effect": [
+            {
+                "def% buff": 40, 
+                "passive id": "1"
+            }, 
+            {
+                "bc fill when attacked high": 5, 
+                "bc fill when attacked low": 3, 
+                "bc fill when attacked%": 100, 
+                "passive id": "25"
+            }, 
+            {
+                "passive id": "43", 
+                "take 1 dmg%": 10
+            }, 
+            {
+                "hit increase/hit": 1, 
+                "passive id": "37"
+            }
+        ], 
+        "id": 701012, 
+        "max_stack": 1, 
+        "name": "Gilgamesh Crown", 
+        "raid": false, 
+        "rarity": 5, 
+        "sell_price": 50000, 
+        "sphere type": 1, 
+        "sphere type text": "Status Boost", 
+        "thumbnail": "sphere_thum_2_2.png", 
         "type": "sphere"
     }, 
     "70200": {

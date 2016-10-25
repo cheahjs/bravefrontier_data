@@ -332,6 +332,23 @@
         ], 
         "name": "Scientific God's Protection"
     }, 
+    "10109": {
+        "desc": "35% boost to all parameters & 15% damage reduction from Light types", 
+        "effects": [
+            {
+                "atk% buff": 35, 
+                "def% buff": 35, 
+                "hp% buff": 35, 
+                "passive id": "1", 
+                "rec% buff": 35
+            }, 
+            {
+                "light resist%": 15, 
+                "passive id": "5"
+            }
+        ], 
+        "name": "Soul Erosion Barrier"
+    }, 
     "10110": {
         "desc": "20% boost to all parameters & considerably boosts BB gauge each turn", 
         "effects": [
@@ -724,6 +741,33 @@
         ], 
         "name": "Loving Light"
     }, 
+    "1113": {
+        "desc": "40% boost to Def, max HP of all Units, hugely boosts HC efficacy, Spark damage restores HP & restores HP each turn", 
+        "effects": [
+            {
+                "hc effectiveness%": 80, 
+                "passive id": "10"
+            }, 
+            {
+                "def% buff": 40, 
+                "hp% buff": 40, 
+                "passive id": "1"
+            }, 
+            {
+                "heal on spark high": 400, 
+                "heal on spark low": 200, 
+                "heal on spark%": 100, 
+                "passive id": "101"
+            }, 
+            {
+                "passive id": "33", 
+                "rec% added (turn heal)": 10.0, 
+                "turn heal high": 1000, 
+                "turn heal low": 500
+            }
+        ], 
+        "name": "Loving Purification Flames"
+    }, 
     "112": {
         "desc": "50% boost to Atk power and 10% increase in HP of Water types", 
         "effects": [
@@ -819,6 +863,23 @@
             }
         ], 
         "name": "Ice Drill's Power"
+    }, 
+    "118": {
+        "desc": "100% boost to Atk of Water types & considerably boosts BB gauge each turn", 
+        "effects": [
+            {
+                "atk% buff": 100, 
+                "elements buffed": [
+                    "water"
+                ], 
+                "passive id": "2"
+            }, 
+            {
+                "bc fill per turn": 4, 
+                "passive id": "9"
+            }
+        ], 
+        "name": "Water Sage's Wisdom"
     }, 
     "12": {
         "desc": "リーダースキル1説明", 
@@ -1059,6 +1120,27 @@
             }
         ], 
         "name": "Lovely Nature's Power"
+    }, 
+    "128": {
+        "desc": "120% boost to Atk of Earth types, greatly reduces BB gauge required for BB & hugely boosts BB gauge each turn", 
+        "effects": [
+            {
+                "atk% buff": 120, 
+                "elements buffed": [
+                    "earth"
+                ], 
+                "passive id": "2"
+            }, 
+            {
+                "passive id": "48", 
+                "reduced bb bc cost%": 25
+            }, 
+            {
+                "bc fill per turn": 4, 
+                "passive id": "9"
+            }
+        ], 
+        "name": "Divine Nature's Power"
     }, 
     "13": {
         "desc": "リーダースキル1説明", 
@@ -2204,6 +2286,32 @@
             }
         ], 
         "name": "Conqueror's Descent"
+    }, 
+    "1807": {
+        "desc": "80% boost to Atk, hugely boosts BB gauge fill rate & Spark damage slightly restores HP and BB gauge", 
+        "effects": [
+            {
+                "bb gauge fill rate%": 50, 
+                "passive id": "32"
+            }, 
+            {
+                "atk% buff": 80, 
+                "passive id": "1"
+            }, 
+            {
+                "bc fill on spark high": 2, 
+                "bc fill on spark low": 1, 
+                "bc fill on spark%": 100, 
+                "passive id": "47"
+            }, 
+            {
+                "heal on spark high": 400, 
+                "heal on spark low": 200, 
+                "heal on spark%": 100, 
+                "passive id": "101"
+            }
+        ], 
+        "name": "Divine Eclipse's Power"
     }, 
     "18830": {
         "desc": "25% boost to Atk Power of Fire Types", 
@@ -3742,6 +3850,22 @@
             }
         ], 
         "name": "Five Lights' Flash"
+    }, 
+    "2224": {
+        "desc": "100% boost to Atk and 30% boost to max HP when 5 elements or more are present & adds probable Def ignoring effect", 
+        "effects": [
+            {
+                "atk% buff": 100, 
+                "hp% buff": 30, 
+                "passive id": "41", 
+                "unique elements required": 5
+            }, 
+            {
+                "ignore def%": 20, 
+                "passive id": "29"
+            }
+        ], 
+        "name": "Five Lights' Punishment"
     }, 
     "2300": {
         "desc": "Boost in critical hit damage", 
@@ -6381,6 +6505,28 @@
         ], 
         "name": "Master Thief's Secret"
     }, 
+    "5403": {
+        "desc": "30% boost to max HP, enormously boosts BC, HC, Zel and Karma drop rates & boosts EXP gained", 
+        "effects": [
+            {
+                "bc drop rate% buff": 20, 
+                "hc drop rate% buff": 20, 
+                "item drop rate% buff": 4, 
+                "karma drop rate% buff": 15, 
+                "passive id": "19", 
+                "zel drop rate% buff": 20
+            }, 
+            {
+                "hp% buff": 30, 
+                "passive id": "1"
+            }, 
+            {
+                "passive id": "97", 
+                "xp gained increase%": 10
+            }
+        ], 
+        "name": "Godly Thievery"
+    }, 
     "5410": {
         "desc": "Boosts Karma drop rate", 
         "effects": [
@@ -6852,6 +6998,68 @@
         ], 
         "name": "Scorpio's Guidance"
     }, 
+    "553": {
+        "desc": "15% damage reduction from Earth types, hugely boosts Fire elemental damage against Earth types & negates all status ailments", 
+        "effects": [
+            {
+                "earth resist%": 15, 
+                "passive id": "5"
+            }, 
+            {
+                "elemental weakness multiplier%": 150.0, 
+                "fire units do extra elemental weakness dmg": true, 
+                "passive id": "50"
+            }, 
+            {
+                "curse resist%": 100, 
+                "injury resist%": 100, 
+                "paralysis resist%": 100, 
+                "passive id": "4", 
+                "poison resist%": 100, 
+                "sick resist%": 100, 
+                "weaken resist%": 100
+            }
+        ], 
+        "name": "Ardent Conviction"
+    }, 
+    "554": {
+        "desc": "15% damage reduction from Dark types, hugely boosts Light Type elemental damage & 100% boost to Spark damage", 
+        "effects": [
+            {
+                "dark resist%": 15, 
+                "passive id": "5"
+            }, 
+            {
+                "elemental weakness multiplier%": 150.0, 
+                "light units do extra elemental weakness dmg": true, 
+                "passive id": "50"
+            }, 
+            {
+                "damage% for spark": 100, 
+                "passive id": "31"
+            }
+        ], 
+        "name": "Royal Flash Conviction"
+    }, 
+    "555": {
+        "desc": "15% reduction in damage from Light types, hugely boosts Dark Type elemental damage & considerably boosts OD gauge fill rate", 
+        "effects": [
+            {
+                "light resist%": 15, 
+                "passive id": "5"
+            }, 
+            {
+                "dark units do extra elemental weakness dmg": true, 
+                "elemental weakness multiplier%": 150.0, 
+                "passive id": "50"
+            }, 
+            {
+                "od fill rate%": 20, 
+                "passive id": "70"
+            }
+        ], 
+        "name": "Shadow King's Conviction"
+    }, 
     "5600": {
         "desc": "25% boost to Atk of all Light and Dark Units", 
         "effects": [
@@ -6985,6 +7193,26 @@
             }
         ], 
         "name": "Tolerant Love"
+    }, 
+    "5706": {
+        "desc": "Damage taken considerably boosts BB gauge, boosts BC efficacy & considerably reduces BB gauge required for BB", 
+        "effects": [
+            {
+                "bc fill when attacked high": 6, 
+                "bc fill when attacked low": 3, 
+                "bc fill when attacked%": 100, 
+                "passive id": "25"
+            }, 
+            {
+                "bb gauge fill rate%": 30, 
+                "passive id": "32"
+            }, 
+            {
+                "passive id": "48", 
+                "reduced bb bc cost%": 25
+            }
+        ], 
+        "name": "Maiden's Wanderlust"
     }, 
     "5800": {
         "desc": "Probable boost in the BB gauge produced during Spark", 
@@ -8207,6 +8435,38 @@
         ], 
         "name": "Ice Doll"
     }, 
+    "720216": {
+        "desc": "Boosts HP and DEF (40%) & Reduces Fire, Water, Earth, Thunder damage taken (10%) & Chance (10%) to reduce damage taken to 1 & Damage taken restores HP (10%) for 2 turns when damage taken exceeds a certain amount (20 000)", 
+        "effects": [
+            {
+                "def% buff": 40, 
+                "hp% buff": 40, 
+                "passive id": "1"
+            }, 
+            {
+                "dmg% mitigation for elemental attacks": 10.0, 
+                "mitigate earth attacks": true, 
+                "mitigate fire attacks": true, 
+                "mitigate thunder attacks": true, 
+                "mitigate water attacks": true, 
+                "passive id": "62"
+            }, 
+            {
+                "passive id": "43", 
+                "take 1 dmg%": 10
+            }, 
+            {
+                "buff": {
+                    "buff turns (133)": "2", 
+                    "unknown buff id": "133", 
+                    "unknown buff params": "10&10&100"
+                }, 
+                "damage threshold buff activation": 20000, 
+                "passive id": "78"
+            }
+        ], 
+        "name": "Spiritual Guidance"
+    }, 
     "730115": {
         "desc": "35% boost to Atk Power of Female Units. Additional 30% when 5 elements or more are present", 
         "effects": [
@@ -8546,6 +8806,35 @@
             }
         ], 
         "name": "Martial Arts Master"
+    }, 
+    "730214": {
+        "desc": "Boosts all stats (20%) & Boosts HC drop rate (15%) & Boosts HC effectiveness (40%) & Boosts Spark damage (50%) for 2 turns when Sparks have exceeded certain number (20)", 
+        "effects": [
+            {
+                "atk% buff": 20, 
+                "def% buff": 20, 
+                "hp% buff": 20, 
+                "passive id": "1", 
+                "rec% buff": 20
+            }, 
+            {
+                "hc drop rate% buff": 15, 
+                "passive id": "19"
+            }, 
+            {
+                "hc effectiveness%": 40, 
+                "passive id": "10"
+            }, 
+            {
+                "buff": {
+                    "buff turns (40)": "2", 
+                    "spark dmg% buff": 50
+                }, 
+                "passive id": "86", 
+                "spark count buff activation": 20
+            }
+        ], 
+        "name": "Spirit of the Clan"
     }, 
     "7400": {
         "desc": "15% boost to Atk and max HP for all Units", 
