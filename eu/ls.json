@@ -8958,6 +8958,27 @@
         ], 
         "name": "King of the Ram "
     }, 
+    "740146": {
+        "desc": "Boosts HP (40%) & Boosts Critical damage (150%) and rate (20%) & Boosts ATK proportional to HP lost (0 - 300%)", 
+        "effects": [
+            {
+                "crit multiplier%": 150.0, 
+                "passive id": "34"
+            }, 
+            {
+                "crit% buff": 20, 
+                "hp% buff": 40, 
+                "passive id": "1"
+            }, 
+            {
+                "atk% base buff": 0, 
+                "atk% extra buff based on hp": 300, 
+                "buff proportional to hp": "lost", 
+                "passive id": "46"
+            }
+        ], 
+        "name": "Lackland King"
+    }, 
     "740153": {
         "desc": "Boosts in damage dealt to weak elements (75%)", 
         "effects": [
@@ -10255,6 +10276,44 @@
             }
         ], 
         "name": "Glaze of the Spider Queen"
+    }, 
+    "760146": {
+        "desc": "Boosts HP & ATK (40%) & Adds chance to inflict random ailments on attack (15-10%) & Boosts dmg to ailled enemy (100%) & Raises normal hit amount (+1)", 
+        "effects": [
+            {
+                "atk% buff": 40, 
+                "hp% buff": 40, 
+                "passive id": "1"
+            }, 
+            {
+                "injury%": 15, 
+                "passive id": "20", 
+                "sick%": 15, 
+                "weaken%": 15
+            }, 
+            {
+                "curse%": 10, 
+                "paralysis%": 10, 
+                "passive id": "20", 
+                "poison%": 10
+            }, 
+            {
+                "atk% buff when enemy has ailment": 100, 
+                "atk% buff when enemy has curse": true, 
+                "atk% buff when enemy has injury": true, 
+                "atk% buff when enemy has paralysis": true, 
+                "atk% buff when enemy has poison": true, 
+                "atk% buff when enemy has sick": true, 
+                "atk% buff when enemy has weaken": true, 
+                "passive id": "74"
+            }, 
+            {
+                "extra hits dmg%": -50, 
+                "hit increase/hit": 1, 
+                "passive id": "37"
+            }
+        ], 
+        "name": "Hidden Agendas"
     }, 
     "760153": {
         "desc": "Chance of slightly absorbing Hp (40% chance 3-8% DMG = HP SELF)", 
