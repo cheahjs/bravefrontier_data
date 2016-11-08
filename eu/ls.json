@@ -2104,6 +2104,35 @@
         ], 
         "name": "パラメータ変換"
     }, 
+    "160": {
+        "desc": "50% boost to Atk and 30% boost to max HP for Fire types, 100% boost to Atk, 30% boost to max HP, considerably boosts BB Atk & hugely boosts BB gauge each turn", 
+        "effects": [
+            {
+                "atk% buff": 100, 
+                "hp% buff": 30, 
+                "passive id": "1"
+            }, 
+            {
+                "atk% buff": 50, 
+                "elements buffed": [
+                    "fire"
+                ], 
+                "hp% buff": 30, 
+                "passive id": "2"
+            }, 
+            {
+                "bb atk% buff": 120, 
+                "passive id": "64", 
+                "sbb atk% buff": 120, 
+                "ubb atk% buff": 120
+            }, 
+            {
+                "bc fill per turn": 6, 
+                "passive id": "9"
+            }
+        ], 
+        "name": "Eidolon Ignis Resolve"
+    }, 
     "1600": {
         "desc": "Small boost in Zel produced during Spark", 
         "effects": [
@@ -2133,6 +2162,151 @@
             }
         ], 
         "name": "Abundant Strobe"
+    }, 
+    "161": {
+        "desc": "50% boost to Atk and 30% boost to max HP for Water types, 100% boost to Atk, 30% boost to max HP, hugely boosts BB gauge & greatly restores HP each turn", 
+        "effects": [
+            {
+                "atk% buff": 100, 
+                "hp% buff": 30, 
+                "passive id": "1"
+            }, 
+            {
+                "atk% buff": 50, 
+                "elements buffed": [
+                    "water"
+                ], 
+                "hp% buff": 30, 
+                "passive id": "2"
+            }, 
+            {
+                "passive id": "33", 
+                "rec% added (turn heal)": 10.0, 
+                "turn heal high": 1400, 
+                "turn heal low": 1200
+            }, 
+            {
+                "bc fill per turn": 6, 
+                "passive id": "9"
+            }
+        ], 
+        "name": "Eidolon Algor Resolve"
+    }, 
+    "162": {
+        "desc": "50% boost to Atk and 30% boost to max HP for Earth types, 100% boost to Atk, 30% boost to max HP, negates critical damage & hugely boosts BB gauge when damage taken has exceeded certain amount", 
+        "effects": [
+            {
+                "atk% buff": 100, 
+                "hp% buff": 30, 
+                "passive id": "1"
+            }, 
+            {
+                "atk% buff": 50, 
+                "elements buffed": [
+                    "earth"
+                ], 
+                "hp% buff": 30, 
+                "passive id": "2"
+            }, 
+            {
+                "crit chance base resist%": 100, 
+                "crit chance buffed resist%": 100, 
+                "crit dmg base damage resist%": 100, 
+                "crit dmg buffed damage resist%": 100, 
+                "passive id": "53"
+            }, 
+            {
+                "damage threshold activation": 5000, 
+                "increase bb gauge": 8, 
+                "passive id": "79"
+            }
+        ], 
+        "name": "Eidolon Terra Resolve"
+    }, 
+    "163": {
+        "desc": "50% boost to Atk and 30% boost to max HP for Thunder types, 100% boost to Atk, 30% boost to max HP, 120% boost to Spark damage & Spark damage boosts BB gauge", 
+        "effects": [
+            {
+                "atk% buff": 100, 
+                "hp% buff": 30, 
+                "passive id": "1"
+            }, 
+            {
+                "atk% buff": 50, 
+                "elements buffed": [
+                    "thunder"
+                ], 
+                "hp% buff": 30, 
+                "passive id": "2"
+            }, 
+            {
+                "damage% for spark": 120, 
+                "passive id": "31"
+            }, 
+            {
+                "bc fill on spark high": 3, 
+                "bc fill on spark low": 2, 
+                "bc fill on spark%": 100, 
+                "passive id": "47"
+            }
+        ], 
+        "name": "Eidolon Fulgur Resolve"
+    }, 
+    "164": {
+        "desc": "50% boost to Atk and 30% boost to max HP for Light types, 100% boost to Atk, 30% boost to max HP, considerably reduces BB gauge required for BB & considerably boosts BC efficacy", 
+        "effects": [
+            {
+                "atk% buff": 100, 
+                "hp% buff": 30, 
+                "passive id": "1"
+            }, 
+            {
+                "atk% buff": 50, 
+                "elements buffed": [
+                    "light"
+                ], 
+                "hp% buff": 30, 
+                "passive id": "2"
+            }, 
+            {
+                "passive id": "48", 
+                "reduced bb bc cost%": 25
+            }, 
+            {
+                "bb gauge fill rate%": 50, 
+                "passive id": "32"
+            }
+        ], 
+        "name": "Eidolon Lux Resolve"
+    }, 
+    "165": {
+        "desc": "50% boost to Atk and 30% boost to max HP for Dark types, 100% boost to Atk, 30% boost to max HP, negates elemental damage & hugely boosts BB gauge when damage dealt has exceeded certain amount", 
+        "effects": [
+            {
+                "atk% buff": 100, 
+                "hp% buff": 30, 
+                "passive id": "1"
+            }, 
+            {
+                "atk% buff": 50, 
+                "elements buffed": [
+                    "dark"
+                ], 
+                "hp% buff": 30, 
+                "passive id": "2"
+            }, 
+            {
+                "passive id": "53", 
+                "strong base element damage resist%": 100, 
+                "strong buffed element damage resist%": 100
+            }, 
+            {
+                "damage dealt threshold activation": 50000, 
+                "increase bb gauge": 8, 
+                "passive id": "81"
+            }
+        ], 
+        "name": "Eidolon Umbra Resolve"
     }, 
     "17": {
         "desc": "リーダースキル1説明", 
@@ -5742,6 +5916,121 @@
         ], 
         "name": "Imperial Magnetic Field"
     }, 
+    "4326": {
+        "desc": "30% boost to Def, max HP, slightly boosts Def, Rec when HP is low & negates all status ailments", 
+        "effects": [
+            {
+                "def% buff": 30, 
+                "hp% buff": 30, 
+                "passive id": "1"
+            }, 
+            {
+                "buff proportional to hp": "lost", 
+                "def% base buff": 0, 
+                "def% extra buff based on hp": 30, 
+                "passive id": "46", 
+                "rec% base buff": 0, 
+                "rec% extra buff based on hp": 30
+            }, 
+            {
+                "curse resist%": 100, 
+                "injury resist%": 100, 
+                "paralysis resist%": 100, 
+                "passive id": "4", 
+                "poison resist%": 100, 
+                "sick resist%": 100, 
+                "weaken resist%": 100
+            }
+        ], 
+        "name": "Emperor's Holy Ground"
+    }, 
+    "4327": {
+        "desc": "50% boost to Def, max HP, boosts Def, Rec when HP is low & negates all status ailments and elemental damage", 
+        "effects": [
+            {
+                "def% buff": 50, 
+                "hp% buff": 50, 
+                "passive id": "1"
+            }, 
+            {
+                "buff proportional to hp": "lost", 
+                "def% base buff": 0, 
+                "def% extra buff based on hp": 50, 
+                "passive id": "46", 
+                "rec% base buff": 0, 
+                "rec% extra buff based on hp": 50
+            }, 
+            {
+                "curse resist%": 100, 
+                "injury resist%": 100, 
+                "paralysis resist%": 100, 
+                "passive id": "4", 
+                "poison resist%": 100, 
+                "sick resist%": 100, 
+                "weaken resist%": 100
+            }, 
+            {
+                "passive id": "53", 
+                "strong base element damage resist%": 100, 
+                "strong buffed element damage resist%": 100
+            }
+        ], 
+        "name": "Omni Emperor's Holy Ground"
+    }, 
+    "4328": {
+        "desc": "30% boost to Def, max HP & probable random status ailment infliction", 
+        "effects": [
+            {
+                "def% buff": 30, 
+                "hp% buff": 30, 
+                "passive id": "1"
+            }, 
+            {
+                "injury%": 10, 
+                "passive id": "20", 
+                "poison%": 7, 
+                "sick%": 10, 
+                "weaken%": 10
+            }, 
+            {
+                "curse%": 7, 
+                "paralysis%": 7, 
+                "passive id": "20"
+            }
+        ], 
+        "name": "Ephemeral Sanctuary"
+    }, 
+    "4329": {
+        "desc": "40% boost to Def, max HP, slight damage reduction when damage taken has exceeded certain amount for 2 turns & probable random status ailment infliction", 
+        "effects": [
+            {
+                "def% buff": 40, 
+                "hp% buff": 40, 
+                "passive id": "1"
+            }, 
+            {
+                "injury%": 15, 
+                "passive id": "20", 
+                "poison%": 10, 
+                "sick%": 15, 
+                "weaken%": 15
+            }, 
+            {
+                "curse%": 10, 
+                "paralysis%": 10, 
+                "passive id": "20"
+            }, 
+            {
+                "buff": {
+                    "buff turns (36)": "1", 
+                    "dmg reduction% buff": 20
+                }, 
+                "damage threshold buff activation": 5000, 
+                "passive id": "78"
+            }
+        ], 
+        "name": "Ephemeral Uncharted Region"
+    }, 
     "4400": {
         "desc": "Boosts resistence to status ailments & fills BB gauge after each turn", 
         "effects": [
@@ -5805,6 +6094,38 @@
             }
         ], 
         "name": "Goddess's Revelation"
+    }, 
+    "4403": {
+        "desc": "50% boost to Rec, max HP, enormously boosts BB gauge each turn, negates all status ailments, negates all Atk, Def, Rec reduction effects & 10% damage reduction", 
+        "effects": [
+            {
+                "hp% buff": 50, 
+                "passive id": "1", 
+                "rec% buff": 50
+            }, 
+            {
+                "bc fill per turn": 8, 
+                "passive id": "9"
+            }, 
+            {
+                "atk down resist%": 100, 
+                "curse resist%": 100, 
+                "def down resist%": 100, 
+                "injury resist%": 100, 
+                "paralysis resist%": 100, 
+                "passive id": "73", 
+                "poison resist%": 100, 
+                "rec down resist%": 100, 
+                "sick resist%": 100, 
+                "weaken resist%": 100
+            }, 
+            {
+                "dmg reduction chance%": 100, 
+                "dmg reduction%": 10, 
+                "passive id": "14"
+            }
+        ], 
+        "name": "Graceful Goddess's Wish"
     }, 
     "4500": {
         "desc": "25% boost to Atk power of male Units", 
@@ -9599,6 +9920,44 @@
             }
         ], 
         "name": "Light God's Majesty"
+    }, 
+    "7423": {
+        "desc": "30% boost to max HP & 15% damage reduction from Earth, Thunder types", 
+        "effects": [
+            {
+                "hp% buff": 30, 
+                "passive id": "1"
+            }, 
+            {
+                "dmg% mitigation for elemental attacks": 15.0, 
+                "mitigate earth attacks": true, 
+                "mitigate thunder attacks": true, 
+                "passive id": "62"
+            }
+        ], 
+        "name": "World of Natural Thunder"
+    }, 
+    "7424": {
+        "desc": "40% boost to Atk, max HP, 15% damage reduction from Earth, Thunder types & raises normal hit amount", 
+        "effects": [
+            {
+                "atk% buff": 40, 
+                "hp% buff": 40, 
+                "passive id": "1"
+            }, 
+            {
+                "dmg% mitigation for elemental attacks": 15.0, 
+                "mitigate earth attacks": true, 
+                "mitigate thunder attacks": true, 
+                "passive id": "62"
+            }, 
+            {
+                "extra hits dmg%": -50, 
+                "hit increase/hit": 1, 
+                "passive id": "37"
+            }
+        ], 
+        "name": "Steel Dragon's Scale"
     }, 
     "7425": {
         "desc": "30% boost Atk, max HP & 75% boost to Spark damage", 
