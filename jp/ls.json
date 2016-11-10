@@ -6514,6 +6514,52 @@
         ], 
         "name": "可能性への研鑽"
     }, 
+    "2515": {
+        "desc": "全てのユニットの最大ＨＰを３０％アップ＆戦闘開始から３ターン、攻撃力・防御力を１２０％アップ＆確率で通常攻撃を全体攻撃化する", 
+        "effects": [
+            {
+                "first x turns": 3, 
+                "first x turns atk% (1)": 120, 
+                "first x turns def% (3)": 120, 
+                "passive id": "21"
+            }, 
+            {
+                "hp% buff": 30, 
+                "passive id": "1"
+            }, 
+            {
+                "aoe atk inc%": -50, 
+                "chance to aoe": 25, 
+                "passive id": "96"
+            }
+        ], 
+        "name": "焔闘傑の雄吼"
+    }, 
+    "2516": {
+        "desc": "全てのユニットの最大ＨＰを５０％アップ＆戦闘開始から３ターン、攻撃力・防御力を１５０％アップ＆確率で通常攻撃を全体攻撃化する＆ＡＢＰ及びＣＢＰの獲得量をかなりアップ", 
+        "effects": [
+            {
+                "first x turns": 3, 
+                "first x turns atk% (1)": 150, 
+                "first x turns def% (3)": 150, 
+                "passive id": "21"
+            }, 
+            {
+                "hp% buff": 50, 
+                "passive id": "1"
+            }, 
+            {
+                "aoe atk inc%": -50, 
+                "chance to aoe": 30, 
+                "passive id": "96"
+            }, 
+            {
+                "unknown passive id": "112", 
+                "unknown passive params": "50,25"
+            }
+        ], 
+        "name": "焔猛神闘の勇吼"
+    }, 
     "2600": {
         "desc": "通常攻撃時、確率でＢＢゲージをかなり増加", 
         "effects": [
@@ -8787,6 +8833,102 @@
             }
         ], 
         "name": "稀神皇の天慧約"
+    }, 
+    "4355": {
+        "desc": "全てのユニットの防御力を８０％アップ・最大ＨＰを３０％アップ＆ＢＢ及びＳＢＢの発動率をアップ＆被ダメージ時、ＢＢゲージを増加", 
+        "effects": [
+            {
+                "def% buff": 80, 
+                "hp% buff": 30, 
+                "passive id": "1"
+            }, 
+            {
+                "bc fill when attacked high": 4, 
+                "bc fill when attacked low": 2, 
+                "bc fill when attacked%": 100, 
+                "passive id": "25"
+            }, 
+            {
+                "unknown passive id": "111", 
+                "unknown passive params": "10"
+            }
+        ], 
+        "name": "剛闘傑の荒僥"
+    }, 
+    "4356": {
+        "desc": "全てのユニットの防御力を１００％アップ・最大ＨＰを５０％アップ＆ＢＢ及びＳＢＢの発動率をかなりアップ＆被ダメージ時、ＢＢゲージを大幅に増加＆ＡＢＰ及びＣＢＰの獲得量をかなりアップ", 
+        "effects": [
+            {
+                "def% buff": 100, 
+                "hp% buff": 50, 
+                "passive id": "1"
+            }, 
+            {
+                "bc fill when attacked high": 7, 
+                "bc fill when attacked low": 4, 
+                "bc fill when attacked%": 100, 
+                "passive id": "25"
+            }, 
+            {
+                "unknown passive id": "111", 
+                "unknown passive params": "20"
+            }, 
+            {
+                "unknown passive id": "112", 
+                "unknown passive params": "50,25"
+            }
+        ], 
+        "name": "剛毅神闘の勇檄"
+    }, 
+    "4357": {
+        "desc": "全てのユニットの防御力を８０％アップ・最大ＨＰを３０％アップ＆確率で敵のＢＢゲージを減少＆炎・水・樹・雷属性ユニットからの被ダメージを１０％軽減", 
+        "effects": [
+            {
+                "def% buff": 80, 
+                "hp% buff": 30, 
+                "passive id": "1"
+            }, 
+            {
+                "dmg% mitigation for elemental attacks": 10.0, 
+                "mitigate earth attacks": true, 
+                "mitigate fire attacks": true, 
+                "mitigate thunder attacks": true, 
+                "mitigate water attacks": true, 
+                "passive id": "62"
+            }, 
+            {
+                "unknown passive id": "110", 
+                "unknown passive params": "0,0,30,30,10,0"
+            }
+        ], 
+        "name": "華闘傑の魔衛"
+    }, 
+    "4358": {
+        "desc": "全てのユニットの防御力を１００％アップ・最大ＨＰを５０％アップ＆確率で敵のＢＢゲージをかなり減少＆炎・水・樹・雷属性ユニットからの被ダメージを１５％軽減＆ＡＢＰ及びＣＢＰの獲得量をかなりアップ", 
+        "effects": [
+            {
+                "def% buff": 100, 
+                "hp% buff": 50, 
+                "passive id": "1"
+            }, 
+            {
+                "dmg% mitigation for elemental attacks": 15.0, 
+                "mitigate earth attacks": true, 
+                "mitigate fire attacks": true, 
+                "mitigate thunder attacks": true, 
+                "mitigate water attacks": true, 
+                "passive id": "62"
+            }, 
+            {
+                "unknown passive id": "110", 
+                "unknown passive params": "0,0,50,50,20,0"
+            }, 
+            {
+                "unknown passive id": "112", 
+                "unknown passive params": "50,25"
+            }
+        ], 
+        "name": "華迅神闘の勇衛"
     }, 
     "4400": {
         "desc": "ターン毎にＢＢゲージを少し増加＆全ての状態異常にかなりかかりにくくなる", 

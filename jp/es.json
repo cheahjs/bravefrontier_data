@@ -13114,6 +13114,148 @@
         "name": "死を越えし意志", 
         "target": "self"
     }, 
+    "26100": {
+        "desc": "全てのユニットの攻撃力・防御力・回復力・最大ＨＰを１０％アップ＆残りＨＰが多いほど、攻撃力を少しアップ", 
+        "effects": [
+            {
+                "atk% buff": 10, 
+                "conditions": [], 
+                "def% buff": 10, 
+                "hp% buff": 10, 
+                "passive id": "1", 
+                "passive target": "party", 
+                "rec% buff": 10
+            }, 
+            {
+                "atk% base buff": 0, 
+                "atk% extra buff based on hp": 30, 
+                "buff proportional to hp": "remaining", 
+                "conditions": [], 
+                "passive id": "46", 
+                "passive target": "self"
+            }
+        ], 
+        "name": "奮激たる闘志", 
+        "target": "self"
+    }, 
+    "26200": {
+        "desc": "全てのユニットの攻撃力・防御力・回復力・最大ＨＰを１０％アップ＆残りＨＰが多いほど、攻撃力をアップ", 
+        "effects": [
+            {
+                "atk% buff": 10, 
+                "conditions": [], 
+                "def% buff": 10, 
+                "hp% buff": 10, 
+                "passive id": "1", 
+                "passive target": "party", 
+                "rec% buff": 10
+            }, 
+            {
+                "atk% base buff": 0, 
+                "atk% extra buff based on hp": 50, 
+                "buff proportional to hp": "remaining", 
+                "conditions": [], 
+                "passive id": "46", 
+                "passive target": "self"
+            }
+        ], 
+        "name": "震魂の焔拳", 
+        "target": "self"
+    }, 
+    "26300": {
+        "desc": "ＢＢゲージが半分以上の時、攻撃力・防御力を少しアップ＆低確率で被ダメージを超絶軽減", 
+        "effects": [
+            {
+                "atk% buff": 30, 
+                "bb gauge above % buff requirement": 50, 
+                "conditions": [], 
+                "def% buff": 30, 
+                "passive id": "30", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "passive id": "43", 
+                "passive target": "self", 
+                "take 1 dmg%": 5
+            }
+        ], 
+        "name": "闘士の矜持", 
+        "target": "self"
+    }, 
+    "26400": {
+        "desc": "ＢＢゲージが半分以上の時、攻撃力・防御力をアップ＆低確率で被ダメージを超絶軽減", 
+        "effects": [
+            {
+                "atk% buff": 50, 
+                "bb gauge above % buff requirement": 50, 
+                "conditions": [], 
+                "def% buff": 50, 
+                "passive id": "30", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "passive id": "43", 
+                "passive target": "self", 
+                "take 1 dmg%": 10
+            }
+        ], 
+        "name": "盤心の練武", 
+        "target": "self"
+    }, 
+    "26500": {
+        "desc": "全状態異常を無効＆被ダメージ時、ＢＢゲージを少し増加", 
+        "effects": [
+            {
+                "conditions": [], 
+                "curse resist%": 100, 
+                "injury resist%": 100, 
+                "paralysis resist%": 100, 
+                "passive id": "4", 
+                "passive target": "self", 
+                "poison resist%": 100, 
+                "sick resist%": 100, 
+                "weaken resist%": 100
+            }, 
+            {
+                "bc fill when attacked high": 2, 
+                "bc fill when attacked low": 1, 
+                "bc fill when attacked%": 100, 
+                "conditions": [], 
+                "passive id": "25", 
+                "passive target": "self"
+            }
+        ], 
+        "name": "共鳴する想念", 
+        "target": "self"
+    }, 
+    "26600": {
+        "desc": "全状態異常を無効＆被ダメージ時、ＢＢゲージを増加", 
+        "effects": [
+            {
+                "conditions": [], 
+                "curse resist%": 100, 
+                "injury resist%": 100, 
+                "paralysis resist%": 100, 
+                "passive id": "4", 
+                "passive target": "self", 
+                "poison resist%": 100, 
+                "sick resist%": 100, 
+                "weaken resist%": 100
+            }, 
+            {
+                "bc fill when attacked high": 3, 
+                "bc fill when attacked low": 2, 
+                "bc fill when attacked%": 100, 
+                "conditions": [], 
+                "passive id": "25", 
+                "passive target": "self"
+            }
+        ], 
+        "name": "伝世されし秘術", 
+        "target": "self"
+    }, 
     "2700": {
         "desc": "ＨＰが満タン時、攻撃力をかなりアップ", 
         "effects": [
