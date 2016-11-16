@@ -13256,6 +13256,64 @@
         "name": "伝世されし秘術", 
         "target": "self"
     }, 
+    "26700": {
+        "desc": "ＢＢゲージが満タン時、攻撃力をかなりアップ＆ＨＰが半分以上の時、スパークダメージをかなりアップ", 
+        "effects": [
+            {
+                "atk% buff": 80, 
+                "bb gauge above % buff requirement": 100, 
+                "conditions": [], 
+                "passive id": "30", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "damage% for spark": 60, 
+                "hp above % buff requirement": 50, 
+                "passive id": "104", 
+                "passive target": "self"
+            }
+        ], 
+        "name": "友が与えし神威", 
+        "target": "self"
+    }, 
+    "26800": {
+        "desc": "ＢＢ及びＳＢＢに「味方全体に３ターン、被ダメージ時、ＢＢゲージをかなり増加」を追加＆全状態異常を無効", 
+        "effects": [
+            {
+                "conditions": [], 
+                "curse resist%": 100, 
+                "injury resist%": 100, 
+                "paralysis resist%": 100, 
+                "passive id": "4", 
+                "passive target": "self", 
+                "poison resist%": 100, 
+                "sick resist%": 100, 
+                "weaken resist%": 100
+            }, 
+            {
+                "conditions": [], 
+                "passive id": "66", 
+                "passive target": "self", 
+                "trigger on bb": true, 
+                "trigger on sbb": true, 
+                "triggered effect": [
+                    {
+                        "bc fill when attacked high": 7, 
+                        "bc fill when attacked low": 4, 
+                        "bc fill when attacked turns (38)": 3, 
+                        "bc fill when attacked%": 100, 
+                        "effect delay time(ms)/frame": "0.0/0", 
+                        "proc id": "20", 
+                        "target area": "aoe", 
+                        "target type": "party"
+                    }
+                ]
+            }
+        ], 
+        "name": "無欠なる創造", 
+        "target": "self"
+    }, 
     "2700": {
         "desc": "ＨＰが満タン時、攻撃力をかなりアップ", 
         "effects": [
