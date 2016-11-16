@@ -3714,8 +3714,30 @@
                 "dependency comment": "", 
                 "id": "51007000", 
                 "skill": {
-                    "error": "data missing", 
-                    "id": "51007000"
+                    "bp": 20, 
+                    "desc": "ＳＢＢに「味方全体に３ターン、スパークダメージを超絶アップ」を追加", 
+                    "effects": [
+                        {
+                            "passive": {
+                                "passive id": "66", 
+                                "trigger on sbb": true, 
+                                "triggered effect": [
+                                    {
+                                        "buff turns": 3, 
+                                        "effect delay time(ms)/frame": "0.0/0", 
+                                        "proc id": "23", 
+                                        "spark dmg% buff (40)": 100, 
+                                        "target area": "aoe", 
+                                        "target type": "party"
+                                    }
+                                ]
+                            }
+                        }
+                    ], 
+                    "id": "51007000", 
+                    "level": 5, 
+                    "name": "ＳＢＢに「スパークダメージを超絶アップ」追加", 
+                    "series": "51007000"
                 }
             }, 
             {
@@ -3724,8 +3746,31 @@
                 "dependency comment": "「ＳＢＢに「スパークダメージを超絶アップ」追加」習得", 
                 "id": "51007100", 
                 "skill": {
-                    "error": "data missing", 
-                    "id": "51007100"
+                    "bp": 40, 
+                    "desc": "ＢＢ及びＳＢＢの「スパークダメージを超絶アップ」効果量を増加", 
+                    "effects": [
+                        {
+                            "passive": {
+                                "passive id": "66", 
+                                "trigger on bb": true, 
+                                "trigger on sbb": true, 
+                                "triggered effect": [
+                                    {
+                                        "buff turns": 3, 
+                                        "effect delay time(ms)/frame": "16.7/1", 
+                                        "proc id": "23", 
+                                        "spark dmg% buff (40)": 130, 
+                                        "target area": "aoe", 
+                                        "target type": "party"
+                                    }
+                                ]
+                            }
+                        }
+                    ], 
+                    "id": "51007100", 
+                    "level": 5, 
+                    "name": "ＢＢ・ＳＢＢの「スパークダメージをアップ」効果を強化", 
+                    "series": "51007000"
                 }
             }, 
             {
@@ -3734,8 +3779,37 @@
                 "dependency comment": "", 
                 "id": "53011000", 
                 "skill": {
-                    "error": "data missing", 
-                    "id": "53011000"
+                    "bp": 40, 
+                    "desc": "ＢＢ及びＳＢＢに「味方全体に３ターン、全属性の弱点属性ダメージをアップ」を追加", 
+                    "effects": [
+                        {
+                            "passive": {
+                                "passive id": "66", 
+                                "trigger on bb": true, 
+                                "trigger on sbb": true, 
+                                "triggered effect": [
+                                    {
+                                        "dark units do extra elemental weakness dmg": true, 
+                                        "earth units do extra elemental weakness dmg": true, 
+                                        "effect delay time(ms)/frame": "0.0/0", 
+                                        "elemental weakness buff turns": 3, 
+                                        "elemental weakness multiplier%": 50.0, 
+                                        "fire units do extra elemental weakness dmg": true, 
+                                        "light units do extra elemental weakness dmg": true, 
+                                        "proc id": "55", 
+                                        "target area": "aoe", 
+                                        "target type": "party", 
+                                        "thunder units do extra elemental weakness dmg": true, 
+                                        "water units do extra elemental weakness dmg": true
+                                    }
+                                ]
+                            }
+                        }
+                    ], 
+                    "id": "53011000", 
+                    "level": 5, 
+                    "name": "ＢＢ・ＳＢＢに「全属性の弱点属性ダメージをアップ」追加", 
+                    "series": "53011000"
                 }
             }, 
             {
@@ -3744,8 +3818,37 @@
                 "dependency comment": "「ＢＢ・ＳＢＢに「全属性の弱点属性ダメージをアップ」追加」習得", 
                 "id": "53011100", 
                 "skill": {
-                    "error": "data missing", 
-                    "id": "53011100"
+                    "bp": 30, 
+                    "desc": "ＢＢ及びＳＢＢの「全属性の弱点属性ダメージをアップ」効果量を増加", 
+                    "effects": [
+                        {
+                            "passive": {
+                                "passive id": "66", 
+                                "trigger on bb": true, 
+                                "trigger on sbb": true, 
+                                "triggered effect": [
+                                    {
+                                        "dark units do extra elemental weakness dmg": true, 
+                                        "earth units do extra elemental weakness dmg": true, 
+                                        "effect delay time(ms)/frame": "16.7/1", 
+                                        "elemental weakness buff turns": 3, 
+                                        "elemental weakness multiplier%": 75.0, 
+                                        "fire units do extra elemental weakness dmg": true, 
+                                        "light units do extra elemental weakness dmg": true, 
+                                        "proc id": "55", 
+                                        "target area": "aoe", 
+                                        "target type": "party", 
+                                        "thunder units do extra elemental weakness dmg": true, 
+                                        "water units do extra elemental weakness dmg": true
+                                    }
+                                ]
+                            }
+                        }
+                    ], 
+                    "id": "53011100", 
+                    "level": 5, 
+                    "name": "ＢＢ・ＳＢＢの「全属性の弱点属性ダメージをアップ」効果を強化", 
+                    "series": "53011100"
                 }
             }
         ]
@@ -9159,8 +9262,21 @@
                 "dependency comment": "", 
                 "id": "271001", 
                 "skill": {
-                    "error": "data missing", 
-                    "id": "271001"
+                    "bp": 10, 
+                    "desc": "ＨＰが満タン時、防御力をアップ", 
+                    "effects": [
+                        {
+                            "passive": {
+                                "def% buff": 50, 
+                                "hp above % buff requirement": 100, 
+                                "passive id": "11"
+                            }
+                        }
+                    ], 
+                    "id": "271001", 
+                    "level": 1, 
+                    "name": "ＨＰが満タン時、防御力をアップ", 
+                    "series": "271000"
                 }
             }, 
             {
@@ -9216,8 +9332,21 @@
                 "dependency comment": "", 
                 "id": "20003000", 
                 "skill": {
-                    "error": "data missing", 
-                    "id": "20003000"
+                    "bp": 10, 
+                    "desc": "リーダースキルの「防御力・最大ＨＰを５０％アップ」を６５％にグレードアップ", 
+                    "effects": [
+                        {
+                            "add to passive": {
+                                "def% buff": 15, 
+                                "hp% buff": 15, 
+                                "passive id": "1"
+                            }
+                        }
+                    ], 
+                    "id": "20003000", 
+                    "level": 1, 
+                    "name": "リーダースキル「防御力・最大ＨＰを５０％アップ」効果を強化", 
+                    "series": "20003000"
                 }
             }, 
             {
@@ -9226,8 +9355,30 @@
                 "dependency comment": "", 
                 "id": "30008000", 
                 "skill": {
-                    "error": "data missing", 
-                    "id": "30008000"
+                    "bp": 20, 
+                    "desc": "ＢＢ及びＳＢＢの「防御力を大幅にアップ」効果量を増加", 
+                    "effects": [
+                        {
+                            "add to bb": {
+                                "buff turns": 0, 
+                                "def% buff (3)": 10, 
+                                "element buffed": "all", 
+                                "proc id": "5"
+                            }
+                        }, 
+                        {
+                            "add to sbb": {
+                                "buff turns": 0, 
+                                "def% buff (3)": 10, 
+                                "element buffed": "all", 
+                                "proc id": "5"
+                            }
+                        }
+                    ], 
+                    "id": "30008000", 
+                    "level": 2, 
+                    "name": "ＢＢ・ＳＢＢの「防御力をアップ」効果を強化", 
+                    "series": "30008000"
                 }
             }, 
             {
@@ -9236,8 +9387,32 @@
                 "dependency comment": "", 
                 "id": "55000005", 
                 "skill": {
-                    "error": "data missing", 
-                    "id": "55000005"
+                    "bp": 40, 
+                    "desc": "ＢＢ及びＳＢＢに「味方全体のＨＰを大回復」を追加", 
+                    "effects": [
+                        {
+                            "passive": {
+                                "passive id": "66", 
+                                "trigger on bb": true, 
+                                "trigger on sbb": true, 
+                                "triggered effect": [
+                                    {
+                                        "effect delay time(ms)/frame": "0.0/0", 
+                                        "heal high": 3500, 
+                                        "heal low": 2500, 
+                                        "proc id": "2", 
+                                        "rec added% (from healer)": 11.0, 
+                                        "target area": "aoe", 
+                                        "target type": "party"
+                                    }
+                                ]
+                            }
+                        }
+                    ], 
+                    "id": "55000005", 
+                    "level": 5, 
+                    "name": "ＢＢ・ＳＢＢに「ＨＰを大回復」追加", 
+                    "series": "55000000"
                 }
             }, 
             {
@@ -9246,8 +9421,30 @@
                 "dependency comment": "", 
                 "id": "59002002", 
                 "skill": {
-                    "error": "data missing", 
-                    "id": "59002002"
+                    "bp": 40, 
+                    "desc": "ＢＢ及びＳＢＢに「味方全体に１ターン、弱点属性ダメージを無効」を追加", 
+                    "effects": [
+                        {
+                            "passive": {
+                                "passive id": "66", 
+                                "trigger on bb": true, 
+                                "trigger on sbb": true, 
+                                "triggered effect": [
+                                    {
+                                        "effect delay time(ms)/frame": "0.0/0", 
+                                        "target area": "aoe", 
+                                        "target type": "party", 
+                                        "unknown proc id": "93", 
+                                        "unknown proc param": "0,0,100,100,0,0,1,0"
+                                    }
+                                ]
+                            }
+                        }
+                    ], 
+                    "id": "59002002", 
+                    "level": 6, 
+                    "name": "ＢＢ・ＳＢＢに「弱点属性ダメージを無効」追加", 
+                    "series": "59002000"
                 }
             }, 
             {
@@ -9256,8 +9453,33 @@
                 "dependency comment": "", 
                 "id": "57001002", 
                 "skill": {
-                    "error": "data missing", 
-                    "id": "57001002"
+                    "bp": 40, 
+                    "desc": "ＢＢ及びＳＢＢに「味方全体に１ターン、攻撃力・防御力・回復力を低下する効果を無効」を追加", 
+                    "effects": [
+                        {
+                            "passive": {
+                                "passive id": "66", 
+                                "trigger on bb": true, 
+                                "trigger on sbb": true, 
+                                "triggered effect": [
+                                    {
+                                        "atk down resist% (120)": 100, 
+                                        "def down resist% (121)": 100, 
+                                        "effect delay time(ms)/frame": "0.0/0", 
+                                        "proc id": "73", 
+                                        "rec down resist% (122)": 100, 
+                                        "stat down immunity buff turns": 1, 
+                                        "target area": "aoe", 
+                                        "target type": "party"
+                                    }
+                                ]
+                            }
+                        }
+                    ], 
+                    "id": "57001002", 
+                    "level": 5, 
+                    "name": "ＢＢ・ＳＢＢに「攻撃力・防御力・回復力を低下する効果を無効」追加", 
+                    "series": "57001000"
                 }
             }, 
             {
@@ -9266,8 +9488,33 @@
                 "dependency comment": "", 
                 "id": "60030000", 
                 "skill": {
-                    "error": "data missing", 
-                    "id": "60030000"
+                    "bp": 50, 
+                    "desc": "ＢＢ及びＳＢＢに「味方全体に雷属性のバリアを付与」を追加", 
+                    "effects": [
+                        {
+                            "passive": {
+                                "passive id": "66", 
+                                "trigger on bb": true, 
+                                "trigger on sbb": true, 
+                                "triggered effect": [
+                                    {
+                                        "effect delay time(ms)/frame": "0.0/0", 
+                                        "elemental barrier absorb dmg%": 100, 
+                                        "elemental barrier def": 0, 
+                                        "elemental barrier element": "thunder", 
+                                        "elemental barrier hp": 2500, 
+                                        "proc id": "62", 
+                                        "target area": "aoe", 
+                                        "target type": "party"
+                                    }
+                                ]
+                            }
+                        }
+                    ], 
+                    "id": "60030000", 
+                    "level": 5, 
+                    "name": "ＢＢ・ＳＢＢに「雷属性のバリアを付与」追加", 
+                    "series": "60030000"
                 }
             }
         ]
