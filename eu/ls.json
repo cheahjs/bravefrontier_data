@@ -644,6 +644,47 @@
         ], 
         "name": "Loving Spirit"
     }, 
+    "11000": {
+        "desc": "Boosts Atk when HP is high", 
+        "effects": [
+            {
+                "atk% base buff": 10, 
+                "atk% extra buff based on hp": 40, 
+                "buff proportional to hp": "remaining", 
+                "passive id": "46"
+            }
+        ], 
+        "name": "Flame Mantle's Power"
+    }, 
+    "11001": {
+        "desc": "Hugely boosts Atk when HP is high", 
+        "effects": [
+            {
+                "atk% base buff": 20, 
+                "atk% extra buff based on hp": 80, 
+                "buff proportional to hp": "remaining", 
+                "passive id": "46"
+            }
+        ], 
+        "name": "Flame Mantle's Divine Power"
+    }, 
+    "11002": {
+        "desc": "Hugely boosts Atk when HP is high & enormously boosts BB Atk", 
+        "effects": [
+            {
+                "atk% base buff": 20, 
+                "atk% extra buff based on hp": 80, 
+                "buff proportional to hp": "remaining", 
+                "passive id": "46"
+            }, 
+            {
+                "bb atk% buff": 200, 
+                "passive id": "64", 
+                "sbb atk% buff": 200
+            }
+        ], 
+        "name": "Flame Armor's Sacred Power"
+    }, 
     "1101": {
         "desc": "Large boost in effectiveness of Heart Crystals", 
         "effects": [
@@ -2976,6 +3017,112 @@
         ], 
         "name": "Bloody Burial Blade"
     }, 
+    "1929": {
+        "desc": "80% boost to Atk, enormously boosts Atk when HP is low & considerably boosts BB Atk", 
+        "effects": [
+            {
+                "atk% buff": 80, 
+                "passive id": "1"
+            }, 
+            {
+                "atk% base buff": 80, 
+                "atk% extra buff based on hp": 120, 
+                "buff proportional to hp": "lost", 
+                "passive id": "46"
+            }, 
+            {
+                "bb atk% buff": 100, 
+                "passive id": "64", 
+                "sbb atk% buff": 100, 
+                "ubb atk% buff": 100
+            }
+        ], 
+        "name": "Arbiter's Authority"
+    }, 
+    "1937": {
+        "desc": "80% boost to Atk, considerably boosts critical damage, critical damage considerably boosts BB gauge for 2 turns & probable Def ignoring effect", 
+        "effects": [
+            {
+                "atk% buff": 80, 
+                "passive id": "1"
+            }, 
+            {
+                "ignore def%": 20, 
+                "passive id": "29"
+            }, 
+            {
+                "crit multiplier%": 100.0, 
+                "passive id": "34"
+            }, 
+            {
+                "buff": {
+                    "buff turns (37)": "2", 
+                    "increase bb gauge gradual buff": 4
+                }, 
+                "on crit activation chance%": 100, 
+                "passive id": "89"
+            }
+        ], 
+        "name": "Brave Phoenix's Flash"
+    }, 
+    "1938": {
+        "desc": "40% boost to max HP, Spark damage boosts BB gauge, 100% boost to Spark damage & boosts Spark damage for 2 turns when Sparks have exceeded certain number", 
+        "effects": [
+            {
+                "hp% buff": 40, 
+                "passive id": "1"
+            }, 
+            {
+                "damage% for spark": 100, 
+                "passive id": "31"
+            }, 
+            {
+                "bc fill on spark high": 3, 
+                "bc fill on spark low": 2, 
+                "bc fill on spark%": 100, 
+                "passive id": "47"
+            }, 
+            {
+                "buff": {
+                    "buff turns (40)": "2", 
+                    "spark dmg% buff": 50
+                }, 
+                "passive id": "86", 
+                "spark count buff activation": 15
+            }
+        ], 
+        "name": "Precious Flower's Rage"
+    }, 
+    "1939": {
+        "desc": "80% boost to Atk, considerably reduces BB gauge required for BB, considerably boosts BB Atk & boosts BB Atk when damage dealt has exceeded certain amount for 2 turns", 
+        "effects": [
+            {
+                "atk% buff": 80, 
+                "passive id": "1"
+            }, 
+            {
+                "passive id": "48", 
+                "reduced bb bc cost%": 25
+            }, 
+            {
+                "bb atk% buff": 100, 
+                "passive id": "64", 
+                "sbb atk% buff": 100, 
+                "ubb atk% buff": 100
+            }, 
+            {
+                "buff": {
+                    "bb atk% buff": 100, 
+                    "buff turns (72)": "2", 
+                    "sbb atk% buff": 100, 
+                    "ubb atk% buff": 100
+                }, 
+                "damage dealt threshold buff activation": 10000, 
+                "passive id": "80"
+            }
+        ], 
+        "name": "Divine Judge's Power"
+    }, 
     "2": {
         "desc": "Leader Skill 1 Description", 
         "effects": [
@@ -3706,6 +3853,34 @@
             }
         ], 
         "name": "Eternal Blazing Nature"
+    }, 
+    "2135": {
+        "desc": "40% boost to max HP, negates all status ailments, probable 20% damage reduction & negates Def ignoring effect", 
+        "effects": [
+            {
+                "curse resist%": 100, 
+                "injury resist%": 100, 
+                "paralysis resist%": 100, 
+                "passive id": "4", 
+                "poison resist%": 100, 
+                "sick resist%": 100, 
+                "weaken resist%": 100
+            }, 
+            {
+                "dmg reduction chance%": 10, 
+                "dmg reduction%": 20, 
+                "passive id": "14"
+            }, 
+            {
+                "ignore def resist chance%": 100, 
+                "passive id": "92"
+            }, 
+            {
+                "hp% buff": 40, 
+                "passive id": "1"
+            }
+        ], 
+        "name": "Eternal Guardian"
     }, 
     "2200": {
         "desc": "25% boost to Atk power of all Units when 5 elements or more are present", 
@@ -6031,6 +6206,46 @@
         ], 
         "name": "Ephemeral Uncharted Region"
     }, 
+    "4330": {
+        "desc": "30% boost to Def, max HP & damage taken greatly boosts BB gauge", 
+        "effects": [
+            {
+                "def% buff": 30, 
+                "hp% buff": 30, 
+                "passive id": "1"
+            }, 
+            {
+                "bc fill when attacked high": 4, 
+                "bc fill when attacked low": 2, 
+                "bc fill when attacked%": 100, 
+                "passive id": "25"
+            }
+        ], 
+        "name": "Divine Sanctuary"
+    }, 
+    "4331": {
+        "desc": "40% boost to Def, max HP, damage taken considerably boosts BB gauge & slightly absorbs HP", 
+        "effects": [
+            {
+                "def% buff": 40, 
+                "hp% buff": 40, 
+                "passive id": "1"
+            }, 
+            {
+                "bc fill when attacked high": 6, 
+                "bc fill when attacked low": 3, 
+                "bc fill when attacked%": 100, 
+                "passive id": "25"
+            }, 
+            {
+                "hp drain chance%": 100, 
+                "hp drain% high": 8, 
+                "hp drain% low": 3, 
+                "passive id": "17"
+            }
+        ], 
+        "name": "Miraculous Sanctuary"
+    }, 
     "4400": {
         "desc": "Boosts resistence to status ailments & fills BB gauge after each turn", 
         "effects": [
@@ -8026,6 +8241,29 @@
         ], 
         "name": "Purgatory explosion"
     }, 
+    "710016": {
+        "desc": "Boosts ATK (100%) and HP (30%) for Fire and Dark types & Boost to drop rate of BC produced during Spark (70%) & Boosts critical damage (150%)", 
+        "effects": [
+            {
+                "atk% buff": 100, 
+                "elements buffed": [
+                    "fire", 
+                    "dark"
+                ], 
+                "hp% buff": 30, 
+                "passive id": "2"
+            }, 
+            {
+                "bc drop% for spark": 70, 
+                "passive id": "31"
+            }, 
+            {
+                "crit multiplier%": 150.0, 
+                "passive id": "34"
+            }
+        ], 
+        "name": "Eternal Flames of Purgatory"
+    }, 
     "710115": {
         "desc": "35% boost to Atk Power of Female Units. Additional 30% when 5 elements or more are present", 
         "effects": [
@@ -9032,19 +9270,16 @@
         "name": "Crusader's Benediction"
     }, 
     "730176": {
-        "desc": "Reduction in BB gauge required to activate BB (25%) & Reduces damage taken (20%) and gradually recovers BB gauge (10 BC) when damage dealt has exceeded certain amount (10 000) for 2 turns", 
+        "desc": "Reduction in BB gauge required to activate BB (25%) & Reduces damage taken (20%) and boosts BB gauge (10BC) when damage dealt has exceeded certain amount (10 000) for 2 turns", 
         "effects": [
             {
                 "passive id": "48", 
                 "reduced bb bc cost%": 25
             }, 
             {
-                "buff": {
-                    "buff turns (37)": "2", 
-                    "increase bb gauge gradual buff": 10
-                }, 
-                "damage dealt threshold buff activation": 10000, 
-                "passive id": "80"
+                "damage dealt threshold activation": 10000, 
+                "increase bb gauge": 10, 
+                "passive id": "81"
             }, 
             {
                 "buff": {
@@ -9055,7 +9290,7 @@
                 "passive id": "80"
             }
         ], 
-        "name": "Black Rebirth"
+        "name": "Black Ram’s Corrupted Halo"
     }, 
     "730186": {
         "desc": "Boost Spark Dmg​ (75%) & Boosts Atk, Def and Rec by 50% when BB gauge is >50% & Boosts critical Dmg (150%) when dealt damage has exceeded certain amount (10 000) for 2 turns", 
@@ -9156,6 +9391,35 @@
             }
         ], 
         "name": "Spirit of the Clan"
+    }, 
+    "730215": {
+        "desc": "Boosts all stats (35%) & Boosts HC drop rate (20%) & Boosts HC effectiveness (50%) & Boosts Spark damage (75%) for 2 turns when Sparks have exceeded certain number (20)", 
+        "effects": [
+            {
+                "atk% buff": 35, 
+                "def% buff": 35, 
+                "hp% buff": 35, 
+                "passive id": "1", 
+                "rec% buff": 35
+            }, 
+            {
+                "hc drop rate% buff": 20, 
+                "passive id": "19"
+            }, 
+            {
+                "hc effectiveness%": 50, 
+                "passive id": "10"
+            }, 
+            {
+                "buff": {
+                    "buff turns (40)": "2", 
+                    "spark dmg% buff": 75
+                }, 
+                "passive id": "86", 
+                "spark count buff activation": 20
+            }
+        ], 
+        "name": "Listening of the Spirits"
     }, 
     "7400": {
         "desc": "15% boost to Atk and max HP for all Units", 
@@ -9921,6 +10185,31 @@
         ], 
         "name": "Light God's Majesty"
     }, 
+    "7422": {
+        "desc": "40% boost to max HP, Atk, considerably boosts BC efficacy, Spark damage boosts BB gauge & considerably boosts BB gauge each turn", 
+        "effects": [
+            {
+                "atk% buff": 40, 
+                "hp% buff": 40, 
+                "passive id": "1"
+            }, 
+            {
+                "bb gauge fill rate%": 50, 
+                "passive id": "32"
+            }, 
+            {
+                "bc fill on spark high": 3, 
+                "bc fill on spark low": 2, 
+                "bc fill on spark%": 100, 
+                "passive id": "47"
+            }, 
+            {
+                "bc fill per turn": 4, 
+                "passive id": "9"
+            }
+        ], 
+        "name": "Dragon God's Flare"
+    }, 
     "7423": {
         "desc": "30% boost to max HP & 15% damage reduction from Earth, Thunder types", 
         "effects": [
@@ -10034,6 +10323,90 @@
             }
         ], 
         "name": "Devastating Massacre"
+    }, 
+    "7429": {
+        "desc": "30% boost to Atk, max HP, damage taken boosts BB gauge & slight probability of enormous damage reduction", 
+        "effects": [
+            {
+                "atk% buff": 30, 
+                "hp% buff": 30, 
+                "passive id": "1"
+            }, 
+            {
+                "bc fill when attacked high": 4, 
+                "bc fill when attacked low": 2, 
+                "bc fill when attacked%": 100, 
+                "passive id": "25"
+            }, 
+            {
+                "passive id": "43", 
+                "take 1 dmg%": 10
+            }
+        ], 
+        "name": "War God's Might"
+    }, 
+    "7430": {
+        "desc": "40% boost to Atk, max HP, damage taken considerably boosts BB gauge, hugely boosts Atk when damage taken has exceeded certain amount for 2 turns & slight probability of enormous damage reduction", 
+        "effects": [
+            {
+                "atk% buff": 40, 
+                "hp% buff": 40, 
+                "passive id": "1"
+            }, 
+            {
+                "bc fill when attacked high": 6, 
+                "bc fill when attacked low": 3, 
+                "bc fill when attacked%": 100, 
+                "passive id": "25"
+            }, 
+            {
+                "passive id": "43", 
+                "take 1 dmg%": 15
+            }, 
+            {
+                "buff": {
+                    "atk% buff (1)": 150, 
+                    "buff turns (1)": "1"
+                }, 
+                "damage threshold buff activation": 5000, 
+                "passive id": "78"
+            }
+        ], 
+        "name": "War God's Wrath"
+    }, 
+    "7431": {
+        "desc": "30% boost to Atk, max HP & 100% boost to Spark damage", 
+        "effects": [
+            {
+                "atk% buff": 30, 
+                "hp% buff": 30, 
+                "passive id": "1"
+            }, 
+            {
+                "damage% for spark": 100, 
+                "passive id": "31"
+            }
+        ], 
+        "name": "Luminous Flash"
+    }, 
+    "7432": {
+        "desc": "50% boost to Atk, max HP, 120% boost to Spark damage & considerably reduces BB gauge required for BB", 
+        "effects": [
+            {
+                "atk% buff": 50, 
+                "hp% buff": 50, 
+                "passive id": "1"
+            }, 
+            {
+                "damage% for spark": 120, 
+                "passive id": "31"
+            }, 
+            {
+                "passive id": "48", 
+                "reduced bb bc cost%": 25
+            }
+        ], 
+        "name": "Luminous Slash"
     }, 
     "7500": {
         "desc": "Adds chance of slightly absorbing HP when attacking", 
@@ -10895,7 +11268,7 @@
         "name": "Antique Art of the Shadows"
     }, 
     "760195": {
-        "desc": "Boosts ATK (80%) & Boosts BB ATK boost (100%) & Gradually recovers BB gauge (5 BC) for 2 turns when damage dealt has exceeded certain amount (10 000)", 
+        "desc": "Boosts ATK (80%) & Boosts BB ATK boost (100%) & Boosts BB gauge (5 BC) when damage dealt has exceeded certain amount (10 000)", 
         "effects": [
             {
                 "atk% buff": 80, 
@@ -10908,18 +11281,15 @@
                 "ubb atk% buff": 100
             }, 
             {
-                "buff": {
-                    "buff turns (37)": "2", 
-                    "increase bb gauge gradual buff": 5
-                }, 
-                "damage dealt threshold buff activation": 10000, 
-                "passive id": "80"
+                "damage dealt threshold activation": 10000, 
+                "increase bb gauge": 5, 
+                "passive id": "81"
             }
         ], 
         "name": "Yasakani Heir"
     }, 
     "760196": {
-        "desc": "Boosts ATK (80%) and HP (40%) & Boosts BB ATK boost (100%) & Gradually recovers BB gauge (6 BC) for 2 turns when damage dealt has exceeded certain amount (10 000) & Boosts ATK relative to HP lost (80-150%)", 
+        "desc": "Boosts ATK (80%) and HP (40%) & Boosts BB ATK boost (100%) & Boosts BB gauge (6 BC) when damage dealt has exceeded certain amount (10 000) & Boosts ATK relative to HP lost (80-150%)", 
         "effects": [
             {
                 "atk% buff": 80, 
@@ -10933,12 +11303,9 @@
                 "ubb atk% buff": 100
             }, 
             {
-                "buff": {
-                    "buff turns (37)": "2", 
-                    "increase bb gauge gradual buff": 6
-                }, 
-                "damage dealt threshold buff activation": 10000, 
-                "passive id": "80"
+                "damage dealt threshold activation": 10000, 
+                "increase bb gauge": 6, 
+                "passive id": "81"
             }, 
             {
                 "atk% base buff": 80, 
@@ -11269,6 +11636,96 @@
         ], 
         "name": "Pure Protection"
     }, 
+    "810006": {
+        "desc": "Boosts all stats (35%) & Reduce damage taken (20%) for 2 turns when damage taken have exceed 5000 & Negates DEF ignoring damage", 
+        "effects": [
+            {
+                "atk% buff": 35, 
+                "def% buff": 35, 
+                "hp% buff": 35, 
+                "passive id": "1", 
+                "rec% buff": 35
+            }, 
+            {
+                "ignore def resist chance%": 100, 
+                "passive id": "92"
+            }, 
+            {
+                "buff": {
+                    "buff turns (36)": "1", 
+                    "dmg reduction% buff": 20
+                }, 
+                "damage threshold buff activation": 5000, 
+                "passive id": "78"
+            }, 
+            {
+                "atk% buff": 10, 
+                "def% buff": 10, 
+                "elements buffed": [
+                    "fire"
+                ], 
+                "hp% buff": 10, 
+                "passive id": "2", 
+                "rec% buff": 10
+            }
+        ], 
+        "name": "Carefree Spirit"
+    }, 
+    "810008": {
+        "desc": "Boosts HP, REC (40%) and ATK (80%) of all allies when 4 elements or more are present & Boots OD gauge fill rate (20%) & Reduce BB cost (20%) & Nullify ailments", 
+        "effects": [
+            {
+                "atk% buff": 80, 
+                "hp% buff": 40, 
+                "passive id": "41", 
+                "rec% buff": 40, 
+                "unique elements required": 4
+            }, 
+            {
+                "od fill rate%": 20, 
+                "passive id": "70"
+            }, 
+            {
+                "passive id": "48", 
+                "reduced bb bc cost%": 20
+            }, 
+            {
+                "curse resist%": 100, 
+                "injury resist%": 100, 
+                "paralysis resist%": 100, 
+                "passive id": "4", 
+                "poison resist%": 100, 
+                "sick resist%": 100, 
+                "weaken resist%": 100
+            }
+        ], 
+        "name": "Innocence is Bliss"
+    }, 
+    "810014": {
+        "desc": "Boosts HP and DEF (50%) & Reduce damage taken (5%) & Boosts damage reduced while guarding (10%) & Gradually heal all allies each turn", 
+        "effects": [
+            {
+                "def% buff": 50, 
+                "hp% buff": 50, 
+                "passive id": "1"
+            }, 
+            {
+                "dmg% mitigation": 5, 
+                "passive id": "8"
+            }, 
+            {
+                "guard increase mitigation%": 10, 
+                "passive id": "58"
+            }, 
+            {
+                "passive id": "33", 
+                "rec% added (turn heal)": 10.0, 
+                "turn heal high": 800, 
+                "turn heal low": 600
+            }
+        ], 
+        "name": "Chivalrous Spirit"
+    }, 
     "8101": {
         "desc": "15% boost to Def for all Units", 
         "effects": [
@@ -11540,7 +11997,7 @@
         "name": "Shining Darkness Safeguard"
     }, 
     "8708": {
-        "desc": "15% damage reduction from Light, Dark types, 30% boost to max HP & gradually fill BB gauge for 2 turns when damage taken has exceeded certain amount", 
+        "desc": "15% damage reduction from Light, Dark types, 30% boost to max HP & enormously boosts BB gauge when damage taken has exceeded certain amount", 
         "effects": [
             {
                 "dmg% mitigation for elemental attacks": 15.0, 
@@ -11553,12 +12010,9 @@
                 "passive id": "1"
             }, 
             {
-                "buff": {
-                    "buff turns (37)": "2", 
-                    "increase bb gauge gradual buff": 10
-                }, 
-                "damage threshold buff activation": 5000, 
-                "passive id": "78"
+                "damage threshold activation": 5000, 
+                "increase bb gauge": 10, 
+                "passive id": "79"
             }
         ], 
         "name": "Shining Darkness Scales"
