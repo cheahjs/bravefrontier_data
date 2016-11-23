@@ -11502,6 +11502,41 @@
         "name": "Brave Jubilation", 
         "target": "self"
     }, 
+    "8000005": {
+        "desc": "Boosts OD Gauge fill rate by 200%, negates status ailments, elemental weakness & crit damage ", 
+        "effects": [
+            {
+                "conditions": [], 
+                "od fill rate%": 200, 
+                "passive id": "70", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "curse resist%": 100, 
+                "injury resist%": 100, 
+                "paralysis resist%": 100, 
+                "passive id": "4", 
+                "passive target": "self", 
+                "poison resist%": 100, 
+                "sick resist%": 100, 
+                "weaken resist%": 100
+            }, 
+            {
+                "conditions": [], 
+                "crit chance base resist%": 100, 
+                "crit chance buffed resist%": 100, 
+                "crit dmg base damage resist%": 100, 
+                "crit dmg buffed damage resist%": 100, 
+                "passive id": "53", 
+                "passive target": "self", 
+                "strong base element damage resist%": 100, 
+                "strong buffed element damage resist%": 100
+            }
+        ], 
+        "name": "Brave Tenacity", 
+        "target": "self"
+    }, 
     "8100": {
         "desc": "Boosts OD gauge fill rate", 
         "effects": [
@@ -12202,6 +12237,100 @@
         "name": "Caring Heart", 
         "target": "self"
     }, 
+    "820397": {
+        "desc": "20% boost to all parameters when Atk Boosting sphere is equipped, adds Def ignoring effect to BB/SBB for 3 turns & 50% boost to Atk of Water Types", 
+        "effects": [
+            {
+                "atk% buff": 20, 
+                "conditions": [
+                    {
+                        "sphere category required": "Atk Boosting", 
+                        "sphere category required (raw)": "13"
+                    }
+                ], 
+                "def% buff": 20, 
+                "hp% buff": 20, 
+                "passive id": "1", 
+                "passive target": "self", 
+                "rec% buff": 20
+            }, 
+            {
+                "atk% buff": 50, 
+                "conditions": [], 
+                "elements buffed": [
+                    "water"
+                ], 
+                "passive id": "2", 
+                "passive target": "party"
+            }, 
+            {
+                "conditions": [], 
+                "passive id": "66", 
+                "passive target": "self", 
+                "trigger on bb": true, 
+                "trigger on sbb": true, 
+                "triggered effect": [
+                    {
+                        "defense% ignore": 100, 
+                        "defense% ignore turns (39)": 3, 
+                        "effect delay time(ms)/frame": "0.0/0", 
+                        "proc id": "22", 
+                        "target area": "aoe", 
+                        "target type": "party"
+                    }
+                ]
+            }
+        ], 
+        "name": "Duty and Honor", 
+        "target": "self"
+    }, 
+    "820398": {
+        "desc": "30% boost to all parameters when Atk Boosting sphere is equipped, adds Def ignoring effect to BB/SBB for 3 turns & 50% boost to Atk of Water Types", 
+        "effects": [
+            {
+                "atk% buff": 30, 
+                "conditions": [
+                    {
+                        "sphere category required": "Atk Boosting", 
+                        "sphere category required (raw)": "13"
+                    }
+                ], 
+                "def% buff": 30, 
+                "hp% buff": 30, 
+                "passive id": "1", 
+                "passive target": "self", 
+                "rec% buff": 30
+            }, 
+            {
+                "atk% buff": 50, 
+                "conditions": [], 
+                "elements buffed": [
+                    "water"
+                ], 
+                "passive id": "2", 
+                "passive target": "party"
+            }, 
+            {
+                "conditions": [], 
+                "passive id": "66", 
+                "passive target": "self", 
+                "trigger on bb": true, 
+                "trigger on sbb": true, 
+                "triggered effect": [
+                    {
+                        "defense% ignore": 100, 
+                        "defense% ignore turns (39)": 3, 
+                        "effect delay time(ms)/frame": "0.0/0", 
+                        "proc id": "22", 
+                        "target area": "aoe", 
+                        "target type": "party"
+                    }
+                ]
+            }
+        ], 
+        "name": "Guardians Vow", 
+        "target": "self"
+    }, 
     "8300": {
         "desc": "Boosts BB Atk when damage taken has exceeded certain amount for 2 turns", 
         "effects": [
@@ -12708,6 +12837,112 @@
             }
         ], 
         "name": "Aegis Bombardment", 
+        "target": "self"
+    }, 
+    "840397": {
+        "desc": "Adds critical hit rate boost effect to BB/SBB for 3 turns, adds Water, Earth, Thunder elements to BB/SBB for 3 turns & negates Spark damage", 
+        "effects": [
+            {
+                "conditions": [], 
+                "passive id": "66", 
+                "passive target": "self", 
+                "trigger on bb": true, 
+                "trigger on sbb": true, 
+                "triggered effect": [
+                    {
+                        "buff turns": 3, 
+                        "crit% buff (7)": 60, 
+                        "effect delay time(ms)/frame": "0.0/0", 
+                        "element buffed": "all", 
+                        "proc id": "5", 
+                        "target area": "aoe", 
+                        "target type": "party"
+                    }
+                ]
+            }, 
+            {
+                "conditions": [], 
+                "passive id": "66", 
+                "passive target": "self", 
+                "trigger on bb": true, 
+                "trigger on sbb": true, 
+                "triggered effect": [
+                    {
+                        "effect delay time(ms)/frame": "0.0/0", 
+                        "elements added": [
+                            "water", 
+                            "earth", 
+                            "thunder"
+                        ], 
+                        "elements added turns": 3, 
+                        "proc id": "30", 
+                        "target area": "aoe", 
+                        "target type": "party"
+                    }
+                ]
+            }, 
+            {
+                "base spark dmg% resist": 100, 
+                "buff spark dmg% resist": 100, 
+                "conditions": [], 
+                "passive id": "77", 
+                "passive target": "self"
+            }
+        ], 
+        "name": "Gil Lover", 
+        "target": "self"
+    }, 
+    "840398": {
+        "desc": "Adds critical hit rate boost effect to BB/SBB for 3 turns, adds Water, Earth, Thunder elements to BB/SBB for 3 turns & negates Spark damage", 
+        "effects": [
+            {
+                "conditions": [], 
+                "passive id": "66", 
+                "passive target": "self", 
+                "trigger on bb": true, 
+                "trigger on sbb": true, 
+                "triggered effect": [
+                    {
+                        "buff turns": 3, 
+                        "crit% buff (7)": 60, 
+                        "effect delay time(ms)/frame": "0.0/0", 
+                        "element buffed": "all", 
+                        "proc id": "5", 
+                        "target area": "aoe", 
+                        "target type": "party"
+                    }
+                ]
+            }, 
+            {
+                "conditions": [], 
+                "passive id": "66", 
+                "passive target": "self", 
+                "trigger on bb": true, 
+                "trigger on sbb": true, 
+                "triggered effect": [
+                    {
+                        "effect delay time(ms)/frame": "0.0/0", 
+                        "elements added": [
+                            "water", 
+                            "earth", 
+                            "thunder"
+                        ], 
+                        "elements added turns": 3, 
+                        "proc id": "30", 
+                        "target area": "aoe", 
+                        "target type": "party"
+                    }
+                ]
+            }, 
+            {
+                "base spark dmg% resist": 100, 
+                "buff spark dmg% resist": 100, 
+                "conditions": [], 
+                "passive id": "77", 
+                "passive target": "self"
+            }
+        ], 
+        "name": "The Next Cid", 
         "target": "self"
     }, 
     "8500": {
