@@ -8406,6 +8406,37 @@
         "name": "煌迅の魂録", 
         "target": "self"
     }, 
+    "1015830": {
+        "desc": "攻撃力を２０％アップ＆クリティカル率をアップ＆クリティカルダメージをアップ＆与ダメージが一定数を超える度に３ターン、ＯＤゲージ増加量をアップ", 
+        "effects": [
+            {
+                "atk% buff": 20, 
+                "conditions": [], 
+                "crit% buff": 25, 
+                "passive id": "1", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "crit multiplier%": 50.0, 
+                "passive id": "34", 
+                "passive target": "self"
+            }, 
+            {
+                "buff": {
+                    "buff turns (132)": "3", 
+                    "unknown buff id": "132", 
+                    "unknown buff params": "10&3&50"
+                }, 
+                "conditions": [], 
+                "damage dealt threshold buff activation": 10000, 
+                "passive id": "80", 
+                "passive target": "self"
+            }
+        ], 
+        "name": "焔冥の魂録", 
+        "target": "self"
+    }, 
     "10200": {
         "desc": "ＢＣ獲得時の増加量を少しアップ＆ＨＣ獲得時の回復量を少しアップ", 
         "effects": [
@@ -13314,6 +13345,29 @@
         "name": "無欠なる創造", 
         "target": "self"
     }, 
+    "26900": {
+        "desc": "被ダメージ時、ＢＢゲージを少し増加・確率でＨＰを回復", 
+        "effects": [
+            {
+                "bc fill when attacked high": 2, 
+                "bc fill when attacked low": 1, 
+                "bc fill when attacked%": 100, 
+                "conditions": [], 
+                "passive id": "25", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "dmg% to hp% when attacked chance%": 20, 
+                "dmg% to hp% when attacked high": 25, 
+                "dmg% to hp% when attacked low": 20, 
+                "passive id": "24", 
+                "passive target": "self"
+            }
+        ], 
+        "name": "流麗なる剣気", 
+        "target": "self"
+    }, 
     "2700": {
         "desc": "ＨＰが満タン時、攻撃力をかなりアップ", 
         "effects": [
@@ -13326,6 +13380,125 @@
             }
         ], 
         "name": "大破壊の衝動", 
+        "target": "self"
+    }, 
+    "27000": {
+        "desc": "被ダメージ時、ＢＢゲージを増加・確率でＨＰを回復", 
+        "effects": [
+            {
+                "bc fill when attacked high": 3, 
+                "bc fill when attacked low": 2, 
+                "bc fill when attacked%": 100, 
+                "conditions": [], 
+                "passive id": "25", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "dmg% to hp% when attacked chance%": 25, 
+                "dmg% to hp% when attacked high": 25, 
+                "dmg% to hp% when attacked low": 20, 
+                "passive id": "24", 
+                "passive target": "self"
+            }
+        ], 
+        "name": "闘心の流剣", 
+        "target": "self"
+    }, 
+    "27100": {
+        "desc": "全状態異常を無効＆確率で１回まで戦闘不能を耐える", 
+        "effects": [
+            {
+                "conditions": [], 
+                "curse resist%": 100, 
+                "injury resist%": 100, 
+                "paralysis resist%": 100, 
+                "passive id": "4", 
+                "passive target": "self", 
+                "poison resist%": 100, 
+                "sick resist%": 100, 
+                "weaken resist%": 100
+            }, 
+            {
+                "angel idol chance% condition": 0, 
+                "angel idol recover chance% high": 40, 
+                "angel idol recover chance% low": 40, 
+                "angel idol recover counts": 1, 
+                "conditions": [], 
+                "passive id": "69", 
+                "passive target": "self"
+            }
+        ], 
+        "name": "秀麗の勇美", 
+        "target": "self"
+    }, 
+    "27200": {
+        "desc": "全状態異常を無効＆確率で２回まで戦闘不能を耐える", 
+        "effects": [
+            {
+                "conditions": [], 
+                "curse resist%": 100, 
+                "injury resist%": 100, 
+                "paralysis resist%": 100, 
+                "passive id": "4", 
+                "passive target": "self", 
+                "poison resist%": 100, 
+                "sick resist%": 100, 
+                "weaken resist%": 100
+            }, 
+            {
+                "angel idol chance% condition": 0, 
+                "angel idol recover chance% high": 40, 
+                "angel idol recover chance% low": 40, 
+                "angel idol recover counts": 2, 
+                "conditions": [], 
+                "passive id": "69", 
+                "passive target": "self"
+            }
+        ], 
+        "name": "永遠の華剣", 
+        "target": "self"
+    }, 
+    "27300": {
+        "desc": "クリティカルダメージをアップ＆スパーク時、ＢＢゲージを超絶増加", 
+        "effects": [
+            {
+                "conditions": [], 
+                "crit multiplier%": 50.0, 
+                "passive id": "34", 
+                "passive target": "self"
+            }, 
+            {
+                "bc fill on spark high": 8, 
+                "bc fill on spark low": 8, 
+                "bc fill on spark%": 100, 
+                "conditions": [], 
+                "passive id": "47", 
+                "passive target": "self"
+            }
+        ], 
+        "name": "渇望の大太刀", 
+        "target": "self"
+    }, 
+    "27400": {
+        "desc": "クリティカルダメージをかなりアップ＆スパーク時、ＢＢゲージを超絶増加", 
+        "effects": [
+            {
+                "conditions": [], 
+                "crit multiplier%": 100.0, 
+                "passive id": "34", 
+                "passive target": "self"
+            }, 
+            {
+                "bc fill on spark high": 10, 
+                "bc fill on spark low": 10, 
+                "bc fill on spark%": 100, 
+                "conditions": [], 
+                "passive id": "47", 
+                "passive target": "self"
+            }
+        ], 
+        "name": "不滅の一閃", 
         "target": "self"
     }, 
     "2800": {
