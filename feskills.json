@@ -19403,6 +19403,274 @@
             }
         ]
     }, 
+    "860258": {
+        "category": {
+            "1": {
+                "name": "\u30b9\u30c6\u30a2\u30c3\u30d7\u7cfb"
+            }, 
+            "11": {
+                "name": "\u7279\u6b8a"
+            }, 
+            "2": {
+                "name": "\u30b9\u30d1\u30fc\u30af\u7cfb"
+            }
+        }, 
+        "skills": [
+            {
+                "category": "1", 
+                "dependency": "", 
+                "dependency comment": "", 
+                "id": "140000", 
+                "skill": {
+                    "bp": 10, 
+                    "desc": "50% boost to Atk", 
+                    "effects": [
+                        {
+                            "passive": {
+                                "atk% buff": 50, 
+                                "passive id": "1"
+                            }
+                        }
+                    ], 
+                    "id": "140000", 
+                    "level": 1, 
+                    "name": "50% boost to Atk", 
+                    "series": "100000"
+                }
+            }, 
+            {
+                "category": "1", 
+                "dependency": "", 
+                "dependency comment": "", 
+                "id": "1000010043", 
+                "skill": {
+                    "bp": 10, 
+                    "desc": "50% boost to Atk when HP is over 50%", 
+                    "effects": [
+                        {
+                            "passive": {
+                                "atk% buff": 50, 
+                                "hp above % buff requirement": 50, 
+                                "passive id": "11"
+                            }
+                        }
+                    ], 
+                    "id": "1000010043", 
+                    "level": 1, 
+                    "name": "50% boost to Atk when HP is over 50%", 
+                    "series": "1000020036"
+                }
+            }, 
+            {
+                "category": "1", 
+                "dependency": "", 
+                "dependency comment": "", 
+                "id": "170001", 
+                "skill": {
+                    "bp": 10, 
+                    "desc": "Boosts Atk when BB gauge is over 50%", 
+                    "effects": [
+                        {
+                            "passive": {
+                                "atk% buff": 50, 
+                                "bb gauge above % buff requirement": 50, 
+                                "passive id": "30"
+                            }
+                        }
+                    ], 
+                    "id": "170001", 
+                    "level": 4, 
+                    "name": "Boosts Atk when BB gauge is over 50%", 
+                    "series": "170000"
+                }
+            }, 
+            {
+                "category": "2", 
+                "dependency": "", 
+                "dependency comment": "", 
+                "id": "1030002", 
+                "skill": {
+                    "bp": 10, 
+                    "desc": "70% boost to Spark damage", 
+                    "effects": [
+                        {
+                            "passive": {
+                                "damage% for spark": 70, 
+                                "passive id": "31"
+                            }
+                        }
+                    ], 
+                    "id": "1030002", 
+                    "level": 4, 
+                    "name": "70% boost to Spark damage", 
+                    "series": "1000000"
+                }
+            }, 
+            {
+                "category": "2", 
+                "dependency": "1@1030002", 
+                "dependency comment": "", 
+                "id": "1000400", 
+                "skill": {
+                    "bp": 10, 
+                    "desc": "Raises Spark damage boost from 70% to 100%", 
+                    "effects": [
+                        {
+                            "passive": {
+                                "damage% for spark": 100, 
+                                "passive id": "31"
+                            }
+                        }
+                    ], 
+                    "id": "1000400", 
+                    "level": 5, 
+                    "name": "Boosts 70% Spark damage to 100% Spark damage", 
+                    "series": "1000000"
+                }
+            }, 
+            {
+                "category": "11", 
+                "dependency": "", 
+                "dependency comment": "", 
+                "id": "1000010044", 
+                "skill": {
+                    "bp": 30, 
+                    "desc": "Slightly reduces damage for 1 turn when damage dealt has exceeded certain amount", 
+                    "effects": [
+                        {
+                            "passive": {
+                                "buff": {
+                                    "buff turns (36)": "1", 
+                                    "dmg reduction% buff": 25
+                                }, 
+                                "damage dealt threshold buff activation": 50000, 
+                                "passive id": "80"
+                            }
+                        }
+                    ], 
+                    "id": "1000010044", 
+                    "level": 5, 
+                    "name": "Slightly reduces damage for 1 turn when damage dealt has exceeded certain amount", 
+                    "series": "1000020039"
+                }
+            }, 
+            {
+                "category": "11", 
+                "dependency": "", 
+                "dependency comment": "", 
+                "id": "1000010048", 
+                "skill": {
+                    "bp": 50, 
+                    "desc": "Allows UBB's buff effects to last 4 turns", 
+                    "effects": [
+                        {
+                            "passive": {
+                                "passive id": "66", 
+                                "trigger on sbb": true, 
+                                "triggered effect": [
+                                    {
+                                        "effect delay time(ms)/frame": "0.0/0", 
+                                        "target area": "aoe", 
+                                        "target type": "party", 
+                                        "unknown proc id": "94", 
+                                        "unknown proc param": "0,100,3"
+                                    }
+                                ]
+                            }
+                        }
+                    ], 
+                    "id": "1000010048", 
+                    "level": 4, 
+                    "name": "Allows UBB's buff effects to last 4 turns", 
+                    "series": "1000020043"
+                }
+            }, 
+            {
+                "category": "11", 
+                "dependency": "", 
+                "dependency comment": "", 
+                "id": "1000010045", 
+                "skill": {
+                    "bp": 50, 
+                    "desc": "Enhances SBB's damage dealt by normal hit amount increase effect", 
+                    "effects": [
+                        {
+                            "add to sbb": {
+                                "extra hits dmg%": 50, 
+                                "hit increase buff turns (50)": 0, 
+                                "hit increase/hit": 0, 
+                                "proc id": "26"
+                            }
+                        }
+                    ], 
+                    "id": "1000010045", 
+                    "level": 5, 
+                    "name": "Enhances SBB's damage dealt by normal hit amount increase effect", 
+                    "series": "1000020040"
+                }
+            }, 
+            {
+                "category": "11", 
+                "dependency": "", 
+                "dependency comment": "", 
+                "id": "1000010046", 
+                "skill": {
+                    "bp": 50, 
+                    "desc": "Enhances SBB's normal hit amount increase effect", 
+                    "effects": [
+                        {
+                            "add to sbb": {
+                                "hit increase buff turns (50)": 0, 
+                                "hit increase/hit": 1, 
+                                "proc id": "26"
+                            }
+                        }
+                    ], 
+                    "id": "1000010046", 
+                    "level": 5, 
+                    "name": "Enhances SBB's normal hit amount increase effect", 
+                    "series": "1000020041"
+                }
+            }, 
+            {
+                "category": "11", 
+                "dependency": "", 
+                "dependency comment": "", 
+                "id": "1000010047", 
+                "skill": {
+                    "bp": 40, 
+                    "desc": "", 
+                    "effects": [
+                        {
+                            "add to ubb": {
+                                "hit increase buff turns (50)": 1, 
+                                "hit increase/hit": 0, 
+                                "proc id": "26"
+                            }
+                        }, 
+                        {
+                            "add to ubb": {
+                                "buff turns": 1, 
+                                "proc id": "23", 
+                                "spark dmg% buff (40)": 0
+                            }
+                        }, 
+                        {
+                            "add to ubb": {
+                                "buff turns": 1, 
+                                "element buffed": "all", 
+                                "proc id": "5"
+                            }
+                        }
+                    ], 
+                    "id": "1000010047", 
+                    "level": 6, 
+                    "name": "Allows UBB buff effects to last 4 turns", 
+                    "series": "1000020042"
+                }
+            }
+        ]
+    }, 
     "860368": {
         "category": {
             "10": {
