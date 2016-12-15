@@ -2333,6 +2333,28 @@
         ], 
         "name": "樹巧神の力"
     }, 
+    "12300": {
+        "desc": "確率で通常攻撃を全体攻撃化", 
+        "effects": [
+            {
+                "aoe atk inc%": -75, 
+                "chance to aoe": 15, 
+                "passive id": "96"
+            }
+        ], 
+        "name": "三尾の力"
+    }, 
+    "12301": {
+        "desc": "確率で通常攻撃を全体攻撃化", 
+        "effects": [
+            {
+                "aoe atk inc%": -50, 
+                "chance to aoe": 15, 
+                "passive id": "96"
+            }
+        ], 
+        "name": "九尾の照力"
+    }, 
     "124": {
         "desc": "樹属性ユニットの攻撃力を５０％アップ・防御力・回復力を１０％アップ", 
         "effects": [
@@ -2347,6 +2369,34 @@
             }
         ], 
         "name": "樹鎧神の力"
+    }, 
+    "12400": {
+        "desc": "確率で被ダメージの１５％を相手に反射する", 
+        "effects": [
+            {
+                "dmg% reflect chance%": 10, 
+                "dmg% reflect high": 15, 
+                "dmg% reflect low": 15, 
+                "passive id": "26"
+            }
+        ], 
+        "name": "亡魂の力"
+    }, 
+    "12401": {
+        "desc": "確率で被ダメージの２０％を相手に反射する＆確率で敵のＢＢゲージを少し減少", 
+        "effects": [
+            {
+                "dmg% reflect chance%": 15, 
+                "dmg% reflect high": 20, 
+                "dmg% reflect low": 20, 
+                "passive id": "26"
+            }, 
+            {
+                "unknown passive id": "110", 
+                "unknown passive params": "25,25,0,0,10,0"
+            }
+        ], 
+        "name": "貌魂の禍力"
     }, 
     "125": {
         "desc": "樹属性ユニットの攻撃力を６５％アップ", 
@@ -4808,6 +4858,33 @@
             }
         ], 
         "name": "業渇牙神の命衝"
+    }, 
+    "1952": {
+        "desc": "全てのユニットの攻撃力を１００％アップ・最大ＨＰを４０％アップ＆確率で防御貫通効果を付与＆クリティカルダメージを大幅にアップ＆クリティカル時、３ターン、ターン毎にＢＢゲージを超絶増加", 
+        "effects": [
+            {
+                "atk% buff": 100, 
+                "hp% buff": 40, 
+                "passive id": "1"
+            }, 
+            {
+                "ignore def%": 20, 
+                "passive id": "29"
+            }, 
+            {
+                "crit multiplier%": 150.0, 
+                "passive id": "34"
+            }, 
+            {
+                "buff": {
+                    "buff turns (37)": "3", 
+                    "increase bb gauge gradual buff": 8
+                }, 
+                "on crit activation chance%": 100, 
+                "passive id": "89"
+            }
+        ], 
+        "name": "勇鳳絶神の輝跡"
     }, 
     "2": {
         "desc": "リーダースキル１説明", 
@@ -9202,6 +9279,30 @@
             }
         ], 
         "name": "玲幾神闘の瞬旋"
+    }, 
+    "4362": {
+        "desc": "全てのユニットの防御力・最大ＨＰを５０％アップ＆ＢＢ発動に必要なＢＢゲージ量をかなり軽減＆ＢＣ獲得時の増加量をかなりアップ＆確率で被ダメージを２０％軽減", 
+        "effects": [
+            {
+                "def% buff": 50, 
+                "hp% buff": 50, 
+                "passive id": "1"
+            }, 
+            {
+                "passive id": "48", 
+                "reduced bb bc cost%": 25
+            }, 
+            {
+                "dmg reduction chance%": 15, 
+                "dmg reduction%": 20, 
+                "passive id": "14"
+            }, 
+            {
+                "bb gauge fill rate%": 50, 
+                "passive id": "32"
+            }
+        ], 
+        "name": "誓劾幻衛の玲煌"
     }, 
     "4400": {
         "desc": "ターン毎にＢＢゲージを少し増加＆全ての状態異常にかなりかかりにくくなる", 
@@ -13778,6 +13879,98 @@
             }
         ], 
         "name": "熾豪神の渾絶"
+    }, 
+    "7481": {
+        "desc": "全てのユニットの攻撃力・最大ＨＰを５０％アップ＆確率で全状態異常をランダムに発生＆スパークダメージを１００％アップ", 
+        "effects": [
+            {
+                "atk% buff": 50, 
+                "hp% buff": 50, 
+                "passive id": "1"
+            }, 
+            {
+                "injury%": 15, 
+                "passive id": "20", 
+                "poison%": 10, 
+                "sick%": 15, 
+                "weaken%": 15
+            }, 
+            {
+                "curse%": 10, 
+                "paralysis%": 10, 
+                "passive id": "20"
+            }, 
+            {
+                "damage% for spark": 100, 
+                "passive id": "31"
+            }
+        ], 
+        "name": "氷竜幻鋭の殲煌"
+    }, 
+    "7482": {
+        "desc": "全てのユニットの攻撃力・最大ＨＰを５０％アップ＆確率で防御貫通効果を付与＆ガード時のダメージ軽減率をアップ＆与ダメージが一定数を超える度に２ターン、確率で攻撃力を１ターン低下する効果を付与", 
+        "effects": [
+            {
+                "atk% buff": 50, 
+                "hp% buff": 50, 
+                "passive id": "1"
+            }, 
+            {
+                "ignore def%": 20, 
+                "passive id": "29"
+            }, 
+            {
+                "guard increase mitigation%": 10, 
+                "passive id": "58"
+            }, 
+            {
+                "buff": {
+                    "buff turns (74)": "2", 
+                    "unknown buff id": "74", 
+                    "unknown buff params": "-20&30&1"
+                }, 
+                "damage dealt threshold buff activation": 10000, 
+                "passive id": "80"
+            }
+        ], 
+        "name": "永樹龍神の転聖"
+    }, 
+    "7483": {
+        "desc": "全てのユニットの攻撃力・最大ＨＰを２０％アップ＆確率で被ダメージを１５％軽減", 
+        "effects": [
+            {
+                "atk% buff": 20, 
+                "hp% buff": 20, 
+                "passive id": "1"
+            }, 
+            {
+                "dmg reduction chance%": 10, 
+                "dmg reduction%": 15, 
+                "passive id": "14"
+            }
+        ], 
+        "name": "騎士の誓約"
+    }, 
+    "7484": {
+        "desc": "全てのユニットの攻撃力・最大ＨＰを３０％アップ＆確率で被ダメージを２０％軽減＆通常攻撃ＨＩＴ数を増加", 
+        "effects": [
+            {
+                "atk% buff": 30, 
+                "hp% buff": 30, 
+                "passive id": "1"
+            }, 
+            {
+                "dmg reduction chance%": 10, 
+                "dmg reduction%": 20, 
+                "passive id": "14"
+            }, 
+            {
+                "extra hits dmg%": -50, 
+                "hit increase/hit": 1, 
+                "passive id": "37"
+            }
+        ], 
+        "name": "聖なる守護騎士"
     }, 
     "7500": {
         "desc": "確率でＨＰを少し吸収", 
