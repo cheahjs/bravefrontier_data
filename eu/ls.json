@@ -1034,6 +1034,34 @@
         ], 
         "name": "Water Master's Power"
     }, 
+    "11400": {
+        "desc": "50% boost to Atk, Rec, max HP, restores HP and hugely boosts BB gauge each turn & damage taken may restore HP", 
+        "effects": [
+            {
+                "atk% buff": 50, 
+                "hp% buff": 50, 
+                "passive id": "1", 
+                "rec% buff": 50
+            }, 
+            {
+                "bc fill per turn": 6, 
+                "passive id": "9"
+            }, 
+            {
+                "passive id": "33", 
+                "rec% added (turn heal)": 10.0, 
+                "turn heal high": 800, 
+                "turn heal low": 600
+            }, 
+            {
+                "dmg% to hp% when attacked chance%": 30, 
+                "dmg% to hp% when attacked high": 25, 
+                "dmg% to hp% when attacked low": 25, 
+                "passive id": "24"
+            }
+        ], 
+        "name": "Purifier's Declaration"
+    }, 
     "115": {
         "desc": "65% boost to Atk power of Water types", 
         "effects": [
@@ -11170,10 +11198,10 @@
         "desc": "Huge boost to drop rates during battle, especially during Christmas season", 
         "effects": [
             {
-                "item drop rate% buff": 10, 
-                "karma drop rate% buff": 10, 
+                "item drop rate% buff": 25, 
+                "karma drop rate% buff": 25, 
                 "passive id": "19", 
-                "zel drop rate% buff": 10
+                "zel drop rate% buff": 25
             }
         ], 
         "name": "Chimney Sweep"
@@ -11182,12 +11210,12 @@
         "desc": "Boost to all drop rates during battle, especially during Christmas season (20%, +5 During Christmas) & Boost to BC fill rate (30%) & Boosts efficacy of HC (50%)", 
         "effects": [
             {
-                "bc drop rate% buff": 20, 
-                "hc drop rate% buff": 20, 
-                "item drop rate% buff": 20, 
-                "karma drop rate% buff": 20, 
+                "bc drop rate% buff": 25, 
+                "hc drop rate% buff": 25, 
+                "item drop rate% buff": 25, 
+                "karma drop rate% buff": 25, 
                 "passive id": "19", 
-                "zel drop rate% buff": 20
+                "zel drop rate% buff": 25
             }, 
             {
                 "bb gauge fill rate%": 30, 
@@ -11476,6 +11504,33 @@
             }
         ], 
         "name": "Royal Valiance"
+    }, 
+    "750167": {
+        "desc": "40% boost to all parameters & Boosts critical damage (150%) and Spark damage (100%) & Critical damage boosts BB gauge (8-10 BC)", 
+        "effects": [
+            {
+                "atk% buff": 40, 
+                "def% buff": 40, 
+                "hp% buff": 40, 
+                "passive id": "1", 
+                "rec% buff": 40
+            }, 
+            {
+                "bc fill on crit max": 10, 
+                "bc fill on crit min": 8, 
+                "bc fill on crit%": 100.0, 
+                "passive id": "65"
+            }, 
+            {
+                "crit multiplier%": 150.0, 
+                "passive id": "34"
+            }, 
+            {
+                "damage% for spark": 100, 
+                "passive id": "31"
+            }
+        ], 
+        "name": "Own Destiny"
     }, 
     "750176": {
         "desc": "75% boost to Atk Power of Female Units & Additional 75% when 5 elements or more are present & Boosts BB gauge each turn (4 BC) & Boosts to BB atk (100%)", 
@@ -12226,6 +12281,62 @@
             }
         ], 
         "name": "Guide's Wisdom"
+    }, 
+    "760226": {
+        "desc": "40% boost to max HP & Boosts ATK, DEF, REC relative to remaining HP (20-60%) & 100% boost to Spark damage", 
+        "effects": [
+            {
+                "hp% buff": 40, 
+                "passive id": "1"
+            }, 
+            {
+                "atk% base buff": 20, 
+                "atk% extra buff based on hp": 40, 
+                "buff proportional to hp": "remaining", 
+                "def% base buff": 20, 
+                "def% extra buff based on hp": 40, 
+                "passive id": "46", 
+                "rec% base buff": 20, 
+                "rec% extra buff based on hp": 40
+            }, 
+            {
+                "damage% for spark": 100, 
+                "passive id": "31"
+            }
+        ], 
+        "name": "Ironclad Defense"
+    }, 
+    "760227": {
+        "desc": "50% boost to max HP & Boosts ATK, DEF, REC relative to remaining HP (20-80%) & 100% boost to Spark damage & reduces damage taken (20%) for 2 turns when Sparks have exceeded certain amount (15)", 
+        "effects": [
+            {
+                "hp% buff": 50, 
+                "passive id": "1"
+            }, 
+            {
+                "atk% base buff": 20, 
+                "atk% extra buff based on hp": 60, 
+                "buff proportional to hp": "remaining", 
+                "def% base buff": 20, 
+                "def% extra buff based on hp": 60, 
+                "passive id": "46", 
+                "rec% base buff": 20, 
+                "rec% extra buff based on hp": 60
+            }, 
+            {
+                "damage% for spark": 100, 
+                "passive id": "31"
+            }, 
+            {
+                "buff": {
+                    "buff turns (36)": "2", 
+                    "dmg reduction% buff": 20
+                }, 
+                "passive id": "86", 
+                "spark count buff activation": 15
+            }
+        ], 
+        "name": "Impregnable Defense"
     }, 
     "780086": {
         "desc": "30% boost to Atk Power of Female Units. Additional 30% when 5 elements or more are present", 
