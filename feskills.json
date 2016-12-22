@@ -18761,20 +18761,23 @@
                 "dependency comment": "", 
                 "id": "1000010049", 
                 "skill": {
-                    "bp": 20, 
+                    "bp": 10, 
                     "desc": "Boosts Item drop rate", 
                     "effects": [
                         {
                             "passive": {
-                                "item drop rate% buff": 2, 
-                                "passive id": "19"
+                                "atk% buff": 10, 
+                                "def% buff": 10, 
+                                "hp% buff": 10, 
+                                "passive id": "1", 
+                                "rec% buff": 10
                             }
                         }
                     ], 
                     "id": "1000010049", 
                     "level": 3, 
                     "name": "Boosts Item drop rate", 
-                    "series": "1000010049"
+                    "series": "1000020044"
                 }
             }, 
             {
@@ -18810,21 +18813,24 @@
                 "dependency comment": "", 
                 "id": "1000010050", 
                 "skill": {
-                    "bp": 20, 
+                    "bp": 30, 
                     "desc": "Enhances SBB's elemental damage boost effect", 
                     "effects": [
                         {
-                            "add to sbb": {
-                                "elemental weakness buff turns": 0, 
-                                "elemental weakness multiplier%": 50.0, 
-                                "proc id": "55"
+                            "add to bb": {
+                                "atk% buff (1)": 30, 
+                                "buff turns": 0, 
+                                "def% buff (3)": 30, 
+                                "element buffed": "all", 
+                                "proc id": "5", 
+                                "rec% buff (5)": 30
                             }
                         }
                     ], 
                     "id": "1000010050", 
-                    "level": 4, 
+                    "level": 3, 
                     "name": "Enhances SBB's elemental damage boost effect", 
-                    "series": "1000010050"
+                    "series": "1000020045"
                 }
             }, 
             {
@@ -18837,26 +18843,19 @@
                     "desc": "Adds fills own BB gauge to max effect to BB/UBB", 
                     "effects": [
                         {
-                            "passive": {
-                                "passive id": "66", 
-                                "trigger on bb": true, 
-                                "trigger on ubb": true, 
-                                "triggered effect": [
-                                    {
-                                        "bb bc fill%": 100, 
-                                        "effect delay time(ms)/frame": "0.0/0", 
-                                        "proc id": "4", 
-                                        "target area": "single", 
-                                        "target type": "self"
-                                    }
-                                ]
+                            "add to bb": {
+                                "proc id": "78", 
+                                "self atk% buff": 30, 
+                                "self def% buff": 30, 
+                                "self rec% buff": 30, 
+                                "self stat buff turns": 0
                             }
                         }
                     ], 
                     "id": "1000010051", 
-                    "level": 4, 
+                    "level": 3, 
                     "name": "Adds fills own BB gauge to max effect to BB/UBB", 
-                    "series": "1000010051"
+                    "series": "1000020046"
                 }
             }, 
             {
@@ -18869,19 +18868,32 @@
                     "desc": "Enhances SBB's damage reduction effect to include Light, Dark types", 
                     "effects": [
                         {
-                            "add to sbb": {
-                                "dmg% mitigation for elemental attacks": 0, 
-                                "dmg% mitigation for elemental attacks buff turns": 0, 
-                                "mitigate dark attacks": true, 
-                                "mitigate light attacks": true, 
-                                "proc id": "39"
+                            "add to bb": {
+                                "buff turns": 1, 
+                                "element buffed": "all", 
+                                "proc id": "5"
+                            }
+                        }, 
+                        {
+                            "add to bb": {
+                                "proc id": "78", 
+                                "self stat buff turns": 1
+                            }
+                        }, 
+                        {
+                            "add to bb": {
+                                "bc fill when attacked high": 0, 
+                                "bc fill when attacked low": 0, 
+                                "bc fill when attacked turns (38)": 1, 
+                                "bc fill when attacked%": 0, 
+                                "proc id": "20"
                             }
                         }
                     ], 
                     "id": "1000010052", 
-                    "level": 5, 
+                    "level": 4, 
                     "name": "Enhances SBB's damage reduction effect to include Light, Dark types", 
-                    "series": "1000010052"
+                    "series": "1000020047"
                 }
             }, 
             {
@@ -18977,34 +18989,23 @@
                 "dependency comment": "", 
                 "id": "1000010053", 
                 "skill": {
-                    "bp": 50, 
+                    "bp": 30, 
                     "desc": "Allows UBB effects to last for 4 turns", 
                     "effects": [
                         {
-                            "add to ubb": {
-                                "dmg% reduction": 0, 
-                                "dmg% reduction turns (36)": 1, 
-                                "proc id": "18"
-                            }
-                        }, 
-                        {
-                            "add to ubb": {
-                                "% converted turns": 1, 
-                                "converted attribute": null, 
-                                "proc id": "24"
-                            }
-                        }, 
-                        {
-                            "add to ubb": {
-                                "drop rate buff turns": 1, 
-                                "proc id": "6"
+                            "add to sbb": {
+                                "bc fill on spark buff turns (111)": 0, 
+                                "bc fill on spark high": 1, 
+                                "bc fill on spark low": 1, 
+                                "bc fill on spark%": 0, 
+                                "proc id": "67"
                             }
                         }
                     ], 
                     "id": "1000010053", 
                     "level": 4, 
                     "name": "Allows UBB effects to last for 4 turns", 
-                    "series": "1000010053"
+                    "series": "1000020048"
                 }
             }, 
             {
@@ -19013,20 +19014,28 @@
                 "dependency comment": "", 
                 "id": "1000010054", 
                 "skill": {
-                    "bp": 80, 
+                    "bp": 30, 
                     "desc": "Enhances LS's EXP boost effect", 
                     "effects": [
                         {
-                            "add to passive": {
-                                "passive id": "97", 
-                                "xp gained increase%": 8
+                            "add to sbb": {
+                                "buff turns": 0, 
+                                "proc id": "23", 
+                                "spark dmg% buff (40)": 30
+                            }
+                        }, 
+                        {
+                            "add to ubb": {
+                                "buff turns": 0, 
+                                "proc id": "23", 
+                                "spark dmg% buff (40)": 30
                             }
                         }
                     ], 
                     "id": "1000010054", 
-                    "level": 10, 
+                    "level": 4, 
                     "name": "Enhances LS's EXP boost effect", 
-                    "series": "1000010054"
+                    "series": "1000020049"
                 }
             }
         ]
@@ -19992,6 +20001,317 @@
                     "level": 4, 
                     "name": "Enhances SBB/UBB's damage boost against status afflicted foes", 
                     "series": "1000010042"
+                }
+            }
+        ]
+    }, 
+    "840128": {
+        "category": {
+            "1": {
+                "name": "\u30b9\u30c6\u30a2\u30c3\u30d7\u7cfb"
+            }, 
+            "11": {
+                "name": "\u7279\u6b8a"
+            }, 
+            "2": {
+                "name": "\u30b9\u30d1\u30fc\u30af\u7cfb"
+            }
+        }, 
+        "skills": [
+            {
+                "category": "1", 
+                "dependency": "", 
+                "dependency comment": "", 
+                "id": "710000", 
+                "skill": {
+                    "bp": 20, 
+                    "desc": "20% boost to all parameters", 
+                    "effects": [
+                        {
+                            "passive": {
+                                "atk% buff": 20, 
+                                "def% buff": 20, 
+                                "hp% buff": 20, 
+                                "passive id": "1", 
+                                "rec% buff": 20
+                            }
+                        }
+                    ], 
+                    "id": "710000", 
+                    "level": 2, 
+                    "name": "20% boost to all parameters", 
+                    "series": "700000"
+                }
+            }, 
+            {
+                "category": "1", 
+                "dependency": "1@710000", 
+                "dependency comment": "", 
+                "id": "1000010049", 
+                "skill": {
+                    "bp": 10, 
+                    "desc": "Boosts Item drop rate", 
+                    "effects": [
+                        {
+                            "passive": {
+                                "atk% buff": 10, 
+                                "def% buff": 10, 
+                                "hp% buff": 10, 
+                                "passive id": "1", 
+                                "rec% buff": 10
+                            }
+                        }
+                    ], 
+                    "id": "1000010049", 
+                    "level": 3, 
+                    "name": "Boosts Item drop rate", 
+                    "series": "1000020044"
+                }
+            }, 
+            {
+                "category": "1", 
+                "dependency": "", 
+                "dependency comment": "", 
+                "id": "420001", 
+                "skill": {
+                    "bp": 20, 
+                    "desc": "30% boost to max HP", 
+                    "effects": [
+                        {
+                            "passive": {
+                                "hp% buff": 30, 
+                                "passive id": "1"
+                            }
+                        }
+                    ], 
+                    "id": "420001", 
+                    "level": 1, 
+                    "name": "30% boost to max HP", 
+                    "series": "400000"
+                }
+            }, 
+            {
+                "category": "2", 
+                "dependency": "", 
+                "dependency comment": "", 
+                "id": "1030002", 
+                "skill": {
+                    "bp": 10, 
+                    "desc": "70% boost to Spark damage", 
+                    "effects": [
+                        {
+                            "passive": {
+                                "damage% for spark": 70, 
+                                "passive id": "31"
+                            }
+                        }
+                    ], 
+                    "id": "1030002", 
+                    "level": 4, 
+                    "name": "70% boost to Spark damage", 
+                    "series": "1000000"
+                }
+            }, 
+            {
+                "category": "2", 
+                "dependency": "1@1030002", 
+                "dependency comment": "", 
+                "id": "1000400", 
+                "skill": {
+                    "bp": 10, 
+                    "desc": "Raises Spark damage boost from 70% to 100%", 
+                    "effects": [
+                        {
+                            "passive": {
+                                "damage% for spark": 100, 
+                                "passive id": "31"
+                            }
+                        }
+                    ], 
+                    "id": "1000400", 
+                    "level": 5, 
+                    "name": "Boosts 70% Spark damage to 100% Spark damage", 
+                    "series": "1000000"
+                }
+            }, 
+            {
+                "category": "11", 
+                "dependency": "", 
+                "dependency comment": "", 
+                "id": "1000010050", 
+                "skill": {
+                    "bp": 30, 
+                    "desc": "Enhances SBB's elemental damage boost effect", 
+                    "effects": [
+                        {
+                            "add to bb": {
+                                "atk% buff (1)": 30, 
+                                "buff turns": 0, 
+                                "def% buff (3)": 30, 
+                                "element buffed": "all", 
+                                "proc id": "5", 
+                                "rec% buff (5)": 30
+                            }
+                        }
+                    ], 
+                    "id": "1000010050", 
+                    "level": 3, 
+                    "name": "Enhances SBB's elemental damage boost effect", 
+                    "series": "1000020045"
+                }
+            }, 
+            {
+                "category": "11", 
+                "dependency": "", 
+                "dependency comment": "", 
+                "id": "1000010051", 
+                "skill": {
+                    "bp": 30, 
+                    "desc": "Adds fills own BB gauge to max effect to BB/UBB", 
+                    "effects": [
+                        {
+                            "add to bb": {
+                                "proc id": "78", 
+                                "self atk% buff": 30, 
+                                "self def% buff": 30, 
+                                "self rec% buff": 30, 
+                                "self stat buff turns": 0
+                            }
+                        }
+                    ], 
+                    "id": "1000010051", 
+                    "level": 3, 
+                    "name": "Adds fills own BB gauge to max effect to BB/UBB", 
+                    "series": "1000020046"
+                }
+            }, 
+            {
+                "category": "11", 
+                "dependency": "", 
+                "dependency comment": "", 
+                "id": "1000010052", 
+                "skill": {
+                    "bp": 30, 
+                    "desc": "Enhances SBB's damage reduction effect to include Light, Dark types", 
+                    "effects": [
+                        {
+                            "add to bb": {
+                                "buff turns": 1, 
+                                "element buffed": "all", 
+                                "proc id": "5"
+                            }
+                        }, 
+                        {
+                            "add to bb": {
+                                "proc id": "78", 
+                                "self stat buff turns": 1
+                            }
+                        }, 
+                        {
+                            "add to bb": {
+                                "bc fill when attacked high": 0, 
+                                "bc fill when attacked low": 0, 
+                                "bc fill when attacked turns (38)": 1, 
+                                "bc fill when attacked%": 0, 
+                                "proc id": "20"
+                            }
+                        }
+                    ], 
+                    "id": "1000010052", 
+                    "level": 4, 
+                    "name": "Enhances SBB's damage reduction effect to include Light, Dark types", 
+                    "series": "1000020047"
+                }
+            }, 
+            {
+                "category": "11", 
+                "dependency": "", 
+                "dependency comment": "", 
+                "id": "1000010053", 
+                "skill": {
+                    "bp": 30, 
+                    "desc": "Allows UBB effects to last for 4 turns", 
+                    "effects": [
+                        {
+                            "add to sbb": {
+                                "bc fill on spark buff turns (111)": 0, 
+                                "bc fill on spark high": 1, 
+                                "bc fill on spark low": 1, 
+                                "bc fill on spark%": 0, 
+                                "proc id": "67"
+                            }
+                        }
+                    ], 
+                    "id": "1000010053", 
+                    "level": 4, 
+                    "name": "Allows UBB effects to last for 4 turns", 
+                    "series": "1000020048"
+                }
+            }, 
+            {
+                "category": "11", 
+                "dependency": "", 
+                "dependency comment": "", 
+                "id": "1000010054", 
+                "skill": {
+                    "bp": 30, 
+                    "desc": "Enhances LS's EXP boost effect", 
+                    "effects": [
+                        {
+                            "add to sbb": {
+                                "buff turns": 0, 
+                                "proc id": "23", 
+                                "spark dmg% buff (40)": 30
+                            }
+                        }, 
+                        {
+                            "add to ubb": {
+                                "buff turns": 0, 
+                                "proc id": "23", 
+                                "spark dmg% buff (40)": 30
+                            }
+                        }
+                    ], 
+                    "id": "1000010054", 
+                    "level": 4, 
+                    "name": "Enhances LS's EXP boost effect", 
+                    "series": "1000020049"
+                }
+            }, 
+            {
+                "category": "11", 
+                "dependency": "", 
+                "dependency comment": "", 
+                "id": "1000010055", 
+                "skill": {
+                    "bp": 30, 
+                    "desc": "\uff22\uff22\u53ca\u3073\uff33\uff22\uff22\u306b\u300c\u5473\u65b9\u5168\u4f53\u306b\uff13\u30bf\u30fc\u30f3\u3001\u901a\u5e38\u653b\u6483\u3092\u5168\u4f53\u653b\u6483\u5316\u300d\u3092\u8ffd\u52a0", 
+                    "effects": [
+                        {
+                            "add to ubb": {
+                                "buff turns": 1, 
+                                "element buffed": "all", 
+                                "proc id": "5"
+                            }
+                        }, 
+                        {
+                            "add to ubb": {
+                                "buff turns": 1, 
+                                "proc id": "23", 
+                                "spark dmg% buff (40)": 0
+                            }
+                        }, 
+                        {
+                            "add to ubb": {
+                                "unknown proc id": "88", 
+                                "unknown proc param": "0,0,0,0,0,0,1,0"
+                            }
+                        }
+                    ], 
+                    "id": "1000010055", 
+                    "level": 4, 
+                    "name": "Allows UBB effects to last for 4 turns", 
+                    "series": "1000020050"
                 }
             }
         ]
