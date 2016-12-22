@@ -854,6 +854,59 @@
         ], 
         "name": "氷雪の猛威"
     }, 
+    "10132": {
+        "desc": "全てのユニットの全能力を４５％アップ＆確率で被ダメージを２０％軽減＆ＢＢ発動に必要なＢＢゲージ量を軽減", 
+        "effects": [
+            {
+                "atk% buff": 45, 
+                "def% buff": 45, 
+                "hp% buff": 45, 
+                "passive id": "1", 
+                "rec% buff": 45
+            }, 
+            {
+                "dmg reduction chance%": 10, 
+                "dmg reduction%": 20, 
+                "passive id": "14"
+            }, 
+            {
+                "passive id": "48", 
+                "reduced bb bc cost%": 15
+            }
+        ], 
+        "name": "司衡神の盟義"
+    }, 
+    "10133": {
+        "desc": "全てのユニットの全能力を５０％アップ＆確率で被ダメージを２０％軽減＆ＢＢ発動に必要なＢＢゲージ量を軽減＆スパークが一定数を超える度に２ターン、ＯＤゲージ上昇量をアップ", 
+        "effects": [
+            {
+                "atk% buff": 50, 
+                "def% buff": 50, 
+                "hp% buff": 50, 
+                "passive id": "1", 
+                "rec% buff": 50
+            }, 
+            {
+                "dmg reduction chance%": 15, 
+                "dmg reduction%": 20, 
+                "passive id": "14"
+            }, 
+            {
+                "passive id": "48", 
+                "reduced bb bc cost%": 20
+            }, 
+            {
+                "buff": {
+                    "buff turns (132)": "2", 
+                    "unknown buff id": "132", 
+                    "unknown buff params": "20&2&0"
+                }, 
+                "passive id": "86", 
+                "spark count buff activation": 20
+            }
+        ], 
+        "name": "司衡征神の盟勢"
+    }, 
     "102": {
         "desc": "炎属性ユニットの攻撃力を５０％アップ・最大ＨＰを１０％アップ", 
         "effects": [
@@ -13971,6 +14024,106 @@
             }
         ], 
         "name": "聖なる守護騎士"
+    }, 
+    "7485": {
+        "desc": "全てのユニットの攻撃力・最大ＨＰを５０％アップ＆アイテム出現率を大幅にアップ＆確率で通常攻撃を全体攻撃化する＆確率でスパーククリティカルが発生", 
+        "effects": [
+            {
+                "atk% buff": 50, 
+                "hp% buff": 50, 
+                "passive id": "1"
+            }, 
+            {
+                "item drop rate% buff": 4, 
+                "passive id": "19"
+            }, 
+            {
+                "aoe atk inc%": -50, 
+                "chance to aoe": 25, 
+                "passive id": "96"
+            }, 
+            {
+                "unknown passive id": "100", 
+                "unknown passive params": "5,50"
+            }
+        ], 
+        "name": "麗奪神の鮮巧"
+    }, 
+    "7486": {
+        "desc": "全てのユニットの攻撃力・最大ＨＰを６０％アップ＆アイテム出現率を超絶アップ＆確率で通常攻撃を全体攻撃化する＆確率でスパーククリティカルが発生", 
+        "effects": [
+            {
+                "atk% buff": 60, 
+                "hp% buff": 60, 
+                "passive id": "1"
+            }, 
+            {
+                "item drop rate% buff": 5, 
+                "passive id": "19"
+            }, 
+            {
+                "aoe atk inc%": -50, 
+                "chance to aoe": 30, 
+                "passive id": "96"
+            }, 
+            {
+                "unknown passive id": "100", 
+                "unknown passive params": "10,50"
+            }
+        ], 
+        "name": "麗伐鋭神の宝巧"
+    }, 
+    "7487": {
+        "desc": "全てのユニットの攻撃力・最大ＨＰを５０％アップ＆水・雷属性ユニットからの被ダメージを１０％軽減＆樹・雷属性の弱点属性ダメージを大幅にアップ", 
+        "effects": [
+            {
+                "atk% buff": 50, 
+                "hp% buff": 50, 
+                "passive id": "1"
+            }, 
+            {
+                "dmg% mitigation for elemental attacks": 10.0, 
+                "mitigate thunder attacks": true, 
+                "mitigate water attacks": true, 
+                "passive id": "62"
+            }, 
+            {
+                "earth units do extra elemental weakness dmg": true, 
+                "elemental weakness multiplier%": 100.0, 
+                "passive id": "50", 
+                "thunder units do extra elemental weakness dmg": true
+            }
+        ], 
+        "name": "仁功神の穿激"
+    }, 
+    "7488": {
+        "desc": "全てのユニットの攻撃力・最大ＨＰを６０％アップ＆水・雷属性ユニットからの被ダメージを１５％軽減＆樹・雷属性の弱点属性ダメージを大幅にアップ＆攻撃ＢＢの威力を超絶アップ", 
+        "effects": [
+            {
+                "atk% buff": 60, 
+                "hp% buff": 60, 
+                "passive id": "1"
+            }, 
+            {
+                "dmg% mitigation for elemental attacks": 15.0, 
+                "mitigate thunder attacks": true, 
+                "mitigate water attacks": true, 
+                "passive id": "62"
+            }, 
+            {
+                "earth units do extra elemental weakness dmg": true, 
+                "elemental weakness multiplier%": 150.0, 
+                "passive id": "50", 
+                "thunder units do extra elemental weakness dmg": true
+            }, 
+            {
+                "bb atk% buff": 250, 
+                "passive id": "64", 
+                "sbb atk% buff": 250, 
+                "ubb atk% buff": 250
+            }
+        ], 
+        "name": "仁功傑神の穿覇"
     }, 
     "7500": {
         "desc": "確率でＨＰを少し吸収", 

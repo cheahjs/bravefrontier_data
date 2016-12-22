@@ -13857,6 +13857,88 @@
         "name": "刻まれし記憶", 
         "target": "self"
     }, 
+    "28700": {
+        "desc": "ＢＣ獲得数が一定数を超える度に２ターン、攻撃力・防御力をアップ＆通常攻撃ＨＩＴ数を増加", 
+        "effects": [
+            {
+                "conditions": [], 
+                "hit increase/hit": 1, 
+                "passive id": "37", 
+                "passive target": "self"
+            }, 
+            {
+                "bc receive count buff activation": 10, 
+                "buff": {
+                    "atk% buff (1)": 50, 
+                    "buff turns (1)": "2"
+                }, 
+                "conditions": [], 
+                "passive id": "82", 
+                "passive target": "self"
+            }, 
+            {
+                "bc receive count buff activation": 10, 
+                "buff": {
+                    "buff turns (3)": "2", 
+                    "def% buff (3)": 50
+                }, 
+                "conditions": [], 
+                "passive id": "82", 
+                "passive target": "self"
+            }
+        ], 
+        "name": "蒼刻の奪掠", 
+        "target": "self"
+    }, 
+    "28800": {
+        "desc": "ＢＣ獲得数が一定数を超える度に２ターン、攻撃力・防御力をアップ＆通常攻撃ＨＩＴ数を増加", 
+        "effects": [
+            {
+                "conditions": [], 
+                "hit increase/hit": 1, 
+                "passive id": "37", 
+                "passive target": "self"
+            }, 
+            {
+                "bc receive count buff activation": 10, 
+                "buff": {
+                    "atk% buff (1)": 80, 
+                    "buff turns (1)": "2"
+                }, 
+                "conditions": [], 
+                "passive id": "82", 
+                "passive target": "self"
+            }, 
+            {
+                "bc receive count buff activation": 10, 
+                "buff": {
+                    "buff turns (3)": "2", 
+                    "def% buff (3)": 80
+                }, 
+                "conditions": [], 
+                "passive id": "82", 
+                "passive target": "self"
+            }
+        ], 
+        "name": "絢爛なる渇求", 
+        "target": "self"
+    }, 
+    "28900": {
+        "desc": "全てのユニットの攻撃力・防御力・回復力・最大ＨＰを１０％アップ", 
+        "effects": [
+            {
+                "atk% buff": 10, 
+                "conditions": [], 
+                "def% buff": 10, 
+                "hp% buff": 10, 
+                "passive id": "1", 
+                "passive target": "party", 
+                "rec% buff": 10
+            }
+        ], 
+        "name": "清廉たる政道", 
+        "target": "self"
+    }, 
     "2900": {
         "desc": "被ダメージ時、ＢＢゲージを増加", 
         "effects": [
@@ -13870,6 +13952,70 @@
             }
         ], 
         "name": "失われし半身", 
+        "target": "self"
+    }, 
+    "29000": {
+        "desc": "全てのユニットの攻撃力・防御力・回復力・最大ＨＰを１０％アップ＆オーバードライブ発動時、一度だけ戦闘不能を耐える", 
+        "effects": [
+            {
+                "atk% buff": 10, 
+                "conditions": [], 
+                "def% buff": 10, 
+                "hp% buff": 10, 
+                "passive id": "1", 
+                "passive target": "party", 
+                "rec% buff": 10
+            }, 
+            {
+                "conditions": [], 
+                "passive target": "self", 
+                "unknown passive id": "106", 
+                "unknown passive params": "12,100,1,100,-1"
+            }
+        ], 
+        "name": "不壊の統制", 
+        "target": "self"
+    }, 
+    "29100": {
+        "desc": "残りＨＰが多いほど、攻撃力をかなりアップ＆スパークダメージを３０％アップ", 
+        "effects": [
+            {
+                "atk% base buff": 0, 
+                "atk% extra buff based on hp": 80, 
+                "buff proportional to hp": "remaining", 
+                "conditions": [], 
+                "passive id": "46", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "damage% for spark": 30, 
+                "passive id": "31", 
+                "passive target": "self"
+            }
+        ], 
+        "name": "深憂の武威", 
+        "target": "self"
+    }, 
+    "29200": {
+        "desc": "残りＨＰが多いほど、攻撃力を大幅にアップ＆スパークダメージを５０％アップ", 
+        "effects": [
+            {
+                "atk% base buff": 0, 
+                "atk% extra buff based on hp": 100, 
+                "buff proportional to hp": "remaining", 
+                "conditions": [], 
+                "passive id": "46", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "damage% for spark": 50, 
+                "passive id": "31", 
+                "passive target": "self"
+            }
+        ], 
+        "name": "不退転の義憤", 
         "target": "self"
     }, 
     "3": {
