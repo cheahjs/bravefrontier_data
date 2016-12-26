@@ -8459,6 +8459,27 @@
         "name": "命神の幸守", 
         "target": "self"
     }, 
+    "1016000": {
+        "desc": "攻撃ＢＢの威力をアップ＆確率で防御貫通効果を付与", 
+        "effects": [
+            {
+                "bb atk% buff": 75, 
+                "conditions": [], 
+                "passive id": "64", 
+                "passive target": "self", 
+                "sbb atk% buff": 75, 
+                "ubb atk% buff": 75
+            }, 
+            {
+                "conditions": [], 
+                "ignore def%": 20, 
+                "passive id": "29", 
+                "passive target": "self"
+            }
+        ], 
+        "name": "覚醒の破守", 
+        "target": "self"
+    }, 
     "10200": {
         "desc": "ＢＣ獲得時の増加量を少しアップ＆ＨＣ獲得時の回復量を少しアップ", 
         "effects": [
@@ -14016,6 +14037,69 @@
             }
         ], 
         "name": "不退転の義憤", 
+        "target": "self"
+    }, 
+    "29300": {
+        "desc": "スパークダメージを５０％アップ＆攻撃ＢＢの威力を大幅にアップ＆攻撃力の上限値（９９９９９）を１３００００まで解放する", 
+        "effects": [
+            {
+                "conditions": [], 
+                "damage% for spark": 50, 
+                "passive id": "31", 
+                "passive target": "self"
+            }, 
+            {
+                "bb atk% buff": 150, 
+                "conditions": [], 
+                "passive id": "64", 
+                "passive target": "self", 
+                "sbb atk% buff": 150, 
+                "ubb atk% buff": 150
+            }, 
+            {
+                "conditions": [], 
+                "passive target": "self", 
+                "unknown passive id": "143", 
+                "unknown passive params": "130000"
+            }
+        ], 
+        "name": "真なる勝利", 
+        "target": "self"
+    }, 
+    "29400": {
+        "desc": "被ダメージが一定数を超える度にＢＢゲージを大幅に増加＆確率で全状態異常をランダムに発生＆攻撃力の上限値（９９９９９）を１３００００まで解放する", 
+        "effects": [
+            {
+                "conditions": [], 
+                "damage threshold activation": 5000, 
+                "increase bb gauge": 8, 
+                "passive id": "79", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "curse%": 8, 
+                "paralysis%": 8, 
+                "passive id": "20", 
+                "passive target": "self", 
+                "poison%": 8
+            }, 
+            {
+                "conditions": [], 
+                "injury%": 10, 
+                "passive id": "20", 
+                "passive target": "self", 
+                "sick%": 10, 
+                "weaken%": 10
+            }, 
+            {
+                "conditions": [], 
+                "passive target": "self", 
+                "unknown passive id": "143", 
+                "unknown passive params": "130000"
+            }
+        ], 
+        "name": "理想世界の夢", 
         "target": "self"
     }, 
     "3": {
