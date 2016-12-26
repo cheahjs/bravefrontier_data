@@ -3593,7 +3593,7 @@
                 "dependency comment": "「スパークダメージ１００％アップ」習得", 
                 "id": "1000501", 
                 "skill": {
-                    "bp": 10, 
+                    "bp": 20, 
                     "desc": "スパークダメージを１００％アップを１２０％にグレードアップ", 
                     "effects": [
                         {
@@ -3638,8 +3638,20 @@
                 "dependency comment": "", 
                 "id": "20230001", 
                 "skill": {
-                    "error": "data missing", 
-                    "id": "20230001"
+                    "bp": 10, 
+                    "desc": "リーダースキルの「スパークダメージを１２０％アップ」を１４０％にグレードアップ", 
+                    "effects": [
+                        {
+                            "add to passive": {
+                                "damage% for spark": 20, 
+                                "passive id": "31"
+                            }
+                        }
+                    ], 
+                    "id": "20230001", 
+                    "level": 4, 
+                    "name": "リーダースキル「スパークダメージを１２０％アップ」効果を強化", 
+                    "series": "20200000"
                 }
             }, 
             {
@@ -3648,8 +3660,28 @@
                 "dependency comment": "", 
                 "id": "31000101", 
                 "skill": {
-                    "error": "data missing", 
-                    "id": "31000101"
+                    "bp": 40, 
+                    "desc": "ＢＢ及びＳＢＢの「スパークダメージを超絶アップ」効果量を増加", 
+                    "effects": [
+                        {
+                            "add to bb": {
+                                "buff turns": 0, 
+                                "proc id": "23", 
+                                "spark dmg% buff (40)": 30
+                            }
+                        }, 
+                        {
+                            "add to sbb": {
+                                "buff turns": 0, 
+                                "proc id": "23", 
+                                "spark dmg% buff (40)": 30
+                            }
+                        }
+                    ], 
+                    "id": "31000101", 
+                    "level": 5, 
+                    "name": "ＢＢ・ＳＢＢの「スパークダメージをアップ」効果を強化", 
+                    "series": "31000100"
                 }
             }, 
             {
@@ -11330,15 +11362,8 @@
                 "id": "38004000", 
                 "skill": {
                     "bp": 40, 
-                    "desc": "ＢＢ及びＳＢＢの「状態異常の敵へのダメージを大幅にアップ」の効果量を増加", 
+                    "desc": "ＳＢＢの「状態異常の敵へのダメージを大幅にアップ」の効果量を増加", 
                     "effects": [
-                        {
-                            "add to bb": {
-                                "atk% buff turns (110)": 0, 
-                                "atk% buff when enemy has ailment": 30, 
-                                "proc id": "65"
-                            }
-                        }, 
                         {
                             "add to sbb": {
                                 "atk% buff turns (110)": 0, 
@@ -11349,7 +11374,7 @@
                     ], 
                     "id": "38004000", 
                     "level": 5, 
-                    "name": "ＢＢ・ＳＢＢの「状態異常の敵へのダメージをアップ」効果を強化", 
+                    "name": "ＳＢＢの「状態異常の敵へのダメージをアップ」効果を強化", 
                     "series": "38004000"
                 }
             }, 
@@ -11395,7 +11420,7 @@
                 "id": "60020001", 
                 "skill": {
                     "bp": 40, 
-                    "desc": "ＢＢ及びＳＢＢに「２ターン、ターン終了時に強力な追加ダメージ」を追加", 
+                    "desc": "ＢＢ及びＳＢＢに「敵全体に２ターン、ターン終了時に強力な追加ダメージ」を追加", 
                     "effects": [
                         {
                             "passive": {
@@ -11404,7 +11429,7 @@
                                 "trigger on sbb": true, 
                                 "triggered effect": [
                                     {
-                                        "dot atk%": 500, 
+                                        "dot atk%": 600, 
                                         "dot element affected": true, 
                                         "dot flat atk": 100, 
                                         "dot turns (71)": 2, 
