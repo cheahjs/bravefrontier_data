@@ -17546,6 +17546,284 @@
             }
         ]
     }, 
+    "810357": {
+        "category": {
+            "1": {
+                "name": "\u30b9\u30c6\u30a2\u30c3\u30d7\u7cfb"
+            }, 
+            "11": {
+                "name": "\u7279\u6b8a"
+            }, 
+            "3": {
+                "name": "\u30af\u30ea\u30c6\u30a3\u30ab\u30eb\u7cfb"
+            }, 
+            "4": {
+                "name": "\u653b\u6483\u5f37\u5316\u7cfb"
+            }, 
+            "6": {
+                "name": "\uff28\uff30\u56de\u5fa9\u7cfb"
+            }
+        }, 
+        "skills": [
+            {
+                "category": "1", 
+                "dependency": "", 
+                "dependency comment": "", 
+                "id": "420000", 
+                "skill": {
+                    "bp": 10, 
+                    "desc": "30% boost to max HP", 
+                    "effects": [
+                        {
+                            "passive": {
+                                "hp% buff": 30, 
+                                "passive id": "1"
+                            }
+                        }
+                    ], 
+                    "id": "420000", 
+                    "level": 1, 
+                    "name": "30% boost to max HP", 
+                    "series": "400000"
+                }
+            }, 
+            {
+                "category": "1", 
+                "dependency": "", 
+                "dependency comment": "", 
+                "id": "1000010065", 
+                "skill": {
+                    "bp": 15, 
+                    "desc": "30% boost to Def, max HP", 
+                    "effects": [
+                        {
+                            "passive": {
+                                "def% buff": 30, 
+                                "hp% buff": 30, 
+                                "passive id": "1"
+                            }
+                        }
+                    ], 
+                    "id": "1000010065", 
+                    "level": 3, 
+                    "name": "30% boost to Def, max HP", 
+                    "series": "1000010065"
+                }
+            }, 
+            {
+                "category": "3", 
+                "dependency": "", 
+                "dependency comment": "", 
+                "id": "2100200", 
+                "skill": {
+                    "bp": 10, 
+                    "desc": "Boosts critical hit damage", 
+                    "effects": [
+                        {
+                            "passive": {
+                                "crit multiplier%": 70.0, 
+                                "passive id": "34"
+                            }
+                        }
+                    ], 
+                    "id": "2100200", 
+                    "level": 3, 
+                    "name": "Boosts critical hit damage", 
+                    "series": "2100000"
+                }
+            }, 
+            {
+                "category": "4", 
+                "dependency": "", 
+                "dependency comment": "", 
+                "id": "3500000", 
+                "skill": {
+                    "bp": 30, 
+                    "desc": "Normal attack may hit all foes", 
+                    "effects": [
+                        {
+                            "passive": {
+                                "aoe atk inc%": -50, 
+                                "chance to aoe": 20, 
+                                "passive id": "96"
+                            }
+                        }
+                    ], 
+                    "id": "3500000", 
+                    "level": 3, 
+                    "name": "Normal attacks may hit all foes", 
+                    "series": "3500000"
+                }
+            }, 
+            {
+                "category": "4", 
+                "dependency": "1@3500000", 
+                "dependency comment": "", 
+                "id": "1000000005", 
+                "skill": {
+                    "bp": 10, 
+                    "desc": "Enhances probability of normal attacks hitting all foes effect added", 
+                    "effects": [
+                        {
+                            "passive": {
+                                "aoe atk inc%": -50, 
+                                "chance to aoe": 30, 
+                                "passive id": "96"
+                            }
+                        }
+                    ], 
+                    "id": "1000000005", 
+                    "level": 4, 
+                    "name": "Enhances probability of normal attacks hitting all foes effect added", 
+                    "series": "1000000005"
+                }
+            }, 
+            {
+                "category": "4", 
+                "dependency": "1@1000000005", 
+                "dependency comment": "", 
+                "id": "1000010066", 
+                "skill": {
+                    "bp": 20, 
+                    "desc": "Enhances damage dealt by normal attack may hit all foes effect", 
+                    "effects": [
+                        {
+                            "passive": {
+                                "aoe atk inc%": -25, 
+                                "chance to aoe": 30, 
+                                "passive id": "96"
+                            }
+                        }
+                    ], 
+                    "id": "1000010066", 
+                    "level": 2, 
+                    "name": "Enhances damage dealt by normal attack may hit all foes effect", 
+                    "series": "1000010066"
+                }
+            }, 
+            {
+                "category": "6", 
+                "dependency": "", 
+                "dependency comment": "", 
+                "id": "1000010067", 
+                "skill": {
+                    "bp": 15, 
+                    "desc": "Greatly restores HP each turn", 
+                    "effects": [
+                        {
+                            "passive": {
+                                "passive id": "33", 
+                                "rec% added (turn heal)": 10.0, 
+                                "turn heal high": 4000, 
+                                "turn heal low": 3000
+                            }
+                        }
+                    ], 
+                    "id": "1000010067", 
+                    "level": 3, 
+                    "name": "Greatly restores HP each turn", 
+                    "series": "1000010067"
+                }
+            }, 
+            {
+                "category": "11", 
+                "dependency": "", 
+                "dependency comment": "", 
+                "id": "55001003", 
+                "skill": {
+                    "bp": 30, 
+                    "desc": "Adds great HP restoration effect for 3 turns to BB/SBB", 
+                    "effects": [
+                        {
+                            "passive": {
+                                "passive id": "66", 
+                                "trigger on bb": true, 
+                                "trigger on sbb": true, 
+                                "triggered effect": [
+                                    {
+                                        "effect delay time(ms)/frame": "0.0/0", 
+                                        "gradual heal high": 3500, 
+                                        "gradual heal low": 3000, 
+                                        "gradual heal turns (8)": 3, 
+                                        "proc id": "3", 
+                                        "rec added% (from target)": 15.0, 
+                                        "target area": "aoe", 
+                                        "target type": "party"
+                                    }
+                                ]
+                            }
+                        }
+                    ], 
+                    "id": "55001003", 
+                    "level": 5, 
+                    "name": "Adds great HP restoration effect to BB/SBB", 
+                    "series": "55001000"
+                }
+            }, 
+            {
+                "category": "11", 
+                "dependency": "", 
+                "dependency comment": "", 
+                "id": "1000010068", 
+                "skill": {
+                    "bp": 30, 
+                    "desc": "Enhances BB/SBB's considerable Atk, Def boost for Fire types effect", 
+                    "effects": [
+                        {
+                            "add to bb": {
+                                "atk% buff (1)": 20, 
+                                "buff turns": 0, 
+                                "def% buff (3)": 20, 
+                                "element buffed": "all", 
+                                "proc id": "5"
+                            }
+                        }, 
+                        {
+                            "add to sbb": {
+                                "atk% buff (1)": 20, 
+                                "buff turns": 0, 
+                                "def% buff (3)": 20, 
+                                "element buffed": "all", 
+                                "proc id": "5"
+                            }
+                        }
+                    ], 
+                    "id": "1000010068", 
+                    "level": 3, 
+                    "name": "Enhances BB/SBB's considerable Atk, Def boost for Fire types effect", 
+                    "series": "1000010068"
+                }
+            }, 
+            {
+                "category": "11", 
+                "dependency": "", 
+                "dependency comment": "", 
+                "id": "1000010069", 
+                "skill": {
+                    "bp": 45, 
+                    "desc": "Enhances BB/SBB's probability to perform 1 extra action within the same turn", 
+                    "effects": [
+                        {
+                            "add to bb": {
+                                "unknown proc id": "76", 
+                                "unknown proc param": "0,5,0,0"
+                            }
+                        }, 
+                        {
+                            "add to sbb": {
+                                "unknown proc id": "76", 
+                                "unknown proc param": "0,5,0,0"
+                            }
+                        }
+                    ], 
+                    "id": "1000010069", 
+                    "level": 6, 
+                    "name": "Enhances BB/SBB's probability to perform 1 extra action within the same turn", 
+                    "series": "1000010069"
+                }
+            }
+        ]
+    }, 
     "810398": {
         "category": {
             "1": {
