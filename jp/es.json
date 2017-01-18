@@ -8480,6 +8480,86 @@
         "name": "覚醒の破守", 
         "target": "self"
     }, 
+    "1017000": {
+        "desc": "ＨＰが満タン時、攻撃力・防御力・回復力をアップ＆ターン毎にＨＰを超絶回復", 
+        "effects": [
+            {
+                "atk% buff": 50, 
+                "conditions": [], 
+                "def% buff": 50, 
+                "hp above % buff requirement": 100, 
+                "passive id": "11", 
+                "passive target": "self", 
+                "rec% buff": 50
+            }, 
+            {
+                "conditions": [], 
+                "passive id": "33", 
+                "passive target": "self", 
+                "rec% added (turn heal)": 10.0, 
+                "turn heal high": 10200, 
+                "turn heal low": 9800
+            }
+        ], 
+        "name": "聖癒の魂靭", 
+        "target": "self"
+    }, 
+    "1018000": {
+        "desc": "全状態異常・防御貫通効果を無効＆被ダメージが一定数を超える度にＢＢゲージを増加", 
+        "effects": [
+            {
+                "conditions": [], 
+                "damage threshold activation": 5000, 
+                "increase bb gauge": 5, 
+                "passive id": "79", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "ignore def resist chance%": 100, 
+                "passive id": "92", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "curse resist%": 100, 
+                "injury resist%": 100, 
+                "paralysis resist%": 100, 
+                "passive id": "4", 
+                "passive target": "self", 
+                "poison resist%": 100, 
+                "sick resist%": 100, 
+                "weaken resist%": 100
+            }
+        ], 
+        "name": "聖女神の英盾", 
+        "target": "self"
+    }, 
+    "1019000": {
+        "desc": "攻撃力を５０％アップ＆スパークダメージを５０％アップ＆攻撃力の上限値（９９９９９）を１３００００まで解放する", 
+        "effects": [
+            {
+                "conditions": [], 
+                "passive target": "self", 
+                "unknown passive id": "143", 
+                "unknown passive params": "130000"
+            }, 
+            {
+                "conditions": [], 
+                "damage% for spark": 50, 
+                "passive id": "31", 
+                "passive target": "self"
+            }, 
+            {
+                "atk% buff": 50, 
+                "conditions": [], 
+                "passive id": "1", 
+                "passive target": "self"
+            }
+        ], 
+        "name": "重壊の超己", 
+        "target": "self"
+    }, 
     "10200": {
         "desc": "ＢＣ獲得時の増加量を少しアップ＆ＨＣ獲得時の回復量を少しアップ", 
         "effects": [
@@ -14342,6 +14422,78 @@
             }
         ], 
         "name": "すべてを滅する力", 
+        "target": "self"
+    }, 
+    "30100": {
+        "desc": "弱点属性ダメージを大幅にアップ＆スパークダメージを５０％アップ＆クリティカルダメージをかなりアップ＆確率で被ダメージの１５％を相手に反射する", 
+        "effects": [
+            {
+                "conditions": [], 
+                "elemental weakness multiplier%": 125.0, 
+                "light units do extra elemental weakness dmg": true, 
+                "passive id": "50", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "damage% for spark": 50, 
+                "passive id": "31", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "crit multiplier%": 100.0, 
+                "passive id": "34", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "dmg% reflect chance%": 25, 
+                "dmg% reflect high": 15, 
+                "dmg% reflect low": 15, 
+                "passive id": "26", 
+                "passive target": "self"
+            }
+        ], 
+        "name": "覇闘の暗翼", 
+        "target": "self"
+    }, 
+    "30200": {
+        "desc": "「叛神の罪過」を装備時、攻撃力・防御力・回復力・最大ＨＰを３０％アップ＆ＨＰを少し吸収＆被ダメージ時、確率でＨＰを回復", 
+        "effects": [
+            {
+                "atk% buff": 30, 
+                "conditions": [
+                    {
+                        "item required": [
+                            "47207"
+                        ]
+                    }
+                ], 
+                "def% buff": 30, 
+                "hp% buff": 30, 
+                "passive id": "1", 
+                "passive target": "self", 
+                "rec% buff": 30
+            }, 
+            {
+                "conditions": [], 
+                "dmg% to hp% when attacked chance%": 25, 
+                "dmg% to hp% when attacked high": 25, 
+                "dmg% to hp% when attacked low": 20, 
+                "passive id": "24", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "hp drain chance%": 100, 
+                "hp drain% high": 8, 
+                "hp drain% low": 5, 
+                "passive id": "17", 
+                "passive target": "self"
+            }
+        ], 
+        "name": "護界の鋭心", 
         "target": "self"
     }, 
     "310": {
