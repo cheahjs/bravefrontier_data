@@ -8437,6 +8437,36 @@
         "name": "焔冥の魂録", 
         "target": "self"
     }, 
+    "1015840": {
+        "desc": "防御力を２０％アップ＆弱点属性ダメージを無効＆被ダメージが一定数を超える度に２ターン、被ダメージを軽減", 
+        "effects": [
+            {
+                "conditions": [], 
+                "def% buff": 20, 
+                "passive id": "1", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "passive id": "53", 
+                "passive target": "self", 
+                "strong base element damage resist%": 100, 
+                "strong buffed element damage resist%": 100
+            }, 
+            {
+                "buff": {
+                    "buff turns (36)": "1", 
+                    "dmg reduction% buff": 25
+                }, 
+                "conditions": [], 
+                "damage threshold buff activation": 10000, 
+                "passive id": "78", 
+                "passive target": "self"
+            }
+        ], 
+        "name": "碧流の魂録", 
+        "target": "self"
+    }, 
     "1015900": {
         "desc": "最大ＨＰを３０％アップ＆クリティカルを無効", 
         "effects": [
@@ -8577,6 +8607,58 @@
             }
         ], 
         "name": "種族を越えた信頼", 
+        "target": "self"
+    }, 
+    "1020000": {
+        "desc": "攻撃力・最大ＨＰを３０％アップ＆スパークダメージを５０％アップ", 
+        "effects": [
+            {
+                "atk% buff": 30, 
+                "conditions": [], 
+                "hp% buff": 30, 
+                "passive id": "1", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "damage% for spark": 50, 
+                "passive id": "31", 
+                "passive target": "self"
+            }
+        ], 
+        "name": "レコードオブスピード", 
+        "target": "self"
+    }, 
+    "1021000": {
+        "desc": "攻撃力・最大ＨＰを３０％アップ＆クリティカルダメージをアップ＆弱点属性ダメージをアップ", 
+        "effects": [
+            {
+                "atk% buff": 30, 
+                "conditions": [], 
+                "hp% buff": 30, 
+                "passive id": "1", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "crit multiplier%": 50.0, 
+                "passive id": "34", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "dark units do extra elemental weakness dmg": true, 
+                "earth units do extra elemental weakness dmg": true, 
+                "elemental weakness multiplier%": 50.0, 
+                "fire units do extra elemental weakness dmg": true, 
+                "light units do extra elemental weakness dmg": true, 
+                "passive id": "50", 
+                "passive target": "self", 
+                "thunder units do extra elemental weakness dmg": true, 
+                "water units do extra elemental weakness dmg": true
+            }
+        ], 
+        "name": "レコードオブスマッシュ", 
         "target": "self"
     }, 
     "10300": {
@@ -14494,6 +14576,150 @@
             }
         ], 
         "name": "護界の鋭心", 
+        "target": "self"
+    }, 
+    "30300": {
+        "desc": "ＢＢゲージが半分以上の時、攻撃力・防御力を少しアップ＆スパークダメージを３０％アップ", 
+        "effects": [
+            {
+                "atk% buff": 30, 
+                "bb gauge above % buff requirement": 50, 
+                "conditions": [], 
+                "def% buff": 30, 
+                "passive id": "30", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "damage% for spark": 30, 
+                "passive id": "31", 
+                "passive target": "self"
+            }
+        ], 
+        "name": "秩序を断つ刃", 
+        "target": "self"
+    }, 
+    "30400": {
+        "desc": "ＢＢゲージが半分以上の時、攻撃力・防御力をアップ＆スパークダメージを５０％アップ", 
+        "effects": [
+            {
+                "atk% buff": 50, 
+                "bb gauge above % buff requirement": 50, 
+                "conditions": [], 
+                "def% buff": 50, 
+                "passive id": "30", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "damage% for spark": 50, 
+                "passive id": "31", 
+                "passive target": "self"
+            }
+        ], 
+        "name": "悪夢を断つ力", 
+        "target": "self"
+    }, 
+    "30500": {
+        "desc": "ＨＰが半分以上の時、攻撃ＢＢの威力をかなりアップ＆被ダメージ時、確率でＨＰを回復", 
+        "effects": [
+            {
+                "conditions": [], 
+                "passive target": "self", 
+                "unknown passive id": "103", 
+                "unknown passive params": "100,100,100,50,1"
+            }, 
+            {
+                "conditions": [], 
+                "dmg% to hp% when attacked chance%": 20, 
+                "dmg% to hp% when attacked high": 25, 
+                "dmg% to hp% when attacked low": 20, 
+                "passive id": "24", 
+                "passive target": "self"
+            }
+        ], 
+        "name": "虚魂に宿る獣", 
+        "target": "self"
+    }, 
+    "30600": {
+        "desc": "ＨＰが半分以上の時、攻撃ＢＢの威力を大幅にアップ＆被ダメージ時、確率でＨＰを回復", 
+        "effects": [
+            {
+                "conditions": [], 
+                "passive target": "self", 
+                "unknown passive id": "103", 
+                "unknown passive params": "150,150,150,50,1"
+            }, 
+            {
+                "conditions": [], 
+                "dmg% to hp% when attacked chance%": 25, 
+                "dmg% to hp% when attacked high": 25, 
+                "dmg% to hp% when attacked low": 20, 
+                "passive id": "24", 
+                "passive target": "self"
+            }
+        ], 
+        "name": "獣を御す魔魂", 
+        "target": "self"
+    }, 
+    "30700": {
+        "desc": "状態異常の敵へのダメージを大幅にアップ＆全状態異常を無効", 
+        "effects": [
+            {
+                "atk% buff when enemy has ailment": 100, 
+                "atk% buff when enemy has curse": true, 
+                "atk% buff when enemy has injury": true, 
+                "atk% buff when enemy has paralysis": true, 
+                "atk% buff when enemy has poison": true, 
+                "atk% buff when enemy has sick": true, 
+                "atk% buff when enemy has weaken": true, 
+                "conditions": [], 
+                "passive id": "74", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "curse resist%": 100, 
+                "injury resist%": 100, 
+                "paralysis resist%": 100, 
+                "passive id": "4", 
+                "passive target": "self", 
+                "poison resist%": 100, 
+                "sick resist%": 100, 
+                "weaken resist%": 100
+            }
+        ], 
+        "name": "透心眼", 
+        "target": "self"
+    }, 
+    "30800": {
+        "desc": "状態異常の敵へのダメージを超絶アップ＆全状態異常を無効", 
+        "effects": [
+            {
+                "atk% buff when enemy has ailment": 150, 
+                "atk% buff when enemy has curse": true, 
+                "atk% buff when enemy has injury": true, 
+                "atk% buff when enemy has paralysis": true, 
+                "atk% buff when enemy has poison": true, 
+                "atk% buff when enemy has sick": true, 
+                "atk% buff when enemy has weaken": true, 
+                "conditions": [], 
+                "passive id": "74", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "curse resist%": 100, 
+                "injury resist%": 100, 
+                "paralysis resist%": 100, 
+                "passive id": "4", 
+                "passive target": "self", 
+                "poison resist%": 100, 
+                "sick resist%": 100, 
+                "weaken resist%": 100
+            }
+        ], 
+        "name": "闇界に光る異能", 
         "target": "self"
     }, 
     "310": {
