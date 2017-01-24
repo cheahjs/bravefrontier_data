@@ -2555,6 +2555,58 @@
         ], 
         "name": "樹統神の力"
     }, 
+    "12500": {
+        "desc": "全てのユニットの攻撃力・防御力・最大ＨＰを５０％アップ＆残りＨＰが多いほど、回復力をかなりアップ＆攻撃ＢＢの威力を超絶アップ", 
+        "effects": [
+            {
+                "atk% buff": 50, 
+                "def% buff": 50, 
+                "hp% buff": 50, 
+                "passive id": "1"
+            }, 
+            {
+                "buff proportional to hp": "remaining", 
+                "passive id": "46", 
+                "rec% base buff": 0, 
+                "rec% extra buff based on hp": 80
+            }, 
+            {
+                "bb atk% buff": 200, 
+                "passive id": "64", 
+                "sbb atk% buff": 200, 
+                "ubb atk% buff": 200
+            }
+        ], 
+        "name": "異生神の崩眼"
+    }, 
+    "12501": {
+        "desc": "全てのユニットの攻撃力・防御力・最大ＨＰを６０％アップ＆残りＨＰが多いほど、回復力を大幅にアップ＆攻撃ＢＢの威力を超絶アップ＆防御貫通効果を無効", 
+        "effects": [
+            {
+                "atk% buff": 60, 
+                "def% buff": 60, 
+                "hp% buff": 60, 
+                "passive id": "1"
+            }, 
+            {
+                "buff proportional to hp": "remaining", 
+                "passive id": "46", 
+                "rec% base buff": 0, 
+                "rec% extra buff based on hp": 100
+            }, 
+            {
+                "bb atk% buff": 250, 
+                "passive id": "64", 
+                "sbb atk% buff": 250, 
+                "ubb atk% buff": 250
+            }, 
+            {
+                "ignore def resist chance%": 100, 
+                "passive id": "92"
+            }
+        ], 
+        "name": "異生造神の崩哮"
+    }, 
     "126": {
         "desc": "樹属性ユニットの攻撃力を１００％アップ・最大ＨＰを３０％アップ", 
         "effects": [
@@ -14405,6 +14457,118 @@
             }
         ], 
         "name": "神無万滅の絶刈"
+    }, 
+    "7492": {
+        "desc": "全てのユニットの攻撃力・最大ＨＰを５０％アップ＆スパーク時、ＢＢゲージを少し増加・ダメージを１１０％アップ", 
+        "effects": [
+            {
+                "atk% buff": 50, 
+                "hp% buff": 50, 
+                "passive id": "1"
+            }, 
+            {
+                "damage% for spark": 110, 
+                "passive id": "31"
+            }, 
+            {
+                "bc fill on spark high": 2, 
+                "bc fill on spark low": 1, 
+                "bc fill on spark%": 100, 
+                "passive id": "47"
+            }
+        ], 
+        "name": "儷貴神の光差"
+    }, 
+    "7493": {
+        "desc": "全てのユニットの攻撃力・最大ＨＰを６０％アップ＆ＯＤゲージの増加量をかなりアップ＆スパーク時、ＢＢゲージを増加・ダメージを１３０％アップ", 
+        "effects": [
+            {
+                "atk% buff": 60, 
+                "hp% buff": 60, 
+                "passive id": "1"
+            }, 
+            {
+                "damage% for spark": 130, 
+                "passive id": "31"
+            }, 
+            {
+                "bc fill on spark high": 3, 
+                "bc fill on spark low": 2, 
+                "bc fill on spark%": 100, 
+                "passive id": "47"
+            }, 
+            {
+                "od fill rate%": 20, 
+                "passive id": "70"
+            }
+        ], 
+        "name": "環儷貴神の煌差"
+    }, 
+    "7494": {
+        "desc": "全てのユニットの攻撃力・最大ＨＰを５０％アップ＆確率で全状態異常をランダムに発生＆状態異常の敵へのダメージを大幅にアップ", 
+        "effects": [
+            {
+                "atk% buff": 50, 
+                "hp% buff": 50, 
+                "passive id": "1"
+            }, 
+            {
+                "injury%": 7, 
+                "passive id": "20", 
+                "poison%": 5, 
+                "sick%": 7, 
+                "weaken%": 7
+            }, 
+            {
+                "curse%": 5, 
+                "paralysis%": 5, 
+                "passive id": "20"
+            }, 
+            {
+                "atk% buff when enemy has ailment": 100, 
+                "atk% buff when enemy has curse": true, 
+                "atk% buff when enemy has injury": true, 
+                "atk% buff when enemy has paralysis": true, 
+                "atk% buff when enemy has poison": true, 
+                "atk% buff when enemy has sick": true, 
+                "atk% buff when enemy has weaken": true, 
+                "passive id": "74"
+            }
+        ], 
+        "name": "訊遊神の言蝕"
+    }, 
+    "7495": {
+        "desc": "全てのユニットの攻撃力・最大ＨＰを６０％アップ＆確率で全状態異常をランダムに発生＆状態異常の敵へのダメージを超絶アップ", 
+        "effects": [
+            {
+                "atk% buff": 60, 
+                "hp% buff": 60, 
+                "passive id": "1"
+            }, 
+            {
+                "injury%": 15, 
+                "passive id": "20", 
+                "poison%": 10, 
+                "sick%": 15, 
+                "weaken%": 15
+            }, 
+            {
+                "curse%": 10, 
+                "paralysis%": 10, 
+                "passive id": "20"
+            }, 
+            {
+                "atk% buff when enemy has ailment": 130, 
+                "atk% buff when enemy has curse": true, 
+                "atk% buff when enemy has injury": true, 
+                "atk% buff when enemy has paralysis": true, 
+                "atk% buff when enemy has poison": true, 
+                "atk% buff when enemy has sick": true, 
+                "atk% buff when enemy has weaken": true, 
+                "passive id": "74"
+            }
+        ], 
+        "name": "訊戯酷神の心蝕"
     }, 
     "7500": {
         "desc": "確率でＨＰを少し吸収", 
