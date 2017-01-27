@@ -12619,6 +12619,52 @@
         "name": "Brave Solstice", 
         "target": "self"
     }, 
+    "8000008": {
+        "desc": "Boosts Def and Rec relative to how low remaining HP is.", 
+        "effects": [
+            {
+                "buff proportional to hp": "lost", 
+                "conditions": [], 
+                "def% base buff": 0, 
+                "def% extra buff based on hp": 150, 
+                "passive id": "46", 
+                "passive target": "self"
+            }, 
+            {
+                "buff proportional to hp": "lost", 
+                "conditions": [], 
+                "passive id": "46", 
+                "passive target": "self", 
+                "rec% base buff": 0, 
+                "rec% extra buff based on hp": 100
+            }
+        ], 
+        "name": "Brave Fortitude", 
+        "target": "self"
+    }, 
+    "8000009": {
+        "desc": "Boosts Atk relative to how high remaining HP is and Boosts Def relative to how low remaining HP is.", 
+        "effects": [
+            {
+                "atk% base buff": 0, 
+                "atk% extra buff based on hp": 150, 
+                "buff proportional to hp": "remaining", 
+                "conditions": [], 
+                "passive id": "46", 
+                "passive target": "self"
+            }, 
+            {
+                "buff proportional to hp": "lost", 
+                "conditions": [], 
+                "def% base buff": 0, 
+                "def% extra buff based on hp": 50, 
+                "passive id": "46", 
+                "passive target": "self"
+            }
+        ], 
+        "name": "Brave Barrage", 
+        "target": "self"
+    }, 
     "8100": {
         "desc": "Boosts OD gauge fill rate", 
         "effects": [
@@ -14303,6 +14349,56 @@
             }
         ], 
         "name": "The Next Cid", 
+        "target": "self"
+    }, 
+    "840417": {
+        "desc": "Considerably boosts Atk when BB gauge is full & adds resistance against 1 KO attack when HP is below 20%", 
+        "effects": [
+            {
+                "buff": {
+                    "angel idol buff (12)": true, 
+                    "angel idol recover hp%": 100, 
+                    "buff turns (12)": "-1"
+                }, 
+                "conditions": [], 
+                "hp below % buff activation": 20, 
+                "passive id": "55", 
+                "passive target": "self"
+            }, 
+            {
+                "atk% buff": 80, 
+                "bb gauge above % buff requirement": 100, 
+                "conditions": [], 
+                "passive id": "30", 
+                "passive target": "self"
+            }
+        ], 
+        "name": "Persist Despite Adversity", 
+        "target": "self"
+    }, 
+    "840418": {
+        "desc": "Greatly boosts Atk when BB gauge is full & adds resistance against 1 KO attack when HP is below 20%", 
+        "effects": [
+            {
+                "buff": {
+                    "angel idol buff (12)": true, 
+                    "angel idol recover hp%": 100, 
+                    "buff turns (12)": "-1"
+                }, 
+                "conditions": [], 
+                "hp below % buff activation": 20, 
+                "passive id": "55", 
+                "passive target": "self"
+            }, 
+            {
+                "atk% buff": 100, 
+                "bb gauge above % buff requirement": 100, 
+                "conditions": [], 
+                "passive id": "30", 
+                "passive target": "self"
+            }
+        ], 
+        "name": "Death From Above", 
         "target": "self"
     }, 
     "8500": {

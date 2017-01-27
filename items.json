@@ -22721,6 +22721,120 @@
         "thumbnail": "item_thum_800308.png", 
         "type": "material"
     }, 
+    "800309": {
+        "desc": "This charm brings happiness and good fortune to the bearer.", 
+        "id": 800309, 
+        "max_stack": 99, 
+        "name": "Happy Charm", 
+        "raid": false, 
+        "rarity": 3, 
+        "sell_price": 888, 
+        "thumbnail": "item_thum_800309.png", 
+        "type": "material"
+    }, 
+    "800310": {
+        "desc": "Coins such as thesehave a long history of bringing good luck.", 
+        "id": 800310, 
+        "max_stack": 99, 
+        "name": "Lucky Coin", 
+        "raid": false, 
+        "rarity": 3, 
+        "sell_price": 888, 
+        "thumbnail": "item_thum_800310.png", 
+        "type": "material"
+    }, 
+    "800311": {
+        "desc": "A feather dropped from the most majestic of birds.", 
+        "id": 800311, 
+        "max_stack": 99, 
+        "name": "Phoenix Feather", 
+        "raid": false, 
+        "rarity": 3, 
+        "sell_price": 888, 
+        "thumbnail": "item_thum_800311.png", 
+        "type": "material"
+    }, 
+    "800312": {
+        "desc": "Casts Water shield on all allies for 2 turns.", 
+        "effect": {
+            "effect": [
+                {
+                    "proc id": "10002", 
+                    "shield def": 900, 
+                    "shield element": "water", 
+                    "shield hp": 4000, 
+                    "shield turns (10002)": 2
+                }
+            ], 
+            "target_area": "aoe", 
+            "target_type": "party"
+        }, 
+        "id": 800312, 
+        "max equipped": 3, 
+        "max_stack": 99, 
+        "name": "Fortune Cookie", 
+        "raid": false, 
+        "rarity": 3, 
+        "recipe": {
+            "karma": "0", 
+            "materials": [
+                {
+                    "count": 10, 
+                    "id": 800306
+                }, 
+                {
+                    "count": 10, 
+                    "id": 800310
+                }, 
+                {
+                    "count": 3, 
+                    "id": 800311
+                }
+            ]
+        }, 
+        "sell_price": 200, 
+        "thumbnail": "item_thum_800312.png", 
+        "type": "consumable"
+    }, 
+    "800313": {
+        "desc": "Boosts one ally's max HP by 40%.", 
+        "effect": {
+            "effect": [
+                {
+                    "max hp% increase": 40.0, 
+                    "proc id": "8"
+                }
+            ], 
+            "target_area": "single", 
+            "target_type": "party"
+        }, 
+        "id": 800313, 
+        "max equipped": 3, 
+        "max_stack": 99, 
+        "name": "Pineapple Tart", 
+        "raid": false, 
+        "rarity": 3, 
+        "recipe": {
+            "karma": "0", 
+            "materials": [
+                {
+                    "count": 10, 
+                    "id": 800307
+                }, 
+                {
+                    "count": 10, 
+                    "id": 800309
+                }, 
+                {
+                    "count": 3, 
+                    "id": 800311
+                }
+            ]
+        }, 
+        "sell_price": 200, 
+        "thumbnail": "item_thum_800313.png", 
+        "type": "consumable"
+    }, 
     "800314": {
         "desc": "Fills Overdrive Gauge by 20%", 
         "effect": {
@@ -24504,6 +24618,132 @@
         "sphere type": 1, 
         "sphere type text": "Status Boost", 
         "thumbnail": "sphere_thum_818920.png", 
+        "type": "sphere"
+    }, 
+    "818925": {
+        "desc": "40% boost to Atk, 35% boost to max HP, Def, Rec, boosts Spark damage & negates all status ailments", 
+        "effect": [
+            {
+                "atk% buff": 40, 
+                "def% buff": 35, 
+                "hp% buff": 35, 
+                "passive id": "1", 
+                "rec% buff": 35
+            }, 
+            {
+                "damage% for spark": 60, 
+                "passive id": "31"
+            }, 
+            {
+                "curse resist%": 100, 
+                "injury resist%": 100, 
+                "paralysis resist%": 100, 
+                "passive id": "4", 
+                "poison resist%": 100, 
+                "sick resist%": 100, 
+                "weaken resist%": 100
+            }
+        ], 
+        "id": 818925, 
+        "max_stack": 1, 
+        "name": "Fortunate Phoenix Crest", 
+        "raid": false, 
+        "rarity": 5, 
+        "recipe": {
+            "karma": "85000", 
+            "materials": [
+                {
+                    "count": 1, 
+                    "id": 818924
+                }, 
+                {
+                    "count": 80, 
+                    "id": 800306
+                }, 
+                {
+                    "count": 20, 
+                    "id": 800309
+                }, 
+                {
+                    "count": 17, 
+                    "id": 800310
+                }, 
+                {
+                    "count": 8, 
+                    "id": 800311
+                }
+            ]
+        }, 
+        "sell_price": 25000, 
+        "sphere type": 1, 
+        "sphere type text": "Status Boost", 
+        "thumbnail": "sphere_thum_818925.png", 
+        "type": "sphere"
+    }, 
+    "818926": {
+        "desc": "40% boost to all parameters, boosts Spark damage, negates all status ailments & reduces damage taken from Fire, Water types", 
+        "effect": [
+            {
+                "atk% buff": 40, 
+                "def% buff": 40, 
+                "hp% buff": 40, 
+                "passive id": "1", 
+                "rec% buff": 40
+            }, 
+            {
+                "damage% for spark": 80, 
+                "passive id": "31"
+            }, 
+            {
+                "curse resist%": 100, 
+                "injury resist%": 100, 
+                "paralysis resist%": 100, 
+                "passive id": "4", 
+                "poison resist%": 100, 
+                "sick resist%": 100, 
+                "weaken resist%": 100
+            }, 
+            {
+                "dmg% mitigation for elemental attacks": 10.0, 
+                "mitigate fire attacks": true, 
+                "mitigate water attacks": true, 
+                "passive id": "62"
+            }
+        ], 
+        "id": 818926, 
+        "max_stack": 1, 
+        "name": "Prosperous Phoenix Emblem", 
+        "raid": false, 
+        "rarity": 6, 
+        "recipe": {
+            "karma": "100000", 
+            "materials": [
+                {
+                    "count": 1, 
+                    "id": 818925
+                }, 
+                {
+                    "count": 80, 
+                    "id": 800307
+                }, 
+                {
+                    "count": 88, 
+                    "id": 800309
+                }, 
+                {
+                    "count": 88, 
+                    "id": 800310
+                }, 
+                {
+                    "count": 28, 
+                    "id": 800311
+                }
+            ]
+        }, 
+        "sell_price": 25000, 
+        "sphere type": 1, 
+        "sphere type text": "Status Boost", 
+        "thumbnail": "sphere_thum_818926.png", 
         "type": "sphere"
     }, 
     "818931": {
