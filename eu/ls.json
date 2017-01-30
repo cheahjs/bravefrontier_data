@@ -539,6 +539,65 @@
         ], 
         "name": "Fanged Fury"
     }, 
+    "10118": {
+        "desc": "35% boost to all parameters, slightly boosts Atk, Def relative to remaining HP & boosts BC efficacy", 
+        "effects": [
+            {
+                "atk% buff": 35, 
+                "def% buff": 35, 
+                "hp% buff": 35, 
+                "passive id": "1", 
+                "rec% buff": 35
+            }, 
+            {
+                "atk% base buff": 0, 
+                "atk% extra buff based on hp": 20, 
+                "buff proportional to hp": "remaining", 
+                "def% base buff": 0, 
+                "def% extra buff based on hp": 20, 
+                "passive id": "46"
+            }, 
+            {
+                "bb gauge fill rate%": 30, 
+                "passive id": "32"
+            }
+        ], 
+        "name": "Divine Cerulean Strategy"
+    }, 
+    "10119": {
+        "desc": "40% boost to all parameters, slightly boosts Atk, Def relative to remaining HP, negates all status ailments & considerably boosts BC efficacy", 
+        "effects": [
+            {
+                "atk% buff": 40, 
+                "def% buff": 40, 
+                "hp% buff": 40, 
+                "passive id": "1", 
+                "rec% buff": 40
+            }, 
+            {
+                "atk% base buff": 0, 
+                "atk% extra buff based on hp": 30, 
+                "buff proportional to hp": "remaining", 
+                "def% base buff": 0, 
+                "def% extra buff based on hp": 30, 
+                "passive id": "46"
+            }, 
+            {
+                "curse resist%": 100, 
+                "injury resist%": 100, 
+                "paralysis resist%": 100, 
+                "passive id": "4", 
+                "poison resist%": 100, 
+                "sick resist%": 100, 
+                "weaken resist%": 100
+            }, 
+            {
+                "bb gauge fill rate%": 50, 
+                "passive id": "32"
+            }
+        ], 
+        "name": "Immaculate Providence"
+    }, 
     "102": {
         "desc": "50% boost to Atk power and 10% increase in HP of Fire types", 
         "effects": [
@@ -6886,6 +6945,50 @@
         ], 
         "name": "Heroic Wisdom"
     }, 
+    "4340": {
+        "desc": "30% boost to Def, max HP & negates critical damage", 
+        "effects": [
+            {
+                "def% buff": 30, 
+                "hp% buff": 30, 
+                "passive id": "1"
+            }, 
+            {
+                "crit chance base resist%": 100, 
+                "crit chance buffed resist%": 100, 
+                "crit dmg base damage resist%": 100, 
+                "crit dmg buffed damage resist%": 100, 
+                "passive id": "53"
+            }
+        ], 
+        "name": "Divine Nature Style"
+    }, 
+    "4341": {
+        "desc": "50% boost to Def, max HP, negates critical damage & slightly reduces damage for 2 turns when damage taken has exceeded certain amount", 
+        "effects": [
+            {
+                "def% buff": 50, 
+                "hp% buff": 50, 
+                "passive id": "1"
+            }, 
+            {
+                "crit chance base resist%": 100, 
+                "crit chance buffed resist%": 100, 
+                "crit dmg base damage resist%": 100, 
+                "crit dmg buffed damage resist%": 100, 
+                "passive id": "53"
+            }, 
+            {
+                "buff": {
+                    "buff turns (36)": "1", 
+                    "dmg reduction% buff": 20
+                }, 
+                "damage threshold buff activation": 5000, 
+                "passive id": "78"
+            }
+        ], 
+        "name": "Supreme Heavenly Style"
+    }, 
     "4400": {
         "desc": "Boosts resistence to status ailments & fills BB gauge after each turn", 
         "effects": [
@@ -8242,6 +8345,33 @@
         ], 
         "name": "Starfire Phoenix Blade"
     }, 
+    "5529": {
+        "desc": "30% boost to max HP, slightly boosts Atk, Def, Rec when HP is over 50%, Spark damage slightly boosts BB gauge & 100% boost to Spark damage", 
+        "effects": [
+            {
+                "hp% buff": 30, 
+                "passive id": "1"
+            }, 
+            {
+                "bc fill on spark high": 2, 
+                "bc fill on spark low": 1, 
+                "bc fill on spark%": 100, 
+                "passive id": "47"
+            }, 
+            {
+                "damage% for spark": 100, 
+                "passive id": "31"
+            }, 
+            {
+                "atk% buff": 30, 
+                "def% buff": 30, 
+                "hp above % buff requirement": 50, 
+                "passive id": "11", 
+                "rec% buff": 30
+            }
+        ], 
+        "name": "Divine Violent Flame"
+    }, 
     "553": {
         "desc": "15% damage reduction from Earth types, hugely boosts Fire elemental damage against Earth types & negates all status ailments", 
         "effects": [
@@ -8265,6 +8395,33 @@
             }
         ], 
         "name": "Ardent Conviction"
+    }, 
+    "5530": {
+        "desc": "50% boost to max HP, boosts Atk, Def, Rec when HP is over 50%, Spark damage boosts BB gauge & 120% boost to Spark damage", 
+        "effects": [
+            {
+                "hp% buff": 50, 
+                "passive id": "1"
+            }, 
+            {
+                "bc fill on spark high": 3, 
+                "bc fill on spark low": 2, 
+                "bc fill on spark%": 100, 
+                "passive id": "47"
+            }, 
+            {
+                "damage% for spark": 120, 
+                "passive id": "31"
+            }, 
+            {
+                "atk% buff": 50, 
+                "def% buff": 50, 
+                "hp above % buff requirement": 50, 
+                "passive id": "11", 
+                "rec% buff": 50
+            }
+        ], 
+        "name": "Supreme Heavenly War"
     }, 
     "554": {
         "desc": "15% damage reduction from Dark types, hugely boosts Light Type elemental damage & 100% boost to Spark damage", 
@@ -11485,6 +11642,53 @@
         ], 
         "name": "Wild Triumphant Power"
     }, 
+    "7448": {
+        "desc": "30% boost to Atk, max HP, enormously boosts BB Atk & adds probable Spark critical", 
+        "effects": [
+            {
+                "atk% buff": 30, 
+                "hp% buff": 30, 
+                "passive id": "1"
+            }, 
+            {
+                "bb atk% buff": 200, 
+                "passive id": "64", 
+                "sbb atk% buff": 200, 
+                "ubb atk% buff": 200
+            }, 
+            {
+                "unknown passive id": "100", 
+                "unknown passive params": "3,50"
+            }
+        ], 
+        "name": "Dark God's Sealed Wings"
+    }, 
+    "7449": {
+        "desc": "50% boost to Atk, max HP, enormously boosts BB Atk, adds probable Spark critical & considerably boosts BB gauge when damage dealt has exceeded certain amount", 
+        "effects": [
+            {
+                "atk% buff": 50, 
+                "hp% buff": 50, 
+                "passive id": "1"
+            }, 
+            {
+                "bb atk% buff": 250, 
+                "passive id": "64", 
+                "sbb atk% buff": 250, 
+                "ubb atk% buff": 250
+            }, 
+            {
+                "unknown passive id": "100", 
+                "unknown passive params": "5,50"
+            }, 
+            {
+                "damage dealt threshold activation": 10000, 
+                "increase bb gauge": 7, 
+                "passive id": "81"
+            }
+        ], 
+        "name": "Dark God's Demon Wings"
+    }, 
     "7500": {
         "desc": "Adds chance of slightly absorbing HP when attacking", 
         "effects": [
@@ -11501,10 +11705,10 @@
         "desc": "Huge boost to drop rates during battle, especially during Christmas season", 
         "effects": [
             {
-                "item drop rate% buff": 25, 
-                "karma drop rate% buff": 25, 
+                "item drop rate% buff": 20, 
+                "karma drop rate% buff": 20, 
                 "passive id": "19", 
-                "zel drop rate% buff": 25
+                "zel drop rate% buff": 20
             }
         ], 
         "name": "Chimney Sweep"
@@ -11513,12 +11717,12 @@
         "desc": "Boost to all drop rates during battle, especially during Christmas season (20%, +5 During Christmas) & Boost to BC fill rate (30%) & Boosts efficacy of HC (50%)", 
         "effects": [
             {
-                "bc drop rate% buff": 25, 
-                "hc drop rate% buff": 25, 
-                "item drop rate% buff": 25, 
-                "karma drop rate% buff": 25, 
+                "bc drop rate% buff": 20, 
+                "hc drop rate% buff": 20, 
+                "item drop rate% buff": 20, 
+                "karma drop rate% buff": 20, 
                 "passive id": "19", 
-                "zel drop rate% buff": 25
+                "zel drop rate% buff": 20
             }, 
             {
                 "bb gauge fill rate%": 30, 
@@ -13092,6 +13296,76 @@
             }
         ], 
         "name": "Allure of the Temptress"
+    }, 
+    "801232": {
+        "desc": "30% boost to max HP, Atk, 10% boost to critical hit rate & greatly boosts critical damage", 
+        "effects": [
+            {
+                "atk% buff": 30, 
+                "crit% buff": 10, 
+                "hp% buff": 30, 
+                "passive id": "1"
+            }, 
+            {
+                "crit multiplier%": 100.0, 
+                "passive id": "34"
+            }
+        ], 
+        "name": "Sweet Songbird"
+    }, 
+    "801233": {
+        "desc": "40% boost to max HP, Atk, 20% boost to critical hit rate, negates status ailments & greatly boosts critical damage", 
+        "effects": [
+            {
+                "atk% buff": 40, 
+                "crit% buff": 20, 
+                "hp% buff": 40, 
+                "passive id": "1"
+            }, 
+            {
+                "crit multiplier%": 125.0, 
+                "passive id": "34"
+            }, 
+            {
+                "curse resist%": 100, 
+                "injury resist%": 100, 
+                "paralysis resist%": 100, 
+                "passive id": "4", 
+                "poison resist%": 100, 
+                "sick resist%": 100, 
+                "weaken resist%": 100
+            }
+        ], 
+        "name": "Harmony in Bloom"
+    }, 
+    "801234": {
+        "desc": "50% boost to max HP, Atk, 30% boost to critical hit rate, 15% damage reduction from Dark Types, negates status ailments & hugely boosts critical damage", 
+        "effects": [
+            {
+                "atk% buff": 50, 
+                "crit% buff": 30, 
+                "hp% buff": 50, 
+                "passive id": "1"
+            }, 
+            {
+                "crit multiplier%": 150.0, 
+                "passive id": "34"
+            }, 
+            {
+                "curse resist%": 100, 
+                "injury resist%": 100, 
+                "paralysis resist%": 100, 
+                "passive id": "4", 
+                "poison resist%": 100, 
+                "sick resist%": 100, 
+                "weaken resist%": 100
+            }, 
+            {
+                "dark resist%": 15, 
+                "passive id": "5"
+            }
+        ], 
+        "name": "Spring Concerto"
     }, 
     "802": {
         "desc": "25% boost to Def Power of Anima Types", 
