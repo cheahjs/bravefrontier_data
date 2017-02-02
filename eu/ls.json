@@ -6989,6 +6989,58 @@
         ], 
         "name": "Supreme Heavenly Style"
     }, 
+    "4344": {
+        "desc": "30% boost to Def and max HP & probable random status ailment infliction", 
+        "effects": [
+            {
+                "def% buff": 30, 
+                "hp% buff": 30, 
+                "passive id": "1"
+            }, 
+            {
+                "injury%": 15, 
+                "passive id": "20", 
+                "poison%": 10, 
+                "sick%": 15, 
+                "weaken%": 15
+            }, 
+            {
+                "curse%": 10, 
+                "paralysis%": 10, 
+                "passive id": "20"
+            }
+        ], 
+        "name": "Pestilence"
+    }, 
+    "4345": {
+        "desc": "50% boost to Def and max HP, probable random status ailment infliction & damage taken hugely boosts BB gauge", 
+        "effects": [
+            {
+                "def% buff": 50, 
+                "hp% buff": 50, 
+                "passive id": "1"
+            }, 
+            {
+                "injury%": 15, 
+                "passive id": "20", 
+                "poison%": 10, 
+                "sick%": 15, 
+                "weaken%": 15
+            }, 
+            {
+                "curse%": 10, 
+                "paralysis%": 10, 
+                "passive id": "20"
+            }, 
+            {
+                "bc fill when attacked high": 7, 
+                "bc fill when attacked low": 4, 
+                "bc fill when attacked%": 100, 
+                "passive id": "25"
+            }
+        ], 
+        "name": "Vile Pestilence"
+    }, 
     "4400": {
         "desc": "Boosts resistence to status ailments & fills BB gauge after each turn", 
         "effects": [
@@ -8422,6 +8474,64 @@
             }
         ], 
         "name": "Supreme Heavenly War"
+    }, 
+    "5531": {
+        "desc": "40% boost to max HP, slightly boosts Atk, Def, Rec relative to remaining HP & restores HP each turn", 
+        "effects": [
+            {
+                "hp% buff": 40, 
+                "passive id": "1"
+            }, 
+            {
+                "atk% base buff": 0, 
+                "atk% extra buff based on hp": 30, 
+                "buff proportional to hp": "remaining", 
+                "def% base buff": 0, 
+                "def% extra buff based on hp": 30, 
+                "passive id": "46", 
+                "rec% base buff": 0, 
+                "rec% extra buff based on hp": 30
+            }, 
+            {
+                "passive id": "33", 
+                "rec% added (turn heal)": 10.0, 
+                "turn heal high": 800, 
+                "turn heal low": 600
+            }
+        ], 
+        "name": "Divine Mandate"
+    }, 
+    "5532": {
+        "desc": "60% boost to max HP, boosts Atk, Def, Rec relative to remaining HP, restores HP each turn & 15% damage reduction from Fire, Water types", 
+        "effects": [
+            {
+                "hp% buff": 60, 
+                "passive id": "1"
+            }, 
+            {
+                "atk% base buff": 0, 
+                "atk% extra buff based on hp": 50, 
+                "buff proportional to hp": "remaining", 
+                "def% base buff": 0, 
+                "def% extra buff based on hp": 50, 
+                "passive id": "46", 
+                "rec% base buff": 0, 
+                "rec% extra buff based on hp": 50
+            }, 
+            {
+                "dmg% mitigation for elemental attacks": 15.0, 
+                "mitigate fire attacks": true, 
+                "mitigate water attacks": true, 
+                "passive id": "62"
+            }, 
+            {
+                "passive id": "33", 
+                "rec% added (turn heal)": 10.0, 
+                "turn heal high": 1000, 
+                "turn heal low": 800
+            }
+        ], 
+        "name": "Divine Mercy"
     }, 
     "554": {
         "desc": "15% damage reduction from Dark types, hugely boosts Light Type elemental damage & 100% boost to Spark damage", 
@@ -11688,6 +11798,56 @@
             }
         ], 
         "name": "Dark God's Demon Wings"
+    }, 
+    "7450": {
+        "desc": "30% boost to Atk and max HP, hugely boosts BB Atk & boosts BC efficacy", 
+        "effects": [
+            {
+                "atk% buff": 30, 
+                "hp% buff": 30, 
+                "passive id": "1"
+            }, 
+            {
+                "bb atk% buff": 150, 
+                "passive id": "64", 
+                "sbb atk% buff": 150, 
+                "ubb atk% buff": 150
+            }, 
+            {
+                "bb gauge fill rate%": 30, 
+                "passive id": "32"
+            }
+        ], 
+        "name": "Divine Grandeur"
+    }, 
+    "7451": {
+        "desc": "50% boost to Atk and max HP, enormously boosts BB Atk, enormously boosts Spark damage for 2 turns when Sparks exceed certain amount & boosts BC efficacy", 
+        "effects": [
+            {
+                "atk% buff": 50, 
+                "hp% buff": 50, 
+                "passive id": "1"
+            }, 
+            {
+                "bb atk% buff": 200, 
+                "passive id": "64", 
+                "sbb atk% buff": 200, 
+                "ubb atk% buff": 200
+            }, 
+            {
+                "buff": {
+                    "buff turns (40)": "2", 
+                    "spark dmg% buff": 120
+                }, 
+                "passive id": "86", 
+                "spark count buff activation": 15
+            }, 
+            {
+                "bb gauge fill rate%": 50, 
+                "passive id": "32"
+            }
+        ], 
+        "name": "Divine Majesty"
     }, 
     "7500": {
         "desc": "Adds chance of slightly absorbing HP when attacking", 
