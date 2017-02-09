@@ -998,6 +998,64 @@
         ], 
         "name": "神令司の誇牙"
     }, 
+    "10137": {
+        "desc": "全てのユニットの全能力を４５％アップ＆被ダメージ時、ＢＢゲージを増加＆ターン毎にＨＰを回復", 
+        "effects": [
+            {
+                "atk% buff": 45, 
+                "def% buff": 45, 
+                "hp% buff": 45, 
+                "passive id": "1", 
+                "rec% buff": 45
+            }, 
+            {
+                "passive id": "33", 
+                "rec% added (turn heal)": 10.0, 
+                "turn heal high": 1000, 
+                "turn heal low": 800
+            }, 
+            {
+                "bc fill when attacked high": 4, 
+                "bc fill when attacked low": 2, 
+                "bc fill when attacked%": 100, 
+                "passive id": "25"
+            }
+        ], 
+        "name": "令綺神の光彰"
+    }, 
+    "10138": {
+        "desc": "全てのユニットの全能力を５０％アップ＆被ダメージ時、ＢＢゲージを大幅に増加＆ターン毎にＨＰをかなり回復＆被ダメージが一定数を超える度に２ターン、被ダメージを少し軽減", 
+        "effects": [
+            {
+                "atk% buff": 50, 
+                "def% buff": 50, 
+                "hp% buff": 50, 
+                "passive id": "1", 
+                "rec% buff": 50
+            }, 
+            {
+                "passive id": "33", 
+                "rec% added (turn heal)": 10.0, 
+                "turn heal high": 1200, 
+                "turn heal low": 1000
+            }, 
+            {
+                "bc fill when attacked high": 7, 
+                "bc fill when attacked low": 4, 
+                "bc fill when attacked%": 100, 
+                "passive id": "25"
+            }, 
+            {
+                "buff": {
+                    "buff turns (36)": "1", 
+                    "dmg reduction% buff": 20
+                }, 
+                "damage threshold buff activation": 5000, 
+                "passive id": "78"
+            }
+        ], 
+        "name": "令綺彩神の珠彰"
+    }, 
     "102": {
         "desc": "炎属性ユニットの攻撃力を５０％アップ・最大ＨＰを１０％アップ", 
         "effects": [
@@ -2607,6 +2665,59 @@
         ], 
         "name": "異生造神の崩哮"
     }, 
+    "12502": {
+        "desc": "全てのユニットの防御力・回復力・最大ＨＰを５０％アップ＆炎・水属性の弱点属性ダメージを大幅にアップ＆炎・樹属性ユニットからの被ダメージを１５％軽減", 
+        "effects": [
+            {
+                "def% buff": 50, 
+                "hp% buff": 50, 
+                "passive id": "1", 
+                "rec% buff": 50
+            }, 
+            {
+                "elemental weakness multiplier%": 100.0, 
+                "fire units do extra elemental weakness dmg": true, 
+                "passive id": "50", 
+                "water units do extra elemental weakness dmg": true
+            }, 
+            {
+                "dmg% mitigation for elemental attacks": 15.0, 
+                "mitigate earth attacks": true, 
+                "mitigate fire attacks": true, 
+                "passive id": "62"
+            }
+        ], 
+        "name": "優潔神の光擁"
+    }, 
+    "12503": {
+        "desc": "全てのユニットの防御力・回復力・最大ＨＰを６０％アップ＆炎・水属性の弱点属性ダメージを大幅にアップ＆炎・樹属性ユニットからの被ダメージを１５％軽減＆スパークダメージを軽減", 
+        "effects": [
+            {
+                "def% buff": 60, 
+                "hp% buff": 60, 
+                "passive id": "1", 
+                "rec% buff": 60
+            }, 
+            {
+                "elemental weakness multiplier%": 150.0, 
+                "fire units do extra elemental weakness dmg": true, 
+                "passive id": "50", 
+                "water units do extra elemental weakness dmg": true
+            }, 
+            {
+                "dmg% mitigation for elemental attacks": 15.0, 
+                "mitigate earth attacks": true, 
+                "mitigate fire attacks": true, 
+                "passive id": "62"
+            }, 
+            {
+                "base spark dmg% resist": 25, 
+                "buff spark dmg% resist": 25, 
+                "passive id": "77"
+            }
+        ], 
+        "name": "湧潔華神の煌擁"
+    }, 
     "126": {
         "desc": "樹属性ユニットの攻撃力を１００％アップ・最大ＨＰを３０％アップ", 
         "effects": [
@@ -3827,6 +3938,82 @@
         ], 
         "name": "幻闇の創心"
     }, 
+    "166": {
+        "desc": "炎属性ユニットの攻撃力を７５％アップ・最大ＨＰを３０％アップ＆スパークダメージを７５％アップ", 
+        "effects": [
+            {
+                "atk% buff": 75, 
+                "elements buffed": [
+                    "fire"
+                ], 
+                "hp% buff": 30, 
+                "passive id": "2"
+            }, 
+            {
+                "damage% for spark": 75, 
+                "passive id": "31"
+            }
+        ], 
+        "name": "機鋼炎神の力"
+    }, 
+    "167": {
+        "desc": "水属性ユニットの攻撃力を７５％アップ・最大ＨＰを３０％アップ＆スパーク時、確率でＢＢゲージを増加", 
+        "effects": [
+            {
+                "atk% buff": 75, 
+                "elements buffed": [
+                    "water"
+                ], 
+                "hp% buff": 30, 
+                "passive id": "2"
+            }, 
+            {
+                "bc fill on spark high": 3, 
+                "bc fill on spark low": 2, 
+                "bc fill on spark%": 50, 
+                "passive id": "47"
+            }
+        ], 
+        "name": "機鋼水神の力"
+    }, 
+    "168": {
+        "desc": "樹属性ユニットの攻撃力を７５％アップ・最大ＨＰを３０％アップ＆被ダメージ時、ＢＢゲージをかなり増加", 
+        "effects": [
+            {
+                "atk% buff": 75, 
+                "elements buffed": [
+                    "earth"
+                ], 
+                "hp% buff": 30, 
+                "passive id": "2"
+            }, 
+            {
+                "bc fill when attacked high": 5, 
+                "bc fill when attacked low": 3, 
+                "bc fill when attacked%": 100, 
+                "passive id": "25"
+            }
+        ], 
+        "name": "機鋼樹神の力"
+    }, 
+    "169": {
+        "desc": "雷属性ユニットの攻撃力を７５％アップ・最大ＨＰを３０％アップ＆ＢＣ獲得時の増加量をアップ", 
+        "effects": [
+            {
+                "atk% buff": 75, 
+                "elements buffed": [
+                    "thunder"
+                ], 
+                "hp% buff": 30, 
+                "passive id": "2"
+            }, 
+            {
+                "bb gauge fill rate%": 40, 
+                "passive id": "32"
+            }
+        ], 
+        "name": "機鋼雷神の力"
+    }, 
     "17": {
         "desc": "リーダースキル１説明", 
         "effects": [
@@ -3841,6 +4028,24 @@
             }
         ], 
         "name": "複数属性PT強化"
+    }, 
+    "170": {
+        "desc": "光属性ユニットの攻撃力を７５％アップ・最大ＨＰを３０％アップ＆ＢＢ発動に必要なＢＢゲージ量を軽減", 
+        "effects": [
+            {
+                "atk% buff": 75, 
+                "elements buffed": [
+                    "light"
+                ], 
+                "hp% buff": 30, 
+                "passive id": "2"
+            }, 
+            {
+                "passive id": "48", 
+                "reduced bb bc cost%": 20
+            }
+        ], 
+        "name": "機鋼光神の力"
     }, 
     "1700": {
         "desc": "スパーク時、カルマ出現率をアップ", 
@@ -3872,6 +4077,24 @@
         ], 
         "name": "魂の閃光"
     }, 
+    "171": {
+        "desc": "闇属性ユニットの攻撃力を７５％アップ・最大ＨＰを３０％アップ＆ターン毎にＢＢゲージを増加", 
+        "effects": [
+            {
+                "atk% buff": 75, 
+                "elements buffed": [
+                    "dark"
+                ], 
+                "hp% buff": 30, 
+                "passive id": "2"
+            }, 
+            {
+                "bc fill per turn": 3, 
+                "passive id": "9"
+            }
+        ], 
+        "name": "機鋼闇神の力"
+    }, 
     "1710": {
         "desc": "スパーク時、ＢＣ・ＨＣ出現率を少しアップ・カルマ出現率を大幅にアップ", 
         "effects": [
@@ -3883,6 +4106,45 @@
             }
         ], 
         "name": "魂の灯火"
+    }, 
+    "172": {
+        "desc": "光・闇属性ユニットの攻撃力を１００％アップ＆全状態異常を無効＆状態異常の敵へのダメージをアップ", 
+        "effects": [
+            {
+                "atk% buff": 100, 
+                "elements buffed": [
+                    "light"
+                ], 
+                "passive id": "2"
+            }, 
+            {
+                "atk% buff": 100, 
+                "elements buffed": [
+                    "dark"
+                ], 
+                "passive id": "2"
+            }, 
+            {
+                "curse resist%": 100, 
+                "injury resist%": 100, 
+                "paralysis resist%": 100, 
+                "passive id": "4", 
+                "poison resist%": 100, 
+                "sick resist%": 100, 
+                "weaken resist%": 100
+            }, 
+            {
+                "atk% buff when enemy has ailment": 50, 
+                "atk% buff when enemy has curse": true, 
+                "atk% buff when enemy has injury": true, 
+                "atk% buff when enemy has paralysis": true, 
+                "atk% buff when enemy has poison": true, 
+                "atk% buff when enemy has sick": true, 
+                "atk% buff when enemy has weaken": true, 
+                "passive id": "74"
+            }
+        ], 
+        "name": "永遠の遊狂"
     }, 
     "18": {
         "desc": "リーダースキル１説明", 
@@ -5106,6 +5368,52 @@
             }
         ], 
         "name": "唯我天の神魔刃"
+    }, 
+    "1954": {
+        "desc": "全てのユニットの攻撃力を８０％アップ・最大ＨＰを４０％アップ＆残りＨＰが多いほど、攻撃力をアップ＆クリティカルダメージを大幅にアップ", 
+        "effects": [
+            {
+                "atk% buff": 80, 
+                "hp% buff": 40, 
+                "passive id": "1"
+            }, 
+            {
+                "atk% base buff": 0, 
+                "atk% extra buff based on hp": 60, 
+                "buff proportional to hp": "remaining", 
+                "passive id": "46"
+            }, 
+            {
+                "crit multiplier%": 150.0, 
+                "passive id": "34"
+            }
+        ], 
+        "name": "豪玄神の砕炎"
+    }, 
+    "1955": {
+        "desc": "全てのユニットの攻撃力を１００％アップ・最大ＨＰを５０％アップ＆残りＨＰが多いほど、攻撃力をかなりアップ＆クリティカルダメージを大幅にアップ＆確率でスパーククリティカルが発生", 
+        "effects": [
+            {
+                "atk% buff": 100, 
+                "hp% buff": 50, 
+                "passive id": "1"
+            }, 
+            {
+                "atk% base buff": 0, 
+                "atk% extra buff based on hp": 80, 
+                "buff proportional to hp": "remaining", 
+                "passive id": "46"
+            }, 
+            {
+                "crit multiplier%": 175.0, 
+                "passive id": "34"
+            }, 
+            {
+                "unknown passive id": "100", 
+                "unknown passive params": "10,50"
+            }
+        ], 
+        "name": "灼豪玄神の鬼炎"
     }, 
     "2": {
         "desc": "リーダースキル１説明", 
@@ -6432,6 +6740,33 @@
             }
         ], 
         "name": "五光誓神の聖魂"
+    }, 
+    "2227": {
+        "desc": "パーティーユニットが５属性以上で攻撃力を１２０％アップ＆全属性の弱点属性ダメージを大幅にアップ＆攻撃ＢＢの威力をかなりアップ", 
+        "effects": [
+            {
+                "atk% buff": 120, 
+                "passive id": "41", 
+                "unique elements required": 5
+            }, 
+            {
+                "dark units do extra elemental weakness dmg": true, 
+                "earth units do extra elemental weakness dmg": true, 
+                "elemental weakness multiplier%": 100.0, 
+                "fire units do extra elemental weakness dmg": true, 
+                "light units do extra elemental weakness dmg": true, 
+                "passive id": "50", 
+                "thunder units do extra elemental weakness dmg": true, 
+                "water units do extra elemental weakness dmg": true
+            }, 
+            {
+                "bb atk% buff": 100, 
+                "passive id": "64", 
+                "sbb atk% buff": 100, 
+                "ubb atk% buff": 100
+            }
+        ], 
+        "name": "五光鎌神の力"
     }, 
     "2300": {
         "desc": "クリティカルダメージをアップ", 
