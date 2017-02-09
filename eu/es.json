@@ -6989,6 +6989,139 @@
         "name": "Awakening Formation", 
         "target": "self"
     }, 
+    "21500": {
+        "desc": "Considerably boosts damage against status afflicted foes & slightly restores HP each turn", 
+        "effects": [
+            {
+                "atk% buff when enemy has ailment": 80, 
+                "atk% buff when enemy has curse": true, 
+                "atk% buff when enemy has injury": true, 
+                "atk% buff when enemy has paralysis": true, 
+                "atk% buff when enemy has poison": true, 
+                "atk% buff when enemy has sick": true, 
+                "atk% buff when enemy has weaken": true, 
+                "conditions": [], 
+                "passive id": "74", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "passive id": "33", 
+                "passive target": "self", 
+                "rec% added (turn heal)": 10.0, 
+                "turn heal high": 600, 
+                "turn heal low": 400
+            }
+        ], 
+        "name": "Miracle of Indemnification", 
+        "target": "self"
+    }, 
+    "21600": {
+        "desc": "Boosts Def when BB gauge is over 50%, negates all status ailments & considerably boosts BB gauge each turn", 
+        "effects": [
+            {
+                "conditions": [], 
+                "curse resist%": 100, 
+                "injury resist%": 100, 
+                "paralysis resist%": 100, 
+                "passive id": "4", 
+                "passive target": "self", 
+                "poison resist%": 100, 
+                "sick resist%": 100, 
+                "weaken resist%": 100
+            }, 
+            {
+                "bc fill per turn": 5, 
+                "conditions": [], 
+                "passive id": "9", 
+                "passive target": "self"
+            }, 
+            {
+                "bb gauge above % buff requirement": 50, 
+                "conditions": [], 
+                "def% buff": 50, 
+                "passive id": "30", 
+                "passive target": "self"
+            }
+        ], 
+        "name": "Invaluable Treasure", 
+        "target": "self"
+    }, 
+    "21700": {
+        "desc": "Enormously boosts OD gauge fill rate for 2 turns when damage taken has exceeded a certain amount", 
+        "effects": [
+            {
+                "buff": {
+                    "buff turns (132)": "1", 
+                    "unknown buff id": "132", 
+                    "unknown buff params": "300&1&0"
+                }, 
+                "conditions": [], 
+                "damage threshold buff activation": 5000, 
+                "passive id": "78", 
+                "passive target": "self"
+            }
+        ], 
+        "name": "Honest Devotion", 
+        "target": "self"
+    }, 
+    "21800": {
+        "desc": "Enormously boosts OD gauge fill rate for 2 turns when damage taken has exceeded a certain amount & considerably boosts Atk and Def for 3 turns when damage taken has exceeded a certain amount", 
+        "effects": [
+            {
+                "buff": {
+                    "buff turns (132)": "1", 
+                    "unknown buff id": "132", 
+                    "unknown buff params": "300&1&0"
+                }, 
+                "conditions": [], 
+                "damage threshold buff activation": 5000, 
+                "passive id": "78", 
+                "passive target": "self"
+            }, 
+            {
+                "buff": {
+                    "atk% buff (1)": 100, 
+                    "buff turns (1)": "2"
+                }, 
+                "conditions": [], 
+                "damage threshold buff activation": 5000, 
+                "passive id": "78", 
+                "passive target": "self"
+            }, 
+            {
+                "buff": {
+                    "buff turns (3)": "2", 
+                    "def% buff (3)": 100
+                }, 
+                "conditions": [], 
+                "damage threshold buff activation": 5000, 
+                "passive id": "78", 
+                "passive target": "self"
+            }
+        ], 
+        "name": "The Other Thief", 
+        "target": "self"
+    }, 
+    "21900": {
+        "desc": "Boosts elemental damage", 
+        "effects": [
+            {
+                "conditions": [], 
+                "dark units do extra elemental weakness dmg": true, 
+                "earth units do extra elemental weakness dmg": true, 
+                "elemental weakness multiplier%": 50.0, 
+                "fire units do extra elemental weakness dmg": true, 
+                "light units do extra elemental weakness dmg": true, 
+                "passive id": "50", 
+                "passive target": "self", 
+                "thunder units do extra elemental weakness dmg": true, 
+                "water units do extra elemental weakness dmg": true
+            }
+        ], 
+        "name": "Heart Consumed by Evil", 
+        "target": "self"
+    }, 
     "2200": {
         "desc": "Reduction in BB gauge required for BB & adds chance of reducing damage taken by 20%", 
         "effects": [
@@ -7007,6 +7140,47 @@
             }
         ], 
         "name": "Profound Knowledge", 
+        "target": "self"
+    }, 
+    "22000": {
+        "desc": "Boosts elemental damage & adds probable 1 turn Atk, Def reduction effect to attack on upcoming turn after dealing damage", 
+        "effects": [
+            {
+                "conditions": [], 
+                "dark units do extra elemental weakness dmg": true, 
+                "earth units do extra elemental weakness dmg": true, 
+                "elemental weakness multiplier%": 50.0, 
+                "fire units do extra elemental weakness dmg": true, 
+                "light units do extra elemental weakness dmg": true, 
+                "passive id": "50", 
+                "passive target": "self", 
+                "thunder units do extra elemental weakness dmg": true, 
+                "water units do extra elemental weakness dmg": true
+            }, 
+            {
+                "buff": {
+                    "buff turns (74)": "2", 
+                    "unknown buff id": "74", 
+                    "unknown buff params": "-20&30&1"
+                }, 
+                "conditions": [], 
+                "damage dealt threshold buff activation": 1, 
+                "passive id": "80", 
+                "passive target": "self"
+            }, 
+            {
+                "buff": {
+                    "buff turns (75)": "2", 
+                    "unknown buff id": "75", 
+                    "unknown buff params": "-20&30&1"
+                }, 
+                "conditions": [], 
+                "damage dealt threshold buff activation": 1, 
+                "passive id": "80", 
+                "passive target": "self"
+            }
+        ], 
+        "name": "Inviting Calamity", 
         "target": "self"
     }, 
     "2300": {
@@ -8768,6 +8942,63 @@
         "name": "To the Unlonely", 
         "target": "self"
     }, 
+    "720107": {
+        "desc": "If Julia is in the same squad, 10% boost to all parameters of Female units (all) & If Sergio's Wedding Ring is equipped, boosts Spark damage (80%) and adds Spark vulnerability infliction for 2 turns effect to BB/SBB", 
+        "effects": [
+            {
+                "atk% buff": 10, 
+                "conditions": [
+                    {
+                        "unit required": "740220"
+                    }
+                ], 
+                "def% buff": 10, 
+                "gender required": "female", 
+                "hp% buff": 10, 
+                "passive id": "42", 
+                "passive target": "party", 
+                "rec% buff": 10
+            }, 
+            {
+                "conditions": [
+                    {
+                        "item required": [
+                            "700043"
+                        ]
+                    }
+                ], 
+                "damage% for spark": 80, 
+                "passive id": "31", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [
+                    {
+                        "item required": [
+                            "700043"
+                        ]
+                    }
+                ], 
+                "passive id": "66", 
+                "passive target": "self", 
+                "trigger on bb": true, 
+                "trigger on sbb": true, 
+                "triggered effect": [
+                    {
+                        "effect delay time(ms)/frame": "0.0/0", 
+                        "proc id": "58", 
+                        "spark dmg received apply%": 25, 
+                        "spark dmg received debuff turns (94)": 2, 
+                        "spark dmg% received": 25, 
+                        "target area": "aoe", 
+                        "target type": "enemy"
+                    }
+                ]
+            }
+        ], 
+        "name": "Lover's Harmony", 
+        "target": "self"
+    }, 
     "720146": {
         "desc": "Raises number of hits dealt by normal attack (+1) & Boosts elemental damage (50%) if Admiral's Hook is equipped", 
         "effects": [
@@ -9785,6 +10016,91 @@
             }
         ], 
         "name": "Avenging Spirit", 
+        "target": "self"
+    }, 
+    "740226": {
+        "desc": "Adds boost to BC, HC drop rate (30%) for 3 turns effect to BB/SBB & 10% boost to all parameters for Male units (all)", 
+        "effects": [
+            {
+                "atk% buff": 10, 
+                "conditions": [], 
+                "def% buff": 10, 
+                "hp% buff": 10, 
+                "passive id": "3", 
+                "passive target": "party", 
+                "rec% buff": 10, 
+                "unit type buffed": null
+            }, 
+            {
+                "conditions": [], 
+                "passive id": "66", 
+                "passive target": "self", 
+                "trigger on bb": true, 
+                "trigger on sbb": true, 
+                "triggered effect": [
+                    {
+                        "bc drop rate% buff (10)": 30, 
+                        "drop rate buff turns": 3, 
+                        "effect delay time(ms)/frame": "0.0/0", 
+                        "hc drop rate% buff (9)": 30, 
+                        "proc id": "6", 
+                        "target area": "aoe", 
+                        "target type": "party"
+                    }
+                ]
+            }
+        ], 
+        "name": "Perfect Match", 
+        "target": "self"
+    }, 
+    "740227": {
+        "desc": "Adds boost to BC, HC drop rate (40%) for 3 turns effect to BB/SBB & 10% boost to all parameters for Male units (all) & if Julia's Weeding Ring is equipped, 30% to all parameters", 
+        "effects": [
+            {
+                "atk% buff": 10, 
+                "conditions": [], 
+                "def% buff": 10, 
+                "gender required": "male", 
+                "hp% buff": 10, 
+                "passive id": "42", 
+                "passive target": "party", 
+                "rec% buff": 10
+            }, 
+            {
+                "conditions": [], 
+                "passive id": "66", 
+                "passive target": "self", 
+                "trigger on bb": true, 
+                "trigger on sbb": true, 
+                "triggered effect": [
+                    {
+                        "bc drop rate% buff (10)": 40, 
+                        "drop rate buff turns": 3, 
+                        "effect delay time(ms)/frame": "0.0/0", 
+                        "hc drop rate% buff (9)": 40, 
+                        "proc id": "6", 
+                        "target area": "aoe", 
+                        "target type": "party"
+                    }
+                ]
+            }, 
+            {
+                "atk% buff": 30, 
+                "conditions": [
+                    {
+                        "item required": [
+                            "700044"
+                        ]
+                    }
+                ], 
+                "def% buff": 30, 
+                "hp% buff": 30, 
+                "passive id": "1", 
+                "passive target": "self", 
+                "rec% buff": 30
+            }
+        ], 
+        "name": "Mindslaver", 
         "target": "self"
     }, 
     "7500": {

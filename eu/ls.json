@@ -7041,6 +7041,38 @@
         ], 
         "name": "Vile Pestilence"
     }, 
+    "4346": {
+        "desc": "50% boost to Def and max HP, negates critical damage, 10% damage reduction from Fire, Water, Earth and Thunder types & damage taken hugely boosts BB gauge", 
+        "effects": [
+            {
+                "def% buff": 50, 
+                "hp% buff": 50, 
+                "passive id": "1"
+            }, 
+            {
+                "crit chance base resist%": 100, 
+                "crit chance buffed resist%": 100, 
+                "crit dmg base damage resist%": 100, 
+                "crit dmg buffed damage resist%": 100, 
+                "passive id": "53"
+            }, 
+            {
+                "dmg% mitigation for elemental attacks": 10.0, 
+                "mitigate earth attacks": true, 
+                "mitigate fire attacks": true, 
+                "mitigate thunder attacks": true, 
+                "mitigate water attacks": true, 
+                "passive id": "62"
+            }, 
+            {
+                "bc fill when attacked high": 7, 
+                "bc fill when attacked low": 4, 
+                "bc fill when attacked%": 100, 
+                "passive id": "25"
+            }
+        ], 
+        "name": "Bonds of a Beautiful Ruler"
+    }, 
     "4400": {
         "desc": "Boosts resistence to status ailments & fills BB gauge after each turn", 
         "effects": [
@@ -9703,6 +9735,31 @@
         ], 
         "name": "MechaBoost"
     }, 
+    "720107": {
+        "desc": "80% boost to ATK, 40% boost to max HP & 15% reduction in damage from Fire types & Boosts BB gauge each turn (7 BC) & Boosts BB ATK (200%)", 
+        "effects": [
+            {
+                "atk% buff": 80, 
+                "hp% buff": 40, 
+                "passive id": "1"
+            }, 
+            {
+                "bc fill per turn": 7, 
+                "passive id": "9"
+            }, 
+            {
+                "fire resist%": 15, 
+                "passive id": "5"
+            }, 
+            {
+                "bb atk% buff": 200, 
+                "passive id": "64", 
+                "sbb atk% buff": 200, 
+                "ubb atk% buff": 200
+            }
+        ], 
+        "name": "Lover's Will"
+    }, 
     "720115": {
         "desc": "35% boost to Atk Power of Female Units. Additional 30% when 5 elements or more are present", 
         "effects": [
@@ -10863,6 +10920,86 @@
         ], 
         "name": "Multiple Heritages"
     }, 
+    "740226": {
+        "desc": "40% boost to max HP & 80% boost to ATK, DEF for 2 turns when BC collected has exceeded certain amount (20) & boosts BB ATK (200%) for 2 turns when HC collected exceeded certain amount (20)", 
+        "effects": [
+            {
+                "hp% buff": 40, 
+                "passive id": "1"
+            }, 
+            {
+                "bc receive count buff activation": 20, 
+                "buff": {
+                    "atk% buff (1)": 80, 
+                    "buff turns (1)": "2"
+                }, 
+                "passive id": "82"
+            }, 
+            {
+                "bc receive count buff activation": 20, 
+                "buff": {
+                    "buff turns (3)": "2", 
+                    "def% buff (3)": 80
+                }, 
+                "passive id": "82"
+            }, 
+            {
+                "buff": {
+                    "bb atk% buff": 200, 
+                    "buff turns (72)": "2", 
+                    "sbb atk% buff": 200, 
+                    "ubb atk% buff": 200
+                }, 
+                "hc receive count buff activation": 20, 
+                "passive id": "84"
+            }
+        ], 
+        "name": "Passion Quiver"
+    }, 
+    "740227": {
+        "desc": "50% boost to max HP & 100% boost to ATK, DEF for 2 turns when BC collected has exceeded certain amount (20) & boosts Spark damage (100%) and BB ATK (250%) for 2 turns when HC collected exceeded certain amount (20)", 
+        "effects": [
+            {
+                "hp% buff": 50, 
+                "passive id": "1"
+            }, 
+            {
+                "bc receive count buff activation": 20, 
+                "buff": {
+                    "atk% buff (1)": 100, 
+                    "buff turns (1)": "2"
+                }, 
+                "passive id": "82"
+            }, 
+            {
+                "bc receive count buff activation": 20, 
+                "buff": {
+                    "buff turns (3)": "2", 
+                    "def% buff (3)": 100
+                }, 
+                "passive id": "82"
+            }, 
+            {
+                "buff": {
+                    "bb atk% buff": 250, 
+                    "buff turns (72)": "2", 
+                    "sbb atk% buff": 250, 
+                    "ubb atk% buff": 250
+                }, 
+                "hc receive count buff activation": 20, 
+                "passive id": "84"
+            }, 
+            {
+                "buff": {
+                    "buff turns (40)": "2", 
+                    "spark dmg% buff": 100
+                }, 
+                "hc receive count buff activation": 20, 
+                "passive id": "84"
+            }
+        ], 
+        "name": "Freedom Quiver"
+    }, 
     "7403": {
         "desc": "30% boost to max HP and Atk of all allies, boosts critical damage & critical damage greatly boosts BB gauge", 
         "effects": [
@@ -11848,6 +11985,133 @@
             }
         ], 
         "name": "Divine Majesty"
+    }, 
+    "7452": {
+        "desc": "40% boost to Def and max HP, hugely boosts BB Atk & negates Def ignoring effects", 
+        "effects": [
+            {
+                "atk% buff": 40, 
+                "hp% buff": 40, 
+                "passive id": "1"
+            }, 
+            {
+                "bb atk% buff": 150, 
+                "passive id": "64", 
+                "sbb atk% buff": 150, 
+                "ubb atk% buff": 150
+            }, 
+            {
+                "ignore def resist chance%": 100, 
+                "passive id": "92"
+            }
+        ], 
+        "name": "The Curse of Sacrifice"
+    }, 
+    "7453": {
+        "desc": "30% boost to Atk and max HP, adds probability of normal attacks hitting all foes & damage dealt enormously boosts BB gauge", 
+        "effects": [
+            {
+                "atk% buff": 30, 
+                "hp% buff": 30, 
+                "passive id": "1"
+            }, 
+            {
+                "aoe atk inc%": -50, 
+                "chance to aoe": 25, 
+                "passive id": "96"
+            }, 
+            {
+                "bc fill when attacking high": 8, 
+                "bc fill when attacking low": 8, 
+                "bc fill when attacking%": 100, 
+                "passive id": "35"
+            }
+        ], 
+        "name": "Grand Exhibition of Courage"
+    }, 
+    "7454": {
+        "desc": "50% boost to Atk and max HP, boosts Atk and Def when BB gauge is over 50%, adds probability of normal attacks hitting all foes & damage dealt enormously boosts BB gauge", 
+        "effects": [
+            {
+                "atk% buff": 50, 
+                "hp% buff": 50, 
+                "passive id": "1"
+            }, 
+            {
+                "aoe atk inc%": -50, 
+                "chance to aoe": 30, 
+                "passive id": "96"
+            }, 
+            {
+                "bc fill when attacking high": 10, 
+                "bc fill when attacking low": 10, 
+                "bc fill when attacking%": 100, 
+                "passive id": "35"
+            }, 
+            {
+                "atk% buff": 50, 
+                "bb gauge above % buff requirement": 50, 
+                "def% buff": 50, 
+                "passive id": "30"
+            }
+        ], 
+        "name": "Roaring Heavenly Justice"
+    }, 
+    "7455": {
+        "desc": "30% boost to Atk and max HP, hugely boosts critical damage & considerably boosts elemental damage", 
+        "effects": [
+            {
+                "atk% buff": 30, 
+                "hp% buff": 30, 
+                "passive id": "1"
+            }, 
+            {
+                "crit multiplier%": 150.0, 
+                "passive id": "34"
+            }, 
+            {
+                "dark units do extra elemental weakness dmg": true, 
+                "earth units do extra elemental weakness dmg": true, 
+                "elemental weakness multiplier%": 75.0, 
+                "fire units do extra elemental weakness dmg": true, 
+                "light units do extra elemental weakness dmg": true, 
+                "passive id": "50", 
+                "thunder units do extra elemental weakness dmg": true, 
+                "water units do extra elemental weakness dmg": true
+            }
+        ], 
+        "name": "Demon's Disastrous Invasion"
+    }, 
+    "7456": {
+        "desc": "50% boost to Atk and max HP, hugely boosts critical and elemental damage & probable 25% damage counter", 
+        "effects": [
+            {
+                "atk% buff": 50, 
+                "hp% buff": 50, 
+                "passive id": "1"
+            }, 
+            {
+                "crit multiplier%": 150.0, 
+                "passive id": "34"
+            }, 
+            {
+                "dark units do extra elemental weakness dmg": true, 
+                "earth units do extra elemental weakness dmg": true, 
+                "elemental weakness multiplier%": 125.0, 
+                "fire units do extra elemental weakness dmg": true, 
+                "light units do extra elemental weakness dmg": true, 
+                "passive id": "50", 
+                "thunder units do extra elemental weakness dmg": true, 
+                "water units do extra elemental weakness dmg": true
+            }, 
+            {
+                "dmg% reflect chance%": 20, 
+                "dmg% reflect high": 25, 
+                "dmg% reflect low": 25, 
+                "passive id": "26"
+            }
+        ], 
+        "name": "Wicked Demon's Supremacy"
     }, 
     "7500": {
         "desc": "Adds chance of slightly absorbing HP when attacking", 
@@ -13155,6 +13419,114 @@
             }
         ], 
         "name": "Seeker's Protection"
+    }, 
+    "801032": {
+        "desc": "Slight boost in the BB gauge when attacked & chance of reflecting damage when attacked", 
+        "effects": [
+            {
+                "bc fill when attacked high": 2, 
+                "bc fill when attacked low": 1, 
+                "bc fill when attacked%": 100, 
+                "passive id": "25"
+            }, 
+            {
+                "dmg% reflect chance%": 20, 
+                "dmg% reflect high": 15, 
+                "dmg% reflect low": 15, 
+                "passive id": "26"
+            }
+        ], 
+        "name": "Cursed Aura"
+    }, 
+    "801033": {
+        "desc": "Boost in the BB gauge when attacked & chance of reflecting damage when attacked", 
+        "effects": [
+            {
+                "bc fill when attacked high": 4, 
+                "bc fill when attacked low": 2, 
+                "bc fill when attacked%": 100, 
+                "passive id": "25"
+            }, 
+            {
+                "dmg% reflect chance%": 25, 
+                "dmg% reflect high": 20, 
+                "dmg% reflect low": 20, 
+                "passive id": "26"
+            }
+        ], 
+        "name": "Demonic Zeal"
+    }, 
+    "801034": {
+        "desc": "Slight boost to BC drop rate and damage during Spark", 
+        "effects": [
+            {
+                "damage% for spark": 40, 
+                "passive id": "31"
+            }, 
+            {
+                "bc drop% for spark": 10, 
+                "passive id": "31"
+            }
+        ], 
+        "name": "Haste Zest"
+    }, 
+    "801035": {
+        "desc": "Boost to BC drop rate and damage during Spark", 
+        "effects": [
+            {
+                "damage% for spark": 50, 
+                "passive id": "31"
+            }, 
+            {
+                "bc drop% for spark": 15, 
+                "passive id": "31"
+            }
+        ], 
+        "name": "Gale Force"
+    }, 
+    "801036": {
+        "desc": "Large boost to BC drop rate and damage during Spark & chance of reflecting damage when attacked", 
+        "effects": [
+            {
+                "damage% for spark": 60, 
+                "passive id": "31"
+            }, 
+            {
+                "bc drop% for spark": 20, 
+                "passive id": "31"
+            }, 
+            {
+                "dmg% reflect chance%": 25, 
+                "dmg% reflect high": 25, 
+                "dmg% reflect low": 25, 
+                "passive id": "26"
+            }
+        ], 
+        "name": "Ardent Vigor"
+    }, 
+    "801047": {
+        "desc": "Greatly boosts BB gauge upon being attacked, great chance of reflecting much damage & probable HP recovery when attacked", 
+        "effects": [
+            {
+                "bc fill when attacked high": 5, 
+                "bc fill when attacked low": 2, 
+                "bc fill when attacked%": 100, 
+                "passive id": "25"
+            }, 
+            {
+                "dmg% reflect chance%": 25, 
+                "dmg% reflect high": 20, 
+                "dmg% reflect low": 20, 
+                "passive id": "26"
+            }, 
+            {
+                "dmg% to hp% when attacked chance%": 40, 
+                "dmg% to hp% when attacked high": 20, 
+                "dmg% to hp% when attacked low": 20, 
+                "passive id": "24"
+            }
+        ], 
+        "name": "Malevolent Ardour"
     }, 
     "801075": {
         "desc": "Boosts HC drop rate, hugely boosts effectiveness of HC & negates all status ailments", 
