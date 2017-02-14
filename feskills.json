@@ -22406,6 +22406,306 @@
             }
         ]
     }, 
+    "810508": {
+        "category": {
+            "1": {
+                "name": "\u30b9\u30c6\u30a2\u30c3\u30d7\u7cfb"
+            }, 
+            "11": {
+                "name": "\u7279\u6b8a"
+            }, 
+            "2": {
+                "name": "\u30b9\u30d1\u30fc\u30af\u7cfb"
+            }
+        }, 
+        "skills": [
+            {
+                "category": "1", 
+                "dependency": "", 
+                "dependency comment": "", 
+                "id": "440001", 
+                "skill": {
+                    "bp": 20, 
+                    "desc": "50% boost to max HP", 
+                    "effects": [
+                        {
+                            "passive": {
+                                "hp% buff": 50, 
+                                "passive id": "1"
+                            }
+                        }
+                    ], 
+                    "id": "440001", 
+                    "level": 1, 
+                    "name": "50% boost to max HP", 
+                    "series": "400000"
+                }
+            }, 
+            {
+                "category": "1", 
+                "dependency": "", 
+                "dependency comment": "", 
+                "id": "161000", 
+                "skill": {
+                    "bp": 10, 
+                    "desc": "Considerably boosts Atk relative to how high remaining HP is", 
+                    "effects": [
+                        {
+                            "passive": {
+                                "atk% base buff": 0, 
+                                "atk% extra buff based on hp": 80, 
+                                "buff proportional to hp": "remaining", 
+                                "passive id": "46"
+                            }
+                        }
+                    ], 
+                    "id": "161000", 
+                    "level": 4, 
+                    "name": "Considerably boosts Atk relative to how high remaining HP is", 
+                    "series": "160000"
+                }
+            }, 
+            {
+                "category": "1", 
+                "dependency": "", 
+                "dependency comment": "", 
+                "id": "1000010084", 
+                "skill": {
+                    "bp": 10, 
+                    "desc": "80% boost to Def relative to remaining HP", 
+                    "effects": [
+                        {
+                            "passive": {
+                                "buff proportional to hp": "lost", 
+                                "def% base buff": 0, 
+                                "def% extra buff based on hp": 80, 
+                                "passive id": "46"
+                            }
+                        }
+                    ], 
+                    "id": "1000010084", 
+                    "level": 4, 
+                    "name": "80% boost to Def relative to remaining HP", 
+                    "series": "1000010084"
+                }
+            }, 
+            {
+                "category": "2", 
+                "dependency": "", 
+                "dependency comment": "", 
+                "id": "1000000051", 
+                "skill": {
+                    "bp": 20, 
+                    "desc": "80% boost to Spark Damage (SELF)", 
+                    "effects": [
+                        {
+                            "passive": {
+                                "damage% for spark": 80, 
+                                "passive id": "31"
+                            }
+                        }
+                    ], 
+                    "id": "1000000051", 
+                    "level": 3, 
+                    "name": "80% boost to Spark damage", 
+                    "series": "1000000051"
+                }
+            }, 
+            {
+                "category": "11", 
+                "dependency": "", 
+                "dependency comment": "", 
+                "id": "1000010085", 
+                "skill": {
+                    "bp": 65, 
+                    "desc": "Enhances LS's reduction to Fire, Water, Earth, Thunder elemental damage effect", 
+                    "effects": [
+                        {
+                            "add to passive": {
+                                "dmg% mitigation for elemental attacks": 5.0, 
+                                "passive id": "62"
+                            }
+                        }
+                    ], 
+                    "id": "1000010085", 
+                    "level": 6, 
+                    "name": "Enhances LS's reduction to Fire, Water, Earth, Thunder elemental damage effect", 
+                    "series": "1000010085"
+                }
+            }, 
+            {
+                "category": "11", 
+                "dependency": "", 
+                "dependency comment": "", 
+                "id": "57001001", 
+                "skill": {
+                    "bp": 30, 
+                    "desc": "Adds 1 turn Atk, Def, Rec reducing effects negation to BB/SBB", 
+                    "effects": [
+                        {
+                            "passive": {
+                                "passive id": "66", 
+                                "trigger on bb": true, 
+                                "trigger on sbb": true, 
+                                "triggered effect": [
+                                    {
+                                        "atk down resist% (120)": 100, 
+                                        "def down resist% (121)": 100, 
+                                        "effect delay time(ms)/frame": "0.0/0", 
+                                        "proc id": "73", 
+                                        "rec down resist% (122)": 100, 
+                                        "stat down immunity buff turns": 1, 
+                                        "target area": "aoe", 
+                                        "target type": "party"
+                                    }
+                                ]
+                            }
+                        }
+                    ], 
+                    "id": "57001001", 
+                    "level": 5, 
+                    "name": "Adds Atk, Def, Rec reducing effects negation to BB/SBB", 
+                    "series": "57001000"
+                }
+            }, 
+            {
+                "category": "11", 
+                "dependency": "", 
+                "dependency comment": "", 
+                "id": "59001002", 
+                "skill": {
+                    "bp": 30, 
+                    "desc": "Adds critical damage negation for 1 turn effect to BB/SBB", 
+                    "effects": [
+                        {
+                            "passive": {
+                                "passive id": "66", 
+                                "trigger on bb": true, 
+                                "trigger on sbb": true, 
+                                "triggered effect": [
+                                    {
+                                        "effect delay time(ms)/frame": "0.0/0", 
+                                        "target area": "aoe", 
+                                        "target type": "party", 
+                                        "unknown proc id": "93", 
+                                        "unknown proc param": "100,100,0,0,0,0,1,0"
+                                    }
+                                ]
+                            }
+                        }
+                    ], 
+                    "id": "59001002", 
+                    "level": 5, 
+                    "name": "Adds critical damage negation to BB/SBB", 
+                    "series": "59001000"
+                }
+            }, 
+            {
+                "category": "11", 
+                "dependency": "", 
+                "dependency comment": "", 
+                "id": "1000010086", 
+                "skill": {
+                    "bp": 25, 
+                    "desc": "Adds considerable Atk boost for Fire, Thunder types effect to BB/SBB", 
+                    "effects": [
+                        {
+                            "passive": {
+                                "passive id": "66", 
+                                "trigger on bb": true, 
+                                "trigger on sbb": true, 
+                                "triggered effect": [
+                                    {
+                                        "atk% buff (13)": 120, 
+                                        "buff turns": 3, 
+                                        "effect delay time(ms)/frame": "0.0/0", 
+                                        "element buffed": "fire", 
+                                        "proc id": "5", 
+                                        "target area": "aoe", 
+                                        "target type": "party"
+                                    }
+                                ]
+                            }
+                        }, 
+                        {
+                            "passive": {
+                                "passive id": "66", 
+                                "trigger on bb": true, 
+                                "trigger on sbb": true, 
+                                "triggered effect": [
+                                    {
+                                        "atk% buff (13)": 120, 
+                                        "buff turns": 3, 
+                                        "effect delay time(ms)/frame": "0.0/0", 
+                                        "element buffed": "thunder", 
+                                        "proc id": "5", 
+                                        "target area": "aoe", 
+                                        "target type": "party"
+                                    }
+                                ]
+                            }
+                        }
+                    ], 
+                    "id": "1000010086", 
+                    "level": 3, 
+                    "name": "Adds considerable Atk boost for Fire, Thunder types effect to BB/SBB", 
+                    "series": "1000010086"
+                }
+            }, 
+            {
+                "category": "11", 
+                "dependency": "", 
+                "dependency comment": "", 
+                "id": "1000010087", 
+                "skill": {
+                    "bp": 25, 
+                    "desc": "Adds considerable Atk boost for Water, Earth types effect to BB/SBB", 
+                    "effects": [
+                        {
+                            "passive": {
+                                "passive id": "66", 
+                                "trigger on bb": true, 
+                                "trigger on sbb": true, 
+                                "triggered effect": [
+                                    {
+                                        "atk% buff (13)": 120, 
+                                        "buff turns": 3, 
+                                        "effect delay time(ms)/frame": "0.0/0", 
+                                        "element buffed": "water", 
+                                        "proc id": "5", 
+                                        "target area": "aoe", 
+                                        "target type": "party"
+                                    }
+                                ]
+                            }
+                        }, 
+                        {
+                            "passive": {
+                                "passive id": "66", 
+                                "trigger on bb": true, 
+                                "trigger on sbb": true, 
+                                "triggered effect": [
+                                    {
+                                        "atk% buff (13)": 120, 
+                                        "buff turns": 3, 
+                                        "effect delay time(ms)/frame": "0.0/0", 
+                                        "element buffed": "earth", 
+                                        "proc id": "5", 
+                                        "target area": "aoe", 
+                                        "target type": "party"
+                                    }
+                                ]
+                            }
+                        }
+                    ], 
+                    "id": "1000010087", 
+                    "level": 3, 
+                    "name": "Adds considerable Atk boost for Water, Earth types effect to BB/SBB", 
+                    "series": "1000010087"
+                }
+            }
+        ]
+    }, 
     "820388": {
         "category": {
             "1": {
