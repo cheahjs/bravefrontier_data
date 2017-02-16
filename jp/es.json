@@ -4187,13 +4187,21 @@
         "desc": "ターン毎にＢＢゲージをかなり増加＆被ダメージ時、確率でＢＢゲージを増加", 
         "effects": [
             {
+                "bc fill per turn": 4, 
                 "conditions": [], 
-                "ignore def resist chance%": 100, 
-                "passive id": "92", 
+                "passive id": "9", 
+                "passive target": "self"
+            }, 
+            {
+                "bc fill when attacked high": 3, 
+                "bc fill when attacked low": 2, 
+                "bc fill when attacked%": 50, 
+                "conditions": [], 
+                "passive id": "25", 
                 "passive target": "self"
             }
         ], 
-        "name": "EXS2_249", 
+        "name": "女帝の凱歌", 
         "target": "self"
     }, 
     "1007200": {
@@ -8659,6 +8667,28 @@
             }
         ], 
         "name": "レコードオブスマッシュ", 
+        "target": "self"
+    }, 
+    "1021100": {
+        "desc": "戦闘開始から２ターン、攻撃力を７５％アップ＆残りＨＰが多いほど攻撃力をアップ", 
+        "effects": [
+            {
+                "conditions": [], 
+                "first x turns": 2, 
+                "first x turns atk% (1)": 75, 
+                "passive id": "21", 
+                "passive target": "self"
+            }, 
+            {
+                "atk% base buff": 0, 
+                "atk% extra buff based on hp": 50, 
+                "buff proportional to hp": "remaining", 
+                "conditions": [], 
+                "passive id": "46", 
+                "passive target": "self"
+            }
+        ], 
+        "name": "刹神の威志", 
         "target": "self"
     }, 
     "10300": {
@@ -15024,6 +15054,48 @@
             }
         ], 
         "name": "闇赫のパンプキン", 
+        "target": "self"
+    }, 
+    "31700": {
+        "desc": "ＢＢ発動に必要なＢＢゲージ量を軽減＆被ダメージ時、ＢＢゲージを増加", 
+        "effects": [
+            {
+                "bc fill when attacked high": 3, 
+                "bc fill when attacked low": 2, 
+                "bc fill when attacked%": 100, 
+                "conditions": [], 
+                "passive id": "25", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "passive id": "48", 
+                "passive target": "self", 
+                "reduced bb bc cost%": 20
+            }
+        ], 
+        "name": "歪む大義", 
+        "target": "self"
+    }, 
+    "31800": {
+        "desc": "スパークダメージを５０％アップ＆攻撃ＢＢの威力を大幅にアップ", 
+        "effects": [
+            {
+                "conditions": [], 
+                "damage% for spark": 50, 
+                "passive id": "31", 
+                "passive target": "self"
+            }, 
+            {
+                "bb atk% buff": 150, 
+                "conditions": [], 
+                "passive id": "64", 
+                "passive target": "self", 
+                "sbb atk% buff": 150, 
+                "ubb atk% buff": 150
+            }
+        ], 
+        "name": "未来への種", 
         "target": "self"
     }, 
     "3200": {
