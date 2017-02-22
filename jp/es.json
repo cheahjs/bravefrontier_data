@@ -15098,6 +15098,31 @@
         "name": "未来への種", 
         "target": "self"
     }, 
+    "31900": {
+        "desc": "ターン毎に攻撃力・防御力・回復力をアップ（５ターン目まで上昇量が増加する）＆被ダメージ時、ＢＢゲージを少し増加", 
+        "effects": [
+            {
+                "atk% max buff": 30, 
+                "conditions": [], 
+                "def% max buff": 30, 
+                "increase from min to max": 1, 
+                "passive id": "105", 
+                "passive target": "self", 
+                "rec% max buff": 30, 
+                "turn count": 5
+            }, 
+            {
+                "bc fill when attacked high": 2, 
+                "bc fill when attacked low": 1, 
+                "bc fill when attacked%": 100, 
+                "conditions": [], 
+                "passive id": "25", 
+                "passive target": "self"
+            }
+        ], 
+        "name": "見通す魔眼", 
+        "target": "self"
+    }, 
     "3200": {
         "desc": "ＨＰを少し吸収＆通常攻撃時、ＢＢゲージを大幅に増加", 
         "effects": [
@@ -15119,6 +15144,184 @@
             }
         ], 
         "name": "胸に差す光", 
+        "target": "self"
+    }, 
+    "32000": {
+        "desc": "ターン毎に攻撃力・防御力・回復力をアップ（５ターン目まで上昇量が増加する）＆被ダメージ時、ＢＢゲージを増加", 
+        "effects": [
+            {
+                "atk% max buff": 50, 
+                "conditions": [], 
+                "def% max buff": 50, 
+                "increase from min to max": 1, 
+                "passive id": "105", 
+                "passive target": "self", 
+                "rec% max buff": 50, 
+                "turn count": 5
+            }, 
+            {
+                "bc fill when attacked high": 3, 
+                "bc fill when attacked low": 2, 
+                "bc fill when attacked%": 100, 
+                "conditions": [], 
+                "passive id": "25", 
+                "passive target": "self"
+            }
+        ], 
+        "name": "機先を制す達眼", 
+        "target": "self"
+    }, 
+    "32100": {
+        "desc": "ＢＢゲージが半分以上の時、攻撃力・防御力をアップ＆ＨＰが半分以上の時、スパークダメージをアップ", 
+        "effects": [
+            {
+                "atk% buff": 60, 
+                "bb gauge above % buff requirement": 50, 
+                "conditions": [], 
+                "def% buff": 60, 
+                "passive id": "30", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "damage% for spark": 50, 
+                "hp above % buff requirement": 50, 
+                "passive id": "104", 
+                "passive target": "self"
+            }
+        ], 
+        "name": "マッドアルケミー", 
+        "target": "self"
+    }, 
+    "32200": {
+        "desc": "ＢＢゲージが半分以上の時、攻撃力・防御力をかなりアップ＆ＨＰが半分以上の時、スパークダメージを大幅にアップ", 
+        "effects": [
+            {
+                "atk% buff": 80, 
+                "bb gauge above % buff requirement": 50, 
+                "conditions": [], 
+                "def% buff": 80, 
+                "passive id": "30", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "damage% for spark": 80, 
+                "hp above % buff requirement": 50, 
+                "passive id": "104", 
+                "passive target": "self"
+            }
+        ], 
+        "name": "クレイジーサイエンス", 
+        "target": "self"
+    }, 
+    "32300": {
+        "desc": "全てのユニットの攻撃力・防御力・回復力・最大ＨＰを１０％アップ＆残りＨＰが多いほど、攻撃力・防御力・回復力を少しアップ＆スパークダメージを５０％アップ", 
+        "effects": [
+            {
+                "atk% buff": 10, 
+                "conditions": [], 
+                "def% buff": 10, 
+                "hp% buff": 10, 
+                "passive id": "1", 
+                "passive target": "party", 
+                "rec% buff": 10
+            }, 
+            {
+                "atk% base buff": 0, 
+                "atk% extra buff based on hp": 30, 
+                "buff proportional to hp": "remaining", 
+                "conditions": [], 
+                "def% base buff": 0, 
+                "def% extra buff based on hp": 30, 
+                "passive id": "46", 
+                "passive target": "self", 
+                "rec% base buff": 0, 
+                "rec% extra buff based on hp": 30
+            }, 
+            {
+                "conditions": [], 
+                "damage% for spark": 50, 
+                "passive id": "31", 
+                "passive target": "self"
+            }
+        ], 
+        "name": "愉悦の黒刃", 
+        "target": "self"
+    }, 
+    "32400": {
+        "desc": "全てのユニットの攻撃力・防御力・回復力・最大ＨＰを１０％アップ＆残りＨＰが多いほど、攻撃力・防御力・回復力をアップ＆スパークダメージを５０％アップ", 
+        "effects": [
+            {
+                "atk% buff": 10, 
+                "conditions": [], 
+                "def% buff": 10, 
+                "hp% buff": 10, 
+                "passive id": "1", 
+                "passive target": "party", 
+                "rec% buff": 10
+            }, 
+            {
+                "atk% base buff": 0, 
+                "atk% extra buff based on hp": 50, 
+                "buff proportional to hp": "remaining", 
+                "conditions": [], 
+                "def% base buff": 0, 
+                "def% extra buff based on hp": 50, 
+                "passive id": "46", 
+                "passive target": "self", 
+                "rec% base buff": 0, 
+                "rec% extra buff based on hp": 50
+            }, 
+            {
+                "conditions": [], 
+                "damage% for spark": 50, 
+                "passive id": "31", 
+                "passive target": "self"
+            }
+        ], 
+        "name": "悦楽の忌刃", 
+        "target": "self"
+    }, 
+    "32500": {
+        "desc": "ＢＢ及びＳＢＢに「味方全体に闇属性のバリアを付与」を追加＆確率で被ダメージを２０％軽減＆被ダメージ時、確率でＨＰを回復", 
+        "effects": [
+            {
+                "conditions": [], 
+                "passive id": "66", 
+                "passive target": "self", 
+                "trigger on bb": true, 
+                "trigger on sbb": true, 
+                "triggered effect": [
+                    {
+                        "effect delay time(ms)/frame": "0.0/0", 
+                        "elemental barrier absorb dmg%": 100, 
+                        "elemental barrier def": 0, 
+                        "elemental barrier element": "dark", 
+                        "elemental barrier hp": 3000, 
+                        "proc id": "62", 
+                        "target area": "aoe", 
+                        "target type": "party"
+                    }
+                ]
+            }, 
+            {
+                "conditions": [], 
+                "dmg reduction chance%": 20, 
+                "dmg reduction%": 20, 
+                "passive id": "14", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "dmg% to hp% when attacked chance%": 25, 
+                "dmg% to hp% when attacked high": 25, 
+                "dmg% to hp% when attacked low": 20, 
+                "passive id": "24", 
+                "passive target": "self"
+            }
+        ], 
+        "name": "美しき世界の理", 
         "target": "self"
     }, 
     "3300": {
