@@ -15324,6 +15324,136 @@
         "name": "美しき世界の理", 
         "target": "self"
     }, 
+    "32600": {
+        "desc": "ＢＢ及びＳＢＢに「味方全体に光属性のバリアを付与」を追加＆残りＨＰが多いほど、回復力をかなりアップ", 
+        "effects": [
+            {
+                "conditions": [], 
+                "passive id": "66", 
+                "passive target": "self", 
+                "trigger on bb": true, 
+                "trigger on sbb": true, 
+                "triggered effect": [
+                    {
+                        "effect delay time(ms)/frame": "0.0/0", 
+                        "elemental barrier absorb dmg%": 100, 
+                        "elemental barrier def": 0, 
+                        "elemental barrier element": "light", 
+                        "elemental barrier hp": 2000, 
+                        "proc id": "62", 
+                        "target area": "aoe", 
+                        "target type": "party"
+                    }
+                ]
+            }, 
+            {
+                "buff proportional to hp": "remaining", 
+                "conditions": [], 
+                "passive id": "46", 
+                "passive target": "self", 
+                "rec% base buff": 0, 
+                "rec% extra buff based on hp": 80
+            }
+        ], 
+        "name": "耐えない夜明け", 
+        "target": "self"
+    }, 
+    "32700": {
+        "desc": "ＢＢ及びＳＢＢに「味方全体に光属性のバリアを付与」を追加＆残りＨＰが多いほど、回復力を大幅にアップ", 
+        "effects": [
+            {
+                "conditions": [], 
+                "passive id": "66", 
+                "passive target": "self", 
+                "trigger on bb": true, 
+                "trigger on sbb": true, 
+                "triggered effect": [
+                    {
+                        "effect delay time(ms)/frame": "0.0/0", 
+                        "elemental barrier absorb dmg%": 100, 
+                        "elemental barrier def": 0, 
+                        "elemental barrier element": "light", 
+                        "elemental barrier hp": 2500, 
+                        "proc id": "62", 
+                        "target area": "aoe", 
+                        "target type": "party"
+                    }
+                ]
+            }, 
+            {
+                "buff proportional to hp": "remaining", 
+                "conditions": [], 
+                "passive id": "46", 
+                "passive target": "self", 
+                "rec% base buff": 0, 
+                "rec% extra buff based on hp": 100
+            }
+        ], 
+        "name": "永久の聖域", 
+        "target": "self"
+    }, 
+    "32800": {
+        "desc": "ＨＰが満タン時、攻撃力をアップ＆ＢＢ及びＳＢＢに「味方全体に３ターン、状態異常の敵へのダメージを大幅にアップ」を追加", 
+        "effects": [
+            {
+                "conditions": [], 
+                "passive id": "66", 
+                "passive target": "self", 
+                "trigger on bb": true, 
+                "trigger on sbb": true, 
+                "triggered effect": [
+                    {
+                        "atk% buff turns (110)": 3, 
+                        "atk% buff when enemy has ailment": 160, 
+                        "effect delay time(ms)/frame": "0.0/0", 
+                        "proc id": "65", 
+                        "target area": "aoe", 
+                        "target type": "party"
+                    }
+                ]
+            }, 
+            {
+                "atk% buff": 60, 
+                "conditions": [], 
+                "hp above % buff requirement": 100, 
+                "passive id": "11", 
+                "passive target": "self"
+            }
+        ], 
+        "name": "終わりなき無", 
+        "target": "self"
+    }, 
+    "32900": {
+        "desc": "ＨＰが満タン時、攻撃力をかなりアップ＆ＢＢ及びＳＢＢに「味方全体に３ターン、状態異常の敵へのダメージを大幅にアップ」を追加", 
+        "effects": [
+            {
+                "conditions": [], 
+                "passive id": "66", 
+                "passive target": "self", 
+                "trigger on bb": true, 
+                "trigger on sbb": true, 
+                "triggered effect": [
+                    {
+                        "atk% buff turns (110)": 3, 
+                        "atk% buff when enemy has ailment": 180, 
+                        "effect delay time(ms)/frame": "0.0/0", 
+                        "proc id": "65", 
+                        "target area": "aoe", 
+                        "target type": "party"
+                    }
+                ]
+            }, 
+            {
+                "atk% buff": 80, 
+                "conditions": [], 
+                "hp above % buff requirement": 100, 
+                "passive id": "11", 
+                "passive target": "self"
+            }
+        ], 
+        "name": "鏡合わせのアンチテーゼ", 
+        "target": "self"
+    }, 
     "3300": {
         "desc": "クリティカルダメージをかなりアップ", 
         "effects": [
