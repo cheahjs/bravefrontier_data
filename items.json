@@ -2960,69 +2960,135 @@
     }, 
     "120000": {
         "desc": "Multiplies experience by 1.5 after Quest is cleared", 
+        "effect": {
+            "effect": [
+                {
+                    "unknown proc id": "79", 
+                    "unknown proc param": "50"
+                }
+            ], 
+            "target_area": "aoe", 
+            "target_type": "party"
+        }, 
         "id": 120000, 
+        "max equipped": 1, 
         "max_stack": 99, 
         "name": "Experience Token", 
         "raid": false, 
         "rarity": 2, 
         "sell_price": 500, 
         "thumbnail": "item_thum_90000.png", 
-        "type": null
+        "type": "summoner_consumable"
     }, 
     "120001": {
         "desc": "Multiplies experience by 2 after Quest is cleared", 
+        "effect": {
+            "effect": [
+                {
+                    "unknown proc id": "79", 
+                    "unknown proc param": "100"
+                }
+            ], 
+            "target_area": "aoe", 
+            "target_type": "party"
+        }, 
         "id": 120001, 
+        "max equipped": 1, 
         "max_stack": 99, 
         "name": "Experience Badge", 
         "raid": false, 
         "rarity": 3, 
         "sell_price": 1000, 
         "thumbnail": "item_thum_90100.png", 
-        "type": null
+        "type": "summoner_consumable"
     }, 
     "120010": {
         "desc": "Multiplies Item drop rate by 1.5 after Raid Quest is cleared when activated from map", 
+        "effect": {
+            "effect": [
+                {
+                    "unknown proc id": "908", 
+                    "unknown proc param": "50"
+                }
+            ], 
+            "target_area": "aoe", 
+            "target_type": "party"
+        }, 
         "id": 120010, 
+        "max equipped": 1, 
         "max_stack": 99, 
         "name": "Fortune Box", 
         "raid": true, 
         "rarity": 2, 
         "sell_price": 500, 
         "thumbnail": "item_thum_91000.png", 
-        "type": null
+        "type": "summoner_consumable"
     }, 
     "120011": {
         "desc": "Multiplies Item drop rate by 2 after Raid Quest is cleared when activated from map ", 
+        "effect": {
+            "effect": [
+                {
+                    "unknown proc id": "908", 
+                    "unknown proc param": "100"
+                }
+            ], 
+            "target_area": "aoe", 
+            "target_type": "party"
+        }, 
         "id": 120011, 
+        "max equipped": 1, 
         "max_stack": 99, 
         "name": "Fortune Coffer", 
         "raid": true, 
         "rarity": 0, 
         "sell_price": 1000, 
         "thumbnail": "item_thum_91100.png", 
-        "type": null
+        "type": "summoner_consumable"
     }, 
     "130000": {
         "desc": "Multiplies Summoner EXP, weapon EXP, and SP by 1.5 whenever a Quest is cleared for 30min", 
+        "effect": {
+            "effect": [
+                {
+                    "unknown proc id": "79", 
+                    "unknown proc param": "50,30"
+                }
+            ], 
+            "target_area": "aoe", 
+            "target_type": "party"
+        }, 
         "id": 130000, 
+        "max equipped": 1, 
         "max_stack": 99, 
         "name": "Experience Water", 
         "raid": false, 
         "rarity": 0, 
         "sell_price": 500, 
         "thumbnail": "item_thum_92000.png", 
-        "type": null
+        "type": "summoner_consumable"
     }, 
     "130001": {
         "desc": "Multiplies Summoner EXP, weapon EXP, and SP by 2 whenever a Quest is cleared for 30min", 
+        "effect": {
+            "effect": [
+                {
+                    "unknown proc id": "79", 
+                    "unknown proc param": "100,30"
+                }
+            ], 
+            "target_area": "aoe", 
+            "target_type": "party"
+        }, 
         "id": 130001, 
+        "max equipped": 1, 
         "max_stack": 99, 
         "name": "Experience Tonic", 
         "raid": false, 
         "rarity": 0, 
         "sell_price": 1000, 
         "thumbnail": "item_thum_92100.png", 
-        "type": null
+        "type": "summoner_consumable"
     }, 
     "20000": {
         "desc": "Slightly replenishes one ally's HP.", 
@@ -4753,6 +4819,13 @@
     }, 
     "230003": {
         "desc": "20% boost Rec and max HP", 
+        "effect": [
+            {
+                "hp% buff": 20, 
+                "passive id": "1", 
+                "rec% buff": 20
+            }
+        ], 
         "id": 230003, 
         "max_stack": 1, 
         "name": "Shining Stone", 
@@ -4783,13 +4856,26 @@
         "sphere type": 1, 
         "sphere type text": "Status Boost", 
         "thumbnail": "ls_sphere_thum_7_2.png", 
-        "type": null
+        "type": "ls_sphere"
     }, 
     "230004": {
-        "desc": "\u5168\u3066\u306e\u30e6\u30cb\u30c3\u30c8\u306e\u56de\u5fa9\u529b\u30fb\u6700\u5927\uff28\uff30\u3092\uff12\uff15\uff05\u30a2\u30c3\u30d7\uff06\u78ba\u7387\u3067\uff28\uff30\u3092\u5c11\u3057\u5438\u53ce", 
+        "desc": "25% boost to Rec, max HP & probability of slight HP absorption", 
+        "effect": [
+            {
+                "hp% buff": 25, 
+                "passive id": "1", 
+                "rec% buff": 25
+            }, 
+            {
+                "hp drain chance%": 25, 
+                "hp drain% high": 10, 
+                "hp drain% low": 5, 
+                "passive id": "17"
+            }
+        ], 
         "id": 230004, 
         "max_stack": 1, 
-        "name": "\u5c0a\u8840\u7389\u30c7\u30a3\u30e1\u30fc\u30c6", 
+        "name": "Noble Blood Gem", 
         "raid": false, 
         "rarity": 3, 
         "recipe": {
@@ -4817,13 +4903,32 @@
         "sphere type": 1, 
         "sphere type text": "Status Boost", 
         "thumbnail": "ls_sphere_thum_7_1.png", 
-        "type": null
+        "type": "ls_sphere"
     }, 
     "230005": {
-        "desc": "\u5168\u3066\u306e\u30e6\u30cb\u30c3\u30c8\u306e\u56de\u5fa9\u529b\u30fb\u6700\u5927\uff28\uff30\u3092\uff13\uff10\uff05\u30a2\u30c3\u30d7\uff06\u30bf\u30fc\u30f3\u6bce\u306b\uff28\uff30\u3092\u56de\u5fa9\uff06\u88ab\u30c0\u30e1\u30fc\u30b8\u6642\u3001\u78ba\u7387\u3067\uff28\uff30\u3092\u5c11\u3057\u56de\u5fa9", 
+        "desc": "30% boost to Rec and max HP, restores HP each turn & damage taken may slightly restore HP", 
+        "effect": [
+            {
+                "hp% buff": 30, 
+                "passive id": "1", 
+                "rec% buff": 30
+            }, 
+            {
+                "passive id": "33", 
+                "rec% added (turn heal)": 10.0, 
+                "turn heal high": 700, 
+                "turn heal low": 700
+            }, 
+            {
+                "dmg% to hp% when attacked chance%": 25, 
+                "dmg% to hp% when attacked high": 15, 
+                "dmg% to hp% when attacked low": 15, 
+                "passive id": "24"
+            }
+        ], 
         "id": 230005, 
         "max_stack": 1, 
-        "name": "\u8b83\u5d07\u7b26\u30c9\u30e9\u30b7\u30aa\u30f3", 
+        "name": "Worship Charm", 
         "raid": false, 
         "rarity": 3, 
         "recipe": {
@@ -4855,10 +4960,20 @@
         "sphere type": 1, 
         "sphere type text": "Status Boost", 
         "thumbnail": "ls_sphere_thum_7_8.png", 
-        "type": null
+        "type": "ls_sphere"
     }, 
     "230103": {
         "desc": "20% boost to Atk & boosts BB gauge each turn", 
+        "effect": [
+            {
+                "atk% buff": 20, 
+                "passive id": "1"
+            }, 
+            {
+                "bc fill per turn": 3, 
+                "passive id": "9"
+            }
+        ], 
         "id": 230103, 
         "max_stack": 1, 
         "name": "Sacred Flag", 
@@ -4889,13 +5004,27 @@
         "sphere type": 1, 
         "sphere type text": "Status Boost", 
         "thumbnail": "ls_sphere_thum_9_2.png", 
-        "type": null
+        "type": "ls_sphere"
     }, 
     "230104": {
-        "desc": "\u5168\u3066\u306e\u30e6\u30cb\u30c3\u30c8\u306e\u653b\u6483\u529b\u3092\uff12\uff15\uff05\u30a2\u30c3\u30d7\uff06\u30bf\u30fc\u30f3\u6bce\u306b\uff22\uff22\u30b2\u30fc\u30b8\u3092\u5897\u52a0\uff06\u30b9\u30d1\u30fc\u30af\u30c0\u30e1\u30fc\u30b8\u3092\uff15\uff10\uff05\u30a2\u30c3\u30d7", 
+        "desc": "25% boost to Atk, boosts BB gauge each turn & 50% boost to Spark damage", 
+        "effect": [
+            {
+                "atk% buff": 25, 
+                "passive id": "1"
+            }, 
+            {
+                "bc fill per turn": 3, 
+                "passive id": "9"
+            }, 
+            {
+                "damage% for spark": 50, 
+                "passive id": "31"
+            }
+        ], 
         "id": 230104, 
         "max_stack": 1, 
-        "name": "\u529b\u738b\u5e2f\u30d0\u30eb\u30ae\u30eb\u30a2", 
+        "name": "Power Girdle", 
         "raid": false, 
         "rarity": 3, 
         "recipe": {
@@ -4923,13 +5052,27 @@
         "sphere type": 1, 
         "sphere type text": "Status Boost", 
         "thumbnail": "ls_sphere_thum_9_5.png", 
-        "type": null
+        "type": "ls_sphere"
     }, 
     "230105": {
-        "desc": "\u5168\u3066\u306e\u30e6\u30cb\u30c3\u30c8\u306e\u653b\u6483\u529b\u3092\uff13\uff10\uff05\u30a2\u30c3\u30d7\uff06\u30bf\u30fc\u30f3\u6bce\u306b\uff22\uff22\u30b2\u30fc\u30b8\u3092\u304b\u306a\u308a\u5897\u52a0\uff06\u30b9\u30d1\u30fc\u30af\u30c0\u30e1\u30fc\u30b8\u3092\uff17\uff15\uff05\u30a2\u30c3\u30d7", 
+        "desc": "30% boost to Atk, considerably boosts BB gauge each turn & 75% boost to Spark damage", 
+        "effect": [
+            {
+                "atk% buff": 30, 
+                "passive id": "1"
+            }, 
+            {
+                "bc fill per turn": 4, 
+                "passive id": "9"
+            }, 
+            {
+                "damage% for spark": 75, 
+                "passive id": "31"
+            }
+        ], 
         "id": 230105, 
         "max_stack": 1, 
-        "name": "\u7981\u95d8\u5263\u30b5\u30d5\u30a9\u30eb\u30b9", 
+        "name": "Forbidden Blade", 
         "raid": false, 
         "rarity": 3, 
         "recipe": {
@@ -4961,10 +5104,25 @@
         "sphere type": 1, 
         "sphere type text": "Status Boost", 
         "thumbnail": "ls_sphere_thum_9_3.png", 
-        "type": null
+        "type": "ls_sphere"
     }, 
     "230203": {
         "desc": "20% boost to Def & deters status ailments", 
+        "effect": [
+            {
+                "def% buff": 20, 
+                "passive id": "1"
+            }, 
+            {
+                "curse resist%": 50, 
+                "injury resist%": 50, 
+                "paralysis resist%": 50, 
+                "passive id": "4", 
+                "poison resist%": 50, 
+                "sick resist%": 50, 
+                "weaken resist%": 50
+            }
+        ], 
         "id": 230203, 
         "max_stack": 1, 
         "name": "Guarding Light", 
@@ -4995,13 +5153,33 @@
         "sphere type": 1, 
         "sphere type text": "Status Boost", 
         "thumbnail": "ls_sphere_thum_6_2.png", 
-        "type": null
+        "type": "ls_sphere"
     }, 
     "230204": {
-        "desc": "\u5168\u3066\u306e\u30e6\u30cb\u30c3\u30c8\u306e\u9632\u5fa1\u529b\u3092\uff12\uff15\uff05\u30a2\u30c3\u30d7\uff06\u5168\u72b6\u614b\u7570\u5e38\u306b\u304b\u304b\u308a\u306b\u304f\u304f\u306a\u308b\uff06\u5f31\u70b9\u5c5e\u6027\u30c0\u30e1\u30fc\u30b8\u3092\u5c11\u3057\u8efd\u6e1b", 
+        "desc": "25% boost to Def, increases resistance to all status ailments & slightly reduces elemental damage", 
+        "effect": [
+            {
+                "def% buff": 25, 
+                "passive id": "1"
+            }, 
+            {
+                "curse resist%": 50, 
+                "injury resist%": 50, 
+                "paralysis resist%": 50, 
+                "passive id": "4", 
+                "poison resist%": 50, 
+                "sick resist%": 50, 
+                "weaken resist%": 50
+            }, 
+            {
+                "passive id": "53", 
+                "strong base element damage resist%": 20, 
+                "strong buffed element damage resist%": 20
+            }
+        ], 
         "id": 230204, 
         "max_stack": 1, 
-        "name": "\u767d\u9b3c\u7532\u30de\u30af\u30fb\u30de\u30a6", 
+        "name": "Ogre Gauntlets", 
         "raid": false, 
         "rarity": 3, 
         "recipe": {
@@ -5029,13 +5207,33 @@
         "sphere type": 1, 
         "sphere type text": "Status Boost", 
         "thumbnail": "ls_sphere_thum_6_5.png", 
-        "type": null
+        "type": "ls_sphere"
     }, 
     "230205": {
-        "desc": "\u5168\u3066\u306e\u30e6\u30cb\u30c3\u30c8\u306e\u9632\u5fa1\u529b\u3092\uff13\uff10\uff05\u30a2\u30c3\u30d7\uff06\u5168\u72b6\u614b\u7570\u5e38\u3092\u7121\u52b9\uff06\u5f31\u70b9\u5c5e\u6027\u30c0\u30e1\u30fc\u30b8\u3092\u8efd\u6e1b", 
+        "desc": "30% boost to Def, negates all status ailments & reduces elemental damage", 
+        "effect": [
+            {
+                "def% buff": 30, 
+                "passive id": "1"
+            }, 
+            {
+                "curse resist%": 100, 
+                "injury resist%": 100, 
+                "paralysis resist%": 100, 
+                "passive id": "4", 
+                "poison resist%": 100, 
+                "sick resist%": 100, 
+                "weaken resist%": 100
+            }, 
+            {
+                "passive id": "53", 
+                "strong base element damage resist%": 30, 
+                "strong buffed element damage resist%": 30
+            }
+        ], 
         "id": 230205, 
         "max_stack": 1, 
-        "name": "\u9ed2\u5996\u515c\u30d8\u30eb\u30fb\u30af\u30eb", 
+        "name": "Myrmidon Helm", 
         "raid": false, 
         "rarity": 3, 
         "recipe": {
@@ -5067,10 +5265,24 @@
         "sphere type": 1, 
         "sphere type text": "Status Boost", 
         "thumbnail": "ls_sphere_thum_6_6.png", 
-        "type": null
+        "type": "ls_sphere"
     }, 
     "230303": {
         "desc": "Restores HP each turn & damage taken may restore HP", 
+        "effect": [
+            {
+                "passive id": "33", 
+                "rec% added (turn heal)": 10.0, 
+                "turn heal high": 500, 
+                "turn heal low": 500
+            }, 
+            {
+                "dmg% to hp% when attacked chance%": 25, 
+                "dmg% to hp% when attacked high": 15, 
+                "dmg% to hp% when attacked low": 15, 
+                "passive id": "24"
+            }
+        ], 
         "id": 230303, 
         "max_stack": 1, 
         "name": "General's Gem", 
@@ -5101,13 +5313,32 @@
         "sphere type": 1, 
         "sphere type text": "Status Boost", 
         "thumbnail": "ls_sphere_thum_8_2.png", 
-        "type": null
+        "type": "ls_sphere"
     }, 
     "230304": {
-        "desc": "\u30bf\u30fc\u30f3\u6bce\u306b\uff28\uff30\u3092\u56de\u5fa9\uff06\u88ab\u30c0\u30e1\u30fc\u30b8\u6642\u3001\u78ba\u7387\u3067\uff28\uff30\u3092\u5c11\u3057\u56de\u5fa9\uff06\uff22\uff23\u30fb\uff28\uff23\u51fa\u73fe\u7387\u3092\u30a2\u30c3\u30d7", 
+        "desc": "Restores HP each turn, damage taken may slightly restore HP & boosts BC, HC drop rates", 
+        "effect": [
+            {
+                "passive id": "33", 
+                "rec% added (turn heal)": 10.0, 
+                "turn heal high": 500, 
+                "turn heal low": 500
+            }, 
+            {
+                "dmg% to hp% when attacked chance%": 25, 
+                "dmg% to hp% when attacked high": 15, 
+                "dmg% to hp% when attacked low": 15, 
+                "passive id": "24"
+            }, 
+            {
+                "bc drop rate% buff": 10, 
+                "hc drop rate% buff": 10, 
+                "passive id": "19"
+            }
+        ], 
         "id": 230304, 
         "max_stack": 1, 
-        "name": "\u6804\u6148\u7b26\u30dd\u30ea\u30a2\u30d5", 
+        "name": "Affection Charm", 
         "raid": false, 
         "rarity": 3, 
         "recipe": {
@@ -5139,13 +5370,31 @@
         "sphere type": 1, 
         "sphere type text": "Status Boost", 
         "thumbnail": "ls_sphere_thum_8_8.png", 
-        "type": null
+        "type": "ls_sphere"
     }, 
     "234000": {
-        "desc": "\u5168\u3066\u306e\u30e6\u30cb\u30c3\u30c8\u306e\u653b\u6483\u529b\u3092\uff13\uff10\uff05\u30a2\u30c3\u30d7\uff06\u78ba\u7387\u3067\u5168\u72b6\u614b\u7570\u5e38\u3092\u30e9\u30f3\u30c0\u30e0\u306b\u767a\u751f", 
+        "desc": "30% boost to Atk & probable random status ailment infliction", 
+        "effect": [
+            {
+                "atk% buff": 30, 
+                "passive id": "1"
+            }, 
+            {
+                "curse%": 5, 
+                "passive id": "20", 
+                "poison%": 5, 
+                "sick%": 7
+            }, 
+            {
+                "injury%": 7, 
+                "paralysis%": 5, 
+                "passive id": "20", 
+                "weaken%": 7
+            }
+        ], 
         "id": 234000, 
         "max_stack": 1, 
-        "name": "\u8056\u51f6\u5178\u30ec\u30cd\u30a4\u30a8", 
+        "name": "Taboo Grimoire", 
         "raid": false, 
         "rarity": 3, 
         "recipe": {
@@ -5177,13 +5426,34 @@
         "sphere type": 1, 
         "sphere type text": "Status Boost", 
         "thumbnail": "ls_sphere_thum_5_6.png", 
-        "type": null
+        "type": "ls_sphere"
     }, 
     "235000": {
-        "desc": "\u5168\u3066\u306e\u30e6\u30cb\u30c3\u30c8\u306e\u653b\u6483\u529b\u30fb\u9632\u5fa1\u529b\u30fb\u56de\u5fa9\u529b\u30fb\u6700\u5927\uff28\uff30\u3092\uff12\uff15\uff05\u30a2\u30c3\u30d7\uff06\u88ab\u30c0\u30e1\u30fc\u30b8\u6642\u3001\u78ba\u7387\u3067\uff22\uff22\u30b2\u30fc\u30b8\u3092\u5c11\u3057\u5897\u52a0\uff06\u901a\u5e38\u653b\u6483\u6642\u3001\u78ba\u7387\u3067\uff22\uff22\u30b2\u30fc\u30b8\u3092\u5897\u52a0", 
+        "desc": "25% boost to all parameters, damage taken may slightly boost BB gauge & probable boost to BB gauge when attacking normally", 
+        "effect": [
+            {
+                "atk% buff": 25, 
+                "def% buff": 25, 
+                "hp% buff": 25, 
+                "passive id": "1", 
+                "rec% buff": 25
+            }, 
+            {
+                "bc fill when attacked high": 2, 
+                "bc fill when attacked low": 1, 
+                "bc fill when attacked%": 50, 
+                "passive id": "25"
+            }, 
+            {
+                "bc fill when attacking high": 3, 
+                "bc fill when attacking low": 2, 
+                "bc fill when attacking%": 50, 
+                "passive id": "35"
+            }
+        ], 
         "id": 235000, 
         "max_stack": 1, 
-        "name": "\u5929\u72fc\u5957\u30bc\u30d5\u30a3\u30fc\u30ed", 
+        "name": "Lupine Mantle", 
         "raid": false, 
         "rarity": 4, 
         "recipe": {
@@ -5215,13 +5485,30 @@
         "sphere type": 1, 
         "sphere type text": "Status Boost", 
         "thumbnail": "ls_sphere_thum_8_4.png", 
-        "type": null
+        "type": "ls_sphere"
     }, 
     "235001": {
-        "desc": "\u5168\u3066\u306e\u30e6\u30cb\u30c3\u30c8\u306e\u653b\u6483\u529b\u30fb\u9632\u5fa1\u529b\u30fb\u56de\u5fa9\u529b\u30fb\u6700\u5927\uff28\uff30\u3092\uff13\uff15\uff05\u30a2\u30c3\u30d7\uff06\u30af\u30ea\u30c6\u30a3\u30ab\u30eb\u30c0\u30e1\u30fc\u30b8\u3092\u5927\u5e45\u306b\u30a2\u30c3\u30d7\uff06\uff22\uff22\u767a\u52d5\u306b\u5fc5\u8981\u306a\uff22\uff22\u30b2\u30fc\u30b8\u91cf\u3092\u8efd\u6e1b", 
+        "desc": "35% boost to all parameters, hugely boosts critical damage & reduces BB gauge required for BB", 
+        "effect": [
+            {
+                "atk% buff": 35, 
+                "def% buff": 35, 
+                "hp% buff": 35, 
+                "passive id": "1", 
+                "rec% buff": 35
+            }, 
+            {
+                "crit multiplier%": 150.0, 
+                "passive id": "34"
+            }, 
+            {
+                "passive id": "48", 
+                "reduced bb bc cost%": 15
+            }
+        ], 
         "id": 235001, 
         "max_stack": 1, 
-        "name": "\u6a5f\u5175\u77f3\u300e\u30a4\u30b6\u30e8\u30a4\u300f", 
+        "name": "Automated Warrior", 
         "raid": false, 
         "rarity": 4, 
         "recipe": {
@@ -5253,13 +5540,30 @@
         "sphere type": 1, 
         "sphere type text": "Status Boost", 
         "thumbnail": "ls_sphere_thum_5_1.png", 
-        "type": null
+        "type": "ls_sphere"
     }, 
     "236000": {
-        "desc": "\u5168\u3066\u306e\u30e6\u30cb\u30c3\u30c8\u306e\u653b\u6483\u529b\u30fb\u9632\u5fa1\u529b\u3092\uff13\uff10\uff05\u30a2\u30c3\u30d7\uff06\u30b9\u30d1\u30fc\u30af\u6642\u3001\uff22\uff23\u51fa\u73fe\u7387\u3092\u304b\u306a\u308a\u30a2\u30c3\u30d7\uff06\u30b9\u30d1\u30fc\u30af\u6642\u3001\uff22\uff22\u30b2\u30fc\u30b8\u3092\u5c11\u3057\u5897\u52a0", 
+        "desc": "30% boost to Atk and Def & considerably boosts BC drop rate and slightly boosts BB gauge during Spark", 
+        "effect": [
+            {
+                "atk% buff": 30, 
+                "def% buff": 30, 
+                "passive id": "1"
+            }, 
+            {
+                "bc drop% for spark": 50, 
+                "passive id": "31"
+            }, 
+            {
+                "bc fill on spark high": 1, 
+                "bc fill on spark low": 1, 
+                "bc fill on spark%": 100, 
+                "passive id": "47"
+            }
+        ], 
         "id": 236000, 
         "max_stack": 1, 
-        "name": "\u6804\u795e\u306e\u5fa1\u5149\u9152", 
+        "name": "Ambrosia Wine", 
         "raid": false, 
         "rarity": 3, 
         "recipe": {
@@ -5287,13 +5591,27 @@
         "sphere type": 1, 
         "sphere type text": "Status Boost", 
         "thumbnail": "ls_sphere_thum_9_8.png", 
-        "type": null
+        "type": "ls_sphere"
     }, 
     "237000": {
-        "desc": "\u5168\u3066\u306e\u30e6\u30cb\u30c3\u30c8\u306e\u6700\u5927\uff28\uff30\u3092\uff12\uff15\uff05\u30a2\u30c3\u30d7\uff06\u708e\u30fb\u6c34\u30fb\u6a39\u30fb\u96f7\u5c5e\u6027\u30e6\u30cb\u30c3\u30c8\u304b\u3089\u306e\u88ab\u30c0\u30e1\u30fc\u30b8\u3092\uff11\uff10\uff05\u8efd\u6e1b", 
+        "desc": "25% boost to max HP & 10% damage reduction from Fire, Water, Earth, Thunder types", 
+        "effect": [
+            {
+                "hp% buff": 25, 
+                "passive id": "1"
+            }, 
+            {
+                "dmg% mitigation for elemental attacks": 10.0, 
+                "mitigate earth attacks": true, 
+                "mitigate fire attacks": true, 
+                "mitigate thunder attacks": true, 
+                "mitigate water attacks": true, 
+                "passive id": "62"
+            }
+        ], 
         "id": 237000, 
         "max_stack": 1, 
-        "name": "\u8056\u795e\u970a\u306e\u67f4\u706f", 
+        "name": "Holy Beacon", 
         "raid": false, 
         "rarity": 3, 
         "recipe": {
@@ -5325,7 +5643,7 @@
         "sphere type": 1, 
         "sphere type text": "Status Boost", 
         "thumbnail": "ls_sphere_thum_6_1.png", 
-        "type": null
+        "type": "ls_sphere"
     }, 
     "30000": {
         "desc": "Boosts Atk by 5%", 
