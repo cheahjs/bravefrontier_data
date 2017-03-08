@@ -15467,6 +15467,177 @@
         "name": "騒嵐疾駆", 
         "target": "self"
     }, 
+    "33000": {
+        "desc": "弱点属性ダメージをアップ＆クリティカルダメージをアップ＆ＨＰが２０％以下の時、一度だけ戦闘不能を耐える＆攻撃力の上限値（９９９９９）を１３００００まで解放する", 
+        "effects": [
+            {
+                "conditions": [], 
+                "elemental weakness multiplier%": 50.0, 
+                "light units do extra elemental weakness dmg": true, 
+                "passive id": "50", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "crit multiplier%": 50.0, 
+                "passive id": "34", 
+                "passive target": "self"
+            }, 
+            {
+                "buff": {
+                    "angel idol buff (12)": true, 
+                    "angel idol recover hp%": 100, 
+                    "buff turns (12)": "-1"
+                }, 
+                "conditions": [], 
+                "hp below % buff activation": 20, 
+                "passive id": "55", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "passive target": "self", 
+                "unknown passive id": "143", 
+                "unknown passive params": "130000"
+            }
+        ], 
+        "name": "創造される螺旋", 
+        "target": "self"
+    }, 
+    "33100": {
+        "desc": "弱点属性ダメージを少しアップ＆ＢＢ発動に必要なＢＢゲージ量を軽減", 
+        "effects": [
+            {
+                "conditions": [], 
+                "elemental weakness multiplier%": 30.0, 
+                "passive id": "50", 
+                "passive target": "self", 
+                "water units do extra elemental weakness dmg": true
+            }, 
+            {
+                "conditions": [], 
+                "passive id": "48", 
+                "passive target": "self", 
+                "reduced bb bc cost%": 15
+            }
+        ], 
+        "name": "悠久たる刻印", 
+        "target": "self"
+    }, 
+    "33200": {
+        "desc": "弱点属性ダメージをアップ＆ＢＢ発動に必要なＢＢゲージ量を軽減", 
+        "effects": [
+            {
+                "conditions": [], 
+                "elemental weakness multiplier%": 50.0, 
+                "passive id": "50", 
+                "passive target": "self", 
+                "water units do extra elemental weakness dmg": true
+            }, 
+            {
+                "conditions": [], 
+                "passive id": "48", 
+                "passive target": "self", 
+                "reduced bb bc cost%": 20
+            }
+        ], 
+        "name": "境界を越える力", 
+        "target": "self"
+    }, 
+    "33300": {
+        "desc": "ターン毎に攻撃力・防御力・回復力をアップ（５ターン目まで上昇量が増加する）＆確率で１回まで戦闘不能を耐える", 
+        "effects": [
+            {
+                "atk% max buff": 30, 
+                "conditions": [], 
+                "def% max buff": 30, 
+                "increase from min to max": 1, 
+                "passive id": "105", 
+                "passive target": "self", 
+                "rec% max buff": 30, 
+                "turn count": 5
+            }, 
+            {
+                "angel idol chance% condition": 0, 
+                "angel idol recover chance% high": 40, 
+                "angel idol recover chance% low": 40, 
+                "angel idol recover counts": 1, 
+                "conditions": [], 
+                "passive id": "69", 
+                "passive target": "self"
+            }
+        ], 
+        "name": "自動強化機能", 
+        "target": "self"
+    }, 
+    "33400": {
+        "desc": "ターン毎に攻撃力・防御力・回復力をアップ（５ターン目まで上昇量が増加する）＆確率で２回まで戦闘不能を耐える", 
+        "effects": [
+            {
+                "atk% max buff": 50, 
+                "conditions": [], 
+                "def% max buff": 50, 
+                "increase from min to max": 1, 
+                "passive id": "105", 
+                "passive target": "self", 
+                "rec% max buff": 50, 
+                "turn count": 5
+            }, 
+            {
+                "angel idol chance% condition": 0, 
+                "angel idol recover chance% high": 40, 
+                "angel idol recover chance% low": 40, 
+                "angel idol recover counts": 2, 
+                "conditions": [], 
+                "passive id": "69", 
+                "passive target": "self"
+            }
+        ], 
+        "name": "超進化モード", 
+        "target": "self"
+    }, 
+    "33500": {
+        "desc": "ＢＢゲージが半分以上の時、攻撃力・防御力を少しアップ＆スパークダメージを３０％アップ", 
+        "effects": [
+            {
+                "atk% buff": 30, 
+                "bb gauge above % buff requirement": 50, 
+                "conditions": [], 
+                "def% buff": 30, 
+                "passive id": "30", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "damage% for spark": 30, 
+                "passive id": "31", 
+                "passive target": "self"
+            }
+        ], 
+        "name": "策謀の光源", 
+        "target": "self"
+    }, 
+    "33600": {
+        "desc": "ＢＢゲージが半分以上の時、攻撃力・防御力をアップ＆スパークダメージを５０％アップ", 
+        "effects": [
+            {
+                "atk% buff": 50, 
+                "bb gauge above % buff requirement": 50, 
+                "conditions": [], 
+                "def% buff": 50, 
+                "passive id": "30", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "damage% for spark": 50, 
+                "passive id": "31", 
+                "passive target": "self"
+            }
+        ], 
+        "name": "理想を統べる遠謀", 
+        "target": "self"
+    }, 
     "3400": {
         "desc": "防御力を３０％アップ＆確率で被ダメージを２０％軽減", 
         "effects": [
