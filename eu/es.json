@@ -3108,6 +3108,24 @@
         "name": "Curse, Paralysis, Sick Guard", 
         "target": "self"
     }, 
+    "1008508": {
+        "desc": "Negates all status ailments", 
+        "effects": [
+            {
+                "conditions": [], 
+                "curse resist%": 100, 
+                "injury resist%": 100, 
+                "paralysis resist%": 100, 
+                "passive id": "4", 
+                "passive target": "self", 
+                "poison resist%": 100, 
+                "sick resist%": 100, 
+                "weaken resist%": 100
+            }
+        ], 
+        "name": "Goddess' Protection", 
+        "target": "self"
+    }, 
     "1008800": {
         "desc": "Low probability of inflicting Poison effect when attacking", 
         "effects": [
@@ -3783,6 +3801,36 @@
             }
         ], 
         "name": "First God's Miracle", 
+        "target": "self"
+    }, 
+    "1013000": {
+        "desc": "20% boost to all parameters, boost spark damage and BB gauge during spark", 
+        "effects": [
+            {
+                "atk% buff": 20, 
+                "conditions": [], 
+                "def% buff": 20, 
+                "hp% buff": 20, 
+                "passive id": "1", 
+                "passive target": "self", 
+                "rec% buff": 20
+            }, 
+            {
+                "conditions": [], 
+                "damage% for spark": 50, 
+                "passive id": "31", 
+                "passive target": "self"
+            }, 
+            {
+                "bc fill on spark high": 2, 
+                "bc fill on spark low": 1, 
+                "bc fill on spark%": 100, 
+                "conditions": [], 
+                "passive id": "47", 
+                "passive target": "self"
+            }
+        ], 
+        "name": "Great Pioneer's Light", 
         "target": "self"
     }, 
     "1013200": {
@@ -6989,6 +7037,65 @@
         "name": "Awakening Formation", 
         "target": "self"
     }, 
+    "21300": {
+        "desc": "30% boost to Atk, Def & Rec, max HP when \"Thief's Jewel\" or a \"Drop-Type\" Sphere is equipped, considerably raises normal hit amount & hugely boosts BB gauge each turn", 
+        "effects": [
+            {
+                "atk% buff": 30, 
+                "conditions": [
+                    {
+                        "item required": [
+                            "47211"
+                        ]
+                    }, 
+                    {
+                        "unknown": "6,3"
+                    }
+                ], 
+                "def% buff": 30, 
+                "hp% buff": 30, 
+                "passive id": "1", 
+                "passive target": "self", 
+                "rec% buff": 30
+            }, 
+            {
+                "conditions": [], 
+                "hit increase/hit": 2, 
+                "passive id": "37", 
+                "passive target": "self"
+            }, 
+            {
+                "bc fill per turn": 6, 
+                "conditions": [], 
+                "passive id": "9", 
+                "passive target": "self"
+            }
+        ], 
+        "name": "Hidden Bonds", 
+        "target": "self"
+    }, 
+    "21400": {
+        "desc": "Damage taken may restore HP & considerably boosts BB gauge when damage dealt exceeds certain amount", 
+        "effects": [
+            {
+                "conditions": [], 
+                "dmg% to hp% when attacked chance%": 25, 
+                "dmg% to hp% when attacked high": 25, 
+                "dmg% to hp% when attacked low": 20, 
+                "passive id": "24", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "damage dealt threshold activation": 10000, 
+                "increase bb gauge": 6, 
+                "passive id": "81", 
+                "passive target": "self"
+            }
+        ], 
+        "name": "Victorious Destroyer", 
+        "target": "self"
+    }, 
     "21500": {
         "desc": "Considerably boosts damage against status afflicted foes & slightly restores HP each turn", 
         "effects": [
@@ -7183,6 +7290,214 @@
         "name": "Inviting Calamity", 
         "target": "self"
     }, 
+    "22100": {
+        "desc": "Negates all status ailments", 
+        "effects": [
+            {
+                "conditions": [], 
+                "curse resist%": 100, 
+                "injury resist%": 100, 
+                "paralysis resist%": 100, 
+                "passive id": "4", 
+                "passive target": "self", 
+                "poison resist%": 100, 
+                "sick resist%": 100, 
+                "weaken resist%": 100
+            }
+        ], 
+        "name": "Visions in the Water", 
+        "target": "self"
+    }, 
+    "22200": {
+        "desc": "Negates all status ailments & damage taken boosts BB gauge", 
+        "effects": [
+            {
+                "conditions": [], 
+                "curse resist%": 100, 
+                "injury resist%": 100, 
+                "paralysis resist%": 100, 
+                "passive id": "4", 
+                "passive target": "self", 
+                "poison resist%": 100, 
+                "sick resist%": 100, 
+                "weaken resist%": 100
+            }, 
+            {
+                "bc fill when attacked high": 3, 
+                "bc fill when attacked low": 2, 
+                "bc fill when attacked%": 100, 
+                "conditions": [], 
+                "passive id": "25", 
+                "passive target": "self"
+            }
+        ], 
+        "name": "Loving Mother and Wife", 
+        "target": "self"
+    }, 
+    "22300": {
+        "desc": "Boosts critical and elemental based damage", 
+        "effects": [
+            {
+                "conditions": [], 
+                "crit multiplier%": 50.0, 
+                "passive id": "34", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "dark units do extra elemental weakness dmg": true, 
+                "earth units do extra elemental weakness dmg": true, 
+                "elemental weakness multiplier%": 50.0, 
+                "fire units do extra elemental weakness dmg": true, 
+                "light units do extra elemental weakness dmg": true, 
+                "passive id": "50", 
+                "passive target": "self", 
+                "thunder units do extra elemental weakness dmg": true, 
+                "water units do extra elemental weakness dmg": true
+            }
+        ], 
+        "name": "A Lion's Pride", 
+        "target": "self"
+    }, 
+    "22400": {
+        "desc": "Considerably boosts critical damage and boosts elemental based damage", 
+        "effects": [
+            {
+                "conditions": [], 
+                "crit multiplier%": 100.0, 
+                "passive id": "34", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "dark units do extra elemental weakness dmg": true, 
+                "earth units do extra elemental weakness dmg": true, 
+                "elemental weakness multiplier%": 50.0, 
+                "fire units do extra elemental weakness dmg": true, 
+                "light units do extra elemental weakness dmg": true, 
+                "passive id": "50", 
+                "passive target": "self", 
+                "thunder units do extra elemental weakness dmg": true, 
+                "water units do extra elemental weakness dmg": true
+            }
+        ], 
+        "name": "Feral God of War", 
+        "target": "self"
+    }, 
+    "22500": {
+        "desc": "Spark damage restores HP & 30% boost to Spark damage", 
+        "effects": [
+            {
+                "conditions": [], 
+                "damage% for spark": 30, 
+                "passive id": "31", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "heal on spark high": 300, 
+                "heal on spark low": 200, 
+                "heal on spark%": 100, 
+                "passive id": "101", 
+                "passive target": "self"
+            }
+        ], 
+        "name": "Heroic Monarch", 
+        "target": "self"
+    }, 
+    "22600": {
+        "desc": "Spark damage restores HP & 50% boost to Spark damage", 
+        "effects": [
+            {
+                "conditions": [], 
+                "damage% for spark": 50, 
+                "passive id": "31", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "heal on spark high": 400, 
+                "heal on spark low": 300, 
+                "heal on spark%": 100, 
+                "passive id": "101", 
+                "passive target": "self"
+            }
+        ], 
+        "name": "Awakening a Summoner", 
+        "target": "self"
+    }, 
+    "22700": {
+        "desc": "30% boost to all parameters when Meirith Pearl is equipped & enormously boosts Atk, Def, Rec relative to how low HP is", 
+        "effects": [
+            {
+                "atk% base buff": 0, 
+                "atk% extra buff based on hp": 150, 
+                "buff proportional to hp": "lost", 
+                "conditions": [], 
+                "def% base buff": 0, 
+                "def% extra buff based on hp": 150, 
+                "passive id": "46", 
+                "passive target": "self", 
+                "rec% base buff": 0, 
+                "rec% extra buff based on hp": 150
+            }, 
+            {
+                "atk% buff": 30, 
+                "conditions": [
+                    {
+                        "item required": [
+                            "49200"
+                        ]
+                    }
+                ], 
+                "def% buff": 30, 
+                "hp% buff": 30, 
+                "passive id": "1", 
+                "passive target": "self", 
+                "rec% buff": 30
+            }
+        ], 
+        "name": "Twin Blade Bond", 
+        "target": "self"
+    }, 
+    "22800": {
+        "desc": "50% boost to Spark damage & hugely boosts damage against status afflicted foes", 
+        "effects": [
+            {
+                "conditions": [], 
+                "damage% for spark": 50, 
+                "passive id": "31", 
+                "passive target": "self"
+            }, 
+            {
+                "atk% buff when enemy has ailment": 100, 
+                "atk% buff when enemy has curse": true, 
+                "atk% buff when enemy has injury": true, 
+                "atk% buff when enemy has paralysis": true, 
+                "atk% buff when enemy has poison": true, 
+                "atk% buff when enemy has sick": true, 
+                "atk% buff when enemy has weaken": true, 
+                "conditions": [], 
+                "passive id": "74", 
+                "passive target": "self"
+            }
+        ], 
+        "name": "Chaotic Madness", 
+        "target": "self"
+    }, 
+    "22900": {
+        "desc": "Reduces BB gauge required for BB", 
+        "effects": [
+            {
+                "conditions": [], 
+                "passive id": "48", 
+                "passive target": "self", 
+                "reduced bb bc cost%": 20
+            }
+        ], 
+        "name": "Dragoon's Pride", 
+        "target": "self"
+    }, 
     "2300": {
         "desc": "Boosts BC and HC drop rate", 
         "effects": [
@@ -7197,6 +7512,26 @@
         "name": "True Freedom of Flight", 
         "target": "self"
     }, 
+    "23000": {
+        "desc": "Reduces BB gauge needed for BB & probable 20% damage reduction", 
+        "effects": [
+            {
+                "conditions": [], 
+                "passive id": "48", 
+                "passive target": "self", 
+                "reduced bb bc cost%": 20
+            }, 
+            {
+                "conditions": [], 
+                "dmg reduction chance%": 20, 
+                "dmg reduction%": 20, 
+                "passive id": "14", 
+                "passive target": "self"
+            }
+        ], 
+        "name": "Draconic Arm", 
+        "target": "self"
+    }, 
     "2301": {
         "desc": "Boosts BC and HC drop rate", 
         "effects": [
@@ -7209,6 +7544,86 @@
             }
         ], 
         "name": "Untainted Purity", 
+        "target": "self"
+    }, 
+    "23100": {
+        "desc": "Boosts critical damage & 30% boost to Spark damage", 
+        "effects": [
+            {
+                "conditions": [], 
+                "crit multiplier%": 50.0, 
+                "passive id": "34", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "damage% for spark": 30, 
+                "passive id": "31", 
+                "passive target": "self"
+            }
+        ], 
+        "name": "Viridian Pulse", 
+        "target": "self"
+    }, 
+    "23200": {
+        "desc": "Considerably boosts critical damage & 50% boost to Spark damage", 
+        "effects": [
+            {
+                "conditions": [], 
+                "crit multiplier%": 100.0, 
+                "passive id": "34", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "damage% for spark": 50, 
+                "passive id": "31", 
+                "passive target": "self"
+            }
+        ], 
+        "name": "Merciless Slash", 
+        "target": "self"
+    }, 
+    "23300": {
+        "desc": "Slightly boosts Atk, Def when BB gauge is over 50% & probable Injury effect", 
+        "effects": [
+            {
+                "atk% buff": 30, 
+                "bb gauge above % buff requirement": 50, 
+                "conditions": [], 
+                "def% buff": 30, 
+                "passive id": "30", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "injury%": 8, 
+                "passive id": "20", 
+                "passive target": "self"
+            }
+        ], 
+        "name": "Vengeful Lion", 
+        "target": "self"
+    }, 
+    "23400": {
+        "desc": "Boosts Atk, Def when BB gauge is over 50% & probable Injury effect", 
+        "effects": [
+            {
+                "atk% buff": 50, 
+                "bb gauge above % buff requirement": 50, 
+                "conditions": [], 
+                "def% buff": 50, 
+                "passive id": "30", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "injury%": 10, 
+                "passive id": "20", 
+                "passive target": "self"
+            }
+        ], 
+        "name": "Beastlord's Crest", 
         "target": "self"
     }, 
     "2400": {
@@ -8853,6 +9268,46 @@
         "name": "Fervent Ardor", 
         "target": "self"
     }, 
+    "710197": {
+        "desc": "Critical damage boosts BB gauge (10 BC) & chance of reducing damage taken to 1 (20%) & adds Fire element to BB/SBB for 3 turns", 
+        "effects": [
+            {
+                "bc fill on crit max": 10, 
+                "bc fill on crit min": 10, 
+                "bc fill on crit%": 100.0, 
+                "conditions": [], 
+                "passive id": "65", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "passive id": "43", 
+                "passive target": "self", 
+                "take 1 dmg%": 20
+            }, 
+            {
+                "conditions": [], 
+                "passive id": "66", 
+                "passive target": "self", 
+                "trigger on bb": true, 
+                "trigger on sbb": true, 
+                "triggered effect": [
+                    {
+                        "effect delay time(ms)/frame": "0.0/0", 
+                        "elements added": [
+                            "fire"
+                        ], 
+                        "elements added turns": 3, 
+                        "proc id": "30", 
+                        "target area": "aoe", 
+                        "target type": "party"
+                    }
+                ]
+            }
+        ], 
+        "name": "Faraway Heart", 
+        "target": "self"
+    }, 
     "710206": {
         "desc": "Reduce damage taken from Dark Types (15%) & Adds Fire and Light elements to BB/SBB for 3 turns & Boosts BB ATK (90%) when Spark has exceeded certain amount (6 sparks)", 
         "effects": [
@@ -9222,6 +9677,48 @@
         "name": "Frigid Territory", 
         "target": "self"
     }, 
+    "720197": {
+        "desc": "Reduces damage taken (25%) when damage taken has exceeded certain amount (10 000) for 1 turns & Reduce BB cost (20%) & Adds Water element to BB/SBB for 3 turns", 
+        "effects": [
+            {
+                "buff": {
+                    "buff turns (36)": "1", 
+                    "dmg reduction% buff": 25
+                }, 
+                "conditions": [], 
+                "damage threshold buff activation": 10000, 
+                "passive id": "78", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "passive id": "48", 
+                "passive target": "self", 
+                "reduced bb bc cost%": 20
+            }, 
+            {
+                "conditions": [], 
+                "passive id": "66", 
+                "passive target": "self", 
+                "trigger on bb": true, 
+                "trigger on sbb": true, 
+                "triggered effect": [
+                    {
+                        "effect delay time(ms)/frame": "0.0/0", 
+                        "elements added": [
+                            "water"
+                        ], 
+                        "elements added turns": 3, 
+                        "proc id": "30", 
+                        "target area": "aoe", 
+                        "target type": "party"
+                    }
+                ]
+            }
+        ], 
+        "name": "Diamond Freeze", 
+        "target": "self"
+    }, 
     "720216": {
         "desc": "With Gilgamesh Crown or Noblesse Title, adds heal on BB/SBB. With Gilgamesh Crown, Adds Spark dmg. fills own BB gauge (10BC) 1 turn on SBB & Perform 1 extra action within the same turn when Sparks have exceeded certain number (3) & Boosts HP (30%)", 
         "effects": [
@@ -9310,6 +9807,20 @@
             }
         ], 
         "name": "Vision of Fallen Spirits", 
+        "target": "self"
+    }, 
+    "720226": {
+        "desc": "Boosts ATK, DEF (20%)", 
+        "effects": [
+            {
+                "atk% buff": 20, 
+                "conditions": [], 
+                "def% buff": 20, 
+                "passive id": "1", 
+                "passive target": "self"
+            }
+        ], 
+        "name": "Mastered Anchorage", 
         "target": "self"
     }, 
     "7300": {
@@ -9674,6 +10185,162 @@
         "name": "Advice of the Fallen", 
         "target": "self"
     }, 
+    "730226": {
+        "desc": "If Ancient Cybernetic Crown is equipped, adds Earth Barrier effect to BB/SBB (3000 HP)", 
+        "effects": [
+            {
+                "conditions": [
+                    {
+                        "item required": [
+                            "701025"
+                        ]
+                    }
+                ], 
+                "passive id": "66", 
+                "passive target": "self", 
+                "trigger on bb": true, 
+                "trigger on sbb": true, 
+                "triggered effect": [
+                    {
+                        "effect delay time(ms)/frame": "0.0/0", 
+                        "elemental barrier absorb dmg%": 100, 
+                        "elemental barrier def": 0, 
+                        "elemental barrier element": "earth", 
+                        "elemental barrier hp": 3000, 
+                        "proc id": "62", 
+                        "target area": "aoe", 
+                        "target type": "party"
+                    }
+                ]
+            }
+        ], 
+        "name": "Forgotten Knowledge", 
+        "target": "self"
+    }, 
+    "730227": {
+        "desc": "Negate DEF ignoring damage & If Ancient Cybernetic Crown is equipped, boosts DEF and REC (50%) for 2 turns when Sparks have exceeded certain amount (15) and adds Earth Barrier effect to BB/SBB (3000 HP)", 
+        "effects": [
+            {
+                "conditions": [], 
+                "ignore def resist chance%": 100, 
+                "passive id": "92", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [
+                    {
+                        "item required": [
+                            "701025"
+                        ]
+                    }
+                ], 
+                "passive id": "66", 
+                "passive target": "self", 
+                "trigger on bb": true, 
+                "trigger on sbb": true, 
+                "triggered effect": [
+                    {
+                        "effect delay time(ms)/frame": "0.0/0", 
+                        "elemental barrier absorb dmg%": 100, 
+                        "elemental barrier def": 0, 
+                        "elemental barrier element": "earth", 
+                        "elemental barrier hp": 3000, 
+                        "proc id": "62", 
+                        "target area": "aoe", 
+                        "target type": "party"
+                    }
+                ]
+            }, 
+            {
+                "buff": {
+                    "buff turns (3)": "2", 
+                    "def% buff (3)": 50
+                }, 
+                "conditions": [
+                    {
+                        "item required": [
+                            "701025"
+                        ]
+                    }
+                ], 
+                "passive id": "86", 
+                "passive target": "self", 
+                "spark count buff activation": 15
+            }, 
+            {
+                "buff": {
+                    "buff turns (5)": "2", 
+                    "rec% buff (5)": 50
+                }, 
+                "conditions": [
+                    {
+                        "item required": [
+                            "701025"
+                        ]
+                    }
+                ], 
+                "passive id": "86", 
+                "passive target": "self", 
+                "spark count buff activation": 15
+            }
+        ], 
+        "name": "Ancient's Knowledge", 
+        "target": "self"
+    }, 
+    "730236": {
+        "desc": "Boosts ATK, DEF, REC based on HP lost (0-100%) & Spark damage boosts BB gauge (10 BC)", 
+        "effects": [
+            {
+                "atk% base buff": 0, 
+                "atk% extra buff based on hp": 100, 
+                "buff proportional to hp": "lost", 
+                "conditions": [], 
+                "def% base buff": 0, 
+                "def% extra buff based on hp": 100, 
+                "passive id": "46", 
+                "passive target": "self", 
+                "rec% base buff": 0, 
+                "rec% extra buff based on hp": 100
+            }, 
+            {
+                "bc fill on spark high": 10, 
+                "bc fill on spark low": 10, 
+                "bc fill on spark%": 100, 
+                "conditions": [], 
+                "passive id": "47", 
+                "passive target": "self"
+            }
+        ], 
+        "name": "Tempered Fighter", 
+        "target": "self"
+    }, 
+    "730237": {
+        "desc": "Boosts ATK, DEF, REC based on HP lost (0-150%) & Spark damage boosts BB gauge (10 BC)", 
+        "effects": [
+            {
+                "atk% base buff": 0, 
+                "atk% extra buff based on hp": 150, 
+                "buff proportional to hp": "lost", 
+                "conditions": [], 
+                "def% base buff": 0, 
+                "def% extra buff based on hp": 150, 
+                "passive id": "46", 
+                "passive target": "self", 
+                "rec% base buff": 0, 
+                "rec% extra buff based on hp": 150
+            }, 
+            {
+                "bc fill on spark high": 10, 
+                "bc fill on spark low": 10, 
+                "bc fill on spark%": 100, 
+                "conditions": [], 
+                "passive id": "47", 
+                "passive target": "self"
+            }
+        ], 
+        "name": "Hardened Focus", 
+        "target": "self"
+    }, 
     "7400": {
         "desc": "Negates Def ignoring damage & boosts BB gauge when guarding", 
         "effects": [
@@ -9941,6 +10608,49 @@
             }
         ], 
         "name": "Super-Speed", 
+        "target": "self"
+    }, 
+    "740197": {
+        "desc": "Raises normal hit amount (100% & 100% DMG) & boosts OD gauge fill rate (200%) for 1 turn when damage taken has exceeded certain amount (5000) & adds Thunder element to attack for 3 turns to BB/SBB", 
+        "effects": [
+            {
+                "conditions": [], 
+                "hit increase/hit": 1, 
+                "passive id": "37", 
+                "passive target": "self"
+            }, 
+            {
+                "buff": {
+                    "buff turns (132)": "1", 
+                    "unknown buff id": "132", 
+                    "unknown buff params": "200&1&0"
+                }, 
+                "conditions": [], 
+                "damage threshold buff activation": 5000, 
+                "passive id": "78", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "passive id": "66", 
+                "passive target": "self", 
+                "trigger on bb": true, 
+                "trigger on sbb": true, 
+                "triggered effect": [
+                    {
+                        "effect delay time(ms)/frame": "0.0/0", 
+                        "elements added": [
+                            "thunder"
+                        ], 
+                        "elements added turns": 3, 
+                        "proc id": "30", 
+                        "target area": "aoe", 
+                        "target type": "party"
+                    }
+                ]
+            }
+        ], 
+        "name": "Iaigeri", 
         "target": "self"
     }, 
     "740216": {
@@ -10471,6 +11181,64 @@
             }
         ], 
         "name": "Psychic Resonance", 
+        "target": "self"
+    }, 
+    "750197": {
+        "desc": "Adds all elements to attack and HP recovery for 3 turns effects to BB/SBB & reflects damage when attacked (50%)", 
+        "effects": [
+            {
+                "conditions": [], 
+                "passive id": "66", 
+                "passive target": "self", 
+                "trigger on bb": true, 
+                "trigger on sbb": true, 
+                "triggered effect": [
+                    {
+                        "effect delay time(ms)/frame": "0.0/0", 
+                        "gradual heal high": 3000, 
+                        "gradual heal low": 2500, 
+                        "gradual heal turns (8)": 3, 
+                        "proc id": "3", 
+                        "rec added% (from target)": 15.0, 
+                        "target area": "aoe", 
+                        "target type": "party"
+                    }
+                ]
+            }, 
+            {
+                "conditions": [], 
+                "passive id": "66", 
+                "passive target": "self", 
+                "trigger on bb": true, 
+                "trigger on sbb": true, 
+                "triggered effect": [
+                    {
+                        "effect delay time(ms)/frame": "0.0/0", 
+                        "elements added": [
+                            "fire", 
+                            "water", 
+                            "earth", 
+                            "thunder", 
+                            "light", 
+                            "dark"
+                        ], 
+                        "elements added turns": 3, 
+                        "proc id": "30", 
+                        "target area": "aoe", 
+                        "target type": "party"
+                    }
+                ]
+            }, 
+            {
+                "conditions": [], 
+                "dmg% reflect chance%": 100, 
+                "dmg% reflect high": 50, 
+                "dmg% reflect low": 50, 
+                "passive id": "26", 
+                "passive target": "self"
+            }
+        ], 
+        "name": "Psychic Mastery", 
         "target": "self"
     }, 
     "750216": {
@@ -11378,6 +12146,30 @@
         "name": "Wicked Lineage", 
         "target": "self"
     }, 
+    "830178": {
+        "desc": "Negates critical, elemental damage and Def ignoring damage", 
+        "effects": [
+            {
+                "conditions": [], 
+                "crit chance base resist%": 100, 
+                "crit chance buffed resist%": 100, 
+                "crit dmg base damage resist%": 100, 
+                "crit dmg buffed damage resist%": 100, 
+                "passive id": "53", 
+                "passive target": "self", 
+                "strong base element damage resist%": 100, 
+                "strong buffed element damage resist%": 100
+            }, 
+            {
+                "conditions": [], 
+                "ignore def resist chance%": 100, 
+                "passive id": "92", 
+                "passive target": "self"
+            }
+        ], 
+        "name": "Heroic Resilience", 
+        "target": "self"
+    }, 
     "8400": {
         "desc": "Reduces damage taken when damage taken has exceeded certain amount for 2 turns", 
         "effects": [
@@ -11503,6 +12295,40 @@
             }
         ], 
         "name": "Perennial Dawn", 
+        "target": "self"
+    }, 
+    "850167": {
+        "desc": "Adds Light barrier effect to BB/SBB for 3 turns & greatly boosts Rec relative to amount of depleted HP", 
+        "effects": [
+            {
+                "buff proportional to hp": "lost", 
+                "conditions": [], 
+                "passive id": "46", 
+                "passive target": "self", 
+                "rec% base buff": 50, 
+                "rec% extra buff based on hp": 150
+            }, 
+            {
+                "conditions": [], 
+                "passive id": "66", 
+                "passive target": "self", 
+                "trigger on bb": true, 
+                "trigger on sbb": true, 
+                "triggered effect": [
+                    {
+                        "effect delay time(ms)/frame": "0.0/0", 
+                        "elemental barrier absorb dmg%": 100, 
+                        "elemental barrier def": 0, 
+                        "elemental barrier element": "light", 
+                        "elemental barrier hp": 2500, 
+                        "proc id": "62", 
+                        "target area": "aoe", 
+                        "target type": "party"
+                    }
+                ]
+            }
+        ], 
+        "name": "Amaranthine Bastion", 
         "target": "self"
     }, 
     "850197": {
@@ -11663,6 +12489,60 @@
             }
         ], 
         "name": "Boundless Void", 
+        "target": "self"
+    }, 
+    "860167": {
+        "desc": "Adds huge damage boost against status afflicted foes for 3 turns effect to BB/SBB & greatly boosts Atk when HP is full", 
+        "effects": [
+            {
+                "atk% buff": 100, 
+                "conditions": [], 
+                "hp above % buff requirement": 100, 
+                "passive id": "11", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "passive id": "66", 
+                "passive target": "self", 
+                "trigger on bb": true, 
+                "trigger on sbb": true, 
+                "triggered effect": [
+                    {
+                        "atk% buff turns (110)": 3, 
+                        "atk% buff when enemy has ailment": 190, 
+                        "effect delay time(ms)/frame": "0.0/0", 
+                        "proc id": "65", 
+                        "target area": "aoe", 
+                        "target type": "party"
+                    }
+                ]
+            }
+        ], 
+        "name": "Dimensional Antithesis", 
+        "target": "self"
+    }, 
+    "860178": {
+        "desc": "Enormously boosts Atk relative to remaining HP & damage taken greatly boosts BB gauge", 
+        "effects": [
+            {
+                "atk% base buff": 0, 
+                "atk% extra buff based on hp": 100, 
+                "buff proportional to hp": "lost", 
+                "conditions": [], 
+                "passive id": "46", 
+                "passive target": "self"
+            }, 
+            {
+                "bc fill when attacked high": 3, 
+                "bc fill when attacked low": 2, 
+                "bc fill when attacked%": 100, 
+                "conditions": [], 
+                "passive id": "25", 
+                "passive target": "self"
+            }
+        ], 
+        "name": "Riot of the Blood", 
         "target": "self"
     }, 
     "8700": {
