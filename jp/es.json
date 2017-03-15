@@ -8691,6 +8691,195 @@
         "name": "刹神の威志", 
         "target": "self"
     }, 
+    "1023000": {
+        "desc": "確率で全状態異常をランダムに発生＆被ダメージ時、確率で全状態異常をランダムに発生＆状態異常の敵へのダメージを大幅にアップ", 
+        "effects": [
+            {
+                "conditions": [], 
+                "curse%": 7, 
+                "passive id": "20", 
+                "passive target": "self", 
+                "poison%": 7, 
+                "sick%": 10
+            }, 
+            {
+                "conditions": [], 
+                "injury%": 10, 
+                "paralysis%": 7, 
+                "passive id": "20", 
+                "passive target": "self", 
+                "weaken%": 10
+            }, 
+            {
+                "atk% buff when enemy has ailment": 100, 
+                "atk% buff when enemy has curse": true, 
+                "atk% buff when enemy has injury": true, 
+                "atk% buff when enemy has paralysis": true, 
+                "atk% buff when enemy has poison": true, 
+                "atk% buff when enemy has sick": true, 
+                "atk% buff when enemy has weaken": true, 
+                "conditions": [], 
+                "passive id": "74", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "counter inflict curse%": 7, 
+                "counter inflict injury%": 10, 
+                "counter inflict paralysis%": 7, 
+                "counter inflict poison%": 7, 
+                "counter inflict sick%": 10, 
+                "counter inflict weaken%": 10, 
+                "passive id": "71", 
+                "passive target": "self"
+            }
+        ], 
+        "name": "疫神の惨禍", 
+        "target": "self"
+    }, 
+    "1024000": {
+        "desc": "ＯＤゲージの増加量を大幅にアップ＆通常攻撃ＨＩＴ数を増加", 
+        "effects": [
+            {
+                "conditions": [], 
+                "od fill rate%": 30, 
+                "passive id": "70", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "extra hits dmg%": 20, 
+                "hit increase/hit": 1, 
+                "passive id": "37", 
+                "passive target": "self"
+            }
+        ], 
+        "name": "絆の撃武", 
+        "target": "self"
+    }, 
+    "1025000": {
+        "desc": "最大ＨＰを２５％アップ＆クリティカル・防御貫通効果を無効", 
+        "effects": [
+            {
+                "conditions": [], 
+                "ignore def resist chance%": 100, 
+                "passive id": "92", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "crit chance base resist%": 100, 
+                "crit chance buffed resist%": 100, 
+                "crit dmg base damage resist%": 100, 
+                "crit dmg buffed damage resist%": 100, 
+                "passive id": "53", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "hp% buff": 25, 
+                "passive id": "1", 
+                "passive target": "self"
+            }
+        ], 
+        "name": "命守の幸盾", 
+        "target": "self"
+    }, 
+    "1026000": {
+        "desc": "攻撃力・防御力を３０％アップ＆ＢＣ・ＨＣ出現率を大幅にアップ＆ＢＣ獲得時の増加量を少しアップ", 
+        "effects": [
+            {
+                "atk% buff": 30, 
+                "conditions": [], 
+                "def% buff": 30, 
+                "passive id": "1", 
+                "passive target": "self"
+            }, 
+            {
+                "bc drop rate% buff": 20, 
+                "conditions": [], 
+                "hc drop rate% buff": 20, 
+                "passive id": "19", 
+                "passive target": "self"
+            }, 
+            {
+                "bb gauge fill rate%": 20, 
+                "conditions": [], 
+                "passive id": "32", 
+                "passive target": "self"
+            }
+        ], 
+        "name": "闘栄の宝威", 
+        "target": "self"
+    }, 
+    "1027000": {
+        "desc": "クリティカル率をアップ＆クリティカル時、ダメージをアップ・次ターン、確率で攻撃力・防御力を１ターン低下する効果を付与", 
+        "effects": [
+            {
+                "conditions": [], 
+                "crit% buff": 25, 
+                "passive id": "1", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "crit multiplier%": 50.0, 
+                "passive id": "34", 
+                "passive target": "self"
+            }, 
+            {
+                "buff": {
+                    "buff turns (74)": "2", 
+                    "unknown buff id": "74", 
+                    "unknown buff params": "-20&30&1"
+                }, 
+                "conditions": [], 
+                "on crit activation chance%": 100, 
+                "passive id": "89", 
+                "passive target": "self"
+            }, 
+            {
+                "buff": {
+                    "buff turns (75)": "2", 
+                    "unknown buff id": "75", 
+                    "unknown buff params": "-20&30&1"
+                }, 
+                "conditions": [], 
+                "on crit activation chance%": 100, 
+                "passive id": "89", 
+                "passive target": "self"
+            }
+        ], 
+        "name": "閃覇の光刃", 
+        "target": "self"
+    }, 
+    "1028000": {
+        "desc": "最大ＨＰを５０％アップ＆ターン毎にＨＰを回復・ＢＢゲージを大幅に増加", 
+        "effects": [
+            {
+                "conditions": [], 
+                "hp% buff": 50, 
+                "passive id": "1", 
+                "passive target": "self"
+            }, 
+            {
+                "bc fill per turn": 6, 
+                "conditions": [], 
+                "passive id": "9", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "passive id": "33", 
+                "passive target": "self", 
+                "rec% added (turn heal)": 10.0, 
+                "turn heal high": 1500, 
+                "turn heal low": 800
+            }
+        ], 
+        "name": "天命神の凱癒", 
+        "target": "self"
+    }, 
     "10300": {
         "desc": "全状態異常を無効＆ＢＢ及びＳＢＢに「味方全体の全状態異常を回復」を追加", 
         "effects": [
@@ -15636,6 +15825,66 @@
             }
         ], 
         "name": "理想を統べる遠謀", 
+        "target": "self"
+    }, 
+    "33700": {
+        "desc": "ＢＢ及びＳＢＢに「味方全体に３ターン、クリティカル率を超絶アップ」を追加＆クリティカル時、ＢＢゲージを超絶増加・ダメージをアップ", 
+        "effects": [
+            {
+                "bc fill on crit max": 8, 
+                "bc fill on crit min": 8, 
+                "bc fill on crit%": 100.0, 
+                "conditions": [], 
+                "passive id": "65", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "passive id": "66", 
+                "passive target": "self", 
+                "trigger on bb": true, 
+                "trigger on sbb": true, 
+                "triggered effect": [
+                    {
+                        "buff turns": 3, 
+                        "crit% buff (7)": 60, 
+                        "effect delay time(ms)/frame": "0.0/0", 
+                        "element buffed": "all", 
+                        "proc id": "5", 
+                        "target area": "aoe", 
+                        "target type": "party"
+                    }
+                ]
+            }, 
+            {
+                "conditions": [], 
+                "crit multiplier%": 50.0, 
+                "passive id": "34", 
+                "passive target": "self"
+            }
+        ], 
+        "name": "豪将の導き", 
+        "target": "self"
+    }, 
+    "33800": {
+        "desc": "ＢＢゲージが半分以上の時、攻撃力・防御力をアップ＆通常攻撃ＨＩＴ数を増加", 
+        "effects": [
+            {
+                "atk% buff": 50, 
+                "bb gauge above % buff requirement": 50, 
+                "conditions": [], 
+                "def% buff": 50, 
+                "passive id": "30", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "hit increase/hit": 1, 
+                "passive id": "37", 
+                "passive target": "self"
+            }
+        ], 
+        "name": "変わった心と不変の思い", 
         "target": "self"
     }, 
     "3400": {
