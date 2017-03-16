@@ -7641,6 +7641,120 @@
         "name": "Eternal Inferno", 
         "target": "self"
     }, 
+    "24100": {
+        "desc": "Considerably boosts BB Atk", 
+        "effects": [
+            {
+                "bb atk% buff": 100, 
+                "conditions": [], 
+                "passive id": "64", 
+                "passive target": "self", 
+                "sbb atk% buff": 100, 
+                "ubb atk% buff": 100
+            }
+        ], 
+        "name": "Old General's Strike", 
+        "target": "self"
+    }, 
+    "24200": {
+        "desc": "Hugely boosts BB Atk & 50% boost to Spark damage", 
+        "effects": [
+            {
+                "conditions": [], 
+                "damage% for spark": 50, 
+                "passive id": "31", 
+                "passive target": "self"
+            }, 
+            {
+                "bb atk% buff": 150, 
+                "conditions": [], 
+                "passive id": "64", 
+                "passive target": "self", 
+                "sbb atk% buff": 150, 
+                "ubb atk% buff": 150
+            }
+        ], 
+        "name": "Veteran General's Roar", 
+        "target": "self"
+    }, 
+    "24300": {
+        "desc": "Boosts elemental damage", 
+        "effects": [
+            {
+                "conditions": [], 
+                "earth units do extra elemental weakness dmg": true, 
+                "elemental weakness multiplier%": 50.0, 
+                "passive id": "50", 
+                "passive target": "self"
+            }
+        ], 
+        "name": "Pride of the Empire", 
+        "target": "self"
+    }, 
+    "24400": {
+        "desc": "Boosts elemental damage & considerably raises normal hit amount", 
+        "effects": [
+            {
+                "conditions": [], 
+                "earth units do extra elemental weakness dmg": true, 
+                "elemental weakness multiplier%": 50.0, 
+                "passive id": "50", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "hit increase/hit": 2, 
+                "passive id": "37", 
+                "passive target": "self"
+            }
+        ], 
+        "name": "Pioneer's Soul", 
+        "target": "self"
+    }, 
+    "24500": {
+        "desc": "10% boost to Atk, Def, Rec, max HP & low probability of enormous damage reduction", 
+        "effects": [
+            {
+                "atk% buff": 10, 
+                "conditions": [], 
+                "def% buff": 10, 
+                "hp% buff": 10, 
+                "passive id": "1", 
+                "passive target": "party", 
+                "rec% buff": 10
+            }, 
+            {
+                "conditions": [], 
+                "passive id": "43", 
+                "passive target": "self", 
+                "take 1 dmg%": 5
+            }
+        ], 
+        "name": "Emperor's Authority", 
+        "target": "self"
+    }, 
+    "24600": {
+        "desc": "10% boost to Atk, Def, Rec, max HP & low probability of enormous damage reduction", 
+        "effects": [
+            {
+                "atk% buff": 10, 
+                "conditions": [], 
+                "def% buff": 10, 
+                "hp% buff": 10, 
+                "passive id": "1", 
+                "passive target": "party", 
+                "rec% buff": 10
+            }, 
+            {
+                "conditions": [], 
+                "passive id": "43", 
+                "passive target": "self", 
+                "take 1 dmg%": 10
+            }
+        ], 
+        "name": "Supreme Emperor's Splendor", 
+        "target": "self"
+    }, 
     "2500": {
         "desc": "Huge boost to BB gauge when using normal attack", 
         "effects": [
@@ -9823,6 +9937,43 @@
         "name": "Mastered Anchorage", 
         "target": "self"
     }, 
+    "720227": {
+        "desc": "Boosts ATK, DEF (20%) & if Wastelands Sailor Hat is equipped, adds boost Spark damage (130%) to BB/SBB", 
+        "effects": [
+            {
+                "atk% buff": 20, 
+                "conditions": [], 
+                "def% buff": 20, 
+                "passive id": "1", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [
+                    {
+                        "item required": [
+                            "701027"
+                        ]
+                    }
+                ], 
+                "passive id": "66", 
+                "passive target": "self", 
+                "trigger on bb": true, 
+                "trigger on sbb": true, 
+                "triggered effect": [
+                    {
+                        "buff turns": 3, 
+                        "effect delay time(ms)/frame": "0.0/0", 
+                        "proc id": "23", 
+                        "spark dmg% buff (40)": 130, 
+                        "target area": "aoe", 
+                        "target type": "party"
+                    }
+                ]
+            }
+        ], 
+        "name": "Wave Mastery", 
+        "target": "self"
+    }, 
     "7300": {
         "desc": "Adds Def ignoring effect to BB/SBB for 2 turns & hugely boosts damage against status afflicted foes", 
         "effects": [
@@ -10339,6 +10490,135 @@
             }
         ], 
         "name": "Hardened Focus", 
+        "target": "self"
+    }, 
+    "730246": {
+        "desc": "Adds probable random status ailment infliction to attack for 3 turn to BB/SBB", 
+        "effects": [
+            {
+                "conditions": [], 
+                "passive id": "66", 
+                "passive target": "self", 
+                "trigger on bb": true, 
+                "trigger on sbb": true, 
+                "triggered effect": [
+                    {
+                        "buff turns": 3, 
+                        "effect delay time(ms)/frame": "0.0/0", 
+                        "injury% buff": 20, 
+                        "proc id": "40", 
+                        "sick% buff": 15, 
+                        "target area": "aoe", 
+                        "target type": "party", 
+                        "weaken% buff": 15
+                    }
+                ]
+            }, 
+            {
+                "conditions": [], 
+                "passive id": "66", 
+                "passive target": "self", 
+                "trigger on bb": true, 
+                "trigger on sbb": true, 
+                "triggered effect": [
+                    {
+                        "buff turns": 3, 
+                        "curse% buff": 10, 
+                        "effect delay time(ms)/frame": "0.0/0", 
+                        "paralysis% buff": 10, 
+                        "poison% buff": 10, 
+                        "proc id": "40", 
+                        "target area": "aoe", 
+                        "target type": "party"
+                    }
+                ]
+            }
+        ], 
+        "name": "Thirst for Danger", 
+        "target": "self"
+    }, 
+    "730247": {
+        "desc": "Adds probable random status ailment infliction to attack for 3 turn to BB/SBB & If Instable Flask is equipped, boosts HP (30%) and all parameters (10%, all) and boosts Spark damage (50%)", 
+        "effects": [
+            {
+                "conditions": [], 
+                "passive id": "66", 
+                "passive target": "self", 
+                "trigger on bb": true, 
+                "trigger on sbb": true, 
+                "triggered effect": [
+                    {
+                        "buff turns": 3, 
+                        "effect delay time(ms)/frame": "0.0/0", 
+                        "injury% buff": 20, 
+                        "proc id": "40", 
+                        "sick% buff": 15, 
+                        "target area": "aoe", 
+                        "target type": "party", 
+                        "weaken% buff": 15
+                    }
+                ]
+            }, 
+            {
+                "conditions": [], 
+                "passive id": "66", 
+                "passive target": "self", 
+                "trigger on bb": true, 
+                "trigger on sbb": true, 
+                "triggered effect": [
+                    {
+                        "buff turns": 3, 
+                        "curse% buff": 10, 
+                        "effect delay time(ms)/frame": "0.0/0", 
+                        "paralysis% buff": 10, 
+                        "poison% buff": 10, 
+                        "proc id": "40", 
+                        "target area": "aoe", 
+                        "target type": "party"
+                    }
+                ]
+            }, 
+            {
+                "conditions": [
+                    {
+                        "item required": [
+                            "701030"
+                        ]
+                    }
+                ], 
+                "hp% buff": 30, 
+                "passive id": "1", 
+                "passive target": "self"
+            }, 
+            {
+                "atk% buff": 10, 
+                "conditions": [
+                    {
+                        "item required": [
+                            "701030"
+                        ]
+                    }
+                ], 
+                "def% buff": 10, 
+                "hp% buff": 10, 
+                "passive id": "1", 
+                "passive target": "party", 
+                "rec% buff": 10
+            }, 
+            {
+                "conditions": [
+                    {
+                        "item required": [
+                            "701030"
+                        ]
+                    }
+                ], 
+                "damage% for spark": 50, 
+                "passive id": "31", 
+                "passive target": "self"
+            }
+        ], 
+        "name": "Explosive Cruelty", 
         "target": "self"
     }, 
     "7400": {
