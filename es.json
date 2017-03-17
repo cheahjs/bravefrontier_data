@@ -13441,6 +13441,73 @@
         "name": "Brave Ferocity", 
         "target": "self"
     }, 
+    "8000011": {
+        "desc": "80% boost to Atk and 15% boost to critical hit rate of Dark types, hugely boosts critical damage, boosts Dark elemental damage & negate elemental damage", 
+        "effects": [
+            {
+                "atk% buff": 80, 
+                "conditions": [], 
+                "crit% buff": 15, 
+                "elements buffed": [
+                    "dark"
+                ], 
+                "passive id": "2", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "crit multiplier%": 100.0, 
+                "passive id": "34", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "dark units do extra elemental weakness dmg": true, 
+                "elemental weakness multiplier%": 50.0, 
+                "passive id": "50", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "passive id": "53", 
+                "passive target": "self", 
+                "strong base element damage resist%": 100, 
+                "strong buffed element damage resist%": 100
+            }
+        ], 
+        "name": "Brave Shadow", 
+        "target": "self"
+    }, 
+    "8000012": {
+        "desc": "80% boost to Atk and 15% boost to critical hit rate of Fire types, hugely boosts Spark damage & boosts Fire elemental damage", 
+        "effects": [
+            {
+                "atk% buff": 80, 
+                "conditions": [], 
+                "crit% buff": 15, 
+                "elements buffed": [
+                    "fire"
+                ], 
+                "passive id": "2", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "damage% for spark": 60, 
+                "passive id": "31", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "elemental weakness multiplier%": 50.0, 
+                "fire units do extra elemental weakness dmg": true, 
+                "passive id": "50", 
+                "passive target": "self"
+            }
+        ], 
+        "name": "Brave Combustion", 
+        "target": "self"
+    }, 
     "8000101": {
         "desc": "20% boost to all parameters of Fire types, negates all status ailments, 5% damage reduction from Fire, Earth types & greatly boosts Atk relative to remaining HP (0-50%)", 
         "effects": [
@@ -14240,6 +14307,60 @@
             }
         ], 
         "name": "Scion of the Flame", 
+        "target": "self"
+    }, 
+    "810277": {
+        "desc": "Considerably boosts Atk when BB gauge is full & damage taken greatly boosts BB gauge", 
+        "effects": [
+            {
+                "atk% buff": 80, 
+                "bb gauge above % buff requirement": 100, 
+                "conditions": [], 
+                "passive id": "30", 
+                "passive target": "self"
+            }, 
+            {
+                "bc fill when attacked high": 3, 
+                "bc fill when attacked low": 2, 
+                "bc fill when attacked%": 100, 
+                "conditions": [], 
+                "passive id": "25", 
+                "passive target": "self"
+            }
+        ], 
+        "name": "Majestic Solar Empowerment", 
+        "target": "self"
+    }, 
+    "810278": {
+        "desc": "Greatly boosts Atk when BB gauge is full, damage taken greatly boosts BB gauge & 100% boost to Spark damage for 2 turns when Sparks exceed certain amount", 
+        "effects": [
+            {
+                "atk% buff": 100, 
+                "bb gauge above % buff requirement": 100, 
+                "conditions": [], 
+                "passive id": "30", 
+                "passive target": "self"
+            }, 
+            {
+                "bc fill when attacked high": 3, 
+                "bc fill when attacked low": 2, 
+                "bc fill when attacked%": 100, 
+                "conditions": [], 
+                "passive id": "25", 
+                "passive target": "self"
+            }, 
+            {
+                "buff": {
+                    "buff turns (40)": "2", 
+                    "spark dmg% buff": 100
+                }, 
+                "conditions": [], 
+                "passive id": "86", 
+                "passive target": "self", 
+                "spark count buff activation": 15
+            }
+        ], 
+        "name": "All-Consuming Ember Crown", 
         "target": "self"
     }, 
     "810317": {
@@ -17135,6 +17256,52 @@
             }
         ], 
         "name": "Crossing Dimensions", 
+        "target": "self"
+    }, 
+    "860277": {
+        "desc": "Boosts critical damage & probable damage reduction to 1", 
+        "effects": [
+            {
+                "conditions": [], 
+                "crit multiplier%": 50.0, 
+                "passive id": "34", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "passive id": "43", 
+                "passive target": "self", 
+                "take 1 dmg%": 20
+            }
+        ], 
+        "name": "Scarlet Haze Technique", 
+        "target": "self"
+    }, 
+    "860278": {
+        "desc": "Considerably boosts critical damage, probable damage reduction to 1 & restores HP each turn", 
+        "effects": [
+            {
+                "conditions": [], 
+                "crit multiplier%": 100.0, 
+                "passive id": "34", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "passive id": "43", 
+                "passive target": "self", 
+                "take 1 dmg%": 20
+            }, 
+            {
+                "conditions": [], 
+                "passive id": "33", 
+                "passive target": "self", 
+                "rec% added (turn heal)": 10.0, 
+                "turn heal high": 3000, 
+                "turn heal low": 2500
+            }
+        ], 
+        "name": "Scarlet Grass-Cutting Style", 
         "target": "self"
     }, 
     "860317": {
