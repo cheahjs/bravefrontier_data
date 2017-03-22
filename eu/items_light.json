@@ -10799,6 +10799,49 @@
         "thumbnail": "sphere_thum_1_1.png", 
         "type": "sphere"
     }, 
+    "47211": {
+        "desc": "40% boost to HP, BC collected boosts Atk and HC collected boosts Def for 3 turns & boosts BC, HC, Zel, Karma, Item drop rates", 
+        "effect": [
+            {
+                "hp% buff": 40, 
+                "passive id": "1"
+            }, 
+            {
+                "bc drop rate% buff": 15, 
+                "hc drop rate% buff": 15, 
+                "item drop rate% buff": 3, 
+                "karma drop rate% buff": 10, 
+                "passive id": "19", 
+                "zel drop rate% buff": 15
+            }, 
+            {
+                "bc receive count buff activation": 30, 
+                "buff": {
+                    "atk% buff (1)": 150, 
+                    "buff turns (1)": "3"
+                }, 
+                "passive id": "82"
+            }, 
+            {
+                "buff": {
+                    "buff turns (3)": "3", 
+                    "def% buff (3)": 150
+                }, 
+                "hc receive count buff activation": 15, 
+                "passive id": "84"
+            }
+        ], 
+        "id": 47211, 
+        "max_stack": 1, 
+        "name": "Thief's Jewel", 
+        "raid": false, 
+        "rarity": 6, 
+        "sell_price": 10000, 
+        "sphere type": 1, 
+        "sphere type text": "Status Boost", 
+        "thumbnail": "sphere_thum_1_1.png", 
+        "type": "sphere"
+    }, 
     "47300": {
         "desc": "10% boost to max HP and Rec & slightly boosts critical damage", 
         "effect": [
@@ -11687,6 +11730,274 @@
         "thumbnail": "sphere_thum_5_2.png", 
         "type": "sphere"
     }, 
+    "48214": {
+        "desc": "HP and BB recovery effects trigger at turn's start, considerably restores HP, BB gauge after damage taken has exceeded certain amount for 3 turns & 30% boost to Rec, max HP", 
+        "effect": [
+            {
+                "unknown passive id": "72", 
+                "unknown passive params": "1,1"
+            }, 
+            {
+                "buff": {
+                    "buff turns (8)": "3", 
+                    "gradual heal high": 2000, 
+                    "gradual heal low": 1000
+                }, 
+                "damage threshold buff activation": 5000, 
+                "passive id": "78"
+            }, 
+            {
+                "buff": {
+                    "buff turns (37)": "3", 
+                    "increase bb gauge gradual buff": 5
+                }, 
+                "damage threshold buff activation": 5000, 
+                "passive id": "78"
+            }, 
+            {
+                "hp% buff": 30, 
+                "passive id": "1", 
+                "rec% buff": 30
+            }
+        ], 
+        "id": 48214, 
+        "max_stack": 1, 
+        "name": "Mirage Device", 
+        "raid": false, 
+        "rarity": 6, 
+        "sell_price": 10000, 
+        "sphere type": 14, 
+        "sphere type text": "Special", 
+        "thumbnail": "sphere_thum_5_2.png", 
+        "type": "sphere"
+    }, 
+    "48215": {
+        "desc": "100% boost to Spark damage, Atk and boosts critical hit rate for first 2 turns", 
+        "effect": [
+            {
+                "first x turns": 2, 
+                "first x turns atk% (1)": 100, 
+                "first x turns crit% (7)": 20, 
+                "passive id": "21"
+            }, 
+            {
+                "unknown passive id": "91", 
+                "unknown passive params": "40,100,2"
+            }
+        ], 
+        "id": 48215, 
+        "max_stack": 1, 
+        "name": "Delusion Device", 
+        "raid": false, 
+        "rarity": 6, 
+        "sell_price": 10000, 
+        "sphere type": 13, 
+        "sphere type text": "Atk Boosting", 
+        "thumbnail": "sphere_thum_5_2.png", 
+        "type": "sphere"
+    }, 
+    "48216": {
+        "desc": "Negates all status ailments, 20% boost to Def, max HP & probable random status infliction counter", 
+        "effect": [
+            {
+                "curse resist%": 100, 
+                "injury resist%": 100, 
+                "paralysis resist%": 100, 
+                "passive id": "4", 
+                "poison resist%": 100, 
+                "sick resist%": 100, 
+                "weaken resist%": 100
+            }, 
+            {
+                "counter inflict curse%": 7, 
+                "counter inflict injury%": 10, 
+                "counter inflict paralysis%": 7, 
+                "counter inflict poison%": 7, 
+                "counter inflict sick%": 10, 
+                "counter inflict weaken%": 10, 
+                "passive id": "71"
+            }, 
+            {
+                "def% buff": 20, 
+                "hp% buff": 20, 
+                "passive id": "1"
+            }
+        ], 
+        "id": 48216, 
+        "max_stack": 1, 
+        "name": "Heavenly Ring", 
+        "raid": false, 
+        "rarity": 6, 
+        "sell_price": 10000, 
+        "sphere type": 5, 
+        "sphere type text": "Status Ailments Resistant", 
+        "thumbnail": "sphere_thum_5_1.png", 
+        "type": "sphere"
+    }, 
+    "48217": {
+        "desc": "Negates critical damage, 30% boost to Atk, Def, Rec, max HP & damage taken considerably boosts BB gauge", 
+        "effect": [
+            {
+                "crit chance base resist%": 100, 
+                "crit chance buffed resist%": 100, 
+                "crit dmg base damage resist%": 100, 
+                "crit dmg buffed damage resist%": 100, 
+                "passive id": "53"
+            }, 
+            {
+                "bc fill when attacked high": 4, 
+                "bc fill when attacked low": 3, 
+                "bc fill when attacked%": 100, 
+                "passive id": "25"
+            }, 
+            {
+                "atk% buff": 30, 
+                "def% buff": 30, 
+                "hp% buff": 30, 
+                "passive id": "1", 
+                "rec% buff": 30
+            }
+        ], 
+        "id": 48217, 
+        "max_stack": 1, 
+        "name": "Growth Device", 
+        "raid": false, 
+        "rarity": 6, 
+        "sell_price": 10000, 
+        "sphere type": 10, 
+        "sphere type text": "Damage Reducing", 
+        "thumbnail": "sphere_thum_5_2.png", 
+        "type": "sphere"
+    }, 
+    "48218": {
+        "desc": "Boosts critical damage, damage reduction for 1 turn when damage taken has exceeded certain amount & 30% boost to Atk and max HP", 
+        "effect": [
+            {
+                "crit multiplier%": 50.0, 
+                "passive id": "34"
+            }, 
+            {
+                "buff": {
+                    "buff turns (36)": "1", 
+                    "dmg reduction% buff": 25
+                }, 
+                "damage dealt threshold buff activation": 100000, 
+                "passive id": "80"
+            }, 
+            {
+                "atk% buff": 30, 
+                "hp% buff": 30, 
+                "passive id": "1"
+            }
+        ], 
+        "id": 48218, 
+        "max_stack": 1, 
+        "name": "Versatile Device", 
+        "raid": false, 
+        "rarity": 6, 
+        "sell_price": 10000, 
+        "sphere type": 2, 
+        "sphere type text": "Critical", 
+        "thumbnail": "sphere_thum_5_2.png", 
+        "type": "sphere"
+    }, 
+    "48219": {
+        "desc": "Slightly absorbs HP, damage taken may restore HP & 30% boost to Def and max HP", 
+        "effect": [
+            {
+                "hp drain chance%": 100, 
+                "hp drain% high": 10, 
+                "hp drain% low": 5, 
+                "passive id": "17"
+            }, 
+            {
+                "dmg% to hp% when attacked chance%": 40, 
+                "dmg% to hp% when attacked high": 20, 
+                "dmg% to hp% when attacked low": 20, 
+                "passive id": "24"
+            }, 
+            {
+                "def% buff": 30, 
+                "hp% buff": 30, 
+                "passive id": "1"
+            }
+        ], 
+        "id": 48219, 
+        "max_stack": 1, 
+        "name": "Vitality Device", 
+        "raid": false, 
+        "rarity": 6, 
+        "sell_price": 10000, 
+        "sphere type": 7, 
+        "sphere type text": "HP Recovery", 
+        "thumbnail": "sphere_thum_5_2.png", 
+        "type": "sphere"
+    }, 
+    "48220": {
+        "desc": "Negates Def ignoring effect, 50% Spark damage reduction, low probability of enormous damage reduction & 30% boost to Def, max HP", 
+        "effect": [
+            {
+                "ignore def resist chance%": 100, 
+                "passive id": "92"
+            }, 
+            {
+                "base spark dmg% resist": 50, 
+                "buff spark dmg% resist": 50, 
+                "passive id": "77"
+            }, 
+            {
+                "passive id": "43", 
+                "take 1 dmg%": 10
+            }, 
+            {
+                "def% buff": 30, 
+                "hp% buff": 30, 
+                "passive id": "1"
+            }
+        ], 
+        "id": 48220, 
+        "max_stack": 1, 
+        "name": "Resistive Device", 
+        "raid": false, 
+        "rarity": 6, 
+        "sell_price": 10000, 
+        "sphere type": 10, 
+        "sphere type text": "Damage Reducing", 
+        "thumbnail": "sphere_thum_5_2.png", 
+        "type": "sphere"
+    }, 
+    "48221": {
+        "desc": "Adds probable Def ignoring effect, 30% boost to Atk, max HP, 100% boost to Spark damage & probable Spark critical", 
+        "effect": [
+            {
+                "ignore def%": 50, 
+                "passive id": "29"
+            }, 
+            {
+                "damage% for spark": 100, 
+                "passive id": "31"
+            }, 
+            {
+                "unknown passive id": "100", 
+                "unknown passive params": "20,30"
+            }, 
+            {
+                "atk% buff": 30, 
+                "hp% buff": 30, 
+                "passive id": "1"
+            }
+        ], 
+        "id": 48221, 
+        "max_stack": 1, 
+        "name": "Offensive Device", 
+        "raid": false, 
+        "rarity": 6, 
+        "sell_price": 10000, 
+        "sphere type": 12, 
+        "sphere type text": "Defense Penetrating", 
+        "thumbnail": "sphere_thum_5_2.png", 
+        "type": "sphere"
+    }, 
     "48300": {
         "desc": "Hugely boosts attack's BC, HC drop rate, boosts BC, HC efficacy & recovers BB gauge, HP each turn", 
         "effect": [
@@ -12195,6 +12506,136 @@
         "raid": false, 
         "rarity": 6, 
         "sell_price": 10000, 
+        "sphere type": 1, 
+        "sphere type text": "Status Boost", 
+        "thumbnail": "sphere_thum_2_1.png", 
+        "type": "sphere"
+    }, 
+    "49300": {
+        "desc": "Enormously boosts BB Atk & 50% boost to Atk", 
+        "effect": [
+            {
+                "bb atk% buff": 300, 
+                "passive id": "64", 
+                "sbb atk% buff": 300, 
+                "ubb atk% buff": 300
+            }, 
+            {
+                "atk% buff": 50, 
+                "passive id": "1"
+            }
+        ], 
+        "id": 49300, 
+        "max_stack": 1, 
+        "name": "Skylord's Blade", 
+        "raid": false, 
+        "rarity": 7, 
+        "sell_price": 30000, 
+        "sphere type": 13, 
+        "sphere type text": "Atk Boosting", 
+        "thumbnail": "sphere_thum_1_5.png", 
+        "type": "sphere"
+    }, 
+    "49400": {
+        "desc": "Damage taken and Spark damage dealt boost BB gauge & 200% Atk boost when BB gauge is full", 
+        "effect": [
+            {
+                "bc fill when attacked high": 4, 
+                "bc fill when attacked low": 2, 
+                "bc fill when attacked%": 100, 
+                "passive id": "25"
+            }, 
+            {
+                "bc fill on spark high": 2, 
+                "bc fill on spark low": 2, 
+                "bc fill on spark%": 100, 
+                "passive id": "47"
+            }, 
+            {
+                "atk% buff": 200, 
+                "bb gauge above % buff requirement": 100, 
+                "passive id": "30"
+            }
+        ], 
+        "id": 49400, 
+        "max_stack": 1, 
+        "name": "Phoenix Blossom", 
+        "raid": false, 
+        "rarity": 7, 
+        "sell_price": 30000, 
+        "sphere type": 6, 
+        "sphere type text": "BB Gauge", 
+        "thumbnail": "sphere_thum_1_1.png", 
+        "type": "sphere"
+    }, 
+    "49500": {
+        "desc": "40% max HP boost and prob slight HP recovery when attacked. 50% dmg reduction, 200% Def boost for first 4 turns", 
+        "effect": [
+            {
+                "hp% buff": 40, 
+                "passive id": "1"
+            }, 
+            {
+                "first x turns": 4, 
+                "first x turns def% (3)": 200, 
+                "passive id": "21"
+            }, 
+            {
+                "dmg% mitigation for elemental attacks": 50, 
+                "dmg% mitigation for elemental attacks buff for first x turns": 4, 
+                "mitigate dark attacks": true, 
+                "mitigate earth attacks": true, 
+                "mitigate fire attacks": true, 
+                "mitigate light attacks": true, 
+                "mitigate thunder attacks": true, 
+                "mitigate water attacks": true, 
+                "passive id": "63"
+            }, 
+            {
+                "dmg% to hp% when attacked chance%": 50, 
+                "dmg% to hp% when attacked high": 10, 
+                "dmg% to hp% when attacked low": 10, 
+                "passive id": "24"
+            }
+        ], 
+        "id": 49500, 
+        "max_stack": 1, 
+        "name": "Lotus Manuscript", 
+        "raid": false, 
+        "rarity": 7, 
+        "sell_price": 30000, 
+        "sphere type": 10, 
+        "sphere type text": "Damage Reducing", 
+        "thumbnail": "sphere_thum_3_6.png", 
+        "type": "sphere"
+    }, 
+    "49600": {
+        "desc": "40% boost to all parameters, hugely boosts normal hit amount & normal attacks enormously boosts BB gauge", 
+        "effect": [
+            {
+                "atk% buff": 40, 
+                "def% buff": 40, 
+                "hp% buff": 40, 
+                "passive id": "1", 
+                "rec% buff": 40
+            }, 
+            {
+                "hit increase/hit": 2, 
+                "passive id": "37"
+            }, 
+            {
+                "bc fill when attacking high": 10, 
+                "bc fill when attacking low": 10, 
+                "bc fill when attacking%": 100, 
+                "passive id": "35"
+            }
+        ], 
+        "id": 49600, 
+        "max_stack": 1, 
+        "name": "Leto Crown", 
+        "raid": false, 
+        "rarity": 7, 
+        "sell_price": 30000, 
         "sphere type": 1, 
         "sphere type text": "Status Boost", 
         "thumbnail": "sphere_thum_2_1.png", 
