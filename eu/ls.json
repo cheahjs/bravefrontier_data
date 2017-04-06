@@ -947,6 +947,35 @@
         ], 
         "name": "Berserk Flame's Power"
     }, 
+    "109": {
+        "desc": "100% boost to Atk and 30% boost to max HP for Fire types, 50% boost to Atk, 30% boost to max HP, enormously boosts BB Atk & hugely boosts BB gauge each turn", 
+        "effects": [
+            {
+                "atk% buff": 100, 
+                "elements buffed": [
+                    "fire"
+                ], 
+                "hp% buff": 30, 
+                "passive id": "2"
+            }, 
+            {
+                "atk% buff": 50, 
+                "hp% buff": 30, 
+                "passive id": "1"
+            }, 
+            {
+                "bb atk% buff": 200, 
+                "passive id": "64", 
+                "sbb atk% buff": 200, 
+                "ubb atk% buff": 200
+            }, 
+            {
+                "bc fill per turn": 6, 
+                "passive id": "9"
+            }
+        ], 
+        "name": "Supreme Flame's Rage"
+    }, 
     "11": {
         "desc": "リーダースキル1説明", 
         "effects": [
@@ -5344,6 +5373,48 @@
         ], 
         "name": "Beast's Untamed Soul"
     }, 
+    "2517": {
+        "desc": "30% boost to max HP, 150% boost to Atk for first 3 turns & probable considerable reduction of enemy BB gauge fill rate for 2 turns", 
+        "effects": [
+            {
+                "first x turns": 3, 
+                "first x turns atk% (1)": 150, 
+                "passive id": "21"
+            }, 
+            {
+                "hp% buff": 30, 
+                "passive id": "1"
+            }, 
+            {
+                "unknown passive id": "109", 
+                "unknown passive params": "-50,30,1,0"
+            }
+        ], 
+        "name": "Black Blade Flash"
+    }, 
+    "2518": {
+        "desc": "50% boost to max HP, 200% boost to Atk for first 3 turns, probable considerable reduction of enemy BB gauge fill rate for 2 turns & considerably boosts ABP and CBP gain", 
+        "effects": [
+            {
+                "first x turns": 3, 
+                "first x turns atk% (1)": 200, 
+                "passive id": "21"
+            }, 
+            {
+                "hp% buff": 50, 
+                "passive id": "1"
+            }, 
+            {
+                "unknown passive id": "109", 
+                "unknown passive params": "-50,50,1,0"
+            }, 
+            {
+                "unknown passive id": "112", 
+                "unknown passive params": "50,25"
+            }
+        ], 
+        "name": "Conquering Blade Flash"
+    }, 
     "2600": {
         "desc": "Chance of BB gauge filling when attacking", 
         "effects": [
@@ -7358,6 +7429,168 @@
         ], 
         "name": "Bonds of a Beautiful Ruler"
     }, 
+    "4351": {
+        "desc": "30% boost to Def, max HP, negates all status ailments & restores HP each turn", 
+        "effects": [
+            {
+                "def% buff": 30, 
+                "hp% buff": 30, 
+                "passive id": "1"
+            }, 
+            {
+                "passive id": "33", 
+                "rec% added (turn heal)": 10.0, 
+                "turn heal high": 800, 
+                "turn heal low": 600
+            }, 
+            {
+                "curse resist%": 100, 
+                "injury resist%": 100, 
+                "paralysis resist%": 100, 
+                "passive id": "4", 
+                "poison resist%": 100, 
+                "sick resist%": 100, 
+                "weaken resist%": 100
+            }
+        ], 
+        "name": "Iron Courage"
+    }, 
+    "4352": {
+        "desc": "50% boost to Def, max HP, negates all status ailments, restores HP each turn & slightly reduces damage taken for 1 turn when Sparks exceed certain amount", 
+        "effects": [
+            {
+                "def% buff": 50, 
+                "hp% buff": 50, 
+                "passive id": "1"
+            }, 
+            {
+                "passive id": "33", 
+                "rec% added (turn heal)": 10.0, 
+                "turn heal high": 1000, 
+                "turn heal low": 800
+            }, 
+            {
+                "curse resist%": 100, 
+                "injury resist%": 100, 
+                "paralysis resist%": 100, 
+                "passive id": "4", 
+                "poison resist%": 100, 
+                "sick resist%": 100, 
+                "weaken resist%": 100
+            }, 
+            {
+                "buff": {
+                    "buff turns (36)": "1", 
+                    "dmg reduction% buff": 20
+                }, 
+                "passive id": "86", 
+                "spark count buff activation": 20
+            }
+        ], 
+        "name": "Iron Virtue"
+    }, 
+    "4353": {
+        "desc": "30% boost to Def, max HP & damage taken boosts BB gauge and may restore HP", 
+        "effects": [
+            {
+                "def% buff": 30, 
+                "hp% buff": 30, 
+                "passive id": "1"
+            }, 
+            {
+                "bc fill when attacked high": 4, 
+                "bc fill when attacked low": 2, 
+                "bc fill when attacked%": 100, 
+                "passive id": "25"
+            }, 
+            {
+                "dmg% to hp% when attacked chance%": 25, 
+                "dmg% to hp% when attacked high": 20, 
+                "dmg% to hp% when attacked low": 20, 
+                "passive id": "24"
+            }
+        ], 
+        "name": "Divine Rule"
+    }, 
+    "4354": {
+        "desc": "50% boost to Def, max HP, considerably boosts OD gauge fill rate, damage taken hugely boosts BB gauge and may restore HP", 
+        "effects": [
+            {
+                "def% buff": 50, 
+                "hp% buff": 50, 
+                "passive id": "1"
+            }, 
+            {
+                "bc fill when attacked high": 7, 
+                "bc fill when attacked low": 4, 
+                "bc fill when attacked%": 100, 
+                "passive id": "25"
+            }, 
+            {
+                "dmg% to hp% when attacked chance%": 25, 
+                "dmg% to hp% when attacked high": 25, 
+                "dmg% to hp% when attacked low": 25, 
+                "passive id": "24"
+            }, 
+            {
+                "od fill rate%": 20, 
+                "passive id": "70"
+            }
+        ], 
+        "name": "Divine Law"
+    }, 
+    "4360": {
+        "desc": "80% boost to Def, 30% boost to max HP, 10% elemental damage reduction from Light, Dark types & probability of resistance against 1 KO attack", 
+        "effects": [
+            {
+                "def% buff": 80, 
+                "hp% buff": 30, 
+                "passive id": "1"
+            }, 
+            {
+                "dmg% mitigation for elemental attacks": 10.0, 
+                "mitigate dark attacks": true, 
+                "mitigate light attacks": true, 
+                "passive id": "62"
+            }, 
+            {
+                "angel idol chance% condition": 0, 
+                "angel idol recover chance% high": 15, 
+                "angel idol recover chance% low": 15, 
+                "angel idol recover counts": 1, 
+                "passive id": "69"
+            }
+        ], 
+        "name": "Warrior Creed"
+    }, 
+    "4361": {
+        "desc": "100% boost to Def, 50% boost to max HP, 15% elemental damage reduction from Light, Dark types, adds probability of resistance against 1 KO attack & considerably boosts ABP and CBP gain", 
+        "effects": [
+            {
+                "def% buff": 100, 
+                "hp% buff": 50, 
+                "passive id": "1"
+            }, 
+            {
+                "dmg% mitigation for elemental attacks": 15.0, 
+                "mitigate dark attacks": true, 
+                "mitigate light attacks": true, 
+                "passive id": "62"
+            }, 
+            {
+                "angel idol chance% condition": 0, 
+                "angel idol recover chance% high": 20, 
+                "angel idol recover chance% low": 20, 
+                "angel idol recover counts": 1, 
+                "passive id": "69"
+            }, 
+            {
+                "unknown passive id": "112", 
+                "unknown passive params": "50,25"
+            }
+        ], 
+        "name": "Knightly Pivot"
+    }, 
     "4400": {
         "desc": "Boosts resistence to status ailments & fills BB gauge after each turn", 
         "effects": [
@@ -8892,6 +9125,29 @@
         ], 
         "name": "Divine Mercy"
     }, 
+    "5539": {
+        "desc": "60% boost to max HP, enormously boosts HC drop rate, hugely boosts HC efficacy & probable 20% damage reduction", 
+        "effects": [
+            {
+                "hp% buff": 60, 
+                "passive id": "1"
+            }, 
+            {
+                "hc effectiveness%": 75, 
+                "passive id": "10"
+            }, 
+            {
+                "hc drop rate% buff": 30, 
+                "passive id": "19"
+            }, 
+            {
+                "dmg reduction chance%": 15, 
+                "dmg reduction%": 20, 
+                "passive id": "14"
+            }
+        ], 
+        "name": "Merciful Goddess's Wisdom"
+    }, 
     "554": {
         "desc": "15% damage reduction from Dark types, hugely boosts Light Type elemental damage & 100% boost to Spark damage", 
         "effects": [
@@ -10245,6 +10501,44 @@
         ], 
         "name": "River umbrella"
     }, 
+    "720157": {
+        "desc": "Boosts DEF, REC and HP (50%) & boosts DEF, REC (70%) for 2 turns when damage taken exceeds certain amount (5000) & boosts BB gauge each turn (8 BC) and when attacked (4-7 BC)", 
+        "effects": [
+            {
+                "def% buff": 50, 
+                "hp% buff": 50, 
+                "passive id": "1", 
+                "rec% buff": 50
+            }, 
+            {
+                "buff": {
+                    "buff turns (3)": "2", 
+                    "def% buff (3)": 70
+                }, 
+                "damage threshold buff activation": 5000, 
+                "passive id": "78"
+            }, 
+            {
+                "buff": {
+                    "buff turns (5)": "2", 
+                    "rec% buff (5)": 70
+                }, 
+                "damage threshold buff activation": 5000, 
+                "passive id": "78"
+            }, 
+            {
+                "bc fill per turn": 8, 
+                "passive id": "9"
+            }, 
+            {
+                "bc fill when attacked high": 7, 
+                "bc fill when attacked low": 4, 
+                "bc fill when attacked%": 100, 
+                "passive id": "25"
+            }
+        ], 
+        "name": "Ocean Umbrella"
+    }, 
     "720164": {
         "desc": "Boost to Rec and HP (20%) & boost in HC effectiveness (50%)", 
         "effects": [
@@ -11105,20 +11399,20 @@
         "name": "Dangerous Alchemy"
     }, 
     "730247": {
-        "desc": "Boosts HP (40%) & boosts ATK based on remaining HP (0-100%) & boosts critical damage (150%), damage against status afflicted foes (100%) and BB ATK (250%)", 
+        "desc": "Boosts HP (50%) & boosts ATK based on remaining HP (20-120%) & boosts critical damage (175%), damage against status afflicted foes (100%) and BB ATK (250%)", 
         "effects": [
             {
-                "hp% buff": 40, 
+                "hp% buff": 50, 
                 "passive id": "1"
             }, 
             {
-                "atk% base buff": 0, 
+                "atk% base buff": 20, 
                 "atk% extra buff based on hp": 100, 
                 "buff proportional to hp": "remaining", 
                 "passive id": "46"
             }, 
             {
-                "crit multiplier%": 150.0, 
+                "crit multiplier%": 175.0, 
                 "passive id": "34"
             }, 
             {
@@ -13014,6 +13308,128 @@
         ], 
         "name": "Proud Sentinel's Valor"
     }, 
+    "7474": {
+        "desc": "30% boost to Atk, max HP, 100% boost to Spark damage & boosts BB Atk for 2 turns when damage taken has exceeded certain amount", 
+        "effects": [
+            {
+                "atk% buff": 30, 
+                "hp% buff": 30, 
+                "passive id": "1"
+            }, 
+            {
+                "damage% for spark": 100, 
+                "passive id": "31"
+            }, 
+            {
+                "buff": {
+                    "bb atk% buff": 150, 
+                    "buff turns (72)": "1", 
+                    "sbb atk% buff": 150, 
+                    "ubb atk% buff": 150
+                }, 
+                "damage threshold buff activation": 5000, 
+                "passive id": "78"
+            }
+        ], 
+        "name": "Phantom Sacrifice"
+    }, 
+    "7475": {
+        "desc": "50% boost to Atk, max HP, Spark damage restores HP, 120% boost to Spark damage & considerably boosts BB Atk for 2 turns when damage taken exceeds certain amount", 
+        "effects": [
+            {
+                "atk% buff": 50, 
+                "hp% buff": 50, 
+                "passive id": "1"
+            }, 
+            {
+                "damage% for spark": 120, 
+                "passive id": "31"
+            }, 
+            {
+                "buff": {
+                    "bb atk% buff": 200, 
+                    "buff turns (72)": "1", 
+                    "sbb atk% buff": 200, 
+                    "ubb atk% buff": 200
+                }, 
+                "damage threshold buff activation": 5000, 
+                "passive id": "78"
+            }, 
+            {
+                "heal on spark high": 500, 
+                "heal on spark low": 300, 
+                "heal on spark%": 100, 
+                "passive id": "101"
+            }
+        ], 
+        "name": "Phantom Blessing"
+    }, 
+    "7476": {
+        "desc": "50% boost to Atk and max HP, 100% boost to Spark damage, hugely boosts BC, HC drop rate & adds probable Spark critical", 
+        "effects": [
+            {
+                "atk% buff": 50, 
+                "hp% buff": 50, 
+                "passive id": "1"
+            }, 
+            {
+                "damage% for spark": 100, 
+                "passive id": "31"
+            }, 
+            {
+                "bc drop rate% buff": 20, 
+                "hc drop rate% buff": 20, 
+                "passive id": "19"
+            }, 
+            {
+                "unknown passive id": "100", 
+                "unknown passive params": "5,50"
+            }
+        ], 
+        "name": "Shining Pride"
+    }, 
+    "7477": {
+        "desc": "80% boost to Atk, 30% boost to max HP, boosts BB and SBB activation rates in Arena/Colosseum & hugely boosts BB gauge each turn", 
+        "effects": [
+            {
+                "atk% buff": 80, 
+                "hp% buff": 30, 
+                "passive id": "1"
+            }, 
+            {
+                "bc fill per turn": 6, 
+                "passive id": "9"
+            }, 
+            {
+                "unknown passive id": "111", 
+                "unknown passive params": "10"
+            }
+        ], 
+        "name": "Flowing Strikes"
+    }, 
+    "7478": {
+        "desc": "100% boost to Atk, 50% boost to max HP, considerably boosts BB and SBB activation rates in Arena/Colosseum, enormously boosts BB gauge each turn & considerably boosts ABP and CBP gain", 
+        "effects": [
+            {
+                "atk% buff": 100, 
+                "hp% buff": 50, 
+                "passive id": "1"
+            }, 
+            {
+                "bc fill per turn": 8, 
+                "passive id": "9"
+            }, 
+            {
+                "unknown passive id": "111", 
+                "unknown passive params": "20"
+            }, 
+            {
+                "unknown passive id": "112", 
+                "unknown passive params": "50,25"
+            }
+        ], 
+        "name": "Flowing Assault"
+    }, 
     "7500": {
         "desc": "Adds chance of slightly absorbing HP when attacking", 
         "effects": [
@@ -13273,6 +13689,35 @@
             }
         ], 
         "name": "Wings of Destiny"
+    }, 
+    "750157": {
+        "desc": "Boosts ATK, REC, HP (50%) & boosts ATK, REC (70%) when BB gauge is over 50% & chance to reduce damage to 1 (15%) & normal attack boosts BB gauge (10 BC)", 
+        "effects": [
+            {
+                "dmg reduction chance%": 15, 
+                "dmg reduction%": 100, 
+                "passive id": "14"
+            }, 
+            {
+                "atk% buff": 50, 
+                "hp% buff": 50, 
+                "passive id": "1", 
+                "rec% buff": 50
+            }, 
+            {
+                "atk% buff": 70, 
+                "bb gauge above % buff requirement": 50, 
+                "passive id": "30", 
+                "rec% buff": 70
+            }, 
+            {
+                "bc fill when attacking high": 10, 
+                "bc fill when attacking low": 10, 
+                "bc fill when attacking%": 100, 
+                "passive id": "35"
+            }
+        ], 
+        "name": "Revenge at Any Cost"
     }, 
     "750164": {
         "desc": "Boost to all parameters (10%) & boost to Crit DMG (100%)", 
@@ -15063,6 +15508,40 @@
         ], 
         "name": "Carefree Spirit"
     }, 
+    "810007": {
+        "desc": "45% boost to all parameters, negates Def ignoring damage, slight damage reduction for 2 turns when damage taken has exceeded certain amount & adds probable 1 turn Atk reduction effect to attack for 2 turns when damage dealt has exceeded certain amount", 
+        "effects": [
+            {
+                "atk% buff": 45, 
+                "def% buff": 45, 
+                "hp% buff": 45, 
+                "passive id": "1", 
+                "rec% buff": 45
+            }, 
+            {
+                "ignore def resist chance%": 100, 
+                "passive id": "92"
+            }, 
+            {
+                "buff": {
+                    "buff turns (36)": "1", 
+                    "dmg reduction% buff": 20
+                }, 
+                "damage threshold buff activation": 5000, 
+                "passive id": "78"
+            }, 
+            {
+                "buff": {
+                    "buff turns (74)": "2", 
+                    "unknown buff id": "74", 
+                    "unknown buff params": "-20&30&1"
+                }, 
+                "damage dealt threshold buff activation": 1, 
+                "passive id": "80"
+            }
+        ], 
+        "name": "Courageous Knight"
+    }, 
     "810008": {
         "desc": "Boosts HP, REC (40%) and ATK (80%) of all allies when 4 elements or more are present & Boots OD gauge fill rate (20%) & Reduce BB cost (20%) & Nullify ailments", 
         "effects": [
@@ -15093,6 +15572,36 @@
         ], 
         "name": "Innocence is Bliss"
     }, 
+    "810009": {
+        "desc": "50% boost to max HP, Rec and 100% boost to Atk of all Units when 4 elements or more are present, considerably boosts OD gauge fill rate, considerably reduces BB gauge required for BB & negates all status ailments", 
+        "effects": [
+            {
+                "atk% buff": 100, 
+                "hp% buff": 50, 
+                "passive id": "41", 
+                "rec% buff": 50, 
+                "unique elements required": 4
+            }, 
+            {
+                "od fill rate%": 25, 
+                "passive id": "70"
+            }, 
+            {
+                "passive id": "48", 
+                "reduced bb bc cost%": 25
+            }, 
+            {
+                "curse resist%": 100, 
+                "injury resist%": 100, 
+                "paralysis resist%": 100, 
+                "passive id": "4", 
+                "poison resist%": 100, 
+                "sick resist%": 100, 
+                "weaken resist%": 100
+            }
+        ], 
+        "name": "Bonds of Friendship"
+    }, 
     "810010": {
         "desc": "Boosts HP (50%) and ATK (100%) & Boosts to Spark damage (120%) & Reflect damage taken (50%) & Raises normal hitcount (+1)", 
         "effects": [
@@ -15118,6 +15627,32 @@
             }
         ], 
         "name": "Icy Disposition"
+    }, 
+    "810011": {
+        "desc": "50% boost to max HP, 100% boost to Atk, 130% boost to Spark damage, raises normal hit amount & 50-75% damage counter", 
+        "effects": [
+            {
+                "atk% buff": 100, 
+                "hp% buff": 50, 
+                "passive id": "1"
+            }, 
+            {
+                "damage% for spark": 130, 
+                "passive id": "31"
+            }, 
+            {
+                "dmg% reflect chance%": 100, 
+                "dmg% reflect high": 75, 
+                "dmg% reflect low": 50, 
+                "passive id": "26"
+            }, 
+            {
+                "extra hits dmg%": -50, 
+                "hit increase/hit": 1, 
+                "passive id": "37"
+            }
+        ], 
+        "name": "Loyal Knight"
     }, 
     "810012": {
         "desc": "Boosts HP, ATK (50%) & Boosts BB ATK (200%) & Boosts critical damage (150%) and critical hit rate (30%) & Boosts drop rate for BC, HC (20%), Items (5%), Karma (15%) and Zel (75%)", 
@@ -15148,6 +15683,36 @@
             }
         ], 
         "name": "Master Mechanic"
+    }, 
+    "810013": {
+        "desc": "50% boost to max HP and Atk, 30% boost to critical hit rate, greatly boosts BB Atk, hugely boosts critical damage & enormously boosts BC, HC, Zel, Karma, and Item drop rates", 
+        "effects": [
+            {
+                "atk% buff": 50, 
+                "crit% buff": 30, 
+                "hp% buff": 50, 
+                "passive id": "1"
+            }, 
+            {
+                "bb atk% buff": 250, 
+                "passive id": "64", 
+                "sbb atk% buff": 250, 
+                "ubb atk% buff": 250
+            }, 
+            {
+                "crit multiplier%": 150.0, 
+                "passive id": "34"
+            }, 
+            {
+                "bc drop rate% buff": 25, 
+                "hc drop rate% buff": 25, 
+                "item drop rate% buff": 5, 
+                "karma drop rate% buff": 15, 
+                "passive id": "19", 
+                "zel drop rate% buff": 100
+            }
+        ], 
+        "name": "Genius Technician"
     }, 
     "810014": {
         "desc": "Boosts HP and DEF (50%) & Reduce damage taken (5%) & Boosts damage reduced while guarding (10%) & Gradually heal all allies each turn", 
