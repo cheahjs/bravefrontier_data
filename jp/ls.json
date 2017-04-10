@@ -2997,6 +2997,59 @@
         ], 
         "name": "虚女神の魅惑"
     }, 
+    "12512": {
+        "desc": "全てのユニットの防御力・回復力・最大ＨＰを５０％アップ＆ターン毎にＨＰを回復＆被ダメージ時、確率でＨＰを回復", 
+        "effects": [
+            {
+                "def% buff": 50, 
+                "hp% buff": 50, 
+                "passive id": "1", 
+                "rec% buff": 50
+            }, 
+            {
+                "dmg% to hp% when attacked chance%": 25, 
+                "dmg% to hp% when attacked high": 20, 
+                "dmg% to hp% when attacked low": 20, 
+                "passive id": "24"
+            }, 
+            {
+                "passive id": "33", 
+                "rec% added (turn heal)": 10.0, 
+                "turn heal high": 1000, 
+                "turn heal low": 800
+            }
+        ], 
+        "name": "命還神の月洸"
+    }, 
+    "12513": {
+        "desc": "全てのユニットの防御力・回復力・最大ＨＰを６０％アップ＆ターン毎にＨＰをかなり回復＆スパークダメージを軽減＆被ダメージ時、確率でＨＰを回復", 
+        "effects": [
+            {
+                "def% buff": 60, 
+                "hp% buff": 60, 
+                "passive id": "1", 
+                "rec% buff": 60
+            }, 
+            {
+                "dmg% to hp% when attacked chance%": 25, 
+                "dmg% to hp% when attacked high": 25, 
+                "dmg% to hp% when attacked low": 25, 
+                "passive id": "24"
+            }, 
+            {
+                "passive id": "33", 
+                "rec% added (turn heal)": 10.0, 
+                "turn heal high": 1200, 
+                "turn heal low": 1000
+            }, 
+            {
+                "base spark dmg% resist": 25, 
+                "buff spark dmg% resist": 25, 
+                "passive id": "77"
+            }
+        ], 
+        "name": "怜命還神の洸翼"
+    }, 
     "126": {
         "desc": "樹属性ユニットの攻撃力を１００％アップ・最大ＨＰを３０％アップ", 
         "effects": [
@@ -5693,6 +5746,60 @@
             }
         ], 
         "name": "灼豪玄神の鬼炎"
+    }, 
+    "1956": {
+        "desc": "全てのユニットの攻撃力を８０％アップ・最大ＨＰを４０％アップ＆スパークダメージを１１０％アップ＆スパークが一定数を超える度に２ターン、確率でスパーククリティカルが発生", 
+        "effects": [
+            {
+                "atk% buff": 80, 
+                "hp% buff": 40, 
+                "passive id": "1"
+            }, 
+            {
+                "damage% for spark": 110, 
+                "passive id": "31"
+            }, 
+            {
+                "buff": {
+                    "buff turns (131)": "2", 
+                    "unknown buff id": "131", 
+                    "unknown buff params": "20&50"
+                }, 
+                "passive id": "86", 
+                "spark count buff activation": 10
+            }
+        ], 
+        "name": "破神雷の轟災"
+    }, 
+    "1957": {
+        "desc": "全てのユニットの攻撃力を１００％アップ・最大ＨＰを５０％アップ＆スパークが一定数を超える度に２ターン、確率でスパーククリティカルが発生＆スパーク時、ＢＢゲージを増加・ダメージを１３０％アップ", 
+        "effects": [
+            {
+                "atk% buff": 100, 
+                "hp% buff": 50, 
+                "passive id": "1"
+            }, 
+            {
+                "damage% for spark": 130, 
+                "passive id": "31"
+            }, 
+            {
+                "buff": {
+                    "buff turns (131)": "2", 
+                    "unknown buff id": "131", 
+                    "unknown buff params": "20&50"
+                }, 
+                "passive id": "86", 
+                "spark count buff activation": 10
+            }, 
+            {
+                "bc fill on spark high": 3, 
+                "bc fill on spark low": 2, 
+                "bc fill on spark%": 100, 
+                "passive id": "47"
+            }
+        ], 
+        "name": "破響神霆の滅災"
     }, 
     "2": {
         "desc": "リーダースキル１説明", 
@@ -10344,6 +10451,62 @@
             }
         ], 
         "name": "凍憐神の影聖壁"
+    }, 
+    "4371": {
+        "desc": "全てのユニットの防御力・最大ＨＰを５０％アップ＆全状態異常を無効＆ガード時のダメージ軽減率をアップ", 
+        "effects": [
+            {
+                "def% buff": 50, 
+                "hp% buff": 50, 
+                "passive id": "1"
+            }, 
+            {
+                "guard increase mitigation%": 10, 
+                "passive id": "58"
+            }, 
+            {
+                "curse resist%": 100, 
+                "injury resist%": 100, 
+                "paralysis resist%": 100, 
+                "passive id": "4", 
+                "poison resist%": 100, 
+                "sick resist%": 100, 
+                "weaken resist%": 100
+            }
+        ], 
+        "name": "瘴苛染神の葬殻"
+    }, 
+    "4372": {
+        "desc": "全てのユニットの防御力・最大ＨＰを６０％アップ＆全状態異常を無効＆ガード時のダメージ軽減率をアップ＆被ダメージが一定数を超える度に２ターン、被ダメージを少し軽減", 
+        "effects": [
+            {
+                "def% buff": 60, 
+                "hp% buff": 60, 
+                "passive id": "1"
+            }, 
+            {
+                "guard increase mitigation%": 10, 
+                "passive id": "58"
+            }, 
+            {
+                "curse resist%": 100, 
+                "injury resist%": 100, 
+                "paralysis resist%": 100, 
+                "passive id": "4", 
+                "poison resist%": 100, 
+                "sick resist%": 100, 
+                "weaken resist%": 100
+            }, 
+            {
+                "buff": {
+                    "buff turns (36)": "1", 
+                    "dmg reduction% buff": 20
+                }, 
+                "damage threshold buff activation": 5000, 
+                "passive id": "78"
+            }
+        ], 
+        "name": "咲苛爛神の聖殻"
     }, 
     "4400": {
         "desc": "ターン毎にＢＢゲージを少し増加＆全ての状態異常にかなりかかりにくくなる", 
@@ -15585,6 +15748,146 @@
             }
         ], 
         "name": "揮翔の極覇刃"
+    }, 
+    "7509": {
+        "desc": "全てのユニットの攻撃力・最大ＨＰを５０％アップ＆ＨＰが半分以上の時、攻撃力・防御力をアップ＆クリティカルダメージを大幅にアップ＆攻撃ＢＢの威力を超絶アップ", 
+        "effects": [
+            {
+                "atk% buff": 50, 
+                "hp% buff": 50, 
+                "passive id": "1"
+            }, 
+            {
+                "crit multiplier%": 150.0, 
+                "passive id": "34"
+            }, 
+            {
+                "atk% buff": 60, 
+                "def% buff": 60, 
+                "hp above % buff requirement": 50, 
+                "passive id": "11"
+            }, 
+            {
+                "bb atk% buff": 200, 
+                "passive id": "64", 
+                "sbb atk% buff": 200, 
+                "ubb atk% buff": 200
+            }
+        ], 
+        "name": "燼帝神の激煌"
+    }, 
+    "7510": {
+        "desc": "全てのユニットの攻撃力・最大ＨＰを６０％アップ＆ＨＰが半分以上の時、攻撃力・防御力をかなりアップ＆クリティカルダメージを大幅にアップ＆攻撃ＢＢの威力を超絶アップ", 
+        "effects": [
+            {
+                "atk% buff": 60, 
+                "hp% buff": 60, 
+                "passive id": "1"
+            }, 
+            {
+                "crit multiplier%": 175.0, 
+                "passive id": "34"
+            }, 
+            {
+                "atk% buff": 80, 
+                "def% buff": 80, 
+                "hp above % buff requirement": 50, 
+                "passive id": "11"
+            }, 
+            {
+                "bb atk% buff": 250, 
+                "passive id": "64", 
+                "sbb atk% buff": 250, 
+                "ubb atk% buff": 250
+            }
+        ], 
+        "name": "燼絶帝神の戟煌"
+    }, 
+    "7511": {
+        "desc": "全てのユニットの攻撃力・最大ＨＰを５０％アップ＆スパークダメージを１１０％アップ＆クリティカルダメージを大幅にアップ", 
+        "effects": [
+            {
+                "atk% buff": 50, 
+                "hp% buff": 50, 
+                "passive id": "1"
+            }, 
+            {
+                "damage% for spark": 110, 
+                "passive id": "31"
+            }, 
+            {
+                "crit multiplier%": 150.0, 
+                "passive id": "34"
+            }
+        ], 
+        "name": "荒神波の壊流"
+    }, 
+    "7512": {
+        "desc": "全てのユニットの攻撃力・最大ＨＰを６０％アップ＆スパークダメージを１３０％アップ＆クリティカルダメージを大幅にアップ＆確率で防御貫通効果を付与", 
+        "effects": [
+            {
+                "atk% buff": 60, 
+                "hp% buff": 60, 
+                "passive id": "1"
+            }, 
+            {
+                "damage% for spark": 130, 
+                "passive id": "31"
+            }, 
+            {
+                "crit multiplier%": 175.0, 
+                "passive id": "34"
+            }, 
+            {
+                "ignore def%": 30, 
+                "passive id": "29"
+            }
+        ], 
+        "name": "大荒神海の溟流"
+    }, 
+    "7513": {
+        "desc": "全てのユニットの攻撃力・最大ＨＰを３５％アップ＆スパークダメージを６０％アップ＆確率で防御貫通効果を付与", 
+        "effects": [
+            {
+                "atk% buff": 35, 
+                "hp% buff": 35, 
+                "passive id": "1"
+            }, 
+            {
+                "damage% for spark": 60, 
+                "passive id": "31"
+            }, 
+            {
+                "ignore def%": 20, 
+                "passive id": "29"
+            }
+        ], 
+        "name": "竜神の赤鱗"
+    }, 
+    "7514": {
+        "desc": "全てのユニットの攻撃力・最大ＨＰを４５％アップ＆攻撃に炎属性を付与＆スパークダメージを８０％アップ＆確率で防御貫通効果を付与", 
+        "effects": [
+            {
+                "atk% buff": 45, 
+                "hp% buff": 45, 
+                "passive id": "1"
+            }, 
+            {
+                "damage% for spark": 80, 
+                "passive id": "31"
+            }, 
+            {
+                "ignore def%": 20, 
+                "passive id": "29"
+            }, 
+            {
+                "elements added": [
+                    "fire"
+                ], 
+                "passive id": "102"
+            }
+        ], 
+        "name": "燼竜神の魔鱗"
     }, 
     "7600": {
         "desc": "水・光属性ユニットの攻撃力を５０％アップ", 
