@@ -15600,6 +15600,125 @@
         "name": "Soul of the Leviathan", 
         "target": "self"
     }, 
+    "820157": {
+        "desc": "50% Spark damage reduction", 
+        "effects": [
+            {
+                "conditions": [], 
+                "damage% for spark": 50, 
+                "passive id": "31", 
+                "passive target": "self"
+            }
+        ], 
+        "name": "G-Bunny Mk1 ES", 
+        "target": "self"
+    }, 
+    "820158": {
+        "desc": "25% boost to all parameters and hugely boosts Spark damage when Sparks have exceeded certain amount for next turn when Rainbow Carrot is equipped & 50% Spark damage reduction", 
+        "effects": [
+            {
+                "conditions": [], 
+                "damage% for spark": 50, 
+                "passive id": "31", 
+                "passive target": "self"
+            }, 
+            {
+                "atk% buff": 25, 
+                "conditions": [
+                    {
+                        "item required": [
+                            "819093"
+                        ]
+                    }
+                ], 
+                "def% buff": 25, 
+                "hp% buff": 25, 
+                "passive id": "1", 
+                "passive target": "self", 
+                "rec% buff": 25
+            }, 
+            {
+                "buff": {
+                    "buff turns (40)": "2", 
+                    "spark dmg% buff": 100
+                }, 
+                "conditions": [
+                    {
+                        "item required": [
+                            "819093"
+                        ]
+                    }
+                ], 
+                "passive id": "86", 
+                "passive target": "self", 
+                "spark count buff activation": 15
+            }
+        ], 
+        "name": "G-Bunny Mk2 ES", 
+        "target": "self"
+    }, 
+    "820167": {
+        "desc": "10% boost to all parameters of Water types & absorbs HP while attacking", 
+        "effects": [
+            {
+                "atk% buff": 10, 
+                "conditions": [], 
+                "def% buff": 10, 
+                "elements buffed": [
+                    "water"
+                ], 
+                "hp% buff": 10, 
+                "passive id": "2", 
+                "passive target": "party", 
+                "rec% buff": 10
+            }, 
+            {
+                "conditions": [], 
+                "hp drain chance%": 100, 
+                "hp drain% high": 8, 
+                "hp drain% low": 4, 
+                "passive id": "17", 
+                "passive target": "self"
+            }
+        ], 
+        "name": "Diabolically Shrewd", 
+        "target": "self"
+    }, 
+    "820168": {
+        "desc": "10% boost to all parameters of Water types, hugely boosts Atk relative to remaining HP & absorbs HP while attacking", 
+        "effects": [
+            {
+                "atk% buff": 10, 
+                "conditions": [], 
+                "def% buff": 10, 
+                "elements buffed": [
+                    "water"
+                ], 
+                "hp% buff": 10, 
+                "passive id": "2", 
+                "passive target": "party", 
+                "rec% buff": 10
+            }, 
+            {
+                "conditions": [], 
+                "hp drain chance%": 100, 
+                "hp drain% high": 10, 
+                "hp drain% low": 6, 
+                "passive id": "17", 
+                "passive target": "self"
+            }, 
+            {
+                "atk% base buff": 0, 
+                "atk% extra buff based on hp": 100, 
+                "buff proportional to hp": "remaining", 
+                "conditions": [], 
+                "passive id": "46", 
+                "passive target": "self"
+            }
+        ], 
+        "name": "Shrewdly Diabolical", 
+        "target": "self"
+    }, 
     "820177": {
         "desc": "Reduces damage taken for 2 turns when damage taken has exceeded certain amount, reduces BB gauge required for BB & adds Water element to BB/SBB for 3 turns", 
         "effects": [
@@ -17154,6 +17273,51 @@
             }
         ], 
         "name": "Sweet Disposition", 
+        "target": "self"
+    }, 
+    "850158": {
+        "desc": "Slightly boosts BC, HC efficacy & adds status ailment removal effect to BB/SBB", 
+        "effects": [
+            {
+                "conditions": [], 
+                "hc effectiveness%": 20, 
+                "passive id": "10", 
+                "passive target": "self"
+            }, 
+            {
+                "bb gauge fill rate%": 20, 
+                "conditions": [], 
+                "passive id": "32", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "passive id": "66", 
+                "passive target": "self", 
+                "trigger on bb": true, 
+                "trigger on sbb": true, 
+                "triggered effect": [
+                    {
+                        "ailments cured": [
+                            "poison", 
+                            "weaken", 
+                            "sick", 
+                            "injury", 
+                            "curse", 
+                            "paralysis", 
+                            "atk down", 
+                            "def down", 
+                            "rec down"
+                        ], 
+                        "effect delay time(ms)/frame": "0.0/0", 
+                        "proc id": "38", 
+                        "target area": "aoe", 
+                        "target type": "party"
+                    }
+                ]
+            }
+        ], 
+        "name": "Sharing is Caring", 
         "target": "self"
     }, 
     "850166": {

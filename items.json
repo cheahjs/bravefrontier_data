@@ -24055,6 +24055,134 @@
         "thumbnail": "item_thum_800404.png", 
         "type": "consumable"
     }, 
+    "800405": {
+        "desc": "A sweet concoction that shines with the unmistakeable hint of magic.", 
+        "id": 800405, 
+        "max_stack": 99, 
+        "name": "Magic Chocolate", 
+        "raid": false, 
+        "rarity": 3, 
+        "sell_price": 20, 
+        "thumbnail": "item_thum_800405.png", 
+        "type": "material"
+    }, 
+    "800406": {
+        "desc": "A tart candy that shines with the unmistakeable hint of magic.", 
+        "id": 800406, 
+        "max_stack": 99, 
+        "name": "Magic Candy Bits", 
+        "raid": false, 
+        "rarity": 3, 
+        "sell_price": 20, 
+        "thumbnail": "item_thum_800406.png", 
+        "type": "material"
+    }, 
+    "800407": {
+        "desc": "A special egg that glows with the unmistakeable hint of magic.", 
+        "id": 800407, 
+        "max_stack": 99, 
+        "name": "Cracked Egg", 
+        "raid": false, 
+        "rarity": 3, 
+        "sell_price": 20, 
+        "thumbnail": "item_thum_800407.png", 
+        "type": "material"
+    }, 
+    "800408": {
+        "desc": "A nutritious vegetable that contains concentrated amounts of magic.", 
+        "id": 800408, 
+        "max_stack": 99, 
+        "name": "Gaian Carrot", 
+        "raid": false, 
+        "rarity": 3, 
+        "sell_price": 20, 
+        "thumbnail": "item_thum_800408.png", 
+        "type": "material"
+    }, 
+    "800409": {
+        "desc": "The special component to making your very own mechanized bunny.", 
+        "id": 800409, 
+        "max_stack": 1, 
+        "name": "Bunny Core", 
+        "raid": false, 
+        "rarity": 3, 
+        "sell_price": 10000, 
+        "thumbnail": "item_thum_800409.png", 
+        "type": "evomat"
+    }, 
+    "800410": {
+        "desc": "Casts Thunder shield on all allies for 2 turns.", 
+        "effect": {
+            "effect": [
+                {
+                    "proc id": "10002", 
+                    "shield def": 900, 
+                    "shield element": "thunder", 
+                    "shield hp": 4000, 
+                    "shield turns (10002)": 2
+                }
+            ], 
+            "target_area": "aoe", 
+            "target_type": "party"
+        }, 
+        "id": 800410, 
+        "max equipped": 3, 
+        "max_stack": 99, 
+        "name": "Carrot Cake", 
+        "raid": false, 
+        "rarity": 3, 
+        "recipe": {
+            "karma": "0", 
+            "materials": [
+                {
+                    "count": 15, 
+                    "id": 800405
+                }, 
+                {
+                    "count": 5, 
+                    "id": 800408
+                }
+            ]
+        }, 
+        "sell_price": 200, 
+        "thumbnail": "item_thum_800410.png", 
+        "type": "consumable"
+    }, 
+    "800411": {
+        "desc": "Gives one ally the power to withstand an attack which would normally knock them out.", 
+        "effect": {
+            "effect": [
+                {
+                    "angel idol buff (12)": true, 
+                    "proc id": "7"
+                }
+            ], 
+            "target_area": "single", 
+            "target_type": "party"
+        }, 
+        "id": 800411, 
+        "max equipped": 3, 
+        "max_stack": 99, 
+        "name": "Mystical Eggs", 
+        "raid": false, 
+        "rarity": 3, 
+        "recipe": {
+            "karma": "0", 
+            "materials": [
+                {
+                    "count": 10, 
+                    "id": 800406
+                }, 
+                {
+                    "count": 10, 
+                    "id": 800407
+                }
+            ]
+        }, 
+        "sell_price": 200, 
+        "thumbnail": "item_thum_800411.png", 
+        "type": "consumable"
+    }, 
     "800501": {
         "desc": "A hardy stone that protects its bearer.", 
         "id": 800501, 
@@ -30424,6 +30552,212 @@
         "sphere type": 1, 
         "sphere type text": "Status Boost", 
         "thumbnail": "item_thum_401.png", 
+        "type": "sphere"
+    }, 
+    "819090": {
+        "desc": "Boosts drop rate of BC and HC when attacking & boosts Atk when BB gauge is full", 
+        "effect": [
+            {
+                "atk% buff": 75, 
+                "bb gauge above % buff requirement": 100, 
+                "passive id": "30"
+            }, 
+            {
+                "bc drop rate% buff": 10, 
+                "hc drop rate% buff": 10, 
+                "passive id": "19"
+            }
+        ], 
+        "id": 819090, 
+        "max_stack": 1, 
+        "name": "Colorful Oval", 
+        "raid": false, 
+        "rarity": 4, 
+        "recipe": {
+            "karma": "20000", 
+            "materials": [
+                {
+                    "count": 60, 
+                    "id": 800405
+                }, 
+                {
+                    "count": 40, 
+                    "id": 800406
+                }, 
+                {
+                    "count": 40, 
+                    "id": 800407
+                }
+            ]
+        }, 
+        "sell_price": 10000, 
+        "sphere type": 6, 
+        "sphere type text": "BB Gauge", 
+        "thumbnail": "sphere_thum_819090.png", 
+        "type": "sphere"
+    }, 
+    "819091": {
+        "desc": "Boosts BB gauge each turn, boosts drop rate of BC and HC when attacking & hugely boosts Atk when BB gauge is full", 
+        "effect": [
+            {
+                "atk% buff": 125, 
+                "bb gauge above % buff requirement": 100, 
+                "passive id": "30"
+            }, 
+            {
+                "bc drop rate% buff": 15, 
+                "hc drop rate% buff": 15, 
+                "passive id": "19"
+            }, 
+            {
+                "bc fill per turn": 2, 
+                "passive id": "9"
+            }
+        ], 
+        "id": 819091, 
+        "max_stack": 1, 
+        "name": "Patterned Egg", 
+        "raid": false, 
+        "rarity": 5, 
+        "recipe": {
+            "karma": "50000", 
+            "materials": [
+                {
+                    "count": 1, 
+                    "id": 819090
+                }, 
+                {
+                    "count": 80, 
+                    "id": 800405
+                }, 
+                {
+                    "count": 50, 
+                    "id": 800406
+                }, 
+                {
+                    "count": 50, 
+                    "id": 800407
+                }, 
+                {
+                    "count": 20, 
+                    "id": 800408
+                }
+            ]
+        }, 
+        "sell_price": 25000, 
+        "sphere type": 6, 
+        "sphere type text": "BB Gauge", 
+        "thumbnail": "sphere_thum_819091.png", 
+        "type": "sphere"
+    }, 
+    "819092": {
+        "desc": "Greatly boosts BB gauge each turn, boosts drop rate of BC and HC when attacking, enormously boosts Atk when BB gauge is full & boosts OD gauge fill rate", 
+        "effect": [
+            {
+                "atk% buff": 200, 
+                "bb gauge above % buff requirement": 100, 
+                "passive id": "30"
+            }, 
+            {
+                "bc drop rate% buff": 20, 
+                "hc drop rate% buff": 20, 
+                "passive id": "19"
+            }, 
+            {
+                "bc fill per turn": 5, 
+                "passive id": "9"
+            }, 
+            {
+                "od fill rate%": 30, 
+                "passive id": "70"
+            }
+        ], 
+        "id": 819092, 
+        "max_stack": 1, 
+        "name": "Dyed Masterpiece", 
+        "raid": false, 
+        "rarity": 6, 
+        "recipe": {
+            "karma": "100000", 
+            "materials": [
+                {
+                    "count": 1, 
+                    "id": 819091
+                }, 
+                {
+                    "count": 99, 
+                    "id": 800405
+                }, 
+                {
+                    "count": 80, 
+                    "id": 800406
+                }, 
+                {
+                    "count": 80, 
+                    "id": 800407
+                }, 
+                {
+                    "count": 40, 
+                    "id": 800408
+                }
+            ]
+        }, 
+        "sell_price": 30000, 
+        "sphere type": 6, 
+        "sphere type text": "BB Gauge", 
+        "thumbnail": "sphere_thum_819092.png", 
+        "type": "sphere"
+    }, 
+    "819093": {
+        "desc": "20% boost to all parameters, 50% boost to Spark damage & boosts Water elemental damage", 
+        "effect": [
+            {
+                "atk% buff": 20, 
+                "def% buff": 20, 
+                "hp% buff": 20, 
+                "passive id": "1", 
+                "rec% buff": 20
+            }, 
+            {
+                "damage% for spark": 50, 
+                "passive id": "31"
+            }, 
+            {
+                "elemental weakness multiplier%": 50.0, 
+                "passive id": "50", 
+                "water units do extra elemental weakness dmg": true
+            }
+        ], 
+        "id": 819093, 
+        "max_stack": 1, 
+        "name": "Rainbow Carrot", 
+        "raid": false, 
+        "rarity": 4, 
+        "recipe": {
+            "karma": "100000", 
+            "materials": [
+                {
+                    "count": 70, 
+                    "id": 800405
+                }, 
+                {
+                    "count": 20, 
+                    "id": 800406
+                }, 
+                {
+                    "count": 20, 
+                    "id": 800407
+                }, 
+                {
+                    "count": 99, 
+                    "id": 800408
+                }
+            ]
+        }, 
+        "sell_price": 25000, 
+        "sphere type": 1, 
+        "sphere type text": "Status Boost", 
+        "thumbnail": "sphere_thum_819093.png", 
         "type": "sphere"
     }, 
     "819901": {
