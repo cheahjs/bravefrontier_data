@@ -8572,6 +8572,310 @@
             }
         ]
     }, 
+    "40537": {
+        "category": {
+            "1": {
+                "name": "ステアップ系"
+            }, 
+            "10": {
+                "name": "ダメージ軽減系"
+            }, 
+            "11": {
+                "name": "特殊"
+            }, 
+            "5": {
+                "name": "ＢＢゲージ系"
+            }
+        }, 
+        "skills": [
+            {
+                "category": "1", 
+                "dependency": "", 
+                "dependency comment": "", 
+                "id": "620001", 
+                "skill": {
+                    "bp": 20, 
+                    "desc": "30% boost to Def, max HP", 
+                    "effects": [
+                        {
+                            "passive": {
+                                "def% buff": 30, 
+                                "hp% buff": 30, 
+                                "passive id": "1"
+                            }
+                        }
+                    ], 
+                    "id": "620001", 
+                    "level": 1, 
+                    "name": "30% boost to Def, max HP", 
+                    "series": ""
+                }
+            }, 
+            {
+                "category": "1", 
+                "dependency": "", 
+                "dependency comment": "", 
+                "id": "271001", 
+                "skill": {
+                    "bp": 10, 
+                    "desc": "Boosts Def when HP is full", 
+                    "effects": [
+                        {
+                            "passive": {
+                                "def% buff": 50, 
+                                "hp above % buff requirement": 100, 
+                                "passive id": "11"
+                            }
+                        }
+                    ], 
+                    "id": "271001", 
+                    "level": 1, 
+                    "name": "Boosts Def when HP is full", 
+                    "series": ""
+                }
+            }, 
+            {
+                "category": "5", 
+                "dependency": "", 
+                "dependency comment": "", 
+                "id": "4110001", 
+                "skill": {
+                    "bp": 10, 
+                    "desc": "Damage taken boosts BB gauge", 
+                    "effects": [
+                        {
+                            "passive": {
+                                "bc fill when attacked high": 3, 
+                                "bc fill when attacked low": 2, 
+                                "bc fill when attacked%": 100, 
+                                "passive id": "25"
+                            }
+                        }
+                    ], 
+                    "id": "4110001", 
+                    "level": 2, 
+                    "name": "Damage taken boosts BB gauge", 
+                    "series": ""
+                }
+            }, 
+            {
+                "category": "10", 
+                "dependency": "", 
+                "dependency comment": "", 
+                "id": "9300001", 
+                "skill": {
+                    "bp": 20, 
+                    "desc": "Negates elemental damage", 
+                    "effects": [
+                        {
+                            "passive": {
+                                "passive id": "53", 
+                                "strong base element damage resist%": 100, 
+                                "strong buffed element damage resist%": 100
+                            }
+                        }
+                    ], 
+                    "id": "9300001", 
+                    "level": 4, 
+                    "name": "Negates elemental damage", 
+                    "series": ""
+                }
+            }, 
+            {
+                "category": "11", 
+                "dependency": "", 
+                "dependency comment": "", 
+                "id": "20003000", 
+                "skill": {
+                    "bp": 10, 
+                    "desc": "Enhances LS's Def, max HP boost from 50% to 65%", 
+                    "effects": [
+                        {
+                            "add to passive": {
+                                "def% buff": 15, 
+                                "hp% buff": 15, 
+                                "passive id": "1"
+                            }
+                        }
+                    ], 
+                    "id": "20003000", 
+                    "level": 1, 
+                    "name": "Enhances LS's 50% boost to Def, max HP effect", 
+                    "series": ""
+                }
+            }, 
+            {
+                "category": "11", 
+                "dependency": "", 
+                "dependency comment": "", 
+                "id": "30008000", 
+                "skill": {
+                    "bp": 20, 
+                    "desc": "Enhances BB/SBB's huge Def boost effect", 
+                    "effects": [
+                        {
+                            "add to bb": {
+                                "buff turns": 0, 
+                                "def% buff (3)": 10, 
+                                "element buffed": "all", 
+                                "proc id": "5"
+                            }
+                        }, 
+                        {
+                            "add to sbb": {
+                                "buff turns": 0, 
+                                "def% buff (3)": 10, 
+                                "element buffed": "all", 
+                                "proc id": "5"
+                            }
+                        }
+                    ], 
+                    "id": "30008000", 
+                    "level": 2, 
+                    "name": "Enhances BB/SBB's Def boost effect", 
+                    "series": ""
+                }
+            }, 
+            {
+                "category": "11", 
+                "dependency": "", 
+                "dependency comment": "", 
+                "id": "55000005", 
+                "skill": {
+                    "bp": 40, 
+                    "desc": "Adds great HP restoration effect to BB/SBB", 
+                    "effects": [
+                        {
+                            "passive": {
+                                "passive id": "66", 
+                                "trigger on bb": true, 
+                                "trigger on sbb": true, 
+                                "triggered effect": [
+                                    {
+                                        "effect delay time(ms)/frame": "0.0/0", 
+                                        "heal high": 3500, 
+                                        "heal low": 2500, 
+                                        "proc id": "2", 
+                                        "rec added% (from healer)": 11.0, 
+                                        "target area": "aoe", 
+                                        "target type": "party"
+                                    }
+                                ]
+                            }
+                        }
+                    ], 
+                    "id": "55000005", 
+                    "level": 5, 
+                    "name": "Adds great HP restoration effect to BB/SBB", 
+                    "series": ""
+                }
+            }, 
+            {
+                "category": "11", 
+                "dependency": "", 
+                "dependency comment": "", 
+                "id": "59002002", 
+                "skill": {
+                    "bp": 40, 
+                    "desc": "Adds elemental damage negation for 1 turn effect to BB/SBB", 
+                    "effects": [
+                        {
+                            "passive": {
+                                "passive id": "66", 
+                                "trigger on bb": true, 
+                                "trigger on sbb": true, 
+                                "triggered effect": [
+                                    {
+                                        "dmg resist turns": 1, 
+                                        "effect delay time(ms)/frame": "0.0/0", 
+                                        "proc id": "93", 
+                                        "strong base element damage resist% (144)": 100, 
+                                        "strong buffed element damage resist% (144)": 100, 
+                                        "target area": "aoe", 
+                                        "target type": "party"
+                                    }
+                                ]
+                            }
+                        }
+                    ], 
+                    "id": "59002002", 
+                    "level": 6, 
+                    "name": "Adds elemental damage negation effect to BB/SBB", 
+                    "series": ""
+                }
+            }, 
+            {
+                "category": "11", 
+                "dependency": "", 
+                "dependency comment": "", 
+                "id": "57001002", 
+                "skill": {
+                    "bp": 40, 
+                    "desc": "Adds 1 turn Atk, Def, Rec reducing effects negation to BB/SBB", 
+                    "effects": [
+                        {
+                            "passive": {
+                                "passive id": "66", 
+                                "trigger on bb": true, 
+                                "trigger on sbb": true, 
+                                "triggered effect": [
+                                    {
+                                        "atk down resist% (120)": 100, 
+                                        "def down resist% (121)": 100, 
+                                        "effect delay time(ms)/frame": "0.0/0", 
+                                        "proc id": "73", 
+                                        "rec down resist% (122)": 100, 
+                                        "stat down immunity buff turns": 1, 
+                                        "target area": "aoe", 
+                                        "target type": "party"
+                                    }
+                                ]
+                            }
+                        }
+                    ], 
+                    "id": "57001002", 
+                    "level": 5, 
+                    "name": "Adds Atk, Def, Rec reducing effects negation to BB/SBB", 
+                    "series": ""
+                }
+            }, 
+            {
+                "category": "11", 
+                "dependency": "", 
+                "dependency comment": "", 
+                "id": "60030000", 
+                "skill": {
+                    "bp": 50, 
+                    "desc": "Adds Thunder barrier effect to BB/SBB", 
+                    "effects": [
+                        {
+                            "passive": {
+                                "passive id": "66", 
+                                "trigger on bb": true, 
+                                "trigger on sbb": true, 
+                                "triggered effect": [
+                                    {
+                                        "effect delay time(ms)/frame": "0.0/0", 
+                                        "elemental barrier absorb dmg%": 100, 
+                                        "elemental barrier def": 0, 
+                                        "elemental barrier element": "thunder", 
+                                        "elemental barrier hp": 2500, 
+                                        "proc id": "62", 
+                                        "target area": "aoe", 
+                                        "target type": "party"
+                                    }
+                                ]
+                            }
+                        }
+                    ], 
+                    "id": "60030000", 
+                    "level": 5, 
+                    "name": "Adds Thunder barrier effect to BB/SBB", 
+                    "series": ""
+                }
+            }
+        ]
+    }, 
     "40577": {
         "category": {
             "1": {
@@ -16070,6 +16374,328 @@
             }
         ]
     }, 
+    "710217": {
+        "category": {
+            "1": {
+                "name": ""
+            }, 
+            "11": {
+                "name": ""
+            }
+        }, 
+        "skills": [
+            {
+                "category": "1", 
+                "dependency": "", 
+                "dependency comment": "", 
+                "id": "70151", 
+                "skill": {
+                    "bp": 10, 
+                    "desc": "Boosts ATK (50%)", 
+                    "effects": [
+                        {
+                            "passive": {
+                                "atk% buff": 50, 
+                                "passive id": "1"
+                            }
+                        }
+                    ], 
+                    "id": "70151", 
+                    "level": 1, 
+                    "name": "Boosts ATK (50%)", 
+                    "series": ""
+                }
+            }, 
+            {
+                "category": "1", 
+                "dependency": "", 
+                "dependency comment": "", 
+                "id": "70152", 
+                "skill": {
+                    "bp": 10, 
+                    "desc": "Boosts HP (30%)", 
+                    "effects": [
+                        {
+                            "passive": {
+                                "hp% buff": 30, 
+                                "passive id": "1"
+                            }
+                        }
+                    ], 
+                    "id": "70152", 
+                    "level": 1, 
+                    "name": "Boosts HP (30%)", 
+                    "series": ""
+                }
+            }, 
+            {
+                "category": "11", 
+                "dependency": "", 
+                "dependency comment": "", 
+                "id": "70153", 
+                "skill": {
+                    "bp": 20, 
+                    "desc": "Adds probable Spark critical for 3 turns effect to SBB", 
+                    "effects": [
+                        {
+                            "passive": {
+                                "passive id": "66", 
+                                "trigger on sbb": true, 
+                                "triggered effect": [
+                                    {
+                                        "effect delay time(ms)/frame": "0.0/0", 
+                                        "proc id": "83", 
+                                        "spark dmg inc buff turns (131)": 3, 
+                                        "spark dmg inc chance%": 20, 
+                                        "spark dmg inc% buff": 50, 
+                                        "target area": "aoe", 
+                                        "target type": "party"
+                                    }
+                                ]
+                            }
+                        }
+                    ], 
+                    "id": "70153", 
+                    "level": 1, 
+                    "name": "Adds probable Spark critical for 3 turns effect to SBB", 
+                    "series": ""
+                }
+            }, 
+            {
+                "category": "11", 
+                "dependency": "", 
+                "dependency comment": "", 
+                "id": "70154", 
+                "skill": {
+                    "bp": 20, 
+                    "desc": "Adds probable Spark vulnerability infliction for 2 turns effect to SBB", 
+                    "effects": [
+                        {
+                            "passive": {
+                                "passive id": "66", 
+                                "trigger on sbb": true, 
+                                "triggered effect": [
+                                    {
+                                        "effect delay time(ms)/frame": "0.0/0", 
+                                        "proc id": "58", 
+                                        "spark dmg received apply%": 25, 
+                                        "spark dmg received debuff turns (94)": 2, 
+                                        "spark dmg% received": 25, 
+                                        "target area": "aoe", 
+                                        "target type": "enemy"
+                                    }
+                                ]
+                            }
+                        }
+                    ], 
+                    "id": "70154", 
+                    "level": 1, 
+                    "name": "Adds probable Spark vulnerability infliction for 2 turns effect to SBB", 
+                    "series": ""
+                }
+            }, 
+            {
+                "category": "11", 
+                "dependency": "", 
+                "dependency comment": "", 
+                "id": "70155", 
+                "skill": {
+                    "bp": 20, 
+                    "desc": "Adds boost ATK and Spark damage (50%, self) for 3 turns to SBB", 
+                    "effects": [
+                        {
+                            "passive": {
+                                "passive id": "66", 
+                                "trigger on sbb": true, 
+                                "triggered effect": [
+                                    {
+                                        "effect delay time(ms)/frame": "0.0/0", 
+                                        "proc id": "78", 
+                                        "self atk% buff": 50, 
+                                        "self stat buff turns": 3, 
+                                        "target area": "single", 
+                                        "target type": "self"
+                                    }
+                                ]
+                            }
+                        }, 
+                        {
+                            "passive": {
+                                "passive id": "66", 
+                                "trigger on sbb": true, 
+                                "triggered effect": [
+                                    {
+                                        "effect delay time(ms)/frame": "0.0/0", 
+                                        "proc id": "88", 
+                                        "spark dmg inc%": 50, 
+                                        "spark dmg inc% turns (136)": 3, 
+                                        "target area": "single", 
+                                        "target type": "self"
+                                    }
+                                ]
+                            }
+                        }
+                    ], 
+                    "id": "70155", 
+                    "level": 1, 
+                    "name": "Adds boost ATK and Spark damage (50%, self) for 3 turns to SBB", 
+                    "series": ""
+                }
+            }, 
+            {
+                "category": "11", 
+                "dependency": "", 
+                "dependency comment": "", 
+                "id": "70156", 
+                "skill": {
+                    "bp": 30, 
+                    "desc": "Adds boost ATK (170%) for 3 turns to BB/SBB", 
+                    "effects": [
+                        {
+                            "passive": {
+                                "passive id": "66", 
+                                "trigger on bb": true, 
+                                "trigger on sbb": true, 
+                                "triggered effect": [
+                                    {
+                                        "atk% buff (1)": 170, 
+                                        "buff turns": 3, 
+                                        "effect delay time(ms)/frame": "0.0/0", 
+                                        "element buffed": "all", 
+                                        "proc id": "5", 
+                                        "target area": "aoe", 
+                                        "target type": "party"
+                                    }
+                                ]
+                            }
+                        }
+                    ], 
+                    "id": "70156", 
+                    "level": 1, 
+                    "name": "Adds boost ATK (170%) for 3 turns to BB/SBB", 
+                    "series": ""
+                }
+            }, 
+            {
+                "category": "11", 
+                "dependency": "", 
+                "dependency comment": "", 
+                "id": "70157", 
+                "skill": {
+                    "bp": 20, 
+                    "desc": "Enhances BB/SBB's Spark damage boost effect (+40%)", 
+                    "effects": [
+                        {
+                            "add to sbb": {
+                                "buff turns": 0, 
+                                "proc id": "23", 
+                                "spark dmg% buff (40)": 40
+                            }
+                        }
+                    ], 
+                    "id": "70157", 
+                    "level": 1, 
+                    "name": "Enhances BB/SBB's Spark damage boost effect (+40%)", 
+                    "series": ""
+                }
+            }, 
+            {
+                "category": "11", 
+                "dependency": "", 
+                "dependency comment": "", 
+                "id": "70158", 
+                "skill": {
+                    "bp": 30, 
+                    "desc": "Adds fill own BB gauge to max to SBB", 
+                    "effects": [
+                        {
+                            "passive": {
+                                "passive id": "66", 
+                                "trigger on sbb": true, 
+                                "triggered effect": [
+                                    {
+                                        "bb bc fill%": 100, 
+                                        "effect delay time(ms)/frame": "0.0/0", 
+                                        "proc id": "4", 
+                                        "target area": "single", 
+                                        "target type": "self"
+                                    }
+                                ]
+                            }
+                        }
+                    ], 
+                    "id": "70158", 
+                    "level": 1, 
+                    "name": "Adds fill own BB gauge to max to SBB", 
+                    "series": ""
+                }
+            }, 
+            {
+                "category": "11", 
+                "dependency": "", 
+                "dependency comment": "", 
+                "id": "70159", 
+                "skill": {
+                    "bp": 40, 
+                    "desc": "Adds chance to cast double BB/SBB/UBB (20%) for 3 turns to BB/SBB", 
+                    "effects": [
+                        {
+                            "passive": {
+                                "passive id": "66", 
+                                "trigger on bb": true, 
+                                "trigger on sbb": true, 
+                                "triggered effect": [
+                                    {
+                                        "effect delay time(ms)/frame": "0.0/0", 
+                                        "target area": "aoe", 
+                                        "target type": "party", 
+                                        "unknown proc id": "70002", 
+                                        "unknown proc param": "0.20,3,0,0,0,0,0,0,0"
+                                    }
+                                ]
+                            }
+                        }
+                    ], 
+                    "id": "70159", 
+                    "level": 1, 
+                    "name": "Adds chance to cast double BB/SBB/UBB (20%) for 3 turns to BB/SBB", 
+                    "series": ""
+                }
+            }, 
+            {
+                "category": "11", 
+                "dependency": "", 
+                "dependency comment": "", 
+                "id": "70160", 
+                "skill": {
+                    "bp": 40, 
+                    "desc": "Adds OD fill rate (300%) for 3 turns to UBB", 
+                    "effects": [
+                        {
+                            "passive": {
+                                "passive id": "66", 
+                                "trigger on ubb": true, 
+                                "triggered effect": [
+                                    {
+                                        "effect delay time(ms)/frame": "0.0/0", 
+                                        "od fill rate buff turns (132)": 3, 
+                                        "od fill rate% buff": 300, 
+                                        "proc id": "84", 
+                                        "target area": "aoe", 
+                                        "target type": "party"
+                                    }
+                                ]
+                            }
+                        }
+                    ], 
+                    "id": "70160", 
+                    "level": 1, 
+                    "name": "Adds OD fill rate (300%) for 3 turns to UBB", 
+                    "series": ""
+                }
+            }
+        ]
+    }, 
     "720107": {
         "category": {
             "1": {
@@ -19600,6 +20226,302 @@
                     "id": "70080", 
                     "level": 1, 
                     "name": "Adds elemental damage boost (75%) for 3 turns effect to SBB", 
+                    "series": ""
+                }
+            }
+        ]
+    }, 
+    "750237": {
+        "category": {
+            "1": {
+                "name": ""
+            }, 
+            "11": {
+                "name": ""
+            }, 
+            "4": {
+                "name": ""
+            }
+        }, 
+        "skills": [
+            {
+                "category": "1", 
+                "dependency": "", 
+                "dependency comment": "", 
+                "id": "70161", 
+                "skill": {
+                    "bp": 10, 
+                    "desc": "Boosts ATK (50%)", 
+                    "effects": [
+                        {
+                            "passive": {
+                                "atk% buff": 50, 
+                                "passive id": "1"
+                            }
+                        }
+                    ], 
+                    "id": "70161", 
+                    "level": 1, 
+                    "name": "Boosts ATK (50%)", 
+                    "series": ""
+                }
+            }, 
+            {
+                "category": "1", 
+                "dependency": "", 
+                "dependency comment": "", 
+                "id": "70162", 
+                "skill": {
+                    "bp": 10, 
+                    "desc": "Boosts ATK when BB gauge is full (50%)", 
+                    "effects": [
+                        {
+                            "passive": {
+                                "atk% buff": 50, 
+                                "bb gauge above % buff requirement": 100, 
+                                "passive id": "30"
+                            }
+                        }
+                    ], 
+                    "id": "70162", 
+                    "level": 1, 
+                    "name": "Boosts ATK when BB gauge is full (50%)", 
+                    "series": ""
+                }
+            }, 
+            {
+                "category": "4", 
+                "dependency": "", 
+                "dependency comment": "", 
+                "id": "70163", 
+                "skill": {
+                    "bp": 20, 
+                    "desc": "Raises normal hit count (+1)", 
+                    "effects": [
+                        {
+                            "passive": {
+                                "hit increase/hit": 1, 
+                                "passive id": "37"
+                            }
+                        }
+                    ], 
+                    "id": "70163", 
+                    "level": 1, 
+                    "name": "Raises normal hit count (+1)", 
+                    "series": ""
+                }
+            }, 
+            {
+                "category": "4", 
+                "dependency": "", 
+                "dependency comment": "", 
+                "id": "70164", 
+                "skill": {
+                    "bp": 20, 
+                    "desc": "Normal attack may hit all foes (20% chance 50% damage)", 
+                    "effects": [
+                        {
+                            "passive": {
+                                "aoe atk inc%": -50, 
+                                "chance to aoe": 20, 
+                                "passive id": "96"
+                            }
+                        }
+                    ], 
+                    "id": "70164", 
+                    "level": 1, 
+                    "name": "Normal attack may hit all foes (20% chance 50% damage)", 
+                    "series": ""
+                }
+            }, 
+            {
+                "category": "11", 
+                "dependency": "", 
+                "dependency comment": "", 
+                "id": "70165", 
+                "skill": {
+                    "bp": 10, 
+                    "desc": "Adds boost REC (170%) for 3 turns to SBB", 
+                    "effects": [
+                        {
+                            "passive": {
+                                "passive id": "66", 
+                                "trigger on sbb": true, 
+                                "triggered effect": [
+                                    {
+                                        "buff turns": 3, 
+                                        "effect delay time(ms)/frame": "0.0/0", 
+                                        "element buffed": "all", 
+                                        "proc id": "5", 
+                                        "rec% buff (5)": 170, 
+                                        "target area": "aoe", 
+                                        "target type": "party"
+                                    }
+                                ]
+                            }
+                        }
+                    ], 
+                    "id": "70165", 
+                    "level": 1, 
+                    "name": "Adds boost REC (170%) for 3 turns to SBB", 
+                    "series": ""
+                }
+            }, 
+            {
+                "category": "11", 
+                "dependency": "", 
+                "dependency comment": "", 
+                "id": "70166", 
+                "skill": {
+                    "bp": 30, 
+                    "desc": "Enhances BB/SBB's elemental damage boost for Water and Light units effect (+25%)", 
+                    "effects": [
+                        {
+                            "passive": {
+                                "passive id": "66", 
+                                "trigger on bb": true, 
+                                "trigger on sbb": true, 
+                                "triggered effect": [
+                                    {
+                                        "effect delay time(ms)/frame": "33.3/2", 
+                                        "elemental weakness buff turns": 3, 
+                                        "elemental weakness multiplier%": 150.0, 
+                                        "light units do extra elemental weakness dmg": true, 
+                                        "proc id": "55", 
+                                        "target area": "aoe", 
+                                        "target type": "party", 
+                                        "water units do extra elemental weakness dmg": true
+                                    }
+                                ]
+                            }
+                        }
+                    ], 
+                    "id": "70166", 
+                    "level": 1, 
+                    "name": "Enhances BB/SBB's elemental damage boost for Water and Light units effect (+25%)", 
+                    "series": ""
+                }
+            }, 
+            {
+                "category": "11", 
+                "dependency": "", 
+                "dependency comment": "", 
+                "id": "70167", 
+                "skill": {
+                    "bp": 30, 
+                    "desc": "Adds normal attacks hit all foes for 3 turns to BB/SBB", 
+                    "effects": [
+                        {
+                            "passive": {
+                                "passive id": "66", 
+                                "trigger on bb": true, 
+                                "trigger on sbb": true, 
+                                "triggered effect": [
+                                    {
+                                        "aoe atk inc%": 0, 
+                                        "chance to aoe": 100, 
+                                        "effect delay time(ms)/frame": "33.3/2", 
+                                        "proc id": "94", 
+                                        "target area": "aoe", 
+                                        "target type": "party"
+                                    }
+                                ]
+                            }
+                        }
+                    ], 
+                    "id": "70167", 
+                    "level": 1, 
+                    "name": "Adds normal attacks hit all foes for 3 turns to BB/SBB", 
+                    "series": ""
+                }
+            }, 
+            {
+                "category": "11", 
+                "dependency": "", 
+                "dependency comment": "", 
+                "id": "70168", 
+                "skill": {
+                    "bp": 40, 
+                    "desc": "Allows UBB's chance to execute 1 more action in the same turn to last 2 turns", 
+                    "effects": [
+                        {
+                            "add to ubb": {
+                                "chance% for extra action": 0, 
+                                "extra action buff turns (123)": 1, 
+                                "max number of extra actions": 0, 
+                                "proc id": "76"
+                            }
+                        }
+                    ], 
+                    "id": "70168", 
+                    "level": 1, 
+                    "name": "Allows UBB's chance to execute 1 more action in the same turn to last 2 turns", 
+                    "series": ""
+                }
+            }, 
+            {
+                "category": "11", 
+                "dependency": "", 
+                "dependency comment": "", 
+                "id": "70169", 
+                "skill": {
+                    "bp": 40, 
+                    "desc": "Adds chance to execute 1 more action in the same turn for 1 turn (5%) to SBB", 
+                    "effects": [
+                        {
+                            "passive": {
+                                "passive id": "66", 
+                                "trigger on sbb": true, 
+                                "triggered effect": [
+                                    {
+                                        "chance% for extra action": 5, 
+                                        "effect delay time(ms)/frame": "0.0/0", 
+                                        "extra action buff turns (123)": 1, 
+                                        "max number of extra actions": 1, 
+                                        "proc id": "76", 
+                                        "target area": "aoe", 
+                                        "target type": "party"
+                                    }
+                                ]
+                            }
+                        }
+                    ], 
+                    "id": "70169", 
+                    "level": 1, 
+                    "name": "Adds chance to execute 1 more action in the same turn for 1 turn (5%) to SBB", 
+                    "series": ""
+                }
+            }, 
+            {
+                "category": "11", 
+                "dependency": "1@70169", 
+                "dependency comment": "", 
+                "id": "70170", 
+                "skill": {
+                    "bp": 20, 
+                    "desc": "Enhances SBB's chance to execute 1 more action in the same turn (+5%)", 
+                    "effects": [
+                        {
+                            "passive": {
+                                "passive id": "66", 
+                                "trigger on sbb": true, 
+                                "triggered effect": [
+                                    {
+                                        "chance% for extra action": 10, 
+                                        "effect delay time(ms)/frame": "33.3/2", 
+                                        "extra action buff turns (123)": 1, 
+                                        "max number of extra actions": 1, 
+                                        "proc id": "76", 
+                                        "target area": "aoe", 
+                                        "target type": "party"
+                                    }
+                                ]
+                            }
+                        }
+                    ], 
+                    "id": "70170", 
+                    "level": 1, 
+                    "name": "Enhances SBB's chance to execute 1 more action in the same turn (+5%)", 
                     "series": ""
                 }
             }

@@ -5743,7 +5743,13 @@
         "effects": [
             {
                 "atk% buff": 20, 
-                "conditions": [], 
+                "conditions": [
+                    {
+                        "item required": [
+                            "49200"
+                        ]
+                    }
+                ], 
                 "def% buff": 20, 
                 "hp% buff": 20, 
                 "passive id": "1", 
@@ -5759,7 +5765,13 @@
         "effects": [
             {
                 "atk% buff": 30, 
-                "conditions": [], 
+                "conditions": [
+                    {
+                        "item required": [
+                            "49200"
+                        ]
+                    }
+                ], 
                 "def% buff": 30, 
                 "hp% buff": 30, 
                 "passive id": "1", 
@@ -8171,6 +8183,43 @@
         "name": "Godsent Friendship", 
         "target": "self"
     }, 
+    "26800": {
+        "desc": "Adds damage taken considerably boosts BB gauge for 3 turns effect to BB/SBB & negates all status ailments", 
+        "effects": [
+            {
+                "conditions": [], 
+                "curse resist%": 100, 
+                "injury resist%": 100, 
+                "paralysis resist%": 100, 
+                "passive id": "4", 
+                "passive target": "self", 
+                "poison resist%": 100, 
+                "sick resist%": 100, 
+                "weaken resist%": 100
+            }, 
+            {
+                "conditions": [], 
+                "passive id": "66", 
+                "passive target": "self", 
+                "trigger on bb": true, 
+                "trigger on sbb": true, 
+                "triggered effect": [
+                    {
+                        "bc fill when attacked high": 7, 
+                        "bc fill when attacked low": 4, 
+                        "bc fill when attacked turns (38)": 3, 
+                        "bc fill when attacked%": 100, 
+                        "effect delay time(ms)/frame": "0.0/0", 
+                        "proc id": "20", 
+                        "target area": "aoe", 
+                        "target type": "party"
+                    }
+                ]
+            }
+        ], 
+        "name": "Flawless Creation", 
+        "target": "self"
+    }, 
     "26900": {
         "desc": "Damage taken slightly boosts BB gauge and may restore HP", 
         "effects": [
@@ -9980,6 +10029,52 @@
             }
         ], 
         "name": "Scion of the Flame", 
+        "target": "self"
+    }, 
+    "710216": {
+        "desc": "Boosts ATK (80%) when Sparks exceed certain amount (15)", 
+        "effects": [
+            {
+                "buff": {
+                    "atk% buff (1)": 80, 
+                    "buff turns (1)": "2"
+                }, 
+                "conditions": [], 
+                "passive id": "86", 
+                "passive target": "self", 
+                "spark count buff activation": 15
+            }
+        ], 
+        "name": "Fangs Proficiency", 
+        "target": "self"
+    }, 
+    "710217": {
+        "desc": "Boosts ATK (80%) when Sparks exceed certain amount (15) & when Deathbringer Bandana is equipped, boosts Spark damage (20%, all)", 
+        "effects": [
+            {
+                "buff": {
+                    "atk% buff (1)": 80, 
+                    "buff turns (1)": "2"
+                }, 
+                "conditions": [], 
+                "passive id": "86", 
+                "passive target": "self", 
+                "spark count buff activation": 15
+            }, 
+            {
+                "conditions": [
+                    {
+                        "item required": [
+                            "701035"
+                        ]
+                    }
+                ], 
+                "damage% for spark": 20, 
+                "passive id": "31", 
+                "passive target": "party"
+            }
+        ], 
+        "name": "Rocket Fangs Mastery", 
         "target": "self"
     }, 
     "7200": {
@@ -12267,6 +12362,71 @@
         "name": "Dedicated Companion", 
         "target": "self"
     }, 
+    "750237": {
+        "desc": "When Blink's Glasses is equipped, boosts all parameters (20%) and adds reduce Thunder and Dark damage (15%) for 1 turn and raise normal hit amount (+2) for 3 turns to BB/SBB", 
+        "effects": [
+            {
+                "atk% buff": 20, 
+                "conditions": [
+                    {
+                        "item required": [
+                            "700018"
+                        ]
+                    }
+                ], 
+                "def% buff": 20, 
+                "hp% buff": 20, 
+                "passive id": "1", 
+                "passive target": "self", 
+                "rec% buff": 20
+            }, 
+            {
+                "conditions": [], 
+                "passive id": "66", 
+                "passive target": "self", 
+                "trigger on bb": true, 
+                "trigger on sbb": true, 
+                "triggered effect": [
+                    {
+                        "dmg% mitigation for elemental attacks": 15, 
+                        "dmg% mitigation for elemental attacks buff turns": 1, 
+                        "effect delay time(ms)/frame": "0.0/0", 
+                        "mitigate dark attacks": true, 
+                        "mitigate thunder attacks": true, 
+                        "proc id": "39", 
+                        "target area": "aoe", 
+                        "target type": "party"
+                    }
+                ]
+            }, 
+            {
+                "conditions": [
+                    {
+                        "item required": [
+                            "700018"
+                        ]
+                    }
+                ], 
+                "passive id": "66", 
+                "passive target": "self", 
+                "trigger on bb": true, 
+                "trigger on sbb": true, 
+                "triggered effect": [
+                    {
+                        "effect delay time(ms)/frame": "0.0/0", 
+                        "extra hits dmg%": 100, 
+                        "hit increase buff turns (50)": 3, 
+                        "hit increase/hit": 2, 
+                        "proc id": "26", 
+                        "target area": "aoe", 
+                        "target type": "party"
+                    }
+                ]
+            }
+        ], 
+        "name": "Rest in Peace", 
+        "target": "self"
+    }, 
     "7600": {
         "desc": "Boosts BB attack", 
         "effects": [
@@ -13160,6 +13320,32 @@
         "name": "Gentle Lion", 
         "target": "self"
     }, 
+    "840117": {
+        "desc": "Boosts Atk when BB gauge is full & boosts damage dealt against status afflicted foes", 
+        "effects": [
+            {
+                "atk% buff": 50, 
+                "bb gauge above % buff requirement": 100, 
+                "conditions": [], 
+                "passive id": "30", 
+                "passive target": "self"
+            }, 
+            {
+                "atk% buff when enemy has ailment": 100, 
+                "atk% buff when enemy has curse": true, 
+                "atk% buff when enemy has injury": true, 
+                "atk% buff when enemy has paralysis": true, 
+                "atk% buff when enemy has poison": true, 
+                "atk% buff when enemy has sick": true, 
+                "atk% buff when enemy has weaken": true, 
+                "conditions": [], 
+                "passive id": "74", 
+                "passive target": "self"
+            }
+        ], 
+        "name": "Bonnie Rabbit Pride", 
+        "target": "self"
+    }, 
     "840397": {
         "desc": "Adds boosts critical hit rate (60%) for 3 turns to BB/SBB & Adds Water, Earth and Thunder to attack for 3 turns to BB/SBB & Nullify Spark damage", 
         "effects": [
@@ -13287,6 +13473,51 @@
             }
         ], 
         "name": "Cursed Fire Armor", 
+        "target": "self"
+    }, 
+    "850157": {
+        "desc": "Slightly boost BC, HC efficacy & adds status ailment removal effect to BB/SBB", 
+        "effects": [
+            {
+                "conditions": [], 
+                "hc effectiveness%": 15, 
+                "passive id": "10", 
+                "passive target": "self"
+            }, 
+            {
+                "bb gauge fill rate%": 15, 
+                "conditions": [], 
+                "passive id": "32", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "passive id": "66", 
+                "passive target": "self", 
+                "trigger on bb": true, 
+                "trigger on sbb": true, 
+                "triggered effect": [
+                    {
+                        "ailments cured": [
+                            "poison", 
+                            "weaken", 
+                            "sick", 
+                            "injury", 
+                            "curse", 
+                            "paralysis", 
+                            "atk down", 
+                            "def down", 
+                            "rec down"
+                        ], 
+                        "effect delay time(ms)/frame": "0.0/0", 
+                        "proc id": "38", 
+                        "target area": "aoe", 
+                        "target type": "party"
+                    }
+                ]
+            }
+        ], 
+        "name": "Sweet Disposition", 
         "target": "self"
     }, 
     "850166": {

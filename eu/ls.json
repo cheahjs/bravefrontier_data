@@ -7539,6 +7539,36 @@
         ], 
         "name": "Divine Law"
     }, 
+    "4359": {
+        "desc": "50% boost to Def and max HP, negates all status ailments and Def ignoring effects & damage taken hugely boosts BB gauge", 
+        "effects": [
+            {
+                "def% buff": 50, 
+                "hp% buff": 50, 
+                "passive id": "1"
+            }, 
+            {
+                "curse resist%": 100, 
+                "injury resist%": 100, 
+                "paralysis resist%": 100, 
+                "passive id": "4", 
+                "poison resist%": 100, 
+                "sick resist%": 100, 
+                "weaken resist%": 100
+            }, 
+            {
+                "ignore def resist chance%": 100, 
+                "passive id": "92"
+            }, 
+            {
+                "bc fill when attacked high": 7, 
+                "bc fill when attacked low": 4, 
+                "bc fill when attacked%": 100, 
+                "passive id": "25"
+            }
+        ], 
+        "name": "Heavenly Jurisdiction"
+    }, 
     "4360": {
         "desc": "80% boost to Def, 30% boost to max HP, 10% elemental damage reduction from Light, Dark types & probability of resistance against 1 KO attack", 
         "effects": [
@@ -10310,6 +10340,76 @@
             }
         ], 
         "name": "Sealer of Orochi"
+    }, 
+    "710216": {
+        "desc": "Boosts ATK, HP (40%) & boosts Spark damage (100%) & boosts ATT (40%) and BB ATK (200%) for 2 turns when Sparks exceed certain amount (15)", 
+        "effects": [
+            {
+                "atk% buff": 40, 
+                "hp% buff": 40, 
+                "passive id": "1"
+            }, 
+            {
+                "damage% for spark": 100, 
+                "passive id": "31"
+            }, 
+            {
+                "buff": {
+                    "atk% buff (1)": 40, 
+                    "buff turns (1)": "2"
+                }, 
+                "passive id": "86", 
+                "spark count buff activation": 15
+            }, 
+            {
+                "buff": {
+                    "bb atk% buff": 200, 
+                    "buff turns (72)": "2", 
+                    "sbb atk% buff": 200, 
+                    "ubb atk% buff": 200
+                }, 
+                "passive id": "86", 
+                "spark count buff activation": 15
+            }
+        ], 
+        "name": "Noiseless Fury"
+    }, 
+    "710217": {
+        "desc": "Boosts ATK, HP (50%) & boosts Spark damage (130%) & boosts ATK (50%) and BB ATK (250%) for 2 turns when Sparks exceed certain amount (15) & boosts OD gauge fill rate (20%)", 
+        "effects": [
+            {
+                "atk% buff": 50, 
+                "hp% buff": 50, 
+                "passive id": "1"
+            }, 
+            {
+                "damage% for spark": 130, 
+                "passive id": "31"
+            }, 
+            {
+                "buff": {
+                    "atk% buff (1)": 50, 
+                    "buff turns (1)": "2"
+                }, 
+                "passive id": "86", 
+                "spark count buff activation": 15
+            }, 
+            {
+                "buff": {
+                    "bb atk% buff": 250, 
+                    "buff turns (72)": "2", 
+                    "sbb atk% buff": 250, 
+                    "ubb atk% buff": 250
+                }, 
+                "passive id": "86", 
+                "spark count buff activation": 15
+            }, 
+            {
+                "od fill rate%": 20, 
+                "passive id": "70"
+            }
+        ], 
+        "name": "Noiseless Frenzy"
     }, 
     "710312": {
         "desc": "15% boost to HP, ATK, DEF, and REC", 
@@ -13694,9 +13794,8 @@
         "desc": "Boosts ATK, REC, HP (50%) & boosts ATK, REC (70%) when BB gauge is over 50% & chance to reduce damage to 1 (15%) & normal attack boosts BB gauge (10 BC)", 
         "effects": [
             {
-                "dmg reduction chance%": 15, 
-                "dmg reduction%": 100, 
-                "passive id": "14"
+                "passive id": "43", 
+                "take 1 dmg%": 15
             }, 
             {
                 "atk% buff": 50, 
@@ -14051,6 +14150,40 @@
             }
         ], 
         "name": "Eternal Loyalty"
+    }, 
+    "750237": {
+        "desc": "Boosts HP and REC (60%) & boosts ATK (150%) for Water and Light units & raises normal hit amount (+1, 50% damage) & chance to reduce damage to 1 (15%) & boosts Water and Light elemental damage (150%)", 
+        "effects": [
+            {
+                "passive id": "43", 
+                "take 1 dmg%": 15
+            }, 
+            {
+                "hp% buff": 60, 
+                "passive id": "1", 
+                "rec% buff": 60
+            }, 
+            {
+                "atk% buff": 150, 
+                "elements buffed": [
+                    "water", 
+                    "light"
+                ], 
+                "passive id": "2"
+            }, 
+            {
+                "extra hits dmg%": 50, 
+                "hit increase/hit": 1, 
+                "passive id": "37"
+            }, 
+            {
+                "elemental weakness multiplier%": 150.0, 
+                "light units do extra elemental weakness dmg": true, 
+                "passive id": "50", 
+                "water units do extra elemental weakness dmg": true
+            }
+        ], 
+        "name": "Blessed Alliance"
     }, 
     "7600": {
         "desc": "50% boost to Atk of Water & Light types", 
@@ -14907,6 +15040,77 @@
         ], 
         "name": "Malevolent Ardour"
     }, 
+    "801049": {
+        "desc": "Boost to BB gauge fill rate", 
+        "effects": [
+            {
+                "bb gauge fill rate%": 20, 
+                "passive id": "32"
+            }
+        ], 
+        "name": "Fluffy Tail"
+    }, 
+    "801050": {
+        "desc": "Large boost to BB gauge fill rate", 
+        "effects": [
+            {
+                "bb gauge fill rate%": 30, 
+                "passive id": "32"
+            }
+        ], 
+        "name": "Floppy Ears"
+    }, 
+    "801051": {
+        "desc": "Huge boost to BB gauge fill rate & reduction in BB gauge required for BB", 
+        "effects": [
+            {
+                "bb gauge fill rate%": 40, 
+                "passive id": "32"
+            }, 
+            {
+                "passive id": "48", 
+                "reduced bb bc cost%": 10
+            }
+        ], 
+        "name": "Lucky Rabbit's Foot"
+    }, 
+    "801052": {
+        "desc": "Small boost to HC and BC drop rate", 
+        "effects": [
+            {
+                "bc drop rate% buff": 10, 
+                "hc drop rate% buff": 10, 
+                "passive id": "19"
+            }
+        ], 
+        "name": "Basket of Jelly Beans"
+    }, 
+    "801053": {
+        "desc": "Boost to HC and BC drop rate", 
+        "effects": [
+            {
+                "bc drop rate% buff": 15, 
+                "hc drop rate% buff": 15, 
+                "passive id": "19"
+            }
+        ], 
+        "name": "Basket of Dyed Eggs"
+    }, 
+    "801054": {
+        "desc": "Large boost to HC and BC drop rate & reduction in BB gauge required for BB", 
+        "effects": [
+            {
+                "bc drop rate% buff": 20, 
+                "hc drop rate% buff": 20, 
+                "passive id": "19"
+            }, 
+            {
+                "passive id": "48", 
+                "reduced bb bc cost%": 10
+            }
+        ], 
+        "name": "Bianco's Carrot Basket"
+    }, 
     "801075": {
         "desc": "Boosts HC drop rate, hugely boosts effectiveness of HC & negates all status ailments", 
         "effects": [
@@ -15116,6 +15320,45 @@
             }
         ], 
         "name": "Aquatic Symphony"
+    }, 
+    "801218": {
+        "desc": "Huge boost to BB gauge fill rate, large reduction in BB gauge required for BB & greatly boosts BB Atk", 
+        "effects": [
+            {
+                "bb gauge fill rate%": 50, 
+                "passive id": "32"
+            }, 
+            {
+                "passive id": "48", 
+                "reduced bb bc cost%": 25
+            }, 
+            {
+                "bb atk% buff": 150, 
+                "passive id": "64", 
+                "sbb atk% buff": 150, 
+                "ubb atk% buff": 150
+            }
+        ], 
+        "name": "Spunky Pink Hare"
+    }, 
+    "801219": {
+        "desc": "Greatly boosts HC, BC drop rate, large reduction in BB gauge required for BB & hugely boosts BB gauge each turn", 
+        "effects": [
+            {
+                "bc drop rate% buff": 25, 
+                "hc drop rate% buff": 25, 
+                "passive id": "19"
+            }, 
+            {
+                "passive id": "48", 
+                "reduced bb bc cost%": 25
+            }, 
+            {
+                "bc fill per turn": 4, 
+                "passive id": "9"
+            }
+        ], 
+        "name": "Rainbow Basket Case"
     }, 
     "801220": {
         "desc": "40% boost to max HP, Rec & damage taken slightly boosts BB gauge", 
