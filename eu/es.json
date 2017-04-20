@@ -8162,6 +8162,148 @@
         "name": "Will Beyond Death", 
         "target": "self"
     }, 
+    "26100": {
+        "desc": "10% boost to all parameters & slightly boosts Atk relative to remaining HP", 
+        "effects": [
+            {
+                "atk% buff": 10, 
+                "conditions": [], 
+                "def% buff": 10, 
+                "hp% buff": 10, 
+                "passive id": "1", 
+                "passive target": "party", 
+                "rec% buff": 10
+            }, 
+            {
+                "atk% base buff": 0, 
+                "atk% extra buff based on hp": 30, 
+                "buff proportional to hp": "remaining", 
+                "conditions": [], 
+                "passive id": "46", 
+                "passive target": "self"
+            }
+        ], 
+        "name": "Rousing Fighter", 
+        "target": "self"
+    }, 
+    "26200": {
+        "desc": "10% boost to all parameters & boosts Atk relative to remaining HP", 
+        "effects": [
+            {
+                "atk% buff": 10, 
+                "conditions": [], 
+                "def% buff": 10, 
+                "hp% buff": 10, 
+                "passive id": "1", 
+                "passive target": "party", 
+                "rec% buff": 10
+            }, 
+            {
+                "atk% base buff": 0, 
+                "atk% extra buff based on hp": 50, 
+                "buff proportional to hp": "remaining", 
+                "conditions": [], 
+                "passive id": "46", 
+                "passive target": "self"
+            }
+        ], 
+        "name": "Spirited Fist", 
+        "target": "self"
+    }, 
+    "26300": {
+        "desc": "Slightly boosts Atk, Def when BB gauge is over 50% & slight probability of enormous damage reduction", 
+        "effects": [
+            {
+                "atk% buff": 30, 
+                "bb gauge above % buff requirement": 50, 
+                "conditions": [], 
+                "def% buff": 30, 
+                "passive id": "30", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "passive id": "43", 
+                "passive target": "self", 
+                "take 1 dmg%": 5
+            }
+        ], 
+        "name": "Gladiator's Pride", 
+        "target": "self"
+    }, 
+    "26400": {
+        "desc": "Boosts Atk, Def when BB gauge is over 50% & slight probability of enormous damage reduction", 
+        "effects": [
+            {
+                "atk% buff": 50, 
+                "bb gauge above % buff requirement": 50, 
+                "conditions": [], 
+                "def% buff": 50, 
+                "passive id": "30", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "passive id": "43", 
+                "passive target": "self", 
+                "take 1 dmg%": 10
+            }
+        ], 
+        "name": "Heavy Training", 
+        "target": "self"
+    }, 
+    "26500": {
+        "desc": "Negates all status ailments & damage taken slightly boosts BB gauge", 
+        "effects": [
+            {
+                "conditions": [], 
+                "curse resist%": 100, 
+                "injury resist%": 100, 
+                "paralysis resist%": 100, 
+                "passive id": "4", 
+                "passive target": "self", 
+                "poison resist%": 100, 
+                "sick resist%": 100, 
+                "weaken resist%": 100
+            }, 
+            {
+                "bc fill when attacked high": 2, 
+                "bc fill when attacked low": 1, 
+                "bc fill when attacked%": 100, 
+                "conditions": [], 
+                "passive id": "25", 
+                "passive target": "self"
+            }
+        ], 
+        "name": "Resonating Ideas", 
+        "target": "self"
+    }, 
+    "26600": {
+        "desc": "Negates all status ailments & damage taken boosts BB gauge", 
+        "effects": [
+            {
+                "conditions": [], 
+                "curse resist%": 100, 
+                "injury resist%": 100, 
+                "paralysis resist%": 100, 
+                "passive id": "4", 
+                "passive target": "self", 
+                "poison resist%": 100, 
+                "sick resist%": 100, 
+                "weaken resist%": 100
+            }, 
+            {
+                "bc fill when attacked high": 3, 
+                "bc fill when attacked low": 2, 
+                "bc fill when attacked%": 100, 
+                "conditions": [], 
+                "passive id": "25", 
+                "passive target": "self"
+            }
+        ], 
+        "name": "Ancient Mysteries", 
+        "target": "self"
+    }, 
     "26700": {
         "desc": "Considerably boosts Atk when BB gauge is full & considerably boosts Spark damage when HP is over 50%", 
         "effects": [
@@ -13000,6 +13142,90 @@
         "name": "Only Survivor", 
         "target": "self"
     }, 
+    "810317": {
+        "desc": "Negates critical, elemental damage & boosts BB Atk when Vulcan Axe is equipped", 
+        "effects": [
+            {
+                "conditions": [
+                    {
+                        "item required": [
+                            "818931"
+                        ]
+                    }
+                ], 
+                "crit chance base resist%": 100, 
+                "crit chance buffed resist%": 100, 
+                "crit dmg base damage resist%": 100, 
+                "crit dmg buffed damage resist%": 100, 
+                "passive id": "53", 
+                "passive target": "self", 
+                "strong base element damage resist%": 100, 
+                "strong buffed element damage resist%": 100
+            }, 
+            {
+                "bb atk% buff": 200, 
+                "conditions": [
+                    {
+                        "item required": [
+                            "818931"
+                        ]
+                    }
+                ], 
+                "passive id": "64", 
+                "passive target": "self", 
+                "sbb atk% buff": 200, 
+                "ubb atk% buff": 200
+            }
+        ], 
+        "name": "Primal Bloodlust", 
+        "target": "self"
+    }, 
+    "810337": {
+        "desc": "Adds resistance against 1 KO attack when HP is below 20%", 
+        "effects": [
+            {
+                "buff": {
+                    "angel idol buff (12)": true, 
+                    "angel idol recover hp%": 100, 
+                    "buff turns (12)": "-1"
+                }, 
+                "conditions": [], 
+                "hp below % buff activation": 20, 
+                "passive id": "55", 
+                "passive target": "self"
+            }
+        ], 
+        "name": "Indomitable Will", 
+        "target": "self"
+    }, 
+    "810338": {
+        "desc": "Adds resistance against 1 KO attack when HP is below 20% & greatly boosts Atk, Def relative to remaining HP", 
+        "effects": [
+            {
+                "buff": {
+                    "angel idol buff (12)": true, 
+                    "angel idol recover hp%": 100, 
+                    "buff turns (12)": "-1"
+                }, 
+                "conditions": [], 
+                "hp below % buff activation": 20, 
+                "passive id": "55", 
+                "passive target": "self"
+            }, 
+            {
+                "atk% base buff": 0, 
+                "atk% extra buff based on hp": 100, 
+                "buff proportional to hp": "lost", 
+                "conditions": [], 
+                "def% base buff": 0, 
+                "def% extra buff based on hp": 100, 
+                "passive id": "46", 
+                "passive target": "self"
+            }
+        ], 
+        "name": "Infernal Furor", 
+        "target": "self"
+    }, 
     "810397": {
         "desc": "Negates elemental damage & Boosts all stats (10%) for Fire types", 
         "effects": [
@@ -13077,6 +13303,42 @@
             }
         ], 
         "name": "Entrusted Will", 
+        "target": "self"
+    }, 
+    "820317": {
+        "desc": "20% boost to all parameters & boosts BB gauge when attacking when Glacies Staff is equipped", 
+        "effects": [
+            {
+                "atk% buff": 20, 
+                "conditions": [
+                    {
+                        "item required": [
+                            "818932"
+                        ]
+                    }
+                ], 
+                "def% buff": 20, 
+                "hp% buff": 20, 
+                "passive id": "1", 
+                "passive target": "self", 
+                "rec% buff": 20
+            }, 
+            {
+                "bc fill when attacking high": 8, 
+                "bc fill when attacking low": 8, 
+                "bc fill when attacking%": 100, 
+                "conditions": [
+                    {
+                        "item required": [
+                            "818932"
+                        ]
+                    }
+                ], 
+                "passive id": "35", 
+                "passive target": "self"
+            }
+        ], 
+        "name": "Ardent Ice Queen", 
         "target": "self"
     }, 
     "820387": {
@@ -13301,6 +13563,43 @@
             }
         ], 
         "name": "Heroic Resilience", 
+        "target": "self"
+    }, 
+    "830317": {
+        "desc": "Boosts damage dealt against status afflicted foes & raises normal hit amount when Vorpal Chainblades is equipped", 
+        "effects": [
+            {
+                "atk% buff when enemy has ailment": 100, 
+                "atk% buff when enemy has curse": true, 
+                "atk% buff when enemy has injury": true, 
+                "atk% buff when enemy has paralysis": true, 
+                "atk% buff when enemy has poison": true, 
+                "atk% buff when enemy has sick": true, 
+                "atk% buff when enemy has weaken": true, 
+                "conditions": [
+                    {
+                        "item required": [
+                            "818933"
+                        ]
+                    }
+                ], 
+                "passive id": "74", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [
+                    {
+                        "item required": [
+                            "818933"
+                        ]
+                    }
+                ], 
+                "hit increase/hit": 1, 
+                "passive id": "37", 
+                "passive target": "self"
+            }
+        ], 
+        "name": "Matriarch's Indignation", 
         "target": "self"
     }, 
     "8400": {
