@@ -3078,6 +3078,58 @@
         ], 
         "name": "怜命還神の洸翼"
     }, 
+    "12514": {
+        "desc": "全てのユニットの攻撃力・防御力・最大ＨＰを５０％アップ＆ＨＰが半分以上の時、攻撃ＢＢの威力を超絶アップ＆ＨＰが半分以下になる度に、２ターン、被ダメージを少し軽減", 
+        "effects": [
+            {
+                "atk% buff": 50, 
+                "def% buff": 50, 
+                "hp% buff": 50, 
+                "passive id": "1"
+            }, 
+            {
+                "unknown passive id": "103", 
+                "unknown passive params": "200,200,200,50,1"
+            }, 
+            {
+                "buff": {
+                    "buff turns (36)": "1", 
+                    "dmg reduction% buff": 20
+                }, 
+                "hp below % buff activation": 50, 
+                "passive id": "55"
+            }
+        ], 
+        "name": "磑神壌の豪震"
+    }, 
+    "12515": {
+        "desc": "全てのユニットの攻撃力・防御力・最大ＨＰを６０％アップ＆防御貫通効果を無効＆ＨＰが半分以上の時、攻撃ＢＢの威力を超絶アップ＆ＨＰが半分以下になる度に、２ターン、被ダメージを少し軽減", 
+        "effects": [
+            {
+                "atk% buff": 60, 
+                "def% buff": 60, 
+                "hp% buff": 60, 
+                "passive id": "1"
+            }, 
+            {
+                "unknown passive id": "103", 
+                "unknown passive params": "250,250,250,50,1"
+            }, 
+            {
+                "buff": {
+                    "buff turns (36)": "1", 
+                    "dmg reduction% buff": 20
+                }, 
+                "hp below % buff activation": 50, 
+                "passive id": "55"
+            }, 
+            {
+                "ignore def resist chance%": 100, 
+                "passive id": "92"
+            }
+        ], 
+        "name": "偉磑神層の叢震"
+    }, 
     "126": {
         "desc": "樹属性ユニットの攻撃力を１００％アップ・最大ＨＰを３０％アップ", 
         "effects": [
@@ -10535,6 +10587,116 @@
             }
         ], 
         "name": "咲苛爛神の聖殻"
+    }, 
+    "4373": {
+        "desc": "全てのユニットの防御力・最大ＨＰを５０％アップ＆残りＨＰが多いほど、攻撃力・防御力を少しアップ＆スパークダメージを１１０％アップ", 
+        "effects": [
+            {
+                "def% buff": 50, 
+                "hp% buff": 50, 
+                "passive id": "1"
+            }, 
+            {
+                "atk% base buff": 0, 
+                "atk% extra buff based on hp": 30, 
+                "buff proportional to hp": "remaining", 
+                "def% base buff": 0, 
+                "def% extra buff based on hp": 30, 
+                "passive id": "46"
+            }, 
+            {
+                "damage% for spark": 110, 
+                "passive id": "31"
+            }
+        ], 
+        "name": "厳神焔の粛戒"
+    }, 
+    "4374": {
+        "desc": "全てのユニットの防御力・最大ＨＰを６０％アップ＆残りＨＰが多いほど、攻撃力・防御力をアップ＆スパークダメージを１３０％アップ＆ターン毎にＨＰをかなり回復", 
+        "effects": [
+            {
+                "def% buff": 60, 
+                "hp% buff": 60, 
+                "passive id": "1"
+            }, 
+            {
+                "atk% base buff": 0, 
+                "atk% extra buff based on hp": 50, 
+                "buff proportional to hp": "remaining", 
+                "def% base buff": 0, 
+                "def% extra buff based on hp": 50, 
+                "passive id": "46"
+            }, 
+            {
+                "damage% for spark": 130, 
+                "passive id": "31"
+            }, 
+            {
+                "passive id": "33", 
+                "rec% added (turn heal)": 10.0, 
+                "turn heal high": 1200, 
+                "turn heal low": 1000
+            }
+        ], 
+        "name": "厳玲神陽の熾戒"
+    }, 
+    "4375": {
+        "desc": "全てのユニットの防御力・最大ＨＰを５０％アップ＆被ダメージ時、確率で全状態異常をランダムに発生・ＢＢゲージを増加", 
+        "effects": [
+            {
+                "def% buff": 50, 
+                "hp% buff": 50, 
+                "passive id": "1"
+            }, 
+            {
+                "bc fill when attacked high": 4, 
+                "bc fill when attacked low": 2, 
+                "bc fill when attacked%": 100, 
+                "passive id": "25"
+            }, 
+            {
+                "counter inflict curse%": 7, 
+                "counter inflict injury%": 10, 
+                "counter inflict paralysis%": 7, 
+                "counter inflict poison%": 7, 
+                "counter inflict sick%": 10, 
+                "counter inflict weaken%": 10, 
+                "passive id": "71"
+            }
+        ], 
+        "name": "艶詭神の蝕恍"
+    }, 
+    "4376": {
+        "desc": "全てのユニットの防御力・最大ＨＰを６０％アップ＆確率で被ダメージの２５％を相手に反射する＆被ダメージ時、確率で全状態異常をランダムに発生・ＢＢゲージを大幅に増加", 
+        "effects": [
+            {
+                "def% buff": 60, 
+                "hp% buff": 60, 
+                "passive id": "1"
+            }, 
+            {
+                "bc fill when attacked high": 7, 
+                "bc fill when attacked low": 4, 
+                "bc fill when attacked%": 100, 
+                "passive id": "25"
+            }, 
+            {
+                "counter inflict curse%": 10, 
+                "counter inflict injury%": 15, 
+                "counter inflict paralysis%": 10, 
+                "counter inflict poison%": 10, 
+                "counter inflict sick%": 15, 
+                "counter inflict weaken%": 15, 
+                "passive id": "71"
+            }, 
+            {
+                "dmg% reflect chance%": 20, 
+                "dmg% reflect high": 25, 
+                "dmg% reflect low": 25, 
+                "passive id": "26"
+            }
+        ], 
+        "name": "白艶詭神の弄恍"
     }, 
     "4400": {
         "desc": "ターン毎にＢＢゲージを少し増加＆全ての状態異常にかなりかかりにくくなる", 
