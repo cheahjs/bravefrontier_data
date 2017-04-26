@@ -15908,6 +15908,63 @@
         "name": "Diamond Freeze", 
         "target": "self"
     }, 
+    "820277": {
+        "desc": "30% boost to Atk and Def & 30% boost to Spark damage", 
+        "effects": [
+            {
+                "atk% buff": 30, 
+                "conditions": [], 
+                "def% buff": 30, 
+                "passive id": "1", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "damage% for spark": 30, 
+                "passive id": "31", 
+                "passive target": "self"
+            }
+        ], 
+        "name": "Speed Kills Everything", 
+        "target": "self"
+    }, 
+    "820278": {
+        "desc": "50% boost to Atk and Def, 50% boost to Spark damage & adds Def ignoring effect to BB/SBB for 3 turns", 
+        "effects": [
+            {
+                "atk% buff": 50, 
+                "conditions": [], 
+                "def% buff": 50, 
+                "passive id": "1", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "damage% for spark": 50, 
+                "passive id": "31", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "passive id": "66", 
+                "passive target": "self", 
+                "trigger on bb": true, 
+                "trigger on sbb": true, 
+                "triggered effect": [
+                    {
+                        "defense% ignore": 100, 
+                        "defense% ignore turns (39)": 3, 
+                        "effect delay time(ms)/frame": "0.0/0", 
+                        "proc id": "22", 
+                        "target area": "aoe", 
+                        "target type": "party"
+                    }
+                ]
+            }
+        ], 
+        "name": "Inevitable Abbatoir Style", 
+        "target": "self"
+    }, 
     "820317": {
         "desc": "20% boost to all parameters & boosts BB gauge when attacking when Glacies Staff is equipped", 
         "effects": [
