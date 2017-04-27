@@ -9680,6 +9680,166 @@
         "name": "Bold Soldier's Power", 
         "target": "self"
     }, 
+    "7000000": {
+        "desc": "25% boost to all parameters of Fire or Water units", 
+        "effects": [
+            {
+                "atk% buff": 25, 
+                "conditions": [], 
+                "def% buff": 25, 
+                "elements buffed": [
+                    "fire", 
+                    "water"
+                ], 
+                "hp% buff": 25, 
+                "passive id": "2", 
+                "passive target": "self", 
+                "rec% buff": 25
+            }
+        ], 
+        "name": "Mirror Oracle of Temperance", 
+        "target": "self"
+    }, 
+    "7000001": {
+        "desc": "25% boost to all parameters of Fire or Earth units", 
+        "effects": [
+            {
+                "atk% buff": 25, 
+                "conditions": [], 
+                "def% buff": 25, 
+                "elements buffed": [
+                    "fire", 
+                    "earth"
+                ], 
+                "hp% buff": 25, 
+                "passive id": "2", 
+                "passive target": "self", 
+                "rec% buff": 25
+            }
+        ], 
+        "name": "Mirror Oracle of Charity", 
+        "target": "self"
+    }, 
+    "7000002": {
+        "desc": "25% boost to all parameters of Fire or Thunder units", 
+        "effects": [
+            {
+                "atk% buff": 25, 
+                "conditions": [], 
+                "def% buff": 25, 
+                "elements buffed": [
+                    "fire", 
+                    "thunder"
+                ], 
+                "hp% buff": 25, 
+                "passive id": "2", 
+                "passive target": "self", 
+                "rec% buff": 25
+            }
+        ], 
+        "name": "Mirror Oracle of Wrath", 
+        "target": "self"
+    }, 
+    "7000003": {
+        "desc": "25% boost to all parameters of Fire or Light units", 
+        "effects": [
+            {
+                "atk% buff": 25, 
+                "conditions": [], 
+                "def% buff": 25, 
+                "elements buffed": [
+                    "fire", 
+                    "light"
+                ], 
+                "hp% buff": 25, 
+                "passive id": "2", 
+                "passive target": "self", 
+                "rec% buff": 25
+            }
+        ], 
+        "name": "Mirror Oracle of Pride", 
+        "target": "self"
+    }, 
+    "7000004": {
+        "desc": "25% boost to all parameters of Fire or Dark units", 
+        "effects": [
+            {
+                "atk% buff": 25, 
+                "conditions": [], 
+                "def% buff": 25, 
+                "elements buffed": [
+                    "fire", 
+                    "dark"
+                ], 
+                "hp% buff": 25, 
+                "passive id": "2", 
+                "passive target": "self", 
+                "rec% buff": 25
+            }
+        ], 
+        "name": "Mirror Oracle of Lust", 
+        "target": "self"
+    }, 
+    "7000005": {
+        "desc": "25% boost to all parameters of Water or Earth units", 
+        "effects": [
+            {
+                "atk% buff": 25, 
+                "conditions": [], 
+                "def% buff": 25, 
+                "elements buffed": [
+                    "water", 
+                    "earth"
+                ], 
+                "hp% buff": 25, 
+                "passive id": "2", 
+                "passive target": "self", 
+                "rec% buff": 25
+            }
+        ], 
+        "name": "Mirror Oracle of Kindness", 
+        "target": "self"
+    }, 
+    "7000006": {
+        "desc": "25% boost to all parameters of Water or Thunder units", 
+        "effects": [
+            {
+                "atk% buff": 25, 
+                "conditions": [], 
+                "def% buff": 25, 
+                "elements buffed": [
+                    "water", 
+                    "thunder"
+                ], 
+                "hp% buff": 25, 
+                "passive id": "2", 
+                "passive target": "self", 
+                "rec% buff": 25
+            }
+        ], 
+        "name": "Mirror Oracle of Envy", 
+        "target": "self"
+    }, 
+    "7000007": {
+        "desc": "25% boost to all parameters of Water or Light units", 
+        "effects": [
+            {
+                "atk% buff": 25, 
+                "conditions": [], 
+                "def% buff": 25, 
+                "elements buffed": [
+                    "water", 
+                    "light"
+                ], 
+                "hp% buff": 25, 
+                "passive id": "2", 
+                "passive target": "self", 
+                "rec% buff": 25
+            }
+        ], 
+        "name": "Mirror Oracle of Chastity", 
+        "target": "self"
+    }, 
     "7100": {
         "desc": "Adds slight BB gauge boost effect to BB/SBB & negates critical, elemental damage", 
         "effects": [
@@ -13047,6 +13207,107 @@
             }
         ], 
         "name": "Selfishness", 
+        "target": "self"
+    }, 
+    "760236": {
+        "desc": "Boosts DEF (30%) & when Drill Sharpener is equipped, adds Spark damage boosts BB gauge (2-3 BC) for 3 turns to BB/SBB", 
+        "effects": [
+            {
+                "conditions": [], 
+                "def% buff": 30, 
+                "passive id": "1", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [
+                    {
+                        "item required": [
+                            "701038"
+                        ]
+                    }
+                ], 
+                "passive id": "66", 
+                "passive target": "self", 
+                "trigger on bb": true, 
+                "trigger on sbb": true, 
+                "triggered effect": [
+                    {
+                        "bc fill on spark buff turns (111)": 3, 
+                        "bc fill on spark high": 3, 
+                        "bc fill on spark low": 2, 
+                        "bc fill on spark%": 100, 
+                        "effect delay time(ms)/frame": "0.0/0", 
+                        "proc id": "67", 
+                        "target area": "aoe", 
+                        "target type": "party"
+                    }
+                ]
+            }
+        ], 
+        "name": "Spin Mastery", 
+        "target": "self"
+    }, 
+    "760237": {
+        "desc": "Boosts DEF (50%) & when Drill Sharpener is equipped, adds Spark damage boosts BB gauge (2-3 BC) and restores HP (500-600) for 3 turns to BB/SBB", 
+        "effects": [
+            {
+                "conditions": [], 
+                "def% buff": 50, 
+                "passive id": "1", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [
+                    {
+                        "item required": [
+                            "701038"
+                        ]
+                    }
+                ], 
+                "passive id": "66", 
+                "passive target": "self", 
+                "trigger on bb": true, 
+                "trigger on sbb": true, 
+                "triggered effect": [
+                    {
+                        "bc fill on spark buff turns (111)": 3, 
+                        "bc fill on spark high": 3, 
+                        "bc fill on spark low": 2, 
+                        "bc fill on spark%": 100, 
+                        "effect delay time(ms)/frame": "0.0/0", 
+                        "proc id": "67", 
+                        "target area": "aoe", 
+                        "target type": "party"
+                    }
+                ]
+            }, 
+            {
+                "conditions": [
+                    {
+                        "item required": [
+                            "701038"
+                        ]
+                    }
+                ], 
+                "passive id": "66", 
+                "passive target": "self", 
+                "trigger on bb": true, 
+                "trigger on sbb": true, 
+                "triggered effect": [
+                    {
+                        "effect delay time(ms)/frame": "0.0/0", 
+                        "proc id": "87", 
+                        "spark recover hp buff turns (135)": 3, 
+                        "spark recover hp chance%": 100, 
+                        "spark recover hp high": 600, 
+                        "spark recover hp low": 500, 
+                        "target area": "aoe", 
+                        "target type": "party"
+                    }
+                ]
+            }
+        ], 
+        "name": "Spin to Win", 
         "target": "self"
     }, 
     "7700": {
