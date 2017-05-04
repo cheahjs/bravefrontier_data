@@ -8531,6 +8531,51 @@
         "name": "Divine Arts' Path", 
         "target": "self"
     }, 
+    "28200": {
+        "desc": "30% boost to all parameters when Scarlet Necklace is equipped, adds Def ignoring effect to attack for 2 turns to BB/SBB & raises max Atk value from 99999 to 130000", 
+        "effects": [
+            {
+                "atk% buff": 30, 
+                "conditions": [
+                    {
+                        "item required": [
+                            "47208"
+                        ]
+                    }
+                ], 
+                "def% buff": 30, 
+                "hp% buff": 30, 
+                "passive id": "1", 
+                "passive target": "self", 
+                "rec% buff": 30
+            }, 
+            {
+                "conditions": [], 
+                "passive id": "66", 
+                "passive target": "self", 
+                "trigger on bb": true, 
+                "trigger on sbb": true, 
+                "triggered effect": [
+                    {
+                        "defense% ignore": 100, 
+                        "defense% ignore turns (39)": 2, 
+                        "effect delay time(ms)/frame": "0.0/0", 
+                        "proc id": "22", 
+                        "target area": "aoe", 
+                        "target type": "party"
+                    }
+                ]
+            }, 
+            {
+                "conditions": [], 
+                "passive target": "self", 
+                "unknown passive id": "143", 
+                "unknown passive params": "130000"
+            }
+        ], 
+        "name": "Despair Breaker", 
+        "target": "self"
+    }, 
     "2900": {
         "desc": "Boost to BB gauge when attacked", 
         "effects": [
@@ -9840,6 +9885,146 @@
         "name": "Mirror Oracle of Chastity", 
         "target": "self"
     }, 
+    "7000008": {
+        "desc": "25% boost to all parameters of Water or Dark units", 
+        "effects": [
+            {
+                "atk% buff": 25, 
+                "conditions": [], 
+                "def% buff": 25, 
+                "elements buffed": [
+                    "water", 
+                    "dark"
+                ], 
+                "hp% buff": 25, 
+                "passive id": "2", 
+                "passive target": "self", 
+                "rec% buff": 25
+            }
+        ], 
+        "name": "Mirror Oracle of Patience", 
+        "target": "self"
+    }, 
+    "7000009": {
+        "desc": "25% boost to all parameters of Earth or Thunder units", 
+        "effects": [
+            {
+                "atk% buff": 25, 
+                "conditions": [], 
+                "def% buff": 25, 
+                "elements buffed": [
+                    "earth", 
+                    "thunder"
+                ], 
+                "hp% buff": 25, 
+                "passive id": "2", 
+                "passive target": "self", 
+                "rec% buff": 25
+            }
+        ], 
+        "name": "Mirror Oracle of Gluttony", 
+        "target": "self"
+    }, 
+    "7000010": {
+        "desc": "25% boost to all parameters of Earth or Light units", 
+        "effects": [
+            {
+                "atk% buff": 25, 
+                "conditions": [], 
+                "def% buff": 25, 
+                "elements buffed": [
+                    "earth", 
+                    "light"
+                ], 
+                "hp% buff": 25, 
+                "passive id": "2", 
+                "passive target": "self", 
+                "rec% buff": 25
+            }
+        ], 
+        "name": "Mirror Oracle of Sloth", 
+        "target": "self"
+    }, 
+    "7000011": {
+        "desc": "25% boost to all parameters of Earth or Dark units", 
+        "effects": [
+            {
+                "atk% buff": 25, 
+                "conditions": [], 
+                "def% buff": 25, 
+                "elements buffed": [
+                    "earth", 
+                    "dark"
+                ], 
+                "hp% buff": 25, 
+                "passive id": "2", 
+                "passive target": "self", 
+                "rec% buff": 25
+            }
+        ], 
+        "name": "Mirror Oracle of Diligence", 
+        "target": "self"
+    }, 
+    "7000012": {
+        "desc": "25% boost to all parameters of Thunder or Light units", 
+        "effects": [
+            {
+                "atk% buff": 25, 
+                "conditions": [], 
+                "def% buff": 25, 
+                "elements buffed": [
+                    "thunder", 
+                    "light"
+                ], 
+                "hp% buff": 25, 
+                "passive id": "2", 
+                "passive target": "self", 
+                "rec% buff": 25
+            }
+        ], 
+        "name": "Mirror Oracle of Humility", 
+        "target": "self"
+    }, 
+    "7000013": {
+        "desc": "25% boost to all parameters of Thunder or Dark units", 
+        "effects": [
+            {
+                "atk% buff": 25, 
+                "conditions": [], 
+                "def% buff": 25, 
+                "elements buffed": [
+                    "thunder", 
+                    "dark"
+                ], 
+                "hp% buff": 25, 
+                "passive id": "2", 
+                "passive target": "self", 
+                "rec% buff": 25
+            }
+        ], 
+        "name": "Mirror Oracle of Greed", 
+        "target": "self"
+    }, 
+    "7000014": {
+        "desc": "25% boost to all parameters of Light or Dark units", 
+        "effects": [
+            {
+                "atk% buff": 25, 
+                "conditions": [], 
+                "def% buff": 25, 
+                "elements buffed": [
+                    "light", 
+                    "dark"
+                ], 
+                "hp% buff": 25, 
+                "passive id": "2", 
+                "passive target": "self", 
+                "rec% buff": 25
+            }
+        ], 
+        "name": "Mirror Oracle of Seven", 
+        "target": "self"
+    }, 
     "7100": {
         "desc": "Adds slight BB gauge boost effect to BB/SBB & negates critical, elemental damage", 
         "effects": [
@@ -10193,7 +10378,6 @@
             }, 
             {
                 "conditions": [], 
-                "extra hits dmg%": 100, 
                 "hit increase/hit": 1, 
                 "passive id": "37", 
                 "passive target": "self"
@@ -11674,6 +11858,57 @@
         "name": "Shiver of Combat", 
         "target": "self"
     }, 
+    "740157": {
+        "desc": "Adds probable Spark critical for 3 turns to BB/SBB & when Customized Reactor is equipped, boosts Spark damage (50%) and BB ATK (40%, all)", 
+        "effects": [
+            {
+                "conditions": [], 
+                "passive id": "66", 
+                "passive target": "self", 
+                "trigger on bb": true, 
+                "trigger on sbb": true, 
+                "triggered effect": [
+                    {
+                        "effect delay time(ms)/frame": "0.0/0", 
+                        "proc id": "83", 
+                        "spark dmg inc buff turns (131)": 3, 
+                        "spark dmg inc chance%": 30, 
+                        "spark dmg inc% buff": 50, 
+                        "target area": "aoe", 
+                        "target type": "party"
+                    }
+                ]
+            }, 
+            {
+                "conditions": [
+                    {
+                        "item required": [
+                            "701037"
+                        ]
+                    }
+                ], 
+                "damage% for spark": 50, 
+                "passive id": "31", 
+                "passive target": "self"
+            }, 
+            {
+                "bb atk% buff": 40, 
+                "conditions": [
+                    {
+                        "item required": [
+                            "701037"
+                        ]
+                    }
+                ], 
+                "passive id": "64", 
+                "passive target": "party", 
+                "sbb atk% buff": 40, 
+                "ubb atk% buff": 40
+            }
+        ], 
+        "name": "Nitro Booster", 
+        "target": "self"
+    }, 
     "740166": {
         "desc": "(Requires Morgana in team or Photon Assault Spear equipped) Nullifies Crit damages & Elemental weakness & 100% Elemental weakness (self) & Boosts BB ATK (400%) and Spark damage (100%) & Adds double BB/SBB/UBB effect for 1 turn (self) to BB/SBB/UBB", 
         "effects": [
@@ -12394,7 +12629,6 @@
                         ]
                     }
                 ], 
-                "extra hits dmg%": 100, 
                 "hit increase/hit": 1, 
                 "passive id": "37", 
                 "passive target": "self"
@@ -12716,7 +12950,7 @@
                 "triggered effect": [
                     {
                         "effect delay time(ms)/frame": "0.0/0", 
-                        "extra hits dmg%": 100, 
+                        "extra hits dmg%": 20, 
                         "hit increase buff turns (50)": 3, 
                         "hit increase/hit": 2, 
                         "proc id": "26", 
@@ -13863,6 +14097,28 @@
         "name": "Matriarch's Indignation", 
         "target": "self"
     }, 
+    "830327": {
+        "desc": "25% boost to Atk each turn (4 turns max, capping at 100%) and 50% boost to Def when BB gauge is full", 
+        "effects": [
+            {
+                "atk% max buff": 100, 
+                "conditions": [], 
+                "increase from min to max": 1, 
+                "passive id": "105", 
+                "passive target": "self", 
+                "turn count": 4
+            }, 
+            {
+                "bb gauge above % buff requirement": 100, 
+                "conditions": [], 
+                "def% buff": 50, 
+                "passive id": "30", 
+                "passive target": "self"
+            }
+        ], 
+        "name": "Unhinged Disposition", 
+        "target": "self"
+    }, 
     "8400": {
         "desc": "Reduces damage taken when damage taken has exceeded certain amount for 2 turns", 
         "effects": [
@@ -13904,6 +14160,46 @@
             }
         ], 
         "name": "Bonnie Rabbit Pride", 
+        "target": "self"
+    }, 
+    "840317": {
+        "desc": "Boosts BB gauge fill rate, damage taken boosts BB gauge when Eremorn's Aegis is equipped & boosts Thunder elemental damage", 
+        "effects": [
+            {
+                "bb gauge fill rate%": 20, 
+                "conditions": [
+                    {
+                        "item required": [
+                            "818934"
+                        ]
+                    }
+                ], 
+                "passive id": "32", 
+                "passive target": "self"
+            }, 
+            {
+                "bc fill when attacked high": 3, 
+                "bc fill when attacked low": 2, 
+                "bc fill when attacked%": 100, 
+                "conditions": [
+                    {
+                        "item required": [
+                            "818934"
+                        ]
+                    }
+                ], 
+                "passive id": "25", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "elemental weakness multiplier%": 125.0, 
+                "passive id": "50", 
+                "passive target": "self", 
+                "thunder units do extra elemental weakness dmg": true
+            }
+        ], 
+        "name": "Lord Commander's Umbrage", 
         "target": "self"
     }, 
     "840397": {
@@ -14214,6 +14510,73 @@
         "name": "Euphoria in Fuchsia", 
         "target": "self"
     }, 
+    "850317": {
+        "desc": "Adds removal and negation of status ailments effects for 3 turns to BB/SBB when Ritus Staff is equipped", 
+        "effects": [
+            {
+                "conditions": [
+                    {
+                        "item required": [
+                            "818935"
+                        ]
+                    }
+                ], 
+                "passive id": "66", 
+                "passive target": "self", 
+                "trigger on bb": true, 
+                "trigger on sbb": true, 
+                "triggered effect": [
+                    {
+                        "ailments cured": [
+                            "poison", 
+                            "weaken", 
+                            "sick", 
+                            "injury", 
+                            "curse", 
+                            "paralysis", 
+                            "atk down", 
+                            "def down", 
+                            "rec down"
+                        ], 
+                        "effect delay time(ms)/frame": "0.0/0", 
+                        "proc id": "38", 
+                        "target area": "aoe", 
+                        "target type": "party"
+                    }
+                ]
+            }, 
+            {
+                "conditions": [
+                    {
+                        "item required": [
+                            "818935"
+                        ]
+                    }
+                ], 
+                "passive id": "66", 
+                "passive target": "self", 
+                "trigger on bb": true, 
+                "trigger on sbb": true, 
+                "triggered effect": [
+                    {
+                        "effect delay time(ms)/frame": "0.0/0", 
+                        "proc id": "17", 
+                        "resist curse% (34)": 100.0, 
+                        "resist injury% (33)": 100.0, 
+                        "resist paralysis% (35)": 100.0, 
+                        "resist poison% (30)": 100.0, 
+                        "resist sick% (32)": 100.0, 
+                        "resist status ails turns": 3, 
+                        "resist weaken% (31)": 100.0, 
+                        "target area": "aoe", 
+                        "target type": "party"
+                    }
+                ]
+            }
+        ], 
+        "name": "Arcane Erudition", 
+        "target": "self"
+    }, 
     "850397": {
         "desc": "Nullify ailments & Boosts REC (0-100%) based on remaining HP", 
         "effects": [
@@ -14392,6 +14755,35 @@
             }
         ], 
         "name": "Riot of the Blood", 
+        "target": "self"
+    }, 
+    "860317": {
+        "desc": "Probable damage reduction to 1 &hugely boosts Spark damage when Sparks have exceeded certain amount for next turn when Nyami's Bells is equipped", 
+        "effects": [
+            {
+                "conditions": [], 
+                "passive id": "43", 
+                "passive target": "self", 
+                "take 1 dmg%": 20
+            }, 
+            {
+                "buff": {
+                    "buff turns (40)": "2", 
+                    "spark dmg% buff": 100
+                }, 
+                "conditions": [
+                    {
+                        "item required": [
+                            "818936"
+                        ]
+                    }
+                ], 
+                "passive id": "86", 
+                "passive target": "self", 
+                "spark count buff activation": 16
+            }
+        ], 
+        "name": "Kitty of the Shadows", 
         "target": "self"
     }, 
     "8700": {

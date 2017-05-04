@@ -3793,6 +3793,33 @@
         ], 
         "name": "Divine Annihilation"
     }, 
+    "1952": {
+        "desc": "100% boost to Atk, 40% boost to max HP, probable Def ignoring effect, hugely boosts critical damage & enormously boosts BB gauge for 3 turns on critical", 
+        "effects": [
+            {
+                "atk% buff": 100, 
+                "hp% buff": 40, 
+                "passive id": "1"
+            }, 
+            {
+                "ignore def%": 20, 
+                "passive id": "29"
+            }, 
+            {
+                "crit multiplier%": 150.0, 
+                "passive id": "34"
+            }, 
+            {
+                "buff": {
+                    "buff turns (37)": "3", 
+                    "increase bb gauge gradual buff": 8
+                }, 
+                "on crit activation chance%": 100, 
+                "passive id": "89"
+            }
+        ], 
+        "name": "Divine Phoenix"
+    }, 
     "2": {
         "desc": "Leader Skill 1 Description", 
         "effects": [
@@ -11875,6 +11902,38 @@
         ], 
         "name": "Air domination"
     }, 
+    "740157": {
+        "desc": "Boosts ATK (100%) & boosts elemental damage (150%) & boosts BB ATK (200%), Spark damage (100%), critical damage (150%) for first 2 turns", 
+        "effects": [
+            {
+                "dark units do extra elemental weakness dmg": true, 
+                "earth units do extra elemental weakness dmg": true, 
+                "elemental weakness multiplier%": 150.0, 
+                "fire units do extra elemental weakness dmg": true, 
+                "light units do extra elemental weakness dmg": true, 
+                "passive id": "50", 
+                "thunder units do extra elemental weakness dmg": true, 
+                "water units do extra elemental weakness dmg": true
+            }, 
+            {
+                "atk% buff": 100, 
+                "passive id": "1"
+            }, 
+            {
+                "unknown passive id": "91", 
+                "unknown passive params": "72,200&200&200,2"
+            }, 
+            {
+                "unknown passive id": "91", 
+                "unknown passive params": "40,100,2"
+            }, 
+            {
+                "unknown passive id": "91", 
+                "unknown passive params": "84,150,2"
+            }
+        ], 
+        "name": "Full-powered Glass Cannon"
+    }, 
     "740164": {
         "desc": "Probable recovery of HP when attacked (20% chance to heal 20% of DMG received)", 
         "effects": [
@@ -14314,7 +14373,7 @@
                 "passive id": "2"
             }, 
             {
-                "extra hits dmg%": 50, 
+                "extra hits dmg%": -50, 
                 "hit increase/hit": 1, 
                 "passive id": "37"
             }, 
@@ -15443,7 +15502,7 @@
         "name": "Gelid Dominion"
     }, 
     "801093": {
-        "desc": "30% boost to all parameters, greatly boosts BB gauge fill rate, greatly boosts BC, HC drop rate & greatly boosts BB Atk", 
+        "desc": "30% boost to all parameters, greatly boosts BB gauge fill rate, greatly boosts BC, HC drop rate & greatly boosts BB Atk", 
         "effects": [
             {
                 "atk% buff": 30, 
@@ -15718,8 +15777,28 @@
         ], 
         "name": "Apex Hunter's Supremacy"
     }, 
+    "801203": {
+        "desc": "20% boost to max HP, Def & negates all status ailments", 
+        "effects": [
+            {
+                "def% buff": 20, 
+                "hp% buff": 20, 
+                "passive id": "1"
+            }, 
+            {
+                "curse resist%": 100, 
+                "injury resist%": 100, 
+                "paralysis resist%": 100, 
+                "passive id": "4", 
+                "poison resist%": 100, 
+                "sick resist%": 100, 
+                "weaken resist%": 100
+            }
+        ], 
+        "name": "Stalwart Aegis"
+    }, 
     "801204": {
-        "desc": "MST_LEADERSKILLS_801204_DESCRIPTION", 
+        "desc": "30% boost to max HP, Def, negates all status ailments & damage taken boosts BB gauge", 
         "effects": [
             {
                 "def% buff": 30, 
@@ -15743,6 +15822,166 @@
             }
         ], 
         "name": "Indomitable Bulwark"
+    }, 
+    "801205": {
+        "desc": "40% boost to max HP, Def, negates all status ailments, damage taken boosts BB gauge & boosts damage reduced while guarding", 
+        "effects": [
+            {
+                "def% buff": 40, 
+                "hp% buff": 40, 
+                "passive id": "1"
+            }, 
+            {
+                "curse resist%": 100, 
+                "injury resist%": 100, 
+                "paralysis resist%": 100, 
+                "passive id": "4", 
+                "poison resist%": 100, 
+                "sick resist%": 100, 
+                "weaken resist%": 100
+            }, 
+            {
+                "bc fill when attacked high": 3, 
+                "bc fill when attacked low": 2, 
+                "bc fill when attacked%": 100, 
+                "passive id": "25"
+            }, 
+            {
+                "guard increase mitigation%": 10, 
+                "passive id": "58"
+            }
+        ], 
+        "name": "Storm Champion's Bastion"
+    }, 
+    "801212": {
+        "desc": "20% boost to all parameters & negates elemental damage", 
+        "effects": [
+            {
+                "atk% buff": 20, 
+                "def% buff": 20, 
+                "hp% buff": 20, 
+                "passive id": "1", 
+                "rec% buff": 20
+            }, 
+            {
+                "passive id": "53", 
+                "strong base element damage resist%": 100, 
+                "strong buffed element damage resist%": 100
+            }
+        ], 
+        "name": "Insouciant Idealist"
+    }, 
+    "801213": {
+        "desc": "25% boost to all parameters, negates elemental damage & boosts elemental damage", 
+        "effects": [
+            {
+                "atk% buff": 25, 
+                "def% buff": 25, 
+                "hp% buff": 25, 
+                "passive id": "1", 
+                "rec% buff": 25
+            }, 
+            {
+                "passive id": "53", 
+                "strong base element damage resist%": 100, 
+                "strong buffed element damage resist%": 100
+            }, 
+            {
+                "dark units do extra elemental weakness dmg": true, 
+                "earth units do extra elemental weakness dmg": true, 
+                "elemental weakness multiplier%": 75.0, 
+                "fire units do extra elemental weakness dmg": true, 
+                "light units do extra elemental weakness dmg": true, 
+                "passive id": "50", 
+                "thunder units do extra elemental weakness dmg": true, 
+                "water units do extra elemental weakness dmg": true
+            }
+        ], 
+        "name": "Passion of the Maverick"
+    }, 
+    "801214": {
+        "desc": "30% boost to all parameters, negates elemental damage, boosts elemental damage & boosts OD gauge fill rate", 
+        "effects": [
+            {
+                "atk% buff": 30, 
+                "def% buff": 30, 
+                "hp% buff": 30, 
+                "passive id": "1", 
+                "rec% buff": 30
+            }, 
+            {
+                "passive id": "53", 
+                "strong base element damage resist%": 100, 
+                "strong buffed element damage resist%": 100
+            }, 
+            {
+                "dark units do extra elemental weakness dmg": true, 
+                "earth units do extra elemental weakness dmg": true, 
+                "elemental weakness multiplier%": 100.0, 
+                "fire units do extra elemental weakness dmg": true, 
+                "light units do extra elemental weakness dmg": true, 
+                "passive id": "50", 
+                "thunder units do extra elemental weakness dmg": true, 
+                "water units do extra elemental weakness dmg": true
+            }, 
+            {
+                "od fill rate%": 20, 
+                "passive id": "70"
+            }
+        ], 
+        "name": "Loremaster's Sermon"
+    }, 
+    "801215": {
+        "desc": "20% boost to Atk & boosts critical damage", 
+        "effects": [
+            {
+                "atk% buff": 20, 
+                "passive id": "1"
+            }, 
+            {
+                "crit multiplier%": 50.0, 
+                "passive id": "34"
+            }
+        ], 
+        "name": "Twinkle Pawz"
+    }, 
+    "801216": {
+        "desc": "40% boost to Atk, 10% boost to critical hit rate & largely boosts critical and Spark damage", 
+        "effects": [
+            {
+                "atk% buff": 40, 
+                "crit% buff": 10, 
+                "passive id": "1"
+            }, 
+            {
+                "crit multiplier%": 100.0, 
+                "passive id": "34"
+            }, 
+            {
+                "damage% for spark": 75, 
+                "passive id": "31"
+            }
+        ], 
+        "name": "Double Twinkle Pawz"
+    }, 
+    "801217": {
+        "desc": "80% boost to Atk, 20% boost to critical hit rate & hugely boosts critical and Spark damage", 
+        "effects": [
+            {
+                "atk% buff": 80, 
+                "crit% buff": 20, 
+                "passive id": "1"
+            }, 
+            {
+                "crit multiplier%": 150.0, 
+                "passive id": "34"
+            }, 
+            {
+                "damage% for spark": 100, 
+                "passive id": "31"
+            }
+        ], 
+        "name": "Nyaight Prowler"
     }, 
     "801218": {
         "desc": "Huge boost to BB gauge fill rate, large reduction in BB gauge required for BB & greatly boosts BB Atk", 
@@ -16052,6 +16291,73 @@
         ], 
         "name": "Reign of Terror"
     }, 
+    "801237": {
+        "desc": "20% boost to max HP, Atk & boosts BB Atk", 
+        "effects": [
+            {
+                "atk% buff": 20, 
+                "hp% buff": 20, 
+                "passive id": "1"
+            }, 
+            {
+                "bb atk% buff": 50, 
+                "passive id": "64", 
+                "sbb atk% buff": 50, 
+                "ubb atk% buff": 50
+            }
+        ], 
+        "name": "Qi Master's Might"
+    }, 
+    "801238": {
+        "desc": "30% boost to max HP, Atk, greatly boosts BB Atk & large boost to BB Atk if HP is full", 
+        "effects": [
+            {
+                "atk% buff": 30, 
+                "hp% buff": 30, 
+                "passive id": "1"
+            }, 
+            {
+                "bb atk% buff": 100, 
+                "passive id": "64", 
+                "sbb atk% buff": 100, 
+                "ubb atk% buff": 100
+            }, 
+            {
+                "unknown passive id": "103", 
+                "unknown passive params": "50,50,50,100,1"
+            }
+        ], 
+        "name": "Berserker's Furor"
+    }, 
+    "801239": {
+        "desc": "40% boost to max HP, Atk, hugely boosts BB Atk, large boost to BB Atk if HP is full & boosts Atk when damage dealt has exceeded certain amount", 
+        "effects": [
+            {
+                "atk% buff": 40, 
+                "hp% buff": 40, 
+                "passive id": "1"
+            }, 
+            {
+                "bb atk% buff": 150, 
+                "passive id": "64", 
+                "sbb atk% buff": 150, 
+                "ubb atk% buff": 150
+            }, 
+            {
+                "unknown passive id": "103", 
+                "unknown passive params": "100,100,100,100,1"
+            }, 
+            {
+                "buff": {
+                    "atk% buff (1)": 150, 
+                    "buff turns (1)": "2"
+                }, 
+                "damage dealt threshold buff activation": 20000, 
+                "passive id": "80"
+            }
+        ], 
+        "name": "Inexorable Bloodlust"
+    }, 
     "801251": {
         "desc": "50% boost to max HP, 140% boost to Atk, Def for first 2 turns, probability of enormous damage reduction & negates critical damage", 
         "effects": [
@@ -16341,7 +16647,7 @@
                 "passive id": "26"
             }, 
             {
-                "extra hits dmg%": 50, 
+                "extra hits dmg%": -50, 
                 "hit increase/hit": 1, 
                 "passive id": "37"
             }
