@@ -18459,6 +18459,78 @@
         "name": "Euphoria in Fuchsia", 
         "target": "self"
     }, 
+    "850277": {
+        "desc": "Adds Def ignoring effect to BB/SBB for 3 turns & 30% boost to Atk, Def each turn (for up to 3 turns)", 
+        "effects": [
+            {
+                "conditions": [], 
+                "passive id": "66", 
+                "passive target": "self", 
+                "trigger on bb": true, 
+                "trigger on sbb": true, 
+                "triggered effect": [
+                    {
+                        "defense% ignore": 100, 
+                        "defense% ignore turns (39)": 3, 
+                        "effect delay time(ms)/frame": "0.0/0", 
+                        "proc id": "22", 
+                        "target area": "aoe", 
+                        "target type": "party"
+                    }
+                ]
+            }, 
+            {
+                "atk% max buff": 90, 
+                "conditions": [], 
+                "def% max buff": 90, 
+                "increase from min to max": 1, 
+                "passive id": "105", 
+                "passive target": "self", 
+                "turn count": 3
+            }
+        ], 
+        "name": "Concept Creation Matrix", 
+        "target": "self"
+    }, 
+    "850278": {
+        "desc": "Adds Def ignoring effect to BB/SBB for 3 turns, adds resistance against 1 KO attack after activating OD & 40% boost to Atk, Def each turn (for up to 3 turns)", 
+        "effects": [
+            {
+                "conditions": [], 
+                "passive id": "66", 
+                "passive target": "self", 
+                "trigger on bb": true, 
+                "trigger on sbb": true, 
+                "triggered effect": [
+                    {
+                        "defense% ignore": 100, 
+                        "defense% ignore turns (39)": 3, 
+                        "effect delay time(ms)/frame": "0.0/0", 
+                        "proc id": "22", 
+                        "target area": "aoe", 
+                        "target type": "party"
+                    }
+                ]
+            }, 
+            {
+                "atk% max buff": 120, 
+                "conditions": [], 
+                "def% max buff": 120, 
+                "increase from min to max": 1, 
+                "passive id": "105", 
+                "passive target": "self", 
+                "turn count": 3
+            }, 
+            {
+                "conditions": [], 
+                "passive target": "self", 
+                "unknown passive id": "106", 
+                "unknown passive params": "12,100,1,100,-1"
+            }
+        ], 
+        "name": "Omni-Concept Instantiation", 
+        "target": "self"
+    }, 
     "850317": {
         "desc": "Adds removal and negation of status ailments effects for 3 turns to BB/SBB when Ritus Staff is equipped", 
         "effects": [
