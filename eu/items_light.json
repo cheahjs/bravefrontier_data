@@ -10842,6 +10842,48 @@
         "thumbnail": "sphere_thum_1_1.png", 
         "type": "sphere"
     }, 
+    "47212": {
+        "desc": "40% boost to Def, max HP, hugely boosts Atk, Def relative to how high HP is & negates all status ailments and elemental damage", 
+        "effect": [
+            {
+                "def% buff": 40, 
+                "hp% buff": 40, 
+                "passive id": "1"
+            }, 
+            {
+                "passive id": "53", 
+                "strong base element damage resist%": 100, 
+                "strong buffed element damage resist%": 100
+            }, 
+            {
+                "atk% base buff": 0, 
+                "atk% extra buff based on hp": 100, 
+                "buff proportional to hp": "remaining", 
+                "def% base buff": 0, 
+                "def% extra buff based on hp": 100, 
+                "passive id": "46"
+            }, 
+            {
+                "curse resist%": 100, 
+                "injury resist%": 100, 
+                "paralysis resist%": 100, 
+                "passive id": "4", 
+                "poison resist%": 100, 
+                "sick resist%": 100, 
+                "weaken resist%": 100
+            }
+        ], 
+        "id": 47212, 
+        "max_stack": 1, 
+        "name": "Antithesis Gem", 
+        "raid": false, 
+        "rarity": 6, 
+        "sell_price": 10000, 
+        "sphere type": 1, 
+        "sphere type text": "Status Boost", 
+        "thumbnail": "sphere_thum_1_1.png", 
+        "type": "sphere"
+    }, 
     "47300": {
         "desc": "10% boost to max HP and Rec & slightly boosts critical damage", 
         "effect": [
@@ -13010,6 +13052,503 @@
         "sell_price": 100, 
         "thumbnail": "item_thum_21100.png", 
         "type": "consumable"
+    }, 
+    "60000": {
+        "desc": "10% boost to Atk, max HP & slightly boosts critical hit rate", 
+        "effect": [
+            {
+                "atk% buff": 10, 
+                "crit% buff": 10, 
+                "hp% buff": 10, 
+                "passive id": "1"
+            }
+        ], 
+        "id": 60000, 
+        "max_stack": 1, 
+        "name": "Nectar Wine", 
+        "raid": false, 
+        "rarity": 3, 
+        "sell_price": 30000, 
+        "sphere type": 1, 
+        "sphere type text": "Status Boost", 
+        "thumbnail": "sphere_thum_1_1.png", 
+        "type": "sphere"
+    }, 
+    "60010": {
+        "desc": "Restores HP each turn, boosts HC drop rate & slightly boosts HC efficacy", 
+        "effect": [
+            {
+                "passive id": "33", 
+                "rec% added (turn heal)": 10.0, 
+                "turn heal high": 1200, 
+                "turn heal low": 800
+            }, 
+            {
+                "hc drop rate% buff": 10, 
+                "passive id": "19"
+            }, 
+            {
+                "hc effectiveness%": 10, 
+                "passive id": "10"
+            }
+        ], 
+        "id": 60010, 
+        "max_stack": 1, 
+        "name": "Life Jewel", 
+        "raid": false, 
+        "rarity": 3, 
+        "sell_price": 30000, 
+        "sphere type": 7, 
+        "sphere type text": "HP Recovery", 
+        "thumbnail": "sphere_thum_1_2.png", 
+        "type": "sphere"
+    }, 
+    "60020": {
+        "desc": "20% boost to all parameters & slightly reduces BB gauge consumption", 
+        "effect": [
+            {
+                "atk% buff": 20, 
+                "def% buff": 20, 
+                "hp% buff": 20, 
+                "passive id": "1", 
+                "rec% buff": 20
+            }, 
+            {
+                "passive id": "49", 
+                "reduced bb bc use chance%": 100, 
+                "reduced bb bc use% high": 10, 
+                "reduced bb bc use% low": 10
+            }
+        ], 
+        "id": 60020, 
+        "max_stack": 1, 
+        "name": "Tactical Treatise", 
+        "raid": false, 
+        "rarity": 3, 
+        "sell_price": 30000, 
+        "sphere type": 1, 
+        "sphere type text": "Status Boost", 
+        "thumbnail": "sphere_thum_1_3.png", 
+        "type": "sphere"
+    }, 
+    "60030": {
+        "desc": "Probable random status ailment infliction & boosts damage against status afflicted foes", 
+        "effect": [
+            {
+                "curse%": 5, 
+                "paralysis%": 5, 
+                "passive id": "20", 
+                "poison%": 5
+            }, 
+            {
+                "injury%": 7, 
+                "passive id": "20", 
+                "sick%": 7, 
+                "weaken%": 7
+            }, 
+            {
+                "atk% buff when enemy has ailment": 50, 
+                "atk% buff when enemy has curse": true, 
+                "atk% buff when enemy has injury": true, 
+                "atk% buff when enemy has paralysis": true, 
+                "atk% buff when enemy has poison": true, 
+                "atk% buff when enemy has sick": true, 
+                "atk% buff when enemy has weaken": true, 
+                "passive id": "74"
+            }
+        ], 
+        "id": 60030, 
+        "max_stack": 1, 
+        "name": "Serpent Blade", 
+        "raid": false, 
+        "rarity": 4, 
+        "sell_price": 30000, 
+        "sphere type": 4, 
+        "sphere type text": "Status Ailment", 
+        "thumbnail": "sphere_thum_1_4.png", 
+        "type": "sphere"
+    }, 
+    "60040": {
+        "desc": "Boosts Atk and critical hit rate when BB gauge is over 50% & critical damage considerably boosts BB gauge", 
+        "effect": [
+            {
+                "atk% buff": 50, 
+                "bb gauge above % buff requirement": 50, 
+                "crit% buff": 20, 
+                "passive id": "30"
+            }, 
+            {
+                "bc fill on crit max": 4, 
+                "bc fill on crit min": 4, 
+                "bc fill on crit%": 100.0, 
+                "passive id": "65"
+            }
+        ], 
+        "id": 60040, 
+        "max_stack": 1, 
+        "name": "Conqueror Bow", 
+        "raid": false, 
+        "rarity": 4, 
+        "sell_price": 30000, 
+        "sphere type": 2, 
+        "sphere type text": "Critical", 
+        "thumbnail": "sphere_thum_1_5.png", 
+        "type": "sphere"
+    }, 
+    "60050": {
+        "desc": "25% boost to all parameters, hugely boosts BC drop rate & slightly boosts BC efficacy", 
+        "effect": [
+            {
+                "atk% buff": 25, 
+                "def% buff": 25, 
+                "hp% buff": 25, 
+                "passive id": "1", 
+                "rec% buff": 25
+            }, 
+            {
+                "bc drop rate% buff": 20, 
+                "passive id": "19"
+            }, 
+            {
+                "bb gauge fill rate%": 20, 
+                "passive id": "32"
+            }
+        ], 
+        "id": 60050, 
+        "max_stack": 1, 
+        "name": "Star Talisman", 
+        "raid": false, 
+        "rarity": 3, 
+        "sell_price": 30000, 
+        "sphere type": 1, 
+        "sphere type text": "Status Boost", 
+        "thumbnail": "sphere_thum_2_1.png", 
+        "type": "sphere"
+    }, 
+    "60060": {
+        "desc": "Probable 25% damage reduction & negates Def ignoring damage", 
+        "effect": [
+            {
+                "dmg reduction chance%": 30, 
+                "dmg reduction%": 25, 
+                "passive id": "14"
+            }, 
+            {
+                "ignore def resist chance%": 100, 
+                "passive id": "92"
+            }
+        ], 
+        "id": 60060, 
+        "max_stack": 1, 
+        "name": "White Vestments", 
+        "raid": false, 
+        "rarity": 4, 
+        "sell_price": 30000, 
+        "sphere type": 10, 
+        "sphere type text": "Damage Reducing", 
+        "thumbnail": "sphere_thum_2_2.png", 
+        "type": "sphere"
+    }, 
+    "60070": {
+        "desc": "50% boost to Spark damage & probable Spark vulnerability for 1 turn", 
+        "effect": [
+            {
+                "damage% for spark": 50, 
+                "passive id": "31"
+            }, 
+            {
+                "passive id": "75", 
+                "spark debuff chance%": 25, 
+                "spark debuff turns": 0, 
+                "spark debuff%": 25
+            }
+        ], 
+        "id": 60070, 
+        "max_stack": 1, 
+        "name": "Justice Axe", 
+        "raid": false, 
+        "rarity": 4, 
+        "sell_price": 30000, 
+        "sphere type": 11, 
+        "sphere type text": "Spark", 
+        "thumbnail": "sphere_thum_2_3.png", 
+        "type": "sphere"
+    }, 
+    "60080": {
+        "desc": "30% boost to all parameters & negates all status ailments", 
+        "effect": [
+            {
+                "atk% buff": 30, 
+                "def% buff": 30, 
+                "hp% buff": 30, 
+                "passive id": "1", 
+                "rec% buff": 30
+            }, 
+            {
+                "curse resist%": 100, 
+                "injury resist%": 100, 
+                "paralysis resist%": 100, 
+                "passive id": "4", 
+                "poison resist%": 100, 
+                "sick resist%": 100, 
+                "weaken resist%": 100
+            }
+        ], 
+        "id": 60080, 
+        "max_stack": 1, 
+        "name": "Power Armor", 
+        "raid": false, 
+        "rarity": 5, 
+        "sell_price": 30000, 
+        "sphere type": 1, 
+        "sphere type text": "Status Boost", 
+        "thumbnail": "sphere_thum_2_4.png", 
+        "type": "sphere"
+    }, 
+    "60090": {
+        "desc": "Enormously boosts BC, HC, Zel, Karma, Item drop rate & hugely boosts BC, HC, Zel, Karma, Item drop rates when HP is full", 
+        "effect": [
+            {
+                "bc drop rate% buff": 20, 
+                "hc drop rate% buff": 20, 
+                "item drop rate% buff": 5, 
+                "karma drop rate% buff": 15, 
+                "passive id": "19", 
+                "zel drop rate% buff": 20
+            }, 
+            {
+                "bc drop rate% buff": 15, 
+                "hc drop rate% buff": 15, 
+                "hp above % buff requirement": 100, 
+                "item drop rate% buff": 2, 
+                "karma drop rate% buff": 10, 
+                "passive id": "12", 
+                "zel drop rate% buff": 15
+            }
+        ], 
+        "id": 60090, 
+        "max_stack": 1, 
+        "name": "Underworld Gem", 
+        "raid": false, 
+        "rarity": 6, 
+        "sell_price": 30000, 
+        "sphere type": 3, 
+        "sphere type text": "Drop", 
+        "thumbnail": "sphere_thum_2_5.png", 
+        "type": "sphere"
+    }, 
+    "60100": {
+        "desc": "Boosts elemental and critical damage & 50% boost to Spark damage", 
+        "effect": [
+            {
+                "dark units do extra elemental weakness dmg": true, 
+                "earth units do extra elemental weakness dmg": true, 
+                "elemental weakness multiplier%": 50.0, 
+                "fire units do extra elemental weakness dmg": true, 
+                "light units do extra elemental weakness dmg": true, 
+                "passive id": "50", 
+                "thunder units do extra elemental weakness dmg": true, 
+                "water units do extra elemental weakness dmg": true
+            }, 
+            {
+                "crit multiplier%": 50.0, 
+                "passive id": "34"
+            }, 
+            {
+                "damage% for spark": 50, 
+                "passive id": "31"
+            }
+        ], 
+        "id": 60100, 
+        "max_stack": 1, 
+        "name": "Strategy Manual", 
+        "raid": false, 
+        "rarity": 5, 
+        "sell_price": 30000, 
+        "sphere type": 13, 
+        "sphere type text": "Atk Boosting", 
+        "thumbnail": "sphere_thum_3_1.png", 
+        "type": "sphere"
+    }, 
+    "60110": {
+        "desc": "35% boost to all parameters, damage taken boosts BB gauge & boosts BB gauge each turn", 
+        "effect": [
+            {
+                "atk% buff": 35, 
+                "def% buff": 35, 
+                "hp% buff": 35, 
+                "passive id": "1", 
+                "rec% buff": 35
+            }, 
+            {
+                "bc fill when attacked high": 4, 
+                "bc fill when attacked low": 2, 
+                "bc fill when attacked%": 100, 
+                "passive id": "25"
+            }, 
+            {
+                "bc fill per turn": 3, 
+                "passive id": "9"
+            }
+        ], 
+        "id": 60110, 
+        "max_stack": 1, 
+        "name": "Demonic Regalia", 
+        "raid": false, 
+        "rarity": 6, 
+        "sell_price": 30000, 
+        "sphere type": 1, 
+        "sphere type text": "Status Boost", 
+        "thumbnail": "sphere_thum_3_2.png", 
+        "type": "sphere"
+    }, 
+    "60120": {
+        "desc": "Spark dmg boosts BC, HC drop rates, 100% boost to Spark dmg & Spark dmg slightly restores HP and BB gauge", 
+        "effect": [
+            {
+                "bc drop% for spark": 35, 
+                "damage% for spark": 100, 
+                "hc drop% for spark": 50, 
+                "passive id": "31"
+            }, 
+            {
+                "bc fill on spark high": 2, 
+                "bc fill on spark low": 1, 
+                "bc fill on spark%": 100, 
+                "passive id": "47"
+            }, 
+            {
+                "heal on spark high": 200, 
+                "heal on spark low": 100, 
+                "heal on spark%": 100, 
+                "passive id": "101"
+            }
+        ], 
+        "id": 60120, 
+        "max_stack": 1, 
+        "name": "Purgatory Verse", 
+        "raid": false, 
+        "rarity": 6, 
+        "sell_price": 30000, 
+        "sphere type": 11, 
+        "sphere type text": "Spark", 
+        "thumbnail": "sphere_thum_3_3.png", 
+        "type": "sphere"
+    }, 
+    "60130": {
+        "desc": "Negates elemental, critical dmg and Atk, Def,  Rec reducing effects & 10% damage reduction", 
+        "effect": [
+            {
+                "crit chance base resist%": 100, 
+                "crit chance buffed resist%": 100, 
+                "crit dmg base damage resist%": 100, 
+                "crit dmg buffed damage resist%": 100, 
+                "passive id": "53", 
+                "strong base element damage resist%": 100, 
+                "strong buffed element damage resist%": 100
+            }, 
+            {
+                "atk down resist%": 100, 
+                "def down resist%": 100, 
+                "passive id": "73", 
+                "rec down resist%": 100
+            }, 
+            {
+                "dmg% mitigation": 10, 
+                "passive id": "8"
+            }
+        ], 
+        "id": 60130, 
+        "max_stack": 1, 
+        "name": "Celestial Staff", 
+        "raid": false, 
+        "rarity": 6, 
+        "sell_price": 30000, 
+        "sphere type": 10, 
+        "sphere type text": "Damage Reducing", 
+        "thumbnail": "sphere_thum_3_4.png", 
+        "type": "sphere"
+    }, 
+    "60140": {
+        "desc": "Hugely boosts OD gauge fill rate, enormously boosts BB Atk, reduces BB gauge req for BB & considerably reduces BB gauge consumption", 
+        "effect": [
+            {
+                "od fill rate%": 30, 
+                "passive id": "70"
+            }, 
+            {
+                "bb atk% buff": 200, 
+                "passive id": "64", 
+                "sbb atk% buff": 200, 
+                "ubb atk% buff": 200
+            }, 
+            {
+                "passive id": "48", 
+                "reduced bb bc cost%": 20
+            }, 
+            {
+                "passive id": "49", 
+                "reduced bb bc use chance%": 100, 
+                "reduced bb bc use% high": 25, 
+                "reduced bb bc use% low": 20
+            }
+        ], 
+        "id": 60140, 
+        "max_stack": 1, 
+        "name": "Defender's Blade", 
+        "raid": false, 
+        "rarity": 6, 
+        "sell_price": 30000, 
+        "sphere type": 6, 
+        "sphere type text": "BB Gauge", 
+        "thumbnail": "sphere_thum_3_5.png", 
+        "type": "sphere"
+    }, 
+    "60150": {
+        "desc": "Adds all elements to Atk, enormously boosts elemental dmg & boosts BB Atk when dmg dealt exceeds set amount for 2 turns", 
+        "effect": [
+            {
+                "elements added": [
+                    "fire", 
+                    "water", 
+                    "earth", 
+                    "thunder", 
+                    "light", 
+                    "dark"
+                ], 
+                "passive id": "102"
+            }, 
+            {
+                "dark units do extra elemental weakness dmg": true, 
+                "earth units do extra elemental weakness dmg": true, 
+                "elemental weakness multiplier%": 200.0, 
+                "fire units do extra elemental weakness dmg": true, 
+                "light units do extra elemental weakness dmg": true, 
+                "passive id": "50", 
+                "thunder units do extra elemental weakness dmg": true, 
+                "water units do extra elemental weakness dmg": true
+            }, 
+            {
+                "buff": {
+                    "bb atk% buff": 150, 
+                    "buff turns (72)": "2", 
+                    "sbb atk% buff": 150, 
+                    "ubb atk% buff": 150
+                }, 
+                "damage dealt threshold buff activation": 10000, 
+                "passive id": "80"
+            }
+        ], 
+        "id": 60150, 
+        "max_stack": 1, 
+        "name": "Sacred Rod", 
+        "raid": false, 
+        "rarity": 7, 
+        "sell_price": 30000, 
+        "sphere type": 13, 
+        "sphere type text": "Atk Boosting", 
+        "thumbnail": "sphere_thum_5_5.png", 
+        "type": "sphere"
     }, 
     "60200": {
         "desc": "75% boost to Spark damage, Spark damage slightly restores HP and slightly boosts BB gauge & probable Spark critical", 

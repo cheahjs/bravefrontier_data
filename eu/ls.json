@@ -727,6 +727,121 @@
         ], 
         "name": "Sacred Emperor's Guidance"
     }, 
+    "10132": {
+        "desc": "45% boost to all parameters, probable 20% damage reduction & reduces BB gauge required for BB", 
+        "effects": [
+            {
+                "atk% buff": 45, 
+                "def% buff": 45, 
+                "hp% buff": 45, 
+                "passive id": "1", 
+                "rec% buff": 45
+            }, 
+            {
+                "dmg reduction chance%": 10, 
+                "dmg reduction%": 20, 
+                "passive id": "14"
+            }, 
+            {
+                "passive id": "48", 
+                "reduced bb bc cost%": 15
+            }
+        ], 
+        "name": "Leader of the Alliance"
+    }, 
+    "10133": {
+        "desc": "50% boost to all parameters, probable 20% damage reduction, reduces BB gauge required for BB & boosts OD gauge fill rate for 2 turns when Sparks have exceeded certain amount", 
+        "effects": [
+            {
+                "atk% buff": 50, 
+                "def% buff": 50, 
+                "hp% buff": 50, 
+                "passive id": "1", 
+                "rec% buff": 50
+            }, 
+            {
+                "dmg reduction chance%": 15, 
+                "dmg reduction%": 20, 
+                "passive id": "14"
+            }, 
+            {
+                "passive id": "48", 
+                "reduced bb bc cost%": 20
+            }, 
+            {
+                "buff": {
+                    "buff turns (132)": "2", 
+                    "unknown buff id": "132", 
+                    "unknown buff params": "20&2&0"
+                }, 
+                "passive id": "86", 
+                "spark count buff activation": 20
+            }
+        ], 
+        "name": "Leader of the Rebellion"
+    }, 
+    "10134": {
+        "desc": "45% boost to all parameters, hugely boosts BB Atk & 5% damage reduction from all elemental types", 
+        "effects": [
+            {
+                "atk% buff": 45, 
+                "def% buff": 45, 
+                "hp% buff": 45, 
+                "passive id": "1", 
+                "rec% buff": 45
+            }, 
+            {
+                "bb atk% buff": 150, 
+                "passive id": "64", 
+                "sbb atk% buff": 150, 
+                "ubb atk% buff": 150
+            }, 
+            {
+                "dmg% mitigation for elemental attacks": 5.0, 
+                "mitigate dark attacks": true, 
+                "mitigate earth attacks": true, 
+                "mitigate fire attacks": true, 
+                "mitigate light attacks": true, 
+                "mitigate thunder attacks": true, 
+                "mitigate water attacks": true, 
+                "passive id": "62"
+            }
+        ], 
+        "name": "Rebellious Vindication"
+    }, 
+    "10135": {
+        "desc": "50% boost to all parameters, enormously boosts BB Atk, 10% damage reduction from all elemental types & considerably boosts BC efficacy", 
+        "effects": [
+            {
+                "atk% buff": 50, 
+                "def% buff": 50, 
+                "hp% buff": 50, 
+                "passive id": "1", 
+                "rec% buff": 50
+            }, 
+            {
+                "bb atk% buff": 200, 
+                "passive id": "64", 
+                "sbb atk% buff": 200, 
+                "ubb atk% buff": 200
+            }, 
+            {
+                "dmg% mitigation for elemental attacks": 10.0, 
+                "mitigate dark attacks": true, 
+                "mitigate earth attacks": true, 
+                "mitigate fire attacks": true, 
+                "mitigate light attacks": true, 
+                "mitigate thunder attacks": true, 
+                "mitigate water attacks": true, 
+                "passive id": "62"
+            }, 
+            {
+                "bb gauge fill rate%": 50, 
+                "passive id": "32"
+            }
+        ], 
+        "name": "Emperor's Just Protector"
+    }, 
     "102": {
         "desc": "50% boost to Atk power and 10% increase in HP of Fire types", 
         "effects": [
@@ -1608,6 +1723,58 @@
             }
         ], 
         "name": "Earthly Unity"
+    }, 
+    "12500": {
+        "desc": "50% boost to Atk, Def, max HP, considerably boosts Rec relative to remaining HP & enormously boosts BB Atk", 
+        "effects": [
+            {
+                "atk% buff": 50, 
+                "def% buff": 50, 
+                "hp% buff": 50, 
+                "passive id": "1"
+            }, 
+            {
+                "buff proportional to hp": "remaining", 
+                "passive id": "46", 
+                "rec% base buff": 0, 
+                "rec% extra buff based on hp": 80
+            }, 
+            {
+                "bb atk% buff": 200, 
+                "passive id": "64", 
+                "sbb atk% buff": 200, 
+                "ubb atk% buff": 200
+            }
+        ], 
+        "name": "Unnatural Gaze"
+    }, 
+    "12501": {
+        "desc": "60% boost to Atk, Def, max HP, hugely boosts Rec relative to remaining HP, enormously boosts BB Atk & negates Def ignoring effects", 
+        "effects": [
+            {
+                "atk% buff": 60, 
+                "def% buff": 60, 
+                "hp% buff": 60, 
+                "passive id": "1"
+            }, 
+            {
+                "buff proportional to hp": "remaining", 
+                "passive id": "46", 
+                "rec% base buff": 0, 
+                "rec% extra buff based on hp": 100
+            }, 
+            {
+                "bb atk% buff": 250, 
+                "passive id": "64", 
+                "sbb atk% buff": 250, 
+                "ubb atk% buff": 250
+            }, 
+            {
+                "ignore def resist chance%": 100, 
+                "passive id": "92"
+            }
+        ], 
+        "name": "Unnatural Roar"
     }, 
     "126": {
         "desc": "100% boost to Atk power and 30% increase in HP of Earth types", 
@@ -13731,6 +13898,271 @@
         ], 
         "name": "Flowing Assault"
     }, 
+    "7485": {
+        "desc": "50% boost to Atk and max HP, hugely boosts Item drop rate, normal attacks may hit all foes & adds probable Spark critical", 
+        "effects": [
+            {
+                "atk% buff": 50, 
+                "hp% buff": 50, 
+                "passive id": "1"
+            }, 
+            {
+                "item drop rate% buff": 4, 
+                "passive id": "19"
+            }, 
+            {
+                "aoe atk inc%": -50, 
+                "chance to aoe": 25, 
+                "passive id": "96"
+            }, 
+            {
+                "unknown passive id": "100", 
+                "unknown passive params": "5,50"
+            }
+        ], 
+        "name": "Lovely Thief's Loot"
+    }, 
+    "7486": {
+        "desc": "60% boost to Atk and max HP, enormously boosts Item drop rate, normal attacks may hit all foes & adds probable Spark critical", 
+        "effects": [
+            {
+                "atk% buff": 60, 
+                "hp% buff": 60, 
+                "passive id": "1"
+            }, 
+            {
+                "item drop rate% buff": 5, 
+                "passive id": "19"
+            }, 
+            {
+                "aoe atk inc%": -50, 
+                "chance to aoe": 30, 
+                "passive id": "96"
+            }, 
+            {
+                "unknown passive id": "100", 
+                "unknown passive params": "10,50"
+            }
+        ], 
+        "name": "Lovely Thief's Treasure"
+    }, 
+    "7487": {
+        "desc": "50% boost to Atk and max HP, 10% damage reduction from Water, Thunder types & hugely boosts Earth, Thunder elemental damage", 
+        "effects": [
+            {
+                "atk% buff": 50, 
+                "hp% buff": 50, 
+                "passive id": "1"
+            }, 
+            {
+                "dmg% mitigation for elemental attacks": 10.0, 
+                "mitigate thunder attacks": true, 
+                "mitigate water attacks": true, 
+                "passive id": "62"
+            }, 
+            {
+                "earth units do extra elemental weakness dmg": true, 
+                "elemental weakness multiplier%": 100.0, 
+                "passive id": "50", 
+                "thunder units do extra elemental weakness dmg": true
+            }
+        ], 
+        "name": "Benevolent Rage"
+    }, 
+    "7488": {
+        "desc": "60% boost to Atk and max HP, 15% damage reduction from Water, Thunder types, hugely boosts Earth, Thunder elemental damage & enormously boosts BB Atk", 
+        "effects": [
+            {
+                "atk% buff": 60, 
+                "hp% buff": 60, 
+                "passive id": "1"
+            }, 
+            {
+                "dmg% mitigation for elemental attacks": 15.0, 
+                "mitigate thunder attacks": true, 
+                "mitigate water attacks": true, 
+                "passive id": "62"
+            }, 
+            {
+                "earth units do extra elemental weakness dmg": true, 
+                "elemental weakness multiplier%": 150.0, 
+                "passive id": "50", 
+                "thunder units do extra elemental weakness dmg": true
+            }, 
+            {
+                "bb atk% buff": 250, 
+                "passive id": "64", 
+                "sbb atk% buff": 250, 
+                "ubb atk% buff": 250
+            }
+        ], 
+        "name": "Altruistic Champion"
+    }, 
+    "7490": {
+        "desc": "50% boost to Atk, max HP, attacks slightly absorb HP & damage taken boosts BB gauge", 
+        "effects": [
+            {
+                "atk% buff": 50, 
+                "hp% buff": 50, 
+                "passive id": "1"
+            }, 
+            {
+                "bc fill when attacked high": 4, 
+                "bc fill when attacked low": 2, 
+                "bc fill when attacked%": 100, 
+                "passive id": "25"
+            }, 
+            {
+                "hp drain chance%": 100, 
+                "hp drain% high": 8, 
+                "hp drain% low": 3, 
+                "passive id": "17"
+            }
+        ], 
+        "name": "Burial of Wreckage"
+    }, 
+    "7491": {
+        "desc": "60% boost to Atk, max HP, attacks slightly absorb HP, adds probable resistance against 1 KO attack & damage taken hugely boosts BB gauge", 
+        "effects": [
+            {
+                "atk% buff": 60, 
+                "hp% buff": 60, 
+                "passive id": "1"
+            }, 
+            {
+                "bc fill when attacked high": 7, 
+                "bc fill when attacked low": 4, 
+                "bc fill when attacked%": 100, 
+                "passive id": "25"
+            }, 
+            {
+                "hp drain chance%": 100, 
+                "hp drain% high": 10, 
+                "hp drain% low": 5, 
+                "passive id": "17"
+            }, 
+            {
+                "angel idol chance% condition": 0, 
+                "angel idol recover chance% high": 20, 
+                "angel idol recover chance% low": 20, 
+                "angel idol recover counts": 1, 
+                "passive id": "69"
+            }
+        ], 
+        "name": "Myriad of Catastrophes"
+    }, 
+    "7492": {
+        "desc": "50% boost to Atk, max HP, Spark damage slightly boosts BB gauge & 110% boost to Spark damage", 
+        "effects": [
+            {
+                "atk% buff": 50, 
+                "hp% buff": 50, 
+                "passive id": "1"
+            }, 
+            {
+                "damage% for spark": 110, 
+                "passive id": "31"
+            }, 
+            {
+                "bc fill on spark high": 2, 
+                "bc fill on spark low": 1, 
+                "bc fill on spark%": 100, 
+                "passive id": "47"
+            }
+        ], 
+        "name": "Holy Guardian"
+    }, 
+    "7493": {
+        "desc": "60% boost to Atk, max HP, considerably boosts OD gauge fill rate, Spark damage boosts BB gauge & 130% boost to Spark damage", 
+        "effects": [
+            {
+                "atk% buff": 60, 
+                "hp% buff": 60, 
+                "passive id": "1"
+            }, 
+            {
+                "damage% for spark": 130, 
+                "passive id": "31"
+            }, 
+            {
+                "bc fill on spark high": 3, 
+                "bc fill on spark low": 2, 
+                "bc fill on spark%": 100, 
+                "passive id": "47"
+            }, 
+            {
+                "od fill rate%": 20, 
+                "passive id": "70"
+            }
+        ], 
+        "name": "Holy Protector"
+    }, 
+    "7494": {
+        "desc": "50% boost to Atk, max HP, probable infliction of random status ailment & hugely boosts damage against status afflicted foes", 
+        "effects": [
+            {
+                "atk% buff": 50, 
+                "hp% buff": 50, 
+                "passive id": "1"
+            }, 
+            {
+                "injury%": 7, 
+                "passive id": "20", 
+                "poison%": 5, 
+                "sick%": 7, 
+                "weaken%": 7
+            }, 
+            {
+                "curse%": 5, 
+                "paralysis%": 5, 
+                "passive id": "20"
+            }, 
+            {
+                "atk% buff when enemy has ailment": 100, 
+                "atk% buff when enemy has curse": true, 
+                "atk% buff when enemy has injury": true, 
+                "atk% buff when enemy has paralysis": true, 
+                "atk% buff when enemy has poison": true, 
+                "atk% buff when enemy has sick": true, 
+                "atk% buff when enemy has weaken": true, 
+                "passive id": "74"
+            }
+        ], 
+        "name": "Interrogator's Gambit"
+    }, 
+    "7495": {
+        "desc": "60% boost to Atk, max HP, probable infliction of random status ailment & enormously boosts damage against status afflicted foes", 
+        "effects": [
+            {
+                "atk% buff": 60, 
+                "hp% buff": 60, 
+                "passive id": "1"
+            }, 
+            {
+                "injury%": 15, 
+                "passive id": "20", 
+                "poison%": 10, 
+                "sick%": 15, 
+                "weaken%": 15
+            }, 
+            {
+                "curse%": 10, 
+                "paralysis%": 10, 
+                "passive id": "20"
+            }, 
+            {
+                "atk% buff when enemy has ailment": 130, 
+                "atk% buff when enemy has curse": true, 
+                "atk% buff when enemy has injury": true, 
+                "atk% buff when enemy has paralysis": true, 
+                "atk% buff when enemy has poison": true, 
+                "atk% buff when enemy has sick": true, 
+                "atk% buff when enemy has weaken": true, 
+                "passive id": "74"
+            }
+        ], 
+        "name": "Questioner's Jab"
+    }, 
     "7500": {
         "desc": "Adds chance of slightly absorbing HP when attacking", 
         "effects": [
@@ -13747,10 +14179,10 @@
         "desc": "Huge boost to drop rates during battle, especially during Christmas season", 
         "effects": [
             {
-                "item drop rate% buff": 20, 
-                "karma drop rate% buff": 20, 
+                "item drop rate% buff": 10, 
+                "karma drop rate% buff": 10, 
                 "passive id": "19", 
-                "zel drop rate% buff": 20
+                "zel drop rate% buff": 10
             }
         ], 
         "name": "Chimney Sweep"
