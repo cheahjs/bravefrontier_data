@@ -1262,6 +1262,108 @@
         "id": "10143", 
         "name": "麗神翠舞の天逢"
     }, 
+    "10144": {
+        "desc": "全てのユニットの全能力を５０％アップ＆全属性の弱点属性ダメージを大幅にアップ＆全属性ユニットからの被ダメージを５％軽減＆与ダメージが一定数を超える度に２ターン、スパークダメージを超絶アップ", 
+        "effects": [
+            {
+                "atk% buff": 50, 
+                "def% buff": 50, 
+                "hp% buff": 50, 
+                "passive id": "1", 
+                "rec% buff": 50
+            }, 
+            {
+                "dark units do extra elemental weakness dmg": true, 
+                "earth units do extra elemental weakness dmg": true, 
+                "elemental weakness multiplier%": 125.0, 
+                "fire units do extra elemental weakness dmg": true, 
+                "light units do extra elemental weakness dmg": true, 
+                "passive id": "50", 
+                "thunder units do extra elemental weakness dmg": true, 
+                "water units do extra elemental weakness dmg": true
+            }, 
+            {
+                "dmg% mitigation for elemental attacks": 5.0, 
+                "mitigate dark attacks": true, 
+                "mitigate earth attacks": true, 
+                "mitigate fire attacks": true, 
+                "mitigate light attacks": true, 
+                "mitigate thunder attacks": true, 
+                "mitigate water attacks": true, 
+                "passive id": "62"
+            }, 
+            {
+                "buff": {
+                    "buff turns (40)": "2", 
+                    "spark dmg% buff": 120
+                }, 
+                "damage dealt threshold buff activation": 10000, 
+                "passive id": "80"
+            }
+        ], 
+        "id": "10144", 
+        "name": "魂創禍神の兇界"
+    }, 
+    "10145": {
+        "desc": "全てのユニットの全能力を６０％アップ＆攻撃ＢＢの威力を超絶アップ＆クリティカルダメージを超絶アップ＆クリティカル時、ＢＢゲージを超絶増加", 
+        "effects": [
+            {
+                "atk% buff": 60, 
+                "def% buff": 60, 
+                "hp% buff": 60, 
+                "passive id": "1", 
+                "rec% buff": 60
+            }, 
+            {
+                "bb atk% buff": 300, 
+                "passive id": "64", 
+                "sbb atk% buff": 300, 
+                "ubb atk% buff": 300
+            }, 
+            {
+                "crit multiplier%": 200.0, 
+                "passive id": "34"
+            }, 
+            {
+                "bc fill on crit max": 10, 
+                "bc fill on crit min": 8, 
+                "bc fill on crit%": 100.0, 
+                "passive id": "65"
+            }
+        ], 
+        "id": "10145", 
+        "name": "暁燼神の雄厳"
+    }, 
+    "10146": {
+        "desc": "全てのユニットの全能力を６０％アップ＆光・闇属性ユニットからの被ダメージを１５％軽減＆防御貫通効果を無効＆被ダメージ時、ＢＢゲージを大幅に増加", 
+        "effects": [
+            {
+                "atk% buff": 60, 
+                "def% buff": 60, 
+                "hp% buff": 60, 
+                "passive id": "1", 
+                "rec% buff": 60
+            }, 
+            {
+                "dmg% mitigation for elemental attacks": 15.0, 
+                "mitigate dark attacks": true, 
+                "mitigate light attacks": true, 
+                "passive id": "62"
+            }, 
+            {
+                "bc fill when attacked high": 7, 
+                "bc fill when attacked low": 4, 
+                "bc fill when attacked%": 100, 
+                "passive id": "25"
+            }, 
+            {
+                "ignore def resist chance%": 100, 
+                "passive id": "92"
+            }
+        ], 
+        "id": "10146", 
+        "name": "黎天神の神威"
+    }, 
     "102": {
         "desc": "炎属性ユニットの攻撃力を５０％アップ・最大ＨＰを１０％アップ", 
         "effects": [
@@ -3363,6 +3465,64 @@
         ], 
         "id": "12517", 
         "name": "栄翠晶神の珠陣"
+    }, 
+    "12518": {
+        "desc": "全てのユニットの防御力・回復力・最大ＨＰを４０％アップ＆全状態異常を無効＆ターン毎にＨＰを回復＆ＨＣを獲得する度に、一度だけＢＢゲージを増加", 
+        "effects": [
+            {
+                "def% buff": 40, 
+                "hp% buff": 40, 
+                "passive id": "1", 
+                "rec% buff": 40
+            }, 
+            {
+                "curse resist%": 100, 
+                "injury resist%": 100, 
+                "paralysis resist%": 100, 
+                "passive id": "4", 
+                "poison resist%": 100, 
+                "sick resist%": 100, 
+                "weaken resist%": 100
+            }, 
+            {
+                "passive id": "33", 
+                "rec% added (turn heal)": 10.0, 
+                "turn heal high": 1000, 
+                "turn heal low": 800
+            }, 
+            {
+                "hc receive count activation": 1, 
+                "increase bb gauge": 4, 
+                "passive id": "85"
+            }
+        ], 
+        "id": "12518", 
+        "name": "Marionette"
+    }, 
+    "12519": {
+        "desc": "全てのユニットの攻撃力・防御力・最大ＨＰを４０％アップ＆スパークダメージを８０％アップ＆ＢＢ発動に必要なＢＢゲージ量を軽減＆ＢＣ獲得時の増加量をアップ", 
+        "effects": [
+            {
+                "atk% buff": 40, 
+                "def% buff": 40, 
+                "hp% buff": 40, 
+                "passive id": "1"
+            }, 
+            {
+                "damage% for spark": 80, 
+                "passive id": "31"
+            }, 
+            {
+                "passive id": "48", 
+                "reduced bb bc cost%": 20
+            }, 
+            {
+                "bb gauge fill rate%": 40, 
+                "passive id": "32"
+            }
+        ], 
+        "id": "12519", 
+        "name": "Magnolia Eclair"
     }, 
     "126": {
         "desc": "樹属性ユニットの攻撃力を１００％アップ・最大ＨＰを３０％アップ", 
@@ -7698,6 +7858,32 @@
         ], 
         "id": "2227", 
         "name": "五光鎌神の力"
+    }, 
+    "2228": {
+        "desc": "パーティのユニットが５属性以上で攻撃力を１００％アップ・最大ＨＰを３０％アップ＆全てのユニットの攻撃力を５０％アップ・最大ＨＰを３０％アップ＆スパークダメージを１００％アップ＆ＨＰが半分以上の時、攻撃ＢＢの威力をかなりアップ", 
+        "effects": [
+            {
+                "atk% buff": 100, 
+                "hp% buff": 30, 
+                "passive id": "41", 
+                "unique elements required": 5
+            }, 
+            {
+                "atk% buff": 50, 
+                "hp% buff": 30, 
+                "passive id": "1"
+            }, 
+            {
+                "unknown passive id": "113", 
+                "unknown passive params": "72,200&200&200,50,1"
+            }, 
+            {
+                "damage% for spark": 100, 
+                "passive id": "31"
+            }
+        ], 
+        "id": "2228", 
+        "name": "五光鋼神の響閃"
     }, 
     "2300": {
         "desc": "クリティカルダメージをアップ", 
@@ -17143,6 +17329,32 @@
         ], 
         "id": "7518", 
         "name": "禁禍冥神の命哭"
+    }, 
+    "7519": {
+        "desc": "全てのユニットの攻撃力を８０％アップ・最大ＨＰを３０％アップ＆攻撃ＢＢの威力を大幅にアップ＆クリティカルダメージをかなりアップ＆ＯＤゲージの増加量をかなりアップ", 
+        "effects": [
+            {
+                "atk% buff": 80, 
+                "hp% buff": 30, 
+                "passive id": "1"
+            }, 
+            {
+                "bb atk% buff": 180, 
+                "passive id": "64", 
+                "sbb atk% buff": 180, 
+                "ubb atk% buff": 180
+            }, 
+            {
+                "crit multiplier%": 125.0, 
+                "passive id": "34"
+            }, 
+            {
+                "od fill rate%": 20, 
+                "passive id": "70"
+            }
+        ], 
+        "id": "7519", 
+        "name": "Give me a break"
     }, 
     "7600": {
         "desc": "水・光属性ユニットの攻撃力を５０％アップ", 

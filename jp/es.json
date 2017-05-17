@@ -17679,6 +17679,249 @@
         "name": "廃滅へと導く真理", 
         "target": "self"
     }, 
+    "36300": {
+        "desc": "「氷輝天鎧レーゼ」を装備時、攻撃力・防御力・回復力・最大ＨＰを３０％アップ＆ＢＢ及びＳＢＢに「味方のＢＢゲージを大幅に増加」を追加", 
+        "effects": [
+            {
+                "atk% buff": 30, 
+                "conditions": [
+                    {
+                        "item required": [
+                            "47206"
+                        ]
+                    }
+                ], 
+                "def% buff": 30, 
+                "hp% buff": 30, 
+                "passive id": "1", 
+                "passive target": "self", 
+                "rec% buff": 30
+            }, 
+            {
+                "conditions": [], 
+                "passive id": "66", 
+                "passive target": "self", 
+                "trigger on bb": true, 
+                "trigger on sbb": true, 
+                "triggered effect": [
+                    {
+                        "effect delay time(ms)/frame": "0.0/0", 
+                        "increase bb gauge": 8, 
+                        "proc id": "31", 
+                        "target area": "aoe", 
+                        "target type": "party"
+                    }
+                ]
+            }
+        ], 
+        "id": "36300", 
+        "name": "不滅なる忠魂", 
+        "target": "self"
+    }, 
+    "36400": {
+        "desc": "弱点属性ダメージをアップ＆ＯＤゲージの増加量を超絶アップ＆被ダメージ時、確率で全状態異常をランダムに発生", 
+        "effects": [
+            {
+                "conditions": [], 
+                "dark units do extra elemental weakness dmg": true, 
+                "elemental weakness multiplier%": 50.0, 
+                "passive id": "50", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "od fill rate%": 50, 
+                "passive id": "70", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "counter inflict curse%": 10, 
+                "counter inflict injury%": 12, 
+                "counter inflict paralysis%": 10, 
+                "counter inflict poison%": 10, 
+                "counter inflict sick%": 12, 
+                "counter inflict weaken%": 12, 
+                "passive id": "71", 
+                "passive target": "self"
+            }
+        ], 
+        "id": "36400", 
+        "name": "闇術師の狂究", 
+        "target": "self"
+    }, 
+    "36500": {
+        "desc": "「羅獄焔燼メドブレア」を装備時、攻撃力・防御力・回復力・最大ＨＰを４０％アップ＆ＢＢ及びＳＢＢに「３ターン、状態異常の敵へのダメージを大幅にアップ」を追加＆攻撃力の上限値（９９９９９）を１５００００まで解放する", 
+        "effects": [
+            {
+                "atk% buff": 40, 
+                "conditions": [
+                    {
+                        "item required": [
+                            "49940"
+                        ]
+                    }
+                ], 
+                "def% buff": 40, 
+                "hp% buff": 40, 
+                "passive id": "1", 
+                "passive target": "self", 
+                "rec% buff": 40
+            }, 
+            {
+                "conditions": [], 
+                "passive id": "66", 
+                "passive target": "self", 
+                "trigger on bb": true, 
+                "trigger on sbb": true, 
+                "triggered effect": [
+                    {
+                        "atk% buff turns (110)": 3, 
+                        "atk% buff when enemy has ailment": 180, 
+                        "effect delay time(ms)/frame": "0.0/0", 
+                        "proc id": "65", 
+                        "target area": "aoe", 
+                        "target type": "party"
+                    }
+                ]
+            }, 
+            {
+                "conditions": [], 
+                "passive target": "self", 
+                "unknown passive id": "143", 
+                "unknown passive params": "150000"
+            }
+        ], 
+        "id": "36500", 
+        "name": "常練必勝", 
+        "target": "self"
+    }, 
+    "36600": {
+        "desc": "「聖魔斬刃イシュリオン」を装備時、攻撃力・防御力・回復力・最大ＨＰを３０％アップ＆ＢＢ及びＳＢＢに「３ターン、ターン毎にＢＢゲージを超絶増加」追加＆被ダメージ時、確率でＨＰ回復＆攻撃力の上限値（９９９９９）を１３００００まで解放する", 
+        "effects": [
+            {
+                "atk% buff": 30, 
+                "conditions": [
+                    {
+                        "item required": [
+                            "45000"
+                        ]
+                    }
+                ], 
+                "def% buff": 30, 
+                "hp% buff": 30, 
+                "passive id": "1", 
+                "passive target": "self", 
+                "rec% buff": 30
+            }, 
+            {
+                "conditions": [], 
+                "passive id": "66", 
+                "passive target": "self", 
+                "trigger on bb": true, 
+                "trigger on sbb": true, 
+                "triggered effect": [
+                    {
+                        "effect delay time(ms)/frame": "0.0/0", 
+                        "increase bb gauge gradual": 9, 
+                        "increase bb gauge gradual turns (37)": 3, 
+                        "proc id": "19", 
+                        "target area": "aoe", 
+                        "target type": "party"
+                    }
+                ]
+            }, 
+            {
+                "conditions": [], 
+                "passive target": "self", 
+                "unknown passive id": "143", 
+                "unknown passive params": "130000"
+            }, 
+            {
+                "conditions": [], 
+                "dmg% to hp% when attacked chance%": 25, 
+                "dmg% to hp% when attacked high": 25, 
+                "dmg% to hp% when attacked low": 20, 
+                "passive id": "24", 
+                "passive target": "self"
+            }
+        ], 
+        "id": "36600", 
+        "name": "精練たる深慮", 
+        "target": "self"
+    }, 
+    "36700": {
+        "desc": "ＨＰが半分以上の時、攻撃力・防御力・回復力を少しアップ＆クリティカルダメージをアップ", 
+        "effects": [
+            {
+                "atk% buff": 30, 
+                "conditions": [], 
+                "def% buff": 30, 
+                "hp above % buff requirement": 50, 
+                "passive id": "11", 
+                "passive target": "self", 
+                "rec% buff": 30
+            }, 
+            {
+                "conditions": [], 
+                "crit multiplier%": 50.0, 
+                "passive id": "34", 
+                "passive target": "self"
+            }
+        ], 
+        "id": "36700", 
+        "name": "背徳の炎", 
+        "target": "self"
+    }, 
+    "36800": {
+        "desc": "ＢＢゲージが半分以上の時、攻撃力・防御力・回復力を少しアップ＆ターン毎にＢＢゲージを増加", 
+        "effects": [
+            {
+                "atk% buff": 30, 
+                "bb gauge above % buff requirement": 50, 
+                "conditions": [], 
+                "def% buff": 30, 
+                "passive id": "30", 
+                "passive target": "self", 
+                "rec% buff": 30
+            }, 
+            {
+                "bc fill per turn": 3, 
+                "conditions": [], 
+                "passive id": "9", 
+                "passive target": "self"
+            }
+        ], 
+        "id": "36800", 
+        "name": "白銀の迅雷", 
+        "target": "self"
+    }, 
+    "36900": {
+        "desc": "全状態異常を無効＆確率で被ダメージを１５％軽減", 
+        "effects": [
+            {
+                "conditions": [], 
+                "curse resist%": 100, 
+                "injury resist%": 100, 
+                "paralysis resist%": 100, 
+                "passive id": "4", 
+                "passive target": "self", 
+                "poison resist%": 100, 
+                "sick resist%": 100, 
+                "weaken resist%": 100
+            }, 
+            {
+                "conditions": [], 
+                "dmg reduction chance%": 10, 
+                "dmg reduction%": 15, 
+                "passive id": "14", 
+                "passive target": "self"
+            }
+        ], 
+        "id": "36900", 
+        "name": "天上の飢婚者", 
+        "target": "self"
+    }, 
     "3700": {
         "desc": "「神器」を装備時、攻撃力・防御力・回復力・最大ＨＰを２０％アップ＆ＢＢ及びＳＢＢに「味方全体に３ターン、攻撃に光属性を付与」を追加", 
         "effects": [
