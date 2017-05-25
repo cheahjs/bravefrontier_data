@@ -17751,7 +17751,7 @@
         "target": "self"
     }, 
     "36500": {
-        "desc": "「羅獄焔燼メドブレア」を装備時、攻撃力・防御力・回復力・最大ＨＰを４０％アップ＆ＢＢ及びＳＢＢに「３ターン、状態異常の敵へのダメージを大幅にアップ」を追加＆攻撃力の上限値（９９９９９）を１５００００まで解放する", 
+        "desc": "「羅獄焔燼メドブレア」を装備時、攻撃力・防御力・回復力・最大ＨＰを４０％アップ＆ＢＢ及びＳＢＢに「味方全体に３ターン、状態異常の敵へのダメージを大幅にアップ」を追加＆攻撃力の上限値（９９９９９）を１５００００まで解放する", 
         "effects": [
             {
                 "atk% buff": 40, 
@@ -17797,7 +17797,7 @@
         "target": "self"
     }, 
     "36600": {
-        "desc": "「聖魔斬刃イシュリオン」を装備時、攻撃力・防御力・回復力・最大ＨＰを３０％アップ＆ＢＢ及びＳＢＢに「３ターン、ターン毎にＢＢゲージを超絶増加」追加＆被ダメージ時、確率でＨＰ回復＆攻撃力の上限値（９９９９９）を１３００００まで解放する", 
+        "desc": "「聖魔斬刃イシュリオン」装備時、攻撃力・防御力・回復力・最大ＨＰを３０％アップ＆ＢＢ及びＳＢＢに「味方全体に３ターン、ターン毎にＢＢゲージ超絶増加」追加＆被ダメージ時、確率でＨＰ回復＆攻撃力の上限値（９９９９９）を１３００００まで解放", 
         "effects": [
             {
                 "atk% buff": 30, 
@@ -17970,6 +17970,160 @@
         ], 
         "id": "3700", 
         "name": "未来へ捧げる力", 
+        "target": "self"
+    }, 
+    "37000": {
+        "desc": "ＨＰが半分以上の時、攻撃力・防御力を少しアップ＆スパークダメージを４０％アップ", 
+        "effects": [
+            {
+                "atk% buff": 30, 
+                "conditions": [], 
+                "def% buff": 30, 
+                "hp above % buff requirement": 50, 
+                "passive id": "11", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "damage% for spark": 40, 
+                "passive id": "31", 
+                "passive target": "self"
+            }
+        ], 
+        "id": "37000", 
+        "name": "造命の闇術", 
+        "target": "self"
+    }, 
+    "37100": {
+        "desc": "ＨＰが半分以上の時、攻撃力・防御力をアップ＆スパークダメージを６０％アップ", 
+        "effects": [
+            {
+                "atk% buff": 50, 
+                "conditions": [], 
+                "def% buff": 50, 
+                "hp above % buff requirement": 50, 
+                "passive id": "11", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "damage% for spark": 60, 
+                "passive id": "31", 
+                "passive target": "self"
+            }
+        ], 
+        "id": "37100", 
+        "name": "禁忌の妖輝", 
+        "target": "self"
+    }, 
+    "37200": {
+        "desc": "ＢＢゲージが半分以上の時、防御力・回復力を少しアップ＆被ダメージ時、ＢＢゲージを増加", 
+        "effects": [
+            {
+                "bb gauge above % buff requirement": 50, 
+                "conditions": [], 
+                "def% buff": 30, 
+                "passive id": "30", 
+                "passive target": "self", 
+                "rec% buff": 30
+            }, 
+            {
+                "bc fill when attacked high": 3, 
+                "bc fill when attacked low": 2, 
+                "bc fill when attacked%": 100, 
+                "conditions": [], 
+                "passive id": "25", 
+                "passive target": "self"
+            }
+        ], 
+        "id": "37200", 
+        "name": "清叡の潔魂", 
+        "target": "self"
+    }, 
+    "37300": {
+        "desc": "ＢＢゲージが半分以上の時、防御力・回復力をアップ＆被ダメージ時、ＢＢゲージをかなり増加", 
+        "effects": [
+            {
+                "bb gauge above % buff requirement": 50, 
+                "conditions": [], 
+                "def% buff": 50, 
+                "passive id": "30", 
+                "passive target": "self", 
+                "rec% buff": 50
+            }, 
+            {
+                "bc fill when attacked high": 4, 
+                "bc fill when attacked low": 3, 
+                "bc fill when attacked%": 100, 
+                "conditions": [], 
+                "passive id": "25", 
+                "passive target": "self"
+            }
+        ], 
+        "id": "37300", 
+        "name": "払闇の導光", 
+        "target": "self"
+    }, 
+    "37400": {
+        "desc": "クリティカル・弱点属性ダメージを無効＆ＢＢ及びＳＢＢに「味方のＢＢゲージを大幅に増加」を追加", 
+        "effects": [
+            {
+                "conditions": [], 
+                "crit chance base resist%": 100, 
+                "crit chance buffed resist%": 100, 
+                "crit dmg base damage resist%": 100, 
+                "crit dmg buffed damage resist%": 100, 
+                "passive id": "53", 
+                "passive target": "self", 
+                "strong base element damage resist%": 100, 
+                "strong buffed element damage resist%": 100
+            }, 
+            {
+                "conditions": [], 
+                "passive id": "66", 
+                "passive target": "self", 
+                "trigger on bb": true, 
+                "trigger on sbb": true, 
+                "triggered effect": [
+                    {
+                        "effect delay time(ms)/frame": "0.0/0", 
+                        "increase bb gauge": 8, 
+                        "proc id": "31", 
+                        "target area": "aoe", 
+                        "target type": "party"
+                    }
+                ]
+            }
+        ], 
+        "id": "37400", 
+        "name": "真姿の解放", 
+        "target": "self"
+    }, 
+    "37500": {
+        "desc": "状態異常の敵へのダメージをかなりアップ＆弱点属性ダメージを少しアップ", 
+        "effects": [
+            {
+                "atk% buff when enemy has ailment": 80, 
+                "atk% buff when enemy has curse": true, 
+                "atk% buff when enemy has injury": true, 
+                "atk% buff when enemy has paralysis": true, 
+                "atk% buff when enemy has poison": true, 
+                "atk% buff when enemy has sick": true, 
+                "atk% buff when enemy has weaken": true, 
+                "conditions": [], 
+                "passive id": "74", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "dark units do extra elemental weakness dmg": true, 
+                "elemental weakness multiplier%": 30.0, 
+                "passive id": "50", 
+                "passive target": "self"
+            }
+        ], 
+        "id": "37500", 
+        "name": "エヴァーモアデリュージョン", 
         "target": "self"
     }, 
     "3800": {
