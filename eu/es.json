@@ -9242,6 +9242,127 @@
         "name": "Undiminished Flash", 
         "target": "self"
     }, 
+    "27500": {
+        "desc": "Boosts Atk each turn for up to 10 turns & 30% boost to Spark damage", 
+        "effects": [
+            {
+                "conditions": [], 
+                "damage% for spark": 30, 
+                "passive id": "31", 
+                "passive target": "self"
+            }, 
+            {
+                "atk% max buff": 80, 
+                "conditions": [], 
+                "increase from min to max": 1, 
+                "passive id": "105", 
+                "passive target": "self", 
+                "turn count": 10
+            }
+        ], 
+        "id": "27500", 
+        "name": "Master Combatant", 
+        "target": "self"
+    }, 
+    "27600": {
+        "desc": "Boosts Atk each turn for up to 10 turns & 50% boost to Spark damage", 
+        "effects": [
+            {
+                "conditions": [], 
+                "damage% for spark": 50, 
+                "passive id": "31", 
+                "passive target": "self"
+            }, 
+            {
+                "atk% max buff": 100, 
+                "conditions": [], 
+                "increase from min to max": 1, 
+                "passive id": "105", 
+                "passive target": "self", 
+                "turn count": 10
+            }
+        ], 
+        "id": "27600", 
+        "name": "Spirited Warrior", 
+        "target": "self"
+    }, 
+    "27700": {
+        "desc": "Boosts Atk relative to remaining HP & considerably boosts damage against status afflicted foes", 
+        "effects": [
+            {
+                "atk% buff when enemy has ailment": 80, 
+                "atk% buff when enemy has curse": true, 
+                "atk% buff when enemy has injury": true, 
+                "atk% buff when enemy has paralysis": true, 
+                "atk% buff when enemy has poison": true, 
+                "atk% buff when enemy has sick": true, 
+                "atk% buff when enemy has weaken": true, 
+                "conditions": [], 
+                "passive id": "74", 
+                "passive target": "self"
+            }, 
+            {
+                "atk% base buff": 0, 
+                "atk% extra buff based on hp": 50, 
+                "buff proportional to hp": "remaining", 
+                "conditions": [], 
+                "passive id": "46", 
+                "passive target": "self"
+            }
+        ], 
+        "id": "27700", 
+        "name": "Unfathomable Light", 
+        "target": "self"
+    }, 
+    "27800": {
+        "desc": "Considerably boosts Atk relative to remaining HP & hugely boosts damage against status afflicted foes", 
+        "effects": [
+            {
+                "atk% buff when enemy has ailment": 100, 
+                "atk% buff when enemy has curse": true, 
+                "atk% buff when enemy has injury": true, 
+                "atk% buff when enemy has paralysis": true, 
+                "atk% buff when enemy has poison": true, 
+                "atk% buff when enemy has sick": true, 
+                "atk% buff when enemy has weaken": true, 
+                "conditions": [], 
+                "passive id": "74", 
+                "passive target": "self"
+            }, 
+            {
+                "atk% base buff": 0, 
+                "atk% extra buff based on hp": 80, 
+                "buff proportional to hp": "remaining", 
+                "conditions": [], 
+                "passive id": "46", 
+                "passive target": "self"
+            }
+        ], 
+        "id": "27800", 
+        "name": "The Eye Opens", 
+        "target": "self"
+    }, 
+    "27900": {
+        "desc": "Considerably boosts Atk when BB gauge is full & 30% boost to Spark damage", 
+        "effects": [
+            {
+                "atk% buff": 80, 
+                "bb gauge above % buff requirement": 100, 
+                "conditions": [], 
+                "passive id": "30", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "damage% for spark": 30, 
+                "passive id": "31", 
+                "passive target": "self"
+            }
+        ], 
+        "id": "27900", 
+        "name": "Inexhaustible Will", 
+        "target": "self"
+    }, 
     "2800": {
         "desc": "Increases number of hits dealt by normal attack", 
         "effects": [
@@ -9254,6 +9375,27 @@
         ], 
         "id": "2800", 
         "name": "Divine Arts' Path", 
+        "target": "self"
+    }, 
+    "28000": {
+        "desc": "Hugely boosts Atk when BB gauge is full & 50% boost to Spark damage", 
+        "effects": [
+            {
+                "atk% buff": 100, 
+                "bb gauge above % buff requirement": 100, 
+                "conditions": [], 
+                "passive id": "30", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "damage% for spark": 50, 
+                "passive id": "31", 
+                "passive target": "self"
+            }
+        ], 
+        "id": "28000", 
+        "name": "Frenzied Malice", 
         "target": "self"
     }, 
     "28200": {
@@ -9300,6 +9442,67 @@
         ], 
         "id": "28200", 
         "name": "Despair Breaker", 
+        "target": "self"
+    }, 
+    "28300": {
+        "desc": "Boosts Atk and Def when BB gauge is over 50% & hugely boosts BB Atk", 
+        "effects": [
+            {
+                "atk% buff": 50, 
+                "bb gauge above % buff requirement": 50, 
+                "conditions": [], 
+                "def% buff": 50, 
+                "passive id": "30", 
+                "passive target": "self"
+            }, 
+            {
+                "bb atk% buff": 150, 
+                "conditions": [], 
+                "passive id": "64", 
+                "passive target": "self", 
+                "sbb atk% buff": 150, 
+                "ubb atk% buff": 150
+            }
+        ], 
+        "id": "28300", 
+        "name": "Virtuous Resolve", 
+        "target": "self"
+    }, 
+    "28400": {
+        "desc": "Enormously boosts damage against status afflicted enemies & adds Def ignoring effect to attack for 2 turns to BB/SBB", 
+        "effects": [
+            {
+                "atk% buff when enemy has ailment": 150, 
+                "atk% buff when enemy has curse": true, 
+                "atk% buff when enemy has injury": true, 
+                "atk% buff when enemy has paralysis": true, 
+                "atk% buff when enemy has poison": true, 
+                "atk% buff when enemy has sick": true, 
+                "atk% buff when enemy has weaken": true, 
+                "conditions": [], 
+                "passive id": "74", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "passive id": "66", 
+                "passive target": "self", 
+                "trigger on bb": true, 
+                "trigger on sbb": true, 
+                "triggered effect": [
+                    {
+                        "defense% ignore": 100, 
+                        "defense% ignore turns (39)": 2, 
+                        "effect delay time(ms)/frame": "0.0/0", 
+                        "proc id": "22", 
+                        "target area": "aoe", 
+                        "target type": "party"
+                    }
+                ]
+            }
+        ], 
+        "id": "28400", 
+        "name": "Otherworldly Heavens", 
         "target": "self"
     }, 
     "28700": {
@@ -9468,6 +9671,71 @@
         ], 
         "id": "29200", 
         "name": "Unyielding Virtue", 
+        "target": "self"
+    }, 
+    "29300": {
+        "desc": "50% boost to Spark damage, hugely boosts BB Atk & raises max Atk value from 99999 to 130000", 
+        "effects": [
+            {
+                "conditions": [], 
+                "damage% for spark": 50, 
+                "passive id": "31", 
+                "passive target": "self"
+            }, 
+            {
+                "bb atk% buff": 150, 
+                "conditions": [], 
+                "passive id": "64", 
+                "passive target": "self", 
+                "sbb atk% buff": 150, 
+                "ubb atk% buff": 150
+            }, 
+            {
+                "conditions": [], 
+                "passive target": "self", 
+                "unknown passive id": "143", 
+                "unknown passive params": "130000"
+            }
+        ], 
+        "id": "29300", 
+        "name": "True Victory", 
+        "target": "self"
+    }, 
+    "29400": {
+        "desc": "Hugely boosts BB gauge when damage taken exceeds certain amount, probable random status ailment infliction & raises max Atk value from 99999 to 130000", 
+        "effects": [
+            {
+                "conditions": [], 
+                "damage threshold activation": 5000, 
+                "increase bb gauge": 8, 
+                "passive id": "79", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "curse%": 8, 
+                "paralysis%": 8, 
+                "passive id": "20", 
+                "passive target": "self", 
+                "poison%": 8
+            }, 
+            {
+                "conditions": [], 
+                "injury%": 10, 
+                "passive id": "20", 
+                "passive target": "self", 
+                "sick%": 10, 
+                "weaken%": 10
+            }, 
+            {
+                "conditions": [], 
+                "passive target": "self", 
+                "unknown passive id": "143", 
+                "unknown passive params": "130000"
+            }
+        ], 
+        "id": "29400", 
+        "name": "Utopian Dreams", 
         "target": "self"
     }, 
     "29700": {
@@ -9799,6 +10067,26 @@
         "name": "Light in the Darkness", 
         "target": "self"
     }, 
+    "30900": {
+        "desc": "30% boost to Spark damage & slightly boosts critical damage", 
+        "effects": [
+            {
+                "conditions": [], 
+                "damage% for spark": 30, 
+                "passive id": "31", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "crit multiplier%": 30.0, 
+                "passive id": "34", 
+                "passive target": "self"
+            }
+        ], 
+        "id": "30900", 
+        "name": "Menacing Firestorm", 
+        "target": "self"
+    }, 
     "310": {
         "desc": "30% boost to all parameters, probable 20% damage reduction & reduces damage taken for 2 turns when damage taken has exceeded certain amount when Drevas is equipped", 
         "effects": [
@@ -9880,6 +10168,166 @@
         "name": "Arrow of Hope", 
         "target": "self"
     }, 
+    "31000": {
+        "desc": "50% boost to Spark damage & boosts critical damage", 
+        "effects": [
+            {
+                "conditions": [], 
+                "damage% for spark": 50, 
+                "passive id": "31", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "crit multiplier%": 50.0, 
+                "passive id": "34", 
+                "passive target": "self"
+            }
+        ], 
+        "id": "31000", 
+        "name": "Escalating Inferno", 
+        "target": "self"
+    }, 
+    "31100": {
+        "desc": "Negates all status ailments & Spark damage reduction", 
+        "effects": [
+            {
+                "conditions": [], 
+                "curse resist%": 100, 
+                "injury resist%": 100, 
+                "paralysis resist%": 100, 
+                "passive id": "4", 
+                "passive target": "self", 
+                "poison resist%": 100, 
+                "sick resist%": 100, 
+                "weaken resist%": 100
+            }, 
+            {
+                "base spark dmg% resist": 25, 
+                "buff spark dmg% resist": 25, 
+                "conditions": [], 
+                "passive id": "77", 
+                "passive target": "self"
+            }
+        ], 
+        "id": "31100", 
+        "name": "Ambition Yields Power", 
+        "target": "self"
+    }, 
+    "31200": {
+        "desc": "Negates all status ailments & 50% Spark damage reduction", 
+        "effects": [
+            {
+                "conditions": [], 
+                "curse resist%": 100, 
+                "injury resist%": 100, 
+                "paralysis resist%": 100, 
+                "passive id": "4", 
+                "passive target": "self", 
+                "poison resist%": 100, 
+                "sick resist%": 100, 
+                "weaken resist%": 100
+            }, 
+            {
+                "base spark dmg% resist": 50, 
+                "buff spark dmg% resist": 50, 
+                "conditions": [], 
+                "passive id": "77", 
+                "passive target": "self"
+            }
+        ], 
+        "id": "31200", 
+        "name": "Blade of Empathy", 
+        "target": "self"
+    }, 
+    "31300": {
+        "desc": "Negates all status ailments & damage taken slightly boosts BB gauge", 
+        "effects": [
+            {
+                "conditions": [], 
+                "curse resist%": 100, 
+                "injury resist%": 100, 
+                "paralysis resist%": 100, 
+                "passive id": "4", 
+                "passive target": "self", 
+                "poison resist%": 100, 
+                "sick resist%": 100, 
+                "weaken resist%": 100
+            }, 
+            {
+                "bc fill when attacked high": 2, 
+                "bc fill when attacked low": 1, 
+                "bc fill when attacked%": 100, 
+                "conditions": [], 
+                "passive id": "25", 
+                "passive target": "self"
+            }
+        ], 
+        "id": "31300", 
+        "name": "Demon Slayer Prodigy", 
+        "target": "self"
+    }, 
+    "31400": {
+        "desc": "Negates all status ailments, damage taken boosts BB gauge & restores HP each turn", 
+        "effects": [
+            {
+                "conditions": [], 
+                "curse resist%": 100, 
+                "injury resist%": 100, 
+                "paralysis resist%": 100, 
+                "passive id": "4", 
+                "passive target": "self", 
+                "poison resist%": 100, 
+                "sick resist%": 100, 
+                "weaken resist%": 100
+            }, 
+            {
+                "bc fill when attacked high": 3, 
+                "bc fill when attacked low": 2, 
+                "bc fill when attacked%": 100, 
+                "conditions": [], 
+                "passive id": "25", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "passive id": "33", 
+                "passive target": "self", 
+                "rec% added (turn heal)": 10.0, 
+                "turn heal high": 1000, 
+                "turn heal low": 800
+            }
+        ], 
+        "id": "31400", 
+        "name": "Unrestrained Talent", 
+        "target": "self"
+    }, 
+    "31900": {
+        "desc": "Boosts Atk, Def, Rec each turn (for up to 5 turns) & damage taken slightly boosts BB gauge", 
+        "effects": [
+            {
+                "atk% max buff": 30, 
+                "conditions": [], 
+                "def% max buff": 30, 
+                "increase from min to max": 1, 
+                "passive id": "105", 
+                "passive target": "self", 
+                "rec% max buff": 30, 
+                "turn count": 5
+            }, 
+            {
+                "bc fill when attacked high": 2, 
+                "bc fill when attacked low": 1, 
+                "bc fill when attacked%": 100, 
+                "conditions": [], 
+                "passive id": "25", 
+                "passive target": "self"
+            }
+        ], 
+        "id": "31900", 
+        "name": "All-Seeing Eye", 
+        "target": "self"
+    }, 
     "3200": {
         "desc": "Absorbs HP when attacking & hugely boosts BB gauge when attacking normally", 
         "effects": [
@@ -9902,6 +10350,148 @@
         ], 
         "id": "3200", 
         "name": "Heart Piercing Light", 
+        "target": "self"
+    }, 
+    "32000": {
+        "desc": "Boosts Atk, Def, Rec each turn (for up to 5 turns) & damage taken boosts BB gauge", 
+        "effects": [
+            {
+                "atk% max buff": 50, 
+                "conditions": [], 
+                "def% max buff": 50, 
+                "increase from min to max": 1, 
+                "passive id": "105", 
+                "passive target": "self", 
+                "rec% max buff": 50, 
+                "turn count": 5
+            }, 
+            {
+                "bc fill when attacked high": 3, 
+                "bc fill when attacked low": 2, 
+                "bc fill when attacked%": 100, 
+                "conditions": [], 
+                "passive id": "25", 
+                "passive target": "self"
+            }
+        ], 
+        "id": "32000", 
+        "name": "Preemptive Eyes", 
+        "target": "self"
+    }, 
+    "32100": {
+        "desc": "Boosts Atk, Def when BB gauge is over 50% & boosts Spark damage when HP is over 50%", 
+        "effects": [
+            {
+                "atk% buff": 60, 
+                "bb gauge above % buff requirement": 50, 
+                "conditions": [], 
+                "def% buff": 60, 
+                "passive id": "30", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "damage% for spark": 50, 
+                "hp above % buff requirement": 50, 
+                "passive id": "104", 
+                "passive target": "self"
+            }
+        ], 
+        "id": "32100", 
+        "name": "Mad Alchemy", 
+        "target": "self"
+    }, 
+    "32200": {
+        "desc": "Considerably boosts Atk, Def when BB gauge is over 50% & hugely boosts Spark damage when HP is over 50%", 
+        "effects": [
+            {
+                "atk% buff": 80, 
+                "bb gauge above % buff requirement": 50, 
+                "conditions": [], 
+                "def% buff": 80, 
+                "passive id": "30", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "damage% for spark": 80, 
+                "hp above % buff requirement": 50, 
+                "passive id": "104", 
+                "passive target": "self"
+            }
+        ], 
+        "id": "32200", 
+        "name": "Crazy Science", 
+        "target": "self"
+    }, 
+    "32300": {
+        "desc": "10% boost to Atk, Def, Rec, max HP, slightly boosts Atk, Def, Rec relative to remaining HP & 50% boost to Spark damage", 
+        "effects": [
+            {
+                "atk% buff": 10, 
+                "conditions": [], 
+                "def% buff": 10, 
+                "hp% buff": 10, 
+                "passive id": "1", 
+                "passive target": "party", 
+                "rec% buff": 10
+            }, 
+            {
+                "atk% base buff": 0, 
+                "atk% extra buff based on hp": 30, 
+                "buff proportional to hp": "remaining", 
+                "conditions": [], 
+                "def% base buff": 0, 
+                "def% extra buff based on hp": 30, 
+                "passive id": "46", 
+                "passive target": "self", 
+                "rec% base buff": 0, 
+                "rec% extra buff based on hp": 30
+            }, 
+            {
+                "conditions": [], 
+                "damage% for spark": 50, 
+                "passive id": "31", 
+                "passive target": "self"
+            }
+        ], 
+        "id": "32300", 
+        "name": "Joyful Blade", 
+        "target": "self"
+    }, 
+    "32400": {
+        "desc": "10% boost to Atk, Def, Rec, max HP, boosts Atk, Def, Rec relative to remaining HP & 50% boost to Spark damage", 
+        "effects": [
+            {
+                "atk% buff": 10, 
+                "conditions": [], 
+                "def% buff": 10, 
+                "hp% buff": 10, 
+                "passive id": "1", 
+                "passive target": "party", 
+                "rec% buff": 10
+            }, 
+            {
+                "atk% base buff": 0, 
+                "atk% extra buff based on hp": 50, 
+                "buff proportional to hp": "remaining", 
+                "conditions": [], 
+                "def% base buff": 0, 
+                "def% extra buff based on hp": 50, 
+                "passive id": "46", 
+                "passive target": "self", 
+                "rec% base buff": 0, 
+                "rec% extra buff based on hp": 50
+            }, 
+            {
+                "conditions": [], 
+                "damage% for spark": 50, 
+                "passive id": "31", 
+                "passive target": "self"
+            }
+        ], 
+        "id": "32400", 
+        "name": "Exultant Blade", 
         "target": "self"
     }, 
     "3300": {
@@ -11206,6 +11796,174 @@
         "name": "Mirror Oracle of Seven", 
         "target": "self"
     }, 
+    "7000015": {
+        "desc": "5% boost to all parameters of Fire or Water units (all)", 
+        "effects": [
+            {
+                "atk% buff": 5, 
+                "conditions": [], 
+                "def% buff": 5, 
+                "elements buffed": [
+                    "fire", 
+                    "water"
+                ], 
+                "hp% buff": 5, 
+                "passive id": "2", 
+                "passive target": "party", 
+                "rec% buff": 5
+            }
+        ], 
+        "id": "7000015", 
+        "name": "Mirror Gift of Temperance", 
+        "target": "self"
+    }, 
+    "7000016": {
+        "desc": "5% boost to all parameters of Fire or Earth units (all)", 
+        "effects": [
+            {
+                "atk% buff": 5, 
+                "conditions": [], 
+                "def% buff": 5, 
+                "elements buffed": [
+                    "fire", 
+                    "earth"
+                ], 
+                "hp% buff": 5, 
+                "passive id": "2", 
+                "passive target": "party", 
+                "rec% buff": 5
+            }
+        ], 
+        "id": "7000016", 
+        "name": "Mirror Gift of Charity", 
+        "target": "self"
+    }, 
+    "7000017": {
+        "desc": "5% boost to all parameters of Fire or Thunder units (all)", 
+        "effects": [
+            {
+                "atk% buff": 5, 
+                "conditions": [], 
+                "def% buff": 5, 
+                "elements buffed": [
+                    "fire", 
+                    "thunder"
+                ], 
+                "hp% buff": 5, 
+                "passive id": "2", 
+                "passive target": "party", 
+                "rec% buff": 5
+            }
+        ], 
+        "id": "7000017", 
+        "name": "Mirror Gift of Wrath", 
+        "target": "self"
+    }, 
+    "7000018": {
+        "desc": "5% boost to all parameters of Fire or Light units (all)", 
+        "effects": [
+            {
+                "atk% buff": 5, 
+                "conditions": [], 
+                "def% buff": 5, 
+                "elements buffed": [
+                    "fire", 
+                    "light"
+                ], 
+                "hp% buff": 5, 
+                "passive id": "2", 
+                "passive target": "party", 
+                "rec% buff": 5
+            }
+        ], 
+        "id": "7000018", 
+        "name": "Mirror Gift of Pride", 
+        "target": "self"
+    }, 
+    "7000019": {
+        "desc": "5% boost to all parameters of Fire or Dark units (all)", 
+        "effects": [
+            {
+                "atk% buff": 5, 
+                "conditions": [], 
+                "def% buff": 5, 
+                "elements buffed": [
+                    "fire", 
+                    "dark"
+                ], 
+                "hp% buff": 5, 
+                "passive id": "2", 
+                "passive target": "party", 
+                "rec% buff": 5
+            }
+        ], 
+        "id": "7000019", 
+        "name": "Mirror Gift of Lust", 
+        "target": "self"
+    }, 
+    "7000020": {
+        "desc": "5% boost to all parameters of Water or Earth units (all)", 
+        "effects": [
+            {
+                "atk% buff": 5, 
+                "conditions": [], 
+                "def% buff": 5, 
+                "elements buffed": [
+                    "water", 
+                    "earth"
+                ], 
+                "hp% buff": 5, 
+                "passive id": "2", 
+                "passive target": "party", 
+                "rec% buff": 5
+            }
+        ], 
+        "id": "7000020", 
+        "name": "Mirror Gift of Kindness", 
+        "target": "self"
+    }, 
+    "7000021": {
+        "desc": "5% boost to all parameters of Water or Thunder units (all)", 
+        "effects": [
+            {
+                "atk% buff": 5, 
+                "conditions": [], 
+                "def% buff": 5, 
+                "elements buffed": [
+                    "water", 
+                    "thunder"
+                ], 
+                "hp% buff": 5, 
+                "passive id": "2", 
+                "passive target": "party", 
+                "rec% buff": 5
+            }
+        ], 
+        "id": "7000021", 
+        "name": "Mirror Gift of Envy", 
+        "target": "self"
+    }, 
+    "7000022": {
+        "desc": "5% boost to all parameters of Water or Light units (all)", 
+        "effects": [
+            {
+                "atk% buff": 5, 
+                "conditions": [], 
+                "def% buff": 5, 
+                "elements buffed": [
+                    "water", 
+                    "light"
+                ], 
+                "hp% buff": 5, 
+                "passive id": "2", 
+                "passive target": "party", 
+                "rec% buff": 5
+            }
+        ], 
+        "id": "7000022", 
+        "name": "Mirror Gift of Chastity", 
+        "target": "self"
+    }, 
     "7100": {
         "desc": "Adds slight BB gauge boost effect to BB/SBB & negates critical, elemental damage", 
         "effects": [
@@ -11756,6 +12514,89 @@
         "name": "Rocket Fangs Mastery", 
         "target": "self"
     }, 
+    "710227": {
+        "desc": "If an Apex sphere is equipped, boosts all parameters (30% and 10% all), boosts ATK relative to remaining HP (0-100%) and adds boost ATK relative to DEF (90%) for 3 turns to SBB", 
+        "effects": [
+            {
+                "atk% buff": 30, 
+                "conditions": [
+                    {
+                        "item required": [
+                            "701039", 
+                            "701040", 
+                            "701041"
+                        ]
+                    }
+                ], 
+                "def% buff": 30, 
+                "hp% buff": 30, 
+                "passive id": "1", 
+                "passive target": "self", 
+                "rec% buff": 30
+            }, 
+            {
+                "atk% buff": 10, 
+                "conditions": [
+                    {
+                        "item required": [
+                            "701039", 
+                            "701040", 
+                            "701041"
+                        ]
+                    }
+                ], 
+                "def% buff": 10, 
+                "hp% buff": 10, 
+                "passive id": "1", 
+                "passive target": "party", 
+                "rec% buff": 10
+            }, 
+            {
+                "atk% base buff": 0, 
+                "atk% extra buff based on hp": 100, 
+                "buff proportional to hp": "remaining", 
+                "conditions": [
+                    {
+                        "item required": [
+                            "701039", 
+                            "701040", 
+                            "701041"
+                        ]
+                    }
+                ], 
+                "passive id": "46", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [
+                    {
+                        "item required": [
+                            "701039", 
+                            "701040", 
+                            "701041"
+                        ]
+                    }
+                ], 
+                "passive id": "66", 
+                "passive target": "self", 
+                "trigger on sbb": true, 
+                "triggered effect": [
+                    {
+                        "% converted turns": 3, 
+                        "atk% buff (46)": 90, 
+                        "converted attribute": "defense", 
+                        "effect delay time(ms)/frame": "50.0/3", 
+                        "proc id": "24", 
+                        "target area": "aoe", 
+                        "target type": "party"
+                    }
+                ]
+            }
+        ], 
+        "id": "710227", 
+        "name": "Magma-Armored Warrior", 
+        "target": "self"
+    }, 
     "7200": {
         "desc": "Adds status ailment negation effect to BB/SBB for 3 turns & 20% boost to all parameters when Reeze's Armor is equipped", 
         "effects": [
@@ -11886,7 +12727,7 @@
         "target": "self"
     }, 
     "720157": {
-        "desc": "Adds status ailment removal to BB/SBB and if Enhanced Bubble Generator is equipped, adds Mana Bubble Shield (75% REC) to BB/SBB and boosts REC (30%, all)", 
+        "desc": "Adds status ailment removal to BB/SBB and if Enhanced Bubble Generator is equipped, adds Mana Bubble Shield (20% REC) to BB/SBB and boosts REC (30%, all)", 
         "effects": [
             {
                 "conditions": [], 
@@ -12747,7 +13588,7 @@
                 "conditions": [
                     {
                         "item required": [
-                            "701025"
+                            "701026"
                         ]
                     }
                 ], 
@@ -12776,7 +13617,7 @@
                 "conditions": [
                     {
                         "item required": [
-                            "701025"
+                            "701026"
                         ]
                     }
                 ], 
@@ -12792,7 +13633,7 @@
                 "conditions": [
                     {
                         "item required": [
-                            "701025"
+                            "701026"
                         ]
                     }
                 ], 
@@ -14799,6 +15640,87 @@
         ], 
         "id": "760237", 
         "name": "Spin to Win", 
+        "target": "self"
+    }, 
+    "760247": {
+        "desc": "If an Apex sphere is equipped, boosts all parameters (30% and 10% all), damage reduction (10%), adds chance of raising allies from KO (10%) to BB/SBB", 
+        "effects": [
+            {
+                "atk% buff": 30, 
+                "conditions": [
+                    {
+                        "item required": [
+                            "701039", 
+                            "701040", 
+                            "701041"
+                        ]
+                    }
+                ], 
+                "def% buff": 30, 
+                "hp% buff": 30, 
+                "passive id": "1", 
+                "passive target": "self", 
+                "rec% buff": 30
+            }, 
+            {
+                "atk% buff": 10, 
+                "conditions": [
+                    {
+                        "item required": [
+                            "701039", 
+                            "701040", 
+                            "701041"
+                        ]
+                    }
+                ], 
+                "def% buff": 10, 
+                "hp% buff": 10, 
+                "passive id": "1", 
+                "passive target": "party", 
+                "rec% buff": 10
+            }, 
+            {
+                "conditions": [
+                    {
+                        "item required": [
+                            "701039", 
+                            "701040", 
+                            "701041"
+                        ]
+                    }
+                ], 
+                "dmg% mitigation": 10, 
+                "passive id": "8", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [
+                    {
+                        "item required": [
+                            "701039", 
+                            "701040", 
+                            "701041"
+                        ]
+                    }
+                ], 
+                "passive id": "66", 
+                "passive target": "self", 
+                "trigger on bb": true, 
+                "trigger on sbb": true, 
+                "triggered effect": [
+                    {
+                        "effect delay time(ms)/frame": "0.0/0", 
+                        "proc id": "66", 
+                        "revive unit chance%": 10.0, 
+                        "revive unit hp%": 1, 
+                        "target area": "aoe", 
+                        "target type": "party"
+                    }
+                ]
+            }
+        ], 
+        "id": "760247", 
+        "name": "Reflected Dreams", 
         "target": "self"
     }, 
     "7700": {
