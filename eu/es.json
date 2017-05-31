@@ -9505,6 +9505,33 @@
         "name": "Otherworldly Heavens", 
         "target": "self"
     }, 
+    "28500": {
+        "desc": "Boosts Def when BB gauge is over 50%, negates Def ignoring effect & considerably boosts BB gauge when guarding", 
+        "effects": [
+            {
+                "bb gauge above % buff requirement": 50, 
+                "conditions": [], 
+                "def% buff": 50, 
+                "passive id": "30", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "ignore def resist chance%": 100, 
+                "passive id": "92", 
+                "passive target": "self"
+            }, 
+            {
+                "bc filled on guard": 5, 
+                "conditions": [], 
+                "passive id": "61", 
+                "passive target": "self"
+            }
+        ], 
+        "id": "28500", 
+        "name": "Bottomless Resolve", 
+        "target": "self"
+    }, 
     "28700": {
         "desc": "Boosts Atk, Def for 2 turns when BC collected has exceeded certain amount & raises normal hit amount", 
         "effects": [
@@ -10590,6 +10617,52 @@
         ], 
         "id": "3600", 
         "name": "Existent World", 
+        "target": "self"
+    }, 
+    "36700": {
+        "desc": "Slightly boosts Atk, Def, Rec when HP is over 50% & boosts critical damage", 
+        "effects": [
+            {
+                "atk% buff": 30, 
+                "conditions": [], 
+                "def% buff": 30, 
+                "hp above % buff requirement": 50, 
+                "passive id": "11", 
+                "passive target": "self", 
+                "rec% buff": 30
+            }, 
+            {
+                "conditions": [], 
+                "crit multiplier%": 50.0, 
+                "passive id": "34", 
+                "passive target": "self"
+            }
+        ], 
+        "id": "36700", 
+        "name": "Flame of Corruption", 
+        "target": "self"
+    }, 
+    "36800": {
+        "desc": "Slightly boosts Atk, Def, Rec when BB gauge is over 50% & boosts BB gauge each turn", 
+        "effects": [
+            {
+                "atk% buff": 30, 
+                "bb gauge above % buff requirement": 50, 
+                "conditions": [], 
+                "def% buff": 30, 
+                "passive id": "30", 
+                "passive target": "self", 
+                "rec% buff": 30
+            }, 
+            {
+                "bc fill per turn": 3, 
+                "conditions": [], 
+                "passive id": "9", 
+                "passive target": "self"
+            }
+        ], 
+        "id": "36800", 
+        "name": "Lightning the Argent", 
         "target": "self"
     }, 
     "3700": {
@@ -15454,6 +15527,76 @@
         "name": "Dark Knowledge", 
         "target": "self"
     }, 
+    "760217": {
+        "desc": "When Explorer's Journal is equipped, adds reduce Light and Dark damage (10%) for 1 turn to SBB and BB gauge boost (7 BC) for 3 turns to BB/SBB and boosts all stats (30%)​", 
+        "effects": [
+            {
+                "atk% buff": 30, 
+                "conditions": [
+                    {
+                        "item required": [
+                            "701005"
+                        ]
+                    }
+                ], 
+                "def% buff": 30, 
+                "hp% buff": 30, 
+                "passive id": "1", 
+                "passive target": "self", 
+                "rec% buff": 30
+            }, 
+            {
+                "conditions": [
+                    {
+                        "item required": [
+                            "701005"
+                        ]
+                    }
+                ], 
+                "passive id": "66", 
+                "passive target": "self", 
+                "trigger on sbb": true, 
+                "triggered effect": [
+                    {
+                        "dmg% mitigation for elemental attacks": 10, 
+                        "dmg% mitigation for elemental attacks buff turns": 1, 
+                        "effect delay time(ms)/frame": "0.0/0", 
+                        "mitigate dark attacks": true, 
+                        "mitigate light attacks": true, 
+                        "proc id": "39", 
+                        "target area": "aoe", 
+                        "target type": "party"
+                    }
+                ]
+            }, 
+            {
+                "conditions": [
+                    {
+                        "item required": [
+                            "701005"
+                        ]
+                    }
+                ], 
+                "passive id": "66", 
+                "passive target": "self", 
+                "trigger on bb": true, 
+                "trigger on sbb": true, 
+                "triggered effect": [
+                    {
+                        "effect delay time(ms)/frame": "0.0/0", 
+                        "increase bb gauge gradual": 7, 
+                        "increase bb gauge gradual turns (37)": 3, 
+                        "proc id": "19", 
+                        "target area": "aoe", 
+                        "target type": "party"
+                    }
+                ]
+            }
+        ], 
+        "id": "760217", 
+        "name": "Rift Knowledge", 
+        "target": "self"
+    }, 
     "760226": {
         "desc": "50% boost to Spark Damage & If Arondight is equipped, adds statut ailment removal effect to BB/SBB", 
         "effects": [
@@ -16319,6 +16462,60 @@
         "name": "Unhinged Disposition", 
         "target": "self"
     }, 
+    "830377": {
+        "desc": "Negates elemental damage & slightly boosts critical damage for all allies", 
+        "effects": [
+            {
+                "conditions": [], 
+                "passive id": "53", 
+                "passive target": "self", 
+                "strong base element damage resist%": 100, 
+                "strong buffed element damage resist%": 100
+            }, 
+            {
+                "conditions": [], 
+                "crit multiplier%": 10.0, 
+                "passive id": "34", 
+                "passive target": "party"
+            }
+        ], 
+        "id": "830377", 
+        "name": "Life and Death Scales", 
+        "target": "self"
+    }, 
+    "830378": {
+        "desc": "Negates elemental damage, raises Atk parameter limits to 130000, 50% boost to Spark damage & slightly boosts critical damage for all allies", 
+        "effects": [
+            {
+                "conditions": [], 
+                "passive id": "53", 
+                "passive target": "self", 
+                "strong base element damage resist%": 100, 
+                "strong buffed element damage resist%": 100
+            }, 
+            {
+                "conditions": [], 
+                "crit multiplier%": 20.0, 
+                "passive id": "34", 
+                "passive target": "party"
+            }, 
+            {
+                "conditions": [], 
+                "passive target": "self", 
+                "unknown passive id": "143", 
+                "unknown passive params": "130000"
+            }, 
+            {
+                "conditions": [], 
+                "damage% for spark": 50, 
+                "passive id": "31", 
+                "passive target": "self"
+            }
+        ], 
+        "id": "830378", 
+        "name": "Life or Death Choices", 
+        "target": "self"
+    }, 
     "8400": {
         "desc": "Reduces damage taken when damage taken has exceeded certain amount for 2 turns", 
         "effects": [
@@ -16403,6 +16600,52 @@
         ], 
         "id": "840317", 
         "name": "Lord Commander's Umbrage", 
+        "target": "self"
+    }, 
+    "840377": {
+        "desc": "Raises normal hit amount & boosts BB gauge each turn", 
+        "effects": [
+            {
+                "conditions": [], 
+                "hit increase/hit": 1, 
+                "passive id": "37", 
+                "passive target": "self"
+            }, 
+            {
+                "bc fill per turn": 3, 
+                "conditions": [], 
+                "passive id": "9", 
+                "passive target": "self"
+            }
+        ], 
+        "id": "840377", 
+        "name": "Beautiful Assassin", 
+        "target": "self"
+    }, 
+    "840378": {
+        "desc": "Considerably raises normal hit amount, considerably boosts BB gauge each turn & boosts critical damage", 
+        "effects": [
+            {
+                "conditions": [], 
+                "hit increase/hit": 2, 
+                "passive id": "37", 
+                "passive target": "self"
+            }, 
+            {
+                "bc fill per turn": 5, 
+                "conditions": [], 
+                "passive id": "9", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "crit multiplier%": 50.0, 
+                "passive id": "34", 
+                "passive target": "self"
+            }
+        ], 
+        "id": "840378", 
+        "name": "Freedom to Murder", 
         "target": "self"
     }, 
     "840397": {
