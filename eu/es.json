@@ -10420,6 +10420,28 @@
         "name": "Unrestrained Talent", 
         "target": "self"
     }, 
+    "31700": {
+        "desc": "Reduces BB gauge required for BB & damage taken boosts BB gauge", 
+        "effects": [
+            {
+                "bc fill when attacked high": 3, 
+                "bc fill when attacked low": 2, 
+                "bc fill when attacked%": 100, 
+                "conditions": [], 
+                "passive id": "25", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "passive id": "48", 
+                "passive target": "self", 
+                "reduced bb bc cost%": 20
+            }
+        ], 
+        "id": "31700", 
+        "name": "Warped Justice", 
+        "target": "self"
+    }, 
     "31900": {
         "desc": "Boosts Atk, Def, Rec each turn (for up to 5 turns) & damage taken slightly boosts BB gauge", 
         "effects": [
@@ -13628,6 +13650,90 @@
         "name": "Wave Mastery", 
         "target": "self"
     }, 
+    "720237": {
+        "desc": "If an Apex sphere is equipped, boosts all parameters (30% and 10% all), boosts Spark damage (20% all) and adds OD gauge fill effect (10%) to BB/SBB", 
+        "effects": [
+            {
+                "atk% buff": 10, 
+                "conditions": [
+                    {
+                        "item required": [
+                            "701039", 
+                            "701040", 
+                            "701041", 
+                            "701043"
+                        ]
+                    }
+                ], 
+                "def% buff": 10, 
+                "hp% buff": 10, 
+                "passive id": "1", 
+                "passive target": "party", 
+                "rec% buff": 10
+            }, 
+            {
+                "atk% buff": 30, 
+                "conditions": [
+                    {
+                        "item required": [
+                            "701039", 
+                            "701040", 
+                            "701041", 
+                            "701043"
+                        ]
+                    }
+                ], 
+                "def% buff": 30, 
+                "hp% buff": 30, 
+                "passive id": "1", 
+                "passive target": "self", 
+                "rec% buff": 30
+            }, 
+            {
+                "conditions": [
+                    {
+                        "item required": [
+                            "701039", 
+                            "701040", 
+                            "701041", 
+                            "701043"
+                        ]
+                    }
+                ], 
+                "damage% for spark": 20, 
+                "passive id": "31", 
+                "passive target": "party"
+            }, 
+            {
+                "conditions": [
+                    {
+                        "item required": [
+                            "701039", 
+                            "701040", 
+                            "701041", 
+                            "701043"
+                        ]
+                    }
+                ], 
+                "passive id": "66", 
+                "passive target": "self", 
+                "trigger on bb": true, 
+                "trigger on sbb": true, 
+                "triggered effect": [
+                    {
+                        "effect delay time(ms)/frame": "0.0/0", 
+                        "increase od gauge%": 10.0, 
+                        "proc id": "43", 
+                        "target area": "single", 
+                        "target type": "self"
+                    }
+                ]
+            }
+        ], 
+        "id": "720237", 
+        "name": "Photon Expertise", 
+        "target": "self"
+    }, 
     "7300": {
         "desc": "Adds Def ignoring effect to BB/SBB for 2 turns & hugely boosts damage against status afflicted foes", 
         "effects": [
@@ -14286,6 +14392,99 @@
         ], 
         "id": "730247", 
         "name": "Explosive Cruelty", 
+        "target": "self"
+    }, 
+    "730257": {
+        "desc": "If an Apex sphere is equipped, boosts all parameters (30% and 10% all), raises normal hit amount (+2, 100% damage) and adds all elements to attack for 3 turns to BB/SBB", 
+        "effects": [
+            {
+                "atk% buff": 10, 
+                "conditions": [
+                    {
+                        "item required": [
+                            "701039", 
+                            "701040", 
+                            "701041", 
+                            "701043"
+                        ]
+                    }
+                ], 
+                "def% buff": 10, 
+                "hp% buff": 10, 
+                "passive id": "1", 
+                "passive target": "party", 
+                "rec% buff": 10
+            }, 
+            {
+                "atk% buff": 30, 
+                "conditions": [
+                    {
+                        "item required": [
+                            "701039", 
+                            "701040", 
+                            "701041", 
+                            "701043"
+                        ]
+                    }
+                ], 
+                "def% buff": 30, 
+                "hp% buff": 30, 
+                "passive id": "1", 
+                "passive target": "self", 
+                "rec% buff": 30
+            }, 
+            {
+                "conditions": [
+                    {
+                        "item required": [
+                            "701039", 
+                            "701040", 
+                            "701041", 
+                            "701043"
+                        ]
+                    }
+                ], 
+                "extra hits dmg%": 100, 
+                "hit increase/hit": 2, 
+                "passive id": "37", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [
+                    {
+                        "item required": [
+                            "701039", 
+                            "701040", 
+                            "701041", 
+                            "701043"
+                        ]
+                    }
+                ], 
+                "passive id": "66", 
+                "passive target": "self", 
+                "trigger on bb": true, 
+                "trigger on sbb": true, 
+                "triggered effect": [
+                    {
+                        "effect delay time(ms)/frame": "0.0/0", 
+                        "elements added": [
+                            "fire", 
+                            "water", 
+                            "earth", 
+                            "thunder", 
+                            "light", 
+                            "dark"
+                        ], 
+                        "elements added turns": 3, 
+                        "proc id": "30", 
+                        "target area": "aoe", 
+                        "target type": "party"
+                    }
+                ]
+            }
+        ], 
+        "id": "730257", 
+        "name": "Constellation Spirit", 
         "target": "self"
     }, 
     "7400": {
