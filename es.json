@@ -20823,6 +20823,81 @@
         "name": "Omni-Concept Instantiation", 
         "target": "self"
     }, 
+    "850287": {
+        "desc": "30% boost to Atk of Light types, enormously boosts Atk relative to remaining HP<br>30% Boost to Atk, Def each turn (3 turns max, capping at 90%) & considerably raises normal hit amount in Guild Raid", 
+        "effects": [
+            {
+                "atk% buff": 30, 
+                "conditions": [], 
+                "elements buffed": [
+                    "light"
+                ], 
+                "passive id": "2", 
+                "passive target": "party"
+            }, 
+            {
+                "atk% base buff": 0, 
+                "atk% extra buff based on hp": 80, 
+                "buff proportional to hp": "remaining", 
+                "conditions": [], 
+                "passive id": "46", 
+                "passive target": "self"
+            }
+        ], 
+        "id": "850287", 
+        "name": "Sniper Speedloader", 
+        "target": "self"
+    }, 
+    "850288": {
+        "desc": "50% boost to Atk of Light types, greatly boosts Atk relative to remaining HP, adds Light barrier effect to BB/SBB & raises max Atk value from 99999 to 130000<br>40% Boost to Atk, Def each turn (3 turns max, capping at 120%), boosts Light elemental damage for all allies & considerably raises normal hit amount in Guild Raid", 
+        "effects": [
+            {
+                "conditions": [], 
+                "passive id": "66", 
+                "passive target": "self", 
+                "trigger on bb": true, 
+                "trigger on sbb": true, 
+                "triggered effect": [
+                    {
+                        "effect delay time(ms)/frame": "0.0/0", 
+                        "elemental barrier absorb dmg%": 100, 
+                        "elemental barrier def": 0, 
+                        "elemental barrier element": "light", 
+                        "elemental barrier hp": 3500, 
+                        "proc id": "62", 
+                        "target area": "aoe", 
+                        "target type": "party"
+                    }
+                ]
+            }, 
+            {
+                "atk% buff": 50, 
+                "conditions": [], 
+                "elements buffed": [
+                    "light"
+                ], 
+                "passive id": "2", 
+                "passive target": "party"
+            }, 
+            {
+                "atk% base buff": 0, 
+                "atk% extra buff based on hp": 100, 
+                "buff proportional to hp": "remaining", 
+                "conditions": [], 
+                "passive id": "46", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "passive target": "self", 
+                "unknown passive id": "143", 
+                "unknown passive params": "130000"
+            }
+        ], 
+        "id": "850288", 
+        "name": "The Ace of Spades", 
+        "target": "self"
+    }, 
     "850317": {
         "desc": "Adds removal and negation of status ailments effects for 3 turns to BB/SBB when Ritus Staff is equipped", 
         "effects": [
@@ -22017,6 +22092,59 @@
         ], 
         "id": "8900", 
         "name": "Discipline Beyond Death", 
+        "target": "self"
+    }, 
+    "8950287": {
+        "desc": "MST_EXTRAPASSIVESKILL_8930287_DESCRIPTION", 
+        "effects": [
+            {
+                "atk% max buff": 90, 
+                "conditions": [], 
+                "def% max buff": 90, 
+                "increase from min to max": 1, 
+                "passive id": "105", 
+                "passive target": "self", 
+                "turn count": 3
+            }, 
+            {
+                "conditions": [], 
+                "hit increase/hit": 2, 
+                "passive id": "37", 
+                "passive target": "self"
+            }
+        ], 
+        "id": "8950287", 
+        "name": "Sniper Speedloader GR", 
+        "target": "self"
+    }, 
+    "8950288": {
+        "desc": "MST_EXTRAPASSIVESKILL_8930288_DESCRIPTION", 
+        "effects": [
+            {
+                "atk% max buff": 120, 
+                "conditions": [], 
+                "def% max buff": 120, 
+                "increase from min to max": 1, 
+                "passive id": "105", 
+                "passive target": "self", 
+                "turn count": 3
+            }, 
+            {
+                "conditions": [], 
+                "elemental weakness multiplier%": 25.0, 
+                "light units do extra elemental weakness dmg": true, 
+                "passive id": "50", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "hit increase/hit": 2, 
+                "passive id": "37", 
+                "passive target": "party"
+            }
+        ], 
+        "id": "8950288", 
+        "name": "The Ace of Spades GR", 
         "target": "self"
     }, 
     "9": {
