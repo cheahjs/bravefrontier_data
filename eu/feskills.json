@@ -3816,6 +3816,308 @@
             }
         ]
     }, 
+    "11037": {
+        "category": {
+            "1": {
+                "name": "ステアップ系"
+            }, 
+            "10": {
+                "name": "ダメージ軽減系"
+            }, 
+            "11": {
+                "name": "特殊"
+            }, 
+            "5": {
+                "name": "ＢＢゲージ系"
+            }
+        }, 
+        "skills": [
+            {
+                "category": "1", 
+                "dependency": "", 
+                "dependency comment": "", 
+                "id": "240001", 
+                "skill": {
+                    "bp": 20, 
+                    "desc": "50% boost to Def", 
+                    "effects": [
+                        {
+                            "passive": {
+                                "def% buff": 50, 
+                                "passive id": "1"
+                            }
+                        }
+                    ], 
+                    "id": "240001", 
+                    "level": 1, 
+                    "name": "50% boost to Def", 
+                    "series": ""
+                }
+            }, 
+            {
+                "category": "1", 
+                "dependency": "", 
+                "dependency comment": "", 
+                "id": "550000", 
+                "skill": {
+                    "bp": 10, 
+                    "desc": "20% boost to Atk, max HP", 
+                    "effects": [
+                        {
+                            "passive": {
+                                "atk% buff": 20, 
+                                "hp% buff": 20, 
+                                "passive id": "1"
+                            }
+                        }
+                    ], 
+                    "id": "550000", 
+                    "level": 1, 
+                    "name": "20% boost to Atk, max HP", 
+                    "series": ""
+                }
+            }, 
+            {
+                "category": "5", 
+                "dependency": "", 
+                "dependency comment": "", 
+                "id": "4110002", 
+                "skill": {
+                    "bp": 20, 
+                    "desc": "Damage taken boosts BB gauge", 
+                    "effects": [
+                        {
+                            "passive": {
+                                "bc fill when attacked high": 3, 
+                                "bc fill when attacked low": 2, 
+                                "bc fill when attacked%": 100, 
+                                "passive id": "25"
+                            }
+                        }
+                    ], 
+                    "id": "4110002", 
+                    "level": 2, 
+                    "name": "Damage taken boosts BB gauge", 
+                    "series": ""
+                }
+            }, 
+            {
+                "category": "5", 
+                "dependency": "1@4110002", 
+                "dependency comment": "Unlock \"Damage taken boosts BB gauge\"", 
+                "id": "4110200", 
+                "skill": {
+                    "bp": 10, 
+                    "desc": "Enhances BB gauge boost when attacked", 
+                    "effects": [
+                        {
+                            "passive": {
+                                "bc fill when attacked high": 4, 
+                                "bc fill when attacked low": 3, 
+                                "bc fill when attacked%": 100, 
+                                "passive id": "25"
+                            }
+                        }
+                    ], 
+                    "id": "4110200", 
+                    "level": 5, 
+                    "name": "Damage taken considerably boosts BB gauge", 
+                    "series": ""
+                }
+            }, 
+            {
+                "category": "10", 
+                "dependency": "", 
+                "dependency comment": "", 
+                "id": "9100003", 
+                "skill": {
+                    "bp": 20, 
+                    "desc": "Negates Def ignoring damage", 
+                    "effects": [
+                        {
+                            "passive": {
+                                "ignore def resist chance%": 100, 
+                                "passive id": "92"
+                            }
+                        }
+                    ], 
+                    "id": "9100003", 
+                    "level": 2, 
+                    "name": "Negates Def ignoring damage", 
+                    "series": ""
+                }
+            }, 
+            {
+                "category": "11", 
+                "dependency": "", 
+                "dependency comment": "", 
+                "id": "39001001", 
+                "skill": {
+                    "bp": 20, 
+                    "desc": "Allows 50% damage reduction for 1 turn effect added to BB/SBB to last for 2 turns", 
+                    "effects": [
+                        {
+                            "add to bb": {
+                                "dmg% reduction": 0, 
+                                "dmg% reduction turns (36)": 1, 
+                                "proc id": "18"
+                            }
+                        }, 
+                        {
+                            "add to sbb": {
+                                "dmg% reduction": 0, 
+                                "dmg% reduction turns (36)": 1, 
+                                "proc id": "18"
+                            }
+                        }
+                    ], 
+                    "id": "39001001", 
+                    "level": 6, 
+                    "name": "Allows BB/SBB's 50% damage reductions to last for 2 turns", 
+                    "series": ""
+                }
+            }, 
+            {
+                "category": "11", 
+                "dependency": "", 
+                "dependency comment": "", 
+                "id": "34001001", 
+                "skill": {
+                    "bp": 30, 
+                    "desc": "Enhances BB/SBB's huge BB gauge boost effect", 
+                    "effects": [
+                        {
+                            "add to bb": {
+                                "increase bb gauge": 2, 
+                                "proc id": "31"
+                            }
+                        }, 
+                        {
+                            "add to sbb": {
+                                "increase bb gauge": 2, 
+                                "proc id": "31"
+                            }
+                        }
+                    ], 
+                    "id": "34001001", 
+                    "level": 5, 
+                    "name": "Enhances BB/SBB's BB gauge boost effect", 
+                    "series": ""
+                }
+            }, 
+            {
+                "category": "11", 
+                "dependency": "", 
+                "dependency comment": "", 
+                "id": "54001102", 
+                "skill": {
+                    "bp": 40, 
+                    "desc": "Adds considerable BB gauge boost when attacked for 3 turns effect to BB/SBB", 
+                    "effects": [
+                        {
+                            "passive": {
+                                "passive id": "66", 
+                                "trigger on bb": true, 
+                                "trigger on sbb": true, 
+                                "triggered effect": [
+                                    {
+                                        "bc fill when attacked high": 7, 
+                                        "bc fill when attacked low": 4, 
+                                        "bc fill when attacked turns (38)": 3, 
+                                        "bc fill when attacked%": 100, 
+                                        "effect delay time(ms)/frame": "0.0/0", 
+                                        "proc id": "20", 
+                                        "target area": "aoe", 
+                                        "target type": "party"
+                                    }
+                                ]
+                            }
+                        }
+                    ], 
+                    "id": "54001102", 
+                    "level": 5, 
+                    "name": "Adds damage taken considerably boosts BB gauge effect to BB/SBB", 
+                    "series": ""
+                }
+            }, 
+            {
+                "category": "11", 
+                "dependency": "", 
+                "dependency comment": "", 
+                "id": "50000001", 
+                "skill": {
+                    "bp": 40, 
+                    "desc": "Adds huge Atk boost relative to Def for 3 turns effect to BB/SBB", 
+                    "effects": [
+                        {
+                            "passive": {
+                                "passive id": "66", 
+                                "trigger on bb": true, 
+                                "trigger on sbb": true, 
+                                "triggered effect": [
+                                    {
+                                        "% converted turns": 3, 
+                                        "atk% buff (46)": 70, 
+                                        "converted attribute": "defense", 
+                                        "effect delay time(ms)/frame": "0.0/0", 
+                                        "proc id": "24", 
+                                        "target area": "aoe", 
+                                        "target type": "party"
+                                    }
+                                ]
+                            }
+                        }
+                    ], 
+                    "id": "50000001", 
+                    "level": 5, 
+                    "name": "Adds huge Atk boost relative to Def effect to BB/SBB", 
+                    "series": ""
+                }
+            }, 
+            {
+                "category": "11", 
+                "dependency": "", 
+                "dependency comment": "", 
+                "id": "57000005", 
+                "skill": {
+                    "bp": 20, 
+                    "desc": "Adds status ailment removal effect to BB/SBB", 
+                    "effects": [
+                        {
+                            "passive": {
+                                "passive id": "66", 
+                                "trigger on bb": true, 
+                                "trigger on sbb": true, 
+                                "triggered effect": [
+                                    {
+                                        "ailments cured": [
+                                            "poison", 
+                                            "weaken", 
+                                            "sick", 
+                                            "injury", 
+                                            "curse", 
+                                            "paralysis", 
+                                            "atk down", 
+                                            "def down", 
+                                            "rec down"
+                                        ], 
+                                        "effect delay time(ms)/frame": "0.0/0", 
+                                        "proc id": "38", 
+                                        "target area": "aoe", 
+                                        "target type": "party"
+                                    }
+                                ]
+                            }
+                        }
+                    ], 
+                    "id": "57000005", 
+                    "level": 6, 
+                    "name": "Adds status ailment removal effect to BB/SBB", 
+                    "series": ""
+                }
+            }
+        ]
+    }, 
     "11047": {
         "category": {
             "1": {
@@ -27511,13 +27813,16 @@
     "730237": {
         "category": {
             "1": {
-                "name": ""
+                "name": "ステアップ系"
             }, 
             "11": {
-                "name": ""
+                "name": "特殊"
             }, 
             "2": {
-                "name": ""
+                "name": "スパーク系"
+            }, 
+            "4": {
+                "name": "攻撃強化系"
             }
         }, 
         "skills": [
@@ -27525,7 +27830,7 @@
                 "category": "1", 
                 "dependency": "", 
                 "dependency comment": "", 
-                "id": "70081", 
+                "id": "710001", 
                 "skill": {
                     "bp": 10, 
                     "desc": "20% boost to all parameters", 
@@ -27540,33 +27845,33 @@
                             }
                         }
                     ], 
-                    "id": "70081", 
-                    "level": 1, 
+                    "id": "710001", 
+                    "level": 2, 
                     "name": "20% boost to all parameters", 
                     "series": ""
                 }
             }, 
             {
                 "category": "1", 
-                "dependency": "1@70081", 
+                "dependency": "1@710001", 
                 "dependency comment": "", 
-                "id": "70082", 
+                "id": "740101", 
                 "skill": {
                     "bp": 15, 
-                    "desc": "50% boost to all parameters", 
+                    "desc": "Raises all parameters boost from 20% to 50%", 
                     "effects": [
                         {
                             "passive": {
-                                "atk% buff": 30, 
-                                "def% buff": 30, 
-                                "hp% buff": 30, 
+                                "atk% buff": 50, 
+                                "def% buff": 50, 
+                                "hp% buff": 50, 
                                 "passive id": "1", 
-                                "rec% buff": 30
+                                "rec% buff": 50
                             }
                         }
                     ], 
-                    "id": "70082", 
-                    "level": 1, 
+                    "id": "740101", 
+                    "level": 4, 
                     "name": "50% boost to all parameters", 
                     "series": ""
                 }
@@ -27575,7 +27880,7 @@
                 "category": "2", 
                 "dependency": "", 
                 "dependency comment": "", 
-                "id": "70083", 
+                "id": "1040003", 
                 "skill": {
                     "bp": 15, 
                     "desc": "100% boost to Spark damage", 
@@ -27587,31 +27892,53 @@
                             }
                         }
                     ], 
-                    "id": "70083", 
-                    "level": 1, 
+                    "id": "1040003", 
+                    "level": 5, 
                     "name": "100% boost to Spark damage", 
                     "series": ""
                 }
             }, 
             {
                 "category": "2", 
-                "dependency": "1@70083", 
+                "dependency": "1@1040003", 
                 "dependency comment": "", 
-                "id": "70084", 
+                "id": "1000500", 
                 "skill": {
                     "bp": 10, 
-                    "desc": "120% boost to Spark damage", 
+                    "desc": "Raises Spark damage boost from 100% to 120%", 
                     "effects": [
                         {
                             "passive": {
-                                "damage% for spark": 20, 
+                                "damage% for spark": 120, 
                                 "passive id": "31"
                             }
                         }
                     ], 
-                    "id": "70084", 
-                    "level": 1, 
+                    "id": "1000500", 
+                    "level": 6, 
                     "name": "120% boost to Spark damage", 
+                    "series": ""
+                }
+            }, 
+            {
+                "category": "4", 
+                "dependency": "", 
+                "dependency comment": "", 
+                "id": "10800000", 
+                "skill": {
+                    "bp": 10, 
+                    "desc": "Raises Atk parameter limits to 130000", 
+                    "effects": [
+                        {
+                            "passive": {
+                                "unknown passive id": "143", 
+                                "unknown passive params": "130000"
+                            }
+                        }
+                    ], 
+                    "id": "10800000", 
+                    "level": 4, 
+                    "name": "Breaks Atk's parameter limit", 
                     "series": ""
                 }
             }, 
@@ -27619,10 +27946,10 @@
                 "category": "11", 
                 "dependency": "", 
                 "dependency comment": "", 
-                "id": "70085", 
+                "id": "1000010028", 
                 "skill": {
                     "bp": 10, 
-                    "desc": "Removes SBB's DEF, REC self parameter reduction effects", 
+                    "desc": "Removes SBB's Def, Rec self parameter reduction effects", 
                     "effects": [
                         {
                             "add to sbb": {
@@ -27633,9 +27960,9 @@
                             }
                         }
                     ], 
-                    "id": "70085", 
-                    "level": 1, 
-                    "name": "Removes SBB's DEF, REC self parameter reduction effects", 
+                    "id": "1000010028", 
+                    "level": 2, 
+                    "name": "Removes SBB's Def, Rec self parameter reduction effects", 
                     "series": ""
                 }
             }, 
@@ -27643,32 +27970,23 @@
                 "category": "11", 
                 "dependency": "", 
                 "dependency comment": "", 
-                "id": "70086", 
+                "id": "1000010088", 
                 "skill": {
                     "bp": 25, 
-                    "desc": "Enhances BB's DEF relative to ATK boost (+20%) effect", 
+                    "desc": "I do not have the time for regret.<br>There is work to be done<br>with these bloody, ash-stained hands.\n", 
                     "effects": [
                         {
-                            "passive": {
-                                "passive id": "66", 
-                                "trigger on bb": true, 
-                                "triggered effect": [
-                                    {
-                                        "% converted turns": 3, 
-                                        "converted attribute": "attack", 
-                                        "def% buff (47)": 80, 
-                                        "effect delay time(ms)/frame": "66.7/4", 
-                                        "proc id": "24", 
-                                        "target area": "aoe", 
-                                        "target type": "party"
-                                    }
-                                ]
+                            "add to bb": {
+                                "% converted turns": 0, 
+                                "converted attribute": null, 
+                                "def% buff (47)": 20, 
+                                "proc id": "24"
                             }
                         }
                     ], 
-                    "id": "70086", 
-                    "level": 1, 
-                    "name": "Enhances BB's DEF relative to ATK boost (+20%) effect", 
+                    "id": "1000010088", 
+                    "level": 4, 
+                    "name": "Enhances BB boost to Def relative to Atk for 3 turns effect", 
                     "series": ""
                 }
             }, 
@@ -27676,23 +27994,21 @@
                 "category": "11", 
                 "dependency": "", 
                 "dependency comment": "", 
-                "id": "70087", 
+                "id": "21002000", 
                 "skill": {
                     "bp": 40, 
-                    "desc": "Enhances Leader Skill's ATT, DEF increase for 2 turns activation effect (+20%)", 
+                    "desc": "Enhances LS's success rate of BB/SBB activation effect", 
                     "effects": [
                         {
                             "add to passive": {
-                                "first x turns": 0, 
-                                "first x turns atk% (1)": 20, 
-                                "first x turns def% (3)": 20, 
-                                "passive id": "21"
+                                "unknown passive id": "111", 
+                                "unknown passive params": "10"
                             }
                         }
                     ], 
-                    "id": "70087", 
-                    "level": 1, 
-                    "name": "Enhances Leader Skill's ATT, DEF increase for 2 turns activation effect (+20%)", 
+                    "id": "21002000", 
+                    "level": 5, 
+                    "name": "Enhances LS's success rate of BB/SBB activation effect", 
                     "series": ""
                 }
             }, 
@@ -27700,10 +28016,10 @@
                 "category": "11", 
                 "dependency": "", 
                 "dependency comment": "", 
-                "id": "70088", 
+                "id": "1000010089", 
                 "skill": {
                     "bp": 50, 
-                    "desc": "Chance to resist against 1 KO attack (70%)", 
+                    "desc": "I do not have the time for regret.<br>There is work to be done<br>with these bloody, ash-stained hands.\n", 
                     "effects": [
                         {
                             "passive": {
@@ -27711,14 +28027,13 @@
                                 "angel idol recover chance% high": 70, 
                                 "angel idol recover chance% low": 70, 
                                 "angel idol recover counts": 1, 
-                                "angel idol recover hp%": 1, 
                                 "passive id": "69"
                             }
                         }
                     ], 
-                    "id": "70088", 
-                    "level": 1, 
-                    "name": "Chance to resist against 1 KO attack (70%)", 
+                    "id": "1000010089", 
+                    "level": 8, 
+                    "name": "Probable resistance against 1 KO attack", 
                     "series": ""
                 }
             }, 
@@ -27726,21 +28041,30 @@
                 "category": "11", 
                 "dependency": "", 
                 "dependency comment": "", 
-                "id": "70089", 
+                "id": "1000010090", 
                 "skill": {
-                    "bp": 35, 
-                    "desc": "Chance to reduce damage to 1 (20%)", 
+                    "bp": 25, 
+                    "desc": "I do not have the time for regret.<br>There is work to be done<br>with these bloody, ash-stained hands.\n", 
                     "effects": [
                         {
                             "passive": {
-                                "passive id": "43", 
-                                "take 1 dmg%": 20
+                                "passive id": "66", 
+                                "trigger on bb": true, 
+                                "triggered effect": [
+                                    {
+                                        "effect delay time(ms)/frame": "0.0/0", 
+                                        "target area": "single", 
+                                        "target type": "self", 
+                                        "unknown proc id": "10007", 
+                                        "unknown proc param": "100,1,0,35"
+                                    }
+                                ]
                             }
                         }
                     ], 
-                    "id": "70089", 
-                    "level": 1, 
-                    "name": "Chance to reduce damage to 1 (20%)", 
+                    "id": "1000010090", 
+                    "level": 4, 
+                    "name": "Adds probable self evasion for 1 turn effect to BB", 
                     "series": ""
                 }
             }, 
@@ -27748,21 +28072,23 @@
                 "category": "11", 
                 "dependency": "", 
                 "dependency comment": "", 
-                "id": "70110", 
+                "id": "1000010091", 
                 "skill": {
-                    "bp": 50, 
-                    "desc": "Reduction in damage from Fire Types (50%)", 
+                    "bp": 40, 
+                    "desc": "I do not have the time for regret.<br>There is work to be done<br>with these bloody, ash-stained hands.\n", 
                     "effects": [
                         {
                             "passive": {
-                                "fire resist%": 50, 
-                                "passive id": "5"
+                                "dmg% mitigation for elemental attacks": 25.0, 
+                                "mitigate earth attacks": true, 
+                                "mitigate fire attacks": true, 
+                                "passive id": "62"
                             }
                         }
                     ], 
-                    "id": "70110", 
-                    "level": 1, 
-                    "name": "Reduction in damage from Fire Types (50%)", 
+                    "id": "1000010091", 
+                    "level": 9, 
+                    "name": "25% reduction in damage from Fire, Earth Types", 
                     "series": ""
                 }
             }
@@ -28647,13 +28973,13 @@
                         {
                             "add to bb": {
                                 "unknown proc id": "70002", 
-                                "unknown proc param": "0.5,0,0,0,0,0,0,0,0"
+                                "unknown proc param": "0.05,0,0,0,0,0,0,0,0"
                             }
                         }, 
                         {
                             "add to sbb": {
                                 "unknown proc id": "70002", 
-                                "unknown proc param": "0.5,0,0,0,0,0,0,0,0"
+                                "unknown proc param": "0.05,0,0,0,0,0,0,0,0"
                             }
                         }
                     ], 
@@ -36749,7 +37075,7 @@
                 "id": "1000000091", 
                 "skill": {
                     "bp": 35, 
-                    "desc": "Enhances BB's additional damagereduction [+15%] effect", 
+                    "desc": "Enhances BB's damage reduction for damage over time [+15%] effects", 
                     "effects": [
                         {
                             "add to bb": {
@@ -36760,7 +37086,7 @@
                     ], 
                     "id": "1000000091", 
                     "level": 5, 
-                    "name": "Enhances BB's additional damagereduction effect", 
+                    "name": "Enhances BB's damage reduction for damage over time [+15%] effects", 
                     "series": ""
                 }
             }, 
