@@ -19393,6 +19393,79 @@
         "name": "Pyrrhic Powerdrive", 
         "target": "self"
     }, 
+    "830287": {
+        "desc": "30% boost to Atk of Earth types, 80% boost to Atk when BB gauge is over 50%<br>Slightly boosts Atk, Def when HP is over 50% & raises normal hit amount in Guild Raid", 
+        "effects": [
+            {
+                "atk% buff": 30, 
+                "conditions": [], 
+                "elements buffed": [
+                    "earth"
+                ], 
+                "passive id": "2", 
+                "passive target": "party"
+            }, 
+            {
+                "atk% buff": 80, 
+                "bb gauge above % buff requirement": 50, 
+                "conditions": [], 
+                "passive id": "30", 
+                "passive target": "self"
+            }
+        ], 
+        "id": "830287", 
+        "name": "Hyper Infovore Technique", 
+        "target": "self"
+    }, 
+    "830288": {
+        "desc": "50% boost to Atk of Earth types, 100% boost to Atk when BB gauge is over 50%, adds Earth barrier effect to BB/SBB & raises Atk parameter limits to 130000<br> 50% boost to Atk, Def when HP is over 50%, raises normal hit amount & boosts Earth elemental damage for all allies in Guild Raid", 
+        "effects": [
+            {
+                "conditions": [], 
+                "passive id": "66", 
+                "passive target": "self", 
+                "trigger on bb": true, 
+                "trigger on sbb": true, 
+                "triggered effect": [
+                    {
+                        "effect delay time(ms)/frame": "0.0/0", 
+                        "elemental barrier absorb dmg%": 100, 
+                        "elemental barrier def": 0, 
+                        "elemental barrier element": "earth", 
+                        "elemental barrier hp": 3500, 
+                        "proc id": "62", 
+                        "target area": "aoe", 
+                        "target type": "party"
+                    }
+                ]
+            }, 
+            {
+                "atk% buff": 50, 
+                "conditions": [], 
+                "elements buffed": [
+                    "earth"
+                ], 
+                "passive id": "2", 
+                "passive target": "party"
+            }, 
+            {
+                "atk% buff": 100, 
+                "bb gauge above % buff requirement": 50, 
+                "conditions": [], 
+                "passive id": "30", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "passive target": "self", 
+                "unknown passive id": "143", 
+                "unknown passive params": "130000"
+            }
+        ], 
+        "id": "830288", 
+        "name": "Ascended Mind Palace", 
+        "target": "self"
+    }, 
     "830317": {
         "desc": "Boosts damage dealt against status afflicted foes & raises normal hit amount when Vorpal Chainblades is equipped", 
         "effects": [
@@ -22092,6 +22165,57 @@
         ], 
         "id": "8900", 
         "name": "Discipline Beyond Death", 
+        "target": "self"
+    }, 
+    "8930287": {
+        "desc": "MST_EXTRAPASSIVESKILL_8930287_DESCRIPTION", 
+        "effects": [
+            {
+                "atk% buff": 30, 
+                "conditions": [], 
+                "def% buff": 30, 
+                "hp above % buff requirement": 50, 
+                "passive id": "11", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "hit increase/hit": 1, 
+                "passive id": "37", 
+                "passive target": "self"
+            }
+        ], 
+        "id": "8930287", 
+        "name": "Hyper Infovore Technique GR", 
+        "target": "self"
+    }, 
+    "8930288": {
+        "desc": "MST_EXTRAPASSIVESKILL_8930288_DESCRIPTION", 
+        "effects": [
+            {
+                "atk% buff": 50, 
+                "conditions": [], 
+                "def% buff": 50, 
+                "hp above % buff requirement": 50, 
+                "passive id": "11", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "hit increase/hit": 1, 
+                "passive id": "37", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "earth units do extra elemental weakness dmg": true, 
+                "elemental weakness multiplier%": 25.0, 
+                "passive id": "50", 
+                "passive target": "party"
+            }
+        ], 
+        "id": "8930288", 
+        "name": "Ascended Mind Palace GR", 
         "target": "self"
     }, 
     "8950287": {
