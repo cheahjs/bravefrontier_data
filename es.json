@@ -15370,6 +15370,292 @@
         "name": "Sacrifice for the Future", 
         "target": "self"
     }, 
+    "37000": {
+        "desc": "ＨＰが半分以上の時、攻撃力・防御力を少しアップ＆スパークダメージを４０％アップ", 
+        "effects": [
+            {
+                "atk% buff": 30, 
+                "conditions": [], 
+                "def% buff": 30, 
+                "hp above % buff requirement": 50, 
+                "passive id": "11", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "damage% for spark": 40, 
+                "passive id": "31", 
+                "passive target": "self"
+            }
+        ], 
+        "id": "37000", 
+        "name": "造命の闇術", 
+        "target": "self"
+    }, 
+    "37100": {
+        "desc": "ＨＰが半分以上の時、攻撃力・防御力をアップ＆スパークダメージを６０％アップ", 
+        "effects": [
+            {
+                "atk% buff": 50, 
+                "conditions": [], 
+                "def% buff": 50, 
+                "hp above % buff requirement": 50, 
+                "passive id": "11", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "damage% for spark": 60, 
+                "passive id": "31", 
+                "passive target": "self"
+            }
+        ], 
+        "id": "37100", 
+        "name": "禁忌の妖輝", 
+        "target": "self"
+    }, 
+    "37200": {
+        "desc": "ＢＢゲージが半分以上の時、防御力・回復力を少しアップ＆被ダメージ時、ＢＢゲージを増加", 
+        "effects": [
+            {
+                "bb gauge above % buff requirement": 50, 
+                "conditions": [], 
+                "def% buff": 30, 
+                "passive id": "30", 
+                "passive target": "self", 
+                "rec% buff": 30
+            }, 
+            {
+                "bc fill when attacked high": 3, 
+                "bc fill when attacked low": 2, 
+                "bc fill when attacked%": 100, 
+                "conditions": [], 
+                "passive id": "25", 
+                "passive target": "self"
+            }
+        ], 
+        "id": "37200", 
+        "name": "清叡の潔魂", 
+        "target": "self"
+    }, 
+    "37300": {
+        "desc": "ＢＢゲージが半分以上の時、防御力・回復力をアップ＆被ダメージ時、ＢＢゲージをかなり増加", 
+        "effects": [
+            {
+                "bb gauge above % buff requirement": 50, 
+                "conditions": [], 
+                "def% buff": 50, 
+                "passive id": "30", 
+                "passive target": "self", 
+                "rec% buff": 50
+            }, 
+            {
+                "bc fill when attacked high": 4, 
+                "bc fill when attacked low": 3, 
+                "bc fill when attacked%": 100, 
+                "conditions": [], 
+                "passive id": "25", 
+                "passive target": "self"
+            }
+        ], 
+        "id": "37300", 
+        "name": "払闇の導光", 
+        "target": "self"
+    }, 
+    "37400": {
+        "desc": "クリティカル・弱点属性ダメージを無効＆ＢＢ及びＳＢＢに「味方のＢＢゲージを大幅に増加」を追加", 
+        "effects": [
+            {
+                "conditions": [], 
+                "crit chance base resist%": 100, 
+                "crit chance buffed resist%": 100, 
+                "crit dmg base damage resist%": 100, 
+                "crit dmg buffed damage resist%": 100, 
+                "passive id": "53", 
+                "passive target": "self", 
+                "strong base element damage resist%": 100, 
+                "strong buffed element damage resist%": 100
+            }, 
+            {
+                "conditions": [], 
+                "passive id": "66", 
+                "passive target": "self", 
+                "trigger on bb": true, 
+                "trigger on sbb": true, 
+                "triggered effect": [
+                    {
+                        "effect delay time(ms)/frame": "0.0/0", 
+                        "increase bb gauge": 8, 
+                        "proc id": "31", 
+                        "target area": "aoe", 
+                        "target type": "party"
+                    }
+                ]
+            }
+        ], 
+        "id": "37400", 
+        "name": "真姿の解放", 
+        "target": "self"
+    }, 
+    "37500": {
+        "desc": "状態異常の敵へのダメージをかなりアップ＆弱点属性ダメージを少しアップ", 
+        "effects": [
+            {
+                "atk% buff when enemy has ailment": 80, 
+                "atk% buff when enemy has curse": true, 
+                "atk% buff when enemy has injury": true, 
+                "atk% buff when enemy has paralysis": true, 
+                "atk% buff when enemy has poison": true, 
+                "atk% buff when enemy has sick": true, 
+                "atk% buff when enemy has weaken": true, 
+                "conditions": [], 
+                "passive id": "74", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "dark units do extra elemental weakness dmg": true, 
+                "elemental weakness multiplier%": 30.0, 
+                "passive id": "50", 
+                "passive target": "self"
+            }
+        ], 
+        "id": "37500", 
+        "name": "エヴァーモアデリュージョン", 
+        "target": "self"
+    }, 
+    "37600": {
+        "desc": "全状態異常を無効＆確率で１回まで戦闘不能を耐える＆攻撃力の上限値（９９９９９）を１３００００まで解放する", 
+        "effects": [
+            {
+                "angel idol chance% condition": 0, 
+                "angel idol recover chance% high": 40, 
+                "angel idol recover chance% low": 40, 
+                "angel idol recover counts": 1, 
+                "conditions": [], 
+                "passive id": "69", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "curse resist%": 100, 
+                "injury resist%": 100, 
+                "paralysis resist%": 100, 
+                "passive id": "4", 
+                "passive target": "self", 
+                "poison resist%": 100, 
+                "sick resist%": 100, 
+                "weaken resist%": 100
+            }, 
+            {
+                "conditions": [], 
+                "passive target": "self", 
+                "unknown passive id": "143", 
+                "unknown passive params": "130000"
+            }
+        ], 
+        "id": "37600", 
+        "name": "凰武界の封柱", 
+        "target": "self"
+    }, 
+    "37700": {
+        "desc": "全状態異常を無効＆確率で１回まで戦闘不能を耐える＆攻撃力の上限値（９９９９９）を１３００００まで解放する", 
+        "effects": [
+            {
+                "angel idol chance% condition": 0, 
+                "angel idol recover chance% high": 60, 
+                "angel idol recover chance% low": 60, 
+                "angel idol recover counts": 1, 
+                "conditions": [], 
+                "passive id": "69", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "curse resist%": 100, 
+                "injury resist%": 100, 
+                "paralysis resist%": 100, 
+                "passive id": "4", 
+                "passive target": "self", 
+                "poison resist%": 100, 
+                "sick resist%": 100, 
+                "weaken resist%": 100
+            }, 
+            {
+                "conditions": [], 
+                "passive target": "self", 
+                "unknown passive id": "143", 
+                "unknown passive params": "130000"
+            }
+        ], 
+        "id": "37700", 
+        "name": "魂喰の獄炎", 
+        "target": "self"
+    }, 
+    "37800": {
+        "desc": "残りＨＰが多いほど、攻撃力・防御力・回復力を少しアップ＆スパークダメージを６０％アップ＆攻撃力の上限値（９９９９９）を１３００００まで解放する", 
+        "effects": [
+            {
+                "atk% base buff": 0, 
+                "atk% extra buff based on hp": 40, 
+                "buff proportional to hp": "remaining", 
+                "conditions": [], 
+                "def% base buff": 0, 
+                "def% extra buff based on hp": 40, 
+                "passive id": "46", 
+                "passive target": "self", 
+                "rec% base buff": 0, 
+                "rec% extra buff based on hp": 40
+            }, 
+            {
+                "conditions": [], 
+                "damage% for spark": 60, 
+                "passive id": "31", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "passive target": "self", 
+                "unknown passive id": "143", 
+                "unknown passive params": "130000"
+            }
+        ], 
+        "id": "37800", 
+        "name": "狼氷界の封柱", 
+        "target": "self"
+    }, 
+    "37900": {
+        "desc": "残りＨＰが多いほど、攻撃力・防御力・回復力をアップ＆スパークダメージを８０％アップ＆攻撃力の上限値（９９９９９）を１３００００まで解放する", 
+        "effects": [
+            {
+                "atk% base buff": 0, 
+                "atk% extra buff based on hp": 60, 
+                "buff proportional to hp": "remaining", 
+                "conditions": [], 
+                "def% base buff": 0, 
+                "def% extra buff based on hp": 60, 
+                "passive id": "46", 
+                "passive target": "self", 
+                "rec% base buff": 0, 
+                "rec% extra buff based on hp": 60
+            }, 
+            {
+                "conditions": [], 
+                "damage% for spark": 80, 
+                "passive id": "31", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "passive target": "self", 
+                "unknown passive id": "143", 
+                "unknown passive params": "130000"
+            }
+        ], 
+        "id": "37900", 
+        "name": "揺るぎなき忠牙", 
+        "target": "self"
+    }, 
     "3800": {
         "desc": "Raises normal hit amount", 
         "effects": [
@@ -15382,6 +15668,154 @@
         ], 
         "id": "3800", 
         "name": "Noble Superiority", 
+        "target": "self"
+    }, 
+    "38000": {
+        "desc": "ＢＢゲージが半分以上の時、攻撃力・防御力を少しアップ＆ターン毎にＢＢゲージを増加＆攻撃力の上限値（９９９９９）を１３００００まで解放する", 
+        "effects": [
+            {
+                "atk% buff": 30, 
+                "bb gauge above % buff requirement": 50, 
+                "conditions": [], 
+                "def% buff": 30, 
+                "passive id": "30", 
+                "passive target": "self"
+            }, 
+            {
+                "bc fill per turn": 3, 
+                "conditions": [], 
+                "passive id": "9", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "passive target": "self", 
+                "unknown passive id": "143", 
+                "unknown passive params": "130000"
+            }
+        ], 
+        "id": "38000", 
+        "name": "機電界の封柱", 
+        "target": "self"
+    }, 
+    "38100": {
+        "desc": "ＢＢゲージが半分以上の時、攻撃力・防御力をアップ＆ターン毎にＢＢゲージをかなり増加＆攻撃力の上限値（９９９９９）を１３００００まで解放する", 
+        "effects": [
+            {
+                "atk% buff": 50, 
+                "bb gauge above % buff requirement": 50, 
+                "conditions": [], 
+                "def% buff": 50, 
+                "passive id": "30", 
+                "passive target": "self"
+            }, 
+            {
+                "bc fill per turn": 4, 
+                "conditions": [], 
+                "passive id": "9", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "passive target": "self", 
+                "unknown passive id": "143", 
+                "unknown passive params": "130000"
+            }
+        ], 
+        "id": "38100", 
+        "name": "イクスタスの律動", 
+        "target": "self"
+    }, 
+    "38200": {
+        "desc": "「DUELのカケラ」を装備時、攻撃力・防御力・回復力・最大ＨＰを３０％アップ＆ＢＢ及びＳＢＢに「味方全体に３ターン、攻撃に闇属性を付与」を追加＆スパークダメージ５０％アップ", 
+        "effects": [
+            {
+                "atk% buff": 30, 
+                "conditions": [
+                    {
+                        "item required": [
+                            "47201"
+                        ]
+                    }
+                ], 
+                "def% buff": 30, 
+                "hp% buff": 30, 
+                "passive id": "1", 
+                "passive target": "self", 
+                "rec% buff": 30
+            }, 
+            {
+                "conditions": [], 
+                "passive id": "66", 
+                "passive target": "self", 
+                "trigger on bb": true, 
+                "trigger on sbb": true, 
+                "triggered effect": [
+                    {
+                        "effect delay time(ms)/frame": "0.0/0", 
+                        "elements added": [
+                            "dark"
+                        ], 
+                        "elements added turns": 3, 
+                        "proc id": "30", 
+                        "target area": "aoe", 
+                        "target type": "party"
+                    }
+                ]
+            }, 
+            {
+                "conditions": [], 
+                "damage% for spark": 50, 
+                "passive id": "31", 
+                "passive target": "self"
+            }
+        ], 
+        "id": "38200", 
+        "name": "未来を掴み取る意志", 
+        "target": "self"
+    }, 
+    "38300": {
+        "desc": "全状態異常を無効＆クリティカルダメージをアップ＆ＢＢ及びＳＢＢに「味方全体に３ターン、攻撃に炎属性を付与」を追加", 
+        "effects": [
+            {
+                "conditions": [], 
+                "curse resist%": 100, 
+                "injury resist%": 100, 
+                "paralysis resist%": 100, 
+                "passive id": "4", 
+                "passive target": "self", 
+                "poison resist%": 100, 
+                "sick resist%": 100, 
+                "weaken resist%": 100
+            }, 
+            {
+                "conditions": [], 
+                "crit multiplier%": 50.0, 
+                "passive id": "34", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "passive id": "66", 
+                "passive target": "self", 
+                "trigger on bb": true, 
+                "trigger on sbb": true, 
+                "triggered effect": [
+                    {
+                        "effect delay time(ms)/frame": "0.0/0", 
+                        "elements added": [
+                            "fire"
+                        ], 
+                        "elements added turns": 3, 
+                        "proc id": "30", 
+                        "target area": "aoe", 
+                        "target type": "party"
+                    }
+                ]
+            }
+        ], 
+        "id": "38300", 
+        "name": "機械と人との信義", 
         "target": "self"
     }, 
     "3900": {
