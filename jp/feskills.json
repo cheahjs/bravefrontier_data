@@ -12525,6 +12525,281 @@
             }
         ]
     }, 
+    "21037": {
+        "category": {
+            "1": {
+                "name": "ステアップ系"
+            }, 
+            "11": {
+                "name": "特殊"
+            }, 
+            "2": {
+                "name": "スパーク系"
+            }
+        }, 
+        "skills": [
+            {
+                "category": "1", 
+                "dependency": "", 
+                "dependency comment": "", 
+                "id": "550101", 
+                "skill": {
+                    "bp": 10, 
+                    "desc": "攻撃力・最大ＨＰを３０％アップ", 
+                    "effects": [
+                        {
+                            "passive": {
+                                "atk% buff": 30, 
+                                "hp% buff": 30, 
+                                "passive id": "1"
+                            }
+                        }
+                    ], 
+                    "id": "550101", 
+                    "level": 2, 
+                    "name": "攻撃力・最大ＨＰ＋３０％", 
+                    "series": "500000"
+                }
+            }, 
+            {
+                "category": "1", 
+                "dependency": "1@550101", 
+                "dependency comment": "「攻撃力・最大ＨＰ＋３０％」習得", 
+                "id": "560101", 
+                "skill": {
+                    "bp": 20, 
+                    "desc": "攻撃力・最大ＨＰを３０％アップを５０％にグレードアップ", 
+                    "effects": [
+                        {
+                            "passive": {
+                                "atk% buff": 50, 
+                                "hp% buff": 50, 
+                                "passive id": "1"
+                            }
+                        }
+                    ], 
+                    "id": "560101", 
+                    "level": 3, 
+                    "name": "攻撃力・最大ＨＰ＋３０％→５０％", 
+                    "series": "500000"
+                }
+            }, 
+            {
+                "category": "2", 
+                "dependency": "", 
+                "dependency comment": "", 
+                "id": "1040004", 
+                "skill": {
+                    "bp": 10, 
+                    "desc": "スパークダメージを１００％アップ", 
+                    "effects": [
+                        {
+                            "passive": {
+                                "damage% for spark": 100, 
+                                "passive id": "31"
+                            }
+                        }
+                    ], 
+                    "id": "1040004", 
+                    "level": 5, 
+                    "name": "スパークダメージ１００％アップ", 
+                    "series": "1000000"
+                }
+            }, 
+            {
+                "category": "2", 
+                "dependency": "1@1040004", 
+                "dependency comment": "「スパークダメージ１００％アップ」習得", 
+                "id": "1000502", 
+                "skill": {
+                    "bp": 15, 
+                    "desc": "スパークダメージを１００％アップを１２０％にグレードアップ", 
+                    "effects": [
+                        {
+                            "passive": {
+                                "damage% for spark": 120, 
+                                "passive id": "31"
+                            }
+                        }
+                    ], 
+                    "id": "1000502", 
+                    "level": 6, 
+                    "name": "スパークダメージ１００％→１２０％", 
+                    "series": "1000000"
+                }
+            }, 
+            {
+                "category": "2", 
+                "dependency": "", 
+                "dependency comment": "", 
+                "id": "4500000", 
+                "skill": {
+                    "bp": 20, 
+                    "desc": "スパーク時、ＢＢゲージを増加", 
+                    "effects": [
+                        {
+                            "passive": {
+                                "bc fill on spark high": 3, 
+                                "bc fill on spark low": 2, 
+                                "bc fill on spark%": 100, 
+                                "passive id": "47"
+                            }
+                        }
+                    ], 
+                    "id": "4500000", 
+                    "level": 3, 
+                    "name": "スパーク時、ＢＢゲージを増加", 
+                    "series": "4500000"
+                }
+            }, 
+            {
+                "category": "11", 
+                "dependency": "", 
+                "dependency comment": "", 
+                "id": "10800000", 
+                "skill": {
+                    "bp": 10, 
+                    "desc": "攻撃力の上限値（９９９９９）を１３００００まで解放する", 
+                    "effects": [
+                        {
+                            "passive": {
+                                "unknown passive id": "143", 
+                                "unknown passive params": "130000"
+                            }
+                        }
+                    ], 
+                    "id": "10800000", 
+                    "level": 4, 
+                    "name": "攻撃力上限突破", 
+                    "series": "10800000"
+                }
+            }, 
+            {
+                "category": "11", 
+                "dependency": "", 
+                "dependency comment": "", 
+                "id": "38006000", 
+                "skill": {
+                    "bp": 20, 
+                    "desc": "ＢＢ・ＳＢＢの「確率で弱点属性ダメージ耐性を１ターン少し低下」効果の発動率を増加", 
+                    "effects": [
+                        {
+                            "add to bb": {
+                                "unknown proc id": "132", 
+                                "unknown proc param": "0,0,0,10,0,0"
+                            }
+                        }, 
+                        {
+                            "add to sbb": {
+                                "unknown proc id": "132", 
+                                "unknown proc param": "0,0,0,10,0,0"
+                            }
+                        }
+                    ], 
+                    "id": "38006000", 
+                    "level": 4, 
+                    "name": "ＢＢ・ＳＢＢの「確率で弱点属性ダメージ耐性を低下」発動率を強化", 
+                    "series": "38006000"
+                }
+            }, 
+            {
+                "category": "11", 
+                "dependency": "", 
+                "dependency comment": "", 
+                "id": "38007000", 
+                "skill": {
+                    "bp": 20, 
+                    "desc": "ＢＢ・ＳＢＢの「確率でクリティカルダメージ耐性を１ターン少し低下」効果の発動率を増加", 
+                    "effects": [
+                        {
+                            "add to bb": {
+                                "unknown proc id": "132", 
+                                "unknown proc param": "0,0,10,0,0,0"
+                            }
+                        }, 
+                        {
+                            "add to sbb": {
+                                "unknown proc id": "132", 
+                                "unknown proc param": "0,0,10,0,0,0"
+                            }
+                        }
+                    ], 
+                    "id": "38007000", 
+                    "level": 4, 
+                    "name": "ＢＢ・ＳＢＢの「確率でクリティカルダメージ耐性低下」発動率を強化", 
+                    "series": "38007000"
+                }
+            }, 
+            {
+                "category": "11", 
+                "dependency": "", 
+                "dependency comment": "", 
+                "id": "51000007", 
+                "skill": {
+                    "bp": 40, 
+                    "desc": "ＢＢ及びＳＢＢに「味方全体に３ターン、スパークダメージを超絶アップ」を追加", 
+                    "effects": [
+                        {
+                            "passive": {
+                                "passive id": "66", 
+                                "trigger on bb": true, 
+                                "trigger on sbb": true, 
+                                "triggered effect": [
+                                    {
+                                        "buff turns": 3, 
+                                        "effect delay time(ms)/frame": "0.0/0", 
+                                        "proc id": "23", 
+                                        "spark dmg% buff (40)": 150, 
+                                        "target area": "aoe", 
+                                        "target type": "party"
+                                    }
+                                ]
+                            }
+                        }
+                    ], 
+                    "id": "51000007", 
+                    "level": 5, 
+                    "name": "ＢＢ・ＳＢＢに「スパークダメージを超絶アップ」追加", 
+                    "series": "51000000"
+                }
+            }, 
+            {
+                "category": "11", 
+                "dependency": "", 
+                "dependency comment": "", 
+                "id": "51001007", 
+                "skill": {
+                    "bp": 40, 
+                    "desc": "ＢＢ及びＳＢＢに「味方全体に３ターン、スパーク時、ＢＢゲージを増加」を追加", 
+                    "effects": [
+                        {
+                            "passive": {
+                                "passive id": "66", 
+                                "trigger on bb": true, 
+                                "trigger on sbb": true, 
+                                "triggered effect": [
+                                    {
+                                        "bc fill on spark buff turns (111)": 3, 
+                                        "bc fill on spark high": 3, 
+                                        "bc fill on spark low": 2, 
+                                        "bc fill on spark%": 100, 
+                                        "effect delay time(ms)/frame": "0.0/0", 
+                                        "proc id": "67", 
+                                        "target area": "aoe", 
+                                        "target type": "party"
+                                    }
+                                ]
+                            }
+                        }
+                    ], 
+                    "id": "51001007", 
+                    "level": 4, 
+                    "name": "ＢＢ・ＳＢＢに「スパーク時、ＢＢゲージを増加」追加", 
+                    "series": "51001000"
+                }
+            }
+        ]
+    }, 
     "30017": {
         "category": {
             "1": {
@@ -30551,6 +30826,312 @@
             }
         ]
     }, 
+    "51257": {
+        "category": {
+            "1": {
+                "name": "ステアップ系"
+            }, 
+            "10": {
+                "name": "ダメージ軽減系"
+            }, 
+            "11": {
+                "name": "特殊"
+            }, 
+            "4": {
+                "name": "攻撃強化系"
+            }, 
+            "8": {
+                "name": "異常耐性系"
+            }
+        }, 
+        "skills": [
+            {
+                "category": "1", 
+                "dependency": "", 
+                "dependency comment": "", 
+                "id": "740001", 
+                "skill": {
+                    "bp": 25, 
+                    "desc": "攻撃力・防御力・回復力・最大ＨＰを５０％アップ", 
+                    "effects": [
+                        {
+                            "passive": {
+                                "atk% buff": 50, 
+                                "def% buff": 50, 
+                                "hp% buff": 50, 
+                                "passive id": "1", 
+                                "rec% buff": 50
+                            }
+                        }
+                    ], 
+                    "id": "740001", 
+                    "level": 1, 
+                    "name": "全能力＋５０％", 
+                    "series": "700000"
+                }
+            }, 
+            {
+                "category": "4", 
+                "dependency": "", 
+                "dependency comment": "", 
+                "id": "3100002", 
+                "skill": {
+                    "bp": 20, 
+                    "desc": "通常攻撃ＨＩＴ数を増加", 
+                    "effects": [
+                        {
+                            "passive": {
+                                "extra hits dmg%": 20, 
+                                "hit increase/hit": 1, 
+                                "passive id": "37"
+                            }
+                        }
+                    ], 
+                    "id": "3100002", 
+                    "level": 3, 
+                    "name": "通常攻撃のＨＩＴ数が増加", 
+                    "series": "3100000"
+                }
+            }, 
+            {
+                "category": "8", 
+                "dependency": "", 
+                "dependency comment": "", 
+                "id": "7100002", 
+                "skill": {
+                    "bp": 20, 
+                    "desc": "攻撃力・防御力・回復力を低下する効果を無効", 
+                    "effects": [
+                        {
+                            "passive": {
+                                "atk down resist%": 100, 
+                                "def down resist%": 100, 
+                                "passive id": "73", 
+                                "rec down resist%": 100
+                            }
+                        }
+                    ], 
+                    "id": "7100002", 
+                    "level": 5, 
+                    "name": "攻撃力・防御力・回復力を低下する効果を無効化", 
+                    "series": "7100000"
+                }
+            }, 
+            {
+                "category": "10", 
+                "dependency": "", 
+                "dependency comment": "", 
+                "id": "9200002", 
+                "skill": {
+                    "bp": 20, 
+                    "desc": "クリティカルを無効", 
+                    "effects": [
+                        {
+                            "passive": {
+                                "crit chance base resist%": 100, 
+                                "crit chance buffed resist%": 100, 
+                                "crit dmg base damage resist%": 100, 
+                                "crit dmg buffed damage resist%": 100, 
+                                "passive id": "53"
+                            }
+                        }
+                    ], 
+                    "id": "9200002", 
+                    "level": 4, 
+                    "name": "クリティカルダメージ無効", 
+                    "series": "9200000"
+                }
+            }, 
+            {
+                "category": "11", 
+                "dependency": "", 
+                "dependency comment": "", 
+                "id": "10800000", 
+                "skill": {
+                    "bp": 10, 
+                    "desc": "攻撃力の上限値（９９９９９）を１３００００まで解放する", 
+                    "effects": [
+                        {
+                            "passive": {
+                                "unknown passive id": "143", 
+                                "unknown passive params": "130000"
+                            }
+                        }
+                    ], 
+                    "id": "10800000", 
+                    "level": 4, 
+                    "name": "攻撃力上限突破", 
+                    "series": "10800000"
+                }
+            }, 
+            {
+                "category": "11", 
+                "dependency": "", 
+                "dependency comment": "", 
+                "id": "33003002", 
+                "skill": {
+                    "bp": 20, 
+                    "desc": "ＢＢ及びＳＢＢの「通常攻撃ＨＩＴ数を増加」効果のダメージ量を増加", 
+                    "effects": [
+                        {
+                            "add to bb": {
+                                "extra hits dmg%": 20, 
+                                "hit increase buff turns (50)": 0, 
+                                "hit increase/hit": 0, 
+                                "proc id": "26"
+                            }
+                        }, 
+                        {
+                            "add to sbb": {
+                                "extra hits dmg%": 20, 
+                                "hit increase buff turns (50)": 0, 
+                                "hit increase/hit": 0, 
+                                "proc id": "26"
+                            }
+                        }
+                    ], 
+                    "id": "33003002", 
+                    "level": 4, 
+                    "name": "ＢＢ・ＳＢＢの「通常攻撃ＨＩＴ数を増加」効果のダメージを増加", 
+                    "series": "33003000"
+                }
+            }, 
+            {
+                "category": "11", 
+                "dependency": "", 
+                "dependency comment": "", 
+                "id": "53009001", 
+                "skill": {
+                    "bp": 30, 
+                    "desc": "ＢＢ及びＳＢＢに「味方全体に３ターン、通常攻撃を全体攻撃化」を追加", 
+                    "effects": [
+                        {
+                            "passive": {
+                                "passive id": "66", 
+                                "trigger on bb": true, 
+                                "trigger on sbb": true, 
+                                "triggered effect": [
+                                    {
+                                        "aoe atk inc%": 0, 
+                                        "chance to aoe": 100, 
+                                        "effect delay time(ms)/frame": "0.0/0", 
+                                        "proc id": "94", 
+                                        "target area": "aoe", 
+                                        "target type": "party"
+                                    }
+                                ]
+                            }
+                        }
+                    ], 
+                    "id": "53009001", 
+                    "level": 3, 
+                    "name": "ＢＢ・ＳＢＢに「通常攻撃を全体攻撃化」追加", 
+                    "series": "53009000"
+                }
+            }, 
+            {
+                "category": "11", 
+                "dependency": "1@53009001", 
+                "dependency comment": "「ＢＢ・ＳＢＢに「通常攻撃を全体攻撃化」追加」習得", 
+                "id": "53009100", 
+                "skill": {
+                    "bp": 15, 
+                    "desc": "ＢＢ及びＳＢＢの「味方全体に３ターン、通常攻撃を全体攻撃化」ダメージ量を増加", 
+                    "effects": [
+                        {
+                            "passive": {
+                                "passive id": "66", 
+                                "trigger on bb": true, 
+                                "trigger on sbb": true, 
+                                "triggered effect": [
+                                    {
+                                        "aoe atk inc%": 20, 
+                                        "chance to aoe": 100, 
+                                        "effect delay time(ms)/frame": "16.7/1", 
+                                        "proc id": "94", 
+                                        "target area": "aoe", 
+                                        "target type": "party"
+                                    }
+                                ]
+                            }
+                        }
+                    ], 
+                    "id": "53009100", 
+                    "level": 4, 
+                    "name": "ＢＢ・ＳＢＢの「通常攻撃を全体攻撃化」ダメージを増加", 
+                    "series": "53009000"
+                }
+            }, 
+            {
+                "category": "11", 
+                "dependency": "", 
+                "dependency comment": "", 
+                "id": "50003006", 
+                "skill": {
+                    "bp": 25, 
+                    "desc": "ＢＢ及びＳＢＢに「味方全体に３ターン、攻撃力を大幅にアップ」を追加", 
+                    "effects": [
+                        {
+                            "passive": {
+                                "passive id": "66", 
+                                "trigger on bb": true, 
+                                "trigger on sbb": true, 
+                                "triggered effect": [
+                                    {
+                                        "atk% buff (1)": 180, 
+                                        "buff turns": 3, 
+                                        "effect delay time(ms)/frame": "0.0/0", 
+                                        "element buffed": "all", 
+                                        "proc id": "5", 
+                                        "target area": "aoe", 
+                                        "target type": "party"
+                                    }
+                                ]
+                            }
+                        }
+                    ], 
+                    "id": "50003006", 
+                    "level": 5, 
+                    "name": "ＢＢ・ＳＢＢに「攻撃力を大幅にアップ」追加", 
+                    "series": "50003000"
+                }
+            }, 
+            {
+                "category": "11", 
+                "dependency": "", 
+                "dependency comment": "", 
+                "id": "50000004", 
+                "skill": {
+                    "bp": 25, 
+                    "desc": "ＢＢ及びＳＢＢに「味方全体に３ターン、防御力に応じて攻撃力を大幅にアップ」を追加", 
+                    "effects": [
+                        {
+                            "passive": {
+                                "passive id": "66", 
+                                "trigger on bb": true, 
+                                "trigger on sbb": true, 
+                                "triggered effect": [
+                                    {
+                                        "% converted turns": 3, 
+                                        "atk% buff (46)": 80, 
+                                        "converted attribute": "defense", 
+                                        "effect delay time(ms)/frame": "0.0/0", 
+                                        "proc id": "24", 
+                                        "target area": "aoe", 
+                                        "target type": "party"
+                                    }
+                                ]
+                            }
+                        }
+                    ], 
+                    "id": "50000004", 
+                    "level": 5, 
+                    "name": "ＢＢ・ＳＢＢに「防御力に応じて攻撃力を大幅にアップ」追加", 
+                    "series": "50000000"
+                }
+            }
+        ]
+    }, 
     "60017": {
         "category": {
             "10": {
@@ -36785,6 +37366,275 @@
                     "level": 4, 
                     "name": "ＢＢ・ＳＢＢに「確率で攻撃力を低下する効果を付与」追加", 
                     "series": "57011000"
+                }
+            }
+        ]
+    }, 
+    "61197": {
+        "category": {
+            "1": {
+                "name": "ステアップ系"
+            }, 
+            "11": {
+                "name": "特殊"
+            }, 
+            "4": {
+                "name": "攻撃強化系"
+            }, 
+            "5": {
+                "name": "ＢＢゲージ系"
+            }
+        }, 
+        "skills": [
+            {
+                "category": "1", 
+                "dependency": "", 
+                "dependency comment": "", 
+                "id": "550101", 
+                "skill": {
+                    "bp": 10, 
+                    "desc": "攻撃力・最大ＨＰを３０％アップ", 
+                    "effects": [
+                        {
+                            "passive": {
+                                "atk% buff": 30, 
+                                "hp% buff": 30, 
+                                "passive id": "1"
+                            }
+                        }
+                    ], 
+                    "id": "550101", 
+                    "level": 2, 
+                    "name": "攻撃力・最大ＨＰ＋３０％", 
+                    "series": "500000"
+                }
+            }, 
+            {
+                "category": "1", 
+                "dependency": "1@550101", 
+                "dependency comment": "「攻撃力・最大ＨＰ＋３０％」習得", 
+                "id": "560100", 
+                "skill": {
+                    "bp": 15, 
+                    "desc": "攻撃力・最大ＨＰを３０％アップを５０％にグレードアップ", 
+                    "effects": [
+                        {
+                            "passive": {
+                                "atk% buff": 50, 
+                                "hp% buff": 50, 
+                                "passive id": "1"
+                            }
+                        }
+                    ], 
+                    "id": "560100", 
+                    "level": 3, 
+                    "name": "攻撃力・最大ＨＰ＋３０％→５０％", 
+                    "series": "500000"
+                }
+            }, 
+            {
+                "category": "4", 
+                "dependency": "", 
+                "dependency comment": "", 
+                "id": "3220001", 
+                "skill": {
+                    "bp": 20, 
+                    "desc": "確率で防御貫通効果を付与", 
+                    "effects": [
+                        {
+                            "passive": {
+                                "ignore def%": 50, 
+                                "passive id": "29"
+                            }
+                        }
+                    ], 
+                    "id": "3220001", 
+                    "level": 5, 
+                    "name": "確率で相手の防御力を無視", 
+                    "series": "3200000"
+                }
+            }, 
+            {
+                "category": "5", 
+                "dependency": "", 
+                "dependency comment": "", 
+                "id": "4110002", 
+                "skill": {
+                    "bp": 20, 
+                    "desc": "被ダメージ時、ＢＢゲージを増加", 
+                    "effects": [
+                        {
+                            "passive": {
+                                "bc fill when attacked high": 3, 
+                                "bc fill when attacked low": 2, 
+                                "bc fill when attacked%": 100, 
+                                "passive id": "25"
+                            }
+                        }
+                    ], 
+                    "id": "4110002", 
+                    "level": 2, 
+                    "name": "被ダメージ時、ＢＢゲージを増加", 
+                    "series": "4100000"
+                }
+            }, 
+            {
+                "category": "5", 
+                "dependency": "", 
+                "dependency comment": "", 
+                "id": "4210005", 
+                "skill": {
+                    "bp": 10, 
+                    "desc": "ＢＣ獲得時の増加量をアップ", 
+                    "effects": [
+                        {
+                            "passive": {
+                                "bb gauge fill rate%": 30, 
+                                "passive id": "32"
+                            }
+                        }
+                    ], 
+                    "id": "4210005", 
+                    "level": 3, 
+                    "name": "ＢＣ獲得時のＢＢゲージ上昇量が増加", 
+                    "series": "4200000"
+                }
+            }, 
+            {
+                "category": "11", 
+                "dependency": "", 
+                "dependency comment": "", 
+                "id": "10800000", 
+                "skill": {
+                    "bp": 10, 
+                    "desc": "攻撃力の上限値（９９９９９）を１３００００まで解放する", 
+                    "effects": [
+                        {
+                            "passive": {
+                                "unknown passive id": "143", 
+                                "unknown passive params": "130000"
+                            }
+                        }
+                    ], 
+                    "id": "10800000", 
+                    "level": 4, 
+                    "name": "攻撃力上限突破", 
+                    "series": "10800000"
+                }
+            }, 
+            {
+                "category": "11", 
+                "dependency": "", 
+                "dependency comment": "", 
+                "id": "10700102", 
+                "skill": {
+                    "bp": 50, 
+                    "desc": "確率で１回まで戦闘不能を耐える", 
+                    "effects": [
+                        {
+                            "passive": {
+                                "angel idol chance% condition": 0, 
+                                "angel idol recover chance% high": 70, 
+                                "angel idol recover chance% low": 70, 
+                                "angel idol recover counts": 1, 
+                                "passive id": "69"
+                            }
+                        }
+                    ], 
+                    "id": "10700102", 
+                    "level": 8, 
+                    "name": "確率で１回まで戦闘不能を耐える", 
+                    "series": "10700000"
+                }
+            }, 
+            {
+                "category": "11", 
+                "dependency": "", 
+                "dependency comment": "", 
+                "id": "10820000", 
+                "skill": {
+                    "bp": 20, 
+                    "desc": "エクストラスキル「確率でＢＢゲージ増加量を２ターンかなり低下」発動率をグレードアップ", 
+                    "effects": [
+                        {
+                            "passive": {
+                                "unknown passive id": "109", 
+                                "unknown passive params": "-50,20,1,0"
+                            }
+                        }
+                    ], 
+                    "id": "10820000", 
+                    "level": 5, 
+                    "name": "エクストラスキル「確率でＢＢゲージ増加量低下」発動率強化", 
+                    "series": "10800000"
+                }
+            }, 
+            {
+                "category": "11", 
+                "dependency": "", 
+                "dependency comment": "", 
+                "id": "33002004", 
+                "skill": {
+                    "bp": 25, 
+                    "desc": "ＢＢ及びＳＢＢの「攻撃ＢＢの威力を大幅にアップ」効果量を増加", 
+                    "effects": [
+                        {
+                            "add to bb": {
+                                "bb atk% buff": 100, 
+                                "buff turns (72)": 0, 
+                                "proc id": "45", 
+                                "sbb atk% buff": 100, 
+                                "ubb atk% buff": 100
+                            }
+                        }, 
+                        {
+                            "add to sbb": {
+                                "bb atk% buff": 100, 
+                                "buff turns (72)": 0, 
+                                "proc id": "45", 
+                                "sbb atk% buff": 100, 
+                                "ubb atk% buff": 100
+                            }
+                        }
+                    ], 
+                    "id": "33002004", 
+                    "level": 4, 
+                    "name": "ＢＢ・ＳＢＢの「攻撃ＢＢの威力をアップ」効果を強化", 
+                    "series": "33002000"
+                }
+            }, 
+            {
+                "category": "11", 
+                "dependency": "", 
+                "dependency comment": "", 
+                "id": "39010000", 
+                "skill": {
+                    "bp": 25, 
+                    "desc": "ＢＢ・ＳＢＢの「ターン終了時に強力な追加ダメージ」効果量を増加", 
+                    "effects": [
+                        {
+                            "add to bb": {
+                                "dot atk%": 100, 
+                                "dot element affected": true, 
+                                "dot turns (71)": 0, 
+                                "dot unit index": 0, 
+                                "proc id": "44"
+                            }
+                        }, 
+                        {
+                            "add to sbb": {
+                                "dot atk%": 100, 
+                                "dot element affected": true, 
+                                "dot turns (71)": 0, 
+                                "dot unit index": 0, 
+                                "proc id": "44"
+                            }
+                        }
+                    ], 
+                    "id": "39010000", 
+                    "level": 5, 
+                    "name": "ＢＢ・ＳＢＢの「ターン終了時に追加ダメージ」効果量を強化", 
+                    "series": "39010000"
                 }
             }
         ]

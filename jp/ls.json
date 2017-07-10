@@ -1466,6 +1466,58 @@
         "id": "10149", 
         "name": "原竜礎皇の覇輝"
     }, 
+    "10150": {
+        "desc": "全てのユニットの全能力を５０％アップ＆通常攻撃ＨＩＴ数を増加＆弱点属性ダメージを無効", 
+        "effects": [
+            {
+                "atk% buff": 50, 
+                "def% buff": 50, 
+                "hp% buff": 50, 
+                "passive id": "1", 
+                "rec% buff": 50
+            }, 
+            {
+                "extra hits dmg%": -50, 
+                "hit increase/hit": 1, 
+                "passive id": "37"
+            }, 
+            {
+                "passive id": "53", 
+                "strong base element damage resist%": 100, 
+                "strong buffed element damage resist%": 100
+            }
+        ], 
+        "id": "10150", 
+        "name": "煌剣神の錬舞"
+    }, 
+    "10151": {
+        "desc": "全てのユニットの全能力を６０％アップ＆通常攻撃ＨＩＴ数を増加＆弱点属性ダメージを無効＆ＯＤゲージの増加量をかなりアップ", 
+        "effects": [
+            {
+                "atk% buff": 60, 
+                "def% buff": 60, 
+                "hp% buff": 60, 
+                "passive id": "1", 
+                "rec% buff": 60
+            }, 
+            {
+                "extra hits dmg%": -50, 
+                "hit increase/hit": 1, 
+                "passive id": "37"
+            }, 
+            {
+                "passive id": "53", 
+                "strong base element damage resist%": 100, 
+                "strong buffed element damage resist%": 100
+            }, 
+            {
+                "od fill rate%": 20, 
+                "passive id": "70"
+            }
+        ], 
+        "id": "10151", 
+        "name": "煌凱剣神の錬截"
+    }, 
     "102": {
         "desc": "炎属性ユニットの攻撃力を５０％アップ・最大ＨＰを１０％アップ", 
         "effects": [
@@ -3795,7 +3847,7 @@
         "name": "ウォーターベアラー"
     }, 
     "12528": {
-        "desc": "スパークダメージを５０％アップ＆スパーク時、確率でスパーククリティカルが発生", 
+        "desc": "スパークダメージを５０％アップ＆確率でスパーククリティカルが発生", 
         "effects": [
             {
                 "damage% for spark": 50, 
@@ -18081,6 +18133,126 @@
         ], 
         "id": "7526", 
         "name": "剱狼冴神の零啼"
+    }, 
+    "7527": {
+        "desc": "全てのユニットの攻撃力・最大ＨＰを５０％アップ＆スパークが一定数を超える度に１ターン、被ダメージを少し軽減＆２ターン、スパークダメージを超絶アップ", 
+        "effects": [
+            {
+                "atk% buff": 50, 
+                "hp% buff": 50, 
+                "passive id": "1"
+            }, 
+            {
+                "buff": {
+                    "buff turns (36)": "1", 
+                    "dmg reduction% buff": 20
+                }, 
+                "passive id": "86", 
+                "spark count buff activation": 15
+            }, 
+            {
+                "buff": {
+                    "buff turns (40)": "2", 
+                    "spark dmg% buff": 120
+                }, 
+                "passive id": "86", 
+                "spark count buff activation": 10
+            }
+        ], 
+        "id": "7527", 
+        "name": "零厳神の討弩"
+    }, 
+    "7528": {
+        "desc": "全てのユニットの攻撃力・最大ＨＰを６０％アップ＆スパークが一定数を超える度に１ターン、被ダメージを少し軽減＆２ターン、スパークダメージを超絶アップ＆スパーク時、ＢＢゲージを増加", 
+        "effects": [
+            {
+                "atk% buff": 60, 
+                "hp% buff": 60, 
+                "passive id": "1"
+            }, 
+            {
+                "buff": {
+                    "buff turns (36)": "1", 
+                    "dmg reduction% buff": 20
+                }, 
+                "passive id": "86", 
+                "spark count buff activation": 15
+            }, 
+            {
+                "buff": {
+                    "buff turns (40)": "2", 
+                    "spark dmg% buff": 150
+                }, 
+                "passive id": "86", 
+                "spark count buff activation": 10
+            }, 
+            {
+                "bc fill on spark high": 3, 
+                "bc fill on spark low": 2, 
+                "bc fill on spark%": 100, 
+                "passive id": "47"
+            }
+        ], 
+        "id": "7528", 
+        "name": "零厳晶神の渾弩"
+    }, 
+    "7529": {
+        "desc": "全てのユニットの攻撃力・最大ＨＰを５０％アップ＆攻撃ＢＢの威力を超絶アップ＆被ダメージ時、確率で全状態異常をランダムに発生", 
+        "effects": [
+            {
+                "atk% buff": 50, 
+                "hp% buff": 50, 
+                "passive id": "1"
+            }, 
+            {
+                "bb atk% buff": 200, 
+                "passive id": "64", 
+                "sbb atk% buff": 200, 
+                "ubb atk% buff": 200
+            }, 
+            {
+                "counter inflict curse%": 10, 
+                "counter inflict injury%": 15, 
+                "counter inflict paralysis%": 10, 
+                "counter inflict poison%": 10, 
+                "counter inflict sick%": 15, 
+                "counter inflict weaken%": 15, 
+                "passive id": "71"
+            }
+        ], 
+        "id": "7529", 
+        "name": "溟淵神の呪魄"
+    }, 
+    "7530": {
+        "desc": "全てのユニットの攻撃力・最大ＨＰを６０％アップ＆攻撃ＢＢの威力を超絶アップ＆ＢＣ獲得時の増加量をかなりアップ＆被ダメージ時、確率で全状態異常をランダムに発生", 
+        "effects": [
+            {
+                "atk% buff": 60, 
+                "hp% buff": 60, 
+                "passive id": "1"
+            }, 
+            {
+                "bb atk% buff": 250, 
+                "passive id": "64", 
+                "sbb atk% buff": 250, 
+                "ubb atk% buff": 250
+            }, 
+            {
+                "counter inflict curse%": 15, 
+                "counter inflict injury%": 20, 
+                "counter inflict paralysis%": 15, 
+                "counter inflict poison%": 15, 
+                "counter inflict sick%": 20, 
+                "counter inflict weaken%": 20, 
+                "passive id": "71"
+            }, 
+            {
+                "bb gauge fill rate%": 50, 
+                "passive id": "32"
+            }
+        ], 
+        "id": "7530", 
+        "name": "溟淵哭神の禍魄"
     }, 
     "7600": {
         "desc": "水・光属性ユニットの攻撃力を５０％アップ", 
