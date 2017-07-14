@@ -43212,23 +43212,23 @@
                 "category": "1", 
                 "dependency": "", 
                 "dependency comment": "", 
-                "id": "1100000077", 
+                "id": "1100000078", 
                 "skill": {
-                    "bp": 15, 
-                    "desc": "Enhances BB Atk boost effect", 
+                    "bp": 10, 
+                    "desc": "Boosts Atk, Def when HP is over 50%", 
                     "effects": [
                         {
                             "passive": {
-                                "bb atk% buff": 100, 
-                                "passive id": "64", 
-                                "sbb atk% buff": 100, 
-                                "ubb atk% buff": 100
+                                "atk% buff": 50, 
+                                "def% buff": 50, 
+                                "hp above % buff requirement": 50, 
+                                "passive id": "11"
                             }
                         }
                     ], 
-                    "id": "1100000077", 
-                    "level": 4, 
-                    "name": "Enhances BB Atk boost effect", 
+                    "id": "1100000078", 
+                    "level": 2, 
+                    "name": "Boosts Atk, Def when HP is over 50%", 
                     "series": "1100000074"
                 }
             }, 
@@ -43296,30 +43296,6 @@
                     "level": 4, 
                     "name": "Breaks Atk's parameter limit", 
                     "series": "10800000"
-                }
-            }, 
-            {
-                "category": "11", 
-                "dependency": "", 
-                "dependency comment": "", 
-                "id": "1100000078", 
-                "skill": {
-                    "bp": 10, 
-                    "desc": "Boosts Atk, Def when HP is over 50%", 
-                    "effects": [
-                        {
-                            "passive": {
-                                "atk% buff": 50, 
-                                "def% buff": 50, 
-                                "hp above % buff requirement": 50, 
-                                "passive id": "11"
-                            }
-                        }
-                    ], 
-                    "id": "1100000078", 
-                    "level": 2, 
-                    "name": "Boosts Atk, Def when HP is over 50%", 
-                    "series": "1100000074"
                 }
             }, 
             {
@@ -43414,6 +43390,39 @@
                     "level": 3, 
                     "name": "Enhances BB's Atk, Def, Rec boost of Earth types effect", 
                     "series": "1100000077"
+                }
+            }, 
+            {
+                "category": "11", 
+                "dependency": "", 
+                "dependency comment": "", 
+                "id": "1100000082", 
+                "skill": {
+                    "bp": 30, 
+                    "desc": "Adds huge boost to Def relative to Atk for 3 turns effect to SBB", 
+                    "effects": [
+                        {
+                            "passive": {
+                                "passive id": "66", 
+                                "trigger on sbb": true, 
+                                "triggered effect": [
+                                    {
+                                        "% converted turns": 3, 
+                                        "converted attribute": "attack", 
+                                        "def% buff (47)": 80, 
+                                        "effect delay time(ms)/frame": "0.0/0", 
+                                        "proc id": "24", 
+                                        "target area": "aoe", 
+                                        "target type": "party"
+                                    }
+                                ]
+                            }
+                        }
+                    ], 
+                    "id": "1100000082", 
+                    "level": 5, 
+                    "name": "Adds huge boost to Def relative to Atk for 3 turns effect to SBB", 
+                    "series": "1100000078"
                 }
             }
         ]
