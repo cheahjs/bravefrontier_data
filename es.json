@@ -15463,7 +15463,7 @@
         "target": "self"
     }, 
     "37400": {
-        "desc": "クリティカル・弱点属性ダメージを無効＆ＢＢ及びＳＢＢに「味方のＢＢゲージを大幅に増加」を追加", 
+        "desc": "Negates critical and elemental damage & adds huge BB gauge boost effect to BB/SBB", 
         "effects": [
             {
                 "conditions": [], 
@@ -15494,7 +15494,7 @@
             }
         ], 
         "id": "37400", 
-        "name": "真姿の解放", 
+        "name": "True Form Revealed", 
         "target": "self"
     }, 
     "37500": {
@@ -18610,6 +18610,87 @@
         ], 
         "id": "810278", 
         "name": "All-Consuming Ember Crown", 
+        "target": "self"
+    }, 
+    "810287": {
+        "desc": "30% boost to Atk of Fire types & negates all status ailments<br>30% boost to Rec of Fire types & adds 22 combo powerful Fire attack on all Earth types effect to SBB in Guild Raid", 
+        "effects": [
+            {
+                "atk% buff": 30, 
+                "conditions": [], 
+                "elements buffed": [
+                    "fire"
+                ], 
+                "passive id": "2", 
+                "passive target": "party"
+            }, 
+            {
+                "conditions": [], 
+                "curse resist%": 100, 
+                "injury resist%": 100, 
+                "paralysis resist%": 100, 
+                "passive id": "4", 
+                "passive target": "self", 
+                "poison resist%": 100, 
+                "sick resist%": 100, 
+                "weaken resist%": 100
+            }
+        ], 
+        "id": "810287", 
+        "name": "Forward Unto Victory", 
+        "target": "self"
+    }, 
+    "810288": {
+        "desc": "50% boost to Atk of Fire types, negates all status ailments, adds Fire barrier effect to BB/SBB & raises Atk parameter limits to 130000<br>50% boost to Rec of Fire types, adds 25 combo powerful Fire attack on Earth types effect to SBB & boosts Fire elemental damage for all allies in Guild Raid", 
+        "effects": [
+            {
+                "conditions": [], 
+                "passive id": "66", 
+                "passive target": "self", 
+                "trigger on bb": true, 
+                "trigger on sbb": true, 
+                "triggered effect": [
+                    {
+                        "effect delay time(ms)/frame": "0.0/0", 
+                        "elemental barrier absorb dmg%": 100, 
+                        "elemental barrier def": 0, 
+                        "elemental barrier element": "fire", 
+                        "elemental barrier hp": 3500, 
+                        "proc id": "62", 
+                        "target area": "aoe", 
+                        "target type": "party"
+                    }
+                ]
+            }, 
+            {
+                "atk% buff": 50, 
+                "conditions": [], 
+                "elements buffed": [
+                    "fire"
+                ], 
+                "passive id": "2", 
+                "passive target": "party"
+            }, 
+            {
+                "conditions": [], 
+                "curse resist%": 100, 
+                "injury resist%": 100, 
+                "paralysis resist%": 100, 
+                "passive id": "4", 
+                "passive target": "self", 
+                "poison resist%": 100, 
+                "sick resist%": 100, 
+                "weaken resist%": 100
+            }, 
+            {
+                "conditions": [], 
+                "passive target": "self", 
+                "unknown passive id": "143", 
+                "unknown passive params": "130000"
+            }
+        ], 
+        "id": "810288", 
+        "name": "Inexorable March Technique", 
         "target": "self"
     }, 
     "810317": {
@@ -22699,6 +22780,77 @@
         ], 
         "id": "8900", 
         "name": "Discipline Beyond Death", 
+        "target": "self"
+    }, 
+    "8910287": {
+        "desc": "MST_EXTRAPASSIVESKILL_8910287_DESCRIPTION", 
+        "effects": [
+            {
+                "conditions": [], 
+                "elements buffed": [
+                    "fire"
+                ], 
+                "passive id": "2", 
+                "passive target": "party", 
+                "rec% buff": 30
+            }, 
+            {
+                "conditions": [], 
+                "passive id": "66", 
+                "passive target": "self", 
+                "trigger on sbb": true, 
+                "triggered effect": [
+                    {
+                        "effect delay time(ms)/frame": "0.0/0", 
+                        "target area": "aoe", 
+                        "target type": "enemy", 
+                        "unknown proc id": "97", 
+                        "unknown proc param": "1,900,100,0,0,0,0"
+                    }
+                ]
+            }
+        ], 
+        "id": "8910287", 
+        "name": "Forward Unto Victory GR", 
+        "target": "self"
+    }, 
+    "8910288": {
+        "desc": "MST_EXTRAPASSIVESKILL_8910288_DESCRIPTION", 
+        "effects": [
+            {
+                "conditions": [], 
+                "elements buffed": [
+                    "fire"
+                ], 
+                "passive id": "2", 
+                "passive target": "party", 
+                "rec% buff": 50
+            }, 
+            {
+                "conditions": [], 
+                "elemental weakness multiplier%": 25.0, 
+                "fire units do extra elemental weakness dmg": true, 
+                "passive id": "50", 
+                "passive target": "party"
+            }, 
+            {
+                "conditions": [], 
+                "passive id": "66", 
+                "passive target": "self", 
+                "trigger on sbb": true, 
+                "triggered effect": [
+                    {
+                        "effect delay time(ms)/frame": "0.0/0", 
+                        "target area": "aoe", 
+                        "target type": "enemy", 
+                        "unknown proc id": "97", 
+                        "unknown proc param": "1,1100,100,0,0,0,0"
+                    }
+                ]
+            }
+        ], 
+        "id": "8910288", 
+        "name": "Inexorable March Technique GR", 
         "target": "self"
     }, 
     "8930287": {
