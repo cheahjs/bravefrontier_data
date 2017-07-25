@@ -3918,6 +3918,52 @@
         "id": "12530", 
         "name": "義氷誠神の誓刃"
     }, 
+    "12531": {
+        "desc": "全てのユニットの攻撃力・防御力・最大ＨＰを５０％アップ＆クリティカルダメージをかなりアップ＆ＢＣ獲得時の増加量をアップ", 
+        "effects": [
+            {
+                "atk% buff": 50, 
+                "def% buff": 50, 
+                "hp% buff": 50, 
+                "passive id": "1"
+            }, 
+            {
+                "crit multiplier%": 125.0, 
+                "passive id": "34"
+            }, 
+            {
+                "bb gauge fill rate%": 30, 
+                "passive id": "32"
+            }
+        ], 
+        "id": "12531", 
+        "name": "誅刹神の穿黒"
+    }, 
+    "12532": {
+        "desc": "全てのユニットの攻撃力・防御力・最大ＨＰを６０％アップ＆クリティカルダメージを大幅にアップ＆ＢＣ獲得時の増加量をかなりアップ＆確率で防御貫通効果を付与", 
+        "effects": [
+            {
+                "atk% buff": 60, 
+                "def% buff": 60, 
+                "hp% buff": 60, 
+                "passive id": "1"
+            }, 
+            {
+                "crit multiplier%": 150.0, 
+                "passive id": "34"
+            }, 
+            {
+                "bb gauge fill rate%": 50, 
+                "passive id": "32"
+            }, 
+            {
+                "ignore def%": 25, 
+                "passive id": "29"
+            }
+        ], 
+        "id": "12532", 
+        "name": "誅刹牙神の穿兇"
+    }, 
     "126": {
         "desc": "樹属性ユニットの攻撃力を１００％アップ・最大ＨＰを３０％アップ", 
         "effects": [
@@ -12175,6 +12221,70 @@
         "id": "4383", 
         "name": "艶弄神の歪戯"
     }, 
+    "4384": {
+        "desc": "全てのユニットの防御力・最大ＨＰを５０％アップ＆炎・水・樹・雷属性ユニットからの被ダメージを５％軽減＆クリティカル・弱点属性ダメージを無効", 
+        "effects": [
+            {
+                "def% buff": 50, 
+                "hp% buff": 50, 
+                "passive id": "1"
+            }, 
+            {
+                "dmg% mitigation for elemental attacks": 5.0, 
+                "mitigate earth attacks": true, 
+                "mitigate fire attacks": true, 
+                "mitigate thunder attacks": true, 
+                "mitigate water attacks": true, 
+                "passive id": "62"
+            }, 
+            {
+                "crit chance base resist%": 100, 
+                "crit chance buffed resist%": 100, 
+                "crit dmg base damage resist%": 100, 
+                "crit dmg buffed damage resist%": 100, 
+                "passive id": "53", 
+                "strong base element damage resist%": 100, 
+                "strong buffed element damage resist%": 100
+            }
+        ], 
+        "id": "4384", 
+        "name": "蒼翠神の凛誓"
+    }, 
+    "4385": {
+        "desc": "全てのユニットの防御力・最大ＨＰを６０％アップ＆炎・水・樹・雷属性ユニットからの被ダメージを１０％軽減＆クリティカル・弱点属性ダメージを無効＆ターン毎にＨＰをかなり回復", 
+        "effects": [
+            {
+                "def% buff": 60, 
+                "hp% buff": 60, 
+                "passive id": "1"
+            }, 
+            {
+                "dmg% mitigation for elemental attacks": 10.0, 
+                "mitigate earth attacks": true, 
+                "mitigate fire attacks": true, 
+                "mitigate thunder attacks": true, 
+                "mitigate water attacks": true, 
+                "passive id": "62"
+            }, 
+            {
+                "crit chance base resist%": 100, 
+                "crit chance buffed resist%": 100, 
+                "crit dmg base damage resist%": 100, 
+                "crit dmg buffed damage resist%": 100, 
+                "passive id": "53", 
+                "strong base element damage resist%": 100, 
+                "strong buffed element damage resist%": 100
+            }, 
+            {
+                "passive id": "33", 
+                "rec% added (turn heal)": 10.0, 
+                "turn heal high": 1500, 
+                "turn heal low": 1200
+            }
+        ], 
+        "id": "4385", 
+        "name": "蒼翠綺神の聖誓"
+    }, 
     "4400": {
         "desc": "ターン毎にＢＢゲージを少し増加＆全ての状態異常にかなりかかりにくくなる", 
         "effects": [
@@ -14179,6 +14289,68 @@
         ], 
         "id": "5544", 
         "name": "幻謎覚神の蝕輝"
+    }, 
+    "5545": {
+        "desc": "全てのユニットの最大ＨＰを６０％アップ＆残りＨＰが多いほど、攻撃力・防御力・回復力をアップ＆ターン毎に攻撃力・防御力・回復力をアップ（３ターン目まで上昇量が増加する）", 
+        "effects": [
+            {
+                "hp% buff": 60, 
+                "passive id": "1"
+            }, 
+            {
+                "atk% base buff": 0, 
+                "atk% extra buff based on hp": 60, 
+                "buff proportional to hp": "remaining", 
+                "def% base buff": 0, 
+                "def% extra buff based on hp": 60, 
+                "passive id": "46", 
+                "rec% base buff": 0, 
+                "rec% extra buff based on hp": 60
+            }, 
+            {
+                "atk% max buff": 30, 
+                "def% max buff": 30, 
+                "increase from min to max": 1, 
+                "passive id": "105", 
+                "rec% max buff": 30, 
+                "turn count": 3
+            }
+        ], 
+        "id": "5545", 
+        "name": "統滄神の壊氾"
+    }, 
+    "5546": {
+        "desc": "全てのユニットの最大ＨＰを８０％アップ＆残りＨＰが多いほど、攻撃力・防御力・回復力をかなりアップ＆ターン毎に攻撃力・防御力・回復力をアップ（３ターン目まで上昇量が増加する）＆スパークダメージを１３０％アップ", 
+        "effects": [
+            {
+                "hp% buff": 80, 
+                "passive id": "1"
+            }, 
+            {
+                "atk% base buff": 0, 
+                "atk% extra buff based on hp": 80, 
+                "buff proportional to hp": "remaining", 
+                "def% base buff": 0, 
+                "def% extra buff based on hp": 80, 
+                "passive id": "46", 
+                "rec% base buff": 0, 
+                "rec% extra buff based on hp": 80
+            }, 
+            {
+                "atk% max buff": 60, 
+                "def% max buff": 60, 
+                "increase from min to max": 1, 
+                "passive id": "105", 
+                "rec% max buff": 60, 
+                "turn count": 3
+            }, 
+            {
+                "damage% for spark": 130, 
+                "passive id": "31"
+            }
+        ], 
+        "id": "5546", 
+        "name": "統滄瀑神の咆氾"
     }, 
     "555": {
         "desc": "光属性ユニットからの被ダメージを１５％軽減＆闇属性の弱点属性ダメージを大幅にアップ＆ＯＤゲージの増加量をかなりアップ", 
