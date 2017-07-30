@@ -9201,6 +9201,200 @@
         "name": "戯神の癒涙", 
         "target": "self"
     }, 
+    "1019300": {
+        "desc": "確率で全状態異常をランダムに発生＆確率でスパークダメージ耐性を２ターン低下＆確率で通常攻撃を全体攻撃化する", 
+        "effects": [
+            {
+                "conditions": [], 
+                "curse%": 10, 
+                "passive id": "20", 
+                "passive target": "self", 
+                "poison%": 10, 
+                "sick%": 12
+            }, 
+            {
+                "conditions": [], 
+                "injury%": 12, 
+                "paralysis%": 10, 
+                "passive id": "20", 
+                "passive target": "self", 
+                "weaken%": 12
+            }, 
+            {
+                "conditions": [], 
+                "passive id": "75", 
+                "passive target": "self", 
+                "spark debuff chance%": 15, 
+                "spark debuff turns": 1, 
+                "spark debuff%": 25
+            }, 
+            {
+                "aoe atk inc%": -50, 
+                "chance to aoe": 20, 
+                "conditions": [], 
+                "passive id": "96", 
+                "passive target": "self"
+            }
+        ], 
+        "id": "1019300", 
+        "name": "混神の重鬨", 
+        "target": "self"
+    }, 
+    "1019400": {
+        "desc": "ＢＢ及びＳＢＢの発動率をかなりアップ＆被ダメージ時、確率で全状態異常をランダムに発生", 
+        "effects": [
+            {
+                "conditions": [], 
+                "passive target": "self", 
+                "unknown passive id": "111", 
+                "unknown passive params": "20"
+            }, 
+            {
+                "conditions": [], 
+                "counter inflict curse%": 10, 
+                "counter inflict injury%": 12, 
+                "counter inflict paralysis%": 10, 
+                "counter inflict poison%": 10, 
+                "counter inflict sick%": 12, 
+                "counter inflict weaken%": 12, 
+                "passive id": "71", 
+                "passive target": "self"
+            }
+        ], 
+        "id": "1019400", 
+        "name": "神闘の叛旗", 
+        "target": "self"
+    }, 
+    "1019500": {
+        "desc": "攻撃力・防御力・回復力・最大ＨＰを４０％アップ＆被ダメージ時、ＢＢゲージを増加＆被ダメージが一定数を超える度にＢＢゲージをかなり増加", 
+        "effects": [
+            {
+                "atk% buff": 40, 
+                "conditions": [], 
+                "def% buff": 40, 
+                "hp% buff": 40, 
+                "passive id": "1", 
+                "passive target": "self", 
+                "rec% buff": 40
+            }, 
+            {
+                "bc fill when attacked high": 3, 
+                "bc fill when attacked low": 2, 
+                "bc fill when attacked%": 100, 
+                "conditions": [], 
+                "passive id": "25", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "damage threshold activation": 5000, 
+                "increase bb gauge": 7, 
+                "passive id": "79", 
+                "passive target": "self"
+            }
+        ], 
+        "id": "1019500", 
+        "name": "原初神の掟", 
+        "target": "self"
+    }, 
+    "1019600": {
+        "desc": "通常攻撃を全体攻撃化する＆確率で敵のＢＢゲージを減少＆確率でＢＢゲージ増加量を２ターンかなり低下", 
+        "effects": [
+            {
+                "aoe atk inc%": -50, 
+                "chance to aoe": 100, 
+                "conditions": [], 
+                "passive id": "96", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "passive target": "self", 
+                "unknown passive id": "109", 
+                "unknown passive params": "-50,20,1,0"
+            }, 
+            {
+                "conditions": [], 
+                "passive target": "self", 
+                "unknown passive id": "110", 
+                "unknown passive params": "0,0,30,30,30,0"
+            }
+        ], 
+        "id": "1019600", 
+        "name": "慟哭の鬨声", 
+        "target": "self"
+    }, 
+    "1019700": {
+        "desc": "攻撃力・最大ＨＰを５０％アップ＆通常攻撃ＨＩＴ数をかなり増加＆ＢＣ出現率を大幅にアップ＆ＢＣ獲得数が一定数を超える度に２ターン、ＯＤゲージ上昇量を超絶アップ", 
+        "effects": [
+            {
+                "atk% buff": 50, 
+                "conditions": [], 
+                "hp% buff": 50, 
+                "passive id": "1", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "hit increase/hit": 2, 
+                "passive id": "37", 
+                "passive target": "self"
+            }, 
+            {
+                "bc drop rate% buff": 20, 
+                "conditions": [], 
+                "passive id": "19", 
+                "passive target": "self"
+            }, 
+            {
+                "bc receive count buff activation": 20, 
+                "buff": {
+                    "buff turns (132)": "2", 
+                    "unknown buff id": "132", 
+                    "unknown buff params": "50&2&0"
+                }, 
+                "conditions": [], 
+                "passive id": "82", 
+                "passive target": "self"
+            }
+        ], 
+        "id": "1019700", 
+        "name": "神風の絆", 
+        "target": "self"
+    }, 
+    "1019800": {
+        "desc": "最大ＨＰを６０％アップ＆被ダメージ時、ＨＰをかなり回復＆ＨＰが半分以下の時、一度だけ戦闘不能を耐える", 
+        "effects": [
+            {
+                "conditions": [], 
+                "hp% buff": 60, 
+                "passive id": "1", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "dmg% to hp% when attacked chance%": 100, 
+                "dmg% to hp% when attacked high": 40, 
+                "dmg% to hp% when attacked low": 30, 
+                "passive id": "24", 
+                "passive target": "self"
+            }, 
+            {
+                "buff": {
+                    "buff turns (91)": "-1", 
+                    "unknown buff id": "91", 
+                    "unknown buff params": "100&100"
+                }, 
+                "conditions": [], 
+                "hp below % buff activation": 50, 
+                "passive id": "55", 
+                "passive target": "self"
+            }
+        ], 
+        "id": "1019800", 
+        "name": "永闘の記録", 
+        "target": "self"
+    }, 
     "10200": {
         "desc": "ＢＣ獲得時の増加量を少しアップ＆ＨＣ獲得時の回復量を少しアップ", 
         "effects": [
@@ -19122,6 +19316,177 @@
         ], 
         "id": "40200", 
         "name": "名も無き処刑者", 
+        "target": "self"
+    }, 
+    "40300": {
+        "desc": "「ダメージ軽減系」タイプのスフィアを装備時、攻撃力・防御力・回復力・最大ＨＰを１５％アップ＆ターン毎に攻撃力・防御力・回復力をアップ（３ターン目まで上昇量が増加する）", 
+        "effects": [
+            {
+                "atk% buff": 15, 
+                "conditions": [
+                    {
+                        "sphere category required": "Damage Reducing", 
+                        "sphere category required (raw)": "10"
+                    }
+                ], 
+                "def% buff": 15, 
+                "hp% buff": 15, 
+                "passive id": "1", 
+                "passive target": "self", 
+                "rec% buff": 15
+            }, 
+            {
+                "atk% max buff": 20, 
+                "conditions": [], 
+                "def% max buff": 20, 
+                "increase from min to max": 1, 
+                "passive id": "105", 
+                "passive target": "self", 
+                "rec% max buff": 20, 
+                "turn count": 3
+            }
+        ], 
+        "id": "40300", 
+        "name": "色褪せぬ忠義", 
+        "target": "self"
+    }, 
+    "40400": {
+        "desc": "「ダメージ軽減系」タイプのスフィアを装備時、攻撃力・防御力・回復力・最大ＨＰを２０％アップ＆ターン毎に攻撃力・防御力・回復力をアップ（３ターン目まで上昇量が増加する）", 
+        "effects": [
+            {
+                "atk% buff": 20, 
+                "conditions": [
+                    {
+                        "sphere category required": "Damage Reducing", 
+                        "sphere category required (raw)": "10"
+                    }
+                ], 
+                "def% buff": 20, 
+                "hp% buff": 20, 
+                "passive id": "1", 
+                "passive target": "self", 
+                "rec% buff": 20
+            }, 
+            {
+                "atk% max buff": 30, 
+                "conditions": [], 
+                "def% max buff": 30, 
+                "increase from min to max": 1, 
+                "passive id": "105", 
+                "passive target": "self", 
+                "rec% max buff": 30, 
+                "turn count": 3
+            }
+        ], 
+        "id": "40400", 
+        "name": "果てなき信奉", 
+        "target": "self"
+    }, 
+    "40500": {
+        "desc": "「ＨＰ回復系」タイプのスフィアを装備時、攻撃力・防御力・回復力・最大ＨＰを１５％アップ＆全状態異常を無効", 
+        "effects": [
+            {
+                "atk% buff": 15, 
+                "conditions": [
+                    {
+                        "sphere category required": "HP Recovery", 
+                        "sphere category required (raw)": "7"
+                    }
+                ], 
+                "def% buff": 15, 
+                "hp% buff": 15, 
+                "passive id": "1", 
+                "passive target": "self", 
+                "rec% buff": 15
+            }, 
+            {
+                "conditions": [], 
+                "curse resist%": 100, 
+                "injury resist%": 100, 
+                "paralysis resist%": 100, 
+                "passive id": "4", 
+                "passive target": "self", 
+                "poison resist%": 100, 
+                "sick resist%": 100, 
+                "weaken resist%": 100
+            }
+        ], 
+        "id": "40500", 
+        "name": "黙従なるエリート", 
+        "target": "self"
+    }, 
+    "40600": {
+        "desc": "「ＨＰ回復系」タイプのスフィアを装備時、攻撃力・防御力・回復力・最大ＨＰを２０％アップ＆全状態異常を無効", 
+        "effects": [
+            {
+                "atk% buff": 20, 
+                "conditions": [
+                    {
+                        "sphere category required": "HP Recovery", 
+                        "sphere category required (raw)": "7"
+                    }
+                ], 
+                "def% buff": 20, 
+                "hp% buff": 20, 
+                "passive id": "1", 
+                "passive target": "self", 
+                "rec% buff": 20
+            }, 
+            {
+                "conditions": [], 
+                "curse resist%": 100, 
+                "injury resist%": 100, 
+                "paralysis resist%": 100, 
+                "passive id": "4", 
+                "passive target": "self", 
+                "poison resist%": 100, 
+                "sick resist%": 100, 
+                "weaken resist%": 100
+            }
+        ], 
+        "id": "40600", 
+        "name": "レゾンデートルの追求", 
+        "target": "self"
+    }, 
+    "40700": {
+        "desc": "被ダメージ時、ＢＢゲージをかなり増加・確率でＨＰを回復＆全状態異常を無効＆攻撃力の上限値（９９９９９）を１５００００まで解放する", 
+        "effects": [
+            {
+                "bc fill when attacked high": 4, 
+                "bc fill when attacked low": 3, 
+                "bc fill when attacked%": 100, 
+                "conditions": [], 
+                "passive id": "25", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "dmg% to hp% when attacked chance%": 25, 
+                "dmg% to hp% when attacked high": 25, 
+                "dmg% to hp% when attacked low": 20, 
+                "passive id": "24", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "curse resist%": 100, 
+                "injury resist%": 100, 
+                "paralysis resist%": 100, 
+                "passive id": "4", 
+                "passive target": "self", 
+                "poison resist%": 100, 
+                "sick resist%": 100, 
+                "weaken resist%": 100
+            }, 
+            {
+                "conditions": [], 
+                "passive target": "self", 
+                "unknown passive id": "143", 
+                "unknown passive params": "150000"
+            }
+        ], 
+        "id": "40700", 
+        "name": "天を侵す魔闇", 
         "target": "self"
     }, 
     "410": {

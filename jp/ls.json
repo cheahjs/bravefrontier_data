@@ -1518,6 +1518,47 @@
         "id": "10151", 
         "name": "煌凱剣神の錬截"
     }, 
+    "10152": {
+        "desc": "全てのユニットの全能力を８０％アップ＆全属性ユニットからの被ダメージを１５％軽減＆被ダメージが一定数を超える度に２ターン被ダメージを少し軽減＆全状態異常を無効", 
+        "effects": [
+            {
+                "atk% buff": 80, 
+                "def% buff": 80, 
+                "hp% buff": 80, 
+                "passive id": "1", 
+                "rec% buff": 80
+            }, 
+            {
+                "dmg% mitigation for elemental attacks": 15.0, 
+                "mitigate dark attacks": true, 
+                "mitigate earth attacks": true, 
+                "mitigate fire attacks": true, 
+                "mitigate light attacks": true, 
+                "mitigate thunder attacks": true, 
+                "mitigate water attacks": true, 
+                "passive id": "62"
+            }, 
+            {
+                "buff": {
+                    "buff turns (36)": "1", 
+                    "dmg reduction% buff": 20
+                }, 
+                "damage threshold buff activation": 5000, 
+                "passive id": "78"
+            }, 
+            {
+                "curse resist%": 100, 
+                "injury resist%": 100, 
+                "paralysis resist%": 100, 
+                "passive id": "4", 
+                "poison resist%": 100, 
+                "sick resist%": 100, 
+                "weaken resist%": 100
+            }
+        ], 
+        "id": "10152", 
+        "name": "主神皇の宙戒終劫"
+    }, 
     "102": {
         "desc": "炎属性ユニットの攻撃力を５０％アップ・最大ＨＰを１０％アップ", 
         "effects": [
@@ -3963,6 +4004,65 @@
         ], 
         "id": "12532", 
         "name": "誅刹牙神の穿兇"
+    }, 
+    "12533": {
+        "desc": "全てのユニットの最大ＨＰを３０％アップ＆ターン毎に攻撃力・防御力・回復力をアップ（３ターン目まで上昇量が増加する）＆攻撃ＢＢの威力を超絶アップ", 
+        "effects": [
+            {
+                "atk% max buff": 50, 
+                "def% max buff": 50, 
+                "increase from min to max": 1, 
+                "passive id": "105", 
+                "rec% max buff": 50, 
+                "turn count": 3
+            }, 
+            {
+                "hp% buff": 30, 
+                "passive id": "1"
+            }, 
+            {
+                "bb atk% buff": 200, 
+                "passive id": "64", 
+                "sbb atk% buff": 200, 
+                "ubb atk% buff": 200
+            }
+        ], 
+        "id": "12533", 
+        "name": "忠厳神の詭謀"
+    }, 
+    "12534": {
+        "desc": "全てのユニットの最大ＨＰを４０％アップ＆ターン毎に攻撃力・防御力・回復力をアップ（３ターン目まで上昇量が増加する）＆攻撃ＢＢの威力を超絶アップ＆ダメージを与える度に２ターン、確率で攻撃力を１ターン低下する効果を付与", 
+        "effects": [
+            {
+                "atk% max buff": 80, 
+                "def% max buff": 80, 
+                "increase from min to max": 1, 
+                "passive id": "105", 
+                "rec% max buff": 80, 
+                "turn count": 3
+            }, 
+            {
+                "hp% buff": 40, 
+                "passive id": "1"
+            }, 
+            {
+                "bb atk% buff": 250, 
+                "passive id": "64", 
+                "sbb atk% buff": 250, 
+                "ubb atk% buff": 250
+            }, 
+            {
+                "buff": {
+                    "buff turns (74)": "2", 
+                    "unknown buff id": "74", 
+                    "unknown buff params": "-20&30&1"
+                }, 
+                "damage dealt threshold buff activation": 1, 
+                "passive id": "80"
+            }
+        ], 
+        "id": "12534", 
+        "name": "忠戒神の誓謀"
     }, 
     "126": {
         "desc": "樹属性ユニットの攻撃力を１００％アップ・最大ＨＰを３０％アップ", 
@@ -18510,6 +18610,72 @@
         ], 
         "id": "7530", 
         "name": "溟淵哭神の禍魄"
+    }, 
+    "7531": {
+        "desc": "全てのユニットの攻撃力・回復力・最大ＨＰを３０％アップ＆確率で通常攻撃を全体攻撃化＆被ダメージ時、確率でＨＰを回復＆全状態異常を無効", 
+        "effects": [
+            {
+                "atk% buff": 30, 
+                "hp% buff": 30, 
+                "passive id": "1", 
+                "rec% buff": 30
+            }, 
+            {
+                "aoe atk inc%": -50, 
+                "chance to aoe": 20, 
+                "passive id": "96"
+            }, 
+            {
+                "dmg% to hp% when attacked chance%": 25, 
+                "dmg% to hp% when attacked high": 20, 
+                "dmg% to hp% when attacked low": 20, 
+                "passive id": "24"
+            }, 
+            {
+                "curse resist%": 100, 
+                "injury resist%": 100, 
+                "paralysis resist%": 100, 
+                "passive id": "4", 
+                "poison resist%": 100, 
+                "sick resist%": 100, 
+                "weaken resist%": 100
+            }
+        ], 
+        "id": "7531", 
+        "name": "凛奉神の虚殉"
+    }, 
+    "7532": {
+        "desc": "全てのユニットの攻撃力・回復力・最大ＨＰを４０％アップ＆確率で通常攻撃を全体攻撃化＆被ダメージ時、確率でＨＰを回復＆全状態異常を無効", 
+        "effects": [
+            {
+                "atk% buff": 40, 
+                "hp% buff": 40, 
+                "passive id": "1", 
+                "rec% buff": 40
+            }, 
+            {
+                "aoe atk inc%": -50, 
+                "chance to aoe": 25, 
+                "passive id": "96"
+            }, 
+            {
+                "dmg% to hp% when attacked chance%": 25, 
+                "dmg% to hp% when attacked high": 25, 
+                "dmg% to hp% when attacked low": 25, 
+                "passive id": "24"
+            }, 
+            {
+                "curse resist%": 100, 
+                "injury resist%": 100, 
+                "paralysis resist%": 100, 
+                "passive id": "4", 
+                "poison resist%": 100, 
+                "sick resist%": 100, 
+                "weaken resist%": 100
+            }
+        ], 
+        "id": "7532", 
+        "name": "凛徹神の幻殉"
     }, 
     "7600": {
         "desc": "水・光属性ユニットの攻撃力を５０％アップ", 
