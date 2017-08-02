@@ -41330,6 +41330,337 @@
             }
         ]
     }, 
+    "820288": {
+        "category": {
+            "1": {
+                "name": "ステアップ系"
+            }, 
+            "11": {
+                "name": "特殊"
+            }, 
+            "3": {
+                "name": "クリティカル系"
+            }, 
+            "4": {
+                "name": "攻撃強化加系"
+            }, 
+            "5": {
+                "name": "ＢＢゲージ系"
+            }
+        }, 
+        "skills": [
+            {
+                "category": "1", 
+                "dependency": "", 
+                "dependency comment": "", 
+                "id": "730003", 
+                "skill": {
+                    "bp": 20, 
+                    "desc": "40% boost to all parameters", 
+                    "effects": [
+                        {
+                            "passive": {
+                                "atk% buff": 40, 
+                                "def% buff": 40, 
+                                "hp% buff": 40, 
+                                "passive id": "1", 
+                                "rec% buff": 40
+                            }
+                        }
+                    ], 
+                    "id": "730003", 
+                    "level": 1, 
+                    "name": "40% boost to all parameters", 
+                    "series": "700000"
+                }
+            }, 
+            {
+                "category": "1", 
+                "dependency": "1@730003", 
+                "dependency comment": "「全能力＋４０％」習得", 
+                "id": "750101", 
+                "skill": {
+                    "bp": 10, 
+                    "desc": "Raises all parameters boost from 40% to 60%", 
+                    "effects": [
+                        {
+                            "passive": {
+                                "atk% buff": 60, 
+                                "def% buff": 60, 
+                                "hp% buff": 60, 
+                                "passive id": "1", 
+                                "rec% buff": 60
+                            }
+                        }
+                    ], 
+                    "id": "750101", 
+                    "level": 4, 
+                    "name": "60% boost to all parameters", 
+                    "series": "700000"
+                }
+            }, 
+            {
+                "category": "3", 
+                "dependency": "", 
+                "dependency comment": "", 
+                "id": "2120001", 
+                "skill": {
+                    "bp": 20, 
+                    "desc": "Boosts critical hit damage", 
+                    "effects": [
+                        {
+                            "passive": {
+                                "crit multiplier%": 75.0, 
+                                "passive id": "34"
+                            }
+                        }
+                    ], 
+                    "id": "2120001", 
+                    "level": 3, 
+                    "name": "Boosts critical hit damage", 
+                    "series": "2100000"
+                }
+            }, 
+            {
+                "category": "4", 
+                "dependency": "", 
+                "dependency comment": "", 
+                "id": "1000001036", 
+                "skill": {
+                    "bp": 15, 
+                    "desc": "Boosts elemental damage", 
+                    "effects": [
+                        {
+                            "passive": {
+                                "dark units do extra elemental weakness dmg": true, 
+                                "earth units do extra elemental weakness dmg": true, 
+                                "elemental weakness multiplier%": 75.0, 
+                                "fire units do extra elemental weakness dmg": true, 
+                                "light units do extra elemental weakness dmg": true, 
+                                "passive id": "50", 
+                                "thunder units do extra elemental weakness dmg": true, 
+                                "water units do extra elemental weakness dmg": true
+                            }
+                        }
+                    ], 
+                    "id": "1000001036", 
+                    "level": 3, 
+                    "name": "Boosts elemental damage", 
+                    "series": "1000001036"
+                }
+            }, 
+            {
+                "category": "5", 
+                "dependency": "", 
+                "dependency comment": "", 
+                "id": "4110001", 
+                "skill": {
+                    "bp": 10, 
+                    "desc": "Damage taken boosts BB gauge", 
+                    "effects": [
+                        {
+                            "passive": {
+                                "bc fill when attacked high": 3, 
+                                "bc fill when attacked low": 2, 
+                                "bc fill when attacked%": 100, 
+                                "passive id": "25"
+                            }
+                        }
+                    ], 
+                    "id": "4110001", 
+                    "level": 2, 
+                    "name": "Damage taken boosts BB gauge", 
+                    "series": "4100000"
+                }
+            }, 
+            {
+                "category": "5", 
+                "dependency": "", 
+                "dependency comment": "", 
+                "id": "1000001008", 
+                "skill": {
+                    "bp": 20, 
+                    "desc": "Adds fill own BB gauge to max effect to SBB", 
+                    "effects": [
+                        {
+                            "passive": {
+                                "passive id": "66", 
+                                "trigger on sbb": true, 
+                                "triggered effect": [
+                                    {
+                                        "bb bc fill%": 100, 
+                                        "effect delay time(ms)/frame": "0.0/0", 
+                                        "proc id": "4", 
+                                        "target area": "single", 
+                                        "target type": "self"
+                                    }
+                                ]
+                            }
+                        }
+                    ], 
+                    "id": "1000001008", 
+                    "level": 2, 
+                    "name": "Adds fill own BB gauge to max effect to SBB", 
+                    "series": "1000001008"
+                }
+            }, 
+            {
+                "category": "11", 
+                "dependency": "", 
+                "dependency comment": "", 
+                "id": "1000001038", 
+                "skill": {
+                    "bp": 20, 
+                    "desc": "Enhances success rate of SBB's probable performance of 1 extra action within the same turn", 
+                    "effects": [
+                        {
+                            "add to sbb": {
+                                "chance% for extra action": 5, 
+                                "extra action buff turns (123)": 0, 
+                                "max number of extra actions": 0, 
+                                "proc id": "76"
+                            }
+                        }
+                    ], 
+                    "id": "1000001038", 
+                    "level": 6, 
+                    "name": "Enhances success rate of SBB's probable performance of 1 extra action within the same turn", 
+                    "series": "1000010069"
+                }
+            }, 
+            {
+                "category": "11", 
+                "dependency": "", 
+                "dependency comment": "", 
+                "id": "1000001039", 
+                "skill": {
+                    "bp": 25, 
+                    "desc": "Adds slight damage reduction from Fire, Water types for 2 turns effect to BB/SBB", 
+                    "effects": [
+                        {
+                            "passive": {
+                                "passive id": "66", 
+                                "trigger on bb": true, 
+                                "trigger on sbb": true, 
+                                "triggered effect": [
+                                    {
+                                        "dmg% mitigation for elemental attacks": 15, 
+                                        "dmg% mitigation for elemental attacks buff turns": 2, 
+                                        "effect delay time(ms)/frame": "0.0/0", 
+                                        "mitigate fire attacks": true, 
+                                        "mitigate water attacks": true, 
+                                        "proc id": "39", 
+                                        "target area": "aoe", 
+                                        "target type": "party"
+                                    }
+                                ]
+                            }
+                        }
+                    ], 
+                    "id": "1000001039", 
+                    "level": 4, 
+                    "name": "Adds slight damage reduction from Fire, Water types for 2 turns effect to BB/SBB", 
+                    "series": "1000001039"
+                }
+            }, 
+            {
+                "category": "11", 
+                "dependency": "", 
+                "dependency comment": "", 
+                "id": "1000010031", 
+                "skill": {
+                    "bp": 30, 
+                    "desc": "Enhances SBB's critical damage boost effect", 
+                    "effects": [
+                        {
+                            "add to sbb": {
+                                "buff turns (84)": 0, 
+                                "crit multiplier%": 50.0, 
+                                "proc id": "54"
+                            }
+                        }
+                    ], 
+                    "id": "1000010031", 
+                    "level": 5, 
+                    "name": "Enhances SBB's critical damage boost effect", 
+                    "series": "1000010031"
+                }
+            }, 
+            {
+                "category": "11", 
+                "dependency": "", 
+                "dependency comment": "", 
+                "id": "57004001", 
+                "skill": {
+                    "bp": 30, 
+                    "desc": "Adds status ailment negation for 3 turns effect to BB/SBB", 
+                    "effects": [
+                        {
+                            "passive": {
+                                "passive id": "66", 
+                                "trigger on bb": true, 
+                                "trigger on sbb": true, 
+                                "triggered effect": [
+                                    {
+                                        "effect delay time(ms)/frame": "0.0/0", 
+                                        "proc id": "17", 
+                                        "resist curse% (34)": 100.0, 
+                                        "resist injury% (33)": 100.0, 
+                                        "resist paralysis% (35)": 100.0, 
+                                        "resist poison% (30)": 100.0, 
+                                        "resist sick% (32)": 100.0, 
+                                        "resist status ails turns": 3, 
+                                        "resist weaken% (31)": 100.0, 
+                                        "target area": "aoe", 
+                                        "target type": "party"
+                                    }
+                                ]
+                            }
+                        }
+                    ], 
+                    "id": "57004001", 
+                    "level": 4, 
+                    "name": "Adds status ailment negation to BB/SBB", 
+                    "series": "57004000"
+                }
+            }, 
+            {
+                "category": "11", 
+                "dependency": "", 
+                "dependency comment": "", 
+                "id": "53007202", 
+                "skill": {
+                    "bp": 35, 
+                    "desc": "Adds huge BB Atk boost for 3 turns effect to BB/SBB", 
+                    "effects": [
+                        {
+                            "passive": {
+                                "passive id": "66", 
+                                "trigger on bb": true, 
+                                "trigger on sbb": true, 
+                                "triggered effect": [
+                                    {
+                                        "bb atk% buff": 450, 
+                                        "buff turns (72)": 3, 
+                                        "effect delay time(ms)/frame": "0.0/0", 
+                                        "proc id": "45", 
+                                        "sbb atk% buff": 450, 
+                                        "target area": "aoe", 
+                                        "target type": "party", 
+                                        "ubb atk% buff": 450
+                                    }
+                                ]
+                            }
+                        }
+                    ], 
+                    "id": "53007202", 
+                    "level": 5, 
+                    "name": "Adds huge BB Atk boost effect to BB/SBB", 
+                    "series": "53007000"
+                }
+            }
+        ]
+    }, 
     "820388": {
         "category": {
             "1": {

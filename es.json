@@ -19473,6 +19473,81 @@
         "name": "Inevitable Abbatoir Style", 
         "target": "self"
     }, 
+    "820287": {
+        "desc": "30% boost to Atk of Water types & critical damage boosts BB gauge<br>Boosts Atk, Def when BB gauge is over 50% & adds 18 combo powerful Water attack on Fire types effect to SBB in Guild Raid", 
+        "effects": [
+            {
+                "atk% buff": 30, 
+                "conditions": [], 
+                "elements buffed": [
+                    "water"
+                ], 
+                "passive id": "2", 
+                "passive target": "party"
+            }, 
+            {
+                "bc fill on crit max": 6, 
+                "bc fill on crit min": 6, 
+                "bc fill on crit%": 100.0, 
+                "conditions": [], 
+                "passive id": "65", 
+                "passive target": "self"
+            }
+        ], 
+        "id": "820287", 
+        "name": "Even Heroes Must Die", 
+        "target": "self"
+    }, 
+    "820288": {
+        "desc": "50% boost to Atk of Water types, critical damage boosts BB gauge, adds Water barrier effect to BB/SBB & raises Atk parameter limits to 130000<br>Boosts Atk, Def when BB gauge is over 50%, adds 26 combo massive Water attack on Fire types effect to SBB & boosts Water elemental damage for all allies in Guild Raid", 
+        "effects": [
+            {
+                "conditions": [], 
+                "passive id": "66", 
+                "passive target": "self", 
+                "trigger on bb": true, 
+                "trigger on sbb": true, 
+                "triggered effect": [
+                    {
+                        "effect delay time(ms)/frame": "0.0/0", 
+                        "elemental barrier absorb dmg%": 100, 
+                        "elemental barrier def": 0, 
+                        "elemental barrier element": "water", 
+                        "elemental barrier hp": 3500, 
+                        "proc id": "62", 
+                        "target area": "aoe", 
+                        "target type": "party"
+                    }
+                ]
+            }, 
+            {
+                "atk% buff": 50, 
+                "conditions": [], 
+                "elements buffed": [
+                    "water"
+                ], 
+                "passive id": "2", 
+                "passive target": "party"
+            }, 
+            {
+                "bc fill on crit max": 10, 
+                "bc fill on crit min": 10, 
+                "bc fill on crit%": 100.0, 
+                "conditions": [], 
+                "passive id": "65", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "passive target": "self", 
+                "unknown passive id": "143", 
+                "unknown passive params": "130000"
+            }
+        ], 
+        "id": "820288", 
+        "name": "The Bitter Price of War", 
+        "target": "self"
+    }, 
     "820317": {
         "desc": "20% boost to all parameters & boosts BB gauge when attacking when Glacies Staff is equipped", 
         "effects": [
@@ -22854,7 +22929,7 @@
         "target": "self"
     }, 
     "8910287": {
-        "desc": "MST_EXTRAPASSIVESKILL_8910287_DESCRIPTION", 
+        "desc": "30% boost to Atk of Fire types & negates all status ailments<br>30% boost to Rec of Fire types & adds 22 combo powerful Fire attack on all Earth types effect to SBB in Guild Raid", 
         "effects": [
             {
                 "conditions": [], 
@@ -22882,11 +22957,11 @@
             }
         ], 
         "id": "8910287", 
-        "name": "Forward Unto Victory GR", 
+        "name": "Forward Unto Victory", 
         "target": "self"
     }, 
     "8910288": {
-        "desc": "MST_EXTRAPASSIVESKILL_8910288_DESCRIPTION", 
+        "desc": "50% boost to Atk of Fire types, negates all status ailments, adds Fire barrier effect to BB/SBB & raises Atk parameter limits to 130000<br>50% boost to Rec of Fire types, adds 25 combo powerful Fire attack on Earth types effect to SBB & boosts Fire elemental damage for all allies in Guild Raid", 
         "effects": [
             {
                 "conditions": [], 
@@ -22921,11 +22996,80 @@
             }
         ], 
         "id": "8910288", 
-        "name": "Inexorable March Technique GR", 
+        "name": "Inexorable March Technique", 
+        "target": "self"
+    }, 
+    "8920287": {
+        "desc": "30% boost to Atk of Water types & critical damage boosts BB gauge<br>Boosts Atk, Def when BB gauge is over 50% & adds 18 combo powerful Water attack on Fire types effect to SBB in Guild Raid", 
+        "effects": [
+            {
+                "atk% buff": 50, 
+                "bb gauge above % buff requirement": 50, 
+                "conditions": [], 
+                "def% buff": 50, 
+                "passive id": "30", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "passive id": "66", 
+                "passive target": "self", 
+                "trigger on sbb": true, 
+                "triggered effect": [
+                    {
+                        "effect delay time(ms)/frame": "0.0/0", 
+                        "target area": "aoe", 
+                        "target type": "enemy", 
+                        "unknown proc id": "97", 
+                        "unknown proc param": "2,900,100,0,0,0,0"
+                    }
+                ]
+            }
+        ], 
+        "id": "8920287", 
+        "name": "Even Heroes Must Die", 
+        "target": "self"
+    }, 
+    "8920288": {
+        "desc": "50% boost to Atk of Water types, critical damage boosts BB gauge, adds Water barrier effect to BB/SBB & raises Atk parameter limits to 130000<br>Boosts Atk, Def when BB gauge is over 50%, adds 26 combo massive Water attack on Fire types effect to SBB & boosts Water elemental damage for all allies in Guild Raid", 
+        "effects": [
+            {
+                "atk% buff": 75, 
+                "bb gauge above % buff requirement": 50, 
+                "conditions": [], 
+                "def% buff": 75, 
+                "passive id": "30", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "elemental weakness multiplier%": 25.0, 
+                "passive id": "50", 
+                "passive target": "party", 
+                "water units do extra elemental weakness dmg": true
+            }, 
+            {
+                "conditions": [], 
+                "passive id": "66", 
+                "passive target": "self", 
+                "trigger on sbb": true, 
+                "triggered effect": [
+                    {
+                        "effect delay time(ms)/frame": "0.0/0", 
+                        "target area": "aoe", 
+                        "target type": "enemy", 
+                        "unknown proc id": "97", 
+                        "unknown proc param": "2,1100,100,0,0,0,0"
+                    }
+                ]
+            }
+        ], 
+        "id": "8920288", 
+        "name": "The Bitter Price of War", 
         "target": "self"
     }, 
     "8930287": {
-        "desc": "MST_EXTRAPASSIVESKILL_8930287_DESCRIPTION", 
+        "desc": "30% boost to Atk of Earth types, 80% boost to Atk when BB gauge is over 50%<br>Slightly boosts Atk, Def when HP is over 50% & raises normal hit amount in Guild Raid", 
         "effects": [
             {
                 "atk% buff": 30, 
@@ -22943,11 +23087,11 @@
             }
         ], 
         "id": "8930287", 
-        "name": "Hyper Infovore Technique GR", 
+        "name": "Hyper Infovore Technique", 
         "target": "self"
     }, 
     "8930288": {
-        "desc": "MST_EXTRAPASSIVESKILL_8930288_DESCRIPTION", 
+        "desc": "50% boost to Atk of Earth types, 100% boost to Atk when BB gauge is over 50%, adds Earth barrier effect to BB/SBB & raises Atk parameter limits to 130000<br> 50% boost to Atk, Def when HP is over 50%, raises normal hit amount & boosts Earth elemental damage for all allies in Guild Raid", 
         "effects": [
             {
                 "atk% buff": 50, 
@@ -22972,11 +23116,11 @@
             }
         ], 
         "id": "8930288", 
-        "name": "Ascended Mind Palace GR", 
+        "name": "Ascended Mind Palace", 
         "target": "self"
     }, 
     "8950287": {
-        "desc": "MST_EXTRAPASSIVESKILL_8930287_DESCRIPTION", 
+        "desc": "30% boost to Atk of Light types, enormously boosts Atk relative to remaining HP<br>30% Boost to Atk, Def each turn (3 turns max, capping at 90%) & considerably raises normal hit amount in Guild Raid", 
         "effects": [
             {
                 "atk% max buff": 90, 
@@ -22995,11 +23139,11 @@
             }
         ], 
         "id": "8950287", 
-        "name": "Sniper Speedloader GR", 
+        "name": "Sniper Speedloader", 
         "target": "self"
     }, 
     "8950288": {
-        "desc": "MST_EXTRAPASSIVESKILL_8930288_DESCRIPTION", 
+        "desc": "50% boost to Atk of Light types, greatly boosts Atk relative to remaining HP, adds Light barrier effect to BB/SBB & raises max Atk value from 99999 to 130000<br>40% Boost to Atk, Def each turn (3 turns max, capping at 120%), boosts Light elemental damage for all allies & considerably raises normal hit amount in Guild Raid", 
         "effects": [
             {
                 "atk% max buff": 120, 
@@ -23025,7 +23169,7 @@
             }
         ], 
         "id": "8950288", 
-        "name": "The Ace of Spades GR", 
+        "name": "The Ace of Spades", 
         "target": "self"
     }, 
     "9": {
