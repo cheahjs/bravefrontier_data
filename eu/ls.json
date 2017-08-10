@@ -12358,6 +12358,20 @@
         "id": "710227", 
         "name": "Volcanic God Power"
     }, 
+    "710234": {
+        "desc": "Boosts all parameters (20%)", 
+        "effects": [
+            {
+                "atk% buff": 20, 
+                "def% buff": 20, 
+                "hp% buff": 20, 
+                "passive id": "1", 
+                "rec% buff": 20
+            }
+        ], 
+        "id": "710234", 
+        "name": "Loving Family"
+    }, 
     "710312": {
         "desc": "15% boost to HP, ATK, DEF, and REC", 
         "effects": [
@@ -13395,6 +13409,50 @@
         "id": "730216", 
         "name": "Command of the Fallen"
     }, 
+    "730217": {
+        "desc": "Boosts all parameters (60%) & boosts HC drop rate (30%) and HC effectiveness (80%) & damage reduction (20%) and boosts Spark damage (150%) for 2 turns when Sparks have exceeded certain number (15) & boosts BB ATK (250%)", 
+        "effects": [
+            {
+                "atk% buff": 60, 
+                "def% buff": 60, 
+                "hp% buff": 60, 
+                "passive id": "1", 
+                "rec% buff": 60
+            }, 
+            {
+                "hc drop rate% buff": 30, 
+                "passive id": "19"
+            }, 
+            {
+                "hc effectiveness%": 80, 
+                "passive id": "10"
+            }, 
+            {
+                "guard increase mitigation%": 20, 
+                "passive id": "58"
+            }, 
+            {
+                "damage% for spark": 150, 
+                "passive id": "31"
+            }, 
+            {
+                "buff": {
+                    "buff turns (40)": "2", 
+                    "spark dmg% buff": 150
+                }, 
+                "passive id": "86", 
+                "spark count buff activation": 15
+            }, 
+            {
+                "bb atk% buff": 250, 
+                "passive id": "64", 
+                "sbb atk% buff": 250, 
+                "ubb atk% buff": 250
+            }
+        ], 
+        "id": "730217", 
+        "name": "Primal Lord"
+    }, 
     "730226": {
         "desc": "30% boost to all parameters & negates all Atk, Def, Rec reduction effects & reduces damage taken (15%) 2 turns when HP is below 50%", 
         "effects": [
@@ -13618,6 +13676,59 @@
         ], 
         "id": "730257", 
         "name": "Zodiacal Essence"
+    }, 
+    "730264": {
+        "desc": "Boosts DEF and HP (30%) & damage taken boosts BB gauge (2-5 BC)", 
+        "effects": [
+            {
+                "def% buff": 30, 
+                "hp% buff": 30, 
+                "passive id": "1"
+            }, 
+            {
+                "bc fill when attacked high": 5, 
+                "bc fill when attacked low": 2, 
+                "bc fill when attacked%": 100, 
+                "passive id": "25"
+            }
+        ], 
+        "id": "730264", 
+        "name": "Devoted Historian"
+    }, 
+    "730267": {
+        "desc": "Boosts DEF and HP (60%) & negates elemental damage and DEF ignoring damage & damage taken boosts BB gauge (4-7 BC) & damage reduction (20%) for 2 turns when HP is below 50%", 
+        "effects": [
+            {
+                "def% buff": 60, 
+                "hp% buff": 60, 
+                "passive id": "1"
+            }, 
+            {
+                "passive id": "53", 
+                "strong base element damage resist%": 100, 
+                "strong buffed element damage resist%": 100
+            }, 
+            {
+                "ignore def resist chance%": 100, 
+                "passive id": "92"
+            }, 
+            {
+                "bc fill when attacked high": 7, 
+                "bc fill when attacked low": 4, 
+                "bc fill when attacked%": 100, 
+                "passive id": "25"
+            }, 
+            {
+                "buff": {
+                    "buff turns (36)": "2", 
+                    "dmg reduction% buff": 20
+                }, 
+                "hp below % buff activation": 50, 
+                "passive id": "55"
+            }
+        ], 
+        "id": "730267", 
+        "name": "Poetic Destiny"
     }, 
     "7400": {
         "desc": "15% boost to Atk and max HP for all Units", 
@@ -20496,6 +20607,75 @@
         ], 
         "id": "8602", 
         "name": "Fire Forest's Demolition"
+    }, 
+    "860356": {
+        "desc": "50% boost to Def, Rec, max HP of Dark types, 5% all elemental damage reduction & enormously boosts BB Atk", 
+        "effects": [
+            {
+                "def% buff": 50, 
+                "elements buffed": [
+                    "dark"
+                ], 
+                "hp% buff": 50, 
+                "passive id": "2", 
+                "rec% buff": 50
+            }, 
+            {
+                "dmg% mitigation for elemental attacks": 5.0, 
+                "mitigate dark attacks": true, 
+                "mitigate earth attacks": true, 
+                "mitigate fire attacks": true, 
+                "mitigate light attacks": true, 
+                "mitigate thunder attacks": true, 
+                "mitigate water attacks": true, 
+                "passive id": "62"
+            }, 
+            {
+                "bb atk% buff": 200, 
+                "passive id": "64", 
+                "sbb atk% buff": 200, 
+                "ubb atk% buff": 200
+            }
+        ], 
+        "id": "860356", 
+        "name": "No Sin Unwitnessed"
+    }, 
+    "860357": {
+        "desc": "65% boost to Def, Rec, max HP of Dark types, 10% all elemental damage reduction, enormously boosts BB Atk & negates critical damage", 
+        "effects": [
+            {
+                "def% buff": 65, 
+                "elements buffed": [
+                    "dark"
+                ], 
+                "hp% buff": 65, 
+                "passive id": "2", 
+                "rec% buff": 65
+            }, 
+            {
+                "dmg% mitigation for elemental attacks": 10.0, 
+                "mitigate dark attacks": true, 
+                "mitigate earth attacks": true, 
+                "mitigate fire attacks": true, 
+                "mitigate light attacks": true, 
+                "mitigate thunder attacks": true, 
+                "mitigate water attacks": true, 
+                "passive id": "62"
+            }, 
+            {
+                "bb atk% buff": 300, 
+                "passive id": "64", 
+                "sbb atk% buff": 300, 
+                "ubb atk% buff": 300
+            }, 
+            {
+                "base crit% resist": 100, 
+                "buff crit% resist": 100, 
+                "passive id": "45"
+            }
+        ], 
+        "id": "860357", 
+        "name": "Kindness Beyond Death"
     }, 
     "860377": {
         "desc": "100% boost to Atk, 50% boost to max HP, 110% boost toSpark damage, Spark damage hugely boosts BC drop rates & boosts Atk relative to remaining HP", 

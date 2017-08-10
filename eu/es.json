@@ -3729,6 +3729,46 @@
         "name": "Loyal Friend's Promise", 
         "target": "self"
     }, 
+    "1010000": {
+        "desc": "Boosts damage reduction rate and BB gauge on hit while guarding", 
+        "effects": [
+            {
+                "conditions": [], 
+                "guard increase mitigation%": 5, 
+                "passive id": "58", 
+                "passive target": "self"
+            }, 
+            {
+                "bc filled when attacked while guarded": 2, 
+                "conditions": [], 
+                "passive id": "59", 
+                "passive target": "self"
+            }
+        ], 
+        "id": "1010000", 
+        "name": "Legendary Shield Lv. 1", 
+        "target": "self"
+    }, 
+    "1010001": {
+        "desc": "Greatly boosts damage reduction rate and BB gauge on hit while guarding", 
+        "effects": [
+            {
+                "conditions": [], 
+                "guard increase mitigation%": 10, 
+                "passive id": "58", 
+                "passive target": "self"
+            }, 
+            {
+                "bc filled when attacked while guarded": 3, 
+                "conditions": [], 
+                "passive id": "59", 
+                "passive target": "self"
+            }
+        ], 
+        "id": "1010001", 
+        "name": "Legendary Shield Lv. 2", 
+        "target": "self"
+    }, 
     "1010200": {
         "desc": "Negates Def ignoring damage", 
         "effects": [
@@ -14941,6 +14981,73 @@
         "name": "Advice of the Fallen", 
         "target": "self"
     }, 
+    "730217": {
+        "desc": "If Armor of the Fallen or Armor of Superiority is equipped, boosts ATK (100%), BB ATK (150%) and boosts BB gauge (5 BC) each turn & if Armor of Superiority is equipped, raises ATK parameter limits to 150000 and boosts all parameters (15%, all)", 
+        "effects": [
+            {
+                "atk% buff": 100, 
+                "conditions": [
+                    {
+                        "unit required": "701048:701014"
+                    }
+                ], 
+                "passive id": "1", 
+                "passive target": "self"
+            }, 
+            {
+                "bb atk% buff": 150, 
+                "conditions": [
+                    {
+                        "unit required": "701048:701014"
+                    }
+                ], 
+                "passive id": "64", 
+                "passive target": "self", 
+                "sbb atk% buff": 150, 
+                "ubb atk% buff": 150
+            }, 
+            {
+                "bc fill per turn": 5, 
+                "conditions": [
+                    {
+                        "unit required": "701048:701014"
+                    }
+                ], 
+                "passive id": "9", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [
+                    {
+                        "item required": [
+                            "701048"
+                        ]
+                    }
+                ], 
+                "passive target": "self", 
+                "unknown passive id": "143", 
+                "unknown passive params": "150000"
+            }, 
+            {
+                "atk% buff": 15, 
+                "conditions": [
+                    {
+                        "item required": [
+                            "701048"
+                        ]
+                    }
+                ], 
+                "def% buff": 15, 
+                "hp% buff": 15, 
+                "passive id": "1", 
+                "passive target": "party", 
+                "rec% buff": 15
+            }
+        ], 
+        "id": "730217", 
+        "name": "Killer Instinct", 
+        "target": "self"
+    }, 
     "730226": {
         "desc": "If Ancient Cybernetic Crown is equipped, adds Earth Barrier effect to BB/SBB (3000 HP)", 
         "effects": [
@@ -15330,6 +15437,67 @@
         ], 
         "id": "730257", 
         "name": "Constellation Spirit", 
+        "target": "self"
+    }, 
+    "730267": {
+        "desc": "Adds probable evasion (15%) for 1 turn to BB/SBB & when Hunter Title is equipped, boosts DEF (20%, all) and adds Spark damage boosts BB gauge (2-3 BC) for 3 turns to BB/SBB", 
+        "effects": [
+            {
+                "conditions": [], 
+                "passive id": "66", 
+                "passive target": "self", 
+                "trigger on bb": true, 
+                "trigger on sbb": true, 
+                "triggered effect": [
+                    {
+                        "effect delay time(ms)/frame": "0.0/0", 
+                        "target area": "aoe", 
+                        "target type": "party", 
+                        "unknown proc id": "10007", 
+                        "unknown proc param": "100,1,0,15"
+                    }
+                ]
+            }, 
+            {
+                "conditions": [
+                    {
+                        "item required": [
+                            "701045"
+                        ]
+                    }
+                ], 
+                "def% buff": 20, 
+                "passive id": "1", 
+                "passive target": "party"
+            }, 
+            {
+                "conditions": [
+                    {
+                        "item required": [
+                            "701045"
+                        ]
+                    }
+                ], 
+                "passive id": "66", 
+                "passive target": "self", 
+                "trigger on bb": true, 
+                "trigger on sbb": true, 
+                "triggered effect": [
+                    {
+                        "bc fill on spark buff turns (111)": 3, 
+                        "bc fill on spark high": 3, 
+                        "bc fill on spark low": 2, 
+                        "bc fill on spark%": 100, 
+                        "effect delay time(ms)/frame": "0.0/0", 
+                        "proc id": "67", 
+                        "target area": "aoe", 
+                        "target type": "party"
+                    }
+                ]
+            }
+        ], 
+        "id": "730267", 
+        "name": "Rhyme Mastery", 
         "target": "self"
     }, 
     "7400": {
@@ -19177,6 +19345,64 @@
         ], 
         "id": "860317", 
         "name": "Kitty of the Shadows", 
+        "target": "self"
+    }, 
+    "860356": {
+        "desc": "5% boost to all parameters of Dark types & boosts Atk, Rec each turn for up to 5 turns", 
+        "effects": [
+            {
+                "atk% buff": 5, 
+                "conditions": [], 
+                "def% buff": 5, 
+                "elements buffed": [
+                    "dark"
+                ], 
+                "hp% buff": 5, 
+                "passive id": "2", 
+                "passive target": "party", 
+                "rec% buff": 5
+            }, 
+            {
+                "atk% max buff": 50, 
+                "conditions": [], 
+                "increase from min to max": 1, 
+                "passive id": "105", 
+                "passive target": "self", 
+                "rec% max buff": 50, 
+                "turn count": 5
+            }
+        ], 
+        "id": "860356", 
+        "name": "Wedjat's Eternal Mercy", 
+        "target": "self"
+    }, 
+    "860357": {
+        "desc": "10% boost to all parameters of Dark types & boosts Atk, Rec each turn for up to 5 turns", 
+        "effects": [
+            {
+                "atk% buff": 10, 
+                "conditions": [], 
+                "def% buff": 10, 
+                "elements buffed": [
+                    "dark"
+                ], 
+                "hp% buff": 10, 
+                "passive id": "2", 
+                "passive target": "party", 
+                "rec% buff": 10
+            }, 
+            {
+                "atk% max buff": 150, 
+                "conditions": [], 
+                "increase from min to max": 1, 
+                "passive id": "105", 
+                "passive target": "self", 
+                "rec% max buff": 150, 
+                "turn count": 5
+            }
+        ], 
+        "id": "860357", 
+        "name": "Wedjat's Unyielding Gaze", 
         "target": "self"
     }, 
     "860377": {
