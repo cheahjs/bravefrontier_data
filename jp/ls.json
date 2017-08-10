@@ -1559,6 +1559,66 @@
         "id": "10152", 
         "name": "主神皇の宙戒終劫"
     }, 
+    "10153": {
+        "desc": "全てのユニットの全能力を５０％アップ＆残りＨＰが多いほど、攻撃力・防御力・回復力を少しアップ＆ガード時のダメージ軽減率をアップ", 
+        "effects": [
+            {
+                "atk% buff": 50, 
+                "def% buff": 50, 
+                "hp% buff": 50, 
+                "passive id": "1", 
+                "rec% buff": 50
+            }, 
+            {
+                "atk% base buff": 0, 
+                "atk% extra buff based on hp": 40, 
+                "buff proportional to hp": "remaining", 
+                "def% base buff": 0, 
+                "def% extra buff based on hp": 40, 
+                "passive id": "46", 
+                "rec% base buff": 0, 
+                "rec% extra buff based on hp": 40
+            }, 
+            {
+                "guard increase mitigation%": 10, 
+                "passive id": "58"
+            }
+        ], 
+        "id": "10153", 
+        "name": "刃頂神の白守"
+    }, 
+    "10154": {
+        "desc": "全てのユニットの全能力を６０％アップ＆残りＨＰが多いほど、攻撃力・防御力・回復力をアップ＆ガード時のダメージ軽減率をアップ＆防御貫通効果を無効", 
+        "effects": [
+            {
+                "atk% buff": 60, 
+                "def% buff": 60, 
+                "hp% buff": 60, 
+                "passive id": "1", 
+                "rec% buff": 60
+            }, 
+            {
+                "atk% base buff": 0, 
+                "atk% extra buff based on hp": 60, 
+                "buff proportional to hp": "remaining", 
+                "def% base buff": 0, 
+                "def% extra buff based on hp": 60, 
+                "passive id": "46", 
+                "rec% base buff": 0, 
+                "rec% extra buff based on hp": 60
+            }, 
+            {
+                "guard increase mitigation%": 10, 
+                "passive id": "58"
+            }, 
+            {
+                "ignore def resist chance%": 100, 
+                "passive id": "92"
+            }
+        ], 
+        "id": "10154", 
+        "name": "刃頂神傑の真守"
+    }, 
     "102": {
         "desc": "炎属性ユニットの攻撃力を５０％アップ・最大ＨＰを１０％アップ", 
         "effects": [
@@ -12385,6 +12445,60 @@
         "id": "4385", 
         "name": "蒼翠綺神の聖誓"
     }, 
+    "4386": {
+        "desc": "全てのユニットの防御力・最大ＨＰを５０％アップ＆与ダメージが一定数を超える度に１ターン、被ダメージを少し軽減＆確率で被ダメージを１５％軽減", 
+        "effects": [
+            {
+                "def% buff": 50, 
+                "hp% buff": 50, 
+                "passive id": "1"
+            }, 
+            {
+                "buff": {
+                    "buff turns (36)": "1", 
+                    "dmg reduction% buff": 20
+                }, 
+                "damage dealt threshold buff activation": 5000, 
+                "passive id": "80"
+            }, 
+            {
+                "dmg reduction chance%": 15, 
+                "dmg reduction%": 15, 
+                "passive id": "14"
+            }
+        ], 
+        "id": "4386", 
+        "name": "緋義神の讐志"
+    }, 
+    "4387": {
+        "desc": "全てのユニットの防御力・最大ＨＰを６０％アップ＆与ダメージが一定数を超える度に１ターン、被ダメージを少し軽減＆確率で被ダメージを２０％軽減＆ＢＣ獲得時の増加量をかなりアップ", 
+        "effects": [
+            {
+                "def% buff": 60, 
+                "hp% buff": 60, 
+                "passive id": "1"
+            }, 
+            {
+                "buff": {
+                    "buff turns (36)": "1", 
+                    "dmg reduction% buff": 20
+                }, 
+                "damage dealt threshold buff activation": 5000, 
+                "passive id": "80"
+            }, 
+            {
+                "dmg reduction chance%": 20, 
+                "dmg reduction%": 20, 
+                "passive id": "14"
+            }, 
+            {
+                "bb gauge fill rate%": 50, 
+                "passive id": "32"
+            }
+        ], 
+        "id": "4387", 
+        "name": "緋義神傑の純意"
+    }, 
     "4400": {
         "desc": "ターン毎にＢＢゲージを少し増加＆全ての状態異常にかなりかかりにくくなる", 
         "effects": [
@@ -18676,6 +18790,68 @@
         ], 
         "id": "7532", 
         "name": "凛徹神の幻殉"
+    }, 
+    "7533": {
+        "desc": "全てのユニットの攻撃力・最大ＨＰを５０％アップ＆スパークダメージを１１０％アップ＆全属性の弱点属性ダメージを大幅にアップ", 
+        "effects": [
+            {
+                "atk% buff": 50, 
+                "hp% buff": 50, 
+                "passive id": "1"
+            }, 
+            {
+                "damage% for spark": 110, 
+                "passive id": "31"
+            }, 
+            {
+                "dark units do extra elemental weakness dmg": true, 
+                "earth units do extra elemental weakness dmg": true, 
+                "elemental weakness multiplier%": 100.0, 
+                "fire units do extra elemental weakness dmg": true, 
+                "light units do extra elemental weakness dmg": true, 
+                "passive id": "50", 
+                "thunder units do extra elemental weakness dmg": true, 
+                "water units do extra elemental weakness dmg": true
+            }
+        ], 
+        "id": "7533", 
+        "name": "凶渇神の斬刹"
+    }, 
+    "7534": {
+        "desc": "全てのユニットの攻撃力・最大ＨＰを６０％アップ＆スパークダメージを１３０％アップ＆全属性の弱点属性ダメージを大幅にアップ＆状態異常の敵へのダメージを超絶アップ", 
+        "effects": [
+            {
+                "atk% buff": 60, 
+                "hp% buff": 60, 
+                "passive id": "1"
+            }, 
+            {
+                "damage% for spark": 130, 
+                "passive id": "31"
+            }, 
+            {
+                "dark units do extra elemental weakness dmg": true, 
+                "earth units do extra elemental weakness dmg": true, 
+                "elemental weakness multiplier%": 125.0, 
+                "fire units do extra elemental weakness dmg": true, 
+                "light units do extra elemental weakness dmg": true, 
+                "passive id": "50", 
+                "thunder units do extra elemental weakness dmg": true, 
+                "water units do extra elemental weakness dmg": true
+            }, 
+            {
+                "atk% buff when enemy has ailment": 120, 
+                "atk% buff when enemy has curse": true, 
+                "atk% buff when enemy has injury": true, 
+                "atk% buff when enemy has paralysis": true, 
+                "atk% buff when enemy has poison": true, 
+                "atk% buff when enemy has sick": true, 
+                "atk% buff when enemy has weaken": true, 
+                "passive id": "74"
+            }
+        ], 
+        "id": "7534", 
+        "name": "凶渇業神の斬葬"
     }, 
     "7600": {
         "desc": "水・光属性ユニットの攻撃力を５０％アップ", 

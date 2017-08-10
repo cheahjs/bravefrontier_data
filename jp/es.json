@@ -9325,7 +9325,7 @@
         "target": "self"
     }, 
     "1019700": {
-        "desc": "攻撃力・最大ＨＰを５０％アップ＆通常攻撃ＨＩＴ数をかなり増加＆ＢＣ出現率を大幅にアップ＆ＢＣ獲得数が一定数を超える度に２ターン、ＯＤゲージ上昇量を超絶アップ", 
+        "desc": "攻撃力・最大ＨＰを５０％アップ＆通常攻撃ＨＩＴ数をかなり増加＆ＢＣ出現率を大幅にアップ＆ＢＣ獲得数が一定数を超える度に２ターン、ＯＤゲージ増加量を超絶アップ", 
         "effects": [
             {
                 "atk% buff": 50, 
@@ -19490,6 +19490,58 @@
         "name": "天を侵す魔闇", 
         "target": "self"
     }, 
+    "40800": {
+        "desc": "被ダメージが一定数を超える度に１ターン、被ダメージを少し軽減＆被ダメージ時、確率でＨＰを回復", 
+        "effects": [
+            {
+                "buff": {
+                    "buff turns (36)": "1", 
+                    "dmg reduction% buff": 10
+                }, 
+                "conditions": [], 
+                "damage threshold buff activation": 5000, 
+                "passive id": "78", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "dmg% to hp% when attacked chance%": 20, 
+                "dmg% to hp% when attacked high": 25, 
+                "dmg% to hp% when attacked low": 20, 
+                "passive id": "24", 
+                "passive target": "self"
+            }
+        ], 
+        "id": "40800", 
+        "name": "復讐の孤剣", 
+        "target": "self"
+    }, 
+    "40900": {
+        "desc": "被ダメージが一定数を超える度に１ターン、被ダメージを少し軽減＆被ダメージ時、確率でＨＰを回復", 
+        "effects": [
+            {
+                "buff": {
+                    "buff turns (36)": "1", 
+                    "dmg reduction% buff": 20
+                }, 
+                "conditions": [], 
+                "damage threshold buff activation": 5000, 
+                "passive id": "78", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "dmg% to hp% when attacked chance%": 25, 
+                "dmg% to hp% when attacked high": 25, 
+                "dmg% to hp% when attacked low": 20, 
+                "passive id": "24", 
+                "passive target": "self"
+            }
+        ], 
+        "id": "40900", 
+        "name": "心技一体の境地", 
+        "target": "self"
+    }, 
     "410": {
         "desc": "「雷剣バトゥータ」を装備時、攻撃力・防御力・回復力・最大ＨＰを３０％アップ・クリティカルダメージをアップ・スパークダメージを５０％アップ", 
         "effects": [
@@ -19550,6 +19602,104 @@
         ], 
         "id": "4100", 
         "name": "引き継がれし秘奥義", 
+        "target": "self"
+    }, 
+    "41000": {
+        "desc": "ターン毎に防御力をアップ（５ターン目まで上昇量が増加する）＆防御貫通効果を無効", 
+        "effects": [
+            {
+                "conditions": [], 
+                "def% max buff": 80, 
+                "increase from min to max": 1, 
+                "passive id": "105", 
+                "passive target": "self", 
+                "turn count": 5
+            }, 
+            {
+                "conditions": [], 
+                "ignore def resist chance%": 100, 
+                "passive id": "92", 
+                "passive target": "self"
+            }
+        ], 
+        "id": "41000", 
+        "name": "人を護るための剣", 
+        "target": "self"
+    }, 
+    "41100": {
+        "desc": "ターン毎に防御力をアップ（５ターン目まで上昇量が増加する）＆防御貫通効果を無効", 
+        "effects": [
+            {
+                "conditions": [], 
+                "def% max buff": 100, 
+                "increase from min to max": 1, 
+                "passive id": "105", 
+                "passive target": "self", 
+                "turn count": 5
+            }, 
+            {
+                "conditions": [], 
+                "ignore def resist chance%": 100, 
+                "passive id": "92", 
+                "passive target": "self"
+            }
+        ], 
+        "id": "41100", 
+        "name": "人々を救うための剣", 
+        "target": "self"
+    }, 
+    "41200": {
+        "desc": "弱点属性ダメージをアップ＆状態異常の敵へのダメージをかなりアップ", 
+        "effects": [
+            {
+                "conditions": [], 
+                "dark units do extra elemental weakness dmg": true, 
+                "elemental weakness multiplier%": 50.0, 
+                "passive id": "50", 
+                "passive target": "self"
+            }, 
+            {
+                "atk% buff when enemy has ailment": 80, 
+                "atk% buff when enemy has curse": true, 
+                "atk% buff when enemy has injury": true, 
+                "atk% buff when enemy has paralysis": true, 
+                "atk% buff when enemy has poison": true, 
+                "atk% buff when enemy has sick": true, 
+                "atk% buff when enemy has weaken": true, 
+                "conditions": [], 
+                "passive id": "74", 
+                "passive target": "self"
+            }
+        ], 
+        "id": "41200", 
+        "name": "失伝された凶刃", 
+        "target": "self"
+    }, 
+    "41300": {
+        "desc": "弱点属性ダメージをかなりアップ＆状態異常の敵へのダメージを大幅にアップ", 
+        "effects": [
+            {
+                "conditions": [], 
+                "dark units do extra elemental weakness dmg": true, 
+                "elemental weakness multiplier%": 75.0, 
+                "passive id": "50", 
+                "passive target": "self"
+            }, 
+            {
+                "atk% buff when enemy has ailment": 100, 
+                "atk% buff when enemy has curse": true, 
+                "atk% buff when enemy has injury": true, 
+                "atk% buff when enemy has paralysis": true, 
+                "atk% buff when enemy has poison": true, 
+                "atk% buff when enemy has sick": true, 
+                "atk% buff when enemy has weaken": true, 
+                "conditions": [], 
+                "passive id": "74", 
+                "passive target": "self"
+            }
+        ], 
+        "id": "41300", 
+        "name": "暗躍の兇手", 
         "target": "self"
     }, 
     "4200": {
