@@ -21936,6 +21936,64 @@
         "name": "Arcane Erudition", 
         "target": "self"
     }, 
+    "850328": {
+        "desc": "20% boost to all parameters for all allies when Ortus is equipped, 50% boost to all parameters for self when Ima is equipped & resistance against 1 KO attack when both Ortus and Ima are equipped", 
+        "effects": [
+            {
+                "atk% buff": 20, 
+                "conditions": [
+                    {
+                        "item required": [
+                            "819112"
+                        ]
+                    }
+                ], 
+                "def% buff": 20, 
+                "hp% buff": 20, 
+                "passive id": "1", 
+                "passive target": "party", 
+                "rec% buff": 20
+            }, 
+            {
+                "atk% buff": 50, 
+                "conditions": [
+                    {
+                        "item required": [
+                            "819113"
+                        ]
+                    }
+                ], 
+                "def% buff": 50, 
+                "hp% buff": 50, 
+                "passive id": "1", 
+                "passive target": "self", 
+                "rec% buff": 50
+            }, 
+            {
+                "angel idol chance% condition": 0, 
+                "angel idol recover chance% high": 100, 
+                "angel idol recover chance% low": 100, 
+                "angel idol recover counts": 1, 
+                "conditions": [
+                    {
+                        "item required": [
+                            "819112"
+                        ]
+                    }, 
+                    {
+                        "item required": [
+                            "819113"
+                        ]
+                    }
+                ], 
+                "passive id": "69", 
+                "passive target": "self"
+            }
+        ], 
+        "id": "850328", 
+        "name": "Blood of the Ancients", 
+        "target": "self"
+    }, 
     "850347": {
         "desc": "Reduces all Elemental damage received & boosts allies’ BB gauge effect to BB/SBB", 
         "effects": [
@@ -23299,9 +23357,9 @@
             }, 
             {
                 "conditions": [], 
-                "hit increase/hit": 2, 
+                "hit increase/hit": 0, 
                 "passive id": "37", 
-                "passive target": "party"
+                "passive target": "self"
             }
         ], 
         "id": "8950288", 
