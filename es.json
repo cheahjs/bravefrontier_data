@@ -6513,6 +6513,53 @@
         "name": "Ascendant Self", 
         "target": "self"
     }, 
+    "1019100": {
+        "desc": "確率で敵のＢＢゲージをかなり減少", 
+        "effects": [
+            {
+                "conditions": [], 
+                "passive target": "self", 
+                "unknown passive id": "110", 
+                "unknown passive params": "0,0,50,50,20,0"
+            }
+        ], 
+        "id": "1019100", 
+        "name": "逆神の咆哮", 
+        "target": "self"
+    }, 
+    "1019200": {
+        "desc": "ターン毎にＨＰを超絶回復＆被ダメージ時、ＨＰを少し回復＆クリティカルを無効", 
+        "effects": [
+            {
+                "conditions": [], 
+                "passive id": "33", 
+                "passive target": "self", 
+                "rec% added (turn heal)": 10.0, 
+                "turn heal high": 8000, 
+                "turn heal low": 6000
+            }, 
+            {
+                "conditions": [], 
+                "dmg% to hp% when attacked chance%": 100, 
+                "dmg% to hp% when attacked high": 20, 
+                "dmg% to hp% when attacked low": 10, 
+                "passive id": "24", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "crit chance base resist%": 100, 
+                "crit chance buffed resist%": 100, 
+                "crit dmg base damage resist%": 100, 
+                "crit dmg buffed damage resist%": 100, 
+                "passive id": "53", 
+                "passive target": "self"
+            }
+        ], 
+        "id": "1019200", 
+        "name": "戯神の癒涙", 
+        "target": "self"
+    }, 
     "10200": {
         "desc": "Slightly boost BC, HC efficacy", 
         "effects": [
@@ -15819,6 +15866,164 @@
         "name": "Loyal Machine", 
         "target": "self"
     }, 
+    "38400": {
+        "desc": "Boosts Atk, Def, Rec each turn for up to 3 turns & raises max Atk value from 99999 to 130000", 
+        "effects": [
+            {
+                "atk% max buff": 30, 
+                "conditions": [], 
+                "def% max buff": 30, 
+                "increase from min to max": 1, 
+                "passive id": "105", 
+                "passive target": "self", 
+                "rec% max buff": 30, 
+                "turn count": 3
+            }, 
+            {
+                "conditions": [], 
+                "passive target": "self", 
+                "unknown passive id": "143", 
+                "unknown passive params": "130000"
+            }
+        ], 
+        "id": "38400", 
+        "name": "Aberrant Armor", 
+        "target": "self"
+    }, 
+    "38500": {
+        "desc": "Boosts Atk, Def, Rec each turn for up to 3 turns & raises max Atk value from 99999 to 130000", 
+        "effects": [
+            {
+                "atk% max buff": 60, 
+                "conditions": [], 
+                "def% max buff": 60, 
+                "increase from min to max": 1, 
+                "passive id": "105", 
+                "passive target": "self", 
+                "rec% max buff": 60, 
+                "turn count": 3
+            }, 
+            {
+                "conditions": [], 
+                "passive target": "self", 
+                "unknown passive id": "143", 
+                "unknown passive params": "130000"
+            }
+        ], 
+        "id": "38500", 
+        "name": "Armor Seal Axis", 
+        "target": "self"
+    }, 
+    "38600": {
+        "desc": "Boosts elemental damage, raises max Atk value from 99999 to 130000 & 5% boost to all parameters", 
+        "effects": [
+            {
+                "conditions": [], 
+                "elemental weakness multiplier%": 50.0, 
+                "light units do extra elemental weakness dmg": true, 
+                "passive id": "50", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "passive target": "self", 
+                "unknown passive id": "143", 
+                "unknown passive params": "130000"
+            }, 
+            {
+                "atk% buff": 5, 
+                "conditions": [], 
+                "def% buff": 5, 
+                "hp% buff": 5, 
+                "passive id": "1", 
+                "passive target": "party", 
+                "rec% buff": 5
+            }
+        ], 
+        "id": "38600", 
+        "name": "Dragon Seal Axis", 
+        "target": "self"
+    }, 
+    "38700": {
+        "desc": "Considerably boosts elemental damage, raises max Atk value from 99999 to 130000 & 10% boost to all parameters", 
+        "effects": [
+            {
+                "conditions": [], 
+                "elemental weakness multiplier%": 75.0, 
+                "light units do extra elemental weakness dmg": true, 
+                "passive id": "50", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "passive target": "self", 
+                "unknown passive id": "143", 
+                "unknown passive params": "130000"
+            }, 
+            {
+                "atk% buff": 10, 
+                "conditions": [], 
+                "def% buff": 10, 
+                "hp% buff": 10, 
+                "passive id": "1", 
+                "passive target": "party", 
+                "rec% buff": 10
+            }
+        ], 
+        "id": "38700", 
+        "name": "Divine Torrent", 
+        "target": "self"
+    }, 
+    "38800": {
+        "desc": "スパークが一定数を超える度に１ターン、被ダメージを少し軽減＆ＨＰが半分以上の時、スパークダメージを６０％アップ", 
+        "effects": [
+            {
+                "buff": {
+                    "buff turns (36)": "1", 
+                    "dmg reduction% buff": 20
+                }, 
+                "conditions": [], 
+                "passive id": "86", 
+                "passive target": "self", 
+                "spark count buff activation": 20
+            }, 
+            {
+                "conditions": [], 
+                "damage% for spark": 60, 
+                "hp above % buff requirement": 50, 
+                "passive id": "104", 
+                "passive target": "self"
+            }
+        ], 
+        "id": "38800", 
+        "name": "サヴァトの誇り", 
+        "target": "self"
+    }, 
+    "38900": {
+        "desc": "スパークが一定数を超える度に１ターン、被ダメージを少し軽減＆ＨＰが半分以上の時、スパークダメージを８０％アップ", 
+        "effects": [
+            {
+                "buff": {
+                    "buff turns (36)": "1", 
+                    "dmg reduction% buff": 20
+                }, 
+                "conditions": [], 
+                "passive id": "86", 
+                "passive target": "self", 
+                "spark count buff activation": 20
+            }, 
+            {
+                "conditions": [], 
+                "damage% for spark": 80, 
+                "hp above % buff requirement": 50, 
+                "passive id": "104", 
+                "passive target": "self"
+            }
+        ], 
+        "id": "38900", 
+        "name": "智者の警句", 
+        "target": "self"
+    }, 
     "3900": {
         "desc": "Greatly boosts Spark damage", 
         "effects": [
@@ -15831,6 +16036,98 @@
         ], 
         "id": "3900", 
         "name": "Restless Fighting Spirit", 
+        "target": "self"
+    }, 
+    "39000": {
+        "desc": "残りＨＰが多いほど、攻撃力・防御力・回復力を少しアップ＆通常攻撃ＨＩＴ数を増加", 
+        "effects": [
+            {
+                "atk% base buff": 0, 
+                "atk% extra buff based on hp": 40, 
+                "buff proportional to hp": "remaining", 
+                "conditions": [], 
+                "def% base buff": 0, 
+                "def% extra buff based on hp": 40, 
+                "passive id": "46", 
+                "passive target": "self", 
+                "rec% base buff": 0, 
+                "rec% extra buff based on hp": 40
+            }, 
+            {
+                "conditions": [], 
+                "hit increase/hit": 1, 
+                "passive id": "37", 
+                "passive target": "self"
+            }
+        ], 
+        "id": "39000", 
+        "name": "絆をもたらす意志", 
+        "target": "self"
+    }, 
+    "39100": {
+        "desc": "残りＨＰが多いほど、攻撃力・防御力・回復力をアップ＆通常攻撃ＨＩＴ数を増加", 
+        "effects": [
+            {
+                "atk% base buff": 0, 
+                "atk% extra buff based on hp": 60, 
+                "buff proportional to hp": "remaining", 
+                "conditions": [], 
+                "def% base buff": 0, 
+                "def% extra buff based on hp": 60, 
+                "passive id": "46", 
+                "passive target": "self", 
+                "rec% base buff": 0, 
+                "rec% extra buff based on hp": 60
+            }, 
+            {
+                "conditions": [], 
+                "hit increase/hit": 1, 
+                "passive id": "37", 
+                "passive target": "self"
+            }
+        ], 
+        "id": "39100", 
+        "name": "和を以て力と成す", 
+        "target": "self"
+    }, 
+    "39200": {
+        "desc": "ＨＰが半分以上の時、攻撃ＢＢの威力をかなりアップ＆確率でＢＢゲージ増加量を２ターンかなり低下", 
+        "effects": [
+            {
+                "conditions": [], 
+                "passive target": "self", 
+                "unknown passive id": "103", 
+                "unknown passive params": "100,100,100,50,1"
+            }, 
+            {
+                "conditions": [], 
+                "passive target": "self", 
+                "unknown passive id": "109", 
+                "unknown passive params": "-50,30,1,0"
+            }
+        ], 
+        "id": "39200", 
+        "name": "呪われし望郷", 
+        "target": "self"
+    }, 
+    "39300": {
+        "desc": "ＨＰが半分以上の時、攻撃ＢＢの威力を大幅にアップ＆確率でＢＢゲージ増加量を２ターンかなり低下", 
+        "effects": [
+            {
+                "conditions": [], 
+                "passive target": "self", 
+                "unknown passive id": "103", 
+                "unknown passive params": "150,150,150,50,1"
+            }, 
+            {
+                "conditions": [], 
+                "passive target": "self", 
+                "unknown passive id": "109", 
+                "unknown passive params": "-50,50,1,0"
+            }
+        ], 
+        "id": "39300", 
+        "name": "喪われし友誼", 
         "target": "self"
     }, 
     "4": {
