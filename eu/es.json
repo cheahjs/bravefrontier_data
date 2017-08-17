@@ -8855,6 +8855,88 @@
         "name": "Aurora of Wisdom", 
         "target": "self"
     }, 
+    "25200": {
+        "desc": "Slightly boosts Def relative to remaining HP, slightly boosts BC efficacy & damage taken may slightly restore HP", 
+        "effects": [
+            {
+                "bb gauge fill rate%": 20, 
+                "conditions": [], 
+                "passive id": "32", 
+                "passive target": "self"
+            }, 
+            {
+                "buff proportional to hp": "remaining", 
+                "conditions": [], 
+                "def% base buff": 0, 
+                "def% extra buff based on hp": 30, 
+                "passive id": "46", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "dmg% to hp% when attacked chance%": 20, 
+                "dmg% to hp% when attacked high": 15, 
+                "dmg% to hp% when attacked low": 15, 
+                "passive id": "24", 
+                "passive target": "self"
+            }
+        ], 
+        "id": "25200", 
+        "name": "Burning Soul", 
+        "target": "self"
+    }, 
+    "25300": {
+        "desc": "20% boost to all parameters when an Atk Boosting Sphere is equipped & slightly boosts BC efficacy", 
+        "effects": [
+            {
+                "bb gauge fill rate%": 20, 
+                "conditions": [], 
+                "passive id": "32", 
+                "passive target": "self"
+            }, 
+            {
+                "atk% buff": 20, 
+                "conditions": [
+                    {
+                        "sphere category required": "Atk Boosting", 
+                        "sphere category required (raw)": "13"
+                    }
+                ], 
+                "def% buff": 20, 
+                "hp% buff": 20, 
+                "passive id": "1", 
+                "passive target": "self", 
+                "rec% buff": 20
+            }
+        ], 
+        "id": "25300", 
+        "name": "Tranquil Spirit", 
+        "target": "self"
+    }, 
+    "25400": {
+        "desc": "Damage taken may slightly boost BB gauge and may slightly restore HP", 
+        "effects": [
+            {
+                "conditions": [], 
+                "dmg% to hp% when attacked chance%": 25, 
+                "dmg% to hp% when attacked high": 20, 
+                "dmg% to hp% when attacked low": 15, 
+                "passive id": "24", 
+                "passive target": "self"
+            }, 
+            {
+                "bc fill when attacked high": 2, 
+                "bc fill when attacked low": 1, 
+                "bc fill when attacked%": 100, 
+                "conditions": [], 
+                "passive id": "25", 
+                "passive target": "self"
+            }
+        ], 
+        "id": "25400", 
+        "name": "Hidden Emotions", 
+        "target": "self"
+    }, 
     "25500": {
         "desc": "Slightly boosts Atk, Def when BB gauge is over 50% & boosts BB gauge each turn", 
         "effects": [
@@ -14473,6 +14555,95 @@
         ], 
         "id": "720216", 
         "name": "Vision of Fallen Spirits", 
+        "target": "self"
+    }, 
+    "720217": {
+        "desc": "When Gilgamesh Crown or Pure Noblesse Title is equipped, boosts HP (40%), adds HP restoration on BB/SBB, Spark damage boosts BB gauge (self, 10 BC) for 1 turn on SBB and execute 1 more action in the same turn when Sparks have exceeded certain number (3) ", 
+        "effects": [
+            {
+                "conditions": [
+                    {
+                        "item required": [
+                            "701012", 
+                            "701047"
+                        ]
+                    }
+                ], 
+                "hp% buff": 40, 
+                "passive id": "1", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [
+                    {
+                        "item required": [
+                            "701012", 
+                            "701047"
+                        ]
+                    }
+                ], 
+                "passive id": "66", 
+                "passive target": "self", 
+                "trigger on bb": true, 
+                "trigger on sbb": true, 
+                "triggered effect": [
+                    {
+                        "effect delay time(ms)/frame": "0.0/0", 
+                        "heal high": 4000, 
+                        "heal low": 3500, 
+                        "proc id": "2", 
+                        "rec added% (from healer)": 11.5, 
+                        "target area": "aoe", 
+                        "target type": "party"
+                    }
+                ]
+            }, 
+            {
+                "conditions": [
+                    {
+                        "item required": [
+                            "701012", 
+                            "701047"
+                        ]
+                    }
+                ], 
+                "passive id": "66", 
+                "passive target": "self", 
+                "trigger on sbb": true, 
+                "triggered effect": [
+                    {
+                        "bc fill on spark buff turns (111)": 1, 
+                        "bc fill on spark high": 10, 
+                        "bc fill on spark low": 10, 
+                        "bc fill on spark%": 100, 
+                        "effect delay time(ms)/frame": "50.0/3", 
+                        "proc id": "67", 
+                        "target area": "single", 
+                        "target type": "self"
+                    }
+                ]
+            }, 
+            {
+                "buff": {
+                    "buff turns (123)": "1", 
+                    "unknown buff id": "123", 
+                    "unknown buff params": "1&100"
+                }, 
+                "conditions": [
+                    {
+                        "item required": [
+                            "701012", 
+                            "701047"
+                        ]
+                    }
+                ], 
+                "passive id": "86", 
+                "passive target": "self", 
+                "spark count buff activation": 3
+            }
+        ], 
+        "id": "720217", 
+        "name": "Kaiser to Become", 
         "target": "self"
     }, 
     "720226": {

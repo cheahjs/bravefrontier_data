@@ -6488,6 +6488,50 @@
         "id": "2512", 
         "name": "Beast's Untamed Soul"
     }, 
+    "2513": {
+        "desc": "80% boost to Atk and Def for first 2 turns & probable 15% damage counter", 
+        "effects": [
+            {
+                "first x turns": 2, 
+                "first x turns atk% (1)": 80, 
+                "first x turns def% (3)": 80, 
+                "passive id": "21"
+            }, 
+            {
+                "dmg% reflect chance%": 15, 
+                "dmg% reflect high": 15, 
+                "dmg% reflect low": 15, 
+                "passive id": "26"
+            }
+        ], 
+        "id": "2513", 
+        "name": "Heir to the Blade"
+    }, 
+    "2514": {
+        "desc": "100% boost to Atk and Def for first 2 turns, probable 15% damage counter & critical damage hugely boosts BB gauge", 
+        "effects": [
+            {
+                "first x turns": 2, 
+                "first x turns atk% (1)": 100, 
+                "first x turns def% (3)": 100, 
+                "passive id": "21"
+            }, 
+            {
+                "dmg% reflect chance%": 20, 
+                "dmg% reflect high": 15, 
+                "dmg% reflect low": 15, 
+                "passive id": "26"
+            }, 
+            {
+                "bc fill on crit max": 6, 
+                "bc fill on crit min": 6, 
+                "bc fill on crit%": 100.0, 
+                "passive id": "65"
+            }
+        ], 
+        "id": "2514", 
+        "name": "Devotion to Potential"
+    }, 
     "2515": {
         "desc": "30% boost to max HP, 120% boost to Atk, Def for first 3 turns & probable normal attack on all foes", 
         "effects": [
@@ -8707,6 +8751,114 @@
         ], 
         "id": "4346", 
         "name": "Bonds of a Beautiful Ruler"
+    }, 
+    "4347": {
+        "desc": "20% boost to Def and max HP, negates all status ailments & considerably boosts BB Atk", 
+        "effects": [
+            {
+                "def% buff": 20, 
+                "hp% buff": 20, 
+                "passive id": "1"
+            }, 
+            {
+                "curse resist%": 100, 
+                "injury resist%": 100, 
+                "paralysis resist%": 100, 
+                "passive id": "4", 
+                "poison resist%": 100, 
+                "sick resist%": 100, 
+                "weaken resist%": 100
+            }, 
+            {
+                "bb atk% buff": 100, 
+                "passive id": "64", 
+                "sbb atk% buff": 100, 
+                "ubb atk% buff": 100
+            }
+        ], 
+        "id": "4347", 
+        "name": "Knight's Pride"
+    }, 
+    "4348": {
+        "desc": "30% boost to Def and max HP, negates all status ailments & considerably boosts BB Atk", 
+        "effects": [
+            {
+                "def% buff": 30, 
+                "hp% buff": 30, 
+                "passive id": "1"
+            }, 
+            {
+                "curse resist%": 100, 
+                "injury resist%": 100, 
+                "paralysis resist%": 100, 
+                "passive id": "4", 
+                "poison resist%": 100, 
+                "sick resist%": 100, 
+                "weaken resist%": 100
+            }, 
+            {
+                "bb atk% buff": 120, 
+                "passive id": "64", 
+                "sbb atk% buff": 120, 
+                "ubb atk% buff": 120
+            }
+        ], 
+        "id": "4348", 
+        "name": "Blood's Awakening"
+    }, 
+    "4349": {
+        "desc": "20% boost to Def and max HP, slightly restores HP each turn & damage taken may slightly restore HP", 
+        "effects": [
+            {
+                "def% buff": 20, 
+                "hp% buff": 20, 
+                "passive id": "1"
+            }, 
+            {
+                "passive id": "33", 
+                "rec% added (turn heal)": 10.0, 
+                "turn heal high": 600, 
+                "turn heal low": 400
+            }, 
+            {
+                "dmg% to hp% when attacked chance%": 20, 
+                "dmg% to hp% when attacked high": 20, 
+                "dmg% to hp% when attacked low": 15, 
+                "passive id": "24"
+            }
+        ], 
+        "id": "4349", 
+        "name": "Purely Innocent Heart"
+    }, 
+    "4350": {
+        "desc": "30% boost to Def and max HP, adds Light element to attack, restores HP each turn & damage taken may slightly restore HP", 
+        "effects": [
+            {
+                "def% buff": 30, 
+                "hp% buff": 30, 
+                "passive id": "1"
+            }, 
+            {
+                "passive id": "33", 
+                "rec% added (turn heal)": 10.0, 
+                "turn heal high": 800, 
+                "turn heal low": 600
+            }, 
+            {
+                "dmg% to hp% when attacked chance%": 25, 
+                "dmg% to hp% when attacked high": 20, 
+                "dmg% to hp% when attacked low": 15, 
+                "passive id": "24"
+            }, 
+            {
+                "elements added": [
+                    "light"
+                ], 
+                "passive id": "102"
+            }
+        ], 
+        "id": "4350", 
+        "name": "Unwavering Friendship"
     }, 
     "4351": {
         "desc": "30% boost to Def, max HP, negates all status ailments & restores HP each turn", 
@@ -12845,6 +12997,39 @@
         ], 
         "id": "720216", 
         "name": "Spiritual Guidance"
+    }, 
+    "720217": {
+        "desc": "Boosts DEF and HP (60%) & reduces Fire, Water, Earth, Thunder damage (15%) & chance of reducing damage taken to 1 (15%) & damage taken restores HP (10%) for 2 turns when damage taken exceeds certain amount (20000)", 
+        "effects": [
+            {
+                "def% buff": 60, 
+                "hp% buff": 60, 
+                "passive id": "1"
+            }, 
+            {
+                "dmg% mitigation for elemental attacks": 15.0, 
+                "mitigate earth attacks": true, 
+                "mitigate fire attacks": true, 
+                "mitigate thunder attacks": true, 
+                "mitigate water attacks": true, 
+                "passive id": "62"
+            }, 
+            {
+                "passive id": "43", 
+                "take 1 dmg%": 15
+            }, 
+            {
+                "buff": {
+                    "buff turns (133)": "2", 
+                    "unknown buff id": "133", 
+                    "unknown buff params": "10&10&100"
+                }, 
+                "damage threshold buff activation": 20000, 
+                "passive id": "78"
+            }
+        ], 
+        "id": "720217", 
+        "name": "Monarch Guidance"
     }, 
     "720226": {
         "desc": "Boosts HP, DEF (40%) & boosts Spark damage (80%) & adds probable DEF ignoring effect to attack (20% chance)", 
