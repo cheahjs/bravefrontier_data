@@ -3800,6 +3800,21 @@
         "name": "Divine Fortune", 
         "target": "self"
     }, 
+    "1010202": {
+        "desc": "Negates elemental damage", 
+        "effects": [
+            {
+                "conditions": [], 
+                "passive id": "53", 
+                "passive target": "self", 
+                "strong base element damage resist%": 100, 
+                "strong buffed element damage resist%": 100
+            }
+        ], 
+        "id": "1010202", 
+        "name": "Proof of Sanctity", 
+        "target": "self"
+    }, 
     "1010206": {
         "desc": "Negates all status ailments, elemental damage, critical damage", 
         "effects": [
@@ -3828,6 +3843,28 @@
         ], 
         "id": "1010206", 
         "name": "Holy King's Devotion", 
+        "target": "self"
+    }, 
+    "1010208": {
+        "desc": "Boosts Def when HP is low & negates Def ignoring effects", 
+        "effects": [
+            {
+                "conditions": [], 
+                "ignore def resist chance%": 100, 
+                "passive id": "92", 
+                "passive target": "self"
+            }, 
+            {
+                "buff proportional to hp": "lost", 
+                "conditions": [], 
+                "def% base buff": 0, 
+                "def% extra buff based on hp": 50, 
+                "passive id": "46", 
+                "passive target": "self"
+            }
+        ], 
+        "id": "1010208", 
+        "name": "Celestial Shield", 
         "target": "self"
     }, 
     "1012000": {
@@ -4235,6 +4272,20 @@
         "name": "Great Pioneer's Light", 
         "target": "self"
     }, 
+    "1013100": {
+        "desc": "Considerably boosts BB gauge each turn", 
+        "effects": [
+            {
+                "bc fill per turn": 3, 
+                "conditions": [], 
+                "passive id": "9", 
+                "passive target": "self"
+            }
+        ], 
+        "id": "1013100", 
+        "name": "Eternal Sword", 
+        "target": "self"
+    }, 
     "1013200": {
         "desc": "Adds high probability of random status ailment infliction to attack & enormously boosts damage against status inflicted foes", 
         "effects": [
@@ -4297,6 +4348,52 @@
         ], 
         "id": "1013300", 
         "name": "Imperial Encouragement", 
+        "target": "self"
+    }, 
+    "1013400": {
+        "desc": "20% boost to Def, max HP, probable 25% damage reduction & probable HP, BB gauge recovery when attacked", 
+        "effects": [
+            {
+                "conditions": [], 
+                "def% buff": 20, 
+                "hp% buff": 20, 
+                "passive id": "1", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "dmg reduction chance%": 20, 
+                "dmg reduction%": 25, 
+                "passive id": "14", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "dmg% to hp% when attacked chance%": 30, 
+                "dmg% to hp% when attacked high": 15, 
+                "dmg% to hp% when attacked low": 10, 
+                "passive id": "24", 
+                "passive target": "self"
+            }, 
+            {
+                "bc fill when attacked high": 4, 
+                "bc fill when attacked low": 2, 
+                "bc fill when attacked%": 40, 
+                "conditions": [], 
+                "passive id": "25", 
+                "passive target": "self"
+            }, 
+            {
+                "bc fill when attacked high": 4, 
+                "bc fill when attacked low": 2, 
+                "bc fill when attacked%": 40, 
+                "conditions": [], 
+                "passive id": "25", 
+                "passive target": "self"
+            }
+        ], 
+        "id": "1013400", 
+        "name": "Heavenly Recollection", 
         "target": "self"
     }, 
     "1013600": {
@@ -14781,6 +14878,61 @@
         ], 
         "id": "720237", 
         "name": "Photon Expertise", 
+        "target": "self"
+    }, 
+    "720247": {
+        "desc": "Damage taken considerably boosts BB gauge (3-4 BC) & when Hunter Title is equipped, adds resistance against 1 KO attack when HP is below 20% and adds probable evasion (self, 35%) for 1 turn to BB/SBB ", 
+        "effects": [
+            {
+                "bc fill when attacked high": 7, 
+                "bc fill when attacked low": 4, 
+                "bc fill when attacked%": 100, 
+                "conditions": [], 
+                "passive id": "25", 
+                "passive target": "self"
+            }, 
+            {
+                "buff": {
+                    "angel idol buff (12)": true, 
+                    "angel idol recover hp%": 100, 
+                    "buff turns (12)": "-1"
+                }, 
+                "conditions": [
+                    {
+                        "item required": [
+                            "701045"
+                        ]
+                    }
+                ], 
+                "hp below % buff activation": 20, 
+                "passive id": "55", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [
+                    {
+                        "item required": [
+                            "701045"
+                        ]
+                    }
+                ], 
+                "passive id": "66", 
+                "passive target": "self", 
+                "trigger on bb": true, 
+                "trigger on sbb": true, 
+                "triggered effect": [
+                    {
+                        "effect delay time(ms)/frame": "0.0/0", 
+                        "target area": "single", 
+                        "target type": "self", 
+                        "unknown proc id": "10007", 
+                        "unknown proc param": "100,1,0,35"
+                    }
+                ]
+            }
+        ], 
+        "id": "720247", 
+        "name": "Lack of Remorse", 
         "target": "self"
     }, 
     "7300": {
