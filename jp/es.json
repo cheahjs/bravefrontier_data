@@ -3914,14 +3914,34 @@
         "desc": "攻撃力を３０％アップ＆攻撃ＢＢの威力をかなりアップ＆弱点属性ダメージをアップ", 
         "effects": [
             {
+                "atk% buff": 30, 
                 "conditions": [], 
-                "ignore def resist chance%": 100, 
-                "passive id": "92", 
+                "passive id": "1", 
                 "passive target": "self"
+            }, 
+            {
+                "bb atk% buff": 100, 
+                "conditions": [], 
+                "passive id": "64", 
+                "passive target": "self", 
+                "sbb atk% buff": 100, 
+                "ubb atk% buff": 100
+            }, 
+            {
+                "conditions": [], 
+                "dark units do extra elemental weakness dmg": true, 
+                "earth units do extra elemental weakness dmg": true, 
+                "elemental weakness multiplier%": 50.0, 
+                "fire units do extra elemental weakness dmg": true, 
+                "light units do extra elemental weakness dmg": true, 
+                "passive id": "50", 
+                "passive target": "self", 
+                "thunder units do extra elemental weakness dmg": true, 
+                "water units do extra elemental weakness dmg": true
             }
         ], 
         "id": "1006100", 
-        "name": "EXS2_212", 
+        "name": "災壊の刻歌", 
         "target": "self"
     }, 
     "1006200": {
@@ -10056,6 +10076,65 @@
         ], 
         "id": "1030110", 
         "name": "閃重の絆刃", 
+        "target": "self"
+    }, 
+    "1030200": {
+        "desc": "被ダメージを１０％軽減＆ターン毎にＨＰをかなり回復・ＢＢゲージを大幅に増加", 
+        "effects": [
+            {
+                "bc fill per turn": 6, 
+                "conditions": [], 
+                "passive id": "9", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "passive id": "33", 
+                "passive target": "self", 
+                "rec% added (turn heal)": 10.0, 
+                "turn heal high": 1200, 
+                "turn heal low": 1000
+            }, 
+            {
+                "conditions": [], 
+                "dmg% mitigation": 10, 
+                "passive id": "8", 
+                "passive target": "self"
+            }
+        ], 
+        "id": "1030200", 
+        "name": "万古の冥護", 
+        "target": "self"
+    }, 
+    "1030300": {
+        "desc": "攻撃力・防御力・回復力・最大ＨＰを３０％アップ＆全状態異常を無効＆攻撃力・防御力・回復力を低下する効果を無効", 
+        "effects": [
+            {
+                "atk% buff": 30, 
+                "conditions": [], 
+                "def% buff": 30, 
+                "hp% buff": 30, 
+                "passive id": "1", 
+                "passive target": "self", 
+                "rec% buff": 30
+            }, 
+            {
+                "atk down resist%": 100, 
+                "conditions": [], 
+                "curse resist%": 100, 
+                "def down resist%": 100, 
+                "injury resist%": 100, 
+                "paralysis resist%": 100, 
+                "passive id": "73", 
+                "passive target": "self", 
+                "poison resist%": 100, 
+                "rec down resist%": 100, 
+                "sick resist%": 100, 
+                "weaken resist%": 100
+            }
+        ], 
+        "id": "1030300", 
+        "name": "聖霊の天啓", 
         "target": "self"
     }, 
     "10400": {
@@ -20239,7 +20318,7 @@
         "target": "self"
     }, 
     "42900": {
-        "desc": "通常攻撃ＨＩＴ数を増加＆ＨＰを少し吸収＆確率で全状態異常をランダムに発生", 
+        "desc": "通常攻撃ＨＩＴ数を増加＆攻撃時、ＨＰを少し吸収＆確率で全状態異常をランダムに発生", 
         "effects": [
             {
                 "conditions": [], 
