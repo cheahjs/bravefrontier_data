@@ -4396,6 +4396,35 @@
         "name": "Heavenly Recollection", 
         "target": "self"
     }, 
+    "1013500": {
+        "desc": "Critical damage boosts BB gauge, enormously boosts critical damage and hit rate & 80% boost to Atk", 
+        "effects": [
+            {
+                "bc fill on crit max": 5, 
+                "bc fill on crit min": 3, 
+                "bc fill on crit%": 100.0, 
+                "conditions": [], 
+                "passive id": "65", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "crit multiplier%": 150.0, 
+                "passive id": "34", 
+                "passive target": "self"
+            }, 
+            {
+                "atk% buff": 80, 
+                "conditions": [], 
+                "crit% buff": 25, 
+                "passive id": "1", 
+                "passive target": "self"
+            }
+        ], 
+        "id": "1013500", 
+        "name": "Demolishing Blade", 
+        "target": "self"
+    }, 
     "1013600": {
         "desc": "Adds all elements to attack, hugely boosts BB Atk, considerably raises normal hit amount & enormously boosts OD gauge fill rate", 
         "effects": [
@@ -4758,6 +4787,48 @@
         ], 
         "id": "1014800", 
         "name": "Goddess' Prayer", 
+        "target": "self"
+    }, 
+    "1014900": {
+        "desc": "Adds probable Spark critical", 
+        "effects": [
+            {
+                "conditions": [], 
+                "passive target": "self", 
+                "unknown passive id": "100", 
+                "unknown passive params": "25,50"
+            }
+        ], 
+        "id": "1014900", 
+        "name": "Inspiring Seal Lv. 1", 
+        "target": "self"
+    }, 
+    "1014901": {
+        "desc": "Adds probable Spark critical", 
+        "effects": [
+            {
+                "conditions": [], 
+                "passive target": "self", 
+                "unknown passive id": "100", 
+                "unknown passive params": "25,60"
+            }
+        ], 
+        "id": "1014901", 
+        "name": "Inspiring Seal Lv. 2", 
+        "target": "self"
+    }, 
+    "1014902": {
+        "desc": "Adds probable Spark critical", 
+        "effects": [
+            {
+                "conditions": [], 
+                "passive target": "self", 
+                "unknown passive id": "100", 
+                "unknown passive params": "25,70"
+            }
+        ], 
+        "id": "1014902", 
+        "name": "Inspiring Seal Lv. 3", 
         "target": "self"
     }, 
     "1015800": {
@@ -14131,6 +14202,46 @@
         "name": "Magma-Armored Warrior", 
         "target": "self"
     }, 
+    "710237": {
+        "desc": "Boosts REC and HP (30%) & if Pure Noblesse Title is equipped, adds Fire Barrier for all allies effect (3000 HP) to BB/SBB", 
+        "effects": [
+            {
+                "conditions": [], 
+                "hp% buff": 30, 
+                "passive id": "1", 
+                "passive target": "self", 
+                "rec% buff": 30
+            }, 
+            {
+                "conditions": [
+                    {
+                        "item required": [
+                            "701047"
+                        ]
+                    }
+                ], 
+                "passive id": "66", 
+                "passive target": "self", 
+                "trigger on bb": true, 
+                "trigger on sbb": true, 
+                "triggered effect": [
+                    {
+                        "effect delay time(ms)/frame": "0.0/0", 
+                        "elemental barrier absorb dmg%": 100, 
+                        "elemental barrier def": 0, 
+                        "elemental barrier element": "fire", 
+                        "elemental barrier hp": 3000, 
+                        "proc id": "62", 
+                        "target area": "aoe", 
+                        "target type": "party"
+                    }
+                ]
+            }
+        ], 
+        "id": "710237", 
+        "name": "Defensive Wings", 
+        "target": "self"
+    }, 
     "7200": {
         "desc": "Adds status ailment negation effect to BB/SBB for 3 turns & 20% boost to all parameters when Reeze's Armor is equipped", 
         "effects": [
@@ -16604,6 +16715,64 @@
         ], 
         "id": "750146", 
         "name": "True Transcendance", 
+        "target": "self"
+    }, 
+    "750147": {
+        "desc": "Reduces BB gauge required for BB (20%) & boosts BB gauge each turn (4 BC) & when Pure Noblesse Title is equipped, boosts REC and HP (20%) and adds damage taken may slightly restore HP (20% chance 30% damage) for 3 turns to BB/SBB", 
+        "effects": [
+            {
+                "conditions": [], 
+                "passive id": "48", 
+                "passive target": "self", 
+                "reduced bb bc cost%": 20
+            }, 
+            {
+                "bc fill per turn": 4, 
+                "conditions": [], 
+                "passive id": "9", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [
+                    {
+                        "item required": [
+                            "701047"
+                        ]
+                    }
+                ], 
+                "hp% buff": 20, 
+                "passive id": "1", 
+                "passive target": "self", 
+                "rec% buff": 20
+            }, 
+            {
+                "conditions": [
+                    {
+                        "item required": [
+                            "701047"
+                        ]
+                    }
+                ], 
+                "passive id": "66", 
+                "passive target": "self", 
+                "trigger on bb": true, 
+                "trigger on sbb": true, 
+                "triggered effect": [
+                    {
+                        "effect delay time(ms)/frame": "0.0/0", 
+                        "hp recover from dmg buff turns (133)": 3, 
+                        "hp recover from dmg chance": 30, 
+                        "hp recover from dmg% high": 20, 
+                        "hp recover from dmg% low": 20, 
+                        "proc id": "85", 
+                        "target area": "aoe", 
+                        "target type": "party"
+                    }
+                ]
+            }
+        ], 
+        "id": "750147", 
+        "name": "Dear Sister", 
         "target": "self"
     }, 
     "750156": {
