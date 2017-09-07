@@ -4831,6 +4831,74 @@
         "name": "Inspiring Seal Lv. 3", 
         "target": "self"
     }, 
+    "1015000": {
+        "desc": "50% boost to Spark damage & probable Spark critical", 
+        "effects": [
+            {
+                "conditions": [], 
+                "damage% for spark": 50, 
+                "passive id": "31", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "passive target": "self", 
+                "unknown passive id": "100", 
+                "unknown passive params": "25,50"
+            }
+        ], 
+        "id": "1015000", 
+        "name": "Inspiring Guidance", 
+        "target": "self"
+    }, 
+    "1015100": {
+        "desc": "Spark damage slightly restores HP", 
+        "effects": [
+            {
+                "conditions": [], 
+                "heal on spark high": 200, 
+                "heal on spark low": 100, 
+                "heal on spark%": 100, 
+                "passive id": "101", 
+                "passive target": "self"
+            }
+        ], 
+        "id": "1015100", 
+        "name": "Healing Light Lv. 1", 
+        "target": "self"
+    }, 
+    "1015101": {
+        "desc": "Spark damage restores HP", 
+        "effects": [
+            {
+                "conditions": [], 
+                "heal on spark high": 300, 
+                "heal on spark low": 200, 
+                "heal on spark%": 100, 
+                "passive id": "101", 
+                "passive target": "self"
+            }
+        ], 
+        "id": "1015101", 
+        "name": "Healing Light Lv. 2", 
+        "target": "self"
+    }, 
+    "1015102": {
+        "desc": "Spark damage restores HP", 
+        "effects": [
+            {
+                "conditions": [], 
+                "heal on spark high": 400, 
+                "heal on spark low": 300, 
+                "heal on spark%": 100, 
+                "passive id": "101", 
+                "passive target": "self"
+            }
+        ], 
+        "id": "1015102", 
+        "name": "Healing Light Lv. 3", 
+        "target": "self"
+    }, 
     "1015800": {
         "desc": "Boosts BB gauge each turn & damage dealt boosts BB gauge", 
         "effects": [
@@ -15422,7 +15490,10 @@
                 "atk% buff": 100, 
                 "conditions": [
                     {
-                        "unit required": "701048:701014"
+                        "item required": [
+                            "701051", 
+                            "701014"
+                        ]
                     }
                 ], 
                 "passive id": "1", 
@@ -15432,7 +15503,10 @@
                 "bb atk% buff": 150, 
                 "conditions": [
                     {
-                        "unit required": "701048:701014"
+                        "item required": [
+                            "701051", 
+                            "701014"
+                        ]
                     }
                 ], 
                 "passive id": "64", 
@@ -15444,7 +15518,10 @@
                 "bc fill per turn": 5, 
                 "conditions": [
                     {
-                        "unit required": "701048:701014"
+                        "item required": [
+                            "701051", 
+                            "701014"
+                        ]
                     }
                 ], 
                 "passive id": "9", 
@@ -15454,7 +15531,7 @@
                 "conditions": [
                     {
                         "item required": [
-                            "701048"
+                            "701051"
                         ]
                     }
                 ], 
@@ -15467,7 +15544,7 @@
                 "conditions": [
                     {
                         "item required": [
-                            "701048"
+                            "701051"
                         ]
                     }
                 ], 
@@ -18374,6 +18451,67 @@
         ], 
         "id": "760257", 
         "name": "Politician and Warrior", 
+        "target": "self"
+    }, 
+    "760267": {
+        "desc": "Boosts elemental damage (20%, all) and if Pure Noblesse Title or Old Crown Fragment is equipped, boosts ATK, DEF, REC (15%) each turn (6 turns max) and adds boosts OD gauge fill rate at turn's end (400 OD) for 3 turns to BB/SBB", 
+        "effects": [
+            {
+                "conditions": [], 
+                "dark units do extra elemental weakness dmg": true, 
+                "earth units do extra elemental weakness dmg": true, 
+                "elemental weakness multiplier%": 2000.0, 
+                "fire units do extra elemental weakness dmg": true, 
+                "light units do extra elemental weakness dmg": true, 
+                "passive id": "50", 
+                "passive target": "party", 
+                "thunder units do extra elemental weakness dmg": true, 
+                "water units do extra elemental weakness dmg": true
+            }, 
+            {
+                "atk% max buff": 90, 
+                "conditions": [
+                    {
+                        "item required": [
+                            "701053", 
+                            "701047"
+                        ]
+                    }
+                ], 
+                "def% max buff": 90, 
+                "increase from min to max": 1, 
+                "passive id": "105", 
+                "passive target": "self", 
+                "rec% max buff": 90, 
+                "turn count": 6
+            }, 
+            {
+                "conditions": [
+                    {
+                        "item required": [
+                            "701053", 
+                            "701047"
+                        ]
+                    }
+                ], 
+                "passive id": "66", 
+                "passive target": "self", 
+                "trigger on bb": true, 
+                "trigger on sbb": true, 
+                "triggered effect": [
+                    {
+                        "effect delay time(ms)/frame": "0.0/0", 
+                        "od fill rate buff turns (132)": 3, 
+                        "od fill rate% buff": 40, 
+                        "proc id": "84", 
+                        "target area": "aoe", 
+                        "target type": "party"
+                    }
+                ]
+            }
+        ], 
+        "id": "760267", 
+        "name": "Consumed Genome", 
         "target": "self"
     }, 
     "7700": {

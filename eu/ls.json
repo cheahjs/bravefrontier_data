@@ -14474,7 +14474,7 @@
         "name": "Multiple Heritages"
     }, 
     "740217": {
-        "desc": "Boosts ATK and HP (60%) & boosts ATK and DEF when BB gauge is full (100%) & negates critical damage & damage reduction (10%)", 
+        "desc": "Boosts ATK and HP (60%) & boosts ATK, DEF when BB gauge is over 50% (80%) & boosts Spark damage (100%) & negates critical damage & damage reduction (15%)", 
         "effects": [
             {
                 "atk% buff": 60, 
@@ -14482,7 +14482,7 @@
                 "passive id": "1"
             }, 
             {
-                "dmg% mitigation": 10, 
+                "dmg% mitigation": 15, 
                 "passive id": "8"
             }, 
             {
@@ -14493,10 +14493,14 @@
                 "passive id": "53"
             }, 
             {
-                "atk% buff": 100, 
-                "bb gauge above % buff requirement": 100, 
-                "def% buff": 100, 
+                "atk% buff": 80, 
+                "bb gauge above % buff requirement": 50, 
+                "def% buff": 80, 
                 "passive id": "30"
+            }, 
+            {
+                "damage% for spark": 100, 
+                "passive id": "31"
             }
         ], 
         "id": "740217", 
@@ -16893,14 +16897,12 @@
         "name": "Lightbringer's Wings"
     }, 
     "750147": {
-        "desc": "Boosts all parameters (40%) & damage taken boosts BB gauge (4-7 BC) & damage reduction (15%) & restores HP each turn", 
+        "desc": "Boosts DEF and HP (60%) & damage taken boosts BB gauge (4-7 BC) & damage reduction (15%) & restores HP each turn & negates elemental damage", 
         "effects": [
             {
-                "atk% buff": 40, 
-                "def% buff": 40, 
-                "hp% buff": 40, 
-                "passive id": "1", 
-                "rec% buff": 40
+                "def% buff": 60, 
+                "hp% buff": 60, 
+                "passive id": "1"
             }, 
             {
                 "bc fill when attacked high": 7, 
@@ -16917,6 +16919,11 @@
                 "rec% added (turn heal)": 10.0, 
                 "turn heal high": 1000, 
                 "turn heal low": 800
+            }, 
+            {
+                "passive id": "53", 
+                "strong base element damage resist%": 100, 
+                "strong buffed element damage resist%": 100
             }
         ], 
         "id": "750147", 
@@ -18677,6 +18684,43 @@
         ], 
         "id": "760257", 
         "name": "Defender of the Republic"
+    }, 
+    "760267": {
+        "desc": "Boosts HP (60%) & boosts ATK and REC based on remaining HP (0-100%) & boosts OD fill rate (25%) & boosts Spark damage (140%) & boosts elemental damage (150%)", 
+        "effects": [
+            {
+                "hp% buff": 60, 
+                "passive id": "1"
+            }, 
+            {
+                "atk% base buff": 0, 
+                "atk% extra buff based on hp": 100, 
+                "buff proportional to hp": "remaining", 
+                "passive id": "46", 
+                "rec% base buff": 0, 
+                "rec% extra buff based on hp": 100
+            }, 
+            {
+                "od fill rate%": 25, 
+                "passive id": "70"
+            }, 
+            {
+                "damage% for spark": 140, 
+                "passive id": "31"
+            }, 
+            {
+                "dark units do extra elemental weakness dmg": true, 
+                "earth units do extra elemental weakness dmg": true, 
+                "elemental weakness multiplier%": 15000.0, 
+                "fire units do extra elemental weakness dmg": true, 
+                "light units do extra elemental weakness dmg": true, 
+                "passive id": "50", 
+                "thunder units do extra elemental weakness dmg": true, 
+                "water units do extra elemental weakness dmg": true
+            }
+        ], 
+        "id": "760267", 
+        "name": "Mate Devourer"
     }, 
     "780086": {
         "desc": "30% boost to Atk Power of Female Units. Additional 30% when 5 elements or more are present", 
