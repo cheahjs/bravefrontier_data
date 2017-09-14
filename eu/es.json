@@ -4899,6 +4899,105 @@
         "name": "Healing Light Lv. 3", 
         "target": "self"
     }, 
+    "1015200": {
+        "desc": "Adds probability of normal attacks hitting all foes", 
+        "effects": [
+            {
+                "aoe atk inc%": -50, 
+                "chance to aoe": 20, 
+                "conditions": [], 
+                "passive id": "96", 
+                "passive target": "self"
+            }
+        ], 
+        "id": "1015200", 
+        "name": "Destructive War Cry", 
+        "target": "self"
+    }, 
+    "1015300": {
+        "desc": "Reduces damage taken for 2 turns when damage taken has exceeded certain amount, boosts Def, Rec when HP is low & negates Def ignoring effect", 
+        "effects": [
+            {
+                "buff": {
+                    "buff turns (36)": "1", 
+                    "dmg reduction% buff": 25
+                }, 
+                "conditions": [], 
+                "damage threshold buff activation": 10000, 
+                "passive id": "78", 
+                "passive target": "self"
+            }, 
+            {
+                "buff proportional to hp": "lost", 
+                "conditions": [], 
+                "def% base buff": 0, 
+                "def% extra buff based on hp": 50, 
+                "passive id": "46", 
+                "passive target": "self", 
+                "rec% base buff": 0, 
+                "rec% extra buff based on hp": 50
+            }, 
+            {
+                "conditions": [], 
+                "ignore def resist chance%": 100, 
+                "passive id": "92", 
+                "passive target": "self"
+            }
+        ], 
+        "id": "1015300", 
+        "name": "Rebel God's Shield", 
+        "target": "self"
+    }, 
+    "1015400": {
+        "desc": "50% boost to Spark damage, probable Spark critical & boosts BB Atk", 
+        "effects": [
+            {
+                "conditions": [], 
+                "damage% for spark": 50, 
+                "passive id": "31", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "passive target": "self", 
+                "unknown passive id": "100", 
+                "unknown passive params": "25,50"
+            }, 
+            {
+                "bb atk% buff": 50, 
+                "conditions": [], 
+                "passive id": "64", 
+                "passive target": "self", 
+                "sbb atk% buff": 50, 
+                "ubb atk% buff": 50
+            }
+        ], 
+        "id": "1015400", 
+        "name": "Joyous Song", 
+        "target": "self"
+    }, 
+    "1015500": {
+        "desc": "50% boost to Spark damage & Spark damage restores HP", 
+        "effects": [
+            {
+                "conditions": [], 
+                "damage% for spark": 50, 
+                "passive id": "31", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "heal on spark high": 300, 
+                "heal on spark low": 200, 
+                "heal on spark%": 100, 
+                "passive id": "101", 
+                "passive target": "self"
+            }
+        ], 
+        "id": "1015500", 
+        "name": "Healing Wave", 
+        "target": "self"
+    }, 
     "1015800": {
         "desc": "Boosts BB gauge each turn & damage dealt boosts BB gauge", 
         "effects": [
