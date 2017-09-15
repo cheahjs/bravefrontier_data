@@ -22386,6 +22386,62 @@
         "name": "Isengrim Champion", 
         "target": "self"
     }, 
+    "830437": {
+        "desc": "Boosts elemental damage & damage taken may restore HP of all allies", 
+        "effects": [
+            {
+                "conditions": [], 
+                "dark units do extra elemental weakness dmg": true, 
+                "earth units do extra elemental weakness dmg": true, 
+                "elemental weakness multiplier%": 75.0, 
+                "fire units do extra elemental weakness dmg": true, 
+                "light units do extra elemental weakness dmg": true, 
+                "passive id": "50", 
+                "passive target": "self", 
+                "thunder units do extra elemental weakness dmg": true, 
+                "water units do extra elemental weakness dmg": true
+            }, 
+            {
+                "conditions": [], 
+                "dmg% to hp% when attacked chance%": 15, 
+                "dmg% to hp% when attacked high": 25, 
+                "dmg% to hp% when attacked low": 20, 
+                "passive id": "24", 
+                "passive target": "party"
+            }
+        ], 
+        "id": "830437", 
+        "name": "Mysterium Umbris", 
+        "target": "self"
+    }, 
+    "830438": {
+        "desc": "Boosts elemental damage & damage taken may restore HP of all allies", 
+        "effects": [
+            {
+                "conditions": [], 
+                "dark units do extra elemental weakness dmg": true, 
+                "earth units do extra elemental weakness dmg": true, 
+                "elemental weakness multiplier%": 100.0, 
+                "fire units do extra elemental weakness dmg": true, 
+                "light units do extra elemental weakness dmg": true, 
+                "passive id": "50", 
+                "passive target": "self", 
+                "thunder units do extra elemental weakness dmg": true, 
+                "water units do extra elemental weakness dmg": true
+            }, 
+            {
+                "conditions": [], 
+                "dmg% to hp% when attacked chance%": 20, 
+                "dmg% to hp% when attacked high": 25, 
+                "dmg% to hp% when attacked low": 20, 
+                "passive id": "24", 
+                "passive target": "party"
+            }
+        ], 
+        "id": "830438", 
+        "name": "Viridarium Umbrae", 
+        "target": "self"
+    }, 
     "830518": {
         "desc": "Negates elemental damage, greatly boosts Spark damage for 2 turns when BC collected has exceeded certain amount & slight damage reduction for 2 turns when HC collected has exceeded certain amount", 
         "effects": [
@@ -22767,6 +22823,89 @@
         ], 
         "id": "840278", 
         "name": "One Family, One Army", 
+        "target": "self"
+    }, 
+    "840287": {
+        "desc": "30% boost to Atk of Thunder types & hugely boosts damage against status afflicted foes", 
+        "effects": [
+            {
+                "atk% buff": 30, 
+                "conditions": [], 
+                "elements buffed": [
+                    "thunder"
+                ], 
+                "passive id": "2", 
+                "passive target": "party"
+            }, 
+            {
+                "atk% buff when enemy has ailment": 100, 
+                "atk% buff when enemy has curse": true, 
+                "atk% buff when enemy has injury": true, 
+                "atk% buff when enemy has paralysis": true, 
+                "atk% buff when enemy has poison": true, 
+                "atk% buff when enemy has sick": true, 
+                "atk% buff when enemy has weaken": true, 
+                "conditions": [], 
+                "passive id": "74", 
+                "passive target": "self"
+            }
+        ], 
+        "id": "840287", 
+        "name": "Auditory Overload", 
+        "target": "self"
+    }, 
+    "840288": {
+        "desc": "50% boost to Atk of Thunder types, enormously boosts damage against status afflicted foes, adds Thunder barrier effect to BB/SBB & raises Atk parameter limits to 130000", 
+        "effects": [
+            {
+                "atk% buff": 50, 
+                "conditions": [], 
+                "elements buffed": [
+                    "thunder"
+                ], 
+                "passive id": "2", 
+                "passive target": "party"
+            }, 
+            {
+                "atk% buff when enemy has ailment": 150, 
+                "atk% buff when enemy has curse": true, 
+                "atk% buff when enemy has injury": true, 
+                "atk% buff when enemy has paralysis": true, 
+                "atk% buff when enemy has poison": true, 
+                "atk% buff when enemy has sick": true, 
+                "atk% buff when enemy has weaken": true, 
+                "conditions": [], 
+                "passive id": "74", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "passive target": "self", 
+                "unknown passive id": "143", 
+                "unknown passive params": "130000"
+            }, 
+            {
+                "conditions": [], 
+                "passive id": "66", 
+                "passive target": "self", 
+                "trigger on bb": true, 
+                "trigger on sbb": true, 
+                "triggered effect": [
+                    {
+                        "effect delay time(ms)/frame": "0.0/0", 
+                        "elemental barrier absorb dmg%": 100, 
+                        "elemental barrier def": 0, 
+                        "elemental barrier element": "thunder", 
+                        "elemental barrier hp": 3500, 
+                        "proc id": "62", 
+                        "target area": "aoe", 
+                        "target type": "party"
+                    }
+                ]
+            }
+        ], 
+        "id": "840288", 
+        "name": "Ultrasonic Detonation", 
         "target": "self"
     }, 
     "840317": {
@@ -25229,6 +25368,71 @@
         ], 
         "id": "8930288", 
         "name": "Ascended Mind Palace", 
+        "target": "self"
+    }, 
+    "8940287": {
+        "desc": "30% boost to Atk of Thunder types & hugely boosts damage against status afflicted foes<br>Boosts critical damage & adds 19 combo powerful Thunder attack on Water types effect to SBB in Guild Raid", 
+        "effects": [
+            {
+                "conditions": [], 
+                "crit multiplier%": 50.0, 
+                "passive id": "34", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "passive id": "66", 
+                "passive target": "self", 
+                "trigger on sbb": true, 
+                "triggered effect": [
+                    {
+                        "effect delay time(ms)/frame": "0.0/0", 
+                        "target area": "aoe", 
+                        "target type": "enemy", 
+                        "unknown proc id": "97", 
+                        "unknown proc param": "4,900,100,0,0,0,0"
+                    }
+                ]
+            }
+        ], 
+        "id": "8940287", 
+        "name": "Auditory Overload", 
+        "target": "self"
+    }, 
+    "8940288": {
+        "desc": "50% boost to Atk of Thunder types, enormously boosts damage against status afflicted foes, adds Thunder barrier effect to BB/SBB & raises Atk parameter limits to 130000<br>Considerably boosts critical damage, adds 23 combo powerful Thunder attack on Water types effect to SBB and boosts Thunder elemental damage for all allies in Guild Raid", 
+        "effects": [
+            {
+                "conditions": [], 
+                "crit multiplier%": 100.0, 
+                "passive id": "34", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "passive id": "66", 
+                "passive target": "self", 
+                "trigger on sbb": true, 
+                "triggered effect": [
+                    {
+                        "effect delay time(ms)/frame": "0.0/0", 
+                        "target area": "aoe", 
+                        "target type": "enemy", 
+                        "unknown proc id": "97", 
+                        "unknown proc param": "4,1100,100,0,0,0,0"
+                    }
+                ]
+            }, 
+            {
+                "conditions": [], 
+                "elemental weakness multiplier%": 25.0, 
+                "passive id": "50", 
+                "passive target": "party", 
+                "thunder units do extra elemental weakness dmg": true
+            }
+        ], 
+        "id": "8940288", 
+        "name": "Ultrasonic Detonation", 
         "target": "self"
     }, 
     "8950287": {
