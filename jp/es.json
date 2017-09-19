@@ -20126,7 +20126,7 @@
         "target": "self"
     }, 
     "42400": {
-        "desc": "「DUELのカケラ」を装備時、ＢＢ・ＳＢＢ・ＵＢＢに「味方全体に３ターン、攻撃に闇属性を付与」＆「味方全体に３ターン、クリティカル率を超絶アップ」を追加＆クリティカル時、ＢＢゲージをかなり増加", 
+        "desc": "「DUELのカケラ」を装備時、ＢＢ・ＳＢＢ・ＵＢＢに「味方全体に３ターン、攻撃に闇属性を付与・クリティカル率を超絶アップ」を追加＆クリティカル時、ＢＢゲージをかなり増加", 
         "effects": [
             {
                 "conditions": [
@@ -20474,6 +20474,189 @@
         "name": "見えざる存在", 
         "target": "self"
     }, 
+    "43300": {
+        "desc": "ＢＢゲージが半分以上の時、攻撃力・防御力を少しアップ＆防御貫通効果を無効", 
+        "effects": [
+            {
+                "atk% buff": 40, 
+                "bb gauge above % buff requirement": 50, 
+                "conditions": [], 
+                "def% buff": 40, 
+                "passive id": "30", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "ignore def resist chance%": 100, 
+                "passive id": "92", 
+                "passive target": "self"
+            }
+        ], 
+        "id": "43300", 
+        "name": "屠竜の誓約", 
+        "target": "self"
+    }, 
+    "43400": {
+        "desc": "ＢＢゲージが半分以上の時、攻撃力・防御力をアップ＆防御貫通効果を無効", 
+        "effects": [
+            {
+                "atk% buff": 50, 
+                "bb gauge above % buff requirement": 50, 
+                "conditions": [], 
+                "def% buff": 50, 
+                "passive id": "30", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "ignore def resist chance%": 100, 
+                "passive id": "92", 
+                "passive target": "self"
+            }
+        ], 
+        "id": "43400", 
+        "name": "神竜の聖約", 
+        "target": "self"
+    }, 
+    "43500": {
+        "desc": "クリティカルダメージをアップ＆スパークダメージを４０％アップ", 
+        "effects": [
+            {
+                "conditions": [], 
+                "crit multiplier%": 50.0, 
+                "passive id": "34", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "damage% for spark": 40, 
+                "passive id": "31", 
+                "passive target": "self"
+            }
+        ], 
+        "id": "43500", 
+        "name": "重撃の探求者", 
+        "target": "self"
+    }, 
+    "43600": {
+        "desc": "クリティカルダメージをかなりアップ＆スパークダメージを６０％アップ＆攻撃力の上限値（９９９９９）を１３００００まで解放する", 
+        "effects": [
+            {
+                "conditions": [], 
+                "crit multiplier%": 100.0, 
+                "passive id": "34", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "damage% for spark": 60, 
+                "passive id": "31", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "passive target": "self", 
+                "unknown passive id": "143", 
+                "unknown passive params": "130000"
+            }
+        ], 
+        "id": "43600", 
+        "name": "我が身さえも武器として", 
+        "target": "self"
+    }, 
+    "43700": {
+        "desc": "スパーク時、ＢＢゲージを超絶増加・ダメージを８０％アップ＆確率で防御貫通効果を付与", 
+        "effects": [
+            {
+                "conditions": [], 
+                "damage% for spark": 80, 
+                "passive id": "31", 
+                "passive target": "self"
+            }, 
+            {
+                "bc fill on spark high": 30, 
+                "bc fill on spark low": 30, 
+                "bc fill on spark%": 100, 
+                "conditions": [], 
+                "passive id": "47", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "ignore def%": 50, 
+                "passive id": "29", 
+                "passive target": "self"
+            }
+        ], 
+        "id": "43700", 
+        "name": "四堕神を喰らいし獣", 
+        "target": "self"
+    }, 
+    "43800": {
+        "desc": "ガード発動時、３ターン、防御力をアップ・攻撃ＢＢの威力をアップ＆確率で被ダメージを２０％軽減", 
+        "effects": [
+            {
+                "buff": {
+                    "buff turns (3)": "3", 
+                    "def% buff (3)": 50
+                }, 
+                "conditions": [], 
+                "on guard activation chance%": 100, 
+                "passive id": "88", 
+                "passive target": "self"
+            }, 
+            {
+                "buff": {
+                    "bb atk% buff": 100, 
+                    "buff turns (72)": "3", 
+                    "sbb atk% buff": 100, 
+                    "ubb atk% buff": 100
+                }, 
+                "conditions": [], 
+                "on guard activation chance%": 100, 
+                "passive id": "88", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "dmg reduction chance%": 20, 
+                "dmg reduction%": 20, 
+                "passive id": "14", 
+                "passive target": "self"
+            }
+        ], 
+        "id": "43800", 
+        "name": "信頼を背に受けて", 
+        "target": "self"
+    }, 
+    "43900": {
+        "desc": "ターン毎にＢＢゲージをかなり増加＆全状態異常を無効＆攻撃力・防御力・回復力を低下する効果を無効", 
+        "effects": [
+            {
+                "bc fill per turn": 4, 
+                "conditions": [], 
+                "passive id": "9", 
+                "passive target": "self"
+            }, 
+            {
+                "atk down resist%": 100, 
+                "conditions": [], 
+                "curse resist%": 100, 
+                "def down resist%": 100, 
+                "injury resist%": 100, 
+                "paralysis resist%": 100, 
+                "passive id": "73", 
+                "passive target": "self", 
+                "poison resist%": 100, 
+                "rec down resist%": 100, 
+                "sick resist%": 100, 
+                "weaken resist%": 100
+            }
+        ], 
+        "id": "43900", 
+        "name": "慈悲の宿る瞳", 
+        "target": "self"
+    }, 
     "4400": {
         "desc": "被ダメージ時、確率でＨＰを回復と確率でＢＢゲージを増加", 
         "effects": [
@@ -20496,6 +20679,27 @@
         ], 
         "id": "4400", 
         "name": "神に愛された騎士", 
+        "target": "self"
+    }, 
+    "44000": {
+        "desc": "ＢＢゲージが満タン時、攻撃力を大幅にアップ＆スパークダメージを５０％アップ", 
+        "effects": [
+            {
+                "atk% buff": 100, 
+                "bb gauge above % buff requirement": 100, 
+                "conditions": [], 
+                "passive id": "30", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "damage% for spark": 50, 
+                "passive id": "31", 
+                "passive target": "self"
+            }
+        ], 
+        "id": "44000", 
+        "name": "命の冒涜", 
         "target": "self"
     }, 
     "4500": {
