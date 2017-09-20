@@ -21812,6 +21812,81 @@
         "name": "Wicked Lineage", 
         "target": "self"
     }, 
+    "830047": {
+        "desc": "Adds resistance against 1 KO attack when HP is below 25% & negates Atk, Def, Rec reduction effects for all allies", 
+        "effects": [
+            {
+                "buff": {
+                    "angel idol buff (12)": true, 
+                    "angel idol recover hp%": 100, 
+                    "buff turns (12)": "-1"
+                }, 
+                "conditions": [], 
+                "hp below % buff activation": 25, 
+                "passive id": "55", 
+                "passive target": "self"
+            }, 
+            {
+                "atk down resist%": 100, 
+                "conditions": [], 
+                "def down resist%": 100, 
+                "passive id": "73", 
+                "passive target": "party", 
+                "rec down resist%": 100
+            }
+        ], 
+        "id": "830047", 
+        "name": "Twinsoul Unity", 
+        "target": "self"
+    }, 
+    "830048": {
+        "desc": "Raises Atk parameter limits to 130000, adds resistance against 1 KO attack when HP is below 25%, negates Atk, Def, Rec reduction effects for all allies & adds 19 combo powerful Earth attack against Earth, Thunder types effect to SBB", 
+        "effects": [
+            {
+                "buff": {
+                    "angel idol buff (12)": true, 
+                    "angel idol recover hp%": 100, 
+                    "buff turns (12)": "-1"
+                }, 
+                "conditions": [], 
+                "hp below % buff activation": 25, 
+                "passive id": "55", 
+                "passive target": "self"
+            }, 
+            {
+                "atk down resist%": 100, 
+                "conditions": [], 
+                "def down resist%": 100, 
+                "passive id": "73", 
+                "passive target": "party", 
+                "rec down resist%": 100
+            }, 
+            {
+                "conditions": [], 
+                "passive id": "66", 
+                "passive target": "self", 
+                "trigger on sbb": true, 
+                "triggered effect": [
+                    {
+                        "effect delay time(ms)/frame": "0.0/0", 
+                        "target area": "aoe", 
+                        "target type": "enemy", 
+                        "unknown proc id": "97", 
+                        "unknown proc param": "1,620,200,0,0,0,0"
+                    }
+                ]
+            }, 
+            {
+                "conditions": [], 
+                "passive target": "self", 
+                "unknown passive id": "143", 
+                "unknown passive params": "130000"
+            }
+        ], 
+        "id": "830048", 
+        "name": "Burning Dragon Blood", 
+        "target": "self"
+    }, 
     "830117": {
         "desc": "Probable HP recovery when attacked & probable 25% damage reduction", 
         "effects": [
