@@ -4998,6 +4998,55 @@
         "name": "Healing Wave", 
         "target": "self"
     }, 
+    "1015600": {
+        "desc": "25% boost to Atk, max HP & boosts BB Atk", 
+        "effects": [
+            {
+                "atk% buff": 25, 
+                "conditions": [], 
+                "hp% buff": 25, 
+                "passive id": "1", 
+                "passive target": "self"
+            }, 
+            {
+                "bb atk% buff": 75, 
+                "conditions": [], 
+                "passive id": "64", 
+                "passive target": "self", 
+                "sbb atk% buff": 75, 
+                "ubb atk% buff": 75
+            }
+        ], 
+        "id": "1015600", 
+        "name": "Godly Roar", 
+        "target": "self"
+    }, 
+    "1015700": {
+        "desc": "Negates all status ailments & negates elemental damage", 
+        "effects": [
+            {
+                "conditions": [], 
+                "curse resist%": 100, 
+                "injury resist%": 100, 
+                "paralysis resist%": 100, 
+                "passive id": "4", 
+                "passive target": "self", 
+                "poison resist%": 100, 
+                "sick resist%": 100, 
+                "weaken resist%": 100
+            }, 
+            {
+                "conditions": [], 
+                "passive id": "53", 
+                "passive target": "self", 
+                "strong base element damage resist%": 100, 
+                "strong buffed element damage resist%": 100
+            }
+        ], 
+        "id": "1015700", 
+        "name": "Saintly Baptism", 
+        "target": "self"
+    }, 
     "1015800": {
         "desc": "Boosts BB gauge each turn & damage dealt boosts BB gauge", 
         "effects": [
@@ -5131,6 +5180,134 @@
         ], 
         "id": "1015840", 
         "name": "Flowing Memories", 
+        "target": "self"
+    }, 
+    "1015900": {
+        "desc": "30% boost to max HP & negates critical damage", 
+        "effects": [
+            {
+                "conditions": [], 
+                "hp% buff": 30, 
+                "passive id": "1", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "crit chance base resist%": 100, 
+                "crit chance buffed resist%": 100, 
+                "crit dmg base damage resist%": 100, 
+                "crit dmg buffed damage resist%": 100, 
+                "passive id": "53", 
+                "passive target": "self"
+            }
+        ], 
+        "id": "1015900", 
+        "name": "Divine Fortune", 
+        "target": "self"
+    }, 
+    "1016000": {
+        "desc": "Boosts BB Atk & adds probable Def ignoring effect to attack", 
+        "effects": [
+            {
+                "bb atk% buff": 75, 
+                "conditions": [], 
+                "passive id": "64", 
+                "passive target": "self", 
+                "sbb atk% buff": 75, 
+                "ubb atk% buff": 75
+            }, 
+            {
+                "conditions": [], 
+                "ignore def%": 20, 
+                "passive id": "29", 
+                "passive target": "self"
+            }
+        ], 
+        "id": "1016000", 
+        "name": "Awakened Defense", 
+        "target": "self"
+    }, 
+    "1017000": {
+        "desc": "Boosts Atk, Def, Rec when HP is full & enormously restores HP each turn", 
+        "effects": [
+            {
+                "atk% buff": 50, 
+                "conditions": [], 
+                "def% buff": 50, 
+                "hp above % buff requirement": 100, 
+                "passive id": "11", 
+                "passive target": "self", 
+                "rec% buff": 50
+            }, 
+            {
+                "conditions": [], 
+                "passive id": "33", 
+                "passive target": "self", 
+                "rec% added (turn heal)": 10.0, 
+                "turn heal high": 10200, 
+                "turn heal low": 9800
+            }
+        ], 
+        "id": "1017000", 
+        "name": "Divine Comfort", 
+        "target": "self"
+    }, 
+    "1018000": {
+        "desc": "Negates all status ailments and Def ignoring effects & boosts BB gauge when damage taken exceeds certain amount", 
+        "effects": [
+            {
+                "conditions": [], 
+                "damage threshold activation": 5000, 
+                "increase bb gauge": 5, 
+                "passive id": "79", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "ignore def resist chance%": 100, 
+                "passive id": "92", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "curse resist%": 100, 
+                "injury resist%": 100, 
+                "paralysis resist%": 100, 
+                "passive id": "4", 
+                "passive target": "self", 
+                "poison resist%": 100, 
+                "sick resist%": 100, 
+                "weaken resist%": 100
+            }
+        ], 
+        "id": "1018000", 
+        "name": "Sacred Goddess' Shield", 
+        "target": "self"
+    }, 
+    "1019000": {
+        "desc": "50% boost to Atk, 50% boost to Spark damage & raises max Atk value from 99999 to 130000", 
+        "effects": [
+            {
+                "conditions": [], 
+                "passive target": "self", 
+                "unknown passive id": "143", 
+                "unknown passive params": "130000"
+            }, 
+            {
+                "conditions": [], 
+                "damage% for spark": 50, 
+                "passive id": "31", 
+                "passive target": "self"
+            }, 
+            {
+                "atk% buff": 50, 
+                "conditions": [], 
+                "passive id": "1", 
+                "passive target": "self"
+            }
+        ], 
+        "id": "1019000", 
+        "name": "Ascendant Self", 
         "target": "self"
     }, 
     "10200": {
@@ -13977,6 +14154,56 @@
         ], 
         "id": "710146", 
         "name": "Primal Instinct", 
+        "target": "self"
+    }, 
+    "710147": {
+        "desc": "Damage taken may restore HP (25% chance 25% damage) & boosts ATK relative to remaining HP (0-150%) and DEF relative to lost HP (0-150%) & negates critical damage & adds probability of resistance against 2 KO attacks (40% chance)", 
+        "effects": [
+            {
+                "conditions": [], 
+                "dmg% to hp% when attacked chance%": 25, 
+                "dmg% to hp% when attacked high": 25, 
+                "dmg% to hp% when attacked low": 25, 
+                "passive id": "24", 
+                "passive target": "self"
+            }, 
+            {
+                "buff proportional to hp": "lost", 
+                "conditions": [], 
+                "def% base buff": 0, 
+                "def% extra buff based on hp": 150, 
+                "passive id": "46", 
+                "passive target": "self"
+            }, 
+            {
+                "atk% base buff": 0, 
+                "atk% extra buff based on hp": 150, 
+                "buff proportional to hp": "remaining", 
+                "conditions": [], 
+                "passive id": "46", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "crit chance base resist%": 100, 
+                "crit chance buffed resist%": 100, 
+                "crit dmg base damage resist%": 100, 
+                "crit dmg buffed damage resist%": 100, 
+                "passive id": "53", 
+                "passive target": "self"
+            }, 
+            {
+                "angel idol chance% condition": 0, 
+                "angel idol recover chance% high": 40, 
+                "angel idol recover chance% low": 40, 
+                "angel idol recover counts": 2, 
+                "conditions": [], 
+                "passive id": "69", 
+                "passive target": "self"
+            }
+        ], 
+        "id": "710147", 
+        "name": "Omega Instinct", 
         "target": "self"
     }, 
     "710166": {
