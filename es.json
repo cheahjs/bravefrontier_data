@@ -19619,6 +19619,81 @@
         "name": "Brave Combustion", 
         "target": "self"
     }, 
+    "8000013": {
+        "desc": "80% boost to Atk and 15% boost to critical hit rate of Water types, considerably boosts Spark damage, boosts elemental damage & raises Atk parameter limits to 130000", 
+        "effects": [
+            {
+                "atk% buff": 80, 
+                "conditions": [], 
+                "crit% buff": 15, 
+                "elements buffed": [
+                    "water"
+                ], 
+                "passive id": "2", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "damage% for spark": 60, 
+                "passive id": "31", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "passive target": "self", 
+                "unknown passive id": "143", 
+                "unknown passive params": "130000"
+            }, 
+            {
+                "conditions": [], 
+                "elemental weakness multiplier%": 50.0, 
+                "passive id": "50", 
+                "passive target": "self", 
+                "water units do extra elemental weakness dmg": true
+            }
+        ], 
+        "id": "8000013", 
+        "name": "Brave Aquarius", 
+        "target": "self"
+    }, 
+    "8000014": {
+        "desc": "80% boost to Atk and 15% boost to critical hit rate of Light types, raises normal hit amount, boosts elemental damage & negates elemental damage", 
+        "effects": [
+            {
+                "atk% buff": 80, 
+                "conditions": [], 
+                "crit% buff": 15, 
+                "elements buffed": [
+                    "light"
+                ], 
+                "passive id": "2", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "hit increase/hit": 1, 
+                "passive id": "37", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "passive id": "53", 
+                "passive target": "self", 
+                "strong base element damage resist%": 100, 
+                "strong buffed element damage resist%": 100
+            }, 
+            {
+                "conditions": [], 
+                "elemental weakness multiplier%": 50.0, 
+                "light units do extra elemental weakness dmg": true, 
+                "passive id": "50", 
+                "passive target": "self"
+            }
+        ], 
+        "id": "8000014", 
+        "name": "Brave Fairy", 
+        "target": "self"
+    }, 
     "8000101": {
         "desc": "20% boost to all parameters of Fire types, negates all status ailments, 5% damage reduction from Fire, Earth types & greatly boosts Atk relative to remaining HP", 
         "effects": [
@@ -25121,6 +25196,77 @@
         "name": "Scarlet Grass-Cutting Style", 
         "target": "self"
     }, 
+    "860287": {
+        "desc": "30% boost to Atk of Dark types & 30% boost to Spark damage<br>Boosts Atk, Def when BB gauge is over 50% & adds 16 combo powerful Dark attack on Light types effect to SBB in Guild Raid", 
+        "effects": [
+            {
+                "atk% buff": 30, 
+                "conditions": [], 
+                "elements buffed": [
+                    "dark"
+                ], 
+                "passive id": "2", 
+                "passive target": "party"
+            }, 
+            {
+                "conditions": [], 
+                "damage% for spark": 50, 
+                "passive id": "31", 
+                "passive target": "self"
+            }
+        ], 
+        "id": "860287", 
+        "name": "Dataflow Anaysis", 
+        "target": "self"
+    }, 
+    "860288": {
+        "desc": "50% boost to Atk of Dark types, 50% boost to Spark damage, adds Dark barrier effect to BB/SBB & raises Atk parameter limits to 130000<br>Boosts Atk, Def when BB gauge is over 50%, adds 22 combo powerful Dark attack on Light types effect to SBB & boosts Dark elemental damage for all allies in Guild Raid", 
+        "effects": [
+            {
+                "atk% buff": 50, 
+                "conditions": [], 
+                "elements buffed": [
+                    "dark"
+                ], 
+                "passive id": "2", 
+                "passive target": "party"
+            }, 
+            {
+                "conditions": [], 
+                "damage% for spark": 50, 
+                "passive id": "31", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "passive target": "self", 
+                "unknown passive id": "143", 
+                "unknown passive params": "130000"
+            }, 
+            {
+                "conditions": [], 
+                "passive id": "66", 
+                "passive target": "self", 
+                "trigger on bb": true, 
+                "trigger on sbb": true, 
+                "triggered effect": [
+                    {
+                        "effect delay time(ms)/frame": "0.0/0", 
+                        "elemental barrier absorb dmg%": 100, 
+                        "elemental barrier def": 0, 
+                        "elemental barrier element": "dark", 
+                        "elemental barrier hp": 3500, 
+                        "proc id": "62", 
+                        "target area": "aoe", 
+                        "target type": "party"
+                    }
+                ]
+            }
+        ], 
+        "id": "860288", 
+        "name": "Energy Effusion Calculation", 
+        "target": "self"
+    }, 
     "860317": {
         "desc": "Probable damage reduction to 1 &hugely boosts Spark damage when Sparks have exceeded certain amount for next turn when Nyami's Bells is equipped", 
         "effects": [
@@ -25883,6 +26029,75 @@
         ], 
         "id": "8950288", 
         "name": "The Ace of Spades", 
+        "target": "self"
+    }, 
+    "8960287": {
+        "desc": "30% boost to Atk of Dark types & 30% boost to Spark damage<br>Boosts Atk, Def when BB gauge is over 50% & adds 16 combo powerful Dark attack on Light types effect to SBB in Guild Raid", 
+        "effects": [
+            {
+                "atk% buff": 50, 
+                "bb gauge above % buff requirement": 50, 
+                "conditions": [], 
+                "def% buff": 50, 
+                "passive id": "30", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "passive id": "66", 
+                "passive target": "self", 
+                "trigger on sbb": true, 
+                "triggered effect": [
+                    {
+                        "effect delay time(ms)/frame": "0.0/0", 
+                        "target area": "aoe", 
+                        "target type": "enemy", 
+                        "unknown proc id": "97", 
+                        "unknown proc param": "6,900,100,0,0,0,0"
+                    }
+                ]
+            }
+        ], 
+        "id": "8960287", 
+        "name": "Dataflow Anaysis", 
+        "target": "self"
+    }, 
+    "8960288": {
+        "desc": "50% boost to Atk of Dark types, 50% boost to Spark damage, adds Dark barrier effect to BB/SBB & raises Atk parameter limits to 130000<br>Boosts Atk, Def when BB gauge is over 50%, adds 22 combo powerful Dark attack on Light types effect to SBB & boosts Dark elemental damage for all allies in Guild Raid", 
+        "effects": [
+            {
+                "atk% buff": 75, 
+                "bb gauge above % buff requirement": 50, 
+                "conditions": [], 
+                "def% buff": 75, 
+                "passive id": "30", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "passive id": "66", 
+                "passive target": "self", 
+                "trigger on sbb": true, 
+                "triggered effect": [
+                    {
+                        "effect delay time(ms)/frame": "0.0/0", 
+                        "target area": "aoe", 
+                        "target type": "enemy", 
+                        "unknown proc id": "97", 
+                        "unknown proc param": "6,1100,100,0,0,0,0"
+                    }
+                ]
+            }, 
+            {
+                "conditions": [], 
+                "dark units do extra elemental weakness dmg": true, 
+                "elemental weakness multiplier%": 25.0, 
+                "passive id": "50", 
+                "passive target": "party"
+            }
+        ], 
+        "id": "8960288", 
+        "name": "Energy Effusion Calculation", 
         "target": "self"
     }, 
     "9": {
