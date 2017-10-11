@@ -21955,6 +21955,60 @@
         "name": "Ouroburos Reborn", 
         "target": "self"
     }, 
+    "820547": {
+        "desc": "5% boost to all parameters for all allies & 25% damage reduction from Water types", 
+        "effects": [
+            {
+                "atk% buff": 5, 
+                "conditions": [], 
+                "def% buff": 5, 
+                "hp% buff": 5, 
+                "passive id": "1", 
+                "passive target": "party", 
+                "rec% buff": 5
+            }, 
+            {
+                "conditions": [], 
+                "dmg% mitigation for elemental attacks": 25.0, 
+                "mitigate water attacks": true, 
+                "passive id": "62", 
+                "passive target": "self"
+            }
+        ], 
+        "id": "820547", 
+        "name": "Cold Resistance", 
+        "target": "self"
+    }, 
+    "820548": {
+        "desc": "10% boost to all parameters for all allies, 25% damage reduction from Water types & raises Atk parameter limits to 130000", 
+        "effects": [
+            {
+                "atk% buff": 10, 
+                "conditions": [], 
+                "def% buff": 10, 
+                "hp% buff": 10, 
+                "passive id": "1", 
+                "passive target": "party", 
+                "rec% buff": 10
+            }, 
+            {
+                "conditions": [], 
+                "dmg% mitigation for elemental attacks": 25.0, 
+                "mitigate water attacks": true, 
+                "passive id": "62", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "passive target": "self", 
+                "unknown passive id": "143", 
+                "unknown passive params": "130000"
+            }
+        ], 
+        "id": "820548", 
+        "name": "Sub-Zero Endurance", 
+        "target": "self"
+    }, 
     "8300": {
         "desc": "Boosts BB Atk when damage taken has exceeded certain amount for 2 turns", 
         "effects": [
@@ -23615,6 +23669,72 @@
         ], 
         "id": "840508", 
         "name": "Three Worlds King Taolu", 
+        "target": "self"
+    }, 
+    "840547": {
+        "desc": "15% damage reduction from normal attacks when Damage Reducing Sphere is equipped & 25% damage reduction from Water, Thunder types", 
+        "effects": [
+            {
+                "conditions": [
+                    {
+                        "sphere category required": "Damage Reducing", 
+                        "sphere category required (raw)": "10"
+                    }
+                ], 
+                "passive target": "self", 
+                "unknown passive id": "128", 
+                "unknown passive params": "100,15,100,15"
+            }, 
+            {
+                "conditions": [], 
+                "dmg% mitigation for elemental attacks": 25.0, 
+                "mitigate thunder attacks": true, 
+                "mitigate water attacks": true, 
+                "passive id": "62", 
+                "passive target": "self"
+            }
+        ], 
+        "id": "840547", 
+        "name": "Master Swordswoman", 
+        "target": "self"
+    }, 
+    "840548": {
+        "desc": "20% damage reduction from normal attack when Damage Reducing Sphere is equipped, negates Def ignoring effect for all allies, 15% additional damage reduction for all allies & 25% damage reduction from Water, Thunder types", 
+        "effects": [
+            {
+                "conditions": [
+                    {
+                        "sphere category required": "Damage Reducing", 
+                        "sphere category required (raw)": "10"
+                    }
+                ], 
+                "passive target": "self", 
+                "unknown passive id": "128", 
+                "unknown passive params": "100,20,100,20"
+            }, 
+            {
+                "conditions": [], 
+                "dmg% mitigation for elemental attacks": 25.0, 
+                "mitigate thunder attacks": true, 
+                "mitigate water attacks": true, 
+                "passive id": "62", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "ignore def resist chance%": 100, 
+                "passive id": "92", 
+                "passive target": "party"
+            }, 
+            {
+                "conditions": [], 
+                "passive target": "party", 
+                "unknown passive id": "127", 
+                "unknown passive params": "100,15"
+            }
+        ], 
+        "id": "840548", 
+        "name": "Titania", 
         "target": "self"
     }, 
     "8500": {
