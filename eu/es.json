@@ -19085,6 +19085,62 @@
         "name": "Only Survivor", 
         "target": "self"
     }, 
+    "810108": {
+        "desc": "Boosts all parameters (30%) & absorbs HP when attacking (5-10%) & adds DEF ignore effect to BB/SBB for 3 turns & boosts ATK, DEF when BB gauge is full (50%) & raises ATK parameter limits to 130000", 
+        "effects": [
+            {
+                "conditions": [], 
+                "passive id": "66", 
+                "passive target": "self", 
+                "trigger on bb": true, 
+                "trigger on sbb": true, 
+                "triggered effect": [
+                    {
+                        "defense% ignore": 100, 
+                        "defense% ignore turns (39)": 3, 
+                        "effect delay time(ms)/frame": "0.0/0", 
+                        "proc id": "22", 
+                        "target area": "aoe", 
+                        "target type": "party"
+                    }
+                ]
+            }, 
+            {
+                "atk% buff": 50, 
+                "bb gauge above % buff requirement": 100, 
+                "conditions": [], 
+                "def% buff": 50, 
+                "passive id": "30", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "hp drain chance%": 100, 
+                "hp drain% high": 10, 
+                "hp drain% low": 5, 
+                "passive id": "17", 
+                "passive target": "self"
+            }, 
+            {
+                "atk% buff": 30, 
+                "conditions": [], 
+                "def% buff": 30, 
+                "hp% buff": 30, 
+                "passive id": "1", 
+                "passive target": "self", 
+                "rec% buff": 30
+            }, 
+            {
+                "conditions": [], 
+                "passive target": "self", 
+                "unknown passive id": "143", 
+                "unknown passive params": "130000"
+            }
+        ], 
+        "id": "810108", 
+        "name": "Queen of the Grimm", 
+        "target": "self"
+    }, 
     "810317": {
         "desc": "Negates critical, elemental damage & boosts BB Atk when Vulcan Axe is equipped", 
         "effects": [
@@ -19292,7 +19348,12 @@
                 ]
             }, 
             {
-                "conditions": [], 
+                "conditions": [
+                    {
+                        "sphere category required": "Atk Boosting", 
+                        "sphere category required (raw)": "13"
+                    }
+                ], 
                 "passive id": "66", 
                 "passive target": "self", 
                 "trigger on bb": true, 
@@ -19306,6 +19367,14 @@
                         "target type": "self"
                     }
                 ]
+            }, 
+            {
+                "conditions": [], 
+                "dmg% mitigation for elemental attacks": 25.0, 
+                "mitigate earth attacks": true, 
+                "mitigate fire attacks": true, 
+                "passive id": "62", 
+                "passive target": "self"
             }
         ], 
         "id": "810547", 
@@ -19337,7 +19406,12 @@
                 ]
             }, 
             {
-                "conditions": [], 
+                "conditions": [
+                    {
+                        "sphere category required": "Atk Boosting", 
+                        "sphere category required (raw)": "13"
+                    }
+                ], 
                 "passive id": "66", 
                 "passive target": "self", 
                 "trigger on bb": true, 
@@ -19362,6 +19436,14 @@
                 "conditions": [], 
                 "dmg% mitigation": 10, 
                 "passive id": "8", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "dmg% mitigation for elemental attacks": 25.0, 
+                "mitigate earth attacks": true, 
+                "mitigate fire attacks": true, 
+                "passive id": "62", 
                 "passive target": "self"
             }
         ], 
