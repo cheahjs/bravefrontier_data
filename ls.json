@@ -1519,7 +1519,7 @@
         "name": "Righteous Rule"
     }, 
     "10152": {
-        "desc": "全てのユニットの全能力を８０％アップ＆全属性ユニットからの被ダメージを１５％軽減＆被ダメージが一定数を超える度に２ターン被ダメージを少し軽減＆全状態異常を無効", 
+        "desc": "80% boost to all parameters, 15% damage reduction from all elemental types, slight damage reduction for 2 turns when damage taken has exceeded certain amount & negates all status ailments", 
         "effects": [
             {
                 "atk% buff": 80, 
@@ -1557,7 +1557,7 @@
             }
         ], 
         "id": "10152", 
-        "name": "主神皇の宙戒終劫"
+        "name": "Chief God's Final Mandate"
     }, 
     "10153": {
         "desc": "50% boost to all parameters, slightly boosts Atk, Def, Rec relative to remaining HP & boosts damage reduction when guarding", 
@@ -3402,8 +3402,12 @@
                 "passive id": "1"
             }, 
             {
-                "unknown passive id": "103", 
-                "unknown passive params": "200,200,200,50,1"
+                "bb atk% add": 200, 
+                "hp threshold": 50, 
+                "passive id": "103", 
+                "sbb atk% add": 200, 
+                "triggered when hp": "higher", 
+                "ubb atk% add": 200
             }, 
             {
                 "buff": {
@@ -3427,8 +3431,12 @@
                 "passive id": "1"
             }, 
             {
-                "unknown passive id": "103", 
-                "unknown passive params": "250,250,250,50,1"
+                "bb atk% add": 250, 
+                "hp threshold": 50, 
+                "passive id": "103", 
+                "sbb atk% add": 250, 
+                "triggered when hp": "higher", 
+                "ubb atk% add": 250
             }, 
             {
                 "buff": {
@@ -3738,8 +3746,9 @@
                 "passive id": "31"
             }, 
             {
-                "unknown passive id": "100", 
-                "unknown passive params": "5,50"
+                "passive id": "100", 
+                "spark crit chance%": 5, 
+                "spark crit dmg%": 50
             }
         ], 
         "id": "12528", 
@@ -3791,9 +3800,10 @@
             }, 
             {
                 "buff": {
-                    "buff turns (111)": "3", 
-                    "unknown buff id": "111", 
-                    "unknown buff params": "200&300&100"
+                    "bc fill on spark high": 3, 
+                    "bc fill on spark low": 2, 
+                    "bc fill on spark%": 100, 
+                    "buff turns (111)": "3"
                 }, 
                 "on crit activation chance%": 100, 
                 "passive id": "89"
@@ -6870,8 +6880,9 @@
                 "passive id": "34"
             }, 
             {
-                "unknown passive id": "100", 
-                "unknown passive params": "10,50"
+                "passive id": "100", 
+                "spark crit chance%": 10, 
+                "spark crit dmg%": 50
             }
         ], 
         "id": "1955", 
@@ -9045,8 +9056,9 @@
                 "passive id": "96"
             }, 
             {
-                "unknown passive id": "112", 
-                "unknown passive params": "50,25"
+                "abp gain%": 50, 
+                "cbp gain%": 25, 
+                "passive id": "112"
             }
         ], 
         "id": "2516", 
@@ -9089,8 +9101,9 @@
                 "unknown passive params": "-50,50,1,0"
             }, 
             {
-                "unknown passive id": "112", 
-                "unknown passive params": "50,25"
+                "abp gain%": 50, 
+                "cbp gain%": 25, 
+                "passive id": "112"
             }
         ], 
         "id": "2518", 
@@ -11621,8 +11634,8 @@
                 "passive id": "25"
             }, 
             {
-                "unknown passive id": "111", 
-                "unknown passive params": "10"
+                "increase skill activation in arena%": 10, 
+                "passive id": "111"
             }
         ], 
         "id": "4355", 
@@ -11643,12 +11656,13 @@
                 "passive id": "25"
             }, 
             {
-                "unknown passive id": "111", 
-                "unknown passive params": "20"
+                "increase skill activation in arena%": 20, 
+                "passive id": "111"
             }, 
             {
-                "unknown passive id": "112", 
-                "unknown passive params": "50,25"
+                "abp gain%": 50, 
+                "cbp gain%": 25, 
+                "passive id": "112"
             }
         ], 
         "id": "4356", 
@@ -11699,8 +11713,9 @@
                 "unknown passive params": "0,0,50,50,20,0"
             }, 
             {
-                "unknown passive id": "112", 
-                "unknown passive params": "50,25"
+                "abp gain%": 50, 
+                "cbp gain%": 25, 
+                "passive id": "112"
             }
         ], 
         "id": "4358", 
@@ -11784,8 +11799,9 @@
                 "passive id": "69"
             }, 
             {
-                "unknown passive id": "112", 
-                "unknown passive params": "50,25"
+                "abp gain%": 50, 
+                "cbp gain%": 25, 
+                "passive id": "112"
             }
         ], 
         "id": "4361", 
@@ -16718,8 +16734,9 @@
                 "passive id": "31"
             }, 
             {
-                "unknown passive id": "100", 
-                "unknown passive params": "3,50"
+                "passive id": "100", 
+                "spark crit chance%": 3, 
+                "spark crit dmg%": 50
             }
         ], 
         "id": "7442", 
@@ -16738,8 +16755,9 @@
                 "passive id": "31"
             }, 
             {
-                "unknown passive id": "100", 
-                "unknown passive params": "5,50"
+                "passive id": "100", 
+                "spark crit chance%": 5, 
+                "spark crit dmg%": 50
             }, 
             {
                 "dmg% mitigation for elemental attacks": 15.0, 
@@ -16832,8 +16850,9 @@
                 "passive id": "31"
             }, 
             {
-                "unknown passive id": "100", 
-                "unknown passive params": "5,50"
+                "passive id": "100", 
+                "spark crit chance%": 5, 
+                "spark crit dmg%": 50
             }
         ], 
         "id": "7447", 
@@ -16854,8 +16873,9 @@
                 "ubb atk% buff": 200
             }, 
             {
-                "unknown passive id": "100", 
-                "unknown passive params": "3,50"
+                "passive id": "100", 
+                "spark crit chance%": 3, 
+                "spark crit dmg%": 50
             }
         ], 
         "id": "7448", 
@@ -16876,8 +16896,9 @@
                 "ubb atk% buff": 250
             }, 
             {
-                "unknown passive id": "100", 
-                "unknown passive params": "5,50"
+                "passive id": "100", 
+                "spark crit chance%": 5, 
+                "spark crit dmg%": 50
             }, 
             {
                 "damage dealt threshold activation": 10000, 
@@ -17543,8 +17564,9 @@
                 "passive id": "19"
             }, 
             {
-                "unknown passive id": "100", 
-                "unknown passive params": "5,50"
+                "passive id": "100", 
+                "spark crit chance%": 5, 
+                "spark crit dmg%": 50
             }
         ], 
         "id": "7476", 
@@ -17563,8 +17585,8 @@
                 "passive id": "9"
             }, 
             {
-                "unknown passive id": "111", 
-                "unknown passive params": "10"
+                "increase skill activation in arena%": 10, 
+                "passive id": "111"
             }
         ], 
         "id": "7477", 
@@ -17583,12 +17605,13 @@
                 "passive id": "9"
             }, 
             {
-                "unknown passive id": "111", 
-                "unknown passive params": "20"
+                "increase skill activation in arena%": 20, 
+                "passive id": "111"
             }, 
             {
-                "unknown passive id": "112", 
-                "unknown passive params": "50,25"
+                "abp gain%": 50, 
+                "cbp gain%": 25, 
+                "passive id": "112"
             }
         ], 
         "id": "7478", 
@@ -17607,8 +17630,9 @@
                 "passive id": "31"
             }, 
             {
-                "unknown passive id": "100", 
-                "unknown passive params": "3,50"
+                "passive id": "100", 
+                "spark crit chance%": 3, 
+                "spark crit dmg%": 50
             }
         ], 
         "id": "7479", 
@@ -17627,8 +17651,9 @@
                 "passive id": "31"
             }, 
             {
-                "unknown passive id": "100", 
-                "unknown passive params": "5,50"
+                "passive id": "100", 
+                "spark crit chance%": 5, 
+                "spark crit dmg%": 50
             }, 
             {
                 "damage dealt threshold activation": 30000, 
@@ -17753,8 +17778,9 @@
                 "passive id": "96"
             }, 
             {
-                "unknown passive id": "100", 
-                "unknown passive params": "5,50"
+                "passive id": "100", 
+                "spark crit chance%": 5, 
+                "spark crit dmg%": 50
             }
         ], 
         "id": "7485", 
@@ -17778,8 +17804,9 @@
                 "passive id": "96"
             }, 
             {
-                "unknown passive id": "100", 
-                "unknown passive params": "10,50"
+                "passive id": "100", 
+                "spark crit chance%": 10, 
+                "spark crit dmg%": 50
             }
         ], 
         "id": "7486", 
@@ -18350,8 +18377,9 @@
                 "passive id": "47"
             }, 
             {
-                "unknown passive id": "100", 
-                "unknown passive params": "10,50"
+                "passive id": "100", 
+                "spark crit chance%": 10, 
+                "spark crit dmg%": 50
             }
         ], 
         "id": "7507", 
@@ -18777,8 +18805,12 @@
                 "rec% buff": 50
             }, 
             {
-                "unknown passive id": "103", 
-                "unknown passive params": "200,200,200,50,1"
+                "bb atk% add": 200, 
+                "hp threshold": 50, 
+                "passive id": "103", 
+                "sbb atk% add": 200, 
+                "triggered when hp": "higher", 
+                "ubb atk% add": 200
             }, 
             {
                 "hp drain chance%": 100, 
@@ -18809,8 +18841,12 @@
                 "rec% buff": 60
             }, 
             {
-                "unknown passive id": "103", 
-                "unknown passive params": "250,250,250,50,1"
+                "bb atk% add": 250, 
+                "hp threshold": 50, 
+                "passive id": "103", 
+                "sbb atk% add": 250, 
+                "triggered when hp": "higher", 
+                "ubb atk% add": 250
             }, 
             {
                 "hp drain chance%": 100, 
@@ -22741,8 +22777,12 @@
                 "ubb atk% buff": 100
             }, 
             {
-                "unknown passive id": "103", 
-                "unknown passive params": "50,50,50,100,1"
+                "bb atk% add": 50, 
+                "hp threshold": 100, 
+                "passive id": "103", 
+                "sbb atk% add": 50, 
+                "triggered when hp": "higher", 
+                "ubb atk% add": 50
             }
         ], 
         "id": "801238", 
@@ -22763,8 +22803,12 @@
                 "ubb atk% buff": 150
             }, 
             {
-                "unknown passive id": "103", 
-                "unknown passive params": "100,100,100,100,1"
+                "bb atk% add": 100, 
+                "hp threshold": 100, 
+                "passive id": "103", 
+                "sbb atk% add": 100, 
+                "triggered when hp": "higher", 
+                "ubb atk% add": 100
             }, 
             {
                 "buff": {
@@ -23450,19 +23494,19 @@
         "name": "Rise of the Despoiler"
     }, 
     "801271": {
-        "desc": "40% boost to all parameters, boosts Atk and Def when BB gauge is over 50%, probable damage reduction to 1 & probable resistance against 1 KO attack", 
+        "desc": "50% boost to all parameters, boosts Atk and Def when BB gauge is over 50%, probable damage reduction to 1, probable resistance against 1 KO attack & considerably boosts ABP and CBP gain<br>25% boost to all parameters of Dark types & 20% damage reduction from Dark, Light types in Guild Raid", 
         "effects": [
             {
-                "atk% buff": 40, 
-                "def% buff": 40, 
-                "hp% buff": 40, 
+                "atk% buff": 50, 
+                "def% buff": 50, 
+                "hp% buff": 50, 
                 "passive id": "1", 
-                "rec% buff": 40
+                "rec% buff": 50
             }, 
             {
-                "atk% buff": 50, 
+                "atk% buff": 80, 
                 "bb gauge above % buff requirement": 50, 
-                "def% buff": 50, 
+                "def% buff": 80, 
                 "passive id": "30"
             }, 
             {
@@ -23475,6 +23519,11 @@
                 "angel idol recover chance% low": 20, 
                 "angel idol recover counts": 1, 
                 "passive id": "69"
+            }, 
+            {
+                "abp gain%": 60, 
+                "cbp gain%": 35, 
+                "passive id": "112"
             }
         ], 
         "id": "801271", 
@@ -23491,8 +23540,12 @@
                 "rec% buff": 35
             }, 
             {
-                "unknown passive id": "103", 
-                "unknown passive params": "250,250,250,50,1"
+                "bb atk% add": 250, 
+                "hp threshold": 50, 
+                "passive id": "103", 
+                "sbb atk% add": 250, 
+                "triggered when hp": "higher", 
+                "ubb atk% add": 250
             }, 
             {
                 "atk% buff when enemy has ailment": 50, 
@@ -23528,8 +23581,12 @@
                 "rec% buff": 40
             }, 
             {
-                "unknown passive id": "103", 
-                "unknown passive params": "300,300,300,50,1"
+                "bb atk% add": 300, 
+                "hp threshold": 50, 
+                "passive id": "103", 
+                "sbb atk% add": 300, 
+                "triggered when hp": "higher", 
+                "ubb atk% add": 300
             }, 
             {
                 "atk% buff when enemy has ailment": 100, 
@@ -24610,8 +24667,9 @@
                 "passive id": "62"
             }, 
             {
-                "unknown passive id": "112", 
-                "unknown passive params": "65,40"
+                "abp gain%": 65, 
+                "cbp gain%": 40, 
+                "passive id": "112"
             }, 
             {
                 "unknown passive id": "110", 
@@ -24807,8 +24865,12 @@
                 "passive id": "24"
             }, 
             {
-                "unknown passive id": "103", 
-                "unknown passive params": "300,300,300,50,1"
+                "bb atk% add": 300, 
+                "hp threshold": 50, 
+                "passive id": "103", 
+                "sbb atk% add": 300, 
+                "triggered when hp": "higher", 
+                "ubb atk% add": 300
             }
         ], 
         "id": "810288", 
@@ -25038,8 +25100,9 @@
                 "passive id": "69"
             }, 
             {
-                "unknown passive id": "112", 
-                "unknown passive params": "65,40"
+                "abp gain%": 65, 
+                "cbp gain%": 40, 
+                "passive id": "112"
             }
         ], 
         "id": "820048", 
@@ -25349,8 +25412,12 @@
                 "passive id": "24"
             }, 
             {
-                "unknown passive id": "103", 
-                "unknown passive params": "300,300,300,50,1"
+                "bb atk% add": 300, 
+                "hp threshold": 50, 
+                "passive id": "103", 
+                "sbb atk% add": 300, 
+                "triggered when hp": "higher", 
+                "ubb atk% add": 300
             }
         ], 
         "id": "820418", 
@@ -25494,8 +25561,9 @@
                 "passive id": "26"
             }, 
             {
-                "unknown passive id": "112", 
-                "unknown passive params": "65,40"
+                "abp gain%": 65, 
+                "cbp gain%": 40, 
+                "passive id": "112"
             }
         ], 
         "id": "830048", 
@@ -25555,12 +25623,13 @@
                 "passive id": "96"
             }, 
             {
-                "unknown passive id": "111", 
-                "unknown passive params": "25"
+                "increase skill activation in arena%": 25, 
+                "passive id": "111"
             }, 
             {
-                "unknown passive id": "112", 
-                "unknown passive params": "60,35"
+                "abp gain%": 60, 
+                "cbp gain%": 35, 
+                "passive id": "112"
             }
         ], 
         "id": "830188", 
@@ -26138,8 +26207,9 @@
                 "passive id": "96"
             }, 
             {
-                "unknown passive id": "112", 
-                "unknown passive params": "60,35"
+                "abp gain%": 60, 
+                "cbp gain%": 35, 
+                "passive id": "112"
             }
         ], 
         "id": "840378", 
@@ -26490,8 +26560,8 @@
                 "strong buffed element damage resist%": 100
             }, 
             {
-                "unknown passive id": "143", 
-                "unknown passive params": "130000"
+                "increase atk cap": 130000, 
+                "passive id": "143"
             }
         ], 
         "id": "850328", 
@@ -27050,8 +27120,8 @@
                 "passive id": "62"
             }, 
             {
-                "unknown passive id": "143", 
-                "unknown passive params": "130000"
+                "increase atk cap": 130000, 
+                "passive id": "143"
             }
         ], 
         "id": "860518", 
@@ -27071,8 +27141,12 @@
                 "rec% buff": 40
             }, 
             {
-                "unknown passive id": "103", 
-                "unknown passive params": "200,200,200,50,1"
+                "bb atk% add": 200, 
+                "hp threshold": 50, 
+                "passive id": "103", 
+                "sbb atk% add": 200, 
+                "triggered when hp": "higher", 
+                "ubb atk% add": 200
             }, 
             {
                 "dark units do extra elemental weakness dmg": true, 
@@ -27103,8 +27177,12 @@
                 "rec% buff": 60
             }, 
             {
-                "unknown passive id": "103", 
-                "unknown passive params": "300,300,300,25,1"
+                "bb atk% add": 300, 
+                "hp threshold": 25, 
+                "passive id": "103", 
+                "sbb atk% add": 300, 
+                "triggered when hp": "higher", 
+                "ubb atk% add": 300
             }, 
             {
                 "dark units do extra elemental weakness dmg": true, 
