@@ -22552,6 +22552,145 @@
         "rarity": "1", 
         "target": "self"
     }, 
+    "46600": {
+        "desc": "「ダメージ反射系」タイプのスフィアを装備時、クリティカル率を超絶アップ＆クリティカル時、ＢＢゲージを増加＆クリティカルが発生したユニットのＢＢゲージを増加", 
+        "effects": [
+            {
+                "conditions": [
+                    {
+                        "sphere category required": "Damage Reflecting", 
+                        "sphere category required (raw)": "9"
+                    }
+                ], 
+                "crit% buff": 60, 
+                "passive id": "1", 
+                "passive target": "self"
+            }, 
+            {
+                "bc fill on crit max": 3, 
+                "bc fill on crit min": 2, 
+                "bc fill on crit%": 100.0, 
+                "conditions": [], 
+                "passive id": "65", 
+                "passive target": "self"
+            }, 
+            {
+                "bc fill on crit max": 2, 
+                "bc fill on crit min": 1, 
+                "bc fill on crit%": 100.0, 
+                "conditions": [], 
+                "passive id": "65", 
+                "passive target": "party"
+            }
+        ], 
+        "id": "46600", 
+        "name": "完全なる未来", 
+        "rarity": "1", 
+        "target": "self"
+    }, 
+    "46700": {
+        "desc": "攻撃力・防御力・回復力・最大ＨＰを２０％アップ＆「ダメージ軽減系」タイプのスフィアを装備時、ＢＢ及びＳＢＢに「味方全体に１ターン、被ダメージを半分に軽減」を追加", 
+        "effects": [
+            {
+                "conditions": [
+                    {
+                        "sphere category required": "Damage Reducing", 
+                        "sphere category required (raw)": "10"
+                    }
+                ], 
+                "passive id": "66", 
+                "passive target": "self", 
+                "trigger on bb": true, 
+                "trigger on sbb": true, 
+                "triggered effect": [
+                    {
+                        "dmg% reduction": 50, 
+                        "dmg% reduction turns (36)": 1, 
+                        "effect delay time(ms)/frame": "0.0/0", 
+                        "proc id": "18", 
+                        "target area": "aoe", 
+                        "target type": "party"
+                    }
+                ]
+            }, 
+            {
+                "atk% buff": 20, 
+                "conditions": [], 
+                "def% buff": 20, 
+                "hp% buff": 20, 
+                "passive id": "1", 
+                "passive target": "self", 
+                "rec% buff": 20
+            }
+        ], 
+        "id": "46700", 
+        "name": "闇の知識", 
+        "rarity": "1", 
+        "target": "self"
+    }, 
+    "46800": {
+        "desc": "攻撃・防御・回復・最大ＨＰ２０％アップ＆「ダメージ軽減系」タイプスフィア装備時、ＳＢＢに「味方全体に１ターン、光・闇属性ユニットからの被ダメージ少し軽減」追加・ＢＢ及びＳＢＢに「味方全体に３ターン、ターン毎にＢＢゲージ大幅に増加」追加", 
+        "effects": [
+            {
+                "conditions": [
+                    {
+                        "sphere category required": "Damage Reducing", 
+                        "sphere category required (raw)": "10"
+                    }
+                ], 
+                "passive id": "66", 
+                "passive target": "self", 
+                "trigger on sbb": true, 
+                "triggered effect": [
+                    {
+                        "dmg% mitigation for elemental attacks": 5, 
+                        "dmg% mitigation for elemental attacks buff turns": 1, 
+                        "effect delay time(ms)/frame": "0.0/0", 
+                        "mitigate dark attacks": true, 
+                        "mitigate light attacks": true, 
+                        "proc id": "39", 
+                        "target area": "aoe", 
+                        "target type": "party"
+                    }
+                ]
+            }, 
+            {
+                "conditions": [
+                    {
+                        "sphere category required": "Damage Reducing", 
+                        "sphere category required (raw)": "10"
+                    }
+                ], 
+                "passive id": "66", 
+                "passive target": "self", 
+                "trigger on bb": true, 
+                "trigger on sbb": true, 
+                "triggered effect": [
+                    {
+                        "effect delay time(ms)/frame": "0.0/0", 
+                        "increase bb gauge gradual": 7, 
+                        "increase bb gauge gradual turns (37)": 3, 
+                        "proc id": "19", 
+                        "target area": "aoe", 
+                        "target type": "party"
+                    }
+                ]
+            }, 
+            {
+                "atk% buff": 20, 
+                "conditions": [], 
+                "def% buff": 20, 
+                "hp% buff": 20, 
+                "passive id": "1", 
+                "passive target": "self", 
+                "rec% buff": 20
+            }
+        ], 
+        "id": "46800", 
+        "name": "裂け目の知識", 
+        "rarity": "1", 
+        "target": "self"
+    }, 
     "4700": {
         "desc": "「DUELのカケラ」を装備時、攻撃力・防御力・回復力・最大ＨＰを２０％アップ＆ＢＢ及びＳＢＢに「味方全体に３ターン、攻撃に闇属性を付与」を追加", 
         "effects": [

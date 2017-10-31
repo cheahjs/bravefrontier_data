@@ -48920,5 +48920,232 @@
                 }
             }
         ]
+    }, 
+    "61277": {
+        "category": {
+            "1": {
+                "name": "ステアップ系"
+            }, 
+            "11": {
+                "name": "特殊"
+            }
+        }, 
+        "skills": [
+            {
+                "category": "1", 
+                "dependency": "", 
+                "dependency comment": "", 
+                "id": "710000", 
+                "skill": {
+                    "bp": 20, 
+                    "desc": "攻撃力・防御力・回復力・最大ＨＰを２０％アップ", 
+                    "effects": [
+                        {
+                            "passive": {
+                                "atk% buff": 20, 
+                                "def% buff": 20, 
+                                "hp% buff": 20, 
+                                "passive id": "1", 
+                                "rec% buff": 20
+                            }
+                        }
+                    ], 
+                    "id": "710000", 
+                    "level": 2, 
+                    "name": "全能力＋２０％", 
+                    "series": "700000"
+                }
+            }, 
+            {
+                "category": "11", 
+                "dependency": "", 
+                "dependency comment": "", 
+                "id": "39001007", 
+                "skill": {
+                    "bp": 60, 
+                    "desc": "ＢＢ及びＳＢＢの「１ターン、被ダメージを半分に軽減」の効果継続ターン数が２ターンになる", 
+                    "effects": [
+                        {
+                            "add to bb": {
+                                "dmg% reduction": 0, 
+                                "dmg% reduction turns (36)": 1, 
+                                "proc id": "18"
+                            }
+                        }, 
+                        {
+                            "add to sbb": {
+                                "dmg% reduction": 0, 
+                                "dmg% reduction turns (36)": 1, 
+                                "proc id": "18"
+                            }
+                        }
+                    ], 
+                    "id": "39001007", 
+                    "level": 6, 
+                    "name": "ＢＢ・ＳＢＢの「被ダメージを半減」効果継続ターンが２ターンになる", 
+                    "series": "39001000"
+                }
+            }, 
+            {
+                "category": "11", 
+                "dependency": "", 
+                "dependency comment": "", 
+                "id": "30012001", 
+                "skill": {
+                    "bp": 20, 
+                    "desc": "ＢＢの「回復力に応じて防御力をかなりアップ」効果量を増加", 
+                    "effects": [
+                        {
+                            "add to bb": {
+                                "% converted turns": 0, 
+                                "converted attribute": null, 
+                                "def% buff (47)": 10, 
+                                "proc id": "24"
+                            }
+                        }
+                    ], 
+                    "id": "30012001", 
+                    "level": 5, 
+                    "name": "ＢＢの「回復力に応じて防御力をアップ」効果を強化", 
+                    "series": "30012000"
+                }
+            }, 
+            {
+                "category": "11", 
+                "dependency": "1@30012001", 
+                "dependency comment": "「ＢＢの「回復力に応じて防御力をアップ」効果を強化」習得", 
+                "id": "50001002", 
+                "skill": {
+                    "bp": 40, 
+                    "desc": "ＳＢＢに「味方全体に３ターン、回復力に応じて攻撃力を大幅にアップ」を追加", 
+                    "effects": [
+                        {
+                            "passive": {
+                                "passive id": "66", 
+                                "trigger on sbb": true, 
+                                "triggered effect": [
+                                    {
+                                        "% converted turns": 3, 
+                                        "atk% buff (46)": 70, 
+                                        "converted attribute": "recovery", 
+                                        "effect delay time(ms)/frame": "0.0/0", 
+                                        "proc id": "24", 
+                                        "target area": "aoe", 
+                                        "target type": "party"
+                                    }
+                                ]
+                            }
+                        }
+                    ], 
+                    "id": "50001002", 
+                    "level": 5, 
+                    "name": "ＳＢＢに「回復力に応じて攻撃力を大幅にアップ」追加", 
+                    "series": "50001000"
+                }
+            }, 
+            {
+                "category": "11", 
+                "dependency": "", 
+                "dependency comment": "", 
+                "id": "60011001", 
+                "skill": {
+                    "bp": 20, 
+                    "desc": "ＳＢＢに「味方全体に３ターン、攻撃に光・闇属性を付与」を追加", 
+                    "effects": [
+                        {
+                            "passive": {
+                                "passive id": "66", 
+                                "trigger on sbb": true, 
+                                "triggered effect": [
+                                    {
+                                        "effect delay time(ms)/frame": "0.0/0", 
+                                        "elements added": [
+                                            "light", 
+                                            "dark"
+                                        ], 
+                                        "elements added turns": 3, 
+                                        "proc id": "30", 
+                                        "target area": "aoe", 
+                                        "target type": "party"
+                                    }
+                                ]
+                            }
+                        }
+                    ], 
+                    "id": "60011001", 
+                    "level": 4, 
+                    "name": "ＳＢＢに「攻撃に光・闇属性を付与」追加", 
+                    "series": "60011000"
+                }
+            }, 
+            {
+                "category": "11", 
+                "dependency": "", 
+                "dependency comment": "", 
+                "id": "59004800", 
+                "skill": {
+                    "bp": 40, 
+                    "desc": "ＳＢＢに「味方全体に１ターン、炎・水属性ユニットからの被ダメージを少し軽減」を追加", 
+                    "effects": [
+                        {
+                            "passive": {
+                                "passive id": "66", 
+                                "trigger on sbb": true, 
+                                "triggered effect": [
+                                    {
+                                        "dmg% mitigation for elemental attacks": 5, 
+                                        "dmg% mitigation for elemental attacks buff turns": 1, 
+                                        "effect delay time(ms)/frame": "0.0/0", 
+                                        "mitigate fire attacks": true, 
+                                        "mitigate water attacks": true, 
+                                        "proc id": "39", 
+                                        "target area": "aoe", 
+                                        "target type": "party"
+                                    }
+                                ]
+                            }
+                        }
+                    ], 
+                    "id": "59004800", 
+                    "level": 5, 
+                    "name": "ＳＢＢに「炎・水属性ユニットからの被ダメージを少し軽減」追加", 
+                    "series": "59004800"
+                }
+            }, 
+            {
+                "category": "11", 
+                "dependency": "", 
+                "dependency comment": "", 
+                "id": "59004801", 
+                "skill": {
+                    "bp": 40, 
+                    "desc": "ＳＢＢに「味方全体に１ターン、樹・雷属性ユニットからの被ダメージを少し軽減」を追加", 
+                    "effects": [
+                        {
+                            "passive": {
+                                "passive id": "66", 
+                                "trigger on sbb": true, 
+                                "triggered effect": [
+                                    {
+                                        "dmg% mitigation for elemental attacks": 5, 
+                                        "dmg% mitigation for elemental attacks buff turns": 1, 
+                                        "effect delay time(ms)/frame": "0.0/0", 
+                                        "mitigate earth attacks": true, 
+                                        "mitigate thunder attacks": true, 
+                                        "proc id": "39", 
+                                        "target area": "aoe", 
+                                        "target type": "party"
+                                    }
+                                ]
+                            }
+                        }
+                    ], 
+                    "id": "59004801", 
+                    "level": 5, 
+                    "name": "ＳＢＢに「樹・雷属性ユニットからの被ダメージを少し軽減」追加", 
+                    "series": "59004900"
+                }
+            }
+        ]
     }
 }
