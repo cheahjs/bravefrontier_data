@@ -3604,6 +3604,41 @@
         "rarity": "5", 
         "target": "self"
     }, 
+    "1006100": {
+        "desc": "攻撃力を３０％アップ＆攻撃ＢＢの威力をかなりアップ＆弱点属性ダメージをアップ", 
+        "effects": [
+            {
+                "atk% buff": 30, 
+                "conditions": [], 
+                "passive id": "1", 
+                "passive target": "self"
+            }, 
+            {
+                "bb atk% buff": 100, 
+                "conditions": [], 
+                "passive id": "64", 
+                "passive target": "self", 
+                "sbb atk% buff": 100, 
+                "ubb atk% buff": 100
+            }, 
+            {
+                "conditions": [], 
+                "dark units do extra elemental weakness dmg": true, 
+                "earth units do extra elemental weakness dmg": true, 
+                "elemental weakness multiplier%": 50.0, 
+                "fire units do extra elemental weakness dmg": true, 
+                "light units do extra elemental weakness dmg": true, 
+                "passive id": "50", 
+                "passive target": "self", 
+                "thunder units do extra elemental weakness dmg": true, 
+                "water units do extra elemental weakness dmg": true
+            }
+        ], 
+        "id": "1006100", 
+        "name": "災壊の刻歌", 
+        "rarity": "5", 
+        "target": "self"
+    }, 
     "1006400": {
         "desc": "Slightly boosts BB gauge each turn", 
         "effects": [
@@ -7837,6 +7872,67 @@
         "id": "1030110", 
         "name": "Shining Blade Bond", 
         "rarity": "5", 
+        "target": "self"
+    }, 
+    "1030200": {
+        "desc": "10% damage reduction & considerably restores HP and hugely boosts BB gauge each turn", 
+        "effects": [
+            {
+                "bc fill per turn": 6, 
+                "conditions": [], 
+                "passive id": "9", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "passive id": "33", 
+                "passive target": "self", 
+                "rec% added (turn heal)": 10.0, 
+                "turn heal high": 1200, 
+                "turn heal low": 1000
+            }, 
+            {
+                "conditions": [], 
+                "dmg% mitigation": 10, 
+                "passive id": "8", 
+                "passive target": "self"
+            }
+        ], 
+        "id": "1030200", 
+        "name": "Icey Battle Victor (Temp)", 
+        "rarity": "6", 
+        "target": "self"
+    }, 
+    "1030300": {
+        "desc": "攻撃力・防御力・回復力・最大ＨＰを３０％アップ＆全状態異常を無効＆攻撃力・防御力・回復力を低下する効果を無効", 
+        "effects": [
+            {
+                "atk% buff": 30, 
+                "conditions": [], 
+                "def% buff": 30, 
+                "hp% buff": 30, 
+                "passive id": "1", 
+                "passive target": "self", 
+                "rec% buff": 30
+            }, 
+            {
+                "atk down resist%": 100, 
+                "conditions": [], 
+                "curse resist%": 100, 
+                "def down resist%": 100, 
+                "injury resist%": 100, 
+                "paralysis resist%": 100, 
+                "passive id": "73", 
+                "passive target": "self", 
+                "poison resist%": 100, 
+                "rec down resist%": 100, 
+                "sick resist%": 100, 
+                "weaken resist%": 100
+            }
+        ], 
+        "id": "1030300", 
+        "name": "聖霊の天啓", 
+        "rarity": "6", 
         "target": "self"
     }, 
     "10400": {
@@ -18590,6 +18686,196 @@
         "rarity": "1", 
         "target": "self"
     }, 
+    "43300": {
+        "desc": "Slightly boosts Atk, Def when BB gauge is over 50% full & negates Def ignoring damage", 
+        "effects": [
+            {
+                "atk% buff": 40, 
+                "bb gauge above % buff requirement": 50, 
+                "conditions": [], 
+                "def% buff": 40, 
+                "passive id": "30", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "ignore def resist chance%": 100, 
+                "passive id": "92", 
+                "passive target": "self"
+            }
+        ], 
+        "id": "43300", 
+        "name": "Dragon Slayer's Vow", 
+        "rarity": "1", 
+        "target": "self"
+    }, 
+    "43400": {
+        "desc": "Boosts Atk, Def when BB gauge is over 50% full & negates Def ignoring damage", 
+        "effects": [
+            {
+                "atk% buff": 50, 
+                "bb gauge above % buff requirement": 50, 
+                "conditions": [], 
+                "def% buff": 50, 
+                "passive id": "30", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "ignore def resist chance%": 100, 
+                "passive id": "92", 
+                "passive target": "self"
+            }
+        ], 
+        "id": "43400", 
+        "name": "Divine Dragon's Vow", 
+        "rarity": "1", 
+        "target": "self"
+    }, 
+    "43500": {
+        "desc": "Boosts critical damage & 40% boost to Spark damage", 
+        "effects": [
+            {
+                "conditions": [], 
+                "crit multiplier%": 50.0, 
+                "passive id": "34", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "damage% for spark": 40, 
+                "passive id": "31", 
+                "passive target": "self"
+            }
+        ], 
+        "id": "43500", 
+        "name": "Heavy Pursuit", 
+        "rarity": "1", 
+        "target": "self"
+    }, 
+    "43600": {
+        "desc": "Considerably boosts critical damage, 60% boost to Spark damage & raises max Atk value from 99999 to 130000", 
+        "effects": [
+            {
+                "conditions": [], 
+                "crit multiplier%": 100.0, 
+                "passive id": "34", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "damage% for spark": 60, 
+                "passive id": "31", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "increase atk cap": 130000, 
+                "passive id": "143", 
+                "passive target": "self"
+            }
+        ], 
+        "id": "43600", 
+        "name": "My Body is a Weapon", 
+        "rarity": "1", 
+        "target": "self"
+    }, 
+    "43700": {
+        "desc": "スパーク時、ＢＢゲージを超絶増加・ダメージを８０％アップ＆確率で防御貫通効果を付与", 
+        "effects": [
+            {
+                "conditions": [], 
+                "damage% for spark": 80, 
+                "passive id": "31", 
+                "passive target": "self"
+            }, 
+            {
+                "bc fill on spark high": 30, 
+                "bc fill on spark low": 30, 
+                "bc fill on spark%": 100, 
+                "conditions": [], 
+                "passive id": "47", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "ignore def%": 50, 
+                "passive id": "29", 
+                "passive target": "self"
+            }
+        ], 
+        "id": "43700", 
+        "name": "四堕神を喰らいし獣", 
+        "rarity": "1", 
+        "target": "self"
+    }, 
+    "43800": {
+        "desc": "ガード発動時、３ターン、防御力をアップ・攻撃ＢＢの威力をアップ＆確率で被ダメージを２０％軽減", 
+        "effects": [
+            {
+                "buff": {
+                    "buff turns (3)": "3", 
+                    "def% buff (3)": 50
+                }, 
+                "conditions": [], 
+                "on guard activation chance%": 100, 
+                "passive id": "88", 
+                "passive target": "self"
+            }, 
+            {
+                "buff": {
+                    "bb atk% buff": 100, 
+                    "buff turns (72)": "3", 
+                    "sbb atk% buff": 100, 
+                    "ubb atk% buff": 100
+                }, 
+                "conditions": [], 
+                "on guard activation chance%": 100, 
+                "passive id": "88", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "dmg reduction chance%": 20, 
+                "dmg reduction%": 20, 
+                "passive id": "14", 
+                "passive target": "self"
+            }
+        ], 
+        "id": "43800", 
+        "name": "信頼を背に受けて", 
+        "rarity": "1", 
+        "target": "self"
+    }, 
+    "43900": {
+        "desc": "ターン毎にＢＢゲージをかなり増加＆全状態異常を無効＆攻撃力・防御力・回復力を低下する効果を無効", 
+        "effects": [
+            {
+                "bc fill per turn": 4, 
+                "conditions": [], 
+                "passive id": "9", 
+                "passive target": "self"
+            }, 
+            {
+                "atk down resist%": 100, 
+                "conditions": [], 
+                "curse resist%": 100, 
+                "def down resist%": 100, 
+                "injury resist%": 100, 
+                "paralysis resist%": 100, 
+                "passive id": "73", 
+                "passive target": "self", 
+                "poison resist%": 100, 
+                "rec down resist%": 100, 
+                "sick resist%": 100, 
+                "weaken resist%": 100
+            }
+        ], 
+        "id": "43900", 
+        "name": "慈悲の宿る瞳", 
+        "rarity": "1", 
+        "target": "self"
+    }, 
     "4400": {
         "desc": "Probable slight HP recovery and probable slight BB gauge boost when attacked", 
         "effects": [
@@ -18615,6 +18901,295 @@
         "rarity": "1", 
         "target": "self"
     }, 
+    "44000": {
+        "desc": "ＢＢゲージが満タン時、攻撃力を大幅にアップ＆スパークダメージを５０％アップ", 
+        "effects": [
+            {
+                "atk% buff": 100, 
+                "bb gauge above % buff requirement": 100, 
+                "conditions": [], 
+                "passive id": "30", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "damage% for spark": 50, 
+                "passive id": "31", 
+                "passive target": "self"
+            }
+        ], 
+        "id": "44000", 
+        "name": "命の冒涜", 
+        "rarity": "1", 
+        "target": "self"
+    }, 
+    "44100": {
+        "desc": "ターン毎にＨＰを回復＆被ダメージが一定数を超える度に２ターン、被ダメージを少し軽減", 
+        "effects": [
+            {
+                "buff": {
+                    "buff turns (36)": "1", 
+                    "dmg reduction% buff": 10
+                }, 
+                "conditions": [], 
+                "damage threshold buff activation": 5000, 
+                "passive id": "78", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "passive id": "33", 
+                "passive target": "self", 
+                "rec% added (turn heal)": 10.0, 
+                "turn heal high": 800, 
+                "turn heal low": 600
+            }
+        ], 
+        "id": "44100", 
+        "name": "紺碧の飛翔", 
+        "rarity": "1", 
+        "target": "self"
+    }, 
+    "44200": {
+        "desc": "ターン毎にＨＰを回復＆被ダメージが一定数を超える度に２ターン、被ダメージを少し軽減", 
+        "effects": [
+            {
+                "buff": {
+                    "buff turns (36)": "1", 
+                    "dmg reduction% buff": 20
+                }, 
+                "conditions": [], 
+                "damage threshold buff activation": 5000, 
+                "passive id": "78", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "passive id": "33", 
+                "passive target": "self", 
+                "rec% added (turn heal)": 10.0, 
+                "turn heal high": 1000, 
+                "turn heal low": 800
+            }
+        ], 
+        "id": "44200", 
+        "name": "奇跡を運ぶ舞い", 
+        "rarity": "1", 
+        "target": "self"
+    }, 
+    "44300": {
+        "desc": "スパークダメージを７０％アップ＆攻撃力の上限値（９９９９９）を１３００００まで解放する＆クリティカル時、ＢＢゲージを大幅に増加", 
+        "effects": [
+            {
+                "bc fill on crit max": 6, 
+                "bc fill on crit min": 6, 
+                "bc fill on crit%": 100.0, 
+                "conditions": [], 
+                "passive id": "65", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "damage% for spark": 70, 
+                "passive id": "31", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "increase atk cap": 130000, 
+                "passive id": "143", 
+                "passive target": "self"
+            }
+        ], 
+        "id": "44300", 
+        "name": "魔神の矜持", 
+        "rarity": "1", 
+        "target": "self"
+    }, 
+    "44400": {
+        "desc": "スパークダメージを８０％アップ＆攻撃力の上限値（９９９９９）を１３００００まで解放する＆クリティカル時、ＢＢゲージを超絶増加", 
+        "effects": [
+            {
+                "bc fill on crit max": 8, 
+                "bc fill on crit min": 8, 
+                "bc fill on crit%": 100.0, 
+                "conditions": [], 
+                "passive id": "65", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "damage% for spark": 80, 
+                "passive id": "31", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "increase atk cap": 130000, 
+                "passive id": "143", 
+                "passive target": "self"
+            }
+        ], 
+        "id": "44400", 
+        "name": "絶強者の憂い", 
+        "rarity": "1", 
+        "target": "self"
+    }, 
+    "44500": {
+        "desc": "弱点属性ダメージを無効＆被ダメージ時、ＢＢゲージを少し増加・確率でＨＰを回復", 
+        "effects": [
+            {
+                "conditions": [], 
+                "dmg% to hp% when attacked chance%": 20, 
+                "dmg% to hp% when attacked high": 25, 
+                "dmg% to hp% when attacked low": 20, 
+                "passive id": "24", 
+                "passive target": "self"
+            }, 
+            {
+                "bc fill when attacked high": 2, 
+                "bc fill when attacked low": 1, 
+                "bc fill when attacked%": 100, 
+                "conditions": [], 
+                "passive id": "25", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "passive id": "53", 
+                "passive target": "self", 
+                "strong base element damage resist%": 100, 
+                "strong buffed element damage resist%": 100
+            }
+        ], 
+        "id": "44500", 
+        "name": "運命の落とし子", 
+        "rarity": "1", 
+        "target": "self"
+    }, 
+    "44600": {
+        "desc": "弱点属性ダメージを無効＆被ダメージ時、ＢＢゲージを増加・確率でＨＰを回復", 
+        "effects": [
+            {
+                "conditions": [], 
+                "dmg% to hp% when attacked chance%": 25, 
+                "dmg% to hp% when attacked high": 25, 
+                "dmg% to hp% when attacked low": 20, 
+                "passive id": "24", 
+                "passive target": "self"
+            }, 
+            {
+                "bc fill when attacked high": 3, 
+                "bc fill when attacked low": 2, 
+                "bc fill when attacked%": 100, 
+                "conditions": [], 
+                "passive id": "25", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "passive id": "53", 
+                "passive target": "self", 
+                "strong base element damage resist%": 100, 
+                "strong buffed element damage resist%": 100
+            }
+        ], 
+        "id": "44600", 
+        "name": "木陰の君", 
+        "rarity": "1", 
+        "target": "self"
+    }, 
+    "44700": {
+        "desc": "ＢＢ発動に必要なＢＢゲージ量を少し軽減＆ＢＣ獲得数が一定数を超える度に２ターン、通常攻撃ＨＩＴ数を増加", 
+        "effects": [
+            {
+                "conditions": [], 
+                "passive id": "48", 
+                "passive target": "self", 
+                "reduced bb bc cost%": 10
+            }, 
+            {
+                "bc receive count buff activation": 10, 
+                "buff": {
+                    "buff turns (50)": "2", 
+                    "unknown buff id": "50", 
+                    "unknown buff params": "1&2&10&0&0&0&0"
+                }, 
+                "conditions": [], 
+                "passive id": "82", 
+                "passive target": "self"
+            }
+        ], 
+        "id": "44700", 
+        "name": "闇に咲く金色の薔薇", 
+        "rarity": "1", 
+        "target": "self"
+    }, 
+    "44800": {
+        "desc": "ＢＢ発動に必要なＢＢゲージ量を軽減＆ＢＣ獲得数が一定数を超える度に２ターン、通常攻撃ＨＩＴ数を増加", 
+        "effects": [
+            {
+                "conditions": [], 
+                "passive id": "48", 
+                "passive target": "self", 
+                "reduced bb bc cost%": 15
+            }, 
+            {
+                "bc receive count buff activation": 10, 
+                "buff": {
+                    "buff turns (50)": "2", 
+                    "unknown buff id": "50", 
+                    "unknown buff params": "1&2&20&0&0&0&0"
+                }, 
+                "conditions": [], 
+                "passive id": "82", 
+                "passive target": "self"
+            }
+        ], 
+        "id": "44800", 
+        "name": "金色の反逆者", 
+        "rarity": "1", 
+        "target": "self"
+    }, 
+    "44900": {
+        "desc": "全状態異常を無効＆ＢＢ及びＳＢＢに「味方全体に光属性のバリアを付与」を追加", 
+        "effects": [
+            {
+                "conditions": [], 
+                "curse resist%": 100, 
+                "injury resist%": 100, 
+                "paralysis resist%": 100, 
+                "passive id": "4", 
+                "passive target": "self", 
+                "poison resist%": 100, 
+                "sick resist%": 100, 
+                "weaken resist%": 100
+            }, 
+            {
+                "conditions": [], 
+                "passive id": "66", 
+                "passive target": "self", 
+                "trigger on bb": true, 
+                "trigger on sbb": true, 
+                "triggered effect": [
+                    {
+                        "effect delay time(ms)/frame": "0.0/0", 
+                        "elemental barrier absorb dmg%": 100, 
+                        "elemental barrier def": 0, 
+                        "elemental barrier element": "light", 
+                        "elemental barrier hp": 2000, 
+                        "proc id": "62", 
+                        "target area": "aoe", 
+                        "target type": "party"
+                    }
+                ]
+            }
+        ], 
+        "id": "44900", 
+        "name": "メーレーアクション", 
+        "rarity": "1", 
+        "target": "self"
+    }, 
     "4500": {
         "desc": "Damage taken boosts BB gauge", 
         "effects": [
@@ -18629,6 +19204,250 @@
         ], 
         "id": "4500", 
         "name": "Demon Lantern's Light", 
+        "rarity": "1", 
+        "target": "self"
+    }, 
+    "45000": {
+        "desc": "全状態異常を無効＆ＢＢ及びＳＢＢに「味方全体に光属性のバリアを付与」を追加", 
+        "effects": [
+            {
+                "conditions": [], 
+                "curse resist%": 100, 
+                "injury resist%": 100, 
+                "paralysis resist%": 100, 
+                "passive id": "4", 
+                "passive target": "self", 
+                "poison resist%": 100, 
+                "sick resist%": 100, 
+                "weaken resist%": 100
+            }, 
+            {
+                "conditions": [], 
+                "passive id": "66", 
+                "passive target": "self", 
+                "trigger on bb": true, 
+                "trigger on sbb": true, 
+                "triggered effect": [
+                    {
+                        "effect delay time(ms)/frame": "0.0/0", 
+                        "elemental barrier absorb dmg%": 100, 
+                        "elemental barrier def": 0, 
+                        "elemental barrier element": "light", 
+                        "elemental barrier hp": 2500, 
+                        "proc id": "62", 
+                        "target area": "aoe", 
+                        "target type": "party"
+                    }
+                ]
+            }
+        ], 
+        "id": "45000", 
+        "name": "ユノの天秤", 
+        "rarity": "1", 
+        "target": "self"
+    }, 
+    "45100": {
+        "desc": "ＢＢゲージが半分以上の時、攻撃力・防御力を少しアップ＆スパークダメージを４０％アップ", 
+        "effects": [
+            {
+                "atk% buff": 40, 
+                "bb gauge above % buff requirement": 50, 
+                "conditions": [], 
+                "def% buff": 40, 
+                "passive id": "30", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "damage% for spark": 40, 
+                "passive id": "31", 
+                "passive target": "self"
+            }
+        ], 
+        "id": "45100", 
+        "name": "バックヤードの使者", 
+        "rarity": "1", 
+        "target": "self"
+    }, 
+    "45200": {
+        "desc": "ＢＢゲージが半分以上の時、攻撃力・防御力をアップ＆スパークダメージを６０％アップ", 
+        "effects": [
+            {
+                "atk% buff": 60, 
+                "bb gauge above % buff requirement": 50, 
+                "conditions": [], 
+                "def% buff": 60, 
+                "passive id": "30", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "damage% for spark": 60, 
+                "passive id": "31", 
+                "passive target": "self"
+            }
+        ], 
+        "id": "45200", 
+        "name": "未来に抗う者", 
+        "rarity": "1", 
+        "target": "self"
+    }, 
+    "45300": {
+        "desc": "「攻撃強化系」タイプのスフィア装備時、攻撃力・防御力・回復力・最大ＨＰを４０％アップ・スパークダメージ１００％アップ＆攻撃力の上限値（９９９９９）を１８００００まで解放＆全てのユニットの攻撃力・防御力・回復力・最大ＨＰを１５％アップ", 
+        "effects": [
+            {
+                "atk% buff": 40, 
+                "conditions": [
+                    {
+                        "sphere category required": "Atk Boosting", 
+                        "sphere category required (raw)": "13"
+                    }
+                ], 
+                "def% buff": 40, 
+                "hp% buff": 40, 
+                "passive id": "1", 
+                "passive target": "self", 
+                "rec% buff": 40
+            }, 
+            {
+                "conditions": [
+                    {
+                        "sphere category required": "Atk Boosting", 
+                        "sphere category required (raw)": "13"
+                    }
+                ], 
+                "damage% for spark": 100, 
+                "passive id": "31", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "increase atk cap": 180000, 
+                "passive id": "143", 
+                "passive target": "self"
+            }, 
+            {
+                "atk% buff": 15, 
+                "conditions": [], 
+                "def% buff": 15, 
+                "hp% buff": 15, 
+                "passive id": "1", 
+                "passive target": "party", 
+                "rec% buff": 15
+            }
+        ], 
+        "id": "45300", 
+        "name": "天を圧す暴輝", 
+        "rarity": "1", 
+        "target": "self"
+    }, 
+    "45400": {
+        "desc": "全属性ユニットからの被ダメージを５％軽減＆全てのユニットの攻撃力・防御力・回復力・最大ＨＰを５％アップ", 
+        "effects": [
+            {
+                "conditions": [], 
+                "dmg% mitigation for elemental attacks": 5.0, 
+                "mitigate dark attacks": true, 
+                "mitigate earth attacks": true, 
+                "mitigate fire attacks": true, 
+                "mitigate light attacks": true, 
+                "mitigate thunder attacks": true, 
+                "mitigate water attacks": true, 
+                "passive id": "62", 
+                "passive target": "self"
+            }, 
+            {
+                "atk% buff": 5, 
+                "conditions": [], 
+                "def% buff": 5, 
+                "hp% buff": 5, 
+                "passive id": "1", 
+                "passive target": "party", 
+                "rec% buff": 5
+            }
+        ], 
+        "id": "45400", 
+        "name": "祈望宿し聖剣", 
+        "rarity": "1", 
+        "target": "self"
+    }, 
+    "45500": {
+        "desc": "全属性ユニットからの被ダメージを５％軽減＆全てのユニットの攻撃力・防御力・回復力・最大ＨＰを１０％アップ", 
+        "effects": [
+            {
+                "conditions": [], 
+                "dmg% mitigation for elemental attacks": 5.0, 
+                "mitigate dark attacks": true, 
+                "mitigate earth attacks": true, 
+                "mitigate fire attacks": true, 
+                "mitigate light attacks": true, 
+                "mitigate thunder attacks": true, 
+                "mitigate water attacks": true, 
+                "passive id": "62", 
+                "passive target": "self"
+            }, 
+            {
+                "atk% buff": 10, 
+                "conditions": [], 
+                "def% buff": 10, 
+                "hp% buff": 10, 
+                "passive id": "1", 
+                "passive target": "party", 
+                "rec% buff": 10
+            }
+        ], 
+        "id": "45500", 
+        "name": "聖王の系譜", 
+        "rarity": "1", 
+        "target": "self"
+    }, 
+    "45600": {
+        "desc": "スパークダメージを７０％アップ＆スパークが一定数を超える度に２ターン、スパークダメージをかなりアップ", 
+        "effects": [
+            {
+                "conditions": [], 
+                "damage% for spark": 70, 
+                "passive id": "31", 
+                "passive target": "self"
+            }, 
+            {
+                "buff": {
+                    "buff turns (40)": "2", 
+                    "spark dmg% buff": 70
+                }, 
+                "conditions": [], 
+                "passive id": "86", 
+                "passive target": "self", 
+                "spark count buff activation": 10
+            }
+        ], 
+        "id": "45600", 
+        "name": "戦慄を纏う微笑", 
+        "rarity": "1", 
+        "target": "self"
+    }, 
+    "45700": {
+        "desc": "スパークダメージを８０％アップ＆スパークが一定数を超える度に２ターン、スパークダメージを大幅にアップ", 
+        "effects": [
+            {
+                "conditions": [], 
+                "damage% for spark": 80, 
+                "passive id": "31", 
+                "passive target": "self"
+            }, 
+            {
+                "buff": {
+                    "buff turns (40)": "2", 
+                    "spark dmg% buff": 80
+                }, 
+                "conditions": [], 
+                "passive id": "86", 
+                "passive target": "self", 
+                "spark count buff activation": 10
+            }
+        ], 
+        "id": "45700", 
+        "name": "闘志の契り", 
         "rarity": "1", 
         "target": "self"
     }, 
@@ -23700,6 +24519,60 @@
         "rarity": "1", 
         "target": "self"
     }, 
+    "830387": {
+        "desc": "Adds Def ignoring effect for all allies & 80% boost to Spark damage", 
+        "effects": [
+            {
+                "conditions": [], 
+                "ignore def%": 100, 
+                "passive id": "29", 
+                "passive target": "party"
+            }, 
+            {
+                "conditions": [], 
+                "damage% for spark": 80, 
+                "passive id": "31", 
+                "passive target": "self"
+            }
+        ], 
+        "id": "830387", 
+        "name": "Chain Claw", 
+        "rarity": "1", 
+        "target": "self"
+    }, 
+    "830388": {
+        "desc": "Adds Def ignoring effect for all allies, 80% boost to Spark damage, probable damage reduction to 1 & raises Atk parameter limits to 130000", 
+        "effects": [
+            {
+                "conditions": [], 
+                "ignore def%": 100, 
+                "passive id": "29", 
+                "passive target": "party"
+            }, 
+            {
+                "conditions": [], 
+                "damage% for spark": 80, 
+                "passive id": "31", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "passive id": "43", 
+                "passive target": "self", 
+                "take 1 dmg%": 20
+            }, 
+            {
+                "conditions": [], 
+                "increase atk cap": 130000, 
+                "passive id": "143", 
+                "passive target": "self"
+            }
+        ], 
+        "id": "830388", 
+        "name": "Hidden Chain Claw", 
+        "rarity": "1", 
+        "target": "self"
+    }, 
     "830417": {
         "desc": "Negates all status ailments & considerably boosts damage against status afflicted foes", 
         "effects": [
@@ -25700,7 +26573,7 @@
         "target": "self"
     }, 
     "850377": {
-        "desc": "Boosts Atk, Def when BB gauge is over 50%", 
+        "desc": "Slightly boosts Atk, Def when HP is over 50%, boosts critical damage & raises normal hit amount", 
         "effects": [
             {
                 "atk% buff": 30, 
@@ -25712,12 +26585,12 @@
             }
         ], 
         "id": "850377", 
-        "name": "White Pumpkin Mansion", 
+        "name": "Golden Lion's Roar", 
         "rarity": "1", 
         "target": "self"
     }, 
     "850378": {
-        "desc": "Boosts Atk, Def when BB gauge is over 50% & considerably boosts BB Atk", 
+        "desc": "Boosts Atk, Def when HP is over 50%, boosts critical damage & raises normal hit amount", 
         "effects": [
             {
                 "atk% buff": 50, 
@@ -25737,7 +26610,65 @@
             }
         ], 
         "id": "850378", 
-        "name": "Empire of 1000 Minions", 
+        "name": "Golden Lion's Charge", 
+        "rarity": "1", 
+        "target": "self"
+    }, 
+    "850387": {
+        "desc": "MST_EXTRAPASSIVESKILL_850387_DESCRIPTION", 
+        "effects": [
+            {
+                "atk% buff": 30, 
+                "conditions": [], 
+                "def% buff": 30, 
+                "hp above % buff requirement": 50, 
+                "passive id": "11", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "crit multiplier%": 50.0, 
+                "passive id": "34", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "hit increase/hit": 1, 
+                "passive id": "37", 
+                "passive target": "self"
+            }
+        ], 
+        "id": "850387", 
+        "name": "Golden Lion's Roar", 
+        "rarity": "1", 
+        "target": "self"
+    }, 
+    "850388": {
+        "desc": "MST_EXTRAPASSIVESKILL_850388_DESCRIPTION", 
+        "effects": [
+            {
+                "atk% buff": 50, 
+                "conditions": [], 
+                "def% buff": 50, 
+                "hp above % buff requirement": 50, 
+                "passive id": "11", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "crit multiplier%": 50.0, 
+                "passive id": "34", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "hit increase/hit": 2, 
+                "passive id": "37", 
+                "passive target": "self"
+            }
+        ], 
+        "id": "850388", 
+        "name": "Golden Lion's Charge", 
         "rarity": "1", 
         "target": "self"
     }, 
