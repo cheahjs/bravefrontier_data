@@ -22900,6 +22900,78 @@
         "rarity": "1", 
         "target": "self"
     }, 
+    "47300": {
+        "desc": "クリティカル時、ＢＢゲージを超絶増加・３ターン、ターン毎にＨＰを回復", 
+        "effects": [
+            {
+                "bc fill on crit max": 8, 
+                "bc fill on crit min": 8, 
+                "bc fill on crit%": 100.0, 
+                "conditions": [], 
+                "passive id": "65", 
+                "passive target": "self"
+            }, 
+            {
+                "buff": {
+                    "buff turns (8)": "3", 
+                    "gradual heal high": 1000, 
+                    "gradual heal low": 800
+                }, 
+                "conditions": [], 
+                "on crit activation chance%": 100, 
+                "passive id": "89", 
+                "passive target": "self"
+            }
+        ], 
+        "id": "47300", 
+        "name": "英雄を育てた賢狼", 
+        "rarity": "1", 
+        "target": "self"
+    }, 
+    "47400": {
+        "desc": "ＢＢ及びＳＢＢに「味方全体に２ターン、防御貫通効果を付与」を追加＆残りＨＰが多いほど、攻撃力・防御力・回復力をアップ＆通常攻撃ＨＩＴ数を増加", 
+        "effects": [
+            {
+                "atk% base buff": 0, 
+                "atk% extra buff based on hp": 50, 
+                "buff proportional to hp": "remaining", 
+                "conditions": [], 
+                "def% base buff": 0, 
+                "def% extra buff based on hp": 50, 
+                "passive id": "46", 
+                "passive target": "self", 
+                "rec% base buff": 0, 
+                "rec% extra buff based on hp": 50
+            }, 
+            {
+                "conditions": [], 
+                "hit increase/hit": 1, 
+                "passive id": "37", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "passive id": "66", 
+                "passive target": "self", 
+                "trigger on bb": true, 
+                "trigger on sbb": true, 
+                "triggered effect": [
+                    {
+                        "defense% ignore": 100, 
+                        "defense% ignore turns (39)": 2, 
+                        "effect delay time(ms)/frame": "0.0/0", 
+                        "proc id": "22", 
+                        "target area": "aoe", 
+                        "target type": "party"
+                    }
+                ]
+            }
+        ], 
+        "id": "47400", 
+        "name": "影より支えし者", 
+        "rarity": "1", 
+        "target": "self"
+    }, 
     "4800": {
         "desc": "全状態異常を無効", 
         "effects": [
