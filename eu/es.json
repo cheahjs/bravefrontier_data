@@ -16272,6 +16272,64 @@
         "rarity": "1", 
         "target": "self"
     }, 
+    "720257": {
+        "desc": "Adds boost critical hit rate (60%) for 3 turns to BB/SBB/UBB & when one of the Siegfried spheres is equipped, raises ATK parameter limits to 130000 and boosts ATK of Water types (50%, all)", 
+        "effects": [
+            {
+                "conditions": [], 
+                "passive id": "66", 
+                "passive target": "self", 
+                "trigger on bb": true, 
+                "trigger on sbb": true, 
+                "trigger on ubb": true, 
+                "triggered effect": [
+                    {
+                        "buff turns": 3, 
+                        "crit% buff (7)": 60, 
+                        "effect delay time(ms)/frame": "0.0/0", 
+                        "element buffed": "all", 
+                        "proc id": "5", 
+                        "target area": "aoe", 
+                        "target type": "party"
+                    }
+                ]
+            }, 
+            {
+                "atk% buff": 50, 
+                "conditions": [
+                    {
+                        "item required": [
+                            "700065", 
+                            "700061", 
+                            "700062", 
+                            "700063"
+                        ]
+                    }
+                ], 
+                "passive id": "1", 
+                "passive target": "party"
+            }, 
+            {
+                "conditions": [
+                    {
+                        "item required": [
+                            "700065", 
+                            "700061", 
+                            "700062", 
+                            "700063"
+                        ]
+                    }
+                ], 
+                "increase atk cap": 130000, 
+                "passive id": "143", 
+                "passive target": "self"
+            }
+        ], 
+        "id": "720257", 
+        "name": "Sparring Partner", 
+        "rarity": "0", 
+        "target": "self"
+    }, 
     "7300": {
         "desc": "Adds Def ignoring effect to BB/SBB for 2 turns & hugely boosts damage against status afflicted foes", 
         "effects": [
@@ -20696,6 +20754,60 @@
         "rarity": "1", 
         "target": "self"
     }, 
+    "830387": {
+        "desc": "Adds Def ignoring effect for all allies & 80% boost to Spark damage", 
+        "effects": [
+            {
+                "conditions": [], 
+                "ignore def%": 100, 
+                "passive id": "29", 
+                "passive target": "party"
+            }, 
+            {
+                "conditions": [], 
+                "damage% for spark": 80, 
+                "passive id": "31", 
+                "passive target": "self"
+            }
+        ], 
+        "id": "830387", 
+        "name": "Chain Claw", 
+        "rarity": "1", 
+        "target": "self"
+    }, 
+    "830388": {
+        "desc": "Adds Def ignoring effect for all allies, 80% boost to Spark damage, probable damage reduction to 1 & raises Atk parameter limits to 130000", 
+        "effects": [
+            {
+                "conditions": [], 
+                "ignore def%": 100, 
+                "passive id": "29", 
+                "passive target": "party"
+            }, 
+            {
+                "conditions": [], 
+                "damage% for spark": 80, 
+                "passive id": "31", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "passive id": "43", 
+                "passive target": "self", 
+                "take 1 dmg%": 20
+            }, 
+            {
+                "conditions": [], 
+                "increase atk cap": 130000, 
+                "passive id": "143", 
+                "passive target": "self"
+            }
+        ], 
+        "id": "830388", 
+        "name": "Hidden Chain Claw", 
+        "rarity": "1", 
+        "target": "self"
+    }, 
     "8400": {
         "desc": "Reduces damage taken when damage taken has exceeded certain amount for 2 turns", 
         "effects": [
@@ -21333,6 +21445,64 @@
         ], 
         "id": "850378", 
         "name": "Empire of 1000 Minions", 
+        "rarity": "1", 
+        "target": "self"
+    }, 
+    "850387": {
+        "desc": "Slightly boosts Atk, Def when HP is over 50%, boosts critical damage & raises normal hit amount", 
+        "effects": [
+            {
+                "atk% buff": 30, 
+                "conditions": [], 
+                "def% buff": 30, 
+                "hp above % buff requirement": 50, 
+                "passive id": "11", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "crit multiplier%": 50.0, 
+                "passive id": "34", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "hit increase/hit": 1, 
+                "passive id": "37", 
+                "passive target": "self"
+            }
+        ], 
+        "id": "850387", 
+        "name": "Golden Lion's Roar", 
+        "rarity": "1", 
+        "target": "self"
+    }, 
+    "850388": {
+        "desc": "Boosts Atk, Def when HP is over 50%, boosts critical damage & raises normal hit amount", 
+        "effects": [
+            {
+                "atk% buff": 50, 
+                "conditions": [], 
+                "def% buff": 50, 
+                "hp above % buff requirement": 50, 
+                "passive id": "11", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "crit multiplier%": 50.0, 
+                "passive id": "34", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "hit increase/hit": 2, 
+                "passive id": "37", 
+                "passive target": "self"
+            }
+        ], 
+        "id": "850388", 
+        "name": "Golden Lion's Charge", 
         "rarity": "1", 
         "target": "self"
     }, 

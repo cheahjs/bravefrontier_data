@@ -21638,6 +21638,261 @@
         "thumbnail": "item_thum_700051.png", 
         "type": "material"
     }, 
+    "700058": {
+        "desc": "Use this material to make the \"Siegfried's Fanged Gun\".", 
+        "id": 700058, 
+        "max_stack": 99, 
+        "name": "Dragon's tooth", 
+        "raid": false, 
+        "rarity": 3, 
+        "sell_price": 250, 
+        "thumbnail": "item_thum_700058.png", 
+        "type": "material"
+    }, 
+    "700059": {
+        "desc": "Use this material to make the \"Siegfried's Propelled Shield\" sphere.", 
+        "id": 700059, 
+        "max_stack": 99, 
+        "name": "Dragon's horn", 
+        "raid": false, 
+        "rarity": 3, 
+        "sell_price": 250, 
+        "thumbnail": "item_thum_700059.png", 
+        "type": "material"
+    }, 
+    "700060": {
+        "desc": "Use this material to make the \"Siegfried's Doping Shoulder Blade\" sphere.", 
+        "id": 700060, 
+        "max_stack": 99, 
+        "name": "Dragon's blood", 
+        "raid": false, 
+        "rarity": 3, 
+        "sell_price": 250, 
+        "thumbnail": "item_thum_700060.png", 
+        "type": "material"
+    }, 
+    "700061": {
+        "desc": "Boosts all parameters (15%) & boosts ATK (100%) when BB gauge is over 50% & boosts BB ATK (100%) & raises ATK parameter limits to 150000", 
+        "effect": [
+            {
+                "atk% buff": 15, 
+                "def% buff": 15, 
+                "hp% buff": 15, 
+                "passive id": "1", 
+                "rec% buff": 15
+            }, 
+            {
+                "atk% buff": 100, 
+                "bb gauge above % buff requirement": 50, 
+                "passive id": "30"
+            }, 
+            {
+                "increase atk cap": 150000, 
+                "passive id": "143"
+            }, 
+            {
+                "bb atk% buff": 100, 
+                "passive id": "64", 
+                "sbb atk% buff": 100, 
+                "ubb atk% buff": 100
+            }
+        ], 
+        "id": 700061, 
+        "max_stack": 1, 
+        "name": "Siegfried's Fanged Gun", 
+        "raid": false, 
+        "rarity": 5, 
+        "recipe": {
+            "karma": "150000", 
+            "materials": [
+                {
+                    "count": 3, 
+                    "id": 700065
+                }, 
+                {
+                    "count": 5, 
+                    "id": 700058
+                }
+            ]
+        }, 
+        "sell_price": 50000, 
+        "sphere type": 13, 
+        "sphere type text": "Atk Boosting", 
+        "thumbnail": "sphere_thum_5_4.png", 
+        "type": "sphere"
+    }, 
+    "700062": {
+        "desc": "Boosts all parameters (15%) & boosts DEF relative to remaining HP (50-100%) & negates ATK, DEF, REC reducing effect & resistance against 1 KO attack after activating OD", 
+        "effect": [
+            {
+                "atk% buff": 15, 
+                "def% buff": 15, 
+                "hp% buff": 15, 
+                "passive id": "1", 
+                "rec% buff": 15
+            }, 
+            {
+                "unknown passive id": "106", 
+                "unknown passive params": "12,100,1,100,-1"
+            }, 
+            {
+                "atk down resist%": 100, 
+                "def down resist%": 100, 
+                "passive id": "73", 
+                "rec down resist%": 100
+            }, 
+            {
+                "buff proportional to hp": "lost", 
+                "def% base buff": 50, 
+                "def% extra buff based on hp": 50, 
+                "passive id": "46"
+            }
+        ], 
+        "id": 700062, 
+        "max_stack": 1, 
+        "name": "Siegfried's Propelled Shield", 
+        "raid": false, 
+        "rarity": 5, 
+        "recipe": {
+            "karma": "150000", 
+            "materials": [
+                {
+                    "count": 3, 
+                    "id": 700065
+                }, 
+                {
+                    "count": 5, 
+                    "id": 700059
+                }
+            ]
+        }, 
+        "sell_price": 50000, 
+        "sphere type": 14, 
+        "sphere type text": "Special", 
+        "thumbnail": "sphere_thum_5_5.png", 
+        "type": "sphere"
+    }, 
+    "700063": {
+        "desc": "Boosts all parameters (15%) & negates all status ailments & boosts OD gauge fill rate (30%) & damage taken boosts BB gauge (3 BC) & adds status ailment removal effect to BB/SBB", 
+        "effect": [
+            {
+                "atk% buff": 15, 
+                "def% buff": 15, 
+                "hp% buff": 15, 
+                "passive id": "1", 
+                "rec% buff": 15
+            }, 
+            {
+                "curse resist%": 100, 
+                "injury resist%": 100, 
+                "paralysis resist%": 100, 
+                "passive id": "4", 
+                "poison resist%": 100, 
+                "sick resist%": 100, 
+                "weaken resist%": 100
+            }, 
+            {
+                "bc fill when attacked high": 3, 
+                "bc fill when attacked low": 3, 
+                "bc fill when attacked%": 100, 
+                "passive id": "25"
+            }, 
+            {
+                "od fill rate%": 30, 
+                "passive id": "70"
+            }, 
+            {
+                "passive id": "66", 
+                "trigger on bb": true, 
+                "trigger on sbb": true, 
+                "triggered effect": [
+                    {
+                        "effect delay time(ms)/frame": "0.0/0", 
+                        "proc id": "10", 
+                        "remove all status ailments": true, 
+                        "target area": "aoe", 
+                        "target type": "party"
+                    }
+                ]
+            }
+        ], 
+        "id": 700063, 
+        "max_stack": 1, 
+        "name": "Siegfried's Doping Spaulder", 
+        "raid": false, 
+        "rarity": 5, 
+        "recipe": {
+            "karma": "150000", 
+            "materials": [
+                {
+                    "count": 3, 
+                    "id": 700065
+                }, 
+                {
+                    "count": 5, 
+                    "id": 700060
+                }
+            ]
+        }, 
+        "sell_price": 50000, 
+        "sphere type": 5, 
+        "sphere type text": "Status Ailments Resistant", 
+        "thumbnail": "sphere_thum_5_2.png", 
+        "type": "sphere"
+    }, 
+    "700064": {
+        "desc": "Use this material to make the ”Siegfried's Hybrid Weapon” sphere.", 
+        "id": 700064, 
+        "max_stack": 99, 
+        "name": "Dragon's scale", 
+        "raid": false, 
+        "rarity": 3, 
+        "sell_price": 50, 
+        "thumbnail": "item_thum_700064.png", 
+        "type": "material"
+    }, 
+    "700065": {
+        "desc": "Increases all statistics (15%)", 
+        "effect": [
+            {
+                "atk% buff": 15, 
+                "def% buff": 15, 
+                "hp% buff": 15, 
+                "passive id": "1", 
+                "rec% buff": 15
+            }
+        ], 
+        "id": 700065, 
+        "max_stack": 1, 
+        "name": "Siegfried's Hybrid Weapon", 
+        "raid": false, 
+        "rarity": 5, 
+        "recipe": {
+            "karma": "50000", 
+            "materials": [
+                {
+                    "count": 35, 
+                    "id": 700064
+                }
+            ]
+        }, 
+        "sell_price": 30000, 
+        "sphere type": 1, 
+        "sphere type text": "Status Boost", 
+        "thumbnail": "sphere_thum_4_5.png", 
+        "type": "sphere"
+    }, 
+    "700066": {
+        "desc": "Obtain 6 copies of this item to craft a powerful Sphere.", 
+        "id": 700066, 
+        "max_stack": 99, 
+        "name": "Omega Essence", 
+        "raid": false, 
+        "rarity": 3, 
+        "sell_price": 0, 
+        "thumbnail": "item_thum_70600.png", 
+        "type": "material"
+    }, 
     "70100": {
         "desc": "Guarantees escape from battle.", 
         "effect": {
