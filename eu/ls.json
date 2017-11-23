@@ -14382,6 +14382,48 @@
         "id": "730267", 
         "name": "Poetic Destiny"
     }, 
+    "730277": {
+        "desc": "Boosts all parameters of Earth types (85%) & damage reduction from Thunder, Earth types (20%) & boosts Earth elemental damage (250%) & boosts BB ATK (300%) when HP is over 50% & reduces BB gauge required for BB (25%)", 
+        "effects": [
+            {
+                "atk% buff": 85, 
+                "def% buff": 85, 
+                "elements buffed": [
+                    "earth"
+                ], 
+                "hp% buff": 85, 
+                "passive id": "2", 
+                "rec% buff": 85
+            }, 
+            {
+                "earth resist%": 20, 
+                "passive id": "5"
+            }, 
+            {
+                "passive id": "5", 
+                "thunder resist%": 20
+            }, 
+            {
+                "earth units do extra elemental weakness dmg": true, 
+                "elemental weakness multiplier%": 250.0, 
+                "passive id": "50"
+            }, 
+            {
+                "passive id": "48", 
+                "reduced bb bc cost%": 25
+            }, 
+            {
+                "bb atk% add": 300, 
+                "hp threshold": 50, 
+                "passive id": "103", 
+                "sbb atk% add": 300, 
+                "triggered when hp": "higher", 
+                "ubb atk% add": 300
+            }
+        ], 
+        "id": "730277", 
+        "name": "Anatomy Mastery"
+    }, 
     "7400": {
         "desc": "15% boost to Atk and max HP for all Units", 
         "effects": [
@@ -20591,7 +20633,7 @@
         "name": "Malevolent Aspect"
     }, 
     "801271": {
-        "desc": "Boosts all parameters (50%) & boosts ATK and DEF (50%) when BB gauge is over 50% & probable damage reduction to 1 (15%) & probable resistance against 1 KO attack (20%) & damage taken boosts BB gauge (5-8 BC)", 
+        "desc": "50% boost to all parameters, boosts Atk and Def when BB gauge is over 50%, probable damage reduction to 1, probable resistance against 1 KO attack & considerably boosts ABP and CBP gain<br>25% boost to all parameters of Dark types & 20% damage reduction from Dark, Light types in Guild Raid", 
         "effects": [
             {
                 "atk% buff": 50, 
@@ -20601,9 +20643,9 @@
                 "rec% buff": 50
             }, 
             {
-                "atk% buff": 50, 
+                "atk% buff": 80, 
                 "bb gauge above % buff requirement": 50, 
-                "def% buff": 50, 
+                "def% buff": 80, 
                 "passive id": "30"
             }, 
             {
@@ -20618,10 +20660,9 @@
                 "passive id": "69"
             }, 
             {
-                "bc fill when attacked high": 8, 
-                "bc fill when attacked low": 5, 
-                "bc fill when attacked%": 100, 
-                "passive id": "25"
+                "abp gain%": 60, 
+                "cbp gain%": 35, 
+                "passive id": "112"
             }
         ], 
         "id": "801271", 
@@ -21123,6 +21164,66 @@
         "id": "8103", 
         "name": "Supreme Ruler's Protection"
     }, 
+    "810377": {
+        "desc": "80% boost to Atk, 40% boost to max HP, boosts damage against status afflicted foes, hugely boosts critical damage & probable damage reduction to 1", 
+        "effects": [
+            {
+                "atk% buff": 80, 
+                "hp% buff": 40, 
+                "passive id": "1"
+            }, 
+            {
+                "atk% buff when enemy has ailment": 100, 
+                "atk% buff when enemy has curse": true, 
+                "atk% buff when enemy has injury": true, 
+                "atk% buff when enemy has paralysis": true, 
+                "atk% buff when enemy has poison": true, 
+                "atk% buff when enemy has sick": true, 
+                "atk% buff when enemy has weaken": true, 
+                "passive id": "74"
+            }, 
+            {
+                "crit multiplier%": 150.0, 
+                "passive id": "34"
+            }, 
+            {
+                "passive id": "43", 
+                "take 1 dmg%": 15
+            }
+        ], 
+        "id": "810377", 
+        "name": "Carefree Pirate Life"
+    }, 
+    "810378": {
+        "desc": "100% boost to Atk, 60% boost to max HP, boosts damage against status afflicted foes, hugely boosts critical damage & probable damage reduction to 1", 
+        "effects": [
+            {
+                "atk% buff": 100, 
+                "hp% buff": 60, 
+                "passive id": "1"
+            }, 
+            {
+                "atk% buff when enemy has ailment": 120, 
+                "atk% buff when enemy has curse": true, 
+                "atk% buff when enemy has injury": true, 
+                "atk% buff when enemy has paralysis": true, 
+                "atk% buff when enemy has poison": true, 
+                "atk% buff when enemy has sick": true, 
+                "atk% buff when enemy has weaken": true, 
+                "passive id": "74"
+            }, 
+            {
+                "crit multiplier%": 150.0, 
+                "passive id": "34"
+            }, 
+            {
+                "passive id": "43", 
+                "take 1 dmg%": 20
+            }
+        ], 
+        "id": "810378", 
+        "name": "Swashbuckling Iaido"
+    }, 
     "8104": {
         "desc": "40% boost to Def for all Units, probable slight reduction in damage taken & hugely boosts BB gauge every turn", 
         "effects": [
@@ -21267,6 +21368,65 @@
         ], 
         "id": "8200", 
         "name": "Divine Protection"
+    }, 
+    "820377": {
+        "desc": "60% boost to max HP, 100% boost to Atk, Def, Rec when BB gauge is over 50%, reduces BB gauge consumed during BB & greatly boosts Water elemental damage", 
+        "effects": [
+            {
+                "hp% buff": 60, 
+                "passive id": "1"
+            }, 
+            {
+                "atk% buff": 100, 
+                "bb gauge above % buff requirement": 50, 
+                "def% buff": 100, 
+                "passive id": "30", 
+                "rec% buff": 100
+            }, 
+            {
+                "passive id": "48", 
+                "reduced bb bc cost%": 20
+            }, 
+            {
+                "elemental weakness multiplier%": 100.0, 
+                "passive id": "50", 
+                "water units do extra elemental weakness dmg": true
+            }
+        ], 
+        "id": "820377", 
+        "name": "Thar She Blows!"
+    }, 
+    "820378": {
+        "desc": "80% boost to max HP, 140% boost to Atk, Def, Rec when BB gauge is over 50%, greatly reduces BB gauge consumed during BB, hugely boosts Water elemental damage & negates critical damage", 
+        "effects": [
+            {
+                "hp% buff": 80, 
+                "passive id": "1"
+            }, 
+            {
+                "atk% buff": 140, 
+                "bb gauge above % buff requirement": 50, 
+                "def% buff": 140, 
+                "passive id": "30", 
+                "rec% buff": 140
+            }, 
+            {
+                "passive id": "48", 
+                "reduced bb bc cost%": 30
+            }, 
+            {
+                "elemental weakness multiplier%": 150.0, 
+                "passive id": "50", 
+                "water units do extra elemental weakness dmg": true
+            }, 
+            {
+                "base crit% resist": 100, 
+                "buff crit% resist": 100, 
+                "passive id": "45"
+            }
+        ], 
+        "id": "820378", 
+        "name": "Let's Go Together!"
     }, 
     "820547": {
         "desc": "50% boost to all parameters of Water types, 120% boost to Spark damage, greatly boosts Water elemental damage & 10% damage reduction from Fire, Water types", 
