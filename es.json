@@ -24575,6 +24575,40 @@
         "rarity": "1", 
         "target": "self"
     }, 
+    "830328": {
+        "desc": "Boosts Atk each turn up to 4 turns & 50% boost to Atk, Def, Rec when BB gauge is full", 
+        "effects": [
+            {
+                "atk% max buff": 100, 
+                "conditions": [], 
+                "increase from min to max": 1, 
+                "passive id": "105", 
+                "passive target": "self", 
+                "turn count": 4
+            }, 
+            {
+                "atk% buff": 50, 
+                "bb gauge above % buff requirement": 100, 
+                "conditions": [], 
+                "def% buff": 50, 
+                "passive id": "30", 
+                "passive target": "self", 
+                "rec% buff": 50
+            }, 
+            {
+                "bc fill on spark high": 4, 
+                "bc fill on spark low": 2, 
+                "bc fill on spark%": 100, 
+                "conditions": [], 
+                "passive id": "47", 
+                "passive target": "self"
+            }
+        ], 
+        "id": "830328", 
+        "name": "Eternal Turmoil", 
+        "rarity": "7", 
+        "target": "self"
+    }, 
     "830357": {
         "desc": "10% boost to all parameters of Earth types & 40% boost to Spark damage", 
         "effects": [
@@ -25979,6 +26013,71 @@
         ], 
         "id": "8500", 
         "name": "Cursed Fire Armor", 
+        "rarity": "1", 
+        "target": "self"
+    }, 
+    "850047": {
+        "desc": "80% boost to Spark damage & reduces BB gauge required for BB for all aillies", 
+        "effects": [
+            {
+                "conditions": [], 
+                "damage% for spark": 80, 
+                "passive id": "31", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "passive id": "48", 
+                "passive target": "party", 
+                "reduced bb bc cost%": 5
+            }
+        ], 
+        "id": "850047", 
+        "name": "World-Blinding Beauty", 
+        "rarity": "1", 
+        "target": "self"
+    }, 
+    "850048": {
+        "desc": "80% boost to Spark damage, reduces BB gauge required for BB for all allies, raises Atk parameter limits to 130000 & adds 18 combo powerful Light attack against Light, Dark types effect to SBB", 
+        "effects": [
+            {
+                "conditions": [], 
+                "damage% for spark": 80, 
+                "passive id": "31", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "passive id": "48", 
+                "passive target": "party", 
+                "reduced bb bc cost%": 5
+            }, 
+            {
+                "conditions": [], 
+                "increase atk cap": 130000, 
+                "passive id": "143", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "passive id": "66", 
+                "passive target": "self", 
+                "trigger on sbb": true, 
+                "triggered effect": [
+                    {
+                        "additional element used for attack check": "dark", 
+                        "bb atk%": 620, 
+                        "bb flat atk": 200, 
+                        "effect delay time(ms)/frame": "0.0/0", 
+                        "proc id": "97", 
+                        "target area": "aoe", 
+                        "target type": "enemy"
+                    }
+                ]
+            }
+        ], 
+        "id": "850048", 
+        "name": "Shadow Blossom", 
         "rarity": "1", 
         "target": "self"
     }, 

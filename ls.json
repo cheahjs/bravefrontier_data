@@ -26609,6 +26609,38 @@
         "id": "830288", 
         "name": "Omniscient Perception"
     }, 
+    "830328": {
+        "desc": "100% boost to Atk, 50% boost to max HP, greatly boosts Atk for 2 turns when damage dealt has exceeded certain amount, greatly boosts BB Atk & hugely boosts Earth, Dark elemental damage", 
+        "effects": [
+            {
+                "atk% buff": 100, 
+                "hp% buff": 50, 
+                "passive id": "1"
+            }, 
+            {
+                "buff": {
+                    "atk% buff (1)": 150, 
+                    "buff turns (1)": "2"
+                }, 
+                "damage dealt threshold buff activation": 50000, 
+                "passive id": "80"
+            }, 
+            {
+                "bb atk% buff": 300, 
+                "passive id": "64", 
+                "sbb atk% buff": 300, 
+                "ubb atk% buff": 300
+            }, 
+            {
+                "dark units do extra elemental weakness dmg": true, 
+                "earth units do extra elemental weakness dmg": true, 
+                "elemental weakness multiplier%": 175.0, 
+                "passive id": "50"
+            }
+        ], 
+        "id": "830328", 
+        "name": "The Devil's Embrace"
+    }, 
     "830357": {
         "desc": "80 boost to Atk, Def and 50% boost to max HP of Earth types, 120% boost to Spark damage, Spark damage restores HP & negates all status ailments", 
         "effects": [
@@ -27419,6 +27451,77 @@
         ], 
         "id": "8500", 
         "name": "Great Dueler's Grit"
+    }, 
+    "850047": {
+        "desc": "100% boost to Atk, 60% boost to Def, max HP of Light types, 10% damage reduction from Light, Dark types, adds probable resistance against 1 KO attack & boosts BB and SBB activation rates", 
+        "effects": [
+            {
+                "atk% buff": 100, 
+                "def% buff": 60, 
+                "elements buffed": [
+                    "light"
+                ], 
+                "hp% buff": 60, 
+                "passive id": "2"
+            }, 
+            {
+                "dmg% mitigation for elemental attacks": 10.0, 
+                "mitigate dark attacks": true, 
+                "mitigate light attacks": true, 
+                "passive id": "62"
+            }, 
+            {
+                "angel idol chance% condition": 0, 
+                "angel idol recover chance% high": 15, 
+                "angel idol recover chance% low": 15, 
+                "angel idol recover counts": 1, 
+                "passive id": "69"
+            }, 
+            {
+                "increase skill activation in arena%": 20, 
+                "passive id": "111"
+            }
+        ], 
+        "id": "850047", 
+        "name": "Candenti Lumine"
+    }, 
+    "850048": {
+        "desc": "150% boost to Atk, 80% boost to Def, max HP of Light types, 20% damage reduction from Light, Dark types, adds probable resistance against 1 KO attack, boosts BB and SBB activation rates & considerably boosts ABP and CBP gain", 
+        "effects": [
+            {
+                "atk% buff": 150, 
+                "def% buff": 80, 
+                "elements buffed": [
+                    "light"
+                ], 
+                "hp% buff": 80, 
+                "passive id": "2"
+            }, 
+            {
+                "dmg% mitigation for elemental attacks": 20.0, 
+                "mitigate dark attacks": true, 
+                "mitigate light attacks": true, 
+                "passive id": "62"
+            }, 
+            {
+                "angel idol chance% condition": 0, 
+                "angel idol recover chance% high": 20, 
+                "angel idol recover chance% low": 20, 
+                "angel idol recover counts": 1, 
+                "passive id": "69"
+            }, 
+            {
+                "increase skill activation in arena%": 25, 
+                "passive id": "111"
+            }, 
+            {
+                "abp gain%": 65, 
+                "cbp gain%": 40, 
+                "passive id": "112"
+            }
+        ], 
+        "id": "850048", 
+        "name": "Clara Ignis"
     }, 
     "850158": {
         "desc": "40% boost to all parameters, enormously boosts BC, HC drop rate, considerably reduces BB gauge required for BB & considerably boosts BB gauge each turn", 

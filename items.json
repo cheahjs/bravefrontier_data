@@ -25039,7 +25039,7 @@
         "type": "sphere"
     }, 
     "62390": {
-        "desc": "BB gauge boost at start of each turn, 80% boost to max HP, enormously boosts BB gauge each turn, slight damage reduction when damage dealt exceeds certain amount & negates critical and elemental damage for 2 turns when damage taken exceeds certain amount", 
+        "desc": "80% boost to max HP, activates at turn's end BB gauge boost each turn effect at turn's start instead, enormously boosts BB gauge each turn, 20% damage reduction for 1 turn when damage dealt exceeds certain amount & negates critical and elemental damage for 2 turns when damage taken exceeds certain amount", 
         "effect": [
             {
                 "hp% buff": 80, 
@@ -25092,7 +25092,7 @@
         "type": "sphere"
     }, 
     "62400": {
-        "desc": "Spark damage boosts BB gauge and restores HP, and boosts damage 150% & adds probable Spark critical for 1 turn when Spark damage exceeds certain amount & slight reduction to damage from all types and considerably boosts Spark damage for 1 turn when Spark damage exceeds certain amount", 
+        "desc": "150% boost to Spark damage, Spark damage boosts BB gauge and restores HP & adds probable Spark critical, slight reduction to damage from all types and considerably boosts Spark damage for 1 turn when Sparks exceeds certain amount", 
         "effect": [
             {
                 "damage% for spark": 150, 
@@ -34460,6 +34460,59 @@
         "thumbnail": "sphere_thum_819106.png", 
         "type": "sphere"
     }, 
+    "819107": {
+        "desc": "Raises Atk parameter limits to 170000, 150% boost to Atk and greatly boosts critical hit rate of Light types, adds additional attack at turn's end for 3 turns effect to BB/SBB, boosts OD gauge fill rate & negates Def ignoring effect", 
+        "effect": [
+            {
+                "increase atk cap": 170000, 
+                "passive id": "143"
+            }, 
+            {
+                "atk% buff": 150, 
+                "crit% buff": 30, 
+                "elements buffed": [
+                    "light"
+                ], 
+                "passive id": "2"
+            }, 
+            {
+                "passive id": "66", 
+                "trigger on bb": true, 
+                "trigger on sbb": true, 
+                "triggered effect": [
+                    {
+                        "dot atk%": 1000, 
+                        "dot element affected": true, 
+                        "dot flat atk": 100, 
+                        "dot turns (71)": 3, 
+                        "dot unit index": 1, 
+                        "effect delay time(ms)/frame": "0.0/0", 
+                        "proc id": "44", 
+                        "target area": "aoe", 
+                        "target type": "enemy"
+                    }
+                ]
+            }, 
+            {
+                "od fill rate%": 25, 
+                "passive id": "70"
+            }, 
+            {
+                "ignore def resist chance%": 100, 
+                "passive id": "92"
+            }
+        ], 
+        "id": 819107, 
+        "max_stack": 1, 
+        "name": "Lux Wing", 
+        "raid": false, 
+        "rarity": 7, 
+        "sell_price": 30000, 
+        "sphere type": 13, 
+        "sphere type text": "Atk Boosting", 
+        "thumbnail": "sphere_thum_819107.png", 
+        "type": "sphere"
+    }, 
     "819109": {
         "desc": "Low probability of random status ailment counter & negates all status ailments", 
         "effect": [
@@ -34918,6 +34971,55 @@
         "thumbnail": "sphere_thum_828002.png", 
         "type": "sphere"
     }, 
+    "819118": {
+        "desc": "Raises Atk parameter limits to 150000, 100% boost to Atk and boosts critical hit rate of Light types, adds additional attack at turn's end for 3 turns effect to BB/SBB & negates Def ignoring effect", 
+        "effect": [
+            {
+                "increase atk cap": 150000, 
+                "passive id": "143"
+            }, 
+            {
+                "atk% buff": 100, 
+                "crit% buff": 20, 
+                "elements buffed": [
+                    "light"
+                ], 
+                "passive id": "2"
+            }, 
+            {
+                "passive id": "66", 
+                "trigger on bb": true, 
+                "trigger on sbb": true, 
+                "triggered effect": [
+                    {
+                        "dot atk%": 600, 
+                        "dot element affected": true, 
+                        "dot flat atk": 100, 
+                        "dot turns (71)": 3, 
+                        "dot unit index": 1, 
+                        "effect delay time(ms)/frame": "0.0/0", 
+                        "proc id": "44", 
+                        "target area": "aoe", 
+                        "target type": "enemy"
+                    }
+                ]
+            }, 
+            {
+                "ignore def resist chance%": 100, 
+                "passive id": "92"
+            }
+        ], 
+        "id": 819118, 
+        "max_stack": 1, 
+        "name": "Star Wing", 
+        "raid": false, 
+        "rarity": 6, 
+        "sell_price": 30000, 
+        "sphere type": 13, 
+        "sphere type text": "Atk Boosting", 
+        "thumbnail": "sphere_thum_828002.png", 
+        "type": "sphere"
+    }, 
     "819120": {
         "desc": "Restores HP each turn, considerably boosts BB gauge each turn & activates at turn's end effects during turn's start instead", 
         "effect": [
@@ -35335,6 +35437,53 @@
         "sphere type": 14, 
         "sphere type text": "Special", 
         "thumbnail": "sphere_thum_819126.png", 
+        "type": "sphere"
+    }, 
+    "819127": {
+        "desc": "70% boost to Atk and max HP of Female types, considerably boosts Atk relative to how high remaining HP is, lowers Atk relative to how low remaining HP is, greatly boosts elemental damage, 100% boost to Atk, Def for first 4 turns & raises Atk parameter limits to 150000", 
+        "effect": [
+            {
+                "atk% buff": 70, 
+                "gender required": "female", 
+                "hp% buff": 70, 
+                "passive id": "42"
+            }, 
+            {
+                "atk% base buff": 0, 
+                "atk% extra buff based on hp": 100, 
+                "buff proportional to hp": "remaining", 
+                "passive id": "46"
+            }, 
+            {
+                "atk% base buff": 0, 
+                "atk% extra buff based on hp": -50, 
+                "buff proportional to hp": "lost", 
+                "passive id": "46"
+            }, 
+            {
+                "elemental weakness multiplier%": 125.0, 
+                "passive id": "50"
+            }, 
+            {
+                "first x turns": 4, 
+                "first x turns atk% (1)": 100, 
+                "first x turns def% (3)": 100, 
+                "passive id": "21"
+            }, 
+            {
+                "increase atk cap": 150000, 
+                "passive id": "143"
+            }
+        ], 
+        "id": 819127, 
+        "max_stack": 1, 
+        "name": "Baiken’s Mono-goggle", 
+        "raid": true, 
+        "rarity": 7, 
+        "sell_price": 30000, 
+        "sphere type": 1, 
+        "sphere type text": "Status Boost", 
+        "thumbnail": "sphere_thum_819127.png", 
         "type": "sphere"
     }, 
     "819128": {
