@@ -7605,6 +7605,30 @@
         "rarity": "0", 
         "target": "self"
     }, 
+    "16100": {
+        "desc": "防御貫通効果を無効＆クリティカルを無効", 
+        "effects": [
+            {
+                "conditions": [], 
+                "ignore def resist chance%": 100, 
+                "passive id": "92", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "crit chance base resist%": 100, 
+                "crit chance buffed resist%": 100, 
+                "crit dmg base damage resist%": 100, 
+                "crit dmg buffed damage resist%": 100, 
+                "passive id": "53", 
+                "passive target": "self"
+            }
+        ], 
+        "id": "16100", 
+        "name": "蒼炎騎士の誇り", 
+        "rarity": "1", 
+        "target": "self"
+    }, 
     "16200": {
         "desc": "Spark damage boosts BB gauge, reduces damage taken for 2 turns when damage taken has exceeded certain amount & damage taken may restore HP", 
         "effects": [
@@ -12897,6 +12921,31 @@
         "rarity": "1", 
         "target": "self"
     }, 
+    "35900": {
+        "desc": "Damage taken slightly boosts BB gauge and may restore HP", 
+        "effects": [
+            {
+                "bc fill when attacked high": 2, 
+                "bc fill when attacked low": 1, 
+                "bc fill when attacked%": 100, 
+                "conditions": [], 
+                "passive id": "25", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "dmg% to hp% when attacked chance%": 20, 
+                "dmg% to hp% when attacked high": 25, 
+                "dmg% to hp% when attacked low": 20, 
+                "passive id": "24", 
+                "passive target": "self"
+            }
+        ], 
+        "id": "35900", 
+        "name": "Anathemic Fascination", 
+        "rarity": "1", 
+        "target": "self"
+    }, 
     "3600": {
         "desc": "Negates enemies' element based damage & probable damage reduction to 1", 
         "effects": [
@@ -12916,6 +12965,75 @@
         ], 
         "id": "3600", 
         "name": "Existent World", 
+        "rarity": "1", 
+        "target": "self"
+    }, 
+    "36000": {
+        "desc": "Damage taken boosts BB gauge and may restore HP", 
+        "effects": [
+            {
+                "bc fill when attacked high": 3, 
+                "bc fill when attacked low": 2, 
+                "bc fill when attacked%": 100, 
+                "conditions": [], 
+                "passive id": "25", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "dmg% to hp% when attacked chance%": 25, 
+                "dmg% to hp% when attacked high": 25, 
+                "dmg% to hp% when attacked low": 20, 
+                "passive id": "24", 
+                "passive target": "self"
+            }
+        ], 
+        "id": "36000", 
+        "name": "Critical Mission", 
+        "rarity": "1", 
+        "target": "self"
+    }, 
+    "36100": {
+        "desc": "Boosts elemental and critical damage", 
+        "effects": [
+            {
+                "conditions": [], 
+                "dark units do extra elemental weakness dmg": true, 
+                "elemental weakness multiplier%": 50.0, 
+                "passive id": "50", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "crit multiplier%": 50.0, 
+                "passive id": "34", 
+                "passive target": "self"
+            }
+        ], 
+        "id": "36100", 
+        "name": "Suicidal Research", 
+        "rarity": "1", 
+        "target": "self"
+    }, 
+    "36200": {
+        "desc": "Considerably boosts elemental and critical damage", 
+        "effects": [
+            {
+                "conditions": [], 
+                "dark units do extra elemental weakness dmg": true, 
+                "elemental weakness multiplier%": 80.0, 
+                "passive id": "50", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "crit multiplier%": 100.0, 
+                "passive id": "34", 
+                "passive target": "self"
+            }
+        ], 
+        "id": "36200", 
+        "name": "Ruinous Truth", 
         "rarity": "1", 
         "target": "self"
     }, 
@@ -21909,6 +22027,65 @@
         ], 
         "id": "850548", 
         "name": "Legendary Celestial Mage", 
+        "rarity": "1", 
+        "target": "self"
+    }, 
+    "850977": {
+        "desc": "Negates critical damage & negates Def ignoring effects", 
+        "effects": [
+            {
+                "conditions": [], 
+                "ignore def resist chance%": 100, 
+                "passive id": "92", 
+                "passive target": "self"
+            }, 
+            {
+                "base crit% resist": 100, 
+                "buff crit% resist": 999, 
+                "conditions": [], 
+                "passive id": "45", 
+                "passive target": "self"
+            }
+        ], 
+        "id": "850977", 
+        "name": "Blue Flame Guard's Pride", 
+        "rarity": "1", 
+        "target": "self"
+    }, 
+    "850978": {
+        "desc": "30% boost to all parameters when Sacred Shield is equipped, negates critical damage and Def ignoring effects", 
+        "effects": [
+            {
+                "conditions": [], 
+                "ignore def resist chance%": 100, 
+                "passive id": "92", 
+                "passive target": "self"
+            }, 
+            {
+                "base crit% resist": 100, 
+                "buff crit% resist": 999, 
+                "conditions": [], 
+                "passive id": "45", 
+                "passive target": "self"
+            }, 
+            {
+                "atk% buff": 30, 
+                "conditions": [
+                    {
+                        "item required": [
+                            "819138"
+                        ]
+                    }
+                ], 
+                "def% buff": 30, 
+                "hp% buff": 30, 
+                "passive id": "1", 
+                "passive target": "self", 
+                "rec% buff": 30
+            }
+        ], 
+        "id": "850978", 
+        "name": "Divine Warrior's Prayer", 
         "rarity": "1", 
         "target": "self"
     }, 

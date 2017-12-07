@@ -26243,6 +26243,176 @@
         "thumbnail": "sphere_thum_819123.png", 
         "type": "sphere"
     }, 
+    "819127": {
+        "desc": "70% boost to Atk and max HP of Female types, boosts/lowers Atk relative to how high remaining HP is, boosts elemental damage, 100% boost to Atk, Def for first 4 turns & raises Atk parameter limits to 150000", 
+        "effect": [
+            {
+                "atk% buff": 70, 
+                "gender required": "female", 
+                "hp% buff": 70, 
+                "passive id": "42"
+            }, 
+            {
+                "atk% base buff": 0, 
+                "atk% extra buff based on hp": 100, 
+                "buff proportional to hp": "remaining", 
+                "passive id": "46"
+            }, 
+            {
+                "atk% base buff": 0, 
+                "atk% extra buff based on hp": -100, 
+                "buff proportional to hp": "lost", 
+                "passive id": "46"
+            }, 
+            {
+                "dark units do extra elemental weakness dmg": true, 
+                "earth units do extra elemental weakness dmg": true, 
+                "elemental weakness multiplier%": 125.0, 
+                "fire units do extra elemental weakness dmg": true, 
+                "light units do extra elemental weakness dmg": true, 
+                "passive id": "50", 
+                "thunder units do extra elemental weakness dmg": true, 
+                "water units do extra elemental weakness dmg": true
+            }, 
+            {
+                "first x turns": 4, 
+                "first x turns atk% (1)": 100, 
+                "first x turns def% (3)": 100, 
+                "passive id": "21"
+            }, 
+            {
+                "increase atk cap": 150000, 
+                "passive id": "143"
+            }
+        ], 
+        "id": 819127, 
+        "max_stack": 1, 
+        "name": "Baiken’s Mono-goggle", 
+        "raid": true, 
+        "rarity": 7, 
+        "sell_price": 30000, 
+        "sphere type": 1, 
+        "sphere type text": "Status Boost", 
+        "thumbnail": "sphere_thum_819127.png", 
+        "type": "sphere"
+    }, 
+    "819128": {
+        "desc": "15% boost to all parameters, 50% Atk boost when BB gauge is full, greatly boosts BB gauge each turn & boosts BC drop rate", 
+        "effect": [
+            {
+                "atk% buff": 15, 
+                "def% buff": 15, 
+                "hp% buff": 15, 
+                "passive id": "1", 
+                "rec% buff": 15
+            }, 
+            {
+                "atk% buff": 50, 
+                "bb gauge above % buff requirement": 100, 
+                "passive id": "30"
+            }, 
+            {
+                "bc fill per turn": 5, 
+                "passive id": "9"
+            }, 
+            {
+                "bc drop rate% buff": 20, 
+                "passive id": "19"
+            }
+        ], 
+        "id": 819128, 
+        "max_stack": 1, 
+        "name": "May's Pirate Tricorn", 
+        "raid": false, 
+        "rarity": 5, 
+        "sell_price": 25000, 
+        "sphere type": 6, 
+        "sphere type text": "BB Gauge", 
+        "thumbnail": "sphere_thum_819128.png", 
+        "type": "sphere"
+    }, 
+    "819129": {
+        "desc": "100% boost to Spark damage, 50% boost to Atk and 50% boost to Spark damage when Sparks exceed certain amount, Spark damage boosts BB gauge & reduces BB gauge required for BB", 
+        "effect": [
+            {
+                "damage% for spark": 100, 
+                "passive id": "31"
+            }, 
+            {
+                "buff": {
+                    "atk% buff (1)": 50, 
+                    "buff turns (1)": "2"
+                }, 
+                "passive id": "86", 
+                "spark count buff activation": 30
+            }, 
+            {
+                "buff": {
+                    "buff turns (40)": "2", 
+                    "spark dmg% buff": 50
+                }, 
+                "passive id": "86", 
+                "spark count buff activation": 30
+            }, 
+            {
+                "bc fill on spark high": 2, 
+                "bc fill on spark low": 1, 
+                "bc fill on spark%": 100, 
+                "passive id": "47"
+            }, 
+            {
+                "passive id": "48", 
+                "reduced bb bc cost%": 20
+            }
+        ], 
+        "id": 819129, 
+        "max_stack": 1, 
+        "name": "Johnny's Coin", 
+        "raid": false, 
+        "rarity": 6, 
+        "sell_price": 30000, 
+        "sphere type": 11, 
+        "sphere type text": "Spark", 
+        "thumbnail": "sphere_thum_819129.png", 
+        "type": "sphere"
+    }, 
+    "819130": {
+        "desc": "100% boost to Atk, 50% boost to Atk when BB gauge is over 50%, boosts Atk when HP is over 50%, boosts critical damage & hugely boosts OD gauge fill rate", 
+        "effect": [
+            {
+                "atk% buff": 100, 
+                "passive id": "1"
+            }, 
+            {
+                "atk% buff": 50, 
+                "bb gauge above % buff requirement": 50, 
+                "passive id": "30"
+            }, 
+            {
+                "atk% buff": 50, 
+                "hp above % buff requirement": 50, 
+                "passive id": "11"
+            }, 
+            {
+                "crit multiplier%": 50.0, 
+                "passive id": "34"
+            }, 
+            {
+                "od fill rate%": 50, 
+                "passive id": "70"
+            }
+        ], 
+        "id": 819130, 
+        "max_stack": 1, 
+        "name": "Leo's Dictionary", 
+        "raid": false, 
+        "rarity": 6, 
+        "sell_price": 30000, 
+        "sphere type": 13, 
+        "sphere type text": "Atk Boosting", 
+        "thumbnail": "sphere_thum_819130.png", 
+        "type": "sphere"
+    }, 
     "819990": {
         "desc": "Boosts Atk, Def, Rec, and max HP by 10%", 
         "effect": [
