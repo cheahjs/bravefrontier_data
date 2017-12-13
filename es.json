@@ -27194,6 +27194,99 @@
         "rarity": "1", 
         "target": "self"
     }, 
+    "850507": {
+        "desc": "15% damage reduction from normal attacks when Damage Reducing Sphere is equipped & adds enormous critical hit rate boost for 3 turns effect to BB/SBB/UBB", 
+        "effects": [
+            {
+                "conditions": [
+                    {
+                        "sphere category required": "Damage Reducing", 
+                        "sphere category required (raw)": "10"
+                    }
+                ], 
+                "passive target": "self", 
+                "unknown passive id": "128", 
+                "unknown passive params": "100,15,100,15"
+            }, 
+            {
+                "conditions": [], 
+                "passive id": "66", 
+                "passive target": "self", 
+                "trigger on bb": true, 
+                "trigger on sbb": true, 
+                "trigger on ubb": true, 
+                "triggered effect": [
+                    {
+                        "buff turns": 3, 
+                        "crit% buff (7)": 60, 
+                        "effect delay time(ms)/frame": "0.0/0", 
+                        "element buffed": "all", 
+                        "proc id": "5", 
+                        "target area": "aoe", 
+                        "target type": "party"
+                    }
+                ]
+            }
+        ], 
+        "id": "850507", 
+        "name": "Guardian", 
+        "rarity": "1", 
+        "target": "self"
+    }, 
+    "850508": {
+        "desc": "20% damage reduction from normal attacks when Damage Reducing Sphere is equipped, adds enormous critical hit rate boost for 3 turns effect to BB/SBB/UBB, boosts Def each turn for up to 4 turns & negates elemental damage for all allies", 
+        "effects": [
+            {
+                "conditions": [
+                    {
+                        "sphere category required": "Damage Reducing", 
+                        "sphere category required (raw)": "10"
+                    }
+                ], 
+                "passive target": "self", 
+                "unknown passive id": "128", 
+                "unknown passive params": "100,20,100,20"
+            }, 
+            {
+                "conditions": [], 
+                "passive id": "66", 
+                "passive target": "self", 
+                "trigger on bb": true, 
+                "trigger on sbb": true, 
+                "trigger on ubb": true, 
+                "triggered effect": [
+                    {
+                        "buff turns": 3, 
+                        "crit% buff (7)": 60, 
+                        "effect delay time(ms)/frame": "0.0/0", 
+                        "element buffed": "all", 
+                        "proc id": "5", 
+                        "target area": "aoe", 
+                        "target type": "party"
+                    }
+                ]
+            }, 
+            {
+                "conditions": [], 
+                "def% max buff": 100, 
+                "increase from min to max": 1, 
+                "passive id": "105", 
+                "passive target": "self", 
+                "turn count": 4
+            }, 
+            {
+                "conditions": [], 
+                "passive id": "53", 
+                "passive target": "party", 
+                "strong base element damage resist%": 100, 
+                "strong buffed element damage resist%": 100
+            }
+        ], 
+        "id": "850508", 
+        "name": "Crystal Break \n", 
+        "rarity": "1", 
+        "target": "self"
+    }, 
     "850547": {
         "desc": "Negates elemental damage for all allies & boosts all parameters accordingly: 10% when Silver Key is equipped, 15% when Gold Key is equipped, 20% when Diamond Key is equipped", 
         "effects": [
