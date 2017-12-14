@@ -17671,6 +17671,99 @@
         "rarity": "0", 
         "target": "self"
     }, 
+    "740167": {
+        "desc": "Boosts Spark damage and elemental damage (120%) & if Excalibur is equipped, boosts HP (100%), activates BB/SBB/UBB twice (self) for 1 turn and adds all elements to attack for 3 turns to BB/SBB/UBB", 
+        "effects": [
+            {
+                "conditions": [], 
+                "dark units do extra elemental weakness dmg": true, 
+                "earth units do extra elemental weakness dmg": true, 
+                "elemental weakness multiplier%": 120.0, 
+                "fire units do extra elemental weakness dmg": true, 
+                "light units do extra elemental weakness dmg": true, 
+                "passive id": "50", 
+                "passive target": "self", 
+                "thunder units do extra elemental weakness dmg": true, 
+                "water units do extra elemental weakness dmg": true
+            }, 
+            {
+                "conditions": [], 
+                "damage% for spark": 120, 
+                "passive id": "31", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [
+                    {
+                        "item required": [
+                            "700009"
+                        ]
+                    }
+                ], 
+                "passive id": "66", 
+                "passive target": "self", 
+                "trigger on bb": true, 
+                "trigger on sbb": true, 
+                "trigger on ubb": true, 
+                "triggered effect": [
+                    {
+                        "effect delay time(ms)/frame": "50.0/3", 
+                        "target area": "single", 
+                        "target type": "self", 
+                        "unknown proc id": "70002", 
+                        "unknown proc param": "1,3,0,0,0,0,0,0,0"
+                    }
+                ]
+            }, 
+            {
+                "conditions": [
+                    {
+                        "item required": [
+                            "700009"
+                        ]
+                    }
+                ], 
+                "passive id": "66", 
+                "passive target": "self", 
+                "trigger on bb": true, 
+                "trigger on sbb": true, 
+                "trigger on ubb": true, 
+                "triggered effect": [
+                    {
+                        "effect delay time(ms)/frame": "50.0/3", 
+                        "elements added": [
+                            "fire", 
+                            "water", 
+                            "earth", 
+                            "thunder", 
+                            "light", 
+                            "dark"
+                        ], 
+                        "elements added turns": 3, 
+                        "proc id": "30", 
+                        "target area": "aoe", 
+                        "target type": "party"
+                    }
+                ]
+            }, 
+            {
+                "conditions": [
+                    {
+                        "item required": [
+                            "700009"
+                        ]
+                    }
+                ], 
+                "hp% buff": 100, 
+                "passive id": "1", 
+                "passive target": "self"
+            }
+        ], 
+        "id": "740167", 
+        "name": "Spoiled Child", 
+        "rarity": "0", 
+        "target": "self"
+    }, 
     "740176": {
         "desc": "Adds Removes status ailments to BB/SBB/UBB & Boosts BB gauge when attacked (3-5 BC)", 
         "effects": [
@@ -19096,6 +19189,104 @@
         "rarity": "0", 
         "target": "self"
     }, 
+    "750277": {
+        "desc": "Adds probable random status ailment infliction to attack (20%) for 3 turn to BB/SBB & when Siegfried sphere is equipped, raises ATK parameter limits to 130000, negates DEF ignoring effect (all) and boosts ATK of Light types (30%)", 
+        "effects": [
+            {
+                "conditions": [], 
+                "passive id": "66", 
+                "passive target": "self", 
+                "trigger on bb": true, 
+                "trigger on sbb": true, 
+                "triggered effect": [
+                    {
+                        "buff turns": 3, 
+                        "effect delay time(ms)/frame": "0.0/0", 
+                        "injury% buff": 20, 
+                        "poison% buff": 20, 
+                        "proc id": "40", 
+                        "sick% buff": 20, 
+                        "target area": "aoe", 
+                        "target type": "party", 
+                        "weaken% buff": 20
+                    }
+                ]
+            }, 
+            {
+                "conditions": [], 
+                "passive id": "66", 
+                "passive target": "self", 
+                "trigger on bb": true, 
+                "trigger on sbb": true, 
+                "triggered effect": [
+                    {
+                        "buff turns": 3, 
+                        "curse% buff": 20, 
+                        "effect delay time(ms)/frame": "0.0/0", 
+                        "paralysis% buff": 20, 
+                        "proc id": "40", 
+                        "target area": "aoe", 
+                        "target type": "party"
+                    }
+                ]
+            }, 
+            {
+                "conditions": [
+                    {
+                        "item required": [
+                            "700065", 
+                            "700061", 
+                            "700062", 
+                            "700063", 
+                            "700067"
+                        ]
+                    }
+                ], 
+                "increase atk cap": 130000, 
+                "passive id": "143", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [
+                    {
+                        "item required": [
+                            "700065", 
+                            "700061", 
+                            "700062", 
+                            "700063", 
+                            "700067"
+                        ]
+                    }
+                ], 
+                "ignore def resist chance%": 100, 
+                "passive id": "92", 
+                "passive target": "party"
+            }, 
+            {
+                "atk% buff": 30, 
+                "conditions": [
+                    {
+                        "item required": [
+                            "700065", 
+                            "700061", 
+                            "700062", 
+                            "700063", 
+                            "700067"
+                        ]
+                    }
+                ], 
+                "elements buffed": [
+                    "light"
+                ], 
+                "passive id": "2", 
+                "passive target": "party"
+            }
+        ], 
+        "id": "750277", 
+        "name": "Isolated Warrior", 
+        "rarity": "0", 
+        "target": "self"
+    }, 
     "7600": {
         "desc": "Boosts BB attack", 
         "effects": [
@@ -19622,11 +19813,20 @@
         "target": "self"
     }, 
     "760227": {
-        "desc": "50% boost to Spark Damage & If Arondight is equipped, adds statut ailment removal effect to BB/SBB and 30% boost to DEF, HP", 
+        "desc": "100% boost to Spark Damage & boosts all parameters (30%) & If Arondight is equipped, adds statut ailment removal effect to BB/SBB and 30% boost to DEF, HP", 
         "effects": [
             {
+                "atk% buff": 30, 
                 "conditions": [], 
-                "damage% for spark": 50, 
+                "def% buff": 30, 
+                "hp% buff": 30, 
+                "passive id": "1", 
+                "passive target": "self", 
+                "rec% buff": 30
+            }, 
+            {
+                "conditions": [], 
+                "damage% for spark": 100, 
                 "passive id": "31", 
                 "passive target": "self"
             }, 
@@ -20835,6 +21035,138 @@
         "rarity": "1", 
         "target": "self"
     }, 
+    "820507": {
+        "desc": "Adds status ailment removal and negation effects for 3 turns to BB/SBB", 
+        "effects": [
+            {
+                "conditions": [], 
+                "passive id": "66", 
+                "passive target": "self", 
+                "trigger on bb": true, 
+                "trigger on sbb": true, 
+                "triggered effect": [
+                    {
+                        "ailments cured": [
+                            "poison", 
+                            "weaken", 
+                            "sick", 
+                            "injury", 
+                            "curse", 
+                            "paralysis", 
+                            "atk down", 
+                            "def down", 
+                            "rec down"
+                        ], 
+                        "effect delay time(ms)/frame": "0.0/0", 
+                        "proc id": "38", 
+                        "target area": "aoe", 
+                        "target type": "party"
+                    }
+                ]
+            }, 
+            {
+                "conditions": [], 
+                "passive id": "66", 
+                "passive target": "self", 
+                "trigger on bb": true, 
+                "trigger on sbb": true, 
+                "triggered effect": [
+                    {
+                        "effect delay time(ms)/frame": "0.0/0", 
+                        "proc id": "17", 
+                        "resist curse% (34)": 100.0, 
+                        "resist injury% (33)": 100.0, 
+                        "resist paralysis% (35)": 100.0, 
+                        "resist poison% (30)": 100.0, 
+                        "resist sick% (32)": 100.0, 
+                        "resist status ails turns": 3, 
+                        "resist weaken% (31)": 100.0, 
+                        "target area": "aoe", 
+                        "target type": "party"
+                    }
+                ]
+            }
+        ], 
+        "id": "820507", 
+        "name": "Swift Charge", 
+        "rarity": "1", 
+        "target": "self"
+    }, 
+    "820508": {
+        "desc": "Hugely reduces BB gauge required for BB, adds status ailment removal and negation effects for 3 turns to BB/SBB & 20% boost to all parameters of Water types", 
+        "effects": [
+            {
+                "conditions": [], 
+                "passive id": "48", 
+                "passive target": "self", 
+                "reduced bb bc cost%": 25
+            }, 
+            {
+                "conditions": [], 
+                "passive id": "66", 
+                "passive target": "self", 
+                "trigger on bb": true, 
+                "trigger on sbb": true, 
+                "triggered effect": [
+                    {
+                        "ailments cured": [
+                            "poison", 
+                            "weaken", 
+                            "sick", 
+                            "injury", 
+                            "curse", 
+                            "paralysis", 
+                            "atk down", 
+                            "def down", 
+                            "rec down"
+                        ], 
+                        "effect delay time(ms)/frame": "0.0/0", 
+                        "proc id": "38", 
+                        "target area": "aoe", 
+                        "target type": "party"
+                    }
+                ]
+            }, 
+            {
+                "conditions": [], 
+                "passive id": "66", 
+                "passive target": "self", 
+                "trigger on bb": true, 
+                "trigger on sbb": true, 
+                "triggered effect": [
+                    {
+                        "effect delay time(ms)/frame": "0.0/0", 
+                        "proc id": "17", 
+                        "resist curse% (34)": 100.0, 
+                        "resist injury% (33)": 100.0, 
+                        "resist paralysis% (35)": 100.0, 
+                        "resist poison% (30)": 100.0, 
+                        "resist sick% (32)": 100.0, 
+                        "resist status ails turns": 3, 
+                        "resist weaken% (31)": 100.0, 
+                        "target area": "aoe", 
+                        "target type": "party"
+                    }
+                ]
+            }, 
+            {
+                "atk% buff": 20, 
+                "conditions": [], 
+                "def% buff": 20, 
+                "elements buffed": [
+                    "water"
+                ], 
+                "hp% buff": 20, 
+                "passive id": "2", 
+                "passive target": "party", 
+                "rec% buff": 20
+            }
+        ], 
+        "id": "820508", 
+        "name": "Time Leap", 
+        "rarity": "1", 
+        "target": "self"
+    }, 
     "820547": {
         "desc": "5% boost to all parameters for all allies & 25% damage reduction from Water types", 
         "effects": [
@@ -21868,6 +22200,99 @@
         ], 
         "id": "850398", 
         "name": "Lost Memories", 
+        "rarity": "1", 
+        "target": "self"
+    }, 
+    "850507": {
+        "desc": "15% damage reduction from normal attacks when Damage Reducing Sphere is equipped & adds enormous critical hit rate boost effect to BB/SBB/UBB for 3 turns", 
+        "effects": [
+            {
+                "conditions": [
+                    {
+                        "sphere category required": "Damage Reducing", 
+                        "sphere category required (raw)": "10"
+                    }
+                ], 
+                "passive target": "self", 
+                "unknown passive id": "128", 
+                "unknown passive params": "100,15,100,15"
+            }, 
+            {
+                "conditions": [], 
+                "passive id": "66", 
+                "passive target": "self", 
+                "trigger on bb": true, 
+                "trigger on sbb": true, 
+                "trigger on ubb": true, 
+                "triggered effect": [
+                    {
+                        "buff turns": 3, 
+                        "crit% buff (7)": 60, 
+                        "effect delay time(ms)/frame": "0.0/0", 
+                        "element buffed": "all", 
+                        "proc id": "5", 
+                        "target area": "aoe", 
+                        "target type": "party"
+                    }
+                ]
+            }
+        ], 
+        "id": "850507", 
+        "name": "Guardian", 
+        "rarity": "1", 
+        "target": "self"
+    }, 
+    "850508": {
+        "desc": "20% damage reduction from normal attacks when Damage Reducing Sphere is equipped, adds enormous critical hit rate boost effect to BB/SBB/UBB for 3 turns, boosts Def each turn for up to 4 turns & negates elemental damage for all allies", 
+        "effects": [
+            {
+                "conditions": [
+                    {
+                        "sphere category required": "Damage Reducing", 
+                        "sphere category required (raw)": "10"
+                    }
+                ], 
+                "passive target": "self", 
+                "unknown passive id": "128", 
+                "unknown passive params": "100,20,100,20"
+            }, 
+            {
+                "conditions": [], 
+                "passive id": "66", 
+                "passive target": "self", 
+                "trigger on bb": true, 
+                "trigger on sbb": true, 
+                "trigger on ubb": true, 
+                "triggered effect": [
+                    {
+                        "buff turns": 3, 
+                        "crit% buff (7)": 60, 
+                        "effect delay time(ms)/frame": "0.0/0", 
+                        "element buffed": "all", 
+                        "proc id": "5", 
+                        "target area": "aoe", 
+                        "target type": "party"
+                    }
+                ]
+            }, 
+            {
+                "conditions": [], 
+                "def% max buff": 100, 
+                "increase from min to max": 1, 
+                "passive id": "105", 
+                "passive target": "self", 
+                "turn count": 4
+            }, 
+            {
+                "conditions": [], 
+                "passive id": "53", 
+                "passive target": "party", 
+                "strong base element damage resist%": 100, 
+                "strong buffed element damage resist%": 100
+            }
+        ], 
+        "id": "850508", 
+        "name": "Crystal Break", 
         "rarity": "1", 
         "target": "self"
     }, 

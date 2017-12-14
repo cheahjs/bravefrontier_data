@@ -14822,6 +14822,43 @@
         "id": "740166", 
         "name": "Indomitable"
     }, 
+    "740167": {
+        "desc": "Boosts ATK and HP (60%) & boosts ATK relative to remaining HP (0-150%) & raises ATK parameter limits to 130000 & negates all status ailments & boosts Zel (100%), Karma (15%) and Item (5%) drop rates", 
+        "effects": [
+            {
+                "atk% buff": 60, 
+                "hp% buff": 60, 
+                "passive id": "1"
+            }, 
+            {
+                "atk% base buff": 0, 
+                "atk% extra buff based on hp": 150, 
+                "buff proportional to hp": "remaining", 
+                "passive id": "46"
+            }, 
+            {
+                "increase atk cap": 130000, 
+                "passive id": "143"
+            }, 
+            {
+                "curse resist%": 100, 
+                "injury resist%": 100, 
+                "paralysis resist%": 100, 
+                "passive id": "4", 
+                "poison resist%": 100, 
+                "sick resist%": 100, 
+                "weaken resist%": 100
+            }, 
+            {
+                "item drop rate% buff": 5, 
+                "karma drop rate% buff": 15, 
+                "passive id": "19", 
+                "zel drop rate% buff": 100
+            }
+        ], 
+        "id": "740167", 
+        "name": "Richest Son"
+    }, 
     "740176": {
         "desc": "Boosts all stats (30%) & Probable recovery of HP when attacked (40% Chance to heal 20% of DMG received) & Boost REC and DEF when damage taken has exceeded certain amount for 2 turns (70%, 5000 damage)", 
         "effects": [
@@ -18053,6 +18090,43 @@
         "id": "750267", 
         "name": "Forgotten Bloodline"
     }, 
+    "750277": {
+        "desc": "Boosts ATK (150%) & HP (80%) of Light types & boosts DEF and REC (80%) when BB gauge is full & damage reduction from Light, Dark types (20%) & boosts OD gauge fill rate (25%) & boosts Spark damage (150%)", 
+        "effects": [
+            {
+                "atk% buff": 150, 
+                "elements buffed": [
+                    "light"
+                ], 
+                "hp% buff": 80, 
+                "passive id": "2"
+            }, 
+            {
+                "bb gauge above % buff requirement": 100, 
+                "def% buff": 80, 
+                "passive id": "30", 
+                "rec% buff": 80
+            }, 
+            {
+                "light resist%": 20, 
+                "passive id": "5"
+            }, 
+            {
+                "dark resist%": 20, 
+                "passive id": "5"
+            }, 
+            {
+                "od fill rate%": 20, 
+                "passive id": "70"
+            }, 
+            {
+                "damage% for spark": 150, 
+                "passive id": "31"
+            }
+        ], 
+        "id": "750277", 
+        "name": "Unsuspected Leader"
+    }, 
     "7503": {
         "desc": "120% boost to Atk, 60% boost to max HP, boosts EXP gained & adds probable Def ignoring effect", 
         "effects": [
@@ -19108,10 +19182,10 @@
         "name": "Ironclad Defense"
     }, 
     "760227": {
-        "desc": "50% boost to max HP & Boosts ATK, DEF, REC relative to remaining HP (20-80%) & 100% boost to Spark damage & reduces damage taken (20%) for 2 turns when Sparks have exceeded certain amount (15)", 
+        "desc": "60% boost to max HP & Boosts ATK, DEF, REC relative to remaining HP (20-80%) & 130% boost to Spark damage & reduces damage taken (20%) for 2 turns when Sparks have exceeded certain amount (15)", 
         "effects": [
             {
-                "hp% buff": 50, 
+                "hp% buff": 60, 
                 "passive id": "1"
             }, 
             {
@@ -19125,7 +19199,7 @@
                 "rec% extra buff based on hp": 60
             }, 
             {
-                "damage% for spark": 100, 
+                "damage% for spark": 130, 
                 "passive id": "31"
             }, 
             {
@@ -21594,6 +21668,95 @@
         "id": "820378", 
         "name": "Let's Go Together!"
     }, 
+    "820507": {
+        "desc": "60% boost to all parameters of Water types, damage taken boosts BB gauge. 15% damage reduction for 2 turns & adds probable 1 turn Atk reduction effect to attack for 2 turns when damage taken has exceeded certain amount", 
+        "effects": [
+            {
+                "atk% buff": 60, 
+                "def% buff": 60, 
+                "elements buffed": [
+                    "water"
+                ], 
+                "hp% buff": 60, 
+                "passive id": "2", 
+                "rec% buff": 60
+            }, 
+            {
+                "bc fill when attacked high": 7, 
+                "bc fill when attacked low": 4, 
+                "bc fill when attacked%": 100, 
+                "passive id": "25"
+            }, 
+            {
+                "buff": {
+                    "buff turns (36)": "1", 
+                    "dmg reduction% buff": 15
+                }, 
+                "damage threshold buff activation": 5000, 
+                "passive id": "78"
+            }, 
+            {
+                "buff": {
+                    "buff turns (74)": "2", 
+                    "unknown buff id": "74", 
+                    "unknown buff params": "-20&30&1"
+                }, 
+                "damage threshold buff activation": 5000, 
+                "passive id": "78"
+            }
+        ], 
+        "id": "820507", 
+        "name": "Cryptic Revelation"
+    }, 
+    "820508": {
+        "desc": "85% boost to all parameters of Water types, damage taken boosts BB gauge, restores HP for 2 turns when HP is below 50%. 20% damage reduction & adds probable 1 turn Atk reduction effect to attack for 2 turns when damage taken has exceeded certain amount", 
+        "effects": [
+            {
+                "atk% buff": 85, 
+                "def% buff": 85, 
+                "elements buffed": [
+                    "water"
+                ], 
+                "hp% buff": 85, 
+                "passive id": "2", 
+                "rec% buff": 85
+            }, 
+            {
+                "buff": {
+                    "buff turns (8)": "2", 
+                    "gradual heal high": 3500, 
+                    "gradual heal low": 3000
+                }, 
+                "hp below % buff activation": 50, 
+                "passive id": "55"
+            }, 
+            {
+                "bc fill when attacked high": 8, 
+                "bc fill when attacked low": 5, 
+                "bc fill when attacked%": 100, 
+                "passive id": "25"
+            }, 
+            {
+                "buff": {
+                    "buff turns (36)": "1", 
+                    "dmg reduction% buff": 20
+                }, 
+                "damage threshold buff activation": 5000, 
+                "passive id": "78"
+            }, 
+            {
+                "buff": {
+                    "buff turns (74)": "1", 
+                    "unknown buff id": "74", 
+                    "unknown buff params": "-20&30&1"
+                }, 
+                "damage threshold buff activation": 5000, 
+                "passive id": "78"
+            }
+        ], 
+        "id": "820508", 
+        "name": "Cryptic Revelation"
+    }, 
     "820547": {
         "desc": "50% boost to all parameters of Water types, 120% boost to Spark damage, greatly boosts Water elemental damage & 10% damage reduction from Fire, Water types", 
         "effects": [
@@ -22055,6 +22218,80 @@
         ], 
         "id": "850388", 
         "name": "The King's Justice"
+    }, 
+    "850507": {
+        "desc": "150% boost to Atk, 60% boost to max HP and 30% boost to critical hit rate of Light types, negates critical and elemental damage, greatly boosts critical damage, greatly boosts Light elemental damage", 
+        "effects": [
+            {
+                "atk% buff": 150, 
+                "crit% buff": 30, 
+                "elements buffed": [
+                    "light"
+                ], 
+                "hp% buff": 60, 
+                "passive id": "2"
+            }, 
+            {
+                "crit chance base resist%": 100, 
+                "crit chance buffed resist%": 100, 
+                "crit dmg base damage resist%": 100, 
+                "crit dmg buffed damage resist%": 100, 
+                "passive id": "53", 
+                "strong base element damage resist%": 100, 
+                "strong buffed element damage resist%": 100
+            }, 
+            {
+                "elemental weakness multiplier%": 100.0, 
+                "light units do extra elemental weakness dmg": true, 
+                "passive id": "50"
+            }, 
+            {
+                "crit multiplier%": 100.0, 
+                "passive id": "34"
+            }
+        ], 
+        "id": "850507", 
+        "name": "Cryptic Essence"
+    }, 
+    "850508": {
+        "desc": "200% boost to Atk, 80% boost to max HP and 30% boost to critical hit rate of Light types, negates critical and elemental damage, hugely boosts critical damage, hugely boosts Light elemental damage & 15% damage reduction from Light, Dark types", 
+        "effects": [
+            {
+                "atk% buff": 200, 
+                "crit% buff": 30, 
+                "elements buffed": [
+                    "light"
+                ], 
+                "hp% buff": 80, 
+                "passive id": "2"
+            }, 
+            {
+                "crit chance base resist%": 100, 
+                "crit chance buffed resist%": 100, 
+                "crit dmg base damage resist%": 100, 
+                "crit dmg buffed damage resist%": 100, 
+                "passive id": "53", 
+                "strong base element damage resist%": 100, 
+                "strong buffed element damage resist%": 100
+            }, 
+            {
+                "elemental weakness multiplier%": 150.0, 
+                "light units do extra elemental weakness dmg": true, 
+                "passive id": "50"
+            }, 
+            {
+                "crit multiplier%": 150.0, 
+                "passive id": "34"
+            }, 
+            {
+                "dmg% mitigation for elemental attacks": 15.0, 
+                "mitigate dark attacks": true, 
+                "mitigate light attacks": true, 
+                "passive id": "62"
+            }
+        ], 
+        "id": "850508", 
+        "name": "Cryptic Essence"
     }, 
     "850547": {
         "desc": "50% boost to all parameters of Light types, greatly boosts critical damage, greatly boosts Light elemental damage & 10% damage reduction from Light, Dark types", 
