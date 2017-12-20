@@ -27742,6 +27742,28 @@
         "thumbnail": "item_thum_800000.png", 
         "type": "material"
     }, 
+    "801014": {
+        "desc": "MST_ITEMS_MATERIAL_801014_SHORTDESCRIPTION", 
+        "id": 801014, 
+        "max_stack": 99, 
+        "name": "Fairy Dust", 
+        "raid": false, 
+        "rarity": 3, 
+        "sell_price": 20, 
+        "thumbnail": "item_thum_801014.png", 
+        "type": "material"
+    }, 
+    "801015": {
+        "desc": "MST_ITEMS_MATERIAL_801015_SHORTDESCRIPTION", 
+        "id": 801015, 
+        "max_stack": 99, 
+        "name": "Kitsu's Gift", 
+        "raid": false, 
+        "rarity": 3, 
+        "sell_price": 20, 
+        "thumbnail": "item_thum_801015.png", 
+        "type": "material"
+    }, 
     "801101": {
         "desc": "The veiled drop of Akachi, overflowing with cosmic energy.", 
         "id": 801101, 
@@ -35612,6 +35634,176 @@
         "sphere type": 13, 
         "sphere type text": "Atk Boosting", 
         "thumbnail": "sphere_thum_819130.png", 
+        "type": "sphere"
+    }, 
+    "819131": {
+        "desc": "10% boost to all parameters & boosts BC, HC, Item, Karma and Zel drop rates", 
+        "effect": [
+            {
+                "atk% buff": 10, 
+                "def% buff": 10, 
+                "hp% buff": 10, 
+                "passive id": "1", 
+                "rec% buff": 10
+            }, 
+            {
+                "bc drop rate% buff": 10, 
+                "hc drop rate% buff": 10, 
+                "item drop rate% buff": 2, 
+                "karma drop rate% buff": 20, 
+                "passive id": "19", 
+                "zel drop rate% buff": 20
+            }
+        ], 
+        "id": 819131, 
+        "max_stack": 1, 
+        "name": "Fairy Luck", 
+        "raid": false, 
+        "rarity": 4, 
+        "recipe": {
+            "karma": "10000", 
+            "materials": [
+                {
+                    "count": 10, 
+                    "id": 801014
+                }
+            ]
+        }, 
+        "sell_price": 10000, 
+        "sphere type": 3, 
+        "sphere type text": "Drop", 
+        "thumbnail": "sphere_thum_819131.png", 
+        "type": "sphere"
+    }, 
+    "819132": {
+        "desc": "15% boost to all parameters, considerably boosts BC, HC, Item, Karma and Zel drop rates & boosts critical hit rate for 2 turns when HC collected has exceeded certain amount", 
+        "effect": [
+            {
+                "atk% buff": 15, 
+                "def% buff": 15, 
+                "hp% buff": 15, 
+                "passive id": "1", 
+                "rec% buff": 15
+            }, 
+            {
+                "bc drop rate% buff": 15, 
+                "hc drop rate% buff": 15, 
+                "item drop rate% buff": 3, 
+                "karma drop rate% buff": 25, 
+                "passive id": "19", 
+                "zel drop rate% buff": 25
+            }, 
+            {
+                "buff": {
+                    "buff turns (7)": "2", 
+                    "unknown buff id": "7", 
+                    "unknown buff params": "20"
+                }, 
+                "hc receive count buff activation": 20, 
+                "passive id": "84"
+            }
+        ], 
+        "id": 819132, 
+        "max_stack": 1, 
+        "name": "Fairy Fortune", 
+        "raid": false, 
+        "rarity": 5, 
+        "recipe": {
+            "karma": "20000", 
+            "materials": [
+                {
+                    "count": 1, 
+                    "id": 819131
+                }, 
+                {
+                    "count": 15, 
+                    "id": 801014
+                }, 
+                {
+                    "count": 100, 
+                    "id": 801015
+                }
+            ]
+        }, 
+        "sell_price": 25000, 
+        "sphere type": 3, 
+        "sphere type text": "Drop", 
+        "thumbnail": "sphere_thum_819132.png", 
+        "type": "sphere"
+    }, 
+    "819133": {
+        "desc": "30% boost to all parameters, greatly boosts BC, HC, Item, Karma and Zel drop rates, greatly boosts critical hit rate for 2 turns when HC collected has exceeded certain amount, considerably boosts BB Atk for 2 turns when BC collected has exceeded certain amount & negates all status ailments", 
+        "effect": [
+            {
+                "atk% buff": 30, 
+                "def% buff": 30, 
+                "hp% buff": 30, 
+                "passive id": "1", 
+                "rec% buff": 30
+            }, 
+            {
+                "bc drop rate% buff": 35, 
+                "hc drop rate% buff": 35, 
+                "item drop rate% buff": 5, 
+                "karma drop rate% buff": 50, 
+                "passive id": "19", 
+                "zel drop rate% buff": 50
+            }, 
+            {
+                "buff": {
+                    "buff turns (7)": "2", 
+                    "unknown buff id": "7", 
+                    "unknown buff params": "25"
+                }, 
+                "hc receive count buff activation": 20, 
+                "passive id": "84"
+            }, 
+            {
+                "bc receive count buff activation": 20, 
+                "buff": {
+                    "bb atk% buff": 200, 
+                    "buff turns (72)": "2", 
+                    "sbb atk% buff": 200, 
+                    "ubb atk% buff": 200
+                }, 
+                "passive id": "82"
+            }, 
+            {
+                "curse resist%": 100, 
+                "injury resist%": 100, 
+                "paralysis resist%": 100, 
+                "passive id": "4", 
+                "poison resist%": 100, 
+                "sick resist%": 100, 
+                "weaken resist%": 100
+            }
+        ], 
+        "id": 819133, 
+        "max_stack": 1, 
+        "name": "Fairy Fate", 
+        "raid": false, 
+        "rarity": 6, 
+        "recipe": {
+            "karma": "60000", 
+            "materials": [
+                {
+                    "count": 1, 
+                    "id": 819132
+                }, 
+                {
+                    "count": 10, 
+                    "id": 801014
+                }, 
+                {
+                    "count": 200, 
+                    "id": 801015
+                }
+            ]
+        }, 
+        "sell_price": 50000, 
+        "sphere type": 3, 
+        "sphere type text": "Drop", 
+        "thumbnail": "sphere_thum_819133.png", 
         "type": "sphere"
     }, 
     "819138": {

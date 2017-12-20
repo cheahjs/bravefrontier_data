@@ -19293,7 +19293,7 @@
         "target": "self"
     }, 
     "45300": {
-        "desc": "40% boost to Atk, Def, Rec, max HP and 100% boost to Spark damage when an Attack Booster type Sphere is equipped, raises max Atk value from 99999 to 180000 & 15% boost to Atk, Def, Rec, max HP", 
+        "desc": "40% boost to Atk, Def, Rec, max HP and 100% boost to Spark damage when an Attack Boosting Type Sphere is equipped, raises max Atk value from 99999 to 180000 & 15% boost to Atk, Def, Rec, max HP for all allies", 
         "effects": [
             {
                 "atk% buff": 40, 
@@ -19451,6 +19451,53 @@
         "rarity": "1", 
         "target": "self"
     }, 
+    "45800": {
+        "desc": "Boosts Atk, Def, Rec when BB gauge is over 50% & considerably boosts BB gauge each turn", 
+        "effects": [
+            {
+                "atk% buff": 50, 
+                "bb gauge above % buff requirement": 50, 
+                "conditions": [], 
+                "def% buff": 50, 
+                "passive id": "30", 
+                "passive target": "self", 
+                "rec% buff": 50
+            }, 
+            {
+                "bc fill per turn": 4, 
+                "conditions": [], 
+                "passive id": "9", 
+                "passive target": "self"
+            }
+        ], 
+        "id": "45800", 
+        "name": "Heaven & the Sea Unite", 
+        "rarity": "1", 
+        "target": "self"
+    }, 
+    "45900": {
+        "desc": "Hugely boosts BB Atk & considerably boosts critical damage", 
+        "effects": [
+            {
+                "bb atk% buff": 150, 
+                "conditions": [], 
+                "passive id": "64", 
+                "passive target": "self", 
+                "sbb atk% buff": 150, 
+                "ubb atk% buff": 150
+            }, 
+            {
+                "conditions": [], 
+                "crit multiplier%": 100.0, 
+                "passive id": "34", 
+                "passive target": "self"
+            }
+        ], 
+        "id": "45900", 
+        "name": "Ambitious Training", 
+        "rarity": "1", 
+        "target": "self"
+    }, 
     "4600": {
         "desc": "Boosts BB Atk", 
         "effects": [
@@ -19465,6 +19512,449 @@
         ], 
         "id": "4600", 
         "name": "Revenge Tragedy", 
+        "rarity": "1", 
+        "target": "self"
+    }, 
+    "46000": {
+        "desc": "クリティカル・弱点属性ダメージを無効＆ＢＢ及びＳＢＢに「味方全体の全状態異常を回復」を追加", 
+        "effects": [
+            {
+                "conditions": [], 
+                "passive id": "66", 
+                "passive target": "self", 
+                "trigger on bb": true, 
+                "trigger on sbb": true, 
+                "triggered effect": [
+                    {
+                        "ailments cured": [
+                            "poison", 
+                            "weaken", 
+                            "sick", 
+                            "injury", 
+                            "curse", 
+                            "paralysis", 
+                            "atk down", 
+                            "def down", 
+                            "rec down"
+                        ], 
+                        "effect delay time(ms)/frame": "0.0/0", 
+                        "proc id": "38", 
+                        "target area": "aoe", 
+                        "target type": "party"
+                    }
+                ]
+            }, 
+            {
+                "conditions": [], 
+                "crit chance base resist%": 100, 
+                "crit chance buffed resist%": 100, 
+                "crit dmg base damage resist%": 100, 
+                "crit dmg buffed damage resist%": 100, 
+                "passive id": "53", 
+                "passive target": "self", 
+                "strong base element damage resist%": 100, 
+                "strong buffed element damage resist%": 100
+            }
+        ], 
+        "id": "46000", 
+        "name": "四戦士の想い", 
+        "rarity": "1", 
+        "target": "self"
+    }, 
+    "46100": {
+        "desc": "クリティカルダメージをかなりアップ＆スパークダメージを８０％アップ", 
+        "effects": [
+            {
+                "conditions": [], 
+                "crit multiplier%": 100.0, 
+                "passive id": "34", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "damage% for spark": 80, 
+                "passive id": "31", 
+                "passive target": "self"
+            }
+        ], 
+        "id": "46100", 
+        "name": "神を超えし射手", 
+        "rarity": "1", 
+        "target": "self"
+    }, 
+    "46200": {
+        "desc": "「ＢＢゲージ系」タイプのスフィアを装備時、攻撃力・防御力・回復力・最大ＨＰを３０％アップ・与ダメージが一定数を超える度にＢＢゲージをかなり増加＆ＢＢゲージが半分以上の時、攻撃力・防御力・回復力を少しアップ", 
+        "effects": [
+            {
+                "atk% buff": 30, 
+                "conditions": [
+                    {
+                        "sphere category required": "BB Gauge", 
+                        "sphere category required (raw)": "6"
+                    }
+                ], 
+                "def% buff": 30, 
+                "hp% buff": 30, 
+                "passive id": "1", 
+                "passive target": "self", 
+                "rec% buff": 30
+            }, 
+            {
+                "conditions": [
+                    {
+                        "sphere category required": "BB Gauge", 
+                        "sphere category required (raw)": "6"
+                    }
+                ], 
+                "damage dealt threshold activation": 5000, 
+                "increase bb gauge": 7, 
+                "passive id": "81", 
+                "passive target": "self"
+            }, 
+            {
+                "atk% buff": 40, 
+                "bb gauge above % buff requirement": 50, 
+                "conditions": [], 
+                "def% buff": 40, 
+                "passive id": "30", 
+                "passive target": "self", 
+                "rec% buff": 40
+            }
+        ], 
+        "id": "46200", 
+        "name": "悠久たる審判", 
+        "rarity": "1", 
+        "target": "self"
+    }, 
+    "46300": {
+        "desc": "「ＢＢゲージ系」タイプのスフィアを装備時、攻撃力・防御力・回復力・最大ＨＰを４０％アップ・与ダメージが一定数を超える度にＢＢゲージを大幅に増加＆ＢＢゲージが半分以上の時、攻撃力・防御力・回復力をアップ", 
+        "effects": [
+            {
+                "atk% buff": 40, 
+                "conditions": [
+                    {
+                        "sphere category required": "BB Gauge", 
+                        "sphere category required (raw)": "6"
+                    }
+                ], 
+                "def% buff": 40, 
+                "hp% buff": 40, 
+                "passive id": "1", 
+                "passive target": "self", 
+                "rec% buff": 40
+            }, 
+            {
+                "conditions": [
+                    {
+                        "sphere category required": "BB Gauge", 
+                        "sphere category required (raw)": "6"
+                    }
+                ], 
+                "damage dealt threshold activation": 5000, 
+                "increase bb gauge": 8, 
+                "passive id": "81", 
+                "passive target": "self"
+            }, 
+            {
+                "atk% buff": 60, 
+                "bb gauge above % buff requirement": 50, 
+                "conditions": [], 
+                "def% buff": 60, 
+                "passive id": "30", 
+                "passive target": "self", 
+                "rec% buff": 60
+            }
+        ], 
+        "id": "46300", 
+        "name": "絶対なる調律", 
+        "rarity": "1", 
+        "target": "self"
+    }, 
+    "46400": {
+        "desc": "「ステータス強化系」タイプのスフィアを装備時、攻撃力・防御力・回復力・最大ＨＰを３０％アップ・戦闘開始から２ターン、被ダメージを半分に軽減＆確率で敵のＢＢゲージを少し減少＆確率でＢＢゲージ増加量を２ターン低下", 
+        "effects": [
+            {
+                "atk% buff": 30, 
+                "conditions": [
+                    {
+                        "sphere category required": "Status Boost", 
+                        "sphere category required (raw)": "1"
+                    }
+                ], 
+                "def% buff": 30, 
+                "hp% buff": 30, 
+                "passive id": "1", 
+                "passive target": "self", 
+                "rec% buff": 30
+            }, 
+            {
+                "conditions": [
+                    {
+                        "sphere category required": "Status Boost", 
+                        "sphere category required (raw)": "1"
+                    }
+                ], 
+                "dmg% mitigation for elemental attacks": 50, 
+                "dmg% mitigation for elemental attacks buff for first x turns": 2, 
+                "mitigate dark attacks": true, 
+                "mitigate earth attacks": true, 
+                "mitigate fire attacks": true, 
+                "mitigate light attacks": true, 
+                "mitigate thunder attacks": true, 
+                "mitigate water attacks": true, 
+                "passive id": "63", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "passive target": "self", 
+                "unknown passive id": "110", 
+                "unknown passive params": "0,0,20,20,10,0"
+            }, 
+            {
+                "conditions": [], 
+                "passive target": "self", 
+                "unknown passive id": "109", 
+                "unknown passive params": "-30,50,1,0"
+            }
+        ], 
+        "id": "46400", 
+        "name": "無限たるもの", 
+        "rarity": "1", 
+        "target": "self"
+    }, 
+    "46500": {
+        "desc": "「ステータス強化系」タイプのスフィアを装備時、攻撃力・防御力・回復力・最大ＨＰを４０％アップ・戦闘開始から２ターン、被ダメージを半分に軽減＆確率で敵のＢＢゲージを減少＆確率でＢＢゲージ増加量を２ターンかなり低下", 
+        "effects": [
+            {
+                "atk% buff": 40, 
+                "conditions": [
+                    {
+                        "sphere category required": "Status Boost", 
+                        "sphere category required (raw)": "1"
+                    }
+                ], 
+                "def% buff": 40, 
+                "hp% buff": 40, 
+                "passive id": "1", 
+                "passive target": "self", 
+                "rec% buff": 40
+            }, 
+            {
+                "conditions": [
+                    {
+                        "sphere category required": "Status Boost", 
+                        "sphere category required (raw)": "1"
+                    }
+                ], 
+                "dmg% mitigation for elemental attacks": 50, 
+                "dmg% mitigation for elemental attacks buff for first x turns": 2, 
+                "mitigate dark attacks": true, 
+                "mitigate earth attacks": true, 
+                "mitigate fire attacks": true, 
+                "mitigate light attacks": true, 
+                "mitigate thunder attacks": true, 
+                "mitigate water attacks": true, 
+                "passive id": "63", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "passive target": "self", 
+                "unknown passive id": "110", 
+                "unknown passive params": "0,0,30,30,20,0"
+            }, 
+            {
+                "conditions": [], 
+                "passive target": "self", 
+                "unknown passive id": "109", 
+                "unknown passive params": "-50,50,1,0"
+            }
+        ], 
+        "id": "46500", 
+        "name": "混沌より出でるもの", 
+        "rarity": "1", 
+        "target": "self"
+    }, 
+    "46600": {
+        "desc": "「ダメージ反射系」タイプのスフィアを装備時、クリティカル率を超絶アップ＆クリティカル時、ＢＢゲージを増加＆クリティカルが発生したユニットのＢＢゲージを増加", 
+        "effects": [
+            {
+                "conditions": [
+                    {
+                        "sphere category required": "Damage Reflecting", 
+                        "sphere category required (raw)": "9"
+                    }
+                ], 
+                "crit% buff": 60, 
+                "passive id": "1", 
+                "passive target": "self"
+            }, 
+            {
+                "bc fill on crit max": 3, 
+                "bc fill on crit min": 2, 
+                "bc fill on crit%": 100.0, 
+                "conditions": [], 
+                "passive id": "65", 
+                "passive target": "self"
+            }, 
+            {
+                "bc fill on crit max": 2, 
+                "bc fill on crit min": 1, 
+                "bc fill on crit%": 100.0, 
+                "conditions": [], 
+                "passive id": "65", 
+                "passive target": "party"
+            }
+        ], 
+        "id": "46600", 
+        "name": "完全なる未来", 
+        "rarity": "1", 
+        "target": "self"
+    }, 
+    "46700": {
+        "desc": "攻撃力・防御力・回復力・最大ＨＰを２０％アップ＆「ダメージ軽減系」タイプのスフィアを装備時、ＢＢ及びＳＢＢに「味方全体に１ターン、被ダメージを半分に軽減」を追加", 
+        "effects": [
+            {
+                "conditions": [
+                    {
+                        "sphere category required": "Damage Reducing", 
+                        "sphere category required (raw)": "10"
+                    }
+                ], 
+                "passive id": "66", 
+                "passive target": "self", 
+                "trigger on bb": true, 
+                "trigger on sbb": true, 
+                "triggered effect": [
+                    {
+                        "dmg% reduction": 50, 
+                        "dmg% reduction turns (36)": 1, 
+                        "effect delay time(ms)/frame": "0.0/0", 
+                        "proc id": "18", 
+                        "target area": "aoe", 
+                        "target type": "party"
+                    }
+                ]
+            }, 
+            {
+                "atk% buff": 20, 
+                "conditions": [], 
+                "def% buff": 20, 
+                "hp% buff": 20, 
+                "passive id": "1", 
+                "passive target": "self", 
+                "rec% buff": 20
+            }
+        ], 
+        "id": "46700", 
+        "name": "闇の知識", 
+        "rarity": "1", 
+        "target": "self"
+    }, 
+    "46800": {
+        "desc": "攻撃・防御・回復・最大ＨＰ２０％アップ＆「ダメージ軽減系」タイプスフィア装備時、ＳＢＢに「味方全体に１ターン、光・闇属性ユニットからの被ダメージ少し軽減」追加・ＢＢ及びＳＢＢに「味方全体に３ターン、ターン毎にＢＢゲージ大幅に増加」追加", 
+        "effects": [
+            {
+                "conditions": [
+                    {
+                        "sphere category required": "Damage Reducing", 
+                        "sphere category required (raw)": "10"
+                    }
+                ], 
+                "passive id": "66", 
+                "passive target": "self", 
+                "trigger on sbb": true, 
+                "triggered effect": [
+                    {
+                        "dmg% mitigation for elemental attacks": 5, 
+                        "dmg% mitigation for elemental attacks buff turns": 1, 
+                        "effect delay time(ms)/frame": "0.0/0", 
+                        "mitigate dark attacks": true, 
+                        "mitigate light attacks": true, 
+                        "proc id": "39", 
+                        "target area": "aoe", 
+                        "target type": "party"
+                    }
+                ]
+            }, 
+            {
+                "conditions": [
+                    {
+                        "sphere category required": "Damage Reducing", 
+                        "sphere category required (raw)": "10"
+                    }
+                ], 
+                "passive id": "66", 
+                "passive target": "self", 
+                "trigger on bb": true, 
+                "trigger on sbb": true, 
+                "triggered effect": [
+                    {
+                        "effect delay time(ms)/frame": "0.0/0", 
+                        "increase bb gauge gradual": 7, 
+                        "increase bb gauge gradual turns (37)": 3, 
+                        "proc id": "19", 
+                        "target area": "aoe", 
+                        "target type": "party"
+                    }
+                ]
+            }, 
+            {
+                "atk% buff": 20, 
+                "conditions": [], 
+                "def% buff": 20, 
+                "hp% buff": 20, 
+                "passive id": "1", 
+                "passive target": "self", 
+                "rec% buff": 20
+            }
+        ], 
+        "id": "46800", 
+        "name": "裂け目の知識", 
+        "rarity": "1", 
+        "target": "self"
+    }, 
+    "46900": {
+        "desc": "「攻撃強化系」タイプのスフィア装備時、攻撃力・防御力・回復力・最大ＨＰを３０％アップ・ターン毎に攻撃力をアップ（５ターン目まで上昇量が増加する）＆ＨＰが半分以上の時、スパークダメージを５０％アップ", 
+        "effects": [
+            {
+                "atk% buff": 30, 
+                "conditions": [
+                    {
+                        "sphere category required": "Atk Boosting", 
+                        "sphere category required (raw)": "13"
+                    }
+                ], 
+                "def% buff": 30, 
+                "hp% buff": 30, 
+                "passive id": "1", 
+                "passive target": "self", 
+                "rec% buff": 30
+            }, 
+            {
+                "atk% max buff": 80, 
+                "conditions": [
+                    {
+                        "sphere category required": "Atk Boosting", 
+                        "sphere category required (raw)": "13"
+                    }
+                ], 
+                "increase from min to max": 1, 
+                "passive id": "105", 
+                "passive target": "self", 
+                "turn count": 5
+            }, 
+            {
+                "conditions": [], 
+                "damage% for spark": 50, 
+                "hp above % buff requirement": 50, 
+                "passive id": "104", 
+                "passive target": "self"
+            }
+        ], 
+        "id": "46900", 
+        "name": "武刃の証跡", 
         "rarity": "1", 
         "target": "self"
     }, 
@@ -19508,6 +19998,383 @@
         ], 
         "id": "4700", 
         "name": "Contemplating the Future", 
+        "rarity": "1", 
+        "target": "self"
+    }, 
+    "47000": {
+        "desc": "「攻撃強化系」タイプのスフィア装備時、攻撃力・防御力・回復力・最大ＨＰを４０％アップ・ターン毎に攻撃力をアップ（５ターン目まで上昇量が増加する）＆ＨＰが半分以上の時、スパークダメージを８０％アップ", 
+        "effects": [
+            {
+                "atk% buff": 40, 
+                "conditions": [
+                    {
+                        "sphere category required": "Atk Boosting", 
+                        "sphere category required (raw)": "13"
+                    }
+                ], 
+                "def% buff": 40, 
+                "hp% buff": 40, 
+                "passive id": "1", 
+                "passive target": "self", 
+                "rec% buff": 40
+            }, 
+            {
+                "atk% max buff": 100, 
+                "conditions": [
+                    {
+                        "sphere category required": "Atk Boosting", 
+                        "sphere category required (raw)": "13"
+                    }
+                ], 
+                "increase from min to max": 1, 
+                "passive id": "105", 
+                "passive target": "self", 
+                "turn count": 5
+            }, 
+            {
+                "conditions": [], 
+                "damage% for spark": 80, 
+                "hp above % buff requirement": 50, 
+                "passive id": "104", 
+                "passive target": "self"
+            }
+        ], 
+        "id": "47000", 
+        "name": "終極なる武", 
+        "rarity": "1", 
+        "target": "self"
+    }, 
+    "47100": {
+        "desc": "「ダメージ軽減系」タイプのスフィア装備時、攻撃力・防御力・回復力・最大ＨＰを３０％アップ・低確率で被ダメージを超絶軽減＆ＢＢ及びＳＢＢの発動率をアップ", 
+        "effects": [
+            {
+                "atk% buff": 30, 
+                "conditions": [
+                    {
+                        "sphere category required": "Damage Reducing", 
+                        "sphere category required (raw)": "10"
+                    }
+                ], 
+                "def% buff": 30, 
+                "hp% buff": 30, 
+                "passive id": "1", 
+                "passive target": "self", 
+                "rec% buff": 30
+            }, 
+            {
+                "conditions": [
+                    {
+                        "sphere category required": "Damage Reducing", 
+                        "sphere category required (raw)": "10"
+                    }
+                ], 
+                "passive id": "43", 
+                "passive target": "self", 
+                "take 1 dmg%": 5
+            }, 
+            {
+                "conditions": [], 
+                "increase skill activation in arena%": 10, 
+                "passive id": "111", 
+                "passive target": "self"
+            }
+        ], 
+        "id": "47100", 
+        "name": "宝珠に祈りを籠めて", 
+        "rarity": "1", 
+        "target": "self"
+    }, 
+    "47200": {
+        "desc": "「ダメージ軽減系」タイプのスフィア装備時、攻撃力・防御力・回復力・最大ＨＰを４０％アップ・低確率で被ダメージを超絶軽減＆ＢＢ及びＳＢＢの発動率を大幅にアップ", 
+        "effects": [
+            {
+                "atk% buff": 40, 
+                "conditions": [
+                    {
+                        "sphere category required": "Damage Reducing", 
+                        "sphere category required (raw)": "10"
+                    }
+                ], 
+                "def% buff": 40, 
+                "hp% buff": 40, 
+                "passive id": "1", 
+                "passive target": "self", 
+                "rec% buff": 40
+            }, 
+            {
+                "conditions": [
+                    {
+                        "sphere category required": "Damage Reducing", 
+                        "sphere category required (raw)": "10"
+                    }
+                ], 
+                "passive id": "43", 
+                "passive target": "self", 
+                "take 1 dmg%": 10
+            }, 
+            {
+                "conditions": [], 
+                "increase skill activation in arena%": 30, 
+                "passive id": "111", 
+                "passive target": "self"
+            }
+        ], 
+        "id": "47200", 
+        "name": "未来を灯す燈籠", 
+        "rarity": "1", 
+        "target": "self"
+    }, 
+    "47300": {
+        "desc": "クリティカル時、ＢＢゲージを超絶増加・３ターン、ターン毎にＨＰを回復", 
+        "effects": [
+            {
+                "bc fill on crit max": 8, 
+                "bc fill on crit min": 8, 
+                "bc fill on crit%": 100.0, 
+                "conditions": [], 
+                "passive id": "65", 
+                "passive target": "self"
+            }, 
+            {
+                "buff": {
+                    "buff turns (8)": "3", 
+                    "gradual heal high": 1000, 
+                    "gradual heal low": 800
+                }, 
+                "conditions": [], 
+                "on crit activation chance%": 100, 
+                "passive id": "89", 
+                "passive target": "self"
+            }
+        ], 
+        "id": "47300", 
+        "name": "英雄を育てた賢狼", 
+        "rarity": "1", 
+        "target": "self"
+    }, 
+    "47400": {
+        "desc": "ＢＢ及びＳＢＢに「味方全体に２ターン、防御貫通効果を付与」を追加＆残りＨＰが多いほど、攻撃力・防御力・回復力をアップ＆通常攻撃ＨＩＴ数を増加", 
+        "effects": [
+            {
+                "atk% base buff": 0, 
+                "atk% extra buff based on hp": 50, 
+                "buff proportional to hp": "remaining", 
+                "conditions": [], 
+                "def% base buff": 0, 
+                "def% extra buff based on hp": 50, 
+                "passive id": "46", 
+                "passive target": "self", 
+                "rec% base buff": 0, 
+                "rec% extra buff based on hp": 50
+            }, 
+            {
+                "conditions": [], 
+                "hit increase/hit": 1, 
+                "passive id": "37", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "passive id": "66", 
+                "passive target": "self", 
+                "trigger on bb": true, 
+                "trigger on sbb": true, 
+                "triggered effect": [
+                    {
+                        "defense% ignore": 100, 
+                        "defense% ignore turns (39)": 2, 
+                        "effect delay time(ms)/frame": "0.0/0", 
+                        "proc id": "22", 
+                        "target area": "aoe", 
+                        "target type": "party"
+                    }
+                ]
+            }
+        ], 
+        "id": "47400", 
+        "name": "影より支えし者", 
+        "rarity": "1", 
+        "target": "self"
+    }, 
+    "47500": {
+        "desc": "「ＨＰ回復系」タイプのスフィアを装備時、攻撃力・防御力・回復力・最大ＨＰを３０％アップ・被ダメージが一定数を超える度に低確率で一度だけ戦闘不能を耐える効果を付与＆確率で１回まで戦闘不能を耐える", 
+        "effects": [
+            {
+                "atk% buff": 30, 
+                "conditions": [
+                    {
+                        "sphere category required": "HP Recovery", 
+                        "sphere category required (raw)": "7"
+                    }
+                ], 
+                "def% buff": 30, 
+                "hp% buff": 30, 
+                "passive id": "1", 
+                "passive target": "self", 
+                "rec% buff": 30
+            }, 
+            {
+                "buff": {
+                    "buff turns (91)": "-1", 
+                    "unknown buff id": "91", 
+                    "unknown buff params": "20&0"
+                }, 
+                "conditions": [
+                    {
+                        "sphere category required": "HP Recovery", 
+                        "sphere category required (raw)": "7"
+                    }
+                ], 
+                "damage threshold buff activation": 200000, 
+                "passive id": "78", 
+                "passive target": "self"
+            }, 
+            {
+                "angel idol chance% condition": 0, 
+                "angel idol recover chance% high": 60, 
+                "angel idol recover chance% low": 60, 
+                "angel idol recover counts": 1, 
+                "conditions": [], 
+                "passive id": "69", 
+                "passive target": "self"
+            }
+        ], 
+        "id": "47500", 
+        "name": "輪廻の裁定者", 
+        "rarity": "1", 
+        "target": "self"
+    }, 
+    "47600": {
+        "desc": "「ＨＰ回復系」タイプのスフィアを装備時、攻撃力・防御力・回復力・最大ＨＰを４０％アップ・被ダメージが一定数を超える度に低確率で一度だけ戦闘不能を耐える効果を付与＆確率で１回まで戦闘不能を耐える", 
+        "effects": [
+            {
+                "atk% buff": 40, 
+                "conditions": [
+                    {
+                        "sphere category required": "HP Recovery", 
+                        "sphere category required (raw)": "7"
+                    }
+                ], 
+                "def% buff": 40, 
+                "hp% buff": 40, 
+                "passive id": "1", 
+                "passive target": "self", 
+                "rec% buff": 40
+            }, 
+            {
+                "buff": {
+                    "buff turns (91)": "-1", 
+                    "unknown buff id": "91", 
+                    "unknown buff params": "30&0"
+                }, 
+                "conditions": [
+                    {
+                        "sphere category required": "HP Recovery", 
+                        "sphere category required (raw)": "7"
+                    }
+                ], 
+                "damage threshold buff activation": 200000, 
+                "passive id": "78", 
+                "passive target": "self"
+            }, 
+            {
+                "angel idol chance% condition": 0, 
+                "angel idol recover chance% high": 80, 
+                "angel idol recover chance% low": 80, 
+                "angel idol recover counts": 1, 
+                "conditions": [], 
+                "passive id": "69", 
+                "passive target": "self"
+            }
+        ], 
+        "id": "47600", 
+        "name": "唯一つの存在意義", 
+        "rarity": "1", 
+        "target": "self"
+    }, 
+    "47700": {
+        "desc": "「ステータス強化系」タイプのスフィアを装備時、攻撃力・防御力・回復力・最大ＨＰを３０％アップ・全てのユニットの攻撃力・防御力・回復力・最大ＨＰを１０％アップ＆ＯＤゲージの増加量を大幅にアップ", 
+        "effects": [
+            {
+                "atk% buff": 30, 
+                "conditions": [
+                    {
+                        "sphere category required": "Status Boost", 
+                        "sphere category required (raw)": "1"
+                    }
+                ], 
+                "def% buff": 30, 
+                "hp% buff": 30, 
+                "passive id": "1", 
+                "passive target": "self", 
+                "rec% buff": 30
+            }, 
+            {
+                "atk% buff": 10, 
+                "conditions": [
+                    {
+                        "sphere category required": "Status Boost", 
+                        "sphere category required (raw)": "1"
+                    }
+                ], 
+                "def% buff": 10, 
+                "hp% buff": 10, 
+                "passive id": "1", 
+                "passive target": "party", 
+                "rec% buff": 10
+            }, 
+            {
+                "conditions": [], 
+                "od fill rate%": 30, 
+                "passive id": "70", 
+                "passive target": "self"
+            }
+        ], 
+        "id": "47700", 
+        "name": "必然たる終焉", 
+        "rarity": "1", 
+        "target": "self"
+    }, 
+    "47800": {
+        "desc": "「ステータス強化系」タイプのスフィアを装備時、攻撃力・防御力・回復力・最大ＨＰを４０％アップ・全てのユニットの攻撃力・防御力・回復力・最大ＨＰを１５％アップ＆ＯＤゲージの増加量を超絶アップ", 
+        "effects": [
+            {
+                "atk% buff": 40, 
+                "conditions": [
+                    {
+                        "sphere category required": "Status Boost", 
+                        "sphere category required (raw)": "1"
+                    }
+                ], 
+                "def% buff": 40, 
+                "hp% buff": 40, 
+                "passive id": "1", 
+                "passive target": "self", 
+                "rec% buff": 40
+            }, 
+            {
+                "atk% buff": 15, 
+                "conditions": [
+                    {
+                        "sphere category required": "Status Boost", 
+                        "sphere category required (raw)": "1"
+                    }
+                ], 
+                "def% buff": 15, 
+                "hp% buff": 15, 
+                "passive id": "1", 
+                "passive target": "party", 
+                "rec% buff": 15
+            }, 
+            {
+                "conditions": [], 
+                "od fill rate%": 50, 
+                "passive id": "70", 
+                "passive target": "self"
+            }
+        ], 
+        "id": "47800", 
+        "name": "理を超えた創造", 
         "rarity": "1", 
         "target": "self"
     }, 
@@ -24132,6 +24999,35 @@
         "rarity": "1", 
         "target": "self"
     }, 
+    "820518": {
+        "desc": "Boosts Atk, Def, Rec when BB gauge is over 50% & adds resistance against 1 KO attack when HP is below 20%", 
+        "effects": [
+            {
+                "buff": {
+                    "angel idol buff (12)": true, 
+                    "angel idol recover hp%": 100, 
+                    "buff turns (12)": "-1"
+                }, 
+                "conditions": [], 
+                "hp below % buff activation": 20, 
+                "passive id": "55", 
+                "passive target": "self"
+            }, 
+            {
+                "atk% buff": 50, 
+                "bb gauge above % buff requirement": 50, 
+                "conditions": [], 
+                "def% buff": 50, 
+                "passive id": "30", 
+                "passive target": "self", 
+                "rec% buff": 50
+            }
+        ], 
+        "id": "820518", 
+        "name": "A Quick Goodbye", 
+        "rarity": "7", 
+        "target": "self"
+    }, 
     "820547": {
         "desc": "5% boost to all parameters for all allies & 25% damage reduction from Water types", 
         "effects": [
@@ -25075,6 +25971,70 @@
         ], 
         "id": "830527", 
         "name": "Chrono Barrier", 
+        "rarity": "1", 
+        "target": "self"
+    }, 
+    "830537": {
+        "desc": "10% boost to all parameters for all allies, hugely boosts Zel, Karma and Item drop rates & 3% boost to EXP gained", 
+        "effects": [
+            {
+                "atk% buff": 10, 
+                "conditions": [], 
+                "def% buff": 10, 
+                "hp% buff": 10, 
+                "passive id": "1", 
+                "passive target": "party", 
+                "rec% buff": 10
+            }, 
+            {
+                "conditions": [], 
+                "passive id": "97", 
+                "passive target": "self", 
+                "xp gained increase%": 3
+            }, 
+            {
+                "conditions": [], 
+                "item drop rate% buff": 5, 
+                "karma drop rate% buff": 10, 
+                "passive id": "19", 
+                "passive target": "self", 
+                "zel drop rate% buff": 20
+            }
+        ], 
+        "id": "830537", 
+        "name": "One Last Gift", 
+        "rarity": "1", 
+        "target": "self"
+    }, 
+    "830538": {
+        "desc": "15% boost to all parameters for all allies, hugely boosts Zel, Karma and Item drop rates & 5% boost to EXP gained", 
+        "effects": [
+            {
+                "atk% buff": 15, 
+                "conditions": [], 
+                "def% buff": 15, 
+                "hp% buff": 15, 
+                "passive id": "1", 
+                "passive target": "party", 
+                "rec% buff": 15
+            }, 
+            {
+                "conditions": [], 
+                "passive id": "97", 
+                "passive target": "party", 
+                "xp gained increase%": 5
+            }, 
+            {
+                "conditions": [], 
+                "item drop rate% buff": 5, 
+                "karma drop rate% buff": 10, 
+                "passive id": "19", 
+                "passive target": "party", 
+                "zel drop rate% buff": 20
+            }
+        ], 
+        "id": "830538", 
+        "name": "A Holiday Cudgel", 
         "rarity": "1", 
         "target": "self"
     }, 
