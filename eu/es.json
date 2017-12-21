@@ -15809,6 +15809,54 @@
         "rarity": "0", 
         "target": "self"
     }, 
+    "720167": {
+        "desc": "Boosts HP (20% and 20% all) & boosts BC, HC drop rates (20%) & adds boosts ATK, DEF and REC relative to max HP (40%) for 3 turns to BB/SBB", 
+        "effects": [
+            {
+                "conditions": [], 
+                "hp% buff": 20, 
+                "passive id": "1", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "hp% buff": 20, 
+                "passive id": "1", 
+                "passive target": "party"
+            }, 
+            {
+                "bc drop rate% buff": 20, 
+                "conditions": [], 
+                "hc drop rate% buff": 20, 
+                "passive id": "19", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "passive id": "66", 
+                "passive target": "self", 
+                "trigger on bb": true, 
+                "trigger on sbb": true, 
+                "triggered effect": [
+                    {
+                        "% converted turns": 3, 
+                        "atk% buff (46)": 40, 
+                        "converted attribute": "hp", 
+                        "def% buff (47)": 40, 
+                        "effect delay time(ms)/frame": "0.0/0", 
+                        "proc id": "24", 
+                        "rec% buff (48)": 40, 
+                        "target area": "aoe", 
+                        "target type": "party"
+                    }
+                ]
+            }
+        ], 
+        "id": "720167", 
+        "name": "Cute Robot Creator", 
+        "rarity": "0", 
+        "target": "self"
+    }, 
     "720176": {
         "desc": "Provides immunity to all status ailments & Boosts damage dealt to foes with status ailments (100%) & Adds Boosts dmg dealt to foes with ailments for 3 turns (130%) to BB/SBB", 
         "effects": [
@@ -16938,7 +16986,7 @@
         "target": "self"
     }, 
     "730227": {
-        "desc": "Negate DEF ignoring damage & If Ancient Cybernetic Crown is equipped, boosts DEF and REC (50%) for 2 turns when Sparks have exceeded certain amount (15) and adds Earth Barrier effect to BB/SBB (3000 HP)", 
+        "desc": "Boosts all parameters (30%) & negates DEF ignoring damage & boosts DEF and REC (80%) for 2 turns when Sparks have exceeded certain amount (15) & adds Earth Barrier (3500 HP) and boosts critical hit rate (60%) to BB/SBB", 
         "effects": [
             {
                 "conditions": [], 
@@ -16947,13 +16995,7 @@
                 "passive target": "self"
             }, 
             {
-                "conditions": [
-                    {
-                        "item required": [
-                            "701026"
-                        ]
-                    }
-                ], 
+                "conditions": [], 
                 "passive id": "66", 
                 "passive target": "self", 
                 "trigger on bb": true, 
@@ -16976,13 +17018,7 @@
                     "buff turns (3)": "2", 
                     "def% buff (3)": 50
                 }, 
-                "conditions": [
-                    {
-                        "item required": [
-                            "701026"
-                        ]
-                    }
-                ], 
+                "conditions": [], 
                 "passive id": "86", 
                 "passive target": "self", 
                 "spark count buff activation": 15
@@ -16992,16 +17028,37 @@
                     "buff turns (5)": "2", 
                     "rec% buff (5)": 50
                 }, 
-                "conditions": [
-                    {
-                        "item required": [
-                            "701026"
-                        ]
-                    }
-                ], 
+                "conditions": [], 
                 "passive id": "86", 
                 "passive target": "self", 
                 "spark count buff activation": 15
+            }, 
+            {
+                "atk% buff": 30, 
+                "conditions": [], 
+                "def% buff": 30, 
+                "hp% buff": 30, 
+                "passive id": "1", 
+                "passive target": "self", 
+                "rec% buff": 30
+            }, 
+            {
+                "conditions": [], 
+                "passive id": "66", 
+                "passive target": "self", 
+                "trigger on bb": true, 
+                "trigger on sbb": true, 
+                "triggered effect": [
+                    {
+                        "buff turns": 3, 
+                        "crit% buff (7)": 60, 
+                        "effect delay time(ms)/frame": "0.0/0", 
+                        "element buffed": "all", 
+                        "proc id": "5", 
+                        "target area": "aoe", 
+                        "target type": "party"
+                    }
+                ]
             }
         ], 
         "id": "730227", 

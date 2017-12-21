@@ -13301,6 +13301,41 @@
         "id": "720166", 
         "name": "Viviane's Vindication"
     }, 
+    "720167": {
+        "desc": "Boosts REC and HP (80%) & boosts ATK, DEF relative to remaining HP (0-100%) & boosts BC, HC drop rates (30%) & boosts HC effectiveness (75%) & boosts BB ATK (250%)", 
+        "effects": [
+            {
+                "hp% buff": 80, 
+                "passive id": "1", 
+                "rec% buff": 80
+            }, 
+            {
+                "hc effectiveness%": 75, 
+                "passive id": "10"
+            }, 
+            {
+                "bc drop rate% buff": 30, 
+                "hc drop rate% buff": 30, 
+                "passive id": "19"
+            }, 
+            {
+                "atk% base buff": 0, 
+                "atk% extra buff based on hp": 100, 
+                "buff proportional to hp": "remaining", 
+                "def% base buff": 0, 
+                "def% extra buff based on hp": 100, 
+                "passive id": "46"
+            }, 
+            {
+                "bb atk% buff": 250, 
+                "passive id": "64", 
+                "sbb atk% buff": 250, 
+                "ubb atk% buff": 250
+            }
+        ], 
+        "id": "720167", 
+        "name": "Forced Happiness"
+    }, 
     "720176": {
         "desc": "Chance of inflicting a random status ailment when attacking (15% injury, sickness, weakness. 10% poison, curse, paralysis) & Boosts BB gauge when taking damage (100% chance to get 3-5) & Boosts damage dealt to foes with status ailments (100%) ", 
         "effects": [
@@ -14235,14 +14270,14 @@
         "name": "Superior Engineering"
     }, 
     "730227": {
-        "desc": "35% boost to all parameters & negates all Atk, Def, Rec reduction effects & Damage reduction (5%) & reduces damage taken (15%) 2 turns when HP is below 50%", 
+        "desc": "50% boost to all parameters & negates all ATK, DEF, REC reduction effects & 5% damage reduction & reduces damage taken (20%) when HP is below 50% & boosts critical damage (175%)", 
         "effects": [
             {
-                "atk% buff": 35, 
-                "def% buff": 35, 
-                "hp% buff": 35, 
+                "atk% buff": 50, 
+                "def% buff": 50, 
+                "hp% buff": 50, 
                 "passive id": "1", 
-                "rec% buff": 35
+                "rec% buff": 50
             }, 
             {
                 "atk down resist%": 100, 
@@ -14253,7 +14288,7 @@
             {
                 "buff": {
                     "buff turns (36)": "2", 
-                    "dmg reduction% buff": 15
+                    "dmg reduction% buff": 20
                 }, 
                 "hp below % buff activation": 50, 
                 "passive id": "55"
@@ -14261,6 +14296,10 @@
             {
                 "dmg% mitigation": 5, 
                 "passive id": "8"
+            }, 
+            {
+                "crit multiplier%": 175.0, 
+                "passive id": "34"
             }
         ], 
         "id": "730227", 
