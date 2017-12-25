@@ -23267,6 +23267,257 @@
         "rarity": "1", 
         "target": "self"
     }, 
+    "48100": {
+        "desc": "確率で呪い・麻痺状態にする＆ＨＰを少し吸収＆「ステータス強化系」タイプのスフィアを装備時、ＢＢ及びＳＢＢに「味方全体に３ターン、状態異常の敵へのダメージをかなりアップ」を追加", 
+        "effects": [
+            {
+                "conditions": [
+                    {
+                        "sphere category required": "Status Boost", 
+                        "sphere category required (raw)": "1"
+                    }
+                ], 
+                "passive id": "66", 
+                "passive target": "self", 
+                "trigger on bb": true, 
+                "trigger on sbb": true, 
+                "triggered effect": [
+                    {
+                        "atk% buff turns (110)": 3, 
+                        "atk% buff when enemy has ailment": 130, 
+                        "effect delay time(ms)/frame": "0.0/0", 
+                        "proc id": "65", 
+                        "target area": "aoe", 
+                        "target type": "party"
+                    }
+                ]
+            }, 
+            {
+                "conditions": [], 
+                "curse%": 10, 
+                "paralysis%": 10, 
+                "passive id": "20", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "hp drain chance%": 100, 
+                "hp drain% high": 15, 
+                "hp drain% low": 10, 
+                "passive id": "17", 
+                "passive target": "self"
+            }
+        ], 
+        "id": "48100", 
+        "name": "燃え盛る吸管", 
+        "rarity": "1", 
+        "target": "self"
+    }, 
+    "48200": {
+        "desc": "最大ＨＰを３０％アップ＆ＢＣ・ＨＣ出現率をかなりアップ＆「ステータス強化系」タイプのスフィアを装備時、ＢＢ及びＳＢＢに「味方全体に３ターン、最大ＨＰに応じて攻撃力・防御力をかなりアップ」を追加", 
+        "effects": [
+            {
+                "conditions": [
+                    {
+                        "sphere category required": "Status Boost", 
+                        "sphere category required (raw)": "1"
+                    }
+                ], 
+                "passive id": "66", 
+                "passive target": "self", 
+                "trigger on bb": true, 
+                "trigger on sbb": true, 
+                "triggered effect": [
+                    {
+                        "% converted turns": 3, 
+                        "atk% buff (46)": 20, 
+                        "converted attribute": "hp", 
+                        "def% buff (47)": 20, 
+                        "effect delay time(ms)/frame": "0.0/0", 
+                        "proc id": "24", 
+                        "target area": "aoe", 
+                        "target type": "party"
+                    }
+                ]
+            }, 
+            {
+                "conditions": [], 
+                "hp% buff": 30, 
+                "passive id": "1", 
+                "passive target": "self"
+            }, 
+            {
+                "bc drop rate% buff": 15, 
+                "conditions": [], 
+                "hc drop rate% buff": 15, 
+                "passive id": "19", 
+                "passive target": "self"
+            }
+        ], 
+        "id": "48200", 
+        "name": "アヴァロンの本質", 
+        "rarity": "1", 
+        "target": "self"
+    }, 
+    "48300": {
+        "desc": "攻撃力・防御力・回復力・最大ＨＰを２０％アップ＆ＢＢ及びＳＢＢに「味方全体に樹属性のバリアを付与」を追加＆「ＨＰ回復系」タイプのスフィアを装備時、被ダメージ時、確率でＨＰを回復", 
+        "effects": [
+            {
+                "conditions": [
+                    {
+                        "sphere category required": "HP Recovery", 
+                        "sphere category required (raw)": "7"
+                    }
+                ], 
+                "dmg% to hp% when attacked chance%": 25, 
+                "dmg% to hp% when attacked high": 20, 
+                "dmg% to hp% when attacked low": 20, 
+                "passive id": "24", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "passive id": "66", 
+                "passive target": "self", 
+                "trigger on bb": true, 
+                "trigger on sbb": true, 
+                "triggered effect": [
+                    {
+                        "effect delay time(ms)/frame": "0.0/0", 
+                        "elemental barrier absorb dmg%": 100, 
+                        "elemental barrier def": 0, 
+                        "elemental barrier element": "earth", 
+                        "elemental barrier hp": 1000, 
+                        "proc id": "62", 
+                        "target area": "aoe", 
+                        "target type": "party"
+                    }
+                ]
+            }, 
+            {
+                "atk% buff": 20, 
+                "conditions": [], 
+                "def% buff": 20, 
+                "hp% buff": 20, 
+                "passive id": "1", 
+                "passive target": "self", 
+                "rec% buff": 20
+            }
+        ], 
+        "id": "48300", 
+        "name": "神聖なる救済", 
+        "rarity": "1", 
+        "target": "self"
+    }, 
+    "48400": {
+        "desc": "「ステータス強化系」タイプのスフィアを装備時、クリティカル・弱点属性ダメージを無効＆スパークダメージを５０％アップ＆弱点属性ダメージを大幅にアップ", 
+        "effects": [
+            {
+                "conditions": [
+                    {
+                        "sphere category required": "Status Boost", 
+                        "sphere category required (raw)": "1"
+                    }
+                ], 
+                "crit chance base resist%": 100, 
+                "crit chance buffed resist%": 100, 
+                "crit dmg base damage resist%": 100, 
+                "crit dmg buffed damage resist%": 100, 
+                "passive id": "53", 
+                "passive target": "self", 
+                "strong base element damage resist%": 100, 
+                "strong buffed element damage resist%": 100
+            }, 
+            {
+                "conditions": [], 
+                "elemental weakness multiplier%": 125.0, 
+                "passive id": "50", 
+                "passive target": "self", 
+                "thunder units do extra elemental weakness dmg": true
+            }, 
+            {
+                "conditions": [], 
+                "damage% for spark": 50, 
+                "passive id": "31", 
+                "passive target": "self"
+            }
+        ], 
+        "id": "48400", 
+        "name": "交錯した遺物", 
+        "rarity": "1", 
+        "target": "self"
+    }, 
+    "48500": {
+        "desc": "「ステータス強化系」タイプのスフィアを装備時、攻撃ＢＢの威力をかなりアップ＆スパークダメージを５０％アップ＆クリティカルダメージをアップ", 
+        "effects": [
+            {
+                "bb atk% buff": 100, 
+                "conditions": [
+                    {
+                        "sphere category required": "Status Boost", 
+                        "sphere category required (raw)": "1"
+                    }
+                ], 
+                "passive id": "64", 
+                "passive target": "self", 
+                "sbb atk% buff": 100, 
+                "ubb atk% buff": 100
+            }, 
+            {
+                "conditions": [], 
+                "crit multiplier%": 50.0, 
+                "passive id": "34", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "damage% for spark": 50, 
+                "passive id": "31", 
+                "passive target": "self"
+            }
+        ], 
+        "id": "48500", 
+        "name": "戦勇の崇拝", 
+        "rarity": "1", 
+        "target": "self"
+    }, 
+    "48600": {
+        "desc": "「ステータス強化系」タイプのスフィアを装備時、ＢＢ及びＳＢＢに「味方全体に１ターン、被ダメージを半分に軽減」を追加＆通常攻撃ＨＩＴ数を増加", 
+        "effects": [
+            {
+                "conditions": [
+                    {
+                        "sphere category required": "Status Boost", 
+                        "sphere category required (raw)": "1"
+                    }
+                ], 
+                "passive id": "66", 
+                "passive target": "self", 
+                "trigger on bb": true, 
+                "trigger on sbb": true, 
+                "triggered effect": [
+                    {
+                        "dmg% reduction": 50, 
+                        "dmg% reduction turns (36)": 1, 
+                        "effect delay time(ms)/frame": "0.0/0", 
+                        "proc id": "18", 
+                        "target area": "aoe", 
+                        "target type": "party"
+                    }
+                ]
+            }, 
+            {
+                "conditions": [], 
+                "hit increase/hit": 1, 
+                "passive id": "37", 
+                "passive target": "self"
+            }
+        ], 
+        "id": "48600", 
+        "name": "古からの存在", 
+        "rarity": "1", 
+        "target": "self"
+    }, 
     "4900": {
         "desc": "「白輝聖鎧メルキオ」を装備時、攻撃力・防御力・回復力・最大ＨＰを２０％アップ＆ＢＢ及びＳＢＢに「味方全体の全状態異常を回復」を追加", 
         "effects": [
