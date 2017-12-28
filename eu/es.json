@@ -19344,6 +19344,102 @@
         "rarity": "0", 
         "target": "self"
     }, 
+    "750287": {
+        "desc": "If Caliburn is equipped, 20% to ATK, DEF (all) and adds OD gauge fill rate (20%) 3 turns to BB/SBB & If Grail is equipped, boosts ATK and HP (50%), critical damage (100%), Spark damage (100%) and BB ATK (100%)", 
+        "effects": [
+            {
+                "atk% buff": 20, 
+                "conditions": [
+                    {
+                        "item required": [
+                            "701023"
+                        ]
+                    }
+                ], 
+                "def% buff": 20, 
+                "passive id": "1", 
+                "passive target": "party"
+            }, 
+            {
+                "conditions": [
+                    {
+                        "item required": [
+                            "701023"
+                        ]
+                    }
+                ], 
+                "passive id": "66", 
+                "passive target": "self", 
+                "trigger on bb": true, 
+                "trigger on sbb": true, 
+                "triggered effect": [
+                    {
+                        "effect delay time(ms)/frame": "0.0/0", 
+                        "od fill rate buff turns (132)": 3, 
+                        "od fill rate% buff": 20, 
+                        "proc id": "84", 
+                        "target area": "aoe", 
+                        "target type": "party"
+                    }
+                ]
+            }, 
+            {
+                "atk% buff": 50, 
+                "conditions": [
+                    {
+                        "item required": [
+                            "700008"
+                        ]
+                    }
+                ], 
+                "hp% buff": 50, 
+                "passive id": "1", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [
+                    {
+                        "item required": [
+                            "700008"
+                        ]
+                    }
+                ], 
+                "crit multiplier%": 100.0, 
+                "passive id": "34", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [
+                    {
+                        "item required": [
+                            "700008"
+                        ]
+                    }
+                ], 
+                "damage% for spark": 100, 
+                "passive id": "31", 
+                "passive target": "self"
+            }, 
+            {
+                "bb atk% buff": 100, 
+                "conditions": [
+                    {
+                        "item required": [
+                            "700008"
+                        ]
+                    }
+                ], 
+                "passive id": "64", 
+                "passive target": "self", 
+                "sbb atk% buff": 100, 
+                "ubb atk% buff": 100
+            }
+        ], 
+        "id": "750287", 
+        "name": "Unwavering Will", 
+        "rarity": "0", 
+        "target": "self"
+    }, 
     "7600": {
         "desc": "Boosts BB attack", 
         "effects": [
@@ -21298,6 +21394,64 @@
         ], 
         "id": "8300", 
         "name": "Wicked Lineage", 
+        "rarity": "1", 
+        "target": "self"
+    }, 
+    "830118": {
+        "desc": "Boosts all parameters (30%) & probable HP restoration when attacked (30% chance 25%) and damage reduction (25% chance 30%) & adds Earth Barrier effect (3500 HP) and boosts OD gauge fill rate at turn's end (400 OD) to BB/SBB", 
+        "effects": [
+            {
+                "conditions": [], 
+                "dmg% to hp% when attacked chance%": 30, 
+                "dmg% to hp% when attacked high": 25, 
+                "dmg% to hp% when attacked low": 25, 
+                "passive id": "24", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "dmg reduction chance%": 25, 
+                "dmg reduction%": 30, 
+                "passive id": "14", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "passive id": "66", 
+                "passive target": "self", 
+                "trigger on bb": true, 
+                "trigger on sbb": true, 
+                "triggered effect": [
+                    {
+                        "effect delay time(ms)/frame": "0.0/0", 
+                        "elemental barrier absorb dmg%": 100, 
+                        "elemental barrier def": 0, 
+                        "elemental barrier element": "earth", 
+                        "elemental barrier hp": 3500, 
+                        "proc id": "62", 
+                        "target area": "aoe", 
+                        "target type": "party"
+                    }
+                ]
+            }, 
+            {
+                "atk% buff": 30, 
+                "conditions": [], 
+                "def% buff": 30, 
+                "hp% buff": 30, 
+                "passive id": "1", 
+                "passive target": "self", 
+                "rec% buff": 30
+            }, 
+            {
+                "conditions": [], 
+                "passive target": "self", 
+                "unknown passive id": "113", 
+                "unknown passive params": "0,0,400,3,150"
+            }
+        ], 
+        "id": "830118", 
+        "name": "Lore Savant", 
         "rarity": "1", 
         "target": "self"
     }, 
