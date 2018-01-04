@@ -21701,6 +21701,65 @@
         "rarity": "1", 
         "target": "self"
     }, 
+    "840128": {
+        "desc": "Boosts all parameters (10%, all) and damage taken boosts BB gauge (1-2 BC, all) & boosts Spark damage (100%) & adds resistance against 1 KO attack when HP is below 20% & adds boosts Spark damage of Thunder types (50%) for 3 turns to BB/SBB", 
+        "effects": [
+            {
+                "buff": {
+                    "angel idol buff (12)": true, 
+                    "angel idol recover hp%": 100, 
+                    "buff turns (12)": "-1"
+                }, 
+                "conditions": [], 
+                "hp below % buff activation": 20, 
+                "passive id": "55", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "damage% for spark": 100, 
+                "passive id": "31", 
+                "passive target": "self"
+            }, 
+            {
+                "atk% buff": 10, 
+                "conditions": [], 
+                "def% buff": 10, 
+                "hp% buff": 10, 
+                "passive id": "1", 
+                "passive target": "party", 
+                "rec% buff": 10
+            }, 
+            {
+                "bc fill when attacked high": 2, 
+                "bc fill when attacked low": 1, 
+                "bc fill when attacked%": 100, 
+                "conditions": [], 
+                "passive id": "25", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "passive id": "66", 
+                "passive target": "self", 
+                "trigger on bb": true, 
+                "trigger on sbb": true, 
+                "triggered effect": [
+                    {
+                        "effect delay time(ms)/frame": "0.0/0", 
+                        "target area": "aoe", 
+                        "target type": "party", 
+                        "unknown proc id": "10015", 
+                        "unknown proc param": "50,3,0,4"
+                    }
+                ]
+            }
+        ], 
+        "id": "840128", 
+        "name": "Unyielding Huntress", 
+        "rarity": "1", 
+        "target": "self"
+    }, 
     "840317": {
         "desc": "Boosts BB gauge fill rate, damage taken boosts BB gauge when Eremorn's Aegis is equipped & boosts Thunder elemental damage", 
         "effects": [
@@ -22761,6 +22820,51 @@
         ], 
         "id": "8600", 
         "name": "Flame of Atonement", 
+        "rarity": "1", 
+        "target": "self"
+    }, 
+    "860127": {
+        "desc": "Hugely boosts BB gauge each turn", 
+        "effects": [
+            {
+                "bc fill per turn": 3, 
+                "conditions": [], 
+                "passive id": "9", 
+                "passive target": "self"
+            }
+        ], 
+        "id": "860127", 
+        "name": "Silent Soliloquy", 
+        "rarity": "1", 
+        "target": "self"
+    }, 
+    "860128": {
+        "desc": "25% boost to all parameters when Golden Heart is equipped & considerably boosts BB gauge each turn", 
+        "effects": [
+            {
+                "atk% buff": 25, 
+                "conditions": [
+                    {
+                        "item required": [
+                            "818904"
+                        ]
+                    }
+                ], 
+                "def% buff": 25, 
+                "hp% buff": 25, 
+                "passive id": "1", 
+                "passive target": "self", 
+                "rec% buff": 25
+            }, 
+            {
+                "bc fill per turn": 4, 
+                "conditions": [], 
+                "passive id": "9", 
+                "passive target": "self"
+            }
+        ], 
+        "id": "860128", 
+        "name": "One's Own Heart", 
         "rarity": "1", 
         "target": "self"
     }, 
