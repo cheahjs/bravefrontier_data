@@ -24219,6 +24219,57 @@
         "rarity": "1", 
         "target": "self"
     }, 
+    "820148": {
+        "desc": "50% boost to Rec, max HP & boosts BC, HC drop rates for all allies when Tridon's Trident is equipped, 100% boost to Def for 2 turns when HP is below 50% & negates Def ignoring effect ", 
+        "effects": [
+            {
+                "conditions": [
+                    {
+                        "item required": [
+                            "818916"
+                        ]
+                    }
+                ], 
+                "hp% buff": 50, 
+                "passive id": "1", 
+                "passive target": "self", 
+                "rec% buff": 50
+            }, 
+            {
+                "bc drop rate% buff": 20, 
+                "conditions": [
+                    {
+                        "item required": [
+                            "818916"
+                        ]
+                    }
+                ], 
+                "hc drop rate% buff": 20, 
+                "passive id": "19", 
+                "passive target": "party"
+            }, 
+            {
+                "buff": {
+                    "buff turns (3)": "2", 
+                    "def% buff (3)": 100
+                }, 
+                "conditions": [], 
+                "hp below % buff activation": 50, 
+                "passive id": "55", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "ignore def resist chance%": 100, 
+                "passive id": "92", 
+                "passive target": "self"
+            }
+        ], 
+        "id": "820148", 
+        "name": "Grand Admiral's Judgement", 
+        "rarity": "7", 
+        "target": "self"
+    }, 
     "820157": {
         "desc": "50% Spark damage reduction", 
         "effects": [

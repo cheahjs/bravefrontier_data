@@ -26843,6 +26843,48 @@
         "id": "820048", 
         "name": "Omniscient Jellyfish"
     }, 
+    "820148": {
+        "desc": "100% boost to max HP, considerably boosts Def, Rec relative to remaining HP, enormously boosts BB Atk for 2 turns when BC collected has exceeded certain amount, 20% damage reduction for 2 turns when HC collected has exceeded certain amount & 10% damage reduction", 
+        "effects": [
+            {
+                "hp% buff": 100, 
+                "passive id": "1"
+            }, 
+            {
+                "buff proportional to hp": "remaining", 
+                "def% base buff": 30, 
+                "def% extra buff based on hp": 90, 
+                "passive id": "46", 
+                "rec% base buff": 30, 
+                "rec% extra buff based on hp": 90
+            }, 
+            {
+                "bc receive count buff activation": 100, 
+                "buff": {
+                    "bb atk% buff": 500, 
+                    "buff turns (72)": "3", 
+                    "sbb atk% buff": 500, 
+                    "ubb atk% buff": 500
+                }, 
+                "passive id": "82"
+            }, 
+            {
+                "buff": {
+                    "buff turns (36)": "2", 
+                    "dmg reduction% buff": 20
+                }, 
+                "hc receive count buff activation": 20, 
+                "passive id": "84"
+            }, 
+            {
+                "dmg reduction chance%": 100, 
+                "dmg reduction%": 10, 
+                "passive id": "14"
+            }
+        ], 
+        "id": "820148", 
+        "name": "Grand Admiral of Athensphere"
+    }, 
     "820157": {
         "desc": "40% boost to all parameters of genderless types, considerably boosts BC efficacy & Spark damage restores HP and boosts BB gauge", 
         "effects": [
