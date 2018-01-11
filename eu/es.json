@@ -18286,6 +18286,69 @@
         "rarity": "0", 
         "target": "self"
     }, 
+    "740247": {
+        "desc": "Boosts ATK and REC of Thunder types (20%, all) & when Siegfried sphere is equipped, raises ATK parameter limits to 130000 and adds probability to perform 1 extra action within the same turn (15%) effect to BB/SBB", 
+        "effects": [
+            {
+                "atk% buff": 20, 
+                "conditions": [], 
+                "elements buffed": [
+                    "thunder"
+                ], 
+                "passive id": "2", 
+                "passive target": "party", 
+                "rec% buff": 20
+            }, 
+            {
+                "conditions": [
+                    {
+                        "item required": [
+                            "700065", 
+                            "700061", 
+                            "700062", 
+                            "700063", 
+                            "700067"
+                        ]
+                    }
+                ], 
+                "increase atk cap": 130000, 
+                "passive id": "143", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [
+                    {
+                        "item required": [
+                            "700065", 
+                            "700061", 
+                            "700062", 
+                            "700063", 
+                            "700067"
+                        ]
+                    }
+                ], 
+                "passive id": "66", 
+                "passive target": "self", 
+                "trigger on bb": true, 
+                "trigger on sbb": true, 
+                "triggered effect": [
+                    {
+                        "chance% for extra action": 15, 
+                        "effect delay time(ms)/frame": "0.0/0", 
+                        "extra action buff turns (123)": 1, 
+                        "max number of extra actions": 1, 
+                        "proc id": "76", 
+                        "target area": "single", 
+                        "target type": "self"
+                    }
+                ]
+            }
+        ], 
+        "id": "740247", 
+        "name": "Following Orders", 
+        "rarity": "0", 
+        "target": "self"
+    }, 
     "7500": {
         "desc": "Damage taken slightly boosts BB gauge", 
         "effects": [
@@ -19049,8 +19112,7 @@
                         "item required": [
                             "701039", 
                             "701040", 
-                            "701041", 
-                            "701044"
+                            "701041"
                         ]
                     }
                 ], 
@@ -19067,8 +19129,7 @@
                         "item required": [
                             "701039", 
                             "701040", 
-                            "701041", 
-                            "701044"
+                            "701041"
                         ]
                     }
                 ], 
@@ -19084,20 +19145,14 @@
                         "item required": [
                             "701039", 
                             "701040", 
-                            "701041", 
-                            "701044"
+                            "701041"
                         ]
                     }
                 ], 
-                "dark units do extra elemental weakness dmg": true, 
-                "earth units do extra elemental weakness dmg": true, 
-                "elemental weakness multiplier%": 25.0, 
+                "elemental weakness multiplier%": 2500.0, 
                 "fire units do extra elemental weakness dmg": true, 
-                "light units do extra elemental weakness dmg": true, 
                 "passive id": "50", 
-                "passive target": "party", 
-                "thunder units do extra elemental weakness dmg": true, 
-                "water units do extra elemental weakness dmg": true
+                "passive target": "party"
             }, 
             {
                 "conditions": [
@@ -19105,20 +19160,14 @@
                         "item required": [
                             "701039", 
                             "701040", 
-                            "701041", 
-                            "701044"
+                            "701041"
                         ]
                     }
                 ], 
-                "dark units do extra elemental weakness dmg": true, 
-                "earth units do extra elemental weakness dmg": true, 
-                "elemental weakness multiplier%": 75.0, 
+                "elemental weakness multiplier%": 7500.0, 
                 "fire units do extra elemental weakness dmg": true, 
-                "light units do extra elemental weakness dmg": true, 
                 "passive id": "50", 
-                "passive target": "self", 
-                "thunder units do extra elemental weakness dmg": true, 
-                "water units do extra elemental weakness dmg": true
+                "passive target": "self"
             }, 
             {
                 "conditions": [
@@ -19126,8 +19175,7 @@
                         "item required": [
                             "701039", 
                             "701040", 
-                            "701041", 
-                            "701044"
+                            "701041"
                         ]
                     }
                 ], 
