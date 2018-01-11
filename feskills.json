@@ -57316,6 +57316,356 @@
             }
         ]
     }, 
+    "820358": {
+        "category": {
+            "1": {
+                "name": "ステアップ系"
+            }, 
+            "10": {
+                "name": "ダメージ軽減系"
+            }, 
+            "11": {
+                "name": "特殊"
+            }, 
+            "3": {
+                "name": "クリティカル系"
+            }, 
+            "4": {
+                "name": "攻撃強化加系"
+            }
+        }, 
+        "skills": [
+            {
+                "category": "1", 
+                "dependency": "", 
+                "dependency comment": "", 
+                "id": "750004", 
+                "skill": {
+                    "bp": 10, 
+                    "desc": "攻撃力・防御力・回復力・最大ＨＰを８０％アップ", 
+                    "effects": [
+                        {
+                            "passive": {
+                                "atk% buff": 80, 
+                                "def% buff": 80, 
+                                "hp% buff": 80, 
+                                "passive id": "1", 
+                                "rec% buff": 80
+                            }
+                        }
+                    ], 
+                    "id": "750004", 
+                    "level": 1, 
+                    "name": "全能力＋８０％", 
+                    "series": "700000"
+                }
+            }, 
+            {
+                "category": "1", 
+                "dependency": "1@750004", 
+                "dependency comment": "", 
+                "id": "750103", 
+                "skill": {
+                    "bp": 10, 
+                    "desc": "Raises all parameters boost from 80% to 100%", 
+                    "effects": [
+                        {
+                            "passive": {
+                                "atk% buff": 100, 
+                                "def% buff": 100, 
+                                "hp% buff": 100, 
+                                "passive id": "1", 
+                                "rec% buff": 100
+                            }
+                        }
+                    ], 
+                    "id": "750103", 
+                    "level": 2, 
+                    "name": "100% boost to all parameters", 
+                    "series": "700000"
+                }
+            }, 
+            {
+                "category": "3", 
+                "dependency": "", 
+                "dependency comment": "", 
+                "id": "1000000098", 
+                "skill": {
+                    "bp": 15, 
+                    "desc": "Boosts critical damage", 
+                    "effects": [
+                        {
+                            "passive": {
+                                "crit multiplier%": 100.0, 
+                                "passive id": "34"
+                            }
+                        }
+                    ], 
+                    "id": "1000000098", 
+                    "level": 3, 
+                    "name": "Boosts critical damage", 
+                    "series": "2100000"
+                }
+            }, 
+            {
+                "category": "4", 
+                "dependency": "", 
+                "dependency comment": "", 
+                "id": "1001000000", 
+                "skill": {
+                    "bp": 20, 
+                    "desc": "Enormously boosts elemental damage", 
+                    "effects": [
+                        {
+                            "passive": {
+                                "dark units do extra elemental weakness dmg": true, 
+                                "earth units do extra elemental weakness dmg": true, 
+                                "elemental weakness multiplier%": 200.0, 
+                                "fire units do extra elemental weakness dmg": true, 
+                                "light units do extra elemental weakness dmg": true, 
+                                "passive id": "50", 
+                                "thunder units do extra elemental weakness dmg": true, 
+                                "water units do extra elemental weakness dmg": true
+                            }
+                        }
+                    ], 
+                    "id": "1001000000", 
+                    "level": 4, 
+                    "name": "Enormously boosts elemental damage", 
+                    "series": "1001000000"
+                }
+            }, 
+            {
+                "category": "10", 
+                "dependency": "", 
+                "dependency comment": "", 
+                "id": "1000000099", 
+                "skill": {
+                    "bp": 25, 
+                    "desc": "50% additional damage reduction", 
+                    "effects": [
+                        {
+                            "passive": {
+                                "unknown passive id": "", 
+                                "unknown passive params": "100,50"
+                            }
+                        }
+                    ], 
+                    "id": "1000000099", 
+                    "level": 5, 
+                    "name": "50% additional damage reduction", 
+                    "series": "1000000099"
+                }
+            }, 
+            {
+                "category": "11", 
+                "dependency": "", 
+                "dependency comment": "", 
+                "id": "1000001057", 
+                "skill": {
+                    "bp": 10, 
+                    "desc": "", 
+                    "effects": [
+                        {
+                            "add to passive": {
+                                "unknown passive id": "", 
+                                "unknown passive params": "0,5,0,5"
+                            }
+                        }
+                    ], 
+                    "id": "1000001057", 
+                    "level": 3, 
+                    "name": "Enhances LS's Reduce DMG from Normal attack", 
+                    "series": "1000001057"
+                }
+            }, 
+            {
+                "category": "11", 
+                "dependency": "", 
+                "dependency comment": "", 
+                "id": "1100000080", 
+                "skill": {
+                    "bp": 10, 
+                    "desc": "Adds probable Spark critical for 3 turns effect to BB/SBB", 
+                    "effects": [
+                        {
+                            "passive": {
+                                "passive id": "66", 
+                                "trigger on bb": true, 
+                                "trigger on sbb": true, 
+                                "triggered effect": [
+                                    {
+                                        "effect delay time(ms)/frame": "0.0/0", 
+                                        "proc id": "83", 
+                                        "spark dmg inc buff turns (131)": 3, 
+                                        "spark dmg inc chance%": 30, 
+                                        "spark dmg inc% buff": 60, 
+                                        "target area": "aoe", 
+                                        "target type": "party"
+                                    }
+                                ]
+                            }
+                        }
+                    ], 
+                    "id": "1100000080", 
+                    "level": 4, 
+                    "name": "Adds probable Spark critical for 3 turns effect to BB/SBB", 
+                    "series": "1100000076"
+                }
+            }, 
+            {
+                "category": "11", 
+                "dependency": "", 
+                "dependency comment": "", 
+                "id": "1000001058", 
+                "skill": {
+                    "bp": 25, 
+                    "desc": "", 
+                    "effects": [
+                        {
+                            "add to sbb": {
+                                "% converted turns": 0, 
+                                "atk% buff (46)": 10, 
+                                "converted attribute": null, 
+                                "def% buff (47)": 10, 
+                                "proc id": "24", 
+                                "rec% buff (48)": 10
+                            }
+                        }
+                    ], 
+                    "id": "1000001058", 
+                    "level": 4, 
+                    "name": "Enhances SBB's considerable Atk, Def, Rec boost relative to max HP effect", 
+                    "series": "1000001058"
+                }
+            }, 
+            {
+                "category": "11", 
+                "dependency": "", 
+                "dependency comment": "", 
+                "id": "1000001059", 
+                "skill": {
+                    "bp": 25, 
+                    "desc": "", 
+                    "effects": [
+                        {
+                            "passive": {
+                                "unknown passive id": "107", 
+                                "unknown passive params": "53,100$100$0$0$0$0$0$0$0$0"
+                            }
+                        }
+                    ], 
+                    "id": "1000001059", 
+                    "level": 4, 
+                    "name": "Add Negates Critical damage effect to LS", 
+                    "series": "1000001059"
+                }
+            }, 
+            {
+                "category": "11", 
+                "dependency": "", 
+                "dependency comment": "", 
+                "id": "1000001060", 
+                "skill": {
+                    "bp": 30, 
+                    "desc": "", 
+                    "effects": [
+                        {
+                            "passive": {
+                                "passive id": "66", 
+                                "trigger on bb": true, 
+                                "trigger on sbb": true, 
+                                "triggered effect": [
+                                    {
+                                        "buff #1": {
+                                            "atk% buff (2)": -60, 
+                                            "proc chance%": 40.0
+                                        }, 
+                                        "buff #2": {
+                                            "def% buff (4)": -60, 
+                                            "proc chance%": 40.0
+                                        }, 
+                                        "buff turns": 2, 
+                                        "effect delay time(ms)/frame": "0.0/0", 
+                                        "element buffed": "all", 
+                                        "proc id": "9", 
+                                        "target area": "aoe", 
+                                        "target type": "enemy"
+                                    }
+                                ]
+                            }
+                        }
+                    ], 
+                    "id": "1000001060", 
+                    "level": 4, 
+                    "name": "Adds probable huge 2 turn Atk, Def reduction effect to BB/SBB", 
+                    "series": "1000001060"
+                }
+            }, 
+            {
+                "category": "11", 
+                "dependency": "", 
+                "dependency comment": "", 
+                "id": "1000001061", 
+                "skill": {
+                    "bp": 30, 
+                    "desc": "ＢＢ及びＳＢＢに「味方全体に３ターン、攻撃ＢＢの威力を大幅にアップ」を追加", 
+                    "effects": [
+                        {
+                            "passive": {
+                                "passive id": "66", 
+                                "trigger on bb": true, 
+                                "trigger on sbb": true, 
+                                "triggered effect": [
+                                    {
+                                        "bb atk% buff": 550, 
+                                        "buff turns (72)": 3, 
+                                        "effect delay time(ms)/frame": "0.0/0", 
+                                        "proc id": "45", 
+                                        "sbb atk% buff": 550, 
+                                        "target area": "aoe", 
+                                        "target type": "party", 
+                                        "ubb atk% buff": 550
+                                    }
+                                ]
+                            }
+                        }
+                    ], 
+                    "id": "1000001061", 
+                    "level": 5, 
+                    "name": "Adds enormous BB Atk boost for 3 turns effect to BB/SBB", 
+                    "series": "1000001061"
+                }
+            }, 
+            {
+                "category": "11", 
+                "dependency": "", 
+                "dependency comment": "", 
+                "id": "1000001062", 
+                "skill": {
+                    "bp": 25, 
+                    "desc": "", 
+                    "effects": [
+                        {
+                            "passive": {
+                                "buff": {
+                                    "angel idol buff (12)": true, 
+                                    "angel idol recover hp%": 100, 
+                                    "buff turns (12)": "-1"
+                                }, 
+                                "hp below % buff activation": 35, 
+                                "passive id": "55"
+                            }
+                        }
+                    ], 
+                    "id": "1000001062", 
+                    "level": 6, 
+                    "name": "Probable resistance against 1 KO attack when HP is below 35%", 
+                    "series": "1000001062"
+                }
+            }
+        ]
+    }, 
     "820378": {
         "category": {
             "1": {
