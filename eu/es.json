@@ -13161,6 +13161,102 @@
         "rarity": "1", 
         "target": "self"
     }, 
+    "37000": {
+        "desc": "Slightly boosts Atk, Def when HP is over 50% & 40% boost to Spark damage", 
+        "effects": [
+            {
+                "atk% buff": 30, 
+                "conditions": [], 
+                "def% buff": 30, 
+                "hp above % buff requirement": 50, 
+                "passive id": "11", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "damage% for spark": 40, 
+                "passive id": "31", 
+                "passive target": "self"
+            }
+        ], 
+        "id": "37000", 
+        "name": "Animating Dark Arts", 
+        "rarity": "1", 
+        "target": "self"
+    }, 
+    "37100": {
+        "desc": "Boosts Atk, Def when HP is over 50% & 60% boost to Spark damage", 
+        "effects": [
+            {
+                "atk% buff": 50, 
+                "conditions": [], 
+                "def% buff": 50, 
+                "hp above % buff requirement": 50, 
+                "passive id": "11", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "damage% for spark": 60, 
+                "passive id": "31", 
+                "passive target": "self"
+            }
+        ], 
+        "id": "37100", 
+        "name": "Bewitching Taboo", 
+        "rarity": "1", 
+        "target": "self"
+    }, 
+    "37200": {
+        "desc": "Slightly boosts Def, Rec when BB gauge is over 50% & damage taken boosts BB gauge", 
+        "effects": [
+            {
+                "bb gauge above % buff requirement": 50, 
+                "conditions": [], 
+                "def% buff": 30, 
+                "passive id": "30", 
+                "passive target": "self", 
+                "rec% buff": 30
+            }, 
+            {
+                "bc fill when attacked high": 3, 
+                "bc fill when attacked low": 2, 
+                "bc fill when attacked%": 100, 
+                "conditions": [], 
+                "passive id": "25", 
+                "passive target": "self"
+            }
+        ], 
+        "id": "37200", 
+        "name": "Pure Soul of the Wise", 
+        "rarity": "1", 
+        "target": "self"
+    }, 
+    "37300": {
+        "desc": "Boosts Def, Rec when BB gauge is over 50% & damage taken considerably boosts BB gauge", 
+        "effects": [
+            {
+                "bb gauge above % buff requirement": 50, 
+                "conditions": [], 
+                "def% buff": 50, 
+                "passive id": "30", 
+                "passive target": "self", 
+                "rec% buff": 50
+            }, 
+            {
+                "bc fill when attacked high": 4, 
+                "bc fill when attacked low": 3, 
+                "bc fill when attacked%": 100, 
+                "conditions": [], 
+                "passive id": "25", 
+                "passive target": "self"
+            }
+        ], 
+        "id": "37300", 
+        "name": "Light in the Darkness", 
+        "rarity": "1", 
+        "target": "self"
+    }, 
     "3800": {
         "desc": "Raises normal hit amount", 
         "effects": [
@@ -18649,7 +18745,7 @@
         "target": "self"
     }, 
     "750167": {
-        "desc": "If Caliburn is equipped, 20% to ATK, DEF (all) and adds OD gauge fill rate (20%) 3 turns to BB/SBB & If Grail is equipped, boosts ATK (50%), critical damage (100%), Spark damage (100%) and BB ATK (100%)", 
+        "desc": "If Caliburn is equipped, 20% to ATK, DEF (all) and adds OD gauge fill rate (20%) 3 turns to BB/SBB & If Grail is equipped, boosts ATK and HP (50%), critical damage (100%), Spark damage (100%) and BB ATK (100%)", 
         "effects": [
             {
                 "atk% buff": 20, 
@@ -18696,6 +18792,7 @@
                         ]
                     }
                 ], 
+                "hp% buff": 50, 
                 "passive id": "1", 
                 "passive target": "self"
             }, 
@@ -19149,10 +19246,15 @@
                         ]
                     }
                 ], 
-                "elemental weakness multiplier%": 2500.0, 
+                "dark units do extra elemental weakness dmg": true, 
+                "earth units do extra elemental weakness dmg": true, 
+                "elemental weakness multiplier%": 25.0, 
                 "fire units do extra elemental weakness dmg": true, 
+                "light units do extra elemental weakness dmg": true, 
                 "passive id": "50", 
-                "passive target": "party"
+                "passive target": "party", 
+                "thunder units do extra elemental weakness dmg": true, 
+                "water units do extra elemental weakness dmg": true
             }, 
             {
                 "conditions": [
@@ -19164,10 +19266,15 @@
                         ]
                     }
                 ], 
-                "elemental weakness multiplier%": 7500.0, 
+                "dark units do extra elemental weakness dmg": true, 
+                "earth units do extra elemental weakness dmg": true, 
+                "elemental weakness multiplier%": 75.0, 
                 "fire units do extra elemental weakness dmg": true, 
+                "light units do extra elemental weakness dmg": true, 
                 "passive id": "50", 
-                "passive target": "self"
+                "passive target": "self", 
+                "thunder units do extra elemental weakness dmg": true, 
+                "water units do extra elemental weakness dmg": true
             }, 
             {
                 "conditions": [

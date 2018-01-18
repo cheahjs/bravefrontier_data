@@ -9822,6 +9822,51 @@
         "id": "4376", 
         "name": "Deceiver's Mockery"
     }, 
+    "4377": {
+        "desc": "50% boost to Def, max HP, reduces BB gauge required for BB & boosts BC efficacy", 
+        "effects": [
+            {
+                "def% buff": 50, 
+                "hp% buff": 50, 
+                "passive id": "1"
+            }, 
+            {
+                "passive id": "48", 
+                "reduced bb bc cost%": 15
+            }, 
+            {
+                "bb gauge fill rate%": 30, 
+                "passive id": "32"
+            }
+        ], 
+        "id": "4377", 
+        "name": "Radiant Wisdom's Majesty"
+    }, 
+    "4378": {
+        "desc": "60% boost to Def, max HP, reduces BB gauge required for BB, considerably boosts BC efficacy & reduces Spark damage", 
+        "effects": [
+            {
+                "def% buff": 60, 
+                "hp% buff": 60, 
+                "passive id": "1"
+            }, 
+            {
+                "passive id": "48", 
+                "reduced bb bc cost%": 20
+            }, 
+            {
+                "bb gauge fill rate%": 50, 
+                "passive id": "32"
+            }, 
+            {
+                "base spark dmg% resist": 25, 
+                "buff spark dmg% resist": 25, 
+                "passive id": "77"
+            }
+        ], 
+        "id": "4378", 
+        "name": "Divine Wisdom's Glory"
+    }, 
     "4400": {
         "desc": "Boosts resistence to status ailments & fills BB gauge after each turn", 
         "effects": [
@@ -17742,14 +17787,14 @@
         "name": "Royal Valiance"
     }, 
     "750167": {
-        "desc": "40% boost to all parameters & Boosts critical damage (150%) and Spark damage (100%) & Critical damage boosts BB gauge (8-10 BC)", 
+        "desc": "Boosts all parameters (60%) & boosts critical damage (175%) and Spark damage (100%) & critical damage boosts BB gauge (8-10 BC) and boosts BB ATK (200%) for 2 turns", 
         "effects": [
             {
-                "atk% buff": 40, 
-                "def% buff": 40, 
-                "hp% buff": 40, 
+                "atk% buff": 60, 
+                "def% buff": 60, 
+                "hp% buff": 60, 
                 "passive id": "1", 
-                "rec% buff": 40
+                "rec% buff": 60
             }, 
             {
                 "bc fill on crit max": 10, 
@@ -17758,12 +17803,22 @@
                 "passive id": "65"
             }, 
             {
-                "crit multiplier%": 150.0, 
+                "crit multiplier%": 175.0, 
                 "passive id": "34"
             }, 
             {
                 "damage% for spark": 100, 
                 "passive id": "31"
+            }, 
+            {
+                "buff": {
+                    "bb atk% buff": 200, 
+                    "buff turns (72)": "2", 
+                    "sbb atk% buff": 200, 
+                    "ubb atk% buff": 200
+                }, 
+                "on crit activation chance%": 100, 
+                "passive id": "89"
             }
         ], 
         "id": "750167", 
@@ -18645,6 +18700,62 @@
         ], 
         "id": "7519", 
         "name": "Give me a break"
+    }, 
+    "7520": {
+        "desc": "50% boost to Atk, max HP, probable random status ailment infliction & 110% boost to Spark damage", 
+        "effects": [
+            {
+                "atk% buff": 50, 
+                "hp% buff": 50, 
+                "passive id": "1"
+            }, 
+            {
+                "damage% for spark": 110, 
+                "passive id": "31"
+            }, 
+            {
+                "injury%": 7, 
+                "passive id": "20", 
+                "poison%": 5, 
+                "sick%": 7, 
+                "weaken%": 7
+            }, 
+            {
+                "curse%": 5, 
+                "paralysis%": 5, 
+                "passive id": "20"
+            }
+        ], 
+        "id": "7520", 
+        "name": "Hollow Shell's Impurity"
+    }, 
+    "7521": {
+        "desc": "60% boost to Atk, max HP, probable random status ailment infliction & 130% boost to Spark damage", 
+        "effects": [
+            {
+                "atk% buff": 60, 
+                "hp% buff": 60, 
+                "passive id": "1"
+            }, 
+            {
+                "damage% for spark": 130, 
+                "passive id": "31"
+            }, 
+            {
+                "injury%": 15, 
+                "passive id": "20", 
+                "poison%": 10, 
+                "sick%": 15, 
+                "weaken%": 15
+            }, 
+            {
+                "curse%": 10, 
+                "paralysis%": 10, 
+                "passive id": "20"
+            }
+        ], 
+        "id": "7521", 
+        "name": "Cadaver's Haunting Miasma"
     }, 
     "7600": {
         "desc": "50% boost to Atk of Water & Light types", 
