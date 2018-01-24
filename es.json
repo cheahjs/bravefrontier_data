@@ -24059,6 +24059,43 @@
         "rarity": "1", 
         "target": "self"
     }, 
+    "811118": {
+        "desc": "Adds Water barrier to BB/SBB & boosts Atk, Def, Rec when BB gauge is over 50%", 
+        "effects": [
+            {
+                "conditions": [], 
+                "passive id": "66", 
+                "passive target": "self", 
+                "trigger on bb": true, 
+                "trigger on sbb": true, 
+                "triggered effect": [
+                    {
+                        "effect delay time(ms)/frame": "0.0/0", 
+                        "elemental barrier absorb dmg%": 100, 
+                        "elemental barrier def": 0, 
+                        "elemental barrier element": "water", 
+                        "elemental barrier hp": 2500, 
+                        "proc id": "62", 
+                        "target area": "aoe", 
+                        "target type": "party"
+                    }
+                ]
+            }, 
+            {
+                "atk% buff": 60, 
+                "bb gauge above % buff requirement": 50, 
+                "conditions": [], 
+                "def% buff": 60, 
+                "passive id": "30", 
+                "passive target": "self", 
+                "rec% buff": 60
+            }
+        ], 
+        "id": "811118", 
+        "name": "Dharmapala", 
+        "rarity": "7", 
+        "target": "self"
+    }, 
     "8200": {
         "desc": "Probable slight BB gauge boost when attacked & hugely boosts damage against status afflicted foes", 
         "effects": [
