@@ -36046,6 +36046,121 @@
         "thumbnail": "sphere_thum_819139.png", 
         "type": "sphere"
     }, 
+    "819140": {
+        "desc": "60% boost to max HP, adds Stealth activation for self (hugely boosts own Def, Rec for 2 turns) effect to BB, probable random status ailment infliction counter, negates all status ailments & adds Def ignoring effect to attack for 3 turns effect to BB/SBB ", 
+        "effect": [
+            {
+                "hp% buff": 60, 
+                "passive id": "1"
+            }, 
+            {
+                "passive id": "66", 
+                "trigger on bb": true, 
+                "triggered effect": [
+                    {
+                        "def% buff": 200, 
+                        "effect delay time(ms)/frame": "0.0/0", 
+                        "proc id": "10001", 
+                        "rec% buff": 200, 
+                        "stealth turns (10001)": 2, 
+                        "target area": "single", 
+                        "target type": "self"
+                    }
+                ]
+            }, 
+            {
+                "counter inflict curse%": 20, 
+                "counter inflict injury%": 20, 
+                "counter inflict paralysis%": 20, 
+                "counter inflict poison%": 20, 
+                "counter inflict sick%": 20, 
+                "counter inflict weaken%": 20, 
+                "passive id": "71"
+            }, 
+            {
+                "curse resist%": 100, 
+                "injury resist%": 100, 
+                "paralysis resist%": 100, 
+                "passive id": "4", 
+                "poison resist%": 100, 
+                "sick resist%": 100, 
+                "weaken resist%": 100
+            }, 
+            {
+                "passive id": "66", 
+                "trigger on bb": true, 
+                "trigger on sbb": true, 
+                "triggered effect": [
+                    {
+                        "defense% ignore": 100, 
+                        "defense% ignore turns (39)": 3, 
+                        "effect delay time(ms)/frame": "0.0/0", 
+                        "proc id": "22", 
+                        "target area": "aoe", 
+                        "target type": "party"
+                    }
+                ]
+            }
+        ], 
+        "id": 819140, 
+        "max_stack": 1, 
+        "name": "Yata no Kagami", 
+        "raid": false, 
+        "rarity": 7, 
+        "sell_price": 9999999, 
+        "sphere type": 8, 
+        "sphere type text": "Expose Target", 
+        "thumbnail": "sphere_thum_880309.png", 
+        "type": "sphere"
+    }, 
+    "819153": {
+        "desc": "30% boost to Atk, Rec and max HP of Female types, negates Atk, Def, Rec reducing effects, damage taken may restore HP, damage taken may greatly boost BB gauge, reduces BB gauge required for BB & adds resistance against 1 KO attack after activating OD", 
+        "effect": [
+            {
+                "atk% buff": 30, 
+                "gender required": "female", 
+                "hp% buff": 30, 
+                "passive id": "42", 
+                "rec% buff": 30
+            }, 
+            {
+                "atk down resist%": 100, 
+                "def down resist%": 100, 
+                "passive id": "73", 
+                "rec down resist%": 100
+            }, 
+            {
+                "dmg% to hp% when attacked chance%": 50, 
+                "dmg% to hp% when attacked high": 35, 
+                "dmg% to hp% when attacked low": 25, 
+                "passive id": "24"
+            }, 
+            {
+                "passive id": "48", 
+                "reduced bb bc cost%": 20
+            }, 
+            {
+                "unknown passive id": "106", 
+                "unknown passive params": "12,100,-1,100,-1"
+            }, 
+            {
+                "bc fill when attacked high": 7, 
+                "bc fill when attacked low": 5, 
+                "bc fill when attacked%": 50, 
+                "passive id": "25"
+            }
+        ], 
+        "id": 819153, 
+        "max_stack": 1, 
+        "name": "Kagura Suzu", 
+        "raid": false, 
+        "rarity": 7, 
+        "sell_price": 30000, 
+        "sphere type": 6, 
+        "sphere type text": "BB Gauge", 
+        "thumbnail": "sphere_thum_819153.png", 
+        "type": "sphere"
+    }, 
     "819901": {
         "desc": "Boosts Max HP and Def by 5% & boosts Atk for Fire types by 20%", 
         "effect": [

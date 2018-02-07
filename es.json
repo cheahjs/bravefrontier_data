@@ -28033,6 +28033,144 @@
         "rarity": "1", 
         "target": "self"
     }, 
+    "850297": {
+        "desc": "Negates status ailments, adds status ailment removal effect to BB/SBB/UBB & 10% boost to all parameters for all allies", 
+        "effects": [
+            {
+                "conditions": [], 
+                "curse resist%": 100, 
+                "injury resist%": 100, 
+                "paralysis resist%": 100, 
+                "passive id": "4", 
+                "passive target": "self", 
+                "poison resist%": 100, 
+                "sick resist%": 100, 
+                "weaken resist%": 100
+            }, 
+            {
+                "conditions": [], 
+                "passive id": "66", 
+                "passive target": "self", 
+                "trigger on bb": true, 
+                "trigger on sbb": true, 
+                "trigger on ubb": true, 
+                "triggered effect": [
+                    {
+                        "ailments cured": [
+                            "poison", 
+                            "weaken", 
+                            "sick", 
+                            "injury", 
+                            "curse", 
+                            "paralysis", 
+                            "atk down", 
+                            "def down", 
+                            "rec down"
+                        ], 
+                        "effect delay time(ms)/frame": "0.0/0", 
+                        "proc id": "38", 
+                        "target area": "aoe", 
+                        "target type": "party"
+                    }
+                ]
+            }, 
+            {
+                "atk% buff": 10, 
+                "conditions": [], 
+                "def% buff": 10, 
+                "hp% buff": 10, 
+                "passive id": "1", 
+                "passive target": "party", 
+                "rec% buff": 10
+            }
+        ], 
+        "id": "850297", 
+        "name": "Pure Consonance", 
+        "rarity": "1", 
+        "target": "self"
+    }, 
+    "850298": {
+        "desc": "40% boost to all parameters when Kagura Suzu is equipped, negates status ailments, adds status ailment removal effect to BB/SBB/UBB, hugely restores HP for 3 turns when guarding for all allies & 15% boost to all parameters for all allies", 
+        "effects": [
+            {
+                "atk% buff": 40, 
+                "conditions": [
+                    {
+                        "item required": [
+                            "819153"
+                        ]
+                    }
+                ], 
+                "def% buff": 40, 
+                "hp% buff": 40, 
+                "passive id": "1", 
+                "passive target": "self", 
+                "rec% buff": 40
+            }, 
+            {
+                "conditions": [], 
+                "curse resist%": 100, 
+                "injury resist%": 100, 
+                "paralysis resist%": 100, 
+                "passive id": "4", 
+                "passive target": "self", 
+                "poison resist%": 100, 
+                "sick resist%": 100, 
+                "weaken resist%": 100
+            }, 
+            {
+                "conditions": [], 
+                "passive id": "66", 
+                "passive target": "self", 
+                "trigger on bb": true, 
+                "trigger on sbb": true, 
+                "trigger on ubb": true, 
+                "triggered effect": [
+                    {
+                        "ailments cured": [
+                            "poison", 
+                            "weaken", 
+                            "sick", 
+                            "injury", 
+                            "curse", 
+                            "paralysis", 
+                            "atk down", 
+                            "def down", 
+                            "rec down"
+                        ], 
+                        "effect delay time(ms)/frame": "0.0/0", 
+                        "proc id": "38", 
+                        "target area": "aoe", 
+                        "target type": "party"
+                    }
+                ]
+            }, 
+            {
+                "atk% buff": 15, 
+                "conditions": [], 
+                "def% buff": 15, 
+                "hp% buff": 15, 
+                "passive id": "1", 
+                "passive target": "party", 
+                "rec% buff": 15
+            }, 
+            {
+                "buff": {
+                    "buff turns (8)": "3", 
+                    "gradual heal high": 5000, 
+                    "gradual heal low": 4000
+                }, 
+                "conditions": [], 
+                "on guard activation chance%": 100, 
+                "passive id": "88", 
+                "passive target": "party"
+            }
+        ], 
+        "id": "850298", 
+        "name": "Purifying Concerto", 
+        "rarity": "1", 
+        "target": "self"
+    }, 
     "850317": {
         "desc": "Adds removal and negation of status ailments effects for 3 turns to BB/SBB when Ritus Staff is equipped", 
         "effects": [
