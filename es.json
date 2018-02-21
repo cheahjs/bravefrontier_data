@@ -20125,7 +20125,7 @@
         "target": "self"
     }, 
     "47300": {
-        "desc": "クリティカル時、ＢＢゲージを超絶増加・３ターン、ターン毎にＨＰを回復", 
+        "desc": "Critical damage enormously boosts BB gauge & critical damage restores HP for 3 turns", 
         "effects": [
             {
                 "bc fill on crit max": 8, 
@@ -20148,12 +20148,12 @@
             }
         ], 
         "id": "47300", 
-        "name": "英雄を育てた賢狼", 
+        "name": "Mother Wolf", 
         "rarity": "1", 
         "target": "self"
     }, 
     "47400": {
-        "desc": "ＢＢ及びＳＢＢに「味方全体に２ターン、防御貫通効果を付与」を追加＆残りＨＰが多いほど、攻撃力・防御力・回復力をアップ＆通常攻撃ＨＩＴ数を増加", 
+        "desc": "Adds Def ignore effect to attack for 2 turns effect to BB/SBB, boosts Atk, Def, Rec relative to remaining HP & raises normal hit amount", 
         "effects": [
             {
                 "atk% base buff": 0, 
@@ -20192,12 +20192,12 @@
             }
         ], 
         "id": "47400", 
-        "name": "影より支えし者", 
+        "name": "Support from the Shadows", 
         "rarity": "1", 
         "target": "self"
     }, 
     "47500": {
-        "desc": "「ＨＰ回復系」タイプのスフィアを装備時、攻撃力・防御力・回復力・最大ＨＰを３０％アップ・被ダメージが一定数を超える度に低確率で一度だけ戦闘不能を耐える効果を付与＆確率で１回まで戦闘不能を耐える", 
+        "desc": "30% boost to all parameters and  adds low probable resistance against 1 KO attack when damage taken exceeds certain amount when HP Recovery Type Sphere is equipped, & adds probable resistance against 1 KO attack", 
         "effects": [
             {
                 "atk% buff": 30, 
@@ -20240,12 +20240,12 @@
             }
         ], 
         "id": "47500", 
-        "name": "輪廻の裁定者", 
+        "name": "Giver of Life", 
         "rarity": "1", 
         "target": "self"
     }, 
     "47600": {
-        "desc": "「ＨＰ回復系」タイプのスフィアを装備時、攻撃力・防御力・回復力・最大ＨＰを４０％アップ・被ダメージが一定数を超える度に低確率で一度だけ戦闘不能を耐える効果を付与＆確率で１回まで戦闘不能を耐える", 
+        "desc": "40% boost to all parameters and  adds low probable resistance against 1 KO attack when damage taken exceeds certain amount when HP Recovery Type Sphere is equipped, & adds probable resistance against 1 KO attack", 
         "effects": [
             {
                 "atk% buff": 40, 
@@ -20288,12 +20288,12 @@
             }
         ], 
         "id": "47600", 
-        "name": "唯一つの存在意義", 
+        "name": "Life's Sole Purpose", 
         "rarity": "1", 
         "target": "self"
     }, 
     "47700": {
-        "desc": "「ステータス強化系」タイプのスフィアを装備時、攻撃力・防御力・回復力・最大ＨＰを３０％アップ・全てのユニットの攻撃力・防御力・回復力・最大ＨＰを１０％アップ＆ＯＤゲージの増加量を大幅にアップ", 
+        "desc": "10% boost to all parameters for all allies and 30% boost to all parameters when Status Boost Type Sphere is equipped & hugely boosts OD gauge fill rate", 
         "effects": [
             {
                 "atk% buff": 30, 
@@ -20331,12 +20331,12 @@
             }
         ], 
         "id": "47700", 
-        "name": "必然たる終焉", 
+        "name": "Inevitable Demise", 
         "rarity": "1", 
         "target": "self"
     }, 
     "47800": {
-        "desc": "「ステータス強化系」タイプのスフィアを装備時、攻撃力・防御力・回復力・最大ＨＰを４０％アップ・全てのユニットの攻撃力・防御力・回復力・最大ＨＰを１５％アップ＆ＯＤゲージの増加量を超絶アップ", 
+        "desc": "15% boost to all parameters for all allies and 40% boost to all parameters when Status Boost Type Sphere is equipped & enormously boosts OD gauge fill rate", 
         "effects": [
             {
                 "atk% buff": 40, 
@@ -20374,7 +20374,7 @@
             }
         ], 
         "id": "47800", 
-        "name": "理を超えた創造", 
+        "name": "Creation Beyond Reason", 
         "rarity": "1", 
         "target": "self"
     }, 
@@ -24785,6 +24785,72 @@
         "rarity": "1", 
         "target": "self"
     }, 
+    "820297": {
+        "desc": "Slightly boosts Atk, Def, Rec when BB gauge is over 50%, boosts BB gauge each turn for all allies & slightly boosts Spark damage for all allies", 
+        "effects": [
+            {
+                "atk% buff": 40, 
+                "bb gauge above % buff requirement": 50, 
+                "conditions": [], 
+                "def% buff": 40, 
+                "passive id": "30", 
+                "passive target": "self", 
+                "rec% buff": 40
+            }, 
+            {
+                "bc fill per turn": 3, 
+                "conditions": [], 
+                "passive id": "9", 
+                "passive target": "party"
+            }, 
+            {
+                "conditions": [], 
+                "damage% for spark": 15, 
+                "passive id": "31", 
+                "passive target": "party"
+            }
+        ], 
+        "id": "820297", 
+        "name": "Cool Consonance", 
+        "rarity": "7", 
+        "target": "self"
+    }, 
+    "820298": {
+        "desc": "Boosts Atk, Def, Rec when BB gauge is over 50%, considerably boosts BB gauge each turn for all allies, slightly boosts Spark damage for all allies & raises Atk parameter limits to 160000", 
+        "effects": [
+            {
+                "atk% buff": 60, 
+                "bb gauge above % buff requirement": 50, 
+                "conditions": [], 
+                "def% buff": 60, 
+                "passive id": "30", 
+                "passive target": "self", 
+                "rec% buff": 60
+            }, 
+            {
+                "bc fill per turn": 5, 
+                "conditions": [], 
+                "passive id": "9", 
+                "passive target": "party"
+            }, 
+            {
+                "conditions": [], 
+                "damage% for spark": 25, 
+                "passive id": "31", 
+                "passive target": "party"
+            }, 
+            {
+                "conditions": [], 
+                "increase atk cap": 160000, 
+                "passive id": "143", 
+                "passive target": "self"
+            }
+        ], 
+        "id": "820298", 
+        "name": "Harmonious Concerto", 
+        "rarity": "7", 
+        "target": "self"
+    }, 
     "820317": {
         "desc": "20% boost to all parameters & boosts BB gauge when attacking when Glacies Staff is equipped", 
         "effects": [
@@ -27287,7 +27353,7 @@
         "target": "self"
     }, 
     "840437": {
-        "desc": "MST_EXTRAPASSIVESKILL_840437_DESCRIPTION", 
+        "desc": "Raises normal hit amount when Atk Boosting Sphere is equipped & 20% boost to all parameters when BB Gauge Sphere is equipped", 
         "effects": [
             {
                 "atk% buff": 20, 
@@ -27321,7 +27387,7 @@
         "target": "self"
     }, 
     "840438": {
-        "desc": "MST_EXTRAPASSIVESKILL_840438_DESCRIPTION", 
+        "desc": "20% boost to all parameters for all allies when Status Boost Sphere is equipped, raises normal hit amount when Atk Boosting Sphere is equipped, 40% boost to all parameters when BB Gauge Sphere is equipped & greatly boosts Spark damage when HP is over 50% when Spark Sphere is equipped", 
         "effects": [
             {
                 "atk% buff": 20, 
@@ -29851,7 +29917,7 @@
         "target": "self"
     }, 
     "860328": {
-        "desc": "MST_EXTRAPASSIVESKILL_860328_DESCRIPTION", 
+        "desc": "40% boost to all parameters, adds critical hit rate boost for 3 turns effect to BB/SBB, considerably raises normal hit amount & probable resistance against 2 KO attacks", 
         "effects": [
             {
                 "atk% buff": 40, 
@@ -29897,7 +29963,7 @@
             }
         ], 
         "id": "860328", 
-        "name": "R&RES8", 
+        "name": "Amour de Vivre", 
         "rarity": "1", 
         "target": "self"
     }, 
