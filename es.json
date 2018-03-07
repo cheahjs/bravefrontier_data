@@ -20285,6 +20285,24 @@
                 "conditions": [], 
                 "passive id": "69", 
                 "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "passive id": "66", 
+                "passive target": "self", 
+                "trigger on bb": true, 
+                "trigger on sbb": true, 
+                "triggered effect": [
+                    {
+                        "angel idol buff turns (91)": 999, 
+                        "angel idol recover chance%": 10, 
+                        "angel idol recover hp%": 1, 
+                        "effect delay time(ms)/frame": "0.0/0", 
+                        "proc id": "56", 
+                        "target area": "aoe", 
+                        "target type": "party"
+                    }
+                ]
             }
         ], 
         "id": "47600", 
@@ -28089,7 +28107,7 @@
         "target": "self"
     }, 
     "850198": {
-        "desc": "Adds critical hit rate boost effect to BB/SBB for 3 turns & damage taken may considerably boost BB gauge", 
+        "desc": "40% boost to all parameters when Critical Sphere is equipped, boosts critical damage for all allies, adds critical hit rate boost for 3 turns effect to BB/SBB & damage taken considerably boosts BB gauge", 
         "effects": [
             {
                 "conditions": [], 
@@ -28112,10 +28130,30 @@
             {
                 "bc fill when attacked high": 5, 
                 "bc fill when attacked low": 3, 
-                "bc fill when attacked%": 65, 
+                "bc fill when attacked%": 100, 
                 "conditions": [], 
                 "passive id": "25", 
                 "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "crit multiplier%": 20.0, 
+                "passive id": "34", 
+                "passive target": "party"
+            }, 
+            {
+                "atk% buff": 40, 
+                "conditions": [
+                    {
+                        "sphere category required": "Critical", 
+                        "sphere category required (raw)": "2"
+                    }
+                ], 
+                "def% buff": 40, 
+                "hp% buff": 40, 
+                "passive id": "1", 
+                "passive target": "self", 
+                "rec% buff": 40
             }
         ], 
         "id": "850198", 

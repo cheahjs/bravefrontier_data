@@ -70808,6 +70808,9 @@
             "11": {
                 "name": "特殊"
             }, 
+            "3": {
+                "name": "クリティカル系"
+            }, 
             "4": {
                 "name": "攻撃強化系"
             }
@@ -70817,78 +70820,84 @@
                 "category": "1", 
                 "dependency": "", 
                 "dependency comment": "", 
-                "id": "510000", 
+                "id": "750003", 
                 "skill": {
                     "bp": 10, 
-                    "desc": "20% boost to Atk, Rec", 
+                    "desc": "60% boost to all parameters", 
                     "effects": [
                         {
                             "passive": {
-                                "atk% buff": 20, 
+                                "atk% buff": 60, 
+                                "def% buff": 60, 
+                                "hp% buff": 60, 
                                 "passive id": "1", 
-                                "rec% buff": 20
+                                "rec% buff": 60
                             }
                         }
                     ], 
-                    "id": "510000", 
+                    "id": "750003", 
                     "level": 1, 
-                    "name": "20% boost to Atk, Rec", 
-                    "series": "500000"
+                    "name": "60% boost to all parameters", 
+                    "series": "700000"
                 }
             }, 
             {
-                "category": "1", 
+                "category": "3", 
                 "dependency": "", 
                 "dependency comment": "", 
-                "id": "610000", 
+                "id": "1000000098", 
                 "skill": {
-                    "bp": 10, 
-                    "desc": "20% boost to Def, max HP", 
+                    "bp": 15, 
+                    "desc": "Boosts critical damage", 
                     "effects": [
                         {
                             "passive": {
-                                "def% buff": 20, 
-                                "hp% buff": 20, 
-                                "passive id": "1"
+                                "crit multiplier%": 100.0, 
+                                "passive id": "34"
                             }
                         }
                     ], 
-                    "id": "610000", 
-                    "level": 1, 
-                    "name": "20% boost to Def, max HP", 
-                    "series": "600000"
+                    "id": "1000000098", 
+                    "level": 3, 
+                    "name": "Boosts critical damage", 
+                    "series": "2100000"
                 }
             }, 
             {
                 "category": "4", 
                 "dependency": "", 
                 "dependency comment": "", 
-                "id": "3500000", 
+                "id": "1001000000", 
                 "skill": {
-                    "bp": 30, 
-                    "desc": "Normal attack may hit all foes", 
+                    "bp": 20, 
+                    "desc": "Enormously boosts elemental damage", 
                     "effects": [
                         {
                             "passive": {
-                                "aoe atk inc%": -50, 
-                                "chance to aoe": 20, 
-                                "passive id": "96"
+                                "dark units do extra elemental weakness dmg": true, 
+                                "earth units do extra elemental weakness dmg": true, 
+                                "elemental weakness multiplier%": 200.0, 
+                                "fire units do extra elemental weakness dmg": true, 
+                                "light units do extra elemental weakness dmg": true, 
+                                "passive id": "50", 
+                                "thunder units do extra elemental weakness dmg": true, 
+                                "water units do extra elemental weakness dmg": true
                             }
                         }
                     ], 
-                    "id": "3500000", 
-                    "level": 3, 
-                    "name": "Normal attacks may hit all foes", 
-                    "series": "3500000"
+                    "id": "1001000000", 
+                    "level": 4, 
+                    "name": "Enormously boosts elemental damage", 
+                    "series": "1001000000"
                 }
             }, 
             {
                 "category": "10", 
                 "dependency": "", 
                 "dependency comment": "", 
-                "id": "9300000", 
+                "id": "9300002", 
                 "skill": {
-                    "bp": 30, 
+                    "bp": 10, 
                     "desc": "Negates elemental damage", 
                     "effects": [
                         {
@@ -70899,8 +70908,8 @@
                             }
                         }
                     ], 
-                    "id": "9300000", 
-                    "level": 3, 
+                    "id": "9300002", 
+                    "level": 4, 
                     "name": "Negates elemental damage", 
                     "series": "9300000"
                 }
@@ -70909,43 +70918,54 @@
                 "category": "11", 
                 "dependency": "", 
                 "dependency comment": "", 
-                "id": "55000000", 
+                "id": "10800003", 
                 "skill": {
-                    "bp": 50, 
-                    "desc": "Adds HP restoration when damage dealt effect to BB/SBB", 
+                    "bp": 10, 
+                    "desc": "Raises Atk parameter limits to 160000", 
                     "effects": [
                         {
                             "passive": {
-                                "passive id": "66", 
-                                "trigger on bb": true, 
-                                "trigger on sbb": true, 
-                                "triggered effect": [
-                                    {
-                                        "effect delay time(ms)/frame": "0.0/0", 
-                                        "heal high": 3000, 
-                                        "heal low": 2000, 
-                                        "proc id": "2", 
-                                        "rec added% (from healer)": 11.0, 
-                                        "target area": "aoe", 
-                                        "target type": "party"
-                                    }
-                                ]
+                                "increase atk cap": 160000, 
+                                "passive id": "143"
                             }
                         }
                     ], 
-                    "id": "55000000", 
-                    "level": 5, 
-                    "name": "Adds HP restoration when damage dealt effect to BB/SBB", 
-                    "series": "55000000"
+                    "id": "10800003", 
+                    "level": 4, 
+                    "name": "Breaks Atk's parameter limit", 
+                    "series": "10800000"
                 }
             }, 
             {
                 "category": "11", 
                 "dependency": "", 
                 "dependency comment": "", 
-                "id": "1000000001", 
+                "id": "3500004", 
                 "skill": {
-                    "bp": 40, 
+                    "bp": 20, 
+                    "desc": "Normal attacks may hit all foes", 
+                    "effects": [
+                        {
+                            "passive": {
+                                "aoe atk inc%": -30, 
+                                "chance to aoe": 30, 
+                                "passive id": "96"
+                            }
+                        }
+                    ], 
+                    "id": "3500004", 
+                    "level": 3, 
+                    "name": "Normal attacks may hit all foes", 
+                    "series": "3500000"
+                }
+            }, 
+            {
+                "category": "11", 
+                "dependency": "", 
+                "dependency comment": "", 
+                "id": "1000000106", 
+                "skill": {
+                    "bp": 25, 
                     "desc": "Enhances LS's critical damage boost effect", 
                     "effects": [
                         {
@@ -70955,20 +70975,20 @@
                             }
                         }
                     ], 
-                    "id": "1000000001", 
-                    "level": 4, 
+                    "id": "1000000106", 
+                    "level": 6, 
                     "name": "Enhances LS's critical damage boost effect", 
-                    "series": "1000000001"
+                    "series": "1000000106"
                 }
             }, 
             {
                 "category": "11", 
                 "dependency": "", 
                 "dependency comment": "", 
-                "id": "1000000002", 
+                "id": "1000000060", 
                 "skill": {
-                    "bp": 20, 
-                    "desc": "Adds probable huge 1 turn Def reduction effect to BB/SBB", 
+                    "bp": 30, 
+                    "desc": "Adds great HP restoration effect to BB/SBB", 
                     "effects": [
                         {
                             "passive": {
@@ -70977,36 +70997,70 @@
                                 "trigger on sbb": true, 
                                 "triggered effect": [
                                     {
-                                        "buff #1": {
-                                            "def% buff (4)": -50, 
-                                            "proc chance%": 30.0
-                                        }, 
-                                        "buff turns": 1, 
                                         "effect delay time(ms)/frame": "0.0/0", 
-                                        "element buffed": "all", 
-                                        "proc id": "9", 
+                                        "heal high": 4000, 
+                                        "heal low": 3500, 
+                                        "proc id": "2", 
+                                        "rec added% (from healer)": 40.0, 
                                         "target area": "aoe", 
-                                        "target type": "enemy"
+                                        "target type": "party"
                                     }
                                 ]
                             }
                         }
                     ], 
-                    "id": "1000000002", 
-                    "level": 2, 
-                    "name": "Adds probable huge 1 turn Def reduction effect to BB/SBB", 
-                    "series": "1000000002"
+                    "id": "1000000060", 
+                    "level": 5, 
+                    "name": "Adds great HP restoration effect to BB/SBB", 
+                    "series": "1000000060"
                 }
             }, 
             {
                 "category": "11", 
                 "dependency": "", 
                 "dependency comment": "", 
-                "id": "1000000003", 
+                "id": "38000001", 
                 "skill": {
-                    "bp": 60, 
-                    "desc": "Allows probable 1 turn Atk reduction effects from SBB to last for 2 turns", 
+                    "bp": 20, 
+                    "desc": "Enhances success rate of BB/SBB's probable huge Atk, Def reduction effect", 
                     "effects": [
+                        {
+                            "add to bb": {
+                                "buff turns": 0, 
+                                "element buffed": "all", 
+                                "proc id": "9"
+                            }
+                        }, 
+                        {
+                            "add to sbb": {
+                                "buff turns": 0, 
+                                "element buffed": "all", 
+                                "proc id": "9"
+                            }
+                        }
+                    ], 
+                    "id": "38000001", 
+                    "level": 2, 
+                    "name": "Enhances success rate of BB/SBB's probable Atk, Def reduction effect", 
+                    "series": "38000000"
+                }
+            }, 
+            {
+                "category": "11", 
+                "dependency": "1@38000001", 
+                "dependency comment": "", 
+                "id": "38002003", 
+                "skill": {
+                    "bp": 10, 
+                    "desc": "Allows BB/SBB's 1 turn Atk, Def reduction effects to last for 2 turns", 
+                    "effects": [
+                        {
+                            "add to bb": {
+                                "buff turns": 1, 
+                                "element buffed": "all", 
+                                "proc id": "9"
+                            }
+                        }, 
                         {
                             "add to sbb": {
                                 "buff turns": 1, 
@@ -71015,10 +71069,10 @@
                             }
                         }
                     ], 
-                    "id": "1000000003", 
-                    "level": 6, 
-                    "name": "Allows probable 1 turn Atk reduction effects from SBB to last for 2 turns", 
-                    "series": "1000000003"
+                    "id": "38002003", 
+                    "level": 4, 
+                    "name": "Allows BB/SBB's Atk, Def reduction effects to last for 2 turns", 
+                    "series": "38002000"
                 }
             }, 
             {
@@ -71027,7 +71081,7 @@
                 "dependency comment": "", 
                 "id": "1000000004", 
                 "skill": {
-                    "bp": 60, 
+                    "bp": 45, 
                     "desc": "Adds huge raise to normal hit amount effect to UBB", 
                     "effects": [
                         {
@@ -71037,7 +71091,7 @@
                                 "triggered effect": [
                                     {
                                         "effect delay time(ms)/frame": "0.0/0", 
-                                        "extra hits dmg%": 100, 
+                                        "extra hits dmg%": 120, 
                                         "hit increase buff turns (50)": 3, 
                                         "hit increase/hit": 3, 
                                         "proc id": "26", 
