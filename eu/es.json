@@ -21259,6 +21259,68 @@
         "rarity": "1", 
         "target": "self"
     }, 
+    "760277": {
+        "desc": "Adds normal hit amount raise (+2, 120% damage) for 3 turns effect to BB/SBB & when a Siegfried sphere is equipped, boosts all parameters (30%) and reduces BB gauge required for BB (5%, all)", 
+        "effects": [
+            {
+                "conditions": [], 
+                "passive id": "66", 
+                "passive target": "self", 
+                "trigger on bb": true, 
+                "trigger on sbb": true, 
+                "triggered effect": [
+                    {
+                        "effect delay time(ms)/frame": "0.0/0", 
+                        "extra hits dmg%": 20, 
+                        "hit increase buff turns (50)": 3, 
+                        "hit increase/hit": 2, 
+                        "proc id": "26", 
+                        "target area": "aoe", 
+                        "target type": "party"
+                    }
+                ]
+            }, 
+            {
+                "atk% buff": 30, 
+                "conditions": [
+                    {
+                        "item required": [
+                            "700065", 
+                            "700061", 
+                            "700062", 
+                            "700063", 
+                            "700067"
+                        ]
+                    }
+                ], 
+                "def% buff": 30, 
+                "hp% buff": 30, 
+                "passive id": "1", 
+                "passive target": "self", 
+                "rec% buff": 30
+            }, 
+            {
+                "conditions": [
+                    {
+                        "item required": [
+                            "700065", 
+                            "700061", 
+                            "700062", 
+                            "700063", 
+                            "700067"
+                        ]
+                    }
+                ], 
+                "passive id": "48", 
+                "passive target": "party", 
+                "reduced bb bc cost%": 5
+            }
+        ], 
+        "id": "760277", 
+        "name": "Valedictorian", 
+        "rarity": "0", 
+        "target": "self"
+    }, 
     "7700": {
         "desc": "Hugely boosts BB gauge each turn", 
         "effects": [

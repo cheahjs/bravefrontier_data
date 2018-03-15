@@ -35991,7 +35991,7 @@
                                 "trigger on sbb": true, 
                                 "triggered effect": [
                                     {
-                                        "% converted turns": 0, 
+                                        "% converted turns": 3, 
                                         "atk% buff (46)": 100, 
                                         "converted attribute": "defense", 
                                         "effect delay time(ms)/frame": "0.0/0", 
@@ -48178,6 +48178,293 @@
                     "id": "70370", 
                     "level": 1, 
                     "name": "Enhances BB/SBB's elemental damage boost effect (+25%)", 
+                    "series": ""
+                }
+            }
+        ]
+    }, 
+    "760277": {
+        "category": {
+            "1": {
+                "name": ""
+            }, 
+            "11": {
+                "name": ""
+            }, 
+            "2": {
+                "name": ""
+            }, 
+            "4": {
+                "name": ""
+            }
+        }, 
+        "skills": [
+            {
+                "category": "1", 
+                "dependency": "", 
+                "dependency comment": "", 
+                "id": "70542", 
+                "skill": {
+                    "bp": 10, 
+                    "desc": "Boosts all parameters (75%)", 
+                    "effects": [
+                        {
+                            "passive": {
+                                "atk% buff": 75, 
+                                "def% buff": 75, 
+                                "hp% buff": 75, 
+                                "passive id": "1", 
+                                "rec% buff": 75
+                            }
+                        }
+                    ], 
+                    "id": "70542", 
+                    "level": 1, 
+                    "name": "Boosts all parameters (75%)", 
+                    "series": ""
+                }
+            }, 
+            {
+                "category": "2", 
+                "dependency": "", 
+                "dependency comment": "", 
+                "id": "70543", 
+                "skill": {
+                    "bp": 10, 
+                    "desc": "Boosts Spark damage (150%)", 
+                    "effects": [
+                        {
+                            "passive": {
+                                "damage% for spark": 150, 
+                                "passive id": "31"
+                            }
+                        }
+                    ], 
+                    "id": "70543", 
+                    "level": 1, 
+                    "name": "Boosts Spark damage (150%)", 
+                    "series": ""
+                }
+            }, 
+            {
+                "category": "4", 
+                "dependency": "", 
+                "dependency comment": "", 
+                "id": "70544", 
+                "skill": {
+                    "bp": 20, 
+                    "desc": "Raises normal hit amount (+2)", 
+                    "effects": [
+                        {
+                            "passive": {
+                                "atk% buff": 2, 
+                                "def% buff": 3, 
+                                "passive id": "1"
+                            }
+                        }
+                    ], 
+                    "id": "70544", 
+                    "level": 1, 
+                    "name": "Raises normal hit amount (+2)", 
+                    "series": ""
+                }
+            }, 
+            {
+                "category": "11", 
+                "dependency": "", 
+                "dependency comment": "", 
+                "id": "70545", 
+                "skill": {
+                    "bp": 10, 
+                    "desc": "Raises ATK parameter limits to 160000", 
+                    "effects": [
+                        {
+                            "passive": {
+                                "increase atk cap": 160000, 
+                                "passive id": "143"
+                            }
+                        }
+                    ], 
+                    "id": "70545", 
+                    "level": 1, 
+                    "name": "Raises ATK parameter limits to 160000", 
+                    "series": ""
+                }
+            }, 
+            {
+                "category": "11", 
+                "dependency": "", 
+                "dependency comment": "", 
+                "id": "70546", 
+                "skill": {
+                    "bp": 20, 
+                    "desc": "Enhances SBB's ATK, DEF, REC for Dark types boost for 3 turns effect (+20%, 140% total)", 
+                    "effects": [
+                        {
+                            "add to sbb": {
+                                "atk% buff (1)": 20, 
+                                "buff turns": 0, 
+                                "def% buff (3)": 20, 
+                                "element buffed": "all", 
+                                "proc id": "5", 
+                                "rec% buff (5)": 20
+                            }
+                        }
+                    ], 
+                    "id": "70546", 
+                    "level": 1, 
+                    "name": "Enhances SBB's ATK, DEF, REC for Dark types boost for 3 turns effect", 
+                    "series": ""
+                }
+            }, 
+            {
+                "category": "11", 
+                "dependency": "1@70546", 
+                "dependency comment": "", 
+                "id": "70547", 
+                "skill": {
+                    "bp": 10, 
+                    "desc": "Adds boost ATK, DEF, REC for Dark types (140%) boost effect for 3 turns to BB", 
+                    "effects": [
+                        {
+                            "passive": {
+                                "passive id": "66", 
+                                "trigger on bb": true, 
+                                "triggered effect": [
+                                    {
+                                        "atk% buff (13)": 140, 
+                                        "buff turns": 3, 
+                                        "def% buff (14)": 140, 
+                                        "effect delay time(ms)/frame": "0.0/0", 
+                                        "element buffed": "dark", 
+                                        "proc id": "5", 
+                                        "rec% buff (15)": 140, 
+                                        "target area": "aoe", 
+                                        "target type": "party"
+                                    }
+                                ]
+                            }
+                        }
+                    ], 
+                    "id": "70547", 
+                    "level": 1, 
+                    "name": "Adds boost ATK, DEF, REC for Dark types boost effect for 3 turns to BB", 
+                    "series": ""
+                }
+            }, 
+            {
+                "category": "11", 
+                "dependency": "", 
+                "dependency comment": "", 
+                "id": "70548", 
+                "skill": {
+                    "bp": 20, 
+                    "desc": "Adds normal attack hit all foes for 3 turns effect to BB/SBB", 
+                    "effects": [
+                        {
+                            "passive": {
+                                "passive id": "66", 
+                                "trigger on bb": true, 
+                                "trigger on sbb": true, 
+                                "triggered effect": [
+                                    {
+                                        "aoe atk inc%": 0, 
+                                        "chance to aoe": 100, 
+                                        "effect delay time(ms)/frame": "0.0/0", 
+                                        "proc id": "94", 
+                                        "target area": "aoe", 
+                                        "target type": "party"
+                                    }
+                                ]
+                            }
+                        }
+                    ], 
+                    "id": "70548", 
+                    "level": 1, 
+                    "name": "Adds normal attack hit all foes for 3 turns effect to BB/SBB", 
+                    "series": ""
+                }
+            }, 
+            {
+                "category": "11", 
+                "dependency": "", 
+                "dependency comment": "", 
+                "id": "70549", 
+                "skill": {
+                    "bp": 25, 
+                    "desc": "Enhances SBB's damage reduction from Light and Dark types for 1 turn effect (+5%, 15% total)", 
+                    "effects": [
+                        {
+                            "add to sbb": {
+                                "dmg% mitigation for elemental attacks": 5, 
+                                "dmg% mitigation for elemental attacks buff turns": 0, 
+                                "proc id": "39"
+                            }
+                        }
+                    ], 
+                    "id": "70549", 
+                    "level": 1, 
+                    "name": "Enhances SBB's damage reduction from Light and Dark types", 
+                    "series": ""
+                }
+            }, 
+            {
+                "category": "11", 
+                "dependency": "1@70549", 
+                "dependency comment": "", 
+                "id": "70550", 
+                "skill": {
+                    "bp": 25, 
+                    "desc": "Adds damage reduction from Fire, Water, Earth, Thunder types (15%) for 1 turn to SBB", 
+                    "effects": [
+                        {
+                            "passive": {
+                                "passive id": "66", 
+                                "trigger on sbb": true, 
+                                "triggered effect": [
+                                    {
+                                        "dmg% mitigation for elemental attacks": 15, 
+                                        "dmg% mitigation for elemental attacks buff turns": 0, 
+                                        "effect delay time(ms)/frame": "0.0/0", 
+                                        "mitigate earth attacks": true, 
+                                        "mitigate fire attacks": true, 
+                                        "mitigate thunder attacks": true, 
+                                        "mitigate water attacks": true, 
+                                        "proc id": "39", 
+                                        "target area": "aoe", 
+                                        "target type": "party"
+                                    }
+                                ]
+                            }
+                        }
+                    ], 
+                    "id": "70550", 
+                    "level": 1, 
+                    "name": "Adds damage reduction from Fire, Water, Earth, Thunder types to SBB", 
+                    "series": ""
+                }
+            }, 
+            {
+                "category": "11", 
+                "dependency": "", 
+                "dependency comment": "", 
+                "id": "70551", 
+                "skill": {
+                    "bp": 30, 
+                    "desc": "Enhances hit amount and damage of UBB's raises normal hit amount effect (+1 and +30% damage, 4 hits and 250% damage total)", 
+                    "effects": [
+                        {
+                            "add to ubb": {
+                                "extra hits dmg%": 30, 
+                                "hit increase buff turns (50)": 0, 
+                                "hit increase/hit": 1, 
+                                "proc id": "26"
+                            }
+                        }
+                    ], 
+                    "id": "70551", 
+                    "level": 1, 
+                    "name": "Enhances hit amount and damage of UBB's raises normal hit amount effect", 
                     "series": ""
                 }
             }
