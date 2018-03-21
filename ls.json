@@ -26918,6 +26918,52 @@
         "id": "8104", 
         "name": "Supreme Ruler's Inquisition"
     }, 
+    "810408": {
+        "desc": "100% boost to Atk, Def and max HP, considerably boosts Def relative to how low remaining HP is, considerably boosts Atk and Def for 3 turns when guarding, 15% damage reduction & negates critical and elemental damage for all allies", 
+        "effects": [
+            {
+                "atk% buff": 100, 
+                "def% buff": 100, 
+                "hp% buff": 100, 
+                "passive id": "1"
+            }, 
+            {
+                "buff proportional to hp": "lost", 
+                "def% base buff": 0, 
+                "def% extra buff based on hp": 100, 
+                "passive id": "46"
+            }, 
+            {
+                "buff": {
+                    "atk% buff (1)": 100, 
+                    "buff turns (1)": "3"
+                }, 
+                "on guard activation chance%": 100, 
+                "passive id": "88"
+            }, 
+            {
+                "dmg% mitigation": 15, 
+                "passive id": "8"
+            }, 
+            {
+                "crit dmg base damage resist%": 100, 
+                "crit dmg buffed damage resist%": 100, 
+                "passive id": "53", 
+                "strong base element damage resist%": 100, 
+                "strong buffed element damage resist%": 100
+            }, 
+            {
+                "buff": {
+                    "buff turns (3)": "3", 
+                    "def% buff (3)": 100
+                }, 
+                "on guard activation chance%": 100, 
+                "passive id": "88"
+            }
+        ], 
+        "id": "810408", 
+        "name": "Guardian of the Conquerors"
+    }, 
     "810437": {
         "desc": "50% boost to Atk, max HP, considerably boosts Atk, Def relative to remaining HP & 5% damage reduction from Fire, Earth, Dark elemental types", 
         "effects": [
@@ -29222,6 +29268,72 @@
         ], 
         "id": "840548", 
         "name": "Requip: Lightning Empress"
+    }, 
+    "840567": {
+        "desc": "70% boost to Atk, Def, max HP and enormously boosts critical hit rate of Thunder types, considerably boosts Atk when HP is over 50%, greatly boosts critical damage & hugely boosts Thunder elemental damage", 
+        "effects": [
+            {
+                "atk% buff": 70, 
+                "crit% buff": 60, 
+                "def% buff": 70, 
+                "elements buffed": [
+                    "thunder"
+                ], 
+                "hp% buff": 70, 
+                "passive id": "2"
+            }, 
+            {
+                "atk% buff": 125, 
+                "hp above % buff requirement": 50, 
+                "passive id": "11"
+            }, 
+            {
+                "crit multiplier%": 125.0, 
+                "passive id": "34"
+            }, 
+            {
+                "elemental weakness multiplier%": 175.0, 
+                "passive id": "50", 
+                "thunder units do extra elemental weakness dmg": true
+            }
+        ], 
+        "id": "840567", 
+        "name": "Wrath of N'an-xin"
+    }, 
+    "840568": {
+        "desc": "80% boost to Atk, Def, max HP and enormously boosts critical hit rate of Thunder types, considerably boosts Atk when HP is over 50%, hugely boosts critical damage, enormously boosts Thunder elemental damage & hugely boosts OD gauge fill rate", 
+        "effects": [
+            {
+                "atk% buff": 80, 
+                "crit% buff": 60, 
+                "def% buff": 80, 
+                "elements buffed": [
+                    "thunder"
+                ], 
+                "hp% buff": 80, 
+                "passive id": "2"
+            }, 
+            {
+                "atk% buff": 150, 
+                "hp above % buff requirement": 50, 
+                "passive id": "11"
+            }, 
+            {
+                "crit multiplier%": 150.0, 
+                "passive id": "34"
+            }, 
+            {
+                "elemental weakness multiplier%": 225.0, 
+                "passive id": "50", 
+                "thunder units do extra elemental weakness dmg": true
+            }, 
+            {
+                "od fill rate%": 30, 
+                "passive id": "70"
+            }
+        ], 
+        "id": "840568", 
+        "name": "Divine N'an-xin Tribulation"
     }, 
     "8500": {
         "desc": "Boosts Atk relative to remaining HP", 

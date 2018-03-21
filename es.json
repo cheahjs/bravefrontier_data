@@ -23916,6 +23916,59 @@
         "rarity": "1", 
         "target": "self"
     }, 
+    "810408": {
+        "desc": "5% damage reduction for all allies when Damage Reducing Sphere is equipped, boosts Atk, Def for 3 turns when guarding & hugely boosts critical damage for 2 turns when damage taken exceeds certain amount", 
+        "effects": [
+            {
+                "conditions": [
+                    {
+                        "sphere category required": "Damage Reducing", 
+                        "sphere category required (raw)": "10"
+                    }
+                ], 
+                "dmg% mitigation": 5, 
+                "passive id": "8", 
+                "passive target": "party"
+            }, 
+            {
+                "buff": {
+                    "buff turns (125)": "3", 
+                    "unknown buff id": "125", 
+                    "unknown buff params": "50"
+                }, 
+                "conditions": [], 
+                "on guard activation chance%": 100, 
+                "passive id": "88", 
+                "passive target": "self"
+            }, 
+            {
+                "buff": {
+                    "buff turns (84)": "2", 
+                    "unknown buff id": "84", 
+                    "unknown buff params": "2"
+                }, 
+                "conditions": [], 
+                "damage threshold buff activation": 10000, 
+                "passive id": "78", 
+                "passive target": "self"
+            }, 
+            {
+                "buff": {
+                    "buff turns (124)": "3", 
+                    "unknown buff id": "124", 
+                    "unknown buff params": "50"
+                }, 
+                "conditions": [], 
+                "on guard activation chance%": 100, 
+                "passive id": "88", 
+                "passive target": "self"
+            }
+        ], 
+        "id": "810408", 
+        "name": "Super Adaptive Senses", 
+        "rarity": "1", 
+        "target": "self"
+    }, 
     "810417": {
         "desc": "50% boost to Def and Spark damage when Spark count exceeds certain amount", 
         "effects": [
@@ -27760,6 +27813,63 @@
         "id": "840548", 
         "name": "Titania", 
         "rarity": "1", 
+        "target": "self"
+    }, 
+    "840567": {
+        "desc": "Slightly boosts critical damage for all allies & 15% damage reduction from normal attacks", 
+        "effects": [
+            {
+                "conditions": [], 
+                "crit multiplier%": 15.0, 
+                "passive id": "34", 
+                "passive target": "party"
+            }, 
+            {
+                "conditions": [], 
+                "passive target": "self", 
+                "unknown passive id": "128", 
+                "unknown passive params": "100,15,100,15"
+            }
+        ], 
+        "id": "840567", 
+        "name": "Dragonfly Elevation", 
+        "rarity": "7", 
+        "target": "self"
+    }, 
+    "840568": {
+        "desc": "Slightly boosts critical damage for all allies, negates critical damage for all allies, 20% damage reduction from normal attacks & raises Atk parameter limits to 130000", 
+        "effects": [
+            {
+                "conditions": [], 
+                "crit multiplier%": 25.0, 
+                "passive id": "34", 
+                "passive target": "party"
+            }, 
+            {
+                "conditions": [], 
+                "passive target": "self", 
+                "unknown passive id": "128", 
+                "unknown passive params": "100,20,100,20"
+            }, 
+            {
+                "conditions": [], 
+                "crit chance base resist%": 100, 
+                "crit chance buffed resist%": 100, 
+                "crit dmg base damage resist%": 100, 
+                "crit dmg buffed damage resist%": 100, 
+                "passive id": "53", 
+                "passive target": "party"
+            }, 
+            {
+                "conditions": [], 
+                "increase atk cap": 130000, 
+                "passive id": "143", 
+                "passive target": "self"
+            }
+        ], 
+        "id": "840568", 
+        "name": "Dragonfly Apotheosis", 
+        "rarity": "7", 
         "target": "self"
     }, 
     "8500": {
