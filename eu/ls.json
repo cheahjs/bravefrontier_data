@@ -5329,6 +5329,36 @@
         "id": "1957", 
         "name": "Thunderous Annihilation"
     }, 
+    "1958": {
+        "desc": "100% boost to Atk, 30% boost to max HP, adds probable Def ignoring effect to attack, critical damage enormously boosts BB gauge & enormously boosts Spark damage for 2 turns when Spark damage exceeds certain amount", 
+        "effects": [
+            {
+                "atk% buff": 100, 
+                "hp% buff": 30, 
+                "passive id": "1"
+            }, 
+            {
+                "ignore def%": 25, 
+                "passive id": "29"
+            }, 
+            {
+                "bc fill on crit max": 8, 
+                "bc fill on crit min": 8, 
+                "bc fill on crit%": 100.0, 
+                "passive id": "65"
+            }, 
+            {
+                "buff": {
+                    "buff turns (40)": "2", 
+                    "spark dmg% buff": 120
+                }, 
+                "passive id": "86", 
+                "spark count buff activation": 15
+            }
+        ], 
+        "id": "1958", 
+        "name": "Crimson Incinerator"
+    }, 
     "2": {
         "desc": "Leader Skill 1 Description", 
         "effects": [
@@ -6562,6 +6592,32 @@
         ], 
         "id": "2228", 
         "name": "Mecha-Angel Blast"
+    }, 
+    "2229": {
+        "desc": "100% boost to Atk and 30% boost to max HP when 5 elements or more are present, 50% boost to Atk, 30% boost to max HP, hugely boosts critical damage & considerably boosts BC efficacy", 
+        "effects": [
+            {
+                "atk% buff": 100, 
+                "hp% buff": 30, 
+                "passive id": "41", 
+                "unique elements required": 5
+            }, 
+            {
+                "atk% buff": 50, 
+                "hp% buff": 30, 
+                "passive id": "1"
+            }, 
+            {
+                "crit multiplier%": 175.0, 
+                "passive id": "34"
+            }, 
+            {
+                "bb gauge fill rate%": 50, 
+                "passive id": "32"
+            }
+        ], 
+        "id": "2229", 
+        "name": "Vestal Radiance"
     }, 
     "2300": {
         "desc": "Boost in critical hit damage", 
@@ -23427,6 +23483,44 @@
         ], 
         "id": "830388", 
         "name": "Vengeful Samurai"
+    }, 
+    "840358": {
+        "desc": "Boosts ATK, DEF and max HP of Thunder types (85%) & Spark damage boosts BB gauge (2-3 BC) & damage reduction (20%) for 1 turn when HP is below 50% & reduces BB gauge required for BB (25%) & boosts BB gauge each turn (10 BC)", 
+        "effects": [
+            {
+                "atk% buff": 85, 
+                "def% buff": 85, 
+                "elements buffed": [
+                    "thunder"
+                ], 
+                "hp% buff": 85, 
+                "passive id": "2"
+            }, 
+            {
+                "bc fill on spark high": 3, 
+                "bc fill on spark low": 2, 
+                "bc fill on spark%": 100, 
+                "passive id": "47"
+            }, 
+            {
+                "buff": {
+                    "buff turns (36)": "1", 
+                    "dmg reduction% buff": 20
+                }, 
+                "hp below % buff activation": 50, 
+                "passive id": "55"
+            }, 
+            {
+                "passive id": "48", 
+                "reduced bb bc cost%": 25
+            }, 
+            {
+                "bc fill per turn": 10, 
+                "passive id": "9"
+            }
+        ], 
+        "id": "840358", 
+        "name": "A Riddle of Heaven"
     }, 
     "840377": {
         "desc": "80% boost to Atk,40% boost to max HP, hugely boosts critical damage & probable normal attack on all foes", 
