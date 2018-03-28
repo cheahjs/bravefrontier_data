@@ -25639,6 +25639,75 @@
         "rarity": "1", 
         "target": "self"
     }, 
+    "820557": {
+        "desc": "Probable damage reduction to 1 for all allies & probable 50% damage counter for all allies", 
+        "effects": [
+            {
+                "conditions": [], 
+                "passive id": "43", 
+                "passive target": "party", 
+                "take 1 dmg%": 10
+            }, 
+            {
+                "conditions": [], 
+                "dmg% reflect chance%": 70, 
+                "dmg% reflect high": 50, 
+                "dmg% reflect low": 50, 
+                "passive id": "26", 
+                "passive target": "party"
+            }
+        ], 
+        "id": "820557", 
+        "name": "Unity Among Equals", 
+        "rarity": "7", 
+        "target": "self"
+    }, 
+    "820558": {
+        "desc": "Probable damage reduction to 1 for all allies, probable 50% damage counter for all allies, damage taken may slightly reduce foe's BB gauge fill rate for 1 turn & adds 16 combo (BB)/23 combo (SBB) powerful Water attack on single foe to BB/SBB", 
+        "effects": [
+            {
+                "conditions": [], 
+                "passive id": "43", 
+                "passive target": "party", 
+                "take 1 dmg%": 10
+            }, 
+            {
+                "conditions": [], 
+                "dmg% reflect chance%": 70, 
+                "dmg% reflect high": 50, 
+                "dmg% reflect low": 50, 
+                "passive id": "26", 
+                "passive target": "party"
+            }, 
+            {
+                "conditions": [], 
+                "passive target": "self", 
+                "unknown passive id": "114", 
+                "unknown passive params": "112,-20,-1,20,1"
+            }, 
+            {
+                "conditions": [], 
+                "passive id": "66", 
+                "passive target": "self", 
+                "trigger on bb": true, 
+                "trigger on sbb": true, 
+                "triggered effect": [
+                    {
+                        "bb atk%": 620, 
+                        "bb flat atk": 200, 
+                        "effect delay time(ms)/frame": "0.0/0", 
+                        "proc id": "1", 
+                        "target area": "single", 
+                        "target type": "enemy"
+                    }
+                ]
+            }
+        ], 
+        "id": "820558", 
+        "name": "Monstrous Algid Pact", 
+        "rarity": "7", 
+        "target": "self"
+    }, 
     "8300": {
         "desc": "Boosts BB Atk when damage taken has exceeded certain amount for 2 turns", 
         "effects": [
@@ -28722,6 +28791,73 @@
         "id": "850317", 
         "name": "Arcane Erudition", 
         "rarity": "1", 
+        "target": "self"
+    }, 
+    "850318": {
+        "desc": "Adds status ailment negation effect for 3 turns and status ailment removal effect to BB/SBB & 5% damage reduction for 1 turn when HP is below 50% for all allies", 
+        "effects": [
+            {
+                "conditions": [], 
+                "passive id": "66", 
+                "passive target": "self", 
+                "trigger on bb": true, 
+                "trigger on sbb": true, 
+                "triggered effect": [
+                    {
+                        "ailments cured": [
+                            "poison", 
+                            "weaken", 
+                            "sick", 
+                            "injury", 
+                            "curse", 
+                            "paralysis", 
+                            "atk down", 
+                            "def down", 
+                            "rec down"
+                        ], 
+                        "effect delay time(ms)/frame": "0.0/0", 
+                        "proc id": "38", 
+                        "target area": "aoe", 
+                        "target type": "party"
+                    }
+                ]
+            }, 
+            {
+                "conditions": [], 
+                "passive id": "66", 
+                "passive target": "self", 
+                "trigger on bb": true, 
+                "trigger on sbb": true, 
+                "triggered effect": [
+                    {
+                        "effect delay time(ms)/frame": "0.0/0", 
+                        "proc id": "17", 
+                        "resist curse% (34)": 100.0, 
+                        "resist injury% (33)": 100.0, 
+                        "resist paralysis% (35)": 100.0, 
+                        "resist poison% (30)": 100.0, 
+                        "resist sick% (32)": 100.0, 
+                        "resist status ails turns": 3, 
+                        "resist weaken% (31)": 100.0, 
+                        "target area": "aoe", 
+                        "target type": "party"
+                    }
+                ]
+            }, 
+            {
+                "buff": {
+                    "buff turns (36)": "1", 
+                    "dmg reduction% buff": 5
+                }, 
+                "conditions": [], 
+                "hp below % buff activation": 50, 
+                "passive id": "55", 
+                "passive target": "party"
+            }
+        ], 
+        "id": "850318", 
+        "name": "Ancestral Wisdom", 
+        "rarity": "7", 
         "target": "self"
     }, 
     "850328": {
