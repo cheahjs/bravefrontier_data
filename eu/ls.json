@@ -10335,6 +10335,70 @@
         "id": "4382", 
         "name": "Ablative Armor"
     }, 
+    "4384": {
+        "desc": "50% boost to Def, max HP, 5% damage reduction from Fire, Water, Earth, Thunder types & negates critical and elemental damage", 
+        "effects": [
+            {
+                "def% buff": 50, 
+                "hp% buff": 50, 
+                "passive id": "1"
+            }, 
+            {
+                "dmg% mitigation for elemental attacks": 5.0, 
+                "mitigate earth attacks": true, 
+                "mitigate fire attacks": true, 
+                "mitigate thunder attacks": true, 
+                "mitigate water attacks": true, 
+                "passive id": "62"
+            }, 
+            {
+                "crit chance base resist%": 100, 
+                "crit chance buffed resist%": 100, 
+                "crit dmg base damage resist%": 100, 
+                "crit dmg buffed damage resist%": 100, 
+                "passive id": "53", 
+                "strong base element damage resist%": 100, 
+                "strong buffed element damage resist%": 100
+            }
+        ], 
+        "id": "4384", 
+        "name": "Frigid Oath"
+    }, 
+    "4385": {
+        "desc": "60% boost to Def, max HP, 10% damage reduction from Fire, Water, Earth, Thunder types, negates critical and elemental damage & considerably restores HP each turn", 
+        "effects": [
+            {
+                "def% buff": 60, 
+                "hp% buff": 60, 
+                "passive id": "1"
+            }, 
+            {
+                "dmg% mitigation for elemental attacks": 10.0, 
+                "mitigate earth attacks": true, 
+                "mitigate fire attacks": true, 
+                "mitigate thunder attacks": true, 
+                "mitigate water attacks": true, 
+                "passive id": "62"
+            }, 
+            {
+                "crit chance base resist%": 100, 
+                "crit chance buffed resist%": 100, 
+                "crit dmg base damage resist%": 100, 
+                "crit dmg buffed damage resist%": 100, 
+                "passive id": "53", 
+                "strong base element damage resist%": 100, 
+                "strong buffed element damage resist%": 100
+            }, 
+            {
+                "passive id": "33", 
+                "rec% added (turn heal)": 10.0, 
+                "turn heal high": 1500, 
+                "turn heal low": 1200
+            }
+        ], 
+        "id": "4385", 
+        "name": "Sacred Oath"
+    }, 
     "4400": {
         "desc": "Boosts resistence to status ailments & fills BB gauge after each turn", 
         "effects": [
@@ -12112,6 +12176,68 @@
         ], 
         "id": "5544", 
         "name": "Mysterious Coincidence"
+    }, 
+    "5545": {
+        "desc": "60% boost to max HP, boosts Atk, Def, Rec relative to remaining HP & boosts Atk, Def, Rec each turn for up to 3 turns", 
+        "effects": [
+            {
+                "hp% buff": 60, 
+                "passive id": "1"
+            }, 
+            {
+                "atk% base buff": 0, 
+                "atk% extra buff based on hp": 60, 
+                "buff proportional to hp": "remaining", 
+                "def% base buff": 0, 
+                "def% extra buff based on hp": 60, 
+                "passive id": "46", 
+                "rec% base buff": 0, 
+                "rec% extra buff based on hp": 60
+            }, 
+            {
+                "atk% max buff": 30, 
+                "def% max buff": 30, 
+                "increase from min to max": 1, 
+                "passive id": "105", 
+                "rec% max buff": 30, 
+                "turn count": 3
+            }
+        ], 
+        "id": "5545", 
+        "name": "Sea God's Wrath"
+    }, 
+    "5546": {
+        "desc": "80% boost to max HP, considerably boosts Atk, Def, Rec relative to remaining HP, boosts Atk, Def, Rec each turn for up to 3 turns & 130% boost to Spark damage", 
+        "effects": [
+            {
+                "hp% buff": 80, 
+                "passive id": "1"
+            }, 
+            {
+                "atk% base buff": 0, 
+                "atk% extra buff based on hp": 80, 
+                "buff proportional to hp": "remaining", 
+                "def% base buff": 0, 
+                "def% extra buff based on hp": 80, 
+                "passive id": "46", 
+                "rec% base buff": 0, 
+                "rec% extra buff based on hp": 80
+            }, 
+            {
+                "atk% max buff": 60, 
+                "def% max buff": 60, 
+                "increase from min to max": 1, 
+                "passive id": "105", 
+                "rec% max buff": 60, 
+                "turn count": 3
+            }, 
+            {
+                "damage% for spark": 130, 
+                "passive id": "31"
+            }
+        ], 
+        "id": "5546", 
+        "name": "Sea God's Roar"
     }, 
     "555": {
         "desc": "15% reduction in damage from Light types, hugely boosts Dark Type elemental damage & considerably boosts OD gauge fill rate", 
@@ -19467,6 +19593,64 @@
         ], 
         "id": "7528", 
         "name": "Glacial Judgment Arrow"
+    }, 
+    "7529": {
+        "desc": "50% boost to Atk, max HP, enormously boosts BB Atk & adds probable random status ailment counter", 
+        "effects": [
+            {
+                "atk% buff": 50, 
+                "hp% buff": 50, 
+                "passive id": "1"
+            }, 
+            {
+                "bb atk% buff": 200, 
+                "passive id": "64", 
+                "sbb atk% buff": 200, 
+                "ubb atk% buff": 200
+            }, 
+            {
+                "counter inflict curse%": 10, 
+                "counter inflict injury%": 15, 
+                "counter inflict paralysis%": 10, 
+                "counter inflict poison%": 10, 
+                "counter inflict sick%": 15, 
+                "counter inflict weaken%": 15, 
+                "passive id": "71"
+            }
+        ], 
+        "id": "7529", 
+        "name": "Accursed Soul"
+    }, 
+    "7530": {
+        "desc": "60% boost to Atk, max HP, enormously boosts BB Atk, considerably boosts BC efficacy & adds probable random status ailment counter", 
+        "effects": [
+            {
+                "atk% buff": 60, 
+                "hp% buff": 60, 
+                "passive id": "1"
+            }, 
+            {
+                "bb atk% buff": 250, 
+                "passive id": "64", 
+                "sbb atk% buff": 250, 
+                "ubb atk% buff": 250
+            }, 
+            {
+                "counter inflict curse%": 15, 
+                "counter inflict injury%": 20, 
+                "counter inflict paralysis%": 15, 
+                "counter inflict poison%": 15, 
+                "counter inflict sick%": 20, 
+                "counter inflict weaken%": 20, 
+                "passive id": "71"
+            }, 
+            {
+                "bb gauge fill rate%": 50, 
+                "passive id": "32"
+            }
+        ], 
+        "id": "7530", 
+        "name": "Irredeemable Soul"
     }, 
     "7600": {
         "desc": "50% boost to Atk of Water & Light types", 
