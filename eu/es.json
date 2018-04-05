@@ -14385,6 +14385,68 @@
         "rarity": "1", 
         "target": "self"
     }, 
+    "40100": {
+        "desc": "Damage taken boosts BB gauge & negates all status ailments", 
+        "effects": [
+            {
+                "bc fill when attacked high": 3, 
+                "bc fill when attacked low": 2, 
+                "bc fill when attacked%": 100, 
+                "conditions": [], 
+                "passive id": "25", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "curse resist%": 100, 
+                "injury resist%": 100, 
+                "paralysis resist%": 100, 
+                "passive id": "4", 
+                "passive target": "self", 
+                "poison resist%": 100, 
+                "sick resist%": 100, 
+                "weaken resist%": 100
+            }
+        ], 
+        "id": "40100", 
+        "name": "Sealed God's Assassin", 
+        "rarity": "1", 
+        "target": "self"
+    }, 
+    "40200": {
+        "desc": "Damage taken considerably boosts BB gauge, negates all status ailments & probable foe BB gauge reduction", 
+        "effects": [
+            {
+                "bc fill when attacked high": 4, 
+                "bc fill when attacked low": 3, 
+                "bc fill when attacked%": 100, 
+                "conditions": [], 
+                "passive id": "25", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "curse resist%": 100, 
+                "injury resist%": 100, 
+                "paralysis resist%": 100, 
+                "passive id": "4", 
+                "passive target": "self", 
+                "poison resist%": 100, 
+                "sick resist%": 100, 
+                "weaken resist%": 100
+            }, 
+            {
+                "conditions": [], 
+                "passive target": "self", 
+                "unknown passive id": "110", 
+                "unknown passive params": "0,0,30,30,20,0"
+            }
+        ], 
+        "id": "40200", 
+        "name": "Nameless Executioner", 
+        "rarity": "1", 
+        "target": "self"
+    }, 
     "410": {
         "desc": "30% boost to all parameters, boosts critical damage & 50% boost to Spark damage when Batootha is equipped", 
         "effects": [
@@ -23887,6 +23949,88 @@
         ], 
         "id": "850157", 
         "name": "Sweet Disposition", 
+        "rarity": "1", 
+        "target": "self"
+    }, 
+    "850158": {
+        "desc": "Boosts all parameters and BC, HC drop rate (10%, all) & boosts BC, HC efficacy (20%) & adds status ailment removal and Light Barrier activation (4000 HP) effects to BB/SBB", 
+        "effects": [
+            {
+                "conditions": [], 
+                "hc effectiveness%": 20, 
+                "passive id": "10", 
+                "passive target": "self"
+            }, 
+            {
+                "bb gauge fill rate%": 20, 
+                "conditions": [], 
+                "passive id": "32", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "passive id": "66", 
+                "passive target": "self", 
+                "trigger on bb": true, 
+                "trigger on sbb": true, 
+                "triggered effect": [
+                    {
+                        "ailments cured": [
+                            "poison", 
+                            "weaken", 
+                            "sick", 
+                            "injury", 
+                            "curse", 
+                            "paralysis", 
+                            "atk down", 
+                            "def down", 
+                            "rec down"
+                        ], 
+                        "effect delay time(ms)/frame": "0.0/0", 
+                        "proc id": "38", 
+                        "target area": "aoe", 
+                        "target type": "party"
+                    }
+                ]
+            }, 
+            {
+                "atk% buff": 10, 
+                "conditions": [], 
+                "def% buff": 10, 
+                "hp% buff": 10, 
+                "passive id": "1", 
+                "passive target": "party", 
+                "rec% buff": 10
+            }, 
+            {
+                "bc drop rate% buff": 10, 
+                "conditions": [], 
+                "hc drop rate% buff": 10, 
+                "passive id": "19", 
+                "passive target": "party"
+            }, 
+            {
+                "conditions": [], 
+                "passive id": "66", 
+                "passive target": "self", 
+                "trigger on bb": true, 
+                "trigger on sbb": true, 
+                "triggered effect": [
+                    {
+                        "effect delay time(ms)/frame": "0.0/0", 
+                        "elemental barrier absorb dmg%": 100, 
+                        "elemental barrier def": 0, 
+                        "elemental barrier element": "light", 
+                        "elemental barrier hp": 4000, 
+                        "proc id": "62", 
+                        "target area": "aoe", 
+                        "target type": "party"
+                    }
+                ]
+            }
+        ], 
+        "id": "850158", 
+        "name": "Sharing is Caring", 
         "rarity": "1", 
         "target": "self"
     }, 
