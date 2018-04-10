@@ -23764,7 +23764,7 @@
         "target": "self"
     }, 
     "810338": {
-        "desc": "Adds resistance against 1 KO attack when HP is below 20% & greatly boosts Atk, Def relative to remaining HP", 
+        "desc": "Adds resistance against 1 KO attack when HP is below 20%, enormously boosts Atk, Rec relative to HP lost & 40% boost to all parameters when Status Boosting Sphere is equipped", 
         "effects": [
             {
                 "buff": {
@@ -23779,13 +23779,27 @@
             }, 
             {
                 "atk% base buff": 0, 
-                "atk% extra buff based on hp": 100, 
+                "atk% extra buff based on hp": 150, 
                 "buff proportional to hp": "lost", 
                 "conditions": [], 
                 "def% base buff": 0, 
-                "def% extra buff based on hp": 100, 
+                "def% extra buff based on hp": 150, 
                 "passive id": "46", 
                 "passive target": "self"
+            }, 
+            {
+                "atk% buff": 40, 
+                "conditions": [
+                    {
+                        "sphere category required": "Status Boost", 
+                        "sphere category required (raw)": "1"
+                    }
+                ], 
+                "def% buff": 40, 
+                "hp% buff": 40, 
+                "passive id": "1", 
+                "passive target": "self", 
+                "rec% buff": 40
             }
         ], 
         "id": "810338", 
@@ -28316,7 +28330,7 @@
         "target": "self"
     }, 
     "850167": {
-        "desc": "Adds Light barrier effect to BB/SBB for 3 turns & greatly boosts Rec relative to amount of depleted HP", 
+        "desc": "Adds Light barrier effect to BB/SBB for 3 turns, greatly boosts Rec relative to amount of HP lost, boosts Atk, Def each turn (up to 3 turns) & damage taken slightly boosts BB gauge", 
         "effects": [
             {
                 "buff proportional to hp": "lost", 
@@ -28338,12 +28352,29 @@
                         "elemental barrier absorb dmg%": 100, 
                         "elemental barrier def": 0, 
                         "elemental barrier element": "light", 
-                        "elemental barrier hp": 2500, 
+                        "elemental barrier hp": 3500, 
                         "proc id": "62", 
                         "target area": "aoe", 
                         "target type": "party"
                     }
                 ]
+            }, 
+            {
+                "atk% max buff": 120, 
+                "conditions": [], 
+                "def% max buff": 120, 
+                "increase from min to max": 1, 
+                "passive id": "105", 
+                "passive target": "self", 
+                "turn count": 3
+            }, 
+            {
+                "bc fill when attacked high": 3, 
+                "bc fill when attacked low": 2, 
+                "bc fill when attacked%": 100, 
+                "conditions": [], 
+                "passive id": "25", 
+                "passive target": "self"
             }
         ], 
         "id": "850167", 
@@ -28912,7 +28943,7 @@
         "target": "self"
     }, 
     "850318": {
-        "desc": "Adds status ailment negation effect for 3 turns and status ailment removal effect to BB/SBB & 5% damage reduction for all allies", 
+        "desc": "Adds removal and negation of status ailments effect for 3 turns to BB/SBB, slightly reduces damage taken for 2 turns when HP is below 50% effect for all allies & 30% boost to all parameters when Ritus Staff is equipped", 
         "effects": [
             {
                 "conditions": [], 
@@ -28967,6 +28998,21 @@
                 "dmg% mitigation": 5, 
                 "passive id": "8", 
                 "passive target": "party"
+            }, 
+            {
+                "atk% buff": 30, 
+                "conditions": [
+                    {
+                        "item required": [
+                            "818935"
+                        ]
+                    }
+                ], 
+                "def% buff": 30, 
+                "hp% buff": 30, 
+                "passive id": "1", 
+                "passive target": "self", 
+                "rec% buff": 30
             }
         ], 
         "id": "850318", 
@@ -30068,12 +30114,12 @@
         "target": "self"
     }, 
     "860167": {
-        "desc": "Adds huge damage boost against status afflicted foes for 3 turns effect to BB/SBB & greatly boosts Atk when HP is full", 
+        "desc": "Adds huge damage boost against status afflicted foes for 3 turns effect to BB/SBB, greatly boosts Atk when HP is over 50%, 40% boost to all parameters when Spark Sphere is equipped & 15% boost to all parameters of Female types", 
         "effects": [
             {
                 "atk% buff": 100, 
                 "conditions": [], 
-                "hp above % buff requirement": 100, 
+                "hp above % buff requirement": 50, 
                 "passive id": "11", 
                 "passive target": "self"
             }, 
@@ -30086,13 +30132,37 @@
                 "triggered effect": [
                     {
                         "atk% buff turns (110)": 3, 
-                        "atk% buff when enemy has ailment": 190, 
+                        "atk% buff when enemy has ailment": 200, 
                         "effect delay time(ms)/frame": "0.0/0", 
                         "proc id": "65", 
                         "target area": "aoe", 
                         "target type": "party"
                     }
                 ]
+            }, 
+            {
+                "atk% buff": 40, 
+                "conditions": [
+                    {
+                        "sphere category required": "Spark", 
+                        "sphere category required (raw)": "11"
+                    }
+                ], 
+                "def% buff": 40, 
+                "hp% buff": 40, 
+                "passive id": "1", 
+                "passive target": "self", 
+                "rec% buff": 40
+            }, 
+            {
+                "atk% buff": 15, 
+                "conditions": [], 
+                "def% buff": 15, 
+                "gender required": "female", 
+                "hp% buff": 15, 
+                "passive id": "42", 
+                "passive target": "party", 
+                "rec% buff": 15
             }
         ], 
         "id": "860167", 

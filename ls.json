@@ -24381,49 +24381,53 @@
         "name": "Allure of the Temptress"
     }, 
     "801224": {
-        "desc": "50% boost to max HP, Rec, damage taken boosts BB gauge, probable resistance against 1 KO attack & negates Def ignore effect", 
+        "desc": "70% boost to max HP, Rec, damage taken boosts BB gauge, probable resistance against 1 KO attack, negates Def ignore effect & 15% additional damage reduction", 
         "effects": [
             {
-                "hp% buff": 50, 
+                "hp% buff": 70, 
                 "passive id": "1", 
-                "rec% buff": 50
+                "rec% buff": 70
             }, 
             {
-                "bc fill when attacked high": 7, 
-                "bc fill when attacked low": 4, 
+                "bc fill when attacked high": 8, 
+                "bc fill when attacked low": 5, 
                 "bc fill when attacked%": 100, 
                 "passive id": "25"
             }, 
             {
                 "angel idol chance% condition": 0, 
-                "angel idol recover chance% high": 20, 
-                "angel idol recover chance% low": 20, 
+                "angel idol recover chance% high": 25, 
+                "angel idol recover chance% low": 25, 
                 "angel idol recover counts": 1, 
                 "passive id": "69"
             }, 
             {
                 "ignore def resist chance%": 100, 
                 "passive id": "92"
+            }, 
+            {
+                "unknown passive id": "127", 
+                "unknown passive params": "100,15"
             }
         ], 
         "id": "801224", 
         "name": "Omniscient Effulgence"
     }, 
     "801225": {
-        "desc": "50% boost to max HP, greatly boosts BB Atk and Spark damage & considerably boosts Atk relative to how high HP is", 
+        "desc": "70% boost to max HP, enormously boosts BB Atk and Spark damage, considerably boosts Atk relative to remaining HP & 15% damage reduction from Light, Dark types", 
         "effects": [
             {
-                "hp% buff": 50, 
+                "hp% buff": 70, 
                 "passive id": "1"
             }, 
             {
-                "bb atk% buff": 200, 
+                "bb atk% buff": 300, 
                 "passive id": "64", 
-                "sbb atk% buff": 200, 
-                "ubb atk% buff": 200
+                "sbb atk% buff": 300, 
+                "ubb atk% buff": 300
             }, 
             {
-                "damage% for spark": 100, 
+                "damage% for spark": 150, 
                 "passive id": "31"
             }, 
             {
@@ -24431,6 +24435,12 @@
                 "atk% extra buff based on hp": 80, 
                 "buff proportional to hp": "remaining", 
                 "passive id": "46"
+            }, 
+            {
+                "dmg% mitigation for elemental attacks": 15.0, 
+                "mitigate dark attacks": true, 
+                "mitigate light attacks": true, 
+                "passive id": "62"
             }
         ], 
         "id": "801225", 
@@ -24663,28 +24673,35 @@
         "name": "Draconian Edict"
     }, 
     "801236": {
-        "desc": "40% boost to all parameters, hugely boosts critical damage and BB Atk & 10% damage reduction", 
+        "desc": "80% boost to all parameters, hugely boosts critical damage, considerably boosts BB Atk, reduces all damage received by 10% & critical damage enormously boosts BB gauge", 
         "effects": [
             {
-                "atk% buff": 40, 
-                "def% buff": 40, 
-                "hp% buff": 40, 
+                "atk% buff": 80, 
+                "crit% buff": 20, 
+                "def% buff": 80, 
+                "hp% buff": 80, 
                 "passive id": "1", 
-                "rec% buff": 40
+                "rec% buff": 80
             }, 
             {
                 "crit multiplier%": 175.0, 
                 "passive id": "34"
             }, 
             {
-                "bb atk% buff": 200, 
+                "bb atk% buff": 250, 
                 "passive id": "64", 
-                "sbb atk% buff": 200, 
-                "ubb atk% buff": 200
+                "sbb atk% buff": 250, 
+                "ubb atk% buff": 250
             }, 
             {
                 "dmg% mitigation": 10, 
                 "passive id": "8"
+            }, 
+            {
+                "bc fill on crit max": 10, 
+                "bc fill on crit min": 8, 
+                "bc fill on crit%": 100.0, 
+                "passive id": "65"
             }
         ], 
         "id": "801236", 
@@ -29770,14 +29787,14 @@
         "name": "A Wistful Aria"
     }, 
     "850318": {
-        "desc": "60% boost to all parameters, negates elemental damage, hugely boosts all elemental damage & considerably boosts OD gauge fill rate", 
+        "desc": "80% boost to all parameters, negates elemental damage, hugely boosts all elemental damage greatly boosts OD gauge fill rate & reduces BB gauge required for BB", 
         "effects": [
             {
-                "atk% buff": 60, 
-                "def% buff": 60, 
-                "hp% buff": 60, 
+                "atk% buff": 80, 
+                "def% buff": 80, 
+                "hp% buff": 80, 
                 "passive id": "1", 
-                "rec% buff": 60
+                "rec% buff": 80
             }, 
             {
                 "passive id": "53", 
@@ -29787,7 +29804,7 @@
             {
                 "dark units do extra elemental weakness dmg": true, 
                 "earth units do extra elemental weakness dmg": true, 
-                "elemental weakness multiplier%": 150.0, 
+                "elemental weakness multiplier%": 175.0, 
                 "fire units do extra elemental weakness dmg": true, 
                 "light units do extra elemental weakness dmg": true, 
                 "passive id": "50", 
@@ -29795,8 +29812,12 @@
                 "water units do extra elemental weakness dmg": true
             }, 
             {
-                "od fill rate%": 25, 
+                "od fill rate%": 30, 
                 "passive id": "70"
+            }, 
+            {
+                "passive id": "48", 
+                "reduced bb bc cost%": 20
             }
         ], 
         "id": "850318", 
