@@ -23378,6 +23378,62 @@
         "rarity": "1", 
         "target": "self"
     }, 
+    "810148": {
+        "desc": "50% boost to Atk, Def, max HP and resistance against 1 KO attack when HP is below 25% when Blades of Ultor is equipped, 20% damage reduction for 2 turns when damage taken has exceeded certain amount & 10% damage reduction from normal attacks", 
+        "effects": [
+            {
+                "atk% buff": 50, 
+                "conditions": [
+                    {
+                        "item required": [
+                            "818915"
+                        ]
+                    }
+                ], 
+                "def% buff": 50, 
+                "hp% buff": 50, 
+                "passive id": "1", 
+                "passive target": "self"
+            }, 
+            {
+                "buff": {
+                    "angel idol buff (12)": true, 
+                    "angel idol recover hp%": 100, 
+                    "buff turns (12)": "-1"
+                }, 
+                "conditions": [
+                    {
+                        "item required": [
+                            "818915"
+                        ]
+                    }
+                ], 
+                "hp below % buff activation": 25, 
+                "passive id": "55", 
+                "passive target": "self"
+            }, 
+            {
+                "buff": {
+                    "buff turns (36)": "1", 
+                    "dmg reduction% buff": 20
+                }, 
+                "conditions": [], 
+                "damage threshold buff activation": 20000, 
+                "passive id": "78", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "passive target": "self", 
+                "unknown passive id": "128", 
+                "unknown passive params": "100,10,100,10"
+            }
+        ], 
+        "id": "810148", 
+        "name": "General's Mandate", 
+        "rarity": "7", 
+        "target": "self"
+    }, 
     "810177": {
         "desc": "Critical damage boosts BB gauge, probable damage reduction to 1 & adds Fire element to BB/BB for 3 turns", 
         "effects": [
@@ -26811,6 +26867,56 @@
         "id": "830527", 
         "name": "Chrono Barrier", 
         "rarity": "1", 
+        "target": "self"
+    }, 
+    "830528": {
+        "desc": "50% boost to all parameters when Elaina's Timepiece is equipped, negates all status ailments and Atk, Def, Rec reductions, considerably boosts BB gauge each turn for all allies & probable damage reduction to 1", 
+        "effects": [
+            {
+                "atk% buff": 50, 
+                "conditions": [
+                    {
+                        "item required": [
+                            "819165"
+                        ]
+                    }
+                ], 
+                "def% buff": 50, 
+                "hp% buff": 50, 
+                "passive id": "1", 
+                "passive target": "self", 
+                "rec% buff": 50
+            }, 
+            {
+                "atk down resist%": 100, 
+                "conditions": [], 
+                "curse resist%": 100, 
+                "def down resist%": 100, 
+                "injury resist%": 100, 
+                "paralysis resist%": 100, 
+                "passive id": "73", 
+                "passive target": "self", 
+                "poison resist%": 100, 
+                "rec down resist%": 100, 
+                "sick resist%": 100, 
+                "weaken resist%": 100
+            }, 
+            {
+                "bc fill per turn": 5, 
+                "conditions": [], 
+                "passive id": "9", 
+                "passive target": "party"
+            }, 
+            {
+                "conditions": [], 
+                "passive id": "43", 
+                "passive target": "self", 
+                "take 1 dmg%": 15
+            }
+        ], 
+        "id": "830528", 
+        "name": "Endless Focus", 
+        "rarity": "7", 
         "target": "self"
     }, 
     "830537": {
