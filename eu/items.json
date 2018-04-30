@@ -16717,6 +16717,52 @@
         "thumbnail": "sphere_thum_1_1.png", 
         "type": "sphere"
     }, 
+    "47214": {
+        "desc": "When HP is below 50%: damage reduction for 1 turn, damage taken slightly restores HP, adds probable 2 turn Atk reduction counter & 30% boost to Def, max HP", 
+        "effect": [
+            {
+                "def% buff": 30, 
+                "hp% buff": 30, 
+                "passive id": "1"
+            }, 
+            {
+                "buff": {
+                    "buff turns (36)": "0", 
+                    "dmg reduction% buff": 25
+                }, 
+                "hp below % buff activation": 50, 
+                "passive id": "55"
+            }, 
+            {
+                "buff": {
+                    "buff turns (133)": "0", 
+                    "unknown buff id": "133", 
+                    "unknown buff params": "10&20&100"
+                }, 
+                "hp below % buff activation": 50, 
+                "passive id": "55"
+            }, 
+            {
+                "buff": {
+                    "buff turns (153)": "0", 
+                    "unknown buff id": "153", 
+                    "unknown buff params": "-30&50&2"
+                }, 
+                "hp below % buff activation": 50, 
+                "passive id": "55"
+            }
+        ], 
+        "id": 47214, 
+        "max_stack": 1, 
+        "name": "Dragon Mother", 
+        "raid": false, 
+        "rarity": 6, 
+        "sell_price": 10000, 
+        "sphere type": 10, 
+        "sphere type text": "Damage Reducing", 
+        "thumbnail": "sphere_thum_1_1.png", 
+        "type": "sphere"
+    }, 
     "47300": {
         "desc": "10% boost to max HP and Rec & slightly boosts critical damage", 
         "effect": [
@@ -20580,6 +20626,107 @@
         "thumbnail": "sphere_thum_4_8.png", 
         "type": "sphere"
     }, 
+    "62330": {
+        "desc": "Probable 20% damage reduction, 30% boost to Def, max HP & enormously boosts BB gauge and greatly restores HP for 3 turns when guarding", 
+        "effect": [
+            {
+                "def% buff": 30, 
+                "hp% buff": 30, 
+                "passive id": "1"
+            }, 
+            {
+                "dmg reduction chance%": 70, 
+                "dmg reduction%": 20, 
+                "passive id": "14"
+            }, 
+            {
+                "bc filled on guard": 8, 
+                "passive id": "61"
+            }, 
+            {
+                "buff": {
+                    "buff turns (8)": "3", 
+                    "gradual heal high": 4000, 
+                    "gradual heal low": 3500
+                }, 
+                "on guard activation chance%": 100, 
+                "passive id": "88"
+            }
+        ], 
+        "id": 62330, 
+        "max_stack": 1, 
+        "name": "Pulsing Cloak", 
+        "raid": false, 
+        "rarity": 7, 
+        "sell_price": 30000, 
+        "sphere type": 10, 
+        "sphere type text": "Damage Reducing", 
+        "thumbnail": "sphere_thum_3_8.png", 
+        "type": "sphere"
+    }, 
+    "62340": {
+        "desc": "150% boost to Atk, Def for first 4 turns, considerably boosts critical hit rate & normal attack may hit all foes", 
+        "effect": [
+            {
+                "first x turns": 4, 
+                "first x turns atk% (1)": 150, 
+                "first x turns def% (3)": 150, 
+                "passive id": "21"
+            }, 
+            {
+                "crit% buff": 30, 
+                "passive id": "1"
+            }, 
+            {
+                "aoe atk inc%": 50, 
+                "chance to aoe": 30, 
+                "passive id": "96"
+            }
+        ], 
+        "id": 62340, 
+        "max_stack": 1, 
+        "name": "Vesper Ring", 
+        "raid": false, 
+        "rarity": 7, 
+        "sell_price": 30000, 
+        "sphere type": 1, 
+        "sphere type text": "Status Boost", 
+        "thumbnail": "sphere_thum_5_8.png", 
+        "type": "sphere"
+    }, 
+    "62350": {
+        "desc": "150% boost to Spark damage, raises max Atk value from 99999 to 150000 & hugely boosts elemental damage", 
+        "effect": [
+            {
+                "increase atk cap": 150000, 
+                "passive id": "143"
+            }, 
+            {
+                "damage% for spark": 150, 
+                "passive id": "31"
+            }, 
+            {
+                "dark units do extra elemental weakness dmg": true, 
+                "earth units do extra elemental weakness dmg": true, 
+                "elemental weakness multiplier%": 125.0, 
+                "fire units do extra elemental weakness dmg": true, 
+                "light units do extra elemental weakness dmg": true, 
+                "passive id": "50", 
+                "thunder units do extra elemental weakness dmg": true, 
+                "water units do extra elemental weakness dmg": true
+            }
+        ], 
+        "id": 62350, 
+        "max_stack": 1, 
+        "name": "Sage's Mercy", 
+        "raid": false, 
+        "rarity": 7, 
+        "sell_price": 30000, 
+        "sphere type": 11, 
+        "sphere type text": "Spark", 
+        "thumbnail": "sphere_thum_2_8.png", 
+        "type": "sphere"
+    }, 
     "63000": {
         "desc": "Considerably boosts critical hit rate, hugely boosts critical damage, 30% boost to all parameters & boosts elemental damage", 
         "effect": [
@@ -22672,6 +22819,96 @@
         "sphere type": 1, 
         "sphere type text": "Status Boost", 
         "thumbnail": "sphere_thum_3_8.png", 
+        "type": "sphere"
+    }, 
+    "700074": {
+        "desc": "Spring is here! The wind sweeps petals everywhere in Grand Gaia!", 
+        "id": 700074, 
+        "max_stack": 99, 
+        "name": "Spring Petal", 
+        "raid": false, 
+        "rarity": 3, 
+        "sell_price": 100, 
+        "thumbnail": "item_thum_107.png", 
+        "type": "material"
+    }, 
+    "700075": {
+        "desc": "Ladybugs mean that spring has landed and symbolize happiness!", 
+        "id": 700075, 
+        "max_stack": 99, 
+        "name": "Spring Ladybug", 
+        "raid": false, 
+        "rarity": 3, 
+        "recipe": {
+            "karma": "150000", 
+            "materials": [
+                {
+                    "count": 99, 
+                    "id": 700074
+                }
+            ]
+        }, 
+        "sell_price": 100, 
+        "thumbnail": "item_thum_1000.png", 
+        "type": "material"
+    }, 
+    "700076": {
+        "desc": "Boosts all parameters (30%) & reduces BB gauge required for BB (20%) & boosts BB gauge each turn (4 BC) & Spark damage and damage taken boosts BB gauge (1 BC and 3-4 BC) & boosts elemental damage (50%)", 
+        "effect": [
+            {
+                "atk% buff": 30, 
+                "def% buff": 30, 
+                "hp% buff": 30, 
+                "passive id": "1", 
+                "rec% buff": 30
+            }, 
+            {
+                "passive id": "48", 
+                "reduced bb bc cost%": 20
+            }, 
+            {
+                "bc fill per turn": 4, 
+                "passive id": "9"
+            }, 
+            {
+                "bc fill on spark high": 1, 
+                "bc fill on spark low": 1, 
+                "bc fill on spark%": 100, 
+                "passive id": "47"
+            }, 
+            {
+                "bc fill when attacked high": 4, 
+                "bc fill when attacked low": 3, 
+                "bc fill when attacked%": 100, 
+                "passive id": "25"
+            }, 
+            {
+                "dark units do extra elemental weakness dmg": true, 
+                "earth units do extra elemental weakness dmg": true, 
+                "elemental weakness multiplier%": 50.0, 
+                "fire units do extra elemental weakness dmg": true, 
+                "light units do extra elemental weakness dmg": true, 
+                "passive id": "50", 
+                "thunder units do extra elemental weakness dmg": true, 
+                "water units do extra elemental weakness dmg": true
+            }
+        ], 
+        "id": 700076, 
+        "max_stack": 1, 
+        "name": "Spring Shard", 
+        "raid": false, 
+        "rarity": 3, 
+        "recipe": {
+            "karma": "150000", 
+            "materials": [
+                {
+                    "count": 16, 
+                    "id": 700075
+                }
+            ]
+        }, 
+        "sell_price": 10000, 
+        "thumbnail": "sphere_thum_5_2.png", 
         "type": "sphere"
     }, 
     "70100": {
