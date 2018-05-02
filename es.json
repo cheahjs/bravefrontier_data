@@ -26983,6 +26983,85 @@
         "rarity": "1", 
         "target": "self"
     }, 
+    "830557": {
+        "desc": "Damage taken slightly boosts BB gauge for all allies & negates all status ailments for all allies", 
+        "effects": [
+            {
+                "bc fill when attacked high": 1, 
+                "bc fill when attacked low": 1, 
+                "bc fill when attacked%": 100, 
+                "conditions": [], 
+                "passive id": "25", 
+                "passive target": "party"
+            }, 
+            {
+                "conditions": [], 
+                "curse resist%": 100, 
+                "injury resist%": 100, 
+                "paralysis resist%": 100, 
+                "passive id": "73", 
+                "passive target": "party", 
+                "poison resist%": 100, 
+                "sick resist%": 100, 
+                "weaken resist%": 100
+            }
+        ], 
+        "id": "830557", 
+        "name": "Evil-Banishing Pact", 
+        "rarity": "7", 
+        "target": "self"
+    }, 
+    "830558": {
+        "desc": "Damage taken slightly boosts BB gauge for all allies, negates all status ailments for all allies, damage taken may slightly reduce foe's BB gauge fill rate for 1 turn & adds 20 combo (BB)/25 combo (SBB) powerful Earth attack on single foe to BB/SBB", 
+        "effects": [
+            {
+                "bc fill when attacked high": 2, 
+                "bc fill when attacked low": 1, 
+                "bc fill when attacked%": 100, 
+                "conditions": [], 
+                "passive id": "25", 
+                "passive target": "party"
+            }, 
+            {
+                "conditions": [], 
+                "curse resist%": 100, 
+                "injury resist%": 100, 
+                "paralysis resist%": 100, 
+                "passive id": "73", 
+                "passive target": "party", 
+                "poison resist%": 100, 
+                "sick resist%": 100, 
+                "weaken resist%": 100
+            }, 
+            {
+                "conditions": [], 
+                "passive target": "self", 
+                "unknown passive id": "114", 
+                "unknown passive params": "112,-20,-1,20,1"
+            }, 
+            {
+                "conditions": [], 
+                "passive id": "66", 
+                "passive target": "self", 
+                "trigger on bb": true, 
+                "trigger on sbb": true, 
+                "triggered effect": [
+                    {
+                        "bb atk%": 620, 
+                        "bb flat atk": 200, 
+                        "effect delay time(ms)/frame": "0.0/0", 
+                        "proc id": "1", 
+                        "target area": "single", 
+                        "target type": "enemy"
+                    }
+                ]
+            }
+        ], 
+        "id": "830558", 
+        "name": "Pure Soul Partnership", 
+        "rarity": "7", 
+        "target": "self"
+    }, 
     "8400": {
         "desc": "Reduces damage taken when damage taken has exceeded certain amount for 2 turns", 
         "effects": [
@@ -27967,7 +28046,7 @@
                 "damage% for spark": 80, 
                 "hp above % buff requirement": 50, 
                 "passive id": "104", 
-                "passive target": "party"
+                "passive target": "self"
             }, 
             {
                 "atk% buff": 40, 
@@ -31254,6 +31333,97 @@
         ], 
         "id": "860548", 
         "name": "Absolute Demon", 
+        "rarity": "1", 
+        "target": "self"
+    }, 
+    "860607": {
+        "desc": "Adds 50% damage reduction for 1 turn effect to BB/SBB when Photon Scepter is equipped & raises normal hit amount", 
+        "effects": [
+            {
+                "conditions": [
+                    {
+                        "item required": [
+                            "88700007"
+                        ]
+                    }
+                ], 
+                "passive id": "66", 
+                "passive target": "self", 
+                "trigger on bb": true, 
+                "trigger on sbb": true, 
+                "triggered effect": [
+                    {
+                        "dmg% reduction": 50, 
+                        "dmg% reduction turns (36)": 1, 
+                        "effect delay time(ms)/frame": "0.0/0", 
+                        "proc id": "18", 
+                        "target area": "aoe", 
+                        "target type": "party"
+                    }
+                ]
+            }, 
+            {
+                "conditions": [], 
+                "hit increase/hit": 1, 
+                "passive id": "37", 
+                "passive target": "self"
+            }
+        ], 
+        "id": "860607", 
+        "name": "Knowledge of the Ages", 
+        "rarity": "1", 
+        "target": "self"
+    }, 
+    "860608": {
+        "desc": "Adds 50% damage reduction for 1 turn effect to BB/SBB when Photon Scepter is equipped, 15% boost to all parameters for allies, considerably boosts Atk for 3 turns after activating OD & considerably raises normal hit amount", 
+        "effects": [
+            {
+                "conditions": [
+                    {
+                        "item required": [
+                            "88700007"
+                        ]
+                    }
+                ], 
+                "passive id": "66", 
+                "passive target": "self", 
+                "trigger on bb": true, 
+                "trigger on sbb": true, 
+                "triggered effect": [
+                    {
+                        "dmg% reduction": 50, 
+                        "dmg% reduction turns (36)": 1, 
+                        "effect delay time(ms)/frame": "0.0/0", 
+                        "proc id": "18", 
+                        "target area": "aoe", 
+                        "target type": "party"
+                    }
+                ]
+            }, 
+            {
+                "conditions": [], 
+                "hit increase/hit": 2, 
+                "passive id": "37", 
+                "passive target": "self"
+            }, 
+            {
+                "atk% buff": 15, 
+                "conditions": [], 
+                "def% buff": 15, 
+                "hp% buff": 15, 
+                "passive id": "1", 
+                "passive target": "party", 
+                "rec% buff": 15
+            }, 
+            {
+                "conditions": [], 
+                "passive target": "self", 
+                "unknown passive id": "106", 
+                "unknown passive params": "124,100,-1,100,3"
+            }
+        ], 
+        "id": "860608", 
+        "name": "Ancient Presence", 
         "rarity": "1", 
         "target": "self"
     }, 
