@@ -19402,7 +19402,7 @@
         "name": "Red Dragon Scales"
     }, 
     "7514": {
-        "desc": "全てのユニットの攻撃力・最大ＨＰを４５％アップ＆攻撃に炎属性を付与＆スパークダメージを８０％アップ＆確率で防御貫通効果を付与", 
+        "desc": "45% boost to Atk, max HP, adds Fire element to attack, 80% boost to Spark damage & adds probable Def ignoring effect to attack", 
         "effects": [
             {
                 "atk% buff": 45, 
@@ -19425,7 +19425,7 @@
             }
         ], 
         "id": "7514", 
-        "name": "燼竜神の魔鱗"
+        "name": "Enchanted Dragon Scales"
     }, 
     "7515": {
         "desc": "50% boost to Atk, max HP, Spark damage boosts BB gauge, 100% boost to Spark damage & boosts Spark damage for 2 turns when Sparks exceed certain amount", 
@@ -23342,6 +23342,46 @@
         ], 
         "id": "8104", 
         "name": "Supreme Ruler's Inquisition"
+    }, 
+    "810418": {
+        "desc": "Boosts ATK, DEF and max HP (100%) & boosts Spark damage (160%) and damage reduction (20%) for 2 turns when Spark damage have exceeded certain amount (15) & Spark damage boosts BB gauge (3-4 BC) & negates elemental damage", 
+        "effects": [
+            {
+                "atk% buff": 100, 
+                "def% buff": 100, 
+                "hp% buff": 100, 
+                "passive id": "1"
+            }, 
+            {
+                "bc fill on spark high": 4, 
+                "bc fill on spark low": 3, 
+                "bc fill on spark%": 100, 
+                "passive id": "47"
+            }, 
+            {
+                "passive id": "53", 
+                "strong base element damage resist%": 100, 
+                "strong buffed element damage resist%": 100
+            }, 
+            {
+                "buff": {
+                    "buff turns (40)": "2", 
+                    "spark dmg% buff": 160
+                }, 
+                "passive id": "86", 
+                "spark count buff activation": 15
+            }, 
+            {
+                "buff": {
+                    "buff turns (36)": "2", 
+                    "dmg reduction% buff": 20
+                }, 
+                "passive id": "86", 
+                "spark count buff activation": 15
+            }
+        ], 
+        "id": "810418", 
+        "name": "Bloodflame Baptism"
     }, 
     "8105": {
         "desc": "20% boost to Def & probable 20% damage reduction", 

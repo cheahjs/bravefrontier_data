@@ -12924,7 +12924,7 @@
         "target": "self"
     }, 
     "34900": {
-        "desc": "スパーク時、ＢＢゲージを超絶増加・ダメージを５０％アップ", 
+        "desc": "Spark damage enormously boosts BB gauge & 50% boost to Spark damage", 
         "effects": [
             {
                 "conditions": [], 
@@ -12942,7 +12942,7 @@
             }
         ], 
         "id": "34900", 
-        "name": "竜徒の忠節", 
+        "name": "Draconic Devotion", 
         "rarity": "1", 
         "target": "self"
     }, 
@@ -22468,6 +22468,85 @@
         ], 
         "id": "810398", 
         "name": "Defender of the Weak", 
+        "rarity": "1", 
+        "target": "self"
+    }, 
+    "810418": {
+        "desc": "Boosts DEF and Spark damage (120%) when Sparks have exceeded a certain amount (15) & boosts Spark damage (25%, all) & adds 11 combo Thunder attack on all foes and 16 combo Fire attack on single foe to SBB & adds DEF ignoring effect (all)", 
+        "effects": [
+            {
+                "buff": {
+                    "buff turns (3)": "2", 
+                    "def% buff (3)": 120
+                }, 
+                "conditions": [], 
+                "passive id": "86", 
+                "passive target": "self", 
+                "spark count buff activation": 15
+            }, 
+            {
+                "buff": {
+                    "buff turns (40)": "2", 
+                    "spark dmg% buff": 120
+                }, 
+                "conditions": [], 
+                "passive id": "86", 
+                "passive target": "self", 
+                "spark count buff activation": 15
+            }, 
+            {
+                "conditions": [], 
+                "damage% for spark": 25, 
+                "passive id": "31", 
+                "passive target": "party"
+            }, 
+            {
+                "conditions": [], 
+                "ignore def%": 100, 
+                "passive id": "29", 
+                "passive target": "party"
+            }, 
+            {
+                "conditions": [], 
+                "passive id": "66", 
+                "passive target": "self", 
+                "trigger on sbb": true, 
+                "triggered effect": [
+                    {
+                        "bb atk%": 620, 
+                        "bb elements": [
+                            "thunder"
+                        ], 
+                        "bb flat atk": 100, 
+                        "effect delay time(ms)/frame": "50.0/3", 
+                        "proc id": "29", 
+                        "target area": "aoe", 
+                        "target type": "enemy"
+                    }
+                ]
+            }, 
+            {
+                "conditions": [], 
+                "passive id": "66", 
+                "passive target": "self", 
+                "trigger on sbb": true, 
+                "triggered effect": [
+                    {
+                        "bb atk%": 620, 
+                        "bb elements": [
+                            "fire"
+                        ], 
+                        "bb flat atk": 100, 
+                        "effect delay time(ms)/frame": "50.0/3", 
+                        "proc id": "29", 
+                        "target area": "single", 
+                        "target type": "enemy"
+                    }
+                ]
+            }
+        ], 
+        "id": "810418", 
+        "name": "Daemones Malleus Infinitium", 
         "rarity": "1", 
         "target": "self"
     }, 
