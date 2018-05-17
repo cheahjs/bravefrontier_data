@@ -16913,14 +16913,14 @@
         "target": "self"
     }, 
     "710237": {
-        "desc": "Boosts REC and HP (30%) & if Pure Noblesse Title is equipped, adds Fire Barrier for all allies effect (3000 HP) to BB/SBB", 
+        "desc": "Boosts REC and HP (40%) & if Pure Noblesse Title is equipped, adds Fire Barrier for all allies effect (3500 HP) to BB/SBB", 
         "effects": [
             {
                 "conditions": [], 
-                "hp% buff": 30, 
+                "hp% buff": 40, 
                 "passive id": "1", 
                 "passive target": "self", 
-                "rec% buff": 30
+                "rec% buff": 40
             }, 
             {
                 "conditions": [
@@ -16940,7 +16940,7 @@
                         "elemental barrier absorb dmg%": 100, 
                         "elemental barrier def": 0, 
                         "elemental barrier element": "fire", 
-                        "elemental barrier hp": 3000, 
+                        "elemental barrier hp": 3500, 
                         "proc id": "62", 
                         "target area": "aoe", 
                         "target type": "party"
@@ -25067,6 +25067,56 @@
         ], 
         "id": "850398", 
         "name": "Lost Memories", 
+        "rarity": "1", 
+        "target": "self"
+    }, 
+    "850418": {
+        "desc": "Boosts ATK (100%) for 2 turns when damage received exceeds a certain amount (5000) & absorbs HP (6-10%) & probable resistance against 2 KO (40%) & additional damage reduction (15%, all) & damage taken may restore HP (20% chance, 25%, all)", 
+        "effects": [
+            {
+                "buff": {
+                    "atk% buff (1)": 100, 
+                    "buff turns (1)": "2"
+                }, 
+                "conditions": [], 
+                "damage threshold buff activation": 5000, 
+                "passive id": "78", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "hp drain chance%": 100, 
+                "hp drain% high": 10, 
+                "hp drain% low": 6, 
+                "passive id": "17", 
+                "passive target": "self"
+            }, 
+            {
+                "angel idol chance% condition": 0, 
+                "angel idol recover chance% high": 40, 
+                "angel idol recover chance% low": 40, 
+                "angel idol recover counts": 2, 
+                "conditions": [], 
+                "passive id": "69", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "passive target": "party", 
+                "unknown passive id": "127", 
+                "unknown passive params": "100,15"
+            }, 
+            {
+                "conditions": [], 
+                "dmg% to hp% when attacked chance%": 20, 
+                "dmg% to hp% when attacked high": 25, 
+                "dmg% to hp% when attacked low": 25, 
+                "passive id": "24", 
+                "passive target": "party"
+            }
+        ], 
+        "id": "850418", 
+        "name": "Matriarch's Chagrin", 
         "rarity": "1", 
         "target": "self"
     }, 

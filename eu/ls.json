@@ -13725,7 +13725,7 @@
         "name": "Noiseless Frenzy"
     }, 
     "710227": {
-        "desc": "Boosts ATK and HP (60%) & boosts BC efficacy (60%) & boosts BB gauge when guarding (6 BC) & boosts damage reduced while guarding (10%) & reduce damage (20%) for 2 turns when damage dealt exceeds certain amount (10000) ", 
+        "desc": "Boosts ATK and HP (60%) & boosts BC efficacy (60%) & boosts BB gauge when guarding (6 BC) & boosts damage reduced while guarding (10%) & reduce damage (20%) for 2 turns when damage dealt exceeds certain amount (10000)", 
         "effects": [
             {
                 "atk% buff": 60, 
@@ -13771,14 +13771,14 @@
         "name": "Loving Family"
     }, 
     "710237": {
-        "desc": "Boosts all parameters (40%) & negates status ailments & Spark damage reduction (25%) & boosts EXP gained (10%)", 
+        "desc": "Boosts all parameters (50%) & negates status ailments & Spark damage reduction (25%) & boosts EXP gained (10%)", 
         "effects": [
             {
-                "atk% buff": 40, 
-                "def% buff": 40, 
-                "hp% buff": 40, 
+                "atk% buff": 50, 
+                "def% buff": 50, 
+                "hp% buff": 50, 
                 "passive id": "1", 
-                "rec% buff": 40
+                "rec% buff": 50
             }, 
             {
                 "curse resist%": 100, 
@@ -18522,23 +18522,23 @@
         "name": "Wings of Destiny"
     }, 
     "750157": {
-        "desc": "Boosts ATK, REC, HP (50%) & boosts ATK, REC (70%) when BB gauge is over 50% & chance to reduce damage to 1 (15%) & normal attack boosts BB gauge (10 BC)", 
+        "desc": "Boosts ATK, REC, HP (60%) & boosts ATK, REC (80%) when BB gauge is over 50% & chance to reduce damage to 1 (15%) & normal attack boosts BB gauge (10 BC)", 
         "effects": [
             {
                 "passive id": "43", 
                 "take 1 dmg%": 15
             }, 
             {
-                "atk% buff": 50, 
-                "hp% buff": 50, 
+                "atk% buff": 60, 
+                "hp% buff": 60, 
                 "passive id": "1", 
-                "rec% buff": 50
+                "rec% buff": 60
             }, 
             {
-                "atk% buff": 70, 
+                "atk% buff": 80, 
                 "bb gauge above % buff requirement": 50, 
                 "passive id": "30", 
-                "rec% buff": 70
+                "rec% buff": 80
             }, 
             {
                 "bc fill when attacking high": 10, 
@@ -24540,6 +24540,41 @@
         ], 
         "id": "850388", 
         "name": "The King's Justice"
+    }, 
+    "850418": {
+        "desc": "Boosts max HP (100%) & boosts ATK, DEF, REC relative to remaining HP (120%) & damage taken may restore HP (30% chance 25%) & reduces BB gauge required for BB (30%) & additional damage reduction (15%)", 
+        "effects": [
+            {
+                "hp% buff": 100, 
+                "passive id": "1"
+            }, 
+            {
+                "atk% base buff": 0, 
+                "atk% extra buff based on hp": 120, 
+                "buff proportional to hp": "remaining", 
+                "def% base buff": 0, 
+                "def% extra buff based on hp": 120, 
+                "passive id": "46", 
+                "rec% base buff": 0, 
+                "rec% extra buff based on hp": 120
+            }, 
+            {
+                "dmg% to hp% when attacked chance%": 30, 
+                "dmg% to hp% when attacked high": 25, 
+                "dmg% to hp% when attacked low": 25, 
+                "passive id": "24"
+            }, 
+            {
+                "passive id": "48", 
+                "reduced bb bc cost%": 30
+            }, 
+            {
+                "unknown passive id": "127", 
+                "unknown passive params": "100,15"
+            }
+        ], 
+        "id": "850418", 
+        "name": "Lucent Rhapsody"
     }, 
     "850507": {
         "desc": "150% boost to Atk, 60% boost to max HP and 30% boost to critical hit rate of Light types, negates critical and elemental damage, greatly boosts critical damage, greatly boosts Light elemental damage", 
