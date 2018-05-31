@@ -5465,6 +5465,62 @@
         "id": "1958", 
         "name": "Crimson Incinerator"
     }, 
+    "1959": {
+        "desc": "50% boost to Atk, max HP, hugely boosts BB Atk & hugely boosts Spark damage for 2 turns when damage dealt exceeds certain amount", 
+        "effects": [
+            {
+                "atk% buff": 50, 
+                "hp% buff": 50, 
+                "passive id": "1"
+            }, 
+            {
+                "bb atk% buff": 200, 
+                "passive id": "64", 
+                "sbb atk% buff": 200, 
+                "ubb atk% buff": 200
+            }, 
+            {
+                "buff": {
+                    "buff turns (40)": "2", 
+                    "spark dmg% buff": 80
+                }, 
+                "damage dealt threshold buff activation": 5000, 
+                "passive id": "80"
+            }
+        ], 
+        "id": "1959", 
+        "name": "Ferocious Resolve"
+    }, 
+    "1960": {
+        "desc": "60% boost to Atk, max HP, hugely boosts BB Atk, considerably boosts OD gauge fill rate & enormously boosts Spark damage for 2 turns when damage dealt exceeds certain amount", 
+        "effects": [
+            {
+                "atk% buff": 60, 
+                "hp% buff": 60, 
+                "passive id": "1"
+            }, 
+            {
+                "bb atk% buff": 250, 
+                "passive id": "64", 
+                "sbb atk% buff": 250, 
+                "ubb atk% buff": 250
+            }, 
+            {
+                "buff": {
+                    "buff turns (40)": "2", 
+                    "spark dmg% buff": 100
+                }, 
+                "damage dealt threshold buff activation": 5000, 
+                "passive id": "80"
+            }, 
+            {
+                "od fill rate%": 20, 
+                "passive id": "70"
+            }
+        ], 
+        "id": "1960", 
+        "name": "Ferocious Commitment"
+    }, 
     "2": {
         "desc": "Leader Skill 1 Description", 
         "effects": [
@@ -10558,6 +10614,66 @@
         ], 
         "id": "4387", 
         "name": "Red Justice Obsession"
+    }, 
+    "4388": {
+        "desc": "50% boost to Def, max HP, greatly restores HP for 2 turns when HP is below 50% & damage taken boosts BB gauge", 
+        "effects": [
+            {
+                "def% buff": 50, 
+                "hp% buff": 50, 
+                "passive id": "1"
+            }, 
+            {
+                "buff": {
+                    "buff turns (8)": "2", 
+                    "gradual heal high": 2500, 
+                    "gradual heal low": 2000
+                }, 
+                "hp below % buff activation": 50, 
+                "passive id": "55"
+            }, 
+            {
+                "bc fill when attacked high": 4, 
+                "bc fill when attacked low": 2, 
+                "bc fill when attacked%": 100, 
+                "passive id": "25"
+            }
+        ], 
+        "id": "4388", 
+        "name": "Mighty Legacy"
+    }, 
+    "4389": {
+        "desc": "60% boost to Def, max HP, greatly restores HP for 2 turns when HP is below 50% & damage taken hugely boosts BB gauge and may restore HP", 
+        "effects": [
+            {
+                "def% buff": 60, 
+                "hp% buff": 60, 
+                "passive id": "1"
+            }, 
+            {
+                "buff": {
+                    "buff turns (8)": "2", 
+                    "gradual heal high": 3000, 
+                    "gradual heal low": 2000
+                }, 
+                "hp below % buff activation": 50, 
+                "passive id": "55"
+            }, 
+            {
+                "bc fill when attacked high": 7, 
+                "bc fill when attacked low": 4, 
+                "bc fill when attacked%": 100, 
+                "passive id": "25"
+            }, 
+            {
+                "dmg% to hp% when attacked chance%": 25, 
+                "dmg% to hp% when attacked high": 25, 
+                "dmg% to hp% when attacked low": 25, 
+                "passive id": "24"
+            }
+        ], 
+        "id": "4389", 
+        "name": "Heir to Power"
     }, 
     "4400": {
         "desc": "Boosts resistence to status ailments & fills BB gauge after each turn", 
@@ -24108,12 +24224,12 @@
         "name": "Necro & Undine"
     }, 
     "830378": {
-        "desc": "60% boost to Atk, max HP, 30% boost to critical hit rate, hugely boosts critical damage, hugely boosts all elemental damage & boosts Atk relative to remaining HP", 
+        "desc": "80% boost to Atk, max HP, 30% boost to critical hit rate, hugely boosts critical damage, hugely boosts all elemental damage & boosts Atk relative to remaining HP & considerably boosts OD gauge fill rate", 
         "effects": [
             {
-                "atk% buff": 60, 
+                "atk% buff": 80, 
                 "crit% buff": 30, 
-                "hp% buff": 60, 
+                "hp% buff": 80, 
                 "passive id": "1"
             }, 
             {
@@ -24123,7 +24239,7 @@
             {
                 "dark units do extra elemental weakness dmg": true, 
                 "earth units do extra elemental weakness dmg": true, 
-                "elemental weakness multiplier%": 150.0, 
+                "elemental weakness multiplier%": 175.0, 
                 "fire units do extra elemental weakness dmg": true, 
                 "light units do extra elemental weakness dmg": true, 
                 "passive id": "50", 
@@ -24135,6 +24251,10 @@
                 "atk% extra buff based on hp": 80, 
                 "buff proportional to hp": "remaining", 
                 "passive id": "46"
+            }, 
+            {
+                "od fill rate%": 20, 
+                "passive id": "70"
             }
         ], 
         "id": "830378", 
@@ -25019,21 +25139,21 @@
         "name": "Daughter of the Divine Wind"
     }, 
     "860378": {
-        "desc": "100% boost to Atk, 60% boost to max HP, 130% boost toSpark damage, Spark damage hugely boosts BC drop rates & boosts Atk relative to remaining HP", 
+        "desc": "150% boost to Atk, 80% boost to max HP, 130% boost to Spark damage, Spark damage hugely boosts BC drop rate & boosts Atk relative to remaining HP", 
         "effects": [
             {
-                "atk% buff": 100, 
-                "hp% buff": 60, 
+                "atk% buff": 150, 
+                "hp% buff": 80, 
                 "passive id": "1"
             }, 
             {
-                "bc drop% for spark": 80, 
+                "bc drop% for spark": 100, 
                 "damage% for spark": 130, 
                 "passive id": "31"
             }, 
             {
                 "atk% base buff": 0, 
-                "atk% extra buff based on hp": 80, 
+                "atk% extra buff based on hp": 100, 
                 "buff proportional to hp": "remaining", 
                 "passive id": "46"
             }
