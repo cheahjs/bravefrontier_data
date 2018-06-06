@@ -26457,7 +26457,7 @@
         "target": "self"
     }, 
     "830118": {
-        "desc": "Probable HP restoration when attacked, probable 30% damage reduction & adds Earth barrier effect to BB/SBB", 
+        "desc": "20% boost to Def, Rec and max HP for all allies, probable HP restoration when attacked, probable damage reduction to 1 & adds Earth barrier effect to BB/SBB", 
         "effects": [
             {
                 "conditions": [], 
@@ -26469,10 +26469,9 @@
             }, 
             {
                 "conditions": [], 
-                "dmg reduction chance%": 25, 
-                "dmg reduction%": 30, 
-                "passive id": "14", 
-                "passive target": "self"
+                "passive id": "43", 
+                "passive target": "self", 
+                "take 1 dmg%": 20
             }, 
             {
                 "conditions": [], 
@@ -26486,12 +26485,20 @@
                         "elemental barrier absorb dmg%": 100, 
                         "elemental barrier def": 0, 
                         "elemental barrier element": "earth", 
-                        "elemental barrier hp": 3000, 
+                        "elemental barrier hp": 4000, 
                         "proc id": "62", 
                         "target area": "aoe", 
                         "target type": "party"
                     }
                 ]
+            }, 
+            {
+                "conditions": [], 
+                "def% buff": 20, 
+                "hp% buff": 20, 
+                "passive id": "1", 
+                "passive target": "party", 
+                "rec% buff": 20
             }
         ], 
         "id": "830118", 
@@ -26935,7 +26942,7 @@
         "target": "self"
     }, 
     "830328": {
-        "desc": "Boosts Atk each turn up to 4 turns & 50% boost to Atk, Def, Rec when BB gauge is full", 
+        "desc": "Boosts Atk each turn (up to 4 turns), 50% boost to Atk, Def, Rec when BB gauge is full, Spark damage boosts BB gauge & 20% damage reduction from normal attacks", 
         "effects": [
             {
                 "atk% max buff": 100, 
@@ -26961,6 +26968,12 @@
                 "conditions": [], 
                 "passive id": "47", 
                 "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "passive target": "self", 
+                "unknown passive id": "128", 
+                "unknown passive params": "100,20,100,20"
             }
         ], 
         "id": "830328", 
@@ -27635,7 +27648,7 @@
         "target": "self"
     }, 
     "840128": {
-        "desc": "50% boost to Spark damage & adds resistance against 1 KO attack when HP is below 20%", 
+        "desc": "80% boost to Spark damage, boost Spark damage for all allies, adds resistance against 1 KO attack when HP is below 20% & raises Atk parameter limits to 150000", 
         "effects": [
             {
                 "buff": {
@@ -27650,8 +27663,20 @@
             }, 
             {
                 "conditions": [], 
-                "damage% for spark": 50, 
+                "damage% for spark": 80, 
                 "passive id": "31", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "damage% for spark": 20, 
+                "passive id": "31", 
+                "passive target": "party"
+            }, 
+            {
+                "conditions": [], 
+                "increase atk cap": 150000, 
+                "passive id": "143", 
                 "passive target": "self"
             }
         ], 
@@ -31562,7 +31587,7 @@
         "target": "self"
     }, 
     "860318": {
-        "desc": "Probable damage reduction to 1, enormously boosts Spark damage for 2 turns when Sparks have exceeded certain amount & Spark damage boosts BB gauge", 
+        "desc": "50% boost to Atk, max HP, 10% boost to critical hit rate when Nyami's Bells is equipped, probable damage reduction to 1, enormously boosts Spark damage for 2 turns when Sparks have exceeded certain amount & Spark damage boosts BB gauge", 
         "effects": [
             {
                 "conditions": [], 
@@ -31586,6 +31611,20 @@
                 "bc fill on spark%": 100, 
                 "conditions": [], 
                 "passive id": "47", 
+                "passive target": "self"
+            }, 
+            {
+                "atk% buff": 50, 
+                "conditions": [
+                    {
+                        "item required": [
+                            "818936"
+                        ]
+                    }
+                ], 
+                "crit% buff": 10, 
+                "hp% buff": 50, 
+                "passive id": "1", 
                 "passive target": "self"
             }
         ], 

@@ -63335,45 +63335,47 @@
                 "category": "1", 
                 "dependency": "", 
                 "dependency comment": "", 
-                "id": "510000", 
+                "id": "750003", 
                 "skill": {
                     "bp": 10, 
-                    "desc": "20% boost to Atk, Rec", 
+                    "desc": "60% boost to all parameters", 
                     "effects": [
                         {
                             "passive": {
-                                "atk% buff": 20, 
+                                "atk% buff": 60, 
+                                "def% buff": 60, 
+                                "hp% buff": 60, 
                                 "passive id": "1", 
-                                "rec% buff": 20
+                                "rec% buff": 60
                             }
                         }
                     ], 
-                    "id": "510000", 
+                    "id": "750003", 
                     "level": 1, 
-                    "name": "20% boost to Atk, Rec", 
-                    "series": "500000"
+                    "name": "60% boost to all parameters", 
+                    "series": "700000"
                 }
             }, 
             {
                 "category": "1", 
                 "dependency": "", 
                 "dependency comment": "", 
-                "id": "610000", 
+                "id": "620000", 
                 "skill": {
                     "bp": 10, 
-                    "desc": "20% boost to Def, max HP", 
+                    "desc": "30% boost to Def, max HP", 
                     "effects": [
                         {
                             "passive": {
-                                "def% buff": 20, 
-                                "hp% buff": 20, 
+                                "def% buff": 30, 
+                                "hp% buff": 30, 
                                 "passive id": "1"
                             }
                         }
                     ], 
-                    "id": "610000", 
+                    "id": "620000", 
                     "level": 1, 
-                    "name": "20% boost to Def, max HP", 
+                    "name": "30% boost to Def, max HP", 
                     "series": "600000"
                 }
             }, 
@@ -63510,19 +63512,20 @@
                 "category": "11", 
                 "dependency": "", 
                 "dependency comment": "", 
-                "id": "1000010014", 
+                "id": "1000010150", 
                 "skill": {
                     "bp": 30, 
-                    "desc": "Adds OD gauge boost effect to SBB", 
+                    "desc": "Adds slight OD gauge boost effect to BB/SBB", 
                     "effects": [
                         {
                             "passive": {
                                 "passive id": "66", 
+                                "trigger on bb": true, 
                                 "trigger on sbb": true, 
                                 "triggered effect": [
                                     {
                                         "effect delay time(ms)/frame": "0.0/0", 
-                                        "increase od gauge%": 8.0, 
+                                        "increase od gauge%": 10.0, 
                                         "proc id": "43", 
                                         "target area": "single", 
                                         "target type": "4"
@@ -63531,19 +63534,19 @@
                             }
                         }
                     ], 
-                    "id": "1000010014", 
-                    "level": 5, 
-                    "name": "Adds OD gauge boost effect to SBB", 
-                    "series": "1000010014"
+                    "id": "1000010150", 
+                    "level": 7, 
+                    "name": "Adds slight OD gauge boost effect to BB/SBB", 
+                    "series": "1000010150"
                 }
             }, 
             {
                 "category": "11", 
                 "dependency": "", 
                 "dependency comment": "", 
-                "id": "40000900", 
+                "id": "1000000109", 
                 "skill": {
-                    "bp": 40, 
+                    "bp": 20, 
                     "desc": "Enhances BB/UBB's max HP boost effect", 
                     "effects": [
                         {
@@ -63559,38 +63562,38 @@
                             }
                         }
                     ], 
-                    "id": "40000900", 
+                    "id": "1000000109", 
                     "level": 5, 
                     "name": "Enhances BB/UBB's max HP boost effect", 
-                    "series": "40000900"
+                    "series": "1000000109"
                 }
             }, 
             {
                 "category": "11", 
-                "dependency": "", 
+                "dependency": "1@1000000109", 
                 "dependency comment": "", 
-                "id": "36003000", 
+                "id": "1000010153", 
                 "skill": {
-                    "bp": 50, 
-                    "desc": "Enhances BB/SBB's Item drop rate boost effect", 
+                    "bp": 20, 
+                    "desc": "Further enhances BB/UBB's max HP boost effect", 
                     "effects": [
                         {
                             "add to bb": {
-                                "item drop rate% buff (11)": 2, 
-                                "proc id": "6"
+                                "max hp% increase": 5.0, 
+                                "proc id": "8"
                             }
                         }, 
                         {
-                            "add to sbb": {
-                                "item drop rate% buff (11)": 2, 
-                                "proc id": "6"
+                            "add to ubb": {
+                                "max hp% increase": 5.0, 
+                                "proc id": "8"
                             }
                         }
                     ], 
-                    "id": "36003000", 
-                    "level": 3, 
-                    "name": "Enhances BB/SBB's Item drop rate boost effect", 
-                    "series": "36000000"
+                    "id": "1000010153", 
+                    "level": 5, 
+                    "name": "Further enhances BB/UBB's max HP boost effect", 
+                    "series": "1000000109"
                 }
             }, 
             {
@@ -63599,33 +63602,33 @@
                 "dependency comment": "", 
                 "id": "1000010053", 
                 "skill": {
-                    "bp": 50, 
-                    "desc": "Allows UBB effects to last for 4 turns", 
+                    "bp": 40, 
+                    "desc": "Allows UBB effects to last for 5 turns", 
                     "effects": [
                         {
                             "add to ubb": {
                                 "dmg% reduction": 0, 
-                                "dmg% reduction turns (36)": 1, 
+                                "dmg% reduction turns (36)": 2, 
                                 "proc id": "18"
                             }
                         }, 
                         {
                             "add to ubb": {
-                                "% converted turns": 1, 
+                                "% converted turns": 2, 
                                 "converted attribute": null, 
                                 "proc id": "24"
                             }
                         }, 
                         {
                             "add to ubb": {
-                                "drop rate buff turns": 1, 
+                                "drop rate buff turns": 2, 
                                 "proc id": "6"
                             }
                         }
                     ], 
                     "id": "1000010053", 
                     "level": 4, 
-                    "name": "Allows UBB effects to last for 4 turns", 
+                    "name": "Allows UBB effects to last for 5 turns", 
                     "series": "1000010053"
                 }
             }, 
@@ -63641,7 +63644,7 @@
                         {
                             "add to passive": {
                                 "passive id": "97", 
-                                "xp gained increase%": 8
+                                "xp gained increase%": 12
                             }
                         }
                     ], 
@@ -65326,9 +65329,9 @@
                 "category": "1", 
                 "dependency": "", 
                 "dependency comment": "", 
-                "id": "550104", 
+                "id": "1100000149", 
                 "skill": {
-                    "bp": 20, 
+                    "bp": 10, 
                     "desc": "50% boost to Atk, max HP", 
                     "effects": [
                         {
@@ -65339,54 +65342,53 @@
                             }
                         }
                     ], 
-                    "id": "550104", 
+                    "id": "1100000149", 
                     "level": 2, 
                     "name": "50% boost to Atk, max HP", 
-                    "series": "500000"
+                    "series": "1100000149"
                 }
             }, 
             {
                 "category": "1", 
                 "dependency": "", 
                 "dependency comment": "", 
-                "id": "1100000133", 
+                "id": "1100000173", 
                 "skill": {
-                    "bp": 20, 
-                    "desc": "100% boost to Atk, lowers Def by 50%", 
+                    "bp": 10, 
+                    "desc": "100% boost to Atk", 
                     "effects": [
                         {
                             "passive": {
                                 "atk% buff": 100, 
-                                "def% buff": -50, 
                                 "passive id": "1"
                             }
                         }
                     ], 
-                    "id": "1100000133", 
-                    "level": 4, 
-                    "name": "100% boost to Atk, lowers Def by 50%", 
-                    "series": "1100000133"
+                    "id": "1100000173", 
+                    "level": 2, 
+                    "name": "100% boost to Atk", 
+                    "series": "1100000172"
                 }
             }, 
             {
                 "category": "2", 
                 "dependency": "", 
                 "dependency comment": "", 
-                "id": "1040002", 
+                "id": "1060002", 
                 "skill": {
-                    "bp": 20, 
-                    "desc": "100% boost to Spark damage", 
+                    "bp": 10, 
+                    "desc": "120% boost to Spark damage", 
                     "effects": [
                         {
                             "passive": {
-                                "damage% for spark": 100, 
+                                "damage% for spark": 120, 
                                 "passive id": "31"
                             }
                         }
                     ], 
-                    "id": "1040002", 
+                    "id": "1060002", 
                     "level": 5, 
-                    "name": "100% boost to Spark damage", 
+                    "name": "120% boost to Spark damage", 
                     "series": "1000000"
                 }
             }, 
@@ -65394,22 +65396,22 @@
                 "category": "3", 
                 "dependency": "", 
                 "dependency comment": "", 
-                "id": "2100100", 
+                "id": "1100000084", 
                 "skill": {
                     "bp": 10, 
-                    "desc": "Boosts critical hit damage", 
+                    "desc": "Hugely boosts critical hit damage", 
                     "effects": [
                         {
                             "passive": {
-                                "crit multiplier%": 50.0, 
+                                "crit multiplier%": 100.0, 
                                 "passive id": "34"
                             }
                         }
                     ], 
-                    "id": "2100100", 
-                    "level": 2, 
-                    "name": "Boosts critical hit damage", 
-                    "series": "2100000"
+                    "id": "1100000084", 
+                    "level": 5, 
+                    "name": "Hugely boosts critical hit damage", 
+                    "series": "1100000084"
                 }
             }, 
             {
@@ -68789,50 +68791,50 @@
                 "category": "1", 
                 "dependency": "", 
                 "dependency comment": "", 
-                "id": "710000", 
+                "id": "730003", 
                 "skill": {
                     "bp": 20, 
-                    "desc": "20% boost to all parameters", 
+                    "desc": "40% boost to all parameters", 
                     "effects": [
                         {
                             "passive": {
-                                "atk% buff": 20, 
-                                "def% buff": 20, 
-                                "hp% buff": 20, 
+                                "atk% buff": 40, 
+                                "def% buff": 40, 
+                                "hp% buff": 40, 
                                 "passive id": "1", 
-                                "rec% buff": 20
+                                "rec% buff": 40
                             }
                         }
                     ], 
-                    "id": "710000", 
-                    "level": 2, 
-                    "name": "20% boost to all parameters", 
+                    "id": "730003", 
+                    "level": 1, 
+                    "name": "40% boost to all parameters", 
                     "series": "700000"
                 }
             }, 
             {
                 "category": "1", 
-                "dependency": "1@710000", 
+                "dependency": "1@730003", 
                 "dependency comment": "", 
-                "id": "1000010055", 
+                "id": "750101", 
                 "skill": {
                     "bp": 10, 
-                    "desc": "30% boost to all parameters", 
+                    "desc": "Raises all parameters boost from 40% to 60%", 
                     "effects": [
                         {
                             "passive": {
-                                "atk% buff": 10, 
-                                "def% buff": 10, 
-                                "hp% buff": 10, 
+                                "atk% buff": 60, 
+                                "def% buff": 60, 
+                                "hp% buff": 60, 
                                 "passive id": "1", 
-                                "rec% buff": 10
+                                "rec% buff": 60
                             }
                         }
                     ], 
-                    "id": "1000010055", 
-                    "level": 3, 
-                    "name": "30% boost to all parameters", 
-                    "series": "1000020044"
+                    "id": "750101", 
+                    "level": 4, 
+                    "name": "60% boost to all parameters", 
+                    "series": "700000"
                 }
             }, 
             {
@@ -68861,43 +68863,43 @@
                 "category": "2", 
                 "dependency": "", 
                 "dependency comment": "", 
-                "id": "1030002", 
+                "id": "1080001", 
                 "skill": {
                     "bp": 10, 
-                    "desc": "70% boost to Spark damage", 
+                    "desc": "150% boost to Spark damage", 
                     "effects": [
                         {
                             "passive": {
-                                "damage% for spark": 70, 
+                                "damage% for spark": 150, 
                                 "passive id": "31"
                             }
                         }
                     ], 
-                    "id": "1030002", 
+                    "id": "1080001", 
                     "level": 4, 
-                    "name": "70% boost to Spark damage", 
+                    "name": "150% boost to Spark damage", 
                     "series": "1000000"
                 }
             }, 
             {
                 "category": "2", 
-                "dependency": "1@1030002", 
+                "dependency": "1@1080001", 
                 "dependency comment": "", 
-                "id": "1000400", 
+                "id": "1080100", 
                 "skill": {
                     "bp": 10, 
-                    "desc": "Raises Spark damage boost from 70% to 100%", 
+                    "desc": "170% boost to Spark damage", 
                     "effects": [
                         {
                             "passive": {
-                                "damage% for spark": 100, 
+                                "damage% for spark": 170, 
                                 "passive id": "31"
                             }
                         }
                     ], 
-                    "id": "1000400", 
+                    "id": "1080100", 
                     "level": 5, 
-                    "name": "Boosts 70% Spark damage to 100% Spark damage", 
+                    "name": "170% boost to Spark damage", 
                     "series": "1000000"
                 }
             }, 
@@ -82846,33 +82848,10 @@
                 "category": "1", 
                 "dependency": "", 
                 "dependency comment": "", 
-                "id": "550101", 
+                "id": "1100000149", 
                 "skill": {
                     "bp": 10, 
-                    "desc": "30% boost to Atk, max HP", 
-                    "effects": [
-                        {
-                            "passive": {
-                                "atk% buff": 30, 
-                                "hp% buff": 30, 
-                                "passive id": "1"
-                            }
-                        }
-                    ], 
-                    "id": "550101", 
-                    "level": 2, 
-                    "name": "30% boost to Atk, max HP", 
-                    "series": "500000"
-                }
-            }, 
-            {
-                "category": "1", 
-                "dependency": "1@550101", 
-                "dependency comment": "", 
-                "id": "560102", 
-                "skill": {
-                    "bp": 10, 
-                    "desc": "Raises Atk, max HP boost from 30% to 50%", 
+                    "desc": "50% boost to Atk, max HP", 
                     "effects": [
                         {
                             "passive": {
@@ -82882,9 +82861,32 @@
                             }
                         }
                     ], 
-                    "id": "560102", 
-                    "level": 3, 
-                    "name": "Boosts 30% Atk, max HP to 50% Atk, max HP", 
+                    "id": "1100000149", 
+                    "level": 2, 
+                    "name": "50% boost to Atk, max HP", 
+                    "series": "1100000149"
+                }
+            }, 
+            {
+                "category": "1", 
+                "dependency": "1@1100000149", 
+                "dependency comment": "", 
+                "id": "550107", 
+                "skill": {
+                    "bp": 10, 
+                    "desc": "80% boost to Atk, max HP", 
+                    "effects": [
+                        {
+                            "passive": {
+                                "atk% buff": 80, 
+                                "hp% buff": 80, 
+                                "passive id": "1"
+                            }
+                        }
+                    ], 
+                    "id": "550107", 
+                    "level": 2, 
+                    "name": "80% boost to Atk, max HP", 
                     "series": "500000"
                 }
             }, 
@@ -82892,21 +82894,21 @@
                 "category": "2", 
                 "dependency": "", 
                 "dependency comment": "", 
-                "id": "1040002", 
+                "id": "1080001", 
                 "skill": {
-                    "bp": 20, 
-                    "desc": "100% boost to Spark damage", 
+                    "bp": 10, 
+                    "desc": "150% boost to Spark damage", 
                     "effects": [
                         {
                             "passive": {
-                                "damage% for spark": 100, 
+                                "damage% for spark": 150, 
                                 "passive id": "31"
                             }
                         }
                     ], 
-                    "id": "1040002", 
-                    "level": 5, 
-                    "name": "100% boost to Spark damage", 
+                    "id": "1080001", 
+                    "level": 4, 
+                    "name": "150% boost to Spark damage", 
                     "series": "1000000"
                 }
             }, 
@@ -82914,20 +82916,20 @@
                 "category": "3", 
                 "dependency": "", 
                 "dependency comment": "", 
-                "id": "2100101", 
+                "id": "2100300", 
                 "skill": {
-                    "bp": 20, 
+                    "bp": 10, 
                     "desc": "Boosts critical hit damage", 
                     "effects": [
                         {
                             "passive": {
-                                "crit multiplier%": 50.0, 
+                                "crit multiplier%": 75.0, 
                                 "passive id": "34"
                             }
                         }
                     ], 
-                    "id": "2100101", 
-                    "level": 2, 
+                    "id": "2100300", 
+                    "level": 3, 
                     "name": "Boosts critical hit damage", 
                     "series": "2100000"
                 }
