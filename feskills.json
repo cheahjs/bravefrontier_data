@@ -56649,7 +56649,7 @@
                 "id": "1010100000", 
                 "skill": {
                     "bp": 10, 
-                    "desc": "50% boost to Atk, Def, max HP", 
+                    "desc": "50% boost to ATK, DEF, max HP", 
                     "effects": [
                         {
                             "passive": {
@@ -56673,7 +56673,7 @@
                 "id": "1010100001", 
                 "skill": {
                     "bp": 10, 
-                    "desc": "100% boost to Atk, Def", 
+                    "desc": "Raises ATK, DEF boost to 100%", 
                     "effects": [
                         {
                             "passive": {
@@ -56696,7 +56696,7 @@
                 "id": "1010100002", 
                 "skill": {
                     "bp": 20, 
-                    "desc": "100% boost to critical damage", 
+                    "desc": "100% boost to CRIT DMG", 
                     "effects": [
                         {
                             "passive": {
@@ -56788,7 +56788,7 @@
                 "id": "1010100003", 
                 "skill": {
                     "bp": 20, 
-                    "desc": "Enhances LS's Atk, Def, max HP boost from 80% to 100%", 
+                    "desc": "Enhances Leader Skill parameters boost effect", 
                     "effects": [
                         {
                             "add to passive": {
@@ -56812,7 +56812,7 @@
                 "id": "1010100004", 
                 "skill": {
                     "bp": 30, 
-                    "desc": "Enhances damage (+20%) of LS's raises normal hit amount effect", 
+                    "desc": "Enhances damage of LS's raises normal hit amount effect", 
                     "effects": [
                         {
                             "add to passive": {
@@ -56824,7 +56824,7 @@
                     ], 
                     "id": "1010100004", 
                     "level": 11, 
-                    "name": "Enhances damage (+20%) of LS's raises normal hit amount effect", 
+                    "name": "Enhances damage of LS's raises normal hit amount effect", 
                     "series": "1010100004"
                 }
             }, 
@@ -56835,7 +56835,7 @@
                 "id": "1010100005", 
                 "skill": {
                     "bp": 20, 
-                    "desc": "Enhances BB's max HP boost effect (+5% HP)", 
+                    "desc": "Enhances BB's max HP boost effect", 
                     "effects": [
                         {
                             "add to bb": {
@@ -56846,7 +56846,7 @@
                     ], 
                     "id": "1010100005", 
                     "level": 11, 
-                    "name": "Enhances BB's max HP boost effect (+5% HP)", 
+                    "name": "Enhances BB's max HP boost effect", 
                     "series": "1010100005"
                 }
             }, 
@@ -56857,7 +56857,7 @@
                 "id": "1010100006", 
                 "skill": {
                     "bp": 40, 
-                    "desc": "Enhances success rate of BB/SBB's probable performance of extra action within the same turn (+20%)", 
+                    "desc": "Enhances success rate of BB/SBB's probable performance of extra action within the same turn", 
                     "effects": [
                         {
                             "add to bb": {
@@ -56878,7 +56878,7 @@
                     ], 
                     "id": "1010100006", 
                     "level": 11, 
-                    "name": "Enhances success rate of BB/SBB's probable performance of extra action within the same turn (+20%)", 
+                    "name": "Enhances success rate of BB/SBB's probable performance of extra action within the same turn", 
                     "series": "1010100006"
                 }
             }
@@ -79210,6 +79210,369 @@
                     "level": 3, 
                     "name": "Enhances SBB's BB gauge boost when damage taken effect", 
                     "series": "1000000065"
+                }
+            }
+        ]
+    }, 
+    "850438": {
+        "category": {
+            "1": {
+                "name": "ステアップ系"
+            }, 
+            "11": {
+                "name": "特殊"
+            }, 
+            "2": {
+                "name": "スパーク系"
+            }, 
+            "4": {
+                "name": "攻撃強化加系"
+            }
+        }, 
+        "skills": [
+            {
+                "category": "1", 
+                "dependency": "", 
+                "dependency comment": "", 
+                "id": "750004", 
+                "skill": {
+                    "bp": 10, 
+                    "desc": "Raises all parameters boost to 80%", 
+                    "effects": [
+                        {
+                            "passive": {
+                                "atk% buff": 80, 
+                                "def% buff": 80, 
+                                "hp% buff": 80, 
+                                "passive id": "1", 
+                                "rec% buff": 80
+                            }
+                        }
+                    ], 
+                    "id": "750004", 
+                    "level": 1, 
+                    "name": "80% boost to all parameters", 
+                    "series": "700000"
+                }
+            }, 
+            {
+                "category": "2", 
+                "dependency": "", 
+                "dependency comment": "", 
+                "id": "1100000083", 
+                "skill": {
+                    "bp": 10, 
+                    "desc": "150% boost to Spark damage", 
+                    "effects": [
+                        {
+                            "passive": {
+                                "damage% for spark": 150, 
+                                "passive id": "31"
+                            }
+                        }
+                    ], 
+                    "id": "1100000083", 
+                    "level": 7, 
+                    "name": "150% boost to Spark damage", 
+                    "series": "1100000083"
+                }
+            }, 
+            {
+                "category": "4", 
+                "dependency": "", 
+                "dependency comment": "", 
+                "id": "1001000000", 
+                "skill": {
+                    "bp": 20, 
+                    "desc": "Enormously boosts elemental damage", 
+                    "effects": [
+                        {
+                            "passive": {
+                                "dark units do extra elemental weakness dmg": true, 
+                                "earth units do extra elemental weakness dmg": true, 
+                                "elemental weakness multiplier%": 200.0, 
+                                "fire units do extra elemental weakness dmg": true, 
+                                "light units do extra elemental weakness dmg": true, 
+                                "passive id": "50", 
+                                "thunder units do extra elemental weakness dmg": true, 
+                                "water units do extra elemental weakness dmg": true
+                            }
+                        }
+                    ], 
+                    "id": "1001000000", 
+                    "level": 4, 
+                    "name": "Enormously boosts elemental damage", 
+                    "series": "1001000000"
+                }
+            }, 
+            {
+                "category": "11", 
+                "dependency": "", 
+                "dependency comment": "", 
+                "id": "10800003", 
+                "skill": {
+                    "bp": 10, 
+                    "desc": "Raises Atk parameter limits to 160000", 
+                    "effects": [
+                        {
+                            "passive": {
+                                "increase atk cap": 160000, 
+                                "passive id": "143"
+                            }
+                        }
+                    ], 
+                    "id": "10800003", 
+                    "level": 4, 
+                    "name": "Breaks Atk's parameter limit", 
+                    "series": "10800000"
+                }
+            }, 
+            {
+                "category": "11", 
+                "dependency": "", 
+                "dependency comment": "", 
+                "id": "1000001021", 
+                "skill": {
+                    "bp": 15, 
+                    "desc": "Adds Def ignoring effect to attack for 2 turns effect to BB/SBB", 
+                    "effects": [
+                        {
+                            "passive": {
+                                "passive id": "66", 
+                                "trigger on bb": true, 
+                                "trigger on sbb": true, 
+                                "triggered effect": [
+                                    {
+                                        "defense% ignore": 100, 
+                                        "defense% ignore turns (39)": 2, 
+                                        "effect delay time(ms)/frame": "0.0/0", 
+                                        "proc id": "22", 
+                                        "target area": "aoe", 
+                                        "target type": "party"
+                                    }
+                                ]
+                            }
+                        }
+                    ], 
+                    "id": "1000001021", 
+                    "level": 3, 
+                    "name": "Adds Def ignoring effect to attack for 2 turns effect to BB/SBB", 
+                    "series": "53006000"
+                }
+            }, 
+            {
+                "category": "11", 
+                "dependency": "", 
+                "dependency comment": "", 
+                "id": "1000010148", 
+                "skill": {
+                    "bp": 20, 
+                    "desc": "Adds Stealth for self with Atk, Def and critical hit rate boost for 2 turns effect to BB", 
+                    "effects": [
+                        {
+                            "passive": {
+                                "passive id": "66", 
+                                "trigger on bb": true, 
+                                "triggered effect": [
+                                    {
+                                        "atk% buff": 150, 
+                                        "crit% buff": 60, 
+                                        "def% buff": 150, 
+                                        "effect delay time(ms)/frame": "0.0/0", 
+                                        "proc id": "10001", 
+                                        "stealth turns (10001)": 2, 
+                                        "target area": "single", 
+                                        "target type": "self"
+                                    }
+                                ]
+                            }
+                        }
+                    ], 
+                    "id": "1000010148", 
+                    "level": 6, 
+                    "name": "Adds Stealth for self with Atk, Def and critical hit rate boost for 2 turns effect to BB", 
+                    "series": "1000010148"
+                }
+            }, 
+            {
+                "category": "11", 
+                "dependency": "", 
+                "dependency comment": "", 
+                "id": "51006000", 
+                "skill": {
+                    "bp": 20, 
+                    "desc": "Adds considerable HP restoration during Spark for 3 turns effect to SBB", 
+                    "effects": [
+                        {
+                            "passive": {
+                                "passive id": "66", 
+                                "trigger on sbb": true, 
+                                "triggered effect": [
+                                    {
+                                        "effect delay time(ms)/frame": "0.0/0", 
+                                        "proc id": "87", 
+                                        "spark recover hp buff turns (135)": 3, 
+                                        "spark recover hp chance%": 100, 
+                                        "spark recover hp high": 500, 
+                                        "spark recover hp low": 400, 
+                                        "target area": "aoe", 
+                                        "target type": "party"
+                                    }
+                                ]
+                            }
+                        }
+                    ], 
+                    "id": "51006000", 
+                    "level": 5, 
+                    "name": "Adds considerable HP restoration during Spark effect to SBB", 
+                    "series": "51006000"
+                }
+            }, 
+            {
+                "category": "11", 
+                "dependency": "", 
+                "dependency comment": "", 
+                "id": "1100000181", 
+                "skill": {
+                    "bp": 30, 
+                    "desc": "Adds great BC, HC drop rate boost for 3 turns effect to BB/SBB", 
+                    "effects": [
+                        {
+                            "passive": {
+                                "passive id": "66", 
+                                "trigger on bb": true, 
+                                "trigger on sbb": true, 
+                                "triggered effect": [
+                                    {
+                                        "bc drop rate% buff (10)": 40, 
+                                        "drop rate buff turns": 3, 
+                                        "effect delay time(ms)/frame": "0.0/0", 
+                                        "hc drop rate% buff (9)": 40, 
+                                        "proc id": "6", 
+                                        "target area": "aoe", 
+                                        "target type": "party"
+                                    }
+                                ]
+                            }
+                        }
+                    ], 
+                    "id": "1100000181", 
+                    "level": 4, 
+                    "name": "Adds great BC, HC drop rate boost for 3 turns effect to BB/SBB", 
+                    "series": "1100000181"
+                }
+            }, 
+            {
+                "category": "11", 
+                "dependency": "", 
+                "dependency comment": "", 
+                "id": "1000001062", 
+                "skill": {
+                    "bp": 25, 
+                    "desc": "Adds resistance against 1 KO attack when HP is below 35%", 
+                    "effects": [
+                        {
+                            "passive": {
+                                "buff": {
+                                    "angel idol buff (12)": true, 
+                                    "angel idol recover hp%": 100, 
+                                    "buff turns (12)": "-1"
+                                }, 
+                                "hp below % buff activation": 35, 
+                                "passive id": "55"
+                            }
+                        }
+                    ], 
+                    "id": "1000001062", 
+                    "level": 6, 
+                    "name": "Adds resistance against 1 KO attack when HP is below 35%", 
+                    "series": "1000001062"
+                }
+            }, 
+            {
+                "category": "11", 
+                "dependency": "", 
+                "dependency comment": "", 
+                "id": "1000000137", 
+                "skill": {
+                    "bp": 30, 
+                    "desc": "Adds max HP boost effect to BB", 
+                    "effects": [
+                        {
+                            "passive": {
+                                "passive id": "66", 
+                                "trigger on bb": true, 
+                                "triggered effect": [
+                                    {
+                                        "effect delay time(ms)/frame": "0.0/0", 
+                                        "max hp% increase": 30.0, 
+                                        "proc id": "8", 
+                                        "target area": "aoe", 
+                                        "target type": "party"
+                                    }
+                                ]
+                            }
+                        }
+                    ], 
+                    "id": "1000000137", 
+                    "level": 7, 
+                    "name": "Adds max HP boost effect to BB", 
+                    "series": "1000000137"
+                }
+            }, 
+            {
+                "category": "11", 
+                "dependency": "", 
+                "dependency comment": "", 
+                "id": "1000000148", 
+                "skill": {
+                    "bp": 30, 
+                    "desc": "Adds enormous BB gauge boost for 3 turns effect to BB/SBB", 
+                    "effects": [
+                        {
+                            "passive": {
+                                "passive id": "66", 
+                                "trigger on bb": true, 
+                                "trigger on sbb": true, 
+                                "triggered effect": [
+                                    {
+                                        "effect delay time(ms)/frame": "0.0/0", 
+                                        "increase bb gauge gradual": 10, 
+                                        "increase bb gauge gradual turns (37)": 3, 
+                                        "proc id": "19", 
+                                        "target area": "aoe", 
+                                        "target type": "party"
+                                    }
+                                ]
+                            }
+                        }
+                    ], 
+                    "id": "1000000148", 
+                    "level": 5, 
+                    "name": "Adds enormous BB gauge boost for 3 turns effect to BB/SBB", 
+                    "series": "1000000148"
+                }
+            }, 
+            {
+                "category": "11", 
+                "dependency": "", 
+                "dependency comment": "", 
+                "id": "1000001070", 
+                "skill": {
+                    "bp": 25, 
+                    "desc": "Enhances SBB's boost to Spark damage of Light types", 
+                    "effects": [
+                        {
+                            "add to sbb": {
+                                "unknown proc id": "10015", 
+                                "unknown proc param": "50,0,0,0"
+                            }
+                        }
+                    ], 
+                    "id": "1000001070", 
+                    "level": 5, 
+                    "name": "Enhances SBB's boost to Spark damage of Light types", 
+                    "series": "1000001070"
                 }
             }
         ]
