@@ -13565,6 +13565,42 @@
         "id": "710155", 
         "name": "An infernal presence"
     }, 
+    "710157": {
+        "desc": "Boosts max HP, ATK and REC (80%) & boosts ATK relative to remaining HP (0-120%) & boosts critical damage (175%) & boosts Spark damage (120%) & raises ATK parameters limits to 130000 & Spark damage reduction (25%)", 
+        "effects": [
+            {
+                "atk% buff": 80, 
+                "hp% buff": 80, 
+                "passive id": "1", 
+                "rec% buff": 80
+            }, 
+            {
+                "atk% base buff": 0, 
+                "atk% extra buff based on hp": 120, 
+                "buff proportional to hp": "remaining", 
+                "passive id": "46"
+            }, 
+            {
+                "crit multiplier%": 175.0, 
+                "passive id": "34"
+            }, 
+            {
+                "damage% for spark": 120, 
+                "passive id": "31"
+            }, 
+            {
+                "increase atk cap": 130000, 
+                "passive id": "143"
+            }, 
+            {
+                "base spark dmg% resist": 25, 
+                "buff spark dmg% resist": 0, 
+                "passive id": "77"
+            }
+        ], 
+        "id": "710157", 
+        "name": "An infernal presence"
+    }, 
     "710164": {
         "desc": "Chance of inflicting a status ailment when attacking (5% Curse, Poison, Paralysis, Injury, Weakness, Sickness) & boost in damage dealt to weak elements (100%)", 
         "effects": [
@@ -18501,6 +18537,44 @@
         "id": "750136", 
         "name": "Galactic Light"
     }, 
+    "750137": {
+        "desc": "Boosts all parameters (80%) & boosts critical damage (175%) & boosts Spark damage (150%) & boosts elemental damage (200%) & damage taken may restore HP (50% chance 30%)", 
+        "effects": [
+            {
+                "atk% buff": 80, 
+                "def% buff": 80, 
+                "hp% buff": 80, 
+                "passive id": "1", 
+                "rec% buff": 80
+            }, 
+            {
+                "crit multiplier%": 175.0, 
+                "passive id": "34"
+            }, 
+            {
+                "damage% for spark": 150, 
+                "passive id": "31"
+            }, 
+            {
+                "dark units do extra elemental weakness dmg": true, 
+                "earth units do extra elemental weakness dmg": true, 
+                "elemental weakness multiplier%": 200.0, 
+                "fire units do extra elemental weakness dmg": true, 
+                "light units do extra elemental weakness dmg": true, 
+                "passive id": "50", 
+                "thunder units do extra elemental weakness dmg": true, 
+                "water units do extra elemental weakness dmg": true
+            }, 
+            {
+                "dmg% to hp% when attacked chance%": 50, 
+                "dmg% to hp% when attacked high": 30, 
+                "dmg% to hp% when attacked low": 30, 
+                "passive id": "24"
+            }
+        ], 
+        "id": "750137", 
+        "name": "Immaculate Apex"
+    }, 
     "750143": {
         "desc": "5% reduction in damage taken & +10% HP for all Units", 
         "effects": [
@@ -20647,6 +20721,43 @@
             }
         ], 
         "id": "760186", 
+        "name": "Antique Art of the Shadows"
+    }, 
+    "760187": {
+        "desc": "Boosts max HP (80%) & boosts ATK, DEF relative to remaining HP (0-120%) & boosts BC, HC (35%), Zel (60%), Karma (50%) and Item (8%) drop rates & boosts critical damage (175%) & critical damage boosts BB gauge (8-10 BC)", 
+        "effects": [
+            {
+                "hp% buff": 80, 
+                "passive id": "1"
+            }, 
+            {
+                "atk% base buff": 0, 
+                "atk% extra buff based on hp": 120, 
+                "buff proportional to hp": "remaining", 
+                "def% base buff": 0, 
+                "def% extra buff based on hp": 120, 
+                "passive id": "46"
+            }, 
+            {
+                "bc drop rate% buff": 35, 
+                "hc drop rate% buff": 35, 
+                "item drop rate% buff": 3, 
+                "karma drop rate% buff": 50, 
+                "passive id": "19", 
+                "zel drop rate% buff": 60
+            }, 
+            {
+                "crit multiplier%": 175.0, 
+                "passive id": "34"
+            }, 
+            {
+                "bc fill on crit max": 10, 
+                "bc fill on crit min": 8, 
+                "bc fill on crit%": 100.0, 
+                "passive id": "65"
+            }
+        ], 
+        "id": "760187", 
         "name": "Antique Art of the Shadows"
     }, 
     "760195": {
@@ -24349,6 +24460,53 @@
         ], 
         "id": "830388", 
         "name": "Vengeful Samurai"
+    }, 
+    "830418": {
+        "desc": "Boosts all parameters (80%) & boosts BB ATK (350%) & boosts damage against afflicted foes (175%) & negates all status ailments and ATK, DEF, REC reduction effets & damage reduction (15%)", 
+        "effects": [
+            {
+                "atk% buff": 80, 
+                "def% buff": 80, 
+                "hp% buff": 80, 
+                "passive id": "1", 
+                "rec% buff": 80
+            }, 
+            {
+                "bb atk% buff": 350, 
+                "passive id": "64", 
+                "sbb atk% buff": 350, 
+                "ubb atk% buff": 350
+            }, 
+            {
+                "atk% buff when enemy has ailment": 175, 
+                "atk% buff when enemy has curse": true, 
+                "atk% buff when enemy has injury": true, 
+                "atk% buff when enemy has paralysis": true, 
+                "atk% buff when enemy has poison": true, 
+                "atk% buff when enemy has sick": true, 
+                "atk% buff when enemy has weaken": true, 
+                "passive id": "74"
+            }, 
+            {
+                "atk down resist%": 100, 
+                "curse resist%": 100, 
+                "def down resist%": 100, 
+                "injury resist%": 100, 
+                "paralysis resist%": 100, 
+                "passive id": "73", 
+                "poison resist%": 100, 
+                "rec down resist%": 100, 
+                "sick resist%": 100, 
+                "weaken resist%": 100
+            }, 
+            {
+                "dmg reduction chance%": 100, 
+                "dmg reduction%": 15, 
+                "passive id": "14"
+            }
+        ], 
+        "id": "830418", 
+        "name": "Chosen of the Forest"
     }, 
     "840327": {
         "desc": "Boosts max HP (85%) & boosts ATK relative to remaining HP (150-250%) & negates critical damage & boosts Thunder and Dark elemental damage (200%) & boosts BB ATK (300%) and Spark damage (150%)", 
