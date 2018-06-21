@@ -23462,6 +23462,58 @@
         "thumbnail": "sphere_thum_5_2.png", 
         "type": "sphere"
     }, 
+    "700077": {
+        "desc": "Boosts all parameters (40%) & restores HP each turn & damage taken may restore HP (40% chance 30%) & additional damage reduction (50%) & adds status ailment removal effect to BB/SBB", 
+        "effect": [
+            {
+                "atk% buff": 40, 
+                "def% buff": 40, 
+                "hp% buff": 40, 
+                "passive id": "1", 
+                "rec% buff": 40
+            }, 
+            {
+                "passive id": "33", 
+                "rec% added (turn heal)": 11.0, 
+                "turn heal high": 2500, 
+                "turn heal low": 2000
+            }, 
+            {
+                "dmg% to hp% when attacked chance%": 40, 
+                "dmg% to hp% when attacked high": 30, 
+                "dmg% to hp% when attacked low": 30, 
+                "passive id": "24"
+            }, 
+            {
+                "unknown passive id": "127", 
+                "unknown passive params": "100,50"
+            }, 
+            {
+                "passive id": "66", 
+                "trigger on bb": true, 
+                "trigger on sbb": true, 
+                "triggered effect": [
+                    {
+                        "effect delay time(ms)/frame": "0.0/0", 
+                        "proc id": "10", 
+                        "remove all status ailments": true, 
+                        "target area": "aoe", 
+                        "target type": "party"
+                    }
+                ]
+            }
+        ], 
+        "id": 700077, 
+        "max_stack": 1, 
+        "name": "Divine Timeless Scepter", 
+        "raid": false, 
+        "rarity": 3, 
+        "sell_price": 30000, 
+        "sphere type": 7, 
+        "sphere type text": "HP Recovery", 
+        "thumbnail": "sphere_thum_4_3.png", 
+        "type": "sphere"
+    }, 
     "70100": {
         "desc": "Guarantees escape from battle.", 
         "effect": {

@@ -15011,6 +15011,100 @@
         "rarity": "1", 
         "target": "self"
     }, 
+    "43300": {
+        "desc": "Slightly boosts Atk, Def when BB gauge is over 50% & negates Def ignoring damage", 
+        "effects": [
+            {
+                "atk% buff": 40, 
+                "bb gauge above % buff requirement": 50, 
+                "conditions": [], 
+                "def% buff": 40, 
+                "passive id": "30", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "ignore def resist chance%": 100, 
+                "passive id": "92", 
+                "passive target": "self"
+            }
+        ], 
+        "id": "43300", 
+        "name": "Dragon Slayer's Vow", 
+        "rarity": "1", 
+        "target": "self"
+    }, 
+    "43400": {
+        "desc": "Boosts Atk, Def when BB gauge is over 50% & negates Def ignoring damage", 
+        "effects": [
+            {
+                "atk% buff": 50, 
+                "bb gauge above % buff requirement": 50, 
+                "conditions": [], 
+                "def% buff": 50, 
+                "passive id": "30", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "ignore def resist chance%": 100, 
+                "passive id": "92", 
+                "passive target": "self"
+            }
+        ], 
+        "id": "43400", 
+        "name": "Divine Dragon's Vow", 
+        "rarity": "1", 
+        "target": "self"
+    }, 
+    "43500": {
+        "desc": "Boosts critical damage & 40% boost to Spark damage", 
+        "effects": [
+            {
+                "conditions": [], 
+                "crit multiplier%": 50.0, 
+                "passive id": "34", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "damage% for spark": 40, 
+                "passive id": "31", 
+                "passive target": "self"
+            }
+        ], 
+        "id": "43500", 
+        "name": "Heavy Pursuit", 
+        "rarity": "1", 
+        "target": "self"
+    }, 
+    "43600": {
+        "desc": "Considerably boosts critical damage, 60% boost to Spark damage & raises max Atk value from 99999 to 130000", 
+        "effects": [
+            {
+                "conditions": [], 
+                "crit multiplier%": 100.0, 
+                "passive id": "34", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "damage% for spark": 60, 
+                "passive id": "31", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "increase atk cap": 130000, 
+                "passive id": "143", 
+                "passive target": "self"
+            }
+        ], 
+        "id": "43600", 
+        "name": "My Body is a Weapon", 
+        "rarity": "1", 
+        "target": "self"
+    }, 
     "4400": {
         "desc": "Probable slight HP recovery and probable slight BB gauge boost when attacked", 
         "effects": [
@@ -23959,6 +24053,49 @@
         "rarity": "1", 
         "target": "self"
     }, 
+    "820418": {
+        "desc": "Reduces damage taken for 2 turns when HP is below 50% (25%) & boosts ATK, DEF relative to lost HP (100%) & damage taken boosts BB gauge (1-2 BC, all) & raises ATK parameter limits to 130000 (all)", 
+        "effects": [
+            {
+                "buff": {
+                    "buff turns (36)": "1", 
+                    "dmg reduction% buff": 25
+                }, 
+                "conditions": [], 
+                "hp below % buff activation": 50, 
+                "passive id": "55", 
+                "passive target": "self"
+            }, 
+            {
+                "atk% base buff": 0, 
+                "atk% extra buff based on hp": 100, 
+                "buff proportional to hp": "lost", 
+                "conditions": [], 
+                "def% base buff": 0, 
+                "def% extra buff based on hp": 100, 
+                "passive id": "46", 
+                "passive target": "self"
+            }, 
+            {
+                "bc fill when attacked high": 2, 
+                "bc fill when attacked low": 1, 
+                "bc fill when attacked%": 100, 
+                "conditions": [], 
+                "passive id": "25", 
+                "passive target": "party"
+            }, 
+            {
+                "conditions": [], 
+                "increase atk cap": 130000, 
+                "passive id": "143", 
+                "passive target": "party"
+            }
+        ], 
+        "id": "820418", 
+        "name": "Ouroburos Reborn", 
+        "rarity": "1", 
+        "target": "self"
+    }, 
     "820507": {
         "desc": "Adds status ailment removal and negation effects for 3 turns to BB/SBB", 
         "effects": [
@@ -25266,6 +25403,50 @@
         "rarity": "1", 
         "target": "self"
     }, 
+    "850018": {
+        "desc": "15% boost to Def, Rec, max HP for all allies, 50% boost to Def, Rec, max HP when HP Recovery Type Sphere is equipped, considerably restores HP each turn & 10% damage reduction", 
+        "effects": [
+            {
+                "conditions": [
+                    {
+                        "sphere category required": "HP Recovery", 
+                        "sphere category required (raw)": "7"
+                    }
+                ], 
+                "def% buff": 50, 
+                "hp% buff": 50, 
+                "passive id": "1", 
+                "passive target": "self", 
+                "rec% buff": 50
+            }, 
+            {
+                "conditions": [], 
+                "def% buff": 15, 
+                "hp% buff": 15, 
+                "passive id": "1", 
+                "passive target": "party", 
+                "rec% buff": 15
+            }, 
+            {
+                "conditions": [], 
+                "dmg% mitigation": 10, 
+                "passive id": "8", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "passive id": "33", 
+                "passive target": "self", 
+                "rec% added (turn heal)": 10.0, 
+                "turn heal high": 3000, 
+                "turn heal low": 2000
+            }
+        ], 
+        "id": "850018", 
+        "name": "8Estia_ES", 
+        "rarity": "7", 
+        "target": "self"
+    }, 
     "850157": {
         "desc": "Slightly boost BC, HC efficacy & adds status ailment removal effect to BB/SBB", 
         "effects": [
@@ -26323,6 +26504,72 @@
         ], 
         "id": "8600", 
         "name": "Flame of Atonement", 
+        "rarity": "1", 
+        "target": "self"
+    }, 
+    "860018": {
+        "desc": "25% damage reduction from Light, Dark types when Damage Reducing Sphere is equipped, 25% boost to all parameters of Light, Dark types for all allies, negates critical damage for all allies & boosts Atk, Def for 3 turns when guarding", 
+        "effects": [
+            {
+                "conditions": [
+                    {
+                        "sphere category required": "Damage Reducing", 
+                        "sphere category required (raw)": "10"
+                    }
+                ], 
+                "dmg% mitigation for elemental attacks": 25.0, 
+                "mitigate dark attacks": true, 
+                "mitigate light attacks": true, 
+                "passive id": "62", 
+                "passive target": "self"
+            }, 
+            {
+                "atk% buff": 25, 
+                "conditions": [], 
+                "def% buff": 25, 
+                "elements buffed": [
+                    "light", 
+                    "dark"
+                ], 
+                "hp% buff": 25, 
+                "passive id": "2", 
+                "passive target": "party", 
+                "rec% buff": 25
+            }, 
+            {
+                "conditions": [], 
+                "crit chance base resist%": 100, 
+                "crit chance buffed resist%": 100, 
+                "crit dmg base damage resist%": 100, 
+                "crit dmg buffed damage resist%": 100, 
+                "passive id": "53", 
+                "passive target": "party"
+            }, 
+            {
+                "buff": {
+                    "buff turns (124)": "3", 
+                    "unknown buff id": "124", 
+                    "unknown buff params": "50"
+                }, 
+                "conditions": [], 
+                "on guard activation chance%": 100, 
+                "passive id": "88", 
+                "passive target": "self"
+            }, 
+            {
+                "buff": {
+                    "buff turns (125)": "3", 
+                    "unknown buff id": "125", 
+                    "unknown buff params": "50"
+                }, 
+                "conditions": [], 
+                "on guard activation chance%": 100, 
+                "passive id": "88", 
+                "passive target": "self"
+            }
+        ], 
+        "id": "860018", 
+        "name": "What Doesn't Kill You", 
         "rarity": "1", 
         "target": "self"
     }, 
