@@ -30872,6 +30872,83 @@
         "rarity": "1", 
         "target": "self"
     }, 
+    "850557": {
+        "desc": "15% boost to all parameters of Light types & greatly boosts BB/SBB activation rates for all allies", 
+        "effects": [
+            {
+                "atk% buff": 15, 
+                "conditions": [], 
+                "def% buff": 15, 
+                "elements buffed": [
+                    "light"
+                ], 
+                "hp% buff": 15, 
+                "passive id": "2", 
+                "passive target": "party", 
+                "rec% buff": 15
+            }, 
+            {
+                "conditions": [], 
+                "increase skill activation in arena%": 10, 
+                "passive id": "111", 
+                "passive target": "party"
+            }
+        ], 
+        "id": "850557", 
+        "name": "A Timeless Hope", 
+        "rarity": "7", 
+        "target": "self"
+    }, 
+    "850558": {
+        "desc": "25% boost to all parameters of Light types, hugely boosts BB/SBB activation rates for all allies, damage taken may slightly reduce foe's BB gauge fill rate for 1 turn & adds 16 combo (BB)/29 combo (SBB) powerful Light attack on single foe to BB/SBB", 
+        "effects": [
+            {
+                "atk% buff": 25, 
+                "conditions": [], 
+                "def% buff": 25, 
+                "elements buffed": [
+                    "light"
+                ], 
+                "hp% buff": 25, 
+                "passive id": "2", 
+                "passive target": "party", 
+                "rec% buff": 25
+            }, 
+            {
+                "conditions": [], 
+                "increase skill activation in arena%": 10, 
+                "passive id": "111", 
+                "passive target": "party"
+            }, 
+            {
+                "conditions": [], 
+                "passive target": "self", 
+                "unknown passive id": "114", 
+                "unknown passive params": "112,-20,-1,20,1"
+            }, 
+            {
+                "conditions": [], 
+                "passive id": "66", 
+                "passive target": "self", 
+                "trigger on bb": true, 
+                "trigger on sbb": true, 
+                "triggered effect": [
+                    {
+                        "bb atk%": 620, 
+                        "bb flat atk": 200, 
+                        "effect delay time(ms)/frame": "0.0/0", 
+                        "proc id": "1", 
+                        "target area": "single", 
+                        "target type": "enemy"
+                    }
+                ]
+            }
+        ], 
+        "id": "850558", 
+        "name": "Scintillating Morningstar", 
+        "rarity": "7", 
+        "target": "self"
+    }, 
     "850977": {
         "desc": "Negates critical damage & negates Def ignoring effects", 
         "effects": [
@@ -31848,6 +31925,90 @@
         ], 
         "id": "860328", 
         "name": "Amour de Vivre", 
+        "rarity": "1", 
+        "target": "self"
+    }, 
+    "860338": {
+        "desc": "20% boost to all parameters when Ihsir's Wiles is equipped, boosts critical damage for all allies and boosts critical damage when Atk Boosting and Critical Spheres are equipped, 15% additional damage reduction for all allies when Damage Reducing and HP Recovery Spheres are equipped, 10% damage reduction & 15% boost to all parameters for all allies", 
+        "effects": [
+            {
+                "conditions": [
+                    {
+                        "sphere category required": "Critical", 
+                        "sphere category required (raw)": "2"
+                    }, 
+                    {
+                        "sphere category required": "Atk Boosting", 
+                        "sphere category required (raw)": "13"
+                    }
+                ], 
+                "crit multiplier%": 100.0, 
+                "passive id": "34", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [
+                    {
+                        "sphere category required": "Critical", 
+                        "sphere category required (raw)": "2"
+                    }, 
+                    {
+                        "sphere category required": "Atk Boosting", 
+                        "sphere category required (raw)": "13"
+                    }
+                ], 
+                "crit multiplier%": 20.0, 
+                "passive id": "34", 
+                "passive target": "party"
+            }, 
+            {
+                "conditions": [
+                    {
+                        "sphere category required": "Damage Reducing", 
+                        "sphere category required (raw)": "10"
+                    }, 
+                    {
+                        "sphere category required": "HP Recovery", 
+                        "sphere category required (raw)": "7"
+                    }
+                ], 
+                "passive target": "party", 
+                "unknown passive id": "127", 
+                "unknown passive params": "100,15"
+            }, 
+            {
+                "conditions": [], 
+                "dmg% mitigation": 10, 
+                "passive id": "8", 
+                "passive target": "self"
+            }, 
+            {
+                "atk% buff": 20, 
+                "conditions": [
+                    {
+                        "item required": [
+                            "819170"
+                        ]
+                    }
+                ], 
+                "def% buff": 20, 
+                "hp% buff": 20, 
+                "passive id": "1", 
+                "passive target": "self", 
+                "rec% buff": 20
+            }, 
+            {
+                "atk% buff": 15, 
+                "conditions": [], 
+                "def% buff": 15, 
+                "hp% buff": 15, 
+                "passive id": "1", 
+                "passive target": "party", 
+                "rec% buff": 15
+            }
+        ], 
+        "id": "860338", 
+        "name": "Thanatos' Greed", 
         "rarity": "1", 
         "target": "self"
     }, 
