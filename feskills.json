@@ -82033,6 +82033,384 @@
             }
         ]
     }, 
+    "860148": {
+        "category": {
+            "1": {
+                "name": "ステアップ系"
+            }, 
+            "10": {
+                "name": "ダメージ軽減系"
+            }, 
+            "11": {
+                "name": "特殊"
+            }, 
+            "2": {
+                "name": "スパーク系"
+            }, 
+            "3": {
+                "name": "クリティカル系"
+            }, 
+            "4": {
+                "name": "攻撃強化加系"
+            }
+        }, 
+        "skills": [
+            {
+                "category": "1", 
+                "dependency": "", 
+                "dependency comment": "", 
+                "id": "550106", 
+                "skill": {
+                    "bp": 10, 
+                    "desc": "60% boost to Atk, max HP", 
+                    "effects": [
+                        {
+                            "passive": {
+                                "atk% buff": 60, 
+                                "hp% buff": 60, 
+                                "passive id": "1"
+                            }
+                        }
+                    ], 
+                    "id": "550106", 
+                    "level": 2, 
+                    "name": "60% boost to Atk, max HP", 
+                    "series": "500000"
+                }
+            }, 
+            {
+                "category": "1", 
+                "dependency": "1@550106", 
+                "dependency comment": "", 
+                "id": "1100000192", 
+                "skill": {
+                    "bp": 20, 
+                    "desc": "", 
+                    "effects": [
+                        {
+                            "passive": {
+                                "atk% buff": 40, 
+                                "hp% buff": 40, 
+                                "passive id": "1"
+                            }
+                        }
+                    ], 
+                    "id": "1100000192", 
+                    "level": 4, 
+                    "name": "100% boost to ATK, max HP", 
+                    "series": "1100000192"
+                }
+            }, 
+            {
+                "category": "2", 
+                "dependency": "", 
+                "dependency comment": "", 
+                "id": "1040004", 
+                "skill": {
+                    "bp": 10, 
+                    "desc": "100% boost to Spark damage", 
+                    "effects": [
+                        {
+                            "passive": {
+                                "damage% for spark": 100, 
+                                "passive id": "31"
+                            }
+                        }
+                    ], 
+                    "id": "1040004", 
+                    "level": 5, 
+                    "name": "100% boost to Spark damage", 
+                    "series": "1000000"
+                }
+            }, 
+            {
+                "category": "3", 
+                "dependency": "", 
+                "dependency comment": "", 
+                "id": "1100000084", 
+                "skill": {
+                    "bp": 10, 
+                    "desc": "Hugely boosts critical hit damage", 
+                    "effects": [
+                        {
+                            "passive": {
+                                "crit multiplier%": 100.0, 
+                                "passive id": "34"
+                            }
+                        }
+                    ], 
+                    "id": "1100000084", 
+                    "level": 5, 
+                    "name": "Hugely boosts critical hit damage", 
+                    "series": "1100000084"
+                }
+            }, 
+            {
+                "category": "4", 
+                "dependency": "", 
+                "dependency comment": "", 
+                "id": "3420000", 
+                "skill": {
+                    "bp": 10, 
+                    "desc": "Considerably boosts damage against status afflicted foes", 
+                    "effects": [
+                        {
+                            "passive": {
+                                "atk% buff when enemy has ailment": 80, 
+                                "atk% buff when enemy has curse": true, 
+                                "atk% buff when enemy has injury": true, 
+                                "atk% buff when enemy has paralysis": true, 
+                                "atk% buff when enemy has poison": true, 
+                                "atk% buff when enemy has sick": true, 
+                                "atk% buff when enemy has weaken": true, 
+                                "passive id": "74"
+                            }
+                        }
+                    ], 
+                    "id": "3420000", 
+                    "level": 3, 
+                    "name": "Considerably boosts damage against status afflicted foes", 
+                    "series": "3400000"
+                }
+            }, 
+            {
+                "category": "10", 
+                "dependency": "", 
+                "dependency comment": "", 
+                "id": "9600000", 
+                "skill": {
+                    "bp": 20, 
+                    "desc": "Negates elemental and critical damage", 
+                    "effects": [
+                        {
+                            "passive": {
+                                "crit chance base resist%": 100, 
+                                "crit chance buffed resist%": 100, 
+                                "crit dmg base damage resist%": 100, 
+                                "crit dmg buffed damage resist%": 100, 
+                                "passive id": "53", 
+                                "strong base element damage resist%": 100, 
+                                "strong buffed element damage resist%": 100
+                            }
+                        }
+                    ], 
+                    "id": "9600000", 
+                    "level": 5, 
+                    "name": "Negates elemental and critical damage", 
+                    "series": "9600000"
+                }
+            }, 
+            {
+                "category": "11", 
+                "dependency": "", 
+                "dependency comment": "", 
+                "id": "10800007", 
+                "skill": {
+                    "bp": 10, 
+                    "desc": "Raises Atk parameter limits to 180000", 
+                    "effects": [
+                        {
+                            "passive": {
+                                "increase atk cap": 180000, 
+                                "passive id": "143"
+                            }
+                        }
+                    ], 
+                    "id": "10800007", 
+                    "level": 4, 
+                    "name": "Breaks Atk's parameter limit", 
+                    "series": "10800000"
+                }
+            }, 
+            {
+                "category": "11", 
+                "dependency": "", 
+                "dependency comment": "", 
+                "id": "1000001048", 
+                "skill": {
+                    "bp": 20, 
+                    "desc": "Adds high probability of random status ailment infliction effect to BB/SBB", 
+                    "effects": [
+                        {
+                            "passive": {
+                                "passive id": "66", 
+                                "trigger on bb": true, 
+                                "trigger on sbb": true, 
+                                "triggered effect": [
+                                    {
+                                        "effect delay time(ms)/frame": "66.7/4", 
+                                        "injury%": 80, 
+                                        "poison%": 80, 
+                                        "proc id": "11", 
+                                        "sick%": 80, 
+                                        "target area": "aoe", 
+                                        "target type": "enemy", 
+                                        "weaken%": 80
+                                    }
+                                ]
+                            }
+                        }, 
+                        {
+                            "passive": {
+                                "passive id": "66", 
+                                "trigger on bb": true, 
+                                "trigger on sbb": true, 
+                                "triggered effect": [
+                                    {
+                                        "curse%": 80, 
+                                        "effect delay time(ms)/frame": "83.3/5", 
+                                        "paralysis%": 80, 
+                                        "proc id": "11", 
+                                        "target area": "aoe", 
+                                        "target type": "enemy"
+                                    }
+                                ]
+                            }
+                        }
+                    ], 
+                    "id": "1000001048", 
+                    "level": 5, 
+                    "name": "Adds high probability of random status ailment infliction effect to BB/SBB", 
+                    "series": "1000001048"
+                }
+            }, 
+            {
+                "category": "11", 
+                "dependency": "", 
+                "dependency comment": "", 
+                "id": "1100000193", 
+                "skill": {
+                    "bp": 30, 
+                    "desc": "", 
+                    "effects": [
+                        {
+                            "passive": {
+                                "passive id": "66", 
+                                "trigger on bb": true, 
+                                "trigger on sbb": true, 
+                                "triggered effect": [
+                                    {
+                                        "buff #1": {
+                                            "atk% buff (2)": -60, 
+                                            "proc chance%": 40.0
+                                        }, 
+                                        "buff turns": 2, 
+                                        "effect delay time(ms)/frame": "0.0/0", 
+                                        "element buffed": "all", 
+                                        "proc id": "9", 
+                                        "target area": "aoe", 
+                                        "target type": "enemy"
+                                    }
+                                ]
+                            }
+                        }
+                    ], 
+                    "id": "1100000193", 
+                    "level": 4, 
+                    "name": "Adds probable huge 2 turn Atk reduction effect to BB/SBB", 
+                    "series": "1100000193"
+                }
+            }, 
+            {
+                "category": "11", 
+                "dependency": "", 
+                "dependency comment": "", 
+                "id": "1100000194", 
+                "skill": {
+                    "bp": 20, 
+                    "desc": "", 
+                    "effects": [
+                        {
+                            "passive": {
+                                "passive id": "66", 
+                                "trigger on sbb": true, 
+                                "triggered effect": [
+                                    {
+                                        "crit vuln chance%": 40.0, 
+                                        "crit vuln dmg% (157)": 30, 
+                                        "effect delay time(ms)/frame": "0.0/0", 
+                                        "proc id": "132", 
+                                        "target area": "aoe", 
+                                        "target type": "enemy", 
+                                        "vuln turns": 2
+                                    }
+                                ]
+                            }
+                        }
+                    ], 
+                    "id": "1100000194", 
+                    "level": 5, 
+                    "name": "Adds probable critical vulnerability for 2 turns effect to SBB", 
+                    "series": "1100000194"
+                }
+            }, 
+            {
+                "category": "11", 
+                "dependency": "", 
+                "dependency comment": "", 
+                "id": "1100000195", 
+                "skill": {
+                    "bp": 30, 
+                    "desc": "", 
+                    "effects": [
+                        {
+                            "passive": {
+                                "passive id": "66", 
+                                "trigger on sbb": true, 
+                                "triggered effect": [
+                                    {
+                                        "effect delay time(ms)/frame": "0.0/0", 
+                                        "proc id": "83", 
+                                        "spark dmg inc buff turns (131)": 2, 
+                                        "spark dmg inc chance%": 40, 
+                                        "spark dmg inc% buff": 90, 
+                                        "target area": "aoe", 
+                                        "target type": "party"
+                                    }
+                                ]
+                            }
+                        }
+                    ], 
+                    "id": "1100000195", 
+                    "level": 4, 
+                    "name": "Adds probable Spark critical for 2 turns effect to SBB", 
+                    "series": "1100000195"
+                }
+            }, 
+            {
+                "category": "11", 
+                "dependency": "", 
+                "dependency comment": "", 
+                "id": "1100000196", 
+                "skill": {
+                    "bp": 30, 
+                    "desc": "", 
+                    "effects": [
+                        {
+                            "passive": {
+                                "passive id": "66", 
+                                "trigger on ubb": true, 
+                                "triggered effect": [
+                                    {
+                                        "buff turns (84)": 2, 
+                                        "crit multiplier%": 600.0, 
+                                        "effect delay time(ms)/frame": "16.7/1", 
+                                        "proc id": "54", 
+                                        "target area": "single", 
+                                        "target type": "self"
+                                    }
+                                ]
+                            }
+                        }
+                    ], 
+                    "id": "1100000196", 
+                    "level": 5, 
+                    "name": "Adds enormous boost to own critical hit damage for 2 turns effect to UBB", 
+                    "series": "1100000196"
+                }
+            }
+        ]
+    }, 
     "860158": {
         "category": {
             "1": {
