@@ -2943,6 +2943,64 @@
         "id": "12519", 
         "name": "Magnolia Éclair"
     }, 
+    "12529": {
+        "desc": "80% boost to Atk, Def, 30% boost to max HP, 120% boost to Spark damage & enormously boosts BB gauge and boosts damage reduction when guarding", 
+        "effects": [
+            {
+                "atk% buff": 80, 
+                "def% buff": 80, 
+                "hp% buff": 30, 
+                "passive id": "1"
+            }, 
+            {
+                "damage% for spark": 120, 
+                "passive id": "31"
+            }, 
+            {
+                "guard increase mitigation%": 10, 
+                "passive id": "58"
+            }, 
+            {
+                "bc filled on guard": 8, 
+                "passive id": "61"
+            }
+        ], 
+        "id": "12529", 
+        "name": "Crimson Bore"
+    }, 
+    "12530": {
+        "desc": "80% boost to Atk, Rec, 30% boost to max HP, hugely boosts critical damage, critical damage enormously boosts BB gauge & Spark damage boosts BB gauge for 3 turns on critical", 
+        "effects": [
+            {
+                "atk% buff": 80, 
+                "hp% buff": 30, 
+                "passive id": "1", 
+                "rec% buff": 80
+            }, 
+            {
+                "crit multiplier%": 175.0, 
+                "passive id": "34"
+            }, 
+            {
+                "bc fill on crit max": 8, 
+                "bc fill on crit min": 8, 
+                "bc fill on crit%": 100.0, 
+                "passive id": "65"
+            }, 
+            {
+                "buff": {
+                    "bc fill on spark high": 3, 
+                    "bc fill on spark low": 2, 
+                    "bc fill on spark%": 100, 
+                    "buff turns (111)": "3"
+                }, 
+                "on crit activation chance%": 100, 
+                "passive id": "89"
+            }
+        ], 
+        "id": "12530", 
+        "name": "True Sworn Blade"
+    }, 
     "12531": {
         "desc": "50% boost to Atk, Def, max HP, considerably boosts critical damage & boosts BC efficacy", 
         "effects": [
@@ -10843,6 +10901,34 @@
         "id": "4382", 
         "name": "Ablative Armor"
     }, 
+    "4383": {
+        "desc": "80% boost to Def, 40% boost to max HP, considerably boosts OD gauge fill rate, Spark damage boosts BB gauge & damage taken enormously boosts BB gauge", 
+        "effects": [
+            {
+                "def% buff": 80, 
+                "hp% buff": 40, 
+                "passive id": "1"
+            }, 
+            {
+                "bc fill when attacked high": 8, 
+                "bc fill when attacked low": 5, 
+                "bc fill when attacked%": 100, 
+                "passive id": "25"
+            }, 
+            {
+                "bc fill on spark high": 4, 
+                "bc fill on spark low": 2, 
+                "bc fill on spark%": 100, 
+                "passive id": "47"
+            }, 
+            {
+                "od fill rate%": 20, 
+                "passive id": "70"
+            }
+        ], 
+        "id": "4383", 
+        "name": "Sinister Games"
+    }, 
     "4384": {
         "desc": "50% boost to Def, max HP, 5% damage reduction from Fire, Water, Earth, Thunder types & negates critical and elemental damage", 
         "effects": [
@@ -14438,6 +14524,45 @@
         ], 
         "id": "720135", 
         "name": "Iced Benediction"
+    }, 
+    "720137": {
+        "desc": "Boosts HP (100%) & boosts ATK, DEF, REC relative to remaining HP (30-120%) & boosts Spark damage (160%) & Spark damage boosts BB gauge (3-4 BC) & reduces damage taken (20%) for 2 turns when Sparks exceed certain amount (15)", 
+        "effects": [
+            {
+                "hp% buff": 100, 
+                "passive id": "1"
+            }, 
+            {
+                "atk% base buff": 30, 
+                "atk% extra buff based on hp": 90, 
+                "buff proportional to hp": "remaining", 
+                "def% base buff": 30, 
+                "def% extra buff based on hp": 90, 
+                "passive id": "46", 
+                "rec% base buff": 30, 
+                "rec% extra buff based on hp": 90
+            }, 
+            {
+                "damage% for spark": 160, 
+                "passive id": "31"
+            }, 
+            {
+                "bc fill on spark high": 4, 
+                "bc fill on spark low": 3, 
+                "bc fill on spark%": 100, 
+                "passive id": "47"
+            }, 
+            {
+                "buff": {
+                    "buff turns (36)": "2", 
+                    "dmg reduction% buff": 20
+                }, 
+                "passive id": "86", 
+                "spark count buff activation": 15
+            }
+        ], 
+        "id": "720137", 
+        "name": "Bear Rider Commander"
     }, 
     "720143": {
         "desc": "BB gauge fills slightly when attacking (4-4 BC at 100%), 20% boost to Atk for all allies", 
