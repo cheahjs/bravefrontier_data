@@ -22849,6 +22849,44 @@
         "rarity": "7", 
         "target": "self"
     }, 
+    "8000021": {
+        "desc": "35% boost to all parameters, 5% additional damage reduction for all allies, restores HP each turn & negates Def ignoring effect", 
+        "effects": [
+            {
+                "atk% buff": 35, 
+                "conditions": [], 
+                "def% buff": 35, 
+                "hp% buff": 35, 
+                "passive id": "1", 
+                "passive target": "self", 
+                "rec% buff": 35
+            }, 
+            {
+                "conditions": [], 
+                "passive target": "party", 
+                "unknown passive id": "127", 
+                "unknown passive params": "100,5"
+            }, 
+            {
+                "conditions": [], 
+                "passive id": "33", 
+                "passive target": "self", 
+                "rec% added (turn heal)": 11.0, 
+                "turn heal high": 6000, 
+                "turn heal low": 4500
+            }, 
+            {
+                "conditions": [], 
+                "ignore def resist chance%": 100, 
+                "passive id": "92", 
+                "passive target": "self"
+            }
+        ], 
+        "id": "8000021", 
+        "name": "Indomitable Aegis", 
+        "rarity": "7", 
+        "target": "self"
+    }, 
     "8000101": {
         "desc": "20% boost to all parameters of Fire types, negates all status ailments, 5% damage reduction from Fire, Earth types & greatly boosts Atk relative to remaining HP", 
         "effects": [
@@ -26169,6 +26207,52 @@
         "id": "820317", 
         "name": "Ardent Ice Queen", 
         "rarity": "1", 
+        "target": "self"
+    }, 
+    "820318": {
+        "desc": "30% boost to all parameters when Glacies Staff is equipped, considerably boosts BB gauge each turn for all allies, considerably boosts Spark damage for 2 turns when Sparks exceed certain amount & considerably reduces BB gauge required for BB", 
+        "effects": [
+            {
+                "atk% buff": 30, 
+                "conditions": [
+                    {
+                        "item required": [
+                            "818932"
+                        ]
+                    }
+                ], 
+                "def% buff": 30, 
+                "hp% buff": 30, 
+                "passive id": "1", 
+                "passive target": "self", 
+                "rec% buff": 30
+            }, 
+            {
+                "buff": {
+                    "buff turns (40)": "2", 
+                    "spark dmg% buff": 100
+                }, 
+                "conditions": [], 
+                "passive id": "86", 
+                "passive target": "self", 
+                "spark count buff activation": 15
+            }, 
+            {
+                "conditions": [], 
+                "passive id": "48", 
+                "passive target": "self", 
+                "reduced bb bc cost%": 25
+            }, 
+            {
+                "bc fill per turn": 5, 
+                "conditions": [], 
+                "passive id": "9", 
+                "passive target": "party"
+            }
+        ], 
+        "id": "820318", 
+        "name": "Dame of the Eternal Ice", 
+        "rarity": "7", 
         "target": "self"
     }, 
     "820357": {
@@ -31815,6 +31899,66 @@
         ], 
         "id": "850558", 
         "name": "Scintillating Morningstar", 
+        "rarity": "7", 
+        "target": "self"
+    }, 
+    "850588": {
+        "desc": "40% boost to all parameters and 10% damage reduction when All Might's Cape is equipped, boosts Atk, Def each turn (up to 4 turns) for all allies, boosts critical damage & probable resistance against 2 KO attacks", 
+        "effects": [
+            {
+                "conditions": [
+                    {
+                        "item required": [
+                            "819169"
+                        ]
+                    }
+                ], 
+                "dmg% mitigation": 10, 
+                "passive id": "8", 
+                "passive target": "self"
+            }, 
+            {
+                "atk% buff": 40, 
+                "conditions": [
+                    {
+                        "item required": [
+                            "819169"
+                        ]
+                    }
+                ], 
+                "def% buff": 40, 
+                "hp% buff": 40, 
+                "passive id": "1", 
+                "passive target": "self", 
+                "rec% buff": 40
+            }, 
+            {
+                "conditions": [], 
+                "crit multiplier%": 100.0, 
+                "passive id": "34", 
+                "passive target": "self"
+            }, 
+            {
+                "angel idol chance% condition": 0, 
+                "angel idol recover chance% high": 40, 
+                "angel idol recover chance% low": 40, 
+                "angel idol recover counts": 2, 
+                "conditions": [], 
+                "passive id": "69", 
+                "passive target": "self"
+            }, 
+            {
+                "atk% max buff": 60, 
+                "conditions": [], 
+                "def% max buff": 60, 
+                "increase from min to max": 1, 
+                "passive id": "105", 
+                "passive target": "party", 
+                "turn count": 4
+            }
+        ], 
+        "id": "850588", 
+        "name": "One for All", 
         "rarity": "7", 
         "target": "self"
     }, 

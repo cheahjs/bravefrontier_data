@@ -29435,33 +29435,39 @@
         "type": "sphere"
     }, 
     "818932": {
-        "desc": "20% boost to all parameters, reduces gauge cost required for BB & boosts BB Atk", 
+        "desc": "40% boost to all parameters, Spark damage considerably boosts BB gauge, hugely reduces BB gauge used for BB & considerably boosts BB Atk", 
         "effect": [
             {
-                "atk% buff": 20, 
-                "def% buff": 20, 
-                "hp% buff": 20, 
+                "atk% buff": 40, 
+                "def% buff": 40, 
+                "hp% buff": 40, 
                 "passive id": "1", 
-                "rec% buff": 20
+                "rec% buff": 40
+            }, 
+            {
+                "bc fill on spark high": 3, 
+                "bc fill on spark low": 2, 
+                "bc fill on spark%": 100, 
+                "passive id": "47"
             }, 
             {
                 "passive id": "49", 
                 "reduced bb bc use chance%": 100, 
-                "reduced bb bc use% high": 10, 
-                "reduced bb bc use% low": 5
+                "reduced bb bc use% high": 50, 
+                "reduced bb bc use% low": 10
             }, 
             {
                 "bb atk% buff": 100, 
                 "passive id": "64", 
-                "sbb atk% buff": 100, 
-                "ubb atk% buff": 100
+                "sbb atk% buff": 200, 
+                "ubb atk% buff": 500
             }
         ], 
         "id": 818932, 
         "max_stack": 1, 
         "name": "Glacies Staff", 
         "raid": true, 
-        "rarity": 6, 
+        "rarity": 3, 
         "recipe": {
             "karma": "100000", 
             "materials": [
@@ -29476,8 +29482,8 @@
             ]
         }, 
         "sell_price": 10000, 
-        "sphere type": 1, 
-        "sphere type text": "Status Boost", 
+        "sphere type": 6, 
+        "sphere type text": "BB Gauge", 
         "thumbnail": "sphere_thum_4_2.png", 
         "type": "sphere"
     }, 
@@ -36751,6 +36757,84 @@
         "thumbnail": "sphere_thum_819158.png", 
         "type": "sphere"
     }, 
+    "819159": {
+        "desc": "50% boost to all parameters, hugely boosts BB Atk, Spark damage slightly boosts BB gauge & 100% boost to Atk when BB gauge is over 50%<br>Guild Raid: Adds considerable boost to Spark damage of all element types for 3 turns effect to SBB & greatly reduces BB gauge required for BB", 
+        "effect": [
+            {
+                "atk% buff": 50, 
+                "def% buff": 50, 
+                "hp% buff": 50, 
+                "passive id": "1", 
+                "rec% buff": 50
+            }, 
+            {
+                "bb atk% buff": 300, 
+                "passive id": "64", 
+                "sbb atk% buff": 300, 
+                "ubb atk% buff": 300
+            }, 
+            {
+                "bc fill on spark high": 3, 
+                "bc fill on spark low": 2, 
+                "bc fill on spark%": 100, 
+                "passive id": "47"
+            }, 
+            {
+                "atk% buff": 100, 
+                "bb gauge above % buff requirement": 50, 
+                "passive id": "30"
+            }
+        ], 
+        "id": 819159, 
+        "max_stack": 1, 
+        "name": "Shining Sun Medal", 
+        "raid": false, 
+        "rarity": 7, 
+        "sell_price": 30000, 
+        "sphere type": 13, 
+        "sphere type text": "Atk Boosting", 
+        "thumbnail": "sphere_thum_819159.png", 
+        "type": "sphere"
+    }, 
+    "819160": {
+        "desc": "45% boost to all parameters, hugely boosts BB Atk, Spark damage slightly boosts BB gauge & 100% boost to Atk when BB gauge is over 50%<br>Guild Raid: Adds considerable boost to Spark damage of all element types for 3 turns effect to SBB & considerably reduces BB gauge required for BB", 
+        "effect": [
+            {
+                "atk% buff": 45, 
+                "def% buff": 45, 
+                "hp% buff": 45, 
+                "passive id": "1", 
+                "rec% buff": 45
+            }, 
+            {
+                "bb atk% buff": 300, 
+                "passive id": "64", 
+                "sbb atk% buff": 300, 
+                "ubb atk% buff": 300
+            }, 
+            {
+                "bc fill on spark high": 2, 
+                "bc fill on spark low": 2, 
+                "bc fill on spark%": 100, 
+                "passive id": "47"
+            }, 
+            {
+                "atk% buff": 100, 
+                "bb gauge above % buff requirement": 50, 
+                "passive id": "30"
+            }
+        ], 
+        "id": 819160, 
+        "max_stack": 1, 
+        "name": "Shining Medal", 
+        "raid": false, 
+        "rarity": 7, 
+        "sell_price": 30000, 
+        "sphere type": 13, 
+        "sphere type text": "Atk Boosting", 
+        "thumbnail": "sphere_thum_819160.png", 
+        "type": "sphere"
+    }, 
     "819163": {
         "desc": "30% boost to Atk, Def and Rec, negates status ailments, negates Def ignoring effect, negates critical and elemental damage & 50% Spark damage reduction", 
         "effect": [
@@ -36974,6 +37058,95 @@
         "sphere type": 11, 
         "sphere type text": "Spark", 
         "thumbnail": "sphere_thum_819167.png", 
+        "type": "sphere"
+    }, 
+    "819168": {
+        "desc": "30% boost to max HP, greatly boosts critical hit rate, boosts Atk each turn (up to 5 turns), greatly boosts critical damage, greatly boosts Fire elemental damage & adds probable Injury, Weakness, Sickness infliction effect to BB", 
+        "effect": [
+            {
+                "crit% buff": 30, 
+                "hp% buff": 30, 
+                "passive id": "1"
+            }, 
+            {
+                "atk% max buff": 150, 
+                "increase from min to max": 1, 
+                "passive id": "105", 
+                "turn count": 5
+            }, 
+            {
+                "crit multiplier%": 100.0, 
+                "passive id": "34"
+            }, 
+            {
+                "elemental weakness multiplier%": 100.0, 
+                "fire units do extra elemental weakness dmg": true, 
+                "passive id": "50"
+            }, 
+            {
+                "passive id": "66", 
+                "trigger on bb": true, 
+                "triggered effect": [
+                    {
+                        "effect delay time(ms)/frame": "0.0/0", 
+                        "injury%": 80, 
+                        "proc id": "11", 
+                        "sick%": 80, 
+                        "target area": "aoe", 
+                        "target type": "enemy", 
+                        "weaken%": 80
+                    }
+                ]
+            }
+        ], 
+        "id": 819168, 
+        "max_stack": 1, 
+        "name": "Grenadier Bracers", 
+        "raid": false, 
+        "rarity": 7, 
+        "sell_price": 30000, 
+        "sphere type": 2, 
+        "sphere type text": "Critical", 
+        "thumbnail": "sphere_thum_819168.png", 
+        "type": "sphere"
+    }, 
+    "819169": {
+        "desc": "40% boost to Atk, max HP, considerably boosts Atk relative to remaining HP, considerably boosts normal hit amount, 20% damage reduction from normal attacks & probable 20% damage reduction", 
+        "effect": [
+            {
+                "atk% buff": 40, 
+                "hp% buff": 40, 
+                "passive id": "1"
+            }, 
+            {
+                "atk% base buff": 0, 
+                "atk% extra buff based on hp": 100, 
+                "buff proportional to hp": "remaining", 
+                "passive id": "46"
+            }, 
+            {
+                "hit increase/hit": 2, 
+                "passive id": "37"
+            }, 
+            {
+                "unknown passive id": "128", 
+                "unknown passive params": "100,20,100,20"
+            }, 
+            {
+                "dmg reduction chance%": 30, 
+                "dmg reduction%": 20, 
+                "passive id": "14"
+            }
+        ], 
+        "id": 819169, 
+        "max_stack": 1, 
+        "name": "All Might's Cape", 
+        "raid": false, 
+        "rarity": 7, 
+        "sell_price": 30000, 
+        "sphere type": 1, 
+        "sphere type text": "Status Boost", 
+        "thumbnail": "sphere_thum_819169.png", 
         "type": "sphere"
     }, 
     "819170": {
