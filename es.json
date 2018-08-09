@@ -25173,6 +25173,135 @@
         "rarity": "7", 
         "target": "self"
     }, 
+    "810587": {
+        "desc": "15% boost to all parameters when All Might is in the same Squad, greatly boosts Atk relative to remaining HP and greatly boosts Fire elemental damage when Grenadier Bracers is equipped, greatly boosts critical damage & 40% additional damage reduction", 
+        "effects": [
+            {
+                "atk% buff": 15, 
+                "conditions": [
+                    {
+                        "unit required": "850580"
+                    }
+                ], 
+                "def% buff": 15, 
+                "hp% buff": 15, 
+                "passive id": "1", 
+                "passive target": "self", 
+                "rec% buff": 15
+            }, 
+            {
+                "atk% base buff": 0, 
+                "atk% extra buff based on hp": 80, 
+                "buff proportional to hp": "remaining", 
+                "conditions": [
+                    {
+                        "item required": [
+                            "819168"
+                        ]
+                    }
+                ], 
+                "passive id": "46", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [
+                    {
+                        "item required": [
+                            "819168"
+                        ]
+                    }
+                ], 
+                "elemental weakness multiplier%": 100.0, 
+                "fire units do extra elemental weakness dmg": true, 
+                "passive id": "50", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "crit multiplier%": 100.0, 
+                "passive id": "34", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "passive target": "self", 
+                "unknown passive id": "127", 
+                "unknown passive params": "100,40"
+            }
+        ], 
+        "id": "810587", 
+        "name": "Fiery Temper", 
+        "rarity": "7", 
+        "target": "self"
+    }, 
+    "810588": {
+        "desc": "20% boost to all parameters when All Might is in the same Squad, greatly boosts Atk relative to remaining HP and greatly boosts Fire elemental damage when Grenadier Bracers is equipped, 50% boost to Atk and slightly boosts critical hit rate for all allies, greatly boosts critical damage & 50% additional damage reduction", 
+        "effects": [
+            {
+                "atk% buff": 20, 
+                "conditions": [
+                    {
+                        "unit required": "850580"
+                    }
+                ], 
+                "def% buff": 20, 
+                "hp% buff": 20, 
+                "passive id": "1", 
+                "passive target": "self", 
+                "rec% buff": 20
+            }, 
+            {
+                "atk% base buff": 0, 
+                "atk% extra buff based on hp": 100, 
+                "buff proportional to hp": "remaining", 
+                "conditions": [
+                    {
+                        "item required": [
+                            "819168"
+                        ]
+                    }
+                ], 
+                "passive id": "46", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [
+                    {
+                        "item required": [
+                            "819168"
+                        ]
+                    }
+                ], 
+                "elemental weakness multiplier%": 100.0, 
+                "fire units do extra elemental weakness dmg": true, 
+                "passive id": "50", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "crit multiplier%": 100.0, 
+                "passive id": "34", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "passive target": "self", 
+                "unknown passive id": "127", 
+                "unknown passive params": "100,50"
+            }, 
+            {
+                "atk% buff": 50, 
+                "conditions": [], 
+                "crit% buff": 15, 
+                "passive id": "1", 
+                "passive target": "party"
+            }
+        ], 
+        "id": "810588", 
+        "name": "Destructive Hero", 
+        "rarity": "7", 
+        "target": "self"
+    }, 
     "811017": {
         "desc": "Boosts BB Atk", 
         "effects": [
@@ -27005,6 +27134,143 @@
         ], 
         "id": "820568", 
         "name": "L'appel du Vide", 
+        "rarity": "7", 
+        "target": "self"
+    }, 
+    "820587": {
+        "desc": "Boosts damage against status afflicted foes for all allies when Ochaco Uraraka is in the same Squad, 15% boost to all parameters when All Might is in the same Squad, negates all status ailments for all allies & hugely restores HP for 3 turns when guarding for all allies", 
+        "effects": [
+            {
+                "atk% buff when enemy has ailment": 50, 
+                "atk% buff when enemy has curse": true, 
+                "atk% buff when enemy has injury": true, 
+                "atk% buff when enemy has paralysis": true, 
+                "atk% buff when enemy has poison": true, 
+                "atk% buff when enemy has sick": true, 
+                "atk% buff when enemy has weaken": true, 
+                "conditions": [
+                    {
+                        "unit required": "830580"
+                    }
+                ], 
+                "passive id": "74", 
+                "passive target": "party"
+            }, 
+            {
+                "atk% buff": 15, 
+                "conditions": [
+                    {
+                        "unit required": "850580"
+                    }
+                ], 
+                "def% buff": 15, 
+                "hp% buff": 15, 
+                "passive id": "1", 
+                "passive target": "self", 
+                "rec% buff": 15
+            }, 
+            {
+                "conditions": [], 
+                "curse resist%": 100, 
+                "injury resist%": 100, 
+                "paralysis resist%": 100, 
+                "passive id": "73", 
+                "passive target": "party", 
+                "poison resist%": 100, 
+                "sick resist%": 100, 
+                "weaken resist%": 100
+            }, 
+            {
+                "buff": {
+                    "buff turns (8)": "3", 
+                    "gradual heal high": 4000, 
+                    "gradual heal low": 3500
+                }, 
+                "conditions": [], 
+                "on guard activation chance%": 100, 
+                "passive id": "88", 
+                "passive target": "party"
+            }
+        ], 
+        "id": "820587", 
+        "name": "Leap of Faith", 
+        "rarity": "7", 
+        "target": "self"
+    }, 
+    "820588": {
+        "desc": "Boosts damage against status afflicted foes for all allies when Ochaco Uraraka is in the same Squad, 20% boost to all parameters when All Might is in the same Squad, negates all status ailments for all allies, hugely restores HP for 3 turns when guarding for all allies & adds Water shield for 3 turns effect to BB/SBB/UBB", 
+        "effects": [
+            {
+                "atk% buff when enemy has ailment": 50, 
+                "atk% buff when enemy has curse": true, 
+                "atk% buff when enemy has injury": true, 
+                "atk% buff when enemy has paralysis": true, 
+                "atk% buff when enemy has poison": true, 
+                "atk% buff when enemy has sick": true, 
+                "atk% buff when enemy has weaken": true, 
+                "conditions": [
+                    {
+                        "unit required": "830580"
+                    }
+                ], 
+                "passive id": "74", 
+                "passive target": "party"
+            }, 
+            {
+                "atk% buff": 20, 
+                "conditions": [
+                    {
+                        "unit required": "850580"
+                    }
+                ], 
+                "def% buff": 20, 
+                "hp% buff": 20, 
+                "passive id": "1", 
+                "passive target": "self", 
+                "rec% buff": 20
+            }, 
+            {
+                "conditions": [], 
+                "curse resist%": 100, 
+                "injury resist%": 100, 
+                "paralysis resist%": 100, 
+                "passive id": "73", 
+                "passive target": "party", 
+                "poison resist%": 100, 
+                "sick resist%": 100, 
+                "weaken resist%": 100
+            }, 
+            {
+                "buff": {
+                    "buff turns (8)": "3", 
+                    "gradual heal high": 5000, 
+                    "gradual heal low": 4000
+                }, 
+                "conditions": [], 
+                "on guard activation chance%": 100, 
+                "passive id": "88", 
+                "passive target": "party"
+            }, 
+            {
+                "conditions": [], 
+                "passive id": "66", 
+                "passive target": "self", 
+                "trigger on bb": true, 
+                "trigger on sbb": true, 
+                "trigger on ubb": true, 
+                "triggered effect": [
+                    {
+                        "effect delay time(ms)/frame": "0.0/0", 
+                        "target area": "aoe", 
+                        "target type": "party", 
+                        "unknown proc id": "10017", 
+                        "unknown proc param": "2,6000,6000,3,0"
+                    }
+                ]
+            }
+        ], 
+        "id": "820588", 
+        "name": "Frog", 
         "rarity": "7", 
         "target": "self"
     }, 
