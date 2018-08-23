@@ -33773,6 +33773,81 @@
         "rarity": "1", 
         "target": "self"
     }, 
+    "860557": {
+        "desc": "Negates all status ailments for all allies & 5% additional damage reduction for all allies", 
+        "effects": [
+            {
+                "conditions": [], 
+                "curse resist%": 100, 
+                "injury resist%": 100, 
+                "paralysis resist%": 100, 
+                "passive id": "73", 
+                "passive target": "party", 
+                "poison resist%": 100, 
+                "sick resist%": 100, 
+                "weaken resist%": 100
+            }, 
+            {
+                "conditions": [], 
+                "passive target": "party", 
+                "unknown passive id": "127", 
+                "unknown passive params": "100,5"
+            }
+        ], 
+        "id": "860557", 
+        "name": "Ever-Vigilant Sentinels", 
+        "rarity": "7", 
+        "target": "self"
+    }, 
+    "860558": {
+        "desc": "Negates all status ailments for all allies, 15% additional damage reduction for all allies, damage taken may slightly reduce foe's BB gauge fill rate for 1 turn & adds 1 combo (BB)/ 20 combo (SBB) powerful Dark attack on single foe to BB/SBB", 
+        "effects": [
+            {
+                "conditions": [], 
+                "curse resist%": 100, 
+                "injury resist%": 100, 
+                "paralysis resist%": 100, 
+                "passive id": "73", 
+                "passive target": "party", 
+                "poison resist%": 100, 
+                "sick resist%": 100, 
+                "weaken resist%": 100
+            }, 
+            {
+                "conditions": [], 
+                "passive target": "party", 
+                "unknown passive id": "127", 
+                "unknown passive params": "100,15"
+            }, 
+            {
+                "conditions": [], 
+                "passive target": "self", 
+                "unknown passive id": "114", 
+                "unknown passive params": "112,-20,-1,20,1"
+            }, 
+            {
+                "conditions": [], 
+                "passive id": "66", 
+                "passive target": "self", 
+                "trigger on bb": true, 
+                "trigger on sbb": true, 
+                "triggered effect": [
+                    {
+                        "bb atk%": 620, 
+                        "bb flat atk": 200, 
+                        "effect delay time(ms)/frame": "0.0/0", 
+                        "proc id": "1", 
+                        "target area": "single", 
+                        "target type": "enemy"
+                    }
+                ]
+            }
+        ], 
+        "id": "860558", 
+        "name": "All-Seeing Eveningstar", 
+        "rarity": "7", 
+        "target": "self"
+    }, 
     "860607": {
         "desc": "Adds 50% damage reduction for 1 turn effect to BB/SBB when Photon Scepter is equipped & raises normal hit amount", 
         "effects": [
