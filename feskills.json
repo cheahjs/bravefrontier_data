@@ -57591,7 +57591,7 @@
                 "name": "特殊"
             }, 
             "3": {
-                "name": "クリティカル系"
+                "name": "スパーク系"
             }
         }, 
         "skills": [
@@ -62524,6 +62524,403 @@
                     "level": 4, 
                     "name": "Adds resistance against 1 KO attack when HP is below 20%", 
                     "series": "10600000"
+                }
+            }
+        ]
+    }, 
+    "820438": {
+        "category": {
+            "1": {
+                "name": "ステアップ系"
+            }, 
+            "2": {
+                "name": "攻撃強化加系"
+            }, 
+            "3": {
+                "name": "ＨＰ回復系"
+            }, 
+            "4": {
+                "name": "異常耐性系"
+            }, 
+            "5": {
+                "name": "ダメージ軽減系"
+            }, 
+            "6": {
+                "name": "特殊"
+            }
+        }, 
+        "skills": [
+            {
+                "category": "1", 
+                "dependency": "", 
+                "dependency comment": "", 
+                "id": "750004", 
+                "skill": {
+                    "bp": 10, 
+                    "desc": "Raises all parameters boost to 80%", 
+                    "effects": [
+                        {
+                            "passive": {
+                                "atk% buff": 80, 
+                                "def% buff": 80, 
+                                "hp% buff": 80, 
+                                "passive id": "1", 
+                                "rec% buff": 80
+                            }
+                        }
+                    ], 
+                    "id": "750004", 
+                    "level": 1, 
+                    "name": "80% boost to all parameters", 
+                    "series": "700000"
+                }
+            }, 
+            {
+                "category": "1", 
+                "dependency": "", 
+                "dependency comment": "", 
+                "id": "1100000226", 
+                "skill": {
+                    "bp": 10, 
+                    "desc": "Greatly boosts Atk, Def, Rec relative to remaining HP", 
+                    "effects": [
+                        {
+                            "passive": {
+                                "atk% base buff": 0, 
+                                "atk% extra buff based on hp": 80, 
+                                "buff proportional to hp": "remaining", 
+                                "def% base buff": 0, 
+                                "def% extra buff based on hp": 80, 
+                                "passive id": "46", 
+                                "rec% base buff": 0, 
+                                "rec% extra buff based on hp": 80
+                            }
+                        }
+                    ], 
+                    "id": "1100000226", 
+                    "level": 4, 
+                    "name": "Greatly boosts Atk, Def, Rec relative to remaining HP", 
+                    "series": "1100000226"
+                }
+            }, 
+            {
+                "category": "2", 
+                "dependency": "", 
+                "dependency comment": "", 
+                "id": "1100000227", 
+                "skill": {
+                    "bp": 10, 
+                    "desc": "Greatly boosts BB Atk when HP is above 50%", 
+                    "effects": [
+                        {
+                            "passive": {
+                                "passive id": "103", 
+                                "sbb atk% add": 300, 
+                                "triggered when hp": "higher", 
+                                "ubb atk% add": 500
+                            }
+                        }
+                    ], 
+                    "id": "1100000227", 
+                    "level": 2, 
+                    "name": "Greatly boosts BB Atk when HP is above 50%", 
+                    "series": "1100000227"
+                }
+            }, 
+            {
+                "category": "3", 
+                "dependency": "", 
+                "dependency comment": "", 
+                "id": "1100000228", 
+                "skill": {
+                    "bp": 10, 
+                    "desc": "Damage taken may restore HP", 
+                    "effects": [
+                        {
+                            "passive": {
+                                "dmg% to hp% when attacked chance%": 50, 
+                                "dmg% to hp% when attacked high": 40, 
+                                "dmg% to hp% when attacked low": 20, 
+                                "passive id": "24"
+                            }
+                        }
+                    ], 
+                    "id": "1100000228", 
+                    "level": 5, 
+                    "name": "Damage taken may restore HP", 
+                    "series": "1100000228"
+                }
+            }, 
+            {
+                "category": "4", 
+                "dependency": "", 
+                "dependency comment": "", 
+                "id": "1100000229", 
+                "skill": {
+                    "bp": 20, 
+                    "desc": "Negates all status ailments and Atk, Def, Rec reduction effects", 
+                    "effects": [
+                        {
+                            "passive": {
+                                "atk down resist%": 100, 
+                                "curse resist%": 100, 
+                                "def down resist%": 100, 
+                                "injury resist%": 100, 
+                                "paralysis resist%": 100, 
+                                "passive id": "73", 
+                                "poison resist%": 100, 
+                                "rec down resist%": 100, 
+                                "sick resist%": 100, 
+                                "weaken resist%": 100
+                            }
+                        }
+                    ], 
+                    "id": "1100000229", 
+                    "level": 5, 
+                    "name": "Negates all status ailments and Atk, Def, Rec reduction effects", 
+                    "series": "1100000229"
+                }
+            }, 
+            {
+                "category": "5", 
+                "dependency": "", 
+                "dependency comment": "", 
+                "id": "9600000", 
+                "skill": {
+                    "bp": 20, 
+                    "desc": "Negates elemental and critical damage", 
+                    "effects": [
+                        {
+                            "passive": {
+                                "crit chance base resist%": 100, 
+                                "crit chance buffed resist%": 100, 
+                                "crit dmg base damage resist%": 100, 
+                                "crit dmg buffed damage resist%": 100, 
+                                "passive id": "53", 
+                                "strong base element damage resist%": 100, 
+                                "strong buffed element damage resist%": 100
+                            }
+                        }
+                    ], 
+                    "id": "9600000", 
+                    "level": 5, 
+                    "name": "Negates elemental and critical damage", 
+                    "series": "9600000"
+                }
+            }, 
+            {
+                "category": "6", 
+                "dependency": "", 
+                "dependency comment": "", 
+                "id": "1100000230", 
+                "skill": {
+                    "bp": 10, 
+                    "desc": "Adds great boost to max HP effect to BB", 
+                    "effects": [
+                        {
+                            "passive": {
+                                "passive id": "66", 
+                                "trigger on bb": true, 
+                                "triggered effect": [
+                                    {
+                                        "effect delay time(ms)/frame": "0.0/0", 
+                                        "max hp% increase": 30.0, 
+                                        "proc id": "8", 
+                                        "target area": "aoe", 
+                                        "target type": "party"
+                                    }
+                                ]
+                            }
+                        }
+                    ], 
+                    "id": "1100000230", 
+                    "level": 5, 
+                    "name": "Adds great boost to max HP effect to BB", 
+                    "series": "1100000230"
+                }
+            }, 
+            {
+                "category": "6", 
+                "dependency": "", 
+                "dependency comment": "", 
+                "id": "1100000231", 
+                "skill": {
+                    "bp": 20, 
+                    "desc": "Adds enormous boost to BB Atk for 3 turns effect to SBB", 
+                    "effects": [
+                        {
+                            "passive": {
+                                "passive id": "66", 
+                                "trigger on sbb": true, 
+                                "triggered effect": [
+                                    {
+                                        "bb atk% buff": 600, 
+                                        "buff turns (72)": 3, 
+                                        "effect delay time(ms)/frame": "0.0/0", 
+                                        "proc id": "45", 
+                                        "sbb atk% buff": 600, 
+                                        "target area": "aoe", 
+                                        "target type": "party", 
+                                        "ubb atk% buff": 600
+                                    }
+                                ]
+                            }
+                        }
+                    ], 
+                    "id": "1100000231", 
+                    "level": 4, 
+                    "name": "Adds enormous boost to BB Atk for 3 turns effect to SBB", 
+                    "series": "1100000231"
+                }
+            }, 
+            {
+                "category": "6", 
+                "dependency": "", 
+                "dependency comment": "", 
+                "id": "1100000232", 
+                "skill": {
+                    "bp": 30, 
+                    "desc": "Adds all status ailment removal and negation for 3 turns effect to SBB", 
+                    "effects": [
+                        {
+                            "passive": {
+                                "passive id": "66", 
+                                "trigger on sbb": true, 
+                                "triggered effect": [
+                                    {
+                                        "effect delay time(ms)/frame": "0.0/0", 
+                                        "proc id": "17", 
+                                        "resist curse% (34)": 100.0, 
+                                        "resist injury% (33)": 100.0, 
+                                        "resist paralysis% (35)": 100.0, 
+                                        "resist poison% (30)": 100.0, 
+                                        "resist sick% (32)": 100.0, 
+                                        "resist status ails turns": 3, 
+                                        "resist weaken% (31)": 100.0, 
+                                        "target area": "aoe", 
+                                        "target type": "party"
+                                    }
+                                ]
+                            }
+                        }, 
+                        {
+                            "passive": {
+                                "passive id": "66", 
+                                "trigger on sbb": true, 
+                                "triggered effect": [
+                                    {
+                                        "ailments cured": [
+                                            "poison", 
+                                            "weaken", 
+                                            "sick", 
+                                            "injury", 
+                                            "curse", 
+                                            "paralysis"
+                                        ], 
+                                        "effect delay time(ms)/frame": "0.0/0", 
+                                        "proc id": "38", 
+                                        "target area": "aoe", 
+                                        "target type": "party"
+                                    }
+                                ]
+                            }
+                        }
+                    ], 
+                    "id": "1100000232", 
+                    "level": 4, 
+                    "name": "Adds all status ailment removal and negation for 3 turns effect to SBB", 
+                    "series": "1100000232"
+                }
+            }, 
+            {
+                "category": "6", 
+                "dependency": "", 
+                "dependency comment": "", 
+                "id": "1100000233", 
+                "skill": {
+                    "bp": 10, 
+                    "desc": "Adds LS disable effect purge from all allies to UBB", 
+                    "effects": [
+                        {
+                            "add to ubb": {
+                                "unknown proc id": "10019", 
+                                "unknown proc param": "0,60,0,0,0,0,0,0,0"
+                            }
+                        }
+                    ], 
+                    "id": "1100000233", 
+                    "level": 7, 
+                    "name": "Adds LS disable effect purge from all allies to UBB", 
+                    "series": "1100000233"
+                }
+            }, 
+            {
+                "category": "6", 
+                "dependency": "", 
+                "dependency comment": "", 
+                "id": "1100000234", 
+                "skill": {
+                    "bp": 30, 
+                    "desc": "Allows BB effects to last for 1 additional turn", 
+                    "effects": [
+                        {
+                            "add to bb": {
+                                "dot atk%": 0, 
+                                "dot element affected": true, 
+                                "dot turns (71)": 1, 
+                                "dot unit index": 0, 
+                                "proc id": "44"
+                            }
+                        }, 
+                        {
+                            "add to bb": {
+                                "buff turns": 1, 
+                                "element buffed": "all", 
+                                "proc id": "5"
+                            }
+                        }, 
+                        {
+                            "add to bb": {
+                                "dmg resist turns": 1, 
+                                "proc id": "93"
+                            }
+                        }, 
+                        {
+                            "add to bb": {
+                                "unknown proc id": "126", 
+                                "unknown proc param": "0,1,0"
+                            }
+                        }
+                    ], 
+                    "id": "1100000234", 
+                    "level": 5, 
+                    "name": "Allows BB effects to last for 1 additional turn", 
+                    "series": "1100000234"
+                }
+            }, 
+            {
+                "category": "6", 
+                "dependency": "", 
+                "dependency comment": "", 
+                "id": "1100000235", 
+                "skill": {
+                    "bp": 20, 
+                    "desc": "Enhances SBB's Water barrier effect", 
+                    "effects": [
+                        {
+                            "add to sbb": {
+                                "elemental barrier absorb dmg%": 0, 
+                                "elemental barrier def": 0, 
+                                "elemental barrier element": "all", 
+                                "elemental barrier hp": 2000, 
+                                "proc id": "62"
+                            }
+                        }
+                    ], 
+                    "id": "1100000235", 
+                    "level": 5, 
+                    "name": "Enhances SBB's Water barrier effect", 
+                    "series": "1100000235"
                 }
             }
         ]
@@ -90229,6 +90626,775 @@
                     "level": 3, 
                     "name": "Enhances BB's huge boost to Def relative to Atk effect", 
                     "series": "70007"
+                }
+            }
+        ]
+    }, 
+    "860438": {
+        "category": {
+            "1": {
+                "name": "ステアップ系"
+            }, 
+            "2": {
+                "name": "スパーク系"
+            }, 
+            "3": {
+                "name": "クリティカル系"
+            }, 
+            "4": {
+                "name": "特殊"
+            }
+        }, 
+        "skills": [
+            {
+                "category": "1", 
+                "dependency": "", 
+                "dependency comment": "", 
+                "id": "750003", 
+                "skill": {
+                    "bp": 10, 
+                    "desc": "60% boost to all parameters", 
+                    "effects": [
+                        {
+                            "passive": {
+                                "atk% buff": 60, 
+                                "def% buff": 60, 
+                                "hp% buff": 60, 
+                                "passive id": "1", 
+                                "rec% buff": 60
+                            }
+                        }
+                    ], 
+                    "id": "750003", 
+                    "level": 1, 
+                    "name": "60% boost to all parameters", 
+                    "series": "700000"
+                }
+            }, 
+            {
+                "category": "1", 
+                "dependency": "", 
+                "dependency comment": "", 
+                "id": "1100000236", 
+                "skill": {
+                    "bp": 10, 
+                    "desc": "", 
+                    "effects": [
+                        {
+                            "passive": {
+                                "atk% buff": 40, 
+                                "def% buff": 40, 
+                                "hp% buff": 40, 
+                                "passive id": "1", 
+                                "rec% buff": 40
+                            }
+                        }
+                    ], 
+                    "id": "1100000236", 
+                    "level": 4, 
+                    "name": "Raises all parameter boost from 60% to 100%", 
+                    "series": "1100000188"
+                }
+            }, 
+            {
+                "category": "2", 
+                "dependency": "", 
+                "dependency comment": "", 
+                "id": "1100000212", 
+                "skill": {
+                    "bp": 35, 
+                    "desc": "250% boost to Spark damage", 
+                    "effects": [
+                        {
+                            "passive": {
+                                "damage% for spark": 250, 
+                                "passive id": "31"
+                            }
+                        }
+                    ], 
+                    "id": "1100000212", 
+                    "level": 5, 
+                    "name": "250% boost to Spark damage", 
+                    "series": "1100000212"
+                }
+            }, 
+            {
+                "category": "3", 
+                "dependency": "", 
+                "dependency comment": "", 
+                "id": "1100000213", 
+                "skill": {
+                    "bp": 35, 
+                    "desc": "Hugely boosts critical hit damage", 
+                    "effects": [
+                        {
+                            "passive": {
+                                "crit multiplier%": 150.0, 
+                                "passive id": "34"
+                            }
+                        }
+                    ], 
+                    "id": "1100000213", 
+                    "level": 5, 
+                    "name": "Hugely boosts critical hit damage", 
+                    "series": "1100000213"
+                }
+            }, 
+            {
+                "category": "6", 
+                "dependency": "", 
+                "dependency comment": "", 
+                "id": "10800007", 
+                "skill": {
+                    "bp": 10, 
+                    "desc": "Raises Atk parameter limits to 180000", 
+                    "effects": [
+                        {
+                            "passive": {
+                                "increase atk cap": 180000, 
+                                "passive id": "143"
+                            }
+                        }
+                    ], 
+                    "id": "10800007", 
+                    "level": 4, 
+                    "name": "Breaks Atk's parameter limit", 
+                    "series": "10800000"
+                }
+            }, 
+            {
+                "category": "6", 
+                "dependency": "1@1100000212", 
+                "dependency comment": "", 
+                "id": "1100000214", 
+                "skill": {
+                    "bp": 15, 
+                    "desc": "Adds considerable boost to Atk, Def, Rec for 2 turns when Sparks exceed certain amount effect to LS", 
+                    "effects": [
+                        {
+                            "passive": {
+                                "unknown passive id": "107", 
+                                "unknown passive params": "86,1$120$-1$15$2"
+                            }
+                        }, 
+                        {
+                            "passive": {
+                                "unknown passive id": "107", 
+                                "unknown passive params": "86,3$120$-1$15$2"
+                            }
+                        }, 
+                        {
+                            "passive": {
+                                "unknown passive id": "107", 
+                                "unknown passive params": "86,5$120$-1$15$2"
+                            }
+                        }
+                    ], 
+                    "id": "1100000214", 
+                    "level": 5, 
+                    "name": "Adds considerable boost to Atk, Def, Rec for 2 turns when Sparks exceed certain amount effect to LS", 
+                    "series": "1100000214"
+                }
+            }, 
+            {
+                "category": "6", 
+                "dependency": "1@1100000212", 
+                "dependency comment": "", 
+                "id": "1100000215", 
+                "skill": {
+                    "bp": 10, 
+                    "desc": "Adds great boost to own Spark damage for 3 turns effect to BB/SBB", 
+                    "effects": [
+                        {
+                            "passive": {
+                                "passive id": "66", 
+                                "trigger on bb": true, 
+                                "trigger on sbb": true, 
+                                "triggered effect": [
+                                    {
+                                        "effect delay time(ms)/frame": "0.0/0", 
+                                        "proc id": "88", 
+                                        "spark dmg inc%": 120, 
+                                        "spark dmg inc% turns (136)": 3, 
+                                        "target area": "single", 
+                                        "target type": "self"
+                                    }
+                                ]
+                            }
+                        }
+                    ], 
+                    "id": "1100000215", 
+                    "level": 3, 
+                    "name": "Adds great boost to own Spark damage for 3 turns effect to BB/SBB", 
+                    "series": "1100000215"
+                }
+            }, 
+            {
+                "category": "6", 
+                "dependency": "1@1100000212", 
+                "dependency comment": "", 
+                "id": "1100000216", 
+                "skill": {
+                    "bp": 5, 
+                    "desc": "Adds great boost to Spark damage for Fire, Thunder, Light types for 3 turns effect to SBB", 
+                    "effects": [
+                        {
+                            "passive": {
+                                "passive id": "66", 
+                                "trigger on sbb": true, 
+                                "triggered effect": [
+                                    {
+                                        "effect delay time(ms)/frame": "0.0/0", 
+                                        "target area": "aoe", 
+                                        "target type": "party", 
+                                        "unknown proc id": "10015", 
+                                        "unknown proc param": "80,3,95,1"
+                                    }
+                                ]
+                            }
+                        }, 
+                        {
+                            "passive": {
+                                "passive id": "66", 
+                                "trigger on sbb": true, 
+                                "triggered effect": [
+                                    {
+                                        "effect delay time(ms)/frame": "0.0/0", 
+                                        "target area": "aoe", 
+                                        "target type": "party", 
+                                        "unknown proc id": "10015", 
+                                        "unknown proc param": "80,3,95,4"
+                                    }
+                                ]
+                            }
+                        }, 
+                        {
+                            "passive": {
+                                "passive id": "66", 
+                                "trigger on sbb": true, 
+                                "triggered effect": [
+                                    {
+                                        "effect delay time(ms)/frame": "0.0/0", 
+                                        "target area": "aoe", 
+                                        "target type": "party", 
+                                        "unknown proc id": "10015", 
+                                        "unknown proc param": "80,3,95,5"
+                                    }
+                                ]
+                            }
+                        }
+                    ], 
+                    "id": "1100000216", 
+                    "level": 5, 
+                    "name": "Adds great boost to Spark damage for Fire, Thunder, Light types for 3 turns effect to SBB", 
+                    "series": "1100000216"
+                }
+            }, 
+            {
+                "category": "6", 
+                "dependency": "1@1100000212", 
+                "dependency comment": "", 
+                "id": "1100000217", 
+                "skill": {
+                    "bp": 5, 
+                    "desc": "Adds great boost to Spark damage for Water, Earth, Dark types for 3 turns effect to SBB", 
+                    "effects": [
+                        {
+                            "passive": {
+                                "passive id": "66", 
+                                "trigger on sbb": true, 
+                                "triggered effect": [
+                                    {
+                                        "effect delay time(ms)/frame": "0.0/0", 
+                                        "target area": "aoe", 
+                                        "target type": "party", 
+                                        "unknown proc id": "10015", 
+                                        "unknown proc param": "80,3,95,2"
+                                    }
+                                ]
+                            }
+                        }, 
+                        {
+                            "passive": {
+                                "passive id": "66", 
+                                "trigger on sbb": true, 
+                                "triggered effect": [
+                                    {
+                                        "effect delay time(ms)/frame": "0.0/0", 
+                                        "target area": "aoe", 
+                                        "target type": "party", 
+                                        "unknown proc id": "10015", 
+                                        "unknown proc param": "80,3,95,3"
+                                    }
+                                ]
+                            }
+                        }, 
+                        {
+                            "passive": {
+                                "passive id": "66", 
+                                "trigger on sbb": true, 
+                                "triggered effect": [
+                                    {
+                                        "effect delay time(ms)/frame": "0.0/0", 
+                                        "target area": "aoe", 
+                                        "target type": "party", 
+                                        "unknown proc id": "10015", 
+                                        "unknown proc param": "80,3,95,6"
+                                    }
+                                ]
+                            }
+                        }
+                    ], 
+                    "id": "1100000217", 
+                    "level": 5, 
+                    "name": "Adds great boost to Spark damage for Water, Earth, Dark types for 3 turns effect to SBB", 
+                    "series": "1100000217"
+                }
+            }, 
+            {
+                "category": "6", 
+                "dependency": "1@1100000212", 
+                "dependency comment": "", 
+                "id": "1100000218", 
+                "skill": {
+                    "bp": 10, 
+                    "desc": "Adds enormous boost to Spark damage for 5 turns effect to UBB", 
+                    "effects": [
+                        {
+                            "passive": {
+                                "passive id": "66", 
+                                "trigger on ubb": true, 
+                                "triggered effect": [
+                                    {
+                                        "buff turns": 5, 
+                                        "effect delay time(ms)/frame": "0.0/0", 
+                                        "proc id": "23", 
+                                        "spark dmg% buff (40)": 450, 
+                                        "target area": "aoe", 
+                                        "target type": "party"
+                                    }
+                                ]
+                            }
+                        }
+                    ], 
+                    "id": "1100000218", 
+                    "level": 4, 
+                    "name": "Adds enormous boost to Spark damage for 5 turns effect to UBB", 
+                    "series": "1100000218"
+                }
+            }, 
+            {
+                "category": "6", 
+                "dependency": "1@1100000213", 
+                "dependency comment": "", 
+                "id": "1100000219", 
+                "skill": {
+                    "bp": 15, 
+                    "desc": "Adds critical damage considerably boosts Atk, Def, Rec, critical hit rate for 2 turns effect to LS", 
+                    "effects": [
+                        {
+                            "passive": {
+                                "unknown passive id": "107", 
+                                "unknown passive params": "89,1$100$-1$100$2"
+                            }
+                        }, 
+                        {
+                            "passive": {
+                                "unknown passive id": "107", 
+                                "unknown passive params": "89,3$100$-1$100$2"
+                            }
+                        }, 
+                        {
+                            "passive": {
+                                "unknown passive id": "107", 
+                                "unknown passive params": "89,5$100$-1$100$2"
+                            }
+                        }, 
+                        {
+                            "passive": {
+                                "unknown passive id": "107", 
+                                "unknown passive params": "89,7$30$-1$100$2"
+                            }
+                        }
+                    ], 
+                    "id": "1100000219", 
+                    "level": 5, 
+                    "name": "Adds critical damage considerably boosts Atk, Def, Rec, critical hit rate for 2 turns effect to LS", 
+                    "series": "1100000219"
+                }
+            }, 
+            {
+                "category": "6", 
+                "dependency": "1@1100000213", 
+                "dependency comment": "", 
+                "id": "1100000220", 
+                "skill": {
+                    "bp": 5, 
+                    "desc": "Adds considerable boost to Atk, Def, Rec for Fire, Thunder, Light types for 3 turns effect to BB/SBB", 
+                    "effects": [
+                        {
+                            "passive": {
+                                "passive id": "66", 
+                                "trigger on bb": true, 
+                                "trigger on sbb": true, 
+                                "triggered effect": [
+                                    {
+                                        "atk% buff (13)": 140, 
+                                        "buff turns": 3, 
+                                        "def% buff (14)": 140, 
+                                        "effect delay time(ms)/frame": "0.0/0", 
+                                        "element buffed": "fire", 
+                                        "proc id": "5", 
+                                        "rec% buff (15)": 140, 
+                                        "target area": "aoe", 
+                                        "target type": "party"
+                                    }
+                                ]
+                            }
+                        }, 
+                        {
+                            "passive": {
+                                "passive id": "66", 
+                                "trigger on bb": true, 
+                                "trigger on sbb": true, 
+                                "triggered effect": [
+                                    {
+                                        "atk% buff (13)": 140, 
+                                        "buff turns": 3, 
+                                        "def% buff (14)": 140, 
+                                        "effect delay time(ms)/frame": "0.0/0", 
+                                        "element buffed": "thunder", 
+                                        "proc id": "5", 
+                                        "rec% buff (15)": 140, 
+                                        "target area": "aoe", 
+                                        "target type": "party"
+                                    }
+                                ]
+                            }
+                        }, 
+                        {
+                            "passive": {
+                                "passive id": "66", 
+                                "trigger on bb": true, 
+                                "trigger on sbb": true, 
+                                "triggered effect": [
+                                    {
+                                        "atk% buff (13)": 140, 
+                                        "buff turns": 3, 
+                                        "def% buff (14)": 140, 
+                                        "effect delay time(ms)/frame": "0.0/0", 
+                                        "element buffed": "light", 
+                                        "proc id": "5", 
+                                        "rec% buff (15)": 140, 
+                                        "target area": "aoe", 
+                                        "target type": "party"
+                                    }
+                                ]
+                            }
+                        }
+                    ], 
+                    "id": "1100000220", 
+                    "level": 5, 
+                    "name": "Adds considerable boost to Atk, Def, Rec for Fire, Thunder, Light types for 3 turns effect to BB/SBB", 
+                    "series": "1100000220"
+                }
+            }, 
+            {
+                "category": "6", 
+                "dependency": "1@1100000213", 
+                "dependency comment": "", 
+                "id": "1100000221", 
+                "skill": {
+                    "bp": 5, 
+                    "desc": "Adds considerable boost to Atk, Def, Rec for Water, Earth, Dark types for 3 turns effect to BB/SBB", 
+                    "effects": [
+                        {
+                            "passive": {
+                                "passive id": "66", 
+                                "trigger on bb": true, 
+                                "trigger on sbb": true, 
+                                "triggered effect": [
+                                    {
+                                        "atk% buff (13)": 140, 
+                                        "buff turns": 3, 
+                                        "def% buff (14)": 140, 
+                                        "effect delay time(ms)/frame": "0.0/0", 
+                                        "element buffed": "water", 
+                                        "proc id": "5", 
+                                        "rec% buff (15)": 140, 
+                                        "target area": "aoe", 
+                                        "target type": "party"
+                                    }
+                                ]
+                            }
+                        }, 
+                        {
+                            "passive": {
+                                "passive id": "66", 
+                                "trigger on bb": true, 
+                                "trigger on sbb": true, 
+                                "triggered effect": [
+                                    {
+                                        "atk% buff (13)": 140, 
+                                        "buff turns": 3, 
+                                        "def% buff (14)": 140, 
+                                        "effect delay time(ms)/frame": "0.0/0", 
+                                        "element buffed": "earth", 
+                                        "proc id": "5", 
+                                        "rec% buff (15)": 140, 
+                                        "target area": "aoe", 
+                                        "target type": "party"
+                                    }
+                                ]
+                            }
+                        }, 
+                        {
+                            "passive": {
+                                "passive id": "66", 
+                                "trigger on bb": true, 
+                                "trigger on sbb": true, 
+                                "triggered effect": [
+                                    {
+                                        "atk% buff (13)": 140, 
+                                        "buff turns": 3, 
+                                        "def% buff (14)": 140, 
+                                        "effect delay time(ms)/frame": "0.0/0", 
+                                        "element buffed": "dark", 
+                                        "proc id": "5", 
+                                        "rec% buff (15)": 140, 
+                                        "target area": "aoe", 
+                                        "target type": "party"
+                                    }
+                                ]
+                            }
+                        }
+                    ], 
+                    "id": "1100000221", 
+                    "level": 5, 
+                    "name": "Adds considerable boost to Atk, Def, Rec for Water, Earth, Dark types for 3 turns effect to BB/SBB", 
+                    "series": "1100000221"
+                }
+            }, 
+            {
+                "category": "6", 
+                "dependency": "1@1100000213", 
+                "dependency comment": "", 
+                "id": "1100000222", 
+                "skill": {
+                    "bp": 5, 
+                    "desc": "Adds boost to critical hit damage for Fire, Thunder, Light types for 3 turns effect to SBB", 
+                    "effects": [
+                        {
+                            "passive": {
+                                "passive id": "66", 
+                                "trigger on sbb": true, 
+                                "triggered effect": [
+                                    {
+                                        "effect delay time(ms)/frame": "0.0/0", 
+                                        "target area": "aoe", 
+                                        "target type": "party", 
+                                        "unknown proc id": "10016", 
+                                        "unknown proc param": "0.5,3,95,1"
+                                    }
+                                ]
+                            }
+                        }, 
+                        {
+                            "passive": {
+                                "passive id": "66", 
+                                "trigger on sbb": true, 
+                                "triggered effect": [
+                                    {
+                                        "effect delay time(ms)/frame": "0.0/0", 
+                                        "target area": "aoe", 
+                                        "target type": "party", 
+                                        "unknown proc id": "10016", 
+                                        "unknown proc param": "0.5,3,95,4"
+                                    }
+                                ]
+                            }
+                        }, 
+                        {
+                            "passive": {
+                                "passive id": "66", 
+                                "trigger on sbb": true, 
+                                "triggered effect": [
+                                    {
+                                        "effect delay time(ms)/frame": "0.0/0", 
+                                        "target area": "aoe", 
+                                        "target type": "party", 
+                                        "unknown proc id": "10016", 
+                                        "unknown proc param": "0.5,3,95,5"
+                                    }
+                                ]
+                            }
+                        }
+                    ], 
+                    "id": "1100000222", 
+                    "level": 5, 
+                    "name": "Adds boost to critical hit damage for Fire, Thunder, Light types for 3 turns effect to SBB", 
+                    "series": "1100000222"
+                }
+            }, 
+            {
+                "category": "6", 
+                "dependency": "1@1100000213", 
+                "dependency comment": "", 
+                "id": "1100000223", 
+                "skill": {
+                    "bp": 5, 
+                    "desc": "Adds boost to critical hit damage for Water, Earth, Dark types for 3 turns effect to SBB", 
+                    "effects": [
+                        {
+                            "passive": {
+                                "passive id": "66", 
+                                "trigger on sbb": true, 
+                                "triggered effect": [
+                                    {
+                                        "effect delay time(ms)/frame": "0.0/0", 
+                                        "target area": "aoe", 
+                                        "target type": "party", 
+                                        "unknown proc id": "10016", 
+                                        "unknown proc param": "0.5,3,95,2"
+                                    }
+                                ]
+                            }
+                        }, 
+                        {
+                            "passive": {
+                                "passive id": "66", 
+                                "trigger on sbb": true, 
+                                "triggered effect": [
+                                    {
+                                        "effect delay time(ms)/frame": "0.0/0", 
+                                        "target area": "aoe", 
+                                        "target type": "party", 
+                                        "unknown proc id": "10016", 
+                                        "unknown proc param": "0.5,3,95,3"
+                                    }
+                                ]
+                            }
+                        }, 
+                        {
+                            "passive": {
+                                "passive id": "66", 
+                                "trigger on sbb": true, 
+                                "triggered effect": [
+                                    {
+                                        "effect delay time(ms)/frame": "0.0/0", 
+                                        "target area": "aoe", 
+                                        "target type": "party", 
+                                        "unknown proc id": "10016", 
+                                        "unknown proc param": "0.5,3,95,6"
+                                    }
+                                ]
+                            }
+                        }
+                    ], 
+                    "id": "1100000223", 
+                    "level": 5, 
+                    "name": "Adds boost to critical hit damage for Water, Earth, Dark types for 3 turns effect to SBB", 
+                    "series": "1100000223"
+                }
+            }, 
+            {
+                "category": "6", 
+                "dependency": "1@1100000213", 
+                "dependency comment": "", 
+                "id": "1100000224", 
+                "skill": {
+                    "bp": 10, 
+                    "desc": "Adds enormous boost to critical hit damage for 5 turns effect to UBB", 
+                    "effects": [
+                        {
+                            "passive": {
+                                "passive id": "66", 
+                                "trigger on ubb": true, 
+                                "triggered effect": [
+                                    {
+                                        "buff turns (84)": 3, 
+                                        "crit multiplier%": 450.0, 
+                                        "effect delay time(ms)/frame": "0.0/0", 
+                                        "proc id": "54", 
+                                        "target area": "aoe", 
+                                        "target type": "party"
+                                    }
+                                ]
+                            }
+                        }
+                    ], 
+                    "id": "1100000224", 
+                    "level": 4, 
+                    "name": "Adds enormous boost to critical hit damage for 5 turns effect to UBB", 
+                    "series": "1100000224"
+                }
+            }, 
+            {
+                "category": "6", 
+                "dependency": "", 
+                "dependency comment": "", 
+                "id": "1100000225", 
+                "skill": {
+                    "bp": 20, 
+                    "desc": "Adds 32 combo massive Dark attack on all foes effect to UBB, adds enormous boost to Atk, Def, Rec for 5 turns effect to UBB & adds probable resistance against 1 KO attack", 
+                    "effects": [
+                        {
+                            "passive": {
+                                "passive id": "66", 
+                                "trigger on ubb": true, 
+                                "triggered effect": [
+                                    {
+                                        "bb atk%": 2000, 
+                                        "bb flat atk": 200, 
+                                        "effect delay time(ms)/frame": "33.3/2", 
+                                        "proc id": "1", 
+                                        "target area": "aoe", 
+                                        "target type": "enemy"
+                                    }
+                                ]
+                            }
+                        }, 
+                        {
+                            "passive": {
+                                "passive id": "66", 
+                                "trigger on ubb": true, 
+                                "triggered effect": [
+                                    {
+                                        "atk% buff (1)": 450, 
+                                        "buff turns": 5, 
+                                        "def% buff (3)": 450, 
+                                        "effect delay time(ms)/frame": "0.0/0", 
+                                        "element buffed": "all", 
+                                        "proc id": "5", 
+                                        "rec% buff (5)": 450, 
+                                        "target area": "aoe", 
+                                        "target type": "party"
+                                    }
+                                ]
+                            }
+                        }, 
+                        {
+                            "passive": {
+                                "passive id": "66", 
+                                "trigger on ubb": true, 
+                                "triggered effect": [
+                                    {
+                                        "angel idol buff turns (91)": 999, 
+                                        "angel idol recover chance%": 80, 
+                                        "angel idol recover hp%": 100, 
+                                        "effect delay time(ms)/frame": "166.7/10", 
+                                        "proc id": "56", 
+                                        "target area": "aoe", 
+                                        "target type": "party"
+                                    }
+                                ]
+                            }
+                        }
+                    ], 
+                    "id": "1100000225", 
+                    "level": 7, 
+                    "name": "Massively enhances UBB", 
+                    "series": "1100000225"
                 }
             }
         ]

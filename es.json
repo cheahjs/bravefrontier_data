@@ -26753,6 +26753,76 @@
         "rarity": "1", 
         "target": "self"
     }, 
+    "820437": {
+        "desc": "40% boost to Def, max HP, greatly boosts BB Atk when HP is over 50% & probable damage reduction to 1", 
+        "effects": [
+            {
+                "conditions": [], 
+                "def% buff": 40, 
+                "hp% buff": 40, 
+                "passive id": "1", 
+                "passive target": "self"
+            }, 
+            {
+                "bb atk% add": 200, 
+                "conditions": [], 
+                "hp threshold": 50, 
+                "passive id": "103", 
+                "passive target": "self", 
+                "sbb atk% add": 200, 
+                "triggered when hp": "higher", 
+                "ubb atk% add": 200
+            }, 
+            {
+                "conditions": [], 
+                "passive id": "43", 
+                "passive target": "self", 
+                "take 1 dmg%": 15
+            }
+        ], 
+        "id": "820437", 
+        "name": "Divine Words of Power", 
+        "rarity": "7", 
+        "target": "self"
+    }, 
+    "820438": {
+        "desc": "60% boost to Def, max HP, greatly boosts BB Atk when HP is over 50%, probable damage reduction to 1 & 15% additional damage reduction for all allies", 
+        "effects": [
+            {
+                "conditions": [], 
+                "def% buff": 60, 
+                "hp% buff": 60, 
+                "passive id": "1", 
+                "passive target": "self"
+            }, 
+            {
+                "bb atk% add": 300, 
+                "conditions": [], 
+                "hp threshold": 50, 
+                "passive id": "103", 
+                "passive target": "self", 
+                "sbb atk% add": 300, 
+                "triggered when hp": "higher", 
+                "ubb atk% add": 300
+            }, 
+            {
+                "conditions": [], 
+                "passive id": "43", 
+                "passive target": "self", 
+                "take 1 dmg%": 20
+            }, 
+            {
+                "conditions": [], 
+                "passive target": "party", 
+                "unknown passive id": "127", 
+                "unknown passive params": "100,15"
+            }
+        ], 
+        "id": "820438", 
+        "name": "Tongues of Celestial Might", 
+        "rarity": "7", 
+        "target": "self"
+    }, 
     "820507": {
         "desc": "Adds status ailment removal and negation effects for 3 turns to BB/SBB", 
         "effects": [
@@ -33614,6 +33684,102 @@
         "id": "860428", 
         "name": "Mantle of Chaos", 
         "rarity": "1", 
+        "target": "self"
+    }, 
+    "860437": {
+        "desc": "30% boost to all parameters when Vesper Argentum is equipped, considerably boosts BB gauge each turn for all allies, restores HP each turn for all allies & slightly boosts Atk, Def, Rec each turn for all allies (up to 10 turns)", 
+        "effects": [
+            {
+                "atk% buff": 30, 
+                "conditions": [
+                    {
+                        "item required": [
+                            "819175"
+                        ]
+                    }
+                ], 
+                "def% buff": 30, 
+                "hp% buff": 30, 
+                "passive id": "1", 
+                "passive target": "self", 
+                "rec% buff": 30
+            }, 
+            {
+                "bc fill per turn": 5, 
+                "conditions": [], 
+                "passive id": "9", 
+                "passive target": "party"
+            }, 
+            {
+                "conditions": [], 
+                "passive id": "33", 
+                "passive target": "party", 
+                "rec% added (turn heal)": 10.0, 
+                "turn heal high": 1500, 
+                "turn heal low": 500
+            }, 
+            {
+                "atk% max buff": 30, 
+                "conditions": [], 
+                "def% max buff": 30, 
+                "increase from min to max": 1, 
+                "passive id": "105", 
+                "passive target": "party", 
+                "rec% max buff": 30, 
+                "turn count": 10
+            }
+        ], 
+        "id": "860437", 
+        "name": "Hour of Reckoning", 
+        "rarity": "7", 
+        "target": "self"
+    }, 
+    "860438": {
+        "desc": "40% boost to all parameters when Vesper Argentum is equipped, considerably boosts BB gauge each turn for all allies, restores HP each turn for all allies & boosts Atk, Def, Rec each turn for all allies (up to 10 turns)", 
+        "effects": [
+            {
+                "atk% buff": 40, 
+                "conditions": [
+                    {
+                        "item required": [
+                            "819175"
+                        ]
+                    }
+                ], 
+                "def% buff": 40, 
+                "hp% buff": 40, 
+                "passive id": "1", 
+                "passive target": "self", 
+                "rec% buff": 40
+            }, 
+            {
+                "bc fill per turn": 5, 
+                "conditions": [], 
+                "passive id": "9", 
+                "passive target": "party"
+            }, 
+            {
+                "conditions": [], 
+                "passive id": "33", 
+                "passive target": "party", 
+                "rec% added (turn heal)": 10.0, 
+                "turn heal high": 2000, 
+                "turn heal low": 1000
+            }, 
+            {
+                "atk% max buff": 50, 
+                "conditions": [], 
+                "def% max buff": 50, 
+                "increase from min to max": 1, 
+                "passive id": "105", 
+                "passive target": "party", 
+                "rec% max buff": 50, 
+                "turn count": 10
+            }
+        ], 
+        "id": "860438", 
+        "name": "A Templar's Resolve", 
+        "rarity": "7", 
         "target": "self"
     }, 
     "860517": {
