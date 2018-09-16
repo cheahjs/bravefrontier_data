@@ -22887,6 +22887,48 @@
         "rarity": "7", 
         "target": "self"
     }, 
+    "8000022": {
+        "desc": "40% boost to all parameters of light and dark types, Slighty boosts Light and Dark elemental damage, 10% damage reduction from normal attacks, adds resistance to 1 KO attack after activating OD", 
+        "effects": [
+            {
+                "atk% buff": 40, 
+                "conditions": [], 
+                "def% buff": 40, 
+                "elements buffed": [
+                    "light", 
+                    "dark"
+                ], 
+                "hp% buff": 40, 
+                "passive id": "2", 
+                "passive target": "self", 
+                "rec% buff": 40
+            }, 
+            {
+                "conditions": [], 
+                "dark units do extra elemental weakness dmg": true, 
+                "elemental weakness multiplier%": 15.0, 
+                "light units do extra elemental weakness dmg": true, 
+                "passive id": "50", 
+                "passive target": "party"
+            }, 
+            {
+                "conditions": [], 
+                "passive target": "self", 
+                "unknown passive id": "128", 
+                "unknown passive params": "100,10,100,10"
+            }, 
+            {
+                "conditions": [], 
+                "passive target": "self", 
+                "unknown passive id": "106", 
+                "unknown passive params": "12,100,1,100,-1"
+            }
+        ], 
+        "id": "8000022", 
+        "name": "Grand Aegis", 
+        "rarity": "7", 
+        "target": "self"
+    }, 
     "8000101": {
         "desc": "20% boost to all parameters of Fire types, negates all status ailments, 5% damage reduction from Fire, Earth types & greatly boosts Atk relative to remaining HP", 
         "effects": [
@@ -23847,6 +23889,110 @@
         "rarity": "8", 
         "target": "self"
     }, 
+    "8000501": {
+        "desc": "10% boost to all parameters for all Fire type allies, 150% boost to Atk and 30% boost to critical hit rate of Fire types, 35% damage reduction for first 2 turns from Fire, Earth types, greatly boosts BB/SBB activation rates & raises Atk parameter limits to 180000", 
+        "effects": [
+            {
+                "atk% buff": 150, 
+                "conditions": [], 
+                "crit% buff": 30, 
+                "elements buffed": [
+                    "fire"
+                ], 
+                "passive id": "2", 
+                "passive target": "self"
+            }, 
+            {
+                "atk% buff": 10, 
+                "conditions": [], 
+                "def% buff": 10, 
+                "elements buffed": [
+                    "fire"
+                ], 
+                "hp% buff": 10, 
+                "passive id": "2", 
+                "passive target": "party", 
+                "rec% buff": 10
+            }, 
+            {
+                "conditions": [], 
+                "dmg% mitigation for elemental attacks": 35, 
+                "dmg% mitigation for elemental attacks buff for first x turns": 2, 
+                "mitigate earth attacks": true, 
+                "mitigate fire attacks": true, 
+                "passive id": "63", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "increase skill activation in arena%": 20, 
+                "passive id": "111", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "increase atk cap": 180000, 
+                "passive id": "143", 
+                "passive target": "self"
+            }
+        ], 
+        "id": "8000501", 
+        "name": "Oath of Justice", 
+        "rarity": "8", 
+        "target": "self"
+    }, 
+    "8000502": {
+        "desc": "5% boost to all parameters for all Fire type allies, 120% boost to Atk and 30% boost to critical hit rate of Fire types, 35% damage reduction for first 2 turns from Fire, Earth types, greatly boosts BB/SBB activation rates & raises Atk parameter limits to 170000", 
+        "effects": [
+            {
+                "atk% buff": 120, 
+                "conditions": [], 
+                "crit% buff": 30, 
+                "elements buffed": [
+                    "fire"
+                ], 
+                "passive id": "2", 
+                "passive target": "self"
+            }, 
+            {
+                "atk% buff": 5, 
+                "conditions": [], 
+                "def% buff": 5, 
+                "elements buffed": [
+                    "fire"
+                ], 
+                "hp% buff": 5, 
+                "passive id": "2", 
+                "passive target": "party", 
+                "rec% buff": 5
+            }, 
+            {
+                "conditions": [], 
+                "dmg% mitigation for elemental attacks": 35, 
+                "dmg% mitigation for elemental attacks buff for first x turns": 2, 
+                "mitigate earth attacks": true, 
+                "mitigate fire attacks": true, 
+                "passive id": "63", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "increase skill activation in arena%": 15, 
+                "passive id": "111", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "increase atk cap": 170000, 
+                "passive id": "143", 
+                "passive target": "self"
+            }
+        ], 
+        "id": "8000502", 
+        "name": "Blazing Will", 
+        "rarity": "7", 
+        "target": "self"
+    }, 
     "8100": {
         "desc": "Boosts OD gauge fill rate", 
         "effects": [
@@ -24420,6 +24566,68 @@
         "id": "810317", 
         "name": "Primal Bloodlust", 
         "rarity": "1", 
+        "target": "self"
+    }, 
+    "810318": {
+        "desc": "50% damage reduction for 1 turn when damage taken has exceeded certain amount when Vulcan Axe is equipped, fills own BB gauge to max when damage dealt has exceeded certain amount when Vulcan Axe is equipped, adds probable Spark critical for all allies, raises Atk parameter limits to 180000 & negates critical, elemental damage", 
+        "effects": [
+            {
+                "buff": {
+                    "buff turns (36)": "1", 
+                    "dmg reduction% buff": 25
+                }, 
+                "conditions": [
+                    {
+                        "item required": [
+                            "818931"
+                        ]
+                    }
+                ], 
+                "damage threshold buff activation": 50000, 
+                "passive id": "78", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [
+                    {
+                        "item required": [
+                            "818931"
+                        ]
+                    }
+                ], 
+                "damage dealt threshold activation": 999999, 
+                "increase bb gauge": 0, 
+                "passive id": "81", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "increase atk cap": 180000, 
+                "passive id": "143", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "crit chance base resist%": 100, 
+                "crit chance buffed resist%": 100, 
+                "crit dmg base damage resist%": 100, 
+                "crit dmg buffed damage resist%": 100, 
+                "passive id": "53", 
+                "passive target": "self", 
+                "strong base element damage resist%": 100, 
+                "strong buffed element damage resist%": 100
+            }, 
+            {
+                "conditions": [], 
+                "passive id": "100", 
+                "passive target": "party", 
+                "spark crit chance%": 20, 
+                "spark crit dmg%": 100
+            }
+        ], 
+        "id": "810318", 
+        "name": "Savage Fury", 
+        "rarity": "7", 
         "target": "self"
     }, 
     "810327": {
@@ -25348,6 +25556,78 @@
         ], 
         "id": "810588", 
         "name": "Destructive Hero", 
+        "rarity": "7", 
+        "target": "self"
+    }, 
+    "810657": {
+        "desc": "Adds Def ignoring effect to attack for all allies & 30% boost to Atk, Def for first 5 turns", 
+        "effects": [
+            {
+                "conditions": [], 
+                "ignore def%": 100, 
+                "passive id": "29", 
+                "passive target": "party"
+            }, 
+            {
+                "conditions": [], 
+                "first x turns": 5, 
+                "first x turns atk% (1)": 30, 
+                "first x turns def% (3)": 30, 
+                "passive id": "21", 
+                "passive target": "self"
+            }
+        ], 
+        "id": "810657", 
+        "name": "Emblem of Justice", 
+        "rarity": "7", 
+        "target": "self"
+    }, 
+    "810658": {
+        "desc": "Adds Def ignoring effect to attack for all allies, negates critical damage for all allies, 50% boost to Atk, Def for first 5 turns & adds 15 combo (BB) / 21 combo (SBB) powerful Fire attack on all foes to BB/SBB", 
+        "effects": [
+            {
+                "conditions": [], 
+                "ignore def%": 100, 
+                "passive id": "29", 
+                "passive target": "party"
+            }, 
+            {
+                "conditions": [], 
+                "first x turns": 5, 
+                "first x turns atk% (1)": 50, 
+                "first x turns def% (3)": 50, 
+                "passive id": "21", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "crit chance base resist%": 100, 
+                "crit chance buffed resist%": 100, 
+                "crit dmg base damage resist%": 100, 
+                "crit dmg buffed damage resist%": 100, 
+                "passive id": "53", 
+                "passive target": "party"
+            }, 
+            {
+                "conditions": [], 
+                "passive id": "66", 
+                "passive target": "self", 
+                "trigger on bb": true, 
+                "trigger on sbb": true, 
+                "triggered effect": [
+                    {
+                        "bb atk%": 620, 
+                        "bb flat atk": 200, 
+                        "effect delay time(ms)/frame": "0.0/0", 
+                        "proc id": "1", 
+                        "target area": "aoe", 
+                        "target type": "enemy"
+                    }
+                ]
+            }
+        ], 
+        "id": "810658", 
+        "name": "Scorching Spirit", 
         "rarity": "7", 
         "target": "self"
     }, 

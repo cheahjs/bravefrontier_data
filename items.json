@@ -29407,25 +29407,35 @@
         "type": "sphere"
     }, 
     "818931": {
-        "desc": "30% boost to Atk, max HP,  boosts critical hit rate & boosts Atk when BB gauge is full", 
+        "desc": "100% boost to Atk, 30% boot to max HP, 30% boost to critical hit rate, greatly boosts critical hit damage, greatly boosts Fire elemental damage & critical damage enormously boosts BB gauge", 
         "effect": [
             {
-                "atk% buff": 30, 
+                "atk% buff": 100, 
                 "crit% buff": 30, 
                 "hp% buff": 30, 
                 "passive id": "1"
             }, 
             {
-                "atk% buff": 50, 
-                "bb gauge above % buff requirement": 100, 
-                "passive id": "30"
+                "crit multiplier%": 100.0, 
+                "passive id": "34"
+            }, 
+            {
+                "elemental weakness multiplier%": 100.0, 
+                "fire units do extra elemental weakness dmg": true, 
+                "passive id": "50"
+            }, 
+            {
+                "bc fill on crit max": 20, 
+                "bc fill on crit min": 10, 
+                "bc fill on crit%": 100.0, 
+                "passive id": "65"
             }
         ], 
         "id": 818931, 
         "max_stack": 1, 
         "name": "Vulcan Axe", 
         "raid": true, 
-        "rarity": 6, 
+        "rarity": 3, 
         "recipe": {
             "karma": "100000", 
             "materials": [
@@ -29440,8 +29450,8 @@
             ]
         }, 
         "sell_price": 10000, 
-        "sphere type": 1, 
-        "sphere type text": "Status Boost", 
+        "sphere type": 13, 
+        "sphere type text": "Atk Boosting", 
         "thumbnail": "sphere_thum_4_1.png", 
         "type": "sphere"
     }, 
@@ -36928,6 +36938,90 @@
         "sphere type": 13, 
         "sphere type text": "Atk Boosting", 
         "thumbnail": "sphere_thum_819160.png", 
+        "type": "sphere"
+    }, 
+    "819161": {
+        "desc": "55% boost to all parameters of light and dark types, Enormously boosts elemental damage of light and dark, Enormously boosts OD gauge fill rate, 10% damage reduction from light and dark types <br>Guild raid: 55% boost to Attack and defense when BB gauge is over 50%<br>Add \"Purge Extra Skill Lock for all\" effect to UBB", 
+        "effect": [
+            {
+                "atk% buff": 55, 
+                "def% buff": 55, 
+                "elements buffed": [
+                    "light", 
+                    "dark"
+                ], 
+                "hp% buff": 55, 
+                "passive id": "2", 
+                "rec% buff": 55
+            }, 
+            {
+                "dark units do extra elemental weakness dmg": true, 
+                "elemental weakness multiplier%": 300.0, 
+                "light units do extra elemental weakness dmg": true, 
+                "passive id": "50"
+            }, 
+            {
+                "od fill rate%": 200, 
+                "passive id": "70"
+            }, 
+            {
+                "dmg% mitigation for elemental attacks": 10.0, 
+                "mitigate dark attacks": true, 
+                "mitigate light attacks": true, 
+                "passive id": "62"
+            }
+        ], 
+        "id": 819161, 
+        "max_stack": 1, 
+        "name": "Duskcrown Medal", 
+        "raid": false, 
+        "rarity": 7, 
+        "sell_price": 30000, 
+        "sphere type": 14, 
+        "sphere type text": "Special", 
+        "thumbnail": "sphere_thum_819161.png", 
+        "type": "sphere"
+    }, 
+    "819162": {
+        "desc": "50% boost to all parameters of light and dark types, Enormously boosts elemental damage of light and dark, Enormously boosts OD gauge fill rate, 10% damage reduction from light and dark types <br>Guild raid: 50% boost to Attack and defense when BB gauge is over 50%<br>Add \"Purge Extra Skill Lock for all\" effect to UBB", 
+        "effect": [
+            {
+                "atk% buff": 50, 
+                "def% buff": 50, 
+                "elements buffed": [
+                    "light", 
+                    "dark"
+                ], 
+                "hp% buff": 50, 
+                "passive id": "2", 
+                "rec% buff": 50
+            }, 
+            {
+                "dark units do extra elemental weakness dmg": true, 
+                "elemental weakness multiplier%": 250.0, 
+                "light units do extra elemental weakness dmg": true, 
+                "passive id": "50"
+            }, 
+            {
+                "od fill rate%": 200, 
+                "passive id": "70"
+            }, 
+            {
+                "dmg% mitigation for elemental attacks": 10.0, 
+                "mitigate dark attacks": true, 
+                "mitigate light attacks": true, 
+                "passive id": "62"
+            }
+        ], 
+        "id": 819162, 
+        "max_stack": 1, 
+        "name": "Dusklight Medal", 
+        "raid": false, 
+        "rarity": 7, 
+        "sell_price": 30000, 
+        "sphere type": 14, 
+        "sphere type text": "Special", 
+        "thumbnail": "sphere_thum_819162.png", 
         "type": "sphere"
     }, 
     "819163": {

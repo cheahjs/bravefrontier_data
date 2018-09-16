@@ -26962,6 +26962,45 @@
         "id": "8103", 
         "name": "Supreme Ruler's Protection"
     }, 
+    "810318": {
+        "desc": "100% boost to Atk, max HP, 20% boost to critical hit rate, considerably boosts Atk for 2 turns when damage taken has exceeded certain amount, enormously boosts Spark damage for 2 turns when damage dealt has exceeded certain amount, hugely boosts critical damage & damage taken hugely boosts BB gauge", 
+        "effects": [
+            {
+                "atk% buff": 100, 
+                "crit% buff": 20, 
+                "hp% buff": 100, 
+                "passive id": "1"
+            }, 
+            {
+                "buff": {
+                    "atk% buff (1)": 100, 
+                    "buff turns (1)": "2"
+                }, 
+                "damage threshold buff activation": 10000, 
+                "passive id": "78"
+            }, 
+            {
+                "buff": {
+                    "buff turns (40)": "2", 
+                    "spark dmg% buff": 200
+                }, 
+                "damage dealt threshold buff activation": 50000, 
+                "passive id": "80"
+            }, 
+            {
+                "crit multiplier%": 150.0, 
+                "passive id": "34"
+            }, 
+            {
+                "bc fill when attacked high": 8, 
+                "bc fill when attacked low": 5, 
+                "bc fill when attacked%": 100, 
+                "passive id": "25"
+            }
+        ], 
+        "id": "810318", 
+        "name": "Relentless Torment"
+    }, 
     "810377": {
         "desc": "80% boost to Atk, 40% boost to max HP, boosts damage against status afflicted foes, hugely boosts critical damage & probable damage reduction to 1", 
         "effects": [
@@ -27483,6 +27522,82 @@
         ], 
         "id": "8106", 
         "name": "Steel God's Shining Barrier"
+    }, 
+    "810657": {
+        "desc": "100% boost to Atk, Def, 80% boost to max HP of Fire types, 10% damage reduction from Fire, Earth types, probable considerable reduction of foe's BB gauge & considerably reduces BB gauge required for BB", 
+        "effects": [
+            {
+                "atk% buff": 100, 
+                "def% buff": 100, 
+                "elements buffed": [
+                    "fire"
+                ], 
+                "hp% buff": 80, 
+                "passive id": "2"
+            }, 
+            {
+                "dmg% mitigation for elemental attacks": 10.0, 
+                "mitigate earth attacks": true, 
+                "mitigate fire attacks": true, 
+                "passive id": "62"
+            }, 
+            {
+                "unknown passive id": "110", 
+                "unknown passive params": "0,0,50,50,20,0"
+            }, 
+            {
+                "passive id": "48", 
+                "reduced bb bc cost%": 20
+            }
+        ], 
+        "id": "810657", 
+        "name": "Blazing Heart"
+    }, 
+    "810658": {
+        "desc": "120% boost to Atk, Def, 100% boost to max HP of Fire types, 20% damage reduction from Fire, Earth types, probable considerable reduction of foes' BB gauge, considerably reduces BB gauge required for BB, 50% damage reduction from all elements for first 2 turns & enormously boosts ABP and CBP gain", 
+        "effects": [
+            {
+                "atk% buff": 120, 
+                "def% buff": 120, 
+                "elements buffed": [
+                    "fire"
+                ], 
+                "hp% buff": 100, 
+                "passive id": "2"
+            }, 
+            {
+                "dmg% mitigation for elemental attacks": 20.0, 
+                "mitigate earth attacks": true, 
+                "mitigate fire attacks": true, 
+                "passive id": "62"
+            }, 
+            {
+                "unknown passive id": "110", 
+                "unknown passive params": "0,0,50,50,35,0"
+            }, 
+            {
+                "passive id": "48", 
+                "reduced bb bc cost%": 30
+            }, 
+            {
+                "dmg% mitigation for elemental attacks": 50, 
+                "dmg% mitigation for elemental attacks buff for first x turns": 2, 
+                "mitigate dark attacks": true, 
+                "mitigate earth attacks": true, 
+                "mitigate fire attacks": true, 
+                "mitigate light attacks": true, 
+                "mitigate thunder attacks": true, 
+                "mitigate water attacks": true, 
+                "passive id": "63"
+            }, 
+            {
+                "abp gain%": 135, 
+                "cbp gain%": 60, 
+                "passive id": "112"
+            }
+        ], 
+        "id": "810658", 
+        "name": "Soul of the Ardent"
     }, 
     "811118": {
         "desc": "60% boost to Atk, max HP, 100% boost to Spark damage, boosts Spark damage for 2 turns when Sparks have exceeded certain amount & hugely boosts Fire and Water elemental damage ", 
