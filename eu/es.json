@@ -9250,6 +9250,29 @@
         "rarity": "1", 
         "target": "self"
     }, 
+    "20500": {
+        "desc": "「攻撃強化系」タイプのスフィアを装備時、攻撃力・防御力・回復力・最大ＨＰを２０％アップ", 
+        "effects": [
+            {
+                "atk% buff": 20, 
+                "conditions": [
+                    {
+                        "sphere category required": "Atk Boosting", 
+                        "sphere category required (raw)": "13"
+                    }
+                ], 
+                "def% buff": 20, 
+                "hp% buff": 20, 
+                "passive id": "1", 
+                "passive target": "self", 
+                "rec% buff": 20
+            }
+        ], 
+        "id": "20500", 
+        "name": "遙かなる因縁", 
+        "rarity": "1", 
+        "target": "self"
+    }, 
     "20700": {
         "desc": "Considerably boosts damage against status afflicted foes & damage taken may restore HP", 
         "effects": [
@@ -15444,6 +15467,261 @@
         "rarity": "1", 
         "target": "self"
     }, 
+    "46200": {
+        "desc": "30% boost to all parameters and 50% damage reduction for first 2 turns when Status Boost Type Sphere is equipped, probable slight foe BB gauge reduction & probable reduction of BB gauge fill rate for 2 turns", 
+        "effects": [
+            {
+                "atk% buff": 30, 
+                "conditions": [
+                    {
+                        "sphere category required": "BB Gauge", 
+                        "sphere category required (raw)": "6"
+                    }
+                ], 
+                "def% buff": 30, 
+                "hp% buff": 30, 
+                "passive id": "1", 
+                "passive target": "self", 
+                "rec% buff": 30
+            }, 
+            {
+                "conditions": [
+                    {
+                        "sphere category required": "BB Gauge", 
+                        "sphere category required (raw)": "6"
+                    }
+                ], 
+                "damage dealt threshold activation": 5000, 
+                "increase bb gauge": 7, 
+                "passive id": "81", 
+                "passive target": "self"
+            }, 
+            {
+                "atk% buff": 40, 
+                "bb gauge above % buff requirement": 50, 
+                "conditions": [], 
+                "def% buff": 40, 
+                "passive id": "30", 
+                "passive target": "self", 
+                "rec% buff": 40
+            }
+        ], 
+        "id": "46200", 
+        "name": "Unending Judgment", 
+        "rarity": "1", 
+        "target": "self"
+    }, 
+    "46300": {
+        "desc": "Boosts all parameters (40% self and 15% all) and boosts BB gauge (8 BC) when damage dealt has exceeded 5000 when BB Gauge Type Sphere is equipped & boosts ATK, DEF, REC (60%) when BB gauge is over 50%", 
+        "effects": [
+            {
+                "atk% buff": 40, 
+                "conditions": [
+                    {
+                        "sphere category required": "BB Gauge", 
+                        "sphere category required (raw)": "6"
+                    }
+                ], 
+                "def% buff": 40, 
+                "hp% buff": 40, 
+                "passive id": "1", 
+                "passive target": "self", 
+                "rec% buff": 40
+            }, 
+            {
+                "conditions": [
+                    {
+                        "sphere category required": "BB Gauge", 
+                        "sphere category required (raw)": "6"
+                    }
+                ], 
+                "damage dealt threshold activation": 5000, 
+                "increase bb gauge": 8, 
+                "passive id": "81", 
+                "passive target": "self"
+            }, 
+            {
+                "atk% buff": 60, 
+                "bb gauge above % buff requirement": 50, 
+                "conditions": [], 
+                "def% buff": 60, 
+                "passive id": "30", 
+                "passive target": "self", 
+                "rec% buff": 60
+            }, 
+            {
+                "atk% buff": 15, 
+                "conditions": [], 
+                "def% buff": 15, 
+                "hp% buff": 15, 
+                "passive id": "1", 
+                "passive target": "party", 
+                "rec% buff": 15
+            }
+        ], 
+        "id": "46300", 
+        "name": "Absolute Harmony", 
+        "rarity": "1", 
+        "target": "self"
+    }, 
+    "46400": {
+        "desc": "30% boost to all parameters and considerably boosts BB gauge when damage dealt has exceeded certain amount when BB Gauge Type Sphere is equipped & slightly boosts Atk, Def, Rec when BB gauge is over 50%", 
+        "effects": [
+            {
+                "atk% buff": 30, 
+                "conditions": [
+                    {
+                        "sphere category required": "Status Boost", 
+                        "sphere category required (raw)": "1"
+                    }
+                ], 
+                "def% buff": 30, 
+                "hp% buff": 30, 
+                "passive id": "1", 
+                "passive target": "self", 
+                "rec% buff": 30
+            }, 
+            {
+                "conditions": [
+                    {
+                        "sphere category required": "Status Boost", 
+                        "sphere category required (raw)": "1"
+                    }
+                ], 
+                "dmg% mitigation for elemental attacks": 50, 
+                "dmg% mitigation for elemental attacks buff for first x turns": 2, 
+                "mitigate dark attacks": true, 
+                "mitigate earth attacks": true, 
+                "mitigate fire attacks": true, 
+                "mitigate light attacks": true, 
+                "mitigate thunder attacks": true, 
+                "mitigate water attacks": true, 
+                "passive id": "63", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "passive target": "self", 
+                "unknown passive id": "110", 
+                "unknown passive params": "0,0,20,20,10,0"
+            }, 
+            {
+                "conditions": [], 
+                "passive target": "self", 
+                "unknown passive id": "109", 
+                "unknown passive params": "-30,50,1,0"
+            }
+        ], 
+        "id": "46400", 
+        "name": "Worthy of Immortality", 
+        "rarity": "1", 
+        "target": "self"
+    }, 
+    "46500": {
+        "desc": "Boosts all param. (40% self and 15% all) and damage reduction (50%) for first 2 turns when Status Boost Type Sphere is equipped & foe BB gauge reduction (30% chance reduce 20-30%) & probable reduction of BB gauge fill rate for 2 turns (50% chance 50%)", 
+        "effects": [
+            {
+                "atk% buff": 40, 
+                "conditions": [
+                    {
+                        "sphere category required": "Status Boost", 
+                        "sphere category required (raw)": "1"
+                    }
+                ], 
+                "def% buff": 40, 
+                "hp% buff": 40, 
+                "passive id": "1", 
+                "passive target": "self", 
+                "rec% buff": 40
+            }, 
+            {
+                "conditions": [
+                    {
+                        "sphere category required": "Status Boost", 
+                        "sphere category required (raw)": "1"
+                    }
+                ], 
+                "dmg% mitigation for elemental attacks": 50, 
+                "dmg% mitigation for elemental attacks buff for first x turns": 2, 
+                "mitigate dark attacks": true, 
+                "mitigate earth attacks": true, 
+                "mitigate fire attacks": true, 
+                "mitigate light attacks": true, 
+                "mitigate thunder attacks": true, 
+                "mitigate water attacks": true, 
+                "passive id": "63", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "passive target": "self", 
+                "unknown passive id": "110", 
+                "unknown passive params": "0,0,30,30,20,0"
+            }, 
+            {
+                "conditions": [], 
+                "passive target": "self", 
+                "unknown passive id": "109", 
+                "unknown passive params": "-50,50,1,0"
+            }, 
+            {
+                "atk% buff": 15, 
+                "conditions": [], 
+                "def% buff": 15, 
+                "hp% buff": 15, 
+                "passive id": "1", 
+                "passive target": "party", 
+                "rec% buff": 15
+            }
+        ], 
+        "id": "46500", 
+        "name": "Overwhelming Chaos", 
+        "rarity": "1", 
+        "target": "self"
+    }, 
+    "46900": {
+        "desc": "30% boost to all parameters and boosts Atk each turn (for up to 5 turns) when Atk Boost Type Sphere is equipped & 50% boost to Spark damage when HP is over 50%", 
+        "effects": [
+            {
+                "atk% buff": 30, 
+                "conditions": [
+                    {
+                        "sphere category required": "Atk Boosting", 
+                        "sphere category required (raw)": "13"
+                    }
+                ], 
+                "def% buff": 30, 
+                "hp% buff": 30, 
+                "passive id": "1", 
+                "passive target": "self", 
+                "rec% buff": 30
+            }, 
+            {
+                "atk% max buff": 80, 
+                "conditions": [
+                    {
+                        "sphere category required": "Atk Boosting", 
+                        "sphere category required (raw)": "13"
+                    }
+                ], 
+                "increase from min to max": 1, 
+                "passive id": "105", 
+                "passive target": "self", 
+                "turn count": 5
+            }, 
+            {
+                "conditions": [], 
+                "damage% for spark": 50, 
+                "hp above % buff requirement": 50, 
+                "passive id": "104", 
+                "passive target": "self"
+            }
+        ], 
+        "id": "46900", 
+        "name": "War Blade's Proof", 
+        "rarity": "1", 
+        "target": "self"
+    }, 
     "4700": {
         "desc": "Adds Dark element to BB/SBB for 3 turns & when Duel Fragment is equipped, 20% boost to all parameters", 
         "effects": [
@@ -15484,6 +15762,380 @@
         ], 
         "id": "4700", 
         "name": "Contemplating the Future", 
+        "rarity": "1", 
+        "target": "self"
+    }, 
+    "47000": {
+        "desc": "Boosts all parameters (40% self and 15% all) and boosts ATK each turn (for up to 5 turns, 100% ATK max) when ATK boost sphere type is equipped & boosts Spark damage (150%) when HP is over 50%", 
+        "effects": [
+            {
+                "atk% buff": 40, 
+                "conditions": [
+                    {
+                        "sphere category required": "Atk Boosting", 
+                        "sphere category required (raw)": "13"
+                    }
+                ], 
+                "def% buff": 40, 
+                "hp% buff": 40, 
+                "passive id": "1", 
+                "passive target": "self", 
+                "rec% buff": 40
+            }, 
+            {
+                "atk% max buff": 100, 
+                "conditions": [
+                    {
+                        "sphere category required": "Atk Boosting", 
+                        "sphere category required (raw)": "13"
+                    }
+                ], 
+                "increase from min to max": 1, 
+                "passive id": "105", 
+                "passive target": "self", 
+                "turn count": 5
+            }, 
+            {
+                "conditions": [], 
+                "damage% for spark": 150, 
+                "hp above % buff requirement": 50, 
+                "passive id": "104", 
+                "passive target": "self"
+            }, 
+            {
+                "atk% buff": 15, 
+                "conditions": [], 
+                "def% buff": 15, 
+                "hp% buff": 15, 
+                "passive id": "1", 
+                "passive target": "party", 
+                "rec% buff": 15
+            }
+        ], 
+        "id": "47000", 
+        "name": "Ultimate War", 
+        "rarity": "1", 
+        "target": "self"
+    }, 
+    "47100": {
+        "desc": "30% boost to all parameters and low probability of enormous damage reduction when Damage Reducing Type Sphere is equipped & boosts BB and SBB activation rates", 
+        "effects": [
+            {
+                "atk% buff": 30, 
+                "conditions": [
+                    {
+                        "sphere category required": "Damage Reducing", 
+                        "sphere category required (raw)": "10"
+                    }
+                ], 
+                "def% buff": 30, 
+                "hp% buff": 30, 
+                "passive id": "1", 
+                "passive target": "self", 
+                "rec% buff": 30
+            }, 
+            {
+                "conditions": [
+                    {
+                        "sphere category required": "Damage Reducing", 
+                        "sphere category required (raw)": "10"
+                    }
+                ], 
+                "passive id": "43", 
+                "passive target": "self", 
+                "take 1 dmg%": 5
+            }, 
+            {
+                "conditions": [], 
+                "increase skill activation in arena%": 10, 
+                "passive id": "111", 
+                "passive target": "self"
+            }
+        ], 
+        "id": "47100", 
+        "name": "Prayers Within a Gem", 
+        "rarity": "1", 
+        "target": "self"
+    }, 
+    "47200": {
+        "desc": "Boosts all parameters (40% self and 15% all) and probable damage reduction to 1 (10% chance, all) when damage reducing type sphere is equipped & boosts BB and SBB activation rates", 
+        "effects": [
+            {
+                "atk% buff": 40, 
+                "conditions": [
+                    {
+                        "sphere category required": "Damage Reducing", 
+                        "sphere category required (raw)": "10"
+                    }
+                ], 
+                "def% buff": 40, 
+                "hp% buff": 40, 
+                "passive id": "1", 
+                "passive target": "self", 
+                "rec% buff": 40
+            }, 
+            {
+                "conditions": [
+                    {
+                        "sphere category required": "Damage Reducing", 
+                        "sphere category required (raw)": "10"
+                    }
+                ], 
+                "passive id": "43", 
+                "passive target": "party", 
+                "take 1 dmg%": 10
+            }, 
+            {
+                "conditions": [], 
+                "increase skill activation in arena%": 30, 
+                "passive id": "111", 
+                "passive target": "self"
+            }, 
+            {
+                "atk% buff": 15, 
+                "conditions": [], 
+                "def% buff": 15, 
+                "hp% buff": 15, 
+                "passive id": "1", 
+                "passive target": "party", 
+                "rec% buff": 15
+            }
+        ], 
+        "id": "47200", 
+        "name": "A Beacon for the Future", 
+        "rarity": "1", 
+        "target": "self"
+    }, 
+    "47500": {
+        "desc": "「ＨＰ回復系」タイプのスフィアを装備時、攻撃力・防御力・回復力・最大ＨＰを３０％アップ・被ダメージが一定数を超える度に低確率で一度だけ戦闘不能を耐える効果を付与＆確率で１回まで戦闘不能を耐える", 
+        "effects": [
+            {
+                "atk% buff": 30, 
+                "conditions": [
+                    {
+                        "sphere category required": "HP Recovery", 
+                        "sphere category required (raw)": "7"
+                    }
+                ], 
+                "def% buff": 30, 
+                "hp% buff": 30, 
+                "passive id": "1", 
+                "passive target": "self", 
+                "rec% buff": 30
+            }, 
+            {
+                "buff": {
+                    "buff turns (91)": "-1", 
+                    "unknown buff id": "91", 
+                    "unknown buff params": "20&0"
+                }, 
+                "conditions": [
+                    {
+                        "sphere category required": "HP Recovery", 
+                        "sphere category required (raw)": "7"
+                    }
+                ], 
+                "damage threshold buff activation": 200000, 
+                "passive id": "78", 
+                "passive target": "self"
+            }, 
+            {
+                "angel idol chance% condition": 0, 
+                "angel idol recover chance% high": 60, 
+                "angel idol recover chance% low": 60, 
+                "angel idol recover counts": 1, 
+                "conditions": [], 
+                "passive id": "69", 
+                "passive target": "self"
+            }
+        ], 
+        "id": "47500", 
+        "name": "輪廻の裁定者", 
+        "rarity": "1", 
+        "target": "self"
+    }, 
+    "47600": {
+        "desc": "「ＨＰ回復系」タイプのスフィアを装備時、攻撃力・防御力・回復力・最大ＨＰを４０％アップ・被ダメージが一定数を超える度に低確率で一度だけ戦闘不能を耐える効果を付与＆確率で１回まで戦闘不能を耐える", 
+        "effects": [
+            {
+                "atk% buff": 40, 
+                "conditions": [
+                    {
+                        "sphere category required": "HP Recovery", 
+                        "sphere category required (raw)": "7"
+                    }
+                ], 
+                "def% buff": 40, 
+                "hp% buff": 40, 
+                "passive id": "1", 
+                "passive target": "self", 
+                "rec% buff": 40
+            }, 
+            {
+                "buff": {
+                    "buff turns (91)": "-1", 
+                    "unknown buff id": "91", 
+                    "unknown buff params": "30&0"
+                }, 
+                "conditions": [
+                    {
+                        "sphere category required": "HP Recovery", 
+                        "sphere category required (raw)": "7"
+                    }
+                ], 
+                "damage threshold buff activation": 200000, 
+                "passive id": "78", 
+                "passive target": "self"
+            }, 
+            {
+                "angel idol chance% condition": 0, 
+                "angel idol recover chance% high": 80, 
+                "angel idol recover chance% low": 80, 
+                "angel idol recover counts": 1, 
+                "conditions": [], 
+                "passive id": "69", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "passive id": "66", 
+                "passive target": "self", 
+                "trigger on bb": true, 
+                "trigger on sbb": true, 
+                "triggered effect": [
+                    {
+                        "angel idol buff turns (91)": 999, 
+                        "angel idol recover chance%": 10, 
+                        "angel idol recover hp%": 1, 
+                        "effect delay time(ms)/frame": "0.0/0", 
+                        "proc id": "56", 
+                        "target area": "aoe", 
+                        "target type": "party"
+                    }
+                ]
+            }, 
+            {
+                "atk% buff": 15, 
+                "conditions": [
+                    {
+                        "sphere category required": "HP Recovery", 
+                        "sphere category required (raw)": "7"
+                    }
+                ], 
+                "def% buff": 15, 
+                "hp% buff": 15, 
+                "passive id": "1", 
+                "passive target": "party", 
+                "rec% buff": 15
+            }
+        ], 
+        "id": "47600", 
+        "name": "唯一つの存在意義", 
+        "rarity": "1", 
+        "target": "self"
+    }, 
+    "47700": {
+        "desc": "「ステータス強化系」タイプのスフィアを装備時、攻撃力・防御力・回復力・最大ＨＰを３０％アップ・全てのユニットの攻撃力・防御力・回復力・最大ＨＰを１０％アップ＆ＯＤゲージの増加量を大幅にアップ", 
+        "effects": [
+            {
+                "atk% buff": 30, 
+                "conditions": [
+                    {
+                        "sphere category required": "Status Boost", 
+                        "sphere category required (raw)": "1"
+                    }
+                ], 
+                "def% buff": 30, 
+                "hp% buff": 30, 
+                "passive id": "1", 
+                "passive target": "self", 
+                "rec% buff": 30
+            }, 
+            {
+                "atk% buff": 10, 
+                "conditions": [], 
+                "def% buff": 10, 
+                "hp% buff": 10, 
+                "passive id": "1", 
+                "passive target": "party", 
+                "rec% buff": 10
+            }, 
+            {
+                "conditions": [], 
+                "od fill rate%": 30, 
+                "passive id": "70", 
+                "passive target": "self"
+            }
+        ], 
+        "id": "47700", 
+        "name": "必然たる終焉", 
+        "rarity": "1", 
+        "target": "self"
+    }, 
+    "47800": {
+        "desc": "「ステータス強化系」タイプのスフィアを装備時、攻撃力・防御力・回復力・最大ＨＰを４０％アップ・全てのユニットの攻撃力・防御力・回復力・最大ＨＰを１５％アップ＆ＯＤゲージの増加量を超絶アップ", 
+        "effects": [
+            {
+                "atk% buff": 40, 
+                "conditions": [
+                    {
+                        "sphere category required": "Status Boost", 
+                        "sphere category required (raw)": "1"
+                    }
+                ], 
+                "def% buff": 40, 
+                "hp% buff": 40, 
+                "passive id": "1", 
+                "passive target": "self", 
+                "rec% buff": 40
+            }, 
+            {
+                "atk% buff": 15, 
+                "conditions": [
+                    {
+                        "sphere category required": "Status Boost", 
+                        "sphere category required (raw)": "1"
+                    }
+                ], 
+                "def% buff": 15, 
+                "hp% buff": 15, 
+                "passive id": "1", 
+                "passive target": "party", 
+                "rec% buff": 15
+            }, 
+            {
+                "conditions": [], 
+                "od fill rate%": 50, 
+                "passive id": "70", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "passive id": "48", 
+                "passive target": "party", 
+                "reduced bb bc cost%": 5
+            }, 
+            {
+                "conditions": [], 
+                "passive id": "66", 
+                "passive target": "self", 
+                "trigger on bb": true, 
+                "trigger on sbb": true, 
+                "triggered effect": [
+                    {
+                        "effect delay time(ms)/frame": "0.0/0", 
+                        "proc id": "58", 
+                        "spark dmg received apply%": 100, 
+                        "spark dmg received debuff turns (94)": 2, 
+                        "spark dmg% received": 30, 
+                        "target area": "single", 
+                        "target type": "enemy"
+                    }
+                ]
+            }
+        ], 
+        "id": "47800", 
+        "name": "理を超えた創造", 
         "rarity": "1", 
         "target": "self"
     }, 
@@ -19160,6 +19812,64 @@
         "id": "7300", 
         "name": "Furious Dragon Roar", 
         "rarity": "1", 
+        "target": "self"
+    }, 
+    "730137": {
+        "desc": "Increase damage received (20%, all) & boosts critical, Spark and elemental damage (30%, all) & adds critical hit rate boost (60%) for 3 turns effect to BB/SBB/UBB", 
+        "effects": [
+            {
+                "conditions": [], 
+                "dmg% mitigation": 20, 
+                "passive id": "8", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "crit multiplier%": 30.0, 
+                "passive id": "34", 
+                "passive target": "party"
+            }, 
+            {
+                "conditions": [], 
+                "damage% for spark": 30, 
+                "passive id": "31", 
+                "passive target": "party"
+            }, 
+            {
+                "conditions": [], 
+                "dark units do extra elemental weakness dmg": true, 
+                "earth units do extra elemental weakness dmg": true, 
+                "elemental weakness multiplier%": 30.0, 
+                "fire units do extra elemental weakness dmg": true, 
+                "light units do extra elemental weakness dmg": true, 
+                "passive id": "50", 
+                "passive target": "party", 
+                "thunder units do extra elemental weakness dmg": true, 
+                "water units do extra elemental weakness dmg": true
+            }, 
+            {
+                "conditions": [], 
+                "passive id": "66", 
+                "passive target": "self", 
+                "trigger on bb": true, 
+                "trigger on sbb": true, 
+                "trigger on ubb": true, 
+                "triggered effect": [
+                    {
+                        "buff turns": 3, 
+                        "crit% buff (7)": 60, 
+                        "effect delay time(ms)/frame": "0.0/0", 
+                        "element buffed": "all", 
+                        "proc id": "5", 
+                        "target area": "aoe", 
+                        "target type": "party"
+                    }
+                ]
+            }
+        ], 
+        "id": "730137", 
+        "name": "Divine Berserker", 
+        "rarity": "0", 
         "target": "self"
     }, 
     "730146": {
@@ -24125,6 +24835,67 @@
         "rarity": "1", 
         "target": "self"
     }, 
+    "810438": {
+        "desc": "Damage reduction (25%) for 2 turns when HP is below 50% & damage taken boosts BB gauge (3-4 BC self and 1-2 BC all) & damage reduction (5%, all) & adds damage taken boosts BB gauge (6-10 BC) for 3 turns effect to BB/SBB", 
+        "effects": [
+            {
+                "buff": {
+                    "buff turns (36)": "1", 
+                    "dmg reduction% buff": 25
+                }, 
+                "conditions": [], 
+                "hp below % buff activation": 50, 
+                "passive id": "55", 
+                "passive target": "self"
+            }, 
+            {
+                "bc fill when attacked high": 4, 
+                "bc fill when attacked low": 3, 
+                "bc fill when attacked%": 100, 
+                "conditions": [], 
+                "passive id": "25", 
+                "passive target": "self"
+            }, 
+            {
+                "bc fill when attacked high": 2, 
+                "bc fill when attacked low": 1, 
+                "bc fill when attacked%": 100, 
+                "conditions": [], 
+                "passive id": "25", 
+                "passive target": "party"
+            }, 
+            {
+                "conditions": [], 
+                "dmg reduction chance%": 100, 
+                "dmg reduction%": 5, 
+                "passive id": "14", 
+                "passive target": "party"
+            }, 
+            {
+                "conditions": [], 
+                "passive id": "66", 
+                "passive target": "self", 
+                "trigger on bb": true, 
+                "trigger on sbb": true, 
+                "triggered effect": [
+                    {
+                        "bc fill when attacked high": 10, 
+                        "bc fill when attacked low": 6, 
+                        "bc fill when attacked turns (38)": 3, 
+                        "bc fill when attacked%": 100, 
+                        "effect delay time(ms)/frame": "0.0/0", 
+                        "proc id": "20", 
+                        "target area": "aoe", 
+                        "target type": "party"
+                    }
+                ]
+            }
+        ], 
+        "id": "810438", 
+        "name": "Ouroburos Shattered", 
+        "rarity": "1", 
+        "target": "self"
+    }, 
     "810508": {
         "desc": "Damage taken may restore HP (25% chance 25-30%) & adds resistance against 1 KO attack when HP is below 20% & adds damage reduction (15%) from Fire, Water, Earth, Thunder types for 1 turn effect to BB/SBB", 
         "effects": [
@@ -24302,6 +25073,135 @@
         "id": "810548", 
         "name": "True Dragon Force", 
         "rarity": "1", 
+        "target": "self"
+    }, 
+    "810587": {
+        "desc": "15% boost to all parameters when All Might is in the same Squad, boosts Atk relative to remaining HP and boosts Fire elemental damage when Grenadier Bracers is equipped, boosts critical damage & 40% additional damage reduction", 
+        "effects": [
+            {
+                "atk% buff": 15, 
+                "conditions": [
+                    {
+                        "unit required": "850580"
+                    }
+                ], 
+                "def% buff": 15, 
+                "hp% buff": 15, 
+                "passive id": "1", 
+                "passive target": "self", 
+                "rec% buff": 15
+            }, 
+            {
+                "atk% base buff": 0, 
+                "atk% extra buff based on hp": 80, 
+                "buff proportional to hp": "remaining", 
+                "conditions": [
+                    {
+                        "item required": [
+                            "819168"
+                        ]
+                    }
+                ], 
+                "passive id": "46", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [
+                    {
+                        "item required": [
+                            "819168"
+                        ]
+                    }
+                ], 
+                "elemental weakness multiplier%": 100.0, 
+                "fire units do extra elemental weakness dmg": true, 
+                "passive id": "50", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "crit multiplier%": 100.0, 
+                "passive id": "34", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "passive target": "self", 
+                "unknown passive id": "127", 
+                "unknown passive params": "100,40"
+            }
+        ], 
+        "id": "810587", 
+        "name": "Fiery Temper", 
+        "rarity": "7", 
+        "target": "self"
+    }, 
+    "810588": {
+        "desc": "20% boost to all param. when All Might is in the same Squad, boosts Atk relative to remaining HP and boosts Fire elemental dmg when Grenadier Bracers is equipped, boosts Atk critical hit rate for all allies, boosts critical dmg & 50% add. dmg reduction", 
+        "effects": [
+            {
+                "atk% buff": 20, 
+                "conditions": [
+                    {
+                        "unit required": "850580"
+                    }
+                ], 
+                "def% buff": 20, 
+                "hp% buff": 20, 
+                "passive id": "1", 
+                "passive target": "self", 
+                "rec% buff": 20
+            }, 
+            {
+                "atk% base buff": 0, 
+                "atk% extra buff based on hp": 100, 
+                "buff proportional to hp": "remaining", 
+                "conditions": [
+                    {
+                        "item required": [
+                            "819168"
+                        ]
+                    }
+                ], 
+                "passive id": "46", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [
+                    {
+                        "item required": [
+                            "819168"
+                        ]
+                    }
+                ], 
+                "elemental weakness multiplier%": 100.0, 
+                "fire units do extra elemental weakness dmg": true, 
+                "passive id": "50", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "crit multiplier%": 100.0, 
+                "passive id": "34", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "passive target": "self", 
+                "unknown passive id": "127", 
+                "unknown passive params": "100,50"
+            }, 
+            {
+                "atk% buff": 50, 
+                "conditions": [], 
+                "crit% buff": 15, 
+                "passive id": "1", 
+                "passive target": "party"
+            }
+        ], 
+        "id": "810588", 
+        "name": "Destructive Hero", 
+        "rarity": "7", 
         "target": "self"
     }, 
     "8200": {
@@ -24981,6 +25881,146 @@
         "rarity": "1", 
         "target": "self"
     }, 
+    "820587": {
+        "desc": "Boosts damage against status afflicted foes (all) when Ochaco Uraraka is in the same Squad, 15% boost to all parameters when All Might is in the same Squad, negates all status ailments (all) & restores HP for 3 turns when guarding (all)", 
+        "effects": [
+            {
+                "atk% buff when enemy has ailment": 50, 
+                "atk% buff when enemy has curse": true, 
+                "atk% buff when enemy has injury": true, 
+                "atk% buff when enemy has paralysis": true, 
+                "atk% buff when enemy has poison": true, 
+                "atk% buff when enemy has sick": true, 
+                "atk% buff when enemy has weaken": true, 
+                "conditions": [
+                    {
+                        "unit required": "830580"
+                    }
+                ], 
+                "passive id": "74", 
+                "passive target": "party"
+            }, 
+            {
+                "atk% buff": 15, 
+                "conditions": [
+                    {
+                        "unit required": "850580"
+                    }
+                ], 
+                "def% buff": 15, 
+                "hp% buff": 15, 
+                "passive id": "1", 
+                "passive target": "self", 
+                "rec% buff": 15
+            }, 
+            {
+                "conditions": [], 
+                "curse resist%": 100, 
+                "injury resist%": 100, 
+                "paralysis resist%": 100, 
+                "passive id": "73", 
+                "passive target": "party", 
+                "poison resist%": 100, 
+                "sick resist%": 100, 
+                "weaken resist%": 100
+            }, 
+            {
+                "buff": {
+                    "buff turns (8)": "3", 
+                    "gradual heal high": 4000, 
+                    "gradual heal low": 3500
+                }, 
+                "conditions": [], 
+                "on guard activation chance%": 100, 
+                "passive id": "88", 
+                "passive target": "party"
+            }
+        ], 
+        "id": "820587", 
+        "name": "Leap of Faith", 
+        "rarity": "7", 
+        "target": "self"
+    }, 
+    "820588": {
+        "desc": "Boosts damage against afflicted foes (all) when Ochaco Uraraka in same Squad, 20% boost to all param. when All Might in same Squad, negates all status ailments (all), restores HP for 3 turns when guarding (all) & adds Water barrier effect to BB/SBB", 
+        "effects": [
+            {
+                "atk% buff when enemy has ailment": 50, 
+                "atk% buff when enemy has curse": true, 
+                "atk% buff when enemy has injury": true, 
+                "atk% buff when enemy has paralysis": true, 
+                "atk% buff when enemy has poison": true, 
+                "atk% buff when enemy has sick": true, 
+                "atk% buff when enemy has weaken": true, 
+                "conditions": [
+                    {
+                        "unit required": "830580"
+                    }
+                ], 
+                "passive id": "74", 
+                "passive target": "party"
+            }, 
+            {
+                "atk% buff": 20, 
+                "conditions": [
+                    {
+                        "unit required": "850580"
+                    }
+                ], 
+                "def% buff": 20, 
+                "hp% buff": 20, 
+                "passive id": "1", 
+                "passive target": "self", 
+                "rec% buff": 20
+            }, 
+            {
+                "conditions": [], 
+                "curse resist%": 100, 
+                "injury resist%": 100, 
+                "paralysis resist%": 100, 
+                "passive id": "73", 
+                "passive target": "party", 
+                "poison resist%": 100, 
+                "sick resist%": 100, 
+                "weaken resist%": 100
+            }, 
+            {
+                "buff": {
+                    "buff turns (8)": "3", 
+                    "gradual heal high": 5000, 
+                    "gradual heal low": 4000
+                }, 
+                "conditions": [], 
+                "on guard activation chance%": 100, 
+                "passive id": "88", 
+                "passive target": "party"
+            }, 
+            {
+                "conditions": [], 
+                "passive id": "66", 
+                "passive target": "self", 
+                "trigger on bb": true, 
+                "trigger on sbb": true, 
+                "trigger on ubb": true, 
+                "triggered effect": [
+                    {
+                        "effect delay time(ms)/frame": "0.0/0", 
+                        "elemental barrier absorb dmg%": 100, 
+                        "elemental barrier def": 0, 
+                        "elemental barrier element": "water", 
+                        "elemental barrier hp": 6000, 
+                        "proc id": "62", 
+                        "target area": "aoe", 
+                        "target type": "party"
+                    }
+                ]
+            }
+        ], 
+        "id": "820588", 
+        "name": "Frog", 
+        "rarity": "7", 
+        "target": "self"
+    }, 
     "8300": {
         "desc": "Boosts BB Atk when damage taken has exceeded certain amount for 2 turns", 
         "effects": [
@@ -25460,6 +26500,76 @@
         "rarity": "1", 
         "target": "self"
     }, 
+    "830438": {
+        "desc": "Boosts elemental damage (100%) & damage taken may restore HP (20% chance 20-25%, all) & probable resistance against 1 KO attack (70%) & adds probable evasion (20% chance) effect to BB/SBB and 5 combo Earth attack on single foe to SBB", 
+        "effects": [
+            {
+                "conditions": [], 
+                "dark units do extra elemental weakness dmg": true, 
+                "earth units do extra elemental weakness dmg": true, 
+                "elemental weakness multiplier%": 100.0, 
+                "fire units do extra elemental weakness dmg": true, 
+                "light units do extra elemental weakness dmg": true, 
+                "passive id": "50", 
+                "passive target": "self", 
+                "thunder units do extra elemental weakness dmg": true, 
+                "water units do extra elemental weakness dmg": true
+            }, 
+            {
+                "conditions": [], 
+                "dmg% to hp% when attacked chance%": 20, 
+                "dmg% to hp% when attacked high": 25, 
+                "dmg% to hp% when attacked low": 20, 
+                "passive id": "24", 
+                "passive target": "party"
+            }, 
+            {
+                "angel idol chance% condition": 0, 
+                "angel idol recover chance% high": 70, 
+                "angel idol recover chance% low": 70, 
+                "angel idol recover counts": 1, 
+                "conditions": [], 
+                "passive id": "69", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "passive id": "66", 
+                "passive target": "self", 
+                "trigger on bb": true, 
+                "trigger on sbb": true, 
+                "triggered effect": [
+                    {
+                        "effect delay time(ms)/frame": "0.0/0", 
+                        "target area": "aoe", 
+                        "target type": "party", 
+                        "unknown proc id": "10007", 
+                        "unknown proc param": "100,1,0,20"
+                    }
+                ]
+            }, 
+            {
+                "conditions": [], 
+                "passive id": "66", 
+                "passive target": "self", 
+                "trigger on sbb": true, 
+                "triggered effect": [
+                    {
+                        "bb atk%": 850, 
+                        "bb flat atk": 100, 
+                        "effect delay time(ms)/frame": "0.0/0", 
+                        "proc id": "1", 
+                        "target area": "single", 
+                        "target type": "enemy"
+                    }
+                ]
+            }
+        ], 
+        "id": "830438", 
+        "name": "Viridarium Umbrae", 
+        "rarity": "1", 
+        "target": "self"
+    }, 
     "830518": {
         "desc": "Negates elemental damage, greatly boosts Spark damage for 2 turns when BC collected has exceeded certain amount & slight damage reduction for 2 turns when HC collected has exceeded certain amount", 
         "effects": [
@@ -25494,6 +26604,129 @@
         "id": "830518", 
         "name": "One Heart One Soul", 
         "rarity": "1", 
+        "target": "self"
+    }, 
+    "830587": {
+        "desc": "10% boost to all parameters (all), boosts Earth elemental damage, 15% boost to all parameters of Female types when Tsuyu Asui is in the same squad & 15% boost to all parameters when All Might is in the same squad", 
+        "effects": [
+            {
+                "atk% buff": 15, 
+                "conditions": [
+                    {
+                        "unit required": "820580"
+                    }
+                ], 
+                "def% buff": 15, 
+                "gender required": "female", 
+                "hp% buff": 15, 
+                "passive id": "42", 
+                "passive target": "party", 
+                "rec% buff": 15
+            }, 
+            {
+                "atk% buff": 15, 
+                "conditions": [
+                    {
+                        "unit required": "850580"
+                    }
+                ], 
+                "def% buff": 15, 
+                "hp% buff": 15, 
+                "passive id": "1", 
+                "passive target": "self", 
+                "rec% buff": 15
+            }, 
+            {
+                "atk% buff": 10, 
+                "conditions": [], 
+                "def% buff": 10, 
+                "hp% buff": 10, 
+                "passive id": "1", 
+                "passive target": "party", 
+                "rec% buff": 10
+            }, 
+            {
+                "conditions": [], 
+                "elemental weakness multiplier%": 100.0, 
+                "passive id": "50", 
+                "passive target": "self", 
+                "thunder units do extra elemental weakness dmg": true
+            }
+        ], 
+        "id": "830587", 
+        "name": "Will of Steel", 
+        "rarity": "7", 
+        "target": "self"
+    }, 
+    "830588": {
+        "desc": "15% boost to all parameters (all), boosts Earth elemental damage, adds Earth barrier effect to BB/SBB, 20% boost to all parameters of Female types when Tsuyu Asui is in the same squad & 20% boost to all parameters when All Might is in the same squad", 
+        "effects": [
+            {
+                "atk% buff": 20, 
+                "conditions": [
+                    {
+                        "unit required": "820580"
+                    }
+                ], 
+                "def% buff": 20, 
+                "gender required": "female", 
+                "hp% buff": 20, 
+                "passive id": "42", 
+                "passive target": "party", 
+                "rec% buff": 20
+            }, 
+            {
+                "atk% buff": 20, 
+                "conditions": [
+                    {
+                        "unit required": "850580"
+                    }
+                ], 
+                "def% buff": 20, 
+                "hp% buff": 20, 
+                "passive id": "1", 
+                "passive target": "self", 
+                "rec% buff": 20
+            }, 
+            {
+                "atk% buff": 15, 
+                "conditions": [], 
+                "def% buff": 15, 
+                "hp% buff": 15, 
+                "passive id": "1", 
+                "passive target": "party", 
+                "rec% buff": 15
+            }, 
+            {
+                "conditions": [], 
+                "elemental weakness multiplier%": 100.0, 
+                "passive id": "50", 
+                "passive target": "self", 
+                "thunder units do extra elemental weakness dmg": true
+            }, 
+            {
+                "conditions": [], 
+                "passive id": "66", 
+                "passive target": "self", 
+                "trigger on bb": true, 
+                "trigger on sbb": true, 
+                "triggered effect": [
+                    {
+                        "effect delay time(ms)/frame": "0.0/0", 
+                        "elemental barrier absorb dmg%": 100, 
+                        "elemental barrier def": 0, 
+                        "elemental barrier element": "earth", 
+                        "elemental barrier hp": 5000, 
+                        "proc id": "62", 
+                        "target area": "aoe", 
+                        "target type": "party"
+                    }
+                ]
+            }
+        ], 
+        "id": "830588", 
+        "name": "Zero Gravity", 
+        "rarity": "7", 
         "target": "self"
     }, 
     "8400": {
@@ -26124,6 +27357,137 @@
         "id": "840548", 
         "name": "Titania", 
         "rarity": "1", 
+        "target": "self"
+    }, 
+    "840587": {
+        "desc": "15% to all parameters when All Might is in the same squad, boosts Spark damage and adds Def ignoring effect to attack (all) when Deku's Face Mask is equipped, boosts critical damage & probable resistance against 2 KO attacks", 
+        "effects": [
+            {
+                "atk% buff": 15, 
+                "conditions": [
+                    {
+                        "unit required": "850580"
+                    }
+                ], 
+                "def% buff": 15, 
+                "hp% buff": 15, 
+                "passive id": "1", 
+                "passive target": "self", 
+                "rec% buff": 15
+            }, 
+            {
+                "conditions": [
+                    {
+                        "item required": [
+                            "819167"
+                        ]
+                    }
+                ], 
+                "damage% for spark": 80, 
+                "passive id": "31", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [
+                    {
+                        "item required": [
+                            "819167"
+                        ]
+                    }
+                ], 
+                "ignore def%": 100, 
+                "passive id": "29", 
+                "passive target": "party"
+            }, 
+            {
+                "conditions": [], 
+                "crit multiplier%": 100.0, 
+                "passive id": "34", 
+                "passive target": "self"
+            }, 
+            {
+                "angel idol chance% condition": 0, 
+                "angel idol recover chance% high": 40, 
+                "angel idol recover chance% low": 40, 
+                "angel idol recover counts": 2, 
+                "conditions": [], 
+                "passive id": "69", 
+                "passive target": "self"
+            }
+        ], 
+        "id": "840587", 
+        "name": "No Retreating", 
+        "rarity": "7", 
+        "target": "self"
+    }, 
+    "840588": {
+        "desc": "Boosts critical damage, prob. resistance against 2 KO attacks, boosts Atk, Def each turn (up to 4 turns), 20% boost to all param. when All Might is in the same squad & boosts Spark damage and adds Def ignore effect (all) when Deku's Face Mask is equipped", 
+        "effects": [
+            {
+                "atk% buff": 20, 
+                "conditions": [
+                    {
+                        "unit required": "850580"
+                    }
+                ], 
+                "def% buff": 20, 
+                "hp% buff": 20, 
+                "passive id": "1", 
+                "passive target": "self", 
+                "rec% buff": 20
+            }, 
+            {
+                "conditions": [
+                    {
+                        "item required": [
+                            "819167"
+                        ]
+                    }
+                ], 
+                "damage% for spark": 100, 
+                "passive id": "31", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [
+                    {
+                        "item required": [
+                            "819167"
+                        ]
+                    }
+                ], 
+                "ignore def%": 100, 
+                "passive id": "29", 
+                "passive target": "party"
+            }, 
+            {
+                "conditions": [], 
+                "crit multiplier%": 100.0, 
+                "passive id": "34", 
+                "passive target": "self"
+            }, 
+            {
+                "angel idol chance% condition": 0, 
+                "angel idol recover chance% high": 40, 
+                "angel idol recover chance% low": 40, 
+                "angel idol recover counts": 2, 
+                "conditions": [], 
+                "passive id": "69", 
+                "passive target": "self"
+            }, 
+            {
+                "atk% max buff": 60, 
+                "conditions": [], 
+                "def% max buff": 60, 
+                "increase from min to max": 1, 
+                "passive id": "105", 
+                "passive target": "self", 
+                "turn count": 4
+            }
+        ], 
+        "id": "840588", 
+        "name": "One For All", 
+        "rarity": "7", 
         "target": "self"
     }, 
     "8500": {
@@ -27157,6 +28521,66 @@
         "rarity": "1", 
         "target": "self"
     }, 
+    "850588": {
+        "desc": "40% boost to all parameters and 10% damage reduction when All Might's Cape is equipped, boosts Atk, Def each turn (up to 4 turns) for all allies, boosts critical damage & probable resistance against 2 KO attacks", 
+        "effects": [
+            {
+                "conditions": [
+                    {
+                        "item required": [
+                            "819169"
+                        ]
+                    }
+                ], 
+                "dmg% mitigation": 10, 
+                "passive id": "8", 
+                "passive target": "self"
+            }, 
+            {
+                "atk% buff": 40, 
+                "conditions": [
+                    {
+                        "item required": [
+                            "819169"
+                        ]
+                    }
+                ], 
+                "def% buff": 40, 
+                "hp% buff": 40, 
+                "passive id": "1", 
+                "passive target": "self", 
+                "rec% buff": 40
+            }, 
+            {
+                "conditions": [], 
+                "crit multiplier%": 100.0, 
+                "passive id": "34", 
+                "passive target": "self"
+            }, 
+            {
+                "angel idol chance% condition": 0, 
+                "angel idol recover chance% high": 40, 
+                "angel idol recover chance% low": 40, 
+                "angel idol recover counts": 2, 
+                "conditions": [], 
+                "passive id": "69", 
+                "passive target": "self"
+            }, 
+            {
+                "atk% max buff": 60, 
+                "conditions": [], 
+                "def% max buff": 60, 
+                "increase from min to max": 1, 
+                "passive id": "105", 
+                "passive target": "party", 
+                "turn count": 4
+            }
+        ], 
+        "id": "850588", 
+        "name": "One For All", 
+        "rarity": "7", 
+        "target": "self"
+    }, 
     "850977": {
         "desc": "Negates critical damage & negates Def ignoring effects", 
         "effects": [
@@ -27610,6 +29034,58 @@
         "id": "860378", 
         "name": "Black & White Lucifero", 
         "rarity": "1", 
+        "target": "self"
+    }, 
+    "860418": {
+        "desc": "Boosts DEF relative to lost HP (0-150%) & restores HP each turn (all) & negates ATK, DEF, REC reduction effects (all) & adds damage taken boosts BB gauge (5-9 BC) for 3 turns effect to BB/SBB", 
+        "effects": [
+            {
+                "buff proportional to hp": "lost", 
+                "conditions": [], 
+                "def% base buff": 0, 
+                "def% extra buff based on hp": 150, 
+                "passive id": "46", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "passive id": "33", 
+                "passive target": "party", 
+                "rec% added (turn heal)": 20.0, 
+                "turn heal high": 1500, 
+                "turn heal low": 1000
+            }, 
+            {
+                "atk down resist%": 100, 
+                "conditions": [], 
+                "def down resist%": 100, 
+                "passive id": "73", 
+                "passive target": "party", 
+                "rec down resist%": 100
+            }, 
+            {
+                "conditions": [], 
+                "passive id": "66", 
+                "passive target": "self", 
+                "trigger on bb": true, 
+                "trigger on sbb": true, 
+                "triggered effect": [
+                    {
+                        "bc fill when attacked high": 9, 
+                        "bc fill when attacked low": 5, 
+                        "bc fill when attacked turns (38)": 3, 
+                        "bc fill when attacked%": 100, 
+                        "effect delay time(ms)/frame": "0.0/0", 
+                        "proc id": "20", 
+                        "target area": "aoe", 
+                        "target type": "party"
+                    }
+                ]
+            }
+        ], 
+        "id": "860418", 
+        "name": "Web of Shattered Deceptions", 
+        "rarity": "0", 
         "target": "self"
     }, 
     "860428": {
