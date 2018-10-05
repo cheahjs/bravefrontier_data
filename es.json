@@ -21690,6 +21690,65 @@
         "rarity": "1", 
         "target": "self"
     }, 
+    "740237": {
+        "desc": "250% boost to Atk and 30% boost to critical hit rate when Critical Sphere is equipped, 35% boost to Atk, Def of Thunder types for all allies, probable resistance against 2 KO attacks & adds Thunder barrier effect to BB/SBB", 
+        "effects": [
+            {
+                "atk% buff": 250, 
+                "conditions": [
+                    {
+                        "sphere category required": "Critical", 
+                        "sphere category required (raw)": "2"
+                    }
+                ], 
+                "crit% buff": 30, 
+                "passive id": "1", 
+                "passive target": "self"
+            }, 
+            {
+                "atk% buff": 35, 
+                "conditions": [], 
+                "def% buff": 35, 
+                "elements buffed": [
+                    "thunder"
+                ], 
+                "passive id": "2", 
+                "passive target": "party"
+            }, 
+            {
+                "angel idol chance% condition": 0, 
+                "angel idol recover chance% high": 40, 
+                "angel idol recover chance% low": 40, 
+                "angel idol recover counts": 2, 
+                "conditions": [], 
+                "passive id": "69", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "passive id": "66", 
+                "passive target": "self", 
+                "trigger on bb": true, 
+                "trigger on sbb": true, 
+                "triggered effect": [
+                    {
+                        "effect delay time(ms)/frame": "0.0/0", 
+                        "elemental barrier absorb dmg%": 100, 
+                        "elemental barrier def": 0, 
+                        "elemental barrier element": "thunder", 
+                        "elemental barrier hp": 5000, 
+                        "proc id": "62", 
+                        "target area": "aoe", 
+                        "target type": "party"
+                    }
+                ]
+            }
+        ], 
+        "id": "740237", 
+        "name": "Last Survivor", 
+        "rarity": "7", 
+        "target": "self"
+    }, 
     "7500": {
         "desc": "Damage taken slightly boosts BB gauge", 
         "effects": [
@@ -29035,6 +29094,75 @@
         "rarity": "7", 
         "target": "self"
     }, 
+    "830597": {
+        "desc": "20% boost to all parameters, probable damage reduction to 1 & greatly boosts Earth elemental damage", 
+        "effects": [
+            {
+                "atk% buff": 20, 
+                "conditions": [], 
+                "def% buff": 20, 
+                "hp% buff": 20, 
+                "passive id": "1", 
+                "passive target": "self", 
+                "rec% buff": 20
+            }, 
+            {
+                "conditions": [], 
+                "passive id": "43", 
+                "passive target": "self", 
+                "take 1 dmg%": 10
+            }, 
+            {
+                "conditions": [], 
+                "earth units do extra elemental weakness dmg": true, 
+                "elemental weakness multiplier%": 100.0, 
+                "passive id": "50", 
+                "passive target": "self"
+            }
+        ], 
+        "id": "830597", 
+        "name": "Harmony of the Spheres", 
+        "rarity": "7", 
+        "target": "self"
+    }, 
+    "830598": {
+        "desc": "30% boost to all parameters, probable damage reduction to 1, greatly boosts Earth elemental damage & slighly boosts Earth elemental damage for all allies", 
+        "effects": [
+            {
+                "atk% buff": 30, 
+                "conditions": [], 
+                "def% buff": 30, 
+                "hp% buff": 30, 
+                "passive id": "1", 
+                "passive target": "self", 
+                "rec% buff": 30
+            }, 
+            {
+                "conditions": [], 
+                "passive id": "43", 
+                "passive target": "self", 
+                "take 1 dmg%": 15
+            }, 
+            {
+                "conditions": [], 
+                "earth units do extra elemental weakness dmg": true, 
+                "elemental weakness multiplier%": 100.0, 
+                "passive id": "50", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "earth units do extra elemental weakness dmg": true, 
+                "elemental weakness multiplier%": 20.0, 
+                "passive id": "50", 
+                "passive target": "party"
+            }
+        ], 
+        "id": "830598", 
+        "name": "Goetic Resonance", 
+        "rarity": "7", 
+        "target": "self"
+    }, 
     "8400": {
         "desc": "Reduces damage taken when damage taken has exceeded certain amount for 2 turns", 
         "effects": [
@@ -30878,6 +31006,59 @@
         "id": "850147", 
         "name": "Soul of the Divine", 
         "rarity": "1", 
+        "target": "self"
+    }, 
+    "850148": {
+        "desc": "50% boost to Def, Rec, max HP when Orphira is equipped, 20% boost to max HP for all allies, restores HP each turn for all allies & damage taken boosts BB gauge and may restore HP", 
+        "effects": [
+            {
+                "conditions": [
+                    {
+                        "item required": [
+                            "819183"
+                        ]
+                    }
+                ], 
+                "def% buff": 50, 
+                "hp% buff": 50, 
+                "passive id": "1", 
+                "passive target": "self", 
+                "rec% buff": 50
+            }, 
+            {
+                "conditions": [], 
+                "hp% buff": 20, 
+                "passive id": "1", 
+                "passive target": "party"
+            }, 
+            {
+                "conditions": [], 
+                "passive id": "33", 
+                "passive target": "party", 
+                "rec% added (turn heal)": 10.0, 
+                "turn heal high": 2000, 
+                "turn heal low": 1000
+            }, 
+            {
+                "conditions": [], 
+                "dmg% to hp% when attacked chance%": 30, 
+                "dmg% to hp% when attacked high": 40, 
+                "dmg% to hp% when attacked low": 20, 
+                "passive id": "24", 
+                "passive target": "self"
+            }, 
+            {
+                "bc fill when attacked high": 3, 
+                "bc fill when attacked low": 2, 
+                "bc fill when attacked%": 100, 
+                "conditions": [], 
+                "passive id": "25", 
+                "passive target": "self"
+            }
+        ], 
+        "id": "850148", 
+        "name": "Divine Inspiration", 
+        "rarity": "7", 
         "target": "self"
     }, 
     "850157": {
