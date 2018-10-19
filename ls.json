@@ -25496,23 +25496,23 @@
         "name": "Lucent Rhapsody"
     }, 
     "801269": {
-        "desc": "50% boost to Atk and max HP, enormously boosts Atk relative to how high HP is & hugely boosts BB Atk and elemental damage", 
+        "desc": "150% boost to Atk, 80% boost to max HP, considerably boosts Atk relative to remaining HP, hugely boosts all elemental damage & enormously boosts BB Atk", 
         "effects": [
             {
-                "atk% buff": 50, 
-                "hp% buff": 50, 
+                "atk% buff": 150, 
+                "hp% buff": 80, 
                 "passive id": "1"
             }, 
             {
-                "atk% base buff": 0, 
-                "atk% extra buff based on hp": 150, 
+                "atk% base buff": 80, 
+                "atk% extra buff based on hp": 80, 
                 "buff proportional to hp": "remaining", 
                 "passive id": "46"
             }, 
             {
                 "dark units do extra elemental weakness dmg": true, 
                 "earth units do extra elemental weakness dmg": true, 
-                "elemental weakness multiplier%": 125.0, 
+                "elemental weakness multiplier%": 175.0, 
                 "fire units do extra elemental weakness dmg": true, 
                 "light units do extra elemental weakness dmg": true, 
                 "passive id": "50", 
@@ -25520,10 +25520,10 @@
                 "water units do extra elemental weakness dmg": true
             }, 
             {
-                "bb atk% buff": 250, 
+                "bb atk% buff": 300, 
                 "passive id": "64", 
-                "sbb atk% buff": 250, 
-                "ubb atk% buff": 250
+                "sbb atk% buff": 300, 
+                "ubb atk% buff": 300
             }
         ], 
         "id": "801269", 
@@ -27558,6 +27558,71 @@
         ], 
         "id": "8106", 
         "name": "Steel God's Shining Barrier"
+    }, 
+    "810627": {
+        "desc": "80% boost to all parameters, enormously boosts BB Atk, hugely boosts BB gauge each turn & probable damage reduction to 1", 
+        "effects": [
+            {
+                "atk% buff": 80, 
+                "def% buff": 80, 
+                "hp% buff": 80, 
+                "passive id": "1", 
+                "rec% buff": 80
+            }, 
+            {
+                "bb atk% buff": 300, 
+                "passive id": "64", 
+                "sbb atk% buff": 300, 
+                "ubb atk% buff": 300
+            }, 
+            {
+                "bc fill per turn": 8, 
+                "passive id": "9"
+            }, 
+            {
+                "passive id": "43", 
+                "take 1 dmg%": 15
+            }
+        ], 
+        "id": "810627", 
+        "name": "Fires of Revolution"
+    }, 
+    "810628": {
+        "desc": "100% boost to all parameters, enormously boosts BB Atk, enormously boosts BB gauge each turn, probable damage reduction to 1 & negates critical and elemental damage", 
+        "effects": [
+            {
+                "atk% buff": 100, 
+                "def% buff": 100, 
+                "hp% buff": 100, 
+                "passive id": "1", 
+                "rec% buff": 100
+            }, 
+            {
+                "bb atk% buff": 350, 
+                "passive id": "64", 
+                "sbb atk% buff": 350, 
+                "ubb atk% buff": 350
+            }, 
+            {
+                "bc fill per turn": 10, 
+                "passive id": "9"
+            }, 
+            {
+                "passive id": "43", 
+                "take 1 dmg%": 20
+            }, 
+            {
+                "crit chance base resist%": 100, 
+                "crit chance buffed resist%": 100, 
+                "crit dmg base damage resist%": 100, 
+                "crit dmg buffed damage resist%": 100, 
+                "passive id": "53", 
+                "strong base element damage resist%": 100, 
+                "strong buffed element damage resist%": 100
+            }
+        ], 
+        "id": "810628", 
+        "name": "Incandescent Desire"
     }, 
     "810657": {
         "desc": "100% boost to Atk, Def, 80% boost to max HP of Fire types, 10% damage reduction from Fire, Earth types, probable considerable reduction of foe's BB gauge & considerably reduces BB gauge required for BB", 
@@ -31979,6 +32044,52 @@
         "id": "8601", 
         "name": "Blazing Nature Ruin"
     }, 
+    "860108": {
+        "desc": "150% boost to Atk and 80% boost to Def, max HP to Light, Dark types, 150% boost to damage against status afflicted foes, damage taken may restore HP, boosts OD gauge fill rate & negates all status ailments", 
+        "effects": [
+            {
+                "atk% buff": 150, 
+                "def% buff": 80, 
+                "elements buffed": [
+                    "light", 
+                    "dark"
+                ], 
+                "hp% buff": 80, 
+                "passive id": "2"
+            }, 
+            {
+                "atk% buff when enemy has ailment": 150, 
+                "atk% buff when enemy has curse": true, 
+                "atk% buff when enemy has injury": true, 
+                "atk% buff when enemy has paralysis": true, 
+                "atk% buff when enemy has poison": true, 
+                "atk% buff when enemy has sick": true, 
+                "atk% buff when enemy has weaken": true, 
+                "passive id": "74"
+            }, 
+            {
+                "dmg% to hp% when attacked chance%": 50, 
+                "dmg% to hp% when attacked high": 25, 
+                "dmg% to hp% when attacked low": 25, 
+                "passive id": "24"
+            }, 
+            {
+                "od fill rate%": 30, 
+                "passive id": "70"
+            }, 
+            {
+                "curse resist%": 100, 
+                "injury resist%": 100, 
+                "paralysis resist%": 100, 
+                "passive id": "4", 
+                "poison resist%": 100, 
+                "sick resist%": 100, 
+                "weaken resist%": 100
+            }
+        ], 
+        "id": "860108", 
+        "name": "Exacting Disciplinarian"
+    }, 
     "860148": {
         "desc": "80% boost to Atk, max HP, 30% boost to critical hit rate, enormously boosts Atk, Def relative to lost HP, hugely boosts critical damage, 150% boost to Spark damage & adds probable Spark critical", 
         "effects": [
@@ -32735,6 +32846,37 @@
         ], 
         "id": "860558", 
         "name": "Black Devil Prodigy"
+    }, 
+    "860568": {
+        "desc": "80% boost to Atk, max HP, greatly restores HP  for 2 turns when HP is below 50%, enormously boosts HC efficacy & 15% damage reduction from Light, Dark types", 
+        "effects": [
+            {
+                "atk% buff": 80, 
+                "hp% buff": 80, 
+                "passive id": "1"
+            }, 
+            {
+                "buff": {
+                    "buff turns (8)": "2", 
+                    "gradual heal high": 3500, 
+                    "gradual heal low": 3000
+                }, 
+                "hp below % buff activation": 50, 
+                "passive id": "55"
+            }, 
+            {
+                "hc effectiveness%": 75, 
+                "passive id": "10"
+            }, 
+            {
+                "dmg% mitigation for elemental attacks": 15.0, 
+                "mitigate dark attacks": true, 
+                "mitigate light attacks": true, 
+                "passive id": "62"
+            }
+        ], 
+        "id": "860568", 
+        "name": "Hippocratic Oath"
     }, 
     "860607": {
         "desc": "60% boost to all parameters of Light, Dark, Fire types, negates elemental damage, damage taken considerably boosts BB gauge & considerably reduces BB gauge consumed during BB", 

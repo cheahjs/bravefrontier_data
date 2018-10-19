@@ -24177,8 +24177,40 @@
         "target": "self"
     }, 
     "810108": {
-        "desc": "Absorbs HP when attacking, adds Def ignore effect to BB/SBB for 3 turns & boosts Atk, Def when BB gauge is full", 
+        "desc": "30% boost to all parameters when Spark sphere is equipped, adds Def ignoring effect to attack for 3 turns effect to BB/SBB, 35% boost to Atk and slightly boosts critical hit rate for all Fire types & absorbs HP while attacking", 
         "effects": [
+            {
+                "atk% buff": 30, 
+                "conditions": [
+                    {
+                        "sphere category required": "Spark", 
+                        "sphere category required (raw)": "11"
+                    }
+                ], 
+                "def% buff": 30, 
+                "hp% buff": 30, 
+                "passive id": "1", 
+                "passive target": "self", 
+                "rec% buff": 30
+            }, 
+            {
+                "atk% buff": 35, 
+                "conditions": [], 
+                "crit% buff": 15, 
+                "elements buffed": [
+                    "fire"
+                ], 
+                "passive id": "2", 
+                "passive target": "party"
+            }, 
+            {
+                "conditions": [], 
+                "hp drain chance%": 100, 
+                "hp drain% high": 10, 
+                "hp drain% low": 6, 
+                "passive id": "17", 
+                "passive target": "self"
+            }, 
             {
                 "conditions": [], 
                 "passive id": "66", 
@@ -24195,22 +24227,6 @@
                         "target type": "party"
                     }
                 ]
-            }, 
-            {
-                "atk% buff": 50, 
-                "bb gauge above % buff requirement": 100, 
-                "conditions": [], 
-                "def% buff": 50, 
-                "passive id": "30", 
-                "passive target": "self"
-            }, 
-            {
-                "conditions": [], 
-                "hp drain chance%": 100, 
-                "hp drain% high": 10, 
-                "hp drain% low": 5, 
-                "passive id": "17", 
-                "passive target": "self"
             }
         ], 
         "id": "810108", 
@@ -25615,6 +25631,90 @@
         ], 
         "id": "810588", 
         "name": "Destructive Hero", 
+        "rarity": "7", 
+        "target": "self"
+    }, 
+    "810627": {
+        "desc": "10% boost to all parameters for all allies, adds probable Spark critical & critical damage may inflict random status ailments", 
+        "effects": [
+            {
+                "atk% buff": 10, 
+                "conditions": [], 
+                "def% buff": 10, 
+                "hp% buff": 10, 
+                "passive id": "1", 
+                "passive target": "party", 
+                "rec% buff": 10
+            }, 
+            {
+                "conditions": [], 
+                "passive id": "100", 
+                "passive target": "self", 
+                "spark crit chance%": 30, 
+                "spark crit dmg%": 80
+            }, 
+            {
+                "conditions": [], 
+                "inflict curse%": 75, 
+                "inflict injury%": 75, 
+                "inflict paralysis%": 75, 
+                "inflict poison%": 75, 
+                "inflict sick%": 75, 
+                "inflict weaken%": 75, 
+                "passive id": "90", 
+                "passive target": "self"
+            }
+        ], 
+        "id": "810627", 
+        "name": "Darkhand Deception", 
+        "rarity": "7", 
+        "target": "self"
+    }, 
+    "810628": {
+        "desc": "20% boost to all parameters for all allies, adds Def ignoring effect to attack for all allies, adds probable Spark critical, critical damage may inflict random status ailments & probable damage reduction to 1", 
+        "effects": [
+            {
+                "atk% buff": 20, 
+                "conditions": [], 
+                "def% buff": 20, 
+                "hp% buff": 20, 
+                "passive id": "1", 
+                "passive target": "party", 
+                "rec% buff": 20
+            }, 
+            {
+                "conditions": [], 
+                "ignore def%": 100, 
+                "passive id": "29", 
+                "passive target": "party"
+            }, 
+            {
+                "conditions": [], 
+                "passive id": "100", 
+                "passive target": "self", 
+                "spark crit chance%": 30, 
+                "spark crit dmg%": 100
+            }, 
+            {
+                "conditions": [], 
+                "inflict curse%": 75, 
+                "inflict injury%": 75, 
+                "inflict paralysis%": 75, 
+                "inflict poison%": 75, 
+                "inflict sick%": 75, 
+                "inflict weaken%": 75, 
+                "passive id": "90", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "passive id": "43", 
+                "passive target": "self", 
+                "take 1 dmg%": 20
+            }
+        ], 
+        "id": "810628", 
+        "name": "Eye of the Wolf", 
         "rarity": "7", 
         "target": "self"
     }, 
@@ -33322,6 +33422,83 @@
         "rarity": "1", 
         "target": "self"
     }, 
+    "860108": {
+        "desc": "35% boost to Rec, max HP of Male types, 100% boost to damage against status afflicted foes, adds status ailment and Atk, Def, Rec reduction effect removal to BB/SBB & adds status ailment negation for 3 turns effect to BB/SBB", 
+        "effects": [
+            {
+                "conditions": [], 
+                "gender required": "male", 
+                "hp% buff": 35, 
+                "passive id": "42", 
+                "passive target": "party", 
+                "rec% buff": 35
+            }, 
+            {
+                "atk% buff when enemy has ailment": 100, 
+                "atk% buff when enemy has curse": true, 
+                "atk% buff when enemy has injury": true, 
+                "atk% buff when enemy has paralysis": true, 
+                "atk% buff when enemy has poison": true, 
+                "atk% buff when enemy has sick": true, 
+                "atk% buff when enemy has weaken": true, 
+                "conditions": [], 
+                "passive id": "74", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "passive id": "66", 
+                "passive target": "self", 
+                "trigger on bb": true, 
+                "trigger on sbb": true, 
+                "triggered effect": [
+                    {
+                        "ailments cured": [
+                            "poison", 
+                            "weaken", 
+                            "sick", 
+                            "injury", 
+                            "curse", 
+                            "paralysis", 
+                            "atk down", 
+                            "def down", 
+                            "rec down"
+                        ], 
+                        "effect delay time(ms)/frame": "0.0/0", 
+                        "proc id": "38", 
+                        "target area": "aoe", 
+                        "target type": "party"
+                    }
+                ]
+            }, 
+            {
+                "conditions": [], 
+                "passive id": "66", 
+                "passive target": "self", 
+                "trigger on bb": true, 
+                "trigger on sbb": true, 
+                "triggered effect": [
+                    {
+                        "effect delay time(ms)/frame": "0.0/0", 
+                        "proc id": "17", 
+                        "resist curse% (34)": 100.0, 
+                        "resist injury% (33)": 100.0, 
+                        "resist paralysis% (35)": 100.0, 
+                        "resist poison% (30)": 100.0, 
+                        "resist sick% (32)": 100.0, 
+                        "resist status ails turns": 3, 
+                        "resist weaken% (31)": 100.0, 
+                        "target area": "aoe", 
+                        "target type": "party"
+                    }
+                ]
+            }
+        ], 
+        "id": "860108", 
+        "name": "Pumpkin Connoisseur", 
+        "rarity": "7", 
+        "target": "self"
+    }, 
     "860127": {
         "desc": "Hugely boosts BB gauge each turn", 
         "effects": [
@@ -34714,6 +34891,80 @@
         ], 
         "id": "860558", 
         "name": "All-Seeing Eveningstar", 
+        "rarity": "7", 
+        "target": "self"
+    }, 
+    "860568": {
+        "desc": "30% boost to all parameters when Bloodpoison Florence is in squad or when Vellum of Curses, Salvation or Brilliance is equipped, 10% boost to all parameters of Dark types for all allies, damage taken considerably boosts BB gauge & adds Dark shield for 3 turns effect to BB/SBB/UBB", 
+        "effects": [
+            {
+                "atk% buff": 30, 
+                "conditions": [
+                    {
+                        "unit required": "820570"
+                    }, 
+                    {
+                        "item required": [
+                            "819178"
+                        ]
+                    }, 
+                    {
+                        "item required": [
+                            "819179"
+                        ]
+                    }, 
+                    {
+                        "item required": [
+                            "819180"
+                        ]
+                    }
+                ], 
+                "def% buff": 30, 
+                "hp% buff": 30, 
+                "passive id": "1", 
+                "passive target": "self", 
+                "rec% buff": 30
+            }, 
+            {
+                "atk% buff": 10, 
+                "conditions": [], 
+                "def% buff": 10, 
+                "elements buffed": [
+                    "dark"
+                ], 
+                "hp% buff": 10, 
+                "passive id": "2", 
+                "passive target": "party", 
+                "rec% buff": 10
+            }, 
+            {
+                "bc fill when attacked high": 4, 
+                "bc fill when attacked low": 2, 
+                "bc fill when attacked%": 100, 
+                "conditions": [], 
+                "passive id": "25", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "passive id": "66", 
+                "passive target": "self", 
+                "trigger on bb": true, 
+                "trigger on sbb": true, 
+                "trigger on ubb": true, 
+                "triggered effect": [
+                    {
+                        "effect delay time(ms)/frame": "0.0/0", 
+                        "target area": "aoe", 
+                        "target type": "party", 
+                        "unknown proc id": "10017", 
+                        "unknown proc param": "6,3500,3500,3,0"
+                    }
+                ]
+            }
+        ], 
+        "id": "860568", 
+        "name": "Ashes, We All Fall Down", 
         "rarity": "7", 
         "target": "self"
     }, 
