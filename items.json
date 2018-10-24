@@ -21561,6 +21561,51 @@
         "thumbnail": "item_thum_20001.png", 
         "type": "consumable"
     }, 
+    "5008000": {
+        "desc": "Adds the following effects to LS:<br>150% boost to Atk and 120% boost to Def, Rec, max HP when 2 or more elements are present, 10% damage reduction & raises Atk parameter limits to 180000", 
+        "effect": [
+            {
+                "unknown passive id": "107", 
+                "unknown passive params": "41,2$150$120$120$0$120"
+            }, 
+            {
+                "unknown passive id": "107", 
+                "unknown passive params": "8,10"
+            }, 
+            {
+                "unknown passive id": "107", 
+                "unknown passive params": "143,180000"
+            }
+        ], 
+        "id": 5008000, 
+        "max_stack": 1, 
+        "name": "Otherworldly Paradigm", 
+        "raid": false, 
+        "rarity": 7, 
+        "sell_price": 0, 
+        "thumbnail": "sphere_thum_1_8.png", 
+        "type": "sphere"
+    }, 
+    "5008001": {
+        "desc": "150% boost to Atk, 100% boost to Def, Rec, max HP & adds “Final Embrace” effect to BB/SBB", 
+        "effect": [
+            {
+                "atk% buff": 120, 
+                "crit% buff": 100, 
+                "def% buff": 100, 
+                "passive id": "1", 
+                "rec% buff": 100
+            }
+        ], 
+        "id": 5008001, 
+        "max_stack": 1, 
+        "name": "Final Embrace", 
+        "raid": false, 
+        "rarity": 7, 
+        "sell_price": 0, 
+        "thumbnail": "sphere_thum_819175.png", 
+        "type": "sphere"
+    }, 
     "50100": {
         "desc": "Replenishes all allies' HP.", 
         "effect": {
@@ -27764,6 +27809,50 @@
         "rarity": 3, 
         "sell_price": 20, 
         "thumbnail": "item_thum_801015.png", 
+        "type": "material"
+    }, 
+    "801016": {
+        "desc": "A brightly gleaming stone containing trace amounts of Faefire.", 
+        "id": 801016, 
+        "max_stack": 99, 
+        "name": "Fae Blessing ", 
+        "raid": false, 
+        "rarity": 3, 
+        "sell_price": 20, 
+        "thumbnail": "item_thum_801016.png", 
+        "type": "material"
+    }, 
+    "801017": {
+        "desc": "An eerily glowing stone containing trace amounts of Void. ", 
+        "id": 801017, 
+        "max_stack": 99, 
+        "name": "Void Stone", 
+        "raid": false, 
+        "rarity": 3, 
+        "sell_price": 20, 
+        "thumbnail": "item_thum_801017.png", 
+        "type": "material"
+    }, 
+    "801018": {
+        "desc": "Slightly hot to the touch, brilliant hues of gold and red flame dance within this mineral containing concentrated Faefire.", 
+        "id": 801018, 
+        "max_stack": 99, 
+        "name": "Fae Blazing", 
+        "raid": false, 
+        "rarity": 3, 
+        "sell_price": 20, 
+        "thumbnail": "item_thum_801016.png", 
+        "type": "material"
+    }, 
+    "801019": {
+        "desc": "Ghostly hues of purple and white swirl within this mineral containing concentrated Void. ", 
+        "id": 801019, 
+        "max_stack": 99, 
+        "name": "Void Gem", 
+        "raid": false, 
+        "rarity": 3, 
+        "sell_price": 20, 
+        "thumbnail": "item_thum_801017.png", 
         "type": "material"
     }, 
     "801101": {
@@ -37646,6 +37735,124 @@
         "thumbnail": "sphere_thum_818970.png", 
         "type": "sphere"
     }, 
+    "819176": {
+        "desc": "55% boost to Atk, max HP of Fire types, 150% boost to Spark damage, raises Atk parameter limits to 170000, Spark damage restores HP & adds huge boost to Spark damage of Fire types for 3 turns effect to SBB", 
+        "effect": [
+            {
+                "atk% buff": 55, 
+                "elements buffed": [
+                    "fire"
+                ], 
+                "hp% buff": 55, 
+                "passive id": "2"
+            }, 
+            {
+                "damage% for spark": 150, 
+                "passive id": "31"
+            }, 
+            {
+                "passive id": "66", 
+                "trigger on sbb": true, 
+                "triggered effect": [
+                    {
+                        "effect delay time(ms)/frame": "0.0/0", 
+                        "target area": "aoe", 
+                        "target type": "party", 
+                        "unknown proc id": "10015", 
+                        "unknown proc param": "100,3,0,1,0,0,0,0,0,0"
+                    }
+                ]
+            }, 
+            {
+                "increase atk cap": 170000, 
+                "passive id": "143"
+            }, 
+            {
+                "heal on spark high": 600, 
+                "heal on spark low": 400, 
+                "heal on spark%": 100, 
+                "passive id": "101"
+            }
+        ], 
+        "id": 819176, 
+        "max_stack": 1, 
+        "name": "Blaze Blossom EX", 
+        "raid": false, 
+        "rarity": 7, 
+        "recipe": {
+            "karma": "5000000", 
+            "materials": [
+                {
+                    "count": 1, 
+                    "id": 819190
+                }, 
+                {
+                    "count": 25, 
+                    "id": 801018
+                }
+            ]
+        }, 
+        "sell_price": 30000, 
+        "sphere type": 11, 
+        "sphere type text": "Spark", 
+        "thumbnail": "sphere_thum_819176.png", 
+        "type": "sphere"
+    }, 
+    "819177": {
+        "desc": "55% boost to Def, max HP of Dark types, considerably reduces BB gauge required for BB, probable 25% reduction of damage taken, hugely boosts Atk when BB gauge is full & fills BB to max when damage dealt has exceeded certain amount", 
+        "effect": [
+            {
+                "def% buff": 55, 
+                "elements buffed": [
+                    "dark"
+                ], 
+                "hp% buff": 55, 
+                "passive id": "2"
+            }, 
+            {
+                "passive id": "48", 
+                "reduced bb bc cost%": 25
+            }, 
+            {
+                "dmg reduction chance%": 30, 
+                "dmg reduction%": 25, 
+                "passive id": "14"
+            }, 
+            {
+                "atk% buff": 100, 
+                "bb gauge above % buff requirement": 100, 
+                "passive id": "30"
+            }, 
+            {
+                "damage dealt threshold activation": 50000, 
+                "increase bb gauge": 0, 
+                "passive id": "81"
+            }
+        ], 
+        "id": 819177, 
+        "max_stack": 1, 
+        "name": "Corrupted Blossom EX", 
+        "raid": false, 
+        "rarity": 7, 
+        "recipe": {
+            "karma": "5000000", 
+            "materials": [
+                {
+                    "count": 1, 
+                    "id": 819189
+                }, 
+                {
+                    "count": 25, 
+                    "id": 801019
+                }
+            ]
+        }, 
+        "sell_price": 30000, 
+        "sphere type": 6, 
+        "sphere type text": "BB Gauge", 
+        "thumbnail": "sphere_thum_819177.png", 
+        "type": "sphere"
+    }, 
     "819178": {
         "desc": "40% boost to all parameters, negates all status ailments and Atk, Def, Rec reductions, low probability of enormous damage reduction & restores HP each turn", 
         "effect": [
@@ -37942,6 +38149,167 @@
         "sphere type": 7, 
         "sphere type text": "HP Recovery", 
         "thumbnail": "sphere_thum_818901.png", 
+        "type": "sphere"
+    }, 
+    "819189": {
+        "desc": "40% boost to Def, max HP of Dark types, considerably reduces BB gauge required for BB, probable 25% reduction of damage taken, considerably boosts Atk when BB gauge is full & fills BB to max when damage dealt has exceeded certain amount", 
+        "effect": [
+            {
+                "def% buff": 40, 
+                "elements buffed": [
+                    "dark"
+                ], 
+                "hp% buff": 40, 
+                "passive id": "2"
+            }, 
+            {
+                "passive id": "48", 
+                "reduced bb bc cost%": 20
+            }, 
+            {
+                "dmg reduction chance%": 30, 
+                "dmg reduction%": 25, 
+                "passive id": "14"
+            }, 
+            {
+                "atk% buff": 90, 
+                "bb gauge above % buff requirement": 100, 
+                "passive id": "30"
+            }, 
+            {
+                "damage dealt threshold activation": 50000, 
+                "increase bb gauge": 0, 
+                "passive id": "81"
+            }
+        ], 
+        "id": 819189, 
+        "max_stack": 1, 
+        "name": "Corrupted Blossom", 
+        "raid": false, 
+        "rarity": 6, 
+        "recipe": {
+            "karma": "200000", 
+            "materials": [
+                {
+                    "count": 1, 
+                    "id": 819198
+                }, 
+                {
+                    "count": 1, 
+                    "id": 801017
+                }
+            ]
+        }, 
+        "sell_price": 30000, 
+        "sphere type": 6, 
+        "sphere type text": "BB Gauge", 
+        "thumbnail": "sphere_thum_819177.png", 
+        "type": "sphere"
+    }, 
+    "819190": {
+        "desc": "40% boost to Atk, max HP of Fire types, 120% boost to Spark damage, raises Atk parameter limits to 160000, Spark damage restores HP & adds huge boost to Spark damage of Fire types for 3 turns effect to SBB", 
+        "effect": [
+            {
+                "atk% buff": 40, 
+                "elements buffed": [
+                    "fire"
+                ], 
+                "hp% buff": 40, 
+                "passive id": "2"
+            }, 
+            {
+                "damage% for spark": 120, 
+                "passive id": "31"
+            }, 
+            {
+                "passive id": "66", 
+                "trigger on sbb": true, 
+                "triggered effect": [
+                    {
+                        "effect delay time(ms)/frame": "0.0/0", 
+                        "target area": "aoe", 
+                        "target type": "party", 
+                        "unknown proc id": "10015", 
+                        "unknown proc param": "100,3,0,1,0,0,0,0,0,0"
+                    }
+                ]
+            }, 
+            {
+                "increase atk cap": 160000, 
+                "passive id": "143"
+            }, 
+            {
+                "heal on spark high": 600, 
+                "heal on spark low": 400, 
+                "heal on spark%": 100, 
+                "passive id": "101"
+            }
+        ], 
+        "id": 819190, 
+        "max_stack": 1, 
+        "name": "Blaze Blossom", 
+        "raid": false, 
+        "rarity": 6, 
+        "recipe": {
+            "karma": "200000", 
+            "materials": [
+                {
+                    "count": 1, 
+                    "id": 819198
+                }, 
+                {
+                    "count": 1, 
+                    "id": 801016
+                }
+            ]
+        }, 
+        "sell_price": 30000, 
+        "sphere type": 11, 
+        "sphere type text": "Spark", 
+        "thumbnail": "sphere_thum_819176.png", 
+        "type": "sphere"
+    }, 
+    "819198": {
+        "desc": "30% boost to all parameters of Fire, Dark types, slightly reduces BB gauge required for BB, considerably boosts Atk when BB gauge is full, 100% boost to Spark damage & raises Atk parameter limits to 150000", 
+        "effect": [
+            {
+                "atk% buff": 30, 
+                "def% buff": 30, 
+                "elements buffed": [
+                    "fire", 
+                    "dark"
+                ], 
+                "hp% buff": 30, 
+                "passive id": "2", 
+                "rec% buff": 30
+            }, 
+            {
+                "passive id": "48", 
+                "reduced bb bc cost%": 15
+            }, 
+            {
+                "atk% buff": 80, 
+                "bb gauge above % buff requirement": 100, 
+                "passive id": "30"
+            }, 
+            {
+                "damage% for spark": 100, 
+                "passive id": "31"
+            }, 
+            {
+                "increase atk cap": 150000, 
+                "passive id": "143"
+            }
+        ], 
+        "id": 819198, 
+        "max_stack": 1, 
+        "name": "Flower of the Vale", 
+        "raid": false, 
+        "rarity": 6, 
+        "sell_price": 30000, 
+        "sphere type": 14, 
+        "sphere type text": "Special", 
+        "thumbnail": "sphere_thum_819175.png", 
         "type": "sphere"
     }, 
     "819901": {

@@ -29390,6 +29390,61 @@
         "rarity": "7", 
         "target": "self"
     }, 
+    "830628": {
+        "desc": "Boost to Atk, Def, Rec relative to remaining HP for all allies, slight boost to Spark damage for all allies, 50% boost to max HP, damage taken may restore HP & negates all status ailments and Atk, Def, Rec reduction effects", 
+        "effects": [
+            {
+                "conditions": [], 
+                "hp% buff": 50, 
+                "passive id": "1", 
+                "passive target": "self"
+            }, 
+            {
+                "atk% base buff": 0, 
+                "atk% extra buff based on hp": 30, 
+                "buff proportional to hp": "remaining", 
+                "conditions": [], 
+                "def% base buff": 0, 
+                "def% extra buff based on hp": 30, 
+                "passive id": "46", 
+                "passive target": "party", 
+                "rec% base buff": 0, 
+                "rec% extra buff based on hp": 30
+            }, 
+            {
+                "conditions": [], 
+                "damage% for spark": 20, 
+                "passive id": "31", 
+                "passive target": "party"
+            }, 
+            {
+                "conditions": [], 
+                "dmg% to hp% when attacked chance%": 30, 
+                "dmg% to hp% when attacked high": 25, 
+                "dmg% to hp% when attacked low": 20, 
+                "passive id": "24", 
+                "passive target": "self"
+            }, 
+            {
+                "atk down resist%": 100, 
+                "conditions": [], 
+                "curse resist%": 100, 
+                "def down resist%": 100, 
+                "injury resist%": 100, 
+                "paralysis resist%": 100, 
+                "passive id": "73", 
+                "passive target": "self", 
+                "poison resist%": 100, 
+                "rec down resist%": 100, 
+                "sick resist%": 100, 
+                "weaken resist%": 100
+            }
+        ], 
+        "id": "830628", 
+        "name": "Tomb of the Barren", 
+        "rarity": "7", 
+        "target": "self"
+    }, 
     "8400": {
         "desc": "Reduces damage taken when damage taken has exceeded certain amount for 2 turns", 
         "effects": [
@@ -35127,6 +35182,56 @@
         ], 
         "id": "8800", 
         "name": "Dolk's Fencing Doctrine", 
+        "rarity": "1", 
+        "target": "self"
+    }, 
+    "8850000": {
+        "desc": "120% boost to Atk and 80% boost to Def, Rec, max HP to all Fire, Light type allies, adds powerful attack on all foes (30% active pierce) to BB/SBB for all allies, adds Fire element to attack & raises Atk parameter limits to 200000", 
+        "effects": [
+            {
+                "atk% buff": 120, 
+                "conditions": [], 
+                "def% buff": 80, 
+                "elements buffed": [
+                    "fire", 
+                    "light"
+                ], 
+                "hp% buff": 80, 
+                "passive id": "2", 
+                "passive target": "party", 
+                "rec% buff": 80
+            }, 
+            {
+                "conditions": [], 
+                "passive id": "66", 
+                "passive target": "party", 
+                "trigger on bb": true, 
+                "trigger on sbb": true, 
+                "triggered effect": [
+                    {
+                        "effect delay time(ms)/frame": "0.0/0", 
+                        "target area": "aoe", 
+                        "target type": "enemy", 
+                        "unknown proc id": "10020", 
+                        "unknown proc param": "500,200,30,1,1,1,1,1,1"
+                    }
+                ]
+            }, 
+            {
+                "conditions": [], 
+                "passive target": "self", 
+                "unknown passive id": "93", 
+                "unknown passive params": "1,0,0,0,0,0,-1"
+            }, 
+            {
+                "conditions": [], 
+                "increase atk cap": 200000, 
+                "passive id": "143", 
+                "passive target": "self"
+            }
+        ], 
+        "id": "8850000", 
+        "name": "Melody of Creation", 
         "rarity": "1", 
         "target": "self"
     }, 
