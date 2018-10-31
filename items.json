@@ -3288,6 +3288,50 @@
         "thumbnail": "item_thum_92300.png", 
         "type": "summoner_consumable"
     }, 
+    "13382": {
+        "desc": "This object is useless.", 
+        "effect": {
+            "effect": [
+                {
+                    "unknown proc id": "0", 
+                    "unknown proc param": ""
+                }
+            ], 
+            "target_area": "aoe", 
+            "target_type": "party"
+        }, 
+        "id": 13382, 
+        "max equipped": 99, 
+        "max_stack": 99, 
+        "name": "Useless Object", 
+        "raid": false, 
+        "rarity": 0, 
+        "sell_price": 100, 
+        "thumbnail": "item_thum_22210.png", 
+        "type": "consumable"
+    }, 
+    "13383": {
+        "desc": "This item is pointless.", 
+        "effect": {
+            "effect": [
+                {
+                    "unknown proc id": "0", 
+                    "unknown proc param": ""
+                }
+            ], 
+            "target_area": "aoe", 
+            "target_type": "party"
+        }, 
+        "id": 13383, 
+        "max equipped": 50, 
+        "max_stack": 99, 
+        "name": "Pointless Item", 
+        "raid": false, 
+        "rarity": 0, 
+        "sell_price": 100, 
+        "thumbnail": "item_thum_21100.png", 
+        "type": "consumable"
+    }, 
     "20000": {
         "desc": "Slightly replenishes one ally's HP.", 
         "effect": {
@@ -26349,6 +26393,53 @@
         "thumbnail": "item_thum_800105.png", 
         "type": "consumable"
     }, 
+    "800106": {
+        "desc": "A special quartz infused with elemental power and radiates a soothing aura", 
+        "effect": {
+            "effect": [
+                {
+                    "unknown proc id": "0", 
+                    "unknown proc param": ""
+                }
+            ], 
+            "target_area": "single", 
+            "target_type": "party"
+        }, 
+        "id": 800106, 
+        "max equipped": 0, 
+        "max_stack": 1, 
+        "name": "Radiant Quartz", 
+        "raid": false, 
+        "rarity": 3, 
+        "recipe": {
+            "karma": "200000", 
+            "materials": [
+                {
+                    "count": 40, 
+                    "id": 801006
+                }, 
+                {
+                    "count": 40, 
+                    "id": 801007
+                }, 
+                {
+                    "count": 40, 
+                    "id": 801008
+                }, 
+                {
+                    "count": 40, 
+                    "id": 801009
+                }, 
+                {
+                    "count": 40, 
+                    "id": 801010
+                }
+            ]
+        }, 
+        "sell_price": 500, 
+        "thumbnail": "item_thum_800106.png", 
+        "type": "consumable"
+    }, 
     "800200": {
         "desc": "A pretty snow flake, cool to the touch. Unique event crafting material.", 
         "id": 800200, 
@@ -38149,6 +38240,95 @@
         "sphere type": 7, 
         "sphere type text": "HP Recovery", 
         "thumbnail": "sphere_thum_818901.png", 
+        "type": "sphere"
+    }, 
+    "819184": {
+        "desc": "45% boost to Def, max HP of Dark types, probable resistance against 1 KO attack, probable 30% damage reduction, 35% additional damage reduction, negates critical and elemental damage & greatly boosts Dark elemental damage", 
+        "effect": [
+            {
+                "def% buff": 45, 
+                "elements buffed": [
+                    "dark"
+                ], 
+                "hp% buff": 45, 
+                "passive id": "2"
+            }, 
+            {
+                "angel idol chance% condition": 0, 
+                "angel idol recover chance% high": 25, 
+                "angel idol recover chance% low": 25, 
+                "angel idol recover counts": 1, 
+                "passive id": "69"
+            }, 
+            {
+                "dmg reduction chance%": 30, 
+                "dmg reduction%": 30, 
+                "passive id": "14"
+            }, 
+            {
+                "unknown passive id": "127", 
+                "unknown passive params": "100,35"
+            }, 
+            {
+                "crit chance base resist%": 100, 
+                "crit chance buffed resist%": 100, 
+                "crit dmg base damage resist%": 100, 
+                "crit dmg buffed damage resist%": 100, 
+                "passive id": "53", 
+                "strong base element damage resist%": 100, 
+                "strong buffed element damage resist%": 100
+            }, 
+            {
+                "dark units do extra elemental weakness dmg": true, 
+                "elemental weakness multiplier%": 125.0, 
+                "passive id": "50"
+            }
+        ], 
+        "id": 819184, 
+        "max_stack": 1, 
+        "name": "Tenrou Jade", 
+        "raid": false, 
+        "rarity": 7, 
+        "sell_price": 30000, 
+        "sphere type": 10, 
+        "sphere type text": "Damage Reducing", 
+        "thumbnail": "item_thum_819183.png", 
+        "type": "sphere"
+    }, 
+    "819185": {
+        "desc": "50% boost to Rec, max HP, enormously boosts BB gauge each turn, considerably reduces BB gauge required for BB, hugely boosts OD gauge fill rate & activates BB gauge boost each turn effect at turn's start", 
+        "effect": [
+            {
+                "hp% buff": 50, 
+                "passive id": "1", 
+                "rec% buff": 50
+            }, 
+            {
+                "bc fill per turn": 25, 
+                "passive id": "9"
+            }, 
+            {
+                "passive id": "48", 
+                "reduced bb bc cost%": 25
+            }, 
+            {
+                "od fill rate%": 100, 
+                "passive id": "70"
+            }, 
+            {
+                "unknown passive id": "72", 
+                "unknown passive params": "0,1"
+            }
+        ], 
+        "id": 819185, 
+        "max_stack": 1, 
+        "name": "Fairy Heart", 
+        "raid": false, 
+        "rarity": 7, 
+        "sell_price": 30000, 
+        "sphere type": 6, 
+        "sphere type text": "BB Gauge", 
+        "thumbnail": "item_thum_819184.png", 
         "type": "sphere"
     }, 
     "819189": {

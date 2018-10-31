@@ -24156,6 +24156,358 @@
         "rarity": "7", 
         "target": "self"
     }, 
+    "8000601": {
+        "desc": "10% boost to Atk for all Dark type allies, greatly boosts Atk relative to remaining HP, greatly boosts Dark elemental damage, adds additional powerful attack at turn's end for 3 turns effect to SBB & raises Atk parameter limits to 170000", 
+        "effects": [
+            {
+                "atk% base buff": 0, 
+                "atk% extra buff based on hp": 150, 
+                "buff proportional to hp": "remaining", 
+                "conditions": [], 
+                "passive id": "46", 
+                "passive target": "self"
+            }, 
+            {
+                "atk% buff": 10, 
+                "conditions": [], 
+                "elements buffed": [
+                    "dark"
+                ], 
+                "passive id": "2", 
+                "passive target": "party"
+            }, 
+            {
+                "conditions": [], 
+                "dark units do extra elemental weakness dmg": true, 
+                "elemental weakness multiplier%": 100.0, 
+                "passive id": "50", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "passive id": "66", 
+                "passive target": "self", 
+                "trigger on sbb": true, 
+                "triggered effect": [
+                    {
+                        "dot atk%": 500, 
+                        "dot element affected": true, 
+                        "dot flat atk": 100, 
+                        "dot turns (71)": 3, 
+                        "dot unit index": 1, 
+                        "effect delay time(ms)/frame": "0.0/0", 
+                        "proc id": "44", 
+                        "target area": "aoe", 
+                        "target type": "enemy"
+                    }
+                ]
+            }, 
+            {
+                "conditions": [], 
+                "increase atk cap": 170000, 
+                "passive id": "143", 
+                "passive target": "self"
+            }
+        ], 
+        "id": "8000601", 
+        "name": "Death Orb", 
+        "rarity": "7", 
+        "target": "self"
+    }, 
+    "8000602": {
+        "desc": "30% boost to Def, max HP, probable 25% damage reduction, negates elemental damage & 25% damage reduction for first 2 turns", 
+        "effects": [
+            {
+                "conditions": [], 
+                "def% buff": 30, 
+                "hp% buff": 30, 
+                "passive id": "1", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "dmg reduction chance%": 20, 
+                "dmg reduction%": 25, 
+                "passive id": "14", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "passive id": "53", 
+                "passive target": "self", 
+                "strong base element damage resist%": 100, 
+                "strong buffed element damage resist%": 100
+            }, 
+            {
+                "conditions": [], 
+                "dmg% mitigation for elemental attacks": 25, 
+                "dmg% mitigation for elemental attacks buff for first x turns": 2, 
+                "mitigate dark attacks": true, 
+                "mitigate earth attacks": true, 
+                "mitigate fire attacks": true, 
+                "mitigate light attacks": true, 
+                "mitigate thunder attacks": true, 
+                "mitigate water attacks": true, 
+                "passive id": "63", 
+                "passive target": "self"
+            }
+        ], 
+        "id": "8000602", 
+        "name": "Deus Corona", 
+        "rarity": "7", 
+        "target": "self"
+    }, 
+    "8000603": {
+        "desc": "20% boost to all parameters, boosts Atk, Def, Rec each turn (up to 5 turns), slightly reduces BB gauge required for BB & slightly reduces BB gauge consumed during BB", 
+        "effects": [
+            {
+                "atk% buff": 20, 
+                "conditions": [], 
+                "def% buff": 20, 
+                "hp% buff": 20, 
+                "passive id": "1", 
+                "passive target": "self", 
+                "rec% buff": 20
+            }, 
+            {
+                "atk% max buff": 15, 
+                "conditions": [], 
+                "def% max buff": 15, 
+                "increase from min to max": 1, 
+                "passive id": "105", 
+                "passive target": "self", 
+                "rec% max buff": 15, 
+                "turn count": 5
+            }, 
+            {
+                "conditions": [], 
+                "passive id": "48", 
+                "passive target": "self", 
+                "reduced bb bc cost%": 5
+            }, 
+            {
+                "conditions": [], 
+                "passive id": "49", 
+                "passive target": "self", 
+                "reduced bb bc use chance%": 100, 
+                "reduced bb bc use% high": 5, 
+                "reduced bb bc use% low": 5
+            }
+        ], 
+        "id": "8000603", 
+        "name": "Deus Eques", 
+        "rarity": "7", 
+        "target": "self"
+    }, 
+    "8000604": {
+        "desc": "Considerably raises normal hit amount, normal attacks may hit all foes, normal attacks considerably boost BB gauge & boosts BC drop rate", 
+        "effects": [
+            {
+                "conditions": [], 
+                "hit increase/hit": 2, 
+                "passive id": "37", 
+                "passive target": "self"
+            }, 
+            {
+                "aoe atk inc%": -50, 
+                "chance to aoe": 5, 
+                "conditions": [], 
+                "passive id": "96", 
+                "passive target": "self"
+            }, 
+            {
+                "bc fill when attacking high": 5, 
+                "bc fill when attacking low": 5, 
+                "bc fill when attacking%": 100, 
+                "conditions": [], 
+                "passive id": "35", 
+                "passive target": "self"
+            }, 
+            {
+                "bc drop rate% buff": 20, 
+                "conditions": [], 
+                "passive id": "19", 
+                "passive target": "self"
+            }
+        ], 
+        "id": "8000604", 
+        "name": "Ile Vernier", 
+        "rarity": "6", 
+        "target": "self"
+    }, 
+    "8000605": {
+        "desc": "100% boost to Atk & slightly boosts Spark damage", 
+        "effects": [
+            {
+                "atk% buff": 100, 
+                "conditions": [], 
+                "passive id": "1", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "damage% for spark": 30, 
+                "passive id": "31", 
+                "passive target": "self"
+            }
+        ], 
+        "id": "8000605", 
+        "name": "Ile Arms", 
+        "rarity": "6", 
+        "target": "self"
+    }, 
+    "8000606": {
+        "desc": "75% boost to Def & 10% damage reduction from normal attacks", 
+        "effects": [
+            {
+                "conditions": [], 
+                "def% buff": 75, 
+                "passive id": "1", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "passive target": "self", 
+                "unknown passive id": "128", 
+                "unknown passive params": "100,10,100,10"
+            }
+        ], 
+        "id": "8000606", 
+        "name": "Ile Armor", 
+        "rarity": "6", 
+        "target": "self"
+    }, 
+    "8000607": {
+        "desc": "40% boost to max HP, enormously restores HP each turn, greatly boosts BB/SBB activation rates & activates at turn's end effects during turn's start instead", 
+        "effects": [
+            {
+                "conditions": [], 
+                "hp% buff": 40, 
+                "passive id": "1", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "passive id": "33", 
+                "passive target": "self", 
+                "rec% added (turn heal)": 10.0, 
+                "turn heal high": 6000, 
+                "turn heal low": 6000
+            }, 
+            {
+                "conditions": [], 
+                "increase skill activation in arena%": 15, 
+                "passive id": "111", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "passive target": "self", 
+                "unknown passive id": "72", 
+                "unknown passive params": "1,1"
+            }
+        ], 
+        "id": "8000607", 
+        "name": "Troia", 
+        "rarity": "7", 
+        "target": "self"
+    }, 
+    "8000608": {
+        "desc": "Negates all status ailments and Atk, Def, Rec reduction effects & adds status ailment removal effect to BB/SBB/UBB", 
+        "effects": [
+            {
+                "atk down resist%": 100, 
+                "conditions": [], 
+                "curse resist%": 100, 
+                "def down resist%": 100, 
+                "injury resist%": 100, 
+                "paralysis resist%": 100, 
+                "passive id": "73", 
+                "passive target": "self", 
+                "poison resist%": 100, 
+                "rec down resist%": 100, 
+                "sick resist%": 100, 
+                "weaken resist%": 100
+            }, 
+            {
+                "conditions": [], 
+                "passive id": "66", 
+                "passive target": "self", 
+                "trigger on bb": true, 
+                "trigger on sbb": true, 
+                "trigger on ubb": true, 
+                "triggered effect": [
+                    {
+                        "ailments cured": [
+                            "poison", 
+                            "weaken", 
+                            "sick", 
+                            "injury", 
+                            "curse", 
+                            "paralysis", 
+                            "atk down", 
+                            "def down", 
+                            "rec down"
+                        ], 
+                        "effect delay time(ms)/frame": "0.0/0", 
+                        "proc id": "38", 
+                        "target area": "aoe", 
+                        "target type": "party"
+                    }
+                ]
+            }
+        ], 
+        "id": "8000608", 
+        "name": "Raise", 
+        "rarity": "7", 
+        "target": "self"
+    }, 
+    "8000609": {
+        "desc": "Negates all status ailments and Atk, Def, Rec reduction effects & adds status ailment negation for 3 turns effect to BB/SBB/UBB", 
+        "effects": [
+            {
+                "atk down resist%": 100, 
+                "conditions": [], 
+                "curse resist%": 100, 
+                "def down resist%": 100, 
+                "injury resist%": 100, 
+                "paralysis resist%": 100, 
+                "passive id": "73", 
+                "passive target": "self", 
+                "poison resist%": 100, 
+                "rec down resist%": 100, 
+                "sick resist%": 100, 
+                "weaken resist%": 100
+            }, 
+            {
+                "conditions": [], 
+                "passive id": "66", 
+                "passive target": "self", 
+                "trigger on bb": true, 
+                "trigger on sbb": true, 
+                "trigger on ubb": true, 
+                "triggered effect": [
+                    {
+                        "effect delay time(ms)/frame": "0.0/0", 
+                        "proc id": "17", 
+                        "resist curse% (34)": 100.0, 
+                        "resist injury% (33)": 100.0, 
+                        "resist paralysis% (35)": 100.0, 
+                        "resist poison% (30)": 100.0, 
+                        "resist sick% (32)": 100.0, 
+                        "resist status ails turns": 3, 
+                        "resist weaken% (31)": 100.0, 
+                        "target area": "aoe", 
+                        "target type": "party"
+                    }
+                ]
+            }
+        ], 
+        "id": "8000609", 
+        "name": "Re-Raise", 
+        "rarity": "7", 
+        "target": "self"
+    }, 
     "8100": {
         "desc": "Boosts OD gauge fill rate", 
         "effects": [
@@ -25483,7 +25835,7 @@
         "target": "self"
     }, 
     "810548": {
-        "desc": "25% damage reduction from Fire, Earth types, raises Atk parameter limits to 130000, 10% damage reduction & adds max HP boost effect for self to BB/SBB when Atk Boosting sphere is equipped", 
+        "desc": "25% damage reduction from Fire, Earth types, raises Atk parameter limits to 130000, 10% damage reduction & adds huge max HP boost effect for self to BB/SBB when Atk Boosting sphere is equipped", 
         "effects": [
             {
                 "conditions": [
@@ -25502,7 +25854,7 @@
                         "target area": "single", 
                         "target type": "self", 
                         "unknown proc id": "92", 
-                        "unknown proc param": "0,15,0"
+                        "unknown proc param": "0,35,0"
                     }
                 ]
             }, 
@@ -29558,7 +29910,7 @@
         "target": "self"
     }, 
     "830598": {
-        "desc": "30% boost to all parameters, probable damage reduction to 1, greatly boosts Earth elemental damage & slighly boosts Earth elemental damage for all allies", 
+        "desc": "30% boost to all parameters, probable damage reduction to 1, greatly boosts Earth elemental damage, slighly boosts Earth elemental damage for all allies & reduces Skip Turn effect duration by 3 turns", 
         "effects": [
             {
                 "atk% buff": 30, 
@@ -29588,6 +29940,12 @@
                 "elemental weakness multiplier%": 20.0, 
                 "passive id": "50", 
                 "passive target": "party"
+            }, 
+            {
+                "conditions": [], 
+                "passive target": "self", 
+                "unknown passive id": "11009", 
+                "unknown passive params": "10005,-3,0,0,0,0,0,0,0,0"
             }
         ], 
         "id": "830598", 
@@ -29647,6 +30005,101 @@
         ], 
         "id": "830628", 
         "name": "Tomb of the Barren", 
+        "rarity": "7", 
+        "target": "self"
+    }, 
+    "830647": {
+        "desc": "15% damage reduction from Earth, Thunder types when Damage Reducing Sphere is equipped & greatly restores HP for 3 turns when guarding for all allies", 
+        "effects": [
+            {
+                "conditions": [
+                    {
+                        "sphere category required": "Damage Reducing", 
+                        "sphere category required (raw)": "10"
+                    }
+                ], 
+                "dmg% mitigation for elemental attacks": 15.0, 
+                "mitigate earth attacks": true, 
+                "mitigate thunder attacks": true, 
+                "passive id": "62", 
+                "passive target": "self"
+            }, 
+            {
+                "buff": {
+                    "buff turns (8)": "3", 
+                    "gradual heal high": 4000, 
+                    "gradual heal low": 3500
+                }, 
+                "conditions": [], 
+                "on guard activation chance%": 100, 
+                "passive id": "88", 
+                "passive target": "party"
+            }
+        ], 
+        "id": "830647", 
+        "name": "Iron Dragon's Scale", 
+        "rarity": "7", 
+        "target": "self"
+    }, 
+    "830648": {
+        "desc": "25% damage reduction from Earth, Thunder types when Damage Reducing Sphere is equipped, greatly restores HP for 3 turns when guarding for all allies, 15% additional damage reduction for all allies, adds Earth Shield for 3 turns effect to BB/SBB & negates Spark damage", 
+        "effects": [
+            {
+                "conditions": [
+                    {
+                        "sphere category required": "Damage Reducing", 
+                        "sphere category required (raw)": "10"
+                    }
+                ], 
+                "dmg% mitigation for elemental attacks": 25.0, 
+                "mitigate earth attacks": true, 
+                "mitigate thunder attacks": true, 
+                "passive id": "62", 
+                "passive target": "self"
+            }, 
+            {
+                "base spark dmg% resist": 100, 
+                "buff spark dmg% resist": 100, 
+                "conditions": [], 
+                "passive id": "77", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "passive target": "party", 
+                "unknown passive id": "127", 
+                "unknown passive params": "100,15"
+            }, 
+            {
+                "buff": {
+                    "buff turns (8)": "3", 
+                    "gradual heal high": 5000, 
+                    "gradual heal low": 4000
+                }, 
+                "conditions": [], 
+                "on guard activation chance%": 100, 
+                "passive id": "88", 
+                "passive target": "party"
+            }, 
+            {
+                "conditions": [], 
+                "passive id": "66", 
+                "passive target": "self", 
+                "trigger on bb": true, 
+                "trigger on sbb": true, 
+                "triggered effect": [
+                    {
+                        "effect delay time(ms)/frame": "0.0/0", 
+                        "target area": "aoe", 
+                        "target type": "party", 
+                        "unknown proc id": "10017", 
+                        "unknown proc param": "3,6000,6000,3,0"
+                    }
+                ]
+            }
+        ], 
+        "id": "830648", 
+        "name": "Steel Dragon", 
         "rarity": "7", 
         "target": "self"
     }, 
@@ -33061,7 +33514,7 @@
         "target": "self"
     }, 
     "850548": {
-        "desc": "Negates elemental damage for all allies, raises normal hit amount, boosts all parameters accordingly: 10% when Silver Key is equipped, 15% when Gold Key is equipped, 20% when Diamond Key is equipped & adds all elements to attack for 3 turns effect to BB/SBB/UBB when Diamond Key is equipped", 
+        "desc": "Negates elemental damage for all allies, considerably raises normal hit amount, boosts all parameters accordingly: 10% when Silver Key is equipped, 15% when Gold Key is equipped, 20% when Diamond Key is equipped & adds all elements to attack for 3 turns effect to BB/SBB/UBB when Diamond Key is equipped", 
         "effects": [
             {
                 "conditions": [], 
@@ -33072,7 +33525,7 @@
             }, 
             {
                 "conditions": [], 
-                "hit increase/hit": 1, 
+                "hit increase/hit": 2, 
                 "passive id": "37", 
                 "passive target": "self"
             }, 
@@ -33358,6 +33811,210 @@
         ], 
         "id": "850588", 
         "name": "One for All", 
+        "rarity": "7", 
+        "target": "self"
+    }, 
+    "850637": {
+        "desc": "Boosts Atk, Def, Rec relative to lost HP and probable resistance against 1 KO attack when Fairy Heart is equipped, 10% boost to all parameters and 100% boost to BB Atk for all allies & boosts damage reduction when guarding for all allies", 
+        "effects": [
+            {
+                "angel idol chance% condition": 0, 
+                "angel idol recover chance% high": 40, 
+                "angel idol recover chance% low": 40, 
+                "angel idol recover counts": 1, 
+                "conditions": [
+                    {
+                        "item required": [
+                            "819185"
+                        ]
+                    }
+                ], 
+                "passive id": "69", 
+                "passive target": "self"
+            }, 
+            {
+                "atk% base buff": 0, 
+                "atk% extra buff based on hp": 60, 
+                "buff proportional to hp": "lost", 
+                "conditions": [
+                    {
+                        "item required": [
+                            "819185"
+                        ]
+                    }
+                ], 
+                "def% base buff": 0, 
+                "def% extra buff based on hp": 60, 
+                "passive id": "46", 
+                "passive target": "self", 
+                "rec% base buff": 0, 
+                "rec% extra buff based on hp": 60
+            }, 
+            {
+                "atk% buff": 10, 
+                "conditions": [], 
+                "def% buff": 10, 
+                "hp% buff": 10, 
+                "passive id": "1", 
+                "passive target": "party", 
+                "rec% buff": 10
+            }, 
+            {
+                "bb atk% buff": 100, 
+                "conditions": [], 
+                "passive id": "64", 
+                "passive target": "party", 
+                "sbb atk% buff": 100, 
+                "ubb atk% buff": 100
+            }, 
+            {
+                "conditions": [], 
+                "guard increase mitigation%": 5, 
+                "passive id": "58", 
+                "passive target": "party"
+            }
+        ], 
+        "id": "850637", 
+        "name": "Lumen Histoire", 
+        "rarity": "7", 
+        "target": "self"
+    }, 
+    "850638": {
+        "desc": "Considerably boosts Atk, Def, Rec relative to lost HP and probable resistance against 2 KO attacks when Fairy Heart is equipped, 15% boost to all parameters and 150% boost to BB Atk for all allies & boosts damage reduction when guarding for all allies", 
+        "effects": [
+            {
+                "angel idol chance% condition": 0, 
+                "angel idol recover chance% high": 40, 
+                "angel idol recover chance% low": 40, 
+                "angel idol recover counts": 2, 
+                "conditions": [
+                    {
+                        "item required": [
+                            "819185"
+                        ]
+                    }
+                ], 
+                "passive id": "69", 
+                "passive target": "self"
+            }, 
+            {
+                "atk% base buff": 0, 
+                "atk% extra buff based on hp": 100, 
+                "buff proportional to hp": "lost", 
+                "conditions": [
+                    {
+                        "item required": [
+                            "819185"
+                        ]
+                    }
+                ], 
+                "def% base buff": 0, 
+                "def% extra buff based on hp": 100, 
+                "passive id": "46", 
+                "passive target": "self", 
+                "rec% base buff": 0, 
+                "rec% extra buff based on hp": 100
+            }, 
+            {
+                "atk% buff": 15, 
+                "conditions": [], 
+                "def% buff": 15, 
+                "hp% buff": 15, 
+                "passive id": "1", 
+                "passive target": "party", 
+                "rec% buff": 15
+            }, 
+            {
+                "bb atk% buff": 150, 
+                "conditions": [], 
+                "passive id": "64", 
+                "passive target": "party", 
+                "sbb atk% buff": 150, 
+                "ubb atk% buff": 150
+            }, 
+            {
+                "conditions": [], 
+                "guard increase mitigation%": 10, 
+                "passive id": "58", 
+                "passive target": "party"
+            }
+        ], 
+        "id": "850638", 
+        "name": "Fairy Strategist", 
+        "rarity": "7", 
+        "target": "self"
+    }, 
+    "850647": {
+        "desc": "10% boost to Atk, Def each turn (up to 4 turns) for all allies & greatly boosts Light elemental damage", 
+        "effects": [
+            {
+                "atk% max buff": 40, 
+                "conditions": [], 
+                "def% max buff": 40, 
+                "increase from min to max": 1, 
+                "passive id": "105", 
+                "passive target": "party", 
+                "turn count": 4
+            }, 
+            {
+                "conditions": [], 
+                "elemental weakness multiplier%": 100.0, 
+                "light units do extra elemental weakness dmg": true, 
+                "passive id": "50", 
+                "passive target": "self"
+            }
+        ], 
+        "id": "850647", 
+        "name": "Enchanter", 
+        "rarity": "7", 
+        "target": "self"
+    }, 
+    "850648": {
+        "desc": "15% boost to Atk, Def each turn (up to 4 turns) for all allies, greatly boosts Light elemental damage, greatly restores HP each turn & adds probable evasion for 2 turns effect to BB/SBB", 
+        "effects": [
+            {
+                "atk% max buff": 60, 
+                "conditions": [], 
+                "def% max buff": 60, 
+                "increase from min to max": 1, 
+                "passive id": "105", 
+                "passive target": "party", 
+                "turn count": 4
+            }, 
+            {
+                "conditions": [], 
+                "elemental weakness multiplier%": 100.0, 
+                "light units do extra elemental weakness dmg": true, 
+                "passive id": "50", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "passive id": "33", 
+                "passive target": "self", 
+                "rec% added (turn heal)": 10.0, 
+                "turn heal high": 4000, 
+                "turn heal low": 3000
+            }, 
+            {
+                "conditions": [], 
+                "passive id": "66", 
+                "passive target": "self", 
+                "trigger on bb": true, 
+                "trigger on sbb": true, 
+                "triggered effect": [
+                    {
+                        "effect delay time(ms)/frame": "0.0/0", 
+                        "target area": "aoe", 
+                        "target type": "party", 
+                        "unknown proc id": "10007", 
+                        "unknown proc param": "100,2,0,20"
+                    }
+                ]
+            }
+        ], 
+        "id": "850648", 
+        "name": "Sky Dragon Enchanter", 
         "rarity": "7", 
         "target": "self"
     }, 
