@@ -29609,7 +29609,7 @@
         "type": "sphere"
     }, 
     "818931": {
-        "desc": "100% boost to Atk, 30% boot to max HP, 30% boost to critical hit rate, greatly boosts critical hit damage, greatly boosts Fire elemental damage & critical damage enormously boosts BB gauge", 
+        "desc": "100% boost to Atk, 30% boost to max HP, 30% boost to critical hit rate, greatly boosts critical hit damage, greatly boosts Fire elemental damage & critical damage enormously boosts BB gauge", 
         "effect": [
             {
                 "atk% buff": 100, 
@@ -38490,6 +38490,176 @@
         "sphere type": 14, 
         "sphere type text": "Special", 
         "thumbnail": "sphere_thum_819175.png", 
+        "type": "sphere"
+    }, 
+    "819199": {
+        "desc": "50% boost to Atk, Def of Fire and Water types, resistance against 1 KO attack after activating OD, 50% Spark damage reduction, hugely boosts damage against status afflicted foes & probable 20% damage counter", 
+        "effect": [
+            {
+                "atk% buff": 50, 
+                "def% buff": 50, 
+                "elements buffed": [
+                    "fire", 
+                    "water"
+                ], 
+                "passive id": "2"
+            }, 
+            {
+                "unknown passive id": "106", 
+                "unknown passive params": "12,100,1,100,-1"
+            }, 
+            {
+                "base spark dmg% resist": 50, 
+                "buff spark dmg% resist": 50, 
+                "passive id": "77"
+            }, 
+            {
+                "atk% buff when enemy has ailment": 150, 
+                "atk% buff when enemy has curse": true, 
+                "atk% buff when enemy has injury": true, 
+                "atk% buff when enemy has paralysis": true, 
+                "atk% buff when enemy has poison": true, 
+                "atk% buff when enemy has sick": true, 
+                "atk% buff when enemy has weaken": true, 
+                "passive id": "74"
+            }, 
+            {
+                "dmg% reflect chance%": 50, 
+                "dmg% reflect high": 20, 
+                "dmg% reflect low": 20, 
+                "passive id": "26"
+            }
+        ], 
+        "id": 819199, 
+        "max_stack": 1, 
+        "name": "Chrysalis Alpha", 
+        "raid": false, 
+        "rarity": 7, 
+        "sell_price": 30000, 
+        "sphere type": 1, 
+        "sphere type text": "Status Boost", 
+        "thumbnail": "sphere_thum_828001.png", 
+        "type": "sphere"
+    }, 
+    "819200": {
+        "desc": "50% boost to Atk, Def of Earth and Thunder types, adds resistance against 1 KO attack when HP is below 20%, boosts BB Atk, enormously restores HP each turn & adds slight boost to OD gauge effect to BB/SBB", 
+        "effect": [
+            {
+                "atk% buff": 50, 
+                "def% buff": 50, 
+                "elements buffed": [
+                    "earth", 
+                    "thunder"
+                ], 
+                "passive id": "2"
+            }, 
+            {
+                "buff": {
+                    "angel idol buff (12)": true, 
+                    "angel idol recover hp%": 100, 
+                    "buff turns (12)": "-1"
+                }, 
+                "hp below % buff activation": 20, 
+                "passive id": "55"
+            }, 
+            {
+                "bb atk% buff": 200, 
+                "passive id": "64", 
+                "sbb atk% buff": 200, 
+                "ubb atk% buff": 200
+            }, 
+            {
+                "passive id": "33", 
+                "rec% added (turn heal)": 10.0, 
+                "turn heal high": 5000, 
+                "turn heal low": 3000
+            }, 
+            {
+                "passive id": "66", 
+                "trigger on bb": true, 
+                "trigger on sbb": true, 
+                "triggered effect": [
+                    {
+                        "effect delay time(ms)/frame": "0.0/0", 
+                        "increase od gauge%": 10.0, 
+                        "proc id": "43", 
+                        "target area": "single", 
+                        "target type": "self"
+                    }
+                ]
+            }
+        ], 
+        "id": 819200, 
+        "max_stack": 1, 
+        "name": "Chrysalis Omega", 
+        "raid": false, 
+        "rarity": 7, 
+        "sell_price": 30000, 
+        "sphere type": 1, 
+        "sphere type text": "Status Boost", 
+        "thumbnail": "sphere_thum_828002.png", 
+        "type": "sphere"
+    }, 
+    "819201": {
+        "desc": "60% boost to all parameters, adds resistance against 1 KO attack when HP is below 30%, 50% Spark damage reduction, boosts BB Atk, enormously restores HP each turn & adds slight boost to OD gauge effect to BB/SBB", 
+        "effect": [
+            {
+                "atk% buff": 60, 
+                "def% buff": 60, 
+                "hp% buff": 60, 
+                "passive id": "1", 
+                "rec% buff": 60
+            }, 
+            {
+                "buff": {
+                    "angel idol buff (12)": true, 
+                    "angel idol recover hp%": 100, 
+                    "buff turns (12)": "-1"
+                }, 
+                "hp below % buff activation": 30, 
+                "passive id": "55"
+            }, 
+            {
+                "base spark dmg% resist": 50, 
+                "buff spark dmg% resist": 50, 
+                "passive id": "77"
+            }, 
+            {
+                "bb atk% buff": 200, 
+                "passive id": "64", 
+                "sbb atk% buff": 200, 
+                "ubb atk% buff": 200
+            }, 
+            {
+                "passive id": "33", 
+                "rec% added (turn heal)": 10.0, 
+                "turn heal high": 6000, 
+                "turn heal low": 4000
+            }, 
+            {
+                "passive id": "66", 
+                "trigger on bb": true, 
+                "trigger on sbb": true, 
+                "triggered effect": [
+                    {
+                        "effect delay time(ms)/frame": "0.0/0", 
+                        "increase od gauge%": 10.0, 
+                        "proc id": "43", 
+                        "target area": "single", 
+                        "target type": "self"
+                    }
+                ]
+            }
+        ], 
+        "id": 819201, 
+        "max_stack": 1, 
+        "name": "Chrysalis Zeta", 
+        "raid": false, 
+        "rarity": 7, 
+        "sell_price": 30000, 
+        "sphere type": 1, 
+        "sphere type text": "Status Boost", 
+        "thumbnail": "sphere_thum_819910_1.png", 
         "type": "sphere"
     }, 
     "819901": {

@@ -24508,6 +24508,53 @@
         "rarity": "7", 
         "target": "self"
     }, 
+    "8000701": {
+        "desc": "100% boost to Atk, enormously boosts critical hit rate, adds probable Spark critical, boosts critical damage, 5% damage reduction from all elements & reduces Skip Turn effect duration by 1 turn", 
+        "effects": [
+            {
+                "atk% buff": 100, 
+                "conditions": [], 
+                "crit% buff": 60, 
+                "passive id": "1", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "passive id": "100", 
+                "passive target": "self", 
+                "spark crit chance%": 30, 
+                "spark crit dmg%": 50
+            }, 
+            {
+                "conditions": [], 
+                "crit multiplier%": 50.0, 
+                "passive id": "34", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "dmg% mitigation for elemental attacks": 5.0, 
+                "mitigate dark attacks": true, 
+                "mitigate earth attacks": true, 
+                "mitigate fire attacks": true, 
+                "mitigate light attacks": true, 
+                "mitigate thunder attacks": true, 
+                "mitigate water attacks": true, 
+                "passive id": "62", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "passive target": "self", 
+                "unknown passive id": "11009", 
+                "unknown passive params": "10005,-1,0,0,0,0,0,0,0,0"
+            }
+        ], 
+        "id": "8000701", 
+        "name": "The World", 
+        "rarity": "7", 
+        "target": "self"
+    }, 
     "8100": {
         "desc": "Boosts OD gauge fill rate", 
         "effects": [
@@ -27954,29 +28001,64 @@
         "target": "self"
     }, 
     "820548": {
-        "desc": "10% boost to all parameters for all allies, 25% damage reduction from Water types & raises Atk parameter limits to 130000", 
+        "desc": "15% boost to all parameters for all allies, 25% damage reduction from Fire, Water types, raises Atk parameter limits to 150000 & adds 25 combo (BB) / 33 combo (SBB) powerful Water attack on Fire types to BB/SBB", 
         "effects": [
             {
-                "atk% buff": 10, 
+                "atk% buff": 15, 
                 "conditions": [], 
-                "def% buff": 10, 
-                "hp% buff": 10, 
+                "def% buff": 15, 
+                "hp% buff": 15, 
                 "passive id": "1", 
                 "passive target": "party", 
-                "rec% buff": 10
+                "rec% buff": 15
             }, 
             {
                 "conditions": [], 
                 "dmg% mitigation for elemental attacks": 25.0, 
+                "mitigate fire attacks": true, 
                 "mitigate water attacks": true, 
                 "passive id": "62", 
                 "passive target": "self"
             }, 
             {
                 "conditions": [], 
-                "increase atk cap": 130000, 
+                "increase atk cap": 150000, 
                 "passive id": "143", 
                 "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "passive id": "66", 
+                "passive target": "self", 
+                "trigger on bb": true, 
+                "triggered effect": [
+                    {
+                        "additional element used for attack check": "self only", 
+                        "bb atk%": 470, 
+                        "bb flat atk": 200, 
+                        "effect delay time(ms)/frame": "0.0/0", 
+                        "proc id": "97", 
+                        "target area": "aoe", 
+                        "target type": "enemy"
+                    }
+                ]
+            }, 
+            {
+                "conditions": [], 
+                "passive id": "66", 
+                "passive target": "self", 
+                "trigger on sbb": true, 
+                "triggered effect": [
+                    {
+                        "additional element used for attack check": "self only", 
+                        "bb atk%": 670, 
+                        "bb flat atk": 200, 
+                        "effect delay time(ms)/frame": "0.0/0", 
+                        "proc id": "97", 
+                        "target area": "aoe", 
+                        "target type": "enemy"
+                    }
+                ]
             }
         ], 
         "id": "820548", 
@@ -35974,6 +36056,175 @@
         "id": "860608", 
         "name": "Ancient Presence", 
         "rarity": "1", 
+        "target": "self"
+    }, 
+    "860637": {
+        "desc": "Adds Def ignoring effect to attack for all allies & probable damage reduction to 1", 
+        "effects": [
+            {
+                "conditions": [], 
+                "ignore def%": 100, 
+                "passive id": "29", 
+                "passive target": "party"
+            }, 
+            {
+                "conditions": [], 
+                "passive id": "43", 
+                "passive target": "self", 
+                "take 1 dmg%": 15
+            }
+        ], 
+        "id": "860637", 
+        "name": "Complete Destruction", 
+        "rarity": "7", 
+        "target": "self"
+    }, 
+    "860638": {
+        "desc": "Adds Def ignoring effect to attacks for all allies, probable damage reduction to 1, negates all status ailments and Atk, Def, Rec reduction effects, damage taken may restore HP & 10% damage reduction", 
+        "effects": [
+            {
+                "conditions": [], 
+                "ignore def%": 100, 
+                "passive id": "29", 
+                "passive target": "party"
+            }, 
+            {
+                "conditions": [], 
+                "passive id": "43", 
+                "passive target": "self", 
+                "take 1 dmg%": 15
+            }, 
+            {
+                "atk down resist%": 100, 
+                "conditions": [], 
+                "curse resist%": 100, 
+                "def down resist%": 100, 
+                "injury resist%": 100, 
+                "paralysis resist%": 100, 
+                "passive id": "73", 
+                "passive target": "self", 
+                "poison resist%": 100, 
+                "rec down resist%": 100, 
+                "sick resist%": 100, 
+                "weaken resist%": 100
+            }, 
+            {
+                "conditions": [], 
+                "dmg% to hp% when attacked chance%": 25, 
+                "dmg% to hp% when attacked high": 25, 
+                "dmg% to hp% when attacked low": 20, 
+                "passive id": "24", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "dmg% mitigation": 10, 
+                "passive id": "8", 
+                "passive target": "self"
+            }
+        ], 
+        "id": "860638", 
+        "name": "Wings of Darkness", 
+        "rarity": "7", 
+        "target": "self"
+    }, 
+    "860647": {
+        "desc": "Probable damage reduction to 1 when Book of E.N.D. is equipped, adds probable resistance against 1 KO attack & boosts Atk, Def, Rec relative to lost HP", 
+        "effects": [
+            {
+                "conditions": [
+                    {
+                        "item required": [
+                            "819123"
+                        ]
+                    }
+                ], 
+                "passive id": "43", 
+                "passive target": "self", 
+                "take 1 dmg%": 10
+            }, 
+            {
+                "angel idol chance% condition": 0, 
+                "angel idol recover chance% high": 40, 
+                "angel idol recover chance% low": 40, 
+                "angel idol recover counts": 1, 
+                "conditions": [], 
+                "passive id": "69", 
+                "passive target": "self"
+            }, 
+            {
+                "atk% base buff": 0, 
+                "atk% extra buff based on hp": 60, 
+                "buff proportional to hp": "lost", 
+                "conditions": [], 
+                "def% base buff": 0, 
+                "def% extra buff based on hp": 60, 
+                "passive id": "46", 
+                "passive target": "self", 
+                "rec% base buff": 0, 
+                "rec% extra buff based on hp": 60
+            }
+        ], 
+        "id": "860647", 
+        "name": "Death Predation", 
+        "rarity": "7", 
+        "target": "self"
+    }, 
+    "860648": {
+        "desc": "Probable damage reduction to 1 when Book of E.N.D. is equipped, 20% boost to all parameters for all allies, adds probable resistance against 2 KO attacks, considerably boosts Atk, Def, Rec relative to lost HP & raises Atk parameter limits to 180000", 
+        "effects": [
+            {
+                "atk% buff": 20, 
+                "conditions": [], 
+                "def% buff": 20, 
+                "hp% buff": 20, 
+                "passive id": "1", 
+                "passive target": "party", 
+                "rec% buff": 20
+            }, 
+            {
+                "angel idol chance% condition": 0, 
+                "angel idol recover chance% high": 40, 
+                "angel idol recover chance% low": 40, 
+                "angel idol recover counts": 2, 
+                "conditions": [], 
+                "passive id": "69", 
+                "passive target": "self"
+            }, 
+            {
+                "atk% base buff": 0, 
+                "atk% extra buff based on hp": 100, 
+                "buff proportional to hp": "lost", 
+                "conditions": [], 
+                "def% base buff": 0, 
+                "def% extra buff based on hp": 100, 
+                "passive id": "46", 
+                "passive target": "self", 
+                "rec% base buff": 0, 
+                "rec% extra buff based on hp": 100
+            }, 
+            {
+                "conditions": [], 
+                "increase atk cap": 180000, 
+                "passive id": "143", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [
+                    {
+                        "item required": [
+                            "819123"
+                        ]
+                    }
+                ], 
+                "passive id": "43", 
+                "passive target": "self", 
+                "take 1 dmg%": 15
+            }
+        ], 
+        "id": "860648", 
+        "name": "Creator of Darkness", 
+        "rarity": "7", 
         "target": "self"
     }, 
     "8700": {
