@@ -30185,6 +30185,79 @@
         "rarity": "7", 
         "target": "self"
     }, 
+    "830657": {
+        "desc": "Probable 50% damage counter for all allies & 30% boost to Atk, Def for first 5 turns", 
+        "effects": [
+            {
+                "conditions": [], 
+                "dmg% reflect chance%": 70, 
+                "dmg% reflect high": 50, 
+                "dmg% reflect low": 50, 
+                "passive id": "26", 
+                "passive target": "party"
+            }, 
+            {
+                "conditions": [], 
+                "first x turns": 5, 
+                "first x turns atk% (1)": 30, 
+                "first x turns def% (3)": 30, 
+                "passive id": "21", 
+                "passive target": "self"
+            }
+        ], 
+        "id": "830657", 
+        "name": "Emblem of Courage", 
+        "rarity": "7", 
+        "target": "self"
+    }, 
+    "830658": {
+        "desc": "Probable 50% damage counter for all allies, 50% boost to Atk, Def for first 5 turns, greatly boosts critical damage & adds 20 combo (BB) / 26 combo (SBB) powerful Earth attack on all foes to BB/SBB", 
+        "effects": [
+            {
+                "conditions": [], 
+                "dmg% reflect chance%": 70, 
+                "dmg% reflect high": 50, 
+                "dmg% reflect low": 50, 
+                "passive id": "26", 
+                "passive target": "party"
+            }, 
+            {
+                "conditions": [], 
+                "first x turns": 5, 
+                "first x turns atk% (1)": 50, 
+                "first x turns def% (3)": 50, 
+                "passive id": "21", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "crit multiplier%": 100.0, 
+                "passive id": "34", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "passive id": "66", 
+                "passive target": "self", 
+                "trigger on bb": true, 
+                "trigger on sbb": true, 
+                "triggered effect": [
+                    {
+                        "bb atk%": 620, 
+                        "bb flat atk": 200, 
+                        "effect delay time(ms)/frame": "0.0/0", 
+                        "proc id": "1", 
+                        "target area": "aoe", 
+                        "target type": "enemy"
+                    }
+                ]
+            }
+        ], 
+        "id": "830658", 
+        "name": "Wildchild Spirit", 
+        "rarity": "7", 
+        "target": "self"
+    }, 
     "8400": {
         "desc": "Reduces damage taken when damage taken has exceeded certain amount for 2 turns", 
         "effects": [
@@ -30405,6 +30478,60 @@
         "id": "840147", 
         "name": "Soul of the Supreme", 
         "rarity": "1", 
+        "target": "self"
+    }, 
+    "840148": {
+        "desc": "Considerably boosts Spark damage and greatly boosts critical damage when Argeus is equipped, 20% boost to all parameters and 10% reduction to damage received for all allies & raises Atk parameter limits to 180000", 
+        "effects": [
+            {
+                "conditions": [
+                    {
+                        "item required": [
+                            "819203"
+                        ]
+                    }
+                ], 
+                "damage% for spark": 100, 
+                "passive id": "31", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [
+                    {
+                        "item required": [
+                            "819203"
+                        ]
+                    }
+                ], 
+                "crit multiplier%": 100.0, 
+                "passive id": "34", 
+                "passive target": "self"
+            }, 
+            {
+                "atk% buff": 20, 
+                "conditions": [], 
+                "def% buff": 20, 
+                "hp% buff": 20, 
+                "passive id": "1", 
+                "passive target": "party", 
+                "rec% buff": 20
+            }, 
+            {
+                "conditions": [], 
+                "passive target": "party", 
+                "unknown passive id": "10008", 
+                "unknown passive params": "10,100,10,100,10,100,10,100,0,0"
+            }, 
+            {
+                "conditions": [], 
+                "increase atk cap": 180000, 
+                "passive id": "143", 
+                "passive target": "self"
+            }
+        ], 
+        "id": "840148", 
+        "name": "Lord's Command", 
+        "rarity": "7", 
         "target": "self"
     }, 
     "840177": {
