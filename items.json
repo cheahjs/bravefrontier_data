@@ -3288,6 +3288,28 @@
         "thumbnail": "item_thum_92300.png", 
         "type": "summoner_consumable"
     }, 
+    "13381": {
+        "desc": "This is trash.", 
+        "effect": {
+            "effect": [
+                {
+                    "unknown proc id": "0", 
+                    "unknown proc param": ""
+                }
+            ], 
+            "target_area": "single", 
+            "target_type": "enemy"
+        }, 
+        "id": 13381, 
+        "max equipped": 99, 
+        "max_stack": 99, 
+        "name": "Trash", 
+        "raid": false, 
+        "rarity": 0, 
+        "sell_price": 100, 
+        "thumbnail": "item_thum_22210.png", 
+        "type": "consumable"
+    }, 
     "13382": {
         "desc": "This object is useless.", 
         "effect": {
@@ -3297,8 +3319,8 @@
                     "unknown proc param": ""
                 }
             ], 
-            "target_area": "aoe", 
-            "target_type": "party"
+            "target_area": "single", 
+            "target_type": "enemy"
         }, 
         "id": 13382, 
         "max equipped": 99, 
@@ -3323,9 +3345,31 @@
             "target_type": "party"
         }, 
         "id": 13383, 
-        "max equipped": 50, 
+        "max equipped": 99, 
         "max_stack": 99, 
         "name": "Pointless Item", 
+        "raid": false, 
+        "rarity": 0, 
+        "sell_price": 100, 
+        "thumbnail": "item_thum_21100.png", 
+        "type": "consumable"
+    }, 
+    "13384": {
+        "desc": "This is garbage.", 
+        "effect": {
+            "effect": [
+                {
+                    "unknown proc id": "0", 
+                    "unknown proc param": ""
+                }
+            ], 
+            "target_area": "aoe", 
+            "target_type": "party"
+        }, 
+        "id": 13384, 
+        "max equipped": 99, 
+        "max_stack": 99, 
+        "name": "Garbage", 
         "raid": false, 
         "rarity": 0, 
         "sell_price": 100, 
@@ -37784,7 +37828,7 @@
         "sell_price": 30000, 
         "sphere type": 13, 
         "sphere type text": "Atk Boosting", 
-        "thumbnail": "sphere_thum_4_6.png", 
+        "thumbnail": "sphere_thum_819174.png", 
         "type": "sphere"
     }, 
     "819175": {
@@ -38250,7 +38294,7 @@
         "sell_price": 30000, 
         "sphere type": 7, 
         "sphere type text": "HP Recovery", 
-        "thumbnail": "sphere_thum_818901.png", 
+        "thumbnail": "sphere_thum_819205.png", 
         "type": "sphere"
     }, 
     "819184": {
@@ -38340,6 +38384,90 @@
         "sphere type": 6, 
         "sphere type text": "BB Gauge", 
         "thumbnail": "item_thum_819184.png", 
+        "type": "sphere"
+    }, 
+    "819187": {
+        "desc": "55% boost to all parameters of Fire, Thunder types, enormously boosts Fire, Thunder elemental damage, enormously boosts OD gauge fill rate & 10% damage reduction from Fire, Thunder types</br>Guild Raid: Boosts Atk, Def when BB gauge is over 50% & adds Extra Skill disable effects purge to UBB", 
+        "effect": [
+            {
+                "atk% buff": 55, 
+                "def% buff": 55, 
+                "elements buffed": [
+                    "fire", 
+                    "thunder"
+                ], 
+                "hp% buff": 55, 
+                "passive id": "2", 
+                "rec% buff": 55
+            }, 
+            {
+                "elemental weakness multiplier%": 300.0, 
+                "fire units do extra elemental weakness dmg": true, 
+                "passive id": "50", 
+                "thunder units do extra elemental weakness dmg": true
+            }, 
+            {
+                "od fill rate%": 200, 
+                "passive id": "70"
+            }, 
+            {
+                "dmg% mitigation for elemental attacks": 10.0, 
+                "mitigate fire attacks": true, 
+                "mitigate thunder attacks": true, 
+                "passive id": "62"
+            }
+        ], 
+        "id": 819187, 
+        "max_stack": 1, 
+        "name": "Fiery Volt", 
+        "raid": false, 
+        "rarity": 7, 
+        "sell_price": 30000, 
+        "sphere type": 14, 
+        "sphere type text": "Special", 
+        "thumbnail": "sphere_thum_819187.png", 
+        "type": "sphere"
+    }, 
+    "819188": {
+        "desc": "50% boost to all parameters of Fire, Thunder types, enormously boosts Fire, Thunder elemental damage, enormously boosts OD gauge fill rate & 10% damage reduction from Fire, Thunder types</br>Guild Raid: Boosts Atk, Def when BB gauge is over 50% & adds Extra Skill disable effects purge to UBB", 
+        "effect": [
+            {
+                "atk% buff": 50, 
+                "def% buff": 50, 
+                "elements buffed": [
+                    "fire", 
+                    "thunder"
+                ], 
+                "hp% buff": 50, 
+                "passive id": "2", 
+                "rec% buff": 50
+            }, 
+            {
+                "elemental weakness multiplier%": 250.0, 
+                "fire units do extra elemental weakness dmg": true, 
+                "passive id": "50", 
+                "thunder units do extra elemental weakness dmg": true
+            }, 
+            {
+                "od fill rate%": 200, 
+                "passive id": "70"
+            }, 
+            {
+                "dmg% mitigation for elemental attacks": 10.0, 
+                "mitigate fire attacks": true, 
+                "mitigate thunder attacks": true, 
+                "passive id": "62"
+            }
+        ], 
+        "id": 819188, 
+        "max_stack": 1, 
+        "name": "Infernal Bolt", 
+        "raid": false, 
+        "rarity": 7, 
+        "sell_price": 30000, 
+        "sphere type": 14, 
+        "sphere type text": "Special", 
+        "thumbnail": "sphere_thum_819188.png", 
         "type": "sphere"
     }, 
     "819189": {
@@ -38585,6 +38713,52 @@
         "sphere type": 1, 
         "sphere type text": "Status Boost", 
         "thumbnail": "sphere_thum_819196.png", 
+        "type": "sphere"
+    }, 
+    "819197": {
+        "desc": "50% boost to Atk, Def, Rec when BB gauge is over 50%, greatly boosts BB Atk, hugely boosts Spark damage for 2 turns when Sparks exceed certain amount, Spark damage boosts BB gauge & reduces BB gauge required for BB", 
+        "effect": [
+            {
+                "atk% buff": 50, 
+                "bb gauge above % buff requirement": 50, 
+                "def% buff": 50, 
+                "passive id": "30", 
+                "rec% buff": 50
+            }, 
+            {
+                "bb atk% buff": 300, 
+                "passive id": "64", 
+                "sbb atk% buff": 300, 
+                "ubb atk% buff": 300
+            }, 
+            {
+                "buff": {
+                    "buff turns (40)": "2", 
+                    "spark dmg% buff": 150
+                }, 
+                "passive id": "86", 
+                "spark count buff activation": 20
+            }, 
+            {
+                "bc fill on spark high": 3, 
+                "bc fill on spark low": 2, 
+                "bc fill on spark%": 100, 
+                "passive id": "47"
+            }, 
+            {
+                "passive id": "48", 
+                "reduced bb bc cost%": 20
+            }
+        ], 
+        "id": 819197, 
+        "max_stack": 1, 
+        "name": "Pallya", 
+        "raid": false, 
+        "rarity": 7, 
+        "sell_price": 30000, 
+        "sphere type": 6, 
+        "sphere type text": "BB Gauge", 
+        "thumbnail": "sphere_thum_819197.png", 
         "type": "sphere"
     }, 
     "819198": {
@@ -38856,7 +39030,7 @@
         "sell_price": 30000, 
         "sphere type": 1, 
         "sphere type text": "Status Boost", 
-        "thumbnail": "sphere_thum_4_4.png", 
+        "thumbnail": "sphere_thum_819204.png", 
         "type": "sphere"
     }, 
     "819901": {
@@ -44106,7 +44280,7 @@
     "880244": {
         "desc": "Found in the heart of lands untouched yet by man, this magical creature--held in amber--is a potent source of power.", 
         "id": 880244, 
-        "max_stack": 99, 
+        "max_stack": 199, 
         "name": "Amber Butterfly", 
         "raid": false, 
         "rarity": 3, 

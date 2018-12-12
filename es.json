@@ -24260,6 +24260,48 @@
         "rarity": "7", 
         "target": "self"
     }, 
+    "8000513": {
+        "desc": "40% boost to all parameters of Fire, Thunder types, boosts Fire, Thunder elemental damage for all allies, 10% damage reduction from normal attacks & adds resistance against 1 KO attack after activating OD", 
+        "effects": [
+            {
+                "atk% buff": 40, 
+                "conditions": [], 
+                "def% buff": 40, 
+                "elements buffed": [
+                    "fire", 
+                    "thunder"
+                ], 
+                "hp% buff": 40, 
+                "passive id": "2", 
+                "passive target": "self", 
+                "rec% buff": 40
+            }, 
+            {
+                "conditions": [], 
+                "elemental weakness multiplier%": 15.0, 
+                "fire units do extra elemental weakness dmg": true, 
+                "passive id": "50", 
+                "passive target": "self", 
+                "thunder units do extra elemental weakness dmg": true
+            }, 
+            {
+                "conditions": [], 
+                "passive target": "self", 
+                "unknown passive id": "128", 
+                "unknown passive params": "100,10,100,10"
+            }, 
+            {
+                "conditions": [], 
+                "passive target": "self", 
+                "unknown passive id": "106", 
+                "unknown passive params": "12,100,1,100,-1"
+            }
+        ], 
+        "id": "8000513", 
+        "name": "Fervor Aegis", 
+        "rarity": "7", 
+        "target": "self"
+    }, 
     "8000601": {
         "desc": "10% boost to Atk for all Dark type allies, greatly boosts Atk relative to remaining HP, greatly boosts Dark elemental damage, adds additional powerful attack at turn's end for 3 turns effect to SBB & raises Atk parameter limits to 170000", 
         "effects": [
@@ -24660,7 +24702,7 @@
         "target": "self"
     }, 
     "8000702": {
-        "desc": "25% boost to all parameters, negates all status ailments, boosts OD gauge fill rate & 55% boost to Atk", 
+        "desc": "25% boost to all parameters, negates all status ailments, boosts OD gauge fill rate & boosts Atk relative to remaining HP", 
         "effects": [
             {
                 "atk% buff": 25, 
@@ -24689,8 +24731,8 @@
                 "passive target": "self"
             }, 
             {
-                "atk% base buff": 55, 
-                "atk% extra buff based on hp": 0, 
+                "atk% base buff": 0, 
+                "atk% extra buff based on hp": 55, 
                 "buff proportional to hp": "remaining", 
                 "conditions": [], 
                 "passive id": "46", 
@@ -28964,6 +29006,65 @@
         "id": "830147", 
         "name": "Soul of the Watcher", 
         "rarity": "1", 
+        "target": "self"
+    }, 
+    "830148": {
+        "desc": "Adds probable Spark critical and enormously reduces BB gauge consumed during BB when Pallya is equipped, 30% boost to Atk, max HP and slightly reduces BB gauge required for BB for all allies & probable resistance against 2 KO attacks", 
+        "effects": [
+            {
+                "conditions": [
+                    {
+                        "item required": [
+                            "819197"
+                        ]
+                    }
+                ], 
+                "passive id": "100", 
+                "passive target": "self", 
+                "spark crit chance%": 50, 
+                "spark crit dmg%": 300
+            }, 
+            {
+                "conditions": [
+                    {
+                        "item required": [
+                            "819197"
+                        ]
+                    }
+                ], 
+                "passive id": "49", 
+                "passive target": "self", 
+                "reduced bb bc use chance%": 100, 
+                "reduced bb bc use% high": 50, 
+                "reduced bb bc use% low": 30
+            }, 
+            {
+                "atk% buff": 30, 
+                "conditions": [], 
+                "hp% buff": 30, 
+                "passive id": "1", 
+                "passive target": "party"
+            }, 
+            {
+                "conditions": [], 
+                "passive id": "48", 
+                "passive target": "party", 
+                "reduced bb bc cost%": 10
+            }, 
+            {
+                "angel idol chance% condition": 0, 
+                "angel idol recover chance% high": 40, 
+                "angel idol recover chance% low": 40, 
+                "angel idol recover counts": 2, 
+                "angel idol recover hp%": 50, 
+                "conditions": [], 
+                "passive id": "69", 
+                "passive target": "self"
+            }
+        ], 
+        "id": "830148", 
+        "name": "Palladian Stance", 
+        "rarity": "7", 
         "target": "self"
     }, 
     "830177": {
@@ -36241,6 +36342,84 @@
         "rarity": "7", 
         "target": "self"
     }, 
+    "860577": {
+        "desc": "Boosts Atk, Def, Rec relative to remaining HP, probable damage reduction to 1 & damage taken may boost BB gauge", 
+        "effects": [
+            {
+                "atk% base buff": 0, 
+                "atk% extra buff based on hp": 80, 
+                "buff proportional to hp": "remaining", 
+                "conditions": [], 
+                "def% base buff": 0, 
+                "def% extra buff based on hp": 80, 
+                "passive id": "46", 
+                "passive target": "self", 
+                "rec% base buff": 0, 
+                "rec% extra buff based on hp": 80
+            }, 
+            {
+                "conditions": [], 
+                "passive id": "43", 
+                "passive target": "self", 
+                "take 1 dmg%": 10
+            }, 
+            {
+                "bc fill when attacked high": 3, 
+                "bc fill when attacked low": 2, 
+                "bc fill when attacked%": 100, 
+                "conditions": [], 
+                "passive id": "25", 
+                "passive target": "self"
+            }
+        ], 
+        "id": "860577", 
+        "name": "Identity Violator", 
+        "rarity": "7", 
+        "target": "self"
+    }, 
+    "860578": {
+        "desc": "5% damage reduction from Light, Dark types for all allies, boosts Atk, Def, Rec relative to remaining HP, probable damage reduction to 1 & damage taken boosts BB gauge", 
+        "effects": [
+            {
+                "atk% base buff": 0, 
+                "atk% extra buff based on hp": 100, 
+                "buff proportional to hp": "remaining", 
+                "conditions": [], 
+                "def% base buff": 0, 
+                "def% extra buff based on hp": 100, 
+                "passive id": "46", 
+                "passive target": "self", 
+                "rec% base buff": 0, 
+                "rec% extra buff based on hp": 100
+            }, 
+            {
+                "conditions": [], 
+                "passive id": "43", 
+                "passive target": "self", 
+                "take 1 dmg%": 15
+            }, 
+            {
+                "bc fill when attacked high": 4, 
+                "bc fill when attacked low": 2, 
+                "bc fill when attacked%": 100, 
+                "conditions": [], 
+                "passive id": "25", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "dmg% mitigation for elemental attacks": 5.0, 
+                "mitigate dark attacks": true, 
+                "mitigate light attacks": true, 
+                "passive id": "62", 
+                "passive target": "party"
+            }
+        ], 
+        "id": "860578", 
+        "name": "Replicant Rapture", 
+        "rarity": "7", 
+        "target": "self"
+    }, 
     "860607": {
         "desc": "Adds 50% damage reduction for 1 turn effect to BB/SBB when Photon Scepter is equipped & raises normal hit amount", 
         "effects": [
@@ -36498,6 +36677,44 @@
         ], 
         "id": "860648", 
         "name": "Creator of Darkness", 
+        "rarity": "7", 
+        "target": "self"
+    }, 
+    "860678": {
+        "desc": "10% boost to all parameters for all allies, probable 25% damage counter, considerably boosts Spark damage & considerably boosts BB gauge each turn", 
+        "effects": [
+            {
+                "atk% buff": 10, 
+                "conditions": [], 
+                "def% buff": 10, 
+                "hp% buff": 10, 
+                "passive id": "1", 
+                "passive target": "party", 
+                "rec% buff": 10
+            }, 
+            {
+                "conditions": [], 
+                "dmg% reflect chance%": 70, 
+                "dmg% reflect high": 25, 
+                "dmg% reflect low": 25, 
+                "passive id": "26", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "damage% for spark": 80, 
+                "passive id": "31", 
+                "passive target": "self"
+            }, 
+            {
+                "bc fill per turn": 4, 
+                "conditions": [], 
+                "passive id": "9", 
+                "passive target": "self"
+            }
+        ], 
+        "id": "860678", 
+        "name": "Accumulation of Souls", 
         "rarity": "7", 
         "target": "self"
     }, 
