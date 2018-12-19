@@ -23948,6 +23948,51 @@
         "rarity": "8", 
         "target": "self"
     }, 
+    "8000403": {
+        "desc": "40% boost to all parameters, negates all status ailments, damage taken boosts BB gauge & boosts BB Atk", 
+        "effects": [
+            {
+                "atk% buff": 40, 
+                "conditions": [], 
+                "def% buff": 40, 
+                "hp% buff": 40, 
+                "passive id": "1", 
+                "passive target": "self", 
+                "rec% buff": 40
+            }, 
+            {
+                "conditions": [], 
+                "curse resist%": 100, 
+                "injury resist%": 100, 
+                "paralysis resist%": 100, 
+                "passive id": "4", 
+                "passive target": "self", 
+                "poison resist%": 100, 
+                "sick resist%": 100, 
+                "weaken resist%": 100
+            }, 
+            {
+                "bc fill when attacked high": 4, 
+                "bc fill when attacked low": 2, 
+                "bc fill when attacked%": 100, 
+                "conditions": [], 
+                "passive id": "25", 
+                "passive target": "self"
+            }, 
+            {
+                "bb atk% buff": 150, 
+                "conditions": [], 
+                "passive id": "64", 
+                "passive target": "self", 
+                "sbb atk% buff": 150, 
+                "ubb atk% buff": 150
+            }
+        ], 
+        "id": "8000403", 
+        "name": "Brave Winter", 
+        "rarity": "7", 
+        "target": "self"
+    }, 
     "8000501": {
         "desc": "10% boost to all parameters for all Fire type allies, 150% boost to Atk and 30% boost to critical hit rate of Fire types, 35% damage reduction for first 2 turns from Fire, Earth types, greatly boosts BB/SBB activation rates & raises Atk parameter limits to 180000", 
         "effects": [
@@ -24281,7 +24326,7 @@
                 "elemental weakness multiplier%": 15.0, 
                 "fire units do extra elemental weakness dmg": true, 
                 "passive id": "50", 
-                "passive target": "self", 
+                "passive target": "party", 
                 "thunder units do extra elemental weakness dmg": true
             }, 
             {
@@ -25972,6 +26017,87 @@
         "id": "810508", 
         "name": "Enkindling Soul", 
         "rarity": "1", 
+        "target": "self"
+    }, 
+    "810517": {
+        "desc": "Negates Def ignoring effects, probable resistance against 1 KO attack & probable damage reduction to 1", 
+        "effects": [
+            {
+                "conditions": [], 
+                "ignore def resist chance%": 100, 
+                "passive id": "92", 
+                "passive target": "self"
+            }, 
+            {
+                "angel idol chance% condition": 0, 
+                "angel idol recover chance% high": 70, 
+                "angel idol recover chance% low": 70, 
+                "angel idol recover counts": 1, 
+                "conditions": [], 
+                "passive id": "69", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "passive id": "43", 
+                "passive target": "self", 
+                "take 1 dmg%": 15
+            }
+        ], 
+        "id": "810517", 
+        "name": "Maximum Volume!!!", 
+        "rarity": "7", 
+        "target": "self"
+    }, 
+    "810518": {
+        "desc": "35% boost to Def, Rec of Fire types and hugely restores HP for 3 turns when guarding for all allies, negates Def ignoring effects, probable resistance against 1 KO attack & probable damage reduction to 1", 
+        "effects": [
+            {
+                "conditions": [], 
+                "ignore def resist chance%": 100, 
+                "passive id": "92", 
+                "passive target": "self"
+            }, 
+            {
+                "angel idol chance% condition": 0, 
+                "angel idol recover chance% high": 70, 
+                "angel idol recover chance% low": 70, 
+                "angel idol recover counts": 1, 
+                "conditions": [], 
+                "passive id": "69", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "passive id": "43", 
+                "passive target": "self", 
+                "take 1 dmg%": 15
+            }, 
+            {
+                "conditions": [], 
+                "def% buff": 35, 
+                "elements buffed": [
+                    "fire"
+                ], 
+                "passive id": "2", 
+                "passive target": "party", 
+                "rec% buff": 35
+            }, 
+            {
+                "buff": {
+                    "buff turns (8)": "3", 
+                    "gradual heal high": 5000, 
+                    "gradual heal low": 4000
+                }, 
+                "conditions": [], 
+                "on guard activation chance%": 100, 
+                "passive id": "88", 
+                "passive target": "party"
+            }
+        ], 
+        "id": "810518", 
+        "name": "Alpine Alla Marcia", 
+        "rarity": "7", 
         "target": "self"
     }, 
     "810527": {

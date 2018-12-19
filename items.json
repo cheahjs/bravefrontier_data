@@ -28100,6 +28100,17 @@
         "thumbnail": "item_thum_802003.png", 
         "type": "material"
     }, 
+    "802004": {
+        "desc": "A variety of notes, each contained within a small orb.", 
+        "id": 802004, 
+        "max_stack": 99, 
+        "name": "Kindling Notes", 
+        "raid": false, 
+        "rarity": 3, 
+        "sell_price": 20, 
+        "thumbnail": "item_thum_802004.png", 
+        "type": "material"
+    }, 
     "818881": {
         "desc": "Boosts Def by 360% when Unit's HP drops below 35% & slight boost to BC drop rate when attacking", 
         "effect": [
@@ -38586,6 +38597,141 @@
         "sphere type": 11, 
         "sphere type text": "Spark", 
         "thumbnail": "sphere_thum_819176.png", 
+        "type": "sphere"
+    }, 
+    "819191": {
+        "desc": "30% to Def, max HP, 5% damage reduction & 35% additional damage reduction", 
+        "effect": [
+            {
+                "def% buff": 30, 
+                "hp% buff": 30, 
+                "passive id": "1"
+            }, 
+            {
+                "dmg% mitigation": 5, 
+                "passive id": "8"
+            }, 
+            {
+                "unknown passive id": "127", 
+                "unknown passive params": "100,35"
+            }
+        ], 
+        "id": 819191, 
+        "max_stack": 1, 
+        "name": "Frigid Melody", 
+        "raid": false, 
+        "rarity": 6, 
+        "sell_price": 30000, 
+        "sphere type": 10, 
+        "sphere type text": "Damage Reducing", 
+        "thumbnail": "sphere_thum_819191.png", 
+        "type": "sphere"
+    }, 
+    "819192": {
+        "desc": "100% boost to Atk, 25% reduction to Def, boosts Spark damage & boosts Atk relative to remaining HP", 
+        "effect": [
+            {
+                "atk% buff": 100, 
+                "def% buff": -25, 
+                "passive id": "1"
+            }, 
+            {
+                "atk% base buff": 0, 
+                "atk% extra buff based on hp": 80, 
+                "buff proportional to hp": "remaining", 
+                "passive id": "46"
+            }, 
+            {
+                "damage% for spark": 75, 
+                "passive id": "31"
+            }
+        ], 
+        "id": 819192, 
+        "max_stack": 1, 
+        "name": "Kindling Melody", 
+        "raid": false, 
+        "rarity": 6, 
+        "recipe": {
+            "karma": "50000", 
+            "materials": [
+                {
+                    "count": 12, 
+                    "id": 802004
+                }
+            ]
+        }, 
+        "sell_price": 30000, 
+        "sphere type": 1, 
+        "sphere type text": "Status Boost", 
+        "thumbnail": "sphere_thum_819192.png", 
+        "type": "sphere"
+    }, 
+    "819193": {
+        "desc": "100% boost to Atk, 40% boost to Rec, max HP, boosts Atk relative to remaining HP, greatly boosts Spark damage, 50% additional damage reduction, 5% damage reduction & adds Spark vulnerability infliction for 2 turns effect to BB/SBB", 
+        "effect": [
+            {
+                "atk% buff": 100, 
+                "hp% buff": 40, 
+                "passive id": "1", 
+                "rec% buff": 40
+            }, 
+            {
+                "atk% base buff": 40, 
+                "atk% extra buff based on hp": 80, 
+                "buff proportional to hp": "remaining", 
+                "passive id": "46"
+            }, 
+            {
+                "damage% for spark": 100, 
+                "passive id": "31"
+            }, 
+            {
+                "unknown passive id": "127", 
+                "unknown passive params": "100,50"
+            }, 
+            {
+                "dmg% mitigation": 5, 
+                "passive id": "8"
+            }, 
+            {
+                "passive id": "66", 
+                "trigger on bb": true, 
+                "trigger on sbb": true, 
+                "triggered effect": [
+                    {
+                        "effect delay time(ms)/frame": "0.0/0", 
+                        "proc id": "58", 
+                        "spark dmg received apply%": 100, 
+                        "spark dmg received debuff turns (94)": 2, 
+                        "spark dmg% received": 20, 
+                        "target area": "aoe", 
+                        "target type": "enemy"
+                    }
+                ]
+            }
+        ], 
+        "id": 819193, 
+        "max_stack": 1, 
+        "name": "Melodious Harmony", 
+        "raid": false, 
+        "rarity": 7, 
+        "recipe": {
+            "karma": "300000", 
+            "materials": [
+                {
+                    "count": 1, 
+                    "id": 819192
+                }, 
+                {
+                    "count": 1, 
+                    "id": 819191
+                }
+            ]
+        }, 
+        "sell_price": 30000, 
+        "sphere type": 14, 
+        "sphere type text": "Special", 
+        "thumbnail": "sphere_thum_819193.png", 
         "type": "sphere"
     }, 
     "819194": {
