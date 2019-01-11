@@ -27630,6 +27630,66 @@
         "id": "8106", 
         "name": "Steel God's Shining Barrier"
     }, 
+    "810617": {
+        "desc": "150% boost to Atk, 100% boost to max HP, 150% boost to Spark damage, Spark damage boosts BB gauge & 15% boost to EXP gained", 
+        "effects": [
+            {
+                "atk% buff": 150, 
+                "hp% buff": 100, 
+                "passive id": "1"
+            }, 
+            {
+                "damage% for spark": 150, 
+                "passive id": "31"
+            }, 
+            {
+                "bc fill on spark high": 3, 
+                "bc fill on spark low": 2, 
+                "bc fill on spark%": 100, 
+                "passive id": "47"
+            }, 
+            {
+                "passive id": "97", 
+                "xp gained increase%": 15
+            }
+        ], 
+        "id": "810617", 
+        "name": "Passion Spark"
+    }, 
+    "810618": {
+        "desc": "200% boost to Atk, 130% boost to max HP, 180% boost to Spark damage, Spark damage considerably boosts BB gauge, 20% damage reduction for 1 turn when damage dealt exceeds certain amount & 25% boost to EXP gained", 
+        "effects": [
+            {
+                "atk% buff": 200, 
+                "hp% buff": 130, 
+                "passive id": "1"
+            }, 
+            {
+                "damage% for spark": 180, 
+                "passive id": "31"
+            }, 
+            {
+                "bc fill on spark high": 4, 
+                "bc fill on spark low": 3, 
+                "bc fill on spark%": 100, 
+                "passive id": "47"
+            }, 
+            {
+                "passive id": "97", 
+                "xp gained increase%": 25
+            }, 
+            {
+                "buff": {
+                    "buff turns (36)": "1", 
+                    "dmg reduction% buff": 20
+                }, 
+                "damage dealt threshold buff activation": 100000, 
+                "passive id": "80"
+            }
+        ], 
+        "id": "810618", 
+        "name": "Master Pyrotechnique"
+    }, 
     "810627": {
         "desc": "80% boost to all parameters, enormously boosts BB Atk, hugely boosts BB gauge each turn & probable damage reduction to 1", 
         "effects": [
@@ -29360,6 +29420,52 @@
         ], 
         "id": "830298", 
         "name": "Martial Flourish"
+    }, 
+    "830318": {
+        "desc": "100% boost to Atk, max HP, hugely boosts Spark damage, greatly boosts Spark damage for 2 turns when Sparks exceed a certain amount, hugely boosts damage against status afflicted foes & adds probable random status ailment infliction to attack", 
+        "effects": [
+            {
+                "atk% buff": 100, 
+                "hp% buff": 100, 
+                "passive id": "1"
+            }, 
+            {
+                "damage% for spark": 180, 
+                "passive id": "31"
+            }, 
+            {
+                "buff": {
+                    "buff turns (40)": "2", 
+                    "spark dmg% buff": 120
+                }, 
+                "passive id": "86", 
+                "spark count buff activation": 30
+            }, 
+            {
+                "atk% buff when enemy has ailment": 150, 
+                "atk% buff when enemy has curse": true, 
+                "atk% buff when enemy has injury": true, 
+                "atk% buff when enemy has paralysis": true, 
+                "atk% buff when enemy has poison": true, 
+                "atk% buff when enemy has sick": true, 
+                "atk% buff when enemy has weaken": true, 
+                "passive id": "74"
+            }, 
+            {
+                "injury%": 15, 
+                "paralysis%": 10, 
+                "passive id": "20", 
+                "weaken%": 15
+            }, 
+            {
+                "curse%": 10, 
+                "passive id": "20", 
+                "poison%": 10, 
+                "sick%": 15
+            }
+        ], 
+        "id": "830318", 
+        "name": "Chieftain's Resolve"
     }, 
     "830328": {
         "desc": "150% boost to Atk, 80% boost to max HP, greatly boosts Atk for 2 turns when damage dealt has exceeded certain amount, greatly boosts BB Atk, hugely boosts Earth, Dark elemental damage & adds probable Def ignoring effect", 

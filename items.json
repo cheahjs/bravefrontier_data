@@ -29777,34 +29777,44 @@
         "type": "sphere"
     }, 
     "818933": {
-        "desc": "50% boost to Atk, 50% boost to Spark damage & probable infliction of random status ailment", 
+        "desc": "Adds probable random status ailment infliction to attack, 100% boost to Atk, hugely boosts Spark damage & greatly boosts damage against status afflicted foes", 
         "effect": [
             {
-                "atk% buff": 50, 
+                "atk% buff": 100, 
                 "passive id": "1"
             }, 
             {
-                "damage% for spark": 50, 
+                "damage% for spark": 150, 
                 "passive id": "31"
             }, 
             {
-                "curse%": 10, 
-                "paralysis%": 10, 
-                "passive id": "20", 
-                "poison%": 10
+                "atk% buff when enemy has ailment": 150, 
+                "atk% buff when enemy has curse": true, 
+                "atk% buff when enemy has injury": true, 
+                "atk% buff when enemy has paralysis": true, 
+                "atk% buff when enemy has poison": true, 
+                "atk% buff when enemy has sick": true, 
+                "atk% buff when enemy has weaken": true, 
+                "passive id": "74"
             }, 
             {
-                "injury%": 15, 
+                "curse%": 25, 
+                "paralysis%": 25, 
                 "passive id": "20", 
-                "sick%": 15, 
-                "weaken%": 15
+                "poison%": 25
+            }, 
+            {
+                "injury%": 30, 
+                "passive id": "20", 
+                "sick%": 30, 
+                "weaken%": 30
             }
         ], 
         "id": 818933, 
         "max_stack": 1, 
         "name": "Vorpal Chainblades", 
-        "raid": true, 
-        "rarity": 6, 
+        "raid": false, 
+        "rarity": 3, 
         "recipe": {
             "karma": "100000", 
             "materials": [
@@ -29819,8 +29829,8 @@
             ]
         }, 
         "sell_price": 10000, 
-        "sphere type": 13, 
-        "sphere type text": "Atk Boosting", 
+        "sphere type": 11, 
+        "sphere type text": "Spark", 
         "thumbnail": "sphere_thum_4_3.png", 
         "type": "sphere"
     }, 

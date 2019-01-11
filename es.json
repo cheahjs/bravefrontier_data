@@ -26452,6 +26452,82 @@
         "rarity": "7", 
         "target": "self"
     }, 
+    "810617": {
+        "desc": "10% boost to Spark damage for all allies, greatly boosts critical damage & 3% boost to EXP gained", 
+        "effects": [
+            {
+                "conditions": [], 
+                "crit multiplier%": 100.0, 
+                "passive id": "34", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "passive id": "97", 
+                "passive target": "party", 
+                "xp gained increase%": 3
+            }, 
+            {
+                "conditions": [], 
+                "damage% for spark": 10, 
+                "passive id": "31", 
+                "passive target": "party"
+            }
+        ], 
+        "id": "810617", 
+        "name": "Competitive Spirit", 
+        "rarity": "7", 
+        "target": "self"
+    }, 
+    "810618": {
+        "desc": "20% boost to Spark damage for all allies, greatly boosts Critical damage, adds Fire shield for 3 turns effect to BB/SBB, 5% boost to EXP gained & 8% boost to Summoner EXP gained", 
+        "effects": [
+            {
+                "conditions": [], 
+                "crit multiplier%": 100.0, 
+                "passive id": "34", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "passive id": "97", 
+                "passive target": "party", 
+                "xp gained increase%": 5
+            }, 
+            {
+                "conditions": [], 
+                "damage% for spark": 20, 
+                "passive id": "31", 
+                "passive target": "party"
+            }, 
+            {
+                "conditions": [], 
+                "passive target": "self", 
+                "unknown passive id": "11006", 
+                "unknown passive params": "8"
+            }, 
+            {
+                "conditions": [], 
+                "passive id": "66", 
+                "passive target": "self", 
+                "trigger on bb": true, 
+                "trigger on sbb": true, 
+                "triggered effect": [
+                    {
+                        "effect delay time(ms)/frame": "0.0/0", 
+                        "target area": "aoe", 
+                        "target type": "party", 
+                        "unknown proc id": "10017", 
+                        "unknown proc param": "1,6000,6000,3,0"
+                    }
+                ]
+            }
+        ], 
+        "id": "810618", 
+        "name": "Let Her Rip!", 
+        "rarity": "7", 
+        "target": "self"
+    }, 
     "810627": {
         "desc": "10% boost to all parameters for all allies, adds probable Spark critical & critical damage may inflict random status ailments", 
         "effects": [
@@ -29555,6 +29631,63 @@
         "id": "830317", 
         "name": "Matriarch's Indignation", 
         "rarity": "1", 
+        "target": "self"
+    }, 
+    "830318": {
+        "desc": "40% boost to all parameters when Vorpal Chainblades is equipped, slightly boosts Spark damage when HP is over 50% for all allies, hugely boosts damage against status afflicted foes & negates all status ailments and Atk, Def, Rec reduction effects", 
+        "effects": [
+            {
+                "atk% buff": 40, 
+                "conditions": [
+                    {
+                        "item required": [
+                            "818933"
+                        ]
+                    }
+                ], 
+                "def% buff": 40, 
+                "hp% buff": 40, 
+                "passive id": "1", 
+                "passive target": "self", 
+                "rec% buff": 40
+            }, 
+            {
+                "conditions": [], 
+                "damage% for spark": 20, 
+                "hp above % buff requirement": 50, 
+                "passive id": "104", 
+                "passive target": "party"
+            }, 
+            {
+                "atk% buff when enemy has ailment": 150, 
+                "atk% buff when enemy has curse": true, 
+                "atk% buff when enemy has injury": true, 
+                "atk% buff when enemy has paralysis": true, 
+                "atk% buff when enemy has poison": true, 
+                "atk% buff when enemy has sick": true, 
+                "atk% buff when enemy has weaken": true, 
+                "conditions": [], 
+                "passive id": "74", 
+                "passive target": "self"
+            }, 
+            {
+                "atk down resist%": 100, 
+                "conditions": [], 
+                "curse resist%": 100, 
+                "def down resist%": 100, 
+                "injury resist%": 100, 
+                "paralysis resist%": 100, 
+                "passive id": "73", 
+                "passive target": "self", 
+                "poison resist%": 100, 
+                "rec down resist%": 100, 
+                "sick resist%": 100, 
+                "weaken resist%": 100
+            }
+        ], 
+        "id": "830318", 
+        "name": "Avenger's Defiance", 
+        "rarity": "7", 
         "target": "self"
     }, 
     "830327": {
