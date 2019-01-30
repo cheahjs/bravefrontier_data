@@ -3289,12 +3289,12 @@
         "type": "summoner_consumable"
     }, 
     "13381": {
-        "desc": "This is trash.", 
+        "desc": "TGT Enemy Buffwipe", 
         "effect": {
             "effect": [
                 {
-                    "unknown proc id": "0", 
-                    "unknown proc param": ""
+                    "clear buff chance%": 100.0, 
+                    "proc id": "33"
                 }
             ], 
             "target_area": "single", 
@@ -3303,7 +3303,7 @@
         "id": 13381, 
         "max equipped": 99, 
         "max_stack": 99, 
-        "name": "Trash", 
+        "name": "Carwash", 
         "raid": false, 
         "rarity": 0, 
         "sell_price": 100, 
@@ -3311,12 +3311,12 @@
         "type": "consumable"
     }, 
     "13382": {
-        "desc": "This object is useless.", 
+        "desc": "TGT Enemy Instant Kill", 
         "effect": {
             "effect": [
                 {
-                    "unknown proc id": "0", 
-                    "unknown proc param": ""
+                    "unknown proc id": "49", 
+                    "unknown proc param": "100,0,0"
                 }
             ], 
             "target_area": "single", 
@@ -3325,7 +3325,7 @@
         "id": 13382, 
         "max equipped": 99, 
         "max_stack": 99, 
-        "name": "Useless Object", 
+        "name": "Pew Pew", 
         "raid": false, 
         "rarity": 0, 
         "sell_price": 100, 
@@ -3333,12 +3333,12 @@
         "type": "consumable"
     }, 
     "13383": {
-        "desc": "This item is pointless.", 
+        "desc": "ALL Allies Rez", 
         "effect": {
             "effect": [
                 {
-                    "unknown proc id": "0", 
-                    "unknown proc param": ""
+                    "proc id": "12", 
+                    "revive to hp%": 100
                 }
             ], 
             "target_area": "aoe", 
@@ -3347,7 +3347,7 @@
         "id": 13383, 
         "max equipped": 99, 
         "max_stack": 99, 
-        "name": "Pointless Item", 
+        "name": "Eggs", 
         "raid": false, 
         "rarity": 0, 
         "sell_price": 100, 
@@ -3355,12 +3355,14 @@
         "type": "consumable"
     }, 
     "13384": {
-        "desc": "This is garbage.", 
+        "desc": "ALL Allies 500% ATK+", 
         "effect": {
             "effect": [
                 {
-                    "unknown proc id": "0", 
-                    "unknown proc param": ""
+                    "atk% buff (1)": 500, 
+                    "buff turns": 3, 
+                    "element buffed": "all", 
+                    "proc id": "5"
                 }
             ], 
             "target_area": "aoe", 
@@ -3369,7 +3371,7 @@
         "id": 13384, 
         "max equipped": 99, 
         "max_stack": 99, 
-        "name": "Garbage", 
+        "name": "Red Bull", 
         "raid": false, 
         "rarity": 0, 
         "sell_price": 100, 
@@ -39189,6 +39191,55 @@
         "thumbnail": "sphere_thum_819204.png", 
         "type": "sphere"
     }, 
+    "819210": {
+        "desc": "40% boost to Def, Rec, max HP, 15% damage reduction, negates Def ignoring effects, all status ailments and Atk, Def, Rec reduction effects & probable resistance against 2 KO attacks", 
+        "effect": [
+            {
+                "def% buff": 40, 
+                "hp% buff": 40, 
+                "passive id": "1", 
+                "rec% buff": 40
+            }, 
+            {
+                "dmg% mitigation": 15, 
+                "passive id": "8"
+            }, 
+            {
+                "ignore def resist chance%": 100, 
+                "passive id": "92"
+            }, 
+            {
+                "atk down resist%": 100, 
+                "curse resist%": 100, 
+                "def down resist%": 100, 
+                "injury resist%": 100, 
+                "paralysis resist%": 100, 
+                "passive id": "73", 
+                "poison resist%": 100, 
+                "rec down resist%": 100, 
+                "sick resist%": 100, 
+                "weaken resist%": 100
+            }, 
+            {
+                "angel idol chance% condition": 0, 
+                "angel idol recover chance% high": 40, 
+                "angel idol recover chance% low": 40, 
+                "angel idol recover counts": 2, 
+                "angel idol recover hp%": 100, 
+                "passive id": "69"
+            }
+        ], 
+        "id": 819210, 
+        "max_stack": 1, 
+        "name": "Uln'gha", 
+        "raid": false, 
+        "rarity": 7, 
+        "sell_price": 30000, 
+        "sphere type": 10, 
+        "sphere type text": "Damage Reducing", 
+        "thumbnail": "sphere_thum_819210.png", 
+        "type": "sphere"
+    }, 
     "819211": {
         "desc": "120% boost to Atk when BB gauge is above 50%, greatly boosts all elemental damage, 60% boost to Spark damage & raises Atk parameter limits to 160000", 
         "effect": [
@@ -39250,8 +39301,8 @@
                 "passive id": "24"
             }, 
             {
-                "bc fill when attacked high": 0, 
-                "bc fill when attacked low": 0, 
+                "bc fill when attacked high": 1, 
+                "bc fill when attacked low": 1, 
                 "bc fill when attacked%": 100, 
                 "passive id": "25"
             }

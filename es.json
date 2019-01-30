@@ -27664,7 +27664,7 @@
         "target": "self"
     }, 
     "820278": {
-        "desc": "50% boost to Atk and Def, 50% boost to Spark damage & adds Def ignoring effect to BB/SBB for 3 turns", 
+        "desc": "10% boost to all parameters of Water types for all allies, 50% boost to Atk, Def, considerably boosts Spark damage & adds Def ignoring effect to attack to BB/SBB", 
         "effects": [
             {
                 "atk% buff": 50, 
@@ -27675,7 +27675,7 @@
             }, 
             {
                 "conditions": [], 
-                "damage% for spark": 50, 
+                "damage% for spark": 80, 
                 "passive id": "31", 
                 "passive target": "self"
             }, 
@@ -27695,6 +27695,18 @@
                         "target type": "party"
                     }
                 ]
+            }, 
+            {
+                "atk% buff": 10, 
+                "conditions": [], 
+                "def% buff": 10, 
+                "elements buffed": [
+                    "water"
+                ], 
+                "hp% buff": 10, 
+                "passive id": "2", 
+                "passive target": "party", 
+                "rec% buff": 10
             }
         ], 
         "id": "820278", 
@@ -29048,6 +29060,47 @@
         ], 
         "id": "820588", 
         "name": "Frog", 
+        "rarity": "7", 
+        "target": "self"
+    }, 
+    "820628": {
+        "desc": "30% boost to max HP for all allies when Uln'gha is equipped, negates Def ignoring effects for all allies, 50% additional damage reduction & adds slight HP absorption to attack", 
+        "effects": [
+            {
+                "conditions": [
+                    {
+                        "item required": [
+                            "819210"
+                        ]
+                    }
+                ], 
+                "hp% buff": 30, 
+                "passive id": "1", 
+                "passive target": "party"
+            }, 
+            {
+                "conditions": [], 
+                "ignore def resist chance%": 100, 
+                "passive id": "92", 
+                "passive target": "party"
+            }, 
+            {
+                "conditions": [], 
+                "passive target": "self", 
+                "unknown passive id": "127", 
+                "unknown passive params": "100,50"
+            }, 
+            {
+                "conditions": [], 
+                "hp drain chance%": 100, 
+                "hp drain% high": 15, 
+                "hp drain% low": 10, 
+                "passive id": "17", 
+                "passive target": "self"
+            }
+        ], 
+        "id": "820628", 
+        "name": "Deep Goddess's Will", 
         "rarity": "7", 
         "target": "self"
     }, 
@@ -32616,6 +32669,137 @@
         ], 
         "id": "840608", 
         "name": "Spoiled Child", 
+        "rarity": "7", 
+        "target": "self"
+    }, 
+    "840627": {
+        "desc": "15% boost to all parameters for all allies, negates all status ailments and Atk, Def, Rec reduction effects & adds all status ailment removal effect to BB/SBB", 
+        "effects": [
+            {
+                "atk% buff": 15, 
+                "conditions": [], 
+                "def% buff": 15, 
+                "hp% buff": 15, 
+                "passive id": "1", 
+                "passive target": "party", 
+                "rec% buff": 15
+            }, 
+            {
+                "atk down resist%": 100, 
+                "conditions": [], 
+                "curse resist%": 100, 
+                "def down resist%": 100, 
+                "injury resist%": 100, 
+                "paralysis resist%": 100, 
+                "passive id": "73", 
+                "passive target": "self", 
+                "poison resist%": 100, 
+                "rec down resist%": 100, 
+                "sick resist%": 100, 
+                "weaken resist%": 100
+            }, 
+            {
+                "conditions": [], 
+                "passive id": "66", 
+                "passive target": "self", 
+                "trigger on bb": true, 
+                "trigger on sbb": true, 
+                "triggered effect": [
+                    {
+                        "ailments cured": [
+                            "poison", 
+                            "weaken", 
+                            "sick", 
+                            "injury", 
+                            "curse", 
+                            "paralysis", 
+                            "atk down", 
+                            "def down", 
+                            "rec down"
+                        ], 
+                        "effect delay time(ms)/frame": "0.0/0", 
+                        "proc id": "38", 
+                        "target area": "aoe", 
+                        "target type": "party"
+                    }
+                ]
+            }
+        ], 
+        "id": "840627", 
+        "name": "Spark of Divinity", 
+        "rarity": "7", 
+        "target": "self"
+    }, 
+    "840628": {
+        "desc": "20% boost to all parameters for all allies, 60% boost to Atk, Def, Rec when BB gauge is over 50%, negates all status ailments and Atk, Def, Rec reduction effects, adds status ailment and Atk, Def, Rec reduction effect removal to BB/SBB & reduces Skip Turn effect duration by 3 turns", 
+        "effects": [
+            {
+                "atk% buff": 20, 
+                "conditions": [], 
+                "def% buff": 20, 
+                "hp% buff": 20, 
+                "passive id": "1", 
+                "passive target": "party", 
+                "rec% buff": 20
+            }, 
+            {
+                "atk down resist%": 100, 
+                "conditions": [], 
+                "curse resist%": 100, 
+                "def down resist%": 100, 
+                "injury resist%": 100, 
+                "paralysis resist%": 100, 
+                "passive id": "73", 
+                "passive target": "self", 
+                "poison resist%": 100, 
+                "rec down resist%": 100, 
+                "sick resist%": 100, 
+                "weaken resist%": 100
+            }, 
+            {
+                "conditions": [], 
+                "passive id": "66", 
+                "passive target": "self", 
+                "trigger on bb": true, 
+                "trigger on sbb": true, 
+                "triggered effect": [
+                    {
+                        "ailments cured": [
+                            "poison", 
+                            "weaken", 
+                            "sick", 
+                            "injury", 
+                            "curse", 
+                            "paralysis", 
+                            "atk down", 
+                            "def down", 
+                            "rec down"
+                        ], 
+                        "effect delay time(ms)/frame": "0.0/0", 
+                        "proc id": "38", 
+                        "target area": "aoe", 
+                        "target type": "party"
+                    }
+                ]
+            }, 
+            {
+                "atk% buff": 60, 
+                "bb gauge above % buff requirement": 50, 
+                "conditions": [], 
+                "def% buff": 60, 
+                "passive id": "30", 
+                "passive target": "self", 
+                "rec% buff": 60
+            }, 
+            {
+                "conditions": [], 
+                "passive target": "self", 
+                "unknown passive id": "11009", 
+                "unknown passive params": "10005,-3,0,0,0,0,0,0,0,0"
+            }
+        ], 
+        "id": "840628", 
+        "name": "Stormwrought Divinity", 
         "rarity": "7", 
         "target": "self"
     }, 
