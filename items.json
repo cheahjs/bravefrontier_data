@@ -26484,6 +26484,31 @@
         "thumbnail": "item_thum_800106.png", 
         "type": "consumable"
     }, 
+    "800107": {
+        "desc": "50% boost to Atk, Def, Rec for all allies on the map for 5 minutes. Up to 4 may be used simultaneously.", 
+        "effect": {
+            "effect": [
+                {
+                    "atk% buff (100)": 50, 
+                    "buff timer (seconds)": 300, 
+                    "def% buff (101)": 50, 
+                    "proc id": "902", 
+                    "rec% buff (102)": 50
+                }
+            ], 
+            "target_area": "aoe", 
+            "target_type": "party"
+        }, 
+        "id": 800107, 
+        "max equipped": 4, 
+        "max_stack": 99, 
+        "name": "Revenant Fragment", 
+        "raid": true, 
+        "rarity": 0, 
+        "sell_price": 5000, 
+        "thumbnail": "item_thum_1104.png", 
+        "type": "consumable"
+    }, 
     "800200": {
         "desc": "A pretty snow flake, cool to the touch. Unique event crafting material.", 
         "id": 800200, 
@@ -28109,6 +28134,39 @@
         "rarity": 3, 
         "sell_price": 20, 
         "thumbnail": "item_thum_802004.png", 
+        "type": "material"
+    }, 
+    "802005": {
+        "desc": "Vektor special engineered Flux. Used for Excelsior Chip.", 
+        "id": 802005, 
+        "max_stack": 99, 
+        "name": "Excelsior Flux", 
+        "raid": false, 
+        "rarity": 3, 
+        "sell_price": 20, 
+        "thumbnail": "item_thum_802005.png", 
+        "type": "material"
+    }, 
+    "802006": {
+        "desc": "Vektor special engineered Lead. Used for Excelsior Chip.", 
+        "id": 802006, 
+        "max_stack": 99, 
+        "name": "Excelsior Lead", 
+        "raid": false, 
+        "rarity": 3, 
+        "sell_price": 20, 
+        "thumbnail": "item_thum_802006.png", 
+        "type": "material"
+    }, 
+    "802007": {
+        "desc": "Broken chip. Can be restored with Excelsior materials.", 
+        "id": 802007, 
+        "max_stack": 99, 
+        "name": "Broken Chip", 
+        "raid": false, 
+        "rarity": 3, 
+        "sell_price": 20, 
+        "thumbnail": "item_thum_802007.png", 
         "type": "material"
     }, 
     "818881": {
@@ -39189,6 +39247,163 @@
         "thumbnail": "sphere_thum_819204.png", 
         "type": "sphere"
     }, 
+    "819206": {
+        "desc": "100% boost to Atk, 20% boost to critical hit rate, boosts Spark damage, slightly reduces BB gauge required for BB & probable damage reduction to 1", 
+        "effect": [
+            {
+                "atk% buff": 100, 
+                "crit% buff": 20, 
+                "passive id": "1"
+            }, 
+            {
+                "damage% for spark": 50, 
+                "passive id": "31"
+            }, 
+            {
+                "passive id": "48", 
+                "reduced bb bc cost%": 10
+            }, 
+            {
+                "passive id": "43", 
+                "take 1 dmg%": 10
+            }
+        ], 
+        "id": 819206, 
+        "max_stack": 1, 
+        "name": "Excelsior Chip MK-1", 
+        "raid": false, 
+        "rarity": 5, 
+        "recipe": {
+            "karma": "300000", 
+            "materials": [
+                {
+                    "count": 1, 
+                    "id": 802007
+                }, 
+                {
+                    "count": 45, 
+                    "id": 802006
+                }, 
+                {
+                    "count": 45, 
+                    "id": 802005
+                }
+            ]
+        }, 
+        "sell_price": 30000, 
+        "sphere type": 13, 
+        "sphere type text": "Atk Boosting", 
+        "thumbnail": "sphere_thum_819206.png", 
+        "type": "sphere"
+    }, 
+    "819207": {
+        "desc": "120% boost to Atk, 20% boost to critical hit rate, considerably boosts Spark damage, slightly reduces BB gauge required for BB & probable damage reduction to 1", 
+        "effect": [
+            {
+                "atk% buff": 120, 
+                "crit% buff": 20, 
+                "passive id": "1"
+            }, 
+            {
+                "damage% for spark": 80, 
+                "passive id": "31"
+            }, 
+            {
+                "passive id": "48", 
+                "reduced bb bc cost%": 15
+            }, 
+            {
+                "passive id": "43", 
+                "take 1 dmg%": 15
+            }
+        ], 
+        "id": 819207, 
+        "max_stack": 1, 
+        "name": "Excelsior Chip MK-2", 
+        "raid": false, 
+        "rarity": 6, 
+        "recipe": {
+            "karma": "300000", 
+            "materials": [
+                {
+                    "count": 1, 
+                    "id": 819206
+                }, 
+                {
+                    "count": 75, 
+                    "id": 802006
+                }, 
+                {
+                    "count": 75, 
+                    "id": 802005
+                }
+            ]
+        }, 
+        "sell_price": 30000, 
+        "sphere type": 13, 
+        "sphere type text": "Atk Boosting", 
+        "thumbnail": "sphere_thum_819207.png", 
+        "type": "sphere"
+    }, 
+    "819208": {
+        "desc": "150% boost to Atk, 20% boost to critical hit rate, considerably boosts Spark damage, reduces BB gauge required for BB, probable damage reduction to 1 & greatly boosts elemental damage", 
+        "effect": [
+            {
+                "atk% buff": 150, 
+                "crit% buff": 20, 
+                "passive id": "1"
+            }, 
+            {
+                "damage% for spark": 100, 
+                "passive id": "31"
+            }, 
+            {
+                "passive id": "48", 
+                "reduced bb bc cost%": 20
+            }, 
+            {
+                "passive id": "43", 
+                "take 1 dmg%": 20
+            }, 
+            {
+                "dark units do extra elemental weakness dmg": true, 
+                "earth units do extra elemental weakness dmg": true, 
+                "elemental weakness multiplier%": 100.0, 
+                "fire units do extra elemental weakness dmg": true, 
+                "light units do extra elemental weakness dmg": true, 
+                "passive id": "50", 
+                "thunder units do extra elemental weakness dmg": true, 
+                "water units do extra elemental weakness dmg": true
+            }
+        ], 
+        "id": 819208, 
+        "max_stack": 1, 
+        "name": "Excelsior Chip MK-3", 
+        "raid": false, 
+        "rarity": 7, 
+        "recipe": {
+            "karma": "300000", 
+            "materials": [
+                {
+                    "count": 1, 
+                    "id": 819207
+                }, 
+                {
+                    "count": 90, 
+                    "id": 802006
+                }, 
+                {
+                    "count": 90, 
+                    "id": 802005
+                }
+            ]
+        }, 
+        "sell_price": 30000, 
+        "sphere type": 13, 
+        "sphere type text": "Atk Boosting", 
+        "thumbnail": "sphere_thum_819208.png", 
+        "type": "sphere"
+    }, 
     "819210": {
         "desc": "40% boost to Def, Rec, max HP, 15% damage reduction, negates Def ignoring effects, all status ailments and Atk, Def, Rec reduction effects & probable resistance against 2 KO attacks", 
         "effect": [
@@ -39276,6 +39491,332 @@
         "thumbnail": "sphere_thum_1_8.png", 
         "type": "sphere"
     }, 
+    "819212": {
+        "desc": "150% boost to Atk when BB gauge is above 50%, hugely boosts all elemental damage, 100% boost to Spark damage, raises Atk parameter limits to 170000 & adds probable Atk boost effect purge from single foe effect to BB/SBB", 
+        "effect": [
+            {
+                "increase atk cap": 170000, 
+                "passive id": "143"
+            }, 
+            {
+                "dark units do extra elemental weakness dmg": true, 
+                "earth units do extra elemental weakness dmg": true, 
+                "elemental weakness multiplier%": 150.0, 
+                "fire units do extra elemental weakness dmg": true, 
+                "light units do extra elemental weakness dmg": true, 
+                "passive id": "50", 
+                "thunder units do extra elemental weakness dmg": true, 
+                "water units do extra elemental weakness dmg": true
+            }, 
+            {
+                "atk% buff": 150, 
+                "bb gauge above % buff requirement": 50, 
+                "passive id": "30"
+            }, 
+            {
+                "passive id": "66", 
+                "trigger on bb": true, 
+                "trigger on sbb": true, 
+                "triggered effect": [
+                    {
+                        "effect delay time(ms)/frame": "0.0/0", 
+                        "target area": "single", 
+                        "target type": "enemy", 
+                        "unknown proc id": "10019", 
+                        "unknown proc param": "1,13,0,0,0,0,0,0,0,15"
+                    }
+                ]
+            }, 
+            {
+                "damage% for spark": 100, 
+                "passive id": "31"
+            }
+        ], 
+        "id": 819212, 
+        "max_stack": 1, 
+        "name": "Hachiman Blade", 
+        "raid": true, 
+        "rarity": 7, 
+        "recipe": {
+            "karma": "800000", 
+            "materials": [
+                {
+                    "count": 1, 
+                    "id": 47601
+                }, 
+                {
+                    "count": 1, 
+                    "id": 819224
+                }, 
+                {
+                    "count": 150, 
+                    "id": 890001
+                }
+            ]
+        }, 
+        "sell_price": 999999, 
+        "sphere type": 13, 
+        "sphere type text": "Atk Boosting", 
+        "thumbnail": "sphere_thum_2_8.png", 
+        "type": "sphere"
+    }, 
+    "819213": {
+        "desc": "15% boost to all parameters of Breaker types, 175% boost to Atk when BB gauge is above 50%, enormously boosts all elemental damage, 125% boost to Spark damage, raises Atk parameter limits to 180000, adds probable Atk boost effect purge from all foes effect to BB/SBB & increases BB gauge required for BB", 
+        "effect": [
+            {
+                "dark units do extra elemental weakness dmg": true, 
+                "earth units do extra elemental weakness dmg": true, 
+                "elemental weakness multiplier%": 200.0, 
+                "fire units do extra elemental weakness dmg": true, 
+                "light units do extra elemental weakness dmg": true, 
+                "passive id": "50", 
+                "thunder units do extra elemental weakness dmg": true, 
+                "water units do extra elemental weakness dmg": true
+            }, 
+            {
+                "atk% buff": 175, 
+                "bb gauge above % buff requirement": 50, 
+                "passive id": "30"
+            }, 
+            {
+                "increase atk cap": 180000, 
+                "passive id": "143"
+            }, 
+            {
+                "atk% buff": 15, 
+                "def% buff": 15, 
+                "hp% buff": 15, 
+                "passive id": "3", 
+                "rec% buff": 15, 
+                "unit type buffed": "breaker"
+            }, 
+            {
+                "damage% for spark": 125, 
+                "passive id": "31"
+            }, 
+            {
+                "passive id": "66", 
+                "trigger on bb": true, 
+                "trigger on sbb": true, 
+                "triggered effect": [
+                    {
+                        "effect delay time(ms)/frame": "0.0/0", 
+                        "target area": "aoe", 
+                        "target type": "enemy", 
+                        "unknown proc id": "10019", 
+                        "unknown proc param": "1,13,0,0,0,0,0,0,0,15"
+                    }
+                ]
+            }, 
+            {
+                "passive id": "48", 
+                "reduced bb bc cost%": -15
+            }
+        ], 
+        "id": 819213, 
+        "max_stack": 1, 
+        "name": "Hachiman Song", 
+        "raid": true, 
+        "rarity": 7, 
+        "recipe": {
+            "karma": "1000000", 
+            "materials": [
+                {
+                    "count": 1, 
+                    "id": 819212
+                }, 
+                {
+                    "count": 1, 
+                    "id": 819225
+                }, 
+                {
+                    "count": 350, 
+                    "id": 890007
+                }
+            ]
+        }, 
+        "sell_price": 999999, 
+        "sphere type": 13, 
+        "sphere type text": "Atk Boosting", 
+        "thumbnail": "ls_sphere_thum_1_8.png", 
+        "type": "sphere"
+    }, 
+    "819214": {
+        "desc": "35% boost to all parameters of Oracle types, negates all status ailments, enormously boosts BB gauge each turn, adds probability of purging Curse, Weakness negation effects from single foe effect to BB/SBB & activates Non-elemental shield for 1 turn when BC collected has exceeded certain amount", 
+        "effect": [
+            {
+                "curse resist%": 100, 
+                "injury resist%": 100, 
+                "paralysis resist%": 100, 
+                "passive id": "4", 
+                "poison resist%": 100, 
+                "sick resist%": 100, 
+                "weaken resist%": 100
+            }, 
+            {
+                "bc fill per turn": 15, 
+                "passive id": "9"
+            }, 
+            {
+                "atk% buff": 35, 
+                "def% buff": 35, 
+                "hp% buff": 35, 
+                "passive id": "3", 
+                "rec% buff": 35, 
+                "unit type buffed": "oracle"
+            }, 
+            {
+                "passive id": "66", 
+                "trigger on bb": true, 
+                "trigger on sbb": true, 
+                "triggered effect": [
+                    {
+                        "effect delay time(ms)/frame": "0.0/0", 
+                        "target area": "single", 
+                        "target type": "enemy", 
+                        "unknown proc id": "10019", 
+                        "unknown proc param": "31,34,0,0,0,0,0,0,0,15"
+                    }
+                ]
+            }, 
+            {
+                "bc receive count buff activation": 15, 
+                "buff": {
+                    "buff turns (10500)": "1", 
+                    "unknown buff id": "10500", 
+                    "unknown buff params": "0&3500&3500&3500&"
+                }, 
+                "passive id": "82"
+            }
+        ], 
+        "id": 819214, 
+        "max_stack": 1, 
+        "name": "Vision", 
+        "raid": false, 
+        "rarity": 7, 
+        "recipe": {
+            "karma": "800000", 
+            "materials": [
+                {
+                    "count": 1, 
+                    "id": 49700
+                }, 
+                {
+                    "count": 1, 
+                    "id": 819224
+                }, 
+                {
+                    "count": 150, 
+                    "id": 890002
+                }
+            ]
+        }, 
+        "sell_price": 999999, 
+        "sphere type": 5, 
+        "sphere type text": "Status Ailments Resistant", 
+        "thumbnail": "sphere_thum_1_2.png", 
+        "type": "sphere"
+    }, 
+    "819215": {
+        "desc": "45% boost to all parameters of Oracle types, negates all status ailments, enormously boosts BB gauge each turn, adds all status ailment and Atk, Def, Rec reduction removal effects to BB/SBB, adds probability of purging curse, weakness negation effects from all foes to BB/SBB and activates Non-elemental shield for 1 turn when BC collected has exceeded certain amount.", 
+        "effect": [
+            {
+                "curse resist%": 100, 
+                "injury resist%": 100, 
+                "paralysis resist%": 100, 
+                "passive id": "4", 
+                "poison resist%": 100, 
+                "sick resist%": 100, 
+                "weaken resist%": 100
+            }, 
+            {
+                "bc fill per turn": 25, 
+                "passive id": "9"
+            }, 
+            {
+                "passive id": "66", 
+                "trigger on bb": true, 
+                "trigger on sbb": true, 
+                "triggered effect": [
+                    {
+                        "ailments cured": [
+                            "poison", 
+                            "weaken", 
+                            "sick", 
+                            "injury", 
+                            "curse", 
+                            "paralysis", 
+                            "atk down", 
+                            "def down", 
+                            "rec down"
+                        ], 
+                        "effect delay time(ms)/frame": "0.0/0", 
+                        "proc id": "38", 
+                        "target area": "aoe", 
+                        "target type": "party"
+                    }
+                ]
+            }, 
+            {
+                "atk% buff": 45, 
+                "def% buff": 45, 
+                "hp% buff": 45, 
+                "passive id": "3", 
+                "rec% buff": 45, 
+                "unit type buffed": "oracle"
+            }, 
+            {
+                "passive id": "66", 
+                "trigger on bb": true, 
+                "trigger on sbb": true, 
+                "triggered effect": [
+                    {
+                        "effect delay time(ms)/frame": "0.0/0", 
+                        "target area": "aoe", 
+                        "target type": "enemy", 
+                        "unknown proc id": "10019", 
+                        "unknown proc param": "31,34,0,0,0,0,0,0,0,15"
+                    }
+                ]
+            }, 
+            {
+                "bc receive count buff activation": 15, 
+                "buff": {
+                    "buff turns (10500)": "1", 
+                    "unknown buff id": "10500", 
+                    "unknown buff params": "0&7000&7000&7000&"
+                }, 
+                "passive id": "82"
+            }
+        ], 
+        "id": 819215, 
+        "max_stack": 1, 
+        "name": "Providence", 
+        "raid": false, 
+        "rarity": 7, 
+        "recipe": {
+            "karma": "1000000", 
+            "materials": [
+                {
+                    "count": 1, 
+                    "id": 819214
+                }, 
+                {
+                    "count": 1, 
+                    "id": 819225
+                }, 
+                {
+                    "count": 350, 
+                    "id": 890008
+                }
+            ]
+        }, 
+        "sell_price": 999999, 
+        "sphere type": 5, 
+        "sphere type text": "Status Ailments Resistant", 
+        "thumbnail": "sphere_thum_2_2.png", 
+        "type": "sphere"
+    }, 
     "819224": {
         "desc": "45% boost to all parameters, restores HP each turn & damage taken slightly boosts BB gauge and may restore HP", 
         "effect": [
@@ -39308,7 +39849,7 @@
         "id": 819224, 
         "max_stack": 1, 
         "name": "Revenant Soul", 
-        "raid": false, 
+        "raid": true, 
         "rarity": 5, 
         "recipe": {
             "karma": "200000", 
@@ -39327,6 +39868,186 @@
         "sphere type": 1, 
         "sphere type text": "Status Boost", 
         "thumbnail": "item_thum_880102.png", 
+        "type": "sphere"
+    }, 
+    "819225": {
+        "desc": "55% boost to all parameters, hugely boosts BB Atk when HP is over 50%, Spark damage slightly restores HP and slightly boosts BB gauge, probable damage reduction to 1 & 20% additional damage reduction", 
+        "effect": [
+            {
+                "atk% buff": 55, 
+                "def% buff": 55, 
+                "hp% buff": 55, 
+                "passive id": "1", 
+                "rec% buff": 55
+            }, 
+            {
+                "bb atk% add": 300, 
+                "hp threshold": 50, 
+                "passive id": "103", 
+                "sbb atk% add": 300, 
+                "triggered when hp": "higher", 
+                "ubb atk% add": 300
+            }, 
+            {
+                "heal on spark high": 100, 
+                "heal on spark low": 100, 
+                "heal on spark%": 100, 
+                "passive id": "101"
+            }, 
+            {
+                "passive id": "43", 
+                "take 1 dmg%": 20
+            }, 
+            {
+                "unknown passive id": "127", 
+                "unknown passive params": "100,20"
+            }, 
+            {
+                "bc fill on spark high": 1, 
+                "bc fill on spark low": 1, 
+                "bc fill on spark%": 100, 
+                "passive id": "47"
+            }
+        ], 
+        "id": 819225, 
+        "max_stack": 1, 
+        "name": "Giselle's Kiss", 
+        "raid": true, 
+        "rarity": 6, 
+        "recipe": {
+            "karma": "800000", 
+            "materials": [
+                {
+                    "count": 225, 
+                    "id": 890015
+                }, 
+                {
+                    "count": 100, 
+                    "id": 890014
+                }
+            ]
+        }, 
+        "sell_price": 999999, 
+        "sphere type": 1, 
+        "sphere type text": "Status Boost", 
+        "thumbnail": "ls_sphere_thum_3_8.png", 
+        "type": "sphere"
+    }, 
+    "819226": {
+        "desc": "40% boost to all parameters of Lord types, greatly boosts critical hit rate, hugely boosts critical damage, critical damage enormously boosts BB gauge and may add resistance against 1 KO attack for 5 turns & adds probable status ailment negation effect purge from all foes effect to BB/SBB", 
+        "effect": [
+            {
+                "crit multiplier%": 200.0, 
+                "passive id": "34"
+            }, 
+            {
+                "bc fill on crit max": 12, 
+                "bc fill on crit min": 10, 
+                "bc fill on crit%": 100.0, 
+                "passive id": "65"
+            }, 
+            {
+                "buff": {
+                    "angel idol buff (12)": true, 
+                    "angel idol recover hp%": 100, 
+                    "buff turns (12)": "6"
+                }, 
+                "on crit activation chance%": 50, 
+                "passive id": "89"
+            }, 
+            {
+                "crit% buff": 30, 
+                "passive id": "1"
+            }, 
+            {
+                "atk% buff": 40, 
+                "def% buff": 40, 
+                "hp% buff": 40, 
+                "passive id": "3", 
+                "rec% buff": 40, 
+                "unit type buffed": "lord"
+            }, 
+            {
+                "passive id": "66", 
+                "trigger on bb": true, 
+                "trigger on sbb": true, 
+                "triggered effect": [
+                    {
+                        "effect delay time(ms)/frame": "0.0/0", 
+                        "target area": "aoe", 
+                        "target type": "enemy", 
+                        "unknown proc id": "10019", 
+                        "unknown proc param": "30,31,32,33,34,35,0,0,0,10"
+                    }
+                ]
+            }
+        ], 
+        "id": 819226, 
+        "max_stack": 1, 
+        "name": "Dragonbane", 
+        "raid": true, 
+        "rarity": 7, 
+        "recipe": {
+            "karma": "2000000", 
+            "materials": [
+                {
+                    "count": 1, 
+                    "id": 48900
+                }, 
+                {
+                    "count": 1, 
+                    "id": 819224
+                }, 
+                {
+                    "count": 350, 
+                    "id": 890013
+                }
+            ]
+        }, 
+        "sell_price": 999999, 
+        "sphere type": 2, 
+        "sphere type text": "Critical", 
+        "thumbnail": "sphere_thum_2_1.png", 
+        "type": "sphere"
+    }, 
+    "819227": {
+        "desc": "??? (To be revealed)", 
+        "effect": [
+            {
+                "atk% buff": 1, 
+                "passive id": "1"
+            }
+        ], 
+        "id": 819227, 
+        "max_stack": 1, 
+        "name": "Seventy-two Forms", 
+        "raid": true, 
+        "rarity": 7, 
+        "recipe": {
+            "karma": "2000000", 
+            "materials": [
+                {
+                    "count": 1, 
+                    "id": 60300
+                }, 
+                {
+                    "count": 3, 
+                    "id": 819225
+                }, 
+                {
+                    "count": 999, 
+                    "id": 890014
+                }, 
+                {
+                    "count": 2, 
+                    "id": 890019
+                }
+            ]
+        }, 
+        "sell_price": 999999, 
+        "sphere type": 9, 
+        "sphere type text": "Damage Reflecting", 
+        "thumbnail": "sphere_thum_5_9.png", 
         "type": "sphere"
     }, 
     "819234": {
@@ -39368,8 +40089,21 @@
         "id": 819234, 
         "max_stack": 1, 
         "name": "Réparatrice", 
-        "raid": false, 
+        "raid": true, 
         "rarity": 7, 
+        "recipe": {
+            "karma": "800000", 
+            "materials": [
+                {
+                    "count": 1, 
+                    "id": 890020
+                }, 
+                {
+                    "count": 50, 
+                    "id": 890021
+                }
+            ]
+        }, 
         "sell_price": 30000, 
         "sphere type": 12, 
         "sphere type text": "Defense Penetrating", 
@@ -45106,6 +45840,138 @@
         "thumbnail": "sphere_thum_4_4.png", 
         "type": "sphere"
     }, 
+    "890001": {
+        "desc": "Crystallized embers shed from a Revenant's shell. Commonly used as a catalyst in crafting.", 
+        "id": 890001, 
+        "max_stack": 999, 
+        "name": "Orebi Emberstone", 
+        "raid": true, 
+        "rarity": 3, 
+        "sell_price": 20, 
+        "thumbnail": "item_thum_880211.png", 
+        "type": "material"
+    }, 
+    "890002": {
+        "desc": "Crystallized flakes shed from a Revenant's shell. Commonly used as a catalyst in crafting.", 
+        "id": 890002, 
+        "max_stack": 999, 
+        "name": "Orebi Cryostone", 
+        "raid": true, 
+        "rarity": 3, 
+        "sell_price": 20, 
+        "thumbnail": "item_thum_880212.png", 
+        "type": "material"
+    }, 
+    "890003": {
+        "desc": "Crystallized wind shed from a Revenant's shell. Commonly used as a catalyst in crafting.", 
+        "id": 890003, 
+        "max_stack": 999, 
+        "name": "Orebi Galestone", 
+        "raid": true, 
+        "rarity": 3, 
+        "sell_price": 20, 
+        "thumbnail": "item_thum_880213.png", 
+        "type": "material"
+    }, 
+    "890004": {
+        "desc": "Crystallized sparks shed from a Revenant's shell. Commonly used as a catalyst in crafting.", 
+        "id": 890004, 
+        "max_stack": 999, 
+        "name": "Orebi Sparkstone", 
+        "raid": true, 
+        "rarity": 3, 
+        "sell_price": 20, 
+        "thumbnail": "item_thum_880214.png", 
+        "type": "material"
+    }, 
+    "890005": {
+        "desc": "Extremely polished crystal shed from a Revenant's shell. Commonly used as a catalyst in crafting.", 
+        "id": 890005, 
+        "max_stack": 999, 
+        "name": "Orebi Gleamstone", 
+        "raid": true, 
+        "rarity": 3, 
+        "sell_price": 20, 
+        "thumbnail": "item_thum_880215.png", 
+        "type": "material"
+    }, 
+    "890006": {
+        "desc": "Unnaturally pulsing crystal shed from a Revenant's shell. Commonly used as a catalyst in crafting.", 
+        "id": 890006, 
+        "max_stack": 999, 
+        "name": "Orebi Gloomstone", 
+        "raid": true, 
+        "rarity": 3, 
+        "sell_price": 20, 
+        "thumbnail": "item_thum_880216.png", 
+        "type": "material"
+    }, 
+    "890007": {
+        "desc": "A large crystal of blazing energy left by a Fire Revenant. A valuable material used in crafting.", 
+        "id": 890007, 
+        "max_stack": 999, 
+        "name": "Inferno Omphalos", 
+        "raid": true, 
+        "rarity": 3, 
+        "sell_price": 20, 
+        "thumbnail": "item_thum_880211.png", 
+        "type": "material"
+    }, 
+    "890008": {
+        "desc": "A large crystal of frost energy left by an Ice Revenant. A valuable material used in crafting.", 
+        "id": 890008, 
+        "max_stack": 999, 
+        "name": "Blizzard Omphalos", 
+        "raid": true, 
+        "rarity": 3, 
+        "sell_price": 20, 
+        "thumbnail": "item_thum_880212.png", 
+        "type": "material"
+    }, 
+    "890009": {
+        "desc": "A large crystal of gale energy left by an Earth Revenant. A valuable material used in crafting.", 
+        "id": 890009, 
+        "max_stack": 999, 
+        "name": "Gaia Omphalos", 
+        "raid": true, 
+        "rarity": 3, 
+        "sell_price": 20, 
+        "thumbnail": "item_thum_880213.png", 
+        "type": "material"
+    }, 
+    "890010": {
+        "desc": "A large crystal of electric energy left by a Thunder Revenant. A valuable material used in crafting.", 
+        "id": 890010, 
+        "max_stack": 999, 
+        "name": "Storm Omphalos", 
+        "raid": true, 
+        "rarity": 3, 
+        "sell_price": 20, 
+        "thumbnail": "item_thum_880214.png", 
+        "type": "material"
+    }, 
+    "890011": {
+        "desc": "A large crystal of life energy left by a Light Revenant. A valuable material used in crafting.", 
+        "id": 890011, 
+        "max_stack": 999, 
+        "name": "Dawn Omphalos", 
+        "raid": true, 
+        "rarity": 3, 
+        "sell_price": 20, 
+        "thumbnail": "item_thum_880215.png", 
+        "type": "material"
+    }, 
+    "890012": {
+        "desc": "A large crystal of black energy left by a Dark Revenant. A valuable material used in crafting.", 
+        "id": 890012, 
+        "max_stack": 999, 
+        "name": "Dusk Omphalos", 
+        "raid": true, 
+        "rarity": 3, 
+        "sell_price": 20, 
+        "thumbnail": "item_thum_880216.png", 
+        "type": "material"
+    }, 
     "890013": {
         "desc": "A sharp scale from the time of the ancients in Orebus. This can be used as a crafting component.", 
         "id": 890013, 
@@ -45117,6 +45983,17 @@
         "thumbnail": "item_thum_880100.png", 
         "type": "material"
     }, 
+    "890014": {
+        "desc": "Rainbow fabric woven from Orebi spidersilk. Thin yet flexible, it is a popular crafting component.", 
+        "id": 890014, 
+        "max_stack": 999, 
+        "name": "Cloudweave", 
+        "raid": true, 
+        "rarity": 3, 
+        "sell_price": 20, 
+        "thumbnail": "item_thum_800003.png", 
+        "type": "material"
+    }, 
     "890015": {
         "desc": "Fine, metallic ash from the sandwastes of Orebus. An interesting choice as a crafting component.", 
         "id": 890015, 
@@ -45126,6 +46003,196 @@
         "rarity": 3, 
         "sell_price": 20, 
         "thumbnail": "item_thum_800011.png", 
+        "type": "material"
+    }, 
+    "890016": {
+        "desc": "Golden fire produced from Revenant essence that burns life force. A volatile and dangerous material.", 
+        "effect": {
+            "effect": [
+                {
+                    "unknown proc id": "0", 
+                    "unknown proc param": ""
+                }
+            ], 
+            "target_area": "single", 
+            "target_type": "party"
+        }, 
+        "id": 890016, 
+        "max equipped": 0, 
+        "max_stack": 99, 
+        "name": "Spectral Ire", 
+        "raid": false, 
+        "rarity": 3, 
+        "recipe": {
+            "karma": "0", 
+            "materials": [
+                {
+                    "count": 220, 
+                    "id": 890001
+                }, 
+                {
+                    "count": 200, 
+                    "id": 890007
+                }, 
+                {
+                    "count": 220, 
+                    "id": 890006
+                }, 
+                {
+                    "count": 200, 
+                    "id": 890012
+                }
+            ]
+        }, 
+        "sell_price": 5000, 
+        "thumbnail": "item_thum_800013.png", 
+        "type": "consumable"
+    }, 
+    "890017": {
+        "desc": "Eerily beautiful alchemical flower grown from Revenant essence. Useful as a crafting material.", 
+        "effect": {
+            "effect": [
+                {
+                    "unknown proc id": "0", 
+                    "unknown proc param": ""
+                }
+            ], 
+            "target_area": "single", 
+            "target_type": "party"
+        }, 
+        "id": 890017, 
+        "max equipped": 0, 
+        "max_stack": 99, 
+        "name": "Ghostbloom", 
+        "raid": false, 
+        "rarity": 3, 
+        "recipe": {
+            "karma": "0", 
+            "materials": [
+                {
+                    "count": 220, 
+                    "id": 890002
+                }, 
+                {
+                    "count": 200, 
+                    "id": 890008
+                }, 
+                {
+                    "count": 220, 
+                    "id": 890003
+                }, 
+                {
+                    "count": 200, 
+                    "id": 890009
+                }
+            ]
+        }, 
+        "sell_price": 5000, 
+        "thumbnail": "item_thum_880218.png", 
+        "type": "consumable"
+    }, 
+    "890018": {
+        "desc": "Fragment supercharged with Revenant essence. Highly resilient with many crafting applications.", 
+        "effect": {
+            "effect": [
+                {
+                    "unknown proc id": "0", 
+                    "unknown proc param": ""
+                }
+            ], 
+            "target_area": "single", 
+            "target_type": "party"
+        }, 
+        "id": 890018, 
+        "max equipped": 0, 
+        "max_stack": 99, 
+        "name": "Spark of Life", 
+        "raid": false, 
+        "rarity": 3, 
+        "recipe": {
+            "karma": "0", 
+            "materials": [
+                {
+                    "count": 220, 
+                    "id": 890004
+                }, 
+                {
+                    "count": 200, 
+                    "id": 890010
+                }, 
+                {
+                    "count": 220, 
+                    "id": 890005
+                }, 
+                {
+                    "count": 200, 
+                    "id": 890011
+                }
+            ]
+        }, 
+        "sell_price": 5000, 
+        "thumbnail": "item_thum_880201.png", 
+        "type": "consumable"
+    }, 
+    "890019": {
+        "desc": "An orb containing the combined essence of all Revenants. Extremely rare material for crafting.", 
+        "effect": {
+            "effect": [
+                {
+                    "unknown proc id": "0", 
+                    "unknown proc param": ""
+                }
+            ], 
+            "target_area": "single", 
+            "target_type": "party"
+        }, 
+        "id": 890019, 
+        "max equipped": 0, 
+        "max_stack": 99, 
+        "name": "Soul Splendor", 
+        "raid": false, 
+        "rarity": 3, 
+        "recipe": {
+            "karma": "0", 
+            "materials": [
+                {
+                    "count": 1, 
+                    "id": 890016
+                }, 
+                {
+                    "count": 1, 
+                    "id": 890017
+                }, 
+                {
+                    "count": 1, 
+                    "id": 890018
+                }
+            ]
+        }, 
+        "sell_price": 5000, 
+        "thumbnail": "sphere_thum_5_9.png", 
+        "type": "consumable"
+    }, 
+    "890020": {
+        "desc": "A plume of alien texture and gloss not found on Grand Gaia. Used to craft Karcosan accessories.", 
+        "id": 890020, 
+        "max_stack": 999, 
+        "name": "Karcosan Plume", 
+        "raid": true, 
+        "rarity": 3, 
+        "sell_price": 20, 
+        "thumbnail": "item_thum_880303.png", 
+        "type": "material"
+    }, 
+    "890021": {
+        "desc": "Dull silver feather laced with lead. Has limited application as a crafting material.", 
+        "id": 890021, 
+        "max_stack": 999, 
+        "name": "Lead Feather", 
+        "raid": true, 
+        "rarity": 3, 
+        "sell_price": 20, 
+        "thumbnail": "item_thum_204.png", 
         "type": "material"
     }, 
     "899998": {
