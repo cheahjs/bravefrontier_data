@@ -25926,9 +25926,8 @@
         "effect": {
             "effect": [
                 {
-                    "atk% buff (100)": 10, 
-                    "buff timer (seconds)": 300, 
-                    "proc id": "902"
+                    "unknown proc id": "0", 
+                    "unknown proc param": ""
                 }
             ], 
             "target_area": "aoe", 
@@ -25966,8 +25965,8 @@
         "effect": {
             "effect": [
                 {
-                    "unknown proc id": "907", 
-                    "unknown proc param": "10,300,1"
+                    "unknown proc id": "0", 
+                    "unknown proc param": ""
                 }
             ], 
             "target_area": "aoe", 
@@ -26489,11 +26488,8 @@
         "effect": {
             "effect": [
                 {
-                    "atk% buff (100)": 50, 
-                    "buff timer (seconds)": 300, 
-                    "def% buff (101)": 50, 
-                    "proc id": "902", 
-                    "rec% buff (102)": 50
+                    "unknown proc id": "0", 
+                    "unknown proc param": ""
                 }
             ], 
             "target_area": "aoe", 
@@ -39817,6 +39813,156 @@
         "thumbnail": "sphere_thum_2_2.png", 
         "type": "sphere"
     }, 
+    "819216": {
+        "desc": "35% boost to all parameters of Guardian types, probable damage reduction to 1, damage taken may restore HP, adds probability of purging Atk, Def, Rec reduction effects negation from single foe effect to BB/SBB & hugely restores HP each turn", 
+        "effect": [
+            {
+                "passive id": "43", 
+                "take 1 dmg%": 15
+            }, 
+            {
+                "passive id": "33", 
+                "rec% added (turn heal)": 10.0, 
+                "turn heal high": 4000, 
+                "turn heal low": 2500
+            }, 
+            {
+                "dmg% to hp% when attacked chance%": 50, 
+                "dmg% to hp% when attacked high": 30, 
+                "dmg% to hp% when attacked low": 30, 
+                "passive id": "24"
+            }, 
+            {
+                "passive id": "66", 
+                "trigger on bb": true, 
+                "trigger on sbb": true, 
+                "triggered effect": [
+                    {
+                        "effect delay time(ms)/frame": "0.0/0", 
+                        "target area": "single", 
+                        "target type": "enemy", 
+                        "unknown proc id": "10019", 
+                        "unknown proc param": "120,121,122,0,0,0,0,0,0,15"
+                    }
+                ]
+            }, 
+            {
+                "atk% buff": 35, 
+                "def% buff": 35, 
+                "hp% buff": 35, 
+                "passive id": "3", 
+                "rec% buff": 35, 
+                "unit type buffed": "guardian"
+            }
+        ], 
+        "id": 819216, 
+        "max_stack": 1, 
+        "name": "Living Armor", 
+        "raid": false, 
+        "rarity": 7, 
+        "recipe": {
+            "karma": "800000", 
+            "materials": [
+                {
+                    "count": 1, 
+                    "id": 49800
+                }, 
+                {
+                    "count": 1, 
+                    "id": 819224
+                }, 
+                {
+                    "count": 150, 
+                    "id": 890003
+                }
+            ]
+        }, 
+        "sell_price": 999999, 
+        "sphere type": 10, 
+        "sphere type text": "Damage Reducing", 
+        "thumbnail": "sphere_thum_1_3.png", 
+        "type": "sphere"
+    }, 
+    "819217": {
+        "desc": "45% boost to all parameters of Guardian types, probable damage reduction to 1, damage taken may restore HP, adds probability of purging Atk, Def, Rec reduction effects negation from all foes effect to BB/SBB, increases BB gauge required for BB, enormously restores HP each turn & damage taken boosts BB gauge", 
+        "effect": [
+            {
+                "passive id": "43", 
+                "take 1 dmg%": 20
+            }, 
+            {
+                "passive id": "33", 
+                "rec% added (turn heal)": 20.0, 
+                "turn heal high": 6000, 
+                "turn heal low": 4000
+            }, 
+            {
+                "dmg% to hp% when attacked chance%": 50, 
+                "dmg% to hp% when attacked high": 40, 
+                "dmg% to hp% when attacked low": 40, 
+                "passive id": "24"
+            }, 
+            {
+                "atk% buff": 45, 
+                "def% buff": 45, 
+                "hp% buff": 45, 
+                "passive id": "3", 
+                "rec% buff": 45, 
+                "unit type buffed": "guardian"
+            }, 
+            {
+                "passive id": "66", 
+                "trigger on bb": true, 
+                "trigger on sbb": true, 
+                "triggered effect": [
+                    {
+                        "effect delay time(ms)/frame": "0.0/0", 
+                        "target area": "aoe", 
+                        "target type": "enemy", 
+                        "unknown proc id": "10019", 
+                        "unknown proc param": "120,121,122,0,0,0,0,0,0,15"
+                    }
+                ]
+            }, 
+            {
+                "passive id": "48", 
+                "reduced bb bc cost%": -15
+            }, 
+            {
+                "bc fill when attacked high": 6, 
+                "bc fill when attacked low": 4, 
+                "bc fill when attacked%": 100, 
+                "passive id": "25"
+            }
+        ], 
+        "id": 819217, 
+        "max_stack": 1, 
+        "name": "Resolute Carapace", 
+        "raid": false, 
+        "rarity": 7, 
+        "recipe": {
+            "karma": "1000000", 
+            "materials": [
+                {
+                    "count": 1, 
+                    "id": 819216
+                }, 
+                {
+                    "count": 1, 
+                    "id": 819225
+                }, 
+                {
+                    "count": 350, 
+                    "id": 890009
+                }
+            ]
+        }, 
+        "sell_price": 999999, 
+        "sphere type": 10, 
+        "sphere type text": "Damage Reducing", 
+        "thumbnail": "sphere_thum_2_3.png", 
+        "type": "sphere"
+    }, 
     "819224": {
         "desc": "45% boost to all parameters, restores HP each turn & damage taken slightly boosts BB gauge and may restore HP", 
         "effect": [
@@ -40050,6 +40196,62 @@
         "thumbnail": "sphere_thum_5_9.png", 
         "type": "sphere"
     }, 
+    "819228": {
+        "desc": "100% boost to Atk and 40% boost to max HP of Fire types, 100% boost to Spark damage, Spark vulnerability infliction for 2 turns, boosts Atk each turn (up to 5 turns) & adds Def ignoring effect to attack", 
+        "effect": [
+            {
+                "atk% buff": 100, 
+                "elements buffed": [
+                    "fire"
+                ], 
+                "hp% buff": 40, 
+                "passive id": "2"
+            }, 
+            {
+                "damage% for spark": 100, 
+                "passive id": "31"
+            }, 
+            {
+                "passive id": "75", 
+                "spark debuff chance%": 100, 
+                "spark debuff turns": 1, 
+                "spark debuff%": 20
+            }, 
+            {
+                "atk% max buff": 150, 
+                "increase from min to max": 1, 
+                "passive id": "105", 
+                "turn count": 5
+            }, 
+            {
+                "ignore def%": 100, 
+                "passive id": "29"
+            }
+        ], 
+        "id": 819228, 
+        "max_stack": 1, 
+        "name": "Czorag's Malice", 
+        "raid": false, 
+        "rarity": 7, 
+        "recipe": {
+            "karma": "800000", 
+            "materials": [
+                {
+                    "count": 1, 
+                    "id": 890022
+                }, 
+                {
+                    "count": 50, 
+                    "id": 890023
+                }
+            ]
+        }, 
+        "sell_price": 30000, 
+        "sphere type": 12, 
+        "sphere type text": "Defense Penetrating", 
+        "thumbnail": "sphere_thum_819228.png", 
+        "type": "sphere"
+    }, 
     "819234": {
         "desc": "100% boost to Atk and 40% boost to max HP of Water types, boosts Water elemental damage, adds Def ignoring effect to attack, boosts damage against status afflicted foes & boosts BB gauge when damage dealt has exceeded certain amount", 
         "effect": [
@@ -40108,6 +40310,48 @@
         "sphere type": 12, 
         "sphere type text": "Defense Penetrating", 
         "thumbnail": "sphere_thum_819234.png", 
+        "type": "sphere"
+    }, 
+    "819235": {
+        "desc": "100% boost to Rec, 50% boost to max HP, 50% Spark damage reduction, 50% additional damage reduction, negates all status ailments & reduces the duration of Skip Turn by 1 turn", 
+        "effect": [
+            {
+                "hp% buff": 50, 
+                "passive id": "1", 
+                "rec% buff": 100
+            }, 
+            {
+                "base spark dmg% resist": 50, 
+                "buff spark dmg% resist": 50, 
+                "passive id": "77"
+            }, 
+            {
+                "unknown passive id": "127", 
+                "unknown passive params": "100,50"
+            }, 
+            {
+                "curse resist%": 100, 
+                "injury resist%": 100, 
+                "paralysis resist%": 100, 
+                "passive id": "4", 
+                "poison resist%": 100, 
+                "sick resist%": 100, 
+                "weaken resist%": 100
+            }, 
+            {
+                "unknown passive id": "11009", 
+                "unknown passive params": "10005,-1,0,0,0,0,0,0,0,0"
+            }
+        ], 
+        "id": 819235, 
+        "max_stack": 1, 
+        "name": "Apex Steerwheel", 
+        "raid": false, 
+        "rarity": 7, 
+        "sell_price": 30000, 
+        "sphere type": 14, 
+        "sphere type text": "Special", 
+        "thumbnail": "sphere_thum_819235.png", 
         "type": "sphere"
     }, 
     "819901": {
@@ -46014,7 +46258,7 @@
                     "unknown proc param": ""
                 }
             ], 
-            "target_area": "single", 
+            "target_area": "aoe", 
             "target_type": "party"
         }, 
         "id": 890016, 
@@ -46057,7 +46301,7 @@
                     "unknown proc param": ""
                 }
             ], 
-            "target_area": "single", 
+            "target_area": "aoe", 
             "target_type": "party"
         }, 
         "id": 890017, 
@@ -46100,7 +46344,7 @@
                     "unknown proc param": ""
                 }
             ], 
-            "target_area": "single", 
+            "target_area": "aoe", 
             "target_type": "party"
         }, 
         "id": 890018, 
@@ -46143,7 +46387,7 @@
                     "unknown proc param": ""
                 }
             ], 
-            "target_area": "single", 
+            "target_area": "aoe", 
             "target_type": "party"
         }, 
         "id": 890019, 
@@ -46193,6 +46437,28 @@
         "rarity": 3, 
         "sell_price": 20, 
         "thumbnail": "item_thum_204.png", 
+        "type": "material"
+    }, 
+    "890022": {
+        "desc": "A grapnel from a fiery beast found in the depths of volcanic mountains.", 
+        "id": 890022, 
+        "max_stack": 999, 
+        "name": "Hellfire Grapnel", 
+        "raid": true, 
+        "rarity": 3, 
+        "sell_price": 20, 
+        "thumbnail": "item_thum_500.png", 
+        "type": "material"
+    }, 
+    "890023": {
+        "desc": "Bones from a fiery beast that dwells in the volcanic mountains. ", 
+        "id": 890023, 
+        "max_stack": 999, 
+        "name": "Hellfire Cartilage", 
+        "raid": true, 
+        "rarity": 3, 
+        "sell_price": 20, 
+        "thumbnail": "item_thum_900.png", 
         "type": "material"
     }, 
     "899998": {

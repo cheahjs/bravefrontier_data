@@ -17632,6 +17632,44 @@
         "id": "7301", 
         "name": "Treacherous Plot"
     }, 
+    "730257": {
+        "desc": "100% boost to Atk, Def, max HP, 100% boost to Atk when BB gauge is over 50%, raises normal hit amount, normal attacks may hit all foes & 10% damage reduction", 
+        "effects": [
+            {
+                "atk% buff": 100, 
+                "def% buff": 100, 
+                "hp% buff": 100, 
+                "passive id": "1"
+            }, 
+            {
+                "atk% buff": 100, 
+                "bb gauge above % buff requirement": 50, 
+                "passive id": "30"
+            }, 
+            {
+                "extra hits dmg%": -25, 
+                "hit increase/hit": 1, 
+                "passive id": "37"
+            }, 
+            {
+                "aoe atk inc%": -50, 
+                "chance to aoe": 40, 
+                "passive id": "96"
+            }, 
+            {
+                "dmg% mitigation for elemental attacks": 10.0, 
+                "mitigate dark attacks": true, 
+                "mitigate earth attacks": true, 
+                "mitigate fire attacks": true, 
+                "mitigate light attacks": true, 
+                "mitigate thunder attacks": true, 
+                "mitigate water attacks": true, 
+                "passive id": "62"
+            }
+        ], 
+        "id": "730257", 
+        "name": "Zodiacal Essence"
+    }, 
     "7400": {
         "desc": "15% boost to Atk and max HP for all Units", 
         "effects": [
@@ -26897,28 +26935,28 @@
         "name": "Fate Selectivity Protocol"
     }, 
     "810278": {
-        "desc": "200% boost to Atk and 60% boost to max HP of Fire types, 130% boost to Spark damage, Spark damage boosts BB gauge & hugely boosts Fire elemental damage. 25% boost to all parameters of Fire types & 15% damage reduction from Fire, Earth types in Guild Raid", 
+        "desc": "225% boost to Atk, 100% boost to max HP of Fire types, 140% boost to Spark damage, Spark damage considerably boosts BB gauge, & enormously boosts Fire elemental damage. 25% boost to all parameters of Fire types and 20% damage reduction from Fire, Earth types for all allies in Guild Raid", 
         "effects": [
             {
-                "atk% buff": 200, 
+                "atk% buff": 225, 
                 "elements buffed": [
                     "fire"
                 ], 
-                "hp% buff": 60, 
+                "hp% buff": 100, 
                 "passive id": "2"
             }, 
             {
-                "damage% for spark": 130, 
+                "damage% for spark": 140, 
                 "passive id": "31"
             }, 
             {
-                "bc fill on spark high": 3, 
+                "bc fill on spark high": 4, 
                 "bc fill on spark low": 2, 
                 "bc fill on spark%": 100, 
                 "passive id": "47"
             }, 
             {
-                "elemental weakness multiplier%": 150.0, 
+                "elemental weakness multiplier%": 200.0, 
                 "fire units do extra elemental weakness dmg": true, 
                 "passive id": "50"
             }
@@ -27872,6 +27910,83 @@
         ], 
         "id": "810658", 
         "name": "Soul of the Ardent"
+    }, 
+    "810708": {
+        "desc": "200% boost to Atk, 100% boost to Def, max HP and 30% boost to critical hit rate of Fire types, hugely boosts critical damage, enormously boosts Fire elemental damage, 15% damage reduction from Fire, Earth types & negates critical and elemental damage", 
+        "effects": [
+            {
+                "atk% buff": 200, 
+                "crit% buff": 30, 
+                "def% buff": 100, 
+                "elements buffed": [
+                    "fire"
+                ], 
+                "hp% buff": 100, 
+                "passive id": "2"
+            }, 
+            {
+                "crit multiplier%": 150.0, 
+                "passive id": "34"
+            }, 
+            {
+                "elemental weakness multiplier%": 225.0, 
+                "fire units do extra elemental weakness dmg": true, 
+                "passive id": "50"
+            }, 
+            {
+                "dmg% mitigation for elemental attacks": 15.0, 
+                "mitigate earth attacks": true, 
+                "mitigate fire attacks": true, 
+                "passive id": "62"
+            }, 
+            {
+                "crit chance base resist%": 100, 
+                "crit chance buffed resist%": 100, 
+                "crit dmg base damage resist%": 100, 
+                "crit dmg buffed damage resist%": 100, 
+                "passive id": "53", 
+                "strong base element damage resist%": 100, 
+                "strong buffed element damage resist%": 100
+            }
+        ], 
+        "id": "810708", 
+        "name": "Unrestrained Malevolence"
+    }, 
+    "810900": {
+        "desc": "100% boost to max HP, Spark damage boosts BB gauge, hugely boosts Fire elemental damage, 15% damage reduction from Earth types & negates all status ailments", 
+        "effects": [
+            {
+                "hp% buff": 100, 
+                "passive id": "1"
+            }, 
+            {
+                "curse resist%": 100, 
+                "injury resist%": 100, 
+                "paralysis resist%": 100, 
+                "passive id": "4", 
+                "poison resist%": 100, 
+                "sick resist%": 100, 
+                "weaken resist%": 100
+            }, 
+            {
+                "bc fill on spark high": 3, 
+                "bc fill on spark low": 2, 
+                "bc fill on spark%": 100, 
+                "passive id": "47"
+            }, 
+            {
+                "elemental weakness multiplier%": 175.0, 
+                "fire units do extra elemental weakness dmg": true, 
+                "passive id": "50"
+            }, 
+            {
+                "dmg% mitigation for elemental attacks": 15.0, 
+                "mitigate earth attacks": true, 
+                "passive id": "62"
+            }
+        ], 
+        "id": "810900", 
+        "name": "Ignis Aura"
     }, 
     "811118": {
         "desc": "60% boost to Atk, max HP, 100% boost to Spark damage, boosts Spark damage for 2 turns when Sparks have exceeded certain amount & hugely boosts Fire and Water elemental damage ", 
@@ -29292,6 +29407,42 @@
         "id": "820678", 
         "name": "Soul Module"
     }, 
+    "820900": {
+        "desc": "100% boost to max HP, Spark damage boosts BB gauge, hugely boosts Water elemental damage, 15% damage reduction from Fire types & negates all status ailments", 
+        "effects": [
+            {
+                "hp% buff": 100, 
+                "passive id": "1"
+            }, 
+            {
+                "curse resist%": 100, 
+                "injury resist%": 100, 
+                "paralysis resist%": 100, 
+                "passive id": "4", 
+                "poison resist%": 100, 
+                "sick resist%": 100, 
+                "weaken resist%": 100
+            }, 
+            {
+                "bc fill on spark high": 3, 
+                "bc fill on spark low": 2, 
+                "bc fill on spark%": 100, 
+                "passive id": "47"
+            }, 
+            {
+                "elemental weakness multiplier%": 175.0, 
+                "passive id": "50", 
+                "water units do extra elemental weakness dmg": true
+            }, 
+            {
+                "dmg% mitigation for elemental attacks": 15.0, 
+                "mitigate fire attacks": true, 
+                "passive id": "62"
+            }
+        ], 
+        "id": "820900", 
+        "name": "Algor Aura"
+    }, 
     "8300": {
         "desc": "Massive boost to damage dealt to weaker elements by Light and Water types", 
         "effects": [
@@ -30525,6 +30676,42 @@
         "id": "830678", 
         "name": "Scrapping Spirit"
     }, 
+    "830900": {
+        "desc": "100% boost to max HP, Spark damage boosts BB gauge, hugely boosts Earth elemental damage, 15% damage reduction from Thunder types & negates all status ailments", 
+        "effects": [
+            {
+                "hp% buff": 100, 
+                "passive id": "1"
+            }, 
+            {
+                "curse resist%": 100, 
+                "injury resist%": 100, 
+                "paralysis resist%": 100, 
+                "passive id": "4", 
+                "poison resist%": 100, 
+                "sick resist%": 100, 
+                "weaken resist%": 100
+            }, 
+            {
+                "bc fill on spark high": 3, 
+                "bc fill on spark low": 2, 
+                "bc fill on spark%": 100, 
+                "passive id": "47"
+            }, 
+            {
+                "earth units do extra elemental weakness dmg": true, 
+                "elemental weakness multiplier%": 175.0, 
+                "passive id": "50"
+            }, 
+            {
+                "dmg% mitigation for elemental attacks": 15.0, 
+                "mitigate thunder attacks": true, 
+                "passive id": "62"
+            }
+        ], 
+        "id": "830900", 
+        "name": "Terra Aura"
+    }, 
     "8400": {
         "desc": "30% boost to Atk, slightly boosts critical hit rate & damage taken may considerably boost BB gauge", 
         "effects": [
@@ -31643,6 +31830,42 @@
         ], 
         "id": "840658", 
         "name": "Soul of the Clairvoyant"
+    }, 
+    "840900": {
+        "desc": "100% boost to max HP, Spark damage boosts BB gauge, hugely boosts Thunder elemental damage, 15% damage reduction from Water types & negates all status ailments", 
+        "effects": [
+            {
+                "hp% buff": 100, 
+                "passive id": "1"
+            }, 
+            {
+                "curse resist%": 100, 
+                "injury resist%": 100, 
+                "paralysis resist%": 100, 
+                "passive id": "4", 
+                "poison resist%": 100, 
+                "sick resist%": 100, 
+                "weaken resist%": 100
+            }, 
+            {
+                "bc fill on spark high": 3, 
+                "bc fill on spark low": 2, 
+                "bc fill on spark%": 100, 
+                "passive id": "47"
+            }, 
+            {
+                "elemental weakness multiplier%": 175.0, 
+                "passive id": "50", 
+                "thunder units do extra elemental weakness dmg": true
+            }, 
+            {
+                "dmg% mitigation for elemental attacks": 15.0, 
+                "mitigate water attacks": true, 
+                "passive id": "62"
+            }
+        ], 
+        "id": "840900", 
+        "name": "Fulgur Aura"
     }, 
     "8500": {
         "desc": "Boosts Atk relative to remaining HP", 
@@ -32910,6 +33133,42 @@
         ], 
         "id": "850658", 
         "name": "Soul of the Guardian"
+    }, 
+    "850900": {
+        "desc": "100% boost to max HP, Spark damage boosts BB gauge, hugely boosts Light elemental damage, 15% damage reduction from Dark types & negates all status ailments", 
+        "effects": [
+            {
+                "hp% buff": 100, 
+                "passive id": "1"
+            }, 
+            {
+                "curse resist%": 100, 
+                "injury resist%": 100, 
+                "paralysis resist%": 100, 
+                "passive id": "4", 
+                "poison resist%": 100, 
+                "sick resist%": 100, 
+                "weaken resist%": 100
+            }, 
+            {
+                "bc fill on spark high": 3, 
+                "bc fill on spark low": 2, 
+                "bc fill on spark%": 100, 
+                "passive id": "47"
+            }, 
+            {
+                "elemental weakness multiplier%": 175.0, 
+                "light units do extra elemental weakness dmg": true, 
+                "passive id": "50"
+            }, 
+            {
+                "dmg% mitigation for elemental attacks": 15.0, 
+                "mitigate dark attacks": true, 
+                "passive id": "62"
+            }
+        ], 
+        "id": "850900", 
+        "name": "Lux Aura"
     }, 
     "850977": {
         "desc": "40% boost to max HP, boosts Atk relative to how high remaining HP is & boosts Def relative to how low remaining HP is", 
@@ -34299,6 +34558,42 @@
         "id": "860678", 
         "name": "Butterflies of Illusion"
     }, 
+    "860900": {
+        "desc": "100% boost to max HP, Spark damage boosts BB gauge, hugely boosts Dark elemental damage, 15% damage reduction from Light types & negates all status ailments", 
+        "effects": [
+            {
+                "hp% buff": 100, 
+                "passive id": "1"
+            }, 
+            {
+                "curse resist%": 100, 
+                "injury resist%": 100, 
+                "paralysis resist%": 100, 
+                "passive id": "4", 
+                "poison resist%": 100, 
+                "sick resist%": 100, 
+                "weaken resist%": 100
+            }, 
+            {
+                "bc fill on spark high": 3, 
+                "bc fill on spark low": 2, 
+                "bc fill on spark%": 100, 
+                "passive id": "47"
+            }, 
+            {
+                "dark units do extra elemental weakness dmg": true, 
+                "elemental weakness multiplier%": 175.0, 
+                "passive id": "50"
+            }, 
+            {
+                "dmg% mitigation for elemental attacks": 15.0, 
+                "mitigate light attacks": true, 
+                "passive id": "62"
+            }
+        ], 
+        "id": "860900", 
+        "name": "Umbra Aura"
+    }, 
     "8700": {
         "desc": "15% reduction of damage taken from Water and Fire types", 
         "effects": [
@@ -34632,7 +34927,7 @@
                 "rec% buff": 25
             }, 
             {
-                "dmg% mitigation for elemental attacks": 15.0, 
+                "dmg% mitigation for elemental attacks": 20.0, 
                 "mitigate earth attacks": true, 
                 "mitigate fire attacks": true, 
                 "passive id": "62"
