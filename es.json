@@ -21482,6 +21482,56 @@
         "rarity": "7", 
         "target": "self"
     }, 
+    "710227": {
+        "desc": "10% boost to all parameters for all allies, 30% boost to all parameters when BB Gauge Sphere is equipped, boosts Atk, Def relative to remaining HP & negates Atk, Def, Rec reduction effects", 
+        "effects": [
+            {
+                "atk% buff": 30, 
+                "conditions": [
+                    {
+                        "sphere category required": "BB Gauge", 
+                        "sphere category required (raw)": "6"
+                    }
+                ], 
+                "def% buff": 30, 
+                "hp% buff": 30, 
+                "passive id": "1", 
+                "passive target": "self", 
+                "rec% buff": 30
+            }, 
+            {
+                "atk% base buff": 0, 
+                "atk% extra buff based on hp": 100, 
+                "buff proportional to hp": "remaining", 
+                "conditions": [], 
+                "def% base buff": 0, 
+                "def% extra buff based on hp": 100, 
+                "passive id": "46", 
+                "passive target": "self"
+            }, 
+            {
+                "atk down resist%": 100, 
+                "conditions": [], 
+                "def down resist%": 100, 
+                "passive id": "73", 
+                "passive target": "self", 
+                "rec down resist%": 100
+            }, 
+            {
+                "atk% buff": 10, 
+                "conditions": [], 
+                "def% buff": 10, 
+                "hp% buff": 10, 
+                "passive id": "1", 
+                "passive target": "party", 
+                "rec% buff": 10
+            }
+        ], 
+        "id": "710227", 
+        "name": "Magma-Armored Warrior", 
+        "rarity": "1", 
+        "target": "self"
+    }, 
     "7200": {
         "desc": "Adds status ailment negation effect to BB/SBB for 3 turns & 20% boost to all parameters when Reeze's Armor is equipped", 
         "effects": [
@@ -24051,6 +24101,50 @@
         "id": "8000403", 
         "name": "Brave Winter", 
         "rarity": "7", 
+        "target": "self"
+    }, 
+    "8000404": {
+        "desc": "40% boost to max HP, greatly boosts Atk relative to how high remaining HP is, considerably boosts Def relative to how low remaining HP is, probable Spark critical & raises Atk parameter limits to 180000", 
+        "effects": [
+            {
+                "conditions": [], 
+                "hp% buff": 40, 
+                "passive id": "1", 
+                "passive target": "self"
+            }, 
+            {
+                "atk% base buff": 0, 
+                "atk% extra buff based on hp": 150, 
+                "buff proportional to hp": "remaining", 
+                "conditions": [], 
+                "passive id": "46", 
+                "passive target": "self"
+            }, 
+            {
+                "buff proportional to hp": "lost", 
+                "conditions": [], 
+                "def% base buff": 0, 
+                "def% extra buff based on hp": 100, 
+                "passive id": "46", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "passive id": "100", 
+                "passive target": "self", 
+                "spark crit chance%": 30, 
+                "spark crit dmg%": 300
+            }, 
+            {
+                "conditions": [], 
+                "increase atk cap": 180000, 
+                "passive id": "143", 
+                "passive target": "self"
+            }
+        ], 
+        "id": "8000404", 
+        "name": "Brave Spring", 
+        "rarity": "8", 
         "target": "self"
     }, 
     "8000405": {
@@ -31547,6 +31641,97 @@
         ], 
         "id": "830678", 
         "name": "Rapid Dismantle", 
+        "rarity": "7", 
+        "target": "self"
+    }, 
+    "830697": {
+        "desc": "10% boost to all parameters for all allies, negates critical and elemental damage & restores HP each turn", 
+        "effects": [
+            {
+                "atk% buff": 10, 
+                "conditions": [], 
+                "def% buff": 10, 
+                "hp% buff": 10, 
+                "passive id": "1", 
+                "passive target": "party", 
+                "rec% buff": 10
+            }, 
+            {
+                "conditions": [], 
+                "crit chance base resist%": 100, 
+                "crit chance buffed resist%": 100, 
+                "crit dmg base damage resist%": 100, 
+                "crit dmg buffed damage resist%": 100, 
+                "passive id": "53", 
+                "passive target": "self", 
+                "strong base element damage resist%": 100, 
+                "strong buffed element damage resist%": 100
+            }, 
+            {
+                "conditions": [], 
+                "passive id": "33", 
+                "passive target": "self", 
+                "rec% added (turn heal)": 10.0, 
+                "turn heal high": 3000, 
+                "turn heal low": 2000
+            }
+        ], 
+        "id": "830697", 
+        "name": "Healing Word", 
+        "rarity": "7", 
+        "target": "self"
+    }, 
+    "830698": {
+        "desc": "20% boost to all parameters for all allies, 3% reduction to damage received for all allies, negates critical and elemental damage, restores HP each turn & resistance against 1 KO attack when HP is below 40%", 
+        "effects": [
+            {
+                "atk% buff": 20, 
+                "conditions": [], 
+                "def% buff": 20, 
+                "hp% buff": 20, 
+                "passive id": "1", 
+                "passive target": "party", 
+                "rec% buff": 20
+            }, 
+            {
+                "conditions": [], 
+                "dmg% mitigation": 3, 
+                "passive id": "8", 
+                "passive target": "party"
+            }, 
+            {
+                "conditions": [], 
+                "crit chance base resist%": 100, 
+                "crit chance buffed resist%": 100, 
+                "crit dmg base damage resist%": 100, 
+                "crit dmg buffed damage resist%": 100, 
+                "passive id": "53", 
+                "passive target": "self", 
+                "strong base element damage resist%": 100, 
+                "strong buffed element damage resist%": 100
+            }, 
+            {
+                "conditions": [], 
+                "passive id": "33", 
+                "passive target": "self", 
+                "rec% added (turn heal)": 10.0, 
+                "turn heal high": 4000, 
+                "turn heal low": 3000
+            }, 
+            {
+                "buff": {
+                    "angel idol buff (12)": true, 
+                    "angel idol recover hp%": 100, 
+                    "buff turns (12)": "-1"
+                }, 
+                "conditions": [], 
+                "hp below % buff activation": 40, 
+                "passive id": "55", 
+                "passive target": "self"
+            }
+        ], 
+        "id": "830698", 
+        "name": "Song of Serenity", 
         "rarity": "7", 
         "target": "self"
     }, 
