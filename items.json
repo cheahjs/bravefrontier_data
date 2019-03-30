@@ -25926,8 +25926,9 @@
         "effect": {
             "effect": [
                 {
-                    "unknown proc id": "0", 
-                    "unknown proc param": ""
+                    "atk% buff (100)": 10, 
+                    "buff timer (seconds)": 300, 
+                    "proc id": "902"
                 }
             ], 
             "target_area": "aoe", 
@@ -25965,8 +25966,8 @@
         "effect": {
             "effect": [
                 {
-                    "unknown proc id": "0", 
-                    "unknown proc param": ""
+                    "unknown proc id": "907", 
+                    "unknown proc param": "10,300,1"
                 }
             ], 
             "target_area": "aoe", 
@@ -26488,8 +26489,11 @@
         "effect": {
             "effect": [
                 {
-                    "unknown proc id": "0", 
-                    "unknown proc param": ""
+                    "atk% buff (100)": 50, 
+                    "buff timer (seconds)": 300, 
+                    "def% buff (101)": 50, 
+                    "proc id": "902", 
+                    "rec% buff (102)": 50
                 }
             ], 
             "target_area": "aoe", 
@@ -29889,15 +29893,16 @@
         "type": "sphere"
     }, 
     "818934": {
-        "desc": "30% boost to Def, max HP, boosts BB gauge each turn, negates critical & element based damage", 
+        "desc": "50% boost to Atk, Def, max HP, hugely boosts BB gauge each turn, negates critical, element based damage & 10% damage reduction", 
         "effect": [
             {
-                "def% buff": 30, 
-                "hp% buff": 30, 
+                "atk% buff": 50, 
+                "def% buff": 50, 
+                "hp% buff": 50, 
                 "passive id": "1"
             }, 
             {
-                "bc fill per turn": 5, 
+                "bc fill per turn": 8, 
                 "passive id": "9"
             }, 
             {
@@ -29908,13 +29913,17 @@
                 "passive id": "53", 
                 "strong base element damage resist%": 100, 
                 "strong buffed element damage resist%": 100
+            }, 
+            {
+                "dmg% mitigation": 10, 
+                "passive id": "8"
             }
         ], 
         "id": 818934, 
         "max_stack": 1, 
         "name": "Eremorn's Aegis", 
-        "raid": true, 
-        "rarity": 6, 
+        "raid": false, 
+        "rarity": 3, 
         "recipe": {
             "karma": "100000", 
             "materials": [
@@ -29929,8 +29938,8 @@
             ]
         }, 
         "sell_price": 10000, 
-        "sphere type": 1, 
-        "sphere type text": "Status Boost", 
+        "sphere type": 10, 
+        "sphere type text": "Damage Reducing", 
         "thumbnail": "sphere_thum_4_4.png", 
         "type": "sphere"
     }, 
@@ -39963,6 +39972,170 @@
         "thumbnail": "sphere_thum_2_3.png", 
         "type": "sphere"
     }, 
+    "819218": {
+        "desc": "40% boost to all parameters, 20% boost to all parameters of Anima types, 10% damage reduction from all element types, probable resistance against 1 KO attack when damage taken has exceeded certain amount & adds probability of purging Injury and Paralysis negation effects from single foe effect to BB/SBB", 
+        "effect": [
+            {
+                "atk% buff": 40, 
+                "def% buff": 40, 
+                "hp% buff": 40, 
+                "passive id": "1", 
+                "rec% buff": 40
+            }, 
+            {
+                "dmg% mitigation for elemental attacks": 10.0, 
+                "mitigate dark attacks": true, 
+                "mitigate earth attacks": true, 
+                "mitigate fire attacks": true, 
+                "mitigate light attacks": true, 
+                "mitigate thunder attacks": true, 
+                "mitigate water attacks": true, 
+                "passive id": "62"
+            }, 
+            {
+                "buff": {
+                    "buff turns (91)": "999", 
+                    "unknown buff id": "91", 
+                    "unknown buff params": "12&50"
+                }, 
+                "damage threshold buff activation": 200000, 
+                "passive id": "78"
+            }, 
+            {
+                "passive id": "66", 
+                "trigger on bb": true, 
+                "trigger on sbb": true, 
+                "triggered effect": [
+                    {
+                        "effect delay time(ms)/frame": "0.0/0", 
+                        "target area": "single", 
+                        "target type": "enemy", 
+                        "unknown proc id": "10019", 
+                        "unknown proc param": "33,35,0,0,0,0,0,0,0,15"
+                    }
+                ]
+            }, 
+            {
+                "atk% buff": 20, 
+                "def% buff": 20, 
+                "hp% buff": 20, 
+                "passive id": "3", 
+                "rec% buff": 20, 
+                "unit type buffed": "anima"
+            }
+        ], 
+        "id": 819218, 
+        "max_stack": 1, 
+        "name": "Beiorg's Armor Mk II", 
+        "raid": false, 
+        "rarity": 7, 
+        "recipe": {
+            "karma": "800000", 
+            "materials": [
+                {
+                    "count": 1, 
+                    "id": 46210
+                }, 
+                {
+                    "count": 1, 
+                    "id": 819224
+                }, 
+                {
+                    "count": 150, 
+                    "id": 890004
+                }
+            ]
+        }, 
+        "sell_price": 999999, 
+        "sphere type": 1, 
+        "sphere type text": "Status Boost", 
+        "thumbnail": "sphere_thum_1_4.png", 
+        "type": "sphere"
+    }, 
+    "819219": {
+        "desc": "50% boost to all parameters, 30% boost to all parameters of Anima types, 15% damage reduction from all element types, probable resistance against 1 KO attack when damage taken has exceeded certain amount, adds probability of purging Injury and Paralysis negation effects from all foes effect to BB/SBB & increases BB gauge required for BB", 
+        "effect": [
+            {
+                "atk% buff": 50, 
+                "def% buff": 50, 
+                "hp% buff": 50, 
+                "passive id": "1", 
+                "rec% buff": 50
+            }, 
+            {
+                "dmg% mitigation for elemental attacks": 15.0, 
+                "mitigate dark attacks": true, 
+                "mitigate earth attacks": true, 
+                "mitigate fire attacks": true, 
+                "mitigate light attacks": true, 
+                "mitigate thunder attacks": true, 
+                "mitigate water attacks": true, 
+                "passive id": "62"
+            }, 
+            {
+                "buff": {
+                    "buff turns (91)": "999", 
+                    "unknown buff id": "91", 
+                    "unknown buff params": "25&100"
+                }, 
+                "damage threshold buff activation": 150000, 
+                "passive id": "78"
+            }, 
+            {
+                "atk% buff": 30, 
+                "def% buff": 30, 
+                "hp% buff": 30, 
+                "passive id": "3", 
+                "rec% buff": 30, 
+                "unit type buffed": "anima"
+            }, 
+            {
+                "passive id": "66", 
+                "trigger on bb": true, 
+                "trigger on sbb": true, 
+                "triggered effect": [
+                    {
+                        "effect delay time(ms)/frame": "0.0/0", 
+                        "target area": "aoe", 
+                        "target type": "enemy", 
+                        "unknown proc id": "10019", 
+                        "unknown proc param": "33,35,0,0,0,0,0,0,0,15"
+                    }
+                ]
+            }, 
+            {
+                "passive id": "48", 
+                "reduced bb bc cost%": -15
+            }
+        ], 
+        "id": 819219, 
+        "max_stack": 1, 
+        "name": "Beiorg's Armor Mk V", 
+        "raid": false, 
+        "rarity": 7, 
+        "recipe": {
+            "karma": "1000000", 
+            "materials": [
+                {
+                    "count": 1, 
+                    "id": 819218
+                }, 
+                {
+                    "count": 1, 
+                    "id": 819225
+                }, 
+                {
+                    "count": 350, 
+                    "id": 890010
+                }
+            ]
+        }, 
+        "sell_price": 999999, 
+        "sphere type": 1, 
+        "sphere type text": "Status Boost", 
+        "thumbnail": "sphere_thum_2_4.png", 
+        "type": "sphere"
+    }, 
     "819224": {
         "desc": "45% boost to all parameters, restores HP each turn & damage taken slightly boosts BB gauge and may restore HP", 
         "effect": [
@@ -46158,7 +46331,7 @@
         "raid": true, 
         "rarity": 3, 
         "sell_price": 20, 
-        "thumbnail": "item_thum_880211.png", 
+        "thumbnail": "item_thum_880111.png", 
         "type": "material"
     }, 
     "890008": {
@@ -46169,7 +46342,7 @@
         "raid": true, 
         "rarity": 3, 
         "sell_price": 20, 
-        "thumbnail": "item_thum_880212.png", 
+        "thumbnail": "item_thum_880112.png", 
         "type": "material"
     }, 
     "890009": {
@@ -46180,7 +46353,7 @@
         "raid": true, 
         "rarity": 3, 
         "sell_price": 20, 
-        "thumbnail": "item_thum_880213.png", 
+        "thumbnail": "item_thum_880113.png", 
         "type": "material"
     }, 
     "890010": {
@@ -46191,7 +46364,7 @@
         "raid": true, 
         "rarity": 3, 
         "sell_price": 20, 
-        "thumbnail": "item_thum_880214.png", 
+        "thumbnail": "item_thum_880114.png", 
         "type": "material"
     }, 
     "890011": {
@@ -46202,7 +46375,7 @@
         "raid": true, 
         "rarity": 3, 
         "sell_price": 20, 
-        "thumbnail": "item_thum_880215.png", 
+        "thumbnail": "item_thum_880115.png", 
         "type": "material"
     }, 
     "890012": {
@@ -46213,7 +46386,7 @@
         "raid": true, 
         "rarity": 3, 
         "sell_price": 20, 
-        "thumbnail": "item_thum_880216.png", 
+        "thumbnail": "item_thum_880116.png", 
         "type": "material"
     }, 
     "890013": {

@@ -25427,7 +25427,7 @@
         "name": "Firestorm of Faith"
     }, 
     "801261": {
-        "desc": "200% boost to Atk and 60% boost to max HP of Earth types, raises normal hit amount, hugely boosts Earth elemental damage & hugely boosts critical damage. 25% boost to all parameters of Earth Types & 15% damage reduction from Earth, Thunder types in Guild Raid", 
+        "desc": "225% boost to Atk, 100% boost to max HP of Earth types, raises normal hit amount, enormously boosts Earth elemental damage & hugely boosts critical damage. 25% boost to all parameters of Earth types and 20% damage reduction from Earth, Thunder types for all allies in Guild Raid", 
         "effects": [
             {
                 "extra hits dmg%": -25, 
@@ -25435,16 +25435,16 @@
                 "passive id": "37"
             }, 
             {
-                "atk% buff": 200, 
+                "atk% buff": 225, 
                 "elements buffed": [
                     "earth"
                 ], 
-                "hp% buff": 60, 
+                "hp% buff": 100, 
                 "passive id": "2"
             }, 
             {
                 "earth units do extra elemental weakness dmg": true, 
-                "elemental weakness multiplier%": 150.0, 
+                "elemental weakness multiplier%": 200.0, 
                 "passive id": "50"
             }, 
             {
@@ -31135,6 +31135,45 @@
         "id": "840288", 
         "name": "Hyperacoustic Motivation"
     }, 
+    "840318": {
+        "desc": "100% boost to Atk, Def, 100% boost to max HP, 15% damage reduction, hugely boosts Spark damage, negates all status ailments and Atk, Def, Rec reduction effects & damage taken hugely boosts BB gauge", 
+        "effects": [
+            {
+                "atk% buff": 100, 
+                "def% buff": 100, 
+                "hp% buff": 100, 
+                "passive id": "1"
+            }, 
+            {
+                "dmg% mitigation": 15, 
+                "passive id": "8"
+            }, 
+            {
+                "damage% for spark": 150, 
+                "passive id": "31"
+            }, 
+            {
+                "atk down resist%": 100, 
+                "curse resist%": 100, 
+                "def down resist%": 100, 
+                "injury resist%": 100, 
+                "paralysis resist%": 100, 
+                "passive id": "73", 
+                "poison resist%": 100, 
+                "rec down resist%": 100, 
+                "sick resist%": 100, 
+                "weaken resist%": 100
+            }, 
+            {
+                "bc fill when attacked high": 9, 
+                "bc fill when attacked low": 5, 
+                "bc fill when attacked%": 100, 
+                "passive id": "25"
+            }
+        ], 
+        "id": "840318", 
+        "name": "Savior of Myrranthia"
+    }, 
     "840357": {
         "desc": "50% boost to Atk, Def and max HP of Thunder types, Spark damage slightly boosts BB gauge, reduces damage taken for 1 turn when HP is below 50% & considerably reduces BB gauge required for BB", 
         "effects": [
@@ -34637,6 +34676,82 @@
         "id": "860648", 
         "name": "The Black Wizard"
     }, 
+    "860657": {
+        "desc": "100% boost to Atk, Def, 80% boost to max HP of Dark types, 10% damage reduction from Light, Dark types, enormously boosts BB gauge each turn & enormously boosts critical damage", 
+        "effects": [
+            {
+                "atk% buff": 100, 
+                "def% buff": 100, 
+                "elements buffed": [
+                    "dark"
+                ], 
+                "hp% buff": 80, 
+                "passive id": "2"
+            }, 
+            {
+                "dmg% mitigation for elemental attacks": 10.0, 
+                "mitigate dark attacks": true, 
+                "mitigate light attacks": true, 
+                "passive id": "62"
+            }, 
+            {
+                "bc fill per turn": 8, 
+                "passive id": "9"
+            }, 
+            {
+                "crit multiplier%": 200.0, 
+                "passive id": "34"
+            }
+        ], 
+        "id": "860657", 
+        "name": "Ambitious Heart"
+    }, 
+    "860658": {
+        "desc": "120% boost to Atk, Def, 100% boost to max HP of Dark types, 20% damage reduction from Light, Dark types, enormously boosts BB gauge each turn, enormously boosts critical damage, 50% damage reduction from all elements for first 2 turns & enormously boosts ABPand CBP gain", 
+        "effects": [
+            {
+                "atk% buff": 120, 
+                "def% buff": 120, 
+                "elements buffed": [
+                    "dark"
+                ], 
+                "hp% buff": 100, 
+                "passive id": "2"
+            }, 
+            {
+                "dmg% mitigation for elemental attacks": 20.0, 
+                "mitigate dark attacks": true, 
+                "mitigate light attacks": true, 
+                "passive id": "62"
+            }, 
+            {
+                "bc fill per turn": 10, 
+                "passive id": "9"
+            }, 
+            {
+                "crit multiplier%": 250.0, 
+                "passive id": "34"
+            }, 
+            {
+                "dmg% mitigation for elemental attacks": 50, 
+                "dmg% mitigation for elemental attacks buff for first x turns": 2, 
+                "mitigate dark attacks": true, 
+                "mitigate earth attacks": true, 
+                "mitigate fire attacks": true, 
+                "mitigate light attacks": true, 
+                "mitigate thunder attacks": true, 
+                "mitigate water attacks": true, 
+                "passive id": "63"
+            }, 
+            {
+                "abp gain%": 135, 
+                "cbp gain%": 60, 
+                "passive id": "112"
+            }
+        ], 
+        "id": "860658", 
+        "name": "Soul of the Conqueror"
+    }, 
     "860678": {
         "desc": "80% boost to all parameters, Spark damage boosts BB gauge, greatly boosts Spark damage & 15% damage reduction from all element types", 
         "effects": [
@@ -35000,7 +35115,7 @@
                 "rec% buff": 25
             }, 
             {
-                "dmg% mitigation for elemental attacks": 15.0, 
+                "dmg% mitigation for elemental attacks": 20.0, 
                 "mitigate earth attacks": true, 
                 "mitigate thunder attacks": true, 
                 "passive id": "62"

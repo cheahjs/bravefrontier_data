@@ -24726,6 +24726,110 @@
         "rarity": "7", 
         "target": "self"
     }, 
+    "8000511": {
+        "desc": "10% boost to all parameters for all Dark type allies, 150% boost to Atk and 30% boost to critical hit rate of Dark types, 35% damage reduction for first 2 turns from Light, Dark types, greatly boosts BB/SBB activation rates & raises Atk parameter limits to 180000", 
+        "effects": [
+            {
+                "atk% buff": 150, 
+                "conditions": [], 
+                "crit% buff": 30, 
+                "elements buffed": [
+                    "dark"
+                ], 
+                "passive id": "2", 
+                "passive target": "self"
+            }, 
+            {
+                "atk% buff": 10, 
+                "conditions": [], 
+                "def% buff": 10, 
+                "elements buffed": [
+                    "dark"
+                ], 
+                "hp% buff": 10, 
+                "passive id": "2", 
+                "passive target": "party", 
+                "rec% buff": 10
+            }, 
+            {
+                "conditions": [], 
+                "dmg% mitigation for elemental attacks": 35, 
+                "dmg% mitigation for elemental attacks buff for first x turns": 2, 
+                "mitigate dark attacks": true, 
+                "mitigate light attacks": true, 
+                "passive id": "63", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "increase skill activation in arena%": 20, 
+                "passive id": "111", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "increase atk cap": 180000, 
+                "passive id": "143", 
+                "passive target": "self"
+            }
+        ], 
+        "id": "8000511", 
+        "name": "Oath of Power", 
+        "rarity": "8", 
+        "target": "self"
+    }, 
+    "8000512": {
+        "desc": "5% boost to all parameters for all Dark type allies, 120% boost to Atk and 30% boost to critical hit rate of Dark types, 35% damage reduction for first 2 turns from Light, Dark types, greatly boosts BB/SBB activation rates & raises Atk parameter limits to 170000", 
+        "effects": [
+            {
+                "atk% buff": 120, 
+                "conditions": [], 
+                "crit% buff": 30, 
+                "elements buffed": [
+                    "dark"
+                ], 
+                "passive id": "2", 
+                "passive target": "self"
+            }, 
+            {
+                "atk% buff": 5, 
+                "conditions": [], 
+                "def% buff": 5, 
+                "elements buffed": [
+                    "dark"
+                ], 
+                "hp% buff": 5, 
+                "passive id": "2", 
+                "passive target": "party", 
+                "rec% buff": 5
+            }, 
+            {
+                "conditions": [], 
+                "dmg% mitigation for elemental attacks": 35, 
+                "dmg% mitigation for elemental attacks buff for first x turns": 2, 
+                "mitigate dark attacks": true, 
+                "mitigate light attacks": true, 
+                "passive id": "63", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "increase skill activation in arena%": 15, 
+                "passive id": "111", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "increase atk cap": 170000, 
+                "passive id": "143", 
+                "passive target": "self"
+            }
+        ], 
+        "id": "8000512", 
+        "name": "Tenacious Will", 
+        "rarity": "7", 
+        "target": "self"
+    }, 
     "8000513": {
         "desc": "40% boost to all parameters of Fire, Thunder types, boosts Fire, Thunder elemental damage for all allies, 10% damage reduction from normal attacks & adds resistance against 1 KO attack after activating OD", 
         "effects": [
@@ -30217,10 +30321,10 @@
         "target": "self"
     }, 
     "830278": {
-        "desc": "Considerably boosts own BB gauge each turn, considerably raises own normal hit amount, greatly boosts own Atk relative to remaining HP", 
+        "desc": "10% boost to all parameters of Earth types for all allies, considerably boosts own BB gauge each turn, considerably raises own normal hit amount & greatly boosts Atk relative to remaining HP", 
         "effects": [
             {
-                "bc fill per turn": 5, 
+                "bc fill per turn": 6, 
                 "conditions": [], 
                 "passive id": "9", 
                 "passive target": "self"
@@ -30238,6 +30342,18 @@
                 "conditions": [], 
                 "passive id": "46", 
                 "passive target": "self"
+            }, 
+            {
+                "atk% buff": 10, 
+                "conditions": [], 
+                "def% buff": 10, 
+                "elements buffed": [
+                    "earth"
+                ], 
+                "hp% buff": 10, 
+                "passive id": "2", 
+                "passive target": "party", 
+                "rec% buff": 10
             }
         ], 
         "id": "830278", 
@@ -32380,6 +32496,62 @@
         "id": "840317", 
         "name": "Lord Commander's Umbrage", 
         "rarity": "1", 
+        "target": "self"
+    }, 
+    "840318": {
+        "desc": "Boosts damage reduction when guarding for all allies and 40% boost to Atk, Def, max HP when Eremorn's Aegis is equipped, raises Atk parameter limits to 160,000, damage taken considerably boosts BB gauge & greatly boosts Thunder elemental damage", 
+        "effects": [
+            {
+                "atk% buff": 40, 
+                "conditions": [
+                    {
+                        "item required": [
+                            "818934"
+                        ]
+                    }
+                ], 
+                "def% buff": 40, 
+                "hp% buff": 40, 
+                "passive id": "1", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "increase atk cap": 160000, 
+                "passive id": "143", 
+                "passive target": "self"
+            }, 
+            {
+                "bc fill when attacked high": 4, 
+                "bc fill when attacked low": 3, 
+                "bc fill when attacked%": 100, 
+                "conditions": [], 
+                "passive id": "25", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "elemental weakness multiplier%": 100.0, 
+                "passive id": "50", 
+                "passive target": "self", 
+                "thunder units do extra elemental weakness dmg": true
+            }, 
+            {
+                "conditions": [
+                    {
+                        "item required": [
+                            "818934"
+                        ]
+                    }
+                ], 
+                "guard increase mitigation%": 10, 
+                "passive id": "58", 
+                "passive target": "party"
+            }
+        ], 
+        "id": "840318", 
+        "name": "Savior's Indignation", 
+        "rarity": "7", 
         "target": "self"
     }, 
     "840327": {
@@ -38311,6 +38483,76 @@
         "rarity": "7", 
         "target": "self"
     }, 
+    "860657": {
+        "desc": "Adds Def ignoring effect to attack for all allies, 30% boost to Atk, Def for first 5 turns", 
+        "effects": [
+            {
+                "conditions": [], 
+                "ignore def%": 100, 
+                "passive id": "29", 
+                "passive target": "party"
+            }, 
+            {
+                "conditions": [], 
+                "first x turns": 5, 
+                "first x turns atk% (1)": 30, 
+                "first x turns def% (3)": 30, 
+                "passive id": "21", 
+                "passive target": "self"
+            }
+        ], 
+        "id": "860657", 
+        "name": "Emblem of Power", 
+        "rarity": "7", 
+        "target": "self"
+    }, 
+    "860658": {
+        "desc": "Adds Def ignoring effect to attack for all allies, 50% boost to Atk and slightly boosts critical hit rate for all allies, 50% boost to Atk, Def for first 5 turns & adds 18 combo (BB) / 23 combo (SBB) powerful [620%] Dark attack on all foes to BB/SBB", 
+        "effects": [
+            {
+                "conditions": [], 
+                "ignore def%": 100, 
+                "passive id": "29", 
+                "passive target": "party"
+            }, 
+            {
+                "conditions": [], 
+                "first x turns": 5, 
+                "first x turns atk% (1)": 50, 
+                "first x turns def% (3)": 50, 
+                "passive id": "21", 
+                "passive target": "self"
+            }, 
+            {
+                "atk% buff": 50, 
+                "conditions": [], 
+                "crit% buff": 15, 
+                "passive id": "1", 
+                "passive target": "party"
+            }, 
+            {
+                "conditions": [], 
+                "passive id": "66", 
+                "passive target": "self", 
+                "trigger on bb": true, 
+                "trigger on sbb": true, 
+                "triggered effect": [
+                    {
+                        "bb atk%": 620, 
+                        "bb flat atk": 200, 
+                        "effect delay time(ms)/frame": "0.0/0", 
+                        "proc id": "1", 
+                        "target area": "aoe", 
+                        "target type": "enemy"
+                    }
+                ]
+            }
+        ], 
+        "id": "860658", 
+        "name": "Ruinous Spirit", 
+        "rarity": "7", 
+        "target": "self"
+    }, 
     "860678": {
         "desc": "10% boost to all parameters for all allies, probable 25% damage counter, considerably boosts Spark damage & considerably boosts BB gauge each turn", 
         "effects": [
@@ -38483,7 +38725,7 @@
                         "target area": "aoe", 
                         "target type": "enemy", 
                         "unknown proc id": "10020", 
-                        "unknown proc param": "500,200,30,1,1,1,1,1,1"
+                        "unknown proc param": "500,200,30,1,1,1,1,1,1,200"
                     }
                 ]
             }, 
