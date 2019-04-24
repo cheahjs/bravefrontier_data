@@ -30443,19 +30443,19 @@
         "target": "self"
     }, 
     "830188": {
-        "desc": "Hugely boosts Atk, Def, Rec relative to how low HP is, Spark damage enormously boosts BB gauge & negates elemental damage", 
+        "desc": "Slightly reduces BB gauge required for BB for all allies, hugely boosts Atk, Def, Rec relative to how low HP is, Spark damage enormously boosts BB gauge & negates critical and elemental damage", 
         "effects": [
             {
-                "atk% base buff": 0, 
-                "atk% extra buff based on hp": 150, 
+                "atk% base buff": 50, 
+                "atk% extra buff based on hp": 100, 
                 "buff proportional to hp": "lost", 
                 "conditions": [], 
-                "def% base buff": 0, 
-                "def% extra buff based on hp": 150, 
+                "def% base buff": 50, 
+                "def% extra buff based on hp": 100, 
                 "passive id": "46", 
                 "passive target": "self", 
-                "rec% base buff": 0, 
-                "rec% extra buff based on hp": 150
+                "rec% base buff": 50, 
+                "rec% extra buff based on hp": 100
             }, 
             {
                 "bc fill on spark high": 10, 
@@ -30467,10 +30467,20 @@
             }, 
             {
                 "conditions": [], 
+                "crit chance base resist%": 100, 
+                "crit chance buffed resist%": 100, 
+                "crit dmg base damage resist%": 100, 
+                "crit dmg buffed damage resist%": 100, 
                 "passive id": "53", 
                 "passive target": "self", 
                 "strong base element damage resist%": 100, 
                 "strong buffed element damage resist%": 100
+            }, 
+            {
+                "conditions": [], 
+                "passive id": "48", 
+                "passive target": "party", 
+                "reduced bb bc cost%": 5
             }
         ], 
         "id": "830188", 
@@ -36613,6 +36623,84 @@
         "rarity": "7", 
         "target": "self"
     }, 
+    "850727": {
+        "desc": "Probable 50% damage counter for all allies, considerably boosts Spark damage & probable damage reduction to 1", 
+        "effects": [
+            {
+                "conditions": [], 
+                "dmg% reflect chance%": 70, 
+                "dmg% reflect high": 50, 
+                "dmg% reflect low": 50, 
+                "passive id": "26", 
+                "passive target": "party"
+            }, 
+            {
+                "conditions": [], 
+                "damage% for spark": 80, 
+                "passive id": "31", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "passive id": "43", 
+                "passive target": "self", 
+                "take 1 dmg%": 10
+            }
+        ], 
+        "id": "850727", 
+        "name": "Faithful Priestess", 
+        "rarity": "7", 
+        "target": "self"
+    }, 
+    "850728": {
+        "desc": "Probable 50% damage counter for all allies, negates all status ailments for all allies, considerably boosts Spark damage, probable damage reduction to 1 & probable resistance against 1 KO attack", 
+        "effects": [
+            {
+                "conditions": [], 
+                "dmg% reflect chance%": 70, 
+                "dmg% reflect high": 50, 
+                "dmg% reflect low": 50, 
+                "passive id": "26", 
+                "passive target": "party"
+            }, 
+            {
+                "conditions": [], 
+                "damage% for spark": 100, 
+                "passive id": "31", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "passive id": "43", 
+                "passive target": "self", 
+                "take 1 dmg%": 15
+            }, 
+            {
+                "conditions": [], 
+                "curse resist%": 100, 
+                "injury resist%": 100, 
+                "paralysis resist%": 100, 
+                "passive id": "73", 
+                "passive target": "party", 
+                "poison resist%": 100, 
+                "sick resist%": 100, 
+                "weaken resist%": 100
+            }, 
+            {
+                "angel idol chance% condition": 0, 
+                "angel idol recover chance% high": 80, 
+                "angel idol recover chance% low": 80, 
+                "angel idol recover counts": 1, 
+                "conditions": [], 
+                "passive id": "69", 
+                "passive target": "self"
+            }
+        ], 
+        "id": "850728", 
+        "name": "Cause for Unity", 
+        "rarity": "7", 
+        "target": "self"
+    }, 
     "850900": {
         "desc": "10% boost to all parameters of Light types for all allies, damage taken boosts BB gauge & 30% additional damage reduction", 
         "effects": [
@@ -37310,10 +37398,10 @@
         "target": "self"
     }, 
     "860178": {
-        "desc": "Enormously boosts Atk relative to remaining HP & damage taken greatly boosts BB gauge", 
+        "desc": "50% boost to Atk of Fire, Dark types for all allies, enormously boosts Atk relative to lost HP, 20% boost to all parameters, 100% boost to Spark damage & damage taken greatly boosts BB gauge", 
         "effects": [
             {
-                "atk% base buff": 0, 
+                "atk% base buff": 50, 
                 "atk% extra buff based on hp": 100, 
                 "buff proportional to hp": "lost", 
                 "conditions": [], 
@@ -37327,6 +37415,31 @@
                 "conditions": [], 
                 "passive id": "25", 
                 "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "damage% for spark": 100, 
+                "passive id": "31", 
+                "passive target": "self"
+            }, 
+            {
+                "atk% buff": 20, 
+                "conditions": [], 
+                "def% buff": 20, 
+                "hp% buff": 20, 
+                "passive id": "1", 
+                "passive target": "self", 
+                "rec% buff": 20
+            }, 
+            {
+                "atk% buff": 50, 
+                "conditions": [], 
+                "elements buffed": [
+                    "fire", 
+                    "dark"
+                ], 
+                "passive id": "2", 
+                "passive target": "party"
             }
         ], 
         "id": "860178", 

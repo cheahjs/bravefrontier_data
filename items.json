@@ -28169,6 +28169,39 @@
         "thumbnail": "item_thum_802007.png", 
         "type": "material"
     }, 
+    "802008": {
+        "desc": "Appearing as an unremarkable stone at first, closer examination reveals the scintillation hidden within its dark depths.", 
+        "id": 802008, 
+        "max_stack": 99, 
+        "name": "Orochi's Opal", 
+        "raid": false, 
+        "rarity": 3, 
+        "sell_price": 20, 
+        "thumbnail": "item_thum_802008.png", 
+        "type": "material"
+    }, 
+    "802009": {
+        "desc": "To the uninitiated, these look like clothing fit for royalty.", 
+        "id": 802009, 
+        "max_stack": 99, 
+        "name": "Sacred Regalia", 
+        "raid": false, 
+        "rarity": 3, 
+        "sell_price": 20, 
+        "thumbnail": "item_thum_802009.png", 
+        "type": "material"
+    }, 
+    "802010": {
+        "desc": "Crafted from roughly-hewn pieces of precious rock, these stones pulse with power that they can barely contain.", 
+        "id": 802010, 
+        "max_stack": 99, 
+        "name": "Sacred Jadestones", 
+        "raid": false, 
+        "rarity": 3, 
+        "sell_price": 20, 
+        "thumbnail": "item_thum_802010.png", 
+        "type": "material"
+    }, 
     "818881": {
         "desc": "Boosts Def by 360% when Unit's HP drops below 35% & slight boost to BC drop rate when attacking", 
         "effect": [
@@ -40976,6 +41009,121 @@
         "sphere type": 14, 
         "sphere type text": "Special", 
         "thumbnail": "sphere_thum_819235.png", 
+        "type": "sphere"
+    }, 
+    "819236": {
+        "desc": "100% boost to Atk, 30% boost to critical hit rate,boosts Atk each turn (up to 5 turns), 100% boost Spark damage when HP is below 90%, hugely boosts BB Atk when HP is below 90% & 5% increase to damage received", 
+        "effect": [
+            {
+                "atk% buff": 100, 
+                "crit% buff": 30, 
+                "passive id": "1"
+            }, 
+            {
+                "atk% max buff": 150, 
+                "increase from min to max": 1, 
+                "passive id": "105", 
+                "turn count": 5
+            }, 
+            {
+                "damage% for spark": 100, 
+                "hp below % buff requirement": 90, 
+                "passive id": "104"
+            }, 
+            {
+                "bb atk% add": 300, 
+                "hp threshold": 90, 
+                "passive id": "103", 
+                "sbb atk% add": 300, 
+                "triggered when hp": "lower", 
+                "ubb atk% add": 300
+            }, 
+            {
+                "unknown passive id": "10008", 
+                "unknown passive params": "-5,100,-5,100,-5,100,-5,100,0,0"
+            }
+        ], 
+        "id": 819236, 
+        "max_stack": 1, 
+        "name": "Yasakani Jewel", 
+        "raid": false, 
+        "rarity": 7, 
+        "recipe": {
+            "karma": "500000", 
+            "materials": [
+                {
+                    "count": 10, 
+                    "id": 802008
+                }, 
+                {
+                    "count": 15, 
+                    "id": 802009
+                }, 
+                {
+                    "count": 30, 
+                    "id": 802010
+                }
+            ]
+        }, 
+        "sell_price": 30000, 
+        "sphere type": 13, 
+        "sphere type text": "Atk Boosting", 
+        "thumbnail": "item_thum_819236.png", 
+        "type": "sphere"
+    }, 
+    "819237": {
+        "desc": "45% boost to all parameters, 5% damage reduction, probable damage reduction to 1, negates Def ignoring effects & 20% additional damage reduction", 
+        "effect": [
+            {
+                "atk% buff": 45, 
+                "def% buff": 45, 
+                "hp% buff": 45, 
+                "passive id": "1", 
+                "rec% buff": 45
+            }, 
+            {
+                "dmg% mitigation": 5, 
+                "passive id": "8"
+            }, 
+            {
+                "passive id": "43", 
+                "take 1 dmg%": 20
+            }, 
+            {
+                "ignore def resist chance%": 100, 
+                "passive id": "92"
+            }, 
+            {
+                "unknown passive id": "127", 
+                "unknown passive params": "100,20"
+            }
+        ], 
+        "id": 819237, 
+        "max_stack": 1, 
+        "name": "Yata's Mirror", 
+        "raid": false, 
+        "rarity": 7, 
+        "recipe": {
+            "karma": "500000", 
+            "materials": [
+                {
+                    "count": 5, 
+                    "id": 802008
+                }, 
+                {
+                    "count": 40, 
+                    "id": 802009
+                }, 
+                {
+                    "count": 20, 
+                    "id": 802010
+                }
+            ]
+        }, 
+        "sell_price": 30000, 
+        "sphere type": 1, 
+        "sphere type text": "Status Boost", 
+        "thumbnail": "item_thum_819237.png", 
         "type": "sphere"
     }, 
     "819901": {
