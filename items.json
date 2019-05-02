@@ -39820,9 +39820,9 @@
             {
                 "bc receive count buff activation": 15, 
                 "buff": {
-                    "buff turns (10500)": "1", 
+                    "buff turns (10500)": "2", 
                     "unknown buff id": "10500", 
-                    "unknown buff params": "0&7000&7000&7000&"
+                    "unknown buff params": "0&7000&7000&7000"
                 }, 
                 "passive id": "82"
             }
@@ -39852,7 +39852,7 @@
         "sell_price": 999999, 
         "sphere type": 5, 
         "sphere type text": "Status Ailments Resistant", 
-        "thumbnail": "sphere_thum_2_2.png", 
+        "thumbnail": "ls_sphere_thum_2_2.png", 
         "type": "sphere"
     }, 
     "819216": {
@@ -40909,6 +40909,73 @@
         "thumbnail": "sphere_thum_819229.png", 
         "type": "sphere"
     }, 
+    "819230": {
+        "desc": "100% boost to Atk and 40% boost to max HP of Light types, boosts Light elemental damage, hugely boosts Spark damage for 2 turns when Sparks have exceeded certain amount, adds max HP boost effect to self to BB/SBB & adds Def ignoring effect to attack", 
+        "effect": [
+            {
+                "atk% buff": 100, 
+                "elements buffed": [
+                    "light"
+                ], 
+                "hp% buff": 40, 
+                "passive id": "2"
+            }, 
+            {
+                "elemental weakness multiplier%": 125.0, 
+                "light units do extra elemental weakness dmg": true, 
+                "passive id": "50"
+            }, 
+            {
+                "buff": {
+                    "buff turns (40)": "2", 
+                    "spark dmg% buff": 75
+                }, 
+                "passive id": "86", 
+                "spark count buff activation": 15
+            }, 
+            {
+                "passive id": "66", 
+                "trigger on bb": true, 
+                "trigger on sbb": true, 
+                "triggered effect": [
+                    {
+                        "effect delay time(ms)/frame": "0.0/0", 
+                        "target area": "single", 
+                        "target type": "self", 
+                        "unknown proc id": "92", 
+                        "unknown proc param": "0,15,0"
+                    }
+                ]
+            }, 
+            {
+                "ignore def%": 100, 
+                "passive id": "29"
+            }
+        ], 
+        "id": 819230, 
+        "max_stack": 1, 
+        "name": "Hakuzo's Deceit", 
+        "raid": false, 
+        "rarity": 7, 
+        "recipe": {
+            "karma": "800000", 
+            "materials": [
+                {
+                    "count": 1, 
+                    "id": 890034
+                }, 
+                {
+                    "count": 50, 
+                    "id": 890035
+                }
+            ]
+        }, 
+        "sell_price": 30000, 
+        "sphere type": 12, 
+        "sphere type text": "Defense Penetrating", 
+        "thumbnail": "sphere_thum_819230.png", 
+        "type": "sphere"
+    }, 
     "819234": {
         "desc": "100% boost to Atk and 40% boost to max HP of Water types, boosts Water elemental damage, adds Def ignoring effect to attack, boosts damage against status afflicted foes & boosts BB gauge when damage dealt has exceeded certain amount", 
         "effect": [
@@ -41124,6 +41191,652 @@
         "sphere type": 1, 
         "sphere type text": "Status Boost", 
         "thumbnail": "item_thum_819237.png", 
+        "type": "sphere"
+    }, 
+    "819238": {
+        "desc": "100% boost to Spark damage, probable Spark critical, Spark damage restores HP, Spark vulnerability infliction for 2 turns & 150% boost to Atk when Sparks exceed certain amount", 
+        "effect": [
+            {
+                "passive id": "75", 
+                "spark debuff chance%": 100, 
+                "spark debuff turns": 1, 
+                "spark debuff%": 20
+            }, 
+            {
+                "damage% for spark": 100, 
+                "passive id": "31"
+            }, 
+            {
+                "passive id": "100", 
+                "spark crit chance%": 60, 
+                "spark crit dmg%": 50
+            }, 
+            {
+                "heal on spark high": 600, 
+                "heal on spark low": 400, 
+                "heal on spark%": 100, 
+                "passive id": "101"
+            }, 
+            {
+                "buff": {
+                    "atk% buff (1)": 150, 
+                    "buff turns (1)": "2"
+                }, 
+                "passive id": "86", 
+                "spark count buff activation": 10
+            }
+        ], 
+        "id": 819238, 
+        "max_stack": 1, 
+        "name": "Kusanagi Sword", 
+        "raid": false, 
+        "rarity": 7, 
+        "recipe": {
+            "karma": "500000", 
+            "materials": [
+                {
+                    "count": 3, 
+                    "id": 802008
+                }, 
+                {
+                    "count": 20, 
+                    "id": 802009
+                }, 
+                {
+                    "count": 60, 
+                    "id": 802010
+                }
+            ]
+        }, 
+        "sell_price": 30000, 
+        "sphere type": 11, 
+        "sphere type text": "Spark", 
+        "thumbnail": "item_thum_819238.png", 
+        "type": "sphere"
+    }, 
+    "819239": {
+        "desc": "175% Atk, 20% all parameters (Breaker), 200% elemental damage, 125% Spark damage, raises max Atk limit to 190000, add to BB/SBB [chance to purge Atk boost] & increases BB activation cost\t\t\t\t\t\t\t\t\t", 
+        "effect": [
+            {
+                "dark units do extra elemental weakness dmg": true, 
+                "earth units do extra elemental weakness dmg": true, 
+                "elemental weakness multiplier%": 200.0, 
+                "fire units do extra elemental weakness dmg": true, 
+                "light units do extra elemental weakness dmg": true, 
+                "passive id": "50", 
+                "thunder units do extra elemental weakness dmg": true, 
+                "water units do extra elemental weakness dmg": true
+            }, 
+            {
+                "atk% buff": 175, 
+                "passive id": "1"
+            }, 
+            {
+                "increase atk cap": 190000, 
+                "passive id": "143"
+            }, 
+            {
+                "atk% buff": 20, 
+                "def% buff": 20, 
+                "hp% buff": 20, 
+                "passive id": "3", 
+                "rec% buff": 20, 
+                "unit type buffed": "breaker"
+            }, 
+            {
+                "passive id": "66", 
+                "trigger on bb": true, 
+                "trigger on sbb": true, 
+                "triggered effect": [
+                    {
+                        "effect delay time(ms)/frame": "0.0/0", 
+                        "target area": "aoe", 
+                        "target type": "enemy", 
+                        "unknown proc id": "10019", 
+                        "unknown proc param": "1,13,0,0,0,0,0,0,0,20"
+                    }
+                ]
+            }, 
+            {
+                "damage% for spark": 125, 
+                "passive id": "31"
+            }, 
+            {
+                "passive id": "48", 
+                "reduced bb bc cost%": -15
+            }
+        ], 
+        "id": 819239, 
+        "max_stack": 1, 
+        "name": "Victory Chant", 
+        "raid": false, 
+        "rarity": 7, 
+        "recipe": {
+            "karma": "3000000", 
+            "materials": [
+                {
+                    "count": 1, 
+                    "id": 819213
+                }, 
+                {
+                    "count": 1, 
+                    "id": 890033
+                }
+            ]
+        }, 
+        "sell_price": 999999, 
+        "sphere type": 13, 
+        "sphere type text": "Atk Boosting", 
+        "thumbnail": "sphere_thum_819239.png", 
+        "type": "sphere"
+    }, 
+    "819240": {
+        "desc": "45% all parameters (Male, Genderless), 160% Spark damage, Sparks restore HP and fill BB gauge, probable Spark critical, add to BB/SBB [chance to purge Sick, Poison negation] & increases BB activation cost", 
+        "effect": [
+            {
+                "damage% for spark": 160, 
+                "passive id": "31"
+            }, 
+            {
+                "heal on spark high": 800, 
+                "heal on spark low": 600, 
+                "heal on spark%": 100, 
+                "passive id": "101"
+            }, 
+            {
+                "bc fill on spark high": 4, 
+                "bc fill on spark low": 3, 
+                "bc fill on spark%": 100, 
+                "passive id": "47"
+            }, 
+            {
+                "passive id": "100", 
+                "spark crit chance%": 50, 
+                "spark crit dmg%": 150
+            }, 
+            {
+                "atk% buff": 45, 
+                "def% buff": 45, 
+                "gender required": "male", 
+                "hp% buff": 45, 
+                "passive id": "42", 
+                "rec% buff": 45
+            }, 
+            {
+                "atk% buff": 45, 
+                "def% buff": 45, 
+                "gender required": "genderless", 
+                "hp% buff": 45, 
+                "passive id": "42", 
+                "rec% buff": 45
+            }, 
+            {
+                "passive id": "66", 
+                "trigger on bb": true, 
+                "trigger on sbb": true, 
+                "triggered effect": [
+                    {
+                        "effect delay time(ms)/frame": "0.0/0", 
+                        "target area": "aoe", 
+                        "target type": "enemy", 
+                        "unknown proc id": "10019", 
+                        "unknown proc param": "30,32,0,0,0,0,0,0,0,20"
+                    }
+                ]
+            }, 
+            {
+                "passive id": "48", 
+                "reduced bb bc cost%": -15
+            }
+        ], 
+        "id": 819240, 
+        "max_stack": 1, 
+        "name": "Fleeting Ballad", 
+        "raid": false, 
+        "rarity": 7, 
+        "recipe": {
+            "karma": "3000000", 
+            "materials": [
+                {
+                    "count": 1, 
+                    "id": 819221
+                }, 
+                {
+                    "count": 1, 
+                    "id": 890033
+                }
+            ]
+        }, 
+        "sell_price": 999999, 
+        "sphere type": 11, 
+        "sphere type text": "Spark", 
+        "thumbnail": "sphere_thum_819240.png", 
+        "type": "sphere"
+    }, 
+    "819241": {
+        "desc": "50% all parameters, 30% all parameters (Female, Genderless), 150% elemental damage, fills BB gauge when 10k damage dealt, add to BB/SBB [chance to purge Atk, Def, Rec reduction negation] & increases BB activation cost", 
+        "effect": [
+            {
+                "atk% buff": 55, 
+                "def% buff": 55, 
+                "hp% buff": 55, 
+                "passive id": "1", 
+                "rec% buff": 55
+            }, 
+            {
+                "dark units do extra elemental weakness dmg": true, 
+                "earth units do extra elemental weakness dmg": true, 
+                "elemental weakness multiplier%": 175.0, 
+                "fire units do extra elemental weakness dmg": true, 
+                "light units do extra elemental weakness dmg": true, 
+                "passive id": "50", 
+                "thunder units do extra elemental weakness dmg": true, 
+                "water units do extra elemental weakness dmg": true
+            }, 
+            {
+                "damage dealt threshold activation": 10000, 
+                "increase bb gauge": 20, 
+                "passive id": "81"
+            }, 
+            {
+                "atk% buff": 30, 
+                "def% buff": 30, 
+                "gender required": "female", 
+                "hp% buff": 30, 
+                "passive id": "42", 
+                "rec% buff": 30
+            }, 
+            {
+                "atk% buff": 30, 
+                "def% buff": 30, 
+                "gender required": "genderless", 
+                "hp% buff": 30, 
+                "passive id": "42", 
+                "rec% buff": 30
+            }, 
+            {
+                "passive id": "66", 
+                "trigger on bb": true, 
+                "trigger on sbb": true, 
+                "triggered effect": [
+                    {
+                        "effect delay time(ms)/frame": "0.0/0", 
+                        "target area": "aoe", 
+                        "target type": "enemy", 
+                        "unknown proc id": "10019", 
+                        "unknown proc param": "120,121,122,0,0,0,0,0,0,20"
+                    }
+                ]
+            }, 
+            {
+                "passive id": "48", 
+                "reduced bb bc cost%": -10
+            }
+        ], 
+        "id": 819241, 
+        "max_stack": 1, 
+        "name": "Requiem of Regret", 
+        "raid": false, 
+        "rarity": 7, 
+        "recipe": {
+            "karma": "3000000", 
+            "materials": [
+                {
+                    "count": 1, 
+                    "id": 819223
+                }, 
+                {
+                    "count": 1, 
+                    "id": 890033
+                }
+            ]
+        }, 
+        "sell_price": 999999, 
+        "sphere type": 1, 
+        "sphere type text": "Status Boost", 
+        "thumbnail": "sphere_thum_819241.png", 
+        "type": "sphere"
+    }, 
+    "819242": {
+        "desc": "55% all parameters, 30% all parameters (Anima), 15% elemental damage reduction, probable resistance against 1 KO attack when 120k damage taken, add to BB/SBB [chance to purge Injury, Paralysis negation] & increases BB activation cost", 
+        "effect": [
+            {
+                "atk% buff": 55, 
+                "def% buff": 55, 
+                "hp% buff": 55, 
+                "passive id": "1", 
+                "rec% buff": 55
+            }, 
+            {
+                "dmg% mitigation for elemental attacks": 15.0, 
+                "mitigate dark attacks": true, 
+                "mitigate earth attacks": true, 
+                "mitigate fire attacks": true, 
+                "mitigate light attacks": true, 
+                "mitigate thunder attacks": true, 
+                "mitigate water attacks": true, 
+                "passive id": "62"
+            }, 
+            {
+                "buff": {
+                    "buff turns (91)": "999", 
+                    "unknown buff id": "91", 
+                    "unknown buff params": "25&100"
+                }, 
+                "damage threshold buff activation": 120000, 
+                "passive id": "78"
+            }, 
+            {
+                "atk% buff": 30, 
+                "def% buff": 30, 
+                "hp% buff": 30, 
+                "passive id": "3", 
+                "rec% buff": 30, 
+                "unit type buffed": "anima"
+            }, 
+            {
+                "passive id": "66", 
+                "trigger on bb": true, 
+                "trigger on sbb": true, 
+                "triggered effect": [
+                    {
+                        "effect delay time(ms)/frame": "0.0/0", 
+                        "target area": "aoe", 
+                        "target type": "enemy", 
+                        "unknown proc id": "10019", 
+                        "unknown proc param": "33,35,0,0,0,0,0,0,0,20"
+                    }
+                ]
+            }, 
+            {
+                "passive id": "48", 
+                "reduced bb bc cost%": -10
+            }
+        ], 
+        "id": 819242, 
+        "max_stack": 1, 
+        "name": "Thrilling Harmony", 
+        "raid": false, 
+        "rarity": 7, 
+        "recipe": {
+            "karma": "3000000", 
+            "materials": [
+                {
+                    "count": 1, 
+                    "id": 819219
+                }, 
+                {
+                    "count": 1, 
+                    "id": 890033
+                }
+            ]
+        }, 
+        "sell_price": 999999, 
+        "sphere type": 1, 
+        "sphere type text": "Status Boost", 
+        "thumbnail": "sphere_thum_819242.png", 
+        "type": "sphere"
+    }, 
+    "819243": {
+        "desc": "50% all parameters (Oracle), negates all status ailments, fills BB gauge each turn, add to BB/SBB [remove all status ailments and Atk, Def, Rec reduction, chance to purge Curse, Weak negation] & activates 8000 HP Shield when 15 BC collected", 
+        "effect": [
+            {
+                "curse resist%": 100, 
+                "injury resist%": 100, 
+                "paralysis resist%": 100, 
+                "passive id": "4", 
+                "poison resist%": 100, 
+                "sick resist%": 100, 
+                "weaken resist%": 100
+            }, 
+            {
+                "bc fill per turn": 30, 
+                "passive id": "9"
+            }, 
+            {
+                "passive id": "66", 
+                "trigger on bb": true, 
+                "trigger on sbb": true, 
+                "triggered effect": [
+                    {
+                        "ailments cured": [
+                            "poison", 
+                            "weaken", 
+                            "sick", 
+                            "injury", 
+                            "curse", 
+                            "paralysis", 
+                            "atk down", 
+                            "def down", 
+                            "rec down"
+                        ], 
+                        "effect delay time(ms)/frame": "0.0/0", 
+                        "proc id": "38", 
+                        "target area": "aoe", 
+                        "target type": "party"
+                    }
+                ]
+            }, 
+            {
+                "atk% buff": 50, 
+                "def% buff": 50, 
+                "hp% buff": 50, 
+                "passive id": "3", 
+                "rec% buff": 50, 
+                "unit type buffed": "oracle"
+            }, 
+            {
+                "passive id": "66", 
+                "trigger on bb": true, 
+                "trigger on sbb": true, 
+                "triggered effect": [
+                    {
+                        "effect delay time(ms)/frame": "0.0/0", 
+                        "target area": "aoe", 
+                        "target type": "enemy", 
+                        "unknown proc id": "10019", 
+                        "unknown proc param": "31,34,0,0,0,0,0,0,0,20"
+                    }
+                ]
+            }, 
+            {
+                "bc receive count buff activation": 15, 
+                "buff": {
+                    "buff turns (10500)": "2", 
+                    "unknown buff id": "10500", 
+                    "unknown buff params": "0&8000&8000&8000"
+                }, 
+                "passive id": "82"
+            }
+        ], 
+        "id": 819243, 
+        "max_stack": 1, 
+        "name": "Lament of Dread", 
+        "raid": false, 
+        "rarity": 7, 
+        "recipe": {
+            "karma": "3000000", 
+            "materials": [
+                {
+                    "count": 1, 
+                    "id": 819215
+                }, 
+                {
+                    "count": 1, 
+                    "id": 890033
+                }
+            ]
+        }, 
+        "sell_price": 999999, 
+        "sphere type": 5, 
+        "sphere type text": "Status Ailments Resistant", 
+        "thumbnail": "sphere_thum_819243.png", 
+        "type": "sphere"
+    }, 
+    "819244": {
+        "desc": "50% all parameters (Guardian), probable damage reduction to 1, damage taken fills BB gauge and may restore HP, add to BB/SBB [chance to purge Atk, Def, Rec reduction negation], restores HP each turn & increases BB activation cost", 
+        "effect": [
+            {
+                "passive id": "43", 
+                "take 1 dmg%": 25
+            }, 
+            {
+                "passive id": "33", 
+                "rec% added (turn heal)": 20.0, 
+                "turn heal high": 7000, 
+                "turn heal low": 5000
+            }, 
+            {
+                "dmg% to hp% when attacked chance%": 50, 
+                "dmg% to hp% when attacked high": 40, 
+                "dmg% to hp% when attacked low": 40, 
+                "passive id": "24"
+            }, 
+            {
+                "atk% buff": 50, 
+                "def% buff": 50, 
+                "hp% buff": 50, 
+                "passive id": "3", 
+                "rec% buff": 50, 
+                "unit type buffed": "guardian"
+            }, 
+            {
+                "passive id": "66", 
+                "trigger on bb": true, 
+                "trigger on sbb": true, 
+                "triggered effect": [
+                    {
+                        "effect delay time(ms)/frame": "0.0/0", 
+                        "target area": "aoe", 
+                        "target type": "enemy", 
+                        "unknown proc id": "10019", 
+                        "unknown proc param": "120,121,122,0,0,0,0,0,0,20"
+                    }
+                ]
+            }, 
+            {
+                "passive id": "48", 
+                "reduced bb bc cost%": -15
+            }, 
+            {
+                "bc fill when attacked high": 8, 
+                "bc fill when attacked low": 6, 
+                "bc fill when attacked%": 100, 
+                "passive id": "25"
+            }
+        ], 
+        "id": 819244, 
+        "max_stack": 1, 
+        "name": "Resolute Silence", 
+        "raid": false, 
+        "rarity": 7, 
+        "recipe": {
+            "karma": "3000000", 
+            "materials": [
+                {
+                    "count": 1, 
+                    "id": 819217
+                }, 
+                {
+                    "count": 1, 
+                    "id": 890033
+                }
+            ]
+        }, 
+        "sell_price": 999999, 
+        "sphere type": 10, 
+        "sphere type text": "Damage Reducing", 
+        "thumbnail": "sphere_thum_819244.png", 
+        "type": "sphere"
+    }, 
+    "819245": {
+        "desc": "75% all parameters, counters damage, adds ailments, reduces DoT duration by 3 turns, fully fills BB gauge when 50k damage dealt, 250% elemental damage, add to BB/SBB [chance to purge ailment negation effects] & add to LS [20% all parameters]", 
+        "effect": [
+            {
+                "atk% buff": 75, 
+                "def% buff": 75, 
+                "hp% buff": 75, 
+                "passive id": "1", 
+                "rec% buff": 75
+            }, 
+            {
+                "dmg% reflect chance%": 100, 
+                "dmg% reflect high": 75, 
+                "dmg% reflect low": 75, 
+                "passive id": "26"
+            }, 
+            {
+                "injury%": 100, 
+                "passive id": "20", 
+                "poison%": 100, 
+                "sick%": 100, 
+                "weaken%": 100
+            }, 
+            {
+                "curse%": 100, 
+                "paralysis%": 100, 
+                "passive id": "20"
+            }, 
+            {
+                "unknown passive id": "11009", 
+                "unknown passive params": "71,-3,0,0,0,0,0,0,0,0"
+            }, 
+            {
+                "unknown passive id": "107", 
+                "unknown passive params": "1,20$20$20$0$20"
+            }, 
+            {
+                "passive id": "66", 
+                "trigger on bb": true, 
+                "trigger on sbb": true, 
+                "triggered effect": [
+                    {
+                        "effect delay time(ms)/frame": "0.0/0", 
+                        "target area": "aoe", 
+                        "target type": "enemy", 
+                        "unknown proc id": "10019", 
+                        "unknown proc param": "30,31,32,33,34,35,0,0,0,30"
+                    }
+                ]
+            }, 
+            {
+                "damage dealt threshold activation": 50000, 
+                "increase bb gauge": 0, 
+                "passive id": "81"
+            }, 
+            {
+                "dark units do extra elemental weakness dmg": true, 
+                "earth units do extra elemental weakness dmg": true, 
+                "elemental weakness multiplier%": 250.0, 
+                "fire units do extra elemental weakness dmg": true, 
+                "light units do extra elemental weakness dmg": true, 
+                "passive id": "50", 
+                "thunder units do extra elemental weakness dmg": true, 
+                "water units do extra elemental weakness dmg": true
+            }
+        ], 
+        "id": 819245, 
+        "max_stack": 1, 
+        "name": "Formless Chroma", 
+        "raid": false, 
+        "rarity": 7, 
+        "recipe": {
+            "karma": "4000000", 
+            "materials": [
+                {
+                    "count": 1, 
+                    "id": 819227
+                }, 
+                {
+                    "count": 2, 
+                    "id": 890033
+                }
+            ]
+        }, 
+        "sell_price": 999999, 
+        "sphere type": 9, 
+        "sphere type text": "Damage Reflecting", 
+        "thumbnail": "sphere_thum_819245.png", 
         "type": "sphere"
     }, 
     "819901": {
@@ -47253,6 +47966,39 @@
         "rarity": 3, 
         "sell_price": 5000, 
         "thumbnail": "item_thum_704.png", 
+        "type": "material"
+    }, 
+    "890033": {
+        "desc": "A confluence of souls, fossilized in ancient amber.", 
+        "id": 890033, 
+        "max_stack": 99, 
+        "name": "Whispering Shard", 
+        "raid": true, 
+        "rarity": 3, 
+        "sell_price": 5000, 
+        "thumbnail": "item_thum_890033.png", 
+        "type": "material"
+    }, 
+    "890034": {
+        "desc": "A trinket from a faraway land, said to bring good luck to its recipient. This one seems...off.", 
+        "id": 890034, 
+        "max_stack": 99, 
+        "name": "Replica Trinket", 
+        "raid": true, 
+        "rarity": 3, 
+        "sell_price": 5000, 
+        "thumbnail": "item_thum_104.png", 
+        "type": "material"
+    }, 
+    "890035": {
+        "desc": "A cast-off scrap of material that feels cold to the touch. Slightly burned at the edges.", 
+        "id": 890035, 
+        "max_stack": 99, 
+        "name": "Ruse Scrap", 
+        "raid": true, 
+        "rarity": 3, 
+        "sell_price": 5000, 
+        "thumbnail": "item_thum_804.png", 
         "type": "material"
     }, 
     "899998": {
