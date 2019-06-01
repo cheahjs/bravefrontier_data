@@ -21680,6 +21680,64 @@
         "rarity": "1", 
         "target": "self"
     }, 
+    "730227": {
+        "desc": "30% boost to Atk, Def, Rec when HP is over 50% for all allies, slightly boosts critical damage for all allies, 30% boost to all parameters, negates Def ignoring effects & adds Earth barrier effect to BB/SBB", 
+        "effects": [
+            {
+                "atk% buff": 30, 
+                "conditions": [], 
+                "def% buff": 30, 
+                "hp% buff": 30, 
+                "passive id": "1", 
+                "passive target": "self", 
+                "rec% buff": 30
+            }, 
+            {
+                "atk% buff": 30, 
+                "conditions": [], 
+                "def% buff": 30, 
+                "hp above % buff requirement": 50, 
+                "passive id": "11", 
+                "passive target": "party", 
+                "rec% buff": 30
+            }, 
+            {
+                "conditions": [], 
+                "crit multiplier%": 25.0, 
+                "passive id": "34", 
+                "passive target": "party"
+            }, 
+            {
+                "conditions": [], 
+                "ignore def resist chance%": 100, 
+                "passive id": "92", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "passive id": "66", 
+                "passive target": "self", 
+                "trigger on bb": true, 
+                "trigger on sbb": true, 
+                "triggered effect": [
+                    {
+                        "effect delay time(ms)/frame": "0.0/0", 
+                        "elemental barrier absorb dmg%": 100, 
+                        "elemental barrier def": 0, 
+                        "elemental barrier element": "earth", 
+                        "elemental barrier hp": 6000, 
+                        "proc id": "62", 
+                        "target area": "aoe", 
+                        "target type": "party"
+                    }
+                ]
+            }
+        ], 
+        "id": "730227", 
+        "name": "Ancient's Knowledge", 
+        "rarity": "7", 
+        "target": "self"
+    }, 
     "730257": {
         "desc": "50% boost to Atk for all allies, 30% boost to all parameters, considerably raises normal hit amount, adds Def ignoring effect to attack & adds all elements to attack for 3 turns effect to BB/SBB", 
         "effects": [
