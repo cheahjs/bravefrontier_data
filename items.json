@@ -39239,6 +39239,51 @@
         "thumbnail": "sphere_thum_819910_1.png", 
         "type": "sphere"
     }, 
+    "819202": {
+        "desc": "50% boost to Atk, Def, 20% boost to critical hit rate, hugely boosts critical damage, greatly boosts elemental damage, critical damage enormously boosts BB gauge & 5% damage reduction", 
+        "effect": [
+            {
+                "atk% buff": 50, 
+                "crit% buff": 20, 
+                "def% buff": 50, 
+                "passive id": "1"
+            }, 
+            {
+                "crit multiplier%": 150.0, 
+                "passive id": "34"
+            }, 
+            {
+                "dark units do extra elemental weakness dmg": true, 
+                "earth units do extra elemental weakness dmg": true, 
+                "elemental weakness multiplier%": 150.0, 
+                "fire units do extra elemental weakness dmg": true, 
+                "light units do extra elemental weakness dmg": true, 
+                "passive id": "50", 
+                "thunder units do extra elemental weakness dmg": true, 
+                "water units do extra elemental weakness dmg": true
+            }, 
+            {
+                "bc fill on crit max": 15, 
+                "bc fill on crit min": 10, 
+                "bc fill on crit%": 100.0, 
+                "passive id": "65"
+            }, 
+            {
+                "dmg% mitigation": 5, 
+                "passive id": "8"
+            }
+        ], 
+        "id": 819202, 
+        "max_stack": 1, 
+        "name": "Obrim", 
+        "raid": false, 
+        "rarity": 7, 
+        "sell_price": 30000, 
+        "sphere type": 2, 
+        "sphere type text": "Critical", 
+        "thumbnail": "sphere_thum_819202.png", 
+        "type": "sphere"
+    }, 
     "819203": {
         "desc": "70% boost to all parameters, 20% boost to critical hit rate, greatly boosts Spark and critical damage, critical damage enormously boosts BB gauge & negates critical and elemental damage", 
         "effect": [
@@ -39283,6 +39328,49 @@
         "sphere type": 1, 
         "sphere type text": "Status Boost", 
         "thumbnail": "sphere_thum_819204.png", 
+        "type": "sphere"
+    }, 
+    "819204": {
+        "desc": "40% boost to all parameters, boosts BC, HC drop rate, 15% damage reduction, hugely reduces BB gauge consumed during BB & damage taken may restore HP", 
+        "effect": [
+            {
+                "atk% buff": 40, 
+                "def% buff": 40, 
+                "hp% buff": 40, 
+                "passive id": "1", 
+                "rec% buff": 40
+            }, 
+            {
+                "bc drop rate% buff": 30, 
+                "hc drop rate% buff": 30, 
+                "passive id": "19"
+            }, 
+            {
+                "dmg% mitigation": 15, 
+                "passive id": "8"
+            }, 
+            {
+                "passive id": "49", 
+                "reduced bb bc use chance%": 100, 
+                "reduced bb bc use% high": 40, 
+                "reduced bb bc use% low": 20
+            }, 
+            {
+                "dmg% to hp% when attacked chance%": 50, 
+                "dmg% to hp% when attacked high": 30, 
+                "dmg% to hp% when attacked low": 25, 
+                "passive id": "24"
+            }
+        ], 
+        "id": 819204, 
+        "max_stack": 1, 
+        "name": "Prosklystios", 
+        "raid": false, 
+        "rarity": 7, 
+        "sell_price": 30000, 
+        "sphere type": 10, 
+        "sphere type text": "Damage Reducing", 
+        "thumbnail": "sphere_thum_819203.png", 
         "type": "sphere"
     }, 
     "819206": {
@@ -42126,6 +42214,101 @@
         "sphere type": 6, 
         "sphere type text": "BB Gauge", 
         "thumbnail": "sphere_thum_819249.png", 
+        "type": "sphere"
+    }, 
+    "819261": {
+        "desc": "150% boost to Spark damage, Spark vulnerability infliction for 2 turns, 100% boost to Atk, boosts Thunder elemental damage, adds stealth on self boosting own Atk for 2 turns after 10 sparks", 
+        "effect": [
+            {
+                "damage% for spark": 150, 
+                "passive id": "31"
+            }, 
+            {
+                "passive id": "75", 
+                "spark debuff chance%": 100, 
+                "spark debuff turns": 1, 
+                "spark debuff%": 20
+            }, 
+            {
+                "atk% buff": 100, 
+                "passive id": "1"
+            }, 
+            {
+                "elemental weakness multiplier%": 100.0, 
+                "passive id": "50", 
+                "thunder units do extra elemental weakness dmg": true
+            }, 
+            {
+                "buff": {
+                    "buff turns (10001)": "2", 
+                    "unknown buff id": "10001", 
+                    "unknown buff params": "100&0&0&0"
+                }, 
+                "passive id": "86", 
+                "spark count buff activation": 10
+            }
+        ], 
+        "id": 819261, 
+        "max_stack": 1, 
+        "name": "Rabbit Mask", 
+        "raid": false, 
+        "rarity": 7, 
+        "sell_price": 30000, 
+        "sphere type": 11, 
+        "sphere type text": "Spark", 
+        "thumbnail": "sphere_thum_819261.png", 
+        "type": "sphere"
+    }, 
+    "819262": {
+        "desc": "30% boost to all parameters, 10% damage reduction from Fire, Earth types, negates all status ailments and Atk, Def, Rec reduction effects & damage taken boosts BB gauge and may restore HP", 
+        "effect": [
+            {
+                "atk% buff": 30, 
+                "def% buff": 30, 
+                "hp% buff": 30, 
+                "passive id": "1", 
+                "rec% buff": 30
+            }, 
+            {
+                "dmg% mitigation for elemental attacks": 10.0, 
+                "mitigate earth attacks": true, 
+                "mitigate fire attacks": true, 
+                "passive id": "62"
+            }, 
+            {
+                "atk down resist%": 100, 
+                "curse resist%": 100, 
+                "def down resist%": 100, 
+                "injury resist%": 100, 
+                "paralysis resist%": 100, 
+                "passive id": "73", 
+                "poison resist%": 100, 
+                "rec down resist%": 100, 
+                "sick resist%": 100, 
+                "weaken resist%": 100
+            }, 
+            {
+                "dmg% to hp% when attacked chance%": 60, 
+                "dmg% to hp% when attacked high": 20, 
+                "dmg% to hp% when attacked low": 20, 
+                "passive id": "24"
+            }, 
+            {
+                "bc fill when attacked high": 3, 
+                "bc fill when attacked low": 2, 
+                "bc fill when attacked%": 100, 
+                "passive id": "25"
+            }
+        ], 
+        "id": 819262, 
+        "max_stack": 1, 
+        "name": "Jason's Mask", 
+        "raid": false, 
+        "rarity": 7, 
+        "sell_price": 30000, 
+        "sphere type": 10, 
+        "sphere type text": "Damage Reducing", 
+        "thumbnail": "sphere_thum_819262.png", 
         "type": "sphere"
     }, 
     "819901": {

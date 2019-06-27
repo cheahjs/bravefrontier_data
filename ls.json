@@ -26995,34 +26995,36 @@
         "name": "Rampart of Faith"
     }, 
     "810148": {
-        "desc": "80% boost to max HP, 30% boost to critical hit rate, considerably boosts Atk, Def relative to remaining HP, hugely boosts critical damage, damage taken enormously boosts BB gauge & 10% damage reduction", 
+        "desc": "120% boost to Atk, Def, 100% boost to max HP and 30% boost to critical hit rate, considerably boosts Atk relative to remaining HP, considerably boosts Def relative to lost HP, enormously boosts critical damage, damage taken enormously boosts BB gauge & 15% damage reduction", 
         "effects": [
             {
+                "atk% buff": 120, 
                 "crit% buff": 30, 
-                "hp% buff": 80, 
+                "def% buff": 120, 
+                "hp% buff": 100, 
                 "passive id": "1"
             }, 
             {
-                "atk% base buff": 30, 
-                "atk% extra buff based on hp": 90, 
+                "atk% base buff": 0, 
+                "atk% extra buff based on hp": 80, 
                 "buff proportional to hp": "remaining", 
-                "def% base buff": 30, 
-                "def% extra buff based on hp": 90, 
+                "def% base buff": 80, 
+                "def% extra buff based on hp": -80, 
                 "passive id": "46"
             }, 
             {
-                "crit multiplier%": 150.0, 
+                "crit multiplier%": 200.0, 
                 "passive id": "34"
             }, 
             {
-                "bc fill when attacked high": 8, 
-                "bc fill when attacked low": 5, 
+                "bc fill when attacked high": 10, 
+                "bc fill when attacked low": 6, 
                 "bc fill when attacked%": 100, 
                 "passive id": "25"
             }, 
             {
                 "dmg reduction chance%": 100, 
-                "dmg reduction%": 10, 
+                "dmg reduction%": 15, 
                 "passive id": "14"
             }
         ], 
@@ -28252,6 +28254,36 @@
         "id": "810758", 
         "name": "Queen of Vanity"
     }, 
+    "810778": {
+        "desc": "100% boost to all parameters, damage taken hugely boosts BB gauge, 10% damage reduction & damage taken may considerably restore HP", 
+        "effects": [
+            {
+                "atk% buff": 100, 
+                "def% buff": 100, 
+                "hp% buff": 100, 
+                "passive id": "1", 
+                "rec% buff": 100
+            }, 
+            {
+                "bc fill when attacked high": 9, 
+                "bc fill when attacked low": 5, 
+                "bc fill when attacked%": 100, 
+                "passive id": "25"
+            }, 
+            {
+                "dmg% mitigation": 10, 
+                "passive id": "8"
+            }, 
+            {
+                "dmg% to hp% when attacked chance%": 50, 
+                "dmg% to hp% when attacked high": 25, 
+                "dmg% to hp% when attacked low": 25, 
+                "passive id": "24"
+            }
+        ], 
+        "id": "810778", 
+        "name": "Jason"
+    }, 
     "810900": {
         "desc": "100% boost to max HP, Spark damage boosts BB gauge, hugely boosts Fire elemental damage, 15% damage reduction from Earth types & negates all status ailments", 
         "effects": [
@@ -28409,27 +28441,32 @@
         "name": "Omniscient Jellyfish"
     }, 
     "820148": {
-        "desc": "100% boost to max HP, considerably boosts Def, Rec relative to remaining HP, enormously boosts BB Atk for 2 turns when BC collected has exceeded certain amount, 20% damage reduction for 2 turns when HC collected has exceeded certain amount & 10% damage reduction", 
+        "desc": "70% boost to Atk, Def, Rec, 120% boost to max HP, considerably boosts Atk, Def, Rec relative to remaining HP, considerably boosts BB Atk for 2 turns when BC collected has exceeded certain amount, slight damage reduction for 2 turns when HC collected has exceeded certain amount & 10% damage reduction", 
         "effects": [
             {
-                "hp% buff": 100, 
-                "passive id": "1"
+                "atk% buff": 70, 
+                "def% buff": 70, 
+                "hp% buff": 120, 
+                "passive id": "1", 
+                "rec% buff": 70
             }, 
             {
+                "atk% base buff": 0, 
+                "atk% extra buff based on hp": 80, 
                 "buff proportional to hp": "remaining", 
-                "def% base buff": 30, 
-                "def% extra buff based on hp": 90, 
+                "def% base buff": 0, 
+                "def% extra buff based on hp": 80, 
                 "passive id": "46", 
-                "rec% base buff": 30, 
-                "rec% extra buff based on hp": 90
+                "rec% base buff": 0, 
+                "rec% extra buff based on hp": 80
             }, 
             {
                 "bc receive count buff activation": 100, 
                 "buff": {
-                    "bb atk% buff": 500, 
-                    "buff turns (72)": "3", 
-                    "sbb atk% buff": 500, 
-                    "ubb atk% buff": 500
+                    "bb atk% buff": 600, 
+                    "buff turns (72)": "2", 
+                    "sbb atk% buff": 600, 
+                    "ubb atk% buff": 600
                 }, 
                 "passive id": "82"
             }, 
@@ -31143,6 +31180,66 @@
         "id": "830698", 
         "name": "Sikuri Savant"
     }, 
+    "830767": {
+        "desc": "80% boost to Atk, Def, Rec, 100% boost to max HP, probable damage reduction to 1, boosts damage reduction when guarding & damage taken may considerably restore HP", 
+        "effects": [
+            {
+                "atk% buff": 80, 
+                "def% buff": 80, 
+                "hp% buff": 100, 
+                "passive id": "1", 
+                "rec% buff": 80
+            }, 
+            {
+                "passive id": "43", 
+                "take 1 dmg%": 15
+            }, 
+            {
+                "guard increase mitigation%": 10, 
+                "passive id": "58"
+            }, 
+            {
+                "dmg% to hp% when attacked chance%": 50, 
+                "dmg% to hp% when attacked high": 25, 
+                "dmg% to hp% when attacked low": 20, 
+                "passive id": "24"
+            }
+        ], 
+        "id": "830767", 
+        "name": "Gourmet"
+    }, 
+    "830768": {
+        "desc": "100% boost to Atk, Def, Rec, 120% boost to max HP, enormously boosts Spark damage, probable damage reduction to 1, boosts damage reduction when guarding & damage taken may considerably restore HP", 
+        "effects": [
+            {
+                "atk% buff": 100, 
+                "def% buff": 100, 
+                "hp% buff": 120, 
+                "passive id": "1", 
+                "rec% buff": 100
+            }, 
+            {
+                "damage% for spark": 300, 
+                "passive id": "31"
+            }, 
+            {
+                "passive id": "43", 
+                "take 1 dmg%": 20
+            }, 
+            {
+                "guard increase mitigation%": 10, 
+                "passive id": "58"
+            }, 
+            {
+                "dmg% to hp% when attacked chance%": 50, 
+                "dmg% to hp% when attacked high": 30, 
+                "dmg% to hp% when attacked low": 25, 
+                "passive id": "24"
+            }
+        ], 
+        "id": "830768", 
+        "name": "Pride of the Tsukiyama Family"
+    }, 
     "830900": {
         "desc": "100% boost to max HP, Spark damage boosts BB gauge, hugely boosts Earth elemental damage, 15% damage reduction from Thunder types & negates all status ailments", 
         "effects": [
@@ -32407,6 +32504,70 @@
         ], 
         "id": "840708", 
         "name": "Black Art Legacy"
+    }, 
+    "840767": {
+        "desc": "100% boost to Atk, max HP, hugely boosts Spark damage & Spark damage boosts BB gauge and slightly restores HP", 
+        "effects": [
+            {
+                "atk% buff": 100, 
+                "hp% buff": 100, 
+                "passive id": "1"
+            }, 
+            {
+                "damage% for spark": 200, 
+                "passive id": "31"
+            }, 
+            {
+                "bc fill on spark high": 3, 
+                "bc fill on spark low": 2, 
+                "bc fill on spark%": 100, 
+                "passive id": "47"
+            }, 
+            {
+                "heal on spark high": 500, 
+                "heal on spark low": 400, 
+                "heal on spark%": 100, 
+                "passive id": "101"
+            }
+        ], 
+        "id": "840767", 
+        "name": "Rabbit"
+    }, 
+    "840768": {
+        "desc": "140% boost to Atk, max HP, enormously boosts Spark damage, Spark damage considerably boosts BB gauge and slightly restores HP & 20% damage reduction for 1 turn when damage taken has exceeded certain amount", 
+        "effects": [
+            {
+                "atk% buff": 140, 
+                "hp% buff": 140, 
+                "passive id": "1"
+            }, 
+            {
+                "damage% for spark": 300, 
+                "passive id": "31"
+            }, 
+            {
+                "bc fill on spark high": 4, 
+                "bc fill on spark low": 3, 
+                "bc fill on spark%": 100, 
+                "passive id": "47"
+            }, 
+            {
+                "heal on spark high": 600, 
+                "heal on spark low": 500, 
+                "heal on spark%": 100, 
+                "passive id": "101"
+            }, 
+            {
+                "buff": {
+                    "buff turns (36)": "1", 
+                    "dmg reduction% buff": 20
+                }, 
+                "damage threshold buff activation": 5000, 
+                "passive id": "78"
+            }
+        ], 
+        "id": "840768", 
+        "name": "Nothing here belongs to you"
     }, 
     "840900": {
         "desc": "100% boost to max HP, Spark damage boosts BB gauge, hugely boosts Thunder elemental damage, 15% damage reduction from Water types & negates all status ailments", 
