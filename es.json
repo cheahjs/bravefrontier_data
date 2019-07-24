@@ -25651,6 +25651,95 @@
         "rarity": "7", 
         "target": "self"
     }, 
+    "8000901": {
+        "desc": "100% boost to Atk, 10% damage reduction from Fire, Water types, considerably boosts elemental damage, boosts OD gauge fill rate & 60% boost to Spark damage", 
+        "effects": [
+            {
+                "atk% buff": 100, 
+                "conditions": [], 
+                "passive id": "1", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "dmg% mitigation for elemental attacks": 10.0, 
+                "mitigate fire attacks": true, 
+                "mitigate water attacks": true, 
+                "passive id": "62", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "dark units do extra elemental weakness dmg": true, 
+                "earth units do extra elemental weakness dmg": true, 
+                "elemental weakness multiplier%": 60.0, 
+                "fire units do extra elemental weakness dmg": true, 
+                "light units do extra elemental weakness dmg": true, 
+                "passive id": "50", 
+                "passive target": "self", 
+                "thunder units do extra elemental weakness dmg": true, 
+                "water units do extra elemental weakness dmg": true
+            }, 
+            {
+                "conditions": [], 
+                "od fill rate%": 20, 
+                "passive id": "70", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "damage% for spark": 60, 
+                "passive id": "31", 
+                "passive target": "self"
+            }
+        ], 
+        "id": "8000901", 
+        "name": "Beach Spike", 
+        "rarity": "8", 
+        "target": "self"
+    }, 
+    "8000902": {
+        "desc": "5% boosts to all parameters for all Water type allies, 35% boosts to Def, max HP, slightly restore HP each turn for all allies & 5% additional damage reduction for all allies", 
+        "effects": [
+            {
+                "atk% buff": 5, 
+                "conditions": [], 
+                "def% buff": 5, 
+                "elements buffed": [
+                    "water"
+                ], 
+                "hp% buff": 5, 
+                "passive id": "2", 
+                "passive target": "party", 
+                "rec% buff": 5
+            }, 
+            {
+                "conditions": [], 
+                "def% buff": 35, 
+                "hp% buff": 35, 
+                "passive id": "1", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "passive id": "33", 
+                "passive target": "self", 
+                "rec% added (turn heal)": 11.0, 
+                "turn heal high": 6000, 
+                "turn heal low": 4000
+            }, 
+            {
+                "conditions": [], 
+                "passive target": "party", 
+                "unknown passive id": "127", 
+                "unknown passive params": "100,5"
+            }
+        ], 
+        "id": "8000902", 
+        "name": "Deep Dive", 
+        "rarity": "7", 
+        "target": "self"
+    }, 
     "8100": {
         "desc": "Boosts OD gauge fill rate", 
         "effects": [
@@ -30630,6 +30719,90 @@
         "rarity": "7", 
         "target": "self"
     }, 
+    "820747": {
+        "desc": "5% additional damage reduction to all allies, probable damage reduction to 1 & 40% boost to Atk, Def, Rec when BB gauge is over 50%", 
+        "effects": [
+            {
+                "conditions": [], 
+                "passive target": "party", 
+                "unknown passive id": "127", 
+                "unknown passive params": "100,5"
+            }, 
+            {
+                "conditions": [], 
+                "passive id": "43", 
+                "passive target": "self", 
+                "take 1 dmg%": 10
+            }, 
+            {
+                "atk% buff": 40, 
+                "bb gauge above % buff requirement": 50, 
+                "conditions": [], 
+                "def% buff": 40, 
+                "passive id": "30", 
+                "passive target": "self", 
+                "rec% buff": 40
+            }
+        ], 
+        "id": "820747", 
+        "name": "Clickwhistle", 
+        "rarity": "7", 
+        "target": "self"
+    }, 
+    "820748": {
+        "desc": "5% damage reduction from Fire, Water, Thunder types and 15% additional damage reduction to all allies, probable damage reduction to 1, 60% boost to Atk, Def, Rec when BB gauge is over 50% & adds enormous boost to BB gauge effect to BB", 
+        "effects": [
+            {
+                "conditions": [], 
+                "passive target": "party", 
+                "unknown passive id": "127", 
+                "unknown passive params": "100,15"
+            }, 
+            {
+                "conditions": [], 
+                "dmg% mitigation for elemental attacks": 5.0, 
+                "mitigate fire attacks": true, 
+                "mitigate thunder attacks": true, 
+                "mitigate water attacks": true, 
+                "passive id": "62", 
+                "passive target": "party"
+            }, 
+            {
+                "conditions": [], 
+                "passive id": "43", 
+                "passive target": "self", 
+                "take 1 dmg%": 15
+            }, 
+            {
+                "atk% buff": 60, 
+                "bb gauge above % buff requirement": 50, 
+                "conditions": [], 
+                "def% buff": 60, 
+                "passive id": "30", 
+                "passive target": "self", 
+                "rec% buff": 60
+            }, 
+            {
+                "conditions": [], 
+                "passive id": "66", 
+                "passive target": "self", 
+                "trigger on bb": true, 
+                "triggered effect": [
+                    {
+                        "effect delay time(ms)/frame": "0.0/0", 
+                        "increase bb gauge": 12, 
+                        "proc id": "31", 
+                        "target area": "aoe", 
+                        "target type": "party"
+                    }
+                ]
+            }
+        ], 
+        "id": "820748", 
+        "name": "Dolphie Assist", 
+        "rarity": "7", 
+        "target": "self"
+    }, 
     "820757": {
         "desc": "20% boost to Atk, Def for first 5 turns for all allies, negates Atk, Def, Rec reductions for all allies & greatly boosts Water elemental damage", 
         "effects": [
@@ -34958,6 +35131,44 @@
         ], 
         "id": "840708", 
         "name": "Murder of Crows", 
+        "rarity": "7", 
+        "target": "self"
+    }, 
+    "840748": {
+        "desc": "Probable resistance against 2 KO attacks, damage taken may for 1 turn, damage taken may for 2 turns & probable 40% damage counter for all allies", 
+        "effects": [
+            {
+                "angel idol chance% condition": 0, 
+                "angel idol recover chance% high": 40, 
+                "angel idol recover chance% low": 40, 
+                "angel idol recover counts": 2, 
+                "conditions": [], 
+                "passive id": "69", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "passive target": "self", 
+                "unknown passive id": "114", 
+                "unknown passive params": "112,-20,-1,20,1"
+            }, 
+            {
+                "conditions": [], 
+                "passive target": "self", 
+                "unknown passive id": "114", 
+                "unknown passive params": "2,-20,-1,15,2"
+            }, 
+            {
+                "conditions": [], 
+                "dmg% reflect chance%": 70, 
+                "dmg% reflect high": 40, 
+                "dmg% reflect low": 40, 
+                "passive id": "26", 
+                "passive target": "party"
+            }
+        ], 
+        "id": "840748", 
+        "name": "Free-float Symbiosis", 
         "rarity": "7", 
         "target": "self"
     }, 
