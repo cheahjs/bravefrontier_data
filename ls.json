@@ -28773,15 +28773,16 @@
         "name": "Slow Precision Death"
     }, 
     "820288": {
-        "desc": "60% boost to Atk, max HP, hugely boosts critical damage, critical damage hugely boosts BB gauge & boosts Atk, Def relative to remaining HP", 
+        "desc": "100% boost to Atk, max HP, 30% boosts critical hit rate, hugely boosts critical damage, boosts Atk, Def relative to remaining HP & critical damage hugely boosts BB gauge", 
         "effects": [
             {
-                "atk% buff": 60, 
-                "hp% buff": 60, 
+                "atk% buff": 100, 
+                "crit% buff": 30, 
+                "hp% buff": 100, 
                 "passive id": "1"
             }, 
             {
-                "crit multiplier%": 150.0, 
+                "crit multiplier%": 200.0, 
                 "passive id": "34"
             }, 
             {
@@ -28792,10 +28793,10 @@
             }, 
             {
                 "atk% base buff": 0, 
-                "atk% extra buff based on hp": 60, 
+                "atk% extra buff based on hp": 80, 
                 "buff proportional to hp": "remaining", 
                 "def% base buff": 0, 
-                "def% extra buff based on hp": 60, 
+                "def% extra buff based on hp": 80, 
                 "passive id": "46"
             }
         ], 
@@ -31300,6 +31301,40 @@
         ], 
         "id": "830678", 
         "name": "Scrapping Spirit"
+    }, 
+    "830688": {
+        "desc": "150% boost to Def, max HP, damage taken hugely boosts BB gauge, enormously boosts BB gauge when guarding, 15% damage reduction & 20% damage reduction for 2 turns when damage taken has exceeded certain amount", 
+        "effects": [
+            {
+                "def% buff": 150, 
+                "hp% buff": 150, 
+                "passive id": "1"
+            }, 
+            {
+                "dmg% mitigation": 15, 
+                "passive id": "8"
+            }, 
+            {
+                "buff": {
+                    "buff turns (36)": "1", 
+                    "dmg reduction% buff": 20
+                }, 
+                "damage threshold buff activation": 5000, 
+                "passive id": "78"
+            }, 
+            {
+                "bc filled on guard": 15, 
+                "passive id": "61"
+            }, 
+            {
+                "bc fill when attacked high": 10, 
+                "bc fill when attacked low": 6, 
+                "bc fill when attacked%": 100, 
+                "passive id": "25"
+            }
+        ], 
+        "id": "830688", 
+        "name": "Foremost of the Deceased"
     }, 
     "830697": {
         "desc": "80% boost to Atk, Def, Rec and 100% boost to max HP, hugely boosts BB gauge each turn, restores HP each turn & negates all status ailments and Atk, Def, Rec reduction effects", 

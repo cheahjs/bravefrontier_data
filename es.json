@@ -28994,7 +28994,7 @@
         "target": "self"
     }, 
     "820288": {
-        "desc": "50% boost to Atk of Water types, critical damage boosts BB gauge, adds Water barrier effect to BB/SBB & raises Atk parameter limits to 130000<br>Boosts Atk, Def when BB gauge is over 50%, adds 26 combo massive Water attack on Fire types effect to SBB & boosts Water elemental damage for all allies in Guild Raid", 
+        "desc": "50% boost to Atk, 15% boosts critical hit rate of Water types, critical damage boosts BB gauge, adds activates Water barrier effect to BB/SBB & 20% boost to all parameters<br>Boosts Atk, Def when BB gauge is over 50%, adds 26 combo massive Water attack on Fire types effect to SBB & boosts Water elemental damage for all allies in Guild Raid.", 
         "effects": [
             {
                 "conditions": [], 
@@ -29008,7 +29008,7 @@
                         "elemental barrier absorb dmg%": 100, 
                         "elemental barrier def": 0, 
                         "elemental barrier element": "water", 
-                        "elemental barrier hp": 3500, 
+                        "elemental barrier hp": 5000, 
                         "proc id": "62", 
                         "target area": "aoe", 
                         "target type": "party"
@@ -29018,6 +29018,7 @@
             {
                 "atk% buff": 50, 
                 "conditions": [], 
+                "crit% buff": 15, 
                 "elements buffed": [
                     "water"
                 ], 
@@ -29025,18 +29026,21 @@
                 "passive target": "party"
             }, 
             {
-                "bc fill on crit max": 10, 
-                "bc fill on crit min": 10, 
+                "bc fill on crit max": 12, 
+                "bc fill on crit min": 12, 
                 "bc fill on crit%": 100.0, 
                 "conditions": [], 
                 "passive id": "65", 
                 "passive target": "self"
             }, 
             {
+                "atk% buff": 20, 
                 "conditions": [], 
-                "increase atk cap": 130000, 
-                "passive id": "143", 
-                "passive target": "self"
+                "def% buff": 20, 
+                "hp% buff": 20, 
+                "passive id": "1", 
+                "passive target": "self", 
+                "rec% buff": 20
             }
         ], 
         "id": "820288", 
@@ -32815,6 +32819,51 @@
         ], 
         "id": "830678", 
         "name": "Rapid Dismantle", 
+        "rarity": "7", 
+        "target": "self"
+    }, 
+    "830688": {
+        "desc": "Greatly reduces BB gauge required for BB when Miracle of Khons or Blessing of Khons Sphere is equipped, 35% boost of Def, max HP for all allies, 15% DoT reduction for all allies & hugely boosts OD gauge fill rate", 
+        "effects": [
+            {
+                "conditions": [
+                    {
+                        "item required": [
+                            "819265"
+                        ]
+                    }, 
+                    {
+                        "item required": [
+                            "819266"
+                        ]
+                    }
+                ], 
+                "passive id": "48", 
+                "passive target": "self", 
+                "reduced bb bc cost%": 30
+            }, 
+            {
+                "conditions": [], 
+                "def% buff": 35, 
+                "hp% buff": 35, 
+                "passive id": "1", 
+                "passive target": "party"
+            }, 
+            {
+                "conditions": [], 
+                "passive target": "party", 
+                "unknown passive id": "127", 
+                "unknown passive params": "100,15"
+            }, 
+            {
+                "conditions": [], 
+                "od fill rate%": 50, 
+                "passive id": "70", 
+                "passive target": "self"
+            }
+        ], 
+        "id": "830688", 
+        "name": "Sovereign of Duat", 
         "rarity": "7", 
         "target": "self"
     }, 
