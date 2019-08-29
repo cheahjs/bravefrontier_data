@@ -25740,6 +25740,109 @@
         "rarity": "7", 
         "target": "self"
     }, 
+    "8001001": {
+        "desc": "50% boost to Def, max HP, 10% damage reduction from Earth, Thunder types, damage taken boosts BB gauge & add resistance against 1 KO attack when HP is below 50%", 
+        "effects": [
+            {
+                "conditions": [], 
+                "def% buff": 50, 
+                "hp% buff": 50, 
+                "passive id": "1", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "dmg% mitigation for elemental attacks": 10.0, 
+                "mitigate earth attacks": true, 
+                "mitigate thunder attacks": true, 
+                "passive id": "62", 
+                "passive target": "self"
+            }, 
+            {
+                "bc fill when attacked high": 2, 
+                "bc fill when attacked low": 1, 
+                "bc fill when attacked%": 100, 
+                "conditions": [], 
+                "passive id": "25", 
+                "passive target": "self"
+            }, 
+            {
+                "buff": {
+                    "angel idol buff (12)": true, 
+                    "angel idol recover hp%": 1, 
+                    "buff turns (12)": "-1"
+                }, 
+                "conditions": [], 
+                "hp below % buff activation": 50, 
+                "passive id": "55", 
+                "passive target": "self"
+            }
+        ], 
+        "id": "8001001", 
+        "name": "Unfaltering Oak", 
+        "rarity": "7", 
+        "target": "self"
+    }, 
+    "8001002": {
+        "desc": "10% boost to all parameters for all Dark type allies, negates all status ailments and Atk, Def, Rec reduction effects, considerably boosts elemental damage, critical damage & 120% boost to Atk and 30% boost to critical hit rate.", 
+        "effects": [
+            {
+                "atk% buff": 10, 
+                "conditions": [], 
+                "def% buff": 10, 
+                "elements buffed": [
+                    "dark"
+                ], 
+                "hp% buff": 10, 
+                "passive id": "2", 
+                "passive target": "party", 
+                "rec% buff": 10
+            }, 
+            {
+                "atk down resist%": 100, 
+                "conditions": [], 
+                "curse resist%": 100, 
+                "def down resist%": 100, 
+                "injury resist%": 100, 
+                "paralysis resist%": 100, 
+                "passive id": "73", 
+                "passive target": "self", 
+                "poison resist%": 100, 
+                "rec down resist%": 100, 
+                "sick resist%": 100, 
+                "weaken resist%": 100
+            }, 
+            {
+                "conditions": [], 
+                "dark units do extra elemental weakness dmg": true, 
+                "earth units do extra elemental weakness dmg": true, 
+                "elemental weakness multiplier%": 50.0, 
+                "fire units do extra elemental weakness dmg": true, 
+                "light units do extra elemental weakness dmg": true, 
+                "passive id": "50", 
+                "passive target": "self", 
+                "thunder units do extra elemental weakness dmg": true, 
+                "water units do extra elemental weakness dmg": true
+            }, 
+            {
+                "conditions": [], 
+                "crit multiplier%": 120.0, 
+                "passive id": "34", 
+                "passive target": "self"
+            }, 
+            {
+                "atk% buff": 120, 
+                "conditions": [], 
+                "crit% buff": 30, 
+                "passive id": "1", 
+                "passive target": "self"
+            }
+        ], 
+        "id": "8001002", 
+        "name": "Natural Order", 
+        "rarity": "8", 
+        "target": "self"
+    }, 
     "8100": {
         "desc": "Boosts OD gauge fill rate", 
         "effects": [
@@ -34114,7 +34217,7 @@
         "target": "self"
     }, 
     "840358": {
-        "desc": "20% boost to all parameters of Thunder types, adds resistance against 1 KO attack when HP is below 20% & negates all status ailments", 
+        "desc": "25% boost to all parameters of Thunder types, 20% boost to all parameters, adds resistance against 1 KO attack when HP is below 35%, negates all status ailments & probable damage reduction to 1", 
         "effects": [
             {
                 "buff": {
@@ -34123,7 +34226,7 @@
                     "buff turns (12)": "-1"
                 }, 
                 "conditions": [], 
-                "hp below % buff activation": 20, 
+                "hp below % buff activation": 35, 
                 "passive id": "55", 
                 "passive target": "self"
             }, 
@@ -34139,15 +34242,30 @@
                 "weaken resist%": 100
             }, 
             {
-                "atk% buff": 20, 
+                "atk% buff": 25, 
                 "conditions": [], 
-                "def% buff": 20, 
+                "def% buff": 25, 
                 "elements buffed": [
                     "thunder"
                 ], 
-                "hp% buff": 20, 
+                "hp% buff": 25, 
                 "passive id": "2", 
                 "passive target": "party", 
+                "rec% buff": 25
+            }, 
+            {
+                "conditions": [], 
+                "passive id": "43", 
+                "passive target": "self", 
+                "take 1 dmg%": 15
+            }, 
+            {
+                "atk% buff": 20, 
+                "conditions": [], 
+                "def% buff": 20, 
+                "hp% buff": 20, 
+                "passive id": "1", 
+                "passive target": "self", 
                 "rec% buff": 20
             }
         ], 
@@ -35543,6 +35661,42 @@
         "rarity": "7", 
         "target": "self"
     }, 
+    "840788": {
+        "desc": "30% boost to all parameters, considerably reduces BB gauge required for BB, 5% boost to EXP gained & 5% boost to Summoner Avatar EXP gained", 
+        "effects": [
+            {
+                "atk% buff": 30, 
+                "conditions": [], 
+                "def% buff": 30, 
+                "hp% buff": 30, 
+                "passive id": "1", 
+                "passive target": "self", 
+                "rec% buff": 30
+            }, 
+            {
+                "conditions": [], 
+                "passive id": "48", 
+                "passive target": "self", 
+                "reduced bb bc cost%": 25
+            }, 
+            {
+                "conditions": [], 
+                "passive target": "self", 
+                "unknown passive id": "11006", 
+                "unknown passive params": "5"
+            }, 
+            {
+                "conditions": [], 
+                "passive id": "97", 
+                "passive target": "party", 
+                "xp gained increase%": 5
+            }
+        ], 
+        "id": "840788", 
+        "name": "The Old Ways", 
+        "rarity": "7", 
+        "target": "self"
+    }, 
     "840900": {
         "desc": "10% boost to all parameters of Thunder types for all allies, damage taken boosts BB gauge & 30% additional damage reduction", 
         "effects": [
@@ -36812,21 +36966,21 @@
         "target": "self"
     }, 
     "850358": {
-        "desc": "Probable random status ailment infliction, adds probable 1 turn Atk reduction effect to attack for 2 turns when dealing damage, 5% damage reduction from Light, Dark types for all allies & negates status ailments for all allies", 
+        "desc": "Negates all status ailments for all allies, 5% damage reduction from Light, Dark types for all allies, adds probable random status ailment infliction to attack & adds probable to attack effect for 2 turns when dealing damage", 
         "effects": [
             {
                 "conditions": [], 
-                "injury%": 12, 
+                "injury%": 15, 
                 "passive id": "20", 
                 "passive target": "self", 
-                "poison%": 10, 
-                "sick%": 12, 
-                "weaken%": 12
+                "poison%": 15, 
+                "sick%": 15, 
+                "weaken%": 15
             }, 
             {
                 "conditions": [], 
-                "curse%": 10, 
-                "paralysis%": 10, 
+                "curse%": 15, 
+                "paralysis%": 15, 
                 "passive id": "20", 
                 "passive target": "self"
             }, 
@@ -40919,6 +41073,82 @@
         ], 
         "id": "860738", 
         "name": "Vessel of Accursed Divinity", 
+        "rarity": "7", 
+        "target": "self"
+    }, 
+    "860787": {
+        "desc": "Considerably boosts BB gauge each turn for all allies, enormously boosts Spark damage for 2 turns when Spark damage exceeds certain amount & probable damage reduction to 1", 
+        "effects": [
+            {
+                "bc fill per turn": 4, 
+                "conditions": [], 
+                "passive id": "9", 
+                "passive target": "party"
+            }, 
+            {
+                "buff": {
+                    "buff turns (40)": "2", 
+                    "spark dmg% buff": 200
+                }, 
+                "conditions": [], 
+                "passive id": "86", 
+                "passive target": "self", 
+                "spark count buff activation": 1
+            }, 
+            {
+                "conditions": [], 
+                "passive id": "43", 
+                "passive target": "self", 
+                "take 1 dmg%": 10
+            }
+        ], 
+        "id": "860787", 
+        "name": "Wasn't Me, Officer", 
+        "rarity": "7", 
+        "target": "self"
+    }, 
+    "860788": {
+        "desc": "25% boost to Spark damage for all allies, considerably boosts BB gauge each turn for all allies, Spark damage enormously boosts BB gauge, enormously boosts Spark damage for 2 turns when Spark damage exceeds certain amount & probable damage reduction to 1", 
+        "effects": [
+            {
+                "bc fill per turn": 5, 
+                "conditions": [], 
+                "passive id": "9", 
+                "passive target": "party"
+            }, 
+            {
+                "conditions": [], 
+                "damage% for spark": 25, 
+                "passive id": "31", 
+                "passive target": "party"
+            }, 
+            {
+                "bc fill on spark high": 20, 
+                "bc fill on spark low": 10, 
+                "bc fill on spark%": 100, 
+                "conditions": [], 
+                "passive id": "47", 
+                "passive target": "self"
+            }, 
+            {
+                "buff": {
+                    "buff turns (40)": "2", 
+                    "spark dmg% buff": 300
+                }, 
+                "conditions": [], 
+                "passive id": "86", 
+                "passive target": "self", 
+                "spark count buff activation": 1
+            }, 
+            {
+                "conditions": [], 
+                "passive id": "43", 
+                "passive target": "self", 
+                "take 1 dmg%": 15
+            }
+        ], 
+        "id": "860788", 
+        "name": "Detention Stint", 
         "rarity": "7", 
         "target": "self"
     }, 
