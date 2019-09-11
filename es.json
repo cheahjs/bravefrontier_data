@@ -29403,7 +29403,7 @@
         "target": "self"
     }, 
     "820358": {
-        "desc": "20% boost to all parameters of Water types, 20% damage reduction from normal attacks, considerably boosts BB Atk & raises Atk parameter limits to 160,000", 
+        "desc": "25% boost to all parameters of Water types, 20% damage reduction from normal attacks, considerably boosts BB Atk & negates elemental damage", 
         "effects": [
             {
                 "conditions": [], 
@@ -29420,22 +29420,23 @@
                 "ubb atk% buff": 200
             }, 
             {
-                "atk% buff": 20, 
+                "atk% buff": 25, 
                 "conditions": [], 
-                "def% buff": 20, 
+                "def% buff": 25, 
                 "elements buffed": [
                     "water"
                 ], 
-                "hp% buff": 20, 
+                "hp% buff": 25, 
                 "passive id": "2", 
                 "passive target": "party", 
-                "rec% buff": 20
+                "rec% buff": 25
             }, 
             {
                 "conditions": [], 
-                "increase atk cap": 160000, 
-                "passive id": "143", 
-                "passive target": "self"
+                "passive id": "53", 
+                "passive target": "self", 
+                "strong base element damage resist%": 100, 
+                "strong buffed element damage resist%": 100
             }
         ], 
         "id": "820358", 
@@ -30806,6 +30807,74 @@
         "rarity": "7", 
         "target": "self"
     }, 
+    "820687": {
+        "desc": "Slightly boosts Water elemental damage for all allies & probable damage reduction to 1", 
+        "effects": [
+            {
+                "conditions": [], 
+                "elemental weakness multiplier%": 10.0, 
+                "passive id": "50", 
+                "passive target": "party", 
+                "water units do extra elemental weakness dmg": true
+            }, 
+            {
+                "conditions": [], 
+                "passive id": "43", 
+                "passive target": "self", 
+                "take 1 dmg%": 10
+            }
+        ], 
+        "id": "820687", 
+        "name": "Tongue of the Gods", 
+        "rarity": "7", 
+        "target": "self"
+    }, 
+    "820688": {
+        "desc": "Considerably reduces BB gauge required for BB when Cunei of Athum or Word of Athum is equipped, slightly boosts Water elemental damage and 35% boost to Atk, max HP for all allies & probable damage reduction to 1", 
+        "effects": [
+            {
+                "conditions": [
+                    {
+                        "item required": [
+                            "819267"
+                        ]
+                    }, 
+                    {
+                        "item required": [
+                            "819268"
+                        ]
+                    }
+                ], 
+                "passive id": "48", 
+                "passive target": "self", 
+                "reduced bb bc cost%": 30
+            }, 
+            {
+                "atk% buff": 35, 
+                "conditions": [], 
+                "hp% buff": 35, 
+                "passive id": "1", 
+                "passive target": "party"
+            }, 
+            {
+                "conditions": [], 
+                "elemental weakness multiplier%": 20.0, 
+                "passive id": "50", 
+                "passive target": "party", 
+                "water units do extra elemental weakness dmg": true
+            }, 
+            {
+                "conditions": [], 
+                "passive id": "43", 
+                "passive target": "self", 
+                "take 1 dmg%": 15
+            }
+        ], 
+        "id": "820688", 
+        "name": "Judge of the Rekhekhui", 
+        "rarity": "7", 
+        "target": "self"
+    }, 
     "820717": {
         "desc": "20% boost to all parameters & damage taken may restore HP and boosts BB gauge", 
         "effects": [
@@ -31938,25 +32007,40 @@
         "target": "self"
     }, 
     "830358": {
-        "desc": "20% boost to all parameters of Earth types & 50% boost to Spark damage", 
+        "desc": "25% boost to all parameters of Earth types, adds Def ignoring effect to attacks for all allies, 20% boost to all parameters & 80% boost to Spark damage", 
         "effects": [
+            {
+                "atk% buff": 25, 
+                "conditions": [], 
+                "def% buff": 25, 
+                "elements buffed": [
+                    "earth"
+                ], 
+                "hp% buff": 25, 
+                "passive id": "2", 
+                "passive target": "party", 
+                "rec% buff": 25
+            }, 
+            {
+                "conditions": [], 
+                "damage% for spark": 80, 
+                "passive id": "31", 
+                "passive target": "self"
+            }, 
             {
                 "atk% buff": 20, 
                 "conditions": [], 
                 "def% buff": 20, 
-                "elements buffed": [
-                    "earth"
-                ], 
                 "hp% buff": 20, 
-                "passive id": "2", 
-                "passive target": "party", 
+                "passive id": "1", 
+                "passive target": "self", 
                 "rec% buff": 20
             }, 
             {
                 "conditions": [], 
-                "damage% for spark": 50, 
-                "passive id": "31", 
-                "passive target": "self"
+                "ignore def%": 100, 
+                "passive id": "29", 
+                "passive target": "party"
             }
         ], 
         "id": "830358", 
@@ -33261,13 +33345,14 @@
                 "passive id": "66", 
                 "passive target": "self", 
                 "trigger on bb": true, 
+                "trigger on sbb": true, 
                 "triggered effect": [
                     {
                         "effect delay time(ms)/frame": "0.0/0", 
                         "target area": "aoe", 
                         "target type": "party", 
                         "unknown proc id": "10017", 
-                        "unknown proc param": "1,6000,6000,3,0"
+                        "unknown proc param": "3,6000,6000,3,0"
                     }
                 ]
             }
