@@ -35641,6 +35641,91 @@
         "rarity": "7", 
         "target": "self"
     }, 
+    "840757": {
+        "desc": "20% boost to Atk, Def for first 5 turns for all allies, negates Def ignoring effects for all allies & greatly boosts Thunder elemental damage", 
+        "effects": [
+            {
+                "conditions": [], 
+                "first x turns": 5, 
+                "first x turns atk% (1)": 20, 
+                "first x turns def% (3)": 20, 
+                "passive id": "21", 
+                "passive target": "party"
+            }, 
+            {
+                "conditions": [], 
+                "ignore def resist chance%": 100, 
+                "passive id": "92", 
+                "passive target": "party"
+            }, 
+            {
+                "conditions": [], 
+                "elemental weakness multiplier%": 100.0, 
+                "passive id": "50", 
+                "passive target": "self", 
+                "thunder units do extra elemental weakness dmg": true
+            }
+        ], 
+        "id": "840757", 
+        "name": "Unrelenting Ferocity", 
+        "rarity": "7", 
+        "target": "self"
+    }, 
+    "840758": {
+        "desc": "30% boost to Atk, Def for first 5 turns for all allies, negates Def ignoring effects for all allies, greatly boosts Thunder elemental damage, probable considerable reduction of foe's BB gauge & adds Thunder barrier effect to BB/SBB", 
+        "effects": [
+            {
+                "conditions": [], 
+                "first x turns": 5, 
+                "first x turns atk% (1)": 30, 
+                "first x turns def% (3)": 30, 
+                "passive id": "21", 
+                "passive target": "party"
+            }, 
+            {
+                "conditions": [], 
+                "ignore def resist chance%": 100, 
+                "passive id": "92", 
+                "passive target": "party"
+            }, 
+            {
+                "conditions": [], 
+                "elemental weakness multiplier%": 120.0, 
+                "passive id": "50", 
+                "passive target": "self", 
+                "thunder units do extra elemental weakness dmg": true
+            }, 
+            {
+                "conditions": [], 
+                "passive target": "self", 
+                "unknown passive id": "110", 
+                "unknown passive params": "0,0,30,30,50,0"
+            }, 
+            {
+                "conditions": [], 
+                "passive id": "66", 
+                "passive target": "self", 
+                "trigger on bb": true, 
+                "trigger on sbb": true, 
+                "triggered effect": [
+                    {
+                        "effect delay time(ms)/frame": "0.0/0", 
+                        "elemental barrier absorb dmg%": 100, 
+                        "elemental barrier def": 0, 
+                        "elemental barrier element": "thunder", 
+                        "elemental barrier hp": 6000, 
+                        "proc id": "62", 
+                        "target area": "aoe", 
+                        "target type": "party"
+                    }
+                ]
+            }
+        ], 
+        "id": "840758", 
+        "name": "Commanding Charisma", 
+        "rarity": "7", 
+        "target": "self"
+    }, 
     "840767": {
         "desc": "Greatly boosts Thunder elemental damage when Rabbit Mask or Attack Boosting sphere is equipped, boosts Atk, Def, Rec relative to remaining HP & probable damage reduction to 1", 
         "effects": [
