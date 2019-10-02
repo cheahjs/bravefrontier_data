@@ -21642,6 +21642,55 @@
         "rarity": "1", 
         "target": "self"
     }, 
+    "720167": {
+        "desc": "Adds Def ignoring effect to attacks and 15% additional damage reduction to all allies, considerably boosts Spark damage, probable damage reduction to 1 & adds probable evasion for 2 turns effect to BB/SBB", 
+        "effects": [
+            {
+                "conditions": [], 
+                "ignore def%": 100, 
+                "passive id": "29", 
+                "passive target": "party"
+            }, 
+            {
+                "conditions": [], 
+                "passive target": "party", 
+                "unknown passive id": "127", 
+                "unknown passive params": "100,15"
+            }, 
+            {
+                "conditions": [], 
+                "damage% for spark": 100, 
+                "passive id": "31", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "passive id": "43", 
+                "passive target": "self", 
+                "take 1 dmg%": 15
+            }, 
+            {
+                "conditions": [], 
+                "passive id": "66", 
+                "passive target": "self", 
+                "trigger on bb": true, 
+                "trigger on sbb": true, 
+                "triggered effect": [
+                    {
+                        "effect delay time(ms)/frame": "0.0/0", 
+                        "target area": "aoe", 
+                        "target type": "party", 
+                        "unknown proc id": "10007", 
+                        "unknown proc param": "100,2,0,20"
+                    }
+                ]
+            }
+        ], 
+        "id": "720167", 
+        "name": "Cute Robot Creator", 
+        "rarity": "7", 
+        "target": "self"
+    }, 
     "720237": {
         "desc": "30% boost to all parameters when Spark Sphere is equipped, 20% boost to all parameters for all allies, 20% boost to Spark damage for all allies, 100% boost to Spark damage & adds boosts OD gauge effect to BB/SBB", 
         "effects": [
