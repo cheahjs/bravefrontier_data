@@ -27595,7 +27595,7 @@
         "type": "material"
     }, 
     "800703": {
-        "desc": "An orb filled with the essence of Earth. \n", 
+        "desc": "An orb filled with the essence of Earth.", 
         "id": 800703, 
         "max_stack": 999, 
         "name": "Earth Essence", 
@@ -27606,7 +27606,7 @@
         "type": "material"
     }, 
     "800704": {
-        "desc": "An orb filled with the essence of Thunder. \n", 
+        "desc": "An orb filled with the essence of Thunder. ", 
         "id": 800704, 
         "max_stack": 999, 
         "name": "Thunder Essence", 
@@ -27617,7 +27617,7 @@
         "type": "material"
     }, 
     "800705": {
-        "desc": "An orb filled with the essence of Light. \n", 
+        "desc": "An orb filled with the essence of Light.", 
         "id": 800705, 
         "max_stack": 999, 
         "name": "Light Essence", 
@@ -27628,7 +27628,7 @@
         "type": "material"
     }, 
     "800706": {
-        "desc": "An orb filled with the essence of Darkness. \n", 
+        "desc": "An orb filled with the essence of Darkness.", 
         "id": 800706, 
         "max_stack": 999, 
         "name": "Dark Essence", 
@@ -28825,7 +28825,7 @@
         "type": "sphere"
     }, 
     "818904": {
-        "desc": "20% boost to all parameters, damage taken may restore HP & reduces BB gauge required for BB\n", 
+        "desc": "20% boost to all parameters, damage taken may restore HP & reduces BB gauge required for BB", 
         "effect": [
             {
                 "atk% buff": 20, 
@@ -28931,7 +28931,7 @@
         "type": "sphere"
     }, 
     "818906": {
-        "desc": "30% boost to all parameters, boosts BC, HC, Karma, Item drop rates & reduces damage taken from Dark types\n", 
+        "desc": "30% boost to all parameters, boosts BC, HC, Karma, Item drop rates & reduces damage taken from Dark types", 
         "effect": [
             {
                 "atk% buff": 30, 
@@ -28990,7 +28990,7 @@
         "type": "sphere"
     }, 
     "818907": {
-        "desc": "40% boost to all parameters, boosts BC, HC, Karma, Item drop rates, damage taken may restore HP & reduces damage taken from Water, Dark types\n", 
+        "desc": "40% boost to all parameters, boosts BC, HC, Karma, Item drop rates, damage taken may restore HP & reduces damage taken from Water, Dark types", 
         "effect": [
             {
                 "atk% buff": 40, 
@@ -43115,6 +43115,148 @@
         "thumbnail": "sphere_thum_819268.png", 
         "type": "sphere"
     }, 
+    "819269": {
+        "desc": "45% all parameters, 20% critical rate (Thunder, Dark), 100% critical damage, fills BB gauge each turn, boosts spark and critical damage effects duration by 1 turns & adds to LS (20% spark damage)", 
+        "effect": [
+            {
+                "atk% buff": 45, 
+                "crit% buff": 20, 
+                "def% buff": 45, 
+                "elements buffed": [
+                    "thunder", 
+                    "dark"
+                ], 
+                "hp% buff": 45, 
+                "passive id": "2", 
+                "rec% buff": 45
+            }, 
+            {
+                "crit multiplier%": 100.0, 
+                "passive id": "34"
+            }, 
+            {
+                "bc fill per turn": 15, 
+                "passive id": "9"
+            }, 
+            {
+                "unknown passive id": "11009", 
+                "unknown passive params": "40:84:85:86:87:88:89:90:110:136:10301:10302:10303:10304:10305:10306:10401:10402:10403:10404:10405:10406,1"
+            }, 
+            {
+                "unknown passive id": "107", 
+                "unknown passive params": "31,20$0$0$0$0$0"
+            }
+        ], 
+        "id": 819269, 
+        "max_stack": 1, 
+        "name": "Sha of Neith", 
+        "raid": false, 
+        "rarity": 6, 
+        "recipe": {
+            "karma": "100000", 
+            "materials": [
+                {
+                    "count": 3, 
+                    "id": 890047
+                }, 
+                {
+                    "count": 2, 
+                    "id": 890045
+                }, 
+                {
+                    "count": 3, 
+                    "id": 890041
+                }
+            ]
+        }, 
+        "sell_price": 1000000, 
+        "sphere type": 14, 
+        "sphere type text": "Special", 
+        "thumbnail": "sphere_thum_819269.png", 
+        "type": "sphere"
+    }, 
+    "819270": {
+        "desc": "60% all parameters, 30% critical rate (Thunder, Dark), 150% critical damage, fills BB gauge each turn, boosts spark and critical damage effects duration by 1 turns & adds to BB/SBB (probable evasion for 3 turns) and LS (30% spark damage)", 
+        "effect": [
+            {
+                "atk% buff": 60, 
+                "crit% buff": 30, 
+                "def% buff": 60, 
+                "elements buffed": [
+                    "thunder", 
+                    "dark"
+                ], 
+                "hp% buff": 60, 
+                "passive id": "2", 
+                "rec% buff": 60
+            }, 
+            {
+                "crit multiplier%": 150.0, 
+                "passive id": "34"
+            }, 
+            {
+                "bc fill per turn": 25, 
+                "passive id": "9"
+            }, 
+            {
+                "unknown passive id": "11009", 
+                "unknown passive params": "40:84:136:10301:10302:10303:10304:10305:10306:10401:10402:10403:10404:10405:10406,1"
+            }, 
+            {
+                "passive id": "66", 
+                "trigger on bb": true, 
+                "trigger on sbb": true, 
+                "triggered effect": [
+                    {
+                        "effect delay time(ms)/frame": "0.0/0", 
+                        "target area": "aoe", 
+                        "target type": "party", 
+                        "unknown proc id": "10007", 
+                        "unknown proc param": "100,3,0,20"
+                    }
+                ]
+            }, 
+            {
+                "unknown passive id": "107", 
+                "unknown passive params": "31,30$0$0$0$0$0"
+            }
+        ], 
+        "id": 819270, 
+        "max_stack": 1, 
+        "name": "Paradox of Neith", 
+        "raid": false, 
+        "rarity": 7, 
+        "recipe": {
+            "karma": "1000000", 
+            "materials": [
+                {
+                    "count": 1, 
+                    "id": 819269
+                }, 
+                {
+                    "count": 2, 
+                    "id": 890047
+                }, 
+                {
+                    "count": 1, 
+                    "id": 890044
+                }, 
+                {
+                    "count": 2, 
+                    "id": 890046
+                }, 
+                {
+                    "count": 10, 
+                    "id": 890048
+                }
+            ]
+        }, 
+        "sell_price": 1000000, 
+        "sphere type": 14, 
+        "sphere type text": "Special", 
+        "thumbnail": "sphere_thum_819270.png", 
+        "type": "sphere"
+    }, 
     "819284": {
         "desc": "60% all parameters, enormously boosts BB gauge each turn, 10% damage reduction, restores HP each turn & resistance against 1 KO attack when HP is below 30%", 
         "effect": [
@@ -49450,6 +49592,28 @@
         "rarity": 3, 
         "sell_price": 1000, 
         "thumbnail": "item_thum_890046.png", 
+        "type": "material"
+    }, 
+    "890047": {
+        "desc": "A peculiar ornament shaped like a cold, steely eye. Inlaid with fine metal and a small jewel.", 
+        "id": 890047, 
+        "max_stack": 99, 
+        "name": "Oculus of Truth", 
+        "raid": false, 
+        "rarity": 3, 
+        "sell_price": 1000, 
+        "thumbnail": "item_thum_890047.png", 
+        "type": "material"
+    }, 
+    "890048": {
+        "desc": "A small handful of blood-red earth. Said to originate from the domain of Set, the Deceiver.", 
+        "id": 890048, 
+        "max_stack": 99, 
+        "name": "Blood Soil", 
+        "raid": false, 
+        "rarity": 3, 
+        "sell_price": 1000, 
+        "thumbnail": "item_thum_890048.png", 
         "type": "material"
     }, 
     "890049": {

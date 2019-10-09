@@ -41210,6 +41210,121 @@
         "rarity": "7", 
         "target": "self"
     }, 
+    "860687": {
+        "desc": "10% Atk, Def each turn (4 times) and 10% Dark elemental damage for all allies & reduces Skip Turn and ES Lock effect duration by 3 turns", 
+        "effects": [
+            {
+                "atk% max buff": 40, 
+                "conditions": [], 
+                "def% max buff": 40, 
+                "increase from min to max": 1, 
+                "passive id": "105", 
+                "passive target": "party", 
+                "turn count": 4
+            }, 
+            {
+                "conditions": [], 
+                "dark units do extra elemental weakness dmg": true, 
+                "elemental weakness multiplier%": 10.0, 
+                "passive id": "50", 
+                "passive target": "party"
+            }, 
+            {
+                "conditions": [], 
+                "passive target": "self", 
+                "unknown passive id": "11009", 
+                "unknown passive params": "10005:147,-3,0,0,0,0,0,0,0,0"
+            }
+        ], 
+        "id": "860687", 
+        "name": "Thief of Dawn", 
+        "rarity": "7", 
+        "target": "self"
+    }, 
+    "860688": {
+        "desc": "Add to BB/SBB (purges Doom from self), UBB (purges Doom from all allies) when Sha of Neith or Paradox of Neith is equipped, 15% Atk, Def each turn (4 times) and 20% Dark elemental damage for all allies & reduces Skip Turn and ES Lock effect duration by 3 turns", 
+        "effects": [
+            {
+                "conditions": [
+                    {
+                        "item required": [
+                            "819269"
+                        ]
+                    }, 
+                    {
+                        "item required": [
+                            "819270"
+                        ]
+                    }
+                ], 
+                "passive id": "66", 
+                "passive target": "self", 
+                "trigger on bb": true, 
+                "trigger on sbb": true, 
+                "triggered effect": [
+                    {
+                        "effect delay time(ms)/frame": "0.0/0", 
+                        "target area": "single", 
+                        "target type": "self", 
+                        "unknown proc id": "10019", 
+                        "unknown proc param": "10511,0,0,0,0,0,0,0,0,100"
+                    }
+                ]
+            }, 
+            {
+                "conditions": [
+                    {
+                        "item required": [
+                            "819269"
+                        ]
+                    }, 
+                    {
+                        "item required": [
+                            "819270"
+                        ]
+                    }
+                ], 
+                "passive id": "66", 
+                "passive target": "self", 
+                "trigger on ubb": true, 
+                "triggered effect": [
+                    {
+                        "effect delay time(ms)/frame": "0.0/0", 
+                        "target area": "aoe", 
+                        "target type": "party", 
+                        "unknown proc id": "10019", 
+                        "unknown proc param": "10511,0,0,0,0,0,0,0,0,100"
+                    }
+                ]
+            }, 
+            {
+                "atk% max buff": 60, 
+                "conditions": [], 
+                "def% max buff": 60, 
+                "increase from min to max": 1, 
+                "passive id": "105", 
+                "passive target": "party", 
+                "turn count": 4
+            }, 
+            {
+                "conditions": [], 
+                "dark units do extra elemental weakness dmg": true, 
+                "elemental weakness multiplier%": 20.0, 
+                "passive id": "50", 
+                "passive target": "party"
+            }, 
+            {
+                "conditions": [], 
+                "passive target": "self", 
+                "unknown passive id": "11009", 
+                "unknown passive params": "10005:147,-3,0,0,0,0,0,0,0,0"
+            }
+        ], 
+        "id": "860688", 
+        "name": "She of the Darkness", 
+        "rarity": "7", 
+        "target": "self"
+    }, 
     "860708": {
         "desc": "Spark damage slightly boosts BB gauge for all allies when Katerin's Torment or BB Gauge Sphere is equipped, slightly boosts Dark elemental damage for all allies, greatly boosts Dark elemental damage, 40% boost to Atk, Def each turn (up to 3 turns) & resistance against 1 KO attack when HP is below 40%", 
         "effects": [
