@@ -26772,7 +26772,7 @@
         "target": "self"
     }, 
     "810357": {
-        "desc": "Hugely restores HP each turn, probable resistance against 1 KO attack", 
+        "desc": "25% all parameters (Fire) and 50% damage against status afflicted foes for all allies, 20% all parameters, restores HP each turn & probable 1 KO resistance", 
         "effects": [
             {
                 "conditions": [], 
@@ -26790,11 +26790,44 @@
                 "conditions": [], 
                 "passive id": "69", 
                 "passive target": "self"
+            }, 
+            {
+                "atk% buff": 25, 
+                "conditions": [], 
+                "def% buff": 25, 
+                "elements buffed": [
+                    "fire"
+                ], 
+                "hp% buff": 25, 
+                "passive id": "2", 
+                "passive target": "party", 
+                "rec% buff": 25
+            }, 
+            {
+                "atk% buff when enemy has ailment": 50, 
+                "atk% buff when enemy has curse": true, 
+                "atk% buff when enemy has injury": true, 
+                "atk% buff when enemy has paralysis": true, 
+                "atk% buff when enemy has poison": true, 
+                "atk% buff when enemy has sick": true, 
+                "atk% buff when enemy has weaken": true, 
+                "conditions": [], 
+                "passive id": "74", 
+                "passive target": "party"
+            }, 
+            {
+                "atk% buff": 20, 
+                "conditions": [], 
+                "def% buff": 20, 
+                "hp% buff": 20, 
+                "passive id": "1", 
+                "passive target": "self", 
+                "rec% buff": 20
             }
         ], 
         "id": "810357", 
         "name": "Underworld Judgment", 
-        "rarity": "1", 
+        "rarity": "7", 
         "target": "self"
     }, 
     "810377": {
@@ -35585,6 +35618,98 @@
         "rarity": "7", 
         "target": "self"
     }, 
+    "840688": {
+        "desc": "Add to BB (may purge Turn Skip from all allies), UBB (purges Turn Skip from all allies) when Sha of Neith or Paradox of Neith is equipped, 35% Def, max HP for all allies, add to BB (Injury, Weakness, Sick, Paralysis infliction)& reduces Turn Skip and ES Lock effect duration by 3 turns", 
+        "effects": [
+            {
+                "conditions": [
+                    {
+                        "item required": [
+                            "819269"
+                        ]
+                    }, 
+                    {
+                        "item required": [
+                            "819270"
+                        ]
+                    }
+                ], 
+                "passive id": "66", 
+                "passive target": "self", 
+                "trigger on bb": true, 
+                "triggered effect": [
+                    {
+                        "effect delay time(ms)/frame": "0.0/0", 
+                        "target area": "aoe", 
+                        "target type": "party", 
+                        "unknown proc id": "10019", 
+                        "unknown proc param": "10005,0,0,0,0,0,0,0,0,40"
+                    }
+                ]
+            }, 
+            {
+                "conditions": [], 
+                "def% buff": 35, 
+                "hp% buff": 35, 
+                "passive id": "1", 
+                "passive target": "party"
+            }, 
+            {
+                "conditions": [], 
+                "passive id": "66", 
+                "passive target": "self", 
+                "trigger on bb": true, 
+                "triggered effect": [
+                    {
+                        "effect delay time(ms)/frame": "0.0/0", 
+                        "injury%": 100, 
+                        "poison%": 100, 
+                        "proc id": "11", 
+                        "sick%": 100, 
+                        "target area": "aoe", 
+                        "target type": "enemy", 
+                        "weaken%": 100
+                    }
+                ]
+            }, 
+            {
+                "conditions": [], 
+                "passive target": "self", 
+                "unknown passive id": "11009", 
+                "unknown passive params": "10005,-3,147,-3,0,0,0,0,0,0"
+            }, 
+            {
+                "conditions": [
+                    {
+                        "item required": [
+                            "819269"
+                        ]
+                    }, 
+                    {
+                        "item required": [
+                            "819270"
+                        ]
+                    }
+                ], 
+                "passive id": "66", 
+                "passive target": "self", 
+                "trigger on ubb": true, 
+                "triggered effect": [
+                    {
+                        "effect delay time(ms)/frame": "0.0/0", 
+                        "target area": "aoe", 
+                        "target type": "party", 
+                        "unknown proc id": "10019", 
+                        "unknown proc param": "10005,0,0,0,0,0,0,0,0,100"
+                    }
+                ]
+            }
+        ], 
+        "id": "840688", 
+        "name": "Scales of Judgment", 
+        "rarity": "7", 
+        "target": "self"
+    }, 
     "840708": {
         "desc": "Spark damage slightly boosts BB gauge for all allies when Vrána's Calling or BB Gauge Sphere is equipped, slightly boosts Thunder elemental damage for all allies, greatly boosts damage dealt against status afflicted foes, boosts Atk, Def, Rec relative to remaining HP & probable resistance against 1 KO attack", 
         "effects": [
@@ -40027,19 +40152,19 @@
         "target": "self"
     }, 
     "860357": {
-        "desc": "10% boost to all parameters of Dark types & boosts Atk, Rec each turn for up to 5 turns", 
+        "desc": "25% all parameters (Dark) and negates all status ailment for all allies, 30% Atk, Rec each turn (5 times), 20% all parameters & probable 1 KO resistance when HP is below 35%", 
         "effects": [
             {
-                "atk% buff": 10, 
+                "atk% buff": 25, 
                 "conditions": [], 
-                "def% buff": 10, 
+                "def% buff": 25, 
                 "elements buffed": [
                     "dark"
                 ], 
-                "hp% buff": 10, 
+                "hp% buff": 25, 
                 "passive id": "2", 
                 "passive target": "party", 
-                "rec% buff": 10
+                "rec% buff": 25
             }, 
             {
                 "atk% max buff": 150, 
@@ -40049,11 +40174,42 @@
                 "passive target": "self", 
                 "rec% max buff": 150, 
                 "turn count": 5
+            }, 
+            {
+                "conditions": [], 
+                "curse resist%": 100, 
+                "injury resist%": 100, 
+                "paralysis resist%": 100, 
+                "passive id": "73", 
+                "passive target": "party", 
+                "poison resist%": 100, 
+                "sick resist%": 100, 
+                "weaken resist%": 100
+            }, 
+            {
+                "buff": {
+                    "angel idol buff (12)": true, 
+                    "angel idol recover hp%": 100, 
+                    "buff turns (12)": "-1"
+                }, 
+                "conditions": [], 
+                "hp below % buff activation": 35, 
+                "passive id": "55", 
+                "passive target": "self"
+            }, 
+            {
+                "atk% buff": 20, 
+                "conditions": [], 
+                "def% buff": 20, 
+                "hp% buff": 20, 
+                "passive id": "1", 
+                "passive target": "self", 
+                "rec% buff": 20
             }
         ], 
         "id": "860357", 
         "name": "Wedjat's Unyielding Gaze", 
-        "rarity": "1", 
+        "rarity": "7", 
         "target": "self"
     }, 
     "860367": {
@@ -41920,6 +42076,52 @@
         "id": "8850003", 
         "name": "Final Judgement", 
         "rarity": "7", 
+        "target": "self"
+    }, 
+    "8850004": {
+        "desc": "MST_EXTRAPASSIVESKILL_8850004_DESCRIPTION", 
+        "effects": [
+            {
+                "conditions": [], 
+                "hp% buff": 35, 
+                "passive id": "1", 
+                "passive target": "self"
+            }, 
+            {
+                "bb atk% buff": 350, 
+                "conditions": [], 
+                "passive id": "64", 
+                "passive target": "self", 
+                "sbb atk% buff": 350, 
+                "ubb atk% buff": 350
+            }, 
+            {
+                "conditions": [], 
+                "hp drain chance%": 100, 
+                "hp drain% high": 12, 
+                "hp drain% low": 12, 
+                "passive id": "17", 
+                "passive target": "self"
+            }, 
+            {
+                "atk% buff": 10, 
+                "conditions": [], 
+                "def% buff": 10, 
+                "hp% buff": 10, 
+                "passive id": "1", 
+                "passive target": "party", 
+                "rec% buff": 10
+            }, 
+            {
+                "conditions": [], 
+                "dmg% mitigation": 10, 
+                "passive id": "8", 
+                "passive target": "self"
+            }
+        ], 
+        "id": "8850004", 
+        "name": "Curse of the Night", 
+        "rarity": "8", 
         "target": "self"
     }, 
     "8900": {
