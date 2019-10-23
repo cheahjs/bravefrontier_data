@@ -31771,6 +31771,90 @@
         "id": "830768", 
         "name": "Pride of the Tsukiyama Family"
     }, 
+    "830787": {
+        "desc": "90% all parameters, 150% spark damage, 100% critical and elemental damage reduction & negates all status ailments and Atk, Def, Rec reduction", 
+        "effects": [
+            {
+                "atk% buff": 90, 
+                "def% buff": 90, 
+                "hp% buff": 90, 
+                "passive id": "1", 
+                "rec% buff": 90
+            }, 
+            {
+                "damage% for spark": 150, 
+                "passive id": "31"
+            }, 
+            {
+                "crit chance base resist%": 100, 
+                "crit chance buffed resist%": 100, 
+                "crit dmg base damage resist%": 100, 
+                "crit dmg buffed damage resist%": 100, 
+                "passive id": "53", 
+                "strong base element damage resist%": 100, 
+                "strong buffed element damage resist%": 100
+            }, 
+            {
+                "atk down resist%": 100, 
+                "curse resist%": 100, 
+                "def down resist%": 100, 
+                "injury resist%": 100, 
+                "paralysis resist%": 100, 
+                "passive id": "73", 
+                "poison resist%": 100, 
+                "rec down resist%": 100, 
+                "sick resist%": 100, 
+                "weaken resist%": 100
+            }
+        ], 
+        "id": "830787", 
+        "name": "La Catrina"
+    }, 
+    "830788": {
+        "desc": "120% all parameters, 250% spark damage, 350% BB Atk, 100% critical and elemental damage reduction & negates all status ailments and Atk, Def, Rec reduction", 
+        "effects": [
+            {
+                "atk% buff": 120, 
+                "def% buff": 120, 
+                "hp% buff": 120, 
+                "passive id": "1", 
+                "rec% buff": 120
+            }, 
+            {
+                "damage% for spark": 250, 
+                "passive id": "31"
+            }, 
+            {
+                "bb atk% buff": 350, 
+                "passive id": "64", 
+                "sbb atk% buff": 350, 
+                "ubb atk% buff": 350
+            }, 
+            {
+                "crit chance base resist%": 100, 
+                "crit chance buffed resist%": 100, 
+                "crit dmg base damage resist%": 100, 
+                "crit dmg buffed damage resist%": 100, 
+                "passive id": "53", 
+                "strong base element damage resist%": 100, 
+                "strong buffed element damage resist%": 100
+            }, 
+            {
+                "atk down resist%": 100, 
+                "curse resist%": 100, 
+                "def down resist%": 100, 
+                "injury resist%": 100, 
+                "paralysis resist%": 100, 
+                "passive id": "73", 
+                "poison resist%": 100, 
+                "rec down resist%": 100, 
+                "sick resist%": 100, 
+                "weaken resist%": 100
+            }
+        ], 
+        "id": "830788", 
+        "name": "Santa Muerte"
+    }, 
     "830900": {
         "desc": "100% boost to max HP, Spark damage boosts BB gauge, hugely boosts Earth elemental damage, 15% damage reduction from Thunder types & negates all status ailments", 
         "effects": [
@@ -34896,6 +34980,45 @@
         "id": "850768", 
         "name": "I am a Ghoul"
     }, 
+    "850788": {
+        "desc": "100% Atk, Def, max HP, 120% damage against status afflicted foes, 20% damage reduction for 1 turn when HP is below 50%, 150% critical damage & 30% OD gauge fill rate", 
+        "effects": [
+            {
+                "atk% buff": 100, 
+                "def% buff": 100, 
+                "hp% buff": 100, 
+                "passive id": "1"
+            }, 
+            {
+                "atk% buff when enemy has ailment": 120, 
+                "atk% buff when enemy has curse": true, 
+                "atk% buff when enemy has injury": true, 
+                "atk% buff when enemy has paralysis": true, 
+                "atk% buff when enemy has poison": true, 
+                "atk% buff when enemy has sick": true, 
+                "atk% buff when enemy has weaken": true, 
+                "passive id": "74"
+            }, 
+            {
+                "buff": {
+                    "buff turns (36)": "1", 
+                    "dmg reduction% buff": 20
+                }, 
+                "hp below % buff activation": 50, 
+                "passive id": "55"
+            }, 
+            {
+                "crit multiplier%": 150.0, 
+                "passive id": "34"
+            }, 
+            {
+                "od fill rate%": 30, 
+                "passive id": "70"
+            }
+        ], 
+        "id": "850788", 
+        "name": "Miss Jiangshi"
+    }, 
     "850808": {
         "desc": "120% boost to all parameters, negates critical and elemental damage, negates all status ailments and Atk, Def, Rec reduction effects, enormously boosts BB gauge each turn, 15% damage reduction & 20% boost to EXP gained", 
         "effects": [
@@ -36022,31 +36145,41 @@
         "name": "Black Devil Prodigy"
     }, 
     "860568": {
-        "desc": "80% boost to Atk, max HP, greatly restores HP  for 2 turns when HP is below 50%, enormously boosts HC efficacy & 15% damage reduction from Light, Dark types", 
+        "desc": "120% Atk, Rec, 80% max HP, restores HP for 2 turns when HP is below 50%, probable 1 KO resistance, 15% damage reduction from Light, Dark types & spark damage restores HP", 
         "effects": [
             {
-                "atk% buff": 80, 
+                "atk% buff": 120, 
                 "hp% buff": 80, 
-                "passive id": "1"
+                "passive id": "1", 
+                "rec% buff": 120
             }, 
             {
                 "buff": {
                     "buff turns (8)": "2", 
-                    "gradual heal high": 3500, 
-                    "gradual heal low": 3000
+                    "gradual heal high": 4500, 
+                    "gradual heal low": 4000
                 }, 
                 "hp below % buff activation": 50, 
                 "passive id": "55"
             }, 
             {
-                "hc effectiveness%": 75, 
-                "passive id": "10"
+                "angel idol chance% condition": 0, 
+                "angel idol recover chance% high": 20, 
+                "angel idol recover chance% low": 20, 
+                "angel idol recover counts": 1, 
+                "passive id": "69"
             }, 
             {
                 "dmg% mitigation for elemental attacks": 15.0, 
                 "mitigate dark attacks": true, 
                 "mitigate light attacks": true, 
                 "passive id": "62"
+            }, 
+            {
+                "heal on spark high": 600, 
+                "heal on spark low": 500, 
+                "heal on spark%": 100, 
+                "passive id": "101"
             }
         ], 
         "id": "860568", 
