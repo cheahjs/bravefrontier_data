@@ -28461,6 +28461,58 @@
         "rarity": "7", 
         "target": "self"
     }, 
+    "810798": {
+        "desc": "10% reduction to BB activation cost for all allies, restores HP for 3 turns when guarding for all allies, 30% all parameters, 120% Fire elemental damage & probable 2 KO resistance", 
+        "effects": [
+            {
+                "conditions": [], 
+                "passive id": "48", 
+                "passive target": "party", 
+                "reduced bb bc cost%": 10
+            }, 
+            {
+                "buff": {
+                    "buff turns (8)": "3", 
+                    "gradual heal high": 5000, 
+                    "gradual heal low": 4000
+                }, 
+                "conditions": [], 
+                "on guard activation chance%": 100, 
+                "passive id": "88", 
+                "passive target": "party"
+            }, 
+            {
+                "atk% buff": 30, 
+                "conditions": [], 
+                "def% buff": 30, 
+                "hp% buff": 30, 
+                "passive id": "1", 
+                "passive target": "self", 
+                "rec% buff": 30
+            }, 
+            {
+                "conditions": [], 
+                "elemental weakness multiplier%": 120.0, 
+                "fire units do extra elemental weakness dmg": true, 
+                "passive id": "50", 
+                "passive target": "self"
+            }, 
+            {
+                "angel idol chance% condition": 0, 
+                "angel idol recover chance% high": 50, 
+                "angel idol recover chance% low": 50, 
+                "angel idol recover counts": 2, 
+                "angel idol recover hp%": 1, 
+                "conditions": [], 
+                "passive id": "69", 
+                "passive target": "self"
+            }
+        ], 
+        "id": "810798", 
+        "name": "Fervent Passions", 
+        "rarity": "7", 
+        "target": "self"
+    }, 
     "810837": {
         "desc": "100% Fire elemental damage when Drinker's Kettle or Atk Boosting Sphere is equipped, 20% spark damage for all allies, 20% all parameters & 100% spark damage reduction", 
         "effects": [
@@ -42598,6 +42650,72 @@
         ], 
         "id": "860808", 
         "name": "Master of Trials", 
+        "rarity": "7", 
+        "target": "self"
+    }, 
+    "860838": {
+        "desc": "40% all parameters and raises normal hit amount when Drinker's Kettle is equipped, probable 40% damage counter for all allies, 50-150% Atk relative to HP lost & negates all status ailments and Atk, Def, Rec reduction", 
+        "effects": [
+            {
+                "atk% buff": 40, 
+                "conditions": [
+                    {
+                        "item required": [
+                            "819288"
+                        ]
+                    }
+                ], 
+                "def% buff": 40, 
+                "hp% buff": 40, 
+                "passive id": "1", 
+                "passive target": "self", 
+                "rec% buff": 40
+            }, 
+            {
+                "conditions": [
+                    {
+                        "item required": [
+                            "819288"
+                        ]
+                    }
+                ], 
+                "hit increase/hit": 2, 
+                "passive id": "37", 
+                "passive target": "self"
+            }, 
+            {
+                "atk down resist%": 100, 
+                "conditions": [], 
+                "curse resist%": 100, 
+                "def down resist%": 100, 
+                "injury resist%": 100, 
+                "paralysis resist%": 100, 
+                "passive id": "73", 
+                "passive target": "self", 
+                "poison resist%": 100, 
+                "rec down resist%": 100, 
+                "sick resist%": 100, 
+                "weaken resist%": 100
+            }, 
+            {
+                "atk% base buff": 50, 
+                "atk% extra buff based on hp": 100, 
+                "buff proportional to hp": "lost", 
+                "conditions": [], 
+                "passive id": "46", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "dmg% reflect chance%": 70, 
+                "dmg% reflect high": 40, 
+                "dmg% reflect low": 40, 
+                "passive id": "26", 
+                "passive target": "party"
+            }
+        ], 
+        "id": "860838", 
+        "name": "Lethal Lunacy", 
         "rarity": "7", 
         "target": "self"
     }, 
