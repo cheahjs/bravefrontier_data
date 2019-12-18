@@ -28577,6 +28577,83 @@
         "rarity": "7", 
         "target": "self"
     }, 
+    "810827": {
+        "desc": "15% critical damage for all allies, damage taken may inflict 30% BB gauge fill rate reduction for 1 turn, probable damage reduction to 1 & negates Atk, Def, Rec reduction", 
+        "effects": [
+            {
+                "conditions": [], 
+                "crit multiplier%": 15.0, 
+                "passive id": "34", 
+                "passive target": "party"
+            }, 
+            {
+                "conditions": [], 
+                "passive target": "self", 
+                "unknown passive id": "114", 
+                "unknown passive params": "112,-30,-1,10,1"
+            }, 
+            {
+                "conditions": [], 
+                "passive id": "43", 
+                "passive target": "self", 
+                "take 1 dmg%": 10
+            }, 
+            {
+                "atk down resist%": 100, 
+                "conditions": [], 
+                "def down resist%": 100, 
+                "passive id": "73", 
+                "passive target": "self", 
+                "rec down resist%": 100
+            }
+        ], 
+        "id": "810827", 
+        "name": "Calm Reticence", 
+        "rarity": "7", 
+        "target": "self"
+    }, 
+    "810828": {
+        "desc": "50% Atk, 15% critical rate, 25% critical damage and damage taken may inflict 30% BB gauge fill rate reduction for 1 turn for all allies, probable damage reduction to 1 & negates Atk, Def, Rec reduction", 
+        "effects": [
+            {
+                "atk% buff": 50, 
+                "conditions": [], 
+                "crit% buff": 15, 
+                "passive id": "1", 
+                "passive target": "party"
+            }, 
+            {
+                "conditions": [], 
+                "crit multiplier%": 25.0, 
+                "passive id": "34", 
+                "passive target": "party"
+            }, 
+            {
+                "conditions": [], 
+                "passive target": "party", 
+                "unknown passive id": "114", 
+                "unknown passive params": "112,-30,-1,10,1"
+            }, 
+            {
+                "conditions": [], 
+                "passive id": "43", 
+                "passive target": "self", 
+                "take 1 dmg%": 20
+            }, 
+            {
+                "atk down resist%": 100, 
+                "conditions": [], 
+                "def down resist%": 100, 
+                "passive id": "73", 
+                "passive target": "self", 
+                "rec down resist%": 100
+            }
+        ], 
+        "id": "810828", 
+        "name": "Calculated Efficiency", 
+        "rarity": "7", 
+        "target": "self"
+    }, 
     "810837": {
         "desc": "100% Fire elemental damage when Drinker's Kettle or Atk Boosting Sphere is equipped, 20% spark damage for all allies, 20% all parameters & 100% spark damage reduction", 
         "effects": [
@@ -34313,7 +34390,7 @@
         "target": "self"
     }, 
     "840048": {
-        "desc": "5% damage reduction from normal attacks for all allies, adds resistance against 1 KO attack when HP is below 25%, raises Atk parameter limits to 130000 & adds 28 combo powerful Thunder attack against Water, Thunder types effect to SBB", 
+        "desc": "10% damage reduction from normal attacks to all allies, 1 KO resistance when HP is below 35%, raises Atk limit to 180k & add to SBB (28 combo Thunder attack on Water, Thunder foes)", 
         "effects": [
             {
                 "buff": {
@@ -34322,13 +34399,19 @@
                     "buff turns (12)": "-1"
                 }, 
                 "conditions": [], 
-                "hp below % buff activation": 25, 
+                "hp below % buff activation": 35, 
                 "passive id": "55", 
                 "passive target": "self"
             }, 
             {
                 "conditions": [], 
-                "increase atk cap": 130000, 
+                "passive target": "party", 
+                "unknown passive id": "128", 
+                "unknown passive params": "100,10,100,10"
+            }, 
+            {
+                "conditions": [], 
+                "increase atk cap": 180000, 
                 "passive id": "143", 
                 "passive target": "self"
             }, 
