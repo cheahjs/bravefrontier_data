@@ -3289,12 +3289,12 @@
         "type": "summoner_consumable"
     }, 
     "13381": {
-        "desc": "This is trash.", 
+        "desc": "TGT Enemy Buffwipe", 
         "effect": {
             "effect": [
                 {
-                    "unknown proc id": "0", 
-                    "unknown proc param": ""
+                    "clear buff chance%": 100.0, 
+                    "proc id": "33"
                 }
             ], 
             "target_area": "single", 
@@ -3303,7 +3303,7 @@
         "id": 13381, 
         "max equipped": 99, 
         "max_stack": 99, 
-        "name": "Trash", 
+        "name": "Carwash", 
         "raid": false, 
         "rarity": 0, 
         "sell_price": 100, 
@@ -3311,12 +3311,12 @@
         "type": "consumable"
     }, 
     "13382": {
-        "desc": "This object is useless.", 
+        "desc": "TGT Enemy Instant Kill", 
         "effect": {
             "effect": [
                 {
-                    "unknown proc id": "0", 
-                    "unknown proc param": ""
+                    "unknown proc id": "49", 
+                    "unknown proc param": "100,0,0"
                 }
             ], 
             "target_area": "single", 
@@ -3325,7 +3325,7 @@
         "id": 13382, 
         "max equipped": 99, 
         "max_stack": 99, 
-        "name": "Useless Object", 
+        "name": "Pew Pew", 
         "raid": false, 
         "rarity": 0, 
         "sell_price": 100, 
@@ -3333,12 +3333,12 @@
         "type": "consumable"
     }, 
     "13383": {
-        "desc": "This item is pointless.", 
+        "desc": "ALL Allies Rez", 
         "effect": {
             "effect": [
                 {
-                    "unknown proc id": "0", 
-                    "unknown proc param": ""
+                    "proc id": "12", 
+                    "revive to hp%": 100
                 }
             ], 
             "target_area": "aoe", 
@@ -3347,7 +3347,7 @@
         "id": 13383, 
         "max equipped": 99, 
         "max_stack": 99, 
-        "name": "Pointless Item", 
+        "name": "Eggs", 
         "raid": false, 
         "rarity": 0, 
         "sell_price": 100, 
@@ -3355,12 +3355,14 @@
         "type": "consumable"
     }, 
     "13384": {
-        "desc": "This is garbage.", 
+        "desc": "ALL Allies 500% ATK+", 
         "effect": {
             "effect": [
                 {
-                    "unknown proc id": "0", 
-                    "unknown proc param": ""
+                    "atk% buff (1)": 500, 
+                    "buff turns": 3, 
+                    "element buffed": "all", 
+                    "proc id": "5"
                 }
             ], 
             "target_area": "aoe", 
@@ -3369,7 +3371,7 @@
         "id": 13384, 
         "max equipped": 99, 
         "max_stack": 99, 
-        "name": "Garbage", 
+        "name": "Red Bull", 
         "raid": false, 
         "rarity": 0, 
         "sell_price": 100, 
@@ -43452,7 +43454,7 @@
         "type": "sphere"
     }, 
     "819271": {
-        "desc": "MST_SPHERES_819271_SHORTDESCRIPTION", 
+        "desc": "55% all parameters (Fire), normal attacks fills BB gauge, damage taken may restore HP, 100% Fire elemental damage & 50-75% damage counter", 
         "effect": [
             {
                 "atk% buff": 55, 
@@ -43500,7 +43502,7 @@
         "type": "sphere"
     }, 
     "819272": {
-        "desc": "MST_SPHERES_819272_SHORTDESCRIPTION", 
+        "desc": "65% all parameters (Fire), normal attacks fills BB gauge, damage taken may restore HP, 125% Fire elemental damage, 75% damage counter & probable damage reduction to 1", 
         "effect": [
             {
                 "atk% buff": 65, 
@@ -43880,6 +43882,168 @@
         "sphere type": 1, 
         "sphere type text": "Status Boost", 
         "thumbnail": "sphere_thum_819289.png", 
+        "type": "sphere"
+    }, 
+    "819290": {
+        "desc": "30% Def, Rec, max HP, probable damage reduction to 1, damage taken may restore HP & 100% critical, elemental damage reduction", 
+        "effect": [
+            {
+                "def% buff": 30, 
+                "hp% buff": 30, 
+                "passive id": "1", 
+                "rec% buff": 30
+            }, 
+            {
+                "passive id": "43", 
+                "take 1 dmg%": 15
+            }, 
+            {
+                "dmg% to hp% when attacked chance%": 40, 
+                "dmg% to hp% when attacked high": 20, 
+                "dmg% to hp% when attacked low": 20, 
+                "passive id": "24"
+            }, 
+            {
+                "crit chance base resist%": 100, 
+                "crit chance buffed resist%": 100, 
+                "crit dmg base damage resist%": 100, 
+                "crit dmg buffed damage resist%": 100, 
+                "passive id": "53", 
+                "strong base element damage resist%": 100, 
+                "strong buffed element damage resist%": 100
+            }
+        ], 
+        "id": 819290, 
+        "max_stack": 1, 
+        "name": "Zartosht Blessing", 
+        "raid": false, 
+        "rarity": 5, 
+        "sell_price": 300000, 
+        "sphere type": 10, 
+        "sphere type text": "Damage Reducing", 
+        "thumbnail": "sphere_thum_819290.png", 
+        "type": "sphere"
+    }, 
+    "819291": {
+        "desc": "35% Def, Rec, max HP, probable damage reduction to 1, damage taken may restore HP, 100% critical, elemental damage reduction & 15% damage reduction when guarding", 
+        "effect": [
+            {
+                "def% buff": 35, 
+                "hp% buff": 35, 
+                "passive id": "1", 
+                "rec% buff": 35
+            }, 
+            {
+                "passive id": "43", 
+                "take 1 dmg%": 20
+            }, 
+            {
+                "dmg% to hp% when attacked chance%": 50, 
+                "dmg% to hp% when attacked high": 20, 
+                "dmg% to hp% when attacked low": 20, 
+                "passive id": "24"
+            }, 
+            {
+                "crit chance base resist%": 100, 
+                "crit chance buffed resist%": 100, 
+                "crit dmg base damage resist%": 100, 
+                "crit dmg buffed damage resist%": 100, 
+                "passive id": "53", 
+                "strong base element damage resist%": 100, 
+                "strong buffed element damage resist%": 100
+            }, 
+            {
+                "guard increase mitigation%": 15, 
+                "passive id": "58"
+            }
+        ], 
+        "id": 819291, 
+        "max_stack": 1, 
+        "name": "Atar Unburning", 
+        "raid": false, 
+        "rarity": 6, 
+        "recipe": {
+            "karma": "300000", 
+            "materials": [
+                {
+                    "count": 1, 
+                    "id": 819290
+                }, 
+                {
+                    "count": 15, 
+                    "id": 890050
+                }
+            ]
+        }, 
+        "sell_price": 1000000, 
+        "sphere type": 10, 
+        "sphere type text": "Damage Reducing", 
+        "thumbnail": "sphere_thum_819291.png", 
+        "type": "sphere"
+    }, 
+    "819292": {
+        "desc": "45% Def, Rec, max HP, probable damage reduction to 1, damage taken may restore HP, 100% critical, elemental damage reduction, 15% damage reduction when guarding & probable 1 KO resistance", 
+        "effect": [
+            {
+                "def% buff": 45, 
+                "hp% buff": 45, 
+                "passive id": "1", 
+                "rec% buff": 45
+            }, 
+            {
+                "passive id": "43", 
+                "take 1 dmg%": 25
+            }, 
+            {
+                "dmg% to hp% when attacked chance%": 60, 
+                "dmg% to hp% when attacked high": 20, 
+                "dmg% to hp% when attacked low": 20, 
+                "passive id": "24"
+            }, 
+            {
+                "crit chance base resist%": 100, 
+                "crit chance buffed resist%": 100, 
+                "crit dmg base damage resist%": 100, 
+                "crit dmg buffed damage resist%": 100, 
+                "passive id": "53", 
+                "strong base element damage resist%": 100, 
+                "strong buffed element damage resist%": 100
+            }, 
+            {
+                "guard increase mitigation%": 20, 
+                "passive id": "58"
+            }, 
+            {
+                "angel idol chance% condition": 0, 
+                "angel idol recover chance% high": 40, 
+                "angel idol recover chance% low": 40, 
+                "angel idol recover counts": 1, 
+                "angel idol recover hp%": 100, 
+                "passive id": "69"
+            }
+        ], 
+        "id": 819292, 
+        "max_stack": 1, 
+        "name": "Atar Eternal", 
+        "raid": false, 
+        "rarity": 7, 
+        "recipe": {
+            "karma": "300000", 
+            "materials": [
+                {
+                    "count": 1, 
+                    "id": 819291
+                }, 
+                {
+                    "count": 30, 
+                    "id": 890051
+                }
+            ]
+        }, 
+        "sell_price": 1000000, 
+        "sphere type": 10, 
+        "sphere type text": "Damage Reducing", 
+        "thumbnail": "sphere_thum_819292.png", 
         "type": "sphere"
     }, 
     "819293": {
@@ -50247,6 +50411,28 @@
         "rarity": 3, 
         "sell_price": 1000, 
         "thumbnail": "item_thum_20101.png", 
+        "type": "material"
+    }, 
+    "890050": {
+        "desc": "A solid bronze ingot, slightly weathered from storage. A commonly used material for metalworking.", 
+        "id": 890050, 
+        "max_stack": 99, 
+        "name": "Bronze Ingot", 
+        "raid": false, 
+        "rarity": 3, 
+        "sell_price": 20, 
+        "thumbnail": "item_thum_890050.png", 
+        "type": "material"
+    }, 
+    "890051": {
+        "desc": "A small piece of crackling wood for kindling. The fire within feels more radiant than normal.", 
+        "id": 890051, 
+        "max_stack": 99, 
+        "name": "Holy Kindling", 
+        "raid": false, 
+        "rarity": 3, 
+        "sell_price": 20, 
+        "thumbnail": "item_thum_890051.png", 
         "type": "material"
     }, 
     "890052": {
