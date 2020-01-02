@@ -42903,20 +42903,55 @@
         "target": "self"
     }, 
     "860818": {
-        "desc": "MST_EXTRAPASSIVESKILL_860818_DESCRIPTION", 
+        "desc": "25% spark damage and adds ignore Def to attack for all allies, 0-100% Atk, Def, Rec relative to remaining HP, 100% spark damage & negates all status ailments and Atk, Def, Rec reduction", 
         "effects": [
             {
-                "atk% buff": 30, 
                 "conditions": [], 
-                "def% buff": 30, 
-                "hp% buff": 30, 
-                "passive id": "1", 
+                "damage% for spark": 25, 
+                "passive id": "31", 
+                "passive target": "party"
+            }, 
+            {
+                "conditions": [], 
+                "ignore def%": 100, 
+                "passive id": "29", 
+                "passive target": "party"
+            }, 
+            {
+                "atk% base buff": 0, 
+                "atk% extra buff based on hp": 100, 
+                "buff proportional to hp": "remaining", 
+                "conditions": [], 
+                "def% base buff": 0, 
+                "def% extra buff based on hp": 100, 
+                "passive id": "46", 
                 "passive target": "self", 
-                "rec% buff": 30
+                "rec% base buff": 0, 
+                "rec% extra buff based on hp": 100
+            }, 
+            {
+                "conditions": [], 
+                "damage% for spark": 100, 
+                "passive id": "31", 
+                "passive target": "self"
+            }, 
+            {
+                "atk down resist%": 100, 
+                "conditions": [], 
+                "curse resist%": 100, 
+                "def down resist%": 100, 
+                "injury resist%": 100, 
+                "paralysis resist%": 100, 
+                "passive id": "73", 
+                "passive target": "self", 
+                "poison resist%": 100, 
+                "rec down resist%": 100, 
+                "sick resist%": 100, 
+                "weaken resist%": 100
             }
         ], 
         "id": "860818", 
-        "name": "8Vohu_ES", 
+        "name": "Prowling Hunter", 
         "rarity": "7", 
         "target": "self"
     }, 
