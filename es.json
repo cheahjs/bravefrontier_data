@@ -31759,6 +31759,89 @@
         "rarity": "7", 
         "target": "self"
     }, 
+    "820827": {
+        "desc": "15% DoT reduction for all allies, damage taken may inflict 30% BB gauge fill rate reduction for 1 turn, 100% spark damage & negates all status ailments", 
+        "effects": [
+            {
+                "conditions": [], 
+                "passive target": "party", 
+                "unknown passive id": "127", 
+                "unknown passive params": "100,15"
+            }, 
+            {
+                "conditions": [], 
+                "passive target": "self", 
+                "unknown passive id": "114", 
+                "unknown passive params": "112,-30,-1,10,1"
+            }, 
+            {
+                "conditions": [], 
+                "damage% for spark": 100, 
+                "passive id": "31", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "curse resist%": 100, 
+                "injury resist%": 100, 
+                "paralysis resist%": 100, 
+                "passive id": "4", 
+                "passive target": "self", 
+                "poison resist%": 100, 
+                "sick resist%": 100, 
+                "weaken resist%": 100
+            }
+        ], 
+        "id": "820827", 
+        "name": "Casual Confidence", 
+        "rarity": "7", 
+        "target": "self"
+    }, 
+    "820828": {
+        "desc": "50% Atk, 15% critical rate, 15% DoT reduction and damage taken may inflict 30% BB gauge fill rate reduction for 1 turn for all allies, 100% spark damage & negates all status ailments", 
+        "effects": [
+            {
+                "atk% buff": 50, 
+                "conditions": [], 
+                "crit% buff": 15, 
+                "passive id": "1", 
+                "passive target": "party"
+            }, 
+            {
+                "conditions": [], 
+                "passive target": "party", 
+                "unknown passive id": "127", 
+                "unknown passive params": "100,15"
+            }, 
+            {
+                "conditions": [], 
+                "passive target": "party", 
+                "unknown passive id": "114", 
+                "unknown passive params": "112,-30,-1,10,1"
+            }, 
+            {
+                "conditions": [], 
+                "damage% for spark": 100, 
+                "passive id": "31", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "curse resist%": 100, 
+                "injury resist%": 100, 
+                "paralysis resist%": 100, 
+                "passive id": "73", 
+                "passive target": "self", 
+                "poison resist%": 100, 
+                "sick resist%": 100, 
+                "weaken resist%": 100
+            }
+        ], 
+        "id": "820828", 
+        "name": "Spirited Freedom", 
+        "rarity": "7", 
+        "target": "self"
+    }, 
     "820837": {
         "desc": "100% Water elemental damage when Stroke of Luck or Status Boosting Sphere is equipped, adds ignore Def to attack and 20% spark damage for all allies & 40% DoT reduction", 
         "effects": [
@@ -40241,7 +40324,7 @@
         "target": "self"
     }, 
     "860048": {
-        "desc": "Slightly boosts critical damage for all allies, adds resistance against 1 KO attack when HP is below 25%, raises Atk parameter limits to 130000 & adds 20 combo powerful Dark attack against Light, Dark types effect to SBB", 
+        "desc": "25% critical damage for all allies, angel idol when HP is below 35%, raises Atk limit to 180k & add to SBB (20 combo Dark attack on Light, Dark foes)", 
         "effects": [
             {
                 "buff": {
@@ -40250,7 +40333,7 @@
                     "buff turns (12)": "-1"
                 }, 
                 "conditions": [], 
-                "hp below % buff activation": 25, 
+                "hp below % buff activation": 35, 
                 "passive id": "55", 
                 "passive target": "self"
             }, 
@@ -40262,7 +40345,7 @@
             }, 
             {
                 "conditions": [], 
-                "increase atk cap": 130000, 
+                "increase atk cap": 180000, 
                 "passive id": "143", 
                 "passive target": "self"
             }, 
@@ -43516,10 +43599,10 @@
             }, 
             {
                 "angel idol chance% condition": 0, 
-                "angel idol recover chance% high": 100, 
-                "angel idol recover chance% low": 100, 
+                "angel idol recover chance% high": 20, 
+                "angel idol recover chance% low": 20, 
                 "angel idol recover counts": 1, 
-                "angel idol recover hp%": 20, 
+                "angel idol recover hp%": 100, 
                 "conditions": [], 
                 "passive id": "69", 
                 "passive target": "self"
@@ -43616,6 +43699,57 @@
         ], 
         "id": "8900001", 
         "name": "Hydrothermal Mark", 
+        "rarity": "7", 
+        "target": "self"
+    }, 
+    "8900002": {
+        "desc": "35% all parameters and 30% critical rate (Earth, Thunder), 20% damage reduction when guarding, 5% damage reduction, 75% Earth, Thunder elemental damage & 100% BB Atk for all allies", 
+        "effects": [
+            {
+                "atk% buff": 35, 
+                "conditions": [], 
+                "crit% buff": 30, 
+                "def% buff": 35, 
+                "elements buffed": [
+                    "earth", 
+                    "thunder"
+                ], 
+                "hp% buff": 35, 
+                "passive id": "2", 
+                "passive target": "self", 
+                "rec% buff": 35
+            }, 
+            {
+                "conditions": [], 
+                "guard increase mitigation%": 20, 
+                "passive id": "58", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "dmg% mitigation": 5, 
+                "passive id": "8", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "earth units do extra elemental weakness dmg": true, 
+                "elemental weakness multiplier%": 75.0, 
+                "passive id": "50", 
+                "passive target": "party", 
+                "thunder units do extra elemental weakness dmg": true
+            }, 
+            {
+                "bb atk% buff": 100, 
+                "conditions": [], 
+                "passive id": "64", 
+                "passive target": "party", 
+                "sbb atk% buff": 100, 
+                "ubb atk% buff": 100
+            }
+        ], 
+        "id": "8900002", 
+        "name": "Heavenquake Mark", 
         "rarity": "7", 
         "target": "self"
     }, 

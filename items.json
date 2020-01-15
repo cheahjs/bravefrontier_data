@@ -37399,13 +37399,14 @@
         "type": "sphere"
     }, 
     "819163": {
-        "desc": "30% boost to Atk, Def and Rec, negates status ailments, negates Def ignoring effect, negates critical and elemental damage & 50% Spark damage reduction", 
+        "desc": "40% all parameters, negates all status ailments, negates ignore Def, 100% critical, elemental damage reduction & 50% spark damage reduction", 
         "effect": [
             {
-                "atk% buff": 30, 
-                "def% buff": 30, 
+                "atk% buff": 40, 
+                "def% buff": 40, 
+                "hp% buff": 40, 
                 "passive id": "1", 
-                "rec% buff": 30
+                "rec% buff": 40
             }, 
             {
                 "curse resist%": 100, 
@@ -37421,19 +37422,18 @@
                 "passive id": "92"
             }, 
             {
-                "base crit% resist": 100, 
-                "buff crit% resist": 100, 
-                "passive id": "45"
+                "crit chance base resist%": 100, 
+                "crit chance buffed resist%": 100, 
+                "crit dmg base damage resist%": 100, 
+                "crit dmg buffed damage resist%": 100, 
+                "passive id": "53", 
+                "strong base element damage resist%": 100, 
+                "strong buffed element damage resist%": 100
             }, 
             {
                 "base spark dmg% resist": 50, 
                 "buff spark dmg% resist": 50, 
                 "passive id": "77"
-            }, 
-            {
-                "passive id": "53", 
-                "strong base element damage resist%": 100, 
-                "strong buffed element damage resist%": 100
             }
         ], 
         "id": 819163, 
@@ -43549,6 +43549,106 @@
         "sphere type": 9, 
         "sphere type text": "Damage Reflecting", 
         "thumbnail": "sphere_thum_819272.png", 
+        "type": "sphere"
+    }, 
+    "819273": {
+        "desc": "55% all parameters (Water), damage taken fills BB gauge, restores HP each turn, probable spark critical & 50-75% damage counter", 
+        "effect": [
+            {
+                "atk% buff": 55, 
+                "def% buff": 55, 
+                "elements buffed": [
+                    "water"
+                ], 
+                "hp% buff": 55, 
+                "passive id": "2", 
+                "rec% buff": 55
+            }, 
+            {
+                "bc fill when attacked high": 4, 
+                "bc fill when attacked low": 2, 
+                "bc fill when attacked%": 100, 
+                "passive id": "25"
+            }, 
+            {
+                "passive id": "33", 
+                "rec% added (turn heal)": 12.0, 
+                "turn heal high": 5000, 
+                "turn heal low": 3000
+            }, 
+            {
+                "passive id": "100", 
+                "spark crit chance%": 60, 
+                "spark crit dmg%": 150
+            }, 
+            {
+                "dmg% reflect chance%": 100, 
+                "dmg% reflect high": 75, 
+                "dmg% reflect low": 50, 
+                "passive id": "26"
+            }
+        ], 
+        "id": 819273, 
+        "max_stack": 1, 
+        "name": "Horse's Calm", 
+        "raid": false, 
+        "rarity": 6, 
+        "sell_price": 30000, 
+        "sphere type": 9, 
+        "sphere type text": "Damage Reflecting", 
+        "thumbnail": "sphere_thum_819273.png", 
+        "type": "sphere"
+    }, 
+    "819274": {
+        "desc": "65% all parameters (Water), damage taken fills BB gauge, restores HP each turn, probable spark critical, 75% damage counter & probable damage reduction to 1", 
+        "effect": [
+            {
+                "atk% buff": 65, 
+                "def% buff": 65, 
+                "elements buffed": [
+                    "water"
+                ], 
+                "hp% buff": 65, 
+                "passive id": "2", 
+                "rec% buff": 65
+            }, 
+            {
+                "bc fill when attacked high": 4, 
+                "bc fill when attacked low": 3, 
+                "bc fill when attacked%": 100, 
+                "passive id": "25"
+            }, 
+            {
+                "passive id": "33", 
+                "rec% added (turn heal)": 12.0, 
+                "turn heal high": 6000, 
+                "turn heal low": 4000
+            }, 
+            {
+                "passive id": "100", 
+                "spark crit chance%": 60, 
+                "spark crit dmg%": 200
+            }, 
+            {
+                "dmg% reflect chance%": 100, 
+                "dmg% reflect high": 75, 
+                "dmg% reflect low": 75, 
+                "passive id": "26"
+            }, 
+            {
+                "passive id": "43", 
+                "take 1 dmg%": 20
+            }
+        ], 
+        "id": 819274, 
+        "max_stack": 1, 
+        "name": "Windswell", 
+        "raid": false, 
+        "rarity": 7, 
+        "sell_price": 30000, 
+        "sphere type": 9, 
+        "sphere type text": "Damage Reflecting", 
+        "thumbnail": "sphere_thum_819274.png", 
         "type": "sphere"
     }, 
     "819284": {
