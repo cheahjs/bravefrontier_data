@@ -26769,19 +26769,21 @@
         "type": "consumable"
     }, 
     "800305": {
-        "desc": "Greatly replenishes a Unit's HP & boosts DEF and REC for 2 turns", 
+        "desc": "Greatly replenishes a Unit's HP.", 
         "effect": {
             "effect": [
                 {
-                    "unknown proc id": "2-5", 
-                    "unknown proc param": "2000,2000,0,0-0,0,20,20,0,2"
+                    "heal high": 2000, 
+                    "heal low": 2000, 
+                    "proc id": "2", 
+                    "rec added% (from healer)": 22.5
                 }
             ], 
             "target_area": "single", 
             "target_type": "party"
         }, 
         "id": 800305, 
-        "max equipped": 5, 
+        "max equipped": 10, 
         "max_stack": 99, 
         "name": "Nian Gao", 
         "raid": false, 
@@ -29427,17 +29429,17 @@
         "type": "sphere"
     }, 
     "818920": {
-        "desc": "Boost Atk by 20%; max HP, Def and Rec by 15%, & boosts Spark damage", 
+        "desc": "30% max HP, Def and Rec, 50% Atk & 40% spark damage", 
         "effect": [
             {
-                "atk% buff": 20, 
-                "def% buff": 15, 
-                "hp% buff": 15, 
+                "atk% buff": 50, 
+                "def% buff": 30, 
+                "hp% buff": 30, 
                 "passive id": "1", 
-                "rec% buff": 15
+                "rec% buff": 30
             }, 
             {
-                "damage% for spark": 20, 
+                "damage% for spark": 40, 
                 "passive id": "31"
             }
         ], 
@@ -29589,17 +29591,17 @@
         "type": "sphere"
     }, 
     "818924": {
-        "desc": "40% boost to Atk, 30% boost to max HP, Def and Rec & boosts Spark damage", 
+        "desc": "40% max HP, Def and Rec, 80% Atk & 50% spark damage", 
         "effect": [
             {
-                "atk% buff": 40, 
-                "def% buff": 30, 
-                "hp% buff": 30, 
+                "atk% buff": 80, 
+                "def% buff": 40, 
+                "hp% buff": 40, 
                 "passive id": "1", 
-                "rec% buff": 30
+                "rec% buff": 40
             }, 
             {
-                "damage% for spark": 40, 
+                "damage% for spark": 50, 
                 "passive id": "31"
             }
         ], 
@@ -29607,7 +29609,7 @@
         "max_stack": 1, 
         "name": "Golden Lion Regalia", 
         "raid": false, 
-        "rarity": 4, 
+        "rarity": 3, 
         "recipe": {
             "karma": "85000", 
             "materials": [
@@ -29640,14 +29642,14 @@
         "type": "sphere"
     }, 
     "818925": {
-        "desc": "40% boost to Atk, 35% boost to max HP, Def, Rec, boosts Spark damage & negates all status ailments", 
+        "desc": "50% max HP, Def and Rec, 120% Atk, 60% spark damage & negates all status ailments", 
         "effect": [
             {
-                "atk% buff": 40, 
-                "def% buff": 35, 
-                "hp% buff": 35, 
+                "atk% buff": 120, 
+                "def% buff": 50, 
+                "hp% buff": 50, 
                 "passive id": "1", 
-                "rec% buff": 35
+                "rec% buff": 50
             }, 
             {
                 "damage% for spark": 60, 
@@ -29700,14 +29702,14 @@
         "type": "sphere"
     }, 
     "818926": {
-        "desc": "40% boost to all parameters, boosts Spark damage, negates all status ailments & reduces damage taken from Fire, Water types", 
+        "desc": "60% all parameters, 80% spark damage, negates all status ailments & 15% damage reduction from Fire, Water types", 
         "effect": [
             {
-                "atk% buff": 40, 
-                "def% buff": 40, 
-                "hp% buff": 40, 
+                "atk% buff": 60, 
+                "def% buff": 60, 
+                "hp% buff": 60, 
                 "passive id": "1", 
-                "rec% buff": 40
+                "rec% buff": 60
             }, 
             {
                 "damage% for spark": 80, 
@@ -29723,7 +29725,7 @@
                 "weaken resist%": 100
             }, 
             {
-                "dmg% mitigation for elemental attacks": 10.0, 
+                "dmg% mitigation for elemental attacks": 15.0, 
                 "mitigate fire attacks": true, 
                 "mitigate water attacks": true, 
                 "passive id": "62"
