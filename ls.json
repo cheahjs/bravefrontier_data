@@ -30706,6 +30706,44 @@
         "id": "820838", 
         "name": "Way of the Samurai"
     }, 
+    "820848": {
+        "desc": "150% Atk, Def, 100% max HP (Water, Thunder), damage taken fills BB gauge, 15% damage reduction from Water, Thunder types, probable damage reduction to 1 & 100% ABP, 50% CBP gain", 
+        "effects": [
+            {
+                "atk% buff": 150, 
+                "def% buff": 150, 
+                "elements buffed": [
+                    "water", 
+                    "thunder"
+                ], 
+                "hp% buff": 100, 
+                "passive id": "2"
+            }, 
+            {
+                "bc fill when attacked high": 9, 
+                "bc fill when attacked low": 5, 
+                "bc fill when attacked%": 100, 
+                "passive id": "25"
+            }, 
+            {
+                "dmg% mitigation for elemental attacks": 15.0, 
+                "mitigate thunder attacks": true, 
+                "mitigate water attacks": true, 
+                "passive id": "62"
+            }, 
+            {
+                "passive id": "43", 
+                "take 1 dmg%": 20
+            }, 
+            {
+                "abp gain%": 100, 
+                "cbp gain%": 50, 
+                "passive id": "112"
+            }
+        ], 
+        "id": "820848", 
+        "name": "Fortune Favors the Bold"
+    }, 
     "820900": {
         "desc": "100% boost to max HP, Spark damage boosts BB gauge, hugely boosts Water elemental damage, 15% damage reduction from Fire types & negates all status ailments", 
         "effects": [
@@ -34096,6 +34134,45 @@
         ], 
         "id": "840808", 
         "name": "Divine Ruler's Edge"
+    }, 
+    "840848": {
+        "desc": "140% Atk, Def, max HP and 30% critical rate (Thunder), 30% reduction to BB activation cost, spark damage restores HP, 30% OD gauge fill rate & 20% damage reduction for 2 turns when damage taken is over 5k", 
+        "effects": [
+            {
+                "atk% buff": 140, 
+                "crit% buff": 30, 
+                "def% buff": 140, 
+                "elements buffed": [
+                    "thunder"
+                ], 
+                "hp% buff": 140, 
+                "passive id": "2"
+            }, 
+            {
+                "passive id": "48", 
+                "reduced bb bc cost%": 30
+            }, 
+            {
+                "heal on spark high": 600, 
+                "heal on spark low": 500, 
+                "heal on spark%": 100, 
+                "passive id": "101"
+            }, 
+            {
+                "od fill rate%": 30, 
+                "passive id": "70"
+            }, 
+            {
+                "buff": {
+                    "buff turns (36)": "1", 
+                    "dmg reduction% buff": 20
+                }, 
+                "damage threshold buff activation": 5000, 
+                "passive id": "78"
+            }
+        ], 
+        "id": "840848", 
+        "name": "The Temptress"
     }, 
     "840900": {
         "desc": "100% boost to max HP, Spark damage boosts BB gauge, hugely boosts Thunder elemental damage, 15% damage reduction from Water types & negates all status ailments", 
