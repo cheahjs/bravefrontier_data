@@ -26306,7 +26306,9 @@
                 "bb atk% buff": 250, 
                 "conditions": [], 
                 "passive id": "64", 
-                "passive target": "self"
+                "passive target": "self", 
+                "sbb atk% buff": 250, 
+                "ubb atk% buff": 250
             }, 
             {
                 "bc fill on crit max": 10, 
@@ -43405,6 +43407,66 @@
         ], 
         "id": "860788", 
         "name": "Detention Stint", 
+        "rarity": "7", 
+        "target": "self"
+    }, 
+    "860798": {
+        "desc": "30% reduction to BB activation cost when Lost Innocence or Atk Boosting sphere is equipped, 25% all parameters (Dark), 20% Dark elemental damage and 25% critical damage for all allies & 30% all parameters", 
+        "effects": [
+            {
+                "conditions": [
+                    {
+                        "item required": [
+                            "819296"
+                        ]
+                    }, 
+                    {
+                        "item required": [
+                            "13"
+                        ]
+                    }
+                ], 
+                "passive id": "48", 
+                "passive target": "self", 
+                "reduced bb bc cost%": 30
+            }, 
+            {
+                "conditions": [], 
+                "crit multiplier%": 25.0, 
+                "passive id": "34", 
+                "passive target": "party"
+            }, 
+            {
+                "conditions": [], 
+                "dark units do extra elemental weakness dmg": true, 
+                "elemental weakness multiplier%": 20.0, 
+                "passive id": "50", 
+                "passive target": "party"
+            }, 
+            {
+                "atk% buff": 25, 
+                "conditions": [], 
+                "def% buff": 25, 
+                "elements buffed": [
+                    "dark"
+                ], 
+                "hp% buff": 25, 
+                "passive id": "2", 
+                "passive target": "party", 
+                "rec% buff": 25
+            }, 
+            {
+                "atk% buff": 30, 
+                "conditions": [], 
+                "def% buff": 30, 
+                "hp% buff": 30, 
+                "passive id": "1", 
+                "passive target": "self", 
+                "rec% buff": 30
+            }
+        ], 
+        "id": "860798", 
+        "name": "Unrequited Nostalgia", 
         "rarity": "7", 
         "target": "self"
     }, 
