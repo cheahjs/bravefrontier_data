@@ -40567,6 +40567,62 @@
         "rarity": "7", 
         "target": "self"
     }, 
+    "850798": {
+        "desc": "100% spark damage when Unyielding Sprit or Critical Sphere is equipped, 20% Light elemental damage and adds ignore Def to attack for all allies, 30-50% BB gauge consumed reduction & probable 2 KO resistance", 
+        "effects": [
+            {
+                "conditions": [
+                    {
+                        "item required": [
+                            "819297"
+                        ]
+                    }, 
+                    {
+                        "sphere category required": "Critical", 
+                        "sphere category required (raw)": "2"
+                    }
+                ], 
+                "damage% for spark": 100, 
+                "passive id": "31", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "elemental weakness multiplier%": 20.0, 
+                "light units do extra elemental weakness dmg": true, 
+                "passive id": "50", 
+                "passive target": "party"
+            }, 
+            {
+                "conditions": [], 
+                "ignore def%": 100, 
+                "passive id": "29", 
+                "passive target": "party"
+            }, 
+            {
+                "conditions": [], 
+                "passive id": "49", 
+                "passive target": "self", 
+                "reduced bb bc use chance%": 100, 
+                "reduced bb bc use% high": 50, 
+                "reduced bb bc use% low": 30
+            }, 
+            {
+                "angel idol chance% condition": 0, 
+                "angel idol recover chance% high": 50, 
+                "angel idol recover chance% low": 50, 
+                "angel idol recover counts": 2, 
+                "angel idol recover hp%": 1, 
+                "conditions": [], 
+                "passive id": "69", 
+                "passive target": "self"
+            }
+        ], 
+        "id": "850798", 
+        "name": "Phantom Image", 
+        "rarity": "7", 
+        "target": "self"
+    }, 
     "850808": {
         "desc": "Slightly reduces BB gauge required for BB for all allies when Iridescent Hope is equipped, damage taken may considerably restore HP, negates Def ignoring effects, boosts BC, HC drop rates for all allies & 5% boost to EXP gained", 
         "effects": [
@@ -41486,22 +41542,26 @@
         "target": "self"
     }, 
     "860258": {
-        "desc": "30% boost to all parameters & considerably raises normal hit amount when Obsidian Core Amplifier is equipped", 
+        "desc": "40% all parameters and raises normal hit amount when Obsidian Core Amplifier or Status Boosting Sphere is equipped, 20% critical damage for all allies, 25% reduction to BB activation cost, 20% all parameters & probable 2 KO resistance", 
         "effects": [
             {
-                "atk% buff": 30, 
+                "atk% buff": 40, 
                 "conditions": [
                     {
                         "item required": [
                             "818914"
                         ]
+                    }, 
+                    {
+                        "sphere category required": "Status Boost", 
+                        "sphere category required (raw)": "1"
                     }
                 ], 
-                "def% buff": 30, 
-                "hp% buff": 30, 
+                "def% buff": 40, 
+                "hp% buff": 40, 
                 "passive id": "1", 
                 "passive target": "self", 
-                "rec% buff": 30
+                "rec% buff": 40
             }, 
             {
                 "conditions": [
@@ -41509,12 +41569,46 @@
                         "item required": [
                             "818914"
                         ]
+                    }, 
+                    {
+                        "sphere category required": "Status Boost", 
+                        "sphere category required (raw)": "1"
                     }
                 ], 
                 "extra hits dmg%": 30, 
                 "hit increase/hit": 2, 
                 "passive id": "37", 
                 "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "passive id": "48", 
+                "passive target": "self", 
+                "reduced bb bc cost%": 25
+            }, 
+            {
+                "conditions": [], 
+                "crit multiplier%": 20.0, 
+                "passive id": "34", 
+                "passive target": "party"
+            }, 
+            {
+                "angel idol chance% condition": 0, 
+                "angel idol recover chance% high": 40, 
+                "angel idol recover chance% low": 40, 
+                "angel idol recover counts": 2, 
+                "conditions": [], 
+                "passive id": "69", 
+                "passive target": "self"
+            }, 
+            {
+                "atk% buff": 20, 
+                "conditions": [], 
+                "def% buff": 20, 
+                "hp% buff": 20, 
+                "passive id": "1", 
+                "passive target": "self", 
+                "rec% buff": 20
             }
         ], 
         "id": "860258", 
