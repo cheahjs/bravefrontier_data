@@ -25787,18 +25787,12 @@
         "name": "Scarlet Bloodletting"
     }, 
     "801266": {
-        "desc": "50% boost to Atk, max HP, hugely boosts Spark damage for 2 turns when Sparks have exceeded certain amount, Spark damage boosts BB gauge & negates elemental damage", 
+        "desc": "150% Atk, 80% max HP, 100% elemental damage reduction, spark damage fills BB gauge, 150% spark damage & 20% reduction to BB activation cost", 
         "effects": [
             {
-                "atk% buff": 50, 
-                "hp% buff": 50, 
+                "atk% buff": 150, 
+                "hp% buff": 80, 
                 "passive id": "1"
-            }, 
-            {
-                "bc fill on spark high": 3, 
-                "bc fill on spark low": 2, 
-                "bc fill on spark%": 100, 
-                "passive id": "47"
             }, 
             {
                 "passive id": "53", 
@@ -25806,12 +25800,18 @@
                 "strong buffed element damage resist%": 100
             }, 
             {
-                "buff": {
-                    "buff turns (40)": "2", 
-                    "spark dmg% buff": 100
-                }, 
-                "passive id": "86", 
-                "spark count buff activation": 15
+                "bc fill on spark high": 4, 
+                "bc fill on spark low": 2, 
+                "bc fill on spark%": 100, 
+                "passive id": "47"
+            }, 
+            {
+                "damage% for spark": 150, 
+                "passive id": "31"
+            }, 
+            {
+                "passive id": "48", 
+                "reduced bb bc cost%": 20
             }
         ], 
         "id": "801266", 
@@ -30601,6 +30601,43 @@
         "id": "820758", 
         "name": "Distracted Brilliance"
     }, 
+    "820798": {
+        "desc": "200% Atk, 140% Def, max HP and 30% critical rate (Water), 250% critical damage, 250% Water elemental damage, 30% reduction to BB activation cost & probable 1 KO resistance", 
+        "effects": [
+            {
+                "atk% buff": 200, 
+                "crit% buff": 30, 
+                "def% buff": 140, 
+                "elements buffed": [
+                    "water"
+                ], 
+                "hp% buff": 140, 
+                "passive id": "2"
+            }, 
+            {
+                "crit multiplier%": 250.0, 
+                "passive id": "34"
+            }, 
+            {
+                "elemental weakness multiplier%": 250.0, 
+                "passive id": "50", 
+                "water units do extra elemental weakness dmg": true
+            }, 
+            {
+                "passive id": "48", 
+                "reduced bb bc cost%": 30
+            }, 
+            {
+                "angel idol chance% condition": 0, 
+                "angel idol recover chance% high": 25, 
+                "angel idol recover chance% low": 25, 
+                "angel idol recover counts": 1, 
+                "passive id": "69"
+            }
+        ], 
+        "id": "820798", 
+        "name": "Seal-Fiend's Song"
+    }, 
     "820808": {
         "desc": "120% all parameters, 250% Water elemental damage, fills BB gauge each turn, spark damage fills BB gauge & 100% critical, elemental damage reduction", 
         "effects": [
@@ -33286,12 +33323,12 @@
         "name": "Uncontrolled Rage"
     }, 
     "840438": {
-        "desc": "125% boost to Atk, 50% boost to Def and 80% boost to max HP, negates elemental damage, negates Def ignoring effects, 130% boost to Spark damage & 8% damage reduction", 
+        "desc": "125% Atk, 50% Def, 100% max HP, 100% elemental damage reduction, negates ignore Def, 150% spark damage & 8% damage reduction", 
         "effects": [
             {
                 "atk% buff": 125, 
                 "def% buff": 50, 
-                "hp% buff": 80, 
+                "hp% buff": 100, 
                 "passive id": "1"
             }, 
             {
@@ -33304,7 +33341,7 @@
                 "passive id": "92"
             }, 
             {
-                "damage% for spark": 130, 
+                "damage% for spark": 150, 
                 "passive id": "31"
             }, 
             {
