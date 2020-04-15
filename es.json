@@ -20651,192 +20651,647 @@
         "target": "self"
     }, 
     "500100": {
-        "desc": "Lord Omni+0: ", 
-        "effects": [], 
+        "desc": "Lord Omni+0: 30% BB Atk", 
+        "effects": [
+            {
+                "bb atk% buff": 30, 
+                "conditions": [], 
+                "passive id": "64", 
+                "passive target": "self", 
+                "sbb atk% buff": 30, 
+                "ubb atk% buff": 30
+            }
+        ], 
         "id": "500100", 
         "name": "Lord Omni+0", 
         "rarity": "8", 
         "target": "self"
     }, 
     "500101": {
-        "desc": "Lord Omni+1: ", 
-        "effects": [], 
+        "desc": "Lord Omni+1: 50% BB Atk", 
+        "effects": [
+            {
+                "bb atk% buff": 50, 
+                "conditions": [], 
+                "passive id": "64", 
+                "passive target": "self", 
+                "sbb atk% buff": 50, 
+                "ubb atk% buff": 50
+            }
+        ], 
         "id": "500101", 
         "name": "Lord Omni+1", 
         "rarity": "8", 
         "target": "self"
     }, 
     "500102": {
-        "desc": "Lord Omni+2: ", 
-        "effects": [], 
+        "desc": "Lord Omni+2: 70% BB Atk & may [50%] negate all status ailments and Atk, Def, Rec reduction", 
+        "effects": [
+            {
+                "bb atk% buff": 70, 
+                "conditions": [], 
+                "passive id": "64", 
+                "passive target": "self", 
+                "sbb atk% buff": 70, 
+                "ubb atk% buff": 70
+            }, 
+            {
+                "atk down resist%": 50, 
+                "conditions": [], 
+                "curse resist%": 50, 
+                "def down resist%": 50, 
+                "injury resist%": 50, 
+                "paralysis resist%": 50, 
+                "passive id": "73", 
+                "passive target": "self", 
+                "poison resist%": 50, 
+                "rec down resist%": 50, 
+                "sick resist%": 50, 
+                "weaken resist%": 50
+            }
+        ], 
         "id": "500102", 
         "name": "Lord Omni+2", 
         "rarity": "8", 
         "target": "self"
     }, 
     "500103": {
-        "desc": "Lord Omni+3: ", 
-        "effects": [], 
+        "desc": "Lord Omni+3: 100% BB Atk, negates all status ailments and Atk, Def, Rec reduction & 5% reduction to BB activation cost for all allies", 
+        "effects": [
+            {
+                "bb atk% buff": 100, 
+                "conditions": [], 
+                "passive id": "64", 
+                "passive target": "self", 
+                "sbb atk% buff": 100, 
+                "ubb atk% buff": 100
+            }, 
+            {
+                "atk down resist%": 100, 
+                "conditions": [], 
+                "curse resist%": 100, 
+                "def down resist%": 100, 
+                "injury resist%": 100, 
+                "paralysis resist%": 100, 
+                "passive id": "73", 
+                "passive target": "self", 
+                "poison resist%": 100, 
+                "rec down resist%": 100, 
+                "sick resist%": 100, 
+                "weaken resist%": 100
+            }, 
+            {
+                "conditions": [], 
+                "passive id": "48", 
+                "passive target": "party", 
+                "reduced bb bc cost%": 5
+            }
+        ], 
         "id": "500103", 
         "name": "Lord Omni+3", 
         "rarity": "8", 
         "target": "self"
     }, 
     "500200": {
-        "desc": "Anima Omni+0: ", 
-        "effects": [], 
+        "desc": "Anima Omni+0: Fills BB gauge [3 BC] each turn", 
+        "effects": [
+            {
+                "bc fill per turn": 3, 
+                "conditions": [], 
+                "passive id": "9", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "passive target": "self", 
+                "unknown passive id": "72", 
+                "unknown passive params": "0,1"
+            }
+        ], 
         "id": "500200", 
         "name": "Anima Omni+0", 
         "rarity": "8", 
         "target": "self"
     }, 
     "500201": {
-        "desc": "Anima Omni+1: ", 
-        "effects": [], 
+        "desc": "Anima Omni+1: Fills BB gauge [5 BC] each turn", 
+        "effects": [
+            {
+                "bc fill per turn": 5, 
+                "conditions": [], 
+                "passive id": "9", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "passive target": "self", 
+                "unknown passive id": "72", 
+                "unknown passive params": "0,1"
+            }
+        ], 
         "id": "500201", 
         "name": "Anima Omni+1", 
         "rarity": "8", 
         "target": "self"
     }, 
     "500202": {
-        "desc": "Anima Omni+2: ", 
-        "effects": [], 
+        "desc": "Anima Omni+2: Fills BB gauge [7 BC] each turn & 25% OD gauge fill rate", 
+        "effects": [
+            {
+                "bc fill per turn": 7, 
+                "conditions": [], 
+                "passive id": "9", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "od fill rate%": 25, 
+                "passive id": "70", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "passive target": "self", 
+                "unknown passive id": "72", 
+                "unknown passive params": "0,1"
+            }
+        ], 
         "id": "500202", 
         "name": "Anima Omni+2", 
         "rarity": "8", 
         "target": "self"
     }, 
     "500203": {
-        "desc": "Anima Omni+3: ", 
-        "effects": [], 
+        "desc": "Anima Omni+3: Fills BB gauge [10 BC] each turn, 50% OD gauge fill rate & 10% all parameters for all allies", 
+        "effects": [
+            {
+                "bc fill per turn": 10, 
+                "conditions": [], 
+                "passive id": "9", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "od fill rate%": 50, 
+                "passive id": "70", 
+                "passive target": "self"
+            }, 
+            {
+                "atk% buff": 10, 
+                "conditions": [], 
+                "def% buff": 10, 
+                "hp% buff": 10, 
+                "passive id": "1", 
+                "passive target": "party", 
+                "rec% buff": 10
+            }, 
+            {
+                "conditions": [], 
+                "passive target": "self", 
+                "unknown passive id": "72", 
+                "unknown passive params": "0,1"
+            }
+        ], 
         "id": "500203", 
         "name": "Anima Omni+3", 
         "rarity": "8", 
         "target": "self"
     }, 
     "500300": {
-        "desc": "Breaker Omni+0:", 
-        "effects": [], 
+        "desc": "Breaker Omni+0: 10% critical damage", 
+        "effects": [
+            {
+                "conditions": [], 
+                "crit multiplier%": 10.0, 
+                "passive id": "34", 
+                "passive target": "self"
+            }
+        ], 
         "id": "500300", 
         "name": "Breaker Omni+0", 
         "rarity": "8", 
         "target": "self"
     }, 
     "500301": {
-        "desc": "Breaker Omni+1:", 
-        "effects": [], 
+        "desc": "Breaker Omni+1: 20% critical damage", 
+        "effects": [
+            {
+                "conditions": [], 
+                "crit multiplier%": 20.0, 
+                "passive id": "34", 
+                "passive target": "self"
+            }
+        ], 
         "id": "500301", 
         "name": "Breaker Omni+1", 
         "rarity": "8", 
         "target": "self"
     }, 
     "500302": {
-        "desc": "Breaker Omni+2:", 
-        "effects": [], 
+        "desc": "Breaker Omni+2: 30% critical damage & 10% all elemental damage", 
+        "effects": [
+            {
+                "conditions": [], 
+                "crit multiplier%": 30.0, 
+                "passive id": "34", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "dark units do extra elemental weakness dmg": true, 
+                "earth units do extra elemental weakness dmg": true, 
+                "elemental weakness multiplier%": 10.0, 
+                "fire units do extra elemental weakness dmg": true, 
+                "light units do extra elemental weakness dmg": true, 
+                "passive id": "50", 
+                "passive target": "self", 
+                "thunder units do extra elemental weakness dmg": true, 
+                "water units do extra elemental weakness dmg": true
+            }
+        ], 
         "id": "500302", 
         "name": "Breaker Omni+2", 
         "rarity": "8", 
         "target": "self"
     }, 
     "500303": {
-        "desc": "Breaker Omni+3:", 
-        "effects": [], 
+        "desc": "Breaker Omni+3: 50% critical damage, 15% all elemental damage & 15% critical rate for all allies", 
+        "effects": [
+            {
+                "conditions": [], 
+                "crit multiplier%": 50.0, 
+                "passive id": "34", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "dark units do extra elemental weakness dmg": true, 
+                "earth units do extra elemental weakness dmg": true, 
+                "elemental weakness multiplier%": 15.0, 
+                "fire units do extra elemental weakness dmg": true, 
+                "light units do extra elemental weakness dmg": true, 
+                "passive id": "50", 
+                "passive target": "self", 
+                "thunder units do extra elemental weakness dmg": true, 
+                "water units do extra elemental weakness dmg": true
+            }, 
+            {
+                "conditions": [], 
+                "crit% buff": 15, 
+                "passive id": "1", 
+                "passive target": "party"
+            }
+        ], 
         "id": "500303", 
         "name": "Breaker Omni+3", 
         "rarity": "8", 
         "target": "self"
     }, 
     "500400": {
-        "desc": "Guardian Omni+0:", 
-        "effects": [], 
+        "desc": "Guardian Omni+0: 1% damage reduction", 
+        "effects": [
+            {
+                "conditions": [], 
+                "dmg% mitigation": 1, 
+                "passive id": "8", 
+                "passive target": "self"
+            }
+        ], 
         "id": "500400", 
         "name": "Guardian Omni+0", 
         "rarity": "8", 
         "target": "self"
     }, 
     "500401": {
-        "desc": "Guardian Omni+1:", 
-        "effects": [], 
+        "desc": "Guardian Omni+1: 2% damage reduction", 
+        "effects": [
+            {
+                "conditions": [], 
+                "dmg% mitigation": 2, 
+                "passive id": "8", 
+                "passive target": "self"
+            }
+        ], 
         "id": "500401", 
         "name": "Guardian Omni+1", 
         "rarity": "8", 
         "target": "self"
     }, 
     "500402": {
-        "desc": "Guardian Omni+2:", 
-        "effects": [], 
+        "desc": "Guardian Omni+2: 3% damage reduction & 50% damage reduction from all element types for first turn", 
+        "effects": [
+            {
+                "conditions": [], 
+                "dmg% mitigation": 3, 
+                "passive id": "8", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "dmg% mitigation for elemental attacks": 50, 
+                "dmg% mitigation for elemental attacks buff for first x turns": 1, 
+                "mitigate dark attacks": true, 
+                "mitigate earth attacks": true, 
+                "mitigate fire attacks": true, 
+                "mitigate light attacks": true, 
+                "mitigate thunder attacks": true, 
+                "mitigate water attacks": true, 
+                "passive id": "63", 
+                "passive target": "self"
+            }
+        ], 
         "id": "500402", 
         "name": "Guardian Omni+2", 
         "rarity": "8", 
         "target": "self"
     }, 
     "500403": {
-        "desc": "Guardian Omni+3:", 
-        "effects": [], 
+        "desc": "Guardian Omni+3: 5% damage reduction, 50% damage reduction from all element types for first 2 turns & 15% DoT reduction for all allies", 
+        "effects": [
+            {
+                "conditions": [], 
+                "dmg% mitigation": 5, 
+                "passive id": "8", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "dmg% mitigation for elemental attacks": 50, 
+                "dmg% mitigation for elemental attacks buff for first x turns": 2, 
+                "mitigate dark attacks": true, 
+                "mitigate earth attacks": true, 
+                "mitigate fire attacks": true, 
+                "mitigate light attacks": true, 
+                "mitigate thunder attacks": true, 
+                "mitigate water attacks": true, 
+                "passive id": "63", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "passive target": "party", 
+                "unknown passive id": "127", 
+                "unknown passive params": "100,15"
+            }
+        ], 
         "id": "500403", 
         "name": "Guardian Omni+3", 
         "rarity": "8", 
         "target": "self"
     }, 
     "500500": {
-        "desc": "Oracle Omni+0:", 
-        "effects": [], 
+        "desc": "Oracle Omni+0: Restores HP [2000-3000] each turn", 
+        "effects": [
+            {
+                "conditions": [], 
+                "passive id": "33", 
+                "passive target": "self", 
+                "rec% added (turn heal)": 10.0, 
+                "turn heal high": 3000, 
+                "turn heal low": 2000
+            }
+        ], 
         "id": "500500", 
         "name": "Oracle Omni+0", 
         "rarity": "8", 
         "target": "self"
     }, 
     "500501": {
-        "desc": "Oracle Omni+1:", 
-        "effects": [], 
+        "desc": "Oracle Omni+1: Restores HP [2500-3500] each turn", 
+        "effects": [
+            {
+                "conditions": [], 
+                "passive id": "33", 
+                "passive target": "self", 
+                "rec% added (turn heal)": 10.0, 
+                "turn heal high": 3500, 
+                "turn heal low": 2500
+            }
+        ], 
         "id": "500501", 
         "name": "Oracle Omni+1", 
         "rarity": "8", 
         "target": "self"
     }, 
     "500502": {
-        "desc": "Oracle Omni+2:", 
-        "effects": [], 
+        "desc": "Oracle Omni+2: Restores HP [3000-4000] each turn & 1 KO resistance when HP is below 15%", 
+        "effects": [
+            {
+                "conditions": [], 
+                "passive id": "33", 
+                "passive target": "self", 
+                "rec% added (turn heal)": 10.0, 
+                "turn heal high": 4000, 
+                "turn heal low": 3000
+            }, 
+            {
+                "buff": {
+                    "angel idol buff (12)": true, 
+                    "angel idol recover hp%": 100, 
+                    "buff turns (12)": "-1"
+                }, 
+                "conditions": [], 
+                "hp below % buff activation": 15, 
+                "passive id": "55", 
+                "passive target": "self"
+            }
+        ], 
         "id": "500502", 
         "name": "Oracle Omni+2", 
         "rarity": "8", 
         "target": "self"
     }, 
     "500503": {
-        "desc": "Oracle Omni+3:", 
-        "effects": [], 
+        "desc": "Oracle Omni+3: Restores HP [4000-5000] each turn, 1 KO resistance when HP is below 30% & damage taken may [30%] restore HP [20-25% damage] for all allies", 
+        "effects": [
+            {
+                "conditions": [], 
+                "passive id": "33", 
+                "passive target": "self", 
+                "rec% added (turn heal)": 10.0, 
+                "turn heal high": 5000, 
+                "turn heal low": 4000
+            }, 
+            {
+                "buff": {
+                    "angel idol buff (12)": true, 
+                    "angel idol recover hp%": 100, 
+                    "buff turns (12)": "-1"
+                }, 
+                "conditions": [], 
+                "hp below % buff activation": 30, 
+                "passive id": "55", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "dmg% to hp% when attacked chance%": 30, 
+                "dmg% to hp% when attacked high": 25, 
+                "dmg% to hp% when attacked low": 20, 
+                "passive id": "24", 
+                "passive target": "party"
+            }
+        ], 
         "id": "500503", 
         "name": "Oracle Omni+3", 
         "rarity": "8", 
         "target": "self"
     }, 
     "500600": {
-        "desc": "Rex Omni+0:", 
-        "effects": [], 
+        "desc": "Rex Omni+0: Fills BB gauge [3 BC] each turn & 1% damage reduction", 
+        "effects": [
+            {
+                "bc fill per turn": 3, 
+                "conditions": [], 
+                "passive id": "9", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "dmg% mitigation": 1, 
+                "passive id": "8", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "passive target": "self", 
+                "unknown passive id": "72", 
+                "unknown passive params": "0,1"
+            }
+        ], 
         "id": "500600", 
         "name": "Rex Omni+0", 
         "rarity": "8", 
         "target": "self"
     }, 
     "500601": {
-        "desc": "Rex Omni+1:", 
-        "effects": [], 
+        "desc": "Rex Omni+1: Fills BB gauge [5 BC] each turn & 2% damage reduction", 
+        "effects": [
+            {
+                "bc fill per turn": 5, 
+                "conditions": [], 
+                "passive id": "9", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "dmg% mitigation": 2, 
+                "passive id": "8", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "passive target": "self", 
+                "unknown passive id": "72", 
+                "unknown passive params": "0,1"
+            }
+        ], 
         "id": "500601", 
         "name": "Rex Omni+1", 
         "rarity": "8", 
         "target": "self"
     }, 
     "500602": {
-        "desc": "Rex Omni+2:", 
-        "effects": [], 
+        "desc": "Rex Omni+2: Fills BB gauge [7 BC] each turn, 3% damage reduction, 10% all elemental damage & 1 KO resistance when HP is below 15%", 
+        "effects": [
+            {
+                "bc fill per turn": 7, 
+                "conditions": [], 
+                "passive id": "9", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "dmg% mitigation": 3, 
+                "passive id": "8", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "dark units do extra elemental weakness dmg": true, 
+                "earth units do extra elemental weakness dmg": true, 
+                "elemental weakness multiplier%": 10.0, 
+                "fire units do extra elemental weakness dmg": true, 
+                "light units do extra elemental weakness dmg": true, 
+                "passive id": "50", 
+                "passive target": "self", 
+                "thunder units do extra elemental weakness dmg": true, 
+                "water units do extra elemental weakness dmg": true
+            }, 
+            {
+                "buff": {
+                    "angel idol buff (12)": true, 
+                    "angel idol recover hp%": 100, 
+                    "buff turns (12)": "-1"
+                }, 
+                "conditions": [], 
+                "hp below % buff activation": 15, 
+                "passive id": "55", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "passive target": "self", 
+                "unknown passive id": "72", 
+                "unknown passive params": "0,1"
+            }
+        ], 
         "id": "500602", 
         "name": "Rex Omni+2", 
         "rarity": "8", 
         "target": "self"
     }, 
     "500603": {
-        "desc": "Rex Omni+3:", 
-        "effects": [], 
+        "desc": "Rex Omni+3: Fills BB gauge [10 BC] each turn, 5% damage reduction, 15% all elemental damage, 1 KO resistance when HP is below 30% & 15% spark damage for all allies", 
+        "effects": [
+            {
+                "bc fill per turn": 10, 
+                "conditions": [], 
+                "passive id": "9", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "dmg% mitigation": 5, 
+                "passive id": "8", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "dark units do extra elemental weakness dmg": true, 
+                "earth units do extra elemental weakness dmg": true, 
+                "elemental weakness multiplier%": 15.0, 
+                "fire units do extra elemental weakness dmg": true, 
+                "light units do extra elemental weakness dmg": true, 
+                "passive id": "50", 
+                "passive target": "self", 
+                "thunder units do extra elemental weakness dmg": true, 
+                "water units do extra elemental weakness dmg": true
+            }, 
+            {
+                "buff": {
+                    "angel idol buff (12)": true, 
+                    "angel idol recover hp%": 100, 
+                    "buff turns (12)": "-1"
+                }, 
+                "conditions": [], 
+                "hp below % buff activation": 30, 
+                "passive id": "55", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "damage% for spark": 15, 
+                "passive id": "31", 
+                "passive target": "party"
+            }, 
+            {
+                "conditions": [], 
+                "passive target": "self", 
+                "unknown passive id": "72", 
+                "unknown passive params": "0,1"
+            }
+        ], 
         "id": "500603", 
         "name": "Rex Omni+3", 
         "rarity": "8", 
@@ -32595,6 +33050,140 @@
         "rarity": "7", 
         "target": "self"
     }, 
+    "820867": {
+        "desc": "100% spark damage, 20% all parameters, negates all status ailments and Atk, Def, Rec reduction & add to BB/SBB (Removes all status ailments and Atk, Def, Rec reduction)", 
+        "effects": [
+            {
+                "conditions": [], 
+                "damage% for spark": 100, 
+                "passive id": "31", 
+                "passive target": "self"
+            }, 
+            {
+                "atk% buff": 20, 
+                "conditions": [], 
+                "def% buff": 20, 
+                "hp% buff": 20, 
+                "passive id": "1", 
+                "passive target": "self", 
+                "rec% buff": 20
+            }, 
+            {
+                "atk down resist%": 100, 
+                "conditions": [], 
+                "curse resist%": 100, 
+                "def down resist%": 100, 
+                "injury resist%": 100, 
+                "paralysis resist%": 100, 
+                "passive id": "73", 
+                "passive target": "self", 
+                "poison resist%": 100, 
+                "rec down resist%": 100, 
+                "sick resist%": 100, 
+                "weaken resist%": 100
+            }, 
+            {
+                "conditions": [], 
+                "passive id": "66", 
+                "passive target": "self", 
+                "trigger on bb": true, 
+                "trigger on sbb": true, 
+                "triggered effect": [
+                    {
+                        "ailments cured": [
+                            "poison", 
+                            "weaken", 
+                            "sick", 
+                            "injury", 
+                            "curse", 
+                            "paralysis", 
+                            "atk down", 
+                            "def down", 
+                            "rec down"
+                        ], 
+                        "effect delay time(ms)/frame": "0.0/0", 
+                        "proc id": "38", 
+                        "target area": "aoe", 
+                        "target type": "party"
+                    }
+                ]
+            }
+        ], 
+        "id": "820867", 
+        "name": "Hidden Weapons...", 
+        "rarity": "7", 
+        "target": "self"
+    }, 
+    "820868": {
+        "desc": "25% critical damage for all allies, 100% spark damage, 30% all parameters, negates all status ailments and Atk, Def, Rec reduction & add to BB/SBB (Removes all status ailments and Atk, Def, Rec reduction)", 
+        "effects": [
+            {
+                "conditions": [], 
+                "crit multiplier%": 25.0, 
+                "passive id": "34", 
+                "passive target": "party"
+            }, 
+            {
+                "conditions": [], 
+                "damage% for spark": 100, 
+                "passive id": "31", 
+                "passive target": "self"
+            }, 
+            {
+                "atk% buff": 30, 
+                "conditions": [], 
+                "def% buff": 30, 
+                "hp% buff": 30, 
+                "passive id": "1", 
+                "passive target": "self", 
+                "rec% buff": 30
+            }, 
+            {
+                "atk down resist%": 100, 
+                "conditions": [], 
+                "curse resist%": 100, 
+                "def down resist%": 100, 
+                "injury resist%": 100, 
+                "paralysis resist%": 100, 
+                "passive id": "73", 
+                "passive target": "self", 
+                "poison resist%": 100, 
+                "rec down resist%": 100, 
+                "sick resist%": 100, 
+                "weaken resist%": 100
+            }, 
+            {
+                "conditions": [], 
+                "passive id": "66", 
+                "passive target": "self", 
+                "trigger on bb": true, 
+                "trigger on sbb": true, 
+                "triggered effect": [
+                    {
+                        "ailments cured": [
+                            "poison", 
+                            "weaken", 
+                            "sick", 
+                            "injury", 
+                            "curse", 
+                            "paralysis", 
+                            "atk down", 
+                            "def down", 
+                            "rec down"
+                        ], 
+                        "effect delay time(ms)/frame": "0.0/0", 
+                        "proc id": "38", 
+                        "target area": "aoe", 
+                        "target type": "party"
+                    }
+                ]
+            }
+        ], 
+        "id": "820868", 
+        "name": "...And a Lot of Heart", 
+        "rarity": "8", 
+        "target": "self"
+    }, 
     "820900": {
         "desc": "10% boost to all parameters of Water types for all allies, damage taken boosts BB gauge & 30% additional damage reduction", 
         "effects": [
@@ -38098,6 +38687,151 @@
         ], 
         "id": "840848", 
         "name": "Sins of the Heart", 
+        "rarity": "7", 
+        "target": "self"
+    }, 
+    "840867": {
+        "desc": "Restores HP each turn when Silver AGL .45 Colt or Vash's Angel Arm or Atk Boosting sphere is equipped, 20% Thunder elemental damage for all allies, 20% all parameters & negates all status ailments and Atk, Def, Rec reduction", 
+        "effects": [
+            {
+                "conditions": [
+                    {
+                        "item required": [
+                            "819313"
+                        ]
+                    }, 
+                    {
+                        "item required": [
+                            "819316"
+                        ]
+                    }, 
+                    {
+                        "sphere category required": "Atk Boosting", 
+                        "sphere category required (raw)": "13"
+                    }
+                ], 
+                "passive id": "33", 
+                "passive target": "self", 
+                "rec% added (turn heal)": 11.0, 
+                "turn heal high": 5500, 
+                "turn heal low": 4000
+            }, 
+            {
+                "atk down resist%": 100, 
+                "conditions": [], 
+                "curse resist%": 100, 
+                "def down resist%": 100, 
+                "injury resist%": 100, 
+                "paralysis resist%": 100, 
+                "passive id": "73", 
+                "passive target": "self", 
+                "poison resist%": 100, 
+                "rec down resist%": 100, 
+                "sick resist%": 100, 
+                "weaken resist%": 100
+            }, 
+            {
+                "conditions": [], 
+                "elemental weakness multiplier%": 20.0, 
+                "passive id": "50", 
+                "passive target": "party", 
+                "thunder units do extra elemental weakness dmg": true
+            }, 
+            {
+                "atk% buff": 20, 
+                "conditions": [], 
+                "def% buff": 20, 
+                "hp% buff": 20, 
+                "passive id": "1", 
+                "passive target": "self", 
+                "rec% buff": 20
+            }
+        ], 
+        "id": "840867", 
+        "name": "Peace Maker", 
+        "rarity": "7", 
+        "target": "self"
+    }, 
+    "840868": {
+        "desc": "Restores HP each turn when Silver AGL .45 Colt, Vash's Angel Arm or Atk Boosting sphere is equipped & probable 2 KO resistance when Vash's Angel Arm is equipped, 25% Thunder elemental damage and 25% spark damage for all allies, 30% all parameters & negates all status ailments and Atk, Def, Rec reduction", 
+        "effects": [
+            {
+                "conditions": [
+                    {
+                        "item required": [
+                            "819313"
+                        ]
+                    }, 
+                    {
+                        "item required": [
+                            "819316"
+                        ]
+                    }, 
+                    {
+                        "sphere category required": "Atk Boosting", 
+                        "sphere category required (raw)": "13"
+                    }
+                ], 
+                "passive id": "33", 
+                "passive target": "self", 
+                "rec% added (turn heal)": 11.0, 
+                "turn heal high": 6500, 
+                "turn heal low": 5000
+            }, 
+            {
+                "angel idol chance% condition": 0, 
+                "angel idol recover chance% high": 60, 
+                "angel idol recover chance% low": 60, 
+                "angel idol recover counts": 2, 
+                "conditions": [
+                    {
+                        "item required": [
+                            "819316"
+                        ]
+                    }
+                ], 
+                "passive id": "69", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "elemental weakness multiplier%": 25.0, 
+                "passive id": "50", 
+                "passive target": "party", 
+                "thunder units do extra elemental weakness dmg": true
+            }, 
+            {
+                "conditions": [], 
+                "damage% for spark": 25, 
+                "passive id": "31", 
+                "passive target": "party"
+            }, 
+            {
+                "atk% buff": 30, 
+                "conditions": [], 
+                "def% buff": 30, 
+                "hp% buff": 30, 
+                "passive id": "1", 
+                "passive target": "self", 
+                "rec% buff": 30
+            }, 
+            {
+                "atk down resist%": 100, 
+                "conditions": [], 
+                "curse resist%": 100, 
+                "def down resist%": 100, 
+                "injury resist%": 100, 
+                "paralysis resist%": 100, 
+                "passive id": "73", 
+                "passive target": "self", 
+                "poison resist%": 100, 
+                "rec down resist%": 100, 
+                "sick resist%": 100, 
+                "weaken resist%": 100
+            }
+        ], 
+        "id": "840868", 
+        "name": "Love & Peace!", 
         "rarity": "7", 
         "target": "self"
     }, 
@@ -45086,6 +45820,145 @@
         ], 
         "id": "8900006", 
         "name": "Hydrothermal Mark EX", 
+        "rarity": "8", 
+        "target": "self"
+    }, 
+    "8900010": {
+        "desc": "40% all parameters, fills BB gauge each turn, raises normal hit amount  & normal attacks may hit all foes", 
+        "effects": [
+            {
+                "atk% buff": 40, 
+                "conditions": [], 
+                "def% buff": 40, 
+                "hp% buff": 40, 
+                "passive id": "1", 
+                "passive target": "self", 
+                "rec% buff": 40
+            }, 
+            {
+                "bc fill per turn": 8, 
+                "conditions": [], 
+                "passive id": "9", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "hit increase/hit": 2, 
+                "passive id": "37", 
+                "passive target": "self"
+            }, 
+            {
+                "aoe atk inc%": 0, 
+                "chance to aoe": 10, 
+                "conditions": [], 
+                "passive id": "96", 
+                "passive target": "self"
+            }
+        ], 
+        "id": "8900010", 
+        "name": "Chambers of Revolution", 
+        "rarity": "6", 
+        "target": "self"
+    }, 
+    "8900011": {
+        "desc": "Negates all status ailments and Atk, Def, Rec reduction, 15% DoT reduction, damage taken fills BB gauge, restores HP each turn & probable 1 KO resistance", 
+        "effects": [
+            {
+                "atk down resist%": 100, 
+                "conditions": [], 
+                "curse resist%": 100, 
+                "def down resist%": 100, 
+                "injury resist%": 100, 
+                "paralysis resist%": 100, 
+                "passive id": "73", 
+                "passive target": "self", 
+                "poison resist%": 100, 
+                "rec down resist%": 100, 
+                "sick resist%": 100, 
+                "weaken resist%": 100
+            }, 
+            {
+                "conditions": [], 
+                "passive target": "self", 
+                "unknown passive id": "127", 
+                "unknown passive params": "100,15"
+            }, 
+            {
+                "bc fill when attacked high": 4, 
+                "bc fill when attacked low": 1, 
+                "bc fill when attacked%": 100, 
+                "conditions": [], 
+                "passive id": "25", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "passive id": "33", 
+                "passive target": "self", 
+                "rec% added (turn heal)": 10.0, 
+                "turn heal high": 6000, 
+                "turn heal low": 4000
+            }, 
+            {
+                "angel idol chance% condition": 0, 
+                "angel idol recover chance% high": 30, 
+                "angel idol recover chance% low": 30, 
+                "angel idol recover counts": 1, 
+                "conditions": [], 
+                "passive id": "69", 
+                "passive target": "self"
+            }
+        ], 
+        "id": "8900011", 
+        "name": "Strands of Control", 
+        "rarity": "7", 
+        "target": "self"
+    }, 
+    "8900012": {
+        "desc": "120% Atk, 150% spark damage, spark damage fills BB gauge, adds ignore Def to attack, probable spark critical & raises Atk limit to 210k", 
+        "effects": [
+            {
+                "atk% buff": 120, 
+                "conditions": [], 
+                "passive id": "1", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "damage% for spark": 150, 
+                "passive id": "31", 
+                "passive target": "self"
+            }, 
+            {
+                "bc fill on spark high": 3, 
+                "bc fill on spark low": 2, 
+                "bc fill on spark%": 100, 
+                "conditions": [], 
+                "passive id": "47", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "ignore def%": 100, 
+                "passive id": "29", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "passive id": "100", 
+                "passive target": "self", 
+                "spark crit chance%": 40, 
+                "spark crit dmg%": 125
+            }, 
+            {
+                "conditions": [], 
+                "increase atk cap": 210000, 
+                "passive id": "143", 
+                "passive target": "self"
+            }
+        ], 
+        "id": "8900012", 
+        "name": "Hidden Destructive Power", 
         "rarity": "8", 
         "target": "self"
     }, 
