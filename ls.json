@@ -28965,10 +28965,10 @@
         "name": "Jellaparadium"
     }, 
     "820048": {
-        "desc": "150% boost to Atk, 80% boost to Def, max HP of Water types, 20% damage reduction from Fire, Water types, considerably boosts ABP and CBP gain, probable considerable reduction of BB gauge fill rate for 2 turns & adds probable resistance against 1 KO attack", 
+        "desc": "200% Atk, 80% Def, 80% max HP (Water), 20% damage reduction from Fire, Water types, adds probable 2 turns 50% BB gauge fill rate reduction infliction to attack, probable 1 KO resistance & 100% ABP, 50% CBP gain", 
         "effects": [
             {
-                "atk% buff": 150, 
+                "atk% buff": 200, 
                 "def% buff": 80, 
                 "elements buffed": [
                     "water"
@@ -28984,7 +28984,7 @@
             }, 
             {
                 "unknown passive id": "109", 
-                "unknown passive params": "-50,50,1,0"
+                "unknown passive params": "-50,50,2,0"
             }, 
             {
                 "angel idol chance% condition": 0, 
@@ -28994,8 +28994,8 @@
                 "passive id": "69"
             }, 
             {
-                "abp gain%": 65, 
-                "cbp gain%": 40, 
+                "abp gain%": 100, 
+                "cbp gain%": 50, 
                 "passive id": "112"
             }
         ], 
@@ -31627,25 +31627,26 @@
         "name": "Grasp of Hanelan's Vineyard"
     }, 
     "830438": {
-        "desc": "60% boost to Atk, Rec, max HP, 15% damage reduction from Fire, Earth, Dark types, hugely boosts all elemental damage & Spark damage boosts BB gauge", 
+        "desc": "120% all parameters, 15% damage reduction from Fire, Earth, Dark types, 175% all elemental damage, spark damage fills BB gauge & 400% BB Atk", 
         "effects": [
             {
-                "atk% buff": 60, 
-                "hp% buff": 60, 
+                "atk% buff": 120, 
+                "def% buff": 120, 
+                "hp% buff": 120, 
                 "passive id": "1", 
-                "rec% buff": 60
+                "rec% buff": 120
             }, 
             {
                 "dmg% mitigation for elemental attacks": 15.0, 
                 "mitigate dark attacks": true, 
                 "mitigate earth attacks": true, 
-                "mitigate fire attacks": true, 
+                "mitigate thunder attacks": true, 
                 "passive id": "62"
             }, 
             {
                 "dark units do extra elemental weakness dmg": true, 
                 "earth units do extra elemental weakness dmg": true, 
-                "elemental weakness multiplier%": 150.0, 
+                "elemental weakness multiplier%": 175.0, 
                 "fire units do extra elemental weakness dmg": true, 
                 "light units do extra elemental weakness dmg": true, 
                 "passive id": "50", 
@@ -31653,10 +31654,16 @@
                 "water units do extra elemental weakness dmg": true
             }, 
             {
-                "bc fill on spark high": 3, 
+                "bc fill on spark high": 4, 
                 "bc fill on spark low": 2, 
                 "bc fill on spark%": 100, 
                 "passive id": "47"
+            }, 
+            {
+                "bb atk% buff": 400, 
+                "passive id": "64", 
+                "sbb atk% buff": 400, 
+                "ubb atk% buff": 400
             }
         ], 
         "id": "830438", 
@@ -36607,6 +36614,83 @@
         "id": "850808", 
         "name": "Goddess's Miracle"
     }, 
+    "850827": {
+        "desc": "120% Atk, 100% Def, 120% max HP and 30% critical rate (Light), 10% damage reduction from Light, Dark types, 200% spark damage, fills BB gauge each turn & probable spark critical", 
+        "effects": [
+            {
+                "atk% buff": 120, 
+                "crit% buff": 30, 
+                "def% buff": 100, 
+                "elements buffed": [
+                    "light"
+                ], 
+                "hp% buff": 120, 
+                "passive id": "2"
+            }, 
+            {
+                "dmg% mitigation for elemental attacks": 10.0, 
+                "mitigate dark attacks": true, 
+                "mitigate light attacks": true, 
+                "passive id": "62"
+            }, 
+            {
+                "damage% for spark": 200, 
+                "passive id": "31"
+            }, 
+            {
+                "bc fill per turn": 8, 
+                "passive id": "9"
+            }, 
+            {
+                "passive id": "100", 
+                "spark crit chance%": 50, 
+                "spark crit dmg%": 100
+            }
+        ], 
+        "id": "850827", 
+        "name": "Come Out Fighting"
+    }, 
+    "850828": {
+        "desc": "150% Atk, 120% Def, 150% max HP and 30% critical rate (Light), 20% damage reduction from Light, Dark types, 250% spark damage, fills BB gauge each turn, probable spark critical & 135% ABP, 80% CBP gain", 
+        "effects": [
+            {
+                "atk% buff": 150, 
+                "crit% buff": 30, 
+                "def% buff": 120, 
+                "elements buffed": [
+                    "light"
+                ], 
+                "hp% buff": 150, 
+                "passive id": "2"
+            }, 
+            {
+                "dmg% mitigation for elemental attacks": 20.0, 
+                "mitigate dark attacks": true, 
+                "mitigate light attacks": true, 
+                "passive id": "62"
+            }, 
+            {
+                "damage% for spark": 250, 
+                "passive id": "31"
+            }, 
+            {
+                "bc fill per turn": 10, 
+                "passive id": "9"
+            }, 
+            {
+                "passive id": "100", 
+                "spark crit chance%": 50, 
+                "spark crit dmg%": 100
+            }, 
+            {
+                "abp gain%": 135, 
+                "cbp gain%": 80, 
+                "passive id": "112"
+            }
+        ], 
+        "id": "850828", 
+        "name": "One More Time!"
+    }, 
     "850858": {
         "desc": "150% all parameters, 400% BB Atk, damage taken fills BB gauge, 15% damage reduction & probable 1 KO resistance", 
         "effects": [
@@ -37406,31 +37490,38 @@
         "name": "Moon-Blinding Beauty"
     }, 
     "860418": {
-        "desc": "60% boost to max HP, 80% boost to Atk, Rec when HP is over 50%, reduces damage taken for 1 turn when HP is below 50% & damage taken may restore HP", 
+        "desc": "120% Atk, 150% max HP, 120% Atk, Rec when HP is above 50%, 20% damage reduction for 1 turn when damage taken is over 5k, damage taken may restore HP & damage taken fills BB gauge", 
         "effects": [
             {
-                "hp% buff": 60, 
+                "atk% buff": 120, 
+                "hp% buff": 150, 
                 "passive id": "1"
             }, 
             {
-                "atk% buff": 80, 
+                "atk% buff": 120, 
                 "hp above % buff requirement": 50, 
                 "passive id": "11", 
-                "rec% buff": 80
+                "rec% buff": 120
             }, 
             {
                 "buff": {
                     "buff turns (36)": "1", 
                     "dmg reduction% buff": 20
                 }, 
-                "hp below % buff activation": 50, 
-                "passive id": "55"
+                "damage threshold buff activation": 5000, 
+                "passive id": "78"
             }, 
             {
-                "dmg% to hp% when attacked chance%": 25, 
+                "dmg% to hp% when attacked chance%": 50, 
                 "dmg% to hp% when attacked high": 25, 
                 "dmg% to hp% when attacked low": 25, 
                 "passive id": "24"
+            }, 
+            {
+                "bc fill when attacked high": 9, 
+                "bc fill when attacked low": 5, 
+                "bc fill when attacked%": 100, 
+                "passive id": "25"
             }
         ], 
         "id": "860418", 
