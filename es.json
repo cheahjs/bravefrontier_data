@@ -27151,12 +27151,18 @@
         "target": "self"
     }, 
     "810048": {
-        "desc": "Raises Atk parameter limits to 130000, adds resistance against 1 KO attack when HP is below 25%, considerably raises normal hit amount & adds 23 combo powerful Fire attack against Fire, Earth types to SBB", 
+        "desc": "Raises Atk limit to 180k, raises normal hit amount, resistance against 1 KO attack when HP is below 35% & add to SBB (23 combo Fire attack on Fire, Earth foes)", 
         "effects": [
             {
                 "conditions": [], 
-                "increase atk cap": 130000, 
+                "increase atk cap": 180000, 
                 "passive id": "143", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "hit increase/hit": 2, 
+                "passive id": "37", 
                 "passive target": "self"
             }, 
             {
@@ -27166,14 +27172,8 @@
                     "buff turns (12)": "-1"
                 }, 
                 "conditions": [], 
-                "hp below % buff activation": 25, 
+                "hp below % buff activation": 35, 
                 "passive id": "55", 
-                "passive target": "self"
-            }, 
-            {
-                "conditions": [], 
-                "hit increase/hit": 2, 
-                "passive id": "37", 
                 "passive target": "self"
             }, 
             {
@@ -40956,11 +40956,11 @@
         "target": "self"
     }, 
     "850418": {
-        "desc": "100% boost to Atk when damage received exceeds certain amount, absorbs HP while attacking & probable resistance against 2 KO attacks", 
+        "desc": "Negates ignore Def for all allies, 30% all parameters, boosts Atk for 2 turns when damage taken is over 5k, probable 2 KO resistance & probable damage reduction to 1", 
         "effects": [
             {
                 "buff": {
-                    "atk% buff (1)": 100, 
+                    "atk% buff (1)": 150, 
                     "buff turns (1)": "2"
                 }, 
                 "conditions": [], 
@@ -40969,12 +40969,13 @@
                 "passive target": "self"
             }, 
             {
+                "atk% buff": 30, 
                 "conditions": [], 
-                "hp drain chance%": 100, 
-                "hp drain% high": 10, 
-                "hp drain% low": 6, 
-                "passive id": "17", 
-                "passive target": "self"
+                "def% buff": 30, 
+                "hp% buff": 30, 
+                "passive id": "1", 
+                "passive target": "self", 
+                "rec% buff": 30
             }, 
             {
                 "angel idol chance% condition": 0, 
@@ -40984,6 +40985,18 @@
                 "conditions": [], 
                 "passive id": "69", 
                 "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "passive id": "43", 
+                "passive target": "self", 
+                "take 1 dmg%": 15
+            }, 
+            {
+                "conditions": [], 
+                "ignore def resist chance%": 100, 
+                "passive id": "92", 
+                "passive target": "party"
             }
         ], 
         "id": "850418", 
@@ -45715,6 +45728,89 @@
         "id": "860818", 
         "name": "Prowling Hunter", 
         "rarity": "7", 
+        "target": "self"
+    }, 
+    "860827": {
+        "desc": "15% critical damage for all allies, damage taken may inflict 30% BB gauge fill rate reduction for 1 turn, probable damage reduction to 1 & negates all status ailments", 
+        "effects": [
+            {
+                "conditions": [], 
+                "crit multiplier%": 15.0, 
+                "passive id": "34", 
+                "passive target": "party"
+            }, 
+            {
+                "conditions": [], 
+                "passive target": "self", 
+                "unknown passive id": "114", 
+                "unknown passive params": "112,-30,-1,10,1"
+            }, 
+            {
+                "conditions": [], 
+                "passive id": "43", 
+                "passive target": "self", 
+                "take 1 dmg%": 10
+            }, 
+            {
+                "conditions": [], 
+                "curse resist%": 100, 
+                "injury resist%": 100, 
+                "paralysis resist%": 100, 
+                "passive id": "73", 
+                "passive target": "self", 
+                "poison resist%": 100, 
+                "sick resist%": 100, 
+                "weaken resist%": 100
+            }
+        ], 
+        "id": "860827", 
+        "name": "Blind Loyalty", 
+        "rarity": "7", 
+        "target": "self"
+    }, 
+    "860828": {
+        "desc": "50% Atk, 15% critical rate, 25% critical damage and damage taken may inflict 30% BB gauge fill rate reduction for 1 turns for all allies, negates all status ailments & probable damage reduction to 1", 
+        "effects": [
+            {
+                "atk% buff": 50, 
+                "conditions": [], 
+                "crit% buff": 15, 
+                "passive id": "1", 
+                "passive target": "party"
+            }, 
+            {
+                "conditions": [], 
+                "crit multiplier%": 25.0, 
+                "passive id": "34", 
+                "passive target": "party"
+            }, 
+            {
+                "conditions": [], 
+                "passive target": "party", 
+                "unknown passive id": "114", 
+                "unknown passive params": "112,-30,-1,10,1"
+            }, 
+            {
+                "conditions": [], 
+                "curse resist%": 100, 
+                "injury resist%": 100, 
+                "paralysis resist%": 100, 
+                "passive id": "73", 
+                "passive target": "self", 
+                "poison resist%": 100, 
+                "sick resist%": 100, 
+                "weaken resist%": 100
+            }, 
+            {
+                "conditions": [], 
+                "passive id": "43", 
+                "passive target": "self", 
+                "take 1 dmg%": 20
+            }
+        ], 
+        "id": "860828", 
+        "name": "Undying Faith", 
+        "rarity": "8", 
         "target": "self"
     }, 
     "860838": {

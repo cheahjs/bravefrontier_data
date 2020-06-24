@@ -25845,31 +25845,37 @@
         "name": "Midnight Sonata"
     }, 
     "801268": {
-        "desc": "60% boost to max HP, boosts Atk, Def, Rec relative to remaining HP, damage taken may restore HP & considerably reduces BB gauge required for BB", 
+        "desc": "160% max HP, 0-100% Atk, Def, Rec relative to remaining HP, probable 3 turns spark vulnerability infliction, 25% reduction to BB activation cost & damage taken may restore HP", 
         "effects": [
             {
-                "hp% buff": 60, 
+                "hp% buff": 160, 
                 "passive id": "1"
             }, 
             {
                 "atk% base buff": 0, 
-                "atk% extra buff based on hp": 50, 
+                "atk% extra buff based on hp": 100, 
                 "buff proportional to hp": "remaining", 
                 "def% base buff": 0, 
-                "def% extra buff based on hp": 50, 
+                "def% extra buff based on hp": 100, 
                 "passive id": "46", 
                 "rec% base buff": 0, 
-                "rec% extra buff based on hp": 50
+                "rec% extra buff based on hp": 100
             }, 
             {
-                "dmg% to hp% when attacked chance%": 30, 
-                "dmg% to hp% when attacked high": 25, 
+                "dmg% to hp% when attacked chance%": 50, 
+                "dmg% to hp% when attacked high": 30, 
                 "dmg% to hp% when attacked low": 25, 
                 "passive id": "24"
             }, 
             {
                 "passive id": "48", 
                 "reduced bb bc cost%": 25
+            }, 
+            {
+                "passive id": "75", 
+                "spark debuff chance%": 50, 
+                "spark debuff turns": 2, 
+                "spark debuff%": 100
             }
         ], 
         "id": "801268", 
@@ -27116,10 +27122,10 @@
         "name": "Unstoppable Flame Torrent"
     }, 
     "810048": {
-        "desc": "150% boost to Atk, 80% boost to Def, max HP of Fire types, 20% damage reduction from Fire, Earth types, considerably boosts ABP and CBP gain, probable considerable reduction of foe's BB gauge & probable normal attack on all foes", 
+        "desc": "200% Atk, 80% Def, 80% max HP (Fire), 20% damage reduction from Fire, Earth types, adds probable 50% BB gauge reduction to attack, normal attacks may hit all foes & 100% ABP, 50% CBP gain", 
         "effects": [
             {
-                "atk% buff": 150, 
+                "atk% buff": 200, 
                 "def% buff": 80, 
                 "elements buffed": [
                     "fire"
@@ -27134,18 +27140,18 @@
                 "passive id": "62"
             }, 
             {
-                "abp gain%": 65, 
-                "cbp gain%": 40, 
-                "passive id": "112"
-            }, 
-            {
                 "unknown passive id": "110", 
-                "unknown passive params": "0,0,50,50,30,0"
+                "unknown passive params": "0,0,50,50,35,0"
             }, 
             {
                 "aoe atk inc%": -50, 
-                "chance to aoe": 30, 
+                "chance to aoe": 40, 
                 "passive id": "96"
+            }, 
+            {
+                "abp gain%": 100, 
+                "cbp gain%": 50, 
+                "passive id": "112"
             }
         ], 
         "id": "810048", 
@@ -38837,6 +38843,87 @@
         ], 
         "id": "860818", 
         "name": "Manah Ascendant"
+    }, 
+    "860827": {
+        "desc": "120% Atk, 100% Def, 120% max HP and 30% critical rate (Dark), 10% damage reduction from Light, Dark types, 15% DoT reduction, spark damage restores HP & probable spark critical", 
+        "effects": [
+            {
+                "atk% buff": 120, 
+                "crit% buff": 30, 
+                "def% buff": 100, 
+                "elements buffed": [
+                    "dark"
+                ], 
+                "hp% buff": 120, 
+                "passive id": "2"
+            }, 
+            {
+                "dmg% mitigation for elemental attacks": 10.0, 
+                "mitigate dark attacks": true, 
+                "mitigate light attacks": true, 
+                "passive id": "62"
+            }, 
+            {
+                "unknown passive id": "127", 
+                "unknown passive params": "100,15"
+            }, 
+            {
+                "heal on spark high": 400, 
+                "heal on spark low": 300, 
+                "heal on spark%": 100, 
+                "passive id": "101"
+            }, 
+            {
+                "passive id": "100", 
+                "spark crit chance%": 50, 
+                "spark crit dmg%": 100
+            }
+        ], 
+        "id": "860827", 
+        "name": "Reclusive Shadow"
+    }, 
+    "860828": {
+        "desc": "150% Atk, 120% Def, 150% max HP and 30% critical rate (Dark), 20% damage reduction from Light, Dark types, spark damage restores HP, 15% DoT reduction, probable spark critical & 135% ABP, 80% CBP gain", 
+        "effects": [
+            {
+                "atk% buff": 150, 
+                "crit% buff": 30, 
+                "def% buff": 120, 
+                "elements buffed": [
+                    "dark"
+                ], 
+                "hp% buff": 150, 
+                "passive id": "2"
+            }, 
+            {
+                "dmg% mitigation for elemental attacks": 20.0, 
+                "mitigate dark attacks": true, 
+                "mitigate light attacks": true, 
+                "passive id": "62"
+            }, 
+            {
+                "heal on spark high": 600, 
+                "heal on spark low": 500, 
+                "heal on spark%": 100, 
+                "passive id": "101"
+            }, 
+            {
+                "unknown passive id": "127", 
+                "unknown passive params": "100,15"
+            }, 
+            {
+                "passive id": "100", 
+                "spark crit chance%": 50, 
+                "spark crit dmg%": 100
+            }, 
+            {
+                "abp gain%": 135, 
+                "cbp gain%": 80, 
+                "passive id": "112"
+            }
+        ], 
+        "id": "860828", 
+        "name": "Grim Walker"
     }, 
     "860838": {
         "desc": "120% Atk, max HP, 100% Def, Rec, 100% ABP, 50% CBP gain, raises normal hit amount, normal attacks may hit all foes & adds probable 1 turn Atk reduction infliction to attack for 2 turns when damage dealt is over 1", 
