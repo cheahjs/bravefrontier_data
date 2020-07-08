@@ -29959,6 +29959,59 @@
         "rarity": "7", 
         "target": "self"
     }, 
+    "810908": {
+        "desc": "20% all parameters for all allies, 0-100% Atk, Def, Rec relative to remaining HP, negates all status ailments and Atk Def, Rec reduction & probable 2 KO resistance", 
+        "effects": [
+            {
+                "atk% buff": 20, 
+                "conditions": [], 
+                "def% buff": 20, 
+                "hp% buff": 20, 
+                "passive id": "1", 
+                "passive target": "party", 
+                "rec% buff": 20
+            }, 
+            {
+                "atk% base buff": 0, 
+                "atk% extra buff based on hp": 100, 
+                "buff proportional to hp": "remaining", 
+                "conditions": [], 
+                "def% base buff": 0, 
+                "def% extra buff based on hp": 100, 
+                "passive id": "46", 
+                "passive target": "self", 
+                "rec% base buff": 0, 
+                "rec% extra buff based on hp": 100
+            }, 
+            {
+                "atk down resist%": 100, 
+                "conditions": [], 
+                "curse resist%": 100, 
+                "def down resist%": 100, 
+                "injury resist%": 100, 
+                "paralysis resist%": 100, 
+                "passive id": "73", 
+                "passive target": "self", 
+                "poison resist%": 100, 
+                "rec down resist%": 100, 
+                "sick resist%": 100, 
+                "weaken resist%": 100
+            }, 
+            {
+                "angel idol chance% condition": 0, 
+                "angel idol recover chance% high": 40, 
+                "angel idol recover chance% low": 40, 
+                "angel idol recover counts": 2, 
+                "conditions": [], 
+                "passive id": "69", 
+                "passive target": "self"
+            }
+        ], 
+        "id": "810908", 
+        "name": "Return of the King", 
+        "rarity": "7", 
+        "target": "self"
+    }, 
     "811017": {
         "desc": "Boosts BB Atk", 
         "effects": [
@@ -32526,7 +32579,7 @@
         "target": "self"
     }, 
     "820688": {
-        "desc": "Considerably reduces BB gauge required for BB when Cunei of Athum or Word of Athum is equipped, slightly boosts Water elemental damage and 35% boost to Atk, max HP for all allies & probable damage reduction to 1", 
+        "desc": "30% reduction to BB activation cost when Cunei of Athum or Word of Athum is equipped, 35% Atk, max HP and 20% Water elemental damage for all allies& probable damage reduction to 1", 
         "effects": [
             {
                 "conditions": [
@@ -46373,6 +46426,76 @@
         "id": "8850006", 
         "name": "Way of the Free", 
         "rarity": "6", 
+        "target": "self"
+    }, 
+    "8850008": {
+        "desc": "60% max HP, 25% critical damage for all allies, add to BB/SBB fill BB gauge of 1 random ally to full effect, negates spark damage, 10% reduction to BB activation cost & probable 1 KO resistance if Miriam, Evie and Gortius are in the squad", 
+        "effects": [
+            {
+                "conditions": [], 
+                "hp% buff": 60, 
+                "passive id": "1", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "crit multiplier%": 25.0, 
+                "passive id": "34", 
+                "passive target": "party"
+            }, 
+            {
+                "conditions": [], 
+                "passive id": "66", 
+                "passive target": "self", 
+                "trigger on bb": true, 
+                "trigger on sbb": true, 
+                "triggered effect": [
+                    {
+                        "bb bc fill%": 100, 
+                        "effect delay time(ms)/frame": "0.0/0", 
+                        "proc id": "4", 
+                        "target area": "single", 
+                        "target type": "party"
+                    }
+                ]
+            }, 
+            {
+                "base spark dmg% resist": 100, 
+                "buff spark dmg% resist": 100, 
+                "conditions": [], 
+                "passive id": "77", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "passive id": "48", 
+                "passive target": "self", 
+                "reduced bb bc cost%": 10
+            }, 
+            {
+                "angel idol chance% condition": 1, 
+                "angel idol recover chance% high": 50, 
+                "angel idol recover chance% low": 50, 
+                "angel idol recover counts": 1, 
+                "angel idol recover hp%": 100, 
+                "conditions": [
+                    {
+                        "unit required": "840798"
+                    }, 
+                    {
+                        "unit required": "860798"
+                    }, 
+                    {
+                        "unit required": "810908"
+                    }
+                ], 
+                "passive id": "69", 
+                "passive target": "self"
+            }
+        ], 
+        "id": "8850008", 
+        "name": "Sundered Legacy", 
+        "rarity": "8", 
         "target": "self"
     }, 
     "8900": {
