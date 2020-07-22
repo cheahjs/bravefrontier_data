@@ -26027,6 +26027,110 @@
         "rarity": "7", 
         "target": "self"
     }, 
+    "8000515": {
+        "desc": "15% all parameters (Fire) for all allies, 120% Def, 50% max HP (Fire), 120% spark damage, 20% BB/SBB activation rates & 35% damage reduction from Fire, Earth types for first 2 turns", 
+        "effects": [
+            {
+                "atk% buff": 15, 
+                "conditions": [], 
+                "def% buff": 15, 
+                "elements buffed": [
+                    "fire"
+                ], 
+                "hp% buff": 15, 
+                "passive id": "2", 
+                "passive target": "party", 
+                "rec% buff": 15
+            }, 
+            {
+                "conditions": [], 
+                "def% buff": 120, 
+                "elements buffed": [
+                    "fire"
+                ], 
+                "hp% buff": 50, 
+                "passive id": "2", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "damage% for spark": 120, 
+                "passive id": "31", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "increase skill activation in arena%": 20, 
+                "passive id": "111", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "dmg% mitigation for elemental attacks": 35, 
+                "dmg% mitigation for elemental attacks buff for first x turns": 2, 
+                "mitigate earth attacks": true, 
+                "mitigate fire attacks": true, 
+                "passive id": "63", 
+                "passive target": "self"
+            }
+        ], 
+        "id": "8000515", 
+        "name": "Long Wu's Pride", 
+        "rarity": "8", 
+        "target": "self"
+    }, 
+    "8000516": {
+        "desc": "10% all parameters (Fire) for all allies, 100% Def, 40% max HP (Fire), 100% spark damage, 15% BB/SBB activation rates & 35% damage reduction from Fire, Earth types for first 2 turns", 
+        "effects": [
+            {
+                "atk% buff": 10, 
+                "conditions": [], 
+                "def% buff": 10, 
+                "elements buffed": [
+                    "fire"
+                ], 
+                "hp% buff": 10, 
+                "passive id": "2", 
+                "passive target": "party", 
+                "rec% buff": 10
+            }, 
+            {
+                "conditions": [], 
+                "def% buff": 100, 
+                "elements buffed": [
+                    "fire"
+                ], 
+                "hp% buff": 40, 
+                "passive id": "2", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "damage% for spark": 100, 
+                "passive id": "31", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "increase skill activation in arena%": 15, 
+                "passive id": "111", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "dmg% mitigation for elemental attacks": 35, 
+                "dmg% mitigation for elemental attacks buff for first x turns": 2, 
+                "mitigate earth attacks": true, 
+                "mitigate fire attacks": true, 
+                "passive id": "63", 
+                "passive target": "self"
+            }
+        ], 
+        "id": "8000516", 
+        "name": "Long Wu's Favor", 
+        "rarity": "7", 
+        "target": "self"
+    }, 
     "8000601": {
         "desc": "10% boost to Atk for all Dark type allies, greatly boosts Atk relative to remaining HP, greatly boosts Dark elemental damage, adds additional powerful attack at turn's end for 3 turns effect to SBB & raises Atk parameter limits to 170000", 
         "effects": [
@@ -28761,7 +28865,7 @@
         "target": "self"
     }, 
     "810558": {
-        "desc": "25% boost to all parameters of Fire types, greatly boosts BB/SBB activation rates for all allies, damage taken may slightly reduce foe's BB gauge fill rate for 1 turn & adds powerful Fire attack on single foe effect to BB/SBB", 
+        "desc": "25% all parameters (Fire) and 10% BB/SBB activation rates for all allies, 120% own spark damage, damage taken may inflict 1 turn 20% BB gauge fill rate reduction & add to BB (17 combo Fire attack on single foe), SBB (24 combo Fire attack on single foe)", 
         "effects": [
             {
                 "atk% buff": 25, 
@@ -28780,6 +28884,12 @@
                 "increase skill activation in arena%": 10, 
                 "passive id": "111", 
                 "passive target": "party"
+            }, 
+            {
+                "conditions": [], 
+                "damage% for spark": 120, 
+                "passive id": "31", 
+                "passive target": "self"
             }, 
             {
                 "conditions": [], 
@@ -33401,6 +33511,66 @@
         "id": "820900", 
         "name": "Algor Support", 
         "rarity": "7", 
+        "target": "self"
+    }, 
+    "820938": {
+        "desc": "25% critical damage for all allies when Icy Steel René is in the same squad or when Critical sphere is equipped, 25% all parameters (Water) and damage taken fills BB gauge for all allies, 100% critical and elemental damage reduction & 100% critical damage", 
+        "effects": [
+            {
+                "conditions": [
+                    {
+                        "unit required": "820940"
+                    }, 
+                    {
+                        "sphere category required": "Critical", 
+                        "sphere category required (raw)": "2"
+                    }
+                ], 
+                "crit multiplier%": 25.0, 
+                "passive id": "34", 
+                "passive target": "party"
+            }, 
+            {
+                "atk% buff": 25, 
+                "conditions": [], 
+                "def% buff": 25, 
+                "elements buffed": [
+                    "water"
+                ], 
+                "hp% buff": 25, 
+                "passive id": "2", 
+                "passive target": "party", 
+                "rec% buff": 25
+            }, 
+            {
+                "bc fill when attacked high": 2, 
+                "bc fill when attacked low": 1, 
+                "bc fill when attacked%": 100, 
+                "conditions": [], 
+                "passive id": "25", 
+                "passive target": "party"
+            }, 
+            {
+                "conditions": [], 
+                "crit chance base resist%": 100, 
+                "crit chance buffed resist%": 100, 
+                "crit dmg base damage resist%": 100, 
+                "crit dmg buffed damage resist%": 100, 
+                "passive id": "53", 
+                "passive target": "self", 
+                "strong base element damage resist%": 100, 
+                "strong buffed element damage resist%": 100
+            }, 
+            {
+                "conditions": [], 
+                "crit multiplier%": 100.0, 
+                "passive id": "34", 
+                "passive target": "self"
+            }
+        ], 
+        "id": "820938", 
+        "name": "Assertive Older Sister", 
+        "rarity": "8", 
         "target": "self"
     }, 
     "8300": {

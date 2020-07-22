@@ -27998,23 +27998,23 @@
         "name": "Fiery Resistance"
     }, 
     "810558": {
-        "desc": "80% boost to Atk, max HP, 120% boost to Def, Rec of Fire types, considerably restores HP each turn, hugely boosts BB gauge when damage dealt has exceeded certain amount & damage taken hugely boosts BB gauge", 
+        "desc": "100% Atk, 140% Def, 140% Rec, 100% max HP (Fire), restores HP each turn, fills BB gauge when damage dealt is over 5k, damage taken fills BB gauge & negates all status ailments and Atk, Def, Rec reduction", 
         "effects": [
             {
-                "atk% buff": 80, 
-                "def% buff": 120, 
+                "atk% buff": 100, 
+                "def% buff": 140, 
                 "elements buffed": [
                     "fire"
                 ], 
-                "hp% buff": 80, 
+                "hp% buff": 100, 
                 "passive id": "2", 
-                "rec% buff": 120
+                "rec% buff": 140
             }, 
             {
                 "passive id": "33", 
                 "rec% added (turn heal)": 10.0, 
-                "turn heal high": 1500, 
-                "turn heal low": 1200
+                "turn heal high": 2000, 
+                "turn heal low": 1000
             }, 
             {
                 "damage dealt threshold activation": 5000, 
@@ -28022,10 +28022,22 @@
                 "passive id": "81"
             }, 
             {
-                "bc fill when attacked high": 9, 
-                "bc fill when attacked low": 5, 
+                "bc fill when attacked high": 10, 
+                "bc fill when attacked low": 6, 
                 "bc fill when attacked%": 100, 
                 "passive id": "25"
+            }, 
+            {
+                "atk down resist%": 100, 
+                "curse resist%": 100, 
+                "def down resist%": 100, 
+                "injury resist%": 100, 
+                "paralysis resist%": 100, 
+                "passive id": "73", 
+                "poison resist%": 100, 
+                "rec down resist%": 100, 
+                "sick resist%": 100, 
+                "weaken resist%": 100
             }
         ], 
         "id": "810558", 
@@ -31057,6 +31069,42 @@
         ], 
         "id": "820900", 
         "name": "Algor Aura"
+    }, 
+    "820938": {
+        "desc": "140% Atk, Def, max HP and 30% critical rate (Water), 250% critical damage, probable spark critical, critical damage fills BB gauge & 30% OD gauge fill rate", 
+        "effects": [
+            {
+                "atk% buff": 140, 
+                "crit% buff": 30, 
+                "def% buff": 140, 
+                "elements buffed": [
+                    "water"
+                ], 
+                "hp% buff": 140, 
+                "passive id": "2"
+            }, 
+            {
+                "crit multiplier%": 250.0, 
+                "passive id": "34"
+            }, 
+            {
+                "passive id": "100", 
+                "spark crit chance%": 50, 
+                "spark crit dmg%": 100
+            }, 
+            {
+                "bc fill on crit max": 12, 
+                "bc fill on crit min": 10, 
+                "bc fill on crit%": 100.0, 
+                "passive id": "65"
+            }, 
+            {
+                "od fill rate%": 30, 
+                "passive id": "70"
+            }
+        ], 
+        "id": "820938", 
+        "name": "Medusa Strike"
     }, 
     "8300": {
         "desc": "Massive boost to damage dealt to weaker elements by Light and Water types", 
