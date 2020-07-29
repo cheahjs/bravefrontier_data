@@ -30122,6 +30122,47 @@
         "rarity": "7", 
         "target": "self"
     }, 
+    "810918": {
+        "desc": "20% spark damage when HP is above 50% for all allies, 100% critical damage, negates Atk, Def, Rec reduction & 1 KO resistance when HP is below 35%", 
+        "effects": [
+            {
+                "conditions": [], 
+                "damage% for spark": 20, 
+                "hp above % buff requirement": 50, 
+                "passive id": "104", 
+                "passive target": "party"
+            }, 
+            {
+                "conditions": [], 
+                "crit multiplier%": 100.0, 
+                "passive id": "34", 
+                "passive target": "self"
+            }, 
+            {
+                "atk down resist%": 100, 
+                "conditions": [], 
+                "def down resist%": 100, 
+                "passive id": "73", 
+                "passive target": "self", 
+                "rec down resist%": 100
+            }, 
+            {
+                "buff": {
+                    "angel idol buff (12)": true, 
+                    "angel idol recover hp%": 100, 
+                    "buff turns (12)": "-1"
+                }, 
+                "conditions": [], 
+                "hp below % buff activation": 35, 
+                "passive id": "55", 
+                "passive target": "self"
+            }
+        ], 
+        "id": "810918", 
+        "name": "Legacy of Greatness", 
+        "rarity": "8", 
+        "target": "self"
+    }, 
     "811017": {
         "desc": "Boosts BB Atk", 
         "effects": [
@@ -31568,11 +31609,11 @@
         "target": "self"
     }, 
     "820418": {
-        "desc": "Reduces damage taken for 2 turns when HP is below 50% & greatly boosts own Atk, Def relative to how low remaining HP is", 
+        "desc": "Probable 50% damage counter for all allies, 40% all parameters, 0-100% Atk, Def, Rec relative to HP lost & 25% damage reduction for 2 turns when HP is below 50%", 
         "effects": [
             {
                 "buff": {
-                    "buff turns (36)": "1", 
+                    "buff turns (36)": "2", 
                     "dmg reduction% buff": 25
                 }, 
                 "conditions": [], 
@@ -31588,7 +31629,26 @@
                 "def% base buff": 0, 
                 "def% extra buff based on hp": 100, 
                 "passive id": "46", 
-                "passive target": "self"
+                "passive target": "self", 
+                "rec% base buff": 0, 
+                "rec% extra buff based on hp": 100
+            }, 
+            {
+                "atk% buff": 40, 
+                "conditions": [], 
+                "def% buff": 40, 
+                "hp% buff": 40, 
+                "passive id": "1", 
+                "passive target": "self", 
+                "rec% buff": 40
+            }, 
+            {
+                "conditions": [], 
+                "dmg% reflect chance%": 70, 
+                "dmg% reflect high": 50, 
+                "dmg% reflect low": 50, 
+                "passive id": "26", 
+                "passive target": "party"
             }
         ], 
         "id": "820418", 
@@ -33573,6 +33633,83 @@
         "rarity": "8", 
         "target": "self"
     }, 
+    "820948": {
+        "desc": "Fills BB gauge each turn for all allies when Serpent Legacy Hilda is in the same squad or when BB gauge sphere is equipped, 20% Atk, Def each turn (3 times) for all allies, 120% spark damage, negates all status ailments and Atk, Def, Rec reduction & add to BB (Removes all status ailments and Atk, Def, Rec reduction)", 
+        "effects": [
+            {
+                "bc fill per turn": 5, 
+                "conditions": [
+                    {
+                        "unit required": "820930"
+                    }, 
+                    {
+                        "sphere category required": "BB Gauge", 
+                        "sphere category required (raw)": "6"
+                    }
+                ], 
+                "passive id": "9", 
+                "passive target": "party"
+            }, 
+            {
+                "atk% max buff": 60, 
+                "conditions": [], 
+                "def% max buff": 60, 
+                "increase from min to max": 1, 
+                "passive id": "105", 
+                "passive target": "party", 
+                "turn count": 3
+            }, 
+            {
+                "conditions": [], 
+                "damage% for spark": 120, 
+                "passive id": "31", 
+                "passive target": "self"
+            }, 
+            {
+                "atk down resist%": 100, 
+                "conditions": [], 
+                "curse resist%": 100, 
+                "def down resist%": 100, 
+                "injury resist%": 100, 
+                "paralysis resist%": 100, 
+                "passive id": "73", 
+                "passive target": "self", 
+                "poison resist%": 100, 
+                "rec down resist%": 100, 
+                "sick resist%": 100, 
+                "weaken resist%": 100
+            }, 
+            {
+                "conditions": [], 
+                "passive id": "66", 
+                "passive target": "self", 
+                "trigger on bb": true, 
+                "triggered effect": [
+                    {
+                        "ailments cured": [
+                            "poison", 
+                            "weaken", 
+                            "sick", 
+                            "injury", 
+                            "curse", 
+                            "paralysis", 
+                            "atk down", 
+                            "def down", 
+                            "rec down"
+                        ], 
+                        "effect delay time(ms)/frame": "0.0/0", 
+                        "proc id": "38", 
+                        "target area": "aoe", 
+                        "target type": "party"
+                    }
+                ]
+            }
+        ], 
+        "id": "820948", 
+        "name": "Innocent Younger Sister", 
+        "rarity": "8", 
+        "target": "self"
+    }, 
     "8300": {
         "desc": "Boosts BB Atk when damage taken has exceeded certain amount for 2 turns", 
         "effects": [
@@ -34656,21 +34793,24 @@
         "target": "self"
     }, 
     "830418": {
-        "desc": "Negates all status ailments & hugely boosts damage against status afflicted foes", 
+        "desc": "10% DoT reduction for all allies, 40% all parameters, 100% spark damage, 150% damage against status afflicted foes & negates all status ailments and Atk, Def, Rec reduction", 
         "effects": [
             {
+                "atk down resist%": 100, 
                 "conditions": [], 
                 "curse resist%": 100, 
+                "def down resist%": 100, 
                 "injury resist%": 100, 
                 "paralysis resist%": 100, 
                 "passive id": "73", 
                 "passive target": "self", 
                 "poison resist%": 100, 
+                "rec down resist%": 100, 
                 "sick resist%": 100, 
                 "weaken resist%": 100
             }, 
             {
-                "atk% buff when enemy has ailment": 100, 
+                "atk% buff when enemy has ailment": 150, 
                 "atk% buff when enemy has curse": true, 
                 "atk% buff when enemy has injury": true, 
                 "atk% buff when enemy has paralysis": true, 
@@ -34679,6 +34819,27 @@
                 "atk% buff when enemy has weaken": true, 
                 "conditions": [], 
                 "passive id": "74", 
+                "passive target": "self"
+            }, 
+            {
+                "atk% buff": 40, 
+                "conditions": [], 
+                "def% buff": 40, 
+                "hp% buff": 40, 
+                "passive id": "1", 
+                "passive target": "self", 
+                "rec% buff": 40
+            }, 
+            {
+                "conditions": [], 
+                "passive target": "party", 
+                "unknown passive id": "127", 
+                "unknown passive params": "100,10"
+            }, 
+            {
+                "conditions": [], 
+                "damage% for spark": 100, 
+                "passive id": "31", 
                 "passive target": "self"
             }
         ], 

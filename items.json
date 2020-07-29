@@ -3391,6 +3391,28 @@
         "thumbnail": "item_thum_20000.png", 
         "type": "consumable"
     }, 
+    "20000803": {
+        "desc": "", 
+        "effect": {
+            "effect": [
+                {
+                    "fixed damage": 1000000000, 
+                    "proc id": "28"
+                }
+            ], 
+            "target_area": "single", 
+            "target_type": "enemy"
+        }, 
+        "id": 20000803, 
+        "max equipped": 99, 
+        "max_stack": 99, 
+        "name": "1 Billion sword", 
+        "raid": false, 
+        "rarity": 3, 
+        "sell_price": 200, 
+        "thumbnail": "item_thum_880020.png", 
+        "type": "consumable"
+    }, 
     "20001": {
         "desc": "Replenishes one ally's HP.", 
         "effect": {
@@ -45884,6 +45906,67 @@
         "thumbnail": "sphere_thum_819322.png", 
         "type": "sphere"
     }, 
+    "819323": {
+        "desc": "60% all parameters (Water), 175% spark damage (Water), add to BB/SBB (probability of purging spark damage reduction from all foes (PvP modes only)), raises Atk limit to 180k & 150% Atk when HP is below 50%", 
+        "effect": [
+            {
+                "atk% buff": 60, 
+                "def% buff": 60, 
+                "elements buffed": [
+                    "water"
+                ], 
+                "hp% buff": 60, 
+                "passive id": "2", 
+                "rec% buff": 60
+            }, 
+            {
+                "unknown passive id": "11004", 
+                "unknown passive params": "2,175,0,0,0,0,0"
+            }, 
+            {
+                "passive id": "66", 
+                "trigger on bb": true, 
+                "trigger on sbb": true, 
+                "triggered effect": [
+                    {
+                        "effect delay time(ms)/frame": "0.0/0", 
+                        "target area": "aoe", 
+                        "target type": "100", 
+                        "unknown proc id": "10019", 
+                        "unknown proc param": "144,0,0,0,0,0,0,0,0,35"
+                    }
+                ]
+            }, 
+            {
+                "increase atk cap": 180000, 
+                "passive id": "143"
+            }, 
+            {
+                "atk% buff": 150, 
+                "hp below % buff requirement": 50, 
+                "passive id": "11"
+            }
+        ], 
+        "id": 819323, 
+        "max_stack": 1, 
+        "name": "Sisters' Fury", 
+        "raid": false, 
+        "rarity": 7, 
+        "recipe": {
+            "karma": "300000", 
+            "materials": [
+                {
+                    "count": 6, 
+                    "id": 890065
+                }
+            ]
+        }, 
+        "sell_price": 1000000, 
+        "sphere type": 11, 
+        "sphere type text": "Spark", 
+        "thumbnail": "ls_sphere_thum_4_2.png", 
+        "type": "sphere"
+    }, 
     "819901": {
         "desc": "Boosts Max HP and Def by 5% & boosts Atk for Fire types by 20%", 
         "effect": [
@@ -52286,6 +52369,17 @@
         "rarity": 3, 
         "sell_price": 1000, 
         "thumbnail": "item_thum_91100.png", 
+        "type": "material"
+    }, 
+    "890065": {
+        "desc": "A sharp, crystallized mineral resembling a beastly fang. Frigid to the touch.", 
+        "id": 890065, 
+        "max_stack": 99, 
+        "name": "Frigid Fang", 
+        "raid": false, 
+        "rarity": 3, 
+        "sell_price": 1000, 
+        "thumbnail": "item_thum_601.png", 
         "type": "material"
     }, 
     "899998": {

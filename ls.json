@@ -26024,25 +26024,23 @@
         "name": "Wrath of the Isengrim"
     }, 
     "801273": {
-        "desc": "40% boost to all parameters, enormously boosts BB Atk when HP is above 50%, hugely boosts damage against status afflicted foes & negates all status ailments", 
+        "desc": "120% all parameters, 350% BB Atk, 175% damage against status afflicted foes, negates all status ailments and Atk, Def, Rec reduction & 30% OD gauge fill rate", 
         "effects": [
             {
-                "atk% buff": 40, 
-                "def% buff": 40, 
-                "hp% buff": 40, 
+                "atk% buff": 120, 
+                "def% buff": 120, 
+                "hp% buff": 120, 
                 "passive id": "1", 
-                "rec% buff": 40
+                "rec% buff": 120
             }, 
             {
-                "bb atk% add": 300, 
-                "hp threshold": 50, 
-                "passive id": "103", 
-                "sbb atk% add": 300, 
-                "triggered when hp": "higher", 
-                "ubb atk% add": 300
+                "bb atk% buff": 350, 
+                "passive id": "64", 
+                "sbb atk% buff": 350, 
+                "ubb atk% buff": 350
             }, 
             {
-                "atk% buff when enemy has ailment": 100, 
+                "atk% buff when enemy has ailment": 175, 
                 "atk% buff when enemy has curse": true, 
                 "atk% buff when enemy has injury": true, 
                 "atk% buff when enemy has paralysis": true, 
@@ -26052,13 +26050,20 @@
                 "passive id": "74"
             }, 
             {
+                "atk down resist%": 100, 
                 "curse resist%": 100, 
+                "def down resist%": 100, 
                 "injury resist%": 100, 
                 "paralysis resist%": 100, 
                 "passive id": "73", 
                 "poison resist%": 100, 
+                "rec down resist%": 100, 
                 "sick resist%": 100, 
                 "weaken resist%": 100
+            }, 
+            {
+                "od fill rate%": 30, 
+                "passive id": "70"
             }
         ], 
         "id": "801273", 
@@ -28970,6 +28975,45 @@
         "id": "810908", 
         "name": "Pride of House Valen"
     }, 
+    "810918": {
+        "desc": "100% all parameters, 15% damage reduction from Fire, Earth types, 150% spark damage for 2 turns when sparks dealt is over 15 times, spark damage restores HP & 100% ABP, 50% CBP gain", 
+        "effects": [
+            {
+                "atk% buff": 100, 
+                "def% buff": 100, 
+                "hp% buff": 100, 
+                "passive id": "1", 
+                "rec% buff": 100
+            }, 
+            {
+                "dmg% mitigation for elemental attacks": 15.0, 
+                "mitigate earth attacks": true, 
+                "mitigate fire attacks": true, 
+                "passive id": "62"
+            }, 
+            {
+                "buff": {
+                    "buff turns (40)": "2", 
+                    "spark dmg% buff": 150
+                }, 
+                "passive id": "86", 
+                "spark count buff activation": 15
+            }, 
+            {
+                "heal on spark high": 600, 
+                "heal on spark low": 500, 
+                "heal on spark%": 100, 
+                "passive id": "101"
+            }, 
+            {
+                "abp gain%": 100, 
+                "cbp gain%": 50, 
+                "passive id": "112"
+            }
+        ], 
+        "id": "810918", 
+        "name": "Reviving a Nation"
+    }, 
     "811118": {
         "desc": "60% boost to Atk, max HP, 100% boost to Spark damage, boosts Spark damage for 2 turns when Sparks have exceeded certain amount & hugely boosts Fire and Water elemental damage ", 
         "effects": [
@@ -29635,34 +29679,40 @@
         "name": "Path Between Worlds"
     }, 
     "820418": {
-        "desc": "50% boost to Def, max HP, boosts Atk, Def relative to remaining HP, damage taken may restore HP & enormously boosts BB Atk when HP is over 50%", 
+        "desc": "120% Def, 150% max HP, 0-100% Atk, Def, Rec relative to remaining HP, 350% BB Atk, damage taken may restore HP & 15% damage reduction from Water, Thunder types", 
         "effects": [
             {
-                "def% buff": 50, 
-                "hp% buff": 50, 
+                "def% buff": 120, 
+                "hp% buff": 150, 
                 "passive id": "1"
             }, 
             {
                 "atk% base buff": 0, 
-                "atk% extra buff based on hp": 50, 
+                "atk% extra buff based on hp": 100, 
                 "buff proportional to hp": "remaining", 
                 "def% base buff": 0, 
-                "def% extra buff based on hp": 50, 
-                "passive id": "46"
+                "def% extra buff based on hp": 100, 
+                "passive id": "46", 
+                "rec% base buff": 0, 
+                "rec% extra buff based on hp": 100
             }, 
             {
-                "dmg% to hp% when attacked chance%": 30, 
-                "dmg% to hp% when attacked high": 25, 
+                "dmg% to hp% when attacked chance%": 50, 
+                "dmg% to hp% when attacked high": 30, 
                 "dmg% to hp% when attacked low": 25, 
                 "passive id": "24"
             }, 
             {
-                "bb atk% add": 300, 
-                "hp threshold": 50, 
-                "passive id": "103", 
-                "sbb atk% add": 300, 
-                "triggered when hp": "higher", 
-                "ubb atk% add": 300
+                "bb atk% buff": 350, 
+                "passive id": "64", 
+                "sbb atk% buff": 350, 
+                "ubb atk% buff": 350
+            }, 
+            {
+                "dmg% mitigation for elemental attacks": 15.0, 
+                "mitigate thunder attacks": true, 
+                "mitigate water attacks": true, 
+                "passive id": "62"
             }
         ], 
         "id": "820418", 
@@ -31105,6 +31155,44 @@
         ], 
         "id": "820938", 
         "name": "Medusa Strike"
+    }, 
+    "820948": {
+        "desc": "120% Def, 150% Rec, max HP and 30% critical rate (Water), 15% DoT reduction, spark damage restores HP, probable 1 KO resistance & 250% spark damage", 
+        "effects": [
+            {
+                "crit% buff": 30, 
+                "def% buff": 120, 
+                "elements buffed": [
+                    "water"
+                ], 
+                "hp% buff": 150, 
+                "passive id": "2", 
+                "rec% buff": 150
+            }, 
+            {
+                "unknown passive id": "127", 
+                "unknown passive params": "100,15"
+            }, 
+            {
+                "heal on spark high": 600, 
+                "heal on spark low": 500, 
+                "heal on spark%": 100, 
+                "passive id": "101"
+            }, 
+            {
+                "angel idol chance% condition": 0, 
+                "angel idol recover chance% high": 25, 
+                "angel idol recover chance% low": 25, 
+                "angel idol recover counts": 1, 
+                "passive id": "69"
+            }, 
+            {
+                "damage% for spark": 250, 
+                "passive id": "31"
+            }
+        ], 
+        "id": "820948", 
+        "name": "Enchanted Ice"
     }, 
     "8300": {
         "desc": "Massive boost to damage dealt to weaker elements by Light and Water types", 
