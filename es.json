@@ -30163,6 +30163,46 @@
         "rarity": "8", 
         "target": "self"
     }, 
+    "810928": {
+        "desc": "20% critical damage for all allies, 0-100% Atk, Def relative to remaining HP, 25% reduction to BB activation cost & probable 2 KO resistance", 
+        "effects": [
+            {
+                "conditions": [], 
+                "crit multiplier%": 20.0, 
+                "passive id": "34", 
+                "passive target": "party"
+            }, 
+            {
+                "atk% base buff": 0, 
+                "atk% extra buff based on hp": 100, 
+                "buff proportional to hp": "remaining", 
+                "conditions": [], 
+                "def% base buff": 0, 
+                "def% extra buff based on hp": 100, 
+                "passive id": "46", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "passive id": "48", 
+                "passive target": "self", 
+                "reduced bb bc cost%": 25
+            }, 
+            {
+                "angel idol chance% condition": 0, 
+                "angel idol recover chance% high": 40, 
+                "angel idol recover chance% low": 40, 
+                "angel idol recover counts": 2, 
+                "conditions": [], 
+                "passive id": "69", 
+                "passive target": "self"
+            }
+        ], 
+        "id": "810928", 
+        "name": "Wolfbann", 
+        "rarity": "7", 
+        "target": "self"
+    }, 
     "811017": {
         "desc": "Boosts BB Atk", 
         "effects": [
@@ -36709,6 +36749,46 @@
         "rarity": "7", 
         "target": "self"
     }, 
+    "830918": {
+        "desc": "0-100% Atk relative to remaining HP, probable damage reduction to 1, angel idol when HP is below 35% & raises normal hit amount", 
+        "effects": [
+            {
+                "atk% base buff": 0, 
+                "atk% extra buff based on hp": 100, 
+                "buff proportional to hp": "remaining", 
+                "conditions": [], 
+                "passive id": "46", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "passive id": "43", 
+                "passive target": "self", 
+                "take 1 dmg%": 10
+            }, 
+            {
+                "buff": {
+                    "angel idol buff (12)": true, 
+                    "angel idol recover hp%": 100, 
+                    "buff turns (12)": "-1"
+                }, 
+                "conditions": [], 
+                "hp below % buff activation": 35, 
+                "passive id": "55", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "hit increase/hit": 2, 
+                "passive id": "37", 
+                "passive target": "self"
+            }
+        ], 
+        "id": "830918", 
+        "name": "Champion of the People", 
+        "rarity": "7", 
+        "target": "self"
+    }, 
     "8400": {
         "desc": "Reduces damage taken when damage taken has exceeded certain amount for 2 turns", 
         "effects": [
@@ -43050,6 +43130,53 @@
         "id": "850918", 
         "name": "Heartfelt Sympathy", 
         "rarity": "7", 
+        "target": "self"
+    }, 
+    "850928": {
+        "desc": "20% Light elemental damage and 10-20% BB gauge consumed reduction for all allies, fills BB gauge and restores HP each turn & 60% Atk, Def, Rec when BB gauge is above 50%", 
+        "effects": [
+            {
+                "conditions": [], 
+                "elemental weakness multiplier%": 20.0, 
+                "light units do extra elemental weakness dmg": true, 
+                "passive id": "50", 
+                "passive target": "party"
+            }, 
+            {
+                "conditions": [], 
+                "passive id": "49", 
+                "passive target": "party", 
+                "reduced bb bc use chance%": 100, 
+                "reduced bb bc use% high": 20, 
+                "reduced bb bc use% low": 10
+            }, 
+            {
+                "bc fill per turn": 10, 
+                "conditions": [], 
+                "passive id": "9", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "passive id": "33", 
+                "passive target": "self", 
+                "rec% added (turn heal)": 11.0, 
+                "turn heal high": 4500, 
+                "turn heal low": 3500
+            }, 
+            {
+                "atk% buff": 60, 
+                "bb gauge above % buff requirement": 50, 
+                "conditions": [], 
+                "def% buff": 60, 
+                "passive id": "30", 
+                "passive target": "self", 
+                "rec% buff": 60
+            }
+        ], 
+        "id": "850928", 
+        "name": "Legerdemain", 
+        "rarity": "8", 
         "target": "self"
     }, 
     "850977": {

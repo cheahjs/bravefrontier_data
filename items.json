@@ -45967,6 +45967,552 @@
         "thumbnail": "ls_sphere_thum_4_2.png", 
         "type": "sphere"
     }, 
+    "819332": {
+        "desc": "No effect.", 
+        "effect": [
+            {
+                "passive id": "1"
+            }
+        ], 
+        "id": 819332, 
+        "max_stack": 1, 
+        "name": "Noel's Experiment", 
+        "raid": false, 
+        "rarity": 7, 
+        "recipe": {
+            "karma": "700000", 
+            "materials": [
+                {
+                    "count": 1, 
+                    "id": 36702
+                }
+            ]
+        }, 
+        "sell_price": 1000, 
+        "sphere type": 14, 
+        "sphere type text": "Special", 
+        "thumbnail": "sphere_thum_empty.png", 
+        "type": "sphere"
+    }, 
+    "819333": {
+        "desc": "175% Atk, 20% all parameters (Breaker), 200% elemental damage, 135% Spark damage, raises max Atk limit to 200000, add to BB/SBB [chance to purge Atk boost] & increases BB activation cost", 
+        "effect": [
+            {
+                "dark units do extra elemental weakness dmg": true, 
+                "earth units do extra elemental weakness dmg": true, 
+                "elemental weakness multiplier%": 200.0, 
+                "fire units do extra elemental weakness dmg": true, 
+                "light units do extra elemental weakness dmg": true, 
+                "passive id": "50", 
+                "thunder units do extra elemental weakness dmg": true, 
+                "water units do extra elemental weakness dmg": true
+            }, 
+            {
+                "atk% buff": 175, 
+                "passive id": "1"
+            }, 
+            {
+                "increase atk cap": 200000, 
+                "passive id": "143"
+            }, 
+            {
+                "atk% buff": 20, 
+                "def% buff": 20, 
+                "hp% buff": 20, 
+                "passive id": "3", 
+                "rec% buff": 20, 
+                "unit type buffed": "breaker"
+            }, 
+            {
+                "passive id": "66", 
+                "trigger on bb": true, 
+                "trigger on sbb": true, 
+                "triggered effect": [
+                    {
+                        "effect delay time(ms)/frame": "0.0/0", 
+                        "target area": "aoe", 
+                        "target type": "enemy", 
+                        "unknown proc id": "10019", 
+                        "unknown proc param": "1,13,0,0,0,0,0,0,0,25"
+                    }
+                ]
+            }, 
+            {
+                "damage% for spark": 135, 
+                "passive id": "31"
+            }, 
+            {
+                "passive id": "48", 
+                "reduced bb bc cost%": -15
+            }
+        ], 
+        "id": 819333, 
+        "max_stack": 1, 
+        "name": "Victory Roar", 
+        "raid": true, 
+        "rarity": 7, 
+        "recipe": {
+            "karma": "7000000", 
+            "materials": [
+                {
+                    "count": 1, 
+                    "id": 819239
+                }, 
+                {
+                    "count": 2, 
+                    "id": 819332
+                }, 
+                {
+                    "count": 7, 
+                    "id": 890033
+                }
+            ]
+        }, 
+        "sell_price": 999999, 
+        "sphere type": 13, 
+        "sphere type text": "Atk Boosting", 
+        "thumbnail": "sphere_thum_819239.png", 
+        "type": "sphere"
+    }, 
+    "819334": {
+        "desc": "55% all parameters (Oracle), negates all status ailments, fills BB gauge each turn, add to BB/SBB [remove all status ailments and Atk, Def, Rec reduction, chance to purge Curse, Weak negation] & activates 9000 HP Shield when 15 BC collected", 
+        "effect": [
+            {
+                "curse resist%": 100, 
+                "injury resist%": 100, 
+                "paralysis resist%": 100, 
+                "passive id": "4", 
+                "poison resist%": 100, 
+                "sick resist%": 100, 
+                "weaken resist%": 100
+            }, 
+            {
+                "bc fill per turn": 30, 
+                "passive id": "9"
+            }, 
+            {
+                "passive id": "66", 
+                "trigger on bb": true, 
+                "trigger on sbb": true, 
+                "triggered effect": [
+                    {
+                        "ailments cured": [
+                            "poison", 
+                            "weaken", 
+                            "sick", 
+                            "injury", 
+                            "curse", 
+                            "paralysis", 
+                            "atk down", 
+                            "def down", 
+                            "rec down"
+                        ], 
+                        "effect delay time(ms)/frame": "0.0/0", 
+                        "proc id": "38", 
+                        "target area": "aoe", 
+                        "target type": "party"
+                    }
+                ]
+            }, 
+            {
+                "atk% buff": 55, 
+                "def% buff": 55, 
+                "hp% buff": 55, 
+                "passive id": "3", 
+                "rec% buff": 55, 
+                "unit type buffed": "oracle"
+            }, 
+            {
+                "passive id": "66", 
+                "trigger on bb": true, 
+                "trigger on sbb": true, 
+                "triggered effect": [
+                    {
+                        "effect delay time(ms)/frame": "0.0/0", 
+                        "target area": "aoe", 
+                        "target type": "enemy", 
+                        "unknown proc id": "10019", 
+                        "unknown proc param": "31,34,0,0,0,0,0,0,0,25"
+                    }
+                ]
+            }, 
+            {
+                "bc receive count buff activation": 15, 
+                "buff": {
+                    "buff turns (10500)": "2", 
+                    "unknown buff id": "10500", 
+                    "unknown buff params": "0&9000&9000&9000"
+                }, 
+                "passive id": "82"
+            }
+        ], 
+        "id": 819334, 
+        "max_stack": 1, 
+        "name": "Dirge of Dread", 
+        "raid": true, 
+        "rarity": 7, 
+        "recipe": {
+            "karma": "7000000", 
+            "materials": [
+                {
+                    "count": 1, 
+                    "id": 819243
+                }, 
+                {
+                    "count": 2, 
+                    "id": 819332
+                }, 
+                {
+                    "count": 7, 
+                    "id": 890033
+                }
+            ]
+        }, 
+        "sell_price": 999999, 
+        "sphere type": 5, 
+        "sphere type text": "Status Ailments Resistant", 
+        "thumbnail": "sphere_thum_819243.png", 
+        "type": "sphere"
+    }, 
+    "819335": {
+        "desc": "55% all parameters (Guardian), probable damage reduction to 1, damage taken fills BB gauge and may restore HP, add to BB/SBB [chance to purge Atk, Def, Rec reduction negation], restores HP each turn & increases BB activation cost", 
+        "effect": [
+            {
+                "passive id": "43", 
+                "take 1 dmg%": 25
+            }, 
+            {
+                "passive id": "33", 
+                "rec% added (turn heal)": 20.0, 
+                "turn heal high": 8000, 
+                "turn heal low": 6000
+            }, 
+            {
+                "dmg% to hp% when attacked chance%": 50, 
+                "dmg% to hp% when attacked high": 40, 
+                "dmg% to hp% when attacked low": 40, 
+                "passive id": "24"
+            }, 
+            {
+                "atk% buff": 55, 
+                "def% buff": 55, 
+                "hp% buff": 55, 
+                "passive id": "3", 
+                "rec% buff": 55, 
+                "unit type buffed": "guardian"
+            }, 
+            {
+                "passive id": "66", 
+                "trigger on bb": true, 
+                "trigger on sbb": true, 
+                "triggered effect": [
+                    {
+                        "effect delay time(ms)/frame": "0.0/0", 
+                        "target area": "aoe", 
+                        "target type": "enemy", 
+                        "unknown proc id": "10019", 
+                        "unknown proc param": "120,121,122,0,0,0,0,0,0,25"
+                    }
+                ]
+            }, 
+            {
+                "passive id": "48", 
+                "reduced bb bc cost%": -15
+            }, 
+            {
+                "bc fill when attacked high": 8, 
+                "bc fill when attacked low": 6, 
+                "bc fill when attacked%": 100, 
+                "passive id": "25"
+            }
+        ], 
+        "id": 819335, 
+        "max_stack": 1, 
+        "name": "Absolute Silence", 
+        "raid": true, 
+        "rarity": 7, 
+        "recipe": {
+            "karma": "7000000", 
+            "materials": [
+                {
+                    "count": 1, 
+                    "id": 819244
+                }, 
+                {
+                    "count": 2, 
+                    "id": 819332
+                }, 
+                {
+                    "count": 7, 
+                    "id": 890033
+                }
+            ]
+        }, 
+        "sell_price": 999999, 
+        "sphere type": 10, 
+        "sphere type text": "Damage Reducing", 
+        "thumbnail": "sphere_thum_819244.png", 
+        "type": "sphere"
+    }, 
+    "819336": {
+        "desc": "55% all parameters, 35% all parameters (Anima), 15% elemental damage reduction, probable resistance against 1 KO attack when 100k damage taken, add to BB/SBB [chance to purge Injury, Paralysis negation] & increases BB activation cost", 
+        "effect": [
+            {
+                "atk% buff": 55, 
+                "def% buff": 55, 
+                "hp% buff": 55, 
+                "passive id": "1", 
+                "rec% buff": 55
+            }, 
+            {
+                "dmg% mitigation for elemental attacks": 15.0, 
+                "mitigate dark attacks": true, 
+                "mitigate earth attacks": true, 
+                "mitigate fire attacks": true, 
+                "mitigate light attacks": true, 
+                "mitigate thunder attacks": true, 
+                "mitigate water attacks": true, 
+                "passive id": "62"
+            }, 
+            {
+                "buff": {
+                    "buff turns (91)": "999", 
+                    "unknown buff id": "91", 
+                    "unknown buff params": "25&100"
+                }, 
+                "damage threshold buff activation": 100000, 
+                "passive id": "78"
+            }, 
+            {
+                "atk% buff": 35, 
+                "def% buff": 35, 
+                "hp% buff": 35, 
+                "passive id": "3", 
+                "rec% buff": 35, 
+                "unit type buffed": "anima"
+            }, 
+            {
+                "passive id": "66", 
+                "trigger on bb": true, 
+                "trigger on sbb": true, 
+                "triggered effect": [
+                    {
+                        "effect delay time(ms)/frame": "0.0/0", 
+                        "target area": "aoe", 
+                        "target type": "enemy", 
+                        "unknown proc id": "10019", 
+                        "unknown proc param": "33,35,0,0,0,0,0,0,0,25"
+                    }
+                ]
+            }, 
+            {
+                "passive id": "48", 
+                "reduced bb bc cost%": -10
+            }
+        ], 
+        "id": 819336, 
+        "max_stack": 1, 
+        "name": "Joyous Harmony", 
+        "raid": true, 
+        "rarity": 7, 
+        "recipe": {
+            "karma": "7000000", 
+            "materials": [
+                {
+                    "count": 1, 
+                    "id": 819242
+                }, 
+                {
+                    "count": 2, 
+                    "id": 819332
+                }, 
+                {
+                    "count": 7, 
+                    "id": 890033
+                }
+            ]
+        }, 
+        "sell_price": 999999, 
+        "sphere type": 1, 
+        "sphere type text": "Status Boost", 
+        "thumbnail": "sphere_thum_819242.png", 
+        "type": "sphere"
+    }, 
+    "819337": {
+        "desc": "45% all parameters (Male, Genderless), 170% Spark damage, Sparks restore HP and fill BB gauge, probable Spark critical, add to BB/SBB [chance to purge Sick, Poison negation] & increases BB activation cost", 
+        "effect": [
+            {
+                "damage% for spark": 170, 
+                "passive id": "31"
+            }, 
+            {
+                "heal on spark high": 800, 
+                "heal on spark low": 600, 
+                "heal on spark%": 100, 
+                "passive id": "101"
+            }, 
+            {
+                "bc fill on spark high": 4, 
+                "bc fill on spark low": 3, 
+                "bc fill on spark%": 100, 
+                "passive id": "47"
+            }, 
+            {
+                "passive id": "100", 
+                "spark crit chance%": 50, 
+                "spark crit dmg%": 175
+            }, 
+            {
+                "atk% buff": 45, 
+                "def% buff": 45, 
+                "gender required": "male", 
+                "hp% buff": 45, 
+                "passive id": "42", 
+                "rec% buff": 45
+            }, 
+            {
+                "atk% buff": 45, 
+                "def% buff": 45, 
+                "gender required": "genderless", 
+                "hp% buff": 45, 
+                "passive id": "42", 
+                "rec% buff": 45
+            }, 
+            {
+                "passive id": "66", 
+                "trigger on bb": true, 
+                "trigger on sbb": true, 
+                "triggered effect": [
+                    {
+                        "effect delay time(ms)/frame": "0.0/0", 
+                        "target area": "aoe", 
+                        "target type": "enemy", 
+                        "unknown proc id": "10019", 
+                        "unknown proc param": "30,32,0,0,0,0,0,0,0,25"
+                    }
+                ]
+            }, 
+            {
+                "passive id": "48", 
+                "reduced bb bc cost%": -15
+            }
+        ], 
+        "id": 819337, 
+        "max_stack": 1, 
+        "name": "Eternal Ballad", 
+        "raid": true, 
+        "rarity": 7, 
+        "recipe": {
+            "karma": "7000000", 
+            "materials": [
+                {
+                    "count": 1, 
+                    "id": 819240
+                }, 
+                {
+                    "count": 2, 
+                    "id": 819332
+                }, 
+                {
+                    "count": 7, 
+                    "id": 890033
+                }
+            ]
+        }, 
+        "sell_price": 999999, 
+        "sphere type": 11, 
+        "sphere type text": "Spark", 
+        "thumbnail": "sphere_thum_819240.png", 
+        "type": "sphere"
+    }, 
+    "819338": {
+        "desc": "55% all parameters, 35% all parameters (Female, Genderless), 200% elemental damage, fills BB gauge when 10k damage dealt, add to BB/SBB [chance to purge Atk, Def, Rec reduction negation] & increases BB activation cost", 
+        "effect": [
+            {
+                "atk% buff": 55, 
+                "def% buff": 55, 
+                "hp% buff": 55, 
+                "passive id": "1", 
+                "rec% buff": 55
+            }, 
+            {
+                "dark units do extra elemental weakness dmg": true, 
+                "earth units do extra elemental weakness dmg": true, 
+                "elemental weakness multiplier%": 200.0, 
+                "fire units do extra elemental weakness dmg": true, 
+                "light units do extra elemental weakness dmg": true, 
+                "passive id": "50", 
+                "thunder units do extra elemental weakness dmg": true, 
+                "water units do extra elemental weakness dmg": true
+            }, 
+            {
+                "damage dealt threshold activation": 10000, 
+                "increase bb gauge": 20, 
+                "passive id": "81"
+            }, 
+            {
+                "atk% buff": 35, 
+                "def% buff": 35, 
+                "gender required": "female", 
+                "hp% buff": 35, 
+                "passive id": "42", 
+                "rec% buff": 35
+            }, 
+            {
+                "atk% buff": 35, 
+                "def% buff": 35, 
+                "gender required": "genderless", 
+                "hp% buff": 35, 
+                "passive id": "42", 
+                "rec% buff": 35
+            }, 
+            {
+                "passive id": "66", 
+                "trigger on bb": true, 
+                "trigger on sbb": true, 
+                "triggered effect": [
+                    {
+                        "effect delay time(ms)/frame": "0.0/0", 
+                        "target area": "aoe", 
+                        "target type": "enemy", 
+                        "unknown proc id": "10019", 
+                        "unknown proc param": "120,121,122,0,0,0,0,0,0,25"
+                    }
+                ]
+            }, 
+            {
+                "passive id": "48", 
+                "reduced bb bc cost%": -10
+            }
+        ], 
+        "id": 819338, 
+        "max_stack": 1, 
+        "name": "Elegy of Regret", 
+        "raid": true, 
+        "rarity": 7, 
+        "recipe": {
+            "karma": "7000000", 
+            "materials": [
+                {
+                    "count": 1, 
+                    "id": 819241
+                }, 
+                {
+                    "count": 2, 
+                    "id": 819332
+                }, 
+                {
+                    "count": 7, 
+                    "id": 890033
+                }
+            ]
+        }, 
+        "sell_price": 999999, 
+        "sphere type": 1, 
+        "sphere type text": "Status Boost", 
+        "thumbnail": "sphere_thum_819241.png", 
+        "type": "sphere"
+    }, 
     "819901": {
         "desc": "Boosts Max HP and Def by 5% & boosts Atk for Fire types by 20%", 
         "effect": [
