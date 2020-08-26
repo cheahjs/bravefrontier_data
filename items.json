@@ -3332,6 +3332,28 @@
         "thumbnail": "item_thum_22210.png", 
         "type": "consumable"
     }, 
+    "13383": {
+        "desc": "This item is pointless.", 
+        "effect": {
+            "effect": [
+                {
+                    "unknown proc id": "0", 
+                    "unknown proc param": ""
+                }
+            ], 
+            "target_area": "aoe", 
+            "target_type": "party"
+        }, 
+        "id": 13383, 
+        "max equipped": 99, 
+        "max_stack": 99, 
+        "name": "Pointless Item", 
+        "raid": false, 
+        "rarity": 0, 
+        "sell_price": 100, 
+        "thumbnail": "item_thum_21100.png", 
+        "type": "consumable"
+    }, 
     "13384": {
         "desc": "This is garbage.", 
         "effect": {
@@ -3352,6 +3374,28 @@
         "rarity": 0, 
         "sell_price": 100, 
         "thumbnail": "item_thum_21100.png", 
+        "type": "consumable"
+    }, 
+    "13385": {
+        "desc": "This is junk.", 
+        "effect": {
+            "effect": [
+                {
+                    "unknown proc id": "0", 
+                    "unknown proc param": ""
+                }
+            ], 
+            "target_area": "single", 
+            "target_type": "enemy"
+        }, 
+        "id": 13385, 
+        "max equipped": 99, 
+        "max_stack": 99, 
+        "name": "Junk", 
+        "raid": false, 
+        "rarity": 0, 
+        "sell_price": 100, 
+        "thumbnail": "item_thum_22210.png", 
         "type": "consumable"
     }, 
     "20000": {
@@ -3396,8 +3440,8 @@
         "effect": {
             "effect": [
                 {
-                    "fixed damage": 1000000000, 
-                    "proc id": "28"
+                    "unknown proc id": "0", 
+                    "unknown proc param": "0"
                 }
             ], 
             "target_area": "single", 
@@ -3406,7 +3450,7 @@
         "id": 20000803, 
         "max equipped": 99, 
         "max_stack": 99, 
-        "name": "1 Billion sword", 
+        "name": "hard cookie", 
         "raid": false, 
         "rarity": 3, 
         "sell_price": 200, 
@@ -45967,6 +46011,69 @@
         "thumbnail": "ls_sphere_thum_4_2.png", 
         "type": "sphere"
     }, 
+    "819324": {
+        "desc": "60% all parameters (Light, Dark), 200% Light, Dark elemental damage, fills BB gauge each turn, add to LS (30% Light, Dark elemental damage) & add to BB/SBB (May purge damage reduction from Light, Dark types from all foes (PvP modes only))", 
+        "effect": [
+            {
+                "atk% buff": 60, 
+                "def% buff": 60, 
+                "elements buffed": [
+                    "light", 
+                    "dark"
+                ], 
+                "hp% buff": 60, 
+                "passive id": "2", 
+                "rec% buff": 60
+            }, 
+            {
+                "dark units do extra elemental weakness dmg": true, 
+                "elemental weakness multiplier%": 200.0, 
+                "light units do extra elemental weakness dmg": true, 
+                "passive id": "50"
+            }, 
+            {
+                "bc fill per turn": 25, 
+                "passive id": "9"
+            }, 
+            {
+                "unknown passive id": "107", 
+                "unknown passive params": "50,5$6$0$0$0$0$0.3"
+            }, 
+            {
+                "passive id": "66", 
+                "trigger on bb": true, 
+                "trigger on sbb": true, 
+                "triggered effect": [
+                    {
+                        "effect delay time(ms)/frame": "0.0/0", 
+                        "target area": "aoe", 
+                        "target type": "100", 
+                        "unknown proc id": "10019", 
+                        "unknown proc param": "25,26,0,0,0,0,0,0,0,30"
+                    }
+                ]
+            }
+        ], 
+        "id": 819324, 
+        "max_stack": 1, 
+        "name": "The Silver Blade", 
+        "raid": false, 
+        "rarity": 7, 
+        "recipe": {
+            "karma": "300000", 
+            "materials": [
+                {
+                    "count": 6, 
+                    "id": 890066
+                }
+            ]
+        }, 
+        "sell_price": 30000, 
+        "sphere type": 12, 
+        "sphere type text": "Defense Penetrating", 
+        "thumbnail": "sphere_thum_2_5.png", 
+        "type": "sphere"
+    }, 
     "819325": {
         "desc": "60% all parameters (Fire, Thunder), 150% spark damage, spark damage fills BB gauge & 10% damage reduction from Fire, Thunder types<br>Guild Raid: Probable KO resistance & add to UBB (Evasion for 3 turns)", 
         "effect": [
@@ -53010,6 +53117,17 @@
         "rarity": 3, 
         "sell_price": 1000, 
         "thumbnail": "item_thum_601.png", 
+        "type": "material"
+    }, 
+    "890066": {
+        "desc": "Precious silver ore of high purity and incredible resilience mined from a secret cave.", 
+        "id": 890066, 
+        "max_stack": 99, 
+        "name": "Silver Ore", 
+        "raid": false, 
+        "rarity": 3, 
+        "sell_price": 1000, 
+        "thumbnail": "item_thum_800505.png", 
         "type": "material"
     }, 
     "899998": {

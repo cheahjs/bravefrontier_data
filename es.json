@@ -26131,6 +26131,110 @@
         "rarity": "7", 
         "target": "self"
     }, 
+    "8000517": {
+        "desc": "15% all parameters (Water) for all allies, 120% Def, 50% max HP (Water), 120% spark damage, 20% BB/SBB activation rates & 35% damage reduction from Water, Fire types for first 2 turns", 
+        "effects": [
+            {
+                "atk% buff": 15, 
+                "conditions": [], 
+                "def% buff": 15, 
+                "elements buffed": [
+                    "water"
+                ], 
+                "hp% buff": 15, 
+                "passive id": "2", 
+                "passive target": "party", 
+                "rec% buff": 15
+            }, 
+            {
+                "conditions": [], 
+                "def% buff": 120, 
+                "elements buffed": [
+                    "water"
+                ], 
+                "hp% buff": 50, 
+                "passive id": "2", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "damage% for spark": 120, 
+                "passive id": "31", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "increase skill activation in arena%": 20, 
+                "passive id": "111", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "dmg% mitigation for elemental attacks": 35, 
+                "dmg% mitigation for elemental attacks buff for first x turns": 2, 
+                "mitigate fire attacks": true, 
+                "mitigate water attacks": true, 
+                "passive id": "63", 
+                "passive target": "self"
+            }
+        ], 
+        "id": "8000517", 
+        "name": "Kuoni's Pride", 
+        "rarity": "8", 
+        "target": "self"
+    }, 
+    "8000518": {
+        "desc": "10% all parameters (Water) for all allies, 100% Def, 40% max HP (Water), 100% spark damage, 15% BB/SBB activation rates & 35% damage reduction from Water, Fire types for first 2 turns", 
+        "effects": [
+            {
+                "atk% buff": 10, 
+                "conditions": [], 
+                "def% buff": 10, 
+                "elements buffed": [
+                    "water"
+                ], 
+                "hp% buff": 10, 
+                "passive id": "2", 
+                "passive target": "party", 
+                "rec% buff": 10
+            }, 
+            {
+                "conditions": [], 
+                "def% buff": 100, 
+                "elements buffed": [
+                    "water"
+                ], 
+                "hp% buff": 40, 
+                "passive id": "2", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "damage% for spark": 100, 
+                "passive id": "31", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "increase skill activation in arena%": 15, 
+                "passive id": "111", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "dmg% mitigation for elemental attacks": 35, 
+                "dmg% mitigation for elemental attacks buff for first x turns": 2, 
+                "mitigate fire attacks": true, 
+                "mitigate water attacks": true, 
+                "passive id": "63", 
+                "passive target": "self"
+            }
+        ], 
+        "id": "8000518", 
+        "name": "Kuoni's Favor", 
+        "rarity": "7", 
+        "target": "self"
+    }, 
     "8000601": {
         "desc": "10% boost to Atk for all Dark type allies, greatly boosts Atk relative to remaining HP, greatly boosts Dark elemental damage, adds additional powerful attack at turn's end for 3 turns effect to SBB & raises Atk parameter limits to 170000", 
         "effects": [
@@ -28511,11 +28615,11 @@
         "target": "self"
     }, 
     "810438": {
-        "desc": "Considerably reduces damage taken for 2 turns when HP is below 50% & damage taken boosts BB gauge", 
+        "desc": "Negates ignore Def for all allies, 40% all parameters, 25% damage reduction for 2 turns when HP is below 50% & damage taken fills BB gauge", 
         "effects": [
             {
                 "buff": {
-                    "buff turns (36)": "1", 
+                    "buff turns (36)": "2", 
                     "dmg reduction% buff": 25
                 }, 
                 "conditions": [], 
@@ -28530,6 +28634,21 @@
                 "conditions": [], 
                 "passive id": "25", 
                 "passive target": "self"
+            }, 
+            {
+                "atk% buff": 40, 
+                "conditions": [], 
+                "def% buff": 40, 
+                "hp% buff": 40, 
+                "passive id": "1", 
+                "passive target": "self", 
+                "rec% buff": 40
+            }, 
+            {
+                "conditions": [], 
+                "ignore def resist chance%": 100, 
+                "passive id": "92", 
+                "passive target": "party"
             }
         ], 
         "id": "810438", 
@@ -32042,13 +32161,13 @@
         "target": "self"
     }, 
     "820558": {
-        "desc": "Probable damage reduction to 1 for all allies, probable 50% damage counter for all allies, damage taken may slightly reduce foe's BB gauge fill rate for 1 turn & adds 16 combo (BB)/23 combo (SBB) powerful Water attack on single foe to BB/SBB", 
+        "desc": "Probable damage reduction to 1 and probable 50% damage counter for all allies, damage taken may inflict 1 turn 20% BB gauge fill rate reduction, negates ignore Def & add to BB (16 combo Water attack on single foe), SBB (22 combo Water attack on single foe)", 
         "effects": [
             {
                 "conditions": [], 
                 "passive id": "43", 
                 "passive target": "party", 
-                "take 1 dmg%": 10
+                "take 1 dmg%": 15
             }, 
             {
                 "conditions": [], 
@@ -32080,6 +32199,12 @@
                         "target type": "enemy"
                     }
                 ]
+            }, 
+            {
+                "conditions": [], 
+                "ignore def resist chance%": 100, 
+                "passive id": "92", 
+                "passive target": "self"
             }
         ], 
         "id": "820558", 
@@ -36838,6 +36963,60 @@
         "rarity": "7", 
         "target": "self"
     }, 
+    "830958": {
+        "desc": "100% spark damage when Atk Boosting Type Sphere is equipped, 25% critical damage and adds ignore Def to attack for all allies, 30-50% BB gauge consumed reduction & negates all status ailments and Atk, Def, Rec reduction", 
+        "effects": [
+            {
+                "conditions": [
+                    {
+                        "sphere category required": "Atk Boosting", 
+                        "sphere category required (raw)": "13"
+                    }
+                ], 
+                "damage% for spark": 100, 
+                "passive id": "31", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "crit multiplier%": 25.0, 
+                "passive id": "34", 
+                "passive target": "party"
+            }, 
+            {
+                "conditions": [], 
+                "ignore def%": 100, 
+                "passive id": "29", 
+                "passive target": "party"
+            }, 
+            {
+                "conditions": [], 
+                "passive id": "49", 
+                "passive target": "self", 
+                "reduced bb bc use chance%": 100, 
+                "reduced bb bc use% high": 50, 
+                "reduced bb bc use% low": 30
+            }, 
+            {
+                "atk down resist%": 100, 
+                "conditions": [], 
+                "curse resist%": 100, 
+                "def down resist%": 100, 
+                "injury resist%": 100, 
+                "paralysis resist%": 100, 
+                "passive id": "73", 
+                "passive target": "self", 
+                "poison resist%": 100, 
+                "rec down resist%": 100, 
+                "sick resist%": 100, 
+                "weaken resist%": 100
+            }
+        ], 
+        "id": "830958", 
+        "name": "Sacred Tome: Chapter 10", 
+        "rarity": "8", 
+        "target": "self"
+    }, 
     "8400": {
         "desc": "Reduces damage taken when damage taken has exceeded certain amount for 2 turns", 
         "effects": [
@@ -38013,7 +38192,7 @@
         "target": "self"
     }, 
     "840418": {
-        "desc": "Greatly boosts Atk when BB gauge is full & adds resistance against 1 KO attack when HP is below 20%", 
+        "desc": "Raises normal hit amount for all allies, 40% all parameters, 1 KO resistance when HP is below 40% & 100% Atk when BB gauge is above 50%", 
         "effects": [
             {
                 "buff": {
@@ -38022,16 +38201,31 @@
                     "buff turns (12)": "-1"
                 }, 
                 "conditions": [], 
-                "hp below % buff activation": 20, 
+                "hp below % buff activation": 40, 
                 "passive id": "55", 
                 "passive target": "self"
             }, 
             {
                 "atk% buff": 100, 
-                "bb gauge above % buff requirement": 100, 
+                "bb gauge above % buff requirement": 50, 
                 "conditions": [], 
                 "passive id": "30", 
                 "passive target": "self"
+            }, 
+            {
+                "atk% buff": 40, 
+                "conditions": [], 
+                "def% buff": 40, 
+                "hp% buff": 40, 
+                "passive id": "1", 
+                "passive target": "self", 
+                "rec% buff": 40
+            }, 
+            {
+                "conditions": [], 
+                "hit increase/hit": 1, 
+                "passive id": "37", 
+                "passive target": "party"
             }
         ], 
         "id": "840418", 

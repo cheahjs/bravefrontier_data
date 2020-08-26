@@ -27041,27 +27041,35 @@
         "name": "Plows to Swords"
     }, 
     "810022": {
-        "desc": "60% boost to Atk, max HP, 30% boost to critical hit rate, greatly boosts BB Atk, hugely boosts critical damage & considerably boosts OD gauge fill rate", 
+        "desc": "150% Atk, 120% max HP, 30% critical rate, 200% critical damage, 350% BB Atk, 30% OD gauge fill rate & 20% damage reduction for 2 turns when damage taken is over 5k", 
         "effects": [
             {
-                "atk% buff": 60, 
+                "atk% buff": 150, 
                 "crit% buff": 30, 
-                "hp% buff": 60, 
+                "hp% buff": 120, 
                 "passive id": "1"
             }, 
             {
-                "bb atk% buff": 250, 
+                "bb atk% buff": 350, 
                 "passive id": "64", 
-                "sbb atk% buff": 250, 
-                "ubb atk% buff": 250
+                "sbb atk% buff": 350, 
+                "ubb atk% buff": 350
             }, 
             {
-                "crit multiplier%": 175.0, 
+                "crit multiplier%": 200.0, 
                 "passive id": "34"
             }, 
             {
-                "od fill rate%": 25, 
+                "od fill rate%": 30, 
                 "passive id": "70"
+            }, 
+            {
+                "buff": {
+                    "buff turns (36)": "1", 
+                    "dmg reduction% buff": 20
+                }, 
+                "damage threshold buff activation": 5000, 
+                "passive id": "78"
             }
         ], 
         "id": "810022", 
@@ -27700,35 +27708,43 @@
         "name": "A Desperate Move"
     }, 
     "810438": {
-        "desc": "60% boost to Atk, max HP, considerably boosts Atk, Def relative to remaining HP, 10% damage reduction from Fire, Earth, Dark elemental types & enormously boosts BB Atk when HP is over 50%", 
+        "desc": "120% Atk, 150% max HP, 0-80% Atk, Def, Rec relative to remaining HP, 15% damage reduction from Fire, Earth, Dark types, 550% BB Atk when HP is above 50% & damage taken may restore HP", 
         "effects": [
             {
-                "atk% buff": 60, 
-                "hp% buff": 60, 
+                "atk% buff": 120, 
+                "hp% buff": 150, 
                 "passive id": "1"
             }, 
             {
                 "atk% base buff": 0, 
-                "atk% extra buff based on hp": 60, 
+                "atk% extra buff based on hp": 80, 
                 "buff proportional to hp": "remaining", 
                 "def% base buff": 0, 
-                "def% extra buff based on hp": 60, 
-                "passive id": "46"
+                "def% extra buff based on hp": 80, 
+                "passive id": "46", 
+                "rec% base buff": 0, 
+                "rec% extra buff based on hp": 80
             }, 
             {
-                "dmg% mitigation for elemental attacks": 10.0, 
+                "dmg% mitigation for elemental attacks": 15.0, 
                 "mitigate dark attacks": true, 
                 "mitigate earth attacks": true, 
                 "mitigate fire attacks": true, 
                 "passive id": "62"
             }, 
             {
-                "bb atk% add": 300, 
+                "bb atk% add": 550, 
                 "hp threshold": 50, 
                 "passive id": "103", 
-                "sbb atk% add": 300, 
+                "sbb atk% add": 550, 
                 "triggered when hp": "higher", 
-                "ubb atk% add": 300
+                "ubb atk% add": 550
+            }, 
+            {
+                "dmg% to hp% when attacked chance%": 50, 
+                "dmg% to hp% when attacked high": 30, 
+                "dmg% to hp% when attacked low": 25, 
+                "passive id": "24"
             }
         ], 
         "id": "810438", 
@@ -30031,30 +30047,36 @@
         "name": "Cold Truth"
     }, 
     "820558": {
-        "desc": "80% boost to Atk, max HP, 120% boost to Def, Rec of Water types, enormously boosts HC efficacy, greatly boosts BC, HC drop rate & enormously boosts BB gauge each turn", 
+        "desc": "100% Atk, 140% Def, Rec, 100% max HP (Water), 75% HC efficacy, 45% BC, HC drop rates, fills BB gauge each turn & damage taken may restore HP", 
         "effects": [
             {
-                "atk% buff": 80, 
-                "def% buff": 120, 
+                "atk% buff": 100, 
+                "def% buff": 140, 
                 "elements buffed": [
                     "water"
                 ], 
-                "hp% buff": 80, 
+                "hp% buff": 100, 
                 "passive id": "2", 
-                "rec% buff": 120
+                "rec% buff": 140
             }, 
             {
                 "hc effectiveness%": 75, 
                 "passive id": "10"
             }, 
             {
-                "bc drop rate% buff": 40, 
-                "hc drop rate% buff": 40, 
+                "bc drop rate% buff": 45, 
+                "hc drop rate% buff": 45, 
                 "passive id": "19"
             }, 
             {
                 "bc fill per turn": 10, 
                 "passive id": "9"
+            }, 
+            {
+                "dmg% to hp% when attacked chance%": 50, 
+                "dmg% to hp% when attacked high": 30, 
+                "dmg% to hp% when attacked low": 25, 
+                "passive id": "24"
             }
         ], 
         "id": "820558", 
@@ -33301,6 +33323,38 @@
         ], 
         "id": "830918", 
         "name": "The Musketeers' Motto"
+    }, 
+    "830958": {
+        "desc": "200% Atk, 140% max HP, 30% critical rate, 300% critical damage, critical damage fills BB gauge, probable spark critical & probable damage reduction to 1", 
+        "effects": [
+            {
+                "atk% buff": 200, 
+                "crit% buff": 30, 
+                "hp% buff": 140, 
+                "passive id": "1"
+            }, 
+            {
+                "crit multiplier%": 300.0, 
+                "passive id": "34"
+            }, 
+            {
+                "bc fill on crit max": 12, 
+                "bc fill on crit min": 10, 
+                "bc fill on crit%": 100.0, 
+                "passive id": "65"
+            }, 
+            {
+                "passive id": "100", 
+                "spark crit chance%": 50, 
+                "spark crit dmg%": 100
+            }, 
+            {
+                "passive id": "43", 
+                "take 1 dmg%": 20
+            }
+        ], 
+        "id": "830958", 
+        "name": "Holy Crusade"
     }, 
     "8400": {
         "desc": "30% boost to Atk, slightly boosts critical hit rate & damage taken may considerably boost BB gauge", 
