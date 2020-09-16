@@ -26235,6 +26235,110 @@
         "rarity": "7", 
         "target": "self"
     }, 
+    "8000519": {
+        "desc": "15% all parameters (Earth) for all allies, 120% Def, 50% max HP (Earth), 120% spark damage, 20% BB/SBB activation rates & 35% damage reduction from Earth, Thunder types for first 2 turns", 
+        "effects": [
+            {
+                "atk% buff": 15, 
+                "conditions": [], 
+                "def% buff": 15, 
+                "elements buffed": [
+                    "earth"
+                ], 
+                "hp% buff": 15, 
+                "passive id": "2", 
+                "passive target": "party", 
+                "rec% buff": 15
+            }, 
+            {
+                "conditions": [], 
+                "def% buff": 120, 
+                "elements buffed": [
+                    "earth"
+                ], 
+                "hp% buff": 50, 
+                "passive id": "2", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "damage% for spark": 120, 
+                "passive id": "31", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "increase skill activation in arena%": 20, 
+                "passive id": "111", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "dmg% mitigation for elemental attacks": 35, 
+                "dmg% mitigation for elemental attacks buff for first x turns": 2, 
+                "mitigate earth attacks": true, 
+                "mitigate thunder attacks": true, 
+                "passive id": "63", 
+                "passive target": "self"
+            }
+        ], 
+        "id": "8000519", 
+        "name": "Koto's Pride", 
+        "rarity": "8", 
+        "target": "self"
+    }, 
+    "8000520": {
+        "desc": "10% all parameters (Earth) for all allies, 100% Def, 40% max HP (Earth), 100% spark damage, 15% BB/SBB activation rates & 35% damage reduction from Earth, Thunder types for first 2 turns", 
+        "effects": [
+            {
+                "atk% buff": 10, 
+                "conditions": [], 
+                "def% buff": 10, 
+                "elements buffed": [
+                    "earth"
+                ], 
+                "hp% buff": 10, 
+                "passive id": "2", 
+                "passive target": "party", 
+                "rec% buff": 10
+            }, 
+            {
+                "conditions": [], 
+                "def% buff": 100, 
+                "elements buffed": [
+                    "earth"
+                ], 
+                "hp% buff": 40, 
+                "passive id": "2", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "damage% for spark": 100, 
+                "passive id": "31", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "increase skill activation in arena%": 15, 
+                "passive id": "111", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "dmg% mitigation for elemental attacks": 35, 
+                "dmg% mitigation for elemental attacks buff for first x turns": 2, 
+                "mitigate earth attacks": true, 
+                "mitigate thunder attacks": true, 
+                "passive id": "63", 
+                "passive target": "self"
+            }
+        ], 
+        "id": "8000520", 
+        "name": "Koto's Favor", 
+        "rarity": "7", 
+        "target": "self"
+    }, 
     "8000527": {
         "desc": "50% Atk, max HP (Light, Dark) for all allies, probable spark critical, 10% reduction to BB activation cost & 20% OD gauge fill rate", 
         "effects": [
@@ -30359,6 +30463,67 @@
         "id": "810928", 
         "name": "Wolfbann", 
         "rarity": "7", 
+        "target": "self"
+    }, 
+    "810958": {
+        "desc": "150% damage against status afflicted foes when Status Boost Type sphere is equipped, 20% all parameters and 25% spark damage for all allies, 100% spark damage & negates all status ailments and Atk, Def, Rec reduction", 
+        "effects": [
+            {
+                "atk% buff when enemy has ailment": 150, 
+                "atk% buff when enemy has curse": true, 
+                "atk% buff when enemy has injury": true, 
+                "atk% buff when enemy has paralysis": true, 
+                "atk% buff when enemy has poison": true, 
+                "atk% buff when enemy has sick": true, 
+                "atk% buff when enemy has weaken": true, 
+                "conditions": [
+                    {
+                        "sphere category required": "Status Boost", 
+                        "sphere category required (raw)": "1"
+                    }
+                ], 
+                "passive id": "74", 
+                "passive target": "self"
+            }, 
+            {
+                "atk% buff": 20, 
+                "conditions": [], 
+                "def% buff": 20, 
+                "hp% buff": 20, 
+                "passive id": "1", 
+                "passive target": "party", 
+                "rec% buff": 20
+            }, 
+            {
+                "conditions": [], 
+                "damage% for spark": 25, 
+                "passive id": "31", 
+                "passive target": "party"
+            }, 
+            {
+                "conditions": [], 
+                "damage% for spark": 100, 
+                "passive id": "31", 
+                "passive target": "self"
+            }, 
+            {
+                "atk down resist%": 100, 
+                "conditions": [], 
+                "curse resist%": 100, 
+                "def down resist%": 100, 
+                "injury resist%": 100, 
+                "paralysis resist%": 100, 
+                "passive id": "73", 
+                "passive target": "self", 
+                "poison resist%": 100, 
+                "rec down resist%": 100, 
+                "sick resist%": 100, 
+                "weaken resist%": 100
+            }
+        ], 
+        "id": "810958", 
+        "name": "Metal Inscription: Julietta", 
+        "rarity": "8", 
         "target": "self"
     }, 
     "811017": {
@@ -35325,7 +35490,7 @@
         "target": "self"
     }, 
     "830558": {
-        "desc": "Damage taken slightly boosts BB gauge for all allies, negates all status ailments for all allies, damage taken may slightly reduce foe's BB gauge fill rate for 1 turn & adds 20 combo (BB)/25 combo (SBB) powerful Earth attack on single foe to BB/SBB", 
+        "desc": "Damage taken fills BB gauge and negates all status ailments for all allies, damage taken may inflict BB gauge fill rate reduction for 1 turn, damage taken may inflict Atk reduction for 2 turns & add to BB (20 combo Earth attack on single foe), SBB(25 combo Earth attack on single foe)", 
         "effects": [
             {
                 "bc fill when attacked high": 2, 
@@ -35351,6 +35516,12 @@
                 "passive target": "self", 
                 "unknown passive id": "114", 
                 "unknown passive params": "112,-20,-1,20,1"
+            }, 
+            {
+                "conditions": [], 
+                "passive target": "self", 
+                "unknown passive id": "114", 
+                "unknown passive params": "2,-20,-1,15,2"
             }, 
             {
                 "conditions": [], 
