@@ -3436,12 +3436,12 @@
         "type": "consumable"
     }, 
     "20000803": {
-        "desc": "", 
+        "desc": "This is trash.", 
         "effect": {
             "effect": [
                 {
                     "unknown proc id": "0", 
-                    "unknown proc param": "0"
+                    "unknown proc param": ""
                 }
             ], 
             "target_area": "single", 
@@ -3450,11 +3450,11 @@
         "id": 20000803, 
         "max equipped": 99, 
         "max_stack": 99, 
-        "name": "hard cookie", 
+        "name": "Trash", 
         "raid": false, 
-        "rarity": 3, 
-        "sell_price": 200, 
-        "thumbnail": "item_thum_880020.png", 
+        "rarity": 0, 
+        "sell_price": 100, 
+        "thumbnail": "item_thum_22210.png", 
         "type": "consumable"
     }, 
     "20001": {
@@ -46704,6 +46704,70 @@
         "thumbnail": "sphere_thum_819241.png", 
         "type": "sphere"
     }, 
+    "819339": {
+        "desc": "60% all parameters (Fire), 200% Fire elemental damage, 120% critical damage, 2 turns spark vulnerability infliction & add to BB/SBB (May purge damage reduction from Fire from all foes)(PvP modes only))", 
+        "effect": [
+            {
+                "atk% buff": 60, 
+                "def% buff": 60, 
+                "elements buffed": [
+                    "fire", 
+                    "0:無し"
+                ], 
+                "hp% buff": 60, 
+                "passive id": "2", 
+                "rec% buff": 60
+            }, 
+            {
+                "elemental weakness multiplier%": 200.0, 
+                "fire units do extra elemental weakness dmg": true, 
+                "passive id": "50"
+            }, 
+            {
+                "crit multiplier%": 120.0, 
+                "passive id": "34"
+            }, 
+            {
+                "passive id": "75", 
+                "spark debuff chance%": 100, 
+                "spark debuff turns": 1, 
+                "spark debuff%": 25
+            }, 
+            {
+                "passive id": "66", 
+                "trigger on bb": true, 
+                "trigger on sbb": true, 
+                "triggered effect": [
+                    {
+                        "effect delay time(ms)/frame": "0.0/0", 
+                        "target area": "aoe", 
+                        "target type": "100", 
+                        "unknown proc id": "10019", 
+                        "unknown proc param": "21,0,0,0,0,0,0,0,0,40"
+                    }
+                ]
+            }
+        ], 
+        "id": 819339, 
+        "max_stack": 1, 
+        "name": "Sun Cuore's Will", 
+        "raid": false, 
+        "rarity": 7, 
+        "recipe": {
+            "karma": "300000", 
+            "materials": [
+                {
+                    "count": 6, 
+                    "id": 890067
+                }
+            ]
+        }, 
+        "sell_price": 30000, 
+        "sphere type": 12, 
+        "sphere type text": "Defense Penetrating", 
+        "thumbnail": "sphere_thum_4_1.png", 
+        "type": "sphere"
+    }, 
     "819901": {
         "desc": "Boosts Max HP and Def by 5% & boosts Atk for Fire types by 20%", 
         "effect": [
@@ -53128,6 +53192,17 @@
         "rarity": 3, 
         "sell_price": 1000, 
         "thumbnail": "item_thum_800505.png", 
+        "type": "material"
+    }, 
+    "890067": {
+        "desc": "A shining marble of pure ruby dubbed \"Sun's Tear\" after its magnificent shade.", 
+        "id": 890067, 
+        "max_stack": 99, 
+        "name": "Sun's Tear", 
+        "raid": false, 
+        "rarity": 3, 
+        "sell_price": 1000, 
+        "thumbnail": "item_thum_700.png", 
         "type": "material"
     }, 
     "899998": {
