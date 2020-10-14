@@ -34232,17 +34232,17 @@
         "name": "Peerless Tracker"
     }, 
     "840558": {
-        "desc": "80% boost to Atk, max HP, 120% boost to Def, Rec of Thunder types, Spark damage considerably boosts BB gauge, enormously boost BB gauge each turn & 15% additional damage reduction", 
+        "desc": "100% Atk, 140% Def, Rec, 100% max HP (Thunder), spark damage fills BB gauge, spark damage restores HP, fills BB gauge each turn & 15% DoT reduction", 
         "effects": [
             {
-                "atk% buff": 80, 
-                "def% buff": 120, 
+                "atk% buff": 100, 
+                "def% buff": 140, 
                 "elements buffed": [
                     "thunder"
                 ], 
-                "hp% buff": 80, 
+                "hp% buff": 100, 
                 "passive id": "2", 
-                "rec% buff": 120
+                "rec% buff": 140
             }, 
             {
                 "bc fill on spark high": 4, 
@@ -34257,6 +34257,12 @@
             {
                 "unknown passive id": "127", 
                 "unknown passive params": "100,15"
+            }, 
+            {
+                "heal on spark high": 600, 
+                "heal on spark low": 500, 
+                "heal on spark%": 100, 
+                "passive id": "101"
             }
         ], 
         "id": "840558", 
@@ -37460,6 +37466,52 @@
         ], 
         "id": "850928", 
         "name": "Child of the Fae"
+    }, 
+    "850958": {
+        "desc": "140% all parameters and 30% critical rate (Light), 300% critical damage, critical damage fills BB gauge, negates all status ailments and Atk, Def, Rec reduction & restores HP each turn", 
+        "effects": [
+            {
+                "atk% buff": 140, 
+                "crit% buff": 30, 
+                "def% buff": 140, 
+                "elements buffed": [
+                    "light"
+                ], 
+                "hp% buff": 140, 
+                "passive id": "2", 
+                "rec% buff": 140
+            }, 
+            {
+                "crit multiplier%": 300.0, 
+                "passive id": "34"
+            }, 
+            {
+                "bc fill on crit max": 12, 
+                "bc fill on crit min": 10, 
+                "bc fill on crit%": 100.0, 
+                "passive id": "65"
+            }, 
+            {
+                "atk down resist%": 100, 
+                "curse resist%": 100, 
+                "def down resist%": 100, 
+                "injury resist%": 100, 
+                "paralysis resist%": 100, 
+                "passive id": "73", 
+                "poison resist%": 100, 
+                "rec down resist%": 100, 
+                "sick resist%": 100, 
+                "weaken resist%": 100
+            }, 
+            {
+                "passive id": "33", 
+                "rec% added (turn heal)": 11.0, 
+                "turn heal high": 4500, 
+                "turn heal low": 3000
+            }
+        ], 
+        "id": "850958", 
+        "name": "Demolition Master"
     }, 
     "850977": {
         "desc": "40% boost to max HP, boosts Atk relative to how high remaining HP is & boosts Def relative to how low remaining HP is", 

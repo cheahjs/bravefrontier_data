@@ -26339,6 +26339,110 @@
         "rarity": "7", 
         "target": "self"
     }, 
+    "8000521": {
+        "desc": "15% all parameters (Thunder) for all allies, 120% Def, 50% max HP (Thunder), 120% spark damage, 20% BB/SBB activation rates & 35% damage reduction from Thunder, Water types for first 2 turns", 
+        "effects": [
+            {
+                "atk% buff": 15, 
+                "conditions": [], 
+                "def% buff": 15, 
+                "elements buffed": [
+                    "thunder"
+                ], 
+                "hp% buff": 15, 
+                "passive id": "2", 
+                "passive target": "party", 
+                "rec% buff": 15
+            }, 
+            {
+                "conditions": [], 
+                "def% buff": 120, 
+                "elements buffed": [
+                    "thunder"
+                ], 
+                "hp% buff": 50, 
+                "passive id": "2", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "damage% for spark": 120, 
+                "passive id": "31", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "increase skill activation in arena%": 20, 
+                "passive id": "111", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "dmg% mitigation for elemental attacks": 35, 
+                "dmg% mitigation for elemental attacks buff for first x turns": 2, 
+                "mitigate thunder attacks": true, 
+                "mitigate water attacks": true, 
+                "passive id": "63", 
+                "passive target": "self"
+            }
+        ], 
+        "id": "8000521", 
+        "name": "Wyola's Pride", 
+        "rarity": "8", 
+        "target": "self"
+    }, 
+    "8000522": {
+        "desc": "10% all parameters (Thunder) for all allies, 100% Def, 40% max HP (Thunder), 100% spark damage, 15% BB/SBB activation rates & 35% damage reduction from Thunder, Water types for first 2 turns", 
+        "effects": [
+            {
+                "atk% buff": 10, 
+                "conditions": [], 
+                "def% buff": 10, 
+                "elements buffed": [
+                    "thunder"
+                ], 
+                "hp% buff": 10, 
+                "passive id": "2", 
+                "passive target": "party", 
+                "rec% buff": 10
+            }, 
+            {
+                "conditions": [], 
+                "def% buff": 100, 
+                "elements buffed": [
+                    "thunder"
+                ], 
+                "hp% buff": 40, 
+                "passive id": "2", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "damage% for spark": 100, 
+                "passive id": "31", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "increase skill activation in arena%": 15, 
+                "passive id": "111", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "dmg% mitigation for elemental attacks": 35, 
+                "dmg% mitigation for elemental attacks buff for first x turns": 2, 
+                "mitigate thunder attacks": true, 
+                "mitigate water attacks": true, 
+                "passive id": "63", 
+                "passive target": "self"
+            }
+        ], 
+        "id": "8000522", 
+        "name": "Wyola's Favor", 
+        "rarity": "7", 
+        "target": "self"
+    }, 
     "8000527": {
         "desc": "50% Atk, max HP (Light, Dark) for all allies, probable spark critical, 10% reduction to BB activation cost & 20% OD gauge fill rate", 
         "effects": [
@@ -38749,8 +38853,20 @@
         "target": "self"
     }, 
     "840558": {
-        "desc": "15% additional damage reduction for all allies, considerably boosts Atk when BB gauge is over 50%, damage taken may slightly reduce foe's BB gauge fill rate for 1 turn & adds 16 combo (BB)/25 combo (SBB) powerful Thunder attack on single foe to BB/SBB", 
+        "desc": "25% all parameters (Thunder) and 15% DoT reduction for all allies, 100% Atk when BB gauge is above 50%, damage taken may inflict BB gauge fill rate reduction for 1 turn & add to BB (16 combo Thunder attack on single foe), SBB (25 combo Thunder attack on single foe)", 
         "effects": [
+            {
+                "atk% buff": 25, 
+                "conditions": [], 
+                "def% buff": 25, 
+                "elements buffed": [
+                    "thunder"
+                ], 
+                "hp% buff": 25, 
+                "passive id": "2", 
+                "passive target": "party", 
+                "rec% buff": 25
+            }, 
             {
                 "conditions": [], 
                 "passive target": "party", 
@@ -43763,6 +43879,60 @@
         ], 
         "id": "850928", 
         "name": "Legerdemain", 
+        "rarity": "8", 
+        "target": "self"
+    }, 
+    "850958": {
+        "desc": "Probable spark critical when Critical Type sphere is equipped, 15% DoT reduction for all allies, 150% critical damage, 0-100% Atk, Def, Rec relative to remaining HP & probable 2 KO resistance", 
+        "effects": [
+            {
+                "conditions": [
+                    {
+                        "sphere category required": "Critical", 
+                        "sphere category required (raw)": "2"
+                    }
+                ], 
+                "passive id": "100", 
+                "passive target": "self", 
+                "spark crit chance%": 50, 
+                "spark crit dmg%": 120
+            }, 
+            {
+                "conditions": [], 
+                "passive target": "party", 
+                "unknown passive id": "127", 
+                "unknown passive params": "100,15"
+            }, 
+            {
+                "conditions": [], 
+                "crit multiplier%": 150.0, 
+                "passive id": "34", 
+                "passive target": "self"
+            }, 
+            {
+                "atk% base buff": 0, 
+                "atk% extra buff based on hp": 100, 
+                "buff proportional to hp": "remaining", 
+                "conditions": [], 
+                "def% base buff": 0, 
+                "def% extra buff based on hp": 100, 
+                "passive id": "46", 
+                "passive target": "self", 
+                "rec% base buff": 0, 
+                "rec% extra buff based on hp": 100
+            }, 
+            {
+                "angel idol chance% condition": 0, 
+                "angel idol recover chance% high": 50, 
+                "angel idol recover chance% low": 50, 
+                "angel idol recover counts": 2, 
+                "conditions": [], 
+                "passive id": "69", 
+                "passive target": "self"
+            }
+        ], 
+        "id": "850958", 
+        "name": "Explosive Compound", 
         "rarity": "8", 
         "target": "self"
     }, 
