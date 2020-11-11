@@ -34316,6 +34316,63 @@
         "rarity": "8", 
         "target": "self"
     }, 
+    "820958": {
+        "desc": "120% spark damage when spark type sphere equipped, 20% all parameters, 10-20% BB gauge consumed reduction for all allies, fills BB gauge each turn & negates all status ailments and Atk, Def, Rec reduction", 
+        "effects": [
+            {
+                "conditions": [
+                    {
+                        "sphere category required": "Spark", 
+                        "sphere category required (raw)": "11"
+                    }
+                ], 
+                "damage% for spark": 120, 
+                "passive id": "31", 
+                "passive target": "self"
+            }, 
+            {
+                "atk% buff": 20, 
+                "conditions": [], 
+                "def% buff": 20, 
+                "hp% buff": 20, 
+                "passive id": "1", 
+                "passive target": "party", 
+                "rec% buff": 20
+            }, 
+            {
+                "conditions": [], 
+                "passive id": "49", 
+                "passive target": "party", 
+                "reduced bb bc use chance%": 100, 
+                "reduced bb bc use% high": 20, 
+                "reduced bb bc use% low": 10
+            }, 
+            {
+                "bc fill per turn": 10, 
+                "conditions": [], 
+                "passive id": "9", 
+                "passive target": "self"
+            }, 
+            {
+                "atk down resist%": 100, 
+                "conditions": [], 
+                "curse resist%": 100, 
+                "def down resist%": 100, 
+                "injury resist%": 100, 
+                "paralysis resist%": 100, 
+                "passive id": "73", 
+                "passive target": "self", 
+                "poison resist%": 100, 
+                "rec down resist%": 100, 
+                "sick resist%": 100, 
+                "weaken resist%": 100
+            }
+        ], 
+        "id": "820958", 
+        "name": "Pure Justice", 
+        "rarity": "8", 
+        "target": "self"
+    }, 
     "8300": {
         "desc": "Boosts BB Atk when damage taken has exceeded certain amount for 2 turns", 
         "effects": [
@@ -37045,6 +37102,67 @@
         ], 
         "id": "830833", 
         "name": "Blast Aegis", 
+        "rarity": "7", 
+        "target": "self"
+    }, 
+    "830834": {
+        "desc": "35% all parameters, 15% all elemental damage for all allies, 1 KO resistance when HP is below 50%, 10% damage reduction from all elements & spark damage fills BB gauge", 
+        "effects": [
+            {
+                "atk% buff": 35, 
+                "conditions": [], 
+                "def% buff": 35, 
+                "hp% buff": 35, 
+                "passive id": "1", 
+                "passive target": "party", 
+                "rec% buff": 35
+            }, 
+            {
+                "conditions": [], 
+                "dark units do extra elemental weakness dmg": true, 
+                "earth units do extra elemental weakness dmg": true, 
+                "elemental weakness multiplier%": 15.0, 
+                "fire units do extra elemental weakness dmg": true, 
+                "light units do extra elemental weakness dmg": true, 
+                "passive id": "50", 
+                "passive target": "party", 
+                "thunder units do extra elemental weakness dmg": true, 
+                "water units do extra elemental weakness dmg": true
+            }, 
+            {
+                "buff": {
+                    "angel idol buff (12)": true, 
+                    "angel idol recover hp%": 100, 
+                    "buff turns (12)": "-1"
+                }, 
+                "conditions": [], 
+                "hp below % buff activation": 50, 
+                "passive id": "55", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "dmg% mitigation for elemental attacks": 10.0, 
+                "mitigate dark attacks": true, 
+                "mitigate earth attacks": true, 
+                "mitigate fire attacks": true, 
+                "mitigate light attacks": true, 
+                "mitigate thunder attacks": true, 
+                "mitigate water attacks": true, 
+                "passive id": "62", 
+                "passive target": "self"
+            }, 
+            {
+                "bc fill on spark high": 3, 
+                "bc fill on spark low": 2, 
+                "bc fill on spark%": 100, 
+                "conditions": [], 
+                "passive id": "47", 
+                "passive target": "self"
+            }
+        ], 
+        "id": "830834", 
+        "name": "Lustrous Prism", 
         "rarity": "7", 
         "target": "self"
     }, 

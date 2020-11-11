@@ -28505,25 +28505,98 @@
         "desc": "Greatly boosts BC drop rate when attacking, raises normal hit amount & 30% boost to Atk and Def", 
         "effect": [
             {
-                "extra hits dmg%": -50, 
-                "hit increase/hit": 1, 
-                "passive id": "37"
+                "atk% buff": 999999, 
+                "crit% buff": 99999, 
+                "def% buff": 99999, 
+                "hp% buff": 99999, 
+                "passive id": "1", 
+                "rec% buff": 99999
             }, 
             {
-                "bc drop rate% buff": 25, 
-                "passive id": "19"
+                "passive id": "48", 
+                "reduced bb bc cost%": 100
             }, 
             {
-                "atk% buff": 30, 
-                "def% buff": 30, 
-                "passive id": "1"
+                "passive id": "66", 
+                "trigger on bb": true, 
+                "trigger on sbb": true, 
+                "trigger on ubb": true, 
+                "triggered effect": [
+                    {
+                        "bb atk%": 50000, 
+                        "bb crit%": 100, 
+                        "bb flat atk": 50000, 
+                        "effect delay time(ms)/frame": "0.0/0", 
+                        "proc id": "1", 
+                        "target area": "single", 
+                        "target type": "enemy"
+                    }
+                ]
+            }, 
+            {
+                "increase atk cap": 500000, 
+                "passive id": "143"
+            }, 
+            {
+                "passive id": "66", 
+                "trigger on bb": true, 
+                "trigger on sbb": true, 
+                "trigger on ubb": true, 
+                "triggered effect": [
+                    {
+                        "bb atk%": 50000, 
+                        "bb crit%": 100, 
+                        "bb flat atk": 50000, 
+                        "effect delay time(ms)/frame": "0.0/0", 
+                        "proc id": "1", 
+                        "target area": "single", 
+                        "target type": "enemy"
+                    }
+                ]
+            }, 
+            {
+                "damage% for spark": 50000, 
+                "passive id": "31"
+            }, 
+            {
+                "passive id": "66", 
+                "trigger on bb": true, 
+                "trigger on sbb": true, 
+                "trigger on ubb": true, 
+                "triggered effect": [
+                    {
+                        "effect delay time(ms)/frame": "0.0/0", 
+                        "target area": "aoe", 
+                        "target type": "party", 
+                        "unknown proc id": "70002", 
+                        "unknown proc param": "1,3,0,0,0,0,0,0,0"
+                    }
+                ]
+            }, 
+            {
+                "dark units do extra elemental weakness dmg": true, 
+                "earth units do extra elemental weakness dmg": true, 
+                "elemental weakness multiplier%": 50000.0, 
+                "fire units do extra elemental weakness dmg": true, 
+                "light units do extra elemental weakness dmg": true, 
+                "passive id": "50", 
+                "thunder units do extra elemental weakness dmg": true, 
+                "water units do extra elemental weakness dmg": true
+            }, 
+            {
+                "passive id": "43", 
+                "take 1 dmg%": 100
+            }, 
+            {
+                "crit multiplier%": 50000.0, 
+                "passive id": "34"
             }
         ], 
         "id": 818895, 
         "max_stack": 1, 
         "name": "Demonic Skull", 
         "raid": false, 
-        "rarity": 4, 
+        "rarity": 7, 
         "recipe": {
             "karma": "100000", 
             "materials": [
@@ -28545,10 +28618,10 @@
                 }
             ]
         }, 
-        "sell_price": 30000, 
-        "sphere type": 13, 
-        "sphere type text": "Atk Boosting", 
-        "thumbnail": "sphere_thum_818890.png", 
+        "sell_price": 999999, 
+        "sphere type": 6, 
+        "sphere type text": "BB Gauge", 
+        "thumbnail": "sphere_thum_818892.png", 
         "type": "sphere"
     }, 
     "818896": {
@@ -46833,6 +46906,262 @@
         "thumbnail": "ls_sphere_thum_7_3.png", 
         "type": "sphere"
     }, 
+    "819343": {
+        "desc": "30% all parameters, raises Atk limit to 170000, 120% critical damage, probable damage reduction to 1 & 100% Atk for 2 turns when damage dealt is over 300000", 
+        "effect": [
+            {
+                "atk% buff": 30, 
+                "def% buff": 30, 
+                "hp% buff": 30, 
+                "passive id": "1", 
+                "rec% buff": 30
+            }, 
+            {
+                "increase atk cap": 170000, 
+                "passive id": "143"
+            }, 
+            {
+                "crit multiplier%": 120.0, 
+                "passive id": "34"
+            }, 
+            {
+                "passive id": "43", 
+                "take 1 dmg%": 15
+            }, 
+            {
+                "buff": {
+                    "atk% buff (1)": 100, 
+                    "buff turns (1)": "2"
+                }, 
+                "damage dealt threshold buff activation": 300000, 
+                "passive id": "80"
+            }
+        ], 
+        "id": 819343, 
+        "max_stack": 1, 
+        "name": "Liminal End", 
+        "raid": false, 
+        "rarity": 6, 
+        "sell_price": 30000, 
+        "sphere type": 14, 
+        "sphere type text": "Special", 
+        "thumbnail": "item_thum_801901.png", 
+        "type": "sphere"
+    }, 
+    "819344": {
+        "desc": "60% all parameters, raises Atk limit to 190000, 160% spark damage, add to LS (probable spark critical), 150% Atk for 2 turns when damage dealt is over 300000 & add to SBB (boosts critical damage (All elements) for 2 turns)", 
+        "effect": [
+            {
+                "atk% buff": 60, 
+                "def% buff": 60, 
+                "hp% buff": 60, 
+                "passive id": "1", 
+                "rec% buff": 60
+            }, 
+            {
+                "increase atk cap": 190000, 
+                "passive id": "143"
+            }, 
+            {
+                "damage% for spark": 160, 
+                "passive id": "31"
+            }, 
+            {
+                "unknown passive id": "107", 
+                "unknown passive params": "100,40$150"
+            }, 
+            {
+                "buff": {
+                    "atk% buff (1)": 150, 
+                    "buff turns (1)": "2"
+                }, 
+                "damage dealt threshold buff activation": 300000, 
+                "passive id": "80"
+            }, 
+            {
+                "passive id": "66", 
+                "trigger on sbb": true, 
+                "triggered effect": [
+                    {
+                        "effect delay time(ms)/frame": "0.0/0", 
+                        "target area": "aoe", 
+                        "target type": "party", 
+                        "unknown proc id": "10016", 
+                        "unknown proc param": "0.75,2,0,1"
+                    }
+                ]
+            }, 
+            {
+                "passive id": "66", 
+                "trigger on sbb": true, 
+                "triggered effect": [
+                    {
+                        "effect delay time(ms)/frame": "0.0/0", 
+                        "target area": "aoe", 
+                        "target type": "party", 
+                        "unknown proc id": "10016", 
+                        "unknown proc param": "0.75,2,0,2"
+                    }
+                ]
+            }, 
+            {
+                "passive id": "66", 
+                "trigger on sbb": true, 
+                "triggered effect": [
+                    {
+                        "effect delay time(ms)/frame": "0.0/0", 
+                        "target area": "aoe", 
+                        "target type": "party", 
+                        "unknown proc id": "10016", 
+                        "unknown proc param": "0.75,2,0,3"
+                    }
+                ]
+            }, 
+            {
+                "passive id": "66", 
+                "trigger on sbb": true, 
+                "triggered effect": [
+                    {
+                        "effect delay time(ms)/frame": "0.0/0", 
+                        "target area": "aoe", 
+                        "target type": "party", 
+                        "unknown proc id": "10016", 
+                        "unknown proc param": "0.75,2,0,4"
+                    }
+                ]
+            }, 
+            {
+                "passive id": "66", 
+                "trigger on sbb": true, 
+                "triggered effect": [
+                    {
+                        "effect delay time(ms)/frame": "0.0/0", 
+                        "target area": "aoe", 
+                        "target type": "party", 
+                        "unknown proc id": "10016", 
+                        "unknown proc param": "0.75,2,0,5"
+                    }
+                ]
+            }, 
+            {
+                "passive id": "66", 
+                "trigger on sbb": true, 
+                "triggered effect": [
+                    {
+                        "effect delay time(ms)/frame": "0.0/0", 
+                        "target area": "aoe", 
+                        "target type": "party", 
+                        "unknown proc id": "10016", 
+                        "unknown proc param": "0.75,2,0,6"
+                    }
+                ]
+            }
+        ], 
+        "id": 819344, 
+        "max_stack": 1, 
+        "name": "Serenity", 
+        "raid": false, 
+        "rarity": 7, 
+        "recipe": {
+            "karma": "10000000", 
+            "materials": [
+                {
+                    "count": 1, 
+                    "id": 819345
+                }, 
+                {
+                    "count": 1, 
+                    "id": 890076
+                }
+            ]
+        }, 
+        "sell_price": 30000, 
+        "sphere type": 14, 
+        "sphere type text": "Special", 
+        "thumbnail": "sphere_thum_818894.png", 
+        "type": "sphere"
+    }, 
+    "819345": {
+        "desc": "60% all parameters, raises Atk limit to 190000, 175% critical damage, probable damage reduction to 1, 200% all elemental damage & 100% Atk, 25% Def, 25% Rec for 2 turns when damage dealt is over 300000", 
+        "effect": [
+            {
+                "atk% buff": 60, 
+                "def% buff": 60, 
+                "hp% buff": 60, 
+                "passive id": "1", 
+                "rec% buff": 60
+            }, 
+            {
+                "increase atk cap": 190000, 
+                "passive id": "143"
+            }, 
+            {
+                "crit multiplier%": 175.0, 
+                "passive id": "34"
+            }, 
+            {
+                "passive id": "43", 
+                "take 1 dmg%": 20
+            }, 
+            {
+                "dark units do extra elemental weakness dmg": true, 
+                "earth units do extra elemental weakness dmg": true, 
+                "elemental weakness multiplier%": 200.0, 
+                "fire units do extra elemental weakness dmg": true, 
+                "light units do extra elemental weakness dmg": true, 
+                "passive id": "50", 
+                "thunder units do extra elemental weakness dmg": true, 
+                "water units do extra elemental weakness dmg": true
+            }, 
+            {
+                "buff": {
+                    "atk% buff (1)": 100, 
+                    "buff turns (1)": "2"
+                }, 
+                "damage dealt threshold buff activation": 300000, 
+                "passive id": "80"
+            }, 
+            {
+                "buff": {
+                    "buff turns (3)": "2", 
+                    "def% buff (3)": 25
+                }, 
+                "damage dealt threshold buff activation": 300000, 
+                "passive id": "80"
+            }, 
+            {
+                "buff": {
+                    "buff turns (5)": "2", 
+                    "rec% buff (5)": 25
+                }, 
+                "damage dealt threshold buff activation": 300000, 
+                "passive id": "80"
+            }
+        ], 
+        "id": 819345, 
+        "max_stack": 1, 
+        "name": "Freedom", 
+        "raid": false, 
+        "rarity": 7, 
+        "recipe": {
+            "karma": "10000000", 
+            "materials": [
+                {
+                    "count": 1, 
+                    "id": 819344
+                }, 
+                {
+                    "count": 1, 
+                    "id": 890077
+                }
+            ]
+        }, 
+        "sell_price": 30000, 
+        "sphere type": 14, 
+        "sphere type text": "Special", 
+        "thumbnail": "sphere_thum_818895.png", 
+        "type": "sphere"
+    }, 
     "819346": {
         "desc": "100% Atk, 30% max HP, 30% critical rate, 3 turns spark vulnerability infliction, 150% all elemental damage, spark damage fills BB gauge & probable 20% damage reduction", 
         "effect": [
@@ -46940,6 +47269,76 @@
         "sphere type": 13, 
         "sphere type text": "Atk Boosting", 
         "thumbnail": "sphere_thum_819347.png", 
+        "type": "sphere"
+    }, 
+    "819348": {
+        "desc": "70% all parameters, probable damage reduction to 1, probable spark critical & fills BB gauge each turn<br>Guild Raid: 0-150% Atk, Def relative to remaining HP & add to SBB (Boosts spark damage (All elements) for 3 turns)", 
+        "effect": [
+            {
+                "atk% buff": 70, 
+                "def% buff": 70, 
+                "hp% buff": 70, 
+                "passive id": "1", 
+                "rec% buff": 70
+            }, 
+            {
+                "passive id": "43", 
+                "take 1 dmg%": 20
+            }, 
+            {
+                "passive id": "100", 
+                "spark crit chance%": 60, 
+                "spark crit dmg%": 200
+            }, 
+            {
+                "bc fill per turn": 25, 
+                "passive id": "9"
+            }
+        ], 
+        "id": 819348, 
+        "max_stack": 1, 
+        "name": "Prism Crown", 
+        "raid": false, 
+        "rarity": 7, 
+        "sell_price": 30000, 
+        "sphere type": 14, 
+        "sphere type text": "Special", 
+        "thumbnail": "sphere_thum_819348.png", 
+        "type": "sphere"
+    }, 
+    "819349": {
+        "desc": "65% all parameters, probable damage reduction to 1, probable spark critical & fills BB gauge each turn<br>Guild Raid: 0-100% Atk, Def relative to remaining HP & add to SBB (Boosts spark damage (All elements) for 3 turns)", 
+        "effect": [
+            {
+                "atk% buff": 65, 
+                "def% buff": 65, 
+                "hp% buff": 65, 
+                "passive id": "1", 
+                "rec% buff": 65
+            }, 
+            {
+                "passive id": "43", 
+                "take 1 dmg%": 20
+            }, 
+            {
+                "passive id": "100", 
+                "spark crit chance%": 60, 
+                "spark crit dmg%": 150
+            }, 
+            {
+                "bc fill per turn": 20, 
+                "passive id": "9"
+            }
+        ], 
+        "id": 819349, 
+        "max_stack": 1, 
+        "name": "Prism Heart", 
+        "raid": false, 
+        "rarity": 7, 
+        "sell_price": 30000, 
+        "sphere type": 14, 
+        "sphere type text": "Special", 
+        "thumbnail": "sphere_thum_819349.png", 
         "type": "sphere"
     }, 
     "819901": {
@@ -53443,6 +53842,28 @@
         "rarity": 3, 
         "sell_price": 1000, 
         "thumbnail": "item_thum_110030.png", 
+        "type": "material"
+    }, 
+    "890076": {
+        "desc": "A mysterious object retrieved from Kranus's shell.", 
+        "id": 890076, 
+        "max_stack": 99, 
+        "name": "Kranus's Spark", 
+        "raid": false, 
+        "rarity": 3, 
+        "sell_price": 1000, 
+        "thumbnail": "item_thum_800704.png", 
+        "type": "material"
+    }, 
+    "890077": {
+        "desc": "A thorny vine torn from the crown of the Queen in Cobalt.", 
+        "id": 890077, 
+        "max_stack": 99, 
+        "name": "S'eljah's Crown", 
+        "raid": false, 
+        "rarity": 3, 
+        "sell_price": 1000, 
+        "thumbnail": "item_thum_880224.png", 
         "type": "material"
     }, 
     "899998": {
