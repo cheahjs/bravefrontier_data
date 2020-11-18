@@ -26523,6 +26523,55 @@
         "rarity": "7", 
         "target": "self"
     }, 
+    "8000529": {
+        "desc": "15% all elemental damage, 5% damage reduction from all element types, 35% all parameters & probable spark critical", 
+        "effects": [
+            {
+                "conditions": [], 
+                "dark units do extra elemental weakness dmg": true, 
+                "earth units do extra elemental weakness dmg": true, 
+                "elemental weakness multiplier%": 15.0, 
+                "fire units do extra elemental weakness dmg": true, 
+                "light units do extra elemental weakness dmg": true, 
+                "passive id": "50", 
+                "passive target": "party", 
+                "thunder units do extra elemental weakness dmg": true, 
+                "water units do extra elemental weakness dmg": true
+            }, 
+            {
+                "conditions": [], 
+                "dmg% mitigation for elemental attacks": 5.0, 
+                "mitigate dark attacks": true, 
+                "mitigate earth attacks": true, 
+                "mitigate fire attacks": true, 
+                "mitigate light attacks": true, 
+                "mitigate thunder attacks": true, 
+                "mitigate water attacks": true, 
+                "passive id": "62", 
+                "passive target": "party"
+            }, 
+            {
+                "atk% buff": 35, 
+                "conditions": [], 
+                "def% buff": 35, 
+                "hp% buff": 35, 
+                "passive id": "1", 
+                "passive target": "self", 
+                "rec% buff": 35
+            }, 
+            {
+                "conditions": [], 
+                "passive id": "100", 
+                "passive target": "self", 
+                "spark crit chance%": 60, 
+                "spark crit dmg%": 100
+            }
+        ], 
+        "id": "8000529", 
+        "name": "Rainbow Bubble", 
+        "rarity": "7", 
+        "target": "self"
+    }, 
     "8000601": {
         "desc": "10% boost to Atk for all Dark type allies, greatly boosts Atk relative to remaining HP, greatly boosts Dark elemental damage, adds additional powerful attack at turn's end for 3 turns effect to SBB & raises Atk parameter limits to 170000", 
         "effects": [
@@ -37582,6 +37631,102 @@
         "rarity": "8", 
         "target": "self"
     }, 
+    "830978": {
+        "desc": "40% all parameters when Omni Star or Status Boosting sphere is equipped & add to BB (Fills BB gauge for 3 turns) when Omni Star or Status Boosting sphere is equipped, 20% all elemental damage for all allies, negates all status ailments and Atk, Def, Rec reduction, 150% spark damage & probable 2 KO resistance", 
+        "effects": [
+            {
+                "atk% buff": 40, 
+                "conditions": [
+                    {
+                        "item required": [
+                            "819350"
+                        ]
+                    }, 
+                    {
+                        "sphere category required": "Status Boost", 
+                        "sphere category required (raw)": "1"
+                    }
+                ], 
+                "def% buff": 40, 
+                "hp% buff": 40, 
+                "passive id": "1", 
+                "passive target": "self", 
+                "rec% buff": 40
+            }, 
+            {
+                "conditions": [
+                    {
+                        "item required": [
+                            "819350"
+                        ]
+                    }, 
+                    {
+                        "sphere category required": "Status Boost", 
+                        "sphere category required (raw)": "1"
+                    }
+                ], 
+                "passive id": "66", 
+                "passive target": "self", 
+                "trigger on bb": true, 
+                "triggered effect": [
+                    {
+                        "effect delay time(ms)/frame": "0.0/0", 
+                        "increase bb gauge gradual": 14, 
+                        "increase bb gauge gradual turns (37)": 3, 
+                        "proc id": "19", 
+                        "target area": "aoe", 
+                        "target type": "party"
+                    }
+                ]
+            }, 
+            {
+                "conditions": [], 
+                "dark units do extra elemental weakness dmg": true, 
+                "earth units do extra elemental weakness dmg": true, 
+                "elemental weakness multiplier%": 20.0, 
+                "fire units do extra elemental weakness dmg": true, 
+                "light units do extra elemental weakness dmg": true, 
+                "passive id": "50", 
+                "passive target": "party", 
+                "thunder units do extra elemental weakness dmg": true, 
+                "water units do extra elemental weakness dmg": true
+            }, 
+            {
+                "atk down resist%": 100, 
+                "conditions": [], 
+                "curse resist%": 100, 
+                "def down resist%": 100, 
+                "injury resist%": 100, 
+                "paralysis resist%": 100, 
+                "passive id": "73", 
+                "passive target": "self", 
+                "poison resist%": 100, 
+                "rec down resist%": 100, 
+                "sick resist%": 100, 
+                "weaken resist%": 100
+            }, 
+            {
+                "conditions": [], 
+                "damage% for spark": 150, 
+                "passive id": "31", 
+                "passive target": "self"
+            }, 
+            {
+                "angel idol chance% condition": 0, 
+                "angel idol recover chance% high": 50, 
+                "angel idol recover chance% low": 50, 
+                "angel idol recover counts": 2, 
+                "angel idol recover hp%": 1, 
+                "conditions": [], 
+                "passive id": "69", 
+                "passive target": "self"
+            }
+        ], 
+        "id": "830978", 
+        "name": "Precious Memories", 
+        "rarity": "8", 
+        "target": "self"
+    }, 
     "8400": {
         "desc": "Reduces damage taken when damage taken has exceeded certain amount for 2 turns", 
         "effects": [
@@ -44338,6 +44483,54 @@
         "rarity": "8", 
         "target": "self"
     }, 
+    "850989": {
+        "desc": "100% Atk, 50% max HP, 150% spark damage, 100% critical damage, probable 1 KO resistance & 100% critical, elemental damage reduction", 
+        "effects": [
+            {
+                "atk% buff": 100, 
+                "conditions": [], 
+                "hp% buff": 50, 
+                "passive id": "1", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "damage% for spark": 150, 
+                "passive id": "31", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "crit multiplier%": 100.0, 
+                "passive id": "34", 
+                "passive target": "self"
+            }, 
+            {
+                "angel idol chance% condition": 0, 
+                "angel idol recover chance% high": 30, 
+                "angel idol recover chance% low": 30, 
+                "angel idol recover counts": 1, 
+                "conditions": [], 
+                "passive id": "69", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "crit chance base resist%": 100, 
+                "crit chance buffed resist%": 100, 
+                "crit dmg base damage resist%": 100, 
+                "crit dmg buffed damage resist%": 100, 
+                "passive id": "53", 
+                "passive target": "self", 
+                "strong base element damage resist%": 100, 
+                "strong buffed element damage resist%": 100
+            }
+        ], 
+        "id": "850989", 
+        "name": "Breath of the Void", 
+        "rarity": "7", 
+        "target": "self"
+    }, 
     "8600": {
         "desc": "Boosts Atk relative to remaining HP, boosts Atk when BB gauge is full & 20% boost to all parameters when Dandelga is equipped", 
         "effects": [
@@ -47781,6 +47974,93 @@
         ], 
         "id": "860968", 
         "name": "Dark Triad", 
+        "rarity": "8", 
+        "target": "self"
+    }, 
+    "860978": {
+        "desc": "20% all parameters for all allies when Ortus or Status Boost sphere is equipped, 50% all parameters when Ima or Atk Boosting sphere is equipped & probable 2 KO resistance when Ortus, Ima, Status Boost sphere or Atk Boosting sphere are equipped, adds ignore Def to attack for all allies & 120% spark damage", 
+        "effects": [
+            {
+                "atk% buff": 20, 
+                "conditions": [
+                    {
+                        "item required": [
+                            "819112"
+                        ]
+                    }, 
+                    {
+                        "sphere category required": "Status Boost", 
+                        "sphere category required (raw)": "1"
+                    }
+                ], 
+                "def% buff": 20, 
+                "hp% buff": 20, 
+                "passive id": "1", 
+                "passive target": "party", 
+                "rec% buff": 20
+            }, 
+            {
+                "atk% buff": 50, 
+                "conditions": [
+                    {
+                        "item required": [
+                            "819113"
+                        ]
+                    }, 
+                    {
+                        "sphere category required": "Atk Boosting", 
+                        "sphere category required (raw)": "13"
+                    }
+                ], 
+                "def% buff": 50, 
+                "hp% buff": 50, 
+                "passive id": "1", 
+                "passive target": "self", 
+                "rec% buff": 50
+            }, 
+            {
+                "angel idol chance% condition": 0, 
+                "angel idol recover chance% high": 60, 
+                "angel idol recover chance% low": 60, 
+                "angel idol recover counts": 2, 
+                "conditions": [
+                    {
+                        "item required": [
+                            "819112"
+                        ]
+                    }, 
+                    {
+                        "item required": [
+                            "819113"
+                        ]
+                    }, 
+                    {
+                        "sphere category required": "Status Boost", 
+                        "sphere category required (raw)": "1"
+                    }, 
+                    {
+                        "sphere category required": "Atk Boosting", 
+                        "sphere category required (raw)": "13"
+                    }
+                ], 
+                "passive id": "69", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "ignore def%": 100, 
+                "passive id": "29", 
+                "passive target": "party"
+            }, 
+            {
+                "conditions": [], 
+                "damage% for spark": 120, 
+                "passive id": "31", 
+                "passive target": "self"
+            }
+        ], 
+        "id": "860978", 
+        "name": "Wrath of the Ancients", 
         "rarity": "8", 
         "target": "self"
     }, 
