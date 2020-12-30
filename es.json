@@ -31025,6 +31025,62 @@
         "rarity": "8", 
         "target": "self"
     }, 
+    "810998": {
+        "desc": "200% critical damage when Maeri is in squad or crit type sphere equipped, 20% Fire elemental damage, restores HP each turn for all allies, 0-100% Atk, Def, Rec relative to remaining HP & fills BB gauge each turn", 
+        "effects": [
+            {
+                "conditions": [
+                    {
+                        "unit required": "820990"
+                    }, 
+                    {
+                        "sphere category required": "Critical", 
+                        "sphere category required (raw)": "2"
+                    }
+                ], 
+                "crit multiplier%": 200.0, 
+                "passive id": "34", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "elemental weakness multiplier%": 20.0, 
+                "fire units do extra elemental weakness dmg": true, 
+                "passive id": "50", 
+                "passive target": "party"
+            }, 
+            {
+                "conditions": [], 
+                "passive id": "33", 
+                "passive target": "party", 
+                "rec% added (turn heal)": 11.0, 
+                "turn heal high": 4500, 
+                "turn heal low": 3500
+            }, 
+            {
+                "atk% base buff": 0, 
+                "atk% extra buff based on hp": 100, 
+                "buff proportional to hp": "remaining", 
+                "conditions": [], 
+                "def% base buff": 0, 
+                "def% extra buff based on hp": 100, 
+                "passive id": "46", 
+                "passive target": "self", 
+                "rec% base buff": 0, 
+                "rec% extra buff based on hp": 100
+            }, 
+            {
+                "bc fill per turn": 10, 
+                "conditions": [], 
+                "passive id": "9", 
+                "passive target": "self"
+            }
+        ], 
+        "id": "810998", 
+        "name": "A Dragon's Pride", 
+        "rarity": "7", 
+        "target": "self"
+    }, 
     "811017": {
         "desc": "Boosts BB Atk", 
         "effects": [
