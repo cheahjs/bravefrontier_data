@@ -41408,6 +41408,68 @@
         "rarity": "7", 
         "target": "self"
     }, 
+    "840998": {
+        "desc": "120% spark damage when Luro or Ni'en is in squad or spark type sphere equipped, 20% Thunder elemental damage, 15% DoT reduction for all allies, 40% all parameters & negates all status ailments and Atk, Def, Rec reduction", 
+        "effects": [
+            {
+                "conditions": [
+                    {
+                        "unit required": "860990"
+                    }, 
+                    {
+                        "unit required": "850990"
+                    }, 
+                    {
+                        "sphere category required": "Spark", 
+                        "sphere category required (raw)": "11"
+                    }
+                ], 
+                "damage% for spark": 120, 
+                "passive id": "31", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "elemental weakness multiplier%": 20.0, 
+                "passive id": "50", 
+                "passive target": "party", 
+                "thunder units do extra elemental weakness dmg": true
+            }, 
+            {
+                "conditions": [], 
+                "passive target": "party", 
+                "unknown passive id": "127", 
+                "unknown passive params": "100,15"
+            }, 
+            {
+                "atk% buff": 40, 
+                "conditions": [], 
+                "def% buff": 40, 
+                "hp% buff": 40, 
+                "passive id": "1", 
+                "passive target": "self", 
+                "rec% buff": 40
+            }, 
+            {
+                "atk down resist%": 100, 
+                "conditions": [], 
+                "curse resist%": 100, 
+                "def down resist%": 100, 
+                "injury resist%": 100, 
+                "paralysis resist%": 100, 
+                "passive id": "73", 
+                "passive target": "self", 
+                "poison resist%": 100, 
+                "rec down resist%": 100, 
+                "sick resist%": 100, 
+                "weaken resist%": 100
+            }
+        ], 
+        "id": "840998", 
+        "name": "White Matriarch", 
+        "rarity": "7", 
+        "target": "self"
+    }, 
     "8500": {
         "desc": "Probable slight HP recovery when attacked & absorbs HP when attacking", 
         "effects": [
@@ -44987,6 +45049,61 @@
         ], 
         "id": "850989", 
         "name": "Breath of the Void", 
+        "rarity": "7", 
+        "target": "self"
+    }, 
+    "850998": {
+        "desc": "150% critical damage when Luro or Kisrai is in squad or Crit type sphere is equipped, probable 40% damage counter, 10% BB/SBB activation rates for all allies, 40% Atk, Def each turn (3 times) & negates ignore Def", 
+        "effects": [
+            {
+                "conditions": [
+                    {
+                        "unit required": "860990"
+                    }, 
+                    {
+                        "unit required": "840990"
+                    }, 
+                    {
+                        "sphere category required": "Critical", 
+                        "sphere category required (raw)": "2"
+                    }
+                ], 
+                "crit multiplier%": 150.0, 
+                "passive id": "34", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "dmg% reflect chance%": 70, 
+                "dmg% reflect high": 40, 
+                "dmg% reflect low": 40, 
+                "passive id": "26", 
+                "passive target": "party"
+            }, 
+            {
+                "conditions": [], 
+                "increase skill activation in arena%": 10, 
+                "passive id": "111", 
+                "passive target": "party"
+            }, 
+            {
+                "atk% max buff": 120, 
+                "conditions": [], 
+                "def% max buff": 120, 
+                "increase from min to max": 1, 
+                "passive id": "105", 
+                "passive target": "self", 
+                "turn count": 3
+            }, 
+            {
+                "conditions": [], 
+                "ignore def resist chance%": 100, 
+                "passive id": "92", 
+                "passive target": "self"
+            }
+        ], 
+        "id": "850998", 
+        "name": "Fu Dao", 
         "rarity": "7", 
         "target": "self"
     }, 

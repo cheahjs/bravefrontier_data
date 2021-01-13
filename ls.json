@@ -35673,6 +35673,38 @@
         "id": "840968", 
         "name": "Patient Control"
     }, 
+    "840998": {
+        "desc": "150% Atk, Def, 100% Rec, 150% max HP, 250% Thunder elemental damage, 15% damage reduction, probable spark critical & 30% OD gauge fill rate", 
+        "effects": [
+            {
+                "atk% buff": 150, 
+                "def% buff": 150, 
+                "hp% buff": 150, 
+                "passive id": "1", 
+                "rec% buff": 100
+            }, 
+            {
+                "elemental weakness multiplier%": 250.0, 
+                "passive id": "50", 
+                "thunder units do extra elemental weakness dmg": true
+            }, 
+            {
+                "dmg% mitigation": 15, 
+                "passive id": "8"
+            }, 
+            {
+                "passive id": "100", 
+                "spark crit chance%": 50, 
+                "spark crit dmg%": 100
+            }, 
+            {
+                "od fill rate%": 30, 
+                "passive id": "70"
+            }
+        ], 
+        "id": "840998", 
+        "name": "Paraselene"
+    }, 
     "8500": {
         "desc": "Boosts Atk relative to remaining HP", 
         "effects": [
@@ -37872,6 +37904,48 @@
         ], 
         "id": "850988", 
         "name": "Paradoxical Light"
+    }, 
+    "850998": {
+        "desc": "120% Atk, 100% Def, Rec, 120% max HP, 20% damage reduction for 1 turn when damage taken is over 5k, 50% damage reduction from all element types for first 2 turns, 25% BB/SBB activation rates & 100% ABP, 50% CBP gain", 
+        "effects": [
+            {
+                "atk% buff": 120, 
+                "def% buff": 100, 
+                "hp% buff": 120, 
+                "passive id": "1", 
+                "rec% buff": 100
+            }, 
+            {
+                "buff": {
+                    "buff turns (36)": "1", 
+                    "dmg reduction% buff": 20
+                }, 
+                "damage threshold buff activation": 5000, 
+                "passive id": "78"
+            }, 
+            {
+                "dmg% mitigation for elemental attacks": 50, 
+                "dmg% mitigation for elemental attacks buff for first x turns": 2, 
+                "mitigate dark attacks": true, 
+                "mitigate earth attacks": true, 
+                "mitigate fire attacks": true, 
+                "mitigate light attacks": true, 
+                "mitigate thunder attacks": true, 
+                "mitigate water attacks": true, 
+                "passive id": "63"
+            }, 
+            {
+                "increase skill activation in arena%": 25, 
+                "passive id": "111"
+            }, 
+            {
+                "abp gain%": 100, 
+                "cbp gain%": 50, 
+                "passive id": "112"
+            }
+        ], 
+        "id": "850998", 
+        "name": "Raucous"
     }, 
     "8600": {
         "desc": "15% reduction of damage taken from Fire and Earth types", 
