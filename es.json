@@ -26826,6 +26826,48 @@
         "rarity": "7", 
         "target": "self"
     }, 
+    "8000531": {
+        "desc": "50% Atk, max HP (Dark) for all allies, 100% Dark elemental damage, spark damage may fill BB gauge  & 300% BB Atk", 
+        "effects": [
+            {
+                "atk% buff": 50, 
+                "conditions": [], 
+                "elements buffed": [
+                    "dark"
+                ], 
+                "hp% buff": 50, 
+                "passive id": "2", 
+                "passive target": "party"
+            }, 
+            {
+                "conditions": [], 
+                "dark units do extra elemental weakness dmg": true, 
+                "elemental weakness multiplier%": 100.0, 
+                "passive id": "50", 
+                "passive target": "self"
+            }, 
+            {
+                "bc fill on spark high": 2, 
+                "bc fill on spark low": 1, 
+                "bc fill on spark%": 100, 
+                "conditions": [], 
+                "passive id": "47", 
+                "passive target": "self"
+            }, 
+            {
+                "bb atk% buff": 300, 
+                "conditions": [], 
+                "passive id": "64", 
+                "passive target": "self", 
+                "sbb atk% buff": 300, 
+                "ubb atk% buff": 300
+            }
+        ], 
+        "id": "8000531", 
+        "name": "Feathered Gloom", 
+        "rarity": "7", 
+        "target": "self"
+    }, 
     "8000601": {
         "desc": "10% boost to Atk for all Dark type allies, greatly boosts Atk relative to remaining HP, greatly boosts Dark elemental damage, adds additional powerful attack at turn's end for 3 turns effect to SBB & raises Atk parameter limits to 170000", 
         "effects": [
@@ -37586,6 +37628,55 @@
         "rarity": "7", 
         "target": "self"
     }, 
+    "830835": {
+        "desc": "20% spark damage, 15% DoT reduction to all allies, 45% all parameters (Water, Earth), probable 60% spark critical 100% & 10% damage reduction from Water, Earth types", 
+        "effects": [
+            {
+                "conditions": [], 
+                "damage% for spark": 20, 
+                "passive id": "31", 
+                "passive target": "party"
+            }, 
+            {
+                "conditions": [], 
+                "passive target": "party", 
+                "unknown passive id": "127", 
+                "unknown passive params": "100,15"
+            }, 
+            {
+                "atk% buff": 45, 
+                "conditions": [], 
+                "def% buff": 45, 
+                "elements buffed": [
+                    "water", 
+                    "earth"
+                ], 
+                "hp% buff": 45, 
+                "passive id": "2", 
+                "passive target": "self", 
+                "rec% buff": 45
+            }, 
+            {
+                "conditions": [], 
+                "passive id": "100", 
+                "passive target": "self", 
+                "spark crit chance%": 60, 
+                "spark crit dmg%": 100
+            }, 
+            {
+                "conditions": [], 
+                "dmg% mitigation for elemental attacks": 10.0, 
+                "mitigate earth attacks": true, 
+                "mitigate water attacks": true, 
+                "passive id": "62", 
+                "passive target": "self"
+            }
+        ], 
+        "id": "830835", 
+        "name": "Eminent Flight", 
+        "rarity": "7", 
+        "target": "self"
+    }, 
     "830838": {
         "desc": "10% Zel, 25% Karma drop rates for all allies and 40% all parameters when Stroke of Luck is equipped, 15% Atk, Def each turn (4 times) for all allies, probable damage reduction to 1 & 100% critical and elemental damage reduction", 
         "effects": [
@@ -42229,27 +42320,8 @@
         "target": "self"
     }, 
     "850288": {
-        "desc": "50% boost to Atk of Light types, greatly boosts Atk relative to remaining HP, adds Light barrier effect to BB/SBB & raises max Atk value from 99999 to 130000<br>40% Boost to Atk, Def each turn (3 turns max, capping at 120%), boosts Light elemental damage for all allies & considerably raises normal hit amount in Guild Raid", 
+        "desc": "50% Atk (Light) for all allies, 0-100% Atk, Def relative to remaining HP, 30% all parameters & add to BB/SBB (Adds Light barrier)<br>25% Light elemental damage for all allies, 40% Atk, Def each turn (3 times) & raises normal hit amount in Guild Raid", 
         "effects": [
-            {
-                "conditions": [], 
-                "passive id": "66", 
-                "passive target": "self", 
-                "trigger on bb": true, 
-                "trigger on sbb": true, 
-                "triggered effect": [
-                    {
-                        "effect delay time(ms)/frame": "0.0/0", 
-                        "elemental barrier absorb dmg%": 100, 
-                        "elemental barrier def": 0, 
-                        "elemental barrier element": "light", 
-                        "elemental barrier hp": 3500, 
-                        "proc id": "62", 
-                        "target area": "aoe", 
-                        "target type": "party"
-                    }
-                ]
-            }, 
             {
                 "atk% buff": 50, 
                 "conditions": [], 
@@ -42264,14 +42336,38 @@
                 "atk% extra buff based on hp": 100, 
                 "buff proportional to hp": "remaining", 
                 "conditions": [], 
+                "def% base buff": 0, 
+                "def% extra buff based on hp": 100, 
                 "passive id": "46", 
                 "passive target": "self"
             }, 
             {
+                "atk% buff": 30, 
                 "conditions": [], 
-                "increase atk cap": 130000, 
-                "passive id": "143", 
-                "passive target": "self"
+                "def% buff": 30, 
+                "hp% buff": 30, 
+                "passive id": "1", 
+                "passive target": "self", 
+                "rec% buff": 30
+            }, 
+            {
+                "conditions": [], 
+                "passive id": "66", 
+                "passive target": "self", 
+                "trigger on bb": true, 
+                "trigger on sbb": true, 
+                "triggered effect": [
+                    {
+                        "effect delay time(ms)/frame": "0.0/0", 
+                        "elemental barrier absorb dmg%": 100, 
+                        "elemental barrier def": 0, 
+                        "elemental barrier element": "light", 
+                        "elemental barrier hp": 7000, 
+                        "proc id": "62", 
+                        "target area": "aoe", 
+                        "target type": "party"
+                    }
+                ]
             }
         ], 
         "id": "850288", 
@@ -46045,7 +46141,7 @@
         "target": "self"
     }, 
     "860288": {
-        "desc": "50% boost to Atk of Dark types, 50% boost to Spark damage, adds Dark barrier effect to BB/SBB & raises Atk parameter limits to 130000<br>Boosts Atk, Def when BB gauge is over 50%, adds 22 combo powerful Dark attack on Light types effect to SBB & boosts Dark elemental damage for all allies in Guild Raid", 
+        "desc": "50% Atk (Dark) for all allies, 100% critical, elemental damage reduction, 100% spark damage & add to BB/SBB (Adds Dark barrier)<br>25% Dark elemental damage for all allies, 75% Atk, Def when BB gauge is above 50% & add to SBB (22 combo Dark attack on Light foes) in Guild Raid", 
         "effects": [
             {
                 "atk% buff": 50, 
@@ -46058,14 +46154,19 @@
             }, 
             {
                 "conditions": [], 
-                "damage% for spark": 50, 
-                "passive id": "31", 
-                "passive target": "self"
+                "crit chance base resist%": 100, 
+                "crit chance buffed resist%": 100, 
+                "crit dmg base damage resist%": 100, 
+                "crit dmg buffed damage resist%": 100, 
+                "passive id": "53", 
+                "passive target": "self", 
+                "strong base element damage resist%": 100, 
+                "strong buffed element damage resist%": 100
             }, 
             {
                 "conditions": [], 
-                "increase atk cap": 130000, 
-                "passive id": "143", 
+                "damage% for spark": 100, 
+                "passive id": "31", 
                 "passive target": "self"
             }, 
             {
@@ -46080,7 +46181,7 @@
                         "elemental barrier absorb dmg%": 100, 
                         "elemental barrier def": 0, 
                         "elemental barrier element": "dark", 
-                        "elemental barrier hp": 3500, 
+                        "elemental barrier hp": 7000, 
                         "proc id": "62", 
                         "target area": "aoe", 
                         "target type": "party"
@@ -49816,6 +49917,53 @@
         "rarity": "8", 
         "target": "self"
     }, 
+    "8900013": {
+        "desc": "50% Atk, Def and 15% critical rate (Fire), 15% DoT reduction for all allies, fills BB gauge each turn, restores HP each turn & 100% elemental damage reduction", 
+        "effects": [
+            {
+                "atk% buff": 50, 
+                "conditions": [], 
+                "crit% buff": 15, 
+                "def% buff": 50, 
+                "elements buffed": [
+                    "fire"
+                ], 
+                "passive id": "2", 
+                "passive target": "party"
+            }, 
+            {
+                "conditions": [], 
+                "passive target": "party", 
+                "unknown passive id": "127", 
+                "unknown passive params": "100,15"
+            }, 
+            {
+                "bc fill per turn": 10, 
+                "conditions": [], 
+                "passive id": "9", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "passive id": "33", 
+                "passive target": "self", 
+                "rec% added (turn heal)": 11.0, 
+                "turn heal high": 7000, 
+                "turn heal low": 7000
+            }, 
+            {
+                "conditions": [], 
+                "passive id": "53", 
+                "passive target": "self", 
+                "strong base element damage resist%": 100, 
+                "strong buffed element damage resist%": 100
+            }
+        ], 
+        "id": "8900013", 
+        "name": "Proof of Courage", 
+        "rarity": "7", 
+        "target": "self"
+    }, 
     "8910287": {
         "desc": "30% boost to Atk of Fire types & negates all status ailments<br>30% boost to Rec of Fire types & adds 22 combo powerful Fire attack on all Earth types effect to SBB in Guild Raid", 
         "effects": [
@@ -50120,6 +50268,13 @@
         "desc": "50% boost to Atk of Light types, greatly boosts Atk relative to remaining HP, adds Light barrier effect to BB/SBB & raises max Atk value from 99999 to 130000<br>40% Boost to Atk, Def each turn (3 turns max, capping at 120%), boosts Light elemental damage for all allies & considerably raises normal hit amount in Guild Raid", 
         "effects": [
             {
+                "conditions": [], 
+                "elemental weakness multiplier%": 25.0, 
+                "light units do extra elemental weakness dmg": true, 
+                "passive id": "50", 
+                "passive target": "party"
+            }, 
+            {
                 "atk% max buff": 120, 
                 "conditions": [], 
                 "def% max buff": 120, 
@@ -50130,13 +50285,7 @@
             }, 
             {
                 "conditions": [], 
-                "elemental weakness multiplier%": 25.0, 
-                "light units do extra elemental weakness dmg": true, 
-                "passive id": "50", 
-                "passive target": "party"
-            }, 
-            {
-                "conditions": [], 
+                "extra hits dmg%": 120, 
                 "hit increase/hit": 2, 
                 "passive id": "37", 
                 "passive target": "self"
@@ -50185,6 +50334,13 @@
         "desc": "50% boost to Atk of Dark types, 50% boost to Spark damage, adds Dark barrier effect to BB/SBB & raises Atk parameter limits to 130000<br>Boosts Atk, Def when BB gauge is over 50%, adds 22 combo powerful Dark attack on Light types effect to SBB & boosts Dark elemental damage for all allies in Guild Raid", 
         "effects": [
             {
+                "conditions": [], 
+                "dark units do extra elemental weakness dmg": true, 
+                "elemental weakness multiplier%": 25.0, 
+                "passive id": "50", 
+                "passive target": "party"
+            }, 
+            {
                 "atk% buff": 75, 
                 "bb gauge above % buff requirement": 50, 
                 "conditions": [], 
@@ -50201,20 +50357,13 @@
                     {
                         "additional element used for attack check": "dark", 
                         "bb atk%": 1100, 
-                        "bb flat atk": 100, 
+                        "bb flat atk": 200, 
                         "effect delay time(ms)/frame": "0.0/0", 
                         "proc id": "97", 
                         "target area": "aoe", 
                         "target type": "enemy"
                     }
                 ]
-            }, 
-            {
-                "conditions": [], 
-                "dark units do extra elemental weakness dmg": true, 
-                "elemental weakness multiplier%": 25.0, 
-                "passive id": "50", 
-                "passive target": "party"
             }
         ], 
         "id": "8960288", 
