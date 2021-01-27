@@ -27310,6 +27310,120 @@
         "rarity": "6", 
         "target": "self"
     }, 
+    "8000704": {
+        "desc": "10% reduction to BB activation cost, add to BB (Fills BB gauge to max from one random ally), add to SBB (fully restores HP from one random ally) & add to BB/SBB (Probable KO resistance)", 
+        "effects": [
+            {
+                "conditions": [], 
+                "passive id": "48", 
+                "passive target": "self", 
+                "reduced bb bc cost%": 10
+            }, 
+            {
+                "conditions": [], 
+                "passive id": "66", 
+                "passive target": "self", 
+                "trigger on bb": true, 
+                "triggered effect": [
+                    {
+                        "bb bc fill%": 100, 
+                        "effect delay time(ms)/frame": "16.7/1", 
+                        "proc id": "4", 
+                        "target area": "single", 
+                        "target type": "party"
+                    }
+                ]
+            }, 
+            {
+                "conditions": [], 
+                "passive id": "66", 
+                "passive target": "self", 
+                "trigger on sbb": true, 
+                "triggered effect": [
+                    {
+                        "effect delay time(ms)/frame": "16.7/1", 
+                        "heal high": 99999, 
+                        "heal low": 98999, 
+                        "proc id": "2", 
+                        "rec added% (from healer)": 40.0, 
+                        "target area": "single", 
+                        "target type": "party"
+                    }
+                ]
+            }, 
+            {
+                "conditions": [], 
+                "passive id": "66", 
+                "passive target": "self", 
+                "trigger on bb": true, 
+                "trigger on sbb": true, 
+                "triggered effect": [
+                    {
+                        "angel idol buff turns (91)": 999, 
+                        "angel idol recover chance%": 15, 
+                        "angel idol recover hp%": 1, 
+                        "effect delay time(ms)/frame": "0.0/0", 
+                        "proc id": "56", 
+                        "target area": "aoe", 
+                        "target type": "party"
+                    }
+                ]
+            }
+        ], 
+        "id": "8000704", 
+        "name": "Titan's Pauldron", 
+        "rarity": "7", 
+        "target": "self"
+    }, 
+    "8000705": {
+        "desc": "50% all parameters, 30% critical rate, 100% spark damage, 100% critical damage, 100% all elemental damage & 100% OD gauge fill rate", 
+        "effects": [
+            {
+                "atk% buff": 50, 
+                "conditions": [], 
+                "crit% buff": 30, 
+                "def% buff": 50, 
+                "hp% buff": 50, 
+                "passive id": "1", 
+                "passive target": "self", 
+                "rec% buff": 50
+            }, 
+            {
+                "conditions": [], 
+                "damage% for spark": 100, 
+                "passive id": "31", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "crit multiplier%": 100.0, 
+                "passive id": "34", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "dark units do extra elemental weakness dmg": true, 
+                "earth units do extra elemental weakness dmg": true, 
+                "elemental weakness multiplier%": 100.0, 
+                "fire units do extra elemental weakness dmg": true, 
+                "light units do extra elemental weakness dmg": true, 
+                "passive id": "50", 
+                "passive target": "self", 
+                "thunder units do extra elemental weakness dmg": true, 
+                "water units do extra elemental weakness dmg": true
+            }, 
+            {
+                "conditions": [], 
+                "od fill rate%": 100, 
+                "passive id": "70", 
+                "passive target": "self"
+            }
+        ], 
+        "id": "8000705", 
+        "name": "Cloudbreak", 
+        "rarity": "8", 
+        "target": "self"
+    }, 
     "8000801": {
         "desc": "Raises Atk parameter limits to 200000, 120% boost to Atk and 30% boost to critical hit rate, considerably boost critical damage & boosts Atk each turn (up to 4 turns)", 
         "effects": [
