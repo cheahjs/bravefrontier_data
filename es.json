@@ -35604,8 +35604,33 @@
         "target": "self"
     }, 
     "830288": {
-        "desc": "50% boost to Atk of Earth types, 100% boost to Atk when BB gauge is over 50%, adds Earth barrier effect to BB/SBB & raises Atk parameter limits to 130000<br> 50% boost to Atk, Def when HP is over 50%, raises normal hit amount & boosts Earth elemental damage for all allies in Guild Raid", 
+        "desc": "50% Atk (Earth) for all allies, 30% all parameters, 100% Atk when BB gauge is above 50% & add to BB/SBB (Adds Earth barrier)<br>25% Earth elemental damage for all allies, raises normal hit amount & add to SBB (19 combo Earth attack on Thunder foes) in Guild Raid", 
         "effects": [
+            {
+                "atk% buff": 50, 
+                "conditions": [], 
+                "elements buffed": [
+                    "earth"
+                ], 
+                "passive id": "2", 
+                "passive target": "party"
+            }, 
+            {
+                "atk% buff": 30, 
+                "conditions": [], 
+                "def% buff": 30, 
+                "hp% buff": 30, 
+                "passive id": "1", 
+                "passive target": "self", 
+                "rec% buff": 30
+            }, 
+            {
+                "atk% buff": 100, 
+                "bb gauge above % buff requirement": 50, 
+                "conditions": [], 
+                "passive id": "30", 
+                "passive target": "self"
+            }, 
             {
                 "conditions": [], 
                 "passive id": "66", 
@@ -35618,34 +35643,12 @@
                         "elemental barrier absorb dmg%": 100, 
                         "elemental barrier def": 0, 
                         "elemental barrier element": "earth", 
-                        "elemental barrier hp": 3500, 
+                        "elemental barrier hp": 7000, 
                         "proc id": "62", 
                         "target area": "aoe", 
                         "target type": "party"
                     }
                 ]
-            }, 
-            {
-                "atk% buff": 50, 
-                "conditions": [], 
-                "elements buffed": [
-                    "earth"
-                ], 
-                "passive id": "2", 
-                "passive target": "party"
-            }, 
-            {
-                "atk% buff": 100, 
-                "bb gauge above % buff requirement": 50, 
-                "conditions": [], 
-                "passive id": "30", 
-                "passive target": "self"
-            }, 
-            {
-                "conditions": [], 
-                "increase atk cap": 130000, 
-                "passive id": "143", 
-                "passive target": "self"
             }
         ], 
         "id": "830288", 
@@ -49123,6 +49126,73 @@
         "rarity": "7", 
         "target": "self"
     }, 
+    "861008": {
+        "desc": "30-50% BB gauge consumed reduction when Guinne is in squad or BB gauge sphere is equipped, 20% all elemental damage for all allies, 0-100% Atk, Def, Rec relative to remaining HP, 10% damage reduction & 175% damage against status afflicted foes", 
+        "effects": [
+            {
+                "conditions": [
+                    {
+                        "unit required": "811000"
+                    }, 
+                    {
+                        "sphere category required": "BB Gauge", 
+                        "sphere category required (raw)": "6"
+                    }
+                ], 
+                "passive id": "49", 
+                "passive target": "self", 
+                "reduced bb bc use chance%": 100, 
+                "reduced bb bc use% high": 50, 
+                "reduced bb bc use% low": 30
+            }, 
+            {
+                "conditions": [], 
+                "dark units do extra elemental weakness dmg": true, 
+                "earth units do extra elemental weakness dmg": true, 
+                "elemental weakness multiplier%": 20.0, 
+                "fire units do extra elemental weakness dmg": true, 
+                "light units do extra elemental weakness dmg": true, 
+                "passive id": "50", 
+                "passive target": "party", 
+                "thunder units do extra elemental weakness dmg": true, 
+                "water units do extra elemental weakness dmg": true
+            }, 
+            {
+                "atk% base buff": 0, 
+                "atk% extra buff based on hp": 100, 
+                "buff proportional to hp": "remaining", 
+                "conditions": [], 
+                "def% base buff": 0, 
+                "def% extra buff based on hp": 100, 
+                "passive id": "46", 
+                "passive target": "self", 
+                "rec% base buff": 0, 
+                "rec% extra buff based on hp": 100
+            }, 
+            {
+                "conditions": [], 
+                "dmg% mitigation": 10, 
+                "passive id": "8", 
+                "passive target": "self"
+            }, 
+            {
+                "atk% buff when enemy has ailment": 175, 
+                "atk% buff when enemy has curse": true, 
+                "atk% buff when enemy has injury": true, 
+                "atk% buff when enemy has paralysis": true, 
+                "atk% buff when enemy has poison": true, 
+                "atk% buff when enemy has sick": true, 
+                "atk% buff when enemy has weaken": true, 
+                "conditions": [], 
+                "passive id": "74", 
+                "passive target": "self"
+            }
+        ], 
+        "id": "861008", 
+        "name": "Mortal Chain", 
+        "rarity": "7", 
+        "target": "self"
+    }, 
     "8700": {
         "desc": "Adds BB gauge fill rate boost to BB/SBB for 3 turns & greatly boosts elemental damage", 
         "effects": [
@@ -50214,6 +50284,53 @@
         "rarity": "7", 
         "target": "self"
     }, 
+    "8900014": {
+        "desc": "50% Atk, Def and 15% critical rate (Earth), 15% DoT reduction for all allies, fills BB gauge each turn, restores HP each turn & 100% elemental damage reduction", 
+        "effects": [
+            {
+                "atk% buff": 50, 
+                "conditions": [], 
+                "crit% buff": 15, 
+                "def% buff": 50, 
+                "elements buffed": [
+                    "earth"
+                ], 
+                "passive id": "2", 
+                "passive target": "party"
+            }, 
+            {
+                "conditions": [], 
+                "passive target": "party", 
+                "unknown passive id": "127", 
+                "unknown passive params": "100,15"
+            }, 
+            {
+                "bc fill per turn": 10, 
+                "conditions": [], 
+                "passive id": "9", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "passive id": "33", 
+                "passive target": "self", 
+                "rec% added (turn heal)": 11.0, 
+                "turn heal high": 7000, 
+                "turn heal low": 7000
+            }, 
+            {
+                "conditions": [], 
+                "passive id": "53", 
+                "passive target": "self", 
+                "strong base element damage resist%": 100, 
+                "strong buffed element damage resist%": 100
+            }
+        ], 
+        "id": "8900014", 
+        "name": "Proof of Strength", 
+        "rarity": "7", 
+        "target": "self"
+    }, 
     "8910287": {
         "desc": "30% boost to Atk of Fire types & negates all status ailments<br>30% boost to Rec of Fire types & adds 22 combo powerful Fire attack on all Earth types effect to SBB in Guild Raid", 
         "effects": [
@@ -50393,25 +50510,35 @@
         "desc": "50% boost to Atk of Earth types, 100% boost to Atk when BB gauge is over 50%, adds Earth barrier effect to BB/SBB & raises Atk parameter limits to 130000<br> 50% boost to Atk, Def when HP is over 50%, raises normal hit amount & boosts Earth elemental damage for all allies in Guild Raid", 
         "effects": [
             {
-                "atk% buff": 50, 
-                "conditions": [], 
-                "def% buff": 50, 
-                "hp above % buff requirement": 50, 
-                "passive id": "11", 
-                "passive target": "self"
-            }, 
-            {
-                "conditions": [], 
-                "hit increase/hit": 1, 
-                "passive id": "37", 
-                "passive target": "self"
-            }, 
-            {
                 "conditions": [], 
                 "earth units do extra elemental weakness dmg": true, 
                 "elemental weakness multiplier%": 25.0, 
                 "passive id": "50", 
                 "passive target": "party"
+            }, 
+            {
+                "conditions": [], 
+                "extra hits dmg%": 120, 
+                "hit increase/hit": 2, 
+                "passive id": "37", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "passive id": "66", 
+                "passive target": "self", 
+                "trigger on sbb": true, 
+                "triggered effect": [
+                    {
+                        "additional element used for attack check": "earth", 
+                        "bb atk%": 1100, 
+                        "bb flat atk": 200, 
+                        "effect delay time(ms)/frame": "0.0/0", 
+                        "proc id": "97", 
+                        "target area": "aoe", 
+                        "target type": "enemy"
+                    }
+                ]
             }
         ], 
         "id": "8930288", 

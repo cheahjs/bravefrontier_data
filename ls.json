@@ -31735,29 +31735,37 @@
         "name": "Supernal Observation"
     }, 
     "830288": {
-        "desc": "60% boost to Atk, max HP, hugely boosts critical damage, enormously boosts BC, HC drop rate & boosts Atk, Def relative to remaining HP", 
+        "desc": "150% Atk, max HP, 30% critical rate, 250% critical damage, 0-80% Atk, Def relative to remaining HP, 50% BC, HC, 9% Item, 50% Zel, Karma drop rates & 30% OD gauge fill rate", 
         "effects": [
             {
-                "atk% buff": 60, 
-                "hp% buff": 60, 
+                "atk% buff": 150, 
+                "crit% buff": 30, 
+                "hp% buff": 150, 
                 "passive id": "1"
             }, 
             {
-                "crit multiplier%": 150.0, 
+                "crit multiplier%": 250.0, 
                 "passive id": "34"
             }, 
             {
-                "bc drop rate% buff": 30, 
-                "hc drop rate% buff": 30, 
-                "passive id": "19"
-            }, 
-            {
                 "atk% base buff": 0, 
-                "atk% extra buff based on hp": 50, 
+                "atk% extra buff based on hp": 80, 
                 "buff proportional to hp": "remaining", 
                 "def% base buff": 0, 
-                "def% extra buff based on hp": 50, 
+                "def% extra buff based on hp": 80, 
                 "passive id": "46"
+            }, 
+            {
+                "bc drop rate% buff": 50, 
+                "hc drop rate% buff": 50, 
+                "item drop rate% buff": 9, 
+                "karma drop rate% buff": 50, 
+                "passive id": "19", 
+                "zel drop rate% buff": 50
+            }, 
+            {
+                "od fill rate%": 30, 
+                "passive id": "70"
             }
         ], 
         "id": "830288", 
@@ -40331,6 +40339,50 @@
         ], 
         "id": "860998", 
         "name": "Blind Sight"
+    }, 
+    "861008": {
+        "desc": "140% all parameters, 200% all elemental damage, 175% damage against status afflicted foes, damage taken may restore HP & 30% OD gauge fill rate", 
+        "effects": [
+            {
+                "atk% buff": 140, 
+                "def% buff": 140, 
+                "hp% buff": 140, 
+                "passive id": "1", 
+                "rec% buff": 140
+            }, 
+            {
+                "dark units do extra elemental weakness dmg": true, 
+                "earth units do extra elemental weakness dmg": true, 
+                "elemental weakness multiplier%": 200.0, 
+                "fire units do extra elemental weakness dmg": true, 
+                "light units do extra elemental weakness dmg": true, 
+                "passive id": "50", 
+                "thunder units do extra elemental weakness dmg": true, 
+                "water units do extra elemental weakness dmg": true
+            }, 
+            {
+                "atk% buff when enemy has ailment": 175, 
+                "atk% buff when enemy has curse": true, 
+                "atk% buff when enemy has injury": true, 
+                "atk% buff when enemy has paralysis": true, 
+                "atk% buff when enemy has poison": true, 
+                "atk% buff when enemy has sick": true, 
+                "atk% buff when enemy has weaken": true, 
+                "passive id": "74"
+            }, 
+            {
+                "dmg% to hp% when attacked chance%": 50, 
+                "dmg% to hp% when attacked high": 30, 
+                "dmg% to hp% when attacked low": 25, 
+                "passive id": "24"
+            }, 
+            {
+                "od fill rate%": 30, 
+                "passive id": "70"
+            }
+        ], 
+        "id": "861008", 
+        "name": "Deft Devil"
     }, 
     "8700": {
         "desc": "15% reduction of damage taken from Water and Fire types", 
