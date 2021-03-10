@@ -26948,6 +26948,46 @@
         "rarity": "7", 
         "target": "self"
     }, 
+    "8000534": {
+        "desc": "50% Atk, max HP and 30% critical rate (Light) for all allies, 150% spark damage, 10% damage reduction from Light, Dark types & 60% OD gauge fill rate", 
+        "effects": [
+            {
+                "atk% buff": 50, 
+                "conditions": [], 
+                "crit% buff": 30, 
+                "elements buffed": [
+                    "light"
+                ], 
+                "hp% buff": 50, 
+                "passive id": "2", 
+                "passive target": "party"
+            }, 
+            {
+                "conditions": [], 
+                "damage% for spark": 150, 
+                "passive id": "31", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "dmg% mitigation for elemental attacks": 10.0, 
+                "mitigate dark attacks": true, 
+                "mitigate light attacks": true, 
+                "passive id": "62", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "od fill rate%": 60, 
+                "passive id": "70", 
+                "passive target": "self"
+            }
+        ], 
+        "id": "8000534", 
+        "name": "Flowering Light ", 
+        "rarity": "7", 
+        "target": "self"
+    }, 
     "8000601": {
         "desc": "10% boost to Atk for all Dark type allies, greatly boosts Atk relative to remaining HP, greatly boosts Dark elemental damage, adds additional powerful attack at turn's end for 3 turns effect to SBB & raises Atk parameter limits to 170000", 
         "effects": [
@@ -37129,41 +37169,30 @@
         "target": "self"
     }, 
     "830698": {
-        "desc": "20% boost to all parameters for all allies, 3% reduction to damage received for all allies, negates critical and elemental damage, restores HP each turn & resistance against 1 KO attack when HP is below 40%", 
+        "desc": "25% all parameters, 5% damage reduction for all allies, restores HP each turn, 1 KO resistance when HP is below 40% & 100% critical, elemental damage reduction", 
         "effects": [
             {
-                "atk% buff": 20, 
+                "atk% buff": 25, 
                 "conditions": [], 
-                "def% buff": 20, 
-                "hp% buff": 20, 
+                "def% buff": 25, 
+                "hp% buff": 25, 
                 "passive id": "1", 
                 "passive target": "party", 
-                "rec% buff": 20
+                "rec% buff": 25
             }, 
             {
                 "conditions": [], 
-                "dmg% mitigation": 3, 
+                "dmg% mitigation": 5, 
                 "passive id": "8", 
                 "passive target": "party"
             }, 
             {
                 "conditions": [], 
-                "crit chance base resist%": 100, 
-                "crit chance buffed resist%": 100, 
-                "crit dmg base damage resist%": 100, 
-                "crit dmg buffed damage resist%": 100, 
-                "passive id": "53", 
-                "passive target": "self", 
-                "strong base element damage resist%": 100, 
-                "strong buffed element damage resist%": 100
-            }, 
-            {
-                "conditions": [], 
                 "passive id": "33", 
                 "passive target": "self", 
-                "rec% added (turn heal)": 10.0, 
-                "turn heal high": 4000, 
-                "turn heal low": 3000
+                "rec% added (turn heal)": 11.0, 
+                "turn heal high": 4500, 
+                "turn heal low": 3500
             }, 
             {
                 "buff": {
@@ -37175,6 +37204,17 @@
                 "hp below % buff activation": 40, 
                 "passive id": "55", 
                 "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "crit chance base resist%": 100, 
+                "crit chance buffed resist%": 100, 
+                "crit dmg base damage resist%": 100, 
+                "crit dmg buffed damage resist%": 100, 
+                "passive id": "53", 
+                "passive target": "self", 
+                "strong base element damage resist%": 100, 
+                "strong buffed element damage resist%": 100
             }
         ], 
         "id": "830698", 
@@ -45510,6 +45550,69 @@
         "rarity": "7", 
         "target": "self"
     }, 
+    "851018": {
+        "desc": "Probable 2 KO resistance when Angahl or Miell is in squad or spark type sphere equipped, Negates all status ailments, 25% spark damage for all allies, 40% Atk, Def, Rec each turn (3 times) & 150% Light elemental damage", 
+        "effects": [
+            {
+                "angel idol chance% condition": 0, 
+                "angel idol recover chance% high": 60, 
+                "angel idol recover chance% low": 60, 
+                "angel idol recover counts": 2, 
+                "conditions": [
+                    {
+                        "unit required": "831010"
+                    }, 
+                    {
+                        "unit required": "830690"
+                    }, 
+                    {
+                        "sphere category required": "Spark", 
+                        "sphere category required (raw)": "11"
+                    }
+                ], 
+                "passive id": "69", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "curse resist%": 100, 
+                "injury resist%": 100, 
+                "paralysis resist%": 100, 
+                "passive id": "73", 
+                "passive target": "party", 
+                "poison resist%": 100, 
+                "sick resist%": 100, 
+                "weaken resist%": 100
+            }, 
+            {
+                "conditions": [], 
+                "damage% for spark": 25, 
+                "passive id": "31", 
+                "passive target": "party"
+            }, 
+            {
+                "atk% max buff": 120, 
+                "conditions": [], 
+                "def% max buff": 120, 
+                "increase from min to max": 1, 
+                "passive id": "105", 
+                "passive target": "self", 
+                "rec% max buff": 120, 
+                "turn count": 3
+            }, 
+            {
+                "conditions": [], 
+                "elemental weakness multiplier%": 150.0, 
+                "light units do extra elemental weakness dmg": true, 
+                "passive id": "50", 
+                "passive target": "self"
+            }
+        ], 
+        "id": "851018", 
+        "name": "Gentle Reprieve", 
+        "rarity": "7", 
+        "target": "self"
+    }, 
     "8600": {
         "desc": "Boosts Atk relative to remaining HP, boosts Atk when BB gauge is full & 20% boost to all parameters when Dandelga is equipped", 
         "effects": [
@@ -50382,6 +50485,194 @@
         ], 
         "id": "8900014", 
         "name": "Proof of Strength", 
+        "rarity": "7", 
+        "target": "self"
+    }, 
+    "8900015": {
+        "desc": "50% Atk, Def and 15% critical rate (Light), 15% DoT reduction for all allies, fills BB gauge each turn, restores HP each turn & 100% elemental damage reduction", 
+        "effects": [
+            {
+                "atk% buff": 50, 
+                "conditions": [], 
+                "crit% buff": 15, 
+                "def% buff": 50, 
+                "elements buffed": [
+                    "light"
+                ], 
+                "passive id": "2", 
+                "passive target": "party"
+            }, 
+            {
+                "conditions": [], 
+                "passive target": "party", 
+                "unknown passive id": "127", 
+                "unknown passive params": "100,15"
+            }, 
+            {
+                "bc fill per turn": 10, 
+                "conditions": [], 
+                "passive id": "9", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "passive id": "33", 
+                "passive target": "self", 
+                "rec% added (turn heal)": 11.0, 
+                "turn heal high": 7000, 
+                "turn heal low": 7000
+            }, 
+            {
+                "conditions": [], 
+                "passive id": "53", 
+                "passive target": "self", 
+                "strong base element damage resist%": 100, 
+                "strong buffed element damage resist%": 100
+            }
+        ], 
+        "id": "8900015", 
+        "name": "Proof of Virtue", 
+        "rarity": "7", 
+        "target": "self"
+    }, 
+    "8900016": {
+        "desc": "50% Atk, Def and 15% critical rate (Water), 15% DoT reduction for all allies, fills BB gauge each turn, restores HP each turn & 100% elemental damage reduction", 
+        "effects": [
+            {
+                "atk% buff": 50, 
+                "conditions": [], 
+                "crit% buff": 15, 
+                "def% buff": 50, 
+                "elements buffed": [
+                    "water"
+                ], 
+                "passive id": "2", 
+                "passive target": "party"
+            }, 
+            {
+                "conditions": [], 
+                "passive target": "party", 
+                "unknown passive id": "127", 
+                "unknown passive params": "100,15"
+            }, 
+            {
+                "bc fill per turn": 10, 
+                "conditions": [], 
+                "passive id": "9", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "passive id": "33", 
+                "passive target": "self", 
+                "rec% added (turn heal)": 11.0, 
+                "turn heal high": 7000, 
+                "turn heal low": 7000
+            }, 
+            {
+                "conditions": [], 
+                "passive id": "53", 
+                "passive target": "self", 
+                "strong base element damage resist%": 100, 
+                "strong buffed element damage resist%": 100
+            }
+        ], 
+        "id": "8900016", 
+        "name": "Proof of Calm", 
+        "rarity": "7", 
+        "target": "self"
+    }, 
+    "8900017": {
+        "desc": "50% Atk, Def and 15% critical rate (Thunder), 15% DoT reduction for all allies, fills BB gauge each turn, restores HP each turn & 100% elemental damage reduction", 
+        "effects": [
+            {
+                "atk% buff": 50, 
+                "conditions": [], 
+                "crit% buff": 15, 
+                "def% buff": 50, 
+                "elements buffed": [
+                    "thunder"
+                ], 
+                "passive id": "2", 
+                "passive target": "party"
+            }, 
+            {
+                "conditions": [], 
+                "passive target": "party", 
+                "unknown passive id": "127", 
+                "unknown passive params": "100,15"
+            }, 
+            {
+                "bc fill per turn": 10, 
+                "conditions": [], 
+                "passive id": "9", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "passive id": "33", 
+                "passive target": "self", 
+                "rec% added (turn heal)": 11.0, 
+                "turn heal high": 7000, 
+                "turn heal low": 7000
+            }, 
+            {
+                "conditions": [], 
+                "passive id": "53", 
+                "passive target": "self", 
+                "strong base element damage resist%": 100, 
+                "strong buffed element damage resist%": 100
+            }
+        ], 
+        "id": "8900017", 
+        "name": "Proof of Vigor", 
+        "rarity": "7", 
+        "target": "self"
+    }, 
+    "8900018": {
+        "desc": "50% Atk, Def and 15% critical rate (Dark), 15% DoT reduction for all allies, fills BB gauge each turn, restores HP each turn & 100% elemental damage reduction", 
+        "effects": [
+            {
+                "atk% buff": 50, 
+                "conditions": [], 
+                "crit% buff": 15, 
+                "def% buff": 50, 
+                "elements buffed": [
+                    "dark"
+                ], 
+                "passive id": "2", 
+                "passive target": "party"
+            }, 
+            {
+                "conditions": [], 
+                "passive target": "party", 
+                "unknown passive id": "127", 
+                "unknown passive params": "100,15"
+            }, 
+            {
+                "bc fill per turn": 10, 
+                "conditions": [], 
+                "passive id": "9", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "passive id": "33", 
+                "passive target": "self", 
+                "rec% added (turn heal)": 11.0, 
+                "turn heal high": 7000, 
+                "turn heal low": 7000
+            }, 
+            {
+                "conditions": [], 
+                "passive id": "53", 
+                "passive target": "self", 
+                "strong base element damage resist%": 100, 
+                "strong buffed element damage resist%": 100
+            }
+        ], 
+        "id": "8900018", 
+        "name": "Proof of Ambition", 
         "rarity": "7", 
         "target": "self"
     }, 

@@ -32858,24 +32858,31 @@
         "name": "Piper's Gift"
     }, 
     "830698": {
-        "desc": "100% boost to Atk, Def, Rec and 120% boost to max HP, enormously boosts BB gauge each turn, restores HP each turn, negates all status ailments and Atk, Def, Rec reduction effects & adds probable resistance against 1 KO attack", 
+        "desc": "120% Atk, Def, Rec, 140% max HP, restores HP each turn, fills BB gauge each turn, probable 1 KO resistance & negates all status ailments and Atk, Def, Rec reduction", 
         "effects": [
             {
-                "atk% buff": 100, 
-                "def% buff": 100, 
-                "hp% buff": 120, 
+                "atk% buff": 120, 
+                "def% buff": 120, 
+                "hp% buff": 140, 
                 "passive id": "1", 
-                "rec% buff": 100
+                "rec% buff": 120
+            }, 
+            {
+                "passive id": "33", 
+                "rec% added (turn heal)": 10.0, 
+                "turn heal high": 4500, 
+                "turn heal low": 3000
             }, 
             {
                 "bc fill per turn": 10, 
                 "passive id": "9"
             }, 
             {
-                "passive id": "33", 
-                "rec% added (turn heal)": 10.0, 
-                "turn heal high": 2000, 
-                "turn heal low": 1000
+                "angel idol chance% condition": 0, 
+                "angel idol recover chance% high": 25, 
+                "angel idol recover chance% low": 25, 
+                "angel idol recover counts": 1, 
+                "passive id": "69"
             }, 
             {
                 "atk down resist%": 100, 
@@ -32888,13 +32895,6 @@
                 "rec down resist%": 100, 
                 "sick resist%": 100, 
                 "weaken resist%": 100
-            }, 
-            {
-                "angel idol chance% condition": 0, 
-                "angel idol recover chance% high": 25, 
-                "angel idol recover chance% low": 25, 
-                "angel idol recover counts": 1, 
-                "passive id": "69"
             }
         ], 
         "id": "830698", 
@@ -37994,6 +37994,35 @@
         ], 
         "id": "850998", 
         "name": "Raucous"
+    }, 
+    "851018": {
+        "desc": "200% Atk, 150% max HP, 30% critical rate, 300% spark damage, probable damage reduction to 1, 30% reduction to BB activation cost & 30% OD gauge fill rate", 
+        "effects": [
+            {
+                "atk% buff": 200, 
+                "crit% buff": 30, 
+                "hp% buff": 150, 
+                "passive id": "1"
+            }, 
+            {
+                "damage% for spark": 300, 
+                "passive id": "31"
+            }, 
+            {
+                "passive id": "43", 
+                "take 1 dmg%": 20
+            }, 
+            {
+                "passive id": "48", 
+                "reduced bb bc cost%": 30
+            }, 
+            {
+                "od fill rate%": 30, 
+                "passive id": "70"
+            }
+        ], 
+        "id": "851018", 
+        "name": "Blindsight"
     }, 
     "8600": {
         "desc": "15% reduction of damage taken from Fire and Earth types", 
