@@ -26988,6 +26988,60 @@
         "rarity": "7", 
         "target": "self"
     }, 
+    "8000535": {
+        "desc": "15% all parameters and 15% critical rate (Fire, Thunder) for all allies, 30% all parameters (Fire, Thunder), 100% critical damage, fills BB gauge each turn & 25% OD gauge fill rate", 
+        "effects": [
+            {
+                "atk% buff": 15, 
+                "conditions": [], 
+                "crit% buff": 15, 
+                "def% buff": 15, 
+                "elements buffed": [
+                    "fire", 
+                    "thunder"
+                ], 
+                "hp% buff": 15, 
+                "passive id": "2", 
+                "passive target": "party", 
+                "rec% buff": 15
+            }, 
+            {
+                "atk% buff": 30, 
+                "conditions": [], 
+                "def% buff": 30, 
+                "elements buffed": [
+                    "fire", 
+                    "thunder"
+                ], 
+                "hp% buff": 30, 
+                "passive id": "2", 
+                "passive target": "self", 
+                "rec% buff": 30
+            }, 
+            {
+                "conditions": [], 
+                "crit multiplier%": 100.0, 
+                "passive id": "34", 
+                "passive target": "self"
+            }, 
+            {
+                "bc fill per turn": 10, 
+                "conditions": [], 
+                "passive id": "9", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "od fill rate%": 25, 
+                "passive id": "70", 
+                "passive target": "self"
+            }
+        ], 
+        "id": "8000535", 
+        "name": "Radiant Legacy", 
+        "rarity": "7", 
+        "target": "self"
+    }, 
     "8000601": {
         "desc": "10% boost to Atk for all Dark type allies, greatly boosts Atk relative to remaining HP, greatly boosts Dark elemental damage, adds additional powerful attack at turn's end for 3 turns effect to SBB & raises Atk parameter limits to 170000", 
         "effects": [
@@ -38612,6 +38666,66 @@
         ], 
         "id": "830998", 
         "name": "Old Zero", 
+        "rarity": "7", 
+        "target": "self"
+    }, 
+    "831018": {
+        "desc": "150% Earth elemental damage when Phaedra or Miell is in squad or Atk boosting Sphere is equipped, 25% spark damage, 5% damage reduction for all allies, 0-100% Atk, Def, Rec relative to remaining HP & probable 2 KO resistance", 
+        "effects": [
+            {
+                "conditions": [
+                    {
+                        "unit required": "851010"
+                    }, 
+                    {
+                        "unit required": "830690"
+                    }, 
+                    {
+                        "sphere category required": "Atk Boosting", 
+                        "sphere category required (raw)": "13"
+                    }
+                ], 
+                "earth units do extra elemental weakness dmg": true, 
+                "elemental weakness multiplier%": 150.0, 
+                "passive id": "50", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "damage% for spark": 25, 
+                "passive id": "31", 
+                "passive target": "party"
+            }, 
+            {
+                "conditions": [], 
+                "dmg% mitigation": 5, 
+                "passive id": "8", 
+                "passive target": "party"
+            }, 
+            {
+                "atk% base buff": 0, 
+                "atk% extra buff based on hp": 100, 
+                "buff proportional to hp": "remaining", 
+                "conditions": [], 
+                "def% base buff": 0, 
+                "def% extra buff based on hp": 100, 
+                "passive id": "46", 
+                "passive target": "self", 
+                "rec% base buff": 0, 
+                "rec% extra buff based on hp": 100
+            }, 
+            {
+                "angel idol chance% condition": 0, 
+                "angel idol recover chance% high": 40, 
+                "angel idol recover chance% low": 40, 
+                "angel idol recover counts": 2, 
+                "conditions": [], 
+                "passive id": "69", 
+                "passive target": "self"
+            }
+        ], 
+        "id": "831018", 
+        "name": "Impenetrable Hide", 
         "rarity": "7", 
         "target": "self"
     }, 
