@@ -27042,6 +27042,50 @@
         "rarity": "7", 
         "target": "self"
     }, 
+    "8000537": {
+        "desc": "50% Atk, max HP and 30% critical rate (Thunder) for all allies, 150% Thunder elemental damage, 1 KO resistance when HP is below 50% & 60% OD gauge fill rate", 
+        "effects": [
+            {
+                "atk% buff": 50, 
+                "conditions": [], 
+                "crit% buff": 30, 
+                "elements buffed": [
+                    "thunder"
+                ], 
+                "hp% buff": 50, 
+                "passive id": "2", 
+                "passive target": "party"
+            }, 
+            {
+                "conditions": [], 
+                "elemental weakness multiplier%": 150.0, 
+                "passive id": "50", 
+                "passive target": "self", 
+                "thunder units do extra elemental weakness dmg": true
+            }, 
+            {
+                "buff": {
+                    "angel idol buff (12)": true, 
+                    "angel idol recover hp%": 100, 
+                    "buff turns (12)": "-1"
+                }, 
+                "conditions": [], 
+                "hp below % buff activation": 50, 
+                "passive id": "55", 
+                "passive target": "self"
+            }, 
+            {
+                "conditions": [], 
+                "od fill rate%": 60, 
+                "passive id": "70", 
+                "passive target": "self"
+            }
+        ], 
+        "id": "8000537", 
+        "name": "Overvolter", 
+        "rarity": "7", 
+        "target": "self"
+    }, 
     "8000601": {
         "desc": "10% boost to Atk for all Dark type allies, greatly boosts Atk relative to remaining HP, greatly boosts Dark elemental damage, adds additional powerful attack at turn's end for 3 turns effect to SBB & raises Atk parameter limits to 170000", 
         "effects": [
@@ -31482,6 +31526,61 @@
         "id": "811017", 
         "name": "Divinity Unchained", 
         "rarity": "1", 
+        "target": "self"
+    }, 
+    "811028": {
+        "desc": "150% spark damage when Lleva or Bonnie is in squad or spark type sphere equipped, 0-100% Atk, Def, Rec relative to remaining HP, probable damage reduction to 1 & 1 KO resistance when HP is below 40%", 
+        "effects": [
+            {
+                "conditions": [
+                    {
+                        "unit required": "841020"
+                    }, 
+                    {
+                        "unit required": "840110"
+                    }, 
+                    {
+                        "sphere category required": "Spark", 
+                        "sphere category required (raw)": "11"
+                    }
+                ], 
+                "damage% for spark": 150, 
+                "passive id": "31", 
+                "passive target": "self"
+            }, 
+            {
+                "atk% base buff": 0, 
+                "atk% extra buff based on hp": 100, 
+                "buff proportional to hp": "remaining", 
+                "conditions": [], 
+                "def% base buff": 0, 
+                "def% extra buff based on hp": 100, 
+                "passive id": "46", 
+                "passive target": "self", 
+                "rec% base buff": 0, 
+                "rec% extra buff based on hp": 100
+            }, 
+            {
+                "conditions": [], 
+                "passive id": "43", 
+                "passive target": "self", 
+                "take 1 dmg%": 20
+            }, 
+            {
+                "buff": {
+                    "angel idol buff (12)": true, 
+                    "angel idol recover hp%": 100, 
+                    "buff turns (12)": "-1"
+                }, 
+                "conditions": [], 
+                "hp below % buff activation": 40, 
+                "passive id": "55", 
+                "passive target": "self"
+            }
+        ], 
+        "id": "811028", 
+        "name": "Thermal Breach", 
+        "rarity": "7", 
         "target": "self"
     }, 
     "811118": {
@@ -38846,7 +38945,7 @@
         "target": "self"
     }, 
     "840118": {
-        "desc": "100% boost to Atk when BB gauge is above 50%, adds Def ignoring effect to BB/SBB for 3 turns, adds all elements to attack for 3 turns to BB/SBB/UBB & boosts damage against status afflicted foes for all allies", 
+        "desc": "50% damage against status afflicted foes for all allies, 100% Atk when BB gauge is above 50%, add to BB/SBB (Adds ignore Def to attack for 3 turns) & add to BB/SBB/UBB (Adds all elements to attack for 3 turns)", 
         "effects": [
             {
                 "atk% buff when enemy has ailment": 50, 
@@ -42019,6 +42118,85 @@
         ], 
         "id": "840998", 
         "name": "White Matriarch", 
+        "rarity": "7", 
+        "target": "self"
+    }, 
+    "841028": {
+        "desc": "150% Thunder elemental damage when Buck or Bonnie is in squad or Atk boosting Sphere is equipped, 25% critical damage for all allies, fills BB gauge each turn, negates all status ailments and Atk, Def, Rec reduction & add to BB/SBB (Removes all status ailments and Atk, Def, Rec reduction)", 
+        "effects": [
+            {
+                "conditions": [
+                    {
+                        "unit required": "811020"
+                    }, 
+                    {
+                        "unit required": "840110"
+                    }, 
+                    {
+                        "sphere category required": "Atk Boosting", 
+                        "sphere category required (raw)": "13"
+                    }
+                ], 
+                "elemental weakness multiplier%": 150.0, 
+                "passive id": "50", 
+                "passive target": "self", 
+                "thunder units do extra elemental weakness dmg": true
+            }, 
+            {
+                "conditions": [], 
+                "crit multiplier%": 25.0, 
+                "passive id": "34", 
+                "passive target": "party"
+            }, 
+            {
+                "bc fill per turn": 10, 
+                "conditions": [], 
+                "passive id": "9", 
+                "passive target": "self"
+            }, 
+            {
+                "atk down resist%": 100, 
+                "conditions": [], 
+                "curse resist%": 100, 
+                "def down resist%": 100, 
+                "injury resist%": 100, 
+                "paralysis resist%": 100, 
+                "passive id": "73", 
+                "passive target": "self", 
+                "poison resist%": 100, 
+                "rec down resist%": 100, 
+                "sick resist%": 100, 
+                "weaken resist%": 100
+            }, 
+            {
+                "conditions": [], 
+                "passive id": "66", 
+                "passive target": "self", 
+                "trigger on bb": true, 
+                "trigger on sbb": true, 
+                "triggered effect": [
+                    {
+                        "ailments cured": [
+                            "poison", 
+                            "weaken", 
+                            "sick", 
+                            "injury", 
+                            "curse", 
+                            "paralysis", 
+                            "atk down", 
+                            "def down", 
+                            "rec down"
+                        ], 
+                        "effect delay time(ms)/frame": "0.0/0", 
+                        "proc id": "38", 
+                        "target area": "aoe", 
+                        "target type": "party"
+                    }
+                ]
+            }
+        ], 
+        "id": "841028", 
+        "name": "Enhanced Boltblade", 
         "rarity": "7", 
         "target": "self"
     }, 
